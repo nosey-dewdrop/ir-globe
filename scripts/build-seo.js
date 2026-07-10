@@ -135,7 +135,7 @@ function head(title, desc, canonical, extraLd) {
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="index,follow">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
-<link rel="stylesheet" href="ROOT/css/site.css?v=2">
+<link rel="stylesheet" href="ROOT/css/site.css?v=3">
 </head>
 <body class="doc">`;
 }
