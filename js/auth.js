@@ -61,7 +61,7 @@
     box.innerHTML = `
       <h1>hoş geldin</h1>
       <p class="lede">Giriş yaptın: <strong>${esc(user.email)}</strong></p>
-      <div class="notice">✓ Haftalık bülten listesindesin. Her hafta editör masasının seçtiği bağ sana gelecek.</div>
+      <div class="notice">✓ Haftalık bülten listesindesin. Her hafta seçilmiş bir bağ ve hikâyesi sana gelecek.</div>
       <p style="margin-top:18px"><a class="btn ghost" href="kure.html">küreye dön</a>
         <button class="link" id="out" style="margin-left:14px;color:var(--muted);cursor:pointer">çıkış yap</button></p>`;
     // ensure member is on the newsletter list too

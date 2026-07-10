@@ -22,3 +22,7 @@ Open (friend's): name, category families/grouping when many, move to own domain.
 - Grain/commodity layer (UN Comtrade data) as second network type with its own color = meaning.
 - Newsletter format (weekly: pick one edge on the globe, tell its story).
 - Deploy (Vercel/Pages) once named.
+
+
+<!-- deep machine context (auto, regenerable) -->
+@CLAUDE.context.md

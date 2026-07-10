@@ -135,7 +135,7 @@ function head(title, desc, canonical, extraLd) {
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="index,follow">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
-<link rel="stylesheet" href="ROOT/css/site.css?v=3">
+<link rel="stylesheet" href="ROOT/css/site.css?v=6">
 </head>
 <body class="doc">`;
 }
@@ -144,7 +144,7 @@ function nav(depth) {
   return `<header class="topbar">
   <a class="brand" href="${r}index.html">kim kime ne satıyor?</a>
   <nav class="topnav">
-    <a href="${r}kure.html">küre</a>
+    <a href="${r}index.html">küre</a>
     <a href="${r}konu/index.html">konular</a>
     <a href="${r}ulke/index.html">ülkeler</a>
     <a href="${r}uye.html">üyelik</a>
@@ -201,7 +201,7 @@ function layerPage(layer) {
   <nav class="crumb"><a href="ROOT/index.html">ana sayfa</a> › <a href="ROOT/konu/index.html">konular</a> › ${esc(layer.label)}</nav>
   <h1>${esc(layer.label)}</h1>
   <p class="lede">${esc(desc)}</p>
-  <p class="meta">${ties.length} yönlü bağ · <a href="ROOT/kure.html">küre üstünde gör →</a></p>
+  <p class="meta">${ties.length} yönlü bağ · <a href="ROOT/index.html">küre üstünde gör →</a></p>
   <section class="edges">
     ${rows || "<p>bu katman için bağ derleniyor.</p>"}
   </section>
@@ -249,7 +249,7 @@ function countryPage(name) {
   <nav class="crumb"><a href="ROOT/index.html">ana sayfa</a> › <a href="ROOT/ulke/index.html">ülkeler</a> › ${esc(dn)}</nav>
   <h1>${esc(dn)}</h1>
   <p class="lede">${esc(dn)}, ${layerKeys.length} katmanda ${ties.length} ülke bağıyla haritada. Aşağıda kimden alıp kime verdiği.</p>
-  <p class="meta"><a href="ROOT/kure.html">${esc(dn)}'i küre üstünde gör →</a></p>
+  <p class="meta"><a href="ROOT/index.html">${esc(dn)}'i küre üstünde gör →</a></p>
   ${outgoing.length ? `<h2>${esc(dn)} → dünya <span class="cnt">(veren / satan)</span></h2>${block(outgoing, "out")}` : ""}
   ${incoming.length ? `<h2>dünya → ${esc(dn)} <span class="cnt">(alan)</span></h2>${block(incoming, "in")}` : ""}
 </main>
@@ -309,7 +309,7 @@ function writeFile(rel, html) {
 }
 
 let count = 0;
-const urls = [`${SITE}/`, `${SITE}/kure.html`, `${SITE}/uye.html`, `${SITE}/konu/`, `${SITE}/ulke/`];
+const urls = [`${SITE}/`, `${SITE}/uye.html`, `${SITE}/konu/`, `${SITE}/ulke/`];
 
 writeFile("konu/index.html", konuIndex());
 writeFile("ulke/index.html", ulkeIndex());

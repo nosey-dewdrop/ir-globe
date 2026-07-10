@@ -146,9 +146,10 @@ fetch("data/countries.geojson?v=6")
 
 globe.arcsData(visibleTies());
 renderLayers();
-globe.controls().autoRotate = false; // the user's hand spins it, not the app
-globe.controls().enableZoom = true; // scroll zooms the globe (resize it)
-globe.pointOfView({ lat: 25, lng: 25, altitude: 1.6 }, 0); // bigger globe
+globe.controls().autoRotate = true; // spins freely on its own; drag also spins it
+globe.controls().autoRotateSpeed = 0.35; // slow, calm
+globe.controls().enableZoom = false; // single-page: wheel scrolls the page, drag spins the globe
+globe.pointOfView({ lat: 20, lng: 20, altitude: 2.5 }, 0); // pulled back so the whole sphere fits, never clipped
 
 /* ── colour rules ── */
 function isActiveCountry(c) {
@@ -215,8 +216,16 @@ const GOOD = {
 function tieStory(t) {
   if (t.type !== "silah") return t.note ? `<p>${esc(t.note)}</p>` : "";
   const g = GOOD.silah;
-  let p = `${t.s}, ${g} ihracatının <strong>%${cnt(t.exp)}</strong>'ini ${t.r}'ye gönderiyor`;
-  if (t.imp != null) p += `; ${t.r} açısından bu, ülkenin ${g} ithalatının <strong>%${cnt(t.imp)}</strong>'i demek`;
+  // build only from the numbers we actually have — never print a fake %0
+  let p;
+  if (t.exp != null) {
+    p = `${t.s}, ${g} ihracatının <strong>%${cnt(t.exp)}</strong>'ini ${t.r}'ye gönderiyor`;
+    if (t.imp != null) p += `; ${t.r} açısından bu, ülkenin ${g} ithalatının <strong>%${cnt(t.imp)}</strong>'i demek`;
+  } else if (t.imp != null) {
+    p = `${t.r}, ${g} ithalatının <strong>%${cnt(t.imp)}</strong>'ini ${t.s}'den alıyor`;
+  } else {
+    p = `${t.s} → ${t.r}`;
+  }
   p += ".";
   const tail = [];
   if (supShare[t.s]) tail.push(`${t.s} dünya ${g} ihracatının %${supShare[t.s]}'ini tek başına yapıyor`);
