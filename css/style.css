@@ -38,18 +38,29 @@ h1 { font-family: Georgia, serif; font-size: 30px; font-weight: 400; letter-spac
 .layerbtn.on { color: var(--navy); font-size: 16px; font-weight: 700; }
 .layers-soon { color: var(--faint); font-size: 12px; }
 
-/* three zones: story | globe | ledger */
+/* globe dead-centre, articles hug it left + right like parentheses: ( o ) */
 .stage {
   flex: 1;
-  display: grid;
-  grid-template-columns: 320px 1fr 320px;
+  position: relative;
   min-height: 0;
 }
-#globe { min-width: 0; }
+#globe { position: absolute; inset: 0; }
 
-.col { overflow-y: auto; padding: 24px 24px; }
-.col.left { border-right: 1px solid var(--rule); }
-.col.right { border-left: 1px solid var(--rule); }
+.col {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  overflow-y: auto;
+  padding: 28px 26px;
+  z-index: 2;
+  background: linear-gradient(var(--paper), var(--paper)) content-box;
+}
+.col.left { left: 0; text-align: left; }
+.col.right { right: 0; }
+/* fade the column edge into the page so the round globe reads through the gap */
+.col.left { -webkit-mask-image: linear-gradient(to right, #000 78%, transparent); mask-image: linear-gradient(to right, #000 78%, transparent); }
+.col.right { -webkit-mask-image: linear-gradient(to left, #000 78%, transparent); mask-image: linear-gradient(to left, #000 78%, transparent); }
 
 /* section labels: tracked uppercase, the editorial signature */
 .lbl {

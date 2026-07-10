@@ -137,10 +137,10 @@ function arcColor(t) {
   return ["#49515f", "#49515f"];                       // default: dark grey, the darkest resting layer
 }
 function arcStroke(t) {
-  if (isActiveTie(t)) return 0.9;
+  if (isActiveTie(t)) return 0.95;
   if (anySelection()) return 0.07;
-  if (t === hovered) return 0.6;
-  return 0.28;
+  if (t === hovered) return 0.7;
+  return 0.38;
 }
 
 /* ── editorial writing built from the real numbers (no invented commentary) ── */
@@ -269,8 +269,11 @@ function redraw() {
 }
 function renderAll() { renderStory(); renderDetail(); renderList(); }
 
+function sizeGlobe() {
+  const el = document.getElementById("globe");
+  globe.width(el.clientWidth);
+  globe.height(el.clientHeight);
+}
 renderAll();
-window.addEventListener("resize", () => {
-  globe.width(document.getElementById("globe").clientWidth);
-  globe.height(document.getElementById("globe").clientHeight);
-});
+sizeGlobe();
+window.addEventListener("resize", sizeGlobe);
