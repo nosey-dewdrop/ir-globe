@@ -70,8 +70,8 @@ h1 { font-size: 31px; font-weight: 400; letter-spacing: -0.01em; }
   padding: 26px 26px;
   z-index: 2;
 }
-.col.left { left: 0; -webkit-mask-image: linear-gradient(to right, #000 80%, transparent); mask-image: linear-gradient(to right, #000 80%, transparent); }
-.col.right { right: 0; -webkit-mask-image: linear-gradient(to left, #000 80%, transparent); mask-image: linear-gradient(to left, #000 80%, transparent); }
+.col.left { left: 0; }
+.col.right { right: 0; }
 
 /* section labels: tracked small caps, the editorial signature */
 .lbl { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 18px 0 6px; }
@@ -93,20 +93,16 @@ h1 { font-size: 31px; font-weight: 400; letter-spacing: -0.01em; }
 .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 14px; padding: 4px 0; border-bottom: 1px solid var(--rule); }
 .row b { color: var(--navy); }
 
-/* country list: bottom bar, one row, scroll left–right */
+/* country list: bottom, word-wall like its first form (size = weight), wraps, no scroll */
 #countries {
   display: flex;
+  flex-wrap: wrap;
   gap: 3px 16px;
-  overflow-x: auto;
-  white-space: nowrap;
   align-items: baseline;
-  padding: 11px 32px;
+  padding: 12px 32px 14px;
   border-top: 1px solid var(--rule);
-  scrollbar-width: thin;
 }
-#countries::-webkit-scrollbar { height: 5px; }
-#countries::-webkit-scrollbar-thumb { background: var(--rule); }
-.country { flex: 0 0 auto; color: var(--muted); transition: color 0.15s; }
+.country { color: var(--muted); transition: color 0.15s; }
 .country:hover { color: var(--ink); }
 .country.on { color: var(--navy); font-weight: 700; }
 
