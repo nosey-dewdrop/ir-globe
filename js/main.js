@@ -138,7 +138,7 @@ fetch("data/countries.geojson?v=6")
 globe.arcsData(visibleTies());
 renderLayers();
 globe.controls().autoRotate = false; // the user's hand spins it, not the app
-globe.controls().enableZoom = false; // scroll must not grow the globe
+globe.controls().enableZoom = true; // scroll zooms the globe (resize it)
 globe.pointOfView({ lat: 25, lng: 25, altitude: 1.82 }, 0); // bigger globe
 
 /* ── colour rules ── */
@@ -207,15 +207,32 @@ function newsBlock(query, heading) {
     <a class="news" href="https://www.google.com/search?q=${q}&tbm=nws" target="_blank" rel="noopener">makaleler ve analizler ↗</a>`;
 }
 
+function articleRow(a) {
+  return `<a class="news" href="${esc(a.url)}" target="_blank" rel="noopener">
+    <span class="news-title">${esc(a.title)}</span>
+    <span class="news-meta">${esc(a.source)}${a.date ? " · " + esc(a.date) : ""}</span>
+  </a>`;
+}
+
 /* real, verified articles for this tie if we have them; else fall back to a live news search */
 function tieArticles(t) {
   const list = (typeof ARTICLES !== "undefined" && ARTICLES[t.s + "→" + t.r]) || [];
   if (!list.length) return newsBlock(`${t.s} ${t.r} silah`, "bu ilişkinin haberleri");
-  return `<div class="lbl">bu ilişkinin haberleri</div>` + list.map((a) =>
-    `<a class="news" href="${esc(a.url)}" target="_blank" rel="noopener">
-      <span class="news-title">${esc(a.title)}</span>
-      <span class="news-meta">${esc(a.source)}${a.date ? " · " + esc(a.date) : ""}</span>
-    </a>`).join("");
+  return `<div class="lbl">bu ilişkinin haberleri</div>` + list.map(articleRow).join("");
+}
+
+/* all real articles from this country's relationships, deduped */
+function countryArticles(c) {
+  const all = (typeof ARTICLES !== "undefined" && ARTICLES) || {};
+  const seen = new Set();
+  const list = [];
+  Object.keys(all).forEach((k) => {
+    if (k.startsWith(c + "→") || k.endsWith("→" + c)) {
+      all[k].forEach((a) => { if (!seen.has(a.url)) { seen.add(a.url); list.push(a); } });
+    }
+  });
+  if (!list.length) return newsBlock(`${c} silah ticareti`, "bu ülkenin haberleri");
+  return `<div class="lbl">bu ülkenin haberleri</div>` + list.slice(0, 10).map(articleRow).join("");
 }
 
 /* ── left column: the story + articles ── */
@@ -236,7 +253,7 @@ function renderStory() {
       <div class="lbl">ülke</div>
       <h2>${selected}</h2>
       <div class="writing">${countryStory(selected)}</div>
-      ${newsBlock(`${selected} silah ticareti`, "bu ülkenin haberleri")}
+      ${countryArticles(selected)}
       <p class="src"><em>kaynak: <a href="${src.url}" target="_blank" rel="noopener">SIPRI, 2021–25 ↗</a></em></p>`;
     return;
   }
