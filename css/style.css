@@ -93,16 +93,16 @@ h1 { font-size: 31px; font-weight: 400; letter-spacing: -0.01em; }
 .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 14px; padding: 4px 0; border-bottom: 1px solid var(--rule); }
 .row b { color: var(--navy); }
 
-/* country list: bottom, word-wall like its first form (size = weight), wraps, no scroll */
+/* country wall: right column, word-wall (size = weight), Helvetica — the premium first form */
 #countries {
+  margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
-  gap: 3px 16px;
-  align-items: baseline;
-  padding: 12px 32px 14px;
-  border-top: 1px solid var(--rule);
+  gap: 3px 14px;
+  align-content: flex-start;
+  font-family: Helvetica, Arial, sans-serif;
 }
-.country { color: var(--muted); transition: color 0.15s; }
+.country { font-family: Helvetica, Arial, sans-serif; color: var(--muted); transition: color 0.15s; }
 .country:hover { color: var(--ink); }
 .country.on { color: var(--navy); font-weight: 700; }
 
