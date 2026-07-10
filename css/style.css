@@ -50,10 +50,10 @@ h1 { font-size: 31px; font-weight: 400; letter-spacing: -0.01em; }
   padding: 8px 32px 12px;
   border-top: 1px solid var(--rule);
 }
-.layerbtn { font-size: 16px; color: var(--muted); transition: color 0.15s; }
+.layerbtn { font-size: 14px; color: var(--muted); padding-bottom: 4px; border-bottom: 2px solid transparent; transition: color 0.15s, border-color 0.15s; }
 .layerbtn:hover { color: var(--ink); }
-.layerbtn.on { color: var(--navy); font-weight: 700; }
-.layerbtn.soon { color: var(--faint); font-style: italic; }
+.layerbtn.on { color: var(--navy); font-weight: 700; border-bottom-color: var(--navy); }
+.layerbtn.soon { color: var(--faint); }
 
 /* stage: globe dead-centre, articles hug it left + right — ( o ) */
 .stage { flex: 1; position: relative; min-height: 0; }
@@ -91,16 +91,17 @@ h1 { font-size: 31px; font-weight: 400; letter-spacing: -0.01em; }
 .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 14px; padding: 4px 0; border-bottom: 1px solid var(--rule); }
 .row b { color: var(--navy); }
 
-/* country wall: right column, word-wall (size = weight), Helvetica — the premium first form */
+/* country wall: full-width strip under the globe, word-wall (size = weight), Helvetica */
 #countries {
-  margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
   gap: 3px 14px;
-  align-content: flex-start;
+  align-items: baseline;
+  padding: 10px 32px 12px;
+  border-top: 1px solid var(--rule);
   font-family: Helvetica, Arial, sans-serif;
 }
-.country { font-family: Helvetica, Arial, sans-serif; color: var(--muted); transition: color 0.15s; }
+.country { color: var(--muted); transition: color 0.15s; }
 .country:hover { color: var(--ink); }
 .country.on { color: var(--navy); font-weight: 700; }
 
