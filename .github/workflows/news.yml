@@ -1,0 +1,33 @@
+name: refresh news
+
+# real, current articles per relationship — fetched server-side (no CORS, no key),
+# committed back so the static site always shows fresh, verified news.
+on:
+  schedule:
+    - cron: "0 6 * * *"   # every day at 06:00 UTC
+  workflow_dispatch: {}     # and on manual run
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: fetch news
+        run: node scripts/fetch-news.js
+      - name: commit if changed
+        run: |
+          git config user.name "damlahelloworld-bot"
+          git config user.email "noreply@damlahelloworld.com"
+          if ! git diff --quiet js/articles.js; then
+            git add js/articles.js
+            git commit -m "refresh news articles"
+            git push
+          else
+            echo "no news change"
+          fi
