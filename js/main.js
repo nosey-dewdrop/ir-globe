@@ -204,31 +204,47 @@ function runCountUps() {
   });
 }
 
-/* ── editorial writing built from the real numbers / the verified basis (no invented commentary) ── */
+/* what is actually traded in each layer, for plain-language sentences */
+const GOOD = {
+  silah: "silah", ticaret: "mal", enerji: "petrol ve gaz", tahil: "tahıl",
+  ittifak: "ittifak bağı", yaptirim: "yaptırım", goc: "göç", borc: "kredi",
+  diplomasi: "diplomatik bağ", teknoloji: "çip", us: "askeri üs", yardim: "yardım",
+};
+
+/* ── editorial writing as a flowing paragraph (built from real numbers / verified basis) ── */
 function tieStory(t) {
   if (t.type !== "silah") return t.note ? `<p>${esc(t.note)}</p>` : "";
-  const p = [];
-  if (t.exp != null) p.push(`${t.s}, silah ihracatının <strong>%${cnt(t.exp)}</strong>'ini ${t.r}'ye gönderiyor.`);
-  if (t.imp != null) p.push(`${t.r} açısından bu ilişki, ülkenin silah ithalatının <strong>%${cnt(t.imp)}</strong>'i anlamına geliyor.`);
-  if (supShare[t.s]) p.push(`${t.s} tek başına dünya silah ihracatının %${supShare[t.s]}'ini yapıyor.`);
-  if (recShare[t.r]) p.push(`${t.r} ise küresel silah ithalatının %${recShare[t.r]}'ini alıyor.`);
-  return p.map((s) => `<p>${s}</p>`).join("");
+  const g = GOOD.silah;
+  let p = `${t.s}, ${g} ihracatının <strong>%${cnt(t.exp)}</strong>'ini ${t.r}'ye gönderiyor`;
+  if (t.imp != null) p += `; ${t.r} açısından bu, ülkenin ${g} ithalatının <strong>%${cnt(t.imp)}</strong>'i demek`;
+  p += ".";
+  const tail = [];
+  if (supShare[t.s]) tail.push(`${t.s} dünya ${g} ihracatının %${supShare[t.s]}'ini tek başına yapıyor`);
+  if (recShare[t.r]) tail.push(`${t.r} küresel ${g} ithalatının %${recShare[t.r]}'ini alıyor`);
+  return `<p>${p}</p>` + (tail.length ? `<p>${tail.join("; ")}.</p>` : "");
 }
 function countryStory(c) {
   if (layer !== "silah") {
-    const p = [];
-    activeTies().filter((t) => t.s === c).slice(0, 3).forEach((t) => p.push(`→ ${t.r}: ${esc(t.note)}`));
-    activeTies().filter((t) => t.r === c).slice(0, 3).forEach((t) => p.push(`← ${t.s}: ${esc(t.note)}`));
-    return p.map((s) => `<p>${s}</p>`).join("");
+    const sells = activeTies().filter((t) => t.s === c).slice(0, 3).map((t) => `${t.r} (${esc(t.note)})`);
+    const buys = activeTies().filter((t) => t.r === c).slice(0, 3).map((t) => `${t.s} (${esc(t.note)})`);
+    const g = GOOD[layer] || "bağ";
+    const seg = [];
+    if (sells.length) seg.push(`${c}, ${g} bağıyla ${sells.join(", ")} ile bağlı`);
+    if (buys.length) seg.push(`${g} tarafında ${buys.join(", ")} ile de bağı var`);
+    return seg.length ? `<p>${seg.join(". ")}.</p>` : "";
   }
-  const p = [];
+  const g = GOOD.silah;
   const sells = activeTies().filter((t) => t.s === c && t.exp != null).sort((a, b) => b.exp - a.exp);
   const buys = activeTies().filter((t) => t.r === c && t.imp != null).sort((a, b) => b.imp - a.imp);
-  if (supShare[c]) p.push(`${c}, dünya silah ihracatının <strong>%${cnt(supShare[c])}</strong>'ini yapıyor.`);
-  if (recShare[c]) p.push(`${c}, dünya silah ithalatının <strong>%${cnt(recShare[c])}</strong>'ini alıyor.`);
-  if (sells[0]) p.push(`En çok ${sells[0].r}'ye satıyor (ihracatının %${sells[0].exp}'i).`);
-  if (buys[0]) p.push(`En çok ${buys[0].s}'den alıyor (ithalatının %${buys[0].imp}'i).`);
-  return p.map((s) => `<p>${s}</p>`).join("");
+  const head = [];
+  if (supShare[c]) head.push(`dünya ${g} ihracatının <strong>%${cnt(supShare[c])}</strong>'ini yapıyor`);
+  if (recShare[c]) head.push(`ithalatının <strong>%${cnt(recShare[c])}</strong>'ini alıyor`);
+  let p = head.length ? `${c}, ${head.join(", ")}.` : "";
+  const t2 = [];
+  if (sells[0]) t2.push(`en çok ${sells[0].r}'ye ${g} satıyor (%${sells[0].exp})`);
+  if (buys[0]) t2.push(`en çok ${buys[0].s}'den alıyor (%${buys[0].imp})`);
+  if (t2.length) p += ` ${c[0].toUpperCase()}${c.slice(1)} ${t2.join(", ")}.`;
+  return `<p>${p}</p>`;
 }
 
 /* ── articles as data (per layer) — the cards layer lays them out around the globe ── */
@@ -275,7 +291,10 @@ function renderStory() {
       ${srcLine()}`;
     return;
   }
-  story.innerHTML = ""; // nothing selected: clean sides, the globe carries the page
+  story.innerHTML = `<div class="writing intro-writing">
+    <p>dünyanın bağ haritası. her ok, bir ülkeden bir ülkeye giden büyük transferi gösteriyor.</p>
+    <p>bir <strong>oka</strong> tıkla: o ilişkinin sayıları, yazısı ve haberleri açılır. bir <strong>ülkeye</strong> tıkla: kiminle bağlı olduğunu gör.</p>
+  </div>`;
 }
 
 /* numbers under the story (silah only — the other layers have no percentages) */
@@ -294,9 +313,9 @@ function renderDetail() {
     const sells = activeTies().filter((t) => t.s === selected).sort((a, b) => (b.exp || 0) - (a.exp || 0));
     const buys = activeTies().filter((t) => t.r === selected).sort((a, b) => (b.imp || 0) - (a.imp || 0));
     detail.innerHTML =
-      (sells.length ? `<div class="lbl">sattıkları</div>` + sells.map((t) =>
+      (sells.length ? `<div class="lbl">kime silah satıyor</div>` + sells.map((t) =>
         `<p class="row"><span>→ ${t.r}</span>${t.exp != null ? `<b>%${t.exp}</b>` : ""}</p>`).join("") : "") +
-      (buys.length ? `<div class="lbl">aldıkları</div>` + buys.map((t) =>
+      (buys.length ? `<div class="lbl">kimden silah alıyor</div>` + buys.map((t) =>
         `<p class="row"><span>← ${t.s}</span>${t.imp != null ? `<b>%${t.imp}</b>` : ""}</p>`).join("") : "");
     return;
   }
