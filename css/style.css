@@ -23,6 +23,9 @@ body {
   overflow: hidden;
 }
 
+/* globe.gl's own hover tooltip renders outside our tree — force it to match */
+.scene-tooltip, .scene-tooltip * { font-family: Helvetica, Arial, sans-serif !important; font-size: 12.5px !important; }
+
 a { color: var(--royal); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
