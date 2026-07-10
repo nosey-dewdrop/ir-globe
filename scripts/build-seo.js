@@ -135,7 +135,10 @@ function head(title, desc, canonical, extraLd) {
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="index,follow">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
-<link rel="stylesheet" href="ROOT/css/site.css?v=6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ROOT/css/site.css?v=7">
 </head>
 <body class="doc">`;
 }

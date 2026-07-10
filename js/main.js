@@ -149,7 +149,7 @@ renderLayers();
 globe.controls().autoRotate = true; // spins freely on its own; drag also spins it
 globe.controls().autoRotateSpeed = 0.35; // slow, calm
 globe.controls().enableZoom = false; // single-page: wheel scrolls the page, drag spins the globe
-globe.pointOfView({ lat: 20, lng: 20, altitude: 2.5 }, 0); // pulled back so the whole sphere fits, never clipped
+globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0); // fits fully but a tick bigger
 
 /* ── colour rules ── */
 function isActiveCountry(c) {

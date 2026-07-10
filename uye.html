@@ -7,7 +7,10 @@
 <meta name="description" content="Üye ol, her hafta seçilmiş tek bir bağı ve hikâyesini al. Bir damlahelloworld yayını.">
 <link rel="canonical" href="https://damlahelloworld.github.io/ir-globe/uye.html">
 <meta name="robots" content="noindex,follow">
-<link rel="stylesheet" href="css/site.css?v=6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=7">
 </head>
 <body>
 
@@ -21,20 +24,13 @@
   </nav>
 </header>
 
-<main class="authgrid">
-  <aside class="authpitch">
-    <p class="kicker">haftalık bülten</p>
+<main class="center">
+  <div class="center-in">
     <h1 class="serif">her hafta, dünyanın bir bağı</h1>
-    <p class="pitchlede">Küre yüzlerce ilişkiyi gösterir. Üye olunca bülten sana <strong>hangisine bakman gerektiğini</strong> söyler.</p>
-    <ul class="pitchlist">
-      <li>Her hafta seçilmiş <strong>tek bir bağ</strong> — kim kime ne veriyor, neden önemli.</li>
-      <li>Arkasında <strong>gerçek, kaynaklı veri</strong> ve o haftanın haberi.</li>
-      <li>Tek mail, gürültü yok. <strong>İstediğin an tek tıkla çık.</strong></li>
-    </ul>
-    <p class="pitchfoot">Küre ve tüm sayfalar zaten ücretsiz ve açık. Üyelik, o seçilmiş bağı kaçırmaman için.</p>
-  </aside>
-  <div class="authbox" id="auth">
-    <p class="loading">yükleniyor…</p>
+    <p class="pitchlede">Küre yüzlerce ilişkiyi gösterir. Üye olunca bülten sana hangisine bakman gerektiğini söyler: tek bir bağ, kaynaklı veri, o haftanın haberi. Tek mail, gürültü yok.</p>
+    <div class="authbox" id="auth">
+      <p class="loading">yükleniyor…</p>
+    </div>
   </div>
 </main>
 
@@ -44,6 +40,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="admin/config.js"></script>
-<script src="js/auth.js?v=2"></script>
+<script src="js/auth.js?v=3"></script>
 </body>
 </html>
