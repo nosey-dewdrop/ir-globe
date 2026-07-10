@@ -11,6 +11,15 @@ RECIPIENTS.forEach((rec) => rec.from.forEach(([s, pct]) => { tie(s, rec.c).imp =
 const TIES = Object.values(ties).filter((t) => COORDS[t.s] && COORDS[t.r]);
 TIES.forEach((t) => { t.type = "silah"; });
 
+// the other layers' real connections (verified facts, note = the basis)
+if (typeof LAYER_TIES !== "undefined") {
+  Object.entries(LAYER_TIES).forEach(([layer, arr]) => {
+    arr.forEach((c) => {
+      if (COORDS[c.s] && COORDS[c.r]) TIES.push({ s: c.s, r: c.r, type: layer, note: c.note || "", exp: null, imp: null });
+    });
+  });
+}
+
 const supShare = Object.fromEntries(SUPPLIERS.map((x) => [x.c, x.share]));
 const recShare = Object.fromEntries(RECIPIENTS.map((x) => [x.c, x.share]));
 const NAMES = [...new Set(TIES.flatMap((t) => [t.s, t.r]))].sort();
@@ -38,22 +47,21 @@ function countryOfFeature(f) {
   return null;
 }
 
-/* the lenses an IR student wants. only 'silah' has real data today; the rest are
-   honest empty scaffolds (NO fake arcs) — the editor fills them with real data later.
-   adding data to a layer = a data table whose ties carry that type + a SOURCES entry. */
+/* the lenses an IR student wants — all live now with real connections (verified facts).
+   silah carries SIPRI percentages; the rest carry a note (the real basis) + real news. */
 const LAYERS = [
   { key: "silah", label: "silah", live: true },
-  { key: "ticaret", label: "ticaret", live: false },
-  { key: "enerji", label: "enerji", live: false },
-  { key: "tahil", label: "tahıl & gıda", live: false },
-  { key: "ittifak", label: "ittifaklar", live: false },
-  { key: "yaptirim", label: "yaptırımlar", live: false },
-  { key: "goc", label: "göç & mülteci", live: false },
-  { key: "borc", label: "borç & kredi", live: false },
-  { key: "diplomasi", label: "diplomasi", live: false },
-  { key: "teknoloji", label: "teknoloji & çip", live: false },
-  { key: "us", label: "askeri üsler", live: false },
-  { key: "yardim", label: "dış yardım", live: false },
+  { key: "ticaret", label: "ticaret", live: true },
+  { key: "enerji", label: "enerji", live: true },
+  { key: "tahil", label: "tahıl & gıda", live: true },
+  { key: "ittifak", label: "ittifaklar", live: true },
+  { key: "yaptirim", label: "yaptırımlar", live: true },
+  { key: "goc", label: "göç & mülteci", live: true },
+  { key: "borc", label: "borç & kredi", live: true },
+  { key: "diplomasi", label: "diplomasi", live: true },
+  { key: "teknoloji", label: "teknoloji & çip", live: true },
+  { key: "us", label: "askeri üsler", live: true },
+  { key: "yardim", label: "dış yardım", live: true },
 ];
 function currentLayer() { return LAYERS.find((l) => l.key === layer); }
 
@@ -196,8 +204,9 @@ function runCountUps() {
   });
 }
 
-/* ── editorial writing built from the real numbers (no invented commentary) ── */
+/* ── editorial writing built from the real numbers / the verified basis (no invented commentary) ── */
 function tieStory(t) {
+  if (t.type !== "silah") return t.note ? `<p>${esc(t.note)}</p>` : "";
   const p = [];
   if (t.exp != null) p.push(`${t.s}, silah ihracatının <strong>%${cnt(t.exp)}</strong>'ini ${t.r}'ye gönderiyor.`);
   if (t.imp != null) p.push(`${t.r} açısından bu ilişki, ülkenin silah ithalatının <strong>%${cnt(t.imp)}</strong>'i anlamına geliyor.`);
@@ -206,6 +215,12 @@ function tieStory(t) {
   return p.map((s) => `<p>${s}</p>`).join("");
 }
 function countryStory(c) {
+  if (layer !== "silah") {
+    const p = [];
+    activeTies().filter((t) => t.s === c).slice(0, 3).forEach((t) => p.push(`→ ${t.r}: ${esc(t.note)}`));
+    activeTies().filter((t) => t.r === c).slice(0, 3).forEach((t) => p.push(`← ${t.s}: ${esc(t.note)}`));
+    return p.map((s) => `<p>${s}</p>`).join("");
+  }
   const p = [];
   const sells = activeTies().filter((t) => t.s === c && t.exp != null).sort((a, b) => b.exp - a.exp);
   const buys = activeTies().filter((t) => t.r === c && t.imp != null).sort((a, b) => b.imp - a.imp);
@@ -216,12 +231,15 @@ function countryStory(c) {
   return p.map((s) => `<p>${s}</p>`).join("");
 }
 
-/* ── articles as data — the cards layer lays them out around the globe ── */
+/* ── articles as data (per layer) — the cards layer lays them out around the globe ── */
+function layerArticles() {
+  return (typeof ARTICLES !== "undefined" && ARTICLES[layer]) || {};
+}
 function tieArticleList(t) {
-  return (typeof ARTICLES !== "undefined" && ARTICLES[t.s + "→" + t.r]) || [];
+  return layerArticles()[t.s + "→" + t.r] || [];
 }
 function countryArticleList(c) {
-  const all = (typeof ARTICLES !== "undefined" && ARTICLES) || {};
+  const all = layerArticles();
   const seen = new Set();
   const out = [];
   Object.keys(all).forEach((k) => {
@@ -233,6 +251,11 @@ function countryArticleList(c) {
 }
 
 /* ── left column: the story ── */
+function srcLine() {
+  return layer === "silah"
+    ? `<p class="src"><em>kaynak: <a href="${src.url}" target="_blank" rel="noopener">SIPRI, 2021–25 ↗</a></em></p>`
+    : `<p class="src"><em>bağlantılar açık kaynaklardan derlendi · haberler: google news</em></p>`;
+}
 const story = document.getElementById("story");
 function renderStory() {
   if (focusTie) {
@@ -241,7 +264,7 @@ function renderStory() {
       <div class="lbl">bu ilişki</div>
       <h2>${t.s} → ${t.r}</h2>
       <div class="writing">${tieStory(t)}</div>
-      <p class="src"><em>kaynak: <a href="${src.url}" target="_blank" rel="noopener">SIPRI, 2021–25 ↗</a></em></p>`;
+      ${srcLine()}`;
     return;
   }
   if (selected) {
@@ -249,21 +272,16 @@ function renderStory() {
       <div class="lbl">ülke</div>
       <h2>${selected}</h2>
       <div class="writing">${countryStory(selected)}</div>
-      <p class="src"><em>kaynak: <a href="${src.url}" target="_blank" rel="noopener">SIPRI, 2021–25 ↗</a></em></p>`;
+      ${srcLine()}`;
     return;
   }
-  if (!currentLayer().live) {
-    story.innerHTML = `
-      <div class="lbl">${currentLayer().label}</div>
-      <div class="writing"><p>Bu katman için veri henüz eklenmedi. Silah katmanı canlı; diğer ilişki türleri gerçek verilerle buraya eklenecek.</p></div>`;
-    return;
-  }
-  story.innerHTML = ""; // live layer, nothing selected: clean sides, the globe carries the page
+  story.innerHTML = ""; // nothing selected: clean sides, the globe carries the page
 }
 
-/* numbers under the story */
+/* numbers under the story (silah only — the other layers have no percentages) */
 const detail = document.getElementById("detail");
 function renderDetail() {
+  if (layer !== "silah") { detail.innerHTML = ""; return; }
   if (focusTie) {
     const t = focusTie;
     detail.innerHTML = `

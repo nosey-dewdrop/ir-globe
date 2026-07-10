@@ -1,29 +1,48 @@
-/* Fetch real, current news per arms relationship from Google News RSS (server-side, no CORS,
-   no key). Writes js/articles.js. Run locally or by the GitHub Action on a schedule.
-   No fabrication: every title/url comes straight from Google News. */
+/* Fetch real, current news per connection for EVERY layer from Google News RSS
+   (server-side, no CORS, no key). Writes js/articles.js as ARTICLES[layer]["s→r"].
+   Run locally or by the GitHub Action. No fabrication: titles/urls come from Google News. */
 
 const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.join(__dirname, "..");
-const dataTxt = fs.readFileSync(path.join(ROOT, "js/data.js"), "utf8");
-const { SUPPLIERS, RECIPIENTS } = new Function(dataTxt + "; return {SUPPLIERS, RECIPIENTS};")();
+const load = (f, keys) => new Function(fs.readFileSync(path.join(ROOT, f), "utf8") + `; return {${keys}};`)();
+const { SUPPLIERS, RECIPIENTS } = load("js/data.js", "SUPPLIERS,RECIPIENTS");
+const { LAYER_TIES } = load("js/layers.js", "LAYER_TIES");
 
-// unique directed ties from the SIPRI tables
-const ties = {};
-SUPPLIERS.forEach((s) => s.to.forEach(([r]) => { ties[s.c + "→" + r] = { s: s.c, r }; }));
-RECIPIENTS.forEach((rc) => rc.from.forEach(([s]) => { ties[s + "→" + rc.c] = { s, r: rc.c }; }));
-const TIES = Object.values(ties);
+// silah connections come from the SIPRI tables; the rest from layers.js
+const silah = {};
+SUPPLIERS.forEach((s) => s.to.forEach(([r]) => { silah[s.c + "→" + r] = { s: s.c, r }; }));
+RECIPIENTS.forEach((rc) => rc.from.forEach(([s]) => { silah[s + "→" + rc.c] = { s, r: rc.c }; }));
 
-const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
+const LAYER_CONNS = { silah: Object.values(silah) };
+Object.entries(LAYER_TIES).forEach(([k, arr]) => { LAYER_CONNS[k] = arr; });
+
+// layer-appropriate search terms so results are on-topic
+const QUERY = {
+  silah: "arms OR weapons OR defense deal",
+  ticaret: "trade",
+  enerji: "oil OR gas OR energy",
+  tahil: "wheat OR grain OR food exports",
+  ittifak: "alliance OR defense treaty OR military",
+  yaptirim: "sanctions",
+  goc: "migration OR refugees",
+  borc: "loan OR debt OR investment",
+  diplomasi: "diplomatic relations OR summit",
+  teknoloji: "semiconductor OR chip OR technology",
+  us: "military base OR troops",
+  yardim: "aid OR development assistance",
+};
+
+const PER = { silah: 8 };            // articles per connection (silah keeps 8, others 5)
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const strip = (s) => s.replace(/<!\[CDATA\[/g, "").replace(/\]\]>/g, "")
   .replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"')
   .replace(/&lt;/g, "<").replace(/&gt;/g, ">").trim();
 
 function parseItems(xml) {
   const items = [];
-  const blocks = xml.split("<item>").slice(1);
-  for (const b of blocks) {
+  for (const b of xml.split("<item>").slice(1)) {
     const body = b.split("</item>")[0];
     const t = body.match(/<title>([\s\S]*?)<\/title>/);
     const l = body.match(/<link>([\s\S]*?)<\/link>/);
@@ -32,14 +51,10 @@ function parseItems(xml) {
     if (!t || !l) continue;
     let title = strip(t[1]);
     let source = src ? strip(src[1]) : "";
-    // Google titles end with " - Source" (sometimes " | Source"); drop the redundant tail
     if (source) {
       for (const sep of [" - ", " | "]) {
         if (title.endsWith(sep + source)) { title = title.slice(0, title.length - (sep + source).length); break; }
       }
-    } else {
-      const dash = title.lastIndexOf(" - ");
-      if (dash > 0) { source = title.slice(dash + 3); title = title.slice(0, dash); }
     }
     let date = "";
     if (d) { const dt = new Date(strip(d[1])); if (!isNaN(dt)) date = dt.toISOString().slice(0, 10); }
@@ -48,32 +63,32 @@ function parseItems(xml) {
   return items;
 }
 
-async function fetchTie(t) {
-  const q = encodeURIComponent(`"${t.s}" "${t.r}" arms OR weapons OR defense`);
+async function fetchConn(s, r, terms, n) {
+  const q = encodeURIComponent(`"${s}" "${r}" ${terms}`);
   const url = `https://news.google.com/rss/search?q=${q}&hl=en-US&gl=US&ceid=US:en`;
   try {
     const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } });
     if (!res.ok) return [];
-    const xml = await res.text();
-    return parseItems(xml).slice(0, 8);
-  } catch (e) {
-    return [];
-  }
+    return parseItems(await res.text()).slice(0, n);
+  } catch (e) { return []; }
 }
 
 (async () => {
   const out = {};
-  let hit = 0;
-  for (let i = 0; i < TIES.length; i++) {
-    const t = TIES[i];
-    const arts = await fetchTie(t);
-    if (arts.length) { out[t.s + "→" + t.r] = arts; hit++; }
-    process.stdout.write(`\r${i + 1}/${TIES.length}  ${hit} ilişkide haber`);
-    await sleep(250);
+  let total = 0, done = 0;
+  const jobs = [];
+  Object.entries(LAYER_CONNS).forEach(([layer, conns]) =>
+    conns.forEach((c) => jobs.push({ layer, s: c.s, r: c.r })));
+  for (const j of jobs) {
+    const arts = await fetchConn(j.s, j.r, QUERY[j.layer], PER[j.layer] || 5);
+    if (arts.length) { (out[j.layer] = out[j.layer] || {})[j.s + "→" + j.r] = arts; total += arts.length; }
+    done++;
+    process.stdout.write(`\r${done}/${jobs.length}  ${total} makale`);
+    await sleep(220);
   }
-  const body = "/* real, current news per arms relationship — Google News RSS, refreshed by the\n" +
+  const body = "/* real, current news per connection, per layer — Google News RSS, refreshed by the\n" +
     "   news GitHub Action. no fabrication: every title/url comes from Google News. */\n" +
     "const ARTICLES = " + JSON.stringify(out, null, 2) + ";\n";
   fs.writeFileSync(path.join(ROOT, "js/articles.js"), body);
-  console.log(`\nyazıldı: ${Object.keys(out).length} ilişki, ${Object.values(out).reduce((a, v) => a + v.length, 0)} makale`);
+  console.log(`\nyazıldı: ${Object.keys(out).length} katman, ${total} makale`);
 })();
