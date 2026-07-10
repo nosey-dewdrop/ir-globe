@@ -140,7 +140,7 @@ globe.arcsData(visibleTies());
 renderLayers();
 globe.controls().autoRotate = false; // the user's hand spins it, not the app
 globe.controls().enableZoom = true; // scroll zooms the globe (resize it)
-globe.pointOfView({ lat: 25, lng: 25, altitude: 1.82 }, 0); // bigger globe
+globe.pointOfView({ lat: 25, lng: 25, altitude: 1.6 }, 0); // bigger globe
 
 /* ── colour rules ── */
 function isActiveCountry(c) {
@@ -356,7 +356,10 @@ function redraw() {
   globe.polygonsData(globe.polygonsData() || []);
   globe.arcsData(visibleTies());
 }
-function renderAll() { renderStory(); renderDetail(); renderCards(); renderList(); runCountUps(); }
+function renderAll() {
+  document.querySelector(".stage").classList.toggle("sel", anySelection());
+  renderStory(); renderDetail(); renderCards(); renderList(); runCountUps();
+}
 
 function sizeGlobe() {
   const el = document.getElementById("globe");

@@ -40,7 +40,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  padding: 20px 32px 8px;
+  padding: 13px 32px 4px;
 }
 h1 { font-size: 31px; font-weight: 400; letter-spacing: -0.01em; }
 .intro { font-size: 12.5px; line-height: 1.55; color: var(--muted); max-width: 360px; text-align: right; }
@@ -51,17 +51,35 @@ h1 { font-size: 31px; font-weight: 400; letter-spacing: -0.01em; }
   display: flex;
   flex-wrap: wrap;
   gap: 8px 22px;
-  padding: 8px 32px 12px;
+  padding: 6px 32px 8px;
   border-top: 1px solid var(--rule);
 }
-.layerbtn { font-size: 14px; color: var(--muted); padding-bottom: 4px; border-bottom: 2px solid transparent; transition: color 0.15s, border-color 0.15s; }
+.layerbtn { font-size: 14px; color: var(--muted); transition: color 0.15s; }
 .layerbtn:hover { color: var(--ink); }
-.layerbtn.on { color: var(--navy); font-weight: 700; border-bottom-color: var(--navy); }
+.layerbtn.on { color: var(--navy); font-weight: 700; }
 .layerbtn.soon { color: var(--faint); }
 
 /* stage: globe dead-centre, articles hug it left + right — ( o ) */
 .stage { flex: 1; position: relative; min-height: 0; }
 #globe { position: absolute; inset: 0; }
+
+/* the explanation lives in the globe area (bottom-centre), fades out on selection */
+#hint {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  max-width: 520px;
+  text-align: center;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--muted);
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.4s;
+}
+#hint b { color: var(--navy); font-weight: 700; }
+.stage.sel #hint { opacity: 0; }
 
 .col {
   position: absolute;
@@ -87,8 +105,8 @@ h1 { font-size: 31px; font-weight: 400; letter-spacing: -0.01em; }
 /* ── liquid headlines: real articles floating along the globe's right curve — no boxes ── */
 #cards {
   position: absolute;
-  top: 84px;      /* clear the header */
-  bottom: 64px;   /* clear the country wall */
+  top: 12px;
+  bottom: 12px;
   right: 20px;
   width: 340px;
   z-index: 2;
@@ -132,9 +150,9 @@ h1 { font-size: 31px; font-weight: 400; letter-spacing: -0.01em; }
 #countries {
   display: flex;
   flex-wrap: wrap;
-  gap: 3px 14px;
+  gap: 2px 14px;
   align-items: baseline;
-  padding: 10px 32px 12px;
+  padding: 7px 32px 8px;
   border-top: 1px solid var(--rule);
 }
 .country { color: var(--muted); transition: color 0.15s; }
