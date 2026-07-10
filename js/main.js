@@ -57,9 +57,9 @@ const globe = Globe()(document.getElementById("globe"))
   .arcStartLat((t) => COORDS[t.s][0]).arcStartLng((t) => COORDS[t.s][1])
   .arcEndLat((t) => COORDS[t.r][0]).arcEndLng((t) => COORDS[t.r][1])
   .arcColor((t) => arcColor(t))
-  .arcStroke((t) => (touches(t) ? 0.55 : 0.18))
-  .arcDashLength(0.5).arcDashGap(0.2).arcDashAnimateTime(2400)
+  .arcStroke((t) => (touches(t) ? 0.7 : 0.32))
   .arcAltitudeAutoScale(0.4)
+  .onArcHover((t) => { document.body.style.cursor = t ? "pointer" : "default"; })
   .onArcClick((t, ev) => showChip(t, ev))
   .onGlobeClick(() => { select(null); hideChip(); });
 
@@ -96,17 +96,16 @@ function refresh() {
 
 globe.arcsData(activeTies());
 renderLayers();
-globe.controls().autoRotate = true;
-globe.controls().autoRotateSpeed = 0.55;
+globe.controls().autoRotate = false; // spinning belongs to the user's hand, not the app
 globe.pointOfView({ lat: 25, lng: 25, altitude: 2.1 }, 0);
 
 function touches(t) { return selected && (t.s === selected || t.r === selected); }
 
 function arcColor(t) {
-  if (!selected) return ["#8a2f2fbb", "#c9502fbb"]; // arms = ember, everyone quiet
+  if (!selected) return ["#8a2f2f88", "#c9502f88"]; // arms = ember, everyone quiet
   if (t.s === selected) return ["#ffd479", "#ff8a5c"]; // selling out of it
   if (t.r === selected) return ["#ff5c5c", "#ffd479"]; // buying into it
-  return ["#8a2f2f22", "#c9502f22"];
+  return ["#8a2f2f14", "#c9502f14"]; // unrelated ties fade way back
 }
 
 function label(c) {
@@ -152,10 +151,7 @@ function select(c) {
   globe.pointsData(globe.pointsData()); // refresh colors
   globe.arcsData(activeTies());
   if (c && COORDS[c]) {
-    globe.controls().autoRotate = false;
     globe.pointOfView({ lat: COORDS[c][0], lng: COORDS[c][1], altitude: 1.7 }, 700);
-  } else {
-    globe.controls().autoRotate = true;
   }
   renderList();
   renderDetail();
