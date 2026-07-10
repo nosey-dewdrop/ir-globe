@@ -90,10 +90,10 @@ const globe = Globe()(document.getElementById("globe"))
   .onArcClick((t) => focusOnTie(t))
   .onGlobeClick(() => reset());
 
-/* ocean = flat white sphere */
+/* ocean = flat light grey sphere (paler than the land so the map still reads) */
 const mat = globe.globeMaterial();
-mat.color.set("#ffffff");
-mat.emissive.set("#ffffff");
+mat.color.set("#e6e9ee");
+mat.emissive.set("#e6e9ee");
 mat.emissiveIntensity = 1;
 mat.shininess = 0;
 
