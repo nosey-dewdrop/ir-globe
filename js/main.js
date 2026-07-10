@@ -59,6 +59,7 @@ const globe = Globe()(document.getElementById("globe"))
   .arcColor((t) => arcColor(t))
   .arcStroke((t) => (touches(t) ? 0.7 : 0.32))
   .arcAltitudeAutoScale(0.4)
+  .arcsTransitionDuration(0)
   .onArcHover((t) => { document.body.style.cursor = t ? "pointer" : "default"; })
   .onArcClick((t, ev) => showChip(t, ev))
   .onGlobeClick(() => { select(null); hideChip(); });
