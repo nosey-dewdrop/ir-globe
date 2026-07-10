@@ -16,8 +16,8 @@
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif; /* editorial serif line */
-  min-height: 100vh;
+  font-family: Helvetica, Arial, sans-serif; /* whole site in Helvetica, matches the country wall */
+  height: 100vh; /* lock to one screen, no page scroll */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -39,20 +39,15 @@ h1 { font-size: 31px; font-weight: 400; letter-spacing: -0.01em; }
 .intro { font-size: 12.5px; line-height: 1.55; color: var(--muted); max-width: 360px; text-align: right; }
 .intro b { color: var(--navy); font-weight: 700; }
 
-/* layer bar: all networks in one row at the top, scroll left–right */
+/* layer bar: networks at the top; wrap to more rows as they grow (30-40 later) */
 #layers {
   display: flex;
-  gap: 22px;
-  overflow-x: auto;
-  white-space: nowrap;
+  flex-wrap: wrap;
+  gap: 8px 22px;
   padding: 8px 32px 12px;
   border-top: 1px solid var(--rule);
-  scrollbar-width: thin;
-  scroll-snap-type: x proximity;
 }
-#layers::-webkit-scrollbar { height: 5px; }
-#layers::-webkit-scrollbar-thumb { background: var(--rule); }
-.layerbtn { flex: 0 0 auto; scroll-snap-align: start; font-size: 16px; color: var(--muted); transition: color 0.15s; }
+.layerbtn { font-size: 16px; color: var(--muted); transition: color 0.15s; }
 .layerbtn:hover { color: var(--ink); }
 .layerbtn.on { color: var(--navy); font-weight: 700; }
 .layerbtn.soon { color: var(--faint); font-style: italic; }

@@ -138,6 +138,7 @@ fetch("data/countries.geojson?v=6")
 globe.arcsData(visibleTies());
 renderLayers();
 globe.controls().autoRotate = false; // the user's hand spins it, not the app
+globe.controls().enableZoom = false; // scroll must not grow the globe
 globe.pointOfView({ lat: 25, lng: 25, altitude: 1.82 }, 0); // bigger globe
 
 /* ── colour rules ── */
