@@ -195,12 +195,27 @@ function countryStory(c) {
   return p.map((s) => `<p>${s}</p>`).join("");
 }
 
+function esc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
 function newsBlock(query, heading) {
   const q = encodeURIComponent(query);
   return `
     <div class="lbl">${heading}</div>
     <a class="news" href="https://news.google.com/search?q=${q}&hl=tr&gl=TR" target="_blank" rel="noopener">google haberler ↗</a>
     <a class="news" href="https://www.google.com/search?q=${q}&tbm=nws" target="_blank" rel="noopener">makaleler ve analizler ↗</a>`;
+}
+
+/* real, verified articles for this tie if we have them; else fall back to a live news search */
+function tieArticles(t) {
+  const list = (typeof ARTICLES !== "undefined" && ARTICLES[t.s + "→" + t.r]) || [];
+  if (!list.length) return newsBlock(`${t.s} ${t.r} silah`, "bu ilişkinin haberleri");
+  return `<div class="lbl">bu ilişkinin haberleri</div>` + list.map((a) =>
+    `<a class="news" href="${esc(a.url)}" target="_blank" rel="noopener">
+      <span class="news-title">${esc(a.title)}</span>
+      <span class="news-meta">${esc(a.source)}${a.date ? " · " + esc(a.date) : ""}</span>
+    </a>`).join("");
 }
 
 /* ── left column: the story + articles ── */
@@ -212,7 +227,7 @@ function renderStory() {
       <div class="lbl">bu ilişki</div>
       <h2>${t.s} → ${t.r}</h2>
       <div class="writing">${tieStory(t)}</div>
-      ${newsBlock(`${t.s} ${t.r} silah`, "bu ilişkinin haberleri")}
+      ${tieArticles(t)}
       <p class="src"><em>kaynak: <a href="${src.url}" target="_blank" rel="noopener">SIPRI, 2021–25 ↗</a></em></p>`;
     return;
   }
