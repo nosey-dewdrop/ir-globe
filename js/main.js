@@ -15,7 +15,21 @@ const supShare = Object.fromEntries(SUPPLIERS.map((x) => [x.c, x.share]));
 const recShare = Object.fromEntries(RECIPIENTS.map((x) => [x.c, x.share]));
 const NAMES = [...new Set(TIES.flatMap((t) => [t.s, t.r]))].sort();
 
+/* layers: one lens at a time — showing every network at once would be soup.
+   adding a layer later = new data table with its own type + SOURCES entry. */
+const LAYERS = ["silah"]; // sırada: ticaret, enerji, tahıl — arkadaşın cevaplarına göre
+let layer = "silah";
 let selected = null;
+
+const layerNav = document.getElementById("layers");
+function renderLayers() {
+  layerNav.innerHTML = LAYERS.map((l) =>
+    `<button class="layerbtn${l === layer ? " on" : ""}" data-l="${l}">${l}</button>`).join("")
+    + `<span class="layers-soon">ticaret · enerji · tahıl yolda</span>`;
+  layerNav.querySelectorAll(".layerbtn").forEach((b) =>
+    b.addEventListener("click", () => { layer = b.dataset.l; hideChip(); refresh(); renderLayers(); }));
+}
+function activeTies() { return TIES.filter((t) => t.type === layer); }
 
 /* one tie, one honest sentence */
 function tieLine(t) {
@@ -57,8 +71,8 @@ function showChip(t, ev) {
   chip.innerHTML = `
     <button class="chip-close" title="kapat">×</button>
     <p class="chip-route"><strong>${t.s}</strong> → <strong>${t.r}</strong> <span class="chip-type">${t.type}</span></p>
-    ${t.exp != null ? `<p>${t.s} silah ihracatının <strong>%${t.exp}</strong>'i ${t.r}'ye gidiyor</p>` : ""}
-    ${t.imp != null ? `<p>${t.r} silah ithalatının <strong>%${t.imp}</strong>'i ${t.s}'den geliyor</p>` : ""}
+    ${t.exp != null ? `<p>${t.s} ${t.type} ihracatının <strong>%${t.exp}</strong>'i ${t.r}'ye gidiyor</p>` : ""}
+    ${t.imp != null ? `<p>${t.r} ${t.type} ithalatının <strong>%${t.imp}</strong>'i ${t.s}'den geliyor</p>` : ""}
     <p class="chip-src">kaynak: <a href="${src.url}" target="_blank" rel="noopener">${src.label} ↗</a></p>`;
   chip.hidden = false;
   const pad = 14;
@@ -73,7 +87,15 @@ function showChip(t, ev) {
 
 function hideChip() { chip.hidden = true; }
 
-globe.arcsData(TIES);
+function refresh() {
+  globe.pointsData(globe.pointsData());
+  globe.arcsData(activeTies());
+  renderList();
+  renderDetail();
+}
+
+globe.arcsData(activeTies());
+renderLayers();
 globe.controls().autoRotate = true;
 globe.controls().autoRotateSpeed = 0.55;
 globe.pointOfView({ lat: 25, lng: 25, altitude: 2.1 }, 0);
@@ -111,8 +133,8 @@ function renderList() {
 
 function renderDetail() {
   if (!selected) { detail.innerHTML = ""; return; }
-  const sells = TIES.filter((t) => t.s === selected);
-  const buys = TIES.filter((t) => t.r === selected);
+  const sells = activeTies().filter((t) => t.s === selected);
+  const buys = activeTies().filter((t) => t.r === selected);
   const share = [];
   if (supShare[selected]) share.push(`küresel ihracatın %${supShare[selected]}'i`);
   if (recShare[selected]) share.push(`küresel ithalatın %${recShare[selected]}'i`);
@@ -128,7 +150,7 @@ function renderDetail() {
 function select(c) {
   selected = c;
   globe.pointsData(globe.pointsData()); // refresh colors
-  globe.arcsData(TIES);
+  globe.arcsData(activeTies());
   if (c && COORDS[c]) {
     globe.controls().autoRotate = false;
     globe.pointOfView({ lat: COORDS[c][0], lng: COORDS[c][1], altitude: 1.7 }, 700);
