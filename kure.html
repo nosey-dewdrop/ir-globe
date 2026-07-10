@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>küre — kim kime ne satıyor?</title>
+<meta name="description" content="Ülkeler arası silah, ticaret, enerji ve daha fazlasının dönen interaktif küresi. Gerçek, kaynaklı veri.">
+<link rel="canonical" href="https://damlahelloworld.github.io/ir-globe/kure.html">
+<link rel="stylesheet" href="css/style.css?v=32">
+</head>
+<body>
+
+<header>
+  <h1><a href="index.html" style="color:inherit">kim kime ne satıyor?</a></h1>
+  <nav id="layers"></nav>
+</header>
+
+<main class="stage">
+  <aside class="col left"><div id="story"></div><div id="detail"></div></aside>
+  <div id="globe"></div>
+  <div id="cards"></div>
+</main>
+
+<nav id="countries"></nav>
+
+<footer>
+  <form id="subscribe" class="subscribe">
+    <span class="sub-label">haftalık bülten:</span>
+    <input type="email" id="sub-email" placeholder="mailini bırak" required>
+    <button>katıl</button>
+    <span id="sub-msg"></span>
+  </form>
+  <span class="foot-src"><a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="uye.html">üyelik</a> · kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · <span class="sig">@damlahelloworld</span></span>
+</footer>
+
+<script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js"></script>
+<script src="admin/config.js"></script>
+<script src="js/subscribe.js?v=31"></script>
+<script src="js/data.js?v=31"></script>
+<script src="js/layers.js?v=31"></script>
+<script src="js/articles.js?v=31"></script>
+<script src="js/main.js?v=31"></script>
+</body>
+</html>

@@ -9,7 +9,11 @@ Gerçek backend Supabase. Bağlamak için:
    window.SUPABASE_URL  = "https://xxxx.supabase.co";
    window.SUPABASE_ANON = "eyJhbGci...";
    ```
-4. **Yönetici ekle:** Authentication → Users → "Add user" → arkadaşının e-postası + bir şifre (email confirm kapalıysa direkt girer). Panele bununla giriş yapar.
+4. **Bera'yı yönetici yap:** Authentication → Users → "Add user" → Bera'nın e-postası + bir şifre (email confirm kapalıysa direkt girer). Sonra SQL Editor'de rolünü admin'e çek:
+   ```sql
+   update public.profiles set role = 'admin' where email = 'bera@example.com';
+   ```
+   Artık SADECE Bera bağlantı/kategori yazabilir; sıradan üyeler yalnızca okur. Üyelik `uye.html`'den herkese açık (kayıt/giriş), üyeler otomatik bülten listesine düşer.
 5. **İlk kategorileri ekle** (opsiyonel, panelden de yapılır): SQL Editor'de mevcut 12 katmanı seed'lemek için:
    ```sql
    insert into layers(key,label,ord) values
