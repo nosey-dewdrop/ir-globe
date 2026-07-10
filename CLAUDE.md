@@ -1,6 +1,6 @@
 # ir-globe (WORKING NAME — real name is Damla's to give)
 
-COMMISSIONED product: Damla's IR-student friend ordered it (damlahelloworld's first client, 2026-07-10). A rotating WebGL globe showing country-to-country networks — v1 is the arms trade; the client's ask also covers grain and other ties, plus a custom weekly newsletter on top. Pricing conversation with the friend is OPEN (Damla's call, rule: never free, even symbolic).
+Product for Damla's IR-student friend (asked for it 2026-07-10). A rotating WebGL globe showing country-to-country networks — v1 is the arms trade; the ask also covers grain and other ties, plus a custom weekly newsletter on top. DECISION (Damla, 2026-07-10): this is a GIFT, not a commission — friend may take it into journalism; the @damlahelloworld signature in the footer travels with it. If other IR people/journalists want their own globes later, the template itself can become the sellable thing.
 
 ## Status (2026-07-10, v1 built, NOT yet shown to client)
 - Static site, no build step: globe.gl (CDN) + vanilla JS/CSS.
