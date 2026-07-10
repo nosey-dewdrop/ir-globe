@@ -323,13 +323,21 @@ function renderCards() {
   cardsEl.classList.add("show");
   layoutCards();
 }
-/* each card pulls toward the globe following the sphere's convex edge = the liquid hug */
+/* place each headline along the globe's right arc so they wrap around the sphere */
 function layoutCards() {
   const cards = [...cardsEl.querySelectorAll(".card")];
   const n = cards.length;
+  if (!n) return;
+  const stage = document.querySelector(".stage");
+  const w = stage.clientWidth, h = stage.clientHeight;
+  const cx = w / 2, cy = h / 2;
+  const R = Math.min(w, h) * 0.44 + 26; // just outside the sphere edge
+  const a0 = -54, a1 = 54;              // degrees, top-right down to bottom-right
   cards.forEach((c, i) => {
-    const t = n > 1 ? i / (n - 1) : 0.5;
-    c.style.setProperty("--curve", (Math.sin(t * Math.PI) * 70).toFixed(1) + "px");
+    const deg = n > 1 ? a0 + (i * (a1 - a0)) / (n - 1) : 0;
+    const rad = (deg * Math.PI) / 180;
+    c.style.left = (cx + R * Math.cos(rad)).toFixed(1) + "px";
+    c.style.top = (cy + R * Math.sin(rad)).toFixed(1) + "px";
   });
 }
 
