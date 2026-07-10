@@ -24,7 +24,7 @@
     const isLogin = mode === "login";
     box.innerHTML = `
       <h1>${isLogin ? "giriş yap" : "üye ol"}</h1>
-      <p class="lede">Üyeler haftalık bülteni ve kayıtlı görünümleri alır.</p>
+      <p class="lede">${isLogin ? "hesabına dön." : "e-postanla bir dakikada — haftalık bülten başlasın."}</p>
       <form id="af">
         <div class="field"><label for="ae">e-posta</label><input type="email" id="ae" required></div>
         <div class="field"><label for="ap">şifre</label><input type="password" id="ap" minlength="6" required></div>
@@ -59,9 +59,9 @@
 
   function renderAccount(user) {
     box.innerHTML = `
-      <h1>hesabın</h1>
+      <h1>hoş geldin</h1>
       <p class="lede">Giriş yaptın: <strong>${esc(user.email)}</strong></p>
-      <div class="notice">✓ Haftalık bülten listesindesin. Küre üstünde bir bağ seçtiğinde artık kayıtlı okuyorsun.</div>
+      <div class="notice">✓ Haftalık bülten listesindesin. Her hafta editör masasının seçtiği bağ sana gelecek.</div>
       <p style="margin-top:18px"><a class="btn ghost" href="kure.html">küreye dön</a>
         <button class="link" id="out" style="margin-left:14px;color:var(--muted);cursor:pointer">çıkış yap</button></p>`;
     // ensure member is on the newsletter list too

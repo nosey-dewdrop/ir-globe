@@ -135,7 +135,7 @@ function head(title, desc, canonical, extraLd) {
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="index,follow">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
-<link rel="stylesheet" href="ROOT/css/site.css?v=1">
+<link rel="stylesheet" href="ROOT/css/site.css?v=2">
 </head>
 <body class="doc">`;
 }
@@ -155,7 +155,7 @@ function foot(depth) {
   const r = "../".repeat(depth);
   return `<footer class="docfoot">
   <p>veri: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" rel="noopener">SIPRI</a> (silah) · diğer katmanlar açık kaynak + google news · uydurma veri yok.</p>
-  <p>bir <span class="sig">damlahelloworld</span> yapımı · kurucu &amp; editör <strong>Bera</strong> · <a href="${r}gizlilik.html">gizlilik</a></p>
+  <p>bağımsız · açık · kaynaklı · bir <span class="sig">damlahelloworld</span> yayını · <a href="${r}gizlilik.html">gizlilik</a></p>
 </footer>`;
 }
 // rewrite the ROOT/ token to the right relative depth
