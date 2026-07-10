@@ -55,6 +55,21 @@ function renderLayers() {
 }
 function activeTies() { return TIES.filter((t) => t.type === layer); }
 
+/* importance ≈ share of GLOBAL exports carried on this arc (supplier's weight × concentration) */
+function impScore(t) {
+  const pct = t.exp != null ? t.exp : (t.imp != null ? t.imp : 5);
+  return (supShare[t.s] || 0.3) * (pct / 100);
+}
+function majorTies() {
+  return activeTies().slice().sort((a, b) => impScore(b) - impScore(a)).slice(0, 38);
+}
+/* declutter: default shows only the big flows; selecting a country/tie reveals its own arcs */
+function visibleTies() {
+  if (focusTie) return [focusTie];
+  if (selected) return activeTies().filter((t) => t.s === selected || t.r === selected);
+  return majorTies();
+}
+
 /* one tie, one honest sentence (hover tooltip) */
 function tieLine(t) {
   const bits = [];
@@ -85,7 +100,7 @@ const globe = Globe()(document.getElementById("globe"))
   .arcsTransitionDuration(0)
   .onArcHover((t) => {
     document.body.style.cursor = t ? "pointer" : "default";
-    if (t !== hovered) { hovered = t; globe.arcsData(activeTies()); }
+    if (t !== hovered) { hovered = t; globe.arcsData(visibleTies()); }
   })
   .onArcClick((t) => focusOnTie(t))
   .onGlobeClick(() => reset());
@@ -104,7 +119,7 @@ fetch("data/countries.geojson?v=6")
   .then((geo) => globe.polygonsData(geo.features.filter((f) => f.properties.ISO_A2 !== "AQ")))
   .catch(() => {});
 
-globe.arcsData(activeTies());
+globe.arcsData(visibleTies());
 renderLayers();
 globe.controls().autoRotate = false; // the user's hand spins it, not the app
 globe.pointOfView({ lat: 25, lng: 25, altitude: 2.1 }, 0);
@@ -265,7 +280,7 @@ function reset() {
 }
 function redraw() {
   globe.polygonsData(globe.polygonsData() || []);
-  globe.arcsData(activeTies());
+  globe.arcsData(visibleTies());
 }
 function renderAll() { renderStory(); renderDetail(); renderList(); }
 
