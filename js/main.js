@@ -114,9 +114,7 @@ const globe = Globe()(document.getElementById("globe"))
   .arcStroke((t) => arcStroke(t))
   .arcAltitudeAutoScale(0.4)
   .arcsTransitionDuration(0)
-  .arcDashLength((t) => (isActiveTie(t) ? 0.35 : 1))   // selected arc draws itself, others solid
-  .arcDashGap((t) => (isActiveTie(t) ? 0.14 : 0))
-  .arcDashAnimateTime((t) => (isActiveTie(t) ? 2000 : 0))
+  .arcDashLength(1).arcDashGap(0).arcDashAnimateTime(0)   // solid lines, never dashed
   .onArcHover((t) => {
     document.body.style.cursor = t ? "pointer" : "default";
     if (t !== hovered) { hovered = t; globe.arcsData(visibleTies()); }
@@ -290,8 +288,8 @@ function renderDetail() {
 /* ── liquid cards: real articles arranged along the globe's curve, they flow on change ── */
 const cardsEl = document.getElementById("cards");
 function currentArticles() {
-  if (focusTie) return tieArticleList(focusTie);
-  if (selected) return countryArticleList(selected);
+  if (focusTie) return tieArticleList(focusTie).slice(0, 6);
+  if (selected) return countryArticleList(selected).slice(0, 6);
   return [];
 }
 function renderCards() {
