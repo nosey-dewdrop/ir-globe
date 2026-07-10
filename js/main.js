@@ -320,7 +320,7 @@ const list = document.getElementById("countries");
 function renderList() {
   const ranked = NAMES.slice().sort((a, b) =>
     (supShare[b] || 0) + (recShare[b] || 0) - (supShare[a] || 0) - (recShare[a] || 0));
-  list.innerHTML = `<div class="lbl">ülkeler</div>` + ranked.map((c) =>
+  list.innerHTML = ranked.map((c) =>
     `<button class="country${c === selected ? " on" : ""}" data-c="${c}"
        style="font-size:${12 + Math.min(8, Math.sqrt((supShare[c] || 0) + (recShare[c] || 0)) * 2.2)}px">${c}</button>`
   ).join("");

@@ -34,25 +34,19 @@ a { color: var(--royal); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
 
-/* masthead: title left, small intro top-right */
-.masthead {
+/* title + categories side by side on one top line, no divider lines */
+header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  padding: 13px 32px 4px;
+  align-items: baseline;
+  gap: 26px;
+  padding: 12px 32px 8px;
 }
-h1 { font-size: 31px; font-weight: 400; letter-spacing: -0.01em; }
-.intro { font-size: 12.5px; line-height: 1.55; color: var(--muted); max-width: 360px; text-align: right; }
-.intro b { color: var(--navy); font-weight: 700; }
+h1 { font-size: 22px; font-weight: 400; letter-spacing: -0.01em; white-space: nowrap; }
 
-/* layer bar: networks at the top; wrap to more rows as they grow (30-40 later) */
 #layers {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 22px;
-  padding: 6px 32px 8px;
-  border-top: 1px solid var(--rule);
+  gap: 6px 20px;
 }
 .layerbtn { font-size: 14px; color: var(--muted); transition: color 0.15s; }
 .layerbtn:hover { color: var(--ink); }
@@ -152,18 +146,16 @@ h1 { font-size: 31px; font-weight: 400; letter-spacing: -0.01em; }
   flex-wrap: wrap;
   gap: 2px 14px;
   align-items: baseline;
-  padding: 7px 32px 8px;
-  border-top: 1px solid var(--rule);
+  padding: 6px 32px 8px;
 }
 .country { color: var(--muted); transition: color 0.15s; }
 .country:hover { color: var(--ink); }
 .country.on { color: var(--navy); font-weight: 700; }
 
 footer {
-  padding: 9px 32px 11px;
+  padding: 7px 32px 9px;
   color: var(--muted);
   font-size: 11px;
-  border-top: 1px solid var(--rule);
 }
 .sig { color: var(--royal); }
 
