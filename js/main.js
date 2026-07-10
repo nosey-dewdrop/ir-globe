@@ -93,9 +93,9 @@ const globe = Globe()(document.getElementById("globe"))
 /* ocean = grey sphere with real shading so it reads as a 3D globe, not a flat disc.
    lowering emissiveIntensity lets the directional light fall off toward the edge = depth. */
 const mat = globe.globeMaterial();
-mat.color.set("#d3d8df");
-mat.emissive.set("#d3d8df");
-mat.emissiveIntensity = 0.6;
+mat.color.set("#dce0e6");
+mat.emissive.set("#dce0e6");
+mat.emissiveIntensity = 0.55;
 mat.shininess = 6;
 mat.specular && mat.specular.set("#f2f4f7");
 
@@ -123,23 +123,24 @@ function isActiveTie(t) {
 }
 function anySelection() { return !!(focusTie || selected); }
 
+/* value hierarchy: ocean (lightest) < land (mid) < arcs (darkest) < hover (near-black); navy = accent */
 function polyColor(f) {
   const c = countryOfFeature(f);
   if (isActiveCountry(c)) return "#2b5cad";     // selected country → navy blue land
   if (anySelection()) return "#e2e5ea";         // everything else fades
-  return "#9aa1ac";                             // default grey land
+  return "#a7aeb9";                             // default: mid grey, darker than ocean
 }
 function arcColor(t) {
   if (isActiveTie(t)) return ["#17356b", "#2b5cad"];   // selected arc → navy
-  if (anySelection()) return ["#c9ced61e", "#c9ced61e"]; // others fade
-  if (t === hovered) return ["#4b5563", "#4b5563"];    // hover → dark grey
-  return ["#9aa1ac", "#9aa1ac"];                       // default grey
+  if (anySelection()) return ["#cdd2d924", "#cdd2d924"]; // others fade way back
+  if (t === hovered) return ["#171b22", "#171b22"];    // hover → near black
+  return ["#49515f", "#49515f"];                       // default: dark grey, the darkest resting layer
 }
 function arcStroke(t) {
   if (isActiveTie(t)) return 0.9;
-  if (anySelection()) return 0.08;
-  if (t === hovered) return 0.55;
-  return 0.3;
+  if (anySelection()) return 0.07;
+  if (t === hovered) return 0.6;
+  return 0.28;
 }
 
 /* ── editorial writing built from the real numbers (no invented commentary) ── */
