@@ -39,14 +39,18 @@ function tieLine(t) {
   return `${t.s} → ${t.r} · ${bits.join(" · ")}`;
 }
 
-/* ── globe: light editorial sphere, navy arcs, white paper ── */
+/* ── globe: editorial world map — real country shapes, navy arcs, white paper ── */
 const globe = Globe()(document.getElementById("globe"))
   .backgroundColor("#ffffff")
   .globeImageUrl(null)
-  .showGraticules(true)
+  .showGraticules(false)
   .showAtmosphere(true)
   .atmosphereColor("#a7b8d6")
-  .atmosphereAltitude(0.1)
+  .atmosphereAltitude(0.09)
+  .polygonCapColor(() => "#c4cdda")   // land
+  .polygonSideColor(() => "#00000000")
+  .polygonStrokeColor(() => "#8b97a9") // country borders
+  .polygonAltitude(0.006)
   .pointsData(NAMES.map((c) => ({ c, lat: COORDS[c][0], lng: COORDS[c][1] })))
   .pointLat("lat").pointLng("lng")
   .pointColor((d) => pointColor(d.c))
@@ -65,12 +69,18 @@ const globe = Globe()(document.getElementById("globe"))
   .onArcClick((t) => focusOnTie(t))
   .onGlobeClick(() => { clearFocus(); selectCountry(null); });
 
-/* flat, even light sphere instead of the space-photo earth */
+/* ocean = flat pale blue sphere; land shapes are drawn on top from geojson */
 const mat = globe.globeMaterial();
-mat.color.set("#d3dae5");
-mat.emissive.set("#cdd6e3");
-mat.emissiveIntensity = 0.55;
-mat.shininess = 1;
+mat.color.set("#eef2f7");
+mat.emissive.set("#eef2f7");
+mat.emissiveIntensity = 0.85;
+mat.shininess = 0;
+
+/* real country outlines make it a map, not a blank ball */
+fetch("data/countries.geojson?v=3")
+  .then((r) => r.json())
+  .then((geo) => globe.polygonsData(geo.features.filter((f) => f.properties.ISO_A2 !== "AQ")))
+  .catch(() => {});
 
 globe.arcsData(activeTies());
 renderLayers();
