@@ -90,12 +90,14 @@ const globe = Globe()(document.getElementById("globe"))
   .onArcClick((t) => focusOnTie(t))
   .onGlobeClick(() => reset());
 
-/* ocean = flat light grey sphere (paler than the land so the map still reads) */
+/* ocean = grey sphere with real shading so it reads as a 3D globe, not a flat disc.
+   lowering emissiveIntensity lets the directional light fall off toward the edge = depth. */
 const mat = globe.globeMaterial();
-mat.color.set("#e6e9ee");
-mat.emissive.set("#e6e9ee");
-mat.emissiveIntensity = 1;
-mat.shininess = 0;
+mat.color.set("#d3d8df");
+mat.emissive.set("#d3d8df");
+mat.emissiveIntensity = 0.6;
+mat.shininess = 6;
+mat.specular && mat.specular.set("#f2f4f7");
 
 fetch("data/countries.geojson?v=6")
   .then((r) => r.json())
@@ -238,6 +240,7 @@ function renderList() {
 
 /* ── actions ── */
 function focusOnTie(t) {
+  if (t === focusTie) { reset(); return; } // click the same arc again → deselect
   focusTie = t;
   selected = null;
   redraw();
