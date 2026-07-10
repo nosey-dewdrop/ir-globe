@@ -4,6 +4,14 @@
    No invented data. exp = % of the supplier's total exports going to that
    recipient. imp = % of the recipient's total imports coming from that supplier. */
 
+/* every layer carries its own source; the chip on each tie cites it */
+const SOURCES = {
+  silah: {
+    label: "SIPRI arms transfers database, mart 2026",
+    url: "https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025",
+  },
+};
+
 /* table 1: the 25 largest suppliers, each with its 3 main recipients */
 const SUPPLIERS = [
   { c: "united states", share: 42,  to: [["saudi arabia", 12], ["ukraine", 9.4], ["japan", 8.9]] },

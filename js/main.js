@@ -9,6 +9,7 @@ function tie(s, r) {
 SUPPLIERS.forEach((sup) => sup.to.forEach(([r, pct]) => { tie(sup.c, r).exp = pct; }));
 RECIPIENTS.forEach((rec) => rec.from.forEach(([s, pct]) => { tie(s, rec.c).imp = pct; }));
 const TIES = Object.values(ties).filter((t) => COORDS[t.s] && COORDS[t.r]);
+TIES.forEach((t) => { t.type = "silah"; });
 
 const supShare = Object.fromEntries(SUPPLIERS.map((x) => [x.c, x.share]));
 const recShare = Object.fromEntries(RECIPIENTS.map((x) => [x.c, x.share]));
@@ -45,7 +46,32 @@ const globe = Globe()(document.getElementById("globe"))
   .arcStroke((t) => (touches(t) ? 0.55 : 0.18))
   .arcDashLength(0.5).arcDashGap(0.2).arcDashAnimateTime(2400)
   .arcAltitudeAutoScale(0.4)
-  .onGlobeClick(() => select(null));
+  .onArcClick((t, ev) => showChip(t, ev))
+  .onGlobeClick(() => { select(null); hideChip(); });
+
+/* ── tie chip: click an arc → who links whom, the numbers, the reference ── */
+const chip = document.getElementById("tiechip");
+
+function showChip(t, ev) {
+  const src = SOURCES[t.type];
+  chip.innerHTML = `
+    <button class="chip-close" title="kapat">×</button>
+    <p class="chip-route"><strong>${t.s}</strong> → <strong>${t.r}</strong> <span class="chip-type">${t.type}</span></p>
+    ${t.exp != null ? `<p>${t.s} silah ihracatının <strong>%${t.exp}</strong>'i ${t.r}'ye gidiyor</p>` : ""}
+    ${t.imp != null ? `<p>${t.r} silah ithalatının <strong>%${t.imp}</strong>'i ${t.s}'den geliyor</p>` : ""}
+    <p class="chip-src">kaynak: <a href="${src.url}" target="_blank" rel="noopener">${src.label} ↗</a></p>`;
+  chip.hidden = false;
+  const pad = 14;
+  const w = chip.offsetWidth, h = chip.offsetHeight;
+  let x = ev.clientX + pad, y = ev.clientY - h / 2;
+  if (x + w > innerWidth - pad) x = ev.clientX - w - pad;
+  y = Math.max(pad, Math.min(innerHeight - h - pad, y));
+  chip.style.left = x + "px";
+  chip.style.top = y + "px";
+  chip.querySelector(".chip-close").addEventListener("click", hideChip);
+}
+
+function hideChip() { chip.hidden = true; }
 
 globe.arcsData(TIES);
 globe.controls().autoRotate = true;
