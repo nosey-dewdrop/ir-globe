@@ -38,8 +38,25 @@ function countryOfFeature(f) {
   return null;
 }
 
-/* layers: one lens at a time. new layer = new data table with its own type + SOURCES entry. */
-const LAYERS = ["silah"];
+/* the lenses an IR student wants. only 'silah' has real data today; the rest are
+   honest empty scaffolds (NO fake arcs) — the editor fills them with real data later.
+   adding data to a layer = a data table whose ties carry that type + a SOURCES entry. */
+const LAYERS = [
+  { key: "silah", label: "silah", live: true },
+  { key: "ticaret", label: "ticaret", live: false },
+  { key: "enerji", label: "enerji", live: false },
+  { key: "tahil", label: "tahıl & gıda", live: false },
+  { key: "ittifak", label: "ittifaklar", live: false },
+  { key: "yaptirim", label: "yaptırımlar", live: false },
+  { key: "goc", label: "göç & mülteci", live: false },
+  { key: "borc", label: "borç & kredi", live: false },
+  { key: "diplomasi", label: "diplomasi", live: false },
+  { key: "teknoloji", label: "teknoloji & çip", live: false },
+  { key: "us", label: "askeri üsler", live: false },
+  { key: "yardim", label: "dış yardım", live: false },
+];
+function currentLayer() { return LAYERS.find((l) => l.key === layer); }
+
 let layer = "silah";
 let selected = null;  // a country
 let focusTie = null;  // a single arc
@@ -48,8 +65,7 @@ let hovered = null;   // arc under the cursor
 const layerNav = document.getElementById("layers");
 function renderLayers() {
   layerNav.innerHTML = LAYERS.map((l) =>
-    `<button class="layerbtn${l === layer ? " on" : ""}" data-l="${l}">${l}</button>`).join("")
-    + `<span class="layers-soon">ticaret · enerji · tahıl yolda</span>`;
+    `<button class="layerbtn${l.key === layer ? " on" : ""}${l.live ? "" : " soon"}" data-l="${l.key}">${l.label}</button>`).join("");
   layerNav.querySelectorAll(".layerbtn").forEach((b) =>
     b.addEventListener("click", () => { layer = b.dataset.l; reset(); renderLayers(); }));
 }
@@ -208,13 +224,13 @@ function renderStory() {
       <p class="src"><em>kaynak: <a href="${src.url}" target="_blank" rel="noopener">SIPRI, 2021–25 ↗</a></em></p>`;
     return;
   }
-  story.innerHTML = `
-    <div class="lbl">bu harita</div>
-    <div class="writing">
-      <p>Dünya silah ticaretinin bağ haritası. Her ok, bir ülkeden bir ülkeye giden büyük silah transferlerini gösteriyor.</p>
-      <p>Bir <strong>oka</strong> tıkla: o ilişkinin sayıları, yazısı ve haberleri açılır. Bir <strong>ülkeye</strong> tıkla: kiminle bağlı olduğunu gör.</p>
-    </div>
-    <p class="src"><em>bütün rakamlar: <a href="${src.url}" target="_blank" rel="noopener">SIPRI, 2021–25 ↗</a></em></p>`;
+  if (!currentLayer().live) {
+    story.innerHTML = `
+      <div class="lbl">${currentLayer().label}</div>
+      <div class="writing"><p>Bu katman için veri henüz eklenmedi. Silah katmanı canlı; diğer ilişki türleri gerçek verilerle buraya eklenecek.</p></div>`;
+    return;
+  }
+  story.innerHTML = ""; // live layer, nothing selected: clean sides, the globe carries the page
 }
 
 /* ── right column: the ledger + country wall ── */
