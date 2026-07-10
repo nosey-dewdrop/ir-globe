@@ -114,6 +114,9 @@ const globe = Globe()(document.getElementById("globe"))
   .arcStroke((t) => arcStroke(t))
   .arcAltitudeAutoScale(0.4)
   .arcsTransitionDuration(0)
+  .arcDashLength((t) => (isActiveTie(t) ? 0.35 : 1))   // selected arc draws itself, others solid
+  .arcDashGap((t) => (isActiveTie(t) ? 0.14 : 0))
+  .arcDashAnimateTime((t) => (isActiveTie(t) ? 2000 : 0))
   .onArcHover((t) => {
     document.body.style.cursor = t ? "pointer" : "default";
     if (t !== hovered) { hovered = t; globe.arcsData(visibleTies()); }
@@ -175,11 +178,31 @@ function arcStroke(t) {
   return 0.38;
 }
 
+function esc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+/* count-up: a number that animates from 0 when it appears */
+function cnt(v) { return `<span class="cnt" data-to="${v}">0</span>`; }
+function runCountUps() {
+  document.querySelectorAll(".cnt").forEach((el) => {
+    const to = parseFloat(el.dataset.to);
+    if (isNaN(to)) return;
+    const dec = to % 1 !== 0 ? 1 : 0;
+    const start = performance.now();
+    (function step(now) {
+      const k = Math.min(1, (now - start) / 620);
+      el.textContent = (to * (1 - Math.pow(1 - k, 3))).toFixed(dec);
+      if (k < 1) requestAnimationFrame(step);
+    })(start);
+  });
+}
+
 /* ── editorial writing built from the real numbers (no invented commentary) ── */
 function tieStory(t) {
   const p = [];
-  if (t.exp != null) p.push(`${t.s}, silah ihracatının <strong>%${t.exp}</strong>'ini ${t.r}'ye gönderiyor.`);
-  if (t.imp != null) p.push(`${t.r} açısından bu ilişki, ülkenin silah ithalatının <strong>%${t.imp}</strong>'i anlamına geliyor.`);
+  if (t.exp != null) p.push(`${t.s}, silah ihracatının <strong>%${cnt(t.exp)}</strong>'ini ${t.r}'ye gönderiyor.`);
+  if (t.imp != null) p.push(`${t.r} açısından bu ilişki, ülkenin silah ithalatının <strong>%${cnt(t.imp)}</strong>'i anlamına geliyor.`);
   if (supShare[t.s]) p.push(`${t.s} tek başına dünya silah ihracatının %${supShare[t.s]}'ini yapıyor.`);
   if (recShare[t.r]) p.push(`${t.r} ise küresel silah ithalatının %${recShare[t.r]}'ini alıyor.`);
   return p.map((s) => `<p>${s}</p>`).join("");
@@ -188,54 +211,30 @@ function countryStory(c) {
   const p = [];
   const sells = activeTies().filter((t) => t.s === c && t.exp != null).sort((a, b) => b.exp - a.exp);
   const buys = activeTies().filter((t) => t.r === c && t.imp != null).sort((a, b) => b.imp - a.imp);
-  if (supShare[c]) p.push(`${c}, dünya silah ihracatının <strong>%${supShare[c]}</strong>'ini yapıyor.`);
-  if (recShare[c]) p.push(`${c}, dünya silah ithalatının <strong>%${recShare[c]}</strong>'ini alıyor.`);
+  if (supShare[c]) p.push(`${c}, dünya silah ihracatının <strong>%${cnt(supShare[c])}</strong>'ini yapıyor.`);
+  if (recShare[c]) p.push(`${c}, dünya silah ithalatının <strong>%${cnt(recShare[c])}</strong>'ini alıyor.`);
   if (sells[0]) p.push(`En çok ${sells[0].r}'ye satıyor (ihracatının %${sells[0].exp}'i).`);
   if (buys[0]) p.push(`En çok ${buys[0].s}'den alıyor (ithalatının %${buys[0].imp}'i).`);
   return p.map((s) => `<p>${s}</p>`).join("");
 }
 
-function esc(s) {
-  return String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+/* ── articles as data — the cards layer lays them out around the globe ── */
+function tieArticleList(t) {
+  return (typeof ARTICLES !== "undefined" && ARTICLES[t.s + "→" + t.r]) || [];
 }
-
-function newsBlock(query, heading) {
-  const q = encodeURIComponent(query);
-  return `
-    <div class="lbl">${heading}</div>
-    <a class="news" href="https://news.google.com/search?q=${q}&hl=tr&gl=TR" target="_blank" rel="noopener">google haberler ↗</a>
-    <a class="news" href="https://www.google.com/search?q=${q}&tbm=nws" target="_blank" rel="noopener">makaleler ve analizler ↗</a>`;
-}
-
-function articleRow(a) {
-  return `<a class="news" href="${esc(a.url)}" target="_blank" rel="noopener">
-    <span class="news-title">${esc(a.title)}</span>
-    <span class="news-meta">${esc(a.source)}${a.date ? " · " + esc(a.date) : ""}</span>
-  </a>`;
-}
-
-/* real, verified articles for this tie if we have them; else fall back to a live news search */
-function tieArticles(t) {
-  const list = (typeof ARTICLES !== "undefined" && ARTICLES[t.s + "→" + t.r]) || [];
-  if (!list.length) return newsBlock(`${t.s} ${t.r} silah`, "bu ilişkinin haberleri");
-  return `<div class="lbl">bu ilişkinin haberleri</div>` + list.map(articleRow).join("");
-}
-
-/* all real articles from this country's relationships, deduped */
-function countryArticles(c) {
+function countryArticleList(c) {
   const all = (typeof ARTICLES !== "undefined" && ARTICLES) || {};
   const seen = new Set();
-  const list = [];
+  const out = [];
   Object.keys(all).forEach((k) => {
     if (k.startsWith(c + "→") || k.endsWith("→" + c)) {
-      all[k].forEach((a) => { if (!seen.has(a.url)) { seen.add(a.url); list.push(a); } });
+      all[k].forEach((a) => { if (!seen.has(a.url)) { seen.add(a.url); out.push(a); } });
     }
   });
-  if (!list.length) return newsBlock(`${c} silah ticareti`, "bu ülkenin haberleri");
-  return `<div class="lbl">bu ülkenin haberleri</div>` + list.slice(0, 10).map(articleRow).join("");
+  return out.slice(0, 10);
 }
 
-/* ── left column: the story + articles ── */
+/* ── left column: the story ── */
 const story = document.getElementById("story");
 function renderStory() {
   if (focusTie) {
@@ -244,7 +243,6 @@ function renderStory() {
       <div class="lbl">bu ilişki</div>
       <h2>${t.s} → ${t.r}</h2>
       <div class="writing">${tieStory(t)}</div>
-      ${tieArticles(t)}
       <p class="src"><em>kaynak: <a href="${src.url}" target="_blank" rel="noopener">SIPRI, 2021–25 ↗</a></em></p>`;
     return;
   }
@@ -253,7 +251,6 @@ function renderStory() {
       <div class="lbl">ülke</div>
       <h2>${selected}</h2>
       <div class="writing">${countryStory(selected)}</div>
-      ${countryArticles(selected)}
       <p class="src"><em>kaynak: <a href="${src.url}" target="_blank" rel="noopener">SIPRI, 2021–25 ↗</a></em></p>`;
     return;
   }
@@ -266,17 +263,15 @@ function renderStory() {
   story.innerHTML = ""; // live layer, nothing selected: clean sides, the globe carries the page
 }
 
-/* ── right column: the ledger + country wall ── */
+/* numbers under the story */
 const detail = document.getElementById("detail");
-const list = document.getElementById("countries");
-
 function renderDetail() {
   if (focusTie) {
     const t = focusTie;
     detail.innerHTML = `
       <div class="lbl">rakamlar</div>
-      ${t.exp != null ? `<p class="row"><span>${t.s} → ${t.r}</span><b>%${t.exp}</b></p>` : ""}
-      ${t.imp != null ? `<p class="row"><span>${t.r} ithalatında ${t.s}</span><b>%${t.imp}</b></p>` : ""}`;
+      ${t.exp != null ? `<p class="row"><span>${t.s} → ${t.r}</span><b>%${cnt(t.exp)}</b></p>` : ""}
+      ${t.imp != null ? `<p class="row"><span>${t.r} ithalatında ${t.s}</span><b>%${cnt(t.imp)}</b></p>` : ""}`;
     return;
   }
   if (selected) {
@@ -291,6 +286,38 @@ function renderDetail() {
   }
   detail.innerHTML = "";
 }
+
+/* ── liquid cards: real articles arranged along the globe's curve, they flow on change ── */
+const cardsEl = document.getElementById("cards");
+function currentArticles() {
+  if (focusTie) return tieArticleList(focusTie);
+  if (selected) return countryArticleList(selected);
+  return [];
+}
+function renderCards() {
+  const arts = currentArticles();
+  if (!arts.length) { cardsEl.classList.remove("show"); cardsEl.innerHTML = ""; return; }
+  cardsEl.innerHTML =
+    `<div class="cards-lbl">${focusTie ? "bu ilişkinin haberleri" : "bu ülkenin haberleri"}</div>` +
+    arts.map((a, i) =>
+      `<a class="card" style="--i:${i}" href="${esc(a.url)}" target="_blank" rel="noopener">
+        <span class="card-title">${esc(a.title)}</span>
+        <span class="card-meta">${esc(a.source)}${a.date ? " · " + esc(a.date) : ""}</span>
+      </a>`).join("");
+  cardsEl.classList.add("show");
+  layoutCards();
+}
+/* each card pulls toward the globe following the sphere's convex edge = the liquid hug */
+function layoutCards() {
+  const cards = [...cardsEl.querySelectorAll(".card")];
+  const n = cards.length;
+  cards.forEach((c, i) => {
+    const t = n > 1 ? i / (n - 1) : 0.5;
+    c.style.setProperty("--curve", (Math.sin(t * Math.PI) * 70).toFixed(1) + "px");
+  });
+}
+
+const list = document.getElementById("countries");
 
 function renderList() {
   const ranked = NAMES.slice().sort((a, b) =>
@@ -331,12 +358,13 @@ function redraw() {
   globe.polygonsData(globe.polygonsData() || []);
   globe.arcsData(visibleTies());
 }
-function renderAll() { renderStory(); renderDetail(); renderList(); }
+function renderAll() { renderStory(); renderDetail(); renderCards(); renderList(); runCountUps(); }
 
 function sizeGlobe() {
   const el = document.getElementById("globe");
   globe.width(el.clientWidth);
   globe.height(el.clientHeight);
+  layoutCards();
 }
 renderAll();
 sizeGlobe();
