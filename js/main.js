@@ -39,18 +39,16 @@ function tieLine(t) {
   return `${t.s} → ${t.r} · ${bits.join(" · ")}`;
 }
 
-/* ── globe: editorial world map — real country shapes, navy arcs, white paper ── */
+/* ── globe: editorial b&w world map — dark land, white ocean, navy arcs ── */
 const globe = Globe()(document.getElementById("globe"))
   .backgroundColor("#ffffff")
   .globeImageUrl(null)
   .showGraticules(false)
-  .showAtmosphere(true)
-  .atmosphereColor("#a7b8d6")
-  .atmosphereAltitude(0.09)
-  .polygonCapColor(() => "#c4cdda")   // land
+  .showAtmosphere(false)
+  .polygonCapColor(() => "#1c2029")   // land = near black
   .polygonSideColor(() => "#00000000")
-  .polygonStrokeColor(() => "#8b97a9") // country borders
-  .polygonAltitude(0.006)
+  .polygonStrokeColor(() => "#3a4150") // country borders
+  .polygonAltitude(0.007)
   .pointsData(NAMES.map((c) => ({ c, lat: COORDS[c][0], lng: COORDS[c][1] })))
   .pointLat("lat").pointLng("lng")
   .pointColor((d) => pointColor(d.c))
@@ -69,11 +67,11 @@ const globe = Globe()(document.getElementById("globe"))
   .onArcClick((t) => focusOnTie(t))
   .onGlobeClick(() => { clearFocus(); selectCountry(null); });
 
-/* ocean = flat pale blue sphere; land shapes are drawn on top from geojson */
+/* ocean = flat white sphere so the dark land reads as a b&w map */
 const mat = globe.globeMaterial();
-mat.color.set("#eef2f7");
-mat.emissive.set("#eef2f7");
-mat.emissiveIntensity = 0.85;
+mat.color.set("#ffffff");
+mat.emissive.set("#ffffff");
+mat.emissiveIntensity = 1;
 mat.shininess = 0;
 
 /* real country outlines make it a map, not a blank ball */
@@ -91,23 +89,23 @@ globe.pointOfView({ lat: 25, lng: 25, altitude: 2.1 }, 0);
 function inFocus(c) { return focusTie && (focusTie.s === c || focusTie.r === c); }
 
 function arcColor(t) {
-  if (focusTie) return t === focusTie ? ["#17356b", "#2b5cad"] : ["#17356b06", "#2b5cad06"];
+  if (focusTie) return t === focusTie ? ["#12315f", "#2b5cad"] : ["#12315f08", "#2b5cad08"];
   if (selected) {
-    if (t.s === selected) return ["#17356b", "#2b5cad"];
-    if (t.r === selected) return ["#2b5cad", "#17356b"];
-    return ["#8896ab12", "#8896ab12"];
+    if (t.s === selected) return ["#12315f", "#2b5cad"];
+    if (t.r === selected) return ["#2b5cad", "#12315f"];
+    return ["#12315f10", "#12315f10"];
   }
-  return ["#8896abaa", "#6f7d93aa"];
+  return ["#2b5cadcc", "#3f6fb8cc"];
 }
 function arcStroke(t) {
-  if (focusTie) return t === focusTie ? 0.9 : 0.05;
-  if (selected) return (t.s === selected || t.r === selected) ? 0.7 : 0.12;
-  return 0.28;
+  if (focusTie) return t === focusTie ? 0.95 : 0.05;
+  if (selected) return (t.s === selected || t.r === selected) ? 0.75 : 0.1;
+  return 0.3;
 }
 function pointColor(c) {
-  if (focusTie) return inFocus(c) ? "#17356b" : "#c4cad3";
-  if (c === selected) return "#17356b";
-  return "#4a5464";
+  if (focusTie) return inFocus(c) ? "#0f2a55" : "#b9c0cc";
+  if (c === selected) return "#0f2a55";
+  return "#2b5cad";
 }
 function pointRadius(c) {
   const big = supShare[c] ? 0.32 + Math.sqrt(supShare[c]) * 0.11 : 0.28;
