@@ -4,7 +4,8 @@ Product for Damla's IR-student friend (asked for it 2026-07-10). A rotating WebG
 
 ## Status (2026-07-10, DELIVERY-READY — gift to friend)
 Full product: 12 layers all LIVE with real directed connections (silah=SIPRI %; ticaret/enerji/tahil/ittifak/yaptirim/goc/borc/diplomasi/teknoloji/us/yardim = verified open-source facts in js/layers.js). 2204 real Google-News articles across 347 connections in js/articles.js, auto-refreshed daily by .github/workflows/news.yml (needs repo Actions read+write perm). Editorial look APPROVED by Damla: grey globe (star, big), title+categories one top row, serif headlines + sans body, flowing paragraph story naming the good ("silah"), real headlines arc around the globe's right edge, countries word-wall at very bottom, no divider lines. Naming + category grouping = FRIEND's call (Damla's decision). HANDOFF.md written for the friend. KAYNAKLAR.md = per-layer real dataset recipes for deeper data later.
-Open (friend's): name, category families/grouping when many, optional editor panel, move to own domain.
+MANAGEMENT APP built (2026-07-10, real backend, NO localStorage): `admin/` = Supabase-backed panel — login (Supabase auth) → manage connections + categories + newsletter subscribers (CSV export). `admin/schema.sql` (layers/connections/subscribers + RLS), `admin/config.js` (Damla fills SUPABASE_URL+ANON), `admin/SETUP.md` (5-min provisioning steps). Globe footer has a "bültene katıl" box → Supabase (js/subscribe.js); hidden until config filled. PENDING: Damla creates Supabase project + runs schema + fills config + adds admin user → then panel+subscribe live. NEXT after that: wire the globe to READ connections from Supabase (currently reads static js/layers.js).
+Open (friend's): name, category families/grouping when many, move to own domain. Damla to provision Supabase.
 
 ## Old status (2026-07-10, v1 built)
 - Static site, no build step: globe.gl (CDN) + vanilla JS/CSS.
