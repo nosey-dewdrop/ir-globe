@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>silah ağı — kim kime satıyor</title>
-<link rel="stylesheet" href="css/style.css?v=30">
+<link rel="stylesheet" href="css/style.css?v=31">
 </head>
 <body>
 
@@ -22,15 +22,21 @@
 <nav id="countries"></nav>
 
 <footer>
-  kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI arms transfers database, mart 2026</a>
-  · her ok gerçek veridir, her yüzde rapordan aynen alınmıştır
-  · <span class="sig">@damlahelloworld</span>
+  <form id="subscribe" class="subscribe">
+    <span class="sub-label">haftalık bülten:</span>
+    <input type="email" id="sub-email" placeholder="mailini bırak" required>
+    <button>katıl</button>
+    <span id="sub-msg"></span>
+  </form>
+  <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · <span class="sig">@damlahelloworld</span></span>
 </footer>
 
 <script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js"></script>
-<script src="js/data.js?v=30"></script>
-<script src="js/layers.js?v=30"></script>
-<script src="js/articles.js?v=30"></script>
-<script src="js/main.js?v=30"></script>
+<script src="admin/config.js"></script>
+<script src="js/subscribe.js?v=31"></script>
+<script src="js/data.js?v=31"></script>
+<script src="js/layers.js?v=31"></script>
+<script src="js/articles.js?v=31"></script>
+<script src="js/main.js?v=31"></script>
 </body>
 </html>

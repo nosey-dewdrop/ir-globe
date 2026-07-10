@@ -1,0 +1,40 @@
+/* ir-globe yönetim panosu — editoryal, sade, keskin köşe */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root { --paper:#fff; --ink:#16191f; --muted:#6b7280; --rule:#e4e7ec; --navy:#17356b; --royal:#2b5cad; }
+body { background: var(--paper); color: var(--ink); font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; }
+
+header { display: flex; justify-content: space-between; align-items: baseline; padding: 18px 28px; border-bottom: 1px solid var(--rule); }
+h1 { font-family: Georgia, serif; font-size: 22px; font-weight: 400; }
+#who { color: var(--muted); font-size: 13px; }
+
+main { max-width: 900px; margin: 0 auto; padding: 26px 28px; }
+footer { padding: 14px 28px; color: var(--muted); font-size: 11.5px; border-top: 1px solid var(--rule); }
+.sig { color: var(--royal); }
+
+.card { max-width: 380px; margin: 40px auto; }
+.card h2, .tabs + #panel h2 { font-family: Georgia, serif; font-weight: 400; font-size: 20px; margin-bottom: 12px; }
+.card p { color: var(--muted); }
+.card code { background: #f1f3f6; padding: 1px 5px; }
+
+form input, form select, form button { font: inherit; }
+input, select { border: 1px solid var(--rule); padding: 8px 10px; outline: none; background: var(--paper); color: var(--ink); }
+input:focus, select:focus { border-color: var(--navy); }
+button { cursor: pointer; }
+form button { background: var(--navy); color: #fff; border: none; padding: 8px 18px; }
+form button:hover { background: var(--royal); }
+.link { background: none; border: none; color: var(--royal); text-decoration: underline; text-underline-offset: 2px; padding: 0; font: inherit; }
+.err { color: #b91c1c; font-size: 12.5px; margin-top: 4px; }
+
+#login { display: flex; flex-direction: column; gap: 8px; }
+
+.tabs { display: flex; gap: 20px; border-bottom: 1px solid var(--rule); margin-bottom: 18px; }
+.tabs button { background: none; border: none; padding: 6px 0; color: var(--muted); font: inherit; }
+.tabs button.on { color: var(--navy); font-weight: 700; }
+
+.row-form { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.row-form input { flex: 1; min-width: 120px; }
+
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); padding: 6px 8px; border-bottom: 1px solid var(--rule); }
+td { padding: 6px 8px; border-bottom: 1px solid var(--rule); font-size: 13.5px; }
+.hint { color: var(--muted); font-size: 12px; margin-top: 10px; }
