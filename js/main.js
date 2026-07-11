@@ -148,10 +148,18 @@ globe.arcsData(visibleTies());
 renderLayers();
 globe.controls().autoRotate = true; // spins freely on its own; drag also spins it
 globe.controls().autoRotateSpeed = 0.35; // slow, calm
-globe.controls().enableZoom = false; // single-page: wheel scrolls the page, drag spins the globe
-/* dar ekranda küre kesilmesin: telefonda biraz daha uzaktan çerçevele (arclar yüzeyin üstünde) */
-const FIT_ALT = window.innerWidth < 700 ? 2.75 : 2.2;
-globe.pointOfView({ lat: 20, lng: 20, altitude: FIT_ALT }, 0); // fits fully but a tick bigger
+/* dokunmatik cihazda küre parmakla büyütülebilsin (pinch-zoom); masaüstünde
+   tekerlek sayfayı kaydırdığı için zoom kapalı kalır */
+const isTouch = window.matchMedia("(pointer: coarse)").matches || window.innerWidth < 820;
+globe.controls().enableZoom = isTouch;
+if (isTouch) {
+  globe.controls().minDistance = 140;  // en fazla yakınlaşma (büyük küre)
+  globe.controls().maxDistance = 520;  // en fazla uzaklaşma
+  globe.controls().zoomSpeed = 1.1;
+  globe.controls().enablePan = false;  // sadece döndür + yakınlaştır, kaydırma yok
+}
+/* mobilde küreyi geniş çerçevele — ekran genişliğini doldursun, küçük durmasın */
+globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0);
 
 /* ── colour rules ── */
 function isActiveCountry(c) {
