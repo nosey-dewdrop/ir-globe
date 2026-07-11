@@ -162,22 +162,31 @@ if (isTouch) {
 /* mobilde küreyi geniş çerçevele — ekran genişliğini doldursun, küçük durmasın */
 globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0);
 
-/* dokunmatikte pinch/döndürme jesti seçimi SIFIRLAMASIN: jest sırasında
-   biten dokunuş "boş küreye tıklama" sayılıp seçili bağlantıyı uçuruyordu.
-   İki parmak (pinch) ya da tek parmakla ~10px kayma = jest → tıklama yok say.
-   Seçim yalnızca aynı bağlantıya/ülkeye tekrar dokununca kalkar. */
-(function guardGestureClicks() {
+/* dokunmatik davranışı:
+   1) SADECE pinch (2+ parmak) tıklamayı bastırır — böylece pinch-zoom seçili
+      bağlantıyı uçurmaz. Tek parmak dokunuşuna KARIŞMAZ; drag/tık ayrımını
+      globe.gl kendi yapıyor (önceki "10px kayma" kuralı tek parmak tıklamayı
+      zorlaştırıyordu, kaldırıldı).
+   2) Parmak küreye değince otomatik dönüş DURUR, 3sn hareketsizlikte devam eder
+      — sabit küreye ince oka dokunmak çok daha kolay. */
+(function globeTouchUX() {
   const el = document.getElementById("globe");
   if (!el) return;
-  let sx = 0, sy = 0;
+  let resume = null;
+  const ctrls = () => globe.controls();
   el.addEventListener("touchstart", (e) => {
-    if (e.touches.length > 1) { gesturing = true; }
-    else { gesturing = false; sx = e.touches[0].clientX; sy = e.touches[0].clientY; }
+    gesturing = e.touches.length > 1;           // yalnızca pinch tıklamayı bastırır
+    if (ctrls()) ctrls().autoRotate = false;    // dokunurken küre dursun
+    if (resume) { clearTimeout(resume); resume = null; }
   }, { passive: true });
   el.addEventListener("touchmove", (e) => {
-    if (e.touches.length > 1) { gesturing = true; return; }
-    const dx = e.touches[0].clientX - sx, dy = e.touches[0].clientY - sy;
-    if (dx * dx + dy * dy > 100) gesturing = true;  // >10px hareket = döndürme
+    if (e.touches.length > 1) gesturing = true;
+  }, { passive: true });
+  el.addEventListener("touchend", (e) => {
+    if (e.touches.length === 0) {
+      if (resume) clearTimeout(resume);
+      resume = setTimeout(() => { if (ctrls()) ctrls().autoRotate = true; }, 3000);
+    }
   }, { passive: true });
 })();
 
