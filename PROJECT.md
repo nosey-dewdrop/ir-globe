@@ -145,6 +145,17 @@ reports, Bera revenue split (Damla's call).
   Alerts throttled to the 18:00 UTC news run. Config.js pushed with anon key (public by design);
   site degrades gracefully until schema runs.
 
+- 2026-07-12 (night): PERF + cleanup + security pass (v59, Damla asleep, "ilerlet" order).
+  Perf: masonry layout batched (240 forced reflows → 1), globe init made lazy (idle/intent
+  instead of at load — WebGL + 480 KB geojson no longer fight the hero), wheel hijack got
+  momentum-tail rejection (cooldown + decaying-delta), arc hover refreshes color accessors
+  instead of rebuilding arcsData, majorTies() memoized. Dead code deleted: js/articles.js
+  (1.4 MB) + js/layers.js + js/data.js (legacy trio, loaded by nothing), renderList/NAMES,
+  dead CSS (#countries, .subscribe, .ed-in, .below*, .cwall, dupes). bulten.html footer's
+  dead index.html#subscribe link → uye.html. Security review: RLS schema solid, no tracked
+  secrets, all innerHTML sinks escape; hardened: news pipeline drops non-http(s) URLs,
+  admin CSV export quotes formula-leading cells. Report: reports/2026-07-12-ir-globe-temizlik-guvenlik.md
+
 ## Verification playbook
 
 - After data changes: `node scripts/build-seo.js` must run clean; spot-check a konu/ and ulke/ page.

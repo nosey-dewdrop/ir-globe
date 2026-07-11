@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=58">
+<link rel="stylesheet" href="css/style.css?v=59">
 </head>
 <body class="pages">
 
@@ -66,14 +66,14 @@
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="uye.html">üyelik</a> · <a href="gizlilik.html">gizlilik</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v58</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v59</span></span>
   </footer>
 </section>
 
 <script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js"></script>
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=55"></script>
-<script src="js/main.js?v=58"></script>
+<script src="js/main.js?v=59"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -87,6 +87,7 @@
     pages.forEach(function (p) { io.observe(p); });
   } else { pages.forEach(function (p) { p.classList.add("in"); }); }
   function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+  var cool = 0;
   function go(i) {
     i = Math.max(0, Math.min(pages.length - 1, i));
     if (lock || i === idx) return;
@@ -96,13 +97,22 @@
       if (t0 === null) t0 = ts;
       var p = Math.min((ts - t0) / dur, 1);
       window.scrollTo(0, start + (end - start) * ease(p));
-      if (p < 1) requestAnimationFrame(step); else lock = false;
+      if (p < 1) requestAnimationFrame(step);
+      else { lock = false; cool = performance.now() + 220; }
     }
     requestAnimationFrame(step);
   }
+  /* trackpad momentum kuyruğu ikinci sayfayı da atlatıyordu ("akıcı değil"in
+     büyük kaynağı): sönümlenen delta zinciri gest sayılmaz — yalnızca yükselen
+     delta (yeni kasıtlı kaydırma) ya da araya boşluk girmiş event sayfa atlatır. */
+  var lastMag = 0, lastT = 0;
   window.addEventListener("wheel", function (e) {
     e.preventDefault();
-    if (lock || Math.abs(e.deltaY) < 12) return;
+    var now = performance.now(), mag = Math.abs(e.deltaY);
+    var decaying = now - lastT < 140 && mag <= lastMag * 1.4;
+    lastMag = mag; lastT = now;
+    if (lock || now < cool || mag < 12) return;
+    if (decaying && now < cool + 900) return;
     go(idx + (e.deltaY > 0 ? 1 : -1));
   }, { passive: false });
   window.addEventListener("keydown", function (e) {
@@ -123,32 +133,40 @@
   /* DEĞİŞKEN GENİŞLİKLİ MASONRY: bloklar 1 ya da 2 kolon geniş → sol kenarlar
      hizalanmaz, ızgara kırılır, gerçek mozaik/iç içe görünür. */
   var blocks = [];
+  /* yaz ve oku fazları AYRIK — eskiden her blokta genişlik yazıp yükseklik
+     okumak 240 zorunlu reflow demekti (yarım saniyelik donma); şimdi toplam 1. */
   function layout() {
     var W = wall.clientWidth - PADX * 2;
     var cols = Math.max(2, Math.floor((W + GAP) / (COLW + GAP)));
     var cw = (W - GAP * (cols - 1)) / cols;
     var els = wall.querySelectorAll(".wl");
-    var heights = [], i, k; for (i = 0; i < cols; i++) heights.push(0);
-    blocks = [];
-    for (i = 0; i < els.length; i++) {
+    var i, k, spans = [];
+    for (i = 0; i < els.length; i++) {                     // faz 1: sadece yaz
       var el = els[i];
       var span = (+el.getAttribute("data-span")) || 1;
       if (span > cols) span = 1;
-      el.style.width = (span * cw + (span - 1) * GAP) + "px";
+      spans.push(span);
       el.classList.remove("big"); el.style.transform = "";
+      el.style.width = (span * cw + (span - 1) * GAP) + "px";
+    }
+    var hs = [];
+    for (i = 0; i < els.length; i++) hs.push(els[i].offsetHeight);  // faz 2: sadece oku
+    var heights = []; for (i = 0; i < cols; i++) heights.push(0);
+    blocks = [];
+    for (i = 0; i < els.length; i++) {                     // faz 3: konumları yaz
+      var el2 = els[i], span2 = spans[i];
       // span kadar bitişik kolon içinde en alçak yeri bul
       var best = 0, bestTop = Infinity;
-      for (var c = 0; c + span <= cols; c++) {
-        var top = 0; for (k = 0; k < span; k++) if (heights[c + k] > top) top = heights[c + k];
+      for (var c = 0; c + span2 <= cols; c++) {
+        var top = 0; for (k = 0; k < span2; k++) if (heights[c + k] > top) top = heights[c + k];
         if (top < bestTop - 0.5) { bestTop = top; best = c; }
       }
-      var h = el.offsetHeight;
-      el.style.left = (PADX + best * (cw + GAP)) + "px";
-      el.style.top = (PADY + bestTop) + "px";
-      el.__c0 = best; el.__c1 = best + span; el.__top = bestTop;
-      blocks.push({ el: el, c0: best, c1: best + span, top: bestTop });
-      var nh = bestTop + h + VGAP;
-      for (k = 0; k < span; k++) heights[best + k] = nh;
+      el2.style.left = (PADX + best * (cw + GAP)) + "px";
+      el2.style.top = (PADY + bestTop) + "px";
+      el2.__c0 = best; el2.__c1 = best + span2; el2.__top = bestTop;
+      blocks.push({ el: el2, c0: best, c1: best + span2, top: bestTop });
+      var nh = bestTop + hs[i] + VGAP;
+      for (k = 0; k < span2; k++) heights[best + k] = nh;
     }
   }
   function build(items) {

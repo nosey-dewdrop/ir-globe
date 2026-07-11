@@ -70,7 +70,9 @@ function parseItems(xml) {
     }
     let date = "";
     if (d) { const dt = new Date(strip(d[1])); if (!isNaN(dt)) date = dt.toISOString().slice(0, 10); }
-    items.push({ title, source, url: strip(l[1]), date });
+    const url = strip(l[1]);
+    if (!/^https?:\/\//i.test(url)) continue; // sadece http(s) — javascript:/data: linki siteye asla girmesin
+    items.push({ title, source, url, date });
   }
   return items;
 }
@@ -114,6 +116,7 @@ async function fetchConn(s, r, terms, n) {
       const seenU = new Set(bag.map((a) => a.url));
       const seenT = new Set(bag.map((a) => norm(a.title)));
       arts.forEach((a) => {
+        if (!/^https?:\/\//i.test(a.url || "")) return; // feed linki de http(s) olmak zorunda
         if (seenU.has(a.url) || seenT.has(norm(a.title))) return;
         seenU.add(a.url); seenT.add(norm(a.title));
         bag.push(a); merged++; total++;

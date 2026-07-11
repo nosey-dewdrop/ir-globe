@@ -40,8 +40,24 @@ DOES push overlapping blocks below (variable-width masonry, blocks store __c0/__
    4. Smooth page transitions ("sayfalar ilişik değil" — konu/ülke/akış hard-reload).
    5. "hesap aç"ı hero cümlesine gömülü link (opsiyonel, netleşmedi).
 
-**PERF = TOP PRIORITY (Damla: "aşırı yavaş").** Globe render already paused off-page. Suspects:
-masonry relayout, full-page wheel hijack, globe.gl polygon+arc render while auto-rotating. Profile first.
+**PERF PASS DONE (2026-07-12 night, v59).** Root causes found and fixed:
+1. Masonry layout interleaved style writes with offsetHeight reads → 240 forced reflows
+   (~0.5s freeze at load, again at fonts.ready and every resize). Now 3 batched phases
+   (write widths / read heights / write positions) → 1 reflow total.
+2. Globe (WebGL context + 480 KB geojson triangulation) initialized at load, competing
+   with the hero. Now LAZY: `initGlobe()` runs on requestIdleCallback after load (timeout
+   2s) or on first user intent (wheel/key/touch/pointer), whichever first. All globe uses
+   are null-guarded; behavior identical once built.
+3. Trackpad momentum tail re-triggered page jumps after the 1050 ms scroll animation
+   ("akıcı değil"): wheel handler now has a 220 ms cooldown + decaying-delta detection —
+   only a RISING delta (a new deliberate swipe) or a gapped event turns the page.
+4. Arc hover rebuilt arcsData (filter+sort ~900 ties per mousemove) → now only refreshes
+   arcColor/arcStroke accessors; majorTies() result memoized (tiesRev cache).
+Also deleted dead code: js/articles.js (18k lines) + js/layers.js + js/data.js (legacy,
+loaded by nothing), renderList/NAMES in main.js, dead CSS blocks (#countries, .subscribe,
+.ed-in/.page.ed, .below*, .cwall, .masthead, dupes). Security pass: see
+reports/2026-07-12-ir-globe-temizlik-guvenlik.md — clean overall; hardened news URL
+scheme (http/https only) + admin CSV formula-injection guard.
 
 **WAITING ON DAMLA (manual):** Supabase schema RUN + auth tested OK. Still needs Actions secrets
 (SUPABASE_SERVICE, RESEND_KEY, BRIEFING_FROM) + Resend domain (emails); COMTRADE_KEY (enerji real data);

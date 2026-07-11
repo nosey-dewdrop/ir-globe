@@ -9,12 +9,7 @@ const TIES = [];        // directed ties of the layers loaded so far
 const NEWS = {};        // layer -> { "s→r": [articles] }
 const SRC = {};         // layer -> source meta {name, url, year}
 let supShare = {}, recShare = {};  // silah (SIPRI) global shares
-let NAMES = [];         // countries of the loaded ties (word wall pool)
 const loadedLayers = new Set();
-
-function recomputeNames() {
-  NAMES = [...new Set(TIES.flatMap((t) => [t.s, t.r]))].sort();
-}
 
 async function ensureLayer(k) {
   if (loadedLayers.has(k)) return;
@@ -30,7 +25,7 @@ async function ensureLayer(k) {
         exp: c.exp != null ? c.exp : null, imp: c.imp != null ? c.imp : null });
   });
   NEWS[k] = news || {};
-  recomputeNames();
+  tiesRev++;
   applyOverlay(k); // Bera'nın editoryal bindirmesi (varsa) bu katmana da uygulanır
 }
 
@@ -84,9 +79,16 @@ function impScore(t) {
    globe.gl frame rate dies beyond ~300 arcs, so that is a hard ceiling */
 let showAll = false;
 const CAP_DEFAULT = 50, CAP_ALL = 300;
+/* PERF: 900 bağı her çizimde yeniden sıralamak yerine sonuç önbellenir;
+   TIES her değiştiğinde (ensureLayer / bindirme) tiesRev artar, önbellek düşer */
+let tiesRev = 0, majorCache = null;
 function majorTies() {
-  return activeTies().slice().sort((a, b) => impScore(b) - impScore(a))
+  if (majorCache && majorCache.layer === layer && majorCache.showAll === showAll && majorCache.rev === tiesRev)
+    return majorCache.list;
+  const list = activeTies().slice().sort((a, b) => impScore(b) - impScore(a))
     .slice(0, showAll ? CAP_ALL : CAP_DEFAULT);
+  majorCache = { layer, showAll, rev: tiesRev, list };
+  return list;
 }
 /* declutter: default shows only the big flows; selecting a country/tie reveals its own arcs */
 function visibleTies() {
@@ -104,8 +106,15 @@ function tieLine(t) {
   return `${t.s} → ${t.r}${bits.length ? " · " + bits.join(" · ") : ""}`;
 }
 
-/* ── globe: grey editorial world map, white ocean, navy on select ── */
-const globe = Globe()(document.getElementById("globe"))
+/* ── globe: grey editorial world map, white ocean, navy on select ──
+   PERF: kurulum TEMBEL — WebGL context + 480 KB geojson açılışta hero ile
+   yarışıp siteyi kastırıyordu. Küre artık sayfa yüklenip boşta kalınca ya da
+   ilk kullanıcı niyetinde (tekerlek/tuş/dokunuş) kurulur; davranış aynı. */
+let globe = null;
+
+function initGlobe() {
+  if (globe || typeof Globe === "undefined") return;
+  globe = Globe()(document.getElementById("globe"))
   .backgroundColor("#ffffff")
   .globeImageUrl(null)
   .showGraticules(false)
@@ -127,7 +136,9 @@ const globe = Globe()(document.getElementById("globe"))
   .arcDashLength(1).arcDashGap(0).arcDashAnimateTime(0)   // solid lines, never dashed
   .onArcHover((t) => {
     document.body.style.cursor = t ? "pointer" : "default";
-    if (t !== hovered) { hovered = t; globe.arcsData(visibleTies()); }
+    /* PERF: eskiden her hover'da arcsData yeniden kuruluyordu (900 bağın filtre +
+       diff'i); renk/kalınlık accessor'ını tazelemek aynı görsel sonucu bedavaya verir */
+    if (t !== hovered) { hovered = t; globe.arcColor((x) => arcColor(x)).arcStroke((x) => arcStroke(x)); }
   })
   .onArcClick((t) => { if (gesturing) return; focusOnTie(t); })
   .onGlobeClick(() => { if (gesturing) return; reset(); });
@@ -147,7 +158,6 @@ fetch("data/countries.geojson?v=6")
   .catch(() => {});
 
 globe.arcsData(visibleTies());
-renderLayers();
 globe.controls().autoRotate = true; // spins freely on its own; drag also spins it
 globe.controls().autoRotateSpeed = 0.35; // slow, calm
 
@@ -205,6 +215,36 @@ globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0);
     if (resume) clearTimeout(resume);
     resume = setTimeout(() => { if (ctrls()) ctrls().autoRotate = true; }, 2500);
   });
+})();
+
+  sizeGlobe();
+
+  /* küre görünmüyorken (hero'dayken) render döngüsünü durdur — sürekli 3B çizim
+     tüm sayfayı kastırıyordu; küre sayfasına gelince devam eder */
+  if ("IntersectionObserver" in window) {
+    const glPage = document.querySelector(".page.gl");
+    if (glPage) {
+      new IntersectionObserver((es) => {
+        es.forEach((e) => {
+          if (e.isIntersecting) { globe.resumeAnimation(); globe.controls().autoRotate = true; }
+          else { globe.pauseAnimation(); }
+        });
+      }, { threshold: 0.15 }).observe(glPage);
+    }
+  }
+}
+
+/* kurulum tetikleyicileri: sayfa yüklendikten sonra boşta, ya da ilk kullanıcı
+   niyetinde (hangisi önce gelirse) — initGlobe kendini bir kez kurar */
+(function scheduleGlobeInit() {
+  const kick = () => initGlobe();
+  ["wheel", "keydown", "touchstart", "pointerdown"].forEach((ev) =>
+    window.addEventListener(ev, kick, { once: true, passive: true }));
+  const idle = () => ("requestIdleCallback" in window)
+    ? requestIdleCallback(kick, { timeout: 2000 })
+    : setTimeout(kick, 800);
+  if (document.readyState === "complete") idle();
+  else window.addEventListener("load", idle);
 })();
 
 /* ── colour rules ── */
@@ -428,20 +468,6 @@ function layoutCards() {
   });
 }
 
-const list = document.getElementById("countries");
-
-function renderList() {
-  if (!list) return;                        // ülke listesi kaldırıldı (ülkeye tıkla = ağı çıkar)
-  const ranked = NAMES.slice().sort((a, b) =>
-    (supShare[b] || 0) + (recShare[b] || 0) - (supShare[a] || 0) - (recShare[a] || 0));
-  list.innerHTML = ranked.map((c) =>
-    `<button class="country${c === selected ? " on" : ""}" data-c="${c}"
-       style="font-size:${12 + Math.min(8, Math.sqrt((supShare[c] || 0) + (recShare[c] || 0)) * 2.2)}px">${c}</button>`
-  ).join("");
-  list.querySelectorAll(".country").forEach((b) =>
-    b.addEventListener("click", () => selectCountry(b.dataset.c === selected ? null : b.dataset.c)));
-}
-
 /* ── actions ── */
 function focusOnTie(t) {
   if (t === focusTie) { reset(); return; } // click the same arc again → deselect
@@ -450,14 +476,14 @@ function focusOnTie(t) {
   redraw();
   const midLat = (COORDS[t.s][0] + COORDS[t.r][0]) / 2;
   const midLng = (COORDS[t.s][1] + COORDS[t.r][1]) / 2;
-  globe.pointOfView({ lat: midLat, lng: midLng, altitude: 1.7 }, 800);
+  if (globe) globe.pointOfView({ lat: midLat, lng: midLng, altitude: 1.7 }, 800);
   renderAll();
 }
 function selectCountry(c) {
   focusTie = null;
   selected = c;
   redraw();
-  if (c && COORDS[c]) globe.pointOfView({ lat: COORDS[c][0], lng: COORDS[c][1], altitude: 1.8 }, 700);
+  if (globe && c && COORDS[c]) globe.pointOfView({ lat: COORDS[c][0], lng: COORDS[c][1], altitude: 1.8 }, 700);
   renderAll();
 }
 function reset() {
@@ -467,37 +493,27 @@ function reset() {
   renderAll();
 }
 function redraw() {
-  globe.polygonsData(globe.polygonsData() || []);
+  if (!globe) return; // küre daha kurulmadıysa initGlobe kurulumda kendisi çizer
+  /* PERF: polygonsData'yı yeniden set etmek yerine renk accessor'ını tazele —
+     aynı görsel sonuç, poligon diff maliyeti yok */
+  globe.polygonCapColor((f) => polyColor(f));
   globe.arcsData(visibleTies());
 }
 function renderAll() {
   document.querySelector(".stage").classList.toggle("sel", anySelection());
-  renderStory(); renderDetail(); renderCards(); renderList(); runCountUps();
+  renderStory(); renderDetail(); renderCards(); runCountUps();
 }
 
 function sizeGlobe() {
-  const el = document.getElementById("globe");
-  globe.width(el.clientWidth);
-  globe.height(el.clientHeight);
+  if (globe) {
+    const el = document.getElementById("globe");
+    globe.width(el.clientWidth);
+    globe.height(el.clientHeight);
+  }
   layoutCards();
 }
 renderAll();
-sizeGlobe();
 window.addEventListener("resize", sizeGlobe);
-
-/* PERFORMANS: küre görünmüyorken (ör. hero sayfasındayken) render döngüsünü durdur
-   — sürekli 3B çizim tüm sayfayı kastırıyordu. Küre sayfasına gelince devam eder. */
-if ("IntersectionObserver" in window) {
-  const glPage = document.querySelector(".page.gl");
-  if (glPage) {
-    new IntersectionObserver((es) => {
-      es.forEach((e) => {
-        if (e.isIntersecting) { globe.resumeAnimation(); globe.controls().autoRotate = true; }
-        else { globe.pauseAnimation(); }
-      });
-    }, { threshold: 0.15 }).observe(glPage);
-  }
-}
 
 /* ── Supabase = Bera'nın EDİTORYAL BİNDİRME katmanı (asla değiştirme modu değil) ──
    admin/config.js boşsa hiçbir şey yapmaz; site statik JSON ile aynen çalışır.
@@ -520,7 +536,7 @@ function applyOverlay(k) {
       TIES.push({ s: o.s, r: o.r, type: k, note: o.note || "", v: null, exp: null, imp: null });
     }
   });
-  recomputeNames();
+  tiesRev++;
 }
 
 async function hydrateFromSupabase() {

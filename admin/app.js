@@ -160,7 +160,9 @@ async function renderMembers() {
       <td>${esc(m.email)}</td><td>${esc(m.role)}</td><td>${(m.created_at || "").slice(0, 10)}</td></tr>`).join("")}</tbody></table>
     <p class="hint">${(members || []).length} üye · hesap silme üyenin kendisinden ya da Supabase panosundan</p>`;
   document.getElementById("csv").addEventListener("click", () => {
-    const rows = ["email,rol,tarih", ...(members || []).map((m) => `${m.email},${m.role},${(m.created_at || "").slice(0, 10)}`)];
+    /* excel formül enjeksiyonu koruması: =+-@ ile başlayan hücre tırnaklanır */
+    const cell = (v) => { v = String(v == null ? "" : v).replace(/"/g, '""'); return /^[=+\-@]/.test(v) ? `"'${v}"` : `"${v}"`; };
+    const rows = ["email,rol,tarih", ...(members || []).map((m) => [cell(m.email), cell(m.role), cell((m.created_at || "").slice(0, 10))].join(","))];
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([rows.join("\n")], { type: "text/csv" }));
     a.download = "uyeler.csv";

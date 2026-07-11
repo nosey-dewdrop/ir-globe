@@ -30,19 +30,14 @@ html { scroll-snap-type: y proximity; }
 }
 
 /* sayfa geçme hissi: içerik, o sayfaya snap olunca belirir (fade + yukarı kayma) */
-.ed-in, .jn-in, .gl #layers, .gl .stage, .gl #countries {
+.jn-in, .gl #layers, .gl .stage {
   opacity: 0; transform: translateY(18px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-.page.in .ed-in, .page.in .jn-in,
-.gl.in #layers, .gl.in .stage, .gl.in #countries { opacity: 1; transform: none; }
+.page.in .jn-in,
+.gl.in #layers, .gl.in .stage { opacity: 1; transform: none; }
 .gl .stage { transition-delay: 0.08s; }
-.gl #countries { transition-delay: 0.16s; }
 
-/* SAYFA 1 — editorial: masthead + manşet digesti (üstte), sayaç en altta */
-.page.ed { justify-content: flex-start; }
-.ed-in { flex: 1 1 auto; width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 40px;
-  display: flex; flex-direction: column; justify-content: center; }
 .mast { display: block; padding: 0; }
 .mast h1 { font-size: 34px; white-space: normal; }
 .mast-sub { display: block; font-size: 13px; color: var(--muted); margin-top: 4px; }
@@ -240,18 +235,6 @@ h1 { font-size: 22px; font-weight: 400; letter-spacing: -0.01em; white-space: no
 .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 13.5px; padding: 2px 0; }
 .row b { color: var(--navy); }
 
-/* country wall: kenara yapışmasın, biraz yukarı */
-#countries {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2px 14px;
-  align-items: baseline;
-  padding: 8px 40px 30px;
-}
-.country { color: var(--muted); transition: color 0.15s; }
-.country:hover { color: var(--ink); }
-.country.on { color: var(--navy); font-weight: 700; }
-
 /* künye: en altta, sola yakın ama uçta değil */
 footer {
   padding: 10px 40px 26px;
@@ -264,14 +247,6 @@ footer {
 .foot-nav a:hover { color: var(--navy); text-decoration: none; }
 .sig { color: var(--royal); }
 
-/* newsletter signup in the footer */
-.subscribe { display: inline-flex; align-items: baseline; gap: 8px; margin-bottom: 4px; }
-.sub-label { color: var(--muted); font-size: 11.5px; }
-.subscribe input { border: 1px solid var(--rule); padding: 3px 8px; font: inherit; font-size: 12px; outline: none; width: 160px; }
-.subscribe input:focus { border-color: var(--navy); }
-.subscribe button { border: none; background: var(--navy); color: #fff; padding: 3px 12px; font: inherit; font-size: 12px; cursor: pointer; }
-.subscribe button:hover { background: var(--royal); }
-#sub-msg { color: var(--muted); font-size: 11.5px; }
 .foot-src { display: block; }
 
 /* ── above data: editorial lead / bu haftanın bağı (küre convention: serif başlık+yazı) ── */
@@ -282,33 +257,16 @@ footer {
 .lead-h a:hover { color: var(--navy); text-decoration: none; }
 .lead-body { font-family: var(--serif); font-size: 15px; line-height: 1.55; color: #37414d; max-width: 74ch; }
 
-/* ── below data: bülten, centred ── */
-.below { padding: 26px 32px 10px; text-align: center; max-width: 620px; margin: 0 auto; }
-.below .lbl { text-align: center; }
-.below .btext { max-width: none; margin: 0 auto 14px; }
-.below .subscribe { justify-content: center; }
-.below-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 48px; align-items: start; }
-.lbl { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
 .toc { list-style: none; }
 .toc li a { display: flex; align-items: baseline; gap: 12px; padding: 5px 0; font-size: 16px; color: var(--ink); }
 .toc li a:hover { color: var(--navy); text-decoration: none; }
 .toc .no { font-size: 11px; color: var(--faint); font-variant-numeric: tabular-nums; min-width: 18px; }
-.cwall { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; }
-.cwall a { font-size: 17px; color: var(--ink); }
-.cwall a:hover { color: var(--navy); text-decoration: none; }
-.cwall-all { margin-top: 12px; font-size: 13.5px; }
 .bhead { font-family: var(--serif); font-size: 24px; letter-spacing: -0.01em; margin-bottom: 8px; }
 .btext { font-size: 14px; color: #4b5563; max-width: 62ch; margin-bottom: 14px; line-height: 1.55; }
 .bfine { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
-.foot-nav { display: block; margin-bottom: 5px; }
-.foot-nav a { color: var(--muted); }
-.foot-nav a:hover { color: var(--navy); text-decoration: none; }
 
 @media (max-width: 1040px) {
-  .masthead { flex-direction: column; gap: 10px; }
-  .intro { max-width: none; }
   .stage { min-height: 60vh; height: 66vh; }
-  .below-grid { grid-template-columns: 1fr; gap: 28px; }
   .card { transform: none !important; }
 }
 
@@ -323,9 +281,9 @@ footer {
   .page.ed, .page.jn { min-height: 100vh; }
 
   /* mobilde içerik daima görünür — IntersectionObserver'a bağlı kalma */
-  .ed-in, .jn-in, .gl #layers, .gl .stage, .gl #countries { opacity: 1 !important; transform: none !important; }
+  .jn-in, .gl #layers, .gl .stage { opacity: 1 !important; transform: none !important; }
 
-  .ed-in, .jn-in { padding: 0 20px; }
+  .jn-in { padding: 0 20px; }
   .mast h1 { font-size: 28px; }
   .digest { column-count: 2; column-gap: 24px; margin-top: 18px; }
   .ed-scroll { margin-top: 20px; }
@@ -359,11 +317,8 @@ footer {
   }
   .card-title { font-size: 15px; }
 
-  #countries { padding: 10px 20px 22px; gap: 3px 14px; }
   .stats { gap: 16px 30px; padding: 6px 20px 40px; }
   .statn { font-size: 26px; }
-  .jn-in .subscribe { flex-wrap: wrap; }
-  .subscribe input { width: 100%; max-width: 240px; }
   footer { padding: 10px 20px 26px; }
 }
 
