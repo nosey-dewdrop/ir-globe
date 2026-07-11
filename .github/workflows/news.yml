@@ -32,3 +32,21 @@ jobs:
           else
             echo "no news change"
           fi
+      # supabase free projeyi uyanık tut (7 gün hareketsizlikte duraklıyor)
+      - name: keep supabase awake
+        if: ${{ secrets.SUPABASE_URL != '' }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON: ${{ secrets.SUPABASE_ANON }}
+        run: |
+          curl -s -o /dev/null -w "keep-alive HTTP %{http_code}\n" \
+            "$SUPABASE_URL/rest/v1/layers?select=key&limit=1" \
+            -H "apikey: $SUPABASE_ANON" -H "Authorization: Bearer $SUPABASE_ANON"
+      # gelişme uyarıları (yalnızca 18 UTC koşusunda gerçekten gönderir)
+      - name: send follow alerts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE: ${{ secrets.SUPABASE_SERVICE }}
+          RESEND_KEY: ${{ secrets.RESEND_KEY }}
+          BRIEFING_FROM: ${{ secrets.BRIEFING_FROM }}
+        run: node scripts/send-alerts.js

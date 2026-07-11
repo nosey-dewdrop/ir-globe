@@ -1,0 +1,27 @@
+name: weekly personal briefing
+
+# her pazartesi, haftalık veri tazelemesinden sonra: üyelere takiplerine göre
+# kişisel brifing e-postası (Resend). secrets eksikse script sessizce atlar.
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # monday 06:00 UTC (data refresh 03:00'te bitmiş olur)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: send personal briefings
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE: ${{ secrets.SUPABASE_SERVICE }}
+          RESEND_KEY: ${{ secrets.RESEND_KEY }}
+          BRIEFING_FROM: ${{ secrets.BRIEFING_FROM }}
+        run: node scripts/send-briefing.js

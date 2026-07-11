@@ -69,6 +69,23 @@ create table if not exists email_prefs (
   alerts     boolean not null default true,
   updated_at timestamptz not null default now()
 );
+-- e-postadaki TEK TIK kapatma linki için giriş istemeyen token
+alter table email_prefs add column if not exists unsub_token uuid not null default gen_random_uuid();
+
+-- tek tık kapatma: token eşleşirse ilgili tercihi kapatır (login gerekmez)
+create or replace function public.email_unsubscribe(token uuid, what text)
+returns boolean language plpgsql security definer set search_path = public as $$
+begin
+  if what = 'briefing' then
+    update email_prefs set briefing = false, updated_at = now() where unsub_token = token;
+  elsif what = 'alerts' then
+    update email_prefs set alerts = false, updated_at = now() where unsub_token = token;
+  else
+    return false;
+  end if;
+  return found;
+end; $$;
+grant execute on function public.email_unsubscribe(uuid, text) to anon;
 
 -- ── güvenlik (RLS) ──
 alter table profiles    enable row level security;

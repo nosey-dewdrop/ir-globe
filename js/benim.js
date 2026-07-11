@@ -11,6 +11,19 @@
     return;
   }
 
+  /* e-postadaki tek tık kapatma linki: giriş istemez, token yeter */
+  var q = new URLSearchParams(location.search);
+  if (q.get("unsub")) {
+    var what = q.get("what") === "alerts" ? "alerts" : "briefing";
+    Takip.client().rpc("email_unsubscribe", { token: q.get("unsub"), what: what }).then(function (r) {
+      app.innerHTML = r.data
+        ? '<h1>tamam</h1><div class="notice">' + (what === "alerts" ? "Gelişme uyarıları" : "Haftalık brifing") +
+          ' kapatıldı. Fikrini değiştirirsen <a href="benim.html">akış sayfandan</a> tekrar açabilirsin.</div>'
+        : '<h1>olmadı</h1><div class="notice">Bağlantı geçersiz ya da süresi geçmiş. <a href="benim.html">Akış sayfandan</a> tercihlerini yönetebilirsin.</div>';
+    });
+    return;
+  }
+
   var USER = null, FOLLOWS = [], LAYERS = [], COUNTRIES = {}, NEWSBAGS = {};
   var shownDays = 0, CHUNK_DAYS = 7;
 
