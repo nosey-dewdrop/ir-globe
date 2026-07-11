@@ -34,7 +34,7 @@ const QUERY = {
   yardim: "aid OR development assistance",
 };
 
-const PER = { silah: 8 };            // articles per connection (silah keeps 8, others 5)
+const PER = { silah: 10 };           // articles per connection (silah 10, others 7) — richer flow
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const strip = (s) => s.replace(/<!\[CDATA\[/g, "").replace(/\]\]>/g, "")
   .replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"')
@@ -80,7 +80,7 @@ async function fetchConn(s, r, terms, n) {
   Object.entries(LAYER_CONNS).forEach(([layer, conns]) =>
     conns.forEach((c) => jobs.push({ layer, s: c.s, r: c.r })));
   for (const j of jobs) {
-    const arts = await fetchConn(j.s, j.r, QUERY[j.layer], PER[j.layer] || 5);
+    const arts = await fetchConn(j.s, j.r, QUERY[j.layer], PER[j.layer] || 7);
     if (arts.length) { (out[j.layer] = out[j.layer] || {})[j.s + "→" + j.r] = arts; total += arts.length; }
     done++;
     process.stdout.write(`\r${done}/${jobs.length}  ${total} makale`);
