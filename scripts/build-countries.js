@@ -108,6 +108,43 @@ for (const f of geo.features) {
   };
 }
 
+/* small states missing from the 1:110m Natural Earth geojson (no polygon on the
+   globe, but they appear in real aid/migration/trade data — arcs use coords).
+   Coordinates are plain geographic centroids. */
+const MICRO = {
+  "cabo verde":            { iso3: "CPV", coords: [16.0, -24.0], aliases: ["cape verde"] },
+  "malta":                 { iso3: "MLT", coords: [35.9, 14.4] },
+  "singapore":             { iso3: "SGP", coords: [1.35, 103.8] },
+  "bahrain":               { iso3: "BHR", coords: [26.0, 50.5] },
+  "mauritius":             { iso3: "MUS", coords: [-20.3, 57.6] },
+  "comoros":               { iso3: "COM", coords: [-11.6, 43.3] },
+  "seychelles":            { iso3: "SYC", coords: [-4.7, 55.5] },
+  "sao tome and principe": { iso3: "STP", coords: [0.2, 6.6], aliases: ["são tomé and príncipe"] },
+  "maldives":              { iso3: "MDV", coords: [3.2, 73.2] },
+  "samoa":                 { iso3: "WSM", coords: [-13.6, -172.4] },
+  "tonga":                 { iso3: "TON", coords: [-21.2, -175.2] },
+  "kiribati":              { iso3: "KIR", coords: [1.4, 173.0] },
+  "micronesia":            { iso3: "FSM", coords: [6.9, 158.2], aliases: ["federated states of micronesia", "micronesia (federated states of)"] },
+  "palau":                 { iso3: "PLW", coords: [7.5, 134.6] },
+  "marshall islands":      { iso3: "MHL", coords: [7.1, 171.1] },
+  "tuvalu":                { iso3: "TUV", coords: [-8.5, 179.1] },
+  "nauru":                 { iso3: "NRU", coords: [-0.5, 166.9] },
+  "barbados":              { iso3: "BRB", coords: [13.2, -59.5] },
+  "saint lucia":           { iso3: "LCA", coords: [13.9, -61.0] },
+  "grenada":               { iso3: "GRD", coords: [12.1, -61.7] },
+  "antigua and barbuda":   { iso3: "ATG", coords: [17.1, -61.8] },
+  "dominica":              { iso3: "DMA", coords: [15.4, -61.4] },
+  "saint vincent and the grenadines": { iso3: "VCT", coords: [13.2, -61.2] },
+  "saint kitts and nevis": { iso3: "KNA", coords: [17.3, -62.7] },
+  "monaco":                { iso3: "MCO", coords: [43.7, 7.4] },
+  "liechtenstein":         { iso3: "LIE", coords: [47.15, 9.55] },
+  "andorra":               { iso3: "AND", coords: [42.5, 1.5] },
+  "san marino":            { iso3: "SMR", coords: [43.9, 12.45] },
+};
+for (const [key, m] of Object.entries(MICRO)) {
+  if (!out[key]) out[key] = { key, iso3: m.iso3, coords: m.coords, slug: slug(key), disp: disp(key), aliases: m.aliases || [] };
+}
+
 /* non-state actors present in the data but not in the geojson */
 for (const [key, coords] of Object.entries(HAND_COORDS)) {
   if (!out[key]) out[key] = { key, iso3: null, coords, slug: slug(key), disp: disp(key), aliases: [] };

@@ -15,10 +15,17 @@ const writeJSON = (rel, obj) => {
 };
 
 const INDEX = readJSON("data/layers/index.json");
+/* dataset layers now carry hundreds/thousands of ties — fetching news for all of
+   them would take hours and hit rate limits. Layer files are sorted by value, so
+   the first N connections are the biggest flows; silah stays uncapped (SIPRI is
+   already a curated top set and the layer with the richest news). */
+const NEWS_TOP = 60;
 const LAYER_CONNS = {};
 for (const l of INDEX) {
   const lay = readJSON(`data/layers/${l.key}.json`);
-  LAYER_CONNS[l.key] = (lay.ties || []).map((t) => ({ s: t.s, r: t.r }));
+  const ties = lay.ties || [];
+  LAYER_CONNS[l.key] = (l.key === "silah" ? ties : ties.slice(0, NEWS_TOP))
+    .map((t) => ({ s: t.s, r: t.r }));
 }
 
 // layer-appropriate search terms so results are on-topic

@@ -104,6 +104,8 @@ h1 { font-size: 22px; font-weight: 400; letter-spacing: -0.01em; white-space: no
 .layerbtn:hover { color: var(--ink); }
 .layerbtn.on { color: var(--navy); font-weight: 700; }
 .layerbtn.soon { color: var(--faint); }
+.layerbtn.viewcap { font-size: 13px; color: var(--faint); font-style: italic; }
+.layerbtn.viewcap:hover { color: var(--navy); }
 
 /* stage: globe dead-centre, articles hug it left + right — ( o ) */
 .stage { position: relative; height: 82vh; min-height: 520px; }

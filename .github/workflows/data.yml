@@ -1,0 +1,39 @@
+name: refresh layer data
+
+# weekly pull of the automated layer datasets (UNHCR, OECD, Wikidata embassies, …)
+# → data/layers/*.json + data/meta.json, then regenerate the SEO pages.
+# a single source failing never blocks the others (fetch-data.js is fail-isolated).
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # every monday 03:00 UTC — the site's weekly rhythm
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: fetch layer data
+        env:
+          COMTRADE_KEY: ${{ secrets.COMTRADE_KEY }}
+        run: node scripts/fetch-data.js
+      - name: rebuild seo pages
+        run: node scripts/build-seo.js
+      - name: commit if changed
+        run: |
+          git config user.name "damlahelloworld-bot"
+          git config user.email "noreply@damlahelloworld.com"
+          git add data konu ulke sitemap.xml robots.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "weekly layer data refresh"
+            git pull --rebase
+            git push
+          else
+            echo "no data change"
+          fi

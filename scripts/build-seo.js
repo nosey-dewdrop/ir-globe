@@ -114,7 +114,8 @@ function fix(html, depth) {
 /* ── page: one layer ── */
 function layerPage(layer) {
   const key = layer.key;
-  const ties = TIES.filter((t) => t.type === key);
+  const all = TIES.filter((t) => t.type === key);
+  const ties = all.slice(0, 100); // layer files are value-sorted; page shows the top 100
   const title = `${layer.label} ağı — kim kime ${layer.label.split(" ")[0]} veriyor`;
   const desc = layer.blurb;
   const canonical = `${SITE}/konu/${key}/`;
@@ -149,7 +150,7 @@ function layerPage(layer) {
   <nav class="crumb"><a href="ROOT/index.html">ana sayfa</a> › <a href="ROOT/konu/index.html">konular</a> › ${esc(layer.label)}</nav>
   <h1>${esc(layer.label)}</h1>
   <p class="lede">${esc(desc)}</p>
-  <p class="meta">${ties.length} yönlü bağ · <a href="ROOT/index.html">küre üstünde gör →</a></p>
+  <p class="meta">${all.length} yönlü bağ${all.length > ties.length ? ` · en büyük ${ties.length} tanesi aşağıda` : ""} · <a href="ROOT/index.html">küre üstünde gör →</a></p>
   <section class="edges">
     ${rows || "<p>bu katman için bağ derleniyor.</p>"}
   </section>
@@ -176,13 +177,15 @@ function countryPage(name) {
     list.forEach((t) => { (byLayer[t.type] ||= []).push(t); });
     return Object.entries(byLayer).map(([lk, arr]) => {
       const lab = LAYER_BY_KEY[lk] ? LAYER_BY_KEY[lk].label : lk;
-      const items = arr.map((t) => {
+      const top = arr.slice(0, 10); // per layer per direction — files are value-sorted
+      const items = top.map((t) => {
         const other = dir === "out" ? t.r : t.s;
         const num = t.exp != null ? ` <span class="pct">%${t.exp}</span>` : "";
         const note = t.note ? ` — <span class="note">${esc(t.note)}</span>` : "";
         return `<li><a href="ROOT/ulke/${slug(other)}/">${esc(disp(other))}</a>${num}${note}</li>`;
       }).join("");
-      return `<div class="cgroup"><h3><a href="ROOT/konu/${lk}/">${esc(lab)}</a></h3><ul class="clist">${items}</ul></div>`;
+      const more = arr.length > top.length ? `<li class="note">+ ${arr.length - top.length} bağ daha (küre üstünde)</li>` : "";
+      return `<div class="cgroup"><h3><a href="ROOT/konu/${lk}/">${esc(lab)}</a></h3><ul class="clist">${items}${more}</ul></div>`;
     }).join("");
   }
 

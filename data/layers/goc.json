@@ -2,102 +2,2092 @@
  "key": "goc",
  "label": "göç & mülteci",
  "source": {
-  "name": "açık kaynak derlemesi (doğrulanmış)",
-  "url": "",
-  "year": "2026",
-  "license": ""
+  "name": "UNHCR Refugee Population Statistics Database",
+  "url": "https://www.unhcr.org/refugee-statistics/",
+  "year": "2025",
+  "license": "CC BY 4.0"
  },
  "updated": "2026-07-11",
+ "unit": "kayıtlı mülteci (yıl sonu stok)",
  "ties": [
   {
-   "s": "ukraine",
-   "r": "poland",
-   "note": "Largest wave of Ukrainian refugees after 2022 invasion; Poland the top first-arrival country"
+   "s": "syria",
+   "r": "türkiye",
+   "v": 2347756,
+   "g": 1,
+   "note": "UNHCR 2025 sonu: Syria kökenli 2,3 milyon kayıtlı mülteci Türkiye'de sığınmada."
+  },
+  {
+   "s": "sudan",
+   "r": "chad",
+   "v": 1330950,
+   "g": 2,
+   "note": "UNHCR 2025 sonu: Sudan kökenli 1,3 milyon kayıtlı mülteci Chad'de sığınmada."
+  },
+  {
+   "s": "myanmar",
+   "r": "bangladesh",
+   "v": 1178003,
+   "g": 3,
+   "note": "UNHCR 2025 sonu: Myanmar kökenli 1,2 milyon kayıtlı mülteci Bangladesh'de sığınmada."
   },
   {
    "s": "ukraine",
    "r": "germany",
-   "note": "Germany hosts the largest number of Ukrainian refugees in the EU, over 1.3 million"
+   "v": 1173192,
+   "g": 4,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 1,2 milyon kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "pakistan",
+   "v": 1158538,
+   "g": 5,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 1,2 milyon kayıtlı mülteci Pakistan'de sığınmada."
+  },
+  {
+   "s": "south sudan",
+   "r": "uganda",
+   "v": 1033579,
+   "g": 6,
+   "note": "UNHCR 2025 sonu: South Sudan kökenli 1,0 milyon kayıtlı mülteci Uganda'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "poland",
+   "v": 972287,
+   "g": 7,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 972 bin kayıtlı mülteci Poland'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "iran",
+   "v": 758339,
+   "g": 8,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 758 bin kayıtlı mülteci Iran'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "germany",
+   "v": 668647,
+   "g": 9,
+   "note": "UNHCR 2025 sonu: Syria kökenli 669 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "uganda",
+   "v": 644537,
+   "g": 10,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 645 bin kayıtlı mülteci Uganda'de sığınmada."
+  },
+  {
+   "s": "south sudan",
+   "r": "sudan",
+   "v": 634954,
+   "g": 11,
+   "note": "UNHCR 2025 sonu: South Sudan kökenli 635 bin kayıtlı mülteci Sudan'de sığınmada."
+  },
+  {
+   "s": "sudan",
+   "r": "south sudan",
+   "v": 571066,
+   "g": 12,
+   "note": "UNHCR 2025 sonu: Sudan kökenli 571 bin kayıtlı mülteci South Sudan'de sığınmada."
+  },
+  {
+   "s": "sudan",
+   "r": "libya",
+   "v": 551727,
+   "g": 13,
+   "note": "UNHCR 2025 sonu: Sudan kökenli 552 bin kayıtlı mülteci Libya'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "lebanon",
+   "v": 532357,
+   "g": 14,
+   "note": "UNHCR 2025 sonu: Syria kökenli 532 bin kayıtlı mülteci Lebanon'de sığınmada."
+  },
+  {
+   "s": "south sudan",
+   "r": "ethiopia",
+   "v": 422871,
+   "g": 15,
+   "note": "UNHCR 2025 sonu: South Sudan kökenli 423 bin kayıtlı mülteci Ethiopia'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "jordan",
+   "v": 420835,
+   "g": 16,
+   "note": "UNHCR 2025 sonu: Syria kökenli 421 bin kayıtlı mülteci Jordan'de sığınmada."
   },
   {
    "s": "ukraine",
    "r": "czechia",
-   "note": "Czechia hosts the highest per-capita Ukrainian refugee population in the EU"
+   "v": 392955,
+   "g": 17,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 393 bin kayıtlı mülteci Czechia'de sığınmada."
+  },
+  {
+   "s": "somalia",
+   "r": "kenya",
+   "v": 319471,
+   "g": 18,
+   "note": "UNHCR 2025 sonu: Somalia kökenli 319 bin kayıtlı mülteci Kenya'de sığınmada."
+  },
+  {
+   "s": "somalia",
+   "r": "ethiopia",
+   "v": 317879,
+   "g": 19,
+   "note": "UNHCR 2025 sonu: Somalia kökenli 318 bin kayıtlı mülteci Ethiopia'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "iraq",
+   "v": 308226,
+   "g": 20,
+   "note": "UNHCR 2025 sonu: Syria kökenli 308 bin kayıtlı mülteci Iraq'de sığınmada."
+  },
+  {
+   "s": "mali",
+   "r": "mauritania",
+   "v": 300192,
+   "g": 21,
+   "note": "UNHCR 2025 sonu: Mali kökenli 300 bin kayıtlı mülteci Mauritania'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "germany",
+   "v": 288286,
+   "g": 22,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 288 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "central african republic",
+   "r": "cameroon",
+   "v": 277873,
+   "g": 23,
+   "note": "UNHCR 2025 sonu: Central African Republic kökenli 278 bin kayıtlı mülteci Cameroon'de sığınmada."
   },
   {
    "s": "ukraine",
-   "r": "russia",
-   "note": "Over a million Ukrainians recorded in Russia in refugee-like situation since 2022"
-  },
-  {
-   "s": "kazakhstan",
-   "r": "russia",
-   "note": "Kazakhstan-Russia is a top-ten global migration corridor (~2.6 million)"
-  },
-  {
-   "s": "russia",
-   "r": "kazakhstan",
-   "note": "Large Russian-origin population in Kazakhstan; ~1 million crossed after 2022 mobilization"
-  },
-  {
-   "s": "india",
-   "r": "uae",
-   "note": "India-UAE is the fifth-largest migration corridor; over 3 million Indians in the UAE"
-  },
-  {
-   "s": "india",
-   "r": "saudi arabia",
-   "note": "India-Saudi Arabia a top-15 global corridor; large Indian labor workforce"
-  },
-  {
-   "s": "india",
-   "r": "united states",
-   "note": "India-US among the top global migration corridors"
-  },
-  {
-   "s": "pakistan",
-   "r": "saudi arabia",
-   "note": "~2.64 million Pakistanis in Saudi Arabia, one of its largest expatriate groups"
-  },
-  {
-   "s": "pakistan",
-   "r": "uae",
-   "note": "UAE second-largest destination for Pakistani migrant workers"
-  },
-  {
-   "s": "indonesia",
-   "r": "saudi arabia",
-   "note": "Hundreds of thousands of Indonesian workers, mostly domestic labor, in Saudi Arabia"
-  },
-  {
-   "s": "philippines",
-   "r": "saudi arabia",
-   "note": "Saudi Arabia the largest employer of Overseas Filipino Workers"
-  },
-  {
-   "s": "algeria",
-   "r": "france",
-   "note": "Algerians are the largest single foreign-origin community in France"
-  },
-  {
-   "s": "morocco",
-   "r": "france",
-   "note": "Moroccans are the second-largest foreign-origin community in France, ~1 million"
-  },
-  {
-   "s": "poland",
    "r": "united kingdom",
-   "note": "Over 800,000 Poles moved to the UK after 2004 EU accession, top EU-born group"
+   "v": 270489,
+   "g": 24,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 270 bin kayıtlı mülteci Birleşik Krallık'de sığınmada."
   },
   {
-   "s": "romania",
-   "r": "italy",
-   "note": "Over 1 million Romanians in Italy, the largest immigrant group there"
+   "s": "nigeria",
+   "r": "niger",
+   "v": 258359,
+   "g": 25,
+   "note": "UNHCR 2025 sonu: Nigeria kökenli 258 bin kayıtlı mülteci Niger'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "spain",
+   "v": 251276,
+   "g": 26,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 251 bin kayıtlı mülteci Spain'de sığınmada."
+  },
+  {
+   "s": "south sudan",
+   "r": "kenya",
+   "v": 202772,
+   "g": 27,
+   "note": "UNHCR 2025 sonu: South Sudan kökenli 203 bin kayıtlı mülteci Kenya'de sığınmada."
+  },
+  {
+   "s": "central african republic",
+   "r": "drc",
+   "v": 201324,
+   "g": 28,
+   "note": "UNHCR 2025 sonu: Central African Republic kökenli 201 bin kayıtlı mülteci DR Kongo'de sığınmada."
+  },
+  {
+   "s": "burkina faso",
+   "r": "mali",
+   "v": 200771,
+   "g": 29,
+   "note": "UNHCR 2025 sonu: Burkina Faso kökenli 201 bin kayıtlı mülteci Mali'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "romania",
+   "v": 199461,
+   "g": 30,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 199 bin kayıtlı mülteci Romania'de sığınmada."
+  },
+  {
+   "s": "rwanda",
+   "r": "drc",
+   "v": 198125,
+   "g": 31,
+   "note": "UNHCR 2025 sonu: Rwanda kökenli 198 bin kayıtlı mülteci DR Kongo'de sığınmada."
+  },
+  {
+   "s": "western sahara",
+   "r": "algeria",
+   "v": 173600,
+   "g": 32,
+   "note": "UNHCR 2025 sonu: Western Sahara kökenli 174 bin kayıtlı mülteci Algeria'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "canada",
+   "v": 172945,
+   "g": 33,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 173 bin kayıtlı mülteci Canada'de sığınmada."
+  },
+  {
+   "s": "venezuela",
+   "r": "spain",
+   "v": 169051,
+   "g": 34,
+   "note": "UNHCR 2025 sonu: Venezuela kökenli 169 bin kayıtlı mülteci Spain'de sığınmada."
+  },
+  {
+   "s": "eritrea",
+   "r": "ethiopia",
+   "v": 162126,
+   "g": 35,
+   "note": "UNHCR 2025 sonu: Eritrea kökenli 162 bin kayıtlı mülteci Ethiopia'de sığınmada."
   },
   {
    "s": "venezuela",
    "r": "brazil",
-   "note": "Brazil the top net-flow destination for Venezuelans via Operacao Acolhida, 400,000+"
+   "v": 149501,
+   "g": 36,
+   "note": "UNHCR 2025 sonu: Venezuela kökenli 150 bin kayıtlı mülteci Brazil'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "moldova",
+   "v": 148852,
+   "g": 37,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 149 bin kayıtlı mülteci Moldova'de sığınmada."
+  },
+  {
+   "s": "myanmar",
+   "r": "malaysia",
+   "v": 140238,
+   "g": 38,
+   "note": "UNHCR 2025 sonu: Myanmar kökenli 140 bin kayıtlı mülteci Malaysia'de sığınmada."
+  },
+  {
+   "s": "central african republic",
+   "r": "chad",
+   "v": 140062,
+   "g": 39,
+   "note": "UNHCR 2025 sonu: Central African Republic kökenli 140 bin kayıtlı mülteci Chad'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "slovakia",
+   "v": 138849,
+   "g": 40,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 139 bin kayıtlı mülteci Slovakia'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "netherlands",
+   "v": 131899,
+   "g": 41,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 132 bin kayıtlı mülteci Netherlands'de sığınmada."
+  },
+  {
+   "s": "burundi",
+   "r": "tanzania",
+   "v": 131156,
+   "g": 42,
+   "note": "UNHCR 2025 sonu: Burundi kökenli 131 bin kayıtlı mülteci Tanzania'de sığınmada."
+  },
+  {
+   "s": "iraq",
+   "r": "germany",
+   "v": 128544,
+   "g": 43,
+   "note": "UNHCR 2025 sonu: Iraq kökenli 129 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "nigeria",
+   "r": "cameroon",
+   "v": 127090,
+   "g": 44,
+   "note": "UNHCR 2025 sonu: Nigeria kökenli 127 bin kayıtlı mülteci Cameroon'de sığınmada."
+  },
+  {
+   "s": "mali",
+   "r": "niger",
+   "v": 126060,
+   "g": 45,
+   "note": "UNHCR 2025 sonu: Mali kökenli 126 bin kayıtlı mülteci Niger'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "ireland",
+   "v": 118319,
+   "g": 46,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 118 bin kayıtlı mülteci Ireland'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "egypt",
+   "v": 117364,
+   "g": 47,
+   "note": "UNHCR 2025 sonu: Syria kökenli 117 bin kayıtlı mülteci Egypt'de sığınmada."
+  },
+  {
+   "s": "azerbaijan",
+   "r": "armenia",
+   "v": 115346,
+   "g": 48,
+   "note": "UNHCR 2025 sonu: Azerbaijan kökenli 115 bin kayıtlı mülteci Armenia'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "burundi",
+   "v": 109885,
+   "g": 49,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 110 bin kayıtlı mülteci Burundi'de sığınmada."
+  },
+  {
+   "s": "eritrea",
+   "r": "sudan",
+   "v": 108235,
+   "g": 50,
+   "note": "UNHCR 2025 sonu: Eritrea kökenli 108 bin kayıtlı mülteci Sudan'de sığınmada."
+  },
+  {
+   "s": "cameroon",
+   "r": "nigeria",
+   "v": 107701,
+   "g": 51,
+   "note": "UNHCR 2025 sonu: Cameroon kökenli 108 bin kayıtlı mülteci Nigeria'de sığınmada."
+  },
+  {
+   "s": "haiti",
+   "r": "brazil",
+   "v": 105410,
+   "g": 52,
+   "note": "UNHCR 2025 sonu: Haiti kökenli 105 bin kayıtlı mülteci Brazil'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "france",
+   "v": 104443,
+   "g": 53,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 104 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "austria",
+   "v": 100322,
+   "g": 54,
+   "note": "UNHCR 2025 sonu: Syria kökenli 100 bin kayıtlı mülteci Austria'de sığınmada."
+  },
+  {
+   "s": "sudan",
+   "r": "ethiopia",
+   "v": 98493,
+   "g": 55,
+   "note": "UNHCR 2025 sonu: Sudan kökenli 98,5 bin kayıtlı mülteci Ethiopia'de sığınmada."
+  },
+  {
+   "s": "sudan",
+   "r": "uganda",
+   "v": 92692,
+   "g": 56,
+   "note": "UNHCR 2025 sonu: Sudan kökenli 92,7 bin kayıtlı mülteci Uganda'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "austria",
+   "v": 91865,
+   "g": 57,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 91,9 bin kayıtlı mülteci Austria'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "belgium",
+   "v": 91773,
+   "g": 58,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 91,8 bin kayıtlı mülteci Belgium'de sığınmada."
+  },
+  {
+   "s": "sri lanka",
+   "r": "india",
+   "v": 89507,
+   "g": 59,
+   "note": "UNHCR 2025 sonu: Sri Lanka kökenli 89,5 bin kayıtlı mülteci India'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "norway",
+   "v": 83790,
+   "g": 60,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 83,8 bin kayıtlı mülteci Norway'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "bulgaria",
+   "v": 82455,
+   "g": 61,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 82,5 bin kayıtlı mülteci Bulgaria'de sığınmada."
+  },
+  {
+   "s": "myanmar",
+   "r": "thailand",
+   "v": 80411,
+   "g": 62,
+   "note": "UNHCR 2025 sonu: Myanmar kökenli 80,4 bin kayıtlı mülteci Thailand'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "finland",
+   "v": 77439,
+   "g": 63,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 77,4 bin kayıtlı mülteci Finland'de sığınmada."
+  },
+  {
+   "s": "myanmar",
+   "r": "india",
+   "v": 76784,
+   "g": 64,
+   "note": "UNHCR 2025 sonu: Myanmar kökenli 76,8 bin kayıtlı mülteci India'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "france",
+   "v": 75695,
+   "g": 65,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 75,7 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "netherlands",
+   "v": 74805,
+   "g": 66,
+   "note": "UNHCR 2025 sonu: Syria kökenli 74,8 bin kayıtlı mülteci Netherlands'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "switzerland",
+   "v": 70714,
+   "g": 67,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 70,7 bin kayıtlı mülteci Switzerland'de sığınmada."
+  },
+  {
+   "s": "burkina faso",
+   "r": "ivory coast",
+   "v": 70560,
+   "g": 68,
+   "note": "UNHCR 2025 sonu: Burkina Faso kökenli 70,6 bin kayıtlı mülteci Ivory Coast'de sığınmada."
+  },
+  {
+   "s": "niger",
+   "r": "mali",
+   "v": 68961,
+   "g": 69,
+   "note": "UNHCR 2025 sonu: Niger kökenli 69,0 bin kayıtlı mülteci Mali'de sığınmada."
+  },
+  {
+   "s": "eritrea",
+   "r": "germany",
+   "v": 67698,
+   "g": 70,
+   "note": "UNHCR 2025 sonu: Eritrea kökenli 67,7 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "honduras",
+   "r": "mexico",
+   "v": 66685,
+   "g": 71,
+   "note": "UNHCR 2025 sonu: Honduras kökenli 66,7 bin kayıtlı mülteci Mexico'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "hungary",
+   "v": 64841,
+   "g": 72,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 64,8 bin kayıtlı mülteci Hungary'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "zambia",
+   "v": 64792,
+   "g": 73,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 64,8 bin kayıtlı mülteci Zambia'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "italy",
+   "v": 64721,
+   "g": 74,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 64,7 bin kayıtlı mülteci Italy'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "rwanda",
+   "v": 64192,
+   "g": 75,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 64,2 bin kayıtlı mülteci Rwanda'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "united kingdom",
+   "v": 64160,
+   "g": 76,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 64,2 bin kayıtlı mülteci Birleşik Krallık'de sığınmada."
+  },
+  {
+   "s": "china",
+   "r": "india",
+   "v": 63169,
+   "g": 77,
+   "note": "UNHCR 2025 sonu: China kökenli 63,2 bin kayıtlı mülteci India'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "portugal",
+   "v": 59343,
+   "g": 78,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 59,3 bin kayıtlı mülteci Portugal'de sığınmada."
+  },
+  {
+   "s": "south sudan",
+   "r": "drc",
+   "v": 56404,
+   "g": 79,
+   "note": "UNHCR 2025 sonu: South Sudan kökenli 56,4 bin kayıtlı mülteci DR Kongo'de sığınmada."
+  },
+  {
+   "s": "china",
+   "r": "united states",
+   "v": 56076,
+   "g": 80,
+   "note": "UNHCR 2025 sonu: China kökenli 56,1 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "lithuania",
+   "v": 51321,
+   "g": 81,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 51,3 bin kayıtlı mülteci Lithuania'de sığınmada."
+  },
+  {
+   "s": "burundi",
+   "r": "rwanda",
+   "v": 50746,
+   "g": 82,
+   "note": "UNHCR 2025 sonu: Burundi kökenli 50,7 bin kayıtlı mülteci Rwanda'de sığınmada."
+  },
+  {
+   "s": "türkiye",
+   "r": "germany",
+   "v": 49271,
+   "g": 83,
+   "note": "UNHCR 2025 sonu: Türkiye kökenli 49,3 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "sweden",
+   "v": 49216,
+   "g": 84,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 49,2 bin kayıtlı mülteci Sweden'de sığınmada."
+  },
+  {
+   "s": "somalia",
+   "r": "uganda",
+   "v": 48253,
+   "g": 85,
+   "note": "UNHCR 2025 sonu: Somalia kökenli 48,3 bin kayıtlı mülteci Uganda'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "denmark",
+   "v": 48216,
+   "g": 86,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 48,2 bin kayıtlı mülteci Denmark'de sığınmada."
+  },
+  {
+   "s": "ethiopia",
+   "r": "sudan",
+   "v": 47952,
+   "g": 87,
+   "note": "UNHCR 2025 sonu: Ethiopia kökenli 48,0 bin kayıtlı mülteci Sudan'de sığınmada."
+  },
+  {
+   "s": "burundi",
+   "r": "drc",
+   "v": 46897,
+   "g": 88,
+   "note": "UNHCR 2025 sonu: Burundi kökenli 46,9 bin kayıtlı mülteci DR Kongo'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "france",
+   "v": 46683,
+   "g": 89,
+   "note": "UNHCR 2025 sonu: Syria kökenli 46,7 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "united states",
+   "v": 46611,
+   "g": 90,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 46,6 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "austria",
+   "v": 46505,
+   "g": 91,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 46,5 bin kayıtlı mülteci Austria'de sığınmada."
+  },
+  {
+   "s": "burkina faso",
+   "r": "togo",
+   "v": 45144,
+   "g": 92,
+   "note": "UNHCR 2025 sonu: Burkina Faso kökenli 45,1 bin kayıtlı mülteci Togo'de sığınmada."
+  },
+  {
+   "s": "iran",
+   "r": "germany",
+   "v": 45128,
+   "g": 93,
+   "note": "UNHCR 2025 sonu: Iran kökenli 45,1 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "kenya",
+   "v": 44272,
+   "g": 94,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 44,3 bin kayıtlı mülteci Kenya'de sığınmada."
+  },
+  {
+   "s": "burundi",
+   "r": "uganda",
+   "v": 43677,
+   "g": 95,
+   "note": "UNHCR 2025 sonu: Burundi kökenli 43,7 bin kayıtlı mülteci Uganda'de sığınmada."
+  },
+  {
+   "s": "iran",
+   "r": "united kingdom",
+   "v": 42857,
+   "g": 96,
+   "note": "UNHCR 2025 sonu: Iran kökenli 42,9 bin kayıtlı mülteci Birleşik Krallık'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "france",
+   "v": 42347,
+   "g": 97,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 42,3 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "somalia",
+   "r": "germany",
+   "v": 41383,
+   "g": 98,
+   "note": "UNHCR 2025 sonu: Somalia kökenli 41,4 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "estonia",
+   "v": 40809,
+   "g": 99,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 40,8 bin kayıtlı mülteci Estonia'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "belarus",
+   "v": 40561,
+   "g": 100,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 40,6 bin kayıtlı mülteci Belarus'de sığınmada."
+  },
+  {
+   "s": "somalia",
+   "r": "yemen",
+   "v": 40335,
+   "g": 101,
+   "note": "UNHCR 2025 sonu: Somalia kökenli 40,3 bin kayıtlı mülteci Yemen'de sığınmada."
+  },
+  {
+   "s": "sudan",
+   "r": "central african republic",
+   "v": 40204,
+   "g": 102,
+   "note": "UNHCR 2025 sonu: Sudan kökenli 40,2 bin kayıtlı mülteci Central African Republic'de sığınmada."
+  },
+  {
+   "s": "mali",
+   "r": "burkina faso",
+   "v": 40103,
+   "g": 103,
+   "note": "UNHCR 2025 sonu: Mali kökenli 40,1 bin kayıtlı mülteci Burkina Faso'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "tanzania",
+   "v": 39689,
+   "g": 104,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 39,7 bin kayıtlı mülteci Tanzania'de sığınmada."
+  },
+  {
+   "s": "eritrea",
+   "r": "switzerland",
+   "v": 38539,
+   "g": 105,
+   "note": "UNHCR 2025 sonu: Eritrea kökenli 38,5 bin kayıtlı mülteci Switzerland'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "greece",
+   "v": 38426,
+   "g": 106,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 38,4 bin kayıtlı mülteci Greece'de sığınmada."
+  },
+  {
+   "s": "eritrea",
+   "r": "uganda",
+   "v": 38347,
+   "g": 107,
+   "note": "UNHCR 2025 sonu: Eritrea kökenli 38,3 bin kayıtlı mülteci Uganda'de sığınmada."
+  },
+  {
+   "s": "sudan",
+   "r": "egypt",
+   "v": 37684,
+   "g": 108,
+   "note": "UNHCR 2025 sonu: Sudan kökenli 37,7 bin kayıtlı mülteci Egypt'de sığınmada."
+  },
+  {
+   "s": "myanmar",
+   "r": "japan",
+   "v": 37561,
+   "g": 109,
+   "note": "UNHCR 2025 sonu: Myanmar kökenli 37,6 bin kayıtlı mülteci Japan'de sığınmada."
+  },
+  {
+   "s": "russia",
+   "r": "france",
+   "v": 36737,
+   "g": 110,
+   "note": "UNHCR 2025 sonu: Russia kökenli 36,7 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "sri lanka",
+   "r": "france",
+   "v": 34976,
+   "g": 111,
+   "note": "UNHCR 2025 sonu: Sri Lanka kökenli 35,0 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "greece",
+   "v": 34527,
+   "g": 112,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 34,5 bin kayıtlı mülteci Greece'de sığınmada."
+  },
+  {
+   "s": "el salvador",
+   "r": "united states",
+   "v": 34365,
+   "g": 113,
+   "note": "UNHCR 2025 sonu: El Salvador kökenli 34,4 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "sudan",
+   "r": "france",
+   "v": 32735,
+   "g": 114,
+   "note": "UNHCR 2025 sonu: Sudan kökenli 32,7 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "guinea",
+   "r": "france",
+   "v": 32075,
+   "g": 115,
+   "note": "UNHCR 2025 sonu: Guinea kökenli 32,1 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "eritrea",
+   "r": "united kingdom",
+   "v": 31172,
+   "g": 116,
+   "note": "UNHCR 2025 sonu: Eritrea kökenli 31,2 bin kayıtlı mülteci Birleşik Krallık'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "latvia",
+   "v": 31003,
+   "g": 117,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 31,0 bin kayıtlı mülteci Latvia'de sığınmada."
+  },
+  {
+   "s": "central african republic",
+   "r": "congo",
+   "v": 30252,
+   "g": 118,
+   "note": "UNHCR 2025 sonu: Central African Republic kökenli 30,3 bin kayıtlı mülteci Congo'de sığınmada."
+  },
+  {
+   "s": "venezuela",
+   "r": "united states",
+   "v": 29834,
+   "g": 119,
+   "note": "UNHCR 2025 sonu: Venezuela kökenli 29,8 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "congo",
+   "v": 29152,
+   "g": 120,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 29,2 bin kayıtlı mülteci Congo'de sığınmada."
+  },
+  {
+   "s": "ethiopia",
+   "r": "kenya",
+   "v": 28874,
+   "g": 121,
+   "note": "UNHCR 2025 sonu: Ethiopia kökenli 28,9 bin kayıtlı mülteci Kenya'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "croatia",
+   "v": 28317,
+   "g": 122,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 28,3 bin kayıtlı mülteci Croatia'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "switzerland",
+   "v": 27918,
+   "g": 123,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 27,9 bin kayıtlı mülteci Switzerland'de sığınmada."
+  },
+  {
+   "s": "guatemala",
+   "r": "united states",
+   "v": 27191,
+   "g": 124,
+   "note": "UNHCR 2025 sonu: Guatemala kökenli 27,2 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "mexico",
+   "r": "canada",
+   "v": 26994,
+   "g": 125,
+   "note": "UNHCR 2025 sonu: Mexico kökenli 27,0 bin kayıtlı mülteci Canada'de sığınmada."
+  },
+  {
+   "s": "south sudan",
+   "r": "egypt",
+   "v": 26954,
+   "g": 126,
+   "note": "UNHCR 2025 sonu: South Sudan kökenli 27,0 bin kayıtlı mülteci Egypt'de sığınmada."
+  },
+  {
+   "s": "haiti",
+   "r": "france",
+   "v": 26443,
+   "g": 127,
+   "note": "UNHCR 2025 sonu: Haiti kökenli 26,4 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "türkiye",
+   "r": "france",
+   "v": 26227,
+   "g": 128,
+   "note": "UNHCR 2025 sonu: Türkiye kökenli 26,2 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "venezuela",
+   "r": "mexico",
+   "v": 26024,
+   "g": 129,
+   "note": "UNHCR 2025 sonu: Venezuela kökenli 26,0 bin kayıtlı mülteci Mexico'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "georgia",
+   "v": 25908,
+   "g": 130,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 25,9 bin kayıtlı mülteci Georgia'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "malawi",
+   "v": 25285,
+   "g": 131,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 25,3 bin kayıtlı mülteci Malawi'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "cyprus",
+   "v": 24986,
+   "g": 132,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 25,0 bin kayıtlı mülteci Cyprus'de sığınmada."
+  },
+  {
+   "s": "eritrea",
+   "r": "egypt",
+   "v": 24782,
+   "g": 133,
+   "note": "UNHCR 2025 sonu: Eritrea kökenli 24,8 bin kayıtlı mülteci Egypt'de sığınmada."
+  },
+  {
+   "s": "mali",
+   "r": "spain",
+   "v": 24253,
+   "g": 134,
+   "note": "UNHCR 2025 sonu: Mali kökenli 24,3 bin kayıtlı mülteci Spain'de sığınmada."
+  },
+  {
+   "s": "sudan",
+   "r": "united kingdom",
+   "v": 23603,
+   "g": 135,
+   "note": "UNHCR 2025 sonu: Sudan kökenli 23,6 bin kayıtlı mülteci Birleşik Krallık'de sığınmada."
+  },
+  {
+   "s": "rwanda",
+   "r": "uganda",
+   "v": 23244,
+   "g": 136,
+   "note": "UNHCR 2025 sonu: Rwanda kökenli 23,2 bin kayıtlı mülteci Uganda'de sığınmada."
+  },
+  {
+   "s": "india",
+   "r": "canada",
+   "v": 23132,
+   "g": 137,
+   "note": "UNHCR 2025 sonu: India kökenli 23,1 bin kayıtlı mülteci Canada'de sığınmada."
+  },
+  {
+   "s": "ivory coast",
+   "r": "france",
+   "v": 22950,
+   "g": 138,
+   "note": "UNHCR 2025 sonu: Ivory Coast kökenli 22,9 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "angola",
+   "v": 22529,
+   "g": 139,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 22,5 bin kayıtlı mülteci Angola'de sığınmada."
+  },
+  {
+   "s": "colombia",
+   "r": "ecuador",
+   "v": 22420,
+   "g": 140,
+   "note": "UNHCR 2025 sonu: Colombia kökenli 22,4 bin kayıtlı mülteci Ecuador'de sığınmada."
+  },
+  {
+   "s": "nigeria",
+   "r": "chad",
+   "v": 22214,
+   "g": 141,
+   "note": "UNHCR 2025 sonu: Nigeria kökenli 22,2 bin kayıtlı mülteci Chad'de sığınmada."
+  },
+  {
+   "s": "haiti",
+   "r": "canada",
+   "v": 22027,
+   "g": 142,
+   "note": "UNHCR 2025 sonu: Haiti kökenli 22,0 bin kayıtlı mülteci Canada'de sığınmada."
+  },
+  {
+   "s": "honduras",
+   "r": "united states",
+   "v": 21903,
+   "g": 143,
+   "note": "UNHCR 2025 sonu: Honduras kökenli 21,9 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "bulgaria",
+   "v": 21295,
+   "g": 144,
+   "note": "UNHCR 2025 sonu: Syria kökenli 21,3 bin kayıtlı mülteci Bulgaria'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "sweden",
+   "v": 20832,
+   "g": 145,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 20,8 bin kayıtlı mülteci Sweden'de sığınmada."
+  },
+  {
+   "s": "pakistan",
+   "r": "afghanistan",
+   "v": 20828,
+   "g": 146,
+   "note": "UNHCR 2025 sonu: Pakistan kökenli 20,8 bin kayıtlı mülteci Afghanistan'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "north macedonia",
+   "v": 20741,
+   "g": 147,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 20,7 bin kayıtlı mülteci North Macedonia'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "sweden",
+   "v": 19695,
+   "g": 148,
+   "note": "UNHCR 2025 sonu: Syria kökenli 19,7 bin kayıtlı mülteci Sweden'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "switzerland",
+   "v": 19632,
+   "g": 149,
+   "note": "UNHCR 2025 sonu: Syria kökenli 19,6 bin kayıtlı mülteci Switzerland'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "greece",
+   "v": 19540,
+   "g": 150,
+   "note": "UNHCR 2025 sonu: Syria kökenli 19,5 bin kayıtlı mülteci Greece'de sığınmada."
+  },
+  {
+   "s": "el salvador",
+   "r": "mexico",
+   "v": 19311,
+   "g": 151,
+   "note": "UNHCR 2025 sonu: El Salvador kökenli 19,3 bin kayıtlı mülteci Mexico'de sığınmada."
+  },
+  {
+   "s": "serbia",
+   "r": "france",
+   "v": 18522,
+   "g": 152,
+   "note": "UNHCR 2025 sonu: Serbia kökenli 18,5 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "nicaragua",
+   "r": "costa rica",
+   "v": 18473,
+   "g": 153,
+   "note": "UNHCR 2025 sonu: Nicaragua kökenli 18,5 bin kayıtlı mülteci Costa Rica'de sığınmada."
+  },
+  {
+   "s": "russia",
+   "r": "germany",
+   "v": 18198,
+   "g": 154,
+   "note": "UNHCR 2025 sonu: Russia kökenli 18,2 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "nigeria",
+   "r": "italy",
+   "v": 18068,
+   "g": 155,
+   "note": "UNHCR 2025 sonu: Nigeria kökenli 18,1 bin kayıtlı mülteci Italy'de sığınmada."
+  },
+  {
+   "s": "somalia",
+   "r": "south africa",
+   "v": 17931,
+   "g": 156,
+   "note": "UNHCR 2025 sonu: Somalia kökenli 17,9 bin kayıtlı mülteci South Africa'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "united kingdom",
+   "v": 17592,
+   "g": 157,
+   "note": "UNHCR 2025 sonu: Syria kökenli 17,6 bin kayıtlı mülteci Birleşik Krallık'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "spain",
+   "v": 17233,
+   "g": 158,
+   "note": "UNHCR 2025 sonu: Syria kökenli 17,2 bin kayıtlı mülteci Spain'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "south africa",
+   "v": 17054,
+   "g": 159,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 17,1 bin kayıtlı mülteci South Africa'de sığınmada."
+  },
+  {
+   "s": "somalia",
+   "r": "france",
+   "v": 17014,
+   "g": 160,
+   "note": "UNHCR 2025 sonu: Somalia kökenli 17,0 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "belgium",
+   "v": 16949,
+   "g": 161,
+   "note": "UNHCR 2025 sonu: Syria kökenli 16,9 bin kayıtlı mülteci Belgium'de sığınmada."
+  },
+  {
+   "s": "mauritania",
+   "r": "senegal",
+   "v": 16650,
+   "g": 162,
+   "note": "UNHCR 2025 sonu: Mauritania kökenli 16,6 bin kayıtlı mülteci Senegal'de sığınmada."
+  },
+  {
+   "s": "croatia",
+   "r": "serbia",
+   "v": 16510,
+   "g": 163,
+   "note": "UNHCR 2025 sonu: Croatia kökenli 16,5 bin kayıtlı mülteci Serbia'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "denmark",
+   "v": 16370,
+   "g": 164,
+   "note": "UNHCR 2025 sonu: Syria kökenli 16,4 bin kayıtlı mülteci Denmark'de sığınmada."
+  },
+  {
+   "s": "china",
+   "r": "france",
+   "v": 16353,
+   "g": 165,
+   "note": "UNHCR 2025 sonu: China kökenli 16,4 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "serbia",
+   "v": 16142,
+   "g": 166,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 16,1 bin kayıtlı mülteci Serbia'de sığınmada."
+  },
+  {
+   "s": "iraq",
+   "r": "united kingdom",
+   "v": 15798,
+   "g": 167,
+   "note": "UNHCR 2025 sonu: Iraq kökenli 15,8 bin kayıtlı mülteci Birleşik Krallık'de sığınmada."
+  },
+  {
+   "s": "india",
+   "r": "united states",
+   "v": 15759,
+   "g": 168,
+   "note": "UNHCR 2025 sonu: India kökenli 15,8 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "iraq",
+   "r": "türkiye",
+   "v": 15560,
+   "g": 169,
+   "note": "UNHCR 2025 sonu: Iraq kökenli 15,6 bin kayıtlı mülteci Türkiye'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "italy",
+   "v": 15532,
+   "g": 170,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 15,5 bin kayıtlı mülteci Italy'de sığınmada."
+  },
+  {
+   "s": "eritrea",
+   "r": "france",
+   "v": 15456,
+   "g": 171,
+   "note": "UNHCR 2025 sonu: Eritrea kökenli 15,5 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "türkiye",
+   "r": "canada",
+   "v": 15358,
+   "g": 172,
+   "note": "UNHCR 2025 sonu: Türkiye kökenli 15,4 bin kayıtlı mülteci Canada'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "türkiye",
+   "v": 15271,
+   "g": 173,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 15,3 bin kayıtlı mülteci Türkiye'de sığınmada."
+  },
+  {
+   "s": "mauritania",
+   "r": "mali",
+   "v": 15044,
+   "g": 174,
+   "note": "UNHCR 2025 sonu: Mauritania kökenli 15,0 bin kayıtlı mülteci Mali'de sığınmada."
+  },
+  {
+   "s": "pakistan",
+   "r": "united kingdom",
+   "v": 14769,
+   "g": 175,
+   "note": "UNHCR 2025 sonu: Pakistan kökenli 14,8 bin kayıtlı mülteci Birleşik Krallık'de sığınmada."
+  },
+  {
+   "s": "cuba",
+   "r": "mexico",
+   "v": 14742,
+   "g": 176,
+   "note": "UNHCR 2025 sonu: Cuba kökenli 14,7 bin kayıtlı mülteci Mexico'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "south sudan",
+   "v": 14647,
+   "g": 177,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 14,6 bin kayıtlı mülteci South Sudan'de sığınmada."
+  },
+  {
+   "s": "russia",
+   "r": "united states",
+   "v": 14374,
+   "g": 178,
+   "note": "UNHCR 2025 sonu: Russia kökenli 14,4 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "türkiye",
+   "r": "switzerland",
+   "v": 14292,
+   "g": 179,
+   "note": "UNHCR 2025 sonu: Türkiye kökenli 14,3 bin kayıtlı mülteci Switzerland'de sığınmada."
+  },
+  {
+   "s": "colombia",
+   "r": "venezuela",
+   "v": 14173,
+   "g": 180,
+   "note": "UNHCR 2025 sonu: Colombia kökenli 14,2 bin kayıtlı mülteci Venezuela'de sığınmada."
+  },
+  {
+   "s": "iraq",
+   "r": "france",
+   "v": 14023,
+   "g": 181,
+   "note": "UNHCR 2025 sonu: Iraq kökenli 14,0 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "haiti",
+   "r": "united states",
+   "v": 13996,
+   "g": 182,
+   "note": "UNHCR 2025 sonu: Haiti kökenli 14,0 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "somalia",
+   "r": "djibouti",
+   "v": 13853,
+   "g": 183,
+   "note": "UNHCR 2025 sonu: Somalia kökenli 13,9 bin kayıtlı mülteci Djibouti'de sığınmada."
+  },
+  {
+   "s": "mexico",
+   "r": "united states",
+   "v": 13850,
+   "g": 184,
+   "note": "UNHCR 2025 sonu: Mexico kökenli 13,8 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "yemen",
+   "r": "somalia",
+   "v": 13496,
+   "g": 185,
+   "note": "UNHCR 2025 sonu: Yemen kökenli 13,5 bin kayıtlı mülteci Somalia'de sığınmada."
+  },
+  {
+   "s": "mali",
+   "r": "italy",
+   "v": 13463,
+   "g": 186,
+   "note": "UNHCR 2025 sonu: Mali kökenli 13,5 bin kayıtlı mülteci Italy'de sığınmada."
+  },
+  {
+   "s": "iran",
+   "r": "canada",
+   "v": 13380,
+   "g": 187,
+   "note": "UNHCR 2025 sonu: Iran kökenli 13,4 bin kayıtlı mülteci Canada'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "cyprus",
+   "v": 13361,
+   "g": 188,
+   "note": "UNHCR 2025 sonu: Syria kökenli 13,4 bin kayıtlı mülteci Cyprus'de sığınmada."
+  },
+  {
+   "s": "burkina faso",
+   "r": "ghana",
+   "v": 13319,
+   "g": 189,
+   "note": "UNHCR 2025 sonu: Burkina Faso kökenli 13,3 bin kayıtlı mülteci Ghana'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "norway",
+   "v": 13280,
+   "g": 190,
+   "note": "UNHCR 2025 sonu: Syria kökenli 13,3 bin kayıtlı mülteci Norway'de sığınmada."
+  },
+  {
+   "s": "pakistan",
+   "r": "italy",
+   "v": 13137,
+   "g": 191,
+   "note": "UNHCR 2025 sonu: Pakistan kökenli 13,1 bin kayıtlı mülteci Italy'de sığınmada."
+  },
+  {
+   "s": "nigeria",
+   "r": "germany",
+   "v": 13111,
+   "g": 192,
+   "note": "UNHCR 2025 sonu: Nigeria kökenli 13,1 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "eritrea",
+   "r": "sweden",
+   "v": 12959,
+   "g": 193,
+   "note": "UNHCR 2025 sonu: Eritrea kökenli 13,0 bin kayıtlı mülteci Sweden'de sığınmada."
+  },
+  {
+   "s": "bangladesh",
+   "r": "france",
+   "v": 12884,
+   "g": 194,
+   "note": "UNHCR 2025 sonu: Bangladesh kökenli 12,9 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "colombia",
+   "r": "canada",
+   "v": 12709,
+   "g": 195,
+   "note": "UNHCR 2025 sonu: Colombia kökenli 12,7 bin kayıtlı mülteci Canada'de sığınmada."
+  },
+  {
+   "s": "niger",
+   "r": "nigeria",
+   "v": 12215,
+   "g": 196,
+   "note": "UNHCR 2025 sonu: Niger kökenli 12,2 bin kayıtlı mülteci Nigeria'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "montenegro",
+   "v": 12186,
+   "g": 197,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 12,2 bin kayıtlı mülteci Montenegro'de sığınmada."
+  },
+  {
+   "s": "iraq",
+   "r": "iran",
+   "v": 12175,
+   "g": 198,
+   "note": "UNHCR 2025 sonu: Iraq kökenli 12,2 bin kayıtlı mülteci Iran'de sığınmada."
+  },
+  {
+   "s": "albania",
+   "r": "france",
+   "v": 12138,
+   "g": 199,
+   "note": "UNHCR 2025 sonu: Albania kökenli 12,1 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "haiti",
+   "r": "mexico",
+   "v": 11947,
+   "g": 200,
+   "note": "UNHCR 2025 sonu: Haiti kökenli 11,9 bin kayıtlı mülteci Mexico'de sığınmada."
+  },
+  {
+   "s": "nigeria",
+   "r": "canada",
+   "v": 11834,
+   "g": 201,
+   "note": "UNHCR 2025 sonu: Nigeria kökenli 11,8 bin kayıtlı mülteci Canada'de sığınmada."
+  },
+  {
+   "s": "burundi",
+   "r": "zambia",
+   "v": 11682,
+   "g": 202,
+   "note": "UNHCR 2025 sonu: Burundi kökenli 11,7 bin kayıtlı mülteci Zambia'de sığınmada."
+  },
+  {
+   "s": "belarus",
+   "r": "poland",
+   "v": 11425,
+   "g": 203,
+   "note": "UNHCR 2025 sonu: Belarus kökenli 11,4 bin kayıtlı mülteci Poland'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "slovenia",
+   "v": 11368,
+   "g": 204,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 11,4 bin kayıtlı mülteci Slovenia'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "belgium",
+   "v": 11361,
+   "g": 205,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 11,4 bin kayıtlı mülteci Belgium'de sığınmada."
+  },
+  {
+   "s": "somalia",
+   "r": "austria",
+   "v": 11270,
+   "g": 206,
+   "note": "UNHCR 2025 sonu: Somalia kökenli 11,3 bin kayıtlı mülteci Austria'de sığınmada."
+  },
+  {
+   "s": "eritrea",
+   "r": "netherlands",
+   "v": 11171,
+   "g": 207,
+   "note": "UNHCR 2025 sonu: Eritrea kökenli 11,2 bin kayıtlı mülteci Netherlands'de sığınmada."
+  },
+  {
+   "s": "palestine",
+   "r": "greece",
+   "v": 11083,
+   "g": 208,
+   "note": "UNHCR 2025 sonu: Palestine kökenli 11,1 bin kayıtlı mülteci Greece'de sığınmada."
+  },
+  {
+   "s": "türkiye",
+   "r": "netherlands",
+   "v": 10894,
+   "g": 209,
+   "note": "UNHCR 2025 sonu: Türkiye kökenli 10,9 bin kayıtlı mülteci Netherlands'de sığınmada."
+  },
+  {
+   "s": "egypt",
+   "r": "united states",
+   "v": 10821,
+   "g": 210,
+   "note": "UNHCR 2025 sonu: Egypt kökenli 10,8 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "ethiopia",
+   "r": "uganda",
+   "v": 10692,
+   "g": 211,
+   "note": "UNHCR 2025 sonu: Ethiopia kökenli 10,7 bin kayıtlı mülteci Uganda'de sığınmada."
+  },
+  {
+   "s": "ethiopia",
+   "r": "south africa",
+   "v": 10650,
+   "g": 212,
+   "note": "UNHCR 2025 sonu: Ethiopia kökenli 10,7 bin kayıtlı mülteci South Africa'de sığınmada."
+  },
+  {
+   "s": "cambodia",
+   "r": "france",
+   "v": 10445,
+   "g": 213,
+   "note": "UNHCR 2025 sonu: Cambodia kökenli 10,4 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "mali",
+   "r": "france",
+   "v": 10392,
+   "g": 214,
+   "note": "UNHCR 2025 sonu: Mali kökenli 10,4 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "burundi",
+   "r": "kenya",
+   "v": 10365,
+   "g": 215,
+   "note": "UNHCR 2025 sonu: Burundi kökenli 10,4 bin kayıtlı mülteci Kenya'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "sudan",
+   "v": 9813,
+   "g": 216,
+   "note": "UNHCR 2025 sonu: Syria kökenli 9,8 bin kayıtlı mülteci Sudan'de sığınmada."
+  },
+  {
+   "s": "mauritania",
+   "r": "france",
+   "v": 9522,
+   "g": 217,
+   "note": "UNHCR 2025 sonu: Mauritania kökenli 9,5 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "nigeria",
+   "r": "france",
+   "v": 9349,
+   "g": 218,
+   "note": "UNHCR 2025 sonu: Nigeria kökenli 9,3 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "iraq",
+   "r": "austria",
+   "v": 9258,
+   "g": 219,
+   "note": "UNHCR 2025 sonu: Iraq kökenli 9,3 bin kayıtlı mülteci Austria'de sığınmada."
+  },
+  {
+   "s": "burkina faso",
+   "r": "benin",
+   "v": 9071,
+   "g": 220,
+   "note": "UNHCR 2025 sonu: Burkina Faso kökenli 9,1 bin kayıtlı mülteci Benin'de sığınmada."
+  },
+  {
+   "s": "pakistan",
+   "r": "canada",
+   "v": 9044,
+   "g": 221,
+   "note": "UNHCR 2025 sonu: Pakistan kökenli 9,0 bin kayıtlı mülteci Canada'de sığınmada."
+  },
+  {
+   "s": "palestine",
+   "r": "belgium",
+   "v": 8982,
+   "g": 222,
+   "note": "UNHCR 2025 sonu: Palestine kökenli 9,0 bin kayıtlı mülteci Belgium'de sığınmada."
+  },
+  {
+   "s": "iraq",
+   "r": "jordan",
+   "v": 8900,
+   "g": 223,
+   "note": "UNHCR 2025 sonu: Iraq kökenli 8,9 bin kayıtlı mülteci Jordan'de sığınmada."
+  },
+  {
+   "s": "pakistan",
+   "r": "germany",
+   "v": 8817,
+   "g": 224,
+   "note": "UNHCR 2025 sonu: Pakistan kökenli 8,8 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "netherlands",
+   "v": 8816,
+   "g": 225,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 8,8 bin kayıtlı mülteci Netherlands'de sığınmada."
+  },
+  {
+   "s": "yemen",
+   "r": "netherlands",
+   "v": 8709,
+   "g": 226,
+   "note": "UNHCR 2025 sonu: Yemen kökenli 8,7 bin kayıtlı mülteci Netherlands'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "tajikistan",
+   "v": 8615,
+   "g": 227,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 8,6 bin kayıtlı mülteci Tajikistan'de sığınmada."
+  },
+  {
+   "s": "ghana",
+   "r": "togo",
+   "v": 8437,
+   "g": 228,
+   "note": "UNHCR 2025 sonu: Ghana kökenli 8,4 bin kayıtlı mülteci Togo'de sığınmada."
+  },
+  {
+   "s": "eritrea",
+   "r": "belgium",
+   "v": 8373,
+   "g": 229,
+   "note": "UNHCR 2025 sonu: Eritrea kökenli 8,4 bin kayıtlı mülteci Belgium'de sığınmada."
+  },
+  {
+   "s": "türkiye",
+   "r": "united states",
+   "v": 8242,
+   "g": 230,
+   "note": "UNHCR 2025 sonu: Türkiye kökenli 8,2 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "angola",
+   "r": "france",
+   "v": 8043,
+   "g": 231,
+   "note": "UNHCR 2025 sonu: Angola kökenli 8,0 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "iraq",
+   "r": "finland",
+   "v": 7897,
+   "g": 232,
+   "note": "UNHCR 2025 sonu: Iraq kökenli 7,9 bin kayıtlı mülteci Finland'de sığınmada."
+  },
+  {
+   "s": "iraq",
+   "r": "greece",
+   "v": 7852,
+   "g": 233,
+   "note": "UNHCR 2025 sonu: Iraq kökenli 7,9 bin kayıtlı mülteci Greece'de sığınmada."
+  },
+  {
+   "s": "cameroon",
+   "r": "chad",
+   "v": 7711,
+   "g": 234,
+   "note": "UNHCR 2025 sonu: Cameroon kökenli 7,7 bin kayıtlı mülteci Chad'de sığınmada."
+  },
+  {
+   "s": "central african republic",
+   "r": "france",
+   "v": 7710,
+   "g": 235,
+   "note": "UNHCR 2025 sonu: Central African Republic kökenli 7,7 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "indonesia",
+   "r": "papua new guinea",
+   "v": 7700,
+   "g": 236,
+   "note": "UNHCR 2025 sonu: Indonesia kökenli 7,7 bin kayıtlı mülteci Papua New Guinea'de sığınmada."
+  },
+  {
+   "s": "bosnia and herzegovina",
+   "r": "serbia",
+   "v": 7697,
+   "g": 237,
+   "note": "UNHCR 2025 sonu: Bosnia And Herzegovina kökenli 7,7 bin kayıtlı mülteci Serbia'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "zimbabwe",
+   "v": 7612,
+   "g": 238,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 7,6 bin kayıtlı mülteci Zimbabwe'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "brazil",
+   "v": 7592,
+   "g": 239,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 7,6 bin kayıtlı mülteci Brazil'de sığınmada."
+  },
+  {
+   "s": "vietnam",
+   "r": "france",
+   "v": 7589,
+   "g": 240,
+   "note": "UNHCR 2025 sonu: Vietnam kökenli 7,6 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "georgia",
+   "r": "france",
+   "v": 7510,
+   "g": 241,
+   "note": "UNHCR 2025 sonu: Georgia kökenli 7,5 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "india",
+   "v": 7497,
+   "g": 242,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 7,5 bin kayıtlı mülteci India'de sığınmada."
+  },
+  {
+   "s": "ethiopia",
+   "r": "germany",
+   "v": 7494,
+   "g": 243,
+   "note": "UNHCR 2025 sonu: Ethiopia kökenli 7,5 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "iraq",
+   "r": "syria",
+   "v": 7418,
+   "g": 244,
+   "note": "UNHCR 2025 sonu: Iraq kökenli 7,4 bin kayıtlı mülteci Syria'de sığınmada."
+  },
+  {
+   "s": "sudan",
+   "r": "kenya",
+   "v": 7383,
+   "g": 245,
+   "note": "UNHCR 2025 sonu: Sudan kökenli 7,4 bin kayıtlı mülteci Kenya'de sığınmada."
+  },
+  {
+   "s": "nicaragua",
+   "r": "united states",
+   "v": 7243,
+   "g": 246,
+   "note": "UNHCR 2025 sonu: Nicaragua kökenli 7,2 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "iran",
+   "r": "austria",
+   "v": 7224,
+   "g": 247,
+   "note": "UNHCR 2025 sonu: Iran kökenli 7,2 bin kayıtlı mülteci Austria'de sığınmada."
+  },
+  {
+   "s": "colombia",
+   "r": "costa rica",
+   "v": 7193,
+   "g": 248,
+   "note": "UNHCR 2025 sonu: Colombia kökenli 7,2 bin kayıtlı mülteci Costa Rica'de sığınmada."
+  },
+  {
+   "s": "burkina faso",
+   "r": "italy",
+   "v": 7183,
+   "g": 249,
+   "note": "UNHCR 2025 sonu: Burkina Faso kökenli 7,2 bin kayıtlı mülteci Italy'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "canada",
+   "v": 7149,
+   "g": 250,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 7,1 bin kayıtlı mülteci Canada'de sığınmada."
+  },
+  {
+   "s": "ethiopia",
+   "r": "united states",
+   "v": 7111,
+   "g": 251,
+   "note": "UNHCR 2025 sonu: Ethiopia kökenli 7,1 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "palestine",
+   "r": "iraq",
+   "v": 7044,
+   "g": 252,
+   "note": "UNHCR 2025 sonu: Palestine kökenli 7,0 bin kayıtlı mülteci Iraq'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "brazil",
+   "v": 6997,
+   "g": 253,
+   "note": "UNHCR 2025 sonu: Syria kökenli 7,0 bin kayıtlı mülteci Brazil'de sığınmada."
+  },
+  {
+   "s": "venezuela",
+   "r": "costa rica",
+   "v": 6937,
+   "g": 254,
+   "note": "UNHCR 2025 sonu: Venezuela kökenli 6,9 bin kayıtlı mülteci Costa Rica'de sığınmada."
+  },
+  {
+   "s": "bosnia and herzegovina",
+   "r": "france",
+   "v": 6837,
+   "g": 255,
+   "note": "UNHCR 2025 sonu: Bosnia And Herzegovina kökenli 6,8 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "azerbaijan",
+   "r": "germany",
+   "v": 6797,
+   "g": 256,
+   "note": "UNHCR 2025 sonu: Azerbaijan kökenli 6,8 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "guinea",
+   "r": "germany",
+   "v": 6690,
+   "g": 257,
+   "note": "UNHCR 2025 sonu: Guinea kökenli 6,7 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "burundi",
+   "r": "malawi",
+   "v": 6676,
+   "g": 258,
+   "note": "UNHCR 2025 sonu: Burundi kökenli 6,7 bin kayıtlı mülteci Malawi'de sığınmada."
+  },
+  {
+   "s": "armenia",
+   "r": "france",
+   "v": 6656,
+   "g": 259,
+   "note": "UNHCR 2025 sonu: Armenia kökenli 6,7 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "congo",
+   "r": "france",
+   "v": 6636,
+   "g": 260,
+   "note": "UNHCR 2025 sonu: Congo kökenli 6,6 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "iran",
+   "r": "türkiye",
+   "v": 6610,
+   "g": 261,
+   "note": "UNHCR 2025 sonu: Iran kökenli 6,6 bin kayıtlı mülteci Türkiye'de sığınmada."
+  },
+  {
+   "s": "ethiopia",
+   "r": "south sudan",
+   "v": 6578,
+   "g": 262,
+   "note": "UNHCR 2025 sonu: Ethiopia kökenli 6,6 bin kayıtlı mülteci South Sudan'de sığınmada."
+  },
+  {
+   "s": "somalia",
+   "r": "italy",
+   "v": 6486,
+   "g": 263,
+   "note": "UNHCR 2025 sonu: Somalia kökenli 6,5 bin kayıtlı mülteci Italy'de sığınmada."
+  },
+  {
+   "s": "central african republic",
+   "r": "sudan",
+   "v": 6424,
+   "g": 264,
+   "note": "UNHCR 2025 sonu: Central African Republic kökenli 6,4 bin kayıtlı mülteci Sudan'de sığınmada."
+  },
+  {
+   "s": "guatemala",
+   "r": "mexico",
+   "v": 6393,
+   "g": 265,
+   "note": "UNHCR 2025 sonu: Guatemala kökenli 6,4 bin kayıtlı mülteci Mexico'de sığınmada."
+  },
+  {
+   "s": "china",
+   "r": "canada",
+   "v": 6381,
+   "g": 266,
+   "note": "UNHCR 2025 sonu: China kökenli 6,4 bin kayıtlı mülteci Canada'de sığınmada."
+  },
+  {
+   "s": "bhutan",
+   "r": "nepal",
+   "v": 6365,
+   "g": 267,
+   "note": "UNHCR 2025 sonu: Bhutan kökenli 6,4 bin kayıtlı mülteci Nepal'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "central african republic",
+   "v": 6363,
+   "g": 268,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 6,4 bin kayıtlı mülteci Central African Republic'de sığınmada."
+  },
+  {
+   "s": "libya",
+   "r": "united kingdom",
+   "v": 6196,
+   "g": 269,
+   "note": "UNHCR 2025 sonu: Libya kökenli 6,2 bin kayıtlı mülteci Birleşik Krallık'de sığınmada."
+  },
+  {
+   "s": "cameroon",
+   "r": "united states",
+   "v": 6156,
+   "g": 270,
+   "note": "UNHCR 2025 sonu: Cameroon kökenli 6,2 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "laos",
+   "r": "france",
+   "v": 6145,
+   "g": 271,
+   "note": "UNHCR 2025 sonu: Laos kökenli 6,1 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "türkiye",
+   "r": "united kingdom",
+   "v": 5906,
+   "g": 272,
+   "note": "UNHCR 2025 sonu: Türkiye kökenli 5,9 bin kayıtlı mülteci Birleşik Krallık'de sığınmada."
+  },
+  {
+   "s": "ethiopia",
+   "r": "djibouti",
+   "v": 5877,
+   "g": 273,
+   "note": "UNHCR 2025 sonu: Ethiopia kökenli 5,9 bin kayıtlı mülteci Djibouti'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "algeria",
+   "v": 5867,
+   "g": 274,
+   "note": "UNHCR 2025 sonu: Syria kökenli 5,9 bin kayıtlı mülteci Algeria'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "sweden",
+   "v": 5771,
+   "g": 275,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 5,8 bin kayıtlı mülteci Sweden'de sığınmada."
+  },
+  {
+   "s": "somalia",
+   "r": "sweden",
+   "v": 5771,
+   "g": 276,
+   "note": "UNHCR 2025 sonu: Somalia kökenli 5,8 bin kayıtlı mülteci Sweden'de sığınmada."
+  },
+  {
+   "s": "ethiopia",
+   "r": "egypt",
+   "v": 5756,
+   "g": 277,
+   "note": "UNHCR 2025 sonu: Ethiopia kökenli 5,8 bin kayıtlı mülteci Egypt'de sığınmada."
+  },
+  {
+   "s": "yemen",
+   "r": "united kingdom",
+   "v": 5663,
+   "g": 278,
+   "note": "UNHCR 2025 sonu: Yemen kökenli 5,7 bin kayıtlı mülteci Birleşik Krallık'de sığınmada."
+  },
+  {
+   "s": "nepal",
+   "r": "united states",
+   "v": 5657,
+   "g": 279,
+   "note": "UNHCR 2025 sonu: Nepal kökenli 5,7 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "kenya",
+   "r": "ethiopia",
+   "v": 5639,
+   "g": 280,
+   "note": "UNHCR 2025 sonu: Kenya kökenli 5,6 bin kayıtlı mülteci Ethiopia'de sığınmada."
+  },
+  {
+   "s": "ukraine",
+   "r": "russia",
+   "v": 5488,
+   "g": 281,
+   "note": "UNHCR 2025 sonu: Ukraine kökenli 5,5 bin kayıtlı mülteci Russia'de sığınmada."
+  },
+  {
+   "s": "iran",
+   "r": "france",
+   "v": 5467,
+   "g": 282,
+   "note": "UNHCR 2025 sonu: Iran kökenli 5,5 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "colombia",
+   "r": "united states",
+   "v": 5460,
+   "g": 283,
+   "note": "UNHCR 2025 sonu: Colombia kökenli 5,5 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "ethiopia",
+   "r": "somalia",
+   "v": 5338,
+   "g": 284,
+   "note": "UNHCR 2025 sonu: Ethiopia kökenli 5,3 bin kayıtlı mülteci Somalia'de sığınmada."
+  },
+  {
+   "s": "sri lanka",
+   "r": "switzerland",
+   "v": 5302,
+   "g": 285,
+   "note": "UNHCR 2025 sonu: Sri Lanka kökenli 5,3 bin kayıtlı mülteci Switzerland'de sığınmada."
+  },
+  {
+   "s": "serbia",
+   "r": "germany",
+   "v": 5287,
+   "g": 286,
+   "note": "UNHCR 2025 sonu: Serbia kökenli 5,3 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "afghanistan",
+   "r": "spain",
+   "v": 5272,
+   "g": 287,
+   "note": "UNHCR 2025 sonu: Afghanistan kökenli 5,3 bin kayıtlı mülteci Spain'de sığınmada."
+  },
+  {
+   "s": "syria",
+   "r": "morocco",
+   "v": 5216,
+   "g": 288,
+   "note": "UNHCR 2025 sonu: Syria kökenli 5,2 bin kayıtlı mülteci Morocco'de sığınmada."
+  },
+  {
+   "s": "iraq",
+   "r": "italy",
+   "v": 5133,
+   "g": 289,
+   "note": "UNHCR 2025 sonu: Iraq kökenli 5,1 bin kayıtlı mülteci Italy'de sığınmada."
+  },
+  {
+   "s": "rwanda",
+   "r": "france",
+   "v": 5132,
+   "g": 290,
+   "note": "UNHCR 2025 sonu: Rwanda kökenli 5,1 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "yemen",
+   "r": "germany",
+   "v": 5112,
+   "g": 291,
+   "note": "UNHCR 2025 sonu: Yemen kökenli 5,1 bin kayıtlı mülteci Germany'de sığınmada."
+  },
+  {
+   "s": "drc",
+   "r": "norway",
+   "v": 5107,
+   "g": 292,
+   "note": "UNHCR 2025 sonu: DR Kongo kökenli 5,1 bin kayıtlı mülteci Norway'de sığınmada."
+  },
+  {
+   "s": "eritrea",
+   "r": "south sudan",
+   "v": 5083,
+   "g": 293,
+   "note": "UNHCR 2025 sonu: Eritrea kökenli 5,1 bin kayıtlı mülteci South Sudan'de sığınmada."
+  },
+  {
+   "s": "cuba",
+   "r": "united states",
+   "v": 5066,
+   "g": 294,
+   "note": "UNHCR 2025 sonu: Cuba kökenli 5,1 bin kayıtlı mülteci ABD'de sığınmada."
+  },
+  {
+   "s": "nigeria",
+   "r": "united kingdom",
+   "v": 5031,
+   "g": 295,
+   "note": "UNHCR 2025 sonu: Nigeria kökenli 5,0 bin kayıtlı mülteci Birleşik Krallık'de sığınmada."
+  },
+  {
+   "s": "azerbaijan",
+   "r": "france",
+   "v": 5015,
+   "g": 296,
+   "note": "UNHCR 2025 sonu: Azerbaijan kökenli 5,0 bin kayıtlı mülteci France'de sığınmada."
+  },
+  {
+   "s": "chad",
+   "r": "central african republic",
+   "v": 5013,
+   "g": 297,
+   "note": "UNHCR 2025 sonu: Chad kökenli 5,0 bin kayıtlı mülteci Central African Republic'de sığınmada."
   }
  ]
 }

@@ -26,6 +26,7 @@ async function ensureLayer(k) {
   (lay.ties || []).forEach((c) => {
     if (COORDS[c.s] && COORDS[c.r])
       TIES.push({ s: c.s, r: c.r, type: k, note: c.note || "",
+        v: c.v != null ? c.v : null,
         exp: c.exp != null ? c.exp : null, imp: c.imp != null ? c.imp : null });
   });
   NEWS[k] = news || {};
@@ -52,25 +53,39 @@ let gesturing = false; // touch: a pinch/drag is in progress → don't treat its
 
 const layerNav = document.getElementById("layers");
 function renderLayers() {
+  const total = activeTies().length;
   layerNav.innerHTML = LAYERS.map((l) =>
-    `<button class="layerbtn${l.key === layer ? " on" : ""}${l.live ? "" : " soon"}" data-l="${l.key}">${l.label}</button>`).join("");
-  layerNav.querySelectorAll(".layerbtn").forEach((b) =>
+    `<button class="layerbtn${l.key === layer ? " on" : ""}${l.live ? "" : " soon"}" data-l="${l.key}">${l.label}</button>`).join("") +
+    (total > CAP_DEFAULT
+      ? `<button class="layerbtn viewcap" id="viewcap">${showAll ? `ilk ${CAP_DEFAULT}` : `tümünü göster (${Math.min(total, CAP_ALL)})`}</button>`
+      : "");
+  layerNav.querySelectorAll(".layerbtn[data-l]").forEach((b) =>
     b.addEventListener("click", async () => {
       layer = b.dataset.l;
       renderLayers();               // instant button feedback
       await ensureLayer(layer);     // lazy: fetch layer + its news on first visit
       reset();
+      renderLayers();               // tie count is only known after the load
     }));
+  const vc = document.getElementById("viewcap");
+  if (vc) vc.addEventListener("click", () => { showAll = !showAll; redraw(); renderLayers(); });
 }
 function activeTies() { return TIES.filter((t) => t.type === layer); }
 
-/* importance ≈ share of GLOBAL exports carried on this arc (supplier's weight × concentration) */
+/* importance: dataset layers carry a real value (v) and a global rank; silah
+   falls back to SIPRI share × concentration */
 function impScore(t) {
+  if (t.v != null) return t.v;
   const pct = t.exp != null ? t.exp : (t.imp != null ? t.imp : 5);
   return (supShare[t.s] || 0.3) * (pct / 100);
 }
+/* rendering caps: default shows the big flows, "tümünü göster" raises the lid —
+   globe.gl frame rate dies beyond ~300 arcs, so that is a hard ceiling */
+let showAll = false;
+const CAP_DEFAULT = 50, CAP_ALL = 300;
 function majorTies() {
-  return activeTies().slice().sort((a, b) => impScore(b) - impScore(a)).slice(0, 38);
+  return activeTies().slice().sort((a, b) => impScore(b) - impScore(a))
+    .slice(0, showAll ? CAP_ALL : CAP_DEFAULT);
 }
 /* declutter: default shows only the big flows; selecting a country/tie reveals its own arcs */
 function visibleTies() {
@@ -84,7 +99,8 @@ function tieLine(t) {
   const bits = [];
   if (t.exp != null) bits.push(`${t.s} ihracatının %${t.exp}'i`);
   if (t.imp != null) bits.push(`${t.r} ithalatının %${t.imp}'i`);
-  return `${t.s} → ${t.r} · ${bits.join(" · ")}`;
+  if (!bits.length && t.note) return `${t.s} → ${t.r} · ${t.note}`;
+  return `${t.s} → ${t.r}${bits.length ? " · " + bits.join(" · ") : ""}`;
 }
 
 /* ── globe: grey editorial world map, white ocean, navy on select ── */
