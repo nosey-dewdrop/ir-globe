@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=54">
+<link rel="stylesheet" href="css/style.css?v=55">
 </head>
 <body class="pages">
 
@@ -66,14 +66,14 @@
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="uye.html">üyelik</a> · <a href="gizlilik.html">gizlilik</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v54</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v55</span></span>
   </footer>
 </section>
 
 <script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js"></script>
 <script src="admin/config.js"></script>
-<script src="js/store.js?v=53"></script>
-<script src="js/main.js?v=53"></script>
+<script src="js/store.js?v=55"></script>
+<script src="js/main.js?v=55"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -112,9 +112,8 @@
 })();
 </script>
 <script>
-/* hero arka plan duvarı: gerçek manşetler, JS MASONRY (bloklar iç içe, kolon değil),
-   her biri hafif farklı font. masaüstünde üstüne gelince BÜYÜR ve aynı kolondaki
-   altındaki blokları aşağı kaydırır (Pinterest hissi). mobilde salt dekor. */
+/* hero arka plan duvarı: gerçek manşetler, JS MASONRY (3 satırlı bloklar iç içe,
+   kolon değil), her biri farklı font. hover yok — salt dekor, soluk. */
 (function () {
   var wall = document.getElementById("jn-wall");
   if (!wall) return;
@@ -150,21 +149,6 @@
     }).join("");
     layout();
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
-  }
-  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-    wall.addEventListener("mouseover", function (e) {
-      var el = e.target.closest && e.target.closest(".wl");
-      if (!el || el.classList.contains("big") || el.__col == null) return;
-      var oldH = el.offsetHeight; el.classList.add("big"); var delta = el.offsetHeight - oldH;
-      blocks.forEach(function (b) { if (b.col === el.__col && b.top > el.__top) b.el.style.transform = "translateY(" + delta + "px)"; });
-    });
-    wall.addEventListener("mouseout", function (e) {
-      var el = e.target.closest && e.target.closest(".wl");
-      if (!el) return;
-      if (e.relatedTarget && el.contains(e.relatedTarget)) return;
-      el.classList.remove("big");
-      blocks.forEach(function (b) { if (b.col === el.__col && b.top > el.__top) b.el.style.transform = ""; });
-    });
   }
   var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(layout, 150); });
   Store.digest().then(function (items) { if (items.length) build(items); }).catch(function () {});
