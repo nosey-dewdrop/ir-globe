@@ -68,28 +68,56 @@ display names and slugs come ONLY from the registry (fixes the old "TÜRkiye" ti
 - `scripts/migrate-legacy.js` — ONE-TIME converter (already run 2026-07-11); harmless to rerun,
   but the data/ files are the source of truth now.
 
-## Roadmap (approved plan, 8 phases — plan file: ~/.claude/plans/merhaba-kanka-ir-globe-humble-haven.md)
+## Roadmap status (approved 8-phase plan — plan file: ~/.claude/plans/merhaba-kanka-ir-globe-humble-haven.md)
 
-1. ✅ Payload refactor (this doc's Data layout section) — 2026-07-11
-2. Weekly data pipeline from official APIs (`scripts/fetch-data.js` + `scripts/sources/*` +
-   `data.yml` weekly cron). Per-layer sources and modes — see KAYNAKLAR.md for recipes:
-   auto = enerji (UN Comtrade, key), goc (UNHCR), yardim (OECD), diplomasi (embassies CSV),
-   tahil (FAOSTAT bulk in runner); manual local = silah (SIPRI), ticaret+teknoloji (BACI),
-   yaptirim (GSDB), borc (AidData); frozen one-time = ittifak (COW 2012), us (HKU 2020).
-   Globe caps: default top ~50 arcs, "show all" ≤300. News: top ~60 connections per layer.
-3. News source diversification (curated feeds: Al Jazeera, BBC, Guardian, DW, France24, UN News,
-   Politico EU, FP — matched by country-pair aliases, deduped, `matchedBy` field).
-4. Liveliness face: "son güncelleme" stamp at top of landing, days-to-next-update counter under
-   the exit section (reads data/meta.json updated + 7d), akis.html chronological feed page with
-   layer/country filters + today/yesterday grouping, Turkish dates everywhere, "new" markers.
-5. New layers: kablo (TeleGeography submarine cables, undirected) + siber (EuRepoC attributed
-   incidents). Water = SKIP (no clean directed dataset = fabrication risk). Space = deferred.
-6. Accounts + follows + benim.html (personal twin of the feed page), uye.html onboarding
-   ("neyi takip ediyorsun?"), Supabase overlay-mode hydrate (DB rows overlay static JSON, never
-   replace), old newsletter form removed. KVKK text updated same session.
-7. Personal weekly briefing + alerts via Resend free tier, sent from Actions with the Supabase
-   service key. Unsubscribe link in every mail. Per-user max 1 alert mail/day.
-8. Docs finalization (this file + CLAUDE.md + HANDOFF.md refresh).
+1. ✅ Payload refactor (Data layout section above) — 2026-07-11
+2. ✅ (core) Weekly data pipeline — `scripts/fetch-data.js` + `scripts/sources/{goc,yardim,diplomasi,tahil,kablo}.js`,
+   `data.yml` weekly cron (monday 03:00 UTC). LIVE with real data 2026-07-11:
+   goc 297 ties (UNHCR 2025), yardim 1193 (OECD 2024), diplomasi 686 (Wikidata),
+   tahil 900 (FAOSTAT 2024), kablo 527 (TeleGeography). Totals: 13 layers, 3882 ties,
+   198 countries, ~3800 articles. Globe caps: default top 50 arcs, "tümünü göster" ≤300.
+   News: top 60 connections/layer (silah uncapped). STILL OPEN in phase 2:
+   - enerji: needs free UN Comtrade key → Damla registers at comtradeplus.un.org, adds
+     `COMTRADE_KEY` repo secret, then `scripts/sources/enerji.js` gets written.
+   - manual converters (silah SIPRI update, ticaret+teknoloji BACI, yaptirim GSDB,
+     borc AidData): each needs a locally downloaded file; current curated ties stay
+     until then (they are real, just thin). ittifak stays curated on purpose
+     (COW dataset is frozen at 2012 — our 2026 curated set is BETTER).
+3. ✅ News diversification — `scripts/lib/feeds.js` (Al Jazeera, BBC, Guardian, DW,
+   France24, UN News, Politico EU, FP), country-pair + topic matching, URL/title dedupe,
+   feed items carry `via:"feed"`. Google News stays primary.
+4. ✅ Liveliness — "son güncelleme" stamp (landing top), weekly countdown (under exit
+   section, data/meta.json updated+7d), akis.html feed (day groups, layer filters,
+   chunked "daha eskiyi göster"), Turkish dates everywhere (TRDate in js/store.js),
+   "yeni" markers on today's items.
+5. ✅ kablo layer live (527 corridors; CC BY-NC-SA — revisit license if a paid tier
+   ever covers this layer). siber DEFERRED: EuRepoC has no open endpoint (API key by
+   request); revisit. Water = SKIP (fabrication risk). Space = deferred.
+6. ✅ (code) Accounts + personalization — js/takip.js (follows+prefs), uye.html
+   onboarding ("neyi takip ediyorsun?" chips), benim.html personal feed (follows-filtered,
+   day-grouped, follow management, email pref toggles), password reset flow in js/auth.js,
+   overlay-mode hydrate in js/main.js (OVERLAY applied per lazily-loaded layer), admin
+   panel reworked (editorial overlay semantics, hidden toggle, members tab, layer seeding).
+   Old newsletter form + js/subscribe.js REMOVED. gizlilik.html covers follows + emails.
+   WAITING ON DAMLA: run admin/schema.sql in Supabase SQL Editor (v2 idempotent).
+7. ✅ (code) Emails — scripts/send-briefing.js (weekly cron briefing.yml, monday 06:00),
+   scripts/send-alerts.js (rides news.yml, real send only at the 18:00 UTC run, max 1
+   mail/user/day), shared scripts/lib/mail.js, one-click unsubscribe via unsub_token +
+   email_unsubscribe RPC (handled by benim.html?unsub=…). All steps skip silently
+   without secrets. WAITING ON DAMLA (see Setup checklist).
+8. ✅ Docs (this file + CLAUDE.md + HANDOFF.md).
+
+## Setup checklist (Damla's manual steps — everything else is automated)
+
+1. Supabase SQL Editor → run `admin/schema.sql` (safe to rerun). Then Authentication →
+   Users → add Bera → `update public.profiles set role='admin' where email='…';`
+2. GitHub repo → Settings → Secrets and variables → Actions → add:
+   `SUPABASE_URL`, `SUPABASE_ANON` (keep-alive), `SUPABASE_SERVICE` (service_role key,
+   Project Settings → API), `RESEND_KEY` (resend.com account), `BRIEFING_FROM`
+   (e.g. `kim kime ne satıyor? <bulten@damlahelloworld.com>` — requires verifying the
+   domain in Resend; without it Resend only delivers to the account owner's address).
+3. UN Comtrade: register free at comtradeplus.un.org → `COMTRADE_KEY` secret → ping
+   Claude to write `scripts/sources/enerji.js`.
 
 Money ideas parked (not in scope yet): paywall over personal features once there's an audience,
 premium depth (trends, CSV, API), embeddable globe widget, IR-department licences, PDF country
@@ -103,6 +131,11 @@ reports, Bera revenue split (Damla's call).
   Separate Supabase project (not the shared one) — may be handed to Bera; keep-alive ping will
   ride the 6-hourly news workflow. Personal features launch FREE. Plans are written in Turkish now.
 - 2026-07-11: payload refactor shipped; "TÜRkiye" display bug fixed via registry.
+- 2026-07-11 (late): phases 2-7 shipped in one run. Dataset layers replaced curated ties for
+  goc/yardim/diplomasi/tahil (+ new kablo); ittifak deliberately stays curated (COW frozen 2012);
+  siber deferred (no open endpoint). Emails one-click-unsubscribe via token RPC (no login).
+  Alerts throttled to the 18:00 UTC news run. Config.js pushed with anon key (public by design);
+  site degrades gracefully until schema runs.
 
 ## Verification playbook
 

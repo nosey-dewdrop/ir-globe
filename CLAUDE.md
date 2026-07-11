@@ -10,13 +10,13 @@ Commit messages: lowercase english, no emojis, no dashes. Author is Damla ONLY. 
 
 **Style law:** current editorial style (Newsreader serif + Inter, white, sharp corners, navy) is Damla-approved and DOES NOT CHANGE without her approval. No fabricated data, ever.
 
-## Status (2026-07-11)
-- Phase 1 of the approved 8-phase plan SHIPPED: data moved to `data/*.json` (per-layer + per-layer news + digest + meta), `js/store.js` lazy loader, initial payload 1.2MB → ~40KB, SEO builder reads JSON, "TÜRkiye" display bug fixed. Legacy `js/{data,layers,articles}.js` unreferenced, kept one release for rollback.
-- News Action (`news.yml`, 6-hourly) now commits `data/news/`.
-- Supabase project created by Damla (2026-07-11): https://gwvlvqgpksinmstsevth.supabase.co — schema NOT run yet, `admin/config.js` NOT filled yet (do both together in Phase 6 so live forms never point at missing tables).
+## Status (2026-07-11, all 8 phases shipped in one day)
+- Data: 13 layers, 3882 ties (real datasets: UNHCR/OECD/Wikidata/FAOSTAT/TeleGeography + SIPRI), 198 countries, ~3800 auto-refreshed articles + curated RSS feeds. Weekly `data.yml`, 6-hourly `news.yml`.
+- Product: lazy-loading globe with caps, akis.html feed, benim.html personal feed, uye.html onboarding, weekly personal briefing + daily alerts (Resend), one-click unsubscribe, admin overlay panel.
+- Supabase: project https://gwvlvqgpksinmstsevth.supabase.co, config.js filled and live; **schema NOT run yet** — site degrades gracefully (static) until then.
 
 ## Where we left off / next
-Phase 2: weekly data pipeline (`scripts/fetch-data.js` + `scripts/sources/*` + `data.yml`) — see PROJECT.md roadmap. Then news diversification (3), liveliness face (4), new layers (5), accounts+personal page (6), e-mail briefing (7), docs (8).
+WAITING ON DAMLA (PROJECT.md → Setup checklist): run schema.sql, add Actions secrets (SUPABASE_*, RESEND_KEY, BRIEFING_FROM), Comtrade key for the enerji layer. After schema: end-to-end verify signup→onboarding→benim→emails. Open code work: enerji source script (needs key), manual converters (BACI/GSDB/AidData), siber layer (EuRepoC access).
 
 <!-- deep machine context (auto, regenerable) -->
 @CLAUDE.context.md
