@@ -71,21 +71,29 @@ html { scroll-snap-type: y proximity; }
    ötekinin girintisinden başlar; her başlığın fontu hafif farklı; alt-üst solar. */
 .jn-wall {
   position: absolute; inset: 0; z-index: 0;
-  padding: 8px 10px; overflow: hidden; pointer-events: none;
-  text-align: justify; line-height: 1.55;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 5%, #000 92%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0, #000 5%, #000 92%, transparent 100%);
+  padding: 8px 12px; overflow: hidden; pointer-events: none;
+  column-width: 220px; column-gap: 14px;                  /* blok blok, iç içe masonry */
+  /* ORTAYI BOŞALT: kenarda yoğun başlık, ortaya doğru silinir (yazı oraya oturur,
+     iç içe girmez) + alt-üst yumuşak solar. iki mask kesişimi. */
+  -webkit-mask-image:
+    radial-gradient(ellipse 50% 46% at 50% 45%, transparent 0, transparent 32%, #000 64%),
+    linear-gradient(to bottom, transparent 0, #000 4%, #000 93%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    radial-gradient(ellipse 50% 46% at 50% 45%, transparent 0, transparent 32%, #000 64%),
+    linear-gradient(to bottom, transparent 0, #000 4%, #000 93%, transparent 100%);
+  mask-composite: intersect;
 }
 .jn-wall .wl {
-  font-family: var(--serif); color: #d7dbe1; text-decoration: none;
+  display: block; break-inside: avoid; margin-bottom: 9px;
+  font-family: var(--serif); color: #d7dbe1; text-decoration: none;   /* çok satırlı tam blok */
   transition: color 0.18s ease;                           /* font-size YOK → reflow yok → akıcı */
 }
-.jn-wall .wl.s1 { font-size: 11px; }
-.jn-wall .wl.s2 { font-size: 12.5px; }
-.jn-wall .wl.s3 { font-size: 14px; }
-.jn-wall .wl.s4 { font-size: 15.5px; }
-.jn-wall .wl.s5 { font-size: 17px; }
-.jn-wall .wl:not(:last-child)::after { content: " · "; color: #e6e9ee; }
+.jn-wall .wl.s1 { font-size: 11px; line-height: 1.22; }
+.jn-wall .wl.s2 { font-size: 12.5px; line-height: 1.22; }
+.jn-wall .wl.s3 { font-size: 14px; line-height: 1.2; }
+.jn-wall .wl.s4 { font-size: 15.5px; line-height: 1.18; }
+.jn-wall .wl.s5 { font-size: 17px; line-height: 1.15; }
 /* masaüstü: üstüne gelince SADECE koyulaşır (büyüme yok — kasmayı önler) */
 @media (hover: hover) and (pointer: fine) {
   .jn-wall .wl { pointer-events: auto; cursor: default; }
@@ -96,9 +104,10 @@ html { scroll-snap-type: y proximity; }
   display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
   pointer-events: none; }                                 /* altındaki duvar başlıkları da hover alsın */
 .jn-in a, .jn-in .jn-cta { pointer-events: auto; }        /* linkler yine tıklanır */
-/* önündeki metin duvarın üstünde net okunsun: güçlü beyaz hale (sis yok) */
-.jn-in .hero-mast h1, .jn-in .mast-fresh, .jn-in .bhead, .jn-in .btext, .jn-in .bfine, .jn-in .countdown, .jn-in .ed-scroll, .jn-in .stat {
-  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 26px #fff;
+/* önündeki metin duvarın üstünde net okunsun: GÜÇLÜ beyaz hale (ortada duvar
+   zaten silik ama emniyet için katmanlı hale) */
+.jn-in .hero-mast h1, .jn-in .mast-fresh, .jn-in .bhead, .jn-in .btext, .jn-in .bfine, .jn-in .ed-scroll {
+  text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 14px #fff, 0 0 14px #fff, 0 0 22px #fff, 0 0 32px #fff;
 }
 .jn-in .btext { margin: 0 auto 14px; color: #16191f; }
 .jn-in .bhead { color: #16191f; }
@@ -106,10 +115,14 @@ html { scroll-snap-type: y proximity; }
 .hero-mast { display: block; margin-bottom: 12px; }
 .hero-mast h1 { font-size: 24px; }
 .hero-mast .mast-fresh { margin-top: 2px; }
-/* sayaç hero'da daha ufak, ortada */
-.jn-in .stats { padding: 20px 0 4px; gap: 14px 30px; }
-.jn-in .statn { font-size: 22px; }
-.jn-in .ed-scroll { margin-top: 20px; }
+.jn-in .ed-scroll { margin-top: 24px; }
+
+/* SAYFA 3 — kapanış: temiz beyaz, sayaç + künye (kürenin altındaki sayfa) */
+.page.close { justify-content: center; position: relative; }
+.close-in { width: 100%; max-width: 620px; margin: 0 auto; padding: 0 40px; text-align: center; }
+.close-in .bhead { margin-bottom: 24px; }
+.close-in .stats { padding: 8px 0 0; }
+.page.close footer { position: absolute; left: 0; right: 0; bottom: 0; }
 
 /* sayaç — ortada, kolonlara yakın (en alttan biraz yukarı) */
 .stats { display: flex; justify-content: center; flex-wrap: wrap; gap: 22px 48px; padding: 6px 40px 60px; }

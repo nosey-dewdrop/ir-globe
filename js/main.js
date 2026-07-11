@@ -430,6 +430,7 @@ function layoutCards() {
 const list = document.getElementById("countries");
 
 function renderList() {
+  if (!list) return;                        // ülke listesi kaldırıldı (ülkeye tıkla = ağı çıkar)
   const ranked = NAMES.slice().sort((a, b) =>
     (supShare[b] || 0) + (recShare[b] || 0) - (supShare[a] || 0) - (recShare[a] || 0));
   list.innerHTML = ranked.map((c) =>
