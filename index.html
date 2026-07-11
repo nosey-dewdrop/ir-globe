@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=44">
+<link rel="stylesheet" href="css/style.css?v=45">
 </head>
 <body class="pages">
 
@@ -135,16 +135,20 @@
 })();
 </script>
 <script>
-/* 3. sayfa: arka plan başlık duvarı — gerçek manşetler, küçük ve soluk; masaüstünde
-   üstüne gelince büyür (dinamiklik). mobilde salt dekor (pointer-events CSS'te kapalı). */
+/* 3. sayfa: arka plan başlık duvarı — gerçek manşetler, küçük ve soluk; SALT DEKOR
+   (tıklanmaz). masaüstünde üstüne gelince büyür (dinamiklik), mobilde sabit. */
 (function () {
   var wall = document.getElementById("jn-wall");
   if (!wall) return;
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
     return { "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]; }); };
   Store.digest().then(function (items) {
-    wall.innerHTML = items.map(function (a) {
-      return '<a class="wl" href="' + esc(a.u) + '" target="_blank" rel="noopener">' + esc(a.t) + '</a>';
+    if (!items.length) return;
+    // 7 kolonu dibine kadar boşluksuz doldur: başlıkları gerekirse tekrarla (salt dekor)
+    var fill = [];
+    while (fill.length < 220) fill = fill.concat(items);
+    wall.innerHTML = fill.slice(0, 220).map(function (a) {
+      return '<span class="wl">' + esc(a.t) + '</span>';
     }).join("");
   }).catch(function () {});
 })();
