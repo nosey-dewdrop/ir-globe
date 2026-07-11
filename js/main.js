@@ -409,7 +409,8 @@ function renderCards() {
   cardsEl.classList.add("show");
   layoutCards();
 }
-/* place each headline along the globe's right arc so they wrap around the sphere */
+/* kartları kürenin SAĞ kavisine sarar: geniş yay (üst → sağ → alt) sayesinde
+   x değeri değişir, düz sütun değil kavis olur. yarıçap sabit (desktop'ta zoom yok). */
 function layoutCards() {
   const cards = [...cardsEl.querySelectorAll(".card")];
   const n = cards.length;
@@ -417,8 +418,8 @@ function layoutCards() {
   const stage = document.querySelector(".stage");
   const w = stage.clientWidth, h = stage.clientHeight;
   const cx = w / 2, cy = h / 2;
-  const R = Math.min(w, h) * 0.44 + 26; // just outside the sphere edge
-  const a0 = -54, a1 = 54;              // degrees, top-right down to bottom-right
+  const R = Math.min(w, h) * 0.46 + 30;  // kürenin sağ kavisinin hemen dışı + nefes payı
+  const a0 = -84, a1 = 84;               // geniş yay → gerçekten kavislenir (dar açıda düz sütun olurdu)
   cards.forEach((c, i) => {
     const deg = n > 1 ? a0 + (i * (a1 - a0)) / (n - 1) : 0;
     const rad = (deg * Math.PI) / 180;

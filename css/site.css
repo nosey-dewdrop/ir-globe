@@ -83,13 +83,15 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .clist a { color: var(--ink); }
 .clist a:hover { color: var(--navy); }
 
-/* ── konu index: cards ── */
-.tgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
-.tcard { display: flex; flex-direction: column; gap: 6px; background: var(--paper); padding: 20px; }
-.tcard:hover { background: #fafbfc; text-decoration: none; }
-.tcard h2 { font-size: 21px; color: var(--ink); }
-.tcard p { font-size: 13.5px; color: var(--muted); flex: 1; }
-.tcount { font-size: 12px; color: var(--navy); letter-spacing: 0.02em; }
+/* ── konu index: editoryal liste (grid/kutu YOK, bölen çizgi YOK) ── */
+.tlist { margin-top: 6px; }
+.trow { padding: 18px 0; max-width: 640px; }
+.trow h2 { font-size: 22px; font-weight: 500; margin-bottom: 5px; }
+.trow h2 a { color: var(--ink); }
+.trow h2 a:hover { color: var(--navy); text-decoration: none; }
+.trow p { font-size: 14.5px; color: var(--muted); line-height: 1.45; margin-bottom: 6px; }
+.tcount { font-size: 13px; color: var(--navy); letter-spacing: 0.01em; }
+.tcount:hover { text-decoration: none; opacity: 0.7; }
 
 /* ── ulke index: word wall ── */
 .uwall { display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: baseline; }

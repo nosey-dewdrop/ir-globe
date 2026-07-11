@@ -214,20 +214,21 @@ ${foot(2)}
 function konuIndex() {
   const title = "konular — kim kime ne satıyor?";
   const desc = "Silahtan tahıla, enerjiden yaptırıma: dünyanın ilişki ağını katman katman gez.";
-  const cards = LAYERS.map((l) => {
+  // editoryal liste (grid/kutu YOK, bizim stil) — her konu bir başlık + kısa satır
+  const rows = LAYERS.map((l) => {
     const n = TIES.filter((t) => t.type === l.key).length;
-    return `<a class="tcard" href="ROOT/konu/${l.key}/">
-      <h2>${esc(l.label)}</h2>
+    return `<article class="trow">
+      <h2><a href="ROOT/konu/${l.key}/">${esc(l.label)}</a></h2>
       <p>${esc(l.blurb)}</p>
-      <span class="tcount">${n} bağ →</span>
-    </a>`;
+      <a class="tcount" href="ROOT/konu/${l.key}/">${n} bağ →</a>
+    </article>`;
   }).join("\n");
   const body = `${nav(1)}
 <main class="wrap">
   <nav class="crumb"><a href="ROOT/index.html">ana sayfa</a> › konular</nav>
   <h1>konular</h1>
   <p class="lede">${esc(desc)}</p>
-  <section class="tgrid">${cards}</section>
+  <section class="tlist">${rows}</section>
 </main>
 ${foot(1)}
 </body></html>`;
