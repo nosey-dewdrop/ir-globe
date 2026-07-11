@@ -454,3 +454,54 @@ function sizeGlobe() {
 renderAll();
 sizeGlobe();
 window.addEventListener("resize", sizeGlobe);
+
+/* ── #3: küre bağlantıları Supabase'den okur (Bera panelden yazar → küre yansıtır) ──
+   admin/config.js doldurulmamışsa hiçbir şey yapmaz; küre js/layers.js + SIPRI ile
+   statik çalışmaya devam eder. Config varsa non-silah katmanları DB'den tazeler;
+   silah katmanı yüzdeleriyle birlikte SIPRI'de (data.js) kalır. RLS: herkes okur. */
+async function hydrateFromSupabase() {
+  if (!window.SUPABASE_URL || !window.SUPABASE_ANON) return; // config yok → statik kal
+  const base = window.SUPABASE_URL.replace(/\/$/, "");
+  const headers = { apikey: window.SUPABASE_ANON, Authorization: "Bearer " + window.SUPABASE_ANON };
+  let dbLayers, dbConns;
+  try {
+    const [lr, cr] = await Promise.all([
+      fetch(base + "/rest/v1/layers?select=key,label,ord&order=ord", { headers }),
+      fetch(base + "/rest/v1/connections?select=layer,s,r,note", { headers }),
+    ]);
+    if (!lr.ok || !cr.ok) throw new Error("HTTP " + lr.status + "/" + cr.status);
+    dbLayers = await lr.json();
+    dbConns = await cr.json();
+  } catch (e) {
+    console.warn("[globe] Supabase okunamadı, statik veriyle devam:", e.message);
+    return;
+  }
+
+  // katman navigasyonu — DB doluysa onu kaynak al
+  if (Array.isArray(dbLayers) && dbLayers.length) {
+    LAYERS.length = 0;
+    dbLayers.forEach((l) => LAYERS.push({ key: l.key, label: l.label, live: true }));
+  }
+
+  // bağlantılar — silah HARİÇ tüm katmanları DB ile değiştir (silah = SIPRI, data.js)
+  if (Array.isArray(dbConns)) {
+    for (let i = TIES.length - 1; i >= 0; i--) if (TIES[i].type !== "silah") TIES.splice(i, 1);
+    let dropped = 0;
+    dbConns.forEach((c) => {
+      if (c.layer === "silah") return; // silah'ı SIPRI yönetiyor
+      if (COORDS[c.s] && COORDS[c.r]) TIES.push({ s: c.s, r: c.r, type: c.layer, note: c.note || "", exp: null, imp: null });
+      else dropped++;
+    });
+    if (dropped) console.warn("[globe] " + dropped + " bağlantı, koordinatı olmayan ülke içerdiği için atlandı");
+  }
+
+  // ülke listesini + seçili katmanı tazele, yeniden çiz
+  const fresh = [...new Set(TIES.flatMap((t) => [t.s, t.r]))].sort();
+  NAMES.length = 0; fresh.forEach((n) => NAMES.push(n));
+  if (!LAYERS.some((l) => l.key === layer)) layer = (LAYERS[0] && LAYERS[0].key) || "silah";
+  selected = null; focusTie = null;
+  renderLayers();
+  redraw();
+  renderAll();
+}
+hydrateFromSupabase();
