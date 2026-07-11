@@ -93,6 +93,7 @@ function nav(depth) {
   <a class="brand" href="${r}index.html">kim kime ne satıyor?</a>
   <nav class="topnav">
     <a href="${r}index.html">küre</a>
+    <a href="${r}akis.html">akış</a>
     <a href="${r}konu/index.html">konular</a>
     <a href="${r}ulke/index.html">ülkeler</a>
     <a href="${r}uye.html">üyelik</a>
@@ -260,7 +261,7 @@ function writeFile(rel, html) {
 }
 
 let count = 0;
-const urls = [`${SITE}/`, `${SITE}/uye.html`, `${SITE}/konu/`, `${SITE}/ulke/`];
+const urls = [`${SITE}/`, `${SITE}/akis.html`, `${SITE}/bulten.html`, `${SITE}/uye.html`, `${SITE}/konu/`, `${SITE}/ulke/`];
 
 writeFile("konu/index.html", konuIndex());
 writeFile("ulke/index.html", ulkeIndex());

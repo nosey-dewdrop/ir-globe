@@ -386,7 +386,7 @@ function renderCards() {
     arts.map((a, i) =>
       `<a class="card" style="--i:${i}" href="${esc(a.url)}" target="_blank" rel="noopener">
         <span class="card-title">${esc(a.title)}</span>
-        <span class="card-meta">${esc(a.source)}${a.date ? " · " + esc(a.date) : ""}</span>
+        <span class="card-meta">${esc(a.source)}${a.date ? " · " + esc(TRDate.short(a.date)) : ""}</span>
       </a>`).join("");
   cardsEl.classList.add("show");
   layoutCards();

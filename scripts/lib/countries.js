@@ -36,6 +36,14 @@ const EXTRA_NAMES = {
   "united republic of tanzania": "tanzania", "tanzania (united republic of)": "tanzania",
   "myanmar (burma)": "myanmar", "burma": "myanmar", "eswatini (swaziland)": "eswatini",
   "swaziland": "eswatini", "timor leste": "timor-leste", "east timor": "timor-leste",
+  /* UN/FAO-style long names */
+  "china, mainland": "china", "china, taiwan province of": "taiwan", "taiwan province of china": "taiwan",
+  "netherlands (kingdom of the)": "netherlands",
+  "united kingdom of great britain and northern ireland": "united kingdom",
+  "venezuela (bolivarian rep. of)": "venezuela", "iran (islamic rep. of)": "iran",
+  "micronesia (fed. states of)": "micronesia", "rep. of korea": "south korea",
+  "dem. people's rep. korea": "north korea", "rep. of moldova": "moldova",
+  "türkiye (turkey)": "türkiye", "sudan (former)": "sudan",
 };
 Object.entries(EXTRA_NAMES).forEach(([n, k]) => { if (k && REG[k]) BY_NAME[n] = k; });
 

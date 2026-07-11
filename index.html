@@ -36,6 +36,7 @@
     <header class="mast">
       <h1>kim kime ne satıyor?</h1>
       <span class="mast-sub">dünyanın ilişki ağı · gerçek, kaynaklı veri</span>
+      <span class="mast-fresh" id="fresh"></span>
     </header>
     <div id="digest" class="digest"><p class="dg-load">başlıklar yükleniyor…</p></div>
     <p class="ed-scroll">↓ kaydır, küreyi keşfet</p>
@@ -65,9 +66,10 @@
       <span id="sub-msg"></span>
     </form>
     <p class="bfine"><a href="bulten.html">bu haftanın bülteni →</a> · <a href="uye.html">katıl!</a></p>
+    <p class="countdown" id="countdown"></p>
   </div>
   <footer>
-    <span class="foot-nav"><a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="uye.html">üyelik</a> · <a href="gizlilik.html">gizlilik</a></span>
+    <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="uye.html">üyelik</a> · <a href="gizlilik.html">gizlilik</a></span>
     <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını</span>
   </footer>
 </section>
@@ -128,7 +130,8 @@
     el.innerHTML = items.slice(0, 15).map(function (a) {
       return '<a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
         '<span class="dg-t">' + esc(a.t) + '</span>' +
-        '<span class="dg-m">' + esc(a.s) + (a.d ? ' · ' + esc(a.d) : "") + ' · ' + (LAB[a.l] || a.l) + '</span></a>';
+        '<span class="dg-m">' + esc(a.s) + (a.d ? ' · ' + esc(TRDate.short(a.d)) : "") + ' · ' + (LAB[a.l] || a.l) +
+        (TRDate.isToday(a.d) ? ' <span class="dg-new">yeni</span>' : "") + '</span></a>';
     }).join("");
   }).catch(function () {
     el.innerHTML = '<p class="dg-load">başlıklar şu an yüklenemedi.</p>';
@@ -145,6 +148,19 @@
   Promise.all([Store.meta(), Store.newsMeta()]).then(function (r) {
     var m = r[0] || {}, nm = r[1] || {};
     render(nm.total || 0, m.ties || 0, m.countries || 0, m.layers || 12);
+
+    /* canlılık: başta "son güncelleme" damgası (haber tazeleme zamanı) */
+    var fresh = document.getElementById("fresh");
+    if (fresh && nm.updated) fresh.textContent = "son güncelleme: " + TRDate.rel(nm.updated);
+
+    /* çıkışta gün sayacı: haftalık veri güncellemesine kalan gün */
+    var cd = document.getElementById("countdown");
+    if (cd && m.updated) {
+      var next = new Date(m.updated); next.setDate(next.getDate() + 7);
+      var days = Math.ceil((next - new Date()) / 86400000);
+      cd.textContent = days > 1 ? "sonraki veri güncellemesine " + days + " gün"
+        : days === 1 ? "veri yarın güncelleniyor" : "veri bugün güncelleniyor";
+    }
   }).catch(function () {});
   function render(art, conn, ulke, katman) {
   el.innerHTML = item(art, "gerçek makale") + item(conn, "bağlantı") + item(ulke, "ülke") + item(katman, "katman");

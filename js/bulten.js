@@ -94,7 +94,7 @@
       return items.slice(0, n).map(function (a) {
         return "<a class=\"dg\" href=\"" + esc(a.u) + "\" target=\"_blank\" rel=\"noopener\">" +
           "<span class=\"dg-t\">" + esc(a.t) + "</span>" +
-          "<span class=\"dg-m\">" + esc(a.src) + (a.d ? " · " + esc(a.d) : "") + " · " + (LAB[a.l || a.layer] || a.l || a.layer) + "</span></a>";
+          "<span class=\"dg-m\">" + esc(a.src) + (a.d ? " · " + esc(TRDate.short(a.d)) : "") + " · " + (LAB[a.l || a.layer] || a.l || a.layer) + "</span></a>";
       }).join("");
     }
 
@@ -125,7 +125,7 @@
     }
     var updated = all[0].d || "";
     document.getElementById("feed").innerHTML =
-      "<div class=\"lbl\">akış · en yeni manşetler" + (updated ? " · " + esc(updated) + "'e kadar" : "") + "</div>" +
+      "<div class=\"lbl\">akış · en yeni manşetler" + (updated ? " · " + esc(TRDate.full(updated)) + "'e kadar" : "") + "</div>" +
       "<div class=\"digest\">" + headlineList(flow, 30) + "</div>";
 
     // künye sayaçları
