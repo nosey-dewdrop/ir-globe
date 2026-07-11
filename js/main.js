@@ -1,68 +1,47 @@
-/* merge the two SIPRI tables into one set of directed ties, then draw them */
+/* state — filled asynchronously from data/*.json via Store (js/store.js).
+   The page boots with the country registry + the default layer only; other
+   layers and their news load lazily on first click (see ensureLayer). */
 
-const ties = {}; // "supplier→recipient" → {s, r, exp, imp}
-function tie(s, r) {
-  const k = s + "→" + r;
-  if (!ties[k]) ties[k] = { s, r, exp: null, imp: null };
-  return ties[k];
+const COORDS = {};      // key -> [lat, lng] (arc endpoints)
+const KEYOF = {};       // any lowercase name/alias -> key (polygon lookup)
+const LAYERS = [];      // [{key, label, live}] from data/layers/index.json
+const TIES = [];        // directed ties of the layers loaded so far
+const NEWS = {};        // layer -> { "s→r": [articles] }
+const SRC = {};         // layer -> source meta {name, url, year}
+let supShare = {}, recShare = {};  // silah (SIPRI) global shares
+let NAMES = [];         // countries of the loaded ties (word wall pool)
+const loadedLayers = new Set();
+
+function recomputeNames() {
+  NAMES = [...new Set(TIES.flatMap((t) => [t.s, t.r]))].sort();
 }
-SUPPLIERS.forEach((sup) => sup.to.forEach(([r, pct]) => { tie(sup.c, r).exp = pct; }));
-RECIPIENTS.forEach((rec) => rec.from.forEach(([s, pct]) => { tie(s, rec.c).imp = pct; }));
-const TIES = Object.values(ties).filter((t) => COORDS[t.s] && COORDS[t.r]);
-TIES.forEach((t) => { t.type = "silah"; });
 
-// the other layers' real connections (verified facts, note = the basis)
-if (typeof LAYER_TIES !== "undefined") {
-  Object.entries(LAYER_TIES).forEach(([layer, arr]) => {
-    arr.forEach((c) => {
-      if (COORDS[c.s] && COORDS[c.r]) TIES.push({ s: c.s, r: c.r, type: layer, note: c.note || "", exp: null, imp: null });
-    });
+async function ensureLayer(k) {
+  if (loadedLayers.has(k)) return;
+  const [lay, news] = await Promise.all([Store.layer(k), Store.news(k)]);
+  if (loadedLayers.has(k)) return; // a parallel call already applied it
+  loadedLayers.add(k);
+  SRC[k] = lay.source || null;
+  if (lay.shares) { supShare = lay.shares.sup || {}; recShare = lay.shares.rec || {}; }
+  (lay.ties || []).forEach((c) => {
+    if (COORDS[c.s] && COORDS[c.r])
+      TIES.push({ s: c.s, r: c.r, type: k, note: c.note || "",
+        exp: c.exp != null ? c.exp : null, imp: c.imp != null ? c.imp : null });
   });
+  NEWS[k] = news || {};
+  recomputeNames();
 }
 
-const supShare = Object.fromEntries(SUPPLIERS.map((x) => [x.c, x.share]));
-const recShare = Object.fromEntries(RECIPIENTS.map((x) => [x.c, x.share]));
-const NAMES = [...new Set(TIES.flatMap((t) => [t.s, t.r]))].sort();
-const src = SOURCES.silah;
-
-/* geojson country name → our data key (natural earth naming is inconsistent) */
-const ALIAS = {
-  "united states of america": "united states", "united states": "united states",
-  "turkey": "türkiye", "türkiye": "türkiye", "turkiye": "türkiye",
-  "czech republic": "czechia", "czechia": "czechia",
-  "republic of korea": "south korea", "south korea": "south korea",
-  "united arab emirates": "uae",
-  "democratic republic of the congo": "drc",
-  "republic of serbia": "serbia", "serbia": "serbia",
-  "russian federation": "russia",
-};
 function countryOfFeature(f) {
   for (const key of ["ADMIN", "NAME", "NAME_LONG", "SOVEREIGNT", "name"]) {
     const v = f.properties && f.properties[key];
     if (!v) continue;
-    const n = String(v).toLowerCase();
-    if (ALIAS[n]) return ALIAS[n];
-    if (COORDS[n]) return n;
+    const k = KEYOF[String(v).toLowerCase()];
+    if (k && COORDS[k]) return k;
   }
   return null;
 }
 
-/* the lenses an IR student wants — all live now with real connections (verified facts).
-   silah carries SIPRI percentages; the rest carry a note (the real basis) + real news. */
-const LAYERS = [
-  { key: "silah", label: "silah", live: true },
-  { key: "ticaret", label: "ticaret", live: true },
-  { key: "enerji", label: "enerji", live: true },
-  { key: "tahil", label: "tahıl & gıda", live: true },
-  { key: "ittifak", label: "ittifaklar", live: true },
-  { key: "yaptirim", label: "yaptırımlar", live: true },
-  { key: "goc", label: "göç & mülteci", live: true },
-  { key: "borc", label: "borç & kredi", live: true },
-  { key: "diplomasi", label: "diplomasi", live: true },
-  { key: "teknoloji", label: "teknoloji & çip", live: true },
-  { key: "us", label: "askeri üsler", live: true },
-  { key: "yardim", label: "dış yardım", live: true },
-];
 function currentLayer() { return LAYERS.find((l) => l.key === layer); }
 
 let layer = "silah";
@@ -76,7 +55,12 @@ function renderLayers() {
   layerNav.innerHTML = LAYERS.map((l) =>
     `<button class="layerbtn${l.key === layer ? " on" : ""}${l.live ? "" : " soon"}" data-l="${l.key}">${l.label}</button>`).join("");
   layerNav.querySelectorAll(".layerbtn").forEach((b) =>
-    b.addEventListener("click", () => { layer = b.dataset.l; reset(); renderLayers(); }));
+    b.addEventListener("click", async () => {
+      layer = b.dataset.l;
+      renderLayers();               // instant button feedback
+      await ensureLayer(layer);     // lazy: fetch layer + its news on first visit
+      reset();
+    }));
 }
 function activeTies() { return TIES.filter((t) => t.type === layer); }
 
@@ -297,7 +281,7 @@ function countryStory(c) {
 
 /* ── articles as data (per layer) — the cards layer lays them out around the globe ── */
 function layerArticles() {
-  return (typeof ARTICLES !== "undefined" && ARTICLES[layer]) || {};
+  return NEWS[layer] || {};
 }
 function tieArticleList(t) {
   return layerArticles()[t.s + "→" + t.r] || [];
@@ -316,8 +300,9 @@ function countryArticleList(c) {
 
 /* ── left column: the story ── */
 function srcLine() {
-  return layer === "silah"
-    ? `<p class="src"><em>kaynak: <a href="${src.url}" target="_blank" rel="noopener">SIPRI, 2021–25 ↗</a></em></p>`
+  const s = SRC[layer];
+  return s && s.url
+    ? `<p class="src"><em>kaynak: <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}${s.year ? ", " + esc(s.year) : ""} ↗</a></em></p>`
     : `<p class="src"><em>bağlantılar açık kaynaklardan derlendi · haberler: google news</em></p>`;
 }
 const story = document.getElementById("story");
@@ -513,4 +498,24 @@ async function hydrateFromSupabase() {
   redraw();
   renderAll();
 }
-hydrateFromSupabase();
+
+/* ── boot: registry + layer index + default layer, then draw ── */
+(async function boot() {
+  try {
+    const [countries, index] = await Promise.all([Store.countries(), Store.layerIndex()]);
+    Object.values(countries).forEach((c) => {
+      COORDS[c.key] = c.coords;
+      KEYOF[c.key] = c.key;
+      (c.aliases || []).forEach((a) => { KEYOF[a] = c.key; });
+    });
+    index.forEach((l) => LAYERS.push({ key: l.key, label: l.label, live: true }));
+    await ensureLayer(layer);
+    renderLayers();
+    redraw();
+    renderAll();
+    hydrateFromSupabase();
+  } catch (e) {
+    console.error("[globe] veri yüklenemedi:", e);
+    story.innerHTML = '<div class="writing"><p>veri yüklenemedi — bağlantını kontrol edip sayfayı yenile.</p></div>';
+  }
+})();

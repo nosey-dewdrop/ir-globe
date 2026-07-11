@@ -1,31 +1,22 @@
-# ir-globe (WORKING NAME — real name is Damla's to give)
+# ir-globe (working name "kim kime ne satıyor?" — real name is Bera/Damla's to give)
 
 ## Commit rules (READ THIS — mobile/web sessions too)
 Commit messages: lowercase english, no emojis, no dashes. Author is Damla ONLY. NEVER add a `Co-authored-by: Claude` / `Claude-Session` trailer or any "Generated with Claude" line — Claude must not appear as a contributor on this repo. (These rules live in Damla's global config on her Mac, which cloud/mobile sessions can't see — so they are restated here.)
 
-Product for Damla's IR-student friend (asked for it 2026-07-10). A rotating WebGL globe showing country-to-country networks — v1 is the arms trade; the ask also covers grain and other ties, plus a custom weekly newsletter on top. DECISION (Damla, 2026-07-10): this is a GIFT, not a commission — friend may take it into journalism; the @damlahelloworld signature in the footer travels with it. If other IR people/journalists want their own globes later, the template itself can become the sellable thing.
+## What this is
+3D editorial globe of country-to-country relations (12 layers, real sourced data, ~2200 auto-refreshed news) — a damlahelloworld product built for Bera (founder & editor). Live: https://damlahelloworld.github.io/ir-globe/ (GitHub Pages, no build step).
 
-## Status (2026-07-10 pm — REAL SITE: landing + SEO + membership)
-Turned the single-page globe into a full product. `index.html` = editorial landing (NYT/Economist line: serif hero, navy accent, sharp corners) — hero, 12-layer chips, founders block (Bera = kurucu&editör, damlahelloworld = yapım), newsletter box. Globe moved to `kure.html` (git mv). NEW crawlable SEO pages generated from the LIVE data by `scripts/build-seo.js` (no fabrication — reads js/data.js SIPRI + js/layers.js notes + js/articles.js real headlines): `konu/<layer>/` (12) + `ulke/<country>/` (55) + `konu/` & `ulke/` index + `sitemap.xml` + `robots.txt`. Every page has title/description/canonical/OG/JSON-LD. Regenerate anytime: `node scripts/build-seo.js`. Styling in `css/site.css` (separate from globe's style.css). MEMBERSHIP: `uye.html` + `js/auth.js` = public Supabase signup/login; members auto-join newsletter list. Schema reworked (`admin/schema.sql`): `profiles` table + role (admin/member) + `is_admin()`; connections/layers now writable ONLY by admin (Bera), everyone reads. Privacy policy shipped same session: `gizlilik.html` (KVKK/GDPR — emails + accounts collected). Config-gated: auth/subscribe hidden with a friendly notice until Damla fills admin/config.js.
-Names/labels (layers, "kim kime ne satıyor?") are the working set — Bera renames; structure + data are real. PENDING (Damla): provision Supabase → fill admin/config.js → run schema → add Bera user → set his role=admin. Then membership + admin + subscribe go live. NEXT after that: wire globe to READ connections from Supabase.
+**READ PROJECT.md FIRST** — architecture, data layout, pipelines, roadmap, decisions all live there and are kept accurate. KAYNAKLAR.md = per-layer dataset recipes. HANDOFF.md = Bera's guide.
 
-## Status (2026-07-10, DELIVERY-READY — gift to friend)
-Full product: 12 layers all LIVE with real directed connections (silah=SIPRI %; ticaret/enerji/tahil/ittifak/yaptirim/goc/borc/diplomasi/teknoloji/us/yardim = verified open-source facts in js/layers.js). 2204 real Google-News articles across 347 connections in js/articles.js, auto-refreshed daily by .github/workflows/news.yml (needs repo Actions read+write perm). Editorial look APPROVED by Damla: grey globe (star, big), title+categories one top row, serif headlines + sans body, flowing paragraph story naming the good ("silah"), real headlines arc around the globe's right edge, countries word-wall at very bottom, no divider lines. Naming + category grouping = FRIEND's call (Damla's decision). HANDOFF.md written for the friend. KAYNAKLAR.md = per-layer real dataset recipes for deeper data later.
-MANAGEMENT APP built (2026-07-10, real backend, NO localStorage): `admin/` = Supabase-backed panel — login (Supabase auth) → manage connections + categories + newsletter subscribers (CSV export). `admin/schema.sql` (layers/connections/subscribers + RLS), `admin/config.js` (Damla fills SUPABASE_URL+ANON), `admin/SETUP.md` (5-min provisioning steps). Globe footer has a "bültene katıl" box → Supabase (js/subscribe.js); hidden until config filled. PENDING: Damla creates Supabase project + runs schema + fills config + adds admin user → then panel+subscribe live. NEXT after that: wire the globe to READ connections from Supabase (currently reads static js/layers.js).
-Open (friend's): name, category families/grouping when many, move to own domain. Damla to provision Supabase.
+**Style law:** current editorial style (Newsreader serif + Inter, white, sharp corners, navy) is Damla-approved and DOES NOT CHANGE without her approval. No fabricated data, ever.
 
-## Old status (2026-07-10, v1 built)
-- Static site, no build step: globe.gl (CDN) + vanilla JS/CSS.
-- Data: ~160 REAL directed ties hand-copied from SIPRI Fact Sheet March 2026 (tables 1+2, 2021-25 period) in js/data.js with source URL. exp = % of supplier's exports, imp = % of recipient's imports. No invented numbers — that is a hard law here (client will fact-check, it's their field).
-- Interactions: auto-rotating night-earth globe (drag = spin, scroll = zoom), ember arcs, click country (globe point or side wall) → camera flies there, its ties highlight (amber = selling, red = buying), side panel lists every tie as a sentence. Word wall sized by global share (size = hierarchy). Arc click → pinned tie chip: who→whom, the %s, clickable SIPRI reference. Layer selector in header — one lens at a time (all-at-once = soup, deliberate ban); a new layer = a new data table with its own type + SOURCES entry, mechanic already wired.
-- Design: near-black + ember/amber + pink signature, mono, sharp corners, hairlines only.
+## Status (2026-07-11)
+- Phase 1 of the approved 8-phase plan SHIPPED: data moved to `data/*.json` (per-layer + per-layer news + digest + meta), `js/store.js` lazy loader, initial payload 1.2MB → ~40KB, SEO builder reads JSON, "TÜRkiye" display bug fixed. Legacy `js/{data,layers,articles}.js` unreferenced, kept one release for rollback.
+- News Action (`news.yml`, 6-hourly) now commits `data/news/`.
+- Supabase project created by Damla (2026-07-11): https://gwvlvqgpksinmstsevth.supabase.co — schema NOT run yet, `admin/config.js` NOT filled yet (do both together in Phase 6 so live forms never point at missing tables).
 
-## Next
-- Damla: name the product, price the commission, show friend for feedback.
-- Grain/commodity layer (UN Comtrade data) as second network type with its own color = meaning.
-- Newsletter format (weekly: pick one edge on the globe, tell its story).
-- Deploy (Vercel/Pages) once named.
-
+## Where we left off / next
+Phase 2: weekly data pipeline (`scripts/fetch-data.js` + `scripts/sources/*` + `data.yml`) — see PROJECT.md roadmap. Then news diversification (3), liveliness face (4), new layers (5), accounts+personal page (6), e-mail briefing (7), docs (8).
 
 <!-- deep machine context (auto, regenerable) -->
 @CLAUDE.context.md

@@ -75,10 +75,8 @@
 <script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js"></script>
 <script src="admin/config.js"></script>
 <script src="js/subscribe.js?v=41"></script>
-<script src="js/data.js?v=41"></script>
-<script src="js/layers.js?v=41"></script>
-<script src="js/articles.js?v=41"></script>
-<script src="js/main.js?v=47"></script>
+<script src="js/store.js?v=48"></script>
+<script src="js/main.js?v=48"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -117,49 +115,39 @@
 })();
 </script>
 <script>
-/* editorial sayfası: en güncel GERÇEK manşetleri (articles.js) tarih sırasıyla digest yap.
-   uydurma yok — hepsi google news'ten gelen gerçek başlık + link; news.yml her gün tazeler. */
+/* editorial sayfası: en güncel GERÇEK manşetler artık hazır digest dosyasından gelir
+   (data/news/digest.json — fetch-news.js her tazelemede yeniden yazar). uydurma yok. */
 (function () {
-  if (typeof ARTICLES === "undefined") return;
   var LAB = { silah:"silah", ticaret:"ticaret", enerji:"enerji", tahil:"tahıl", ittifak:"ittifak",
     yaptirim:"yaptırım", goc:"göç", borc:"borç", diplomasi:"diplomasi", teknoloji:"teknoloji", us:"üs", yardim:"yardım" };
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
     return { "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]; }); };
-  var all = [];
-  Object.keys(ARTICLES).forEach(function (layer) {
-    var edges = ARTICLES[layer];
-    Object.keys(edges).forEach(function (edge) {
-      (edges[edge] || []).forEach(function (a) {
-        if (a && a.title && a.url) all.push({ t:a.title, s:a.source, d:a.date || "", u:a.url, l:layer });
-      });
-    });
-  });
-  all.sort(function (a, b) { return (b.d).localeCompare(a.d); });
-  var seen = {}, top = [];
-  for (var i = 0; i < all.length && top.length < 15; i++) {
-    if (seen[all[i].t]) continue; seen[all[i].t] = 1; top.push(all[i]);
-  }
   var el = document.getElementById("digest");
   if (!el) return;
-  el.innerHTML = top.map(function (a) {
-    return '<a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
-      '<span class="dg-t">' + esc(a.t) + '</span>' +
-      '<span class="dg-m">' + esc(a.s) + (a.d ? ' · ' + esc(a.d) : "") + ' · ' + (LAB[a.l] || a.l) + '</span></a>';
-  }).join("");
+  Store.digest().then(function (items) {
+    el.innerHTML = items.slice(0, 15).map(function (a) {
+      return '<a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
+        '<span class="dg-t">' + esc(a.t) + '</span>' +
+        '<span class="dg-m">' + esc(a.s) + (a.d ? ' · ' + esc(a.d) : "") + ' · ' + (LAB[a.l] || a.l) + '</span></a>';
+    }).join("");
+  }).catch(function () {
+    el.innerHTML = '<p class="dg-load">başlıklar şu an yüklenemedi.</p>';
+  });
 })();
 </script>
 <script>
-/* en alttaki sayaç: kaç gerçek makale, kaç bağlantı, kaç ülke — görününce count-up */
+/* en alttaki sayaç: kaç gerçek makale, kaç bağlantı, kaç ülke — data/meta.json +
+   data/news/meta.json'dan okunur (pipeline her tazelemede yeniden yazar) */
 (function () {
-  var art = 0;
-  try { Object.keys(ARTICLES).forEach(function (l) { var e = ARTICLES[l]; Object.keys(e).forEach(function (k) { art += (e[k] || []).length; }); }); } catch (e) {}
-  var conn = 0, ulke = 0;
-  try { conn = TIES.length; } catch (e) {}
-  try { ulke = NAMES.length; } catch (e) {}
   var el = document.getElementById("stats");
   if (!el) return;
   function item(n, l) { return '<span class="stat"><b class="statn" data-to="' + n + '">0</b><span class="statl">' + l + "</span></span>"; }
-  el.innerHTML = item(art, "gerçek makale") + item(conn, "bağlantı") + item(ulke, "ülke") + item(12, "katman");
+  Promise.all([Store.meta(), Store.newsMeta()]).then(function (r) {
+    var m = r[0] || {}, nm = r[1] || {};
+    render(nm.total || 0, m.ties || 0, m.countries || 0, m.layers || 12);
+  }).catch(function () {});
+  function render(art, conn, ulke, katman) {
+  el.innerHTML = item(art, "gerçek makale") + item(conn, "bağlantı") + item(ulke, "ülke") + item(katman, "katman");
   var ran = false;
   function run() {
     if (ran) return; ran = true;
@@ -174,6 +162,7 @@
   if ("IntersectionObserver" in window) {
     new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) run(); }); }, { threshold: 0.4 }).observe(el);
   } else run();
+  }
 })();
 </script>
 </body>

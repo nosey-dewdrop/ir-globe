@@ -7,95 +7,40 @@
    out:  /konu/<layer>/index.html  ·  /ulke/<country>/index.html  ·  sitemap.xml */
 
 const fs = require("fs");
-const vm = require("vm");
 const path = require("path");
 
 const ROOT = path.join(__dirname, "..");
 const SITE = "https://damlahelloworld.github.io/ir-globe";
+const readJSON = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), "utf8"));
 
-/* ── load the live data by evaluating the browser files in a sandbox ── */
-const ctx = {};
-vm.createContext(ctx);
-// concat the browser files into one script so their top-level consts share scope,
-// then hand the globals back out through the context object
-const bundle = ["js/layers.js", "js/data.js", "js/articles.js"]
-  .map((f) => fs.readFileSync(path.join(ROOT, f), "utf8"))
-  .join("\n;\n") +
-  "\n;this._x = { COORDS, SUPPLIERS, RECIPIENTS, LAYER_TIES, ARTICLES, SOURCES };";
-vm.runInContext(bundle, ctx, { filename: "bundle" });
-const { COORDS, SUPPLIERS, RECIPIENTS, LAYER_TIES, ARTICLES, SOURCES } = ctx._x;
-
-/* rebuild the directed ties exactly as js/main.js does at runtime (that logic lives
-   in main.js alongside DOM/globe code we can't run headless — so mirror it here) */
-const _ties = {};
-const _tie = (s, r) => (_ties[s + "→" + r] ||= { s, r, exp: null, imp: null });
-SUPPLIERS.forEach((sup) => sup.to.forEach(([r, pct]) => { _tie(sup.c, r).exp = pct; }));
-RECIPIENTS.forEach((rec) => rec.from.forEach(([s, pct]) => { _tie(s, rec.c).imp = pct; }));
-const TIES = Object.values(_ties).filter((t) => COORDS[t.s] && COORDS[t.r]);
-TIES.forEach((t) => { t.type = "silah"; });
-Object.entries(LAYER_TIES).forEach(([layer, arr]) => {
-  arr.forEach((c) => {
-    if (COORDS[c.s] && COORDS[c.r]) TIES.push({ s: c.s, r: c.r, type: layer, note: c.note || "", exp: null, imp: null });
-  });
-});
-const NAMES = [...new Set(TIES.flatMap((t) => [t.s, t.r]))].sort();
-const supShare = Object.fromEntries(SUPPLIERS.map((x) => [x.c, x.share]));
-
-/* ── layer identity: working label + a real, factual one-liner (what the layer shows) ── */
-const LAYERS = [
-  { key: "silah", label: "silah", live: true,
-    blurb: "Kim kime silah satıyor. Yüzdeler SIPRI'nin 2021-25 dönemine ait uluslararası silah transferi verisinden birebir alındı." },
-  { key: "ticaret", label: "ticaret",
-    blurb: "Ülkeler arası mal ticaretinin en büyük ikili hatları — kimin ihracatı kime dayanıyor." },
-  { key: "enerji", label: "enerji",
-    blurb: "Petrol, doğalgaz ve LNG akışları: hangi ülke enerjisini kime satıyor, kim kime bağımlı." },
-  { key: "tahil", label: "tahıl & gıda",
-    blurb: "Buğday, mısır ve temel gıdanın ihracat hatları — dünyanın gıda güvenliği kimlere bağlı." },
-  { key: "ittifak", label: "ittifaklar",
-    blurb: "Savunma ve güvenlik ittifakları: kim kiminle aynı masada, hangi taahhüt kimi bağlıyor." },
-  { key: "yaptirim", label: "yaptırımlar",
-    blurb: "Kim kime yaptırım uyguluyor — ekonomik baskının yönlü haritası." },
-  { key: "goc", label: "göç & mülteci",
-    blurb: "Büyük göç ve mülteci hareketleri: insanlar hangi ülkeden hangisine akıyor." },
-  { key: "borc", label: "borç & kredi",
-    blurb: "Devletlerarası kredi ve borç ilişkileri — kim kimin alacaklısı, kim kime borçlu." },
-  { key: "diplomasi", label: "diplomasi",
-    blurb: "Stratejik ortaklıklar ve diplomatik hizalanmalar: kim kime yakın duruyor." },
-  { key: "teknoloji", label: "teknoloji & çip",
-    blurb: "Yarı iletken, çip ve kritik teknoloji tedariki — kim kimin üretim zincirinde." },
-  { key: "us", label: "askeri üsler",
-    blurb: "Yabancı askeri üsler: hangi ülke nerede asker konuşlandırıyor." },
-  { key: "yardim", label: "dış yardım",
-    blurb: "Kalkınma ve insani yardım akışları — kim kime yardım gönderiyor." },
-];
+/* ── load the live data from the data/ layout (single source of truth) ── */
+const COUNTRIES = readJSON("data/countries.json");
+const LAYERS = readJSON("data/layers/index.json"); // [{key,label,blurb}]
 const LAYER_BY_KEY = Object.fromEntries(LAYERS.map((l) => [l.key, l]));
+
+const TIES = [];
+const ARTICLES = {};
+let supShare = {};
+for (const l of LAYERS) {
+  const lay = readJSON(`data/layers/${l.key}.json`);
+  if (lay.shares && lay.shares.sup) supShare = lay.shares.sup;
+  (lay.ties || []).forEach((c) => {
+    if (COUNTRIES[c.s] && COUNTRIES[c.r])
+      TIES.push({ s: c.s, r: c.r, type: l.key, note: c.note || "",
+        exp: c.exp != null ? c.exp : null, imp: c.imp != null ? c.imp : null });
+  });
+  try { ARTICLES[l.key] = readJSON(`data/news/${l.key}.json`); } catch (e) { ARTICLES[l.key] = {}; }
+}
+const NAMES = [...new Set(TIES.flatMap((t) => [t.s, t.r]))].sort();
 
 /* ── helpers ── */
 const esc = (s) =>
   String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-// stable ascii slug for country dirs (türkiye→turkiye, drops parens/spaces)
-function slug(name) {
-  return name
-    .toLowerCase()
-    .replace(/ç/g, "c").replace(/ğ/g, "g").replace(/ı/g, "i")
-    .replace(/ö/g, "o").replace(/ş/g, "s").replace(/ü/g, "u")
-    .replace(/\(.*?\)/g, "").trim()
-    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
-}
-const SLUG_TO_NAME = {};
-NAMES.forEach((n) => { SLUG_TO_NAME[slug(n)] = n; });
-
-// title-case a country name for display (with overrides for acronyms/short forms)
-const DISP_OVERRIDE = {
-  uae: "BAE", drc: "DR Kongo", "united states": "ABD", "united kingdom": "Birleşik Krallık",
-  "houthi rebels (yemen)": "Husiler (Yemen)",
-};
-function disp(name) {
-  if (DISP_OVERRIDE[name]) return DISP_OVERRIDE[name];
-  return name.replace(/\b([a-zçğıöşü])/g, (m) => m.toUpperCase());
-}
+/* slug + display come from the registry (built by scripts/build-countries.js) */
+const slug = (name) => (COUNTRIES[name] ? COUNTRIES[name].slug : name.replace(/[^a-z0-9]+/g, "-"));
+const disp = (name) => (COUNTRIES[name] ? COUNTRIES[name].disp : name);
 
 // all ties touching a country, grouped by layer
 function tiesFor(country) {

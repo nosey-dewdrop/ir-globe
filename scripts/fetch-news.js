@@ -1,22 +1,25 @@
 /* Fetch real, current news per connection for EVERY layer from Google News RSS
-   (server-side, no CORS, no key). Writes js/articles.js as ARTICLES[layer]["s→r"].
+   (server-side, no CORS, no key). Reads connections from data/layers/*.json and
+   writes data/news/<layer>.json + digest.json + meta.json.
    Run locally or by the GitHub Action. No fabrication: titles/urls come from Google News. */
 
 const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.join(__dirname, "..");
-const load = (f, keys) => new Function(fs.readFileSync(path.join(ROOT, f), "utf8") + `; return {${keys}};`)();
-const { SUPPLIERS, RECIPIENTS } = load("js/data.js", "SUPPLIERS,RECIPIENTS");
-const { LAYER_TIES } = load("js/layers.js", "LAYER_TIES");
+const readJSON = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), "utf8"));
+const writeJSON = (rel, obj) => {
+  const p = path.join(ROOT, rel);
+  fs.mkdirSync(path.dirname(p), { recursive: true });
+  fs.writeFileSync(p, JSON.stringify(obj, null, 1) + "\n");
+};
 
-// silah connections come from the SIPRI tables; the rest from layers.js
-const silah = {};
-SUPPLIERS.forEach((s) => s.to.forEach(([r]) => { silah[s.c + "→" + r] = { s: s.c, r }; }));
-RECIPIENTS.forEach((rc) => rc.from.forEach(([s]) => { silah[s + "→" + rc.c] = { s, r: rc.c }; }));
-
-const LAYER_CONNS = { silah: Object.values(silah) };
-Object.entries(LAYER_TIES).forEach(([k, arr]) => { LAYER_CONNS[k] = arr; });
+const INDEX = readJSON("data/layers/index.json");
+const LAYER_CONNS = {};
+for (const l of INDEX) {
+  const lay = readJSON(`data/layers/${l.key}.json`);
+  LAYER_CONNS[l.key] = (lay.ties || []).map((t) => ({ s: t.s, r: t.r }));
+}
 
 // layer-appropriate search terms so results are on-topic
 const QUERY = {
@@ -80,15 +83,38 @@ async function fetchConn(s, r, terms, n) {
   Object.entries(LAYER_CONNS).forEach(([layer, conns]) =>
     conns.forEach((c) => jobs.push({ layer, s: c.s, r: c.r })));
   for (const j of jobs) {
-    const arts = await fetchConn(j.s, j.r, QUERY[j.layer], PER[j.layer] || 7);
+    const arts = await fetchConn(j.s, j.r, QUERY[j.layer] || "", PER[j.layer] || 7);
     if (arts.length) { (out[j.layer] = out[j.layer] || {})[j.s + "→" + j.r] = arts; total += arts.length; }
     done++;
     process.stdout.write(`\r${done}/${jobs.length}  ${total} makale`);
     await sleep(220);
   }
-  const body = "/* real, current news per connection, per layer — Google News RSS, refreshed by the\n" +
-    "   news GitHub Action. no fabrication: every title/url comes from Google News. */\n" +
-    "const ARTICLES = " + JSON.stringify(out, null, 2) + ";\n";
-  fs.writeFileSync(path.join(ROOT, "js/articles.js"), body);
-  console.log(`\nyazıldı: ${Object.keys(out).length} katman, ${total} makale`);
+
+  /* per-layer files */
+  const perLayer = {};
+  for (const l of INDEX) {
+    const bag = out[l.key] || {};
+    let n = 0;
+    Object.values(bag).forEach((arr) => { n += arr.length; });
+    perLayer[l.key] = n;
+    writeJSON(`data/news/${l.key}.json`, bag);
+  }
+
+  /* digest: newest 30 across all layers, deduped by title */
+  const all = [];
+  Object.entries(out).forEach(([layer, edges]) =>
+    Object.values(edges).forEach((arr) =>
+      arr.forEach((a) => { if (a && a.title && a.url) all.push({ t: a.title, s: a.source, d: a.date || "", u: a.url, l: layer }); })));
+  all.sort((a, b) => b.d.localeCompare(a.d));
+  const seen = new Set(), digest = [];
+  for (const a of all) {
+    if (seen.has(a.t)) continue;
+    seen.add(a.t);
+    digest.push(a);
+    if (digest.length >= 30) break;
+  }
+  writeJSON("data/news/digest.json", digest);
+  writeJSON("data/news/meta.json", { updated: new Date().toISOString(), total, perLayer });
+
+  console.log(`\nyazıldı: data/news/ — ${Object.keys(out).length} katman, ${total} makale`);
 })();
