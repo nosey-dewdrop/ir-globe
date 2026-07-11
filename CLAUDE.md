@@ -29,12 +29,16 @@ domain (damlahelloworld.com/ir-globe, ir-globe.damlahelloworld.com) lags badly a
   brand + "son güncelleme" stamp on top; stats counters back on the hero; lone ↓ scroll arrow.
 - 3 pages: hero / globe / kapanış. Full-page wheel-scroll hijack between them.
 
+Landing at v58: hero text LEFT-aligned, "hesap aç" RIGHT-aligned, and the white background hugs the
+characters per line (`.hl` span + box-decoration-break: clone) — NOT a card. Wall hover grow now
+DOES push overlapping blocks below (variable-width masonry, blocks store __c0/__c1/__top).
+
 **OPEN DESIGN TODOs (Damla asked, NOT done):**
-1. Wall hover: she wants grow + PUSH neighbors; currently hover only grows+darkens (push is hard with
-   variable widths). 2. Homepage should personalize when logged in (benim.html is separate now).
-   3. Globe: cards only on RIGHT arc — she wants LEFT-side cards too + story panel truly curved.
-   4. Globe pinch-zoom → cards move (Mac pinch = ctrl+wheel, separable from 2-finger scroll → doable).
-   5. Smooth page transitions ("sayfalar ilişik değil" — konu/ülke/akış hard-reload).
+1. Homepage should personalize when logged in (benim.html is separate now).
+   2. Globe: cards only on RIGHT arc — she wants LEFT-side cards too + story panel truly curved.
+   3. Globe pinch-zoom → cards move (Mac pinch = ctrl+wheel, separable from 2-finger scroll → doable).
+   4. Smooth page transitions ("sayfalar ilişik değil" — konu/ülke/akış hard-reload).
+   5. "hesap aç"ı hero cümlesine gömülü link (opsiyonel, netleşmedi).
 
 **PERF = TOP PRIORITY (Damla: "aşırı yavaş").** Globe render already paused off-page. Suspects:
 masonry relayout, full-page wheel hijack, globe.gl polygon+arc render while auto-rotating. Profile first.
