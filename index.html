@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=57">
+<link rel="stylesheet" href="css/style.css?v=58">
 </head>
 <body class="pages">
 
@@ -35,15 +35,15 @@
   <div class="jn-wall" id="jn-wall" aria-hidden="true"></div>
   <div class="jn-in">
     <header class="mast hero-mast">
-      <h1>kim kime ne satıyor?</h1>
-      <span class="mast-fresh" id="fresh"></span>
+      <h1><span class="hl">kim kime ne satıyor?</span></h1>
+      <span class="mast-fresh hl" id="fresh"></span>
     </header>
-    <p class="bhead">dünyanın ilişki ağı, sana göre</p>
-    <p class="btext">arkadaki her başlık gerçek: kim kime silah, enerji, tahıl, para satıyor. üye ol, ülke ve konu seç; bu akış senin olsun. takip ettiğinde gelişme olunca haber verelim, haftada bir kişiselleştirilmiş bültenin mailine gelsin.</p>
-    <p class="bfine cta-line"><a class="jn-cta" href="uye.html">hesap aç →</a></p>
-    <p class="bfine">genel akışa bak · bu haftanın bülteni'ne <a href="akis.html">göz at</a></p>
+    <p class="bhead"><span class="hl">dünyanın ilişki ağı, sana göre</span></p>
+    <p class="btext"><span class="hl">arkadaki her başlık gerçek: kim kime silah, enerji, tahıl, para satıyor. üye ol, ülke ve konu seç; bu akış senin olsun. takip ettiğinde gelişme olunca haber verelim, haftada bir kişiselleştirilmiş bültenin mailine gelsin.</span></p>
+    <p class="bfine cta-line"><span class="hl"><a class="jn-cta" href="uye.html">hesap aç →</a></span></p>
+    <p class="bfine"><span class="hl">genel akışa bak · bu haftanın bülteni'ne <a href="akis.html">göz at</a></span></p>
     <div class="stats" id="stats"></div>
-    <p class="ed-scroll">↓</p>
+    <p class="ed-scroll"><span class="hl">↓</span></p>
   </div>
 </section>
 
@@ -66,14 +66,14 @@
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="uye.html">üyelik</a> · <a href="gizlilik.html">gizlilik</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v57</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v58</span></span>
   </footer>
 </section>
 
 <script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js"></script>
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=55"></script>
-<script src="js/main.js?v=57"></script>
+<script src="js/main.js?v=58"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -122,18 +122,20 @@
   var PADX = 8, PADY = 8, GAP = 6, COLW = 190, VGAP = 8;
   /* DEĞİŞKEN GENİŞLİKLİ MASONRY: bloklar 1 ya da 2 kolon geniş → sol kenarlar
      hizalanmaz, ızgara kırılır, gerçek mozaik/iç içe görünür. */
+  var blocks = [];
   function layout() {
     var W = wall.clientWidth - PADX * 2;
     var cols = Math.max(2, Math.floor((W + GAP) / (COLW + GAP)));
     var cw = (W - GAP * (cols - 1)) / cols;
     var els = wall.querySelectorAll(".wl");
     var heights = [], i, k; for (i = 0; i < cols; i++) heights.push(0);
+    blocks = [];
     for (i = 0; i < els.length; i++) {
       var el = els[i];
       var span = (+el.getAttribute("data-span")) || 1;
       if (span > cols) span = 1;
       el.style.width = (span * cw + (span - 1) * GAP) + "px";
-      el.classList.remove("big");
+      el.classList.remove("big"); el.style.transform = "";
       // span kadar bitişik kolon içinde en alçak yeri bul
       var best = 0, bestTop = Infinity;
       for (var c = 0; c + span <= cols; c++) {
@@ -143,6 +145,8 @@
       var h = el.offsetHeight;
       el.style.left = (PADX + best * (cw + GAP)) + "px";
       el.style.top = (PADY + bestTop) + "px";
+      el.__c0 = best; el.__c1 = best + span; el.__top = bestTop;
+      blocks.push({ el: el, c0: best, c1: best + span, top: bestTop });
       var nh = bestTop + h + VGAP;
       for (k = 0; k < span; k++) heights[best + k] = nh;
     }
@@ -158,14 +162,23 @@
     layout();
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
   }
-  /* web hover: blok büyür + üste gelir (koyulaşır) */
+  /* web hover: blok büyür + ALTINDA ve aynı kolon aralığında olan blokları kaydırır */
   if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
     wall.addEventListener("mouseover", function (e) {
-      var el = e.target.closest && e.target.closest(".wl"); if (el) el.classList.add("big");
+      var el = e.target.closest && e.target.closest(".wl");
+      if (!el || el.classList.contains("big") || el.__c0 == null) return;
+      var oldH = el.offsetHeight; el.classList.add("big"); var delta = el.offsetHeight - oldH;
+      blocks.forEach(function (b) {
+        if (b.top > el.__top && b.c0 < el.__c1 && b.c1 > el.__c0) b.el.style.transform = "translateY(" + delta + "px)";
+      });
     });
     wall.addEventListener("mouseout", function (e) {
       var el = e.target.closest && e.target.closest(".wl");
-      if (el && !(e.relatedTarget && el.contains(e.relatedTarget))) el.classList.remove("big");
+      if (!el || (e.relatedTarget && el.contains(e.relatedTarget))) return;
+      el.classList.remove("big");
+      blocks.forEach(function (b) {
+        if (b.top > el.__top && b.c0 < el.__c1 && b.c1 > el.__c0) b.el.style.transform = "";
+      });
     });
   }
   var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(layout, 150); });
