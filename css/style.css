@@ -62,44 +62,41 @@ html { scroll-snap-type: y proximity; }
 .page.gl { justify-content: flex-start; }
 .page.gl .stage { height: auto; flex: 1; min-height: 0; }
 
-/* SAYFA 3 — katıl: arka planda soluk gerçek başlık duvarı, önünde net metin */
-.page.jn { justify-content: flex-start; position: relative; overflow: hidden; }
+/* HERO (katıl): arka planda soluk gerçek başlık duvarı, önünde net metin.
+   .page global 1180px'de ortalanıyor — hero'yu TAM viewport genişliğine aç ki
+   duvar ekranın kenarından kenarına yayılsın (sağ-sol boşluk kalmasın). */
+.page.jn { justify-content: flex-start; position: relative; overflow: hidden; max-width: none; width: 100%; }
 
-/* arka plan duvarı: küçük soluk gerçek manşetler, TAM başlık (2-3 satır, kırpma yok),
-   yoğun paketlenir. column-width eşit dağıttığı için sağ-sol boşluk simetrik olur. */
+/* arka plan duvarı: kolon YOK — başlıklar justify akışla iç içe geçer, biri
+   ötekinin girintisinden başlar; her başlığın fontu hafif farklı; alt-üst solar. */
 .jn-wall {
   position: absolute; inset: 0; z-index: 0;
-  padding: 10px 0; overflow: hidden; pointer-events: none;   /* sağ-sol boşluk yok, tam kenar */
-  column-width: 210px; column-gap: 16px;
+  padding: 8px 10px; overflow: hidden; pointer-events: none;
+  text-align: justify; line-height: 1.55;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 5%, #000 92%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 5%, #000 92%, transparent 100%);
 }
 .jn-wall .wl {
-  display: block; break-inside: avoid; margin-bottom: 9px;
-  font-family: var(--serif); font-size: 12px; line-height: 1.25;
-  color: #d7dbe1; text-decoration: none;                  /* soluk gri, tam başlık wrap eder */
-  transition: font-size 0.2s ease, color 0.2s ease;
+  font-family: var(--serif); color: #d7dbe1; text-decoration: none;
+  transition: color 0.18s ease;                           /* font-size YOK → reflow yok → akıcı */
 }
-/* masaüstü: üstüne gelince font-size büyür → kolon içinde komşuları AŞAĞI kaydırır
-   (üstüne binmez, z-index yok → pitch'in arkasında kalır). renk koyu gri (simsiyah değil). */
+.jn-wall .wl.s1 { font-size: 11px; }
+.jn-wall .wl.s2 { font-size: 12.5px; }
+.jn-wall .wl.s3 { font-size: 14px; }
+.jn-wall .wl.s4 { font-size: 15.5px; }
+.jn-wall .wl.s5 { font-size: 17px; }
+.jn-wall .wl:not(:last-child)::after { content: " · "; color: #e6e9ee; }
+/* masaüstü: üstüne gelince SADECE koyulaşır (büyüme yok — kasmayı önler) */
 @media (hover: hover) and (pointer: fine) {
   .jn-wall .wl { pointer-events: auto; cursor: default; }
-  .jn-wall .wl:hover {
-    color: #4b515e; font-size: 17px;
-    text-shadow: 0 0 6px #fff, 0 0 12px #fff;
-  }
+  .jn-wall .wl:hover { color: #5b6270; }
 }
-@media (max-width: 560px) { .jn-wall { column-width: 150px; } .jn-wall .wl { font-size: 11px; } }
 
 .jn-in { position: relative; z-index: 2; flex: 1 1 auto; width: 100%; max-width: 640px; margin: 0 auto; padding: 0 40px;
   display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
   pointer-events: none; }                                 /* altındaki duvar başlıkları da hover alsın */
 .jn-in a, .jn-in .jn-cta { pointer-events: auto; }        /* linkler yine tıklanır */
-/* ana metnin arkasına yumuşak beyaz açıklık (kutu değil, organik) — büyüyen duvar
-   başlığı ortadaki yazının arkasında kalır, üstüne binmez, yazı hep net okunur */
-.jn-in::before {
-  content: ""; position: absolute; inset: -6% -10%; z-index: -1; pointer-events: none;
-  background: radial-gradient(ellipse at center, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.86) 42%, rgba(255,255,255,0) 76%);
-}
-/* önündeki metin duvarın üstünde net okunsun: güçlü beyaz hale */
+/* önündeki metin duvarın üstünde net okunsun: güçlü beyaz hale (sis yok) */
 .jn-in .hero-mast h1, .jn-in .mast-fresh, .jn-in .bhead, .jn-in .btext, .jn-in .bfine, .jn-in .countdown, .jn-in .ed-scroll, .jn-in .stat {
   text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 26px #fff;
 }

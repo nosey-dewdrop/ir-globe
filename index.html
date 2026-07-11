@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=48">
+<link rel="stylesheet" href="css/style.css?v=49">
 </head>
 <body class="pages">
 
@@ -40,11 +40,11 @@
     </header>
     <p class="bhead">dünyanın ilişki ağı, sana göre</p>
     <p class="btext">arkadaki her başlık gerçek: kim kime silah, enerji, tahıl, para satıyor. üye ol, ülke ve konu seç; bu akış senin olsun. takip ettiğinde gelişme olunca haber verelim, haftada bir kişiselleştirilmiş bültenin mailine gelsin.</p>
-    <p class="bfine" style="margin-top:16px"><a class="jn-cta" href="uye.html">hesap aç, akışını kur →</a></p>
+    <p class="bfine" style="margin-top:16px"><a class="jn-cta" href="uye.html">hesap aç →</a></p>
     <p class="bfine"><a href="akis.html">genel akışa bak</a> · <a href="bulten.html">bu haftanın bülteni</a></p>
     <div class="stats" id="stats"></div>
     <p class="countdown" id="countdown"></p>
-    <p class="ed-scroll">↓ kaydır, küreyi keşfet</p>
+    <p class="ed-scroll" title="kaydır, küreyi keşfet">↓</p>
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="uye.html">üyelik</a> · <a href="gizlilik.html">gizlilik</a></span>
@@ -66,7 +66,7 @@
 <script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js"></script>
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=49"></script>
-<script src="js/main.js?v=49"></script>
+<script src="js/main.js?v=50"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -114,13 +114,14 @@
     return { "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]; }); };
   Store.digest().then(function (items) {
     if (!items.length) return;
-    // ekranı dibine kadar boşluksuz doldur: başlıkları gerekirse tekrarla (salt dekor,
-    // fazlası overflow ile kırpılır — büyük ekranda alt boşluk kalmaz)
+    // her başlık hafif farklı font boyutu (organik); justify akış için aralarına boşluk
+    var tiers = ["s1", "s2", "s2", "s3", "s3", "s4", "s5"];
     var fill = [];
-    while (fill.length < 340) fill = fill.concat(items);
-    wall.innerHTML = fill.slice(0, 340).map(function (a) {
-      return '<span class="wl">' + esc(a.t) + '</span>';
-    }).join("");
+    while (fill.length < 260) fill = fill.concat(items);
+    wall.innerHTML = fill.slice(0, 260).map(function (a) {
+      var t = tiers[Math.floor(Math.random() * tiers.length)];
+      return '<span class="wl ' + t + '">' + esc(a.t) + '</span>';
+    }).join(" ");
   }).catch(function () {});
 })();
 </script>

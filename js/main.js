@@ -483,6 +483,20 @@ renderAll();
 sizeGlobe();
 window.addEventListener("resize", sizeGlobe);
 
+/* PERFORMANS: küre görünmüyorken (ör. hero sayfasındayken) render döngüsünü durdur
+   — sürekli 3B çizim tüm sayfayı kastırıyordu. Küre sayfasına gelince devam eder. */
+if ("IntersectionObserver" in window) {
+  const glPage = document.querySelector(".page.gl");
+  if (glPage) {
+    new IntersectionObserver((es) => {
+      es.forEach((e) => {
+        if (e.isIntersecting) { globe.resumeAnimation(); globe.controls().autoRotate = true; }
+        else { globe.pauseAnimation(); }
+      });
+    }, { threshold: 0.15 }).observe(glPage);
+  }
+}
+
 /* ── Supabase = Bera'nın EDİTORYAL BİNDİRME katmanı (asla değiştirme modu değil) ──
    admin/config.js boşsa hiçbir şey yapmaz; site statik JSON ile aynen çalışır.
    Doluysa DB satırları statik verinin ÜSTÜNE biner:
