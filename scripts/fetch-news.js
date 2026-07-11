@@ -97,6 +97,32 @@ async function fetchConn(s, r, terms, n) {
     await sleep(220);
   }
 
+  /* curated feeds (BBC, Al Jazeera, Guardian, DW, …) — matched to connections by
+     country-pair + topic keywords, merged on top of Google News, deduped. */
+  const { fetchAllFeeds, buildNameIndex, matchToConnections } = require("./lib/feeds");
+  const registry = readJSON("data/countries.json");
+  console.log("\nfeed'ler çekiliyor…");
+  const feedArts = await fetchAllFeeds();
+  const matched = matchToConnections(feedArts, LAYER_CONNS, buildNameIndex(registry));
+  const norm = (t) => t.toLowerCase().replace(/[^a-zçğıöşü0-9]+/g, " ").trim();
+  let merged = 0;
+  Object.entries(matched).forEach(([layer, edges]) => {
+    Object.entries(edges).forEach(([edge, arts]) => {
+      const bag = ((out[layer] ||= {})[edge] ||= []);
+      const seenU = new Set(bag.map((a) => a.url));
+      const seenT = new Set(bag.map((a) => norm(a.title)));
+      arts.forEach((a) => {
+        if (seenU.has(a.url) || seenT.has(norm(a.title))) return;
+        seenU.add(a.url); seenT.add(norm(a.title));
+        bag.push(a); merged++; total++;
+      });
+      bag.sort((x, y) => (y.date || "").localeCompare(x.date || ""));
+      const cap = (PER[layer] || 7) + 3; // feeds may add a little on top of the base cap
+      if (bag.length > cap) { total -= bag.length - cap; out[layer][edge] = bag.slice(0, cap); }
+    });
+  });
+  console.log(`feed'lerden eklenen: ${merged} makale (${feedArts.length} feed makalesi tarandı)`);
+
   /* per-layer files */
   const perLayer = {};
   for (const l of INDEX) {
