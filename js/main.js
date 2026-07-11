@@ -31,6 +31,7 @@ async function ensureLayer(k) {
   });
   NEWS[k] = news || {};
   recomputeNames();
+  applyOverlay(k); // Bera'nın editoryal bindirmesi (varsa) bu katmana da uygulanır
 }
 
 function countryOfFeature(f) {
@@ -249,6 +250,7 @@ const GOOD = {
   silah: "silah", ticaret: "mal", enerji: "petrol ve gaz", tahil: "tahıl",
   ittifak: "ittifak bağı", yaptirim: "yaptırım", goc: "göç", borc: "kredi",
   diplomasi: "diplomatik bağ", teknoloji: "çip", us: "askeri üs", yardim: "yardım",
+  kablo: "denizaltı kablosu", siber: "siber bağ",
 };
 
 /* ── editorial writing as a flowing paragraph (built from real numbers / verified basis) ── */
@@ -465,52 +467,46 @@ renderAll();
 sizeGlobe();
 window.addEventListener("resize", sizeGlobe);
 
-/* ── #3: küre bağlantıları Supabase'den okur (Bera panelden yazar → küre yansıtır) ──
-   admin/config.js doldurulmamışsa hiçbir şey yapmaz; küre js/layers.js + SIPRI ile
-   statik çalışmaya devam eder. Config varsa non-silah katmanları DB'den tazeler;
-   silah katmanı yüzdeleriyle birlikte SIPRI'de (data.js) kalır. RLS: herkes okur. */
+/* ── Supabase = Bera'nın EDİTORYAL BİNDİRME katmanı (asla değiştirme modu değil) ──
+   admin/config.js boşsa hiçbir şey yapmaz; site statik JSON ile aynen çalışır.
+   Doluysa DB satırları statik verinin ÜSTÜNE biner:
+   - eşleşen (layer,s,r): hidden=true ise bağı küreden gizler, değilse notu ezer
+   - statikte olmayan satır: editoryal ekleme olarak katmana katılır
+   Tembel yüklenen katmanlara da uygulansın diye bindirme ensureLayer içinde
+   koşuyor; burada sadece OVERLAY doldurulup yüklü katmanlar tazeleniyor. */
+const OVERLAY = {}; // layer -> [{s, r, note, hidden}]
+function applyOverlay(k) {
+  const rows = OVERLAY[k];
+  if (!rows || !rows.length) return;
+  rows.forEach((o) => {
+    const i = TIES.findIndex((t) => t.type === k && t.s === o.s && t.r === o.r);
+    if (o.hidden) {
+      if (i > -1) TIES.splice(i, 1);
+    } else if (i > -1) {
+      if (o.note) TIES[i].note = o.note;
+    } else if (COORDS[o.s] && COORDS[o.r]) {
+      TIES.push({ s: o.s, r: o.r, type: k, note: o.note || "", v: null, exp: null, imp: null });
+    }
+  });
+  recomputeNames();
+}
+
 async function hydrateFromSupabase() {
   if (!window.SUPABASE_URL || !window.SUPABASE_ANON) return; // config yok → statik kal
   const base = window.SUPABASE_URL.replace(/\/$/, "");
   const headers = { apikey: window.SUPABASE_ANON, Authorization: "Bearer " + window.SUPABASE_ANON };
-  let dbLayers, dbConns;
+  let dbConns;
   try {
-    const [lr, cr] = await Promise.all([
-      fetch(base + "/rest/v1/layers?select=key,label,ord&order=ord", { headers }),
-      fetch(base + "/rest/v1/connections?select=layer,s,r,note", { headers }),
-    ]);
-    if (!lr.ok || !cr.ok) throw new Error("HTTP " + lr.status + "/" + cr.status);
-    dbLayers = await lr.json();
+    const cr = await fetch(base + "/rest/v1/connections?select=layer,s,r,note,hidden", { headers });
+    if (!cr.ok) throw new Error("HTTP " + cr.status);
     dbConns = await cr.json();
   } catch (e) {
     console.warn("[globe] Supabase okunamadı, statik veriyle devam:", e.message);
     return;
   }
-
-  // katman navigasyonu — DB doluysa onu kaynak al
-  if (Array.isArray(dbLayers) && dbLayers.length) {
-    LAYERS.length = 0;
-    dbLayers.forEach((l) => LAYERS.push({ key: l.key, label: l.label, live: true }));
-  }
-
-  // bağlantılar — silah HARİÇ tüm katmanları DB ile değiştir (silah = SIPRI, data.js)
-  if (Array.isArray(dbConns)) {
-    for (let i = TIES.length - 1; i >= 0; i--) if (TIES[i].type !== "silah") TIES.splice(i, 1);
-    let dropped = 0;
-    dbConns.forEach((c) => {
-      if (c.layer === "silah") return; // silah'ı SIPRI yönetiyor
-      if (COORDS[c.s] && COORDS[c.r]) TIES.push({ s: c.s, r: c.r, type: c.layer, note: c.note || "", exp: null, imp: null });
-      else dropped++;
-    });
-    if (dropped) console.warn("[globe] " + dropped + " bağlantı, koordinatı olmayan ülke içerdiği için atlandı");
-  }
-
-  // ülke listesini + seçili katmanı tazele, yeniden çiz
-  const fresh = [...new Set(TIES.flatMap((t) => [t.s, t.r]))].sort();
-  NAMES.length = 0; fresh.forEach((n) => NAMES.push(n));
-  if (!LAYERS.some((l) => l.key === layer)) layer = (LAYERS[0] && LAYERS[0].key) || "silah";
-  selected = null; focusTie = null;
-  renderLayers();
+  if (!Array.isArray(dbConns) || !dbConns.length) return;
+  dbConns.forEach((c) => { (OVERLAY[c.layer] ||= []).push(c); });
+  loadedLayers.forEach((k) => applyOverlay(k));
   redraw();
   renderAll();
 }

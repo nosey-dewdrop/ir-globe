@@ -44,6 +44,20 @@ const EXTRA_NAMES = {
   "micronesia (fed. states of)": "micronesia", "rep. of korea": "south korea",
   "dem. people's rep. korea": "north korea", "rep. of moldova": "moldova",
   "türkiye (turkey)": "türkiye", "sudan (former)": "sudan",
+  /* World-Bank/TeleGeography comma style */
+  "congo, dem. rep.": "drc", "congo, rep.": "congo", "korea, rep.": "south korea",
+  "korea, dem. people's rep.": "north korea", "micronesia, fed. sts.": "micronesia",
+  "bahamas, the": "bahamas", "gambia, the": "gambia", "egypt, arab rep.": "egypt",
+  "iran, islamic rep.": "iran", "venezuela, rb": "venezuela", "yemen, rep.": "yemen",
+  "kyrgyz republic": "kyrgyzstan", "slovak republic": "slovakia",
+  "hong kong": null, "macao": null, "macau": null, "gibraltar": null, "bermuda": null,
+  "cayman islands": null, "curacao": null, "curaçao": null, "aruba": null,
+  "french polynesia": null, "new caledonia": null, "guam": null, "american samoa": null,
+  "virgin islands (u.s.)": null, "virgin islands (u.k.)": null, "british virgin islands": null,
+  "faroe islands": null, "greenland (denmark)": null, "reunion": null, "réunion": null,
+  "mayotte": null, "martinique": null, "guadeloupe": null, "french guiana": null,
+  "northern mariana islands": null, "cook islands": null, "wallis and futuna": null,
+  "saint helena": null, "diego garcia": null, "puerto rico": null,
 };
 Object.entries(EXTRA_NAMES).forEach(([n, k]) => { if (k && REG[k]) BY_NAME[n] = k; });
 

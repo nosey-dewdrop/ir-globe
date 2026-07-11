@@ -42,6 +42,8 @@ const QUERY = {
   teknoloji: "semiconductor OR chip OR technology",
   us: "military base OR troops",
   yardim: "aid OR development assistance",
+  kablo: "submarine cable OR undersea cable OR internet infrastructure",
+  siber: "cyberattack OR hacking OR cyber espionage",
 };
 
 const PER = { silah: 10 };           // articles per connection (silah 10, others 7) — richer flow

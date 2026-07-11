@@ -2,97 +2,6313 @@
  "key": "tahil",
  "label": "tahıl & gıda",
  "source": {
-  "name": "açık kaynak derlemesi (doğrulanmış)",
-  "url": "",
-  "year": "2026",
-  "license": ""
+  "name": "FAOSTAT Detailed Trade Matrix",
+  "url": "https://www.fao.org/faostat/en/#data/TM",
+  "year": "2024",
+  "license": "CC BY 4.0"
  },
  "updated": "2026-07-11",
+ "unit": "tahıl ihracat değeri (USD)",
  "ties": [
-  {
-   "s": "russia",
-   "r": "egypt",
-   "note": "Egypt is the top buyer of Russian wheat, ~8 mln tonnes in 2024/25"
-  },
-  {
-   "s": "russia",
-   "r": "türkiye",
-   "note": "Türkiye is a leading destination for Russian wheat"
-  },
-  {
-   "s": "russia",
-   "r": "iran",
-   "note": "Iran is a major buyer of Russian wheat"
-  },
-  {
-   "s": "russia",
-   "r": "saudi arabia",
-   "note": "Saudi Arabia is among top Russian wheat importers"
-  },
-  {
-   "s": "russia",
-   "r": "pakistan",
-   "note": "Pakistan imported ~1.6 mln tonnes of Russian wheat in 2023/24"
-  },
-  {
-   "s": "united states",
-   "r": "japan",
-   "note": "Japan is a top-two market for US corn and major US wheat buyer"
-  },
-  {
-   "s": "united states",
-   "r": "south korea",
-   "note": "South Korea is a top-five market for US corn"
-  },
-  {
-   "s": "united states",
-   "r": "taiwan",
-   "note": "Taiwan is a top-ten market for US corn and wheat"
-  },
-  {
-   "s": "canada",
-   "r": "china",
-   "note": "China is the largest buyer of Canadian wheat"
-  },
-  {
-   "s": "canada",
-   "r": "indonesia",
-   "note": "Indonesia is a top-five destination for Canadian wheat"
-  },
-  {
-   "s": "canada",
-   "r": "japan",
-   "note": "Japan is a major buyer of Canadian wheat"
-  },
-  {
-   "s": "australia",
-   "r": "indonesia",
-   "note": "Indonesia is a leading market for Australian wheat"
-  },
-  {
-   "s": "ukraine",
-   "r": "egypt",
-   "note": "Egypt is a major destination for Ukrainian corn and wheat"
-  },
-  {
-   "s": "ukraine",
-   "r": "china",
-   "note": "China is historically a top buyer of Ukrainian corn"
-  },
-  {
-   "s": "france",
-   "r": "morocco",
-   "note": "Morocco is France's largest wheat buyer in 2024/25"
-  },
   {
    "s": "brazil",
    "r": "china",
-   "note": "Brazil, the #2 corn exporter, is a top supplier to China"
+   "v": 31977955000,
+   "g": 1,
+   "note": "Brazil, China'ye 2024'te 32,0 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "china",
+   "v": 13652960000,
+   "g": 2,
+   "note": "ABD, China'ye 2024'te 13,7 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "mexico",
+   "v": 10020903000,
+   "g": 3,
+   "note": "ABD, Mexico'ye 2024'te 10,0 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "japan",
+   "v": 4974775000,
+   "g": 4,
+   "note": "ABD, Japan'ye 2024'te 5,0 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "saudi arabia",
+   "v": 2800953000,
+   "g": 5,
+   "note": "India, Saudi Arabia'ye 2024'te 2,8 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "cambodia",
+   "r": "vietnam",
+   "v": 2797268000,
+   "g": 6,
+   "note": "Cambodia, Vietnam'ye 2024'te 2,8 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "paraguay",
+   "r": "argentina",
+   "v": 2738171000,
+   "g": 7,
+   "note": "Paraguay, Argentina'ye 2024'te 2,7 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "china",
+   "v": 2152528000,
+   "g": 8,
+   "note": "Australia, China'ye 2024'te 2,2 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "colombia",
+   "v": 2068135000,
+   "g": 9,
+   "note": "ABD, Colombia'ye 2024'te 2,1 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
   },
   {
    "s": "argentina",
    "r": "china",
-   "note": "China is a major buyer of Argentine corn and grain"
+   "v": 2028249000,
+   "g": 10,
+   "note": "Argentina, China'ye 2024'te 2,0 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "spain",
+   "v": 1979949000,
+   "g": 11,
+   "note": "Brazil, Spain'ye 2024'te 2,0 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "spain",
+   "v": 1917556000,
+   "g": 12,
+   "note": "Ukraine, Spain'ye 2024'te 1,9 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "iraq",
+   "v": 1858837000,
+   "g": 13,
+   "note": "India, Iraq'ye 2024'te 1,9 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "south korea",
+   "v": 1761950000,
+   "g": 14,
+   "note": "ABD, Güney Kore'ye 2024'te 1,8 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "iran",
+   "v": 1749522000,
+   "g": 15,
+   "note": "Brazil, Iran'ye 2024'te 1,7 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "benin",
+   "v": 1705656000,
+   "g": 16,
+   "note": "India, Benin'ye 2024'te 1,7 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "vietnam",
+   "v": 1694820000,
+   "g": 17,
+   "note": "Brazil, Vietnam'ye 2024'te 1,7 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "united states",
+   "v": 1652580000,
+   "g": 18,
+   "note": "Thailand, ABD'ye 2024'te 1,7 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "brazil",
+   "v": 1569525000,
+   "g": 19,
+   "note": "Argentina, Brazil'ye 2024'te 1,6 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "thailand",
+   "v": 1562072000,
+   "g": 20,
+   "note": "Brazil, Thailand'ye 2024'te 1,6 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "china",
+   "v": 1560553000,
+   "g": 21,
+   "note": "Canada, China'ye 2024'te 1,6 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "indonesia",
+   "v": 1548779000,
+   "g": 22,
+   "note": "Thailand, Indonesia'ye 2024'te 1,5 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "indonesia",
+   "v": 1411448000,
+   "g": 23,
+   "note": "ABD, Indonesia'ye 2024'te 1,4 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "egypt",
+   "v": 1400906000,
+   "g": 24,
+   "note": "Brazil, Egypt'ye 2024'te 1,4 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "taiwan",
+   "v": 1399345000,
+   "g": 25,
+   "note": "ABD, Taiwan'ye 2024'te 1,4 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "iran",
+   "v": 1396578000,
+   "g": 26,
+   "note": "India, Iran'ye 2024'te 1,4 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "vietnam",
+   "v": 1390378000,
+   "g": 27,
+   "note": "Argentina, Vietnam'ye 2024'te 1,4 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "united states",
+   "v": 1280521000,
+   "g": 28,
+   "note": "Canada, ABD'ye 2024'te 1,3 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "paraguay",
+   "r": "brazil",
+   "v": 1264863000,
+   "g": 29,
+   "note": "Paraguay, Brazil'ye 2024'te 1,3 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "belgium",
+   "v": 1235951000,
+   "g": 30,
+   "note": "France, Belgium'ye 2024'te 1,2 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "egypt",
+   "v": 1218819000,
+   "g": 31,
+   "note": "Ukraine, Egypt'ye 2024'te 1,2 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "iraq",
+   "v": 1213568000,
+   "g": 32,
+   "note": "Thailand, Iraq'ye 2024'te 1,2 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "canada",
+   "v": 1200993000,
+   "g": 33,
+   "note": "ABD, Canada'ye 2024'te 1,2 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "taiwan",
+   "v": 1084679000,
+   "g": 34,
+   "note": "Brazil, Taiwan'ye 2024'te 1,1 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "türkiye",
+   "v": 1074856000,
+   "g": 35,
+   "note": "Brazil, Türkiye'ye 2024'te 1,1 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "germany",
+   "v": 1055772000,
+   "g": 36,
+   "note": "ABD, Germany'ye 2024'te 1,1 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "egypt",
+   "v": 1044446000,
+   "g": 37,
+   "note": "ABD, Egypt'ye 2024'te 1,0 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "netherlands",
+   "v": 1003052000,
+   "g": 38,
+   "note": "Germany, Netherlands'ye 2024'te 1,0 milyar $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "japan",
+   "v": 997809000,
+   "g": 39,
+   "note": "Canada, Japan'ye 2024'te 998 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "türkiye",
+   "v": 993663000,
+   "g": 40,
+   "note": "Ukraine, Türkiye'ye 2024'te 994 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "uae",
+   "v": 987280000,
+   "g": 41,
+   "note": "India, BAE'ye 2024'te 987 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "guinea",
+   "v": 955111000,
+   "g": 42,
+   "note": "India, Guinea'ye 2024'te 955 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "south africa",
+   "v": 952077000,
+   "g": 43,
+   "note": "Thailand, South Africa'ye 2024'te 952 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "peru",
+   "v": 951359000,
+   "g": 44,
+   "note": "Argentina, Peru'ye 2024'te 951 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "indonesia",
+   "v": 935666000,
+   "g": 45,
+   "note": "Australia, Indonesia'ye 2024'te 936 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "ivory coast",
+   "v": 914874000,
+   "g": 46,
+   "note": "India, Ivory Coast'ye 2024'te 915 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "iraq",
+   "v": 876544000,
+   "g": 47,
+   "note": "Türkiye, Iraq'ye 2024'te 877 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "philippines",
+   "v": 837012000,
+   "g": 48,
+   "note": "ABD, Philippines'ye 2024'te 837 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "japan",
+   "v": 835579000,
+   "g": 49,
+   "note": "Brazil, Japan'ye 2024'te 836 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "italy",
+   "v": 831467000,
+   "g": 50,
+   "note": "ABD, Italy'ye 2024'te 831 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "china",
+   "v": 830790000,
+   "g": 51,
+   "note": "France, China'ye 2024'te 831 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "togo",
+   "v": 823900000,
+   "g": 52,
+   "note": "India, Togo'ye 2024'te 824 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "indonesia",
+   "v": 820009000,
+   "g": 53,
+   "note": "Pakistan, Indonesia'ye 2024'te 820 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "netherlands",
+   "r": "germany",
+   "v": 810143000,
+   "g": 54,
+   "note": "Netherlands, Germany'ye 2024'te 810 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "yemen",
+   "v": 798181000,
+   "g": 55,
+   "note": "India, Yemen'ye 2024'te 798 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "afghanistan",
+   "v": 791043000,
+   "g": 56,
+   "note": "Pakistan, Afghanistan'ye 2024'te 791 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "united states",
+   "v": 786738000,
+   "g": 57,
+   "note": "India, ABD'ye 2024'te 787 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "kazakhstan",
+   "r": "uzbekistan",
+   "v": 784348000,
+   "g": 58,
+   "note": "Kazakhstan, Uzbekistan'ye 2024'te 784 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "indonesia",
+   "v": 783816000,
+   "g": 59,
+   "note": "Canada, Indonesia'ye 2024'te 784 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "spain",
+   "v": 783509000,
+   "g": 60,
+   "note": "France, Spain'ye 2024'te 784 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "china",
+   "v": 776157000,
+   "g": 61,
+   "note": "Ukraine, China'ye 2024'te 776 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "south korea",
+   "v": 771247000,
+   "g": 62,
+   "note": "Brazil, Güney Kore'ye 2024'te 771 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "algeria",
+   "v": 761432000,
+   "g": 63,
+   "note": "Brazil, Algeria'ye 2024'te 761 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "germany",
+   "v": 742933000,
+   "g": 64,
+   "note": "Poland, Germany'ye 2024'te 743 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "mexico",
+   "v": 737725000,
+   "g": 65,
+   "note": "Brazil, Mexico'ye 2024'te 738 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "hungary",
+   "r": "italy",
+   "v": 732323000,
+   "g": 66,
+   "note": "Hungary, Italy'ye 2024'te 732 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "netherlands",
+   "v": 728331000,
+   "g": 67,
+   "note": "France, Netherlands'ye 2024'te 728 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "netherlands",
+   "v": 714725000,
+   "g": 68,
+   "note": "Ukraine, Netherlands'ye 2024'te 715 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "indonesia",
+   "v": 711789000,
+   "g": 69,
+   "note": "Argentina, Indonesia'ye 2024'te 712 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "czechia",
+   "r": "germany",
+   "v": 688173000,
+   "g": 70,
+   "note": "Czechia, Germany'ye 2024'te 688 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "bangladesh",
+   "v": 683858000,
+   "g": 71,
+   "note": "Brazil, Bangladesh'ye 2024'te 684 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "philippines",
+   "v": 676635000,
+   "g": 72,
+   "note": "Australia, Philippines'ye 2024'te 677 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "italy",
+   "v": 667600000,
+   "g": 73,
+   "note": "Ukraine, Italy'ye 2024'te 668 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "philippines",
+   "v": 664624000,
+   "g": 74,
+   "note": "Thailand, Philippines'ye 2024'te 665 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "malaysia",
+   "v": 641532000,
+   "g": 75,
+   "note": "Argentina, Malaysia'ye 2024'te 642 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "vietnam",
+   "v": 633551000,
+   "g": 76,
+   "note": "ABD, Vietnam'ye 2024'te 634 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "south africa",
+   "r": "zimbabwe",
+   "v": 599493000,
+   "g": 77,
+   "note": "South Africa, Zimbabwe'ye 2024'te 599 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "chile",
+   "v": 599105000,
+   "g": 78,
+   "note": "Argentina, Chile'ye 2024'te 599 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "germany",
+   "v": 593090000,
+   "g": 79,
+   "note": "France, Germany'ye 2024'te 593 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "algeria",
+   "v": 586761000,
+   "g": 80,
+   "note": "Canada, Algeria'ye 2024'te 587 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "china",
+   "v": 584834000,
+   "g": 81,
+   "note": "Thailand, China'ye 2024'te 585 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "spain",
+   "v": 584214000,
+   "g": 82,
+   "note": "ABD, Spain'ye 2024'te 584 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "algeria",
+   "v": 582717000,
+   "g": 83,
+   "note": "Argentina, Algeria'ye 2024'te 583 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "south korea",
+   "v": 574820000,
+   "g": 84,
+   "note": "Argentina, Güney Kore'ye 2024'te 575 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "haiti",
+   "v": 572343000,
+   "g": 85,
+   "note": "ABD, Haiti'ye 2024'te 572 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "saudi arabia",
+   "v": 554080000,
+   "g": 86,
+   "note": "ABD, Saudi Arabia'ye 2024'te 554 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "morocco",
+   "v": 532725000,
+   "g": 87,
+   "note": "France, Morocco'ye 2024'te 533 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "netherlands",
+   "v": 527685000,
+   "g": 88,
+   "note": "Brazil, Netherlands'ye 2024'te 528 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "kenya",
+   "v": 522536000,
+   "g": 89,
+   "note": "Pakistan, Kenya'ye 2024'te 523 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "uzbekistan",
+   "r": "afghanistan",
+   "v": 517837000,
+   "g": 90,
+   "note": "Uzbekistan, Afghanistan'ye 2024'te 518 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "saudi arabia",
+   "v": 507974000,
+   "g": 91,
+   "note": "Argentina, Saudi Arabia'ye 2024'te 508 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "japan",
+   "v": 504519000,
+   "g": 92,
+   "note": "Australia, Japan'ye 2024'te 505 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "italy",
+   "v": 500738000,
+   "g": 93,
+   "note": "Canada, Italy'ye 2024'te 501 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "malaysia",
+   "v": 499290000,
+   "g": 94,
+   "note": "Pakistan, Malaysia'ye 2024'te 499 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "senegal",
+   "v": 495124000,
+   "g": 95,
+   "note": "India, Senegal'ye 2024'te 495 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "russia",
+   "v": 484842000,
+   "g": 96,
+   "note": "Brazil, Russia'ye 2024'te 485 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "guatemala",
+   "v": 483996000,
+   "g": 97,
+   "note": "ABD, Guatemala'ye 2024'te 484 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "indonesia",
+   "v": 476343000,
+   "g": 98,
+   "note": "Ukraine, Indonesia'ye 2024'te 476 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "france",
+   "v": 471574000,
+   "g": 99,
+   "note": "Italy, France'ye 2024'te 472 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "honduras",
+   "v": 464986000,
+   "g": 100,
+   "note": "ABD, Honduras'ye 2024'te 465 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "indonesia",
+   "v": 460467000,
+   "g": 101,
+   "note": "Myanmar, Indonesia'ye 2024'te 460 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "somalia",
+   "v": 460157000,
+   "g": 102,
+   "note": "India, Somalia'ye 2024'te 460 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "senegal",
+   "v": 459328000,
+   "g": 103,
+   "note": "Thailand, Senegal'ye 2024'te 459 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "saudi arabia",
+   "v": 456003000,
+   "g": 104,
+   "note": "Romania, Saudi Arabia'ye 2024'te 456 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "germany",
+   "v": 454041000,
+   "g": 105,
+   "note": "Italy, Germany'ye 2024'te 454 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "nepal",
+   "v": 451059000,
+   "g": 106,
+   "note": "India, Nepal'ye 2024'te 451 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "yemen",
+   "v": 448288000,
+   "g": 107,
+   "note": "Australia, Yemen'ye 2024'te 448 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "thailand",
+   "v": 445233000,
+   "g": 108,
+   "note": "ABD, Thailand'ye 2024'te 445 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "bangladesh",
+   "v": 441414000,
+   "g": 109,
+   "note": "Canada, Bangladesh'ye 2024'te 441 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "saudi arabia",
+   "v": 438158000,
+   "g": 110,
+   "note": "Brazil, Saudi Arabia'ye 2024'te 438 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "italy",
+   "v": 437799000,
+   "g": 111,
+   "note": "Brazil, Italy'ye 2024'te 438 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bulgaria",
+   "r": "algeria",
+   "v": 435384000,
+   "g": 112,
+   "note": "Bulgaria, Algeria'ye 2024'te 435 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "thailand",
+   "v": 429293000,
+   "g": 113,
+   "note": "Myanmar, Thailand'ye 2024'te 429 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "slovenia",
+   "r": "italy",
+   "v": 423369000,
+   "g": 114,
+   "note": "Slovenia, Italy'ye 2024'te 423 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "south korea",
+   "v": 422671000,
+   "g": 115,
+   "note": "Australia, Güney Kore'ye 2024'te 423 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "kuwait",
+   "v": 417473000,
+   "g": 116,
+   "note": "India, Kuwait'ye 2024'te 417 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "belgium",
+   "r": "netherlands",
+   "v": 414908000,
+   "g": 117,
+   "note": "Belgium, Netherlands'ye 2024'te 415 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "venezuela",
+   "v": 412073000,
+   "g": 118,
+   "note": "ABD, Venezuela'ye 2024'te 412 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "vietnam",
+   "v": 405382000,
+   "g": 119,
+   "note": "India, Vietnam'ye 2024'te 405 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "philippines",
+   "v": 405026000,
+   "g": 120,
+   "note": "Pakistan, Philippines'ye 2024'te 405 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "united kingdom",
+   "v": 404681000,
+   "g": 121,
+   "note": "India, Birleşik Krallık'ye 2024'te 405 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "belgium",
+   "r": "france",
+   "v": 398097000,
+   "g": 122,
+   "note": "Belgium, France'ye 2024'te 398 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "malaysia",
+   "v": 397731000,
+   "g": 123,
+   "note": "India, Malaysia'ye 2024'te 398 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "oman",
+   "v": 397603000,
+   "g": 124,
+   "note": "India, Oman'ye 2024'te 398 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "saudi arabia",
+   "v": 396671000,
+   "g": 125,
+   "note": "Pakistan, Saudi Arabia'ye 2024'te 397 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "china",
+   "v": 390752000,
+   "g": 126,
+   "note": "Myanmar, China'ye 2024'te 391 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "peru",
+   "v": 390566000,
+   "g": 127,
+   "note": "Canada, Peru'ye 2024'te 391 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "bangladesh",
+   "v": 390314000,
+   "g": 128,
+   "note": "ABD, Bangladesh'ye 2024'te 390 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "vietnam",
+   "v": 376121000,
+   "g": 129,
+   "note": "Australia, Vietnam'ye 2024'te 376 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "morocco",
+   "v": 374858000,
+   "g": 130,
+   "note": "Canada, Morocco'ye 2024'te 375 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "türkiye",
+   "v": 372499000,
+   "g": 131,
+   "note": "ABD, Türkiye'ye 2024'te 372 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "kenya",
+   "v": 364320000,
+   "g": 132,
+   "note": "India, Kenya'ye 2024'te 364 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "kazakhstan",
+   "r": "afghanistan",
+   "v": 362281000,
+   "g": 133,
+   "note": "Kazakhstan, Afghanistan'ye 2024'te 362 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "ivory coast",
+   "v": 359216000,
+   "g": 134,
+   "note": "Thailand, Ivory Coast'ye 2024'te 359 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "japan",
+   "v": 358715000,
+   "g": 135,
+   "note": "Thailand, Japan'ye 2024'te 359 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "lithuania",
+   "r": "nigeria",
+   "v": 352443000,
+   "g": 136,
+   "note": "Lithuania, Nigeria'ye 2024'te 352 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "uae",
+   "v": 350456000,
+   "g": 137,
+   "note": "Pakistan, BAE'ye 2024'te 350 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "kazakhstan",
+   "v": 347230000,
+   "g": 138,
+   "note": "Pakistan, Kazakhstan'ye 2024'te 347 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "serbia",
+   "r": "romania",
+   "v": 347209000,
+   "g": 139,
+   "note": "Serbia, Romania'ye 2024'te 347 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "mozambique",
+   "v": 342862000,
+   "g": 140,
+   "note": "Thailand, Mozambique'ye 2024'te 343 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "united kingdom",
+   "v": 341840000,
+   "g": 141,
+   "note": "Canada, Birleşik Krallık'ye 2024'te 342 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "italy",
+   "v": 335701000,
+   "g": 142,
+   "note": "France, Italy'ye 2024'te 336 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "sierra leone",
+   "v": 335538000,
+   "g": 143,
+   "note": "India, Sierra Leone'ye 2024'te 336 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "qatar",
+   "v": 332166000,
+   "g": 144,
+   "note": "India, Qatar'ye 2024'te 332 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "cameroon",
+   "v": 329070000,
+   "g": 145,
+   "note": "Thailand, Cameroon'ye 2024'te 329 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "iraq",
+   "v": 320002000,
+   "g": 146,
+   "note": "Brazil, Iraq'ye 2024'te 320 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "kazakhstan",
+   "r": "tajikistan",
+   "v": 318603000,
+   "g": 147,
+   "note": "Kazakhstan, Tajikistan'ye 2024'te 319 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "austria",
+   "r": "italy",
+   "v": 317729000,
+   "g": 148,
+   "note": "Austria, Italy'ye 2024'te 318 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "costa rica",
+   "v": 316584000,
+   "g": 149,
+   "note": "Brazil, Costa Rica'ye 2024'te 317 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "benin",
+   "v": 314418000,
+   "g": 150,
+   "note": "Thailand, Benin'ye 2024'te 314 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "colombia",
+   "v": 313504000,
+   "g": 151,
+   "note": "Canada, Colombia'ye 2024'te 314 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "ivory coast",
+   "v": 313238000,
+   "g": 152,
+   "note": "Pakistan, Ivory Coast'ye 2024'te 313 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "dominican republic",
+   "v": 313121000,
+   "g": 153,
+   "note": "ABD, Dominican Republic'ye 2024'te 313 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "algeria",
+   "v": 313096000,
+   "g": 154,
+   "note": "France, Algeria'ye 2024'te 313 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "united kingdom",
+   "v": 309098000,
+   "g": 155,
+   "note": "Germany, Birleşik Krallık'ye 2024'te 309 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "dominican republic",
+   "v": 304556000,
+   "g": 156,
+   "note": "Brazil, Dominican Republic'ye 2024'te 305 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "morocco",
+   "v": 297231000,
+   "g": 157,
+   "note": "Brazil, Morocco'ye 2024'te 297 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "croatia",
+   "r": "italy",
+   "v": 296708000,
+   "g": 158,
+   "note": "Croatia, Italy'ye 2024'te 297 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "tunisia",
+   "v": 295558000,
+   "g": 159,
+   "note": "Ukraine, Tunisia'ye 2024'te 296 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "senegal",
+   "v": 293826000,
+   "g": 160,
+   "note": "Pakistan, Senegal'ye 2024'te 294 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "cameroon",
+   "v": 288277000,
+   "g": 161,
+   "note": "India, Cameroon'ye 2024'te 288 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "hungary",
+   "r": "germany",
+   "v": 288058000,
+   "g": 162,
+   "note": "Hungary, Germany'ye 2024'te 288 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "liberia",
+   "v": 287653000,
+   "g": 163,
+   "note": "India, Liberia'ye 2024'te 288 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "algeria",
+   "v": 283142000,
+   "g": 164,
+   "note": "Ukraine, Algeria'ye 2024'te 283 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "belgium",
+   "v": 283103000,
+   "g": 165,
+   "note": "Myanmar, Belgium'ye 2024'te 283 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "philippines",
+   "v": 282310000,
+   "g": 166,
+   "note": "Brazil, Philippines'ye 2024'te 282 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "malaysia",
+   "v": 280438000,
+   "g": 167,
+   "note": "ABD, Malaysia'ye 2024'te 280 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "portugal",
+   "v": 279935000,
+   "g": 168,
+   "note": "ABD, Portugal'ye 2024'te 280 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "united kingdom",
+   "v": 279836000,
+   "g": 169,
+   "note": "Brazil, Birleşik Krallık'ye 2024'te 280 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "panama",
+   "v": 279357000,
+   "g": 170,
+   "note": "ABD, Panama'ye 2024'te 279 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "netherlands",
+   "r": "belgium",
+   "v": 275768000,
+   "g": 171,
+   "note": "Netherlands, Belgium'ye 2024'te 276 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "iran",
+   "v": 268212000,
+   "g": 172,
+   "note": "Canada, Iran'ye 2024'te 268 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "venezuela",
+   "v": 267495000,
+   "g": 173,
+   "note": "Brazil, Venezuela'ye 2024'te 267 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "belgium",
+   "v": 266045000,
+   "g": 174,
+   "note": "Germany, Belgium'ye 2024'te 266 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "kazakhstan",
+   "r": "china",
+   "v": 265707000,
+   "g": 175,
+   "note": "Kazakhstan, China'ye 2024'te 266 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "hungary",
+   "r": "austria",
+   "v": 265556000,
+   "g": 176,
+   "note": "Hungary, Austria'ye 2024'te 266 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "latvia",
+   "r": "nigeria",
+   "v": 262996000,
+   "g": 177,
+   "note": "Latvia, Nigeria'ye 2024'te 263 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "algeria",
+   "v": 259222000,
+   "g": 178,
+   "note": "India, Algeria'ye 2024'te 259 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "syria",
+   "v": 257733000,
+   "g": 179,
+   "note": "Türkiye, Syria'ye 2024'te 258 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "germany",
+   "v": 256811000,
+   "g": 180,
+   "note": "Ukraine, Germany'ye 2024'te 257 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "el salvador",
+   "v": 255854000,
+   "g": 181,
+   "note": "ABD, El Salvador'ye 2024'te 256 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "italy",
+   "v": 254715000,
+   "g": 182,
+   "note": "Romania, Italy'ye 2024'te 255 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "nicaragua",
+   "v": 254667000,
+   "g": 183,
+   "note": "ABD, Nicaragua'ye 2024'te 255 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "philippines",
+   "v": 253922000,
+   "g": 184,
+   "note": "Myanmar, Philippines'ye 2024'te 254 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "israel",
+   "v": 251424000,
+   "g": 185,
+   "note": "Ukraine, Israel'ye 2024'te 251 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "france",
+   "v": 247114000,
+   "g": 186,
+   "note": "Germany, France'ye 2024'te 247 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "morocco",
+   "v": 245752000,
+   "g": 187,
+   "note": "Germany, Morocco'ye 2024'te 246 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "vietnam",
+   "v": 244841000,
+   "g": 188,
+   "note": "Ukraine, Vietnam'ye 2024'te 245 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "egypt",
+   "r": "sudan",
+   "v": 242445000,
+   "g": 189,
+   "note": "Egypt, Sudan'ye 2024'te 242 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "malaysia",
+   "v": 240483000,
+   "g": 190,
+   "note": "Thailand, Malaysia'ye 2024'te 240 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "netherlands",
+   "v": 240256000,
+   "g": 191,
+   "note": "ABD, Netherlands'ye 2024'te 240 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "angola",
+   "v": 237552000,
+   "g": 192,
+   "note": "India, Angola'ye 2024'te 238 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "egypt",
+   "v": 236376000,
+   "g": 193,
+   "note": "Romania, Egypt'ye 2024'te 236 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "iraq",
+   "v": 232906000,
+   "g": 194,
+   "note": "ABD, Iraq'ye 2024'te 233 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "belgium",
+   "r": "germany",
+   "v": 232828000,
+   "g": 195,
+   "note": "Belgium, Germany'ye 2024'te 233 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "lebanon",
+   "v": 232179000,
+   "g": 196,
+   "note": "Ukraine, Lebanon'ye 2024'te 232 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "spain",
+   "v": 231640000,
+   "g": 197,
+   "note": "Romania, Spain'ye 2024'te 232 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "ireland",
+   "v": 229986000,
+   "g": 198,
+   "note": "Canada, Ireland'ye 2024'te 230 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "nigeria",
+   "v": 229198000,
+   "g": 199,
+   "note": "Canada, Nigeria'ye 2024'te 229 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "jordan",
+   "v": 225344000,
+   "g": 200,
+   "note": "India, Jordan'ye 2024'te 225 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "nigeria",
+   "v": 224142000,
+   "g": 201,
+   "note": "Poland, Nigeria'ye 2024'te 224 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "pakistan",
+   "v": 222071000,
+   "g": 202,
+   "note": "Ukraine, Pakistan'ye 2024'te 222 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "canada",
+   "v": 221231000,
+   "g": 203,
+   "note": "India, Canada'ye 2024'te 221 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "canada",
+   "v": 219654000,
+   "g": 204,
+   "note": "Thailand, Canada'ye 2024'te 220 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "tanzania",
+   "r": "uganda",
+   "v": 219193000,
+   "g": 205,
+   "note": "Tanzania, Uganda'ye 2024'te 219 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "south africa",
+   "v": 218153000,
+   "g": 206,
+   "note": "India, South Africa'ye 2024'te 218 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "mozambique",
+   "v": 217228000,
+   "g": 207,
+   "note": "India, Mozambique'ye 2024'te 217 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "greece",
+   "r": "italy",
+   "v": 217166000,
+   "g": 208,
+   "note": "Greece, Italy'ye 2024'te 217 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "south africa",
+   "r": "botswana",
+   "v": 216797000,
+   "g": 209,
+   "note": "South Africa, Botswana'ye 2024'te 217 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "yemen",
+   "v": 215370000,
+   "g": 210,
+   "note": "Thailand, Yemen'ye 2024'te 215 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "oman",
+   "v": 214579000,
+   "g": 211,
+   "note": "Pakistan, Oman'ye 2024'te 215 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "senegal",
+   "v": 211174000,
+   "g": 212,
+   "note": "Brazil, Senegal'ye 2024'te 211 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "malaysia",
+   "v": 210183000,
+   "g": 213,
+   "note": "Australia, Malaysia'ye 2024'te 210 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "sri lanka",
+   "v": 209930000,
+   "g": 214,
+   "note": "India, Sri Lanka'ye 2024'te 210 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "costa rica",
+   "v": 209919000,
+   "g": 215,
+   "note": "ABD, Costa Rica'ye 2024'te 210 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "djibouti",
+   "v": 208630000,
+   "g": 216,
+   "note": "India, Djibouti'ye 2024'te 209 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "algeria",
+   "v": 207107000,
+   "g": 217,
+   "note": "Romania, Algeria'ye 2024'te 207 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "angola",
+   "v": 206245000,
+   "g": 218,
+   "note": "Thailand, Angola'ye 2024'te 206 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "portugal",
+   "v": 201274000,
+   "g": 219,
+   "note": "France, Portugal'ye 2024'te 201 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "singapore",
+   "v": 201260000,
+   "g": 220,
+   "note": "India, Singapore'ye 2024'te 201 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "madagascar",
+   "v": 200615000,
+   "g": 221,
+   "note": "Pakistan, Madagascar'ye 2024'te 201 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "singapore",
+   "v": 200287000,
+   "g": 222,
+   "note": "Thailand, Singapore'ye 2024'te 200 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "thailand",
+   "v": 199229000,
+   "g": 223,
+   "note": "Australia, Thailand'ye 2024'te 199 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "singapore",
+   "r": "indonesia",
+   "v": 199054000,
+   "g": 224,
+   "note": "Singapore, Indonesia'ye 2024'te 199 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bulgaria",
+   "r": "romania",
+   "v": 198559000,
+   "g": 225,
+   "note": "Bulgaria, Romania'ye 2024'te 199 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "austria",
+   "r": "germany",
+   "v": 196992000,
+   "g": 226,
+   "note": "Austria, Germany'ye 2024'te 197 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bulgaria",
+   "r": "greece",
+   "v": 194642000,
+   "g": 227,
+   "note": "Bulgaria, Greece'ye 2024'te 195 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "libya",
+   "v": 193400000,
+   "g": 228,
+   "note": "Ukraine, Libya'ye 2024'te 193 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "mozambique",
+   "v": 192057000,
+   "g": 229,
+   "note": "Pakistan, Mozambique'ye 2024'te 192 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "netherlands",
+   "v": 187344000,
+   "g": 230,
+   "note": "India, Netherlands'ye 2024'te 187 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "tunisia",
+   "v": 187283000,
+   "g": 231,
+   "note": "Brazil, Tunisia'ye 2024'te 187 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "spain",
+   "v": 187226000,
+   "g": 232,
+   "note": "Canada, Spain'ye 2024'te 187 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "new zealand",
+   "v": 187070000,
+   "g": 233,
+   "note": "Australia, New Zealand'ye 2024'te 187 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "morocco",
+   "v": 187043000,
+   "g": 234,
+   "note": "Argentina, Morocco'ye 2024'te 187 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "bangladesh",
+   "v": 187025000,
+   "g": 235,
+   "note": "Ukraine, Bangladesh'ye 2024'te 187 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "united kingdom",
+   "v": 186613000,
+   "g": 236,
+   "note": "Pakistan, Birleşik Krallık'ye 2024'te 187 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "bangladesh",
+   "v": 184817000,
+   "g": 237,
+   "note": "India, Bangladesh'ye 2024'te 185 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "united kingdom",
+   "v": 182965000,
+   "g": 238,
+   "note": "Poland, Birleşik Krallık'ye 2024'te 183 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "nigeria",
+   "v": 179799000,
+   "g": 239,
+   "note": "ABD, Nigeria'ye 2024'te 180 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "vietnam",
+   "v": 178446000,
+   "g": 240,
+   "note": "Canada, Vietnam'ye 2024'te 178 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "australia",
+   "v": 178334000,
+   "g": 241,
+   "note": "India, Australia'ye 2024'te 178 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "papua new guinea",
+   "v": 178015000,
+   "g": 242,
+   "note": "Thailand, Papua New Guinea'ye 2024'te 178 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "ecuador",
+   "v": 176790000,
+   "g": 243,
+   "note": "Canada, Ecuador'ye 2024'te 177 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "israel",
+   "v": 176116000,
+   "g": 244,
+   "note": "India, Israel'ye 2024'te 176 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "netherlands",
+   "v": 175168000,
+   "g": 245,
+   "note": "Poland, Netherlands'ye 2024'te 175 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "jordan",
+   "v": 174801000,
+   "g": 246,
+   "note": "Romania, Jordan'ye 2024'te 175 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "mexico",
+   "v": 172665000,
+   "g": 247,
+   "note": "Canada, Mexico'ye 2024'te 173 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "australia",
+   "v": 171381000,
+   "g": 248,
+   "note": "Thailand, Australia'ye 2024'te 171 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "togo",
+   "v": 170734000,
+   "g": 249,
+   "note": "Thailand, Togo'ye 2024'te 171 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "mexico",
+   "v": 170410000,
+   "g": 250,
+   "note": "Thailand, Mexico'ye 2024'te 170 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "serbia",
+   "r": "italy",
+   "v": 169949000,
+   "g": 251,
+   "note": "Serbia, Italy'ye 2024'te 170 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "cameroon",
+   "v": 168240000,
+   "g": 252,
+   "note": "Pakistan, Cameroon'ye 2024'te 168 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "united kingdom",
+   "v": 163711000,
+   "g": 253,
+   "note": "France, Birleşik Krallık'ye 2024'te 164 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "moldova",
+   "r": "romania",
+   "v": 163701000,
+   "g": 254,
+   "note": "Moldova, Romania'ye 2024'te 164 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "cambodia",
+   "r": "france",
+   "v": 163058000,
+   "g": 255,
+   "note": "Cambodia, France'ye 2024'te 163 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united kingdom",
+   "r": "ireland",
+   "v": 162729000,
+   "g": 256,
+   "note": "Birleşik Krallık, Ireland'ye 2024'te 163 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "malaysia",
+   "v": 161099000,
+   "g": 257,
+   "note": "Brazil, Malaysia'ye 2024'te 161 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "algeria",
+   "v": 159708000,
+   "g": 258,
+   "note": "Türkiye, Algeria'ye 2024'te 160 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "egypt",
+   "v": 158618000,
+   "g": 259,
+   "note": "India, Egypt'ye 2024'te 159 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "spain",
+   "r": "france",
+   "v": 156703000,
+   "g": 260,
+   "note": "Spain, France'ye 2024'te 157 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "south korea",
+   "v": 156069000,
+   "g": 261,
+   "note": "Ukraine, Güney Kore'ye 2024'te 156 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "south korea",
+   "v": 155940000,
+   "g": 262,
+   "note": "China, Güney Kore'ye 2024'te 156 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "united kingdom",
+   "v": 155716000,
+   "g": 263,
+   "note": "Italy, Birleşik Krallık'ye 2024'te 156 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "thailand",
+   "v": 153668000,
+   "g": 264,
+   "note": "Ukraine, Thailand'ye 2024'te 154 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "norway",
+   "v": 153603000,
+   "g": 265,
+   "note": "Brazil, Norway'ye 2024'te 154 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "haiti",
+   "v": 153148000,
+   "g": 266,
+   "note": "Pakistan, Haiti'ye 2024'te 153 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "slovakia",
+   "r": "germany",
+   "v": 152866000,
+   "g": 267,
+   "note": "Slovakia, Germany'ye 2024'te 153 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "benin",
+   "v": 152490000,
+   "g": 268,
+   "note": "Pakistan, Benin'ye 2024'te 152 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "yemen",
+   "v": 151868000,
+   "g": 269,
+   "note": "Pakistan, Yemen'ye 2024'te 152 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "greece",
+   "v": 149508000,
+   "g": 270,
+   "note": "Ukraine, Greece'ye 2024'te 150 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "portugal",
+   "v": 147284000,
+   "g": 271,
+   "note": "Ukraine, Portugal'ye 2024'te 147 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "spain",
+   "r": "portugal",
+   "v": 146426000,
+   "g": 272,
+   "note": "Spain, Portugal'ye 2024'te 146 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bulgaria",
+   "r": "spain",
+   "v": 143732000,
+   "g": 273,
+   "note": "Bulgaria, Spain'ye 2024'te 144 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "malaysia",
+   "v": 143586000,
+   "g": 274,
+   "note": "Canada, Malaysia'ye 2024'te 144 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "venezuela",
+   "v": 142150000,
+   "g": 275,
+   "note": "Canada, Venezuela'ye 2024'te 142 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "tanzania",
+   "r": "kenya",
+   "v": 141152000,
+   "g": 276,
+   "note": "Tanzania, Kenya'ye 2024'te 141 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "russia",
+   "v": 139164000,
+   "g": 277,
+   "note": "India, Russia'ye 2024'te 139 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "south africa",
+   "v": 138615000,
+   "g": 278,
+   "note": "Australia, South Africa'ye 2024'te 139 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "tunisia",
+   "v": 138199000,
+   "g": 279,
+   "note": "ABD, Tunisia'ye 2024'te 138 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "hungary",
+   "r": "romania",
+   "v": 136727000,
+   "g": 280,
+   "note": "Hungary, Romania'ye 2024'te 137 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "egypt",
+   "v": 133092000,
+   "g": 281,
+   "note": "Argentina, Egypt'ye 2024'te 133 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "india",
+   "v": 132603000,
+   "g": 282,
+   "note": "Myanmar, India'ye 2024'te 133 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "guatemala",
+   "v": 132111000,
+   "g": 283,
+   "note": "Brazil, Guatemala'ye 2024'te 132 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "denmark",
+   "v": 130805000,
+   "g": 284,
+   "note": "Germany, Denmark'ye 2024'te 131 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "ivory coast",
+   "v": 129828000,
+   "g": 285,
+   "note": "France, Ivory Coast'ye 2024'te 130 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "poland",
+   "v": 129357000,
+   "g": 286,
+   "note": "France, Poland'ye 2024'te 129 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "portugal",
+   "v": 126438000,
+   "g": 287,
+   "note": "Brazil, Portugal'ye 2024'te 126 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "philippines",
+   "v": 125635000,
+   "g": 288,
+   "note": "China, Philippines'ye 2024'te 126 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "malaysia",
+   "r": "indonesia",
+   "v": 124991000,
+   "g": 289,
+   "note": "Malaysia, Indonesia'ye 2024'te 125 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "jamaica",
+   "v": 124386000,
+   "g": 290,
+   "note": "ABD, Jamaica'ye 2024'te 124 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "djibouti",
+   "v": 122875000,
+   "g": 291,
+   "note": "Pakistan, Djibouti'ye 2024'te 123 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "somalia",
+   "v": 122682000,
+   "g": 292,
+   "note": "Pakistan, Somalia'ye 2024'te 123 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "netherlands",
+   "r": "france",
+   "v": 122660000,
+   "g": 293,
+   "note": "Netherlands, France'ye 2024'te 123 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "france",
+   "v": 122366000,
+   "g": 294,
+   "note": "Thailand, France'ye 2024'te 122 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "drc",
+   "v": 122112000,
+   "g": 295,
+   "note": "Thailand, DR Kongo'ye 2024'te 122 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "south africa",
+   "r": "eswatini",
+   "v": 122088000,
+   "g": 296,
+   "note": "South Africa, Eswatini'ye 2024'te 122 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "israel",
+   "v": 120838000,
+   "g": 297,
+   "note": "Brazil, Israel'ye 2024'te 121 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "jordan",
+   "v": 120712000,
+   "g": 298,
+   "note": "ABD, Jordan'ye 2024'te 121 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "united states",
+   "v": 120387000,
+   "g": 299,
+   "note": "Brazil, ABD'ye 2024'te 120 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "iran",
+   "v": 120365000,
+   "g": 300,
+   "note": "Romania, Iran'ye 2024'te 120 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "bahrain",
+   "v": 120153000,
+   "g": 301,
+   "note": "India, Bahrain'ye 2024'te 120 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "togo",
+   "v": 119351000,
+   "g": 302,
+   "note": "Pakistan, Togo'ye 2024'te 119 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "spain",
+   "v": 118720000,
+   "g": 303,
+   "note": "Germany, Spain'ye 2024'te 119 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "paraguay",
+   "r": "chile",
+   "v": 117553000,
+   "g": 304,
+   "note": "Paraguay, Chile'ye 2024'te 118 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "south africa",
+   "r": "namibia",
+   "v": 115772000,
+   "g": 305,
+   "note": "South Africa, Namibia'ye 2024'te 116 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "slovakia",
+   "r": "austria",
+   "v": 115356000,
+   "g": 306,
+   "note": "Slovakia, Austria'ye 2024'te 115 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "portugal",
+   "r": "spain",
+   "v": 115188000,
+   "g": 307,
+   "note": "Portugal, Spain'ye 2024'te 115 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "pakistan",
+   "v": 115040000,
+   "g": 308,
+   "note": "China, Pakistan'ye 2024'te 115 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "kuwait",
+   "v": 113815000,
+   "g": 309,
+   "note": "Australia, Kuwait'ye 2024'te 114 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "guyana",
+   "r": "cuba",
+   "v": 113582000,
+   "g": 310,
+   "note": "Guyana, Cuba'ye 2024'te 114 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "italy",
+   "v": 113243000,
+   "g": 311,
+   "note": "Türkiye, Italy'ye 2024'te 113 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "ghana",
+   "v": 112994000,
+   "g": 312,
+   "note": "India, Ghana'ye 2024'te 113 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "japan",
+   "r": "china",
+   "v": 112600000,
+   "g": 313,
+   "note": "Japan, China'ye 2024'te 113 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "ghana",
+   "v": 112570000,
+   "g": 314,
+   "note": "Canada, Ghana'ye 2024'te 113 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "philippines",
+   "v": 111255000,
+   "g": 315,
+   "note": "Canada, Philippines'ye 2024'te 111 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bulgaria",
+   "r": "egypt",
+   "v": 110839000,
+   "g": 316,
+   "note": "Bulgaria, Egypt'ye 2024'te 111 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "cambodia",
+   "r": "china",
+   "v": 110504000,
+   "g": 317,
+   "note": "Cambodia, China'ye 2024'te 111 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "türkiye",
+   "v": 110133000,
+   "g": 318,
+   "note": "India, Türkiye'ye 2024'te 110 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "argentina",
+   "v": 110014000,
+   "g": 319,
+   "note": "Brazil, Argentina'ye 2024'te 110 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "morocco",
+   "v": 109953000,
+   "g": 320,
+   "note": "Romania, Morocco'ye 2024'te 110 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "gambia",
+   "v": 109721000,
+   "g": 321,
+   "note": "Brazil, Gambia'ye 2024'te 110 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "türkiye",
+   "v": 109533000,
+   "g": 322,
+   "note": "Romania, Türkiye'ye 2024'te 110 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "japan",
+   "r": "united states",
+   "v": 108995000,
+   "g": 323,
+   "note": "Japan, ABD'ye 2024'te 109 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "united states",
+   "v": 107390000,
+   "g": 324,
+   "note": "Argentina, ABD'ye 2024'te 107 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "cambodia",
+   "r": "malaysia",
+   "v": 107294000,
+   "g": 325,
+   "note": "Cambodia, Malaysia'ye 2024'te 107 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "czechia",
+   "r": "austria",
+   "v": 106133000,
+   "g": 326,
+   "note": "Czechia, Austria'ye 2024'te 106 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "spain",
+   "v": 104514000,
+   "g": 327,
+   "note": "Italy, Spain'ye 2024'te 105 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "congo",
+   "v": 103922000,
+   "g": 328,
+   "note": "Thailand, Congo'ye 2024'te 104 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "lithuania",
+   "r": "latvia",
+   "v": 103689000,
+   "g": 329,
+   "note": "Lithuania, Latvia'ye 2024'te 104 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "peru",
+   "v": 102235000,
+   "g": 330,
+   "note": "Brazil, Peru'ye 2024'te 102 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "guatemala",
+   "v": 101827000,
+   "g": 331,
+   "note": "Canada, Guatemala'ye 2024'te 102 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "paraguay",
+   "r": "russia",
+   "v": 100488000,
+   "g": 332,
+   "note": "Paraguay, Russia'ye 2024'te 100 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "belgium",
+   "v": 100066000,
+   "g": 333,
+   "note": "Pakistan, Belgium'ye 2024'te 100 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "slovakia",
+   "r": "hungary",
+   "v": 99987000,
+   "g": 334,
+   "note": "Slovakia, Hungary'ye 2024'te 100,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "spain",
+   "r": "italy",
+   "v": 99946000,
+   "g": 335,
+   "note": "Spain, Italy'ye 2024'te 99,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "guinea-bissau",
+   "v": 99316000,
+   "g": 336,
+   "note": "Pakistan, Guinea-Bissau'ye 2024'te 99,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "chile",
+   "v": 98884000,
+   "g": 337,
+   "note": "ABD, Chile'ye 2024'te 98,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "cameroon",
+   "v": 98604000,
+   "g": 338,
+   "note": "China, Cameroon'ye 2024'te 98,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "belgium",
+   "v": 97696000,
+   "g": 339,
+   "note": "Ukraine, Belgium'ye 2024'te 97,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "austria",
+   "v": 97453000,
+   "g": 340,
+   "note": "Germany, Austria'ye 2024'te 97,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "south korea",
+   "v": 97162000,
+   "g": 341,
+   "note": "Canada, Güney Kore'ye 2024'te 97,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bulgaria",
+   "r": "thailand",
+   "v": 95766000,
+   "g": 342,
+   "note": "Bulgaria, Thailand'ye 2024'te 95,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "belgium",
+   "v": 95680000,
+   "g": 343,
+   "note": "Canada, Belgium'ye 2024'te 95,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "kazakhstan",
+   "r": "iran",
+   "v": 95413000,
+   "g": 344,
+   "note": "Kazakhstan, Iran'ye 2024'te 95,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "israel",
+   "v": 95406000,
+   "g": 345,
+   "note": "Thailand, Israel'ye 2024'te 95,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "uae",
+   "v": 95406000,
+   "g": 346,
+   "note": "Canada, BAE'ye 2024'te 95,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "switzerland",
+   "v": 95145000,
+   "g": 347,
+   "note": "France, Switzerland'ye 2024'te 95,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "brazil",
+   "v": 94814000,
+   "g": 348,
+   "note": "ABD, Brazil'ye 2024'te 94,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "croatia",
+   "r": "serbia",
+   "v": 94116000,
+   "g": 349,
+   "note": "Croatia, Serbia'ye 2024'te 94,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "thailand",
+   "v": 93670000,
+   "g": 350,
+   "note": "Canada, Thailand'ye 2024'te 93,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "austria",
+   "v": 93391000,
+   "g": 351,
+   "note": "Italy, Austria'ye 2024'te 93,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "slovakia",
+   "r": "czechia",
+   "v": 93335000,
+   "g": 352,
+   "note": "Slovakia, Czechia'ye 2024'te 93,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "jordan",
+   "v": 93332000,
+   "g": 353,
+   "note": "Brazil, Jordan'ye 2024'te 93,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "morocco",
+   "v": 93298000,
+   "g": 354,
+   "note": "ABD, Morocco'ye 2024'te 93,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "ecuador",
+   "v": 93286000,
+   "g": 355,
+   "note": "ABD, Ecuador'ye 2024'te 93,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "uae",
+   "v": 92856000,
+   "g": 356,
+   "note": "Argentina, BAE'ye 2024'te 92,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "serbia",
+   "r": "bosnia and herzegovina",
+   "v": 92385000,
+   "g": 357,
+   "note": "Serbia, Bosnia And Herzegovina'ye 2024'te 92,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "yemen",
+   "v": 92301000,
+   "g": 358,
+   "note": "Argentina, Yemen'ye 2024'te 92,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "brazil",
+   "v": 91897000,
+   "g": 359,
+   "note": "Thailand, Brazil'ye 2024'te 91,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "india",
+   "v": 91368000,
+   "g": 360,
+   "note": "Ukraine, India'ye 2024'te 91,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "south africa",
+   "r": "lesotho",
+   "v": 91068000,
+   "g": 361,
+   "note": "South Africa, Lesotho'ye 2024'te 91,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "cyprus",
+   "v": 90636000,
+   "g": 362,
+   "note": "Ukraine, Cyprus'ye 2024'te 90,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "uae",
+   "v": 90322000,
+   "g": 363,
+   "note": "Australia, BAE'ye 2024'te 90,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "ireland",
+   "v": 89685000,
+   "g": 364,
+   "note": "Germany, Ireland'ye 2024'te 89,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "romania",
+   "v": 89049000,
+   "g": 365,
+   "note": "Ukraine, Romania'ye 2024'te 89,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "ghana",
+   "v": 88463000,
+   "g": 366,
+   "note": "Thailand, Ghana'ye 2024'te 88,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "slovakia",
+   "r": "italy",
+   "v": 87683000,
+   "g": 367,
+   "note": "Slovakia, Italy'ye 2024'te 87,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "ireland",
+   "v": 86814000,
+   "g": 368,
+   "note": "France, Ireland'ye 2024'te 86,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "netherlands",
+   "v": 86286000,
+   "g": 369,
+   "note": "Italy, Netherlands'ye 2024'te 86,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "cambodia",
+   "r": "netherlands",
+   "v": 85015000,
+   "g": 370,
+   "note": "Cambodia, Netherlands'ye 2024'te 85,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "switzerland",
+   "v": 84819000,
+   "g": 371,
+   "note": "Germany, Switzerland'ye 2024'te 84,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "lithuania",
+   "r": "south africa",
+   "v": 84259000,
+   "g": 372,
+   "note": "Lithuania, South Africa'ye 2024'te 84,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bulgaria",
+   "r": "morocco",
+   "v": 83841000,
+   "g": 373,
+   "note": "Bulgaria, Morocco'ye 2024'te 83,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "belgium",
+   "v": 83729000,
+   "g": 374,
+   "note": "Italy, Belgium'ye 2024'te 83,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "papua new guinea",
+   "v": 82834000,
+   "g": 375,
+   "note": "Australia, Papua New Guinea'ye 2024'te 82,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "yemen",
+   "v": 82609000,
+   "g": 376,
+   "note": "Ukraine, Yemen'ye 2024'te 82,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "mauritius",
+   "v": 82463000,
+   "g": 377,
+   "note": "India, Mauritius'ye 2024'te 82,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "senegal",
+   "v": 81521000,
+   "g": 378,
+   "note": "France, Senegal'ye 2024'te 81,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "united states",
+   "v": 81420000,
+   "g": 379,
+   "note": "China, ABD'ye 2024'te 81,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "paraguay",
+   "v": 81130000,
+   "g": 380,
+   "note": "Brazil, Paraguay'ye 2024'te 81,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "taiwan",
+   "v": 81022000,
+   "g": 381,
+   "note": "Australia, Taiwan'ye 2024'te 81,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "slovakia",
+   "r": "poland",
+   "v": 81022000,
+   "g": 382,
+   "note": "Slovakia, Poland'ye 2024'te 81,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "belgium",
+   "r": "united kingdom",
+   "v": 80995000,
+   "g": 383,
+   "note": "Belgium, Birleşik Krallık'ye 2024'te 81,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "ivory coast",
+   "v": 80553000,
+   "g": 384,
+   "note": "Myanmar, Ivory Coast'ye 2024'te 80,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "united states",
+   "v": 80511000,
+   "g": 385,
+   "note": "Italy, ABD'ye 2024'te 80,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "türkiye",
+   "v": 79820000,
+   "g": 386,
+   "note": "Canada, Türkiye'ye 2024'te 79,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "mauritania",
+   "v": 79774000,
+   "g": 387,
+   "note": "France, Mauritania'ye 2024'te 79,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "mexico",
+   "v": 79511000,
+   "g": 388,
+   "note": "France, Mexico'ye 2024'te 79,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ecuador",
+   "r": "colombia",
+   "v": 78228000,
+   "g": 389,
+   "note": "Ecuador, Colombia'ye 2024'te 78,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "spain",
+   "v": 77830000,
+   "g": 390,
+   "note": "Myanmar, Spain'ye 2024'te 77,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "libya",
+   "v": 77715000,
+   "g": 391,
+   "note": "Türkiye, Libya'ye 2024'te 77,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "sudan",
+   "v": 77566000,
+   "g": 392,
+   "note": "India, Sudan'ye 2024'te 77,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "guyana",
+   "r": "jamaica",
+   "v": 77402000,
+   "g": 393,
+   "note": "Guyana, Jamaica'ye 2024'te 77,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "taiwan",
+   "v": 77016000,
+   "g": 394,
+   "note": "Argentina, Taiwan'ye 2024'te 77,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "burkina faso",
+   "v": 76626000,
+   "g": 395,
+   "note": "India, Burkina Faso'ye 2024'te 76,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "senegal",
+   "v": 75156000,
+   "g": 396,
+   "note": "Argentina, Senegal'ye 2024'te 75,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "france",
+   "v": 75009000,
+   "g": 397,
+   "note": "Romania, France'ye 2024'te 75,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "ecuador",
+   "v": 74646000,
+   "g": 398,
+   "note": "Argentina, Ecuador'ye 2024'te 74,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "papua new guinea",
+   "v": 74345000,
+   "g": 399,
+   "note": "China, Papua New Guinea'ye 2024'te 74,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "laos",
+   "v": 74266000,
+   "g": 400,
+   "note": "Thailand, Laos'ye 2024'te 74,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "senegal",
+   "v": 73878000,
+   "g": 401,
+   "note": "Myanmar, Senegal'ye 2024'te 73,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "bangladesh",
+   "v": 73176000,
+   "g": 402,
+   "note": "Romania, Bangladesh'ye 2024'te 73,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "bulgaria",
+   "v": 73116000,
+   "g": 403,
+   "note": "Romania, Bulgaria'ye 2024'te 73,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "timor-leste",
+   "v": 73070000,
+   "g": 404,
+   "note": "India, Timor-Leste'ye 2024'te 73,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "gambia",
+   "v": 73046000,
+   "g": 405,
+   "note": "Pakistan, Gambia'ye 2024'te 73,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "chile",
+   "v": 72411000,
+   "g": 406,
+   "note": "Canada, Chile'ye 2024'te 72,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "guyana",
+   "r": "portugal",
+   "v": 71500000,
+   "g": 407,
+   "note": "Guyana, Portugal'ye 2024'te 71,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bulgaria",
+   "r": "türkiye",
+   "v": 71372000,
+   "g": 408,
+   "note": "Bulgaria, Türkiye'ye 2024'te 71,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "senegal",
+   "r": "mali",
+   "v": 70864000,
+   "g": 409,
+   "note": "Senegal, Mali'ye 2024'te 70,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "dominican republic",
+   "v": 70034000,
+   "g": 410,
+   "note": "Canada, Dominican Republic'ye 2024'te 70,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "myanmar",
+   "v": 69821000,
+   "g": 411,
+   "note": "Australia, Myanmar'ye 2024'te 69,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "tanzania",
+   "v": 69394000,
+   "g": 412,
+   "note": "Pakistan, Tanzania'ye 2024'te 69,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "czechia",
+   "r": "poland",
+   "v": 68808000,
+   "g": 413,
+   "note": "Czechia, Poland'ye 2024'te 68,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "lithuania",
+   "r": "spain",
+   "v": 68430000,
+   "g": 414,
+   "note": "Lithuania, Spain'ye 2024'te 68,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "greece",
+   "v": 68300000,
+   "g": 415,
+   "note": "Romania, Greece'ye 2024'te 68,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "netherlands",
+   "r": "united kingdom",
+   "v": 68108000,
+   "g": 416,
+   "note": "Netherlands, Birleşik Krallık'ye 2024'te 68,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "czechia",
+   "r": "slovakia",
+   "v": 68039000,
+   "g": 417,
+   "note": "Czechia, Slovakia'ye 2024'te 68,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "switzerland",
+   "v": 68001000,
+   "g": 418,
+   "note": "Italy, Switzerland'ye 2024'te 68,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "nigeria",
+   "v": 67339000,
+   "g": 419,
+   "note": "India, Nigeria'ye 2024'te 67,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "angola",
+   "v": 66692000,
+   "g": 420,
+   "note": "Poland, Angola'ye 2024'te 66,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "cambodia",
+   "r": "thailand",
+   "v": 66633000,
+   "g": 421,
+   "note": "Cambodia, Thailand'ye 2024'te 66,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "poland",
+   "v": 66609000,
+   "g": 422,
+   "note": "Ukraine, Poland'ye 2024'te 66,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "sri lanka",
+   "v": 66347000,
+   "g": 423,
+   "note": "Pakistan, Sri Lanka'ye 2024'te 66,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "peru",
+   "v": 66294000,
+   "g": 424,
+   "note": "ABD, Peru'ye 2024'te 66,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "norway",
+   "v": 65091000,
+   "g": 425,
+   "note": "Poland, Norway'ye 2024'te 65,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "tanzania",
+   "r": "rwanda",
+   "v": 64557000,
+   "g": 426,
+   "note": "Tanzania, Rwanda'ye 2024'te 64,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "egypt",
+   "r": "syria",
+   "v": 64136000,
+   "g": 427,
+   "note": "Egypt, Syria'ye 2024'te 64,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "israel",
+   "v": 63493000,
+   "g": 428,
+   "note": "ABD, Israel'ye 2024'te 63,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "poland",
+   "v": 63232000,
+   "g": 429,
+   "note": "Italy, Poland'ye 2024'te 63,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "djibouti",
+   "v": 62509000,
+   "g": 430,
+   "note": "Türkiye, Djibouti'ye 2024'te 62,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "south africa",
+   "v": 62108000,
+   "g": 431,
+   "note": "ABD, South Africa'ye 2024'te 62,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "egypt",
+   "r": "somalia",
+   "v": 61778000,
+   "g": 432,
+   "note": "Egypt, Somalia'ye 2024'te 61,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "poland",
+   "v": 61385000,
+   "g": 433,
+   "note": "Germany, Poland'ye 2024'te 61,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "zimbabwe",
+   "v": 60956000,
+   "g": 434,
+   "note": "Thailand, Zimbabwe'ye 2024'te 61,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "fiji",
+   "v": 60946000,
+   "g": 435,
+   "note": "Australia, Fiji'ye 2024'te 60,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "egypt",
+   "r": "madagascar",
+   "v": 60711000,
+   "g": 436,
+   "note": "Egypt, Madagascar'ye 2024'te 60,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "iran",
+   "v": 60484000,
+   "g": 437,
+   "note": "Türkiye, Iran'ye 2024'te 60,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "egypt",
+   "r": "palestine",
+   "v": 60463000,
+   "g": 438,
+   "note": "Egypt, Palestine'ye 2024'te 60,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "bhutan",
+   "v": 60202000,
+   "g": 439,
+   "note": "India, Bhutan'ye 2024'te 60,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "kenya",
+   "v": 60137000,
+   "g": 440,
+   "note": "Argentina, Kenya'ye 2024'te 60,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "syria",
+   "v": 59942000,
+   "g": 441,
+   "note": "India, Syria'ye 2024'te 59,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "belgium",
+   "v": 59674000,
+   "g": 442,
+   "note": "Poland, Belgium'ye 2024'te 59,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "czechia",
+   "v": 59655000,
+   "g": 443,
+   "note": "Italy, Czechia'ye 2024'te 59,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "ireland",
+   "v": 59459000,
+   "g": 444,
+   "note": "ABD, Ireland'ye 2024'te 59,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "costa rica",
+   "v": 59194000,
+   "g": 445,
+   "note": "Canada, Costa Rica'ye 2024'te 59,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "somalia",
+   "v": 59054000,
+   "g": 446,
+   "note": "Türkiye, Somalia'ye 2024'te 59,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "egypt",
+   "v": 58956000,
+   "g": 447,
+   "note": "France, Egypt'ye 2024'te 59,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "sierra leone",
+   "v": 58519000,
+   "g": 448,
+   "note": "Brazil, Sierra Leone'ye 2024'te 58,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "portugal",
+   "v": 58457000,
+   "g": 449,
+   "note": "Romania, Portugal'ye 2024'te 58,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "oman",
+   "v": 58352000,
+   "g": 450,
+   "note": "Australia, Oman'ye 2024'te 58,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "hungary",
+   "v": 57992000,
+   "g": 451,
+   "note": "France, Hungary'ye 2024'te 58,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "hungary",
+   "r": "croatia",
+   "v": 57768000,
+   "g": 452,
+   "note": "Hungary, Croatia'ye 2024'te 57,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "venezuela",
+   "v": 57540000,
+   "g": 453,
+   "note": "Türkiye, Venezuela'ye 2024'te 57,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "mexico",
+   "r": "united states",
+   "v": 57477000,
+   "g": 454,
+   "note": "Mexico, ABD'ye 2024'te 57,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "hungary",
+   "r": "serbia",
+   "v": 57477000,
+   "g": 455,
+   "note": "Hungary, Serbia'ye 2024'te 57,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "denmark",
+   "v": 57361000,
+   "g": 456,
+   "note": "Poland, Denmark'ye 2024'te 57,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "gambia",
+   "v": 57210000,
+   "g": 457,
+   "note": "India, Gambia'ye 2024'te 57,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "kazakhstan",
+   "r": "italy",
+   "v": 56919000,
+   "g": 458,
+   "note": "Kazakhstan, Italy'ye 2024'te 56,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "romania",
+   "v": 56313000,
+   "g": 459,
+   "note": "France, Romania'ye 2024'te 56,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "japan",
+   "v": 56297000,
+   "g": 460,
+   "note": "China, Japan'ye 2024'te 56,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "nigeria",
+   "v": 56262000,
+   "g": 461,
+   "note": "Argentina, Nigeria'ye 2024'te 56,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "spain",
+   "r": "united kingdom",
+   "v": 56100000,
+   "g": 462,
+   "note": "Spain, Birleşik Krallık'ye 2024'te 56,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "cuba",
+   "v": 56080000,
+   "g": 463,
+   "note": "Brazil, Cuba'ye 2024'te 56,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "austria",
+   "v": 56028000,
+   "g": 464,
+   "note": "Ukraine, Austria'ye 2024'te 56,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "venezuela",
+   "v": 55441000,
+   "g": 465,
+   "note": "Argentina, Venezuela'ye 2024'te 55,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "egypt",
+   "v": 55016000,
+   "g": 466,
+   "note": "China, Egypt'ye 2024'te 55,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "guinea",
+   "v": 55009000,
+   "g": 467,
+   "note": "Poland, Guinea'ye 2024'te 55,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "spain",
+   "r": "tunisia",
+   "v": 54914000,
+   "g": 468,
+   "note": "Spain, Tunisia'ye 2024'te 54,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "drc",
+   "v": 54788000,
+   "g": 469,
+   "note": "China, DR Kongo'ye 2024'te 54,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ireland",
+   "r": "united kingdom",
+   "v": 54545000,
+   "g": 470,
+   "note": "Ireland, Birleşik Krallık'ye 2024'te 54,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "hungary",
+   "v": 54404000,
+   "g": 471,
+   "note": "Romania, Hungary'ye 2024'te 54,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "cuba",
+   "v": 54330000,
+   "g": 472,
+   "note": "Canada, Cuba'ye 2024'te 54,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "lebanon",
+   "v": 54226000,
+   "g": 473,
+   "note": "Romania, Lebanon'ye 2024'te 54,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "taiwan",
+   "v": 54220000,
+   "g": 474,
+   "note": "Canada, Taiwan'ye 2024'te 54,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "ireland",
+   "v": 54141000,
+   "g": 475,
+   "note": "Ukraine, Ireland'ye 2024'te 54,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "denmark",
+   "v": 53965000,
+   "g": 476,
+   "note": "France, Denmark'ye 2024'te 54,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "guyana",
+   "r": "brazil",
+   "v": 53900000,
+   "g": 477,
+   "note": "Guyana, Brazil'ye 2024'te 53,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united kingdom",
+   "r": "netherlands",
+   "v": 53620000,
+   "g": 478,
+   "note": "Birleşik Krallık, Netherlands'ye 2024'te 53,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "poland",
+   "v": 53354000,
+   "g": 479,
+   "note": "Myanmar, Poland'ye 2024'te 53,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "denmark",
+   "r": "united kingdom",
+   "v": 53345000,
+   "g": 480,
+   "note": "Denmark, Birleşik Krallık'ye 2024'te 53,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "portugal",
+   "v": 53236000,
+   "g": 481,
+   "note": "Canada, Portugal'ye 2024'te 53,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "cambodia",
+   "r": "united kingdom",
+   "v": 52723000,
+   "g": 482,
+   "note": "Cambodia, Birleşik Krallık'ye 2024'te 52,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "angola",
+   "v": 52461000,
+   "g": 483,
+   "note": "Argentina, Angola'ye 2024'te 52,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "south africa",
+   "r": "mozambique",
+   "v": 52182000,
+   "g": 484,
+   "note": "South Africa, Mozambique'ye 2024'te 52,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "norway",
+   "v": 51753000,
+   "g": 485,
+   "note": "Germany, Norway'ye 2024'te 51,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "mongolia",
+   "v": 51695000,
+   "g": 486,
+   "note": "China, Mongolia'ye 2024'te 51,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "dominican republic",
+   "r": "haiti",
+   "v": 51521000,
+   "g": 487,
+   "note": "Dominican Republic, Haiti'ye 2024'te 51,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "cameroon",
+   "v": 51481000,
+   "g": 488,
+   "note": "Poland, Cameroon'ye 2024'te 51,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "austria",
+   "r": "france",
+   "v": 51423000,
+   "g": 489,
+   "note": "Austria, France'ye 2024'te 51,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "ecuador",
+   "v": 50959000,
+   "g": 490,
+   "note": "Brazil, Ecuador'ye 2024'te 51,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "el salvador",
+   "v": 50603000,
+   "g": 491,
+   "note": "Thailand, El Salvador'ye 2024'te 50,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "ukraine",
+   "v": 50456000,
+   "g": 492,
+   "note": "Türkiye, Ukraine'ye 2024'te 50,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "south africa",
+   "r": "zambia",
+   "v": 49549000,
+   "g": 493,
+   "note": "South Africa, Zambia'ye 2024'te 49,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "mauritania",
+   "v": 49307000,
+   "g": 494,
+   "note": "Romania, Mauritania'ye 2024'te 49,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "cameroon",
+   "v": 49290000,
+   "g": 495,
+   "note": "Romania, Cameroon'ye 2024'te 49,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "cambodia",
+   "r": "gabon",
+   "v": 49142000,
+   "g": 496,
+   "note": "Cambodia, Gabon'ye 2024'te 49,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "hungary",
+   "r": "slovakia",
+   "v": 49001000,
+   "g": 497,
+   "note": "Hungary, Slovakia'ye 2024'te 49,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "south africa",
+   "v": 48728000,
+   "g": 498,
+   "note": "Poland, South Africa'ye 2024'te 48,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "denmark",
+   "r": "germany",
+   "v": 48713000,
+   "g": 499,
+   "note": "Denmark, Germany'ye 2024'te 48,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "netherlands",
+   "r": "italy",
+   "v": 48441000,
+   "g": 500,
+   "note": "Netherlands, Italy'ye 2024'te 48,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "dominican republic",
+   "v": 48407000,
+   "g": 501,
+   "note": "Thailand, Dominican Republic'ye 2024'te 48,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "hungary",
+   "v": 48296000,
+   "g": 502,
+   "note": "Ukraine, Hungary'ye 2024'te 48,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "mexico",
+   "v": 47490000,
+   "g": 503,
+   "note": "Australia, Mexico'ye 2024'te 47,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "el salvador",
+   "v": 47426000,
+   "g": 504,
+   "note": "Canada, El Salvador'ye 2024'te 47,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "angola",
+   "v": 47142000,
+   "g": 505,
+   "note": "Germany, Angola'ye 2024'te 47,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "taiwan",
+   "r": "papua new guinea",
+   "v": 47024000,
+   "g": 506,
+   "note": "Taiwan, Papua New Guinea'ye 2024'te 47,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "haiti",
+   "v": 46825000,
+   "g": 507,
+   "note": "Canada, Haiti'ye 2024'te 46,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united kingdom",
+   "r": "belgium",
+   "v": 46763000,
+   "g": 508,
+   "note": "Birleşik Krallık, Belgium'ye 2024'te 46,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "trinidad and tobago",
+   "v": 46727000,
+   "g": 509,
+   "note": "ABD, Trinidad And Tobago'ye 2024'te 46,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "lebanon",
+   "v": 46688000,
+   "g": 510,
+   "note": "ABD, Lebanon'ye 2024'te 46,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "greece",
+   "v": 46636000,
+   "g": 511,
+   "note": "Brazil, Greece'ye 2024'te 46,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "maldives",
+   "v": 46581000,
+   "g": 512,
+   "note": "India, Maldives'ye 2024'te 46,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bolivia",
+   "r": "peru",
+   "v": 46491000,
+   "g": 513,
+   "note": "Bolivia, Peru'ye 2024'te 46,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "egypt",
+   "r": "yemen",
+   "v": 46481000,
+   "g": 514,
+   "note": "Egypt, Yemen'ye 2024'te 46,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "saudi arabia",
+   "v": 45874000,
+   "g": 515,
+   "note": "Thailand, Saudi Arabia'ye 2024'te 45,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "comoros",
+   "v": 45760000,
+   "g": 516,
+   "note": "Pakistan, Comoros'ye 2024'te 45,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "niger",
+   "v": 45532000,
+   "g": 517,
+   "note": "India, Niger'ye 2024'te 45,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "pakistan",
+   "v": 45213000,
+   "g": 518,
+   "note": "Romania, Pakistan'ye 2024'te 45,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "benin",
+   "v": 45186000,
+   "g": 519,
+   "note": "China, Benin'ye 2024'te 45,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "austria",
+   "r": "hungary",
+   "v": 45145000,
+   "g": 520,
+   "note": "Austria, Hungary'ye 2024'te 45,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "libya",
+   "v": 44982000,
+   "g": 521,
+   "note": "India, Libya'ye 2024'te 45,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "kazakhstan",
+   "r": "azerbaijan",
+   "v": 44697000,
+   "g": 522,
+   "note": "Kazakhstan, Azerbaijan'ye 2024'te 44,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "ivory coast",
+   "v": 44666000,
+   "g": 523,
+   "note": "ABD, Ivory Coast'ye 2024'te 44,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "nigeria",
+   "v": 44459000,
+   "g": 524,
+   "note": "Brazil, Nigeria'ye 2024'te 44,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "tanzania",
+   "v": 44417000,
+   "g": 525,
+   "note": "India, Tanzania'ye 2024'te 44,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "canada",
+   "v": 44209000,
+   "g": 526,
+   "note": "Pakistan, Canada'ye 2024'te 44,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "cameroon",
+   "v": 44137000,
+   "g": 527,
+   "note": "Canada, Cameroon'ye 2024'te 44,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "türkiye",
+   "v": 43598000,
+   "g": 528,
+   "note": "Italy, Türkiye'ye 2024'te 43,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "hungary",
+   "r": "bulgaria",
+   "v": 43132000,
+   "g": 529,
+   "note": "Hungary, Bulgaria'ye 2024'te 43,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "guatemala",
+   "v": 43062000,
+   "g": 530,
+   "note": "Argentina, Guatemala'ye 2024'te 43,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "nepal",
+   "v": 42948000,
+   "g": 531,
+   "note": "ABD, Nepal'ye 2024'te 42,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "australia",
+   "v": 42868000,
+   "g": 532,
+   "note": "Pakistan, Australia'ye 2024'te 42,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "uae",
+   "v": 42799000,
+   "g": 533,
+   "note": "Ukraine, BAE'ye 2024'te 42,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "kazakhstan",
+   "r": "russia",
+   "v": 42618000,
+   "g": 534,
+   "note": "Kazakhstan, Russia'ye 2024'te 42,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "poland",
+   "v": 42190000,
+   "g": 535,
+   "note": "Romania, Poland'ye 2024'te 42,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "cameroon",
+   "v": 41679000,
+   "g": 536,
+   "note": "France, Cameroon'ye 2024'te 41,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "serbia",
+   "r": "north macedonia",
+   "v": 41464000,
+   "g": 537,
+   "note": "Serbia, North Macedonia'ye 2024'te 41,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "sri lanka",
+   "v": 41298000,
+   "g": 538,
+   "note": "Canada, Sri Lanka'ye 2024'te 41,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "austria",
+   "v": 41253000,
+   "g": 539,
+   "note": "France, Austria'ye 2024'te 41,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "czechia",
+   "v": 41216000,
+   "g": 540,
+   "note": "Poland, Czechia'ye 2024'te 41,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "croatia",
+   "r": "slovenia",
+   "v": 41135000,
+   "g": 541,
+   "note": "Croatia, Slovenia'ye 2024'te 41,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "mozambique",
+   "v": 41053000,
+   "g": 542,
+   "note": "Myanmar, Mozambique'ye 2024'te 41,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "greece",
+   "v": 40759000,
+   "g": 543,
+   "note": "Italy, Greece'ye 2024'te 40,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "yemen",
+   "v": 40644000,
+   "g": 544,
+   "note": "ABD, Yemen'ye 2024'te 40,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bulgaria",
+   "r": "tunisia",
+   "v": 40477000,
+   "g": 545,
+   "note": "Bulgaria, Tunisia'ye 2024'te 40,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "guyana",
+   "r": "trinidad and tobago",
+   "v": 40319000,
+   "g": 546,
+   "note": "Guyana, Trinidad And Tobago'ye 2024'te 40,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "japan",
+   "r": "taiwan",
+   "v": 40267000,
+   "g": 547,
+   "note": "Japan, Taiwan'ye 2024'te 40,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "cuba",
+   "v": 40090000,
+   "g": 548,
+   "note": "Türkiye, Cuba'ye 2024'te 40,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "uzbekistan",
+   "v": 40052000,
+   "g": 549,
+   "note": "Pakistan, Uzbekistan'ye 2024'te 40,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "el salvador",
+   "v": 39935000,
+   "g": 550,
+   "note": "Brazil, El Salvador'ye 2024'te 39,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "tanzania",
+   "r": "zambia",
+   "v": 39877000,
+   "g": 551,
+   "note": "Tanzania, Zambia'ye 2024'te 39,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "iraq",
+   "v": 39640000,
+   "g": 552,
+   "note": "Ukraine, Iraq'ye 2024'te 39,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "ivory coast",
+   "v": 39492000,
+   "g": 553,
+   "note": "China, Ivory Coast'ye 2024'te 39,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "jordan",
+   "v": 39485000,
+   "g": 554,
+   "note": "Ukraine, Jordan'ye 2024'te 39,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "bahrain",
+   "v": 39438000,
+   "g": 555,
+   "note": "Australia, Bahrain'ye 2024'te 39,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "kenya",
+   "v": 39437000,
+   "g": 556,
+   "note": "Thailand, Kenya'ye 2024'te 39,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "mozambique",
+   "v": 39342000,
+   "g": 557,
+   "note": "Canada, Mozambique'ye 2024'te 39,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "netherlands",
+   "r": "ireland",
+   "v": 39311000,
+   "g": 558,
+   "note": "Netherlands, Ireland'ye 2024'te 39,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "portugal",
+   "r": "jordan",
+   "v": 39262000,
+   "g": 559,
+   "note": "Portugal, Jordan'ye 2024'te 39,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "guinea",
+   "v": 39140000,
+   "g": 560,
+   "note": "Germany, Guinea'ye 2024'te 39,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "drc",
+   "v": 39080000,
+   "g": 561,
+   "note": "Poland, DR Kongo'ye 2024'te 39,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "uae",
+   "v": 39044000,
+   "g": 562,
+   "note": "Brazil, BAE'ye 2024'te 39,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "malta",
+   "v": 38708000,
+   "g": 563,
+   "note": "Ukraine, Malta'ye 2024'te 38,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "lebanon",
+   "v": 38548000,
+   "g": 564,
+   "note": "India, Lebanon'ye 2024'te 38,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "jordan",
+   "v": 38534000,
+   "g": 565,
+   "note": "Argentina, Jordan'ye 2024'te 38,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "sudan",
+   "v": 38415000,
+   "g": 566,
+   "note": "Türkiye, Sudan'ye 2024'te 38,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "saudi arabia",
+   "v": 38223000,
+   "g": 567,
+   "note": "Australia, Saudi Arabia'ye 2024'te 38,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "guyana",
+   "r": "dominica",
+   "v": 38167000,
+   "g": 568,
+   "note": "Guyana, Dominica'ye 2024'te 38,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "uganda",
+   "r": "kenya",
+   "v": 38131000,
+   "g": 569,
+   "note": "Uganda, Kenya'ye 2024'te 38,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "luxembourg",
+   "v": 38031000,
+   "g": 570,
+   "note": "France, Luxembourg'ye 2024'te 38,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "chile",
+   "r": "united states",
+   "v": 37945000,
+   "g": 571,
+   "note": "Chile, ABD'ye 2024'te 37,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "lithuania",
+   "r": "germany",
+   "v": 37734000,
+   "g": 572,
+   "note": "Lithuania, Germany'ye 2024'te 37,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "uruguay",
+   "v": 37663000,
+   "g": 573,
+   "note": "Argentina, Uruguay'ye 2024'te 37,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "paraguay",
+   "r": "uruguay",
+   "v": 37583000,
+   "g": 574,
+   "note": "Paraguay, Uruguay'ye 2024'te 37,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "singapore",
+   "v": 37514000,
+   "g": 575,
+   "note": "Australia, Singapore'ye 2024'te 37,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "bolivia",
+   "v": 37448000,
+   "g": 576,
+   "note": "Argentina, Bolivia'ye 2024'te 37,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "brunei",
+   "v": 37314000,
+   "g": 577,
+   "note": "Thailand, Brunei'ye 2024'te 37,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "south korea",
+   "v": 37245000,
+   "g": 578,
+   "note": "Germany, Güney Kore'ye 2024'te 37,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "serbia",
+   "r": "austria",
+   "v": 37033000,
+   "g": 579,
+   "note": "Serbia, Austria'ye 2024'te 37,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "latvia",
+   "r": "angola",
+   "v": 36720000,
+   "g": 580,
+   "note": "Latvia, Angola'ye 2024'te 36,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "moldova",
+   "r": "greece",
+   "v": 36663000,
+   "g": 581,
+   "note": "Moldova, Greece'ye 2024'te 36,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "latvia",
+   "r": "netherlands",
+   "v": 36107000,
+   "g": 582,
+   "note": "Latvia, Netherlands'ye 2024'te 36,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "denmark",
+   "v": 36008000,
+   "g": 583,
+   "note": "Italy, Denmark'ye 2024'te 36,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "egypt",
+   "r": "morocco",
+   "v": 35999000,
+   "g": 584,
+   "note": "Egypt, Morocco'ye 2024'te 36,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "sierra leone",
+   "v": 35980000,
+   "g": 585,
+   "note": "China, Sierra Leone'ye 2024'te 36,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "singapore",
+   "r": "malaysia",
+   "v": 35913000,
+   "g": 586,
+   "note": "Singapore, Malaysia'ye 2024'te 35,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "libya",
+   "v": 35624000,
+   "g": 587,
+   "note": "Romania, Libya'ye 2024'te 35,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "ghana",
+   "v": 35440000,
+   "g": 588,
+   "note": "Türkiye, Ghana'ye 2024'te 35,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "congo",
+   "v": 35412000,
+   "g": 589,
+   "note": "India, Congo'ye 2024'te 35,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "sri lanka",
+   "v": 35235000,
+   "g": 590,
+   "note": "Türkiye, Sri Lanka'ye 2024'te 35,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "ghana",
+   "v": 35093000,
+   "g": 591,
+   "note": "China, Ghana'ye 2024'te 35,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "guinea-bissau",
+   "v": 34940000,
+   "g": 592,
+   "note": "China, Guinea-Bissau'ye 2024'te 34,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "angola",
+   "v": 34626000,
+   "g": 593,
+   "note": "France, Angola'ye 2024'te 34,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "tanzania",
+   "v": 34600000,
+   "g": 594,
+   "note": "Germany, Tanzania'ye 2024'te 34,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "latvia",
+   "r": "morocco",
+   "v": 34475000,
+   "g": 595,
+   "note": "Latvia, Morocco'ye 2024'te 34,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "lithuania",
+   "r": "morocco",
+   "v": 34426000,
+   "g": 596,
+   "note": "Lithuania, Morocco'ye 2024'te 34,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "hungary",
+   "r": "slovenia",
+   "v": 34196000,
+   "g": 597,
+   "note": "Hungary, Slovenia'ye 2024'te 34,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "sweden",
+   "v": 33974000,
+   "g": 598,
+   "note": "Poland, Sweden'ye 2024'te 34,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "hungary",
+   "r": "bosnia and herzegovina",
+   "v": 33759000,
+   "g": 599,
+   "note": "Hungary, Bosnia And Herzegovina'ye 2024'te 33,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "uganda",
+   "r": "south sudan",
+   "v": 33670000,
+   "g": 600,
+   "note": "Uganda, South Sudan'ye 2024'te 33,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "japan",
+   "r": "singapore",
+   "v": 33505000,
+   "g": 601,
+   "note": "Japan, Singapore'ye 2024'te 33,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "slovakia",
+   "v": 33501000,
+   "g": 602,
+   "note": "Poland, Slovakia'ye 2024'te 33,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "austria",
+   "r": "switzerland",
+   "v": 33292000,
+   "g": 603,
+   "note": "Austria, Switzerland'ye 2024'te 33,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united kingdom",
+   "r": "france",
+   "v": 33269000,
+   "g": 604,
+   "note": "Birleşik Krallık, France'ye 2024'te 33,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "burkina faso",
+   "v": 33192000,
+   "g": 605,
+   "note": "France, Burkina Faso'ye 2024'te 33,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "nicaragua",
+   "v": 32989000,
+   "g": 606,
+   "note": "Brazil, Nicaragua'ye 2024'te 33,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "mozambique",
+   "v": 32970000,
+   "g": 607,
+   "note": "China, Mozambique'ye 2024'te 33,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "mali",
+   "v": 32949000,
+   "g": 608,
+   "note": "France, Mali'ye 2024'te 32,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "romania",
+   "v": 32752000,
+   "g": 609,
+   "note": "Italy, Romania'ye 2024'te 32,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "denmark",
+   "r": "sweden",
+   "v": 32576000,
+   "g": 610,
+   "note": "Denmark, Sweden'ye 2024'te 32,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "timor-leste",
+   "v": 32512000,
+   "g": 611,
+   "note": "China, Timor-Leste'ye 2024'te 32,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "peru",
+   "v": 32430000,
+   "g": 612,
+   "note": "Australia, Peru'ye 2024'te 32,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "oman",
+   "v": 32396000,
+   "g": 613,
+   "note": "Argentina, Oman'ye 2024'te 32,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "south africa",
+   "v": 31942000,
+   "g": 614,
+   "note": "Argentina, South Africa'ye 2024'te 31,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united kingdom",
+   "r": "germany",
+   "v": 31862000,
+   "g": 615,
+   "note": "Birleşik Krallık, Germany'ye 2024'te 31,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "sweden",
+   "v": 31443000,
+   "g": 616,
+   "note": "Germany, Sweden'ye 2024'te 31,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "tunisia",
+   "v": 31366000,
+   "g": 617,
+   "note": "Italy, Tunisia'ye 2024'te 31,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "taiwan",
+   "v": 31212000,
+   "g": 618,
+   "note": "Thailand, Taiwan'ye 2024'te 31,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "kuwait",
+   "v": 31101000,
+   "g": 619,
+   "note": "Romania, Kuwait'ye 2024'te 31,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "hungary",
+   "v": 31062000,
+   "g": 620,
+   "note": "Poland, Hungary'ye 2024'te 31,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "netherlands",
+   "r": "poland",
+   "v": 30988000,
+   "g": 621,
+   "note": "Netherlands, Poland'ye 2024'te 31,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "greece",
+   "r": "tunisia",
+   "v": 30971000,
+   "g": 622,
+   "note": "Greece, Tunisia'ye 2024'te 31,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "tanzania",
+   "v": 30887000,
+   "g": 623,
+   "note": "Argentina, Tanzania'ye 2024'te 30,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "latvia",
+   "r": "germany",
+   "v": 30825000,
+   "g": 624,
+   "note": "Latvia, Germany'ye 2024'te 30,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "new zealand",
+   "v": 30821000,
+   "g": 625,
+   "note": "Thailand, New Zealand'ye 2024'te 30,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "ireland",
+   "v": 30811000,
+   "g": 626,
+   "note": "Poland, Ireland'ye 2024'te 30,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "serbia",
+   "r": "montenegro",
+   "v": 30710000,
+   "g": 627,
+   "note": "Serbia, Montenegro'ye 2024'te 30,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "ivory coast",
+   "v": 30603000,
+   "g": 628,
+   "note": "Germany, Ivory Coast'ye 2024'te 30,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "libya",
+   "v": 30584000,
+   "g": 629,
+   "note": "China, Libya'ye 2024'te 30,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "tanzania",
+   "r": "drc",
+   "v": 30549000,
+   "g": 630,
+   "note": "Tanzania, DR Kongo'ye 2024'te 30,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "switzerland",
+   "v": 30118000,
+   "g": 631,
+   "note": "Thailand, Switzerland'ye 2024'te 30,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "belgium",
+   "r": "ireland",
+   "v": 30097000,
+   "g": 632,
+   "note": "Belgium, Ireland'ye 2024'te 30,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "pakistan",
+   "v": 30087000,
+   "g": 633,
+   "note": "ABD, Pakistan'ye 2024'te 30,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "north korea",
+   "v": 29759000,
+   "g": 634,
+   "note": "China, Kuzey Kore'ye 2024'te 29,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "hungary",
+   "v": 29623000,
+   "g": 635,
+   "note": "Italy, Hungary'ye 2024'te 29,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "belgium",
+   "r": "italy",
+   "v": 29376000,
+   "g": 636,
+   "note": "Belgium, Italy'ye 2024'te 29,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "pakistan",
+   "v": 29198000,
+   "g": 637,
+   "note": "Thailand, Pakistan'ye 2024'te 29,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "tunisia",
+   "v": 29050000,
+   "g": 638,
+   "note": "Thailand, Tunisia'ye 2024'te 29,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "mauritania",
+   "v": 28966000,
+   "g": 639,
+   "note": "Germany, Mauritania'ye 2024'te 29,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "india",
+   "v": 28851000,
+   "g": 640,
+   "note": "Australia, India'ye 2024'te 28,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "spain",
+   "r": "belgium",
+   "v": 28825000,
+   "g": 641,
+   "note": "Spain, Belgium'ye 2024'te 28,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "brazil",
+   "v": 28701000,
+   "g": 642,
+   "note": "Italy, Brazil'ye 2024'te 28,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "cuba",
+   "v": 28634000,
+   "g": 643,
+   "note": "China, Cuba'ye 2024'te 28,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "lithuania",
+   "v": 28619000,
+   "g": 644,
+   "note": "Poland, Lithuania'ye 2024'te 28,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "lithuania",
+   "r": "cameroon",
+   "v": 28529000,
+   "g": 645,
+   "note": "Lithuania, Cameroon'ye 2024'te 28,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "sri lanka",
+   "v": 28513000,
+   "g": 646,
+   "note": "Romania, Sri Lanka'ye 2024'te 28,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "mexico",
+   "r": "guatemala",
+   "v": 28429000,
+   "g": 647,
+   "note": "Mexico, Guatemala'ye 2024'te 28,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "croatia",
+   "v": 28305000,
+   "g": 648,
+   "note": "Italy, Croatia'ye 2024'te 28,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "belgium",
+   "r": "spain",
+   "v": 28224000,
+   "g": 649,
+   "note": "Belgium, Spain'ye 2024'te 28,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "czechia",
+   "v": 28219000,
+   "g": 650,
+   "note": "Myanmar, Czechia'ye 2024'te 28,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "sweden",
+   "v": 28170000,
+   "g": 651,
+   "note": "Italy, Sweden'ye 2024'te 28,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "madagascar",
+   "v": 28053000,
+   "g": 652,
+   "note": "India, Madagascar'ye 2024'te 28,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "estonia",
+   "r": "spain",
+   "v": 28037000,
+   "g": 653,
+   "note": "Estonia, Spain'ye 2024'te 28,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "lebanon",
+   "v": 27860000,
+   "g": 654,
+   "note": "China, Lebanon'ye 2024'te 27,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "sweden",
+   "v": 27850000,
+   "g": 655,
+   "note": "France, Sweden'ye 2024'te 27,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "sierra leone",
+   "v": 27673000,
+   "g": 656,
+   "note": "Türkiye, Sierra Leone'ye 2024'te 27,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "norway",
+   "v": 27583000,
+   "g": 657,
+   "note": "Canada, Norway'ye 2024'te 27,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "netherlands",
+   "r": "sweden",
+   "v": 27552000,
+   "g": 658,
+   "note": "Netherlands, Sweden'ye 2024'te 27,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "sweden",
+   "r": "denmark",
+   "v": 27496000,
+   "g": 659,
+   "note": "Sweden, Denmark'ye 2024'te 27,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "mauritius",
+   "v": 27318000,
+   "g": 660,
+   "note": "France, Mauritius'ye 2024'te 27,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "serbia",
+   "r": "albania",
+   "v": 27237000,
+   "g": 661,
+   "note": "Serbia, Albania'ye 2024'te 27,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "spain",
+   "r": "netherlands",
+   "v": 27069000,
+   "g": 662,
+   "note": "Spain, Netherlands'ye 2024'te 27,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "qatar",
+   "v": 26718000,
+   "g": 663,
+   "note": "Australia, Qatar'ye 2024'te 26,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "new zealand",
+   "v": 26644000,
+   "g": 664,
+   "note": "India, New Zealand'ye 2024'te 26,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "slovenia",
+   "v": 26603000,
+   "g": 665,
+   "note": "Italy, Slovenia'ye 2024'te 26,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "greece",
+   "r": "bulgaria",
+   "v": 26602000,
+   "g": 666,
+   "note": "Greece, Bulgaria'ye 2024'te 26,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "latvia",
+   "r": "lithuania",
+   "v": 26413000,
+   "g": 667,
+   "note": "Latvia, Lithuania'ye 2024'te 26,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "bangladesh",
+   "v": 26371000,
+   "g": 668,
+   "note": "Argentina, Bangladesh'ye 2024'te 26,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "kuwait",
+   "v": 26365000,
+   "g": 669,
+   "note": "Canada, Kuwait'ye 2024'te 26,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "croatia",
+   "r": "austria",
+   "v": 26320000,
+   "g": 670,
+   "note": "Croatia, Austria'ye 2024'te 26,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "russia",
+   "v": 26227000,
+   "g": 671,
+   "note": "China, Russia'ye 2024'te 26,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "lithuania",
+   "r": "poland",
+   "v": 26091000,
+   "g": 672,
+   "note": "Lithuania, Poland'ye 2024'te 26,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "spain",
+   "r": "united states",
+   "v": 25996000,
+   "g": 673,
+   "note": "Spain, ABD'ye 2024'te 26,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "japan",
+   "r": "south korea",
+   "v": 25784000,
+   "g": 674,
+   "note": "Japan, Güney Kore'ye 2024'te 25,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "estonia",
+   "r": "nigeria",
+   "v": 25740000,
+   "g": 675,
+   "note": "Estonia, Nigeria'ye 2024'te 25,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "austria",
+   "r": "poland",
+   "v": 25722000,
+   "g": 676,
+   "note": "Austria, Poland'ye 2024'te 25,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "iraq",
+   "v": 25356000,
+   "g": 677,
+   "note": "Australia, Iraq'ye 2024'te 25,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "finland",
+   "v": 25307000,
+   "g": 678,
+   "note": "Poland, Finland'ye 2024'te 25,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "colombia",
+   "v": 25245000,
+   "g": 679,
+   "note": "France, Colombia'ye 2024'te 25,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "south africa",
+   "v": 24709000,
+   "g": 680,
+   "note": "Pakistan, South Africa'ye 2024'te 24,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "el salvador",
+   "r": "guatemala",
+   "v": 24628000,
+   "g": 681,
+   "note": "El Salvador, Guatemala'ye 2024'te 24,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "austria",
+   "r": "czechia",
+   "v": 24590000,
+   "g": 682,
+   "note": "Austria, Czechia'ye 2024'te 24,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "qatar",
+   "v": 24436000,
+   "g": 683,
+   "note": "Pakistan, Qatar'ye 2024'te 24,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "palestine",
+   "v": 24336000,
+   "g": 684,
+   "note": "Türkiye, Palestine'ye 2024'te 24,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "gabon",
+   "v": 24277000,
+   "g": 685,
+   "note": "France, Gabon'ye 2024'te 24,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "taiwan",
+   "r": "haiti",
+   "v": 24060000,
+   "g": 686,
+   "note": "Taiwan, Haiti'ye 2024'te 24,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "greece",
+   "v": 24024000,
+   "g": 687,
+   "note": "France, Greece'ye 2024'te 24,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "kuwait",
+   "v": 23862000,
+   "g": 688,
+   "note": "Brazil, Kuwait'ye 2024'te 23,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "uganda",
+   "r": "rwanda",
+   "v": 23851000,
+   "g": 689,
+   "note": "Uganda, Rwanda'ye 2024'te 23,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "sweden",
+   "v": 23767000,
+   "g": 690,
+   "note": "India, Sweden'ye 2024'te 23,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "dominican republic",
+   "v": 23653000,
+   "g": 691,
+   "note": "Argentina, Dominican Republic'ye 2024'te 23,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "sweden",
+   "v": 23548000,
+   "g": 692,
+   "note": "Pakistan, Sweden'ye 2024'te 23,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "singapore",
+   "v": 23540000,
+   "g": 693,
+   "note": "Canada, Singapore'ye 2024'te 23,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "luxembourg",
+   "r": "france",
+   "v": 23510000,
+   "g": 694,
+   "note": "Luxembourg, France'ye 2024'te 23,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "netherlands",
+   "r": "denmark",
+   "v": 23492000,
+   "g": 695,
+   "note": "Netherlands, Denmark'ye 2024'te 23,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "luxembourg",
+   "r": "belgium",
+   "v": 23239000,
+   "g": 696,
+   "note": "Luxembourg, Belgium'ye 2024'te 23,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "australia",
+   "v": 22964000,
+   "g": 697,
+   "note": "Italy, Australia'ye 2024'te 23,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "angola",
+   "v": 22942000,
+   "g": 698,
+   "note": "Romania, Angola'ye 2024'te 22,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "guinea",
+   "v": 22834000,
+   "g": 699,
+   "note": "Thailand, Guinea'ye 2024'te 22,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "uganda",
+   "v": 22786000,
+   "g": 700,
+   "note": "Argentina, Uganda'ye 2024'te 22,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "kazakhstan",
+   "r": "turkmenistan",
+   "v": 22781000,
+   "g": 701,
+   "note": "Kazakhstan, Turkmenistan'ye 2024'te 22,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "drc",
+   "v": 22753000,
+   "g": 702,
+   "note": "India, DR Kongo'ye 2024'te 22,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "senegal",
+   "v": 22731000,
+   "g": 703,
+   "note": "Poland, Senegal'ye 2024'te 22,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "togo",
+   "v": 22493000,
+   "g": 704,
+   "note": "ABD, Togo'ye 2024'te 22,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "finland",
+   "v": 22388000,
+   "g": 705,
+   "note": "Italy, Finland'ye 2024'te 22,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "belgium",
+   "r": "sweden",
+   "v": 22166000,
+   "g": 706,
+   "note": "Belgium, Sweden'ye 2024'te 22,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "malaysia",
+   "r": "singapore",
+   "v": 22158000,
+   "g": 707,
+   "note": "Malaysia, Singapore'ye 2024'te 22,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united kingdom",
+   "r": "spain",
+   "v": 22047000,
+   "g": 708,
+   "note": "Birleşik Krallık, Spain'ye 2024'te 22,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "brazil",
+   "v": 22015000,
+   "g": 709,
+   "note": "Canada, Brazil'ye 2024'te 22,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "serbia",
+   "v": 21943000,
+   "g": 710,
+   "note": "Italy, Serbia'ye 2024'te 21,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "moldova",
+   "v": 21924000,
+   "g": 711,
+   "note": "Ukraine, Moldova'ye 2024'te 21,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "latvia",
+   "r": "cameroon",
+   "v": 21920000,
+   "g": 712,
+   "note": "Latvia, Cameroon'ye 2024'te 21,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "oman",
+   "v": 21896000,
+   "g": 713,
+   "note": "Canada, Oman'ye 2024'te 21,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "austria",
+   "r": "slovenia",
+   "v": 21762000,
+   "g": 714,
+   "note": "Austria, Slovenia'ye 2024'te 21,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "serbia",
+   "r": "croatia",
+   "v": 21737000,
+   "g": 715,
+   "note": "Serbia, Croatia'ye 2024'te 21,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "cambodia",
+   "r": "czechia",
+   "v": 21713000,
+   "g": 716,
+   "note": "Cambodia, Czechia'ye 2024'te 21,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "togo",
+   "v": 21681000,
+   "g": 717,
+   "note": "Poland, Togo'ye 2024'te 21,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "new zealand",
+   "v": 21485000,
+   "g": 718,
+   "note": "ABD, New Zealand'ye 2024'te 21,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "mauritania",
+   "v": 21348000,
+   "g": 719,
+   "note": "India, Mauritania'ye 2024'te 21,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "bahrain",
+   "v": 21264000,
+   "g": 720,
+   "note": "Pakistan, Bahrain'ye 2024'te 21,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "slovenia",
+   "r": "hungary",
+   "v": 21170000,
+   "g": 721,
+   "note": "Slovenia, Hungary'ye 2024'te 21,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "namibia",
+   "v": 21118000,
+   "g": 722,
+   "note": "ABD, Namibia'ye 2024'te 21,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "eritrea",
+   "v": 21031000,
+   "g": 723,
+   "note": "Türkiye, Eritrea'ye 2024'te 21,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "sweden",
+   "r": "spain",
+   "v": 20960000,
+   "g": 724,
+   "note": "Sweden, Spain'ye 2024'te 21,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "kenya",
+   "v": 20896000,
+   "g": 725,
+   "note": "Canada, Kenya'ye 2024'te 20,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "paraguay",
+   "r": "costa rica",
+   "v": 20882000,
+   "g": 726,
+   "note": "Paraguay, Costa Rica'ye 2024'te 20,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "colombia",
+   "v": 20785000,
+   "g": 727,
+   "note": "Argentina, Colombia'ye 2024'te 20,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "guyana",
+   "v": 20752000,
+   "g": 728,
+   "note": "ABD, Guyana'ye 2024'te 20,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "djibouti",
+   "v": 20712000,
+   "g": 729,
+   "note": "Romania, Djibouti'ye 2024'te 20,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "colombia",
+   "v": 20684000,
+   "g": 730,
+   "note": "Brazil, Colombia'ye 2024'te 20,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "belarus",
+   "v": 20595000,
+   "g": 731,
+   "note": "Germany, Belarus'ye 2024'te 20,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "luxembourg",
+   "r": "germany",
+   "v": 20510000,
+   "g": 732,
+   "note": "Luxembourg, Germany'ye 2024'te 20,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bolivia",
+   "r": "argentina",
+   "v": 20377000,
+   "g": 733,
+   "note": "Bolivia, Argentina'ye 2024'te 20,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "russia",
+   "v": 20359000,
+   "g": 734,
+   "note": "Thailand, Russia'ye 2024'te 20,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "bahamas",
+   "v": 20166000,
+   "g": 735,
+   "note": "ABD, Bahamas'ye 2024'te 20,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "guyana",
+   "r": "belgium",
+   "v": 20127000,
+   "g": 736,
+   "note": "Guyana, Belgium'ye 2024'te 20,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "cabo verde",
+   "v": 19972000,
+   "g": 737,
+   "note": "Thailand, Cabo Verde'ye 2024'te 20,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "denmark",
+   "r": "ireland",
+   "v": 19902000,
+   "g": 738,
+   "note": "Denmark, Ireland'ye 2024'te 19,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "kenya",
+   "v": 19864000,
+   "g": 739,
+   "note": "Türkiye, Kenya'ye 2024'te 19,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "austria",
+   "r": "slovakia",
+   "v": 19800000,
+   "g": 740,
+   "note": "Austria, Slovakia'ye 2024'te 19,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "south korea",
+   "r": "united states",
+   "v": 19773000,
+   "g": 741,
+   "note": "Güney Kore, ABD'ye 2024'te 19,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "zambia",
+   "v": 19740000,
+   "g": 742,
+   "note": "Australia, Zambia'ye 2024'te 19,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "croatia",
+   "r": "bosnia and herzegovina",
+   "v": 19646000,
+   "g": 743,
+   "note": "Croatia, Bosnia And Herzegovina'ye 2024'te 19,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "denmark",
+   "r": "spain",
+   "v": 19635000,
+   "g": 744,
+   "note": "Denmark, Spain'ye 2024'te 19,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "serbia",
+   "v": 19521000,
+   "g": 745,
+   "note": "Romania, Serbia'ye 2024'te 19,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "niger",
+   "v": 19440000,
+   "g": 746,
+   "note": "Thailand, Niger'ye 2024'te 19,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "guyana",
+   "r": "dominican republic",
+   "v": 19404000,
+   "g": 747,
+   "note": "Guyana, Dominican Republic'ye 2024'te 19,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "bulgaria",
+   "v": 19390000,
+   "g": 748,
+   "note": "China, Bulgaria'ye 2024'te 19,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "kazakhstan",
+   "r": "kyrgyzstan",
+   "v": 19354000,
+   "g": 749,
+   "note": "Kazakhstan, Kyrgyzstan'ye 2024'te 19,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "zambia",
+   "r": "tanzania",
+   "v": 19305000,
+   "g": 750,
+   "note": "Zambia, Tanzania'ye 2024'te 19,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "ghana",
+   "v": 19190000,
+   "g": 751,
+   "note": "Pakistan, Ghana'ye 2024'te 19,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "el salvador",
+   "r": "nicaragua",
+   "v": 19063000,
+   "g": 752,
+   "note": "El Salvador, Nicaragua'ye 2024'te 19,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "latvia",
+   "r": "spain",
+   "v": 18954000,
+   "g": 753,
+   "note": "Latvia, Spain'ye 2024'te 19,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "sudan",
+   "v": 18945000,
+   "g": 754,
+   "note": "Romania, Sudan'ye 2024'te 18,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "azerbaijan",
+   "v": 18746000,
+   "g": 755,
+   "note": "India, Azerbaijan'ye 2024'te 18,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "uruguay",
+   "v": 18663000,
+   "g": 756,
+   "note": "Brazil, Uruguay'ye 2024'te 18,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "croatia",
+   "v": 18614000,
+   "g": 757,
+   "note": "Romania, Croatia'ye 2024'te 18,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "sweden",
+   "r": "norway",
+   "v": 18533000,
+   "g": 758,
+   "note": "Sweden, Norway'ye 2024'te 18,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "sudan",
+   "v": 18462000,
+   "g": 759,
+   "note": "ABD, Sudan'ye 2024'te 18,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "peru",
+   "r": "colombia",
+   "v": 18432000,
+   "g": 760,
+   "note": "Peru, Colombia'ye 2024'te 18,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "moldova",
+   "v": 18375000,
+   "g": 761,
+   "note": "Romania, Moldova'ye 2024'te 18,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "guinea",
+   "v": 18360000,
+   "g": 762,
+   "note": "China, Guinea'ye 2024'te 18,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "barbados",
+   "v": 18293000,
+   "g": 763,
+   "note": "ABD, Barbados'ye 2024'te 18,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "myanmar",
+   "v": 18290000,
+   "g": 764,
+   "note": "Thailand, Myanmar'ye 2024'te 18,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "taiwan",
+   "r": "australia",
+   "v": 18257000,
+   "g": 765,
+   "note": "Taiwan, Australia'ye 2024'te 18,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "slovakia",
+   "v": 18227000,
+   "g": 766,
+   "note": "Italy, Slovakia'ye 2024'te 18,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "lithuania",
+   "r": "mozambique",
+   "v": 18197000,
+   "g": 767,
+   "note": "Lithuania, Mozambique'ye 2024'te 18,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "hungary",
+   "r": "czechia",
+   "v": 18113000,
+   "g": 768,
+   "note": "Hungary, Czechia'ye 2024'te 18,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "ghana",
+   "v": 18078000,
+   "g": 769,
+   "note": "Argentina, Ghana'ye 2024'te 18,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "china",
+   "r": "sudan",
+   "v": 18054000,
+   "g": 770,
+   "note": "China, Sudan'ye 2024'te 18,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "south korea",
+   "r": "türkiye",
+   "v": 18036000,
+   "g": 771,
+   "note": "Güney Kore, Türkiye'ye 2024'te 18,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "israel",
+   "v": 17998000,
+   "g": 772,
+   "note": "Canada, Israel'ye 2024'te 18,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "greece",
+   "r": "türkiye",
+   "v": 17926000,
+   "g": 773,
+   "note": "Greece, Türkiye'ye 2024'te 17,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "guinea-bissau",
+   "v": 17880000,
+   "g": 774,
+   "note": "India, Guinea-Bissau'ye 2024'te 17,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "russia",
+   "v": 17819000,
+   "g": 775,
+   "note": "Romania, Russia'ye 2024'te 17,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "portugal",
+   "r": "united kingdom",
+   "v": 17593000,
+   "g": 776,
+   "note": "Portugal, Birleşik Krallık'ye 2024'te 17,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "lithuania",
+   "r": "drc",
+   "v": 17538000,
+   "g": 777,
+   "note": "Lithuania, DR Kongo'ye 2024'te 17,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "cambodia",
+   "r": "singapore",
+   "v": 17516000,
+   "g": 778,
+   "note": "Cambodia, Singapore'ye 2024'te 17,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united kingdom",
+   "r": "portugal",
+   "v": 17505000,
+   "g": 779,
+   "note": "Birleşik Krallık, Portugal'ye 2024'te 17,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "paraguay",
+   "r": "peru",
+   "v": 17192000,
+   "g": 780,
+   "note": "Paraguay, Peru'ye 2024'te 17,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "argentina",
+   "r": "mauritania",
+   "v": 17174000,
+   "g": 781,
+   "note": "Argentina, Mauritania'ye 2024'te 17,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "lithuania",
+   "r": "benin",
+   "v": 17032000,
+   "g": 782,
+   "note": "Lithuania, Benin'ye 2024'te 17,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "belgium",
+   "r": "czechia",
+   "v": 17025000,
+   "g": 783,
+   "note": "Belgium, Czechia'ye 2024'te 17,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "paraguay",
+   "r": "south korea",
+   "v": 16964000,
+   "g": 784,
+   "note": "Paraguay, Güney Kore'ye 2024'te 17,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "belgium",
+   "r": "switzerland",
+   "v": 16960000,
+   "g": 785,
+   "note": "Belgium, Switzerland'ye 2024'te 17,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "tanzania",
+   "v": 16861000,
+   "g": 786,
+   "note": "Türkiye, Tanzania'ye 2024'te 16,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "timor-leste",
+   "v": 16844000,
+   "g": 787,
+   "note": "Thailand, Timor-Leste'ye 2024'te 16,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "indonesia",
+   "r": "philippines",
+   "v": 16651000,
+   "g": 788,
+   "note": "Indonesia, Philippines'ye 2024'te 16,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "spain",
+   "r": "finland",
+   "v": 16599000,
+   "g": 789,
+   "note": "Spain, Finland'ye 2024'te 16,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "mali",
+   "v": 16528000,
+   "g": 790,
+   "note": "India, Mali'ye 2024'te 16,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "lebanon",
+   "v": 16522000,
+   "g": 791,
+   "note": "Brazil, Lebanon'ye 2024'te 16,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "lebanon",
+   "v": 16518000,
+   "g": 792,
+   "note": "Türkiye, Lebanon'ye 2024'te 16,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "taiwan",
+   "r": "vanuatu",
+   "v": 16458000,
+   "g": 793,
+   "note": "Taiwan, Vanuatu'ye 2024'te 16,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "ghana",
+   "v": 16442000,
+   "g": 794,
+   "note": "Poland, Ghana'ye 2024'te 16,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "togo",
+   "v": 16365000,
+   "g": 795,
+   "note": "Canada, Togo'ye 2024'te 16,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "gabon",
+   "v": 16322000,
+   "g": 796,
+   "note": "Thailand, Gabon'ye 2024'te 16,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "south africa",
+   "r": "uae",
+   "v": 16194000,
+   "g": 797,
+   "note": "South Africa, BAE'ye 2024'te 16,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "jamaica",
+   "v": 16155000,
+   "g": 798,
+   "note": "Thailand, Jamaica'ye 2024'te 16,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "israel",
+   "v": 16132000,
+   "g": 799,
+   "note": "Romania, Israel'ye 2024'te 16,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "norway",
+   "v": 16061000,
+   "g": 800,
+   "note": "Romania, Norway'ye 2024'te 16,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "latvia",
+   "r": "drc",
+   "v": 16034000,
+   "g": 801,
+   "note": "Latvia, DR Kongo'ye 2024'te 16,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "lebanon",
+   "v": 15917000,
+   "g": 802,
+   "note": "Thailand, Lebanon'ye 2024'te 15,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "tanzania",
+   "v": 15853000,
+   "g": 803,
+   "note": "ABD, Tanzania'ye 2024'te 15,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "taiwan",
+   "r": "solomon islands",
+   "v": 15826000,
+   "g": 804,
+   "note": "Taiwan, Solomon Islands'ye 2024'te 15,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "mauritania",
+   "v": 15807000,
+   "g": 805,
+   "note": "ABD, Mauritania'ye 2024'te 15,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "denmark",
+   "r": "netherlands",
+   "v": 15792000,
+   "g": 806,
+   "note": "Denmark, Netherlands'ye 2024'te 15,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "lesotho",
+   "r": "south africa",
+   "v": 15788000,
+   "g": 807,
+   "note": "Lesotho, South Africa'ye 2024'te 15,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "comoros",
+   "v": 15762000,
+   "g": 808,
+   "note": "India, Comoros'ye 2024'te 15,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "chile",
+   "v": 15646000,
+   "g": 809,
+   "note": "Brazil, Chile'ye 2024'te 15,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "cambodia",
+   "r": "brunei",
+   "v": 15604000,
+   "g": 810,
+   "note": "Cambodia, Brunei'ye 2024'te 15,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bolivia",
+   "r": "angola",
+   "v": 15584000,
+   "g": 811,
+   "note": "Bolivia, Angola'ye 2024'te 15,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "south sudan",
+   "v": 15582000,
+   "g": 812,
+   "note": "ABD, South Sudan'ye 2024'te 15,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "benin",
+   "r": "nigeria",
+   "v": 15536000,
+   "g": 813,
+   "note": "Benin, Nigeria'ye 2024'te 15,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "moldova",
+   "r": "cyprus",
+   "v": 15504000,
+   "g": 814,
+   "note": "Moldova, Cyprus'ye 2024'te 15,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "portugal",
+   "r": "france",
+   "v": 15504000,
+   "g": 815,
+   "note": "Portugal, France'ye 2024'te 15,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "syria",
+   "v": 15424000,
+   "g": 816,
+   "note": "Thailand, Syria'ye 2024'te 15,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "mauritania",
+   "v": 15390000,
+   "g": 817,
+   "note": "Poland, Mauritania'ye 2024'te 15,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "cabo verde",
+   "v": 15157000,
+   "g": 818,
+   "note": "Brazil, Cabo Verde'ye 2024'te 15,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "peru",
+   "r": "spain",
+   "v": 14901000,
+   "g": 819,
+   "note": "Peru, Spain'ye 2024'te 14,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "dominican republic",
+   "v": 14900000,
+   "g": 820,
+   "note": "Pakistan, Dominican Republic'ye 2024'te 14,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "latvia",
+   "r": "namibia",
+   "v": 14898000,
+   "g": 821,
+   "note": "Latvia, Namibia'ye 2024'te 14,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "russia",
+   "v": 14825000,
+   "g": 822,
+   "note": "France, Russia'ye 2024'te 14,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "nicaragua",
+   "v": 14810000,
+   "g": 823,
+   "note": "Canada, Nicaragua'ye 2024'te 14,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "mali",
+   "v": 14802000,
+   "g": 824,
+   "note": "Poland, Mali'ye 2024'te 14,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "poland",
+   "r": "benin",
+   "v": 14729000,
+   "g": 825,
+   "note": "Poland, Benin'ye 2024'te 14,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "mauritius",
+   "v": 14615000,
+   "g": 826,
+   "note": "Pakistan, Mauritius'ye 2024'te 14,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "greece",
+   "r": "libya",
+   "v": 14536000,
+   "g": 827,
+   "note": "Greece, Libya'ye 2024'te 14,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "congo",
+   "v": 14533000,
+   "g": 828,
+   "note": "France, Congo'ye 2024'te 14,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "greece",
+   "r": "cyprus",
+   "v": 14506000,
+   "g": 829,
+   "note": "Greece, Cyprus'ye 2024'te 14,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "albania",
+   "v": 14449000,
+   "g": 830,
+   "note": "Italy, Albania'ye 2024'te 14,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "timor-leste",
+   "v": 14422000,
+   "g": 831,
+   "note": "Pakistan, Timor-Leste'ye 2024'te 14,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "myanmar",
+   "r": "bulgaria",
+   "v": 14311000,
+   "g": 832,
+   "note": "Myanmar, Bulgaria'ye 2024'te 14,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "south korea",
+   "r": "philippines",
+   "v": 14290000,
+   "g": 833,
+   "note": "Güney Kore, Philippines'ye 2024'te 14,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "romania",
+   "v": 14230000,
+   "g": 834,
+   "note": "India, Romania'ye 2024'te 14,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "latvia",
+   "r": "congo",
+   "v": 14188000,
+   "g": 835,
+   "note": "Latvia, Congo'ye 2024'te 14,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "japan",
+   "r": "canada",
+   "v": 14113000,
+   "g": 836,
+   "note": "Japan, Canada'ye 2024'te 14,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "seychelles",
+   "v": 14102000,
+   "g": 837,
+   "note": "India, Seychelles'ye 2024'te 14,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "peru",
+   "r": "united states",
+   "v": 14037000,
+   "g": 838,
+   "note": "Peru, ABD'ye 2024'te 14,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "belgium",
+   "r": "luxembourg",
+   "v": 14018000,
+   "g": 839,
+   "note": "Belgium, Luxembourg'ye 2024'te 14,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "serbia",
+   "v": 14001000,
+   "g": 840,
+   "note": "Türkiye, Serbia'ye 2024'te 14,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "mauritius",
+   "v": 13914000,
+   "g": 841,
+   "note": "Australia, Mauritius'ye 2024'te 13,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united kingdom",
+   "r": "sweden",
+   "v": 13864000,
+   "g": 842,
+   "note": "Birleşik Krallık, Sweden'ye 2024'te 13,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "argentina",
+   "v": 13749000,
+   "g": 843,
+   "note": "ABD, Argentina'ye 2024'te 13,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "germany",
+   "r": "luxembourg",
+   "v": 13733000,
+   "g": 844,
+   "note": "Germany, Luxembourg'ye 2024'te 13,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "egypt",
+   "r": "lebanon",
+   "v": 13720000,
+   "g": 845,
+   "note": "Egypt, Lebanon'ye 2024'te 13,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "namibia",
+   "v": 13631000,
+   "g": 846,
+   "note": "India, Namibia'ye 2024'te 13,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "japan",
+   "v": 13601000,
+   "g": 847,
+   "note": "India, Japan'ye 2024'te 13,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "lithuania",
+   "v": 13557000,
+   "g": 848,
+   "note": "Pakistan, Lithuania'ye 2024'te 13,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "moldova",
+   "r": "italy",
+   "v": 13556000,
+   "g": 849,
+   "note": "Moldova, Italy'ye 2024'te 13,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "benin",
+   "v": 13528000,
+   "g": 850,
+   "note": "Türkiye, Benin'ye 2024'te 13,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "azerbaijan",
+   "v": 13444000,
+   "g": 851,
+   "note": "Pakistan, Azerbaijan'ye 2024'te 13,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "singapore",
+   "v": 13442000,
+   "g": 852,
+   "note": "ABD, Singapore'ye 2024'te 13,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "haiti",
+   "v": 13306000,
+   "g": 853,
+   "note": "India, Haiti'ye 2024'te 13,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "estonia",
+   "r": "saudi arabia",
+   "v": 13283000,
+   "g": 854,
+   "note": "Estonia, Saudi Arabia'ye 2024'te 13,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "moldova",
+   "r": "lebanon",
+   "v": 13246000,
+   "g": 855,
+   "note": "Moldova, Lebanon'ye 2024'te 13,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "peru",
+   "v": 13116000,
+   "g": 856,
+   "note": "Thailand, Peru'ye 2024'te 13,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "czechia",
+   "r": "netherlands",
+   "v": 13099000,
+   "g": 857,
+   "note": "Czechia, Netherlands'ye 2024'te 13,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "portugal",
+   "r": "italy",
+   "v": 12920000,
+   "g": 858,
+   "note": "Portugal, Italy'ye 2024'te 12,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "saint vincent and the grenadines",
+   "v": 12767000,
+   "g": 859,
+   "note": "ABD, Saint Vincent And The Grenadines'ye 2024'te 12,8 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "japan",
+   "r": "thailand",
+   "v": 12743000,
+   "g": 860,
+   "note": "Japan, Thailand'ye 2024'te 12,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "myanmar",
+   "v": 12710000,
+   "g": 861,
+   "note": "ABD, Myanmar'ye 2024'te 12,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "austria",
+   "r": "serbia",
+   "v": 12705000,
+   "g": 862,
+   "note": "Austria, Serbia'ye 2024'te 12,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "qatar",
+   "v": 12668000,
+   "g": 863,
+   "note": "France, Qatar'ye 2024'te 12,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "slovakia",
+   "v": 12655000,
+   "g": 864,
+   "note": "Romania, Slovakia'ye 2024'te 12,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "norway",
+   "v": 12628000,
+   "g": 865,
+   "note": "Thailand, Norway'ye 2024'te 12,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "zambia",
+   "r": "kenya",
+   "v": 12590000,
+   "g": 866,
+   "note": "Zambia, Kenya'ye 2024'te 12,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "brazil",
+   "r": "trinidad and tobago",
+   "v": 12537000,
+   "g": 867,
+   "note": "Brazil, Trinidad And Tobago'ye 2024'te 12,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "ukraine",
+   "r": "slovakia",
+   "v": 12499000,
+   "g": 868,
+   "note": "Ukraine, Slovakia'ye 2024'te 12,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "france",
+   "r": "ukraine",
+   "v": 12497000,
+   "g": 869,
+   "note": "France, Ukraine'ye 2024'te 12,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "sri lanka",
+   "v": 12458000,
+   "g": 870,
+   "note": "Australia, Sri Lanka'ye 2024'te 12,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "moldova",
+   "r": "türkiye",
+   "v": 12433000,
+   "g": 871,
+   "note": "Moldova, Türkiye'ye 2024'te 12,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "uganda",
+   "r": "drc",
+   "v": 12421000,
+   "g": 872,
+   "note": "Uganda, DR Kongo'ye 2024'te 12,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "greece",
+   "v": 12318000,
+   "g": 873,
+   "note": "Pakistan, Greece'ye 2024'te 12,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "honduras",
+   "r": "nicaragua",
+   "v": 12239000,
+   "g": 874,
+   "note": "Honduras, Nicaragua'ye 2024'te 12,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "india",
+   "v": 12236000,
+   "g": 875,
+   "note": "ABD, India'ye 2024'te 12,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "sweden",
+   "r": "united kingdom",
+   "v": 12235000,
+   "g": 876,
+   "note": "Sweden, Birleşik Krallık'ye 2024'te 12,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "israel",
+   "v": 12194000,
+   "g": 877,
+   "note": "Türkiye, Israel'ye 2024'te 12,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "romania",
+   "r": "qatar",
+   "v": 12134000,
+   "g": 878,
+   "note": "Romania, Qatar'ye 2024'te 12,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "bangladesh",
+   "v": 12112000,
+   "g": 879,
+   "note": "Pakistan, Bangladesh'ye 2024'te 12,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "costa rica",
+   "r": "nicaragua",
+   "v": 12095000,
+   "g": 880,
+   "note": "Costa Rica, Nicaragua'ye 2024'te 12,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "azerbaijan",
+   "v": 11979000,
+   "g": 881,
+   "note": "Türkiye, Azerbaijan'ye 2024'te 12,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "bulgaria",
+   "r": "jordan",
+   "v": 11955000,
+   "g": 882,
+   "note": "Bulgaria, Jordan'ye 2024'te 12,0 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "italy",
+   "r": "canada",
+   "v": 11938000,
+   "g": 883,
+   "note": "Italy, Canada'ye 2024'te 11,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "japan",
+   "r": "australia",
+   "v": 11929000,
+   "g": 884,
+   "note": "Japan, Australia'ye 2024'te 11,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "united states",
+   "r": "sri lanka",
+   "v": 11867000,
+   "g": 885,
+   "note": "ABD, Sri Lanka'ye 2024'te 11,9 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "australia",
+   "r": "ecuador",
+   "v": 11677000,
+   "g": 886,
+   "note": "Australia, Ecuador'ye 2024'te 11,7 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "south korea",
+   "r": "kenya",
+   "v": 11638000,
+   "g": 887,
+   "note": "Güney Kore, Kenya'ye 2024'te 11,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "estonia",
+   "r": "cameroon",
+   "v": 11631000,
+   "g": 888,
+   "note": "Estonia, Cameroon'ye 2024'te 11,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "cambodia",
+   "r": "australia",
+   "v": 11576000,
+   "g": 889,
+   "note": "Cambodia, Australia'ye 2024'te 11,6 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "india",
+   "r": "georgia",
+   "v": 11542000,
+   "g": 890,
+   "note": "India, Georgia'ye 2024'te 11,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "chile",
+   "r": "germany",
+   "v": 11526000,
+   "g": 891,
+   "note": "Chile, Germany'ye 2024'te 11,5 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "moldova",
+   "r": "egypt",
+   "v": 11420000,
+   "g": 892,
+   "note": "Moldova, Egypt'ye 2024'te 11,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "pakistan",
+   "r": "iraq",
+   "v": 11418000,
+   "g": 893,
+   "note": "Pakistan, Iraq'ye 2024'te 11,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "canada",
+   "r": "pakistan",
+   "v": 11375000,
+   "g": 894,
+   "note": "Canada, Pakistan'ye 2024'te 11,4 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "el salvador",
+   "r": "honduras",
+   "v": 11311000,
+   "g": 895,
+   "note": "El Salvador, Honduras'ye 2024'te 11,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "spain",
+   "r": "cuba",
+   "v": 11306000,
+   "g": 896,
+   "note": "Spain, Cuba'ye 2024'te 11,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "honduras",
+   "r": "el salvador",
+   "v": 11263000,
+   "g": 897,
+   "note": "Honduras, El Salvador'ye 2024'te 11,3 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "türkiye",
+   "r": "uzbekistan",
+   "v": 11247000,
+   "g": 898,
+   "note": "Türkiye, Uzbekistan'ye 2024'te 11,2 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "thailand",
+   "r": "gambia",
+   "v": 11149000,
+   "g": 899,
+   "note": "Thailand, Gambia'ye 2024'te 11,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
+  },
+  {
+   "s": "denmark",
+   "r": "belgium",
+   "v": 11143000,
+   "g": 900,
+   "note": "Denmark, Belgium'ye 2024'te 11,1 milyon $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT)."
   }
  ]
 }

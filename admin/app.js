@@ -1,5 +1,7 @@
 /* ir-globe yönetim panosu — Supabase backend, gerçek veri, localStorage YOK.
-   Yönetici giriş yapar; bağlantı/kategori/abone yönetir; globe bunları okur. */
+   Yönetici giriş yapar; EDİTORYAL BİNDİRME katmanını yönetir: buradaki satırlar
+   statik veri setlerinin üstüne biner (not ezme / bağ gizleme / editoryal ekleme).
+   Statik veri (data/layers/*.json) haftalık pipeline'dan gelir, panelden değişmez. */
 
 const appEl = document.getElementById("app");
 const whoEl = document.getElementById("who");
@@ -52,16 +54,16 @@ function renderDash(email) {
   document.getElementById("out").addEventListener("click", async () => { await sb.auth.signOut(); boot(); });
   appEl.innerHTML = `
     <nav class="tabs">
-      <button data-t="conn" class="${tab === "conn" ? "on" : ""}">bağlantılar</button>
+      <button data-t="conn" class="${tab === "conn" ? "on" : ""}">editoryal bindirme</button>
       <button data-t="layer" class="${tab === "layer" ? "on" : ""}">kategoriler</button>
-      <button data-t="subs" class="${tab === "subs" ? "on" : ""}">aboneler</button>
+      <button data-t="subs" class="${tab === "subs" ? "on" : ""}">üyeler</button>
     </nav>
     <div id="panel"></div>`;
   appEl.querySelectorAll(".tabs button").forEach((b) =>
     b.addEventListener("click", () => { tab = b.dataset.t; renderDash(email); }));
   if (tab === "conn") renderConns();
   else if (tab === "layer") renderLayers();
-  else renderSubs();
+  else renderMembers();
 }
 
 /* ── bağlantılar ── */
@@ -76,15 +78,19 @@ async function renderConns() {
       <input id="c-s" placeholder="kaynak ülke (küçük harf)" required>
       <input id="c-r" placeholder="hedef ülke (küçük harf)" required>
       <input id="c-note" placeholder="kısa gerekçe / not">
+      <label class="hint" style="white-space:nowrap"><input type="checkbox" id="c-hidden"> bağı gizle</label>
       <button>ekle</button>
     </form>
-    <table><thead><tr><th>katman</th><th>bağ</th><th>not</th><th></th></tr></thead>
+    <p class="hint">nasıl çalışır: aynı (katman, kaynak, hedef) statik veride varsa notun onu EZER;
+      "gizle" işaretliyse bağ küreden KALKAR; statikte yoksa editoryal ekleme olur.</p>
+    <table><thead><tr><th>katman</th><th>bağ</th><th>not</th><th>gizli</th><th></th></tr></thead>
     <tbody>${(conns || []).map((c) => `<tr>
       <td>${esc(c.layer)}</td>
       <td>${esc(c.s)} → ${esc(c.r)}</td>
       <td>${esc(c.note)}</td>
+      <td><button class="link hid" data-id="${c.id}" data-h="${c.hidden ? 1 : 0}">${c.hidden ? "gizli ✓" : "—"}</button></td>
       <td><button class="link del" data-id="${c.id}">sil</button></td></tr>`).join("")}</tbody></table>
-    <p class="hint">${(conns || []).length} bağlantı</p>`;
+    <p class="hint">${(conns || []).length} bindirme satırı</p>`;
   document.getElementById("add").addEventListener("submit", async (e) => {
     e.preventDefault();
     await sb.from("connections").insert({
@@ -92,9 +98,15 @@ async function renderConns() {
       s: document.getElementById("c-s").value.trim().toLowerCase(),
       r: document.getElementById("c-r").value.trim().toLowerCase(),
       note: document.getElementById("c-note").value.trim(),
+      hidden: document.getElementById("c-hidden").checked,
     });
     renderConns();
   });
+  panel.querySelectorAll(".hid").forEach((b) =>
+    b.addEventListener("click", async () => {
+      await sb.from("connections").update({ hidden: b.dataset.h !== "1" }).eq("id", b.dataset.id);
+      renderConns();
+    }));
   panel.querySelectorAll(".del").forEach((b) =>
     b.addEventListener("click", async () => { await sb.from("connections").delete().eq("id", b.dataset.id); renderConns(); }));
 }
@@ -104,6 +116,8 @@ async function renderLayers() {
   const panel = document.getElementById("panel");
   const { data: layers } = await sb.from("layers").select("*").order("ord");
   panel.innerHTML = `
+    ${(layers || []).length ? "" : `<p class="hint">bindirme satırı ekleyebilmek için önce katman anahtarları gerekli —
+      <button id="seed" class="link">sitedeki katmanları içe aktar</button></p>`}
     <form id="add" class="row-form">
       <input id="l-key" placeholder="anahtar (ör. silah)" required>
       <input id="l-label" placeholder="görünen ad (ör. silah)" required>
@@ -126,28 +140,32 @@ async function renderLayers() {
   });
   panel.querySelectorAll(".del").forEach((b) =>
     b.addEventListener("click", async () => { if (confirm("emin misin?")) { await sb.from("layers").delete().eq("key", b.dataset.k); renderLayers(); } }));
+  const seed = document.getElementById("seed");
+  if (seed) seed.addEventListener("click", async () => {
+    const res = await fetch("../data/layers/index.json");
+    const idx = await res.json();
+    await sb.from("layers").insert(idx.map((l, i) => ({ key: l.key, label: l.label, ord: i })));
+    renderLayers();
+  });
 }
 
-/* ── aboneler ── */
-async function renderSubs() {
+/* ── üyeler (profiles — sadece admin görür) ── */
+async function renderMembers() {
   const panel = document.getElementById("panel");
-  const { data: subs } = await sb.from("subscribers").select("*").order("created_at", { ascending: false });
+  const { data: members } = await sb.from("profiles").select("*").order("created_at", { ascending: false });
   panel.innerHTML = `
     <button id="csv" class="link">csv indir</button>
-    <table><thead><tr><th>e-posta</th><th>tarih</th><th></th></tr></thead>
-    <tbody>${(subs || []).map((s) => `<tr>
-      <td>${esc(s.email)}</td><td>${(s.created_at || "").slice(0, 10)}</td>
-      <td><button class="link del" data-id="${s.id}">sil</button></td></tr>`).join("")}</tbody></table>
-    <p class="hint">${(subs || []).length} abone</p>`;
+    <table><thead><tr><th>e-posta</th><th>rol</th><th>katılım</th></tr></thead>
+    <tbody>${(members || []).map((m) => `<tr>
+      <td>${esc(m.email)}</td><td>${esc(m.role)}</td><td>${(m.created_at || "").slice(0, 10)}</td></tr>`).join("")}</tbody></table>
+    <p class="hint">${(members || []).length} üye · hesap silme üyenin kendisinden ya da Supabase panosundan</p>`;
   document.getElementById("csv").addEventListener("click", () => {
-    const rows = ["email,tarih", ...(subs || []).map((s) => `${s.email},${(s.created_at || "").slice(0, 10)}`)];
+    const rows = ["email,rol,tarih", ...(members || []).map((m) => `${m.email},${m.role},${(m.created_at || "").slice(0, 10)}`)];
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([rows.join("\n")], { type: "text/csv" }));
-    a.download = "aboneler.csv";
+    a.download = "uyeler.csv";
     a.click();
   });
-  panel.querySelectorAll(".del").forEach((b) =>
-    b.addEventListener("click", async () => { await sb.from("subscribers").delete().eq("id", b.dataset.id); renderSubs(); }));
 }
 
 boot();

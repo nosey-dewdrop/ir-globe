@@ -15,7 +15,7 @@ const ROOT = path.join(__dirname, "..");
 
 /* automated sources — safe to run unattended. Manual/one-time converters
    (sipri, baci, gsdb, aiddata) are separate scripts run locally with --input. */
-const AUTOMATED = ["goc", "yardim", "diplomasi"]; // + enerji (needs COMTRADE_KEY), tahil, kablo, siber as they land
+const AUTOMATED = ["goc", "yardim", "diplomasi", "tahil", "kablo"]; // + enerji (needs COMTRADE_KEY); siber deferred (EuRepoC has no open endpoint)
 
 const onlyArg = process.argv.find((a) => a.startsWith("--only"));
 const wanted = onlyArg
@@ -45,7 +45,9 @@ const wanted = onlyArg
   let ties = 0;
   const countries = new Set();
   for (const l of index) {
-    const lay = JSON.parse(fs.readFileSync(path.join(ROOT, `data/layers/${l.key}.json`), "utf8"));
+    let lay;
+    try { lay = JSON.parse(fs.readFileSync(path.join(ROOT, `data/layers/${l.key}.json`), "utf8")); }
+    catch (e) { console.warn(`  meta: ${l.key}.json okunamadı, atlandı (${e.code || e.message})`); continue; }
     ties += (lay.ties || []).length;
     (lay.ties || []).forEach((t) => { countries.add(t.s); countries.add(t.r); });
   }

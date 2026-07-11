@@ -83,9 +83,9 @@ async function build() {
     console.log(`  tahil: ${rows.length} exporter→importer pairs, year ${year}`);
 
     const ties = shapeTies(rows, {
-      topPerDirection: 10,
-      minV: 5e6, // at least 5M USD of staple grain trade
-      maxTies: 1200,
+      topPerDirection: 8,
+      minV: 10e6, // at least 10M USD of staple grain trade
+      maxTies: 900,
       noteFn: (t) => `${disp(t.s)}, ${disp(t.r)}'ye ${year}'te ${fmt(t.v)} $ değerinde temel tahıl (buğday/mısır/pirinç/arpa/soya) ihraç etti (FAOSTAT).`,
     });
 
