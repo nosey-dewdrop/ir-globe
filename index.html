@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=55">
+<link rel="stylesheet" href="css/style.css?v=56">
 </head>
 <body class="pages">
 
@@ -66,14 +66,14 @@
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="uye.html">üyelik</a> · <a href="gizlilik.html">gizlilik</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v55</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v56</span></span>
   </footer>
 </section>
 
 <script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js"></script>
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=55"></script>
-<script src="js/main.js?v=55"></script>
+<script src="js/main.js?v=56"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -119,7 +119,7 @@
   if (!wall) return;
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
     return { "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]; }); };
-  var PADX = 12, PADY = 8, GAP = 14, COLW = 210, VGAP = 9;
+  var PADX = 8, PADY = 8, GAP = 6, COLW = 200, VGAP = 8;   // dar kolon arası → kanal kaybolur, iç içe görünür
   var blocks = [];
   function shortest(a) { var m = 0; for (var i = 1; i < a.length; i++) if (a[i] < a[m]) m = i; return m; }
   function layout() {
@@ -141,7 +141,8 @@
     }
   }
   function build(items) {
-    var tiers = ["s1", "s2", "s2", "s3", "s3", "s4", "s5"];
+    // çoğu küçük, arada belirgin büyükler (gazete manşet hiyerarşisi)
+    var tiers = ["s1", "s1", "s1", "s2", "s2", "s3", "s3", "s4", "s5"];
     var fill = []; while (fill.length < 260) fill = fill.concat(items);
     wall.innerHTML = fill.slice(0, 260).map(function (a) {
       var t = tiers[Math.floor(Math.random() * tiers.length)];
@@ -149,6 +150,22 @@
     }).join("");
     layout();
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+  }
+  /* web hover: blok büyür + aynı kolondaki altındakileri aşağı kaydırır */
+  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    wall.addEventListener("mouseover", function (e) {
+      var el = e.target.closest && e.target.closest(".wl");
+      if (!el || el.classList.contains("big") || el.__col == null) return;
+      var oldH = el.offsetHeight; el.classList.add("big"); var delta = el.offsetHeight - oldH;
+      blocks.forEach(function (b) { if (b.col === el.__col && b.top > el.__top) b.el.style.transform = "translateY(" + delta + "px)"; });
+    });
+    wall.addEventListener("mouseout", function (e) {
+      var el = e.target.closest && e.target.closest(".wl");
+      if (!el) return;
+      if (e.relatedTarget && el.contains(e.relatedTarget)) return;
+      el.classList.remove("big");
+      blocks.forEach(function (b) { if (b.col === el.__col && b.top > el.__top) b.el.style.transform = ""; });
+    });
   }
   var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(layout, 150); });
   Store.digest().then(function (items) { if (items.length) build(items); }).catch(function () {});

@@ -82,12 +82,17 @@ html { scroll-snap-type: y proximity; }
   font-family: var(--serif); color: #e2e5ea; text-decoration: none;   /* soluk — yazı üstünde net */
   transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1), color 0.18s ease;
 }
-.jn-wall .wl.s1 { font-size: 11px; line-height: 1.22; }
-.jn-wall .wl.s2 { font-size: 12.5px; line-height: 1.22; }
-.jn-wall .wl.s3 { font-size: 14px; line-height: 1.2; }
-.jn-wall .wl.s4 { font-size: 15.5px; line-height: 1.18; }
-.jn-wall .wl.s5 { font-size: 17px; line-height: 1.15; }
-/* hover yok — duvar salt dekor (tıklanmaz, büyümez) */
+/* font farkı BELİRGİN olsun (11'den 26'ya) — çoğu küçük, arada büyükler */
+.jn-wall .wl.s1 { font-size: 11px; line-height: 1.24; }
+.jn-wall .wl.s2 { font-size: 13px; line-height: 1.22; }
+.jn-wall .wl.s3 { font-size: 16px; line-height: 1.2; }
+.jn-wall .wl.s4 { font-size: 20px; line-height: 1.16; }
+.jn-wall .wl.s5 { font-size: 26px; line-height: 1.12; }
+/* web'de hover: büyür + aynı kolondaki altındakileri JS kaydırır, renk koyu gri */
+@media (hover: hover) and (pointer: fine) {
+  .jn-wall .wl { pointer-events: auto; cursor: default; }
+  .jn-wall .wl.big { font-size: 30px; line-height: 1.12; color: #4b515e; z-index: 2; }
+}
 
 .jn-in { position: relative; z-index: 2; flex: 1 1 auto; width: 100%; max-width: 640px; margin: 0 auto; padding: 0 40px;
   display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
