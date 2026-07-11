@@ -146,7 +146,7 @@ async function fetchConn(s, r, terms, n) {
     if (seen.has(a.t)) continue;
     seen.add(a.t);
     digest.push(a);
-    if (digest.length >= 30) break;
+    if (digest.length >= 80) break;
   }
   writeJSON("data/news/digest.json", digest);
   writeJSON("data/news/meta.json", { updated: new Date().toISOString(), total, perLayer });

@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=43">
+<link rel="stylesheet" href="css/style.css?v=44">
 </head>
 <body class="pages">
 
@@ -55,11 +55,12 @@
   <nav id="countries"></nav>
 </section>
 
-<!-- SAYFA 3 — KATIL: kendi akışını kur -->
+<!-- SAYFA 3 — KATIL: arka planda soluk gerçek başlık duvarı, önünde net metin -->
 <section class="page jn">
+  <div class="jn-wall" id="jn-wall" aria-hidden="true"></div>
   <div class="jn-in">
-    <p class="bhead">kendi akışını kur</p>
-    <p class="btext">Ülke ve konu seç; akışın sana özel olsun. Takip ettiklerinde gelişme olunca haber verelim, haftada bir kendi brifingin mailine gelsin. Gerçek veri, gürültü yok.</p>
+    <p class="bhead">dünyanın ilişki ağı, sana göre</p>
+    <p class="btext">arkadaki her başlık gerçek: kim kime silah, enerji, tahıl, para satıyor. üye ol, ülke ve konu seç; bu akış senin olsun. takip ettiğinde gelişme olunca haber verelim, haftada bir kişiselleştirilmiş bültenin mailine gelsin.</p>
     <p class="bfine" style="margin-top:18px"><a class="jn-cta" href="uye.html">hesap aç, akışını kur →</a></p>
     <p class="bfine"><a href="akis.html">genel akışa bak</a> · <a href="bulten.html">bu haftanın bülteni</a></p>
     <p class="countdown" id="countdown"></p>
@@ -72,7 +73,7 @@
 
 <script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js"></script>
 <script src="admin/config.js"></script>
-<script src="js/store.js?v=48"></script>
+<script src="js/store.js?v=49"></script>
 <script src="js/main.js?v=49"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
@@ -131,6 +132,21 @@
   }).catch(function () {
     el.innerHTML = '<p class="dg-load">başlıklar şu an yüklenemedi.</p>';
   });
+})();
+</script>
+<script>
+/* 3. sayfa: arka plan başlık duvarı — gerçek manşetler, küçük ve soluk; masaüstünde
+   üstüne gelince büyür (dinamiklik). mobilde salt dekor (pointer-events CSS'te kapalı). */
+(function () {
+  var wall = document.getElementById("jn-wall");
+  if (!wall) return;
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+    return { "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]; }); };
+  Store.digest().then(function (items) {
+    wall.innerHTML = items.map(function (a) {
+      return '<a class="wl" href="' + esc(a.u) + '" target="_blank" rel="noopener">' + esc(a.t) + '</a>';
+    }).join("");
+  }).catch(function () {});
 })();
 </script>
 <script>
