@@ -65,39 +65,48 @@ html { scroll-snap-type: y proximity; }
 /* SAYFA 3 — katıl: arka planda soluk gerçek başlık duvarı, önünde net metin */
 .page.jn { justify-content: flex-start; position: relative; overflow: hidden; }
 
-/* arka plan duvarı: küçük, soluk gerçek manşetler tüm sayfayı boşluksuz kaplar */
+/* arka plan duvarı: küçük soluk gerçek manşetler, KOLON DEĞİL yan yana akar,
+   iç içe geçer, sağ-sol boşluksuz tam kenara yayılır */
 .jn-wall {
   position: absolute; inset: 0; z-index: 0;
-  padding: 16px 20px; column-count: 7; column-gap: 20px;
-  overflow: hidden; pointer-events: none;          /* mobil: salt dekor */
+  padding: 4px; overflow: hidden; pointer-events: none;   /* mobil: salt dekor */
+  display: flex; flex-wrap: wrap; align-content: flex-start;
+  gap: 4px 12px;
 }
 .jn-wall .wl {
-  display: block; break-inside: avoid; margin-bottom: 7px;
-  font-family: var(--serif); font-size: 11px; line-height: 1.18;
-  color: #d7dbe1; text-decoration: none;           /* soluk gri */
+  font-family: var(--serif); font-size: 11px; line-height: 1.12;
+  color: #d7dbe1; text-decoration: none;                  /* soluk gri */
+  white-space: nowrap; max-width: 26vw; overflow: hidden; text-overflow: ellipsis;
   transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), color 0.28s;
 }
 /* masaüstü: başlığın üstüne gelince büyür + koyulaşır (transform = reflow yok).
-   salt dekor — tıklanmaz, sadece hover ile büyür (pointer-events yalnız hover için). */
+   salt dekor — tıklanmaz, sadece hover ile büyür. */
 @media (hover: hover) and (pointer: fine) {
   .jn-wall .wl { pointer-events: auto; cursor: default; }
   .jn-wall .wl:hover {
     color: var(--ink); position: relative; z-index: 3;
-    transform: scale(1.9); transform-origin: left center;
+    transform: scale(1.85); transform-origin: center;
     text-shadow: 0 0 6px #fff, 0 0 12px #fff;
   }
 }
-@media (max-width: 900px) { .jn-wall { column-count: 4; } }
-@media (max-width: 560px) { .jn-wall { column-count: 3; padding: 12px; } }
+@media (max-width: 560px) { .jn-wall .wl { font-size: 10px; max-width: 46vw; } }
 
-.jn-in { position: relative; z-index: 2; flex: 1 1 auto; width: 100%; max-width: 620px; margin: 0 auto; padding: 0 40px;
+.jn-in { position: relative; z-index: 2; flex: 1 1 auto; width: 100%; max-width: 640px; margin: 0 auto; padding: 0 40px;
   display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 /* önündeki metin duvarın üstünde net okunsun: güçlü beyaz hale */
-.jn-in .bhead, .jn-in .btext, .jn-in .bfine, .jn-in .countdown {
+.jn-in .hero-mast h1, .jn-in .mast-fresh, .jn-in .bhead, .jn-in .btext, .jn-in .bfine, .jn-in .countdown, .jn-in .ed-scroll, .jn-in .stat {
   text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 26px #fff;
 }
 .jn-in .btext { margin: 0 auto 14px; color: #16191f; }
 .jn-in .bhead { color: #16191f; }
+/* hero başlığı (marka) — pitch'in üstünde, ondan küçük */
+.hero-mast { display: block; margin-bottom: 12px; }
+.hero-mast h1 { font-size: 24px; }
+.hero-mast .mast-fresh { margin-top: 2px; }
+/* sayaç hero'da daha ufak, ortada */
+.jn-in .stats { padding: 20px 0 4px; gap: 14px 30px; }
+.jn-in .statn { font-size: 22px; }
+.jn-in .ed-scroll { margin-top: 20px; }
 
 /* sayaç — ortada, kolonlara yakın (en alttan biraz yukarı) */
 .stats { display: flex; justify-content: center; flex-wrap: wrap; gap: 22px 48px; padding: 6px 40px 60px; }
