@@ -10,7 +10,7 @@ international relations are easier to feel than to read. this globe draws countr
 ## features
 - rotating night-earth globe: drag to spin, click a country and its ties light up
 - 12 layers of real directed connections, each with its own source
-- 2204 real news headlines arcing around the globe, refreshed daily
+- 2204 real news headlines arcing around the globe, refreshed every six hours
 - click an arc: who, to whom, how much, with the reference to check it
 - editorial landing with crawlable topic and country pages
 - newsletter membership and an admin panel for the editors
