@@ -391,7 +391,7 @@ function countryArticleList(c) {
       all[k].forEach((a) => { if (!seen.has(a.url)) { seen.add(a.url); out.push(a); } });
     }
   });
-  return out.slice(0, 10);
+  return out;   // NO cap — kaç makale varsa hepsi; yerleşim geometrisi kaç tanesinin sığacağına karar verir
 }
 
 /* ── left column: the story ── */
@@ -454,8 +454,8 @@ function renderDetail() {
 /* ── liquid cards: real articles arranged along the globe's curve, they flow on change ── */
 const cardsEl = document.getElementById("cards");
 function currentArticles() {
-  if (focusTie) return tieArticleList(focusTie).slice(0, 6);
-  if (selected) return countryArticleList(selected).slice(0, 6);
+  if (focusTie) return tieArticleList(focusTie);   // hiç kırpma yok — veri neyse o
+  if (selected) return countryArticleList(selected);
   return [];
 }
 function renderCards() {
@@ -471,26 +471,68 @@ function renderCards() {
   cardsEl.classList.add("show");
   layoutCards();
 }
-/* kartları kürenin SAĞ kavisine sarar. Yay artık kart sayısıyla ORANTILI açılır
-   (kart başına 22°): 6 kart ±55°, 3 kart ±22° — eski sabit ±84° az kartta devasa
-   boşluklar bırakıp başlıkları sahnenin üstünden/altından taşırıyordu. Üst/alt
-   güvenlik payı da var: kart ne olursa olsun sahne içinde kalır. */
+/* kartları kürenin SAĞ kavisine sarar — hiçbir sabit adet YOK, her şey yerden türetilir:
+   ÖNCE dikey kolon dolar, taşınca SAĞA yeni kolon açılır, yatay yer de biterse
+   (ancak o zaman) font kademeli küçülür. Kart ne olursa olsun sahnenin içinde kalır,
+   hiçbir makale atılmaz. */
 function layoutCards() {
   const cards = [...cardsEl.querySelectorAll(".card")];
   const n = cards.length;
   if (!n) return;
   const stage = document.querySelector(".stage");
+
+  /* mobil: kartlar CSS ile kürenin altında düz liste — konumlandırma/font override yok */
+  if (window.matchMedia("(max-width: 820px)").matches) {
+    cards.forEach((c) => { c.style.left = ""; c.style.top = ""; });
+    cardsEl.style.removeProperty("--card-fs");
+    cardsEl.classList.remove("dense");
+    return;
+  }
+
   const w = stage.clientWidth, h = stage.clientHeight;
   const cx = w / 2, cy = h / 2;
-  const R = Math.min(w, h) * 0.46 + 30;  // kürenin sağ kavisinin hemen dışı + nefes payı
-  const STEP = 22;                       // iki kart arası açı — sıkı ama üst üste binmez
-  const half = Math.min(66, ((n - 1) * STEP) / 2);
-  const pad = 56;                        // sahnenin üst/alt kenarına asgari mesafe
-  cards.forEach((c, i) => {
-    const deg = n > 1 ? -half + (i * 2 * half) / (n - 1) : 0;
-    const rad = (deg * Math.PI) / 180;
-    const y = Math.max(pad, Math.min(h - pad, cy + R * Math.sin(rad)));
-    c.style.left = (cx + R * Math.cos(rad)).toFixed(1) + "px";
+  const pad = 46;                         // üst/alt kenara asgari mesafe
+  const usable = h - pad * 2;
+  const FS_MAX = 14.5, FS_MIN = 10.5;
+  const rowH = (fs) => fs * 2.6 + 13;     // 2 satır başlık + kaynak + nefes → dikey adım
+
+  /* AZ KART (≤6): kürenin sağ kavisine yaslı, sayıyla orantılı yay — kanıtlanmış görünüm */
+  const Rbig = Math.min(w, h) * 0.46 + 30;
+  if (n <= 6) {
+    const STEP = 22, half = ((n - 1) * STEP) / 2;
+    cards.forEach((c, i) => {
+      const deg = n > 1 ? -half + (i * 2 * half) / (n - 1) : 0;
+      const rad = (deg * Math.PI) / 180;
+      const y = Math.max(pad, Math.min(h - pad, cy + Rbig * Math.sin(rad)));
+      c.style.left = (cx + Rbig * Math.cos(rad)).toFixed(1) + "px";
+      c.style.top = y.toFixed(1) + "px";
+    });
+    cardsEl.style.setProperty("--card-fs", FS_MAX + "px");
+    cardsEl.classList.remove("dense");
+    return;
+  }
+
+  /* ÇOK KART: bir kolon tam fontla kaç kart alır → colCap. Gerekli kolon = ceil(n/colCap).
+     Yatayda ancak maxCols kolon sığar (kürenin sağından sahne kenarına). Kolon yetmezse
+     kolon başına düşen kartı fontu kısarak sığdır (SON çare). */
+  const colCap = Math.max(1, Math.floor(usable / rowH(FS_MAX)));
+  const cardW = 210, colGap = cardW + 8;
+  const x0 = cx + Math.min(w, h) * 0.40 + 10;   // ilk kolon: kürenin sağı (biraz içeri, sağa yer kalsın)
+  const maxCols = Math.max(1, Math.floor((w - cardW - 14 - x0) / colGap) + 1);
+  const cols = Math.min(maxCols, Math.ceil(n / colCap));   // önce sağa: gerektiği kadar kolon
+  const cap = Math.ceil(n / cols);                          // kolon başına kart
+  const fs = Math.max(FS_MIN, Math.min(FS_MAX, (usable / cap - 13) / 2.6));  // ancak gerekiyorsa küçült
+  cardsEl.style.setProperty("--card-fs", fs.toFixed(1) + "px");
+  cardsEl.classList.toggle("dense", fs < FS_MAX - 0.1);
+
+  cards.forEach((c, idx) => {
+    const col = Math.floor(idx / cap);
+    const row = idx % cap;
+    const inCol = Math.min(cap, n - col * cap);   // bu kolondaki kart adedi (son kolon eksik olabilir)
+    const y = inCol > 1 ? pad + (row * usable) / (inCol - 1) : cy;
+    const Rk = (x0 - cx) + col * colGap;          // bu kolonun kavis yarıçapı → sağa doğru fan
+    const t = Math.max(-0.985, Math.min(0.985, (y - cy) / Rk));
+    c.style.left = (cx + Rk * Math.cos(Math.asin(t))).toFixed(1) + "px";
     c.style.top = y.toFixed(1) + "px";
   });
 }
