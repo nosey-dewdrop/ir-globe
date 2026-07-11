@@ -77,15 +77,15 @@ html { scroll-snap-type: y proximity; }
   font-family: var(--serif); font-size: 11px; line-height: 1.12;
   color: #d7dbe1; text-decoration: none;                  /* soluk gri */
   white-space: nowrap; max-width: 26vw; overflow: hidden; text-overflow: ellipsis;
-  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), color 0.28s;
+  transition: font-size 0.22s ease, color 0.22s ease;
 }
-/* masaüstü: başlığın üstüne gelince büyür + koyulaşır (transform = reflow yok).
-   salt dekor — tıklanmaz, sadece hover ile büyür. */
+/* masaüstü: başlığın üstüne gelince GERÇEKTEN büyür (font-size) → komşuları kaydırır;
+   rengi koyu gri olur (simsiyah değil). salt dekor, tıklanmaz. */
 @media (hover: hover) and (pointer: fine) {
   .jn-wall .wl { pointer-events: auto; cursor: default; }
   .jn-wall .wl:hover {
-    color: var(--ink); position: relative; z-index: 3;
-    transform: scale(1.85); transform-origin: center;
+    color: #4b515e; font-size: 21px;
+    position: relative; z-index: 3; overflow: visible; max-width: none;
     text-shadow: 0 0 6px #fff, 0 0 12px #fff;
   }
 }
