@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=56">
+<link rel="stylesheet" href="css/style.css?v=57">
 </head>
 <body class="pages">
 
@@ -40,8 +40,9 @@
     </header>
     <p class="bhead">dünyanın ilişki ağı, sana göre</p>
     <p class="btext">arkadaki her başlık gerçek: kim kime silah, enerji, tahıl, para satıyor. üye ol, ülke ve konu seç; bu akış senin olsun. takip ettiğinde gelişme olunca haber verelim, haftada bir kişiselleştirilmiş bültenin mailine gelsin.</p>
-    <p class="bfine" style="margin-top:16px"><a class="jn-cta" href="uye.html">hesap aç →</a></p>
-    <p class="bfine"><a href="akis.html">genel akışa bak</a> · <a href="bulten.html">bu haftanın bülteni</a></p>
+    <p class="bfine cta-line"><a class="jn-cta" href="uye.html">hesap aç →</a></p>
+    <p class="bfine">genel akışa bak · bu haftanın bülteni'ne <a href="akis.html">göz at</a></p>
+    <div class="stats" id="stats"></div>
     <p class="ed-scroll">↓</p>
   </div>
 </section>
@@ -60,20 +61,19 @@
 <section class="page close">
   <div class="close-in">
     <p class="bhead">gerçek, kaynaklı, her hafta taze</p>
-    <div class="stats" id="stats"></div>
     <p class="countdown" id="countdown"></p>
     <p class="bfine" style="margin-top:20px"><a class="jn-cta" href="uye.html">hesap aç →</a></p>
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="uye.html">üyelik</a> · <a href="gizlilik.html">gizlilik</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v56</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v57</span></span>
   </footer>
 </section>
 
 <script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js"></script>
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=55"></script>
-<script src="js/main.js?v=56"></script>
+<script src="js/main.js?v=57"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -119,52 +119,53 @@
   if (!wall) return;
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
     return { "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]; }); };
-  var PADX = 8, PADY = 8, GAP = 6, COLW = 200, VGAP = 8;   // dar kolon arası → kanal kaybolur, iç içe görünür
-  var blocks = [];
-  function shortest(a) { var m = 0; for (var i = 1; i < a.length; i++) if (a[i] < a[m]) m = i; return m; }
+  var PADX = 8, PADY = 8, GAP = 6, COLW = 190, VGAP = 8;
+  /* DEĞİŞKEN GENİŞLİKLİ MASONRY: bloklar 1 ya da 2 kolon geniş → sol kenarlar
+     hizalanmaz, ızgara kırılır, gerçek mozaik/iç içe görünür. */
   function layout() {
     var W = wall.clientWidth - PADX * 2;
-    var cols = Math.max(1, Math.floor((W + GAP) / (COLW + GAP)));
+    var cols = Math.max(2, Math.floor((W + GAP) / (COLW + GAP)));
     var cw = (W - GAP * (cols - 1)) / cols;
     var els = wall.querySelectorAll(".wl");
-    var i;
-    for (i = 0; i < els.length; i++) { els[i].style.width = cw + "px"; els[i].style.transform = ""; els[i].classList.remove("big"); }
-    var heights = []; for (i = 0; i < cols; i++) heights.push(0);
-    blocks = [];
+    var heights = [], i, k; for (i = 0; i < cols; i++) heights.push(0);
     for (i = 0; i < els.length; i++) {
-      var el = els[i], c = shortest(heights), h = el.offsetHeight;
-      el.style.left = (PADX + c * (cw + GAP)) + "px";
-      el.style.top = (PADY + heights[c]) + "px";
-      el.__col = c; el.__top = heights[c];
-      blocks.push({ el: el, col: c, top: heights[c] });
-      heights[c] += h + VGAP;
+      var el = els[i];
+      var span = (+el.getAttribute("data-span")) || 1;
+      if (span > cols) span = 1;
+      el.style.width = (span * cw + (span - 1) * GAP) + "px";
+      el.classList.remove("big");
+      // span kadar bitişik kolon içinde en alçak yeri bul
+      var best = 0, bestTop = Infinity;
+      for (var c = 0; c + span <= cols; c++) {
+        var top = 0; for (k = 0; k < span; k++) if (heights[c + k] > top) top = heights[c + k];
+        if (top < bestTop - 0.5) { bestTop = top; best = c; }
+      }
+      var h = el.offsetHeight;
+      el.style.left = (PADX + best * (cw + GAP)) + "px";
+      el.style.top = (PADY + bestTop) + "px";
+      var nh = bestTop + h + VGAP;
+      for (k = 0; k < span; k++) heights[best + k] = nh;
     }
   }
   function build(items) {
-    // çoğu küçük, arada belirgin büyükler (gazete manşet hiyerarşisi)
     var tiers = ["s1", "s1", "s1", "s2", "s2", "s3", "s3", "s4", "s5"];
-    var fill = []; while (fill.length < 260) fill = fill.concat(items);
-    wall.innerHTML = fill.slice(0, 260).map(function (a) {
+    var fill = []; while (fill.length < 240) fill = fill.concat(items);
+    wall.innerHTML = fill.slice(0, 240).map(function (a) {
       var t = tiers[Math.floor(Math.random() * tiers.length)];
-      return '<span class="wl ' + t + '">' + esc(a.t) + "</span>";
+      var span = Math.random() < 0.32 ? 2 : 1;   // ~%32 iki kolon geniş → ızgara kırılır
+      return '<span class="wl ' + t + '" data-span="' + span + '">' + esc(a.t) + "</span>";
     }).join("");
     layout();
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
   }
-  /* web hover: blok büyür + aynı kolondaki altındakileri aşağı kaydırır */
+  /* web hover: blok büyür + üste gelir (koyulaşır) */
   if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
     wall.addEventListener("mouseover", function (e) {
-      var el = e.target.closest && e.target.closest(".wl");
-      if (!el || el.classList.contains("big") || el.__col == null) return;
-      var oldH = el.offsetHeight; el.classList.add("big"); var delta = el.offsetHeight - oldH;
-      blocks.forEach(function (b) { if (b.col === el.__col && b.top > el.__top) b.el.style.transform = "translateY(" + delta + "px)"; });
+      var el = e.target.closest && e.target.closest(".wl"); if (el) el.classList.add("big");
     });
     wall.addEventListener("mouseout", function (e) {
       var el = e.target.closest && e.target.closest(".wl");
-      if (!el) return;
-      if (e.relatedTarget && el.contains(e.relatedTarget)) return;
-      el.classList.remove("big");
-      blocks.forEach(function (b) { if (b.col === el.__col && b.top > el.__top) b.el.style.transform = ""; });
+      if (el && !(e.relatedTarget && el.contains(e.relatedTarget))) el.classList.remove("big");
     });
   }
   var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(layout, 150); });
