@@ -65,34 +65,40 @@ html { scroll-snap-type: y proximity; }
 /* SAYFA 3 — katıl: arka planda soluk gerçek başlık duvarı, önünde net metin */
 .page.jn { justify-content: flex-start; position: relative; overflow: hidden; }
 
-/* arka plan duvarı: küçük soluk gerçek manşetler, KOLON DEĞİL yan yana akar,
-   iç içe geçer, sağ-sol boşluksuz tam kenara yayılır */
+/* arka plan duvarı: küçük soluk gerçek manşetler, TAM başlık (2-3 satır, kırpma yok),
+   yoğun paketlenir. column-width eşit dağıttığı için sağ-sol boşluk simetrik olur. */
 .jn-wall {
   position: absolute; inset: 0; z-index: 0;
-  padding: 4px; overflow: hidden; pointer-events: none;   /* mobil: salt dekor */
-  display: flex; flex-wrap: wrap; align-content: flex-start;
-  gap: 4px 12px;
+  padding: 10px 0; overflow: hidden; pointer-events: none;   /* sağ-sol boşluk yok, tam kenar */
+  column-width: 210px; column-gap: 16px;
 }
 .jn-wall .wl {
-  font-family: var(--serif); font-size: 11px; line-height: 1.12;
-  color: #d7dbe1; text-decoration: none;                  /* soluk gri */
-  white-space: nowrap; max-width: 26vw; overflow: hidden; text-overflow: ellipsis;
-  transition: font-size 0.22s ease, color 0.22s ease;
+  display: block; break-inside: avoid; margin-bottom: 9px;
+  font-family: var(--serif); font-size: 12px; line-height: 1.25;
+  color: #d7dbe1; text-decoration: none;                  /* soluk gri, tam başlık wrap eder */
+  transition: font-size 0.2s ease, color 0.2s ease;
 }
-/* masaüstü: başlığın üstüne gelince GERÇEKTEN büyür (font-size) → komşuları kaydırır;
-   rengi koyu gri olur (simsiyah değil). salt dekor, tıklanmaz. */
+/* masaüstü: üstüne gelince font-size büyür → kolon içinde komşuları AŞAĞI kaydırır
+   (üstüne binmez, z-index yok → pitch'in arkasında kalır). renk koyu gri (simsiyah değil). */
 @media (hover: hover) and (pointer: fine) {
   .jn-wall .wl { pointer-events: auto; cursor: default; }
   .jn-wall .wl:hover {
-    color: #4b515e; font-size: 21px;
-    position: relative; z-index: 3; overflow: visible; max-width: none;
+    color: #4b515e; font-size: 17px;
     text-shadow: 0 0 6px #fff, 0 0 12px #fff;
   }
 }
-@media (max-width: 560px) { .jn-wall .wl { font-size: 10px; max-width: 46vw; } }
+@media (max-width: 560px) { .jn-wall { column-width: 150px; } .jn-wall .wl { font-size: 11px; } }
 
 .jn-in { position: relative; z-index: 2; flex: 1 1 auto; width: 100%; max-width: 640px; margin: 0 auto; padding: 0 40px;
-  display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+  display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+  pointer-events: none; }                                 /* altındaki duvar başlıkları da hover alsın */
+.jn-in a, .jn-in .jn-cta { pointer-events: auto; }        /* linkler yine tıklanır */
+/* ana metnin arkasına yumuşak beyaz açıklık (kutu değil, organik) — büyüyen duvar
+   başlığı ortadaki yazının arkasında kalır, üstüne binmez, yazı hep net okunur */
+.jn-in::before {
+  content: ""; position: absolute; inset: -6% -10%; z-index: -1; pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.86) 42%, rgba(255,255,255,0) 76%);
+}
 /* önündeki metin duvarın üstünde net okunsun: güçlü beyaz hale */
 .jn-in .hero-mast h1, .jn-in .mast-fresh, .jn-in .bhead, .jn-in .btext, .jn-in .bfine, .jn-in .countdown, .jn-in .ed-scroll, .jn-in .stat {
   text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 26px #fff;

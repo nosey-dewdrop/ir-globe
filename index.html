@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=47">
+<link rel="stylesheet" href="css/style.css?v=48">
 </head>
 <body class="pages">
 
@@ -117,8 +117,8 @@
     // ekranı dibine kadar boşluksuz doldur: başlıkları gerekirse tekrarla (salt dekor,
     // fazlası overflow ile kırpılır — büyük ekranda alt boşluk kalmaz)
     var fill = [];
-    while (fill.length < 700) fill = fill.concat(items);
-    wall.innerHTML = fill.slice(0, 700).map(function (a) {
+    while (fill.length < 340) fill = fill.concat(items);
+    wall.innerHTML = fill.slice(0, 340).map(function (a) {
       return '<span class="wl">' + esc(a.t) + '</span>';
     }).join("");
   }).catch(function () {});
