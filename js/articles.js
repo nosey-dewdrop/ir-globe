@@ -60,6 +60,12 @@ const ARTICLES = {
         "date": "2026-07-06"
       },
       {
+        "title": "Trump surprises Nato allies with arms deals and praise as summit ends positively",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSkh3Z2xOZUxKU2FRTnRhTjlaSk1wLXZCaWV2bzBocmI2NW50M0xSR2VYZ1ZkZl8wUmdaNFo0MnJpYlVxREF1LWtjOFRtblJETlNNam9OaFRNRzRoQldOa205NUhfbmRycm5aRF9ra2xEQk12MTh3V2VzRkp3cmpEc0pDR0hkdlhxT2ZEVU1IeElhYmRBYkNOZU9OT1JHV0U4dDV4eFZBQ09KeDhVSzVpN2E2RlQ4U1dlY2xrWEpDamxjeG5tblHSAcYBQVVfeXFMTk5jMnlYVnlYQVhDU185LTJ0QllBNUpzQndTbUI2aF9yRTdqLXdxVmdnMUctdTNxMGQ1WDBFcnhrSzRQQWdSMXJEZ3BmSVhSdGpWQk1PX3MxaTJ1dU1nZDFWM1lBS2I0bUY1NFhTbzE4QUZOWkZBUGl3RDFYR2tLczVtNjhSTTUyUTBHZWIwbzJ0TWFmaHkyOXZqRktPUWFYZy1TZzdpMkZoQW5KTm10YVdwbi1vdmFRVzd4dGJ3LThMZGJLeDd3?oc=5",
+        "date": "2026-07-08"
+      },
+      {
         "title": "A US license could let Ukraine produce Patriot missiles, but it won’t be simple or quick",
         "source": "New York Daily News",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMnlUZjVaRms4dFU5QVRzMVU2UExxa1pRczl4RUFMVmFuRmxyQlplSV9JNDZYNURMTVNxeC04bXo0aGYwVE05a2pfamp3M0c0LV9HbC1GVHhXcjhocUt1N1Q5VTJHcEpuaE05aHExeVVZQWdJUTczYUJ5MGVXY1puaURQWUR2YzJ2cnlJdUZxd3lGdw?oc=5",
@@ -72,15 +78,15 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
-        "title": "Trump surprises Nato allies with arms deals and praise as summit ends positively",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSkh3Z2xOZUxKU2FRTnRhTjlaSk1wLXZCaWV2bzBocmI2NW50M0xSR2VYZ1ZkZl8wUmdaNFo0MnJpYlVxREF1LWtjOFRtblJETlNNam9OaFRNRzRoQldOa205NUhfbmRycm5aRF9ra2xEQk12MTh3V2VzRkp3cmpEc0pDR0hkdlhxT2ZEVU1IeElhYmRBYkNOZU9OT1JHV0U4dDV4eFZBQ09KeDhVSzVpN2E2RlQ4U1dlY2xrWEpDamxjeG5tblHSAcYBQVVfeXFMTk5jMnlYVnlYQVhDU185LTJ0QllBNUpzQndTbUI2aF9yRTdqLXdxVmdnMUctdTNxMGQ1WDBFcnhrSzRQQWdSMXJEZ3BmSVhSdGpWQk1PX3MxaTJ1dU1nZDFWM1lBS2I0bUY1NFhTbzE4QUZOWkZBUGl3RDFYR2tLczVtNjhSTTUyUTBHZWIwbzJ0TWFmaHkyOXZqRktPUWFYZy1TZzdpMkZoQW5KTm10YVdwbi1vdmFRVzd4dGJ3LThMZGJLeDd3?oc=5",
-        "date": "2026-07-08"
-      },
-      {
         "title": "Trump says US will license Ukraine to produce Patriot air defense missiles",
         "source": "stripes.com",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNDJQZDhwcHkxa3g5bjZZNkw1R2lVa1VOOGNfN0FZdjlJb3A1b3NSQUhyOUVUdXFxd1lydV9wNnRnN0xZdjltQVlsZWluUVRDM2lNUUFxMjkxb185cGZoR1Ywb2d2R1hVd3g3MXZHdkV4T1RoaG0yWUc1azJDb1c3cTBBV3VxbDRJeUl4TWhIUEttbDJO?oc=5",
+        "date": "2026-07-08"
+      },
+      {
+        "title": "Trump makes U-turn on Ukraine drone deal",
+        "source": "The Kyiv Independent",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE82dExSMzNfVDhtRHZpcEViSGtmMjdXaVQyMzhmOWtTYlJlTU9RRThkUF9uZWlvUEN5WnF5U2tmSFZTdEhzM0pwZlMtRklDeVd0bDRNTVhXLTA4MXhUMzhsZ2h5VzNiaFVlQ21UNkxEdWhVekxDVXZOdg?oc=5",
         "date": "2026-07-08"
       },
       {
@@ -94,12 +100,6 @@ const ARTICLES = {
         "source": "DW.com",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSFA5LWxScksxXzluSUMteWFsQ3dOQmRyQTgwVk8zLV9wQ0tkdVdMLW1Gak5LaXVTSk5Rdi1nWTlCdi1xQVFpZFA5OWJUYWhrcUNGaDQ3LVd3SGd3UHFIY0VnWDd3RUlydXh2Zm56RTVuMlpNekhxcG15MG5ILVpOYWlmaVhSWXZ2ZGxmWmZ5NmdlWUpSVEMteg?oc=5",
         "date": "2026-07-07"
-      },
-      {
-        "title": "Trump makes U-turn on Ukraine drone deal",
-        "source": "The Kyiv Independent",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE82dExSMzNfVDhtRHZpcEViSGtmMjdXaVQyMzhmOWtTYlJlTU9RRThkUF9uZWlvUEN5WnF5U2tmSFZTdEhzM0pwZlMtRklDeVd0bDRNTVhXLTA4MXhUMzhsZ2h5VzNiaFVlQ21UNkxEdWhVekxDVXZOdg?oc=5",
-        "date": "2026-07-08"
       }
     ],
     "united states→japan": [
@@ -134,22 +134,22 @@ const ARTICLES = {
         "date": "2026-05-07"
       },
       {
-        "title": "Asia’s newest arms exporter",
-        "source": "Politico",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTnNMQkNzZ082b2wtU1NRU1M0QjhYU2M0SXVCUUtCWGIxcHZ0NjJTUDFiamd4MTdPc21IR2JzVEhDY1c2Qm5JY0tJSFBVVGw2UUY3QmcxR0d2eTIwT3ZiZ21lcEl2X0xUNFBjcEdWWFBxeldxZUpuWmhzSTF3aVdmRGN4Z2t0YnpJMlNjQmVWNzhpT1B4MlBJ?oc=5",
-        "date": "2026-05-28"
-      },
-      {
-        "title": "Japan eyes lethal weapons exports",
-        "source": "East Asia Forum",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBPcC1LWkdtd3FrekV1bXJXM2FIVFIzOEFwZEZCRnhEbk9NMG1uR1lja1FYcHl0UVdZb2YzU0RMSVExclpVVm5GRk53SnFxTGRkaG85Y2pJTzRocTl1WlRnTHhXVjdYLWNQbm9vaXJxSS1mU0xFeDlMSTRtMA?oc=5",
-        "date": "2026-02-12"
-      },
-      {
         "title": "U.S. and Japan Expand Defense, Energy and Technology Cooperation After Donald J. Trump–Sanae Takaichi Talks",
         "source": "The America Times",
         "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZ1J1YzFtenQ4M0l3ak5Tb21WTXh3ZmlQeHc2TlVnbXFhNWNvN2JpSGhqZTM5VFNGbEJ5b0M0dlVLbEgxbkZEQ25rNWg2X0dIcmJybEtJYkU0MEItZU5BOGRxeF9adk1BY0ZZT1hkdmdPbUhOOUYyRzJ5ejBQcUtNR0U3WlAwWmFZQnNzYVZBWFp4NlJfekpONFdpZEkxcUFYQ1UtalY0eVM1dkRJZng3VENSWGRnamxjSXdsQVpEb3BNR2czREQyRHNHV1M5YVV6?oc=5",
         "date": "2026-03-21"
+      },
+      {
+        "title": "Opinion | A landmark deal signals a new era for Japan",
+        "source": "The Washington Post",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMFRYeTRTZ1Y1eFh2a3FWQ0JKYm01R0Vtb0FoNzhMaG5VYmFiZ21VbkVDRW56aHJHMmszV29oZWFoMVhuQjU5eklzcWU0WWtqMHBmcXV1bVIxSFAycFd3dUhHWVJlV2NzV1VoTDVOVi1MZURhSEItMUxiOENjVXhiazhwa2RxS2JYSERwUDNLTjhfcThZWkRZTGNn?oc=5",
+        "date": "2026-04-23"
+      },
+      {
+        "title": "Japan lifts ban on lethal weapons exports in major shift of pacifist policy",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUFNOdGxBSmlqM1hJRHpTQ2lHelJMcEdodExqZG1pZFFIcUNncUFWd0RaZV9DRWFYbVBqZ0FORXNUaXBGdWdTN1IyWDRYX1RhbHNkOXhvSUZ0aS1OREwwc0NqNU9RQV9yaUZBN18zYy00QUxsV0tiWllXVEZHQnRXbzR4TERzLXREa0lQUlpLNHVxLXZJLTNBbzhvbVMtb09EbURaQVJsX2lEb1RBd3lJaEtycUhBUnfSAbwBQVVfeXFMTm01UHV1cUFsZWlqS3V3N05QNWViUk9GWUdzenNxc2ZwRmVwWldfNnhqQnF3cXJZUm1sVzkyZGYwVlFGbHZYYXRoUG53TE9mTDVtY04tSnlBYkdIVUl3UW03QjEtUGtYWlRWVzE1ZlZYUnlxdFZTVkdzMTBHdnp3UXNKSEpmTExjOVpxandZZXZuOXlhaVBmMW9MdFpzbU5UV1JPYUszVGhWWVpYSjhtWGRZRHM5RlFtamVybVI?oc=5",
+        "date": "2026-04-21"
       }
     ],
     "france→india": [
@@ -164,12 +164,6 @@ const ARTICLES = {
         "source": "Defense News",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQd1RGUERtTnQwTHppQ0FUYTV4ckdHTlNBNWdWNGVhV0FUWWJPSF9qNURzYlhBSGFYZ1hfX2lHUG5CYUxJVHJzbjdydE5WejZFelRLOEVKX0dCeHlSLVY5cmVKckgtSzVJRmFqR1Q3Z0xrWVV3eFNXVE1qbVVTWVEtN2tlNHZGOHl4QjZaZlpMc2dpSndWVkZWa3R1WGJ2cnE1X3pnVWl5ZTlRUQ?oc=5",
         "date": "2026-02-04"
-      },
-      {
-        "title": "France's Macron in India to boost Rafale deal talks, AI ties",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xeVRWWFFLVnlwWGFiVTFXZ2Y2WXdISHFncE9ES1RqUlo2TG9kekhrYlBXaG1fWnNCYXR0SWx6Q2xJdE40T2FMWDZXVjFmcEJfd2ZlV2xpaTNrVC1sQmROSVN6LXQ2NTVkT2ZQRlF1bTVlLW5WQWlCV3pFUEJsWTjSAX9BVV95cUxOMmJzeUhKcU1LX0RMcGg1Sy1QTE5jMVl1STFVcVB4aER4cm41NVhJMFVqRXN1a0J2SnNKY1hzTFI5TGNDUU9XM2pXUzRBZFczWnljWWJjZndzR0hJZmI1SmZ4TWt0N2k4RHJ0Y3pjcXllTlFiWW1VUGdKbEU3Vkdv?oc=5",
-        "date": "2026-02-17"
       },
       {
         "title": "EU says ready to sign defense and security pact with India",
@@ -190,36 +184,30 @@ const ARTICLES = {
         "date": "2026-02-12"
       },
       {
+        "title": "India's BEL, France's Safran to produce air-to-ground weapons in India",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWVFoSFdOcGYwNlhOSG9ESmFjTXVQMGlSdXVjeDBaZWRWeXctOWdCV196STN2b3ZHOGQ5SEgxeXZaWFZzcU84MWc4LTJlTVo2emk1ekNKNm9iSU9XM3VNemplcFRyZnBnbTFEck4zLVdsYmFkMUt4TzhjX0puc00zNUVjdkFTMmlNSGxmS0pEZjVUNE9jcDRVNHpDcmc2Mm5vY2JHbFl2R3ItNTVtYmc?oc=5",
+        "date": "2025-11-24"
+      },
+      {
         "title": "France–India 2026 Mumbai Summit & $40B Defense Deal",
         "source": "Beyond the Horizon ISSG",
         "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1NZFZYc0tiX3l0R2NpbmVGV1NOS2JnOEs1N3doemdXR1BWYUhnbnhUcTVXNkd6OHh3SDdYY3BHSnNjcU5NSHA3UVdVYlhLb0I2YkE?oc=5",
         "date": "2026-02-18"
       },
       {
-        "title": "India's BEL, France's Safran to produce air-to-ground weapons in India",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWVFoSFdOcGYwNlhOSG9ESmFjTXVQMGlSdXVjeDBaZWRWeXctOWdCV196STN2b3ZHOGQ5SEgxeXZaWFZzcU84MWc4LTJlTVo2emk1ekNKNm9iSU9XM3VNemplcFRyZnBnbTFEck4zLVdsYmFkMUt4TzhjX0puc00zNUVjdkFTMmlNSGxmS0pEZjVUNE9jcDRVNHpDcmc2Mm5vY2JHbFl2R3ItNTVtYmc?oc=5",
-        "date": "2025-11-24"
+        "title": "EU, India set for historic trade deal amid US tariffs",
+        "source": "DW.com",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMnRTUkJ2SlRiNl9veVRvUjhnR0phUTgwQVBpS2tDZnNwWU51TVlZT0Q2MVZjWU9iQ1hzajFJSGQzWVVYZ3c5djlRblotNWZkUUZnNVBqMmFtOXBYcmd1S25GVHBaVGRGSE9IOUpOU2ZFcGMwN0NSbnhNczZfc2RzT19ySHRCdm5RQ2trWEpB0gGOAUFVX3lxTE8wa1FDMkhRZFhaS3hfZEF1bTQ5YWdxOUNFdExPdmd6TFpCel9JUlZuaUFhTW1fcVZRa0hXLUxDQ0RFTzhYUU1PZnZlaU1hMkYyRHpvVkdKWkpqWnRWbTJtbjJkbGZtNVRhb3JIeXBzZzFWUjRwSlpQOVhpaU9lZFBQaGVIbnlueUNHQ0NtSGc?oc=5",
+        "date": "2026-01-25"
       }
     ],
     "france→egypt": [
-      {
-        "title": "Morocco overtakes Algeria and Egypt as Africa’s largest arms buyer after major US and Israel weapons deals",
-        "source": "Business Insider Africa",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSE1Oc2YwRFFiSXZ6UVVQeE5CT0x0UGxBMG9zTDVNRU5VVzZHcHQ3cUhjWlZXRUdRbGJYSVlRcGt6UzQ0Y1hodWRhdjZFemZsQUFnWkRpXzktbzdJZWlsWktlNk02aGNONjBsZUV1SVcwaFNhWDNKZXdGMFkxbjN0YUllQzFsNDJ6V2R1c2dtYmE5ckowMnFRN2EwSnc3N2UwbXRISGNpYnVkREZ0QW5nT1V3My1iSXFicVF1OVhINXRzRWNyVFdjUDRYV0hnX1ZraHN6Qg?oc=5",
-        "date": "2026-03-10"
-      },
       {
         "title": "How French arms were used to crush dissent in Egypt",
         "source": "Amnesty International",
         "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNRktXYzl2SlE3T0p0TGlMQ3J1WXgyTEN3d1RMRVpKRjNIWmFBVm9iSFp2MWtLMXgtZGRubWtzaFFhVHo5STh3RTZFSWhPYzBsanlRZkZkTWFCMHFLMGN5ek93djNqVjR6ZURPWm1leWNCNjdHNmdtRHMxRVh6RnBxbUpDOE9yV2puOGpjc2QxTHNHUjhjOGJjQUQzNTNZRW5WaHhnQ1llM3dGUEJYMmJyWHhKNUNVZWpsdFJIUURVR1VILTZ4MVJ4bzM4Qnd4aDRSdmh1ZHloRjN3QVZHSHFXelhOTQ?oc=5",
         "date": "2018-10-16"
-      },
-      {
-        "title": "Sisi Intensifies Arms Imports to Secure External Support for His Policies",
-        "source": "Arab Center Washington DC",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWWgwbDBCcTRHT0pCQ1dBRXgwQi1NdjMtR2taejQ5US16VkxGMTVpYmNFNlBBQ0FkX3NOT3YxZ2JpVElkNktpWUZqdW0xRmNIWk44Z0x5YnRYWm9zcGJrQi16VUIyS0Q0dkJmNlBDRlFiR2YtdC1rYm9iNmpWYUthLXNRMjF3bmxCc2VHaUMxZG9jeFpKNkdVMTM0M0RyZW9pMlFjMExYQXRzZVFW?oc=5",
-        "date": "2022-02-28"
       },
       {
         "title": "In a first, Egypt locally manufactures Rafale Fighter Jet parts",
@@ -250,6 +238,18 @@ const ARTICLES = {
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYmp4eU9PTEVZLUQ3Y2w3TjdIdFZCc3FPcUxTSWVmRUhwcFYxNUtVVjNUX1Y1MVVuelJNQkFwdS15anQtaWk0ZzdYOHQyell4UEk5U0tZd29hYXM5V0JYbGRXTFZXZTBLYUlrcGh2LWtTTzBTWjhabXhQOUFJMlpzdW5XdkN4bDREODJTaGE0aHg5TEVuWmNSOGtnZDE4c2R4U2hxbmlMbEdXUUtBQnhWeUNEeXJSdUU?oc=5",
         "date": "2021-05-03"
+      },
+      {
+        "title": "TIMEP Brief: European Arms Sales to Egypt",
+        "source": "The Tahrir Institute for Middle East Policy -",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CTGE2Z3dNc3ZNNWpWQ1JiT3g0eW9sV296ZVM5MXhWckgzODVLMDJIaGd6M0g5NDRSWnQ4V1lROHBWekhWOGJWYURnSXpIMGQxdVE0SXhVVVFvVlp5Z0FCUWNfUHNKUzkyUkE?oc=5",
+        "date": "2018-10-29"
+      },
+      {
+        "title": "Egypt Pushes for Local Production in High-Stakes Barracuda Submarine Talks with France",
+        "source": "Israel Defense",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE80bHMwdk1DcFVEQkFBZzNuODcwdXV1NWl1bHpmOC1LTHl5QVhNWC1GUlNLYlZwaTlfWVZ5ZVc4aU1HcXFwcWlCakdYazRmVGdhZjd1T3BFdDI?oc=5",
+        "date": "2026-01-06"
       }
     ],
     "france→greece": [
@@ -296,10 +296,10 @@ const ARTICLES = {
         "date": "2026-01-29"
       },
       {
-        "title": "France topped EU arms sales to Israel while backing mini-sanctions",
-        "source": "EUobserver",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRkdodk4tTkowZWZpZGl5RE9LWGxFaE1JYmJMajAzcW43TWlQd0l1NmpqNF9iQTU4bjhHeThleVRTR2F2aVdRaTUyN1VWM1VIY1Y1QzFzeGg4Y0FQY1NUWEl5bDBzYlRTc3J1cFZhSmgtZFdtcTh0eXhSMmlrZTBQTXZ6bWdscWJVUlFNU0ZPcWFkSl96dzkweEVzbDVwdw?oc=5",
-        "date": "2026-04-29"
+        "title": "France Offers Greece Rafale Jets Deal to Secure Mirage 2000 Transfer to Ukraine",
+        "source": "UNITED24 Media",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNnYyZlpYd3c0eXlGQkJmaEEtR0NlaXNLRGdoMDVIclV1S2tlMl9acVB3alVORnFQU19FMWJwWnRMZnN6SzA3US1zQnc4ZHA4NzdEYkFUeW9iQ0k5Q2RiSl90eS1mZnlTSFBjSktOWnFoc2ZtMEl2cjdLd1VXVnp4ZllaeUdOb1NhSnJPZWVRaVF3aTBXb2xTMW9QNnZMTXlDckQyMVh5b3YxWmxHRERpUUcxSE5JZVg2S3NsTDFIOVI?oc=5",
+        "date": "2026-04-10"
       }
     ],
     "russia→india": [
@@ -316,40 +316,40 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "Arms Without Leverage: Rethinking US Security Assistance to South Asia",
-        "source": "Center for International Policy",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA3ZTZrdFJyM0gxTWNOMzk4S3ZVc0tZLVpOZzdiQl9GMjhyUTc4UkVQeGk5Z1RQbzJsdE55d1d2MnR3aTRjY2VUbXlLWWNWTkx5QzhoM1hDdDZ2QUttR0pFS1ZTUGFFVkpydEUyZXpUTzJEQUFlZDVB?oc=5",
-        "date": "2026-05-19"
-      },
-      {
         "title": "Russia Sends India Fourth S-400 Squadron After Three Year Delay on Defense Deal",
         "source": "UNITED24 Media",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNa1VmN3JJUHBWaGo5SmR0dFB6Vnh5cl9qZjlqV2d2TU53Zkw4THlpeUVoVXhmMEpVVG9UTnN2SkFnTC01M3ZPTkNvMkx2VjFQT1BiZ1NSZHo2SDV6bHA3ckJzMlBFcWg2TmRGWUplTTB3R2hyZ25JODFOV0t6QWx0cDdBWVRTdXVDekh1ZFZvekNkZndUNnFUdF9ORnlqbmZ4Q3hxblpjeFJwWmRFQ18yMHVLaC1hNVRs?oc=5",
         "date": "2026-06-05"
       },
       {
-        "title": "Could Russian missiles help India counter its arch-rival’s Chinese weapons?",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcVRyNDFQaUZYeGJtb2FmZmlzTVUwZ3EwUUt4VTc2VG9SdlkxM0YwUk9kUlBPdC1QSmZ1OHVQYWJ6dU8yZ2dSNjFILTVvSWFqbzZNNjBBU1p0S1NpVWlLRVpYRy10Rk9fSHJuOVVGaExDVWxIQWJ4VVBtcmNxWDdjZnlYR1Q4YkNqTDhya0VNei0waW9pUFpNcVJzQkt5UzFLeXUzS0JvZzZIVGNZMDhCZU9udnlVTFUwWktjYU13SnZJcDE3c1VGN3Vn0gHKAUFVX3lxTE4yNmpOcDZFc0N5S05kY0JOTE5Gb0JIdmhrT0R4RXR3dXl3V3BGaEVUVVd1dm5mVVdhME5oQnNYN0JxOVUxMXZ0dHJsdHgwQVN1RmNOZFRVNGNoX3k2QmVtMkJNS1lxOUFNQjFaVGY1cUt2WkFHaUc0WUxhY1RCRkk4Ml80UEpoZ01LWUFrVHRZaDZfMEFqTUNGRnhKa09vXzEydEU2Umtkd3A5alU0LS13QVpYSlB1aUIyS2FsQl9lbnlDV1FMMU9PS3c?oc=5",
-        "date": "2026-04-26"
+        "title": "Russia and India in Talks for Additional S-400 Missile System Deliveries",
+        "source": "The Moscow Times",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQV2VLVEMxWkI3Q3hoelVGYko0eGV1bTBWV3Fuc1NYSzBhODlQbjBNZ2hqaG5WMGpoelpZZDdTWm02NU9JMVVEejdsZm9WRUUxQ0dMenZWMTJISnQtb05XNHBDMkdweHNyY3I5ajhULVR5aHd2WE5iQThaZWthbDh3RnpHVEg1aUg4aTZqeWx1aWtvYXBrMmR0WE1iaklYWjltQ0RTeTA5M09CRFpXdVpmY3hnMnE2NVd0ckVvZTNR?oc=5",
+        "date": "2026-05-26"
       },
       {
-        "title": "Putin offers Su-57 to India as New Delhi faces stealth fighter gap",
-        "source": "Defense News",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMEVEZzl4NVhaVFhoWUZ5RFZhQnc3YURXRDlmb0NqQ0JITmZUd0FyRHMtd1hNaEZxS0x3UWZxUkFSUFBlVk1sWmlBN2V0SGVtVWJLVDNna1RxcXgyV2FDZmFqZU1GS2I3QnE0WGl3dlcxNUt1SmNLTW93QUxYYkttcHZEWi1WOUhrTFZSME44NE42dXN3cVloaWRlRzdFRTcwLXlzRnVlX2FZU2JjZUoxWnhlWVdXTDY4YlBUaGJlclMxZWFI?oc=5",
-        "date": "2026-06-09"
+        "title": "India approves $25B arms deal including more Russian S-400 systems",
+        "source": "The New Voice of Ukraine",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPNnpDeU5tRTNTT3VYcDFUd3RhYnlNenNKMHBEMmFTRHNYdlNCWUJoX0RTRzBKc19ad24yVEY5OThQRHhNbXQ3T0diRWhXNlZIVHhSWW9JX2pUdlZ0cVVrbjBvM3RwVTJkZEZxajJ5Mk5XbkZHajR3bDFCT3VYbUhZWjU3MlJ4dnN2cDNkTHNvVF9taTRZcWxWTnA3OFJFWnR0aW1ERl81QUhWdXZTQUZwQl9fS1V4LVZ2S2VjZ3N2YVMzWnlsdHJHdDBCUdIBxwFBVV95cUxPUDZtMzNOWjhWdEFad1VGWkhKb2tWbVdDQ2hseHRyM0FRQkJSVmhLNTVkd3ZlaFh5akx4WEh1RW9QLTVJQmFQSEs1eVFGaEtvY3dHenBDeFBCbVVfTXhMcjM4a1l4dk5DdFY1UVAxM1ZyTU5nenZDYjdPMjdTU1UyMjVKMm0zREE2T0RwTy1Mc3VqVlUzeTMtUUUyX0VmX0NkSWhhTzRPYzJaT05Pck4wdHBjRVZnUEhCMVZaSkUyVjEzeWpuZ1RB?oc=5",
+        "date": "2026-03-28"
       },
       {
-        "title": "Why India wants German submarines",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTkx4MUlCU3JsQy1Gb0xLVXUwRllFeXBHeFpYR2JSX2d4bV9QUllKNEJua1oxSVRJck9qdF83WHJRYmZieXhHMkRpMHlXN3Q3TUxldVNjNXRjcVFIdFFWWWpxd0lRWi1vd281NzFvaTlNdmY2cHowYmxnWWdyMjB6bGJlWlA3b1RUNmpxVzJUSE1xSHZ2bm9LLVdNeTlaVGM4Q1ZCcWRmT1EwcWNTS2lta09FVdIBswFBVV95cUxNV0o1WHdUOURhRDlsRUFRR0lhaHA1b2tpcE5ock0waWo1Zkt3SDZ0N3NQaXB4aHNRXzFjM2VianZFZGNYNnAtR09VWEt1VFZEZWdBN3Y1S0dUSzRfelZKZzZObGRLWTJ2T3Z0U25GNGk4TmFVTERhc1Q2QnF5ZFJyQUt6Uzd4R180VkxPSmNsQjl2QnlLaFNlM1JKa09KNnNCOGxfQ08zSG5uUGczcGRabkxTaw?oc=5",
-        "date": "2026-06-13"
+        "title": "India’s 5G Fighter Aircraft Dilemma",
+        "source": "The Diplomat – Asia-Pacific",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Fdk4yTzRtanJsWThGUnVPZGhMTHBYWkxmTElESHBRWmFQb2RBVFBIYzJwcWttVjY0WWdKYThGcVdQN2N5ZWo3UG9uQ0M1blhMQ1hiNHdYaUZVOFlFVVVjYXhkaWVFRnlRaE1TdGtxQVRtYVFiaUE?oc=5",
+        "date": "2026-06-18"
       },
       {
-        "title": "Russian troops, warships in India soon? Why their new military pact matters",
-        "source": "Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZTJaNU5CR2RZOVNUb29YaUZZSGdKV0JIWWpxYkdGUEVBYi00d1V5dWtlcXM1QzBnM3pHcVJJNW05aEJPQnBaWWc4WHBCSWxldUdBcUpvdkl1S0NiVnZUaEpNS19jSjFNSUs0OE9vbFViN2h2UUN3RmR3NUo2RVhGWmZVdGR5a3Fvblp3MDY1eTdKZ1Y1aVh1dGRTSHp1RE8wR0ZpN3RZOG5ZLVdzanJFVWc5S2FNSXlyUGfSAb8BQVVfeXFMTjVYdEp1MlNfdm50T1c1Y2JjWDZ6WEdLRnJhUTBsOC1mU2g5aVI3M2tVazRtLTl1Yy1CV0hzVm9ERTh6MHRmV244dzZsUDE0THA1VzFXeTczUWc1SUk4aDNlcFNBaFlsbklvdkFjZHF0OGxVb3hXNFY3X0xkVHFqVHlqZ2FUQTU1ZGs0eGh4LWwtVmNDaVlYclIyTEV2Z2w0WnZicTRObnotTEJ0dlFETm5Dal9WZjE1RW9BcmRCQUU?oc=5",
-        "date": "2026-04-24"
+        "title": "russia’s $47M Deal with India for 2S6 Tunguska Systems Allegedly Covers Spare Parts Only",
+        "source": "Defense Express",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbkZnZzA2aHM3bF9Wb0VlMFdwVnlFY3ZnRE5BM054M0RtNDQwTmZqcXowSm44MXY4ZFJVdGN6TnNOcHlxd25NWUlqTjRWSk1rZ2RROEh4QVYxcHQ5cUUyUWQyWlZHYktXVGJQNDgxZ0VKZlRHNGxaVmpHZ0x3TzJzYlloZFEyQnc0NHhySjhUTVlaQWdVdW9yTUJZUlRwMGw5YkwzWHVtMU83bERIejhROFdyZEFsYktLM1VQdDU3MmxZZ2FoVVhj?oc=5",
+        "date": "2026-03-31"
+      },
+      {
+        "title": "India Could Actually Make Russia’s Su-57 Felon Dangerous",
+        "source": "Medium",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaXRqNE9rOFVqZUpmblRRelJKVnBoUzE3NkZ1SVNOU0txQk1sT2VvWWw1ZG1XRkdNTnpCS1FuY1B3VzNvVEJIRk11azlNOGFfV2FtMXk5RFQya282UEk1N1dLV2trWmp4MEVVYl81TlNDZDBoZFp3QklxTXVmMHdKYzV2UVBYWVpZT0d3WjNhY184enBZUzdfbk54WGo3ZVVJ?oc=5",
+        "date": "2026-03-05"
       }
     ],
     "russia→china": [
@@ -360,15 +360,15 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
-        "title": "Russia and China discussed plans to destroy Starlink satellites and develop a joint air defense system, The Insider reports",
-        "source": "Meduza",
-        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQRFNhU3ZsMjlDVGsyOXhIZjBGSlZvUnF1MmNDNVBJdFBuTDl2Uzk0cEhPZEZBR3FoMFpIaW5rcHctajgzTzhDNlI2Mk9wSDMweUg5X1BnQ1ZBOHkxVjJ6RTlRcE4wTDRYVDFQdWtMdzVFNmRTclpfQWxiTFpvQUlDaUwzT2h3WWNON3Iza0wwdUh2VUZSUWdQS29lVmlPMVU0eEZiQTVBVjVJWWUxTTR2RGVDUC1pVjJIOW9WLWQwVEdIS3ljNXdjNi1JdkdfamJ1MGFvTzhUd1QtQ2RvRWY3QXFwcWpmWjBYWVk3UFo1UjPSAfYBQVVfeXFMTlRMN2JvZlpHcFBlei1wRTVTdlc1VHdRVFMwMjl2LTV3N1ZIUTlfUm5nUUlHNHgtbEptelJRQy1GSGF0ZEMxaWVLcVJiY19RbURoTXJhTVpTQnNGWFhBQ3FtbUdlTGszVG5famtDaGxkY2pla1BfQXVTa1NkMVNaTVhCSHQxdk9fNUlhM05laHp6bXo0ODdwQkFfZ2E5UWdjdjJiMVdXaWw3a0hTMzdmcnFpd2Z6blhfY2xLa2JnS1IwalZPdVZ1NTU4THhXRk1tRUNEd0RVMXZ0MXItczYtd2lPYndCRkdPSFBQTjZHOUpkZWc2dGpB?oc=5",
+        "title": "DER SPIEGEL Investigation: Deep Military Co-op between Russia and China",
+        "source": "DER SPIEGEL - The German View",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA5d1ptazU5LUxCSVBaRkRObDB1OVJITXpjOU9TVERza25nM2lxazFwVUpYazA3UDJPcmhPcGtmVFNJUkhSMVp6VTJYcjZqemg4Zm4tX2JZZjVKMFBXVVBkcEg5MnNNb2x3MHRPQ2c2SzNjRWVmcV9lbHRueUxxQQ?oc=5",
         "date": "2026-07-09"
       },
       {
-        "title": "(S+) The New Axis of Evil: DER SPIEGEL Investigation Reveals Deep Military Cooperation between Russia and China",
-        "source": "Spiegel",
-        "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPZmVidXFBU0VKSHVZZDhzOHE4LUhhZ0F4ZElhcHpFR2QyVDZMc0ZxdEg1SjU3ZFB2RTR0QnNjb3BYdWNmYUZLU2FFa1VTMzZjaTRVUm82ZHlXQU5vOUtZNVRYZWpfdE14dkNjX1hDQnQ1OTk5QUlWaEt6Q3pUQnZsT1d5dXJWUVlDbDM1UVA3elBkVmdsMlhHVkNYYnUzYTZHWlh6ajBYOU1CU0pUUkZ0MWpXbHo5WldldE4ycG11Y3ZMbi1FeUc2Q1FzcGN0VjZXRjh6S0doVXJrUlo0allmYnhzY09haFhOeHFZS1U2Wk15eW5uMjg1UWxoeTRjdWZ3amZTaF9WTS1PUzY5bnUtUC1nSXR2Zw?oc=5",
+        "title": "Russia and China discussed plans to destroy Starlink satellites and develop a joint air defense system, The Insider reports",
+        "source": "Meduza",
+        "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQRFNhU3ZsMjlDVGsyOXhIZjBGSlZvUnF1MmNDNVBJdFBuTDl2Uzk0cEhPZEZBR3FoMFpIaW5rcHctajgzTzhDNlI2Mk9wSDMweUg5X1BnQ1ZBOHkxVjJ6RTlRcE4wTDRYVDFQdWtMdzVFNmRTclpfQWxiTFpvQUlDaUwzT2h3WWNON3Iza0wwdUh2VUZSUWdQS29lVmlPMVU0eEZiQTVBVjVJWWUxTTR2RGVDUC1pVjJIOW9WLWQwVEdIS3ljNXdjNi1JdkdfamJ1MGFvTzhUd1QtQ2RvRWY3QXFwcWpmWjBYWVk3UFo1UjPSAfYBQVVfeXFMTlRMN2JvZlpHcFBlei1wRTVTdlc1VHdRVFMwMjl2LTV3N1ZIUTlfUm5nUUlHNHgtbEptelJRQy1GSGF0ZEMxaWVLcVJiY19RbURoTXJhTVpTQnNGWFhBQ3FtbUdlTGszVG5famtDaGxkY2pla1BfQXVTa1NkMVNaTVhCSHQxdk9fNUlhM05laHp6bXo0ODdwQkFfZ2E5UWdjdjJiMVdXaWw3a0hTMzdmcnFpd2Z6blhfY2xLa2JnS1IwalZPdVZ1NTU4THhXRk1tRUNEd0RVMXZ0MXItczYtd2lPYndCRkdPSFBQTjZHOUpkZWc2dGpB?oc=5",
         "date": "2026-07-09"
       },
       {
@@ -384,25 +384,31 @@ const ARTICLES = {
         "date": "2026-06-10"
       },
       {
-        "title": "BrahMos Advances West: The UAE, Russia, and the Next Phase of India’s Defense Export",
-        "source": "The Diplomat – Asia-Pacific",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNck1uNV9Td25qdnJodFpvVng3ZkdHSXZ2bUY3c1hlTWhyM1JRcUdIX3gyNVIzQTNfeGpWSEU0bFRnd2Jma3RtV29QVWxLakVWNUVzUU81ZDlDYkZZa1RFajB5VmMzeUVQUlJ1Sldaa0t6MnQ4MkFDQldJLVUzTXlFa2pHbGRBYUlCckpxaDdhYWxzaTlPN29HSG4tckloTE10SGoycDJpWW9wdDZlVmpvanhTNA?oc=5",
-        "date": "2026-07-01"
-      },
-      {
-        "title": "Trump weighs Taiwan arms package after summit aimed at steadying US-China ties",
-        "source": "PBS",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQS1veE1RaFVtNE1UeTF1ekxQbllBYkJ5QWxPZnJqb0N2b3V2bkRXYzE1WUgtWE9EQXpXdlQyX2hJTVhianU2SmZseUJ2Mmw4cmZhZjMweF9OcUJfSF9ROVptSm4zQ0JGTDJ6LUpNVDJpVk5WTGJsMWdUNl9Hd0xVYkladjd1YnFYVXRlN2lkcGdZR1gwMHR0SVBpUHFWZmlIeHpKQmlPSzBHRWppeXdNaVdvZ9IBuAFBVV95cUxPN0FCd25yTEU2bnR6RkI0Unp0eFU4dWJmMC1rS1NoUmFzMS11N0oxV1o3UjU5dmxZOTVhUGJIUWt0LTdFc1pOdFhWOGRnZzducHViVnpzbVNONEpPM3EyYmVvSGpnY0VzbV9GanJSbkJlMWRHY1g3bWEyUVRlOU82Uy0xY1lGenZMTG5Wc0h4UEhfYnloTDVjcDllNTBCdlpfQnRIQ0tiZkcxaU5Ud01oQWhSdmlUTGct?oc=5",
-        "date": "2026-05-15"
+        "title": "From drones to rocket fuel, China and Russia are helping Iran through supply chains",
+        "source": "Atlantic Council",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRF9Qd2phXzhYYUQ0WldmeXppTEZTSHB6bWF4WEV6NHVuTUZRdWZtcVk3TkhFcEkwcmdwX3NZbWhvbnh2R2k0OER0VU14V1BBSGN4WlBiNmpIWHZLT0xxVWt4aDlTamg0QmlnbDJTX0NqdnlTODBWTUJEZ0xjT0VqNS1tQXpzUUFqNjFjSXRIalJud1pxSG5zTF8tbndwcTBSMnp0UnduU3dtYmlhSTNwS1J6MlNIdnRjaVRPRWVIRFdJMTRx?oc=5",
+        "date": "2026-03-25"
       },
       {
         "title": "Chinese Firms Plot Secret Arms Sales to Iran, U.S. Officials Say",
         "source": "The New York Times",
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNNHJ3dHFtSGRlb2RUT1RGenJXbVBySWV4MFpsOVhOcXBvSXRjLTRwUnU4elB6WEJBcXpzWmVTbU9HRHZvb21SNVk1TVQxTWZuUjNkYXNlWXBQYzVldHYzOWFZN3QtV0Y2SGhOSGNWY3ZpblRncXpFLUNoaGJLczQtQnRxVXRiQQ?oc=5",
         "date": "2026-05-13"
+      },
+      {
+        "title": "China’s tech emerges as U.S. battlefield rival",
+        "source": "GIS Reports",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5BY0Y2YnVMSllqSjh3SUJCalpvUFNJT1VMemEtLUtKU2FtVmMtaDdsV3lmSzJYaTlhUVdGTGNQNDZ1MEllbm9QeEk3U2RLSzVtUDgwRTVvaWFlYVo2Tk1DNUZqRlAxM19IRU5B?oc=5",
+        "date": "2026-05-18"
       }
     ],
     "russia→belarus": [
+      {
+        "title": "Belarus Highlights Contribution to Russia’s Defense Industrial Base",
+        "source": "Foundation for Defense of Democracies",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQb3JzMkt0NTkwMEdwcmdIekx5S0tpcENhWENJTE50Z3MxZ0Y3d3l3YkRFOGE3Y0V4VEY0M3huVU0zVmgzUkhJMDM4Q2JSVnF0Z2VUMTBTYkc4Tkc4VGtNOE5GQWFYbDNmS2Y3S3U2WmVkOGFIVWZvazFxS2ZtelUwY1ZTdlpnV1dfd3NkSF9EZTk3Zm9ublFJZUx5LTZsaHZ4NkxjQjROXy1NZms?oc=5",
+        "date": "2026-07-10"
+      },
       {
         "title": "Belarus makes millions from weapons sales to Russia: report",
         "source": "TVP World",
@@ -444,12 +450,6 @@ const ARTICLES = {
         "source": "UNITED24 Media",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZGVEbF9XVDJLajZtcWU3eFViclpGaC1ENHFHNi0zSXFmdjhaNmFRRWFvS2wydHJOdU5vZFJDLTFjOXU5U3JpMDlDdy15djZzQk9vWmgwdy0yOVEwZFYwRjh0T0xlMnNSNXMzbUlqcDVKZFZHN2Z6bFF4VjdVdnNqeHlWckVnU2dEbzE1MFoyYmdRWVlLSjRFMUpGSDlibVNVbExpQUZZR2JOUTdPVUZMMWtWUW1TNFdKaldUU3ZXaWpBVi1B?oc=5",
         "date": "2026-04-06"
-      },
-      {
-        "title": "EU wants Russia to hold free elections and withdraw troops from Belarus, Georgia, Armenia, and Transnistria— as part of a Ukraine peace deal, leaked paper shows",
-        "source": "Euromaidan Press",
-        "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQOE16ZUY1UnJZTFA4NGhpV09LeUVQVXRpdGNMbG81NG1DTy1fWS1YaFd1SUl5YmhIX0hjMU9UeFd1TjJZbkVuSGFITnZ3dWZGTURxM1lBbjdmMGx3SUhhMThsY0s3RExjdzE1cGs5X2ZMWDBUVk9wb3NpTHpmQ0oxU1piYnN4VDZCaThaaHYxaWlOc1lqMmtBVVljSU1IdEV0b1dpdElleEluNUVoRVpPdFVzZ0ItWV9TVHhaR2VQS0JrWndRN0tHUHdWaGNlSnFVbF9vM2wyTHdON0c2UnpsVzRub3ZFZDdZSDM1T3BHVnBDcnEyekkweFJRcjNhdkxVVFFaaEZMSVVscElaankxZ3VKYVpIdHVqd3VRb3k3d2U?oc=5",
-        "date": "2026-02-19"
       }
     ],
     "germany→ukraine": [
@@ -490,16 +490,16 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
-        "title": "Ukraine Is Preparing a Drone Deal with Germany",
-        "source": "UA.NEWS",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE84ZS1wdmJGZEtYalR1UjF6bkh2dmMwS0ZvZ3lqVk1la2tUYnpnNGprLXFjTEViNWJqOWlGLWotQkp1S2lSY1E3eExpcE5zTDNOMS1XcDY0V1JLN3U1V01xSDhPRHJUbVBYNGd5b2RJbENlRnVsU1Eybkd3?oc=5",
-        "date": "2026-07-07"
-      },
-      {
         "title": "Germany turns to Ukrainian and Israeli start-ups for an alternative to US Tomahawk missiles",
         "source": "Business Insider",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTzFFQ0V1bDJVQVRBY29JVEpKeVhwdldwNmZDdVRYRlh0SVBWcUhPVTN3SFQ5TjVYX1BWVFhRWl9QMHdOMTRhcU0tTXJCVWtlVUctQ0EtWnplZVo4TUZ2SWxlWHdLc1AzXzBqYVJBRmlZOVRMOEZRTXlVcEU0TVprYmpKVUdVcFNWZlNiS3NVckt5N0Z6dkJKcWZGbExxSy1UWk9ZZ3NMWVhDci1v?oc=5",
         "date": "2026-06-19"
+      },
+      {
+        "title": "Ukraine, Germany to jointly develop anti-ballistic air defense system amid increased attacks",
+        "source": "Euromaidan Press",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcmlFSi0yTXVIT3RhdVMwdUJPR1dla29hRDNKY0RpT3ZIWmJxdF8yenVjR0ozTHhLU08teDJnREMxVmhjcDJyLUJpdmVkMVhxWEY2elY4aWM5aDVlbFdiVTZBWFF0TnJKWGVWWDhKUGtsczUxcWtlMzBPRHl3X1R3UkJXTV9nQjZsZ19GM0sySEpmQnhNQVVNQkt2Rkp3bTJKckc3enpldXhlTWhm?oc=5",
+        "date": "2026-06-18"
       }
     ],
     "germany→egypt": [
@@ -514,12 +514,6 @@ const ARTICLES = {
         "source": "Defense Security Monitor",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSUNKcnhEdnJxNy03WWtYaTZKWW5POVVvc0FUTXJLQUlTZGJXTGtJZF9aYmwxU1lycW5Yb1RHN241Um9mRFRBZ1E4STNWQk4wS3RUMlhqbEhiUmYwUzFZcno4M3BnSXFLbEg4UGN6b0E5YU5VS2hLTkstWTk5UHF5VVcweHM4cDRQLU5lQ2hseTUxZkdPU1ZoYUVlN2l1WVJLQnN0OTVR?oc=5",
         "date": "2025-12-18"
-      },
-      {
-        "title": "Germany’s Merz warns of potential escalation as US, Iran prepare for talks",
-        "source": "Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeG5VWGphYXVZdnRYNkgwdjNETWh5QUgzU1g3Ymdzb2NOUG9nb1BwbEltY1psYl8zMlk5N19PNlF4VEJaLS1Pd0k4VlFHd2Vhd0RiZHVZUGhtdG5UNHp2MnQ2Vks3cEdrbWFaZlktMzhZVzRyNjhISUJlNENmT0tXSldpYlBPZmxONXJ5OFl2dHc3WUtsZUFzeEFISHlXR3hLSmlrNUwxR3hyQl9xZ1NKYzRR0gG3AUFVX3lxTE12bnBtdDZiM1VYLWNXVUR4R3NRSFllTC1jSGRfX1hDNHA0ZENMTlh1N2w5X2xNTHo0TTBfZjhoTXBfQTd5WGM3Tno4Z2VKSktITF9wR01hVm1SODlNeUc0d2ZuMzhEcThYU3dXYjVNUmVucTlHNC1GQU9RMC00LVlSYzZld0tzdEFkZ00tbU1qTUVtbkZtcjR2aGlJS25WYmJEdGpBZWhQNXFpWDN1dHotNllBdFJUZw?oc=5",
-        "date": "2026-02-05"
       },
       {
         "title": "Probe: Netanyahu gov't approval of German submarine sale to Egypt risked Israel's security",
@@ -550,6 +544,12 @@ const ARTICLES = {
         "source": "Internationale Politik Quarterly",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVC14cTdUT00wSkR6NF9WNGlPR3NPSk5STkJCbnRPLW1jYWJNbWh1N0V3dHhtc0VDZ28wUmFUd0hiSkd1X05JVUlqSV9raXlhN1JKcVY5eEpBNTBzZHJBVk03X1IzM3E3MzNfWTZ0WkxtVnRHcGNhNGl1RGQ3dGdqa1V0MmNJQkVZ?oc=5",
         "date": "2022-01-12"
+      },
+      {
+        "title": "Israel signs new billion-dollar deals: gas to Egypt and arms to Germany",
+        "source": "Il Sole 24 ORE",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUXBIdzl4aFJxRkVsX0FhMno4QmdTajhQclJmaS1rWkVRYllZOXp0cm5XdG5Oc25NY1hleEowVFBVeGIzUEVueGpGZUpXTDJaRVdYUnNTelVDeHVpNk8yZ3ZtZWI2X2cxSU1LYWlPUWt2bV9iWlRpX2FvOHpoM2xLRU16OHQtZ0VFR1NSdnZQTHdPUUpOTFFzeG54V1psU0J5QkJSUE9MSVF4UlU?oc=5",
+        "date": "2025-12-18"
       }
     ],
     "germany→israel": [
@@ -560,16 +560,10 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
-        "title": "Volkswagen’s planned defense deal with Israel blocked by Qatari investors",
-        "source": "Middle East Monitor",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPODhiYU9qTHFPRkJMd21BSmV3SEhFclFCOGl6V0VyZ1RYcXNFOE5wWTNrMW1PMWwxWFVKbGFIUUI5aTUyRFBCNVloWTNvOXR6TF9GVERwOXIxZnR3eW5acnBfeVRQVDRMMnh2dmQ5dDBtVWlVWUh1ck1JdXpNeFFNT2kyQ0FMZkZvVHplbjNRb1BEcnNIdWtoeG5pTnItVHM2a1VrVW5oV2ZMSXc0RTV3RzEyMTRZT0xFNDJqZtIBvAFBVV95cUxPODhiYU9qTHFPRkJMd21BSmV3SEhFclFCOGl6V0VyZ1RYcXNFOE5wWTNrMW1PMWwxWFVKbGFIUUI5aTUyRFBCNVloWTNvOXR6TF9GVERwOXIxZnR3eW5acnBfeVRQVDRMMnh2dmQ5dDBtVWlVWUh1ck1JdXpNeFFNT2kyQ0FMZkZvVHplbjNRb1BEcnNIdWtoeG5pTnItVHM2a1VrVW5oV2ZMSXc0RTV3RzEyMTRZT0xFNDJqZg?oc=5",
+        "title": "Qatar Blocks Defense Joint Venture Between VW and Israeli Firm",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQzJCNzkwNXhIeFhMN1hvX0F0YlBselZBMVZEYTlBWVlRdnZUZWRnLVNMR1hQUlU0TWxkb3AxYVRvZ2YtWmZ4dVhsU1Ita2pZemJMSGFLdnVUVVJZU09mN1hyejc0YVRBbnlxOFo1UG92LUdLaUJELWNBak5IUnFza2pnV1JBbnRfbWI1YUViZnBrODFSdnhVYXJzdHBkdERYMG5RYWR2WXNMM1RzR3FpdkdjWQ?oc=5",
         "date": "2026-07-10"
-      },
-      {
-        "title": "Washington is subsidizing Israel's booming global arms trade",
-        "source": "Responsible Statecraft",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBMeE1mWWd5S0E3dnpVdXlXRmY4b2xxZjk3ZFZXTlVEUW01Y2lGdzFub0VieDFxMmJ0bEtxcldwZGlPb2RCLWplUUdYNFdIeTNxWWF6UWhHVklIS0NmQjg4LTZIZko?oc=5",
-        "date": "2026-07-01"
       },
       {
         "title": "German embrace, French cold shoulder for Israel's arms industry",
@@ -578,16 +572,22 @@ const ARTICLES = {
         "date": "2026-06-17"
       },
       {
+        "title": "Washington is subsidizing Israel's booming global arms trade",
+        "source": "Responsible Statecraft",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBMeE1mWWd5S0E3dnpVdXlXRmY4b2xxZjk3ZFZXTlVEUW01Y2lGdzFub0VieDFxMmJ0bEtxcldwZGlPb2RCLWplUUdYNFdIeTNxWWF6UWhHVklIS0NmQjg4LTZIZko?oc=5",
+        "date": "2026-07-01"
+      },
+      {
+        "title": "Volkswagen’s planned defense deal with Israel blocked by Qatari investors",
+        "source": "Middle East Monitor",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPODhiYU9qTHFPRkJMd21BSmV3SEhFclFCOGl6V0VyZ1RYcXNFOE5wWTNrMW1PMWwxWFVKbGFIUUI5aTUyRFBCNVloWTNvOXR6TF9GVERwOXIxZnR3eW5acnBfeVRQVDRMMnh2dmQ5dDBtVWlVWUh1ck1JdXpNeFFNT2kyQ0FMZkZvVHplbjNRb1BEcnNIdWtoeG5pTnItVHM2a1VrVW5oV2ZMSXc0RTV3RzEyMTRZT0xFNDJqZtIBvAFBVV95cUxPODhiYU9qTHFPRkJMd21BSmV3SEhFclFCOGl6V0VyZ1RYcXNFOE5wWTNrMW1PMWwxWFVKbGFIUUI5aTUyRFBCNVloWTNvOXR6TF9GVERwOXIxZnR3eW5acnBfeVRQVDRMMnh2dmQ5dDBtVWlVWUh1ck1JdXpNeFFNT2kyQ0FMZkZvVHplbjNRb1BEcnNIdWtoeG5pTnItVHM2a1VrVW5oV2ZMSXc0RTV3RzEyMTRZT0xFNDJqZg?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "Report: Germany has okayed $7.8m in arms exports to Israel in Iran war, below earlier deals",
         "source": "The Times of Israel",
         "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQOU1TQ2pxNzJDNXlSUjFsbTNESm45VEFtQWEwWER5VFV5c3RtYWkzUVlDSGVWMG9JbHVXaUtsRTZtYklLd0JOV2VTT1AwWlBocWpETm5yb1lLbmNVeVpBbWFwNENENS1VbUhORjc4T20xLW9rajg5bmVreTJ1TGYxcHM0NnZvYkp3UW00X0tka2pEblNhdi1PMGNVMlluLWpzNnJodmhXb1ZOdlVZUXV4aUEwWlhUeUxaQi1hOHFrd3RFcWxFeF9LdWdoTTZKY1U?oc=5",
         "date": "2026-04-16"
-      },
-      {
-        "title": "Israel’s Elbit Systems, Germany’s Diehl Defence team on SkyStriker pitch for Berlin",
-        "source": "Breaking Defense",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYVpidUNROFNpUG43djZOVVMxZzhBeGNJdVYzbml0MTFacE1WQXdWbGlvcnhVMUdVZGxnN0djTzZIYTVOQ3dBa0hKS0FENG9kaFp1dXZONkMyRUR2VG1FU3FhMUJiVXIyVjJCM0tlX3RkZVBpMmJkY0NTU2xqQm5TN3pDNDlrS3M1c09wUlM2UnIzX1JJRWdxQXpDZWx4cXVWZll3aTd1MHBtMmdON2d0RFkyRU42d0o4?oc=5",
-        "date": "2026-06-12"
       },
       {
         "title": "Germany turns to Ukrainian and Israeli start-ups for an alternative to US Tomahawk missiles",
@@ -596,10 +596,10 @@ const ARTICLES = {
         "date": "2026-06-19"
       },
       {
-        "title": "Germany and Israel sign 'historic' missile shield deal",
-        "source": "spacewar.com",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMWMyenRDWmZqam1HNEU1M05CRTl5NUs1YjRFUE5pSWFEaG80QUFpN3pBYUlISFdzUE9tNmJOa2d3cTdyZGNOcDREX1pBUERsVGNnSDVoY1pEd0M4aWJPNkttYm0wckhVMjRsblllZ1VKMXNQLXROWC0tV19LNnlzZ2ktcG8?oc=5",
-        "date": "2026-06-25"
+        "title": "Israel’s Elbit Systems, Germany’s Diehl Defence team on SkyStriker pitch for Berlin",
+        "source": "Breaking Defense",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYVpidUNROFNpUG43djZOVVMxZzhBeGNJdVYzbml0MTFacE1WQXdWbGlvcnhVMUdVZGxnN0djTzZIYTVOQ3dBa0hKS0FENG9kaFp1dXZONkMyRUR2VG1FU3FhMUJiVXIyVjJCM0tlX3RkZVBpMmJkY0NTU2xqQm5TN3pDNDlrS3M1c09wUlM2UnIzX1JJRWdxQXpDZWx4cXVWZll3aTd1MHBtMmdON2d0RFkyRU42d0o4?oc=5",
+        "date": "2026-06-12"
       }
     ],
     "china→pakistan": [
@@ -610,28 +610,16 @@ const ARTICLES = {
         "date": "2026-07-02"
       },
       {
-        "title": "China's pawn in the Middle East? How Beijing 'uses' Pakistan to sell weapons",
-        "source": "The Times of India",
-        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxObXR0aTF3ZzJHMUZFenZxYlBROE1tYThPT2dPR3BMcElZZ0h0bmQtQVlNMkppRmdVYTZUNFc0ZldYQXc4Sll4Wk5YYmlab3VGaldya01NMGNzb1hfMDJUMEprWmtKdWFOb3pCUmRkYWczRzlXMDExTlVmZmdIOU12N3Nzenl2cTF3MXJGZjk1d3BYNzNMTXQ3QjJEbWpHdXAySVBoVGdnVnVmczdla1p2ZndRa1pqWFRMQVJSak1xcGN2dnZoanlodkdjdXdCa3QteHVMUkd4Qzk0dnR3YTlBdG12d29CRjJUMDl3aNIB8gFBVV95cUxPbWdpVE1ndjJNcUNINmpwdkhDNDl6M0IxRGRKVU5FS0NpMzBaU0dSaVVjN0c1YmpOMjN0S05TT2ZDbkNLOFdyVFkzX0Z2RUdYdHBPQzZDV1NtM09nb1BNSmRUMU1oRXFhTUItZW4yZGlaN3NnV2ROZi1YdUV2TmNRLVdiaFRCQXdvOVNoM1lBclk0NHdUYmlhM21ZbEJyTXNMN1Y0UlI1cVA0RTJYT1VXVG90VFhiMF9HbGF2V2dWdXRnaXNEblhxb0NXd1g5cF9VaG5ZT3pOYVAzdDJhRWhVdkxadWtkV1RaeE5MVnJ2a3hJUQ?oc=5",
-        "date": "2026-07-04"
-      },
-      {
-        "title": "Trump taps Defence Production Act as Iran war strains weapons stockpiles",
+        "title": "Will new Saudi-Pakistan defence pact give Chinese arms risk-free exposure?",
         "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNSGhXYjdUOGpLNkZLQWpkRXpKaExKS2pPUjVHWk1id0JDakxiOFRsYkV1YXBBNFhRV1AyQnc0SnNjYkcydmhMczNwU0djWVhpWnl3c09fdUNqdHdvN0I4eGVQS1VnRl9PalhPNGl4dVpBUlFjcVI0cWpjNDZaQWhUOXFuUm5vcUZTcjMxY3BpOWx2aWNNTHk1OXVKZHBLNU1FaHI2bW9aTDRXYTNkVklZTjZQcGF6a01YUG5SS2Y4WDhscEdsYzBqSDlqb25yV3dGX2hpYlhhdmVGMlN1SFB5ZdIB4AFBVV95cUxQZmdGZExoZEF4cjhoT29ZZnVDdnFtQ0wzRGN3MWl5UkpwWXNQMDREX3JnOFZUbUlWcldBdGdsb0hYUGR3VGZ1R3NrQ05iTjE3NksyY0phRUZKWlBUU1RkY3FkZ2w4bklBQk5YMWxXZEJpWE4wOTQ3bm9nNG9OMk5qdUxaelIybk1oVFVNUFpTOGRpcjRBZ3hpY0F3MEJ6bVNMU2FhNVlRaEZjZ2hCdFR1TXNydlEwM2pPRWk3QndEZ0lrXzNsMDVBbDJpUmNXZnJiOTUydXFXY2JCbTJtNTNTcQ?oc=5",
-        "date": "2026-06-17"
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPR3dVY29FbFpfQUtYSHNyZGRybzQ2bjVNS0NqOTZzMDNodmVubDZETVFtenkxbG1KbDBmckhxREVNdzJDWklLUmlQQnBkXzJaUGp6clFQeW9VMnBQdG1GVFNuQ29DaG8wQjVLX1NFUVY4MGdlcF9WYlFaMlBja0ZFNDJGek1Oek9sYjducHNUWjM0cDJqV2daNWxUYWxpY3BnS25ZNDJLSFY0czlEM2FYVW1qOTd5VFZsSExrUmtPNDI1cGtHRkYxUkhDc3Qxd0Zkb2NxUtIB1AFBVV95cUxOTXdMcFJtSVZNVDRFVldWUVRjOFdLSmh6Tlp6d1dEaHJfT2xwVmNBQTdkblR3OVZPQlVvdENDTThLbUNybjlOOXB1V3dnV05nRHp6TUhQLTZOaXJwSDNUQ3hhenIyZVJfclNPN1RZSFQ0YWVWWTBhMFV1Q19VSWlHX3IzQzMtU0E4OTJzV1BtYUROVFZVb0M0eWdJQ1hVTlJWeWhJZ1NmVkFNSlFYa1pkRklucmhOVlpLdmJ6WFBsRkc0UTRVS05uNjlKOHBpMWNBMmVUWQ?oc=5",
+        "date": "2026-05-05"
       },
       {
         "title": "How Saudi Arabia Derailed Pakistan’s Africa Drive",
         "source": "The Diplomat – Asia-Pacific",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUEJncXNHcEl5SGZpcFNPVDNsdDYyRVFaQkNHSG43d2FLemEtNDAtdkktVjlIYUQ1TGM0V28yTDJnbGtXS3cweU5qMG1lSGxlWV82X2hFRUVObG9CaXQwb1VmMEY5dkpONlhXaldpakRBTmN0MFJvUzBZMzNZRzByRHk3RnVmcHd5?oc=5",
         "date": "2026-06-19"
-      },
-      {
-        "title": "Pakistan Gets J-20 Too? | China Confirms Quantum Radar Defense Deal EXCLUSIVE | Moazzam Fakhar Go Train (RC2JK3IXDk)",
-        "source": "Mshale",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9uWXBza1lrUGNqRm9mTVBMMUI1dHpveFhpelhBU1JOWTR6NktpanJoc2tpc3NhNGdxb01sd0RpTGxZbGxrWGNma20wSFNINEI3YTFMRzlpaDNpa0hXLWpGaw?oc=5",
-        "date": "2026-07-04"
       },
       {
         "title": "Arms Without Leverage: Rethinking US Security Assistance to South Asia",
@@ -646,10 +634,22 @@ const ARTICLES = {
         "date": "2026-06-13"
       },
       {
+        "title": "Pakistan Gets J-20 Too? | China Confirms Quantum Radar Defense Deal EXCLUSIVE | Moazzam Fakhar Go Train (RC2JK3IXDk)",
+        "source": "Mshale",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9uWXBza1lrUGNqRm9mTVBMMUI1dHpveFhpelhBU1JOWTR6NktpanJoc2tpc3NhNGdxb01sd0RpTGxZbGxrWGNma20wSFNINEI3YTFMRzlpaDNpa0hXLWpGaw?oc=5",
+        "date": "2026-07-04"
+      },
+      {
         "title": "Pakistan Signs Deal for Chinese Stealth Jets, Pressuring India’s Fifth-Gen Plans",
         "source": "The Defense Post",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBIQUoyTFN5QUJDcGN1Sjk4RVExWHQySDRwVjl0b1lJSzNwZDJxUlVSbjRsTE9FQjAwR0FpQmthbmNFQTdUbTEyWUJ5czlXMFBGYUM2aGJKN1BkVTNVd2ZDbkNKVXc4YzdBcFhMLUwySkF1RXQ1bko00gF8QVVfeXFMT1o1SVJDWDVrUnVyZVB3dVVCQWp1ajByUUgwbzNDVXBxdktSeks5UnNTajFUMXEzSGY5LVFOMm5FVl9uWUkyU0xYYzdXVkpkU3lTTU5mM3lnYzdMc3A1bmVMMkVSakxlN3E2dUwyd3lXaFU0RVNiWGJSOFllcg?oc=5",
         "date": "2026-05-11"
+      },
+      {
+        "title": "‘Iron brothers’: How China and Pakistan built an unlikely 75-year bond",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPb0R4MFdSWGlyczRKbXdobDdfYllOMW5IZU9MbFpDSmFkeDhzbzA4QU1mMnJzVHliN3NBOTZxU0Y4RlUyV0VhSWN5d19qb0JFbWdXdy1KcVZiRjc2WmdaMm9WZThXMjROdWRMNGVJcE9tckhWYzI3azFRZ0N0YWFZU0E1NVRFc0E3T25KN1lKemY5RjdOV3VQeWFveXFOQlo5QjFNZ2I3a1pmeEI3Q3BFdUVR0gG3AUFVX3lxTE1VWDJNR2l0QjVnbnNSSEk2b1NJZW5oY1c4R25IczhEOXNMRDJBM01NTXpmTXV2b1VVZ1VOMmtNcGEzd0hWUl9vRDZ0Mng4X0pyMUk5a3RtRHR2VUFHSzkwZXI3ZUsydG1MWnVmdnk1Vk5zdGhhMHJtdnl2WlpXaWtqc1JiQTgxNFpGT193TXg4aXdISzVqQzdaV1F0WVRhUnAxZjVCSm10TVJ2ZlhCOThQZDFNQk03SQ?oc=5",
+        "date": "2026-05-21"
       }
     ],
     "china→serbia": [
@@ -728,10 +728,10 @@ const ARTICLES = {
         "date": "2024-05-31"
       },
       {
-        "title": "Thai Army Secures Armored Vehicles Deal Worth 1 Billion Baht with China",
-        "source": "Thailand Business News",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeWR5YUpHdlVZcXN4VUxCaFJfR0M5ZU9KWjNzV3NjWjBYQ1JzWmM2ZzJQWFFiaWxlYzNqVk1SYnZyVFc4ZmJ0QV9WRnAwN1JiM1piYkxNWjBTc1FpWk9SR2V4Q2IzcnlqS1NhN2taSUM5d1ZydUdHWF8tU2ZuendFWFJrZmtZLVFka0VzT3Q2SFFYMWRVZ3pNQkptVTRlN0hkaG1WTlFaaXhZekppRlROblVzSEwwTlNrZUFHUlN4a2M?oc=5",
-        "date": "2026-01-17"
+        "title": "China Signs Submarine Deal With US Ally",
+        "source": "Newsweek",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE15cjR0cFl3SUpRY1JCdGlFUzdxcThmWXdfOXRacXdNR2dPcWc2Tl9mM2ZjcWl0ZWp3bm5JbnFyYXdvOEtLaGJWaHBuOS1qRXgwVEhMNGNRRi14T1BaTTFwWTBzZmhhVld6RlJhOXcwVnhXMHVYUTcw?oc=5",
+        "date": "2025-09-18"
       },
       {
         "title": "China says defense trade with Cambodia, Thailand unrelated to border conflict",
@@ -740,16 +740,16 @@ const ARTICLES = {
         "date": "2025-12-18"
       },
       {
-        "title": "China Signs Submarine Deal With US Ally",
-        "source": "Newsweek",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE15cjR0cFl3SUpRY1JCdGlFUzdxcThmWXdfOXRacXdNR2dPcWc2Tl9mM2ZjcWl0ZWp3bm5JbnFyYXdvOEtLaGJWaHBuOS1qRXgwVEhMNGNRRi14T1BaTTFwWTBzZmhhVld6RlJhOXcwVnhXMHVYUTcw?oc=5",
-        "date": "2025-09-18"
+        "title": "Thai Army Secures Armored Vehicles Deal Worth 1 Billion Baht with China",
+        "source": "Thailand Business News",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeWR5YUpHdlVZcXN4VUxCaFJfR0M5ZU9KWjNzV3NjWjBYQ1JzWmM2ZzJQWFFiaWxlYzNqVk1SYnZyVFc4ZmJ0QV9WRnAwN1JiM1piYkxNWjBTc1FpWk9SR2V4Q2IzcnlqS1NhN2taSUM5d1ZydUdHWF8tU2ZuendFWFJrZmtZLVFka0VzT3Q2SFFYMWRVZ3pNQkptVTRlN0hkaG1WTlFaaXhZekppRlROblVzSEwwTlNrZUFHUlN4a2M?oc=5",
+        "date": "2026-01-17"
       },
       {
-        "title": "The Real Reason Thailand Bought Israel’s Barak MX Air Defense System",
-        "source": "The National Interest",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOFhBRkdUenZfSncwOFh1LWROVXhpcEplLW5OalBRXzNaWksxUWR0UU5XZkF4WlJJWjB6STloR0dMYzFmMm9FcS1ZTTlhMmxPcndUSUFQbF9MRzhnQXdzWTdnQ1BXc2hsSUN5N0tzU2N1Qlo4N3NRTm9KbGc4Rk9MdHdOdnI3WWVsOEJ0R2J4WHVCUnBXaDZRNWR3Q05kTlh0QzZ3ZnY4Q0g4MWc0bGdnSTFR?oc=5",
-        "date": "2025-12-12"
+        "title": "Thailand plans joint arms factory with China",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZVZvMEFYQll3V2pIelU0OFJVUXFOLTEzRi1YMTBwcXNoYXlDekhiTFF3TncxYnBycWVqZzdyblRJWHdsOTBqVTBTTFlmc1B3TEQwWjhvYW9vczlWZmpRTWtHY3JYdEs2dnRNcmtVZWdEQjNtbUs1ckhxWl9tdHJuajVjZGpBeGc1Qml2VEp4aUtNeXUxVmJjWXR5NTZhQQ?oc=5",
+        "date": "2017-11-16"
       }
     ],
     "italy→qatar": [
@@ -840,25 +840,19 @@ const ARTICLES = {
         "date": "2026-06-04"
       },
       {
-        "title": "KUNA : Kuwait Defense Min. receives Italian counterpart's solidarity - Military - 02/03/2026",
-        "source": "kuna.net.kw",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBMSWp4X3NmbURmWm16Uk16OW9ncmVDNEQxcUM0RUdLQmNrU1dXM3dvWWlSWHZJbWItYW81aFNnUU5vSm1jN0RwWW9NaWd6akxwYkJJMmlaaFA0eDJIYjdCX2lBWkttZklzNHBwaXFtMXU4Wlh4?oc=5",
-        "date": "2026-03-02"
-      },
-      {
         "title": "Italy’s Meloni suspends defense cooperation with Zionist entity",
         "source": "Kuwait Times",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSGszakdWX2VTbE0ydU5iVW1LV1lzLURhc2VyZmd4WXhfeWg4c1JjS2Q5REFiX0NFVUVibmlNWFVEaGl5aHN3VzA2eGlySldDMU11cjRweU96NkdjeVVZd3BMR3E2LVZlYUZUUUdPeEZpYWR3aThvckVQN1dScnJtUHN1V1hpQkE0c3JNcVRZd2tMclNRT1dNVklId2R6cThFNmhVSVdrZmZ2cUhVTVViMFM1YmfSAbgBQVVfeXFMTldKNmFOSndLM0NYVWRjOGdXbjZTdnVWNzR6MDkyeklSOFhzMWxRbzBDYmFFSlZMWUpsNUdzN1JKYk5BOVJ4dy1kUkhIRmFkZGVYaDgtQU1uaXdJeV9aaHk2OXhDMTB4N2xFc2hTRWZOeTQ2d0hxWGg2VnVzLXlfQjJ3ZlRocXpsbHFXOTU1Mm0zXzdWRlZ0Zmw3bHhpN25rNVpWTlJnWWdERkNUMHg4M2xHZFdNdWZ2WQ?oc=5",
         "date": "2026-04-14"
+      },
+      {
+        "title": "KUNA : Kuwait Defense Min. receives Italian counterpart's solidarity - Military - 02/03/2026",
+        "source": "kuna.net.kw",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBMSWp4X3NmbURmWm16Uk16OW9ncmVDNEQxcUM0RUdLQmNrU1dXM3dvWWlSWHZJbWItYW81aFNnUU5vSm1jN0RwWW9NaWd6akxwYkJJMmlaaFA0eDJIYjdCX2lBWkttZklzNHBwaXFtMXU4Wlh4?oc=5",
+        "date": "2026-03-02"
       }
     ],
     "italy→indonesia": [
-      {
-        "title": "Italy's parliament backs donation of aircraft carrier to Indonesia",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNek0wODJMZjVHZVVhaW85QkMtX0M1WEhndDdHb1FDaV9OS19JUHA2SWxBVGRKNzFfSjFIamRXUE5nT1hFNURTRWdIS09wX2djaWxGV2RWLXNQc1J4SW5EVW9kYTJjZm51VVhYeFZraUNPYUdCWTFiQW8tcTBTb1dzSEJmaEJTU3FKSGo0S2ZNNlUzaEVPQTFJbDZ4eXp4ZVU4RkVRRXRQT3ItRU04aFFYUm43ZjJpbEdsZDUwVGotdw?oc=5",
-        "date": "2026-04-28"
-      },
       {
         "title": "Italy moves to transfer aircraft carrier Garibaldi to Indonesia",
         "source": "Decode39",
@@ -866,10 +860,10 @@ const ARTICLES = {
         "date": "2026-02-26"
       },
       {
-        "title": "Italy clears transfer of aircraft carrier Garibaldi to Indonesia after months of debate",
-        "source": "Zona Militar",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNTh6ZkNVdE0zZTNVNFhVWndmOEhERU8zVFNyT0VmQUhNOThjX2c2bEd4cFpTNnVUMUl6R3hPZEdzb2pWd1AyUmtva0Uxbmd5M2xnWmREYTBlQVotdnlmSENGaFhabXNCX2JjajhzUElLUTFnd3NsZUdPamtNaHRVRUQyclN1VFZ5bXB0a0pkb2xvTlZQS0NKOHBFTHNFTmFNY3NQOW1HZWJtNFRrUnFqWnFPTlNBOXpDa2RkOFNQZzJOMExySUNMd19JMA?oc=5",
-        "date": "2026-04-30"
+        "title": "EDGE Group's $7B deal with Indonesia marks largest int'l foray yet, as CEO pushes expansion",
+        "source": "Breaking Defense",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZDZ5VGdDOUs4VWxFWEFzaDQyQVE0bnFlV09YbHlVOWdHQjJVa3dYZUVIZFNQZXphbThPTWR0Zlo2UXFkSXhaaURKVnRXVHpYMXhqXzNrSGtJQ2JONDAtaF9yUE50c0FPNXZLSzhLWDA5b1phcTRNanloRVg4anE3d3ZKdXk5cHo2Tzg4OVRIbDB6bGpjSF9vcGplRXppU21tNU9KUUx2QXdxNDVCcUVaNmJXV0ZHMEZvOFJRRGpvV1lGUQ?oc=5",
+        "date": "2025-11-21"
       },
       {
         "title": "Indonesia selects Italian M-346 trainer jet",
@@ -878,10 +872,22 @@ const ARTICLES = {
         "date": "2026-02-05"
       },
       {
+        "title": "Italy clears transfer of aircraft carrier Garibaldi to Indonesia after months of debate",
+        "source": "Zona Militar",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNTh6ZkNVdE0zZTNVNFhVWndmOEhERU8zVFNyT0VmQUhNOThjX2c2bEd4cFpTNnVUMUl6R3hPZEdzb2pWd1AyUmtva0Uxbmd5M2xnWmREYTBlQVotdnlmSENGaFhabXNCX2JjajhzUElLUTFnd3NsZUdPamtNaHRVRUQyclN1VFZ5bXB0a0pkb2xvTlZQS0NKOHBFTHNFTmFNY3NQOW1HZWJtNFRrUnFqWnFPTlNBOXpDa2RkOFNQZzJOMExySUNMd19JMA?oc=5",
+        "date": "2026-04-30"
+      },
+      {
         "title": "Italy’s DRASS will provide six new-generation compact submarines in addition to SDVs to Indonesia",
         "source": "navalnews.com",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNb0ItMnFDRlM1dlpjVGRWOHR1Y2FtZzRNRTJPUTZfa0RubzhtQmxRQmJXbVVqZGVTN3RCbFBYQjAtZTJwZlNaWXVuMUhrX1d0NXhVVHFtdHBKUS15SnJ3ZXdDTUJTWGNsTFVzUmpTSkNBZWY5OWFOVFNKN0dGRG96a2lPQUFNZmxJSTBWb01LN0ttSXpoWnBvRU9tXzVPOE9hd1hQcW04UE4xYU5XeHFNbkQ4R2ZhVHRNTTFZVG9jYkNOZ2NNNmVyTGU1Z1Nxdk4xWVlQUGtvTVR5QQ?oc=5",
         "date": "2026-04-03"
+      },
+      {
+        "title": "Indonesia Approves $450M Deal to Take over Italy’s Retired Aircraft Carrier: Report",
+        "source": "Defensemirror.com",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdXIyVHQ1VXJENVlfMjlKYTVjRG16ampLRVhEZE1DT29udk1fQVNFM0NOeTljZ0s4OHJYUmNoTGtqRy1seFc5ZDRUWUl5M1NnTzY1VDVNeEVXdXFsd0lydTlJbE1ucDB6YU5LazltNU80S09JMktpcDRJTmZIcXY4dkFONm1vQUVRYTlObFJrUDViVlcxR2tJWGFhcmhmWk83R1FMQkhFZEtFU3k1SkVjQndlMDJpelZha0RmREJkZw?oc=5",
+        "date": "2025-09-22"
       },
       {
         "title": "Italy’s €0 Giuseppe Garibaldi Transfer to Indonesia Sparks Multi-Billion-Dollar Submarine and Jet Deal, Redrawing Indo-Pacific Naval Power Balance",
@@ -890,16 +896,10 @@ const ARTICLES = {
         "date": "2026-02-27"
       },
       {
-        "title": "Indonesia Denies Aircraft Carrier Grant Linked to Arms Buy",
-        "source": "Tempo.co English",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOLUFmTGdiRTVoc2VWcUY5OVMwWi1NTWJmakJzT25nSlloa1lKcmhhN0JINEFJc2NtSEd5VGp4Y05NR0U0aUNrOU00WndrWkxrMXBzZEtUYU56b3UxYXhjMHJmVTVTbGpoaXJSbmlSQlc5VGMyT3dIQjF6bWNNa1ozdkw4Wi15eGZkMUhvM2p6QURKaXJXT0E?oc=5",
-        "date": "2026-03-03"
-      },
-      {
-        "title": "Italy Giuseppe Garibaldi Carrier Transfer Boosts Indonesia Navy",
-        "source": "Defense Feeds",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaGphOGQzN3g0b25VZkdSX0dEOWNWZ1Z0eVIzN3F2NHVPamRacWpWbm5qb3hzUDR5NEJzRmdrNmx3d2F0Q0pqNDVsOHBQeUwzZDVXclJrWkdHVGd0LWduTktCOGlqbW5Tc2c2UmZvS2d2anZtMUw2TmlzWWlCX1FOcXdWX1lKSlM3eEFiSVVfdHRYNFVhQVoxMzlfYTlFdkxwTFI1MG5VazY?oc=5",
-        "date": "2026-05-01"
+        "title": "In contested region, Indonesia diversifies arms imports",
+        "source": "The Strategist | ASPI's analysis and commentary site",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRkhidG9ocTNRZGFaY1pWVzc4ZzZSNGtDU05uOUNnQmdUNWxoNzNRZGNqYXVhS3pESFQ0SFBtWDVvempGWTAyQkEwZnYtQld4ckFUdndGenlCS3Zrd0xPeG9FbUY1RFRmNFhLTXFJYjFzcWNQUnkyTHo5LVk1T3JVbm5SdUdqcHRqOWV5UHpKOGNNRWc?oc=5",
+        "date": "2025-09-10"
       }
     ],
     "israel→india": [
@@ -916,6 +916,12 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
+        "title": "Rafael reportedly to begin producing Iron Dome interceptors in India",
+        "source": "The Jerusalem Post",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9rR2QzeFp5X1lOU3JKeDV2TlUzYjBOLUhFbVJrX3VxWng0QXJ5b1Y3X2ZWNzZPb0dhcThPZUs5cEFnaC1NZVJMYWFmUEQya1RlLVhHWTJ5S2d1YTJBdTh4aURrWQ?oc=5",
+        "date": "2026-07-09"
+      },
+      {
         "title": "The Israel-India Partnership",
         "source": "Hoover Institution",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE11bnZOWW40cjI1dWZfYzd2d014aENBeTZ1OTl3MjZlajRoZjMtMG9rUVNNRGVFTndMTlhEcjU2SnVCVUMxbm8yWEhPek1mcVdGbG1WVjdjc0NvdGdrNjh1SWc3c1ZPdTg?oc=5",
@@ -926,12 +932,6 @@ const ARTICLES = {
         "source": "Al Jazeera",
         "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOODNXS3VmNWdhVTdHSVNWallCVWI5TmxyWC0yNHdGbDVLOUppU01Wb0ZDdm9VcGNnbzdtV0NqMG5ScUdpeDV6VDdEOVFmRVByVXV3WDNIN3ROeV9NMGg4S21lbXJfNWZfTG5tSGJZRVVLUkZ1UVRFMXY2OXc1RXJ1c2ljVWx1X3UzUE45aG5wbVVDS2h4Y2hCTDJGNmFaYWxqbUIxc2RuT0JsTWx3SUJSYTl2Y3BodGJ3QXFZ0gHAAUFVX3lxTE1iVFg3dVZkbTNRRFFEbXJWM1NzWW5VdWY0Q29QXy1QanZOS09VZ2k0U1lzUk5XY2p4eEZmNk4wdVlFTDBROUpqaWpfdDduOGJHVnhjU0hiRmtFZlpaWVNKSV9OMnppNXRBcXhERWFIamtjclhpZXIxelo5QkxNYVJzVjMtdUlYZ2dTT2RNWS0xMTUxZFVuWlhTa0t2MWpPM1hPYm5MUTZlM2gwS05Ub2dPaXEtbHpjYm5PdmNna1l0OQ?oc=5",
         "date": "2026-05-23"
-      },
-      {
-        "title": "Israel and India expand defense ties with $10 billion deal",
-        "source": "The Jerusalem Post",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52amJvVjl2bWdqSnhTempyMUJiOW5RQVh2djhzMzBtZ0xIdC1EVzhLSjJGMGFVVDlPSV9Fb203U0FwYk04aXJjLUh4YmJxc2hweF9VXzUxWGJWVDFm?oc=5",
-        "date": "2026-02-26"
       },
       {
         "title": "The multibillion-dollar arms deals driving Modi's visit to Israel",
@@ -960,9 +960,9 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
-        "title": "Volkswagen’s planned defense deal with Israel blocked by Qatari investors",
-        "source": "Anadolu Ajansı",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZEpCbnlISXhFdUExNnk0NzFweVQtSms0dlN5a3hJMjd2WGlKSXBwRDFzeDM2OEtiaUFCWGhZYkQ0X19yYlpkbFJ4RnJ6ekVZN2MzZ2RtNUIyWGgxcFQ0RC01cWVidmk1SUxNNEhsS2pOTHJyN2lud0gtSExHNHU2UWRLWTdscjh6TlM4ekdnbFpCc1pjbnFtV0NXQjlVaHNwSzNncFlqWkdNTVJneWwzc1R5YkI?oc=5",
+        "title": "Qatar Blocks Defense Joint Venture Between VW and Israeli Firm",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQzJCNzkwNXhIeFhMN1hvX0F0YlBselZBMVZEYTlBWVlRdnZUZWRnLVNMR1hQUlU0TWxkb3AxYVRvZ2YtWmZ4dVhsU1Ita2pZemJMSGFLdnVUVVJZU09mN1hyejc0YVRBbnlxOFo1UG92LUdLaUJELWNBak5IUnFza2pnV1JBbnRfbWI1YUViZnBrODFSdnhVYXJzdHBkdERYMG5RYWR2WXNMM1RzR3FpdkdjWQ?oc=5",
         "date": "2026-07-10"
       },
       {
@@ -972,10 +972,10 @@ const ARTICLES = {
         "date": "2026-06-17"
       },
       {
-        "title": "Israel’s Elbit Systems, Germany’s Diehl Defence team on SkyStriker pitch for Berlin",
-        "source": "Breaking Defense",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYVpidUNROFNpUG43djZOVVMxZzhBeGNJdVYzbml0MTFacE1WQXdWbGlvcnhVMUdVZGxnN0djTzZIYTVOQ3dBa0hKS0FENG9kaFp1dXZONkMyRUR2VG1FU3FhMUJiVXIyVjJCM0tlX3RkZVBpMmJkY0NTU2xqQm5TN3pDNDlrS3M1c09wUlM2UnIzX1JJRWdxQXpDZWx4cXVWZll3aTd1MHBtMmdON2d0RFkyRU42d0o4?oc=5",
-        "date": "2026-06-12"
+        "title": "Volkswagen’s planned defense deal with Israel blocked by Qatari investors",
+        "source": "Middle East Monitor",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPODhiYU9qTHFPRkJMd21BSmV3SEhFclFCOGl6V0VyZ1RYcXNFOE5wWTNrMW1PMWwxWFVKbGFIUUI5aTUyRFBCNVloWTNvOXR6TF9GVERwOXIxZnR3eW5acnBfeVRQVDRMMnh2dmQ5dDBtVWlVWUh1ck1JdXpNeFFNT2kyQ0FMZkZvVHplbjNRb1BEcnNIdWtoeG5pTnItVHM2a1VrVW5oV2ZMSXc0RTV3RzEyMTRZT0xFNDJqZtIBvAFBVV95cUxPODhiYU9qTHFPRkJMd21BSmV3SEhFclFCOGl6V0VyZ1RYcXNFOE5wWTNrMW1PMWwxWFVKbGFIUUI5aTUyRFBCNVloWTNvOXR6TF9GVERwOXIxZnR3eW5acnBfeVRQVDRMMnh2dmQ5dDBtVWlVWUh1ck1JdXpNeFFNT2kyQ0FMZkZvVHplbjNRb1BEcnNIdWtoeG5pTnItVHM2a1VrVW5oV2ZMSXc0RTV3RzEyMTRZT0xFNDJqZg?oc=5",
+        "date": "2026-07-10"
       },
       {
         "title": "Report: Germany has okayed $7.8m in arms exports to Israel in Iran war, below earlier deals",
@@ -990,19 +990,25 @@ const ARTICLES = {
         "date": "2026-06-19"
       },
       {
+        "title": "Israel’s Elbit Systems, Germany’s Diehl Defence team on SkyStriker pitch for Berlin",
+        "source": "Breaking Defense",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYVpidUNROFNpUG43djZOVVMxZzhBeGNJdVYzbml0MTFacE1WQXdWbGlvcnhVMUdVZGxnN0djTzZIYTVOQ3dBa0hKS0FENG9kaFp1dXZONkMyRUR2VG1FU3FhMUJiVXIyVjJCM0tlX3RkZVBpMmJkY0NTU2xqQm5TN3pDNDlrS3M1c09wUlM2UnIzX1JJRWdxQXpDZWx4cXVWZll3aTd1MHBtMmdON2d0RFkyRU42d0o4?oc=5",
+        "date": "2026-06-12"
+      },
+      {
         "title": "Germany and Israel sign 'historic' missile shield deal",
         "source": "spacewar.com",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMWMyenRDWmZqam1HNEU1M05CRTl5NUs1YjRFUE5pSWFEaG80QUFpN3pBYUlISFdzUE9tNmJOa2d3cTdyZGNOcDREX1pBUERsVGNnSDVoY1pEd0M4aWJPNkttYm0wckhVMjRsblllZ1VKMXNQLXROWC0tV19LNnlzZ2ktcG8?oc=5",
         "date": "2026-06-25"
-      },
-      {
-        "title": "Germany in talks over €6 billion rocket launcher deal with Israel",
-        "source": "CTech",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE12RnJCdjBCcEJaMUFVMG95VEk2VWRDMnRTSHhHT0tyNWZqNTBET2d1ZzBLZk83U3NBV3JMT1pibmxSR3hnemRIUXY0NlRnWE56NWxoczRmVjZ1ejNuWTdHdGVtOGVCcXpj?oc=5",
-        "date": "2026-03-07"
       }
     ],
     "israel→united states": [
+      {
+        "title": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
+        "source": "Encyclopedia Britannica",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
+        "date": "2026-07-10"
+      },
       {
         "title": "Washington is subsidizing Israel's booming global arms trade",
         "source": "Responsible Statecraft",
@@ -1028,27 +1034,21 @@ const ARTICLES = {
         "date": "2026-05-02"
       },
       {
-        "title": "Vance slams Israeli reaction to Iran deal as U.S. military lifts blockade",
-        "source": "The Washington Post",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWDVyRkR6VWszZFAta3UzZkFoa1pUdXpBWXZKSGc5QU8zRXduQWd3dFNQLW8tOEd4Z0h6Ykx0bzRBMmZhMlZJSGJ5QUdHWFYwcGRmWjg0YVZ6cXItaGU3QVFPeHFMaUkwbnI5V0hvcXlfd01zdEM2aWVCeVpNS3BBcTlEOElXbC1mM2Y2cGxhRUVmcVpfM3ZiejJ1a2lUM2ZlYkpuTXBpZw?oc=5",
-        "date": "2026-06-18"
-      },
-      {
-        "title": "Israel rules out withdrawing from seized land",
-        "source": "The Hill",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNU3d1T3lKTVA4RFp2aElaWDEzYWpzNENxTFNHUVhuQlNkVktmTkNNTFR6azlsd3BBaXZBVS1nOEozNU9CR1dGYVRuaDA2alY4SUgzSzlCdi1vLTFMMEZxQVg0NXVJd3QxeXhGUWlwUkJZOF9TWTRxMGJmU0dlaERrbUFZV0ZzOTJrb3YxLVZ30gGTAUFVX3lxTFBqcWZLQWg4OHMtQWF6LW1STGZJQV91VlZpWjBRZVZHX3c2QU9oWmJ0bGF5Rk1RWFJzXzNyZTZrWXI1VHhtZWZ2ZjNaUU5SUXhfcy1VN0NFOUpWZ3J0NnRvU1pfcVhZSjR4Y0lueUlyclY4ckdGMGhJS0xRNHpvMTk3Y3lFZ2diZjBZYmdOdldmZUdjOA?oc=5",
+        "title": "Netanyahu: With Or Without An Agreement, Iran Will Not Have A Nuclear Weapon",
+        "source": "i24NEWS",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPY2V4MW5QbjV2a1VLY2x6dFZjazI0aW5GTHNPeUpnX3Z6MC1XbUJqTEpLZ0tSejRwd25MUlpjNlFyUndObEpjUUxrZHdwVE03aU42ZHM3Z1pPeTBMdFlObnJxbzhqOHZhN0FPX2JmTlVjSUhfVEREV3VaNEhPVE0wRVA1S2p6YWNpdGt4d3RmNnd5LUFkNG5HR3pXbGtILVI4SzVWal9WMDVoMWludk55Q01MSUJyMmJTaEZiYjY0alRONElx?oc=5",
         "date": "2026-06-15"
       },
       {
         "title": "Congress advances US-Israeli military integration plan",
         "source": "Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeURkTXZaSTF0Y3UwUTQ1bzBFZHVtdzNhUmlrSmluWjNsMy1IeS0zcHBISFotOWN3NjUteGVuTmpNQkFVQ2VwUzVEVGEwT1ZBeklnZDlFUE40OEtFM1QweVVSNVM4SF9OQy1LZjRJZklROWRET3dHaWROVmFIT19sMkU4LUxCUFJMVDk5ZVJYQWZGS0h5RmNWWVhBYlB2RDJvWnltckdTRdIBrAFBVV95cUxQV0h3ZnN3OE9IVlVJY1ZzcmhQZmduQjFlR2VHcDlmdVd4YWNaZmRvZ0ZKZ2RZMXBiRTliY1EtdDc5RUJLdzNmalVZZF9rVEJxUmJ6eGNyalhaY0QtWEZwNm40bmJEckpHdFhzOUlRQkRoWnRWQnAySWpuRS05ZzVsZ3h5d0FpNHV0cmN0dDktSlNkWXBxaU9XU3AtUUo5Zld5Z1g0Y3hTRlBpQUFU?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeURkTXZaSTF0Y3UwUTQ1bzBFZHVtdzNhUmlrSmluWjNsMy1IeS0zcHBISFotOWN3NjUteGVuTmpNQkFVQ2VwUzVEVGEwT1ZBeklnZDlFUE40OEtFM1QweVVSNVM4SF9OQy1LZjRJZklROWRET3dHaWROVmFIT19sMkU4LUxCUFJMVDk5ZVJYQWZGS0h5RmNWWVhBYlB2RDJvWnltckdTRQ?oc=5",
         "date": "2026-05-30"
       },
       {
-        "title": "Iran and US reach a tentative deal to end war as Israel rules out withdrawing from seized land",
-        "source": "KOLD",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUFVia2lfQmVNX21fV3RNN3pkbldkUElJR2NPT0pTNGNmMTJMMk1EQVRlRjUzQ2VxaFRxUkhkUUtoM3pOUUFwSU9pNUY1clJNbWJCTkhqNkNkd3JKRHRPME45a1NObXZESjJZWTI3UkV4ZWdPV0hwaVhBNVBwRG5FUDhORmxFZTA3VVpaVkp0alJjeTk0XzdhRUZHWjE0Ry1LaXpHcHhDTjJFd9IBvgFBVV95cUxNTDJvdWFCX3lVZ0d0Ti1UejB0Vm9QRmtZVXhKSkhvUy1wM29rUTFMR09QQ1Y4X2dCOG1ya01EWU9ZRmg1TC1OUmh4Ukt2Q241aXlYNDJYazd0Q0I4Y2tYTFVnVGFJV2pFblV4Z214MUlzRVNjRGlndW56VElYTzBJOWJrQ0xyUXVPVG5UM3B0TmxLMkdHa0tQazNqQUJVeXVPSFVEN3FjZTlwa2g4dzZzRHFpVE9JV3NRSlM5VTVR?oc=5",
+        "title": "Israel rules out withdrawing from seized land",
+        "source": "The Hill",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNU3d1T3lKTVA4RFp2aElaWDEzYWpzNENxTFNHUVhuQlNkVktmTkNNTFR6azlsd3BBaXZBVS1nOEozNU9CR1dGYVRuaDA2alY4SUgzSzlCdi1vLTFMMEZxQVg0NXVJd3QxeXhGUWlwUkJZOF9TWTRxMGJmU0dlaERrbUFZV0ZzOTJrb3YxLVZ30gGTAUFVX3lxTFBqcWZLQWg4OHMtQWF6LW1STGZJQV91VlZpWjBRZVZHX3c2QU9oWmJ0bGF5Rk1RWFJzXzNyZTZrWXI1VHhtZWZ2ZjNaUU5SUXhfcy1VN0NFOUpWZ3J0NnRvU1pfcVhZSjR4Y0lueUlyclY4ckdGMGhJS0xRNHpvMTk3Y3lFZ2diZjBZYmdOdldmZUdjOA?oc=5",
         "date": "2026-06-15"
       }
     ],
@@ -1090,25 +1090,19 @@ const ARTICLES = {
         "date": "2026-03-04"
       },
       {
+        "title": "Ukraine Seals Billion-Dollar Defense Partnerships with Saudi Arabia, Qatar, and the UAE",
+        "source": "Мілітарний",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMWNzZUJRVmpIX29HUjRhSzFMWDd5bkVqdVJaNC1CTHdDTEN1eWJic0Q4dl8tcWd0dXZCSkI3T3RJZTdPVzEtREVWRXhDSnpDSVNhWFVrRzlyMjltdUxBekQwU3hsbHFDWG1vZ0ZvRUdUUnB1Mlo4c2JxaTF4M2tPR0NpM08xVGJWeU1JUjlVM3RyVjRQem5tendmajVPblhJODY3TnNIbUY3bVUwQWhheHF0b3VHajV0?oc=5",
+        "date": "2026-03-29"
+      },
+      {
         "title": "Ukraine Secures 10-Year Defense Deals with Gulf States",
         "source": "Odessa Journal",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOX1NSYmpDMk5RQTlsVmRZVmdFQUFsc2h1NFg3U182M0EwSVJ1Zml0QTlIaFdtNUx4eEtfRkx6STROc0MwYTcwaF81aW5YeU1JOHBTUlVQN3ppMC0xTkItZDFjRzdsVVhER1B6ajZod1BvYXplZnB5MDlFZV9vZ0YwellhaGs3YjU4Y1hSckljZE1KU1JaNmZPN2ZCVXIxY1hPMmt4MDdfUTNRalFoaXE0T05uLUVMU2R4bVNuZ2oySzhHb0wy?oc=5",
         "date": "2026-04-19"
-      },
-      {
-        "title": "Türkiye Accelerates Eurofighter Typhoon Deal After F-35 Fallout — $10.7B Airpower Pivot Reshapes Eastern Mediterranean Balance",
-        "source": "Defence Security Asia",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbVBfTWRKQWFHQV9fRmoxMEY5SW9MV3RLd3JYZnA0SU1uZjNqRHdfTkNRYVBDSHBYSU8tcnF4Z0RMY1l5TV9vQ1c0X1YyQkdsU041NFNpbmE5SFY4WXhrV01kLWJfMExkckVBZml1RWJxZVdJbkhSV1ViRVdmYkp4UHNRX0JOX3hFSEtuTGM4MnRSakRWamU1bW1aek9HSUppSmZQb0VGMENzTVhLY1Y5NnFpZW9YMVUweHc?oc=5",
-        "date": "2026-02-24"
       }
     ],
     "united kingdom→united states": [
-      {
-        "title": "The Latest Iran Deal Ignores the Lessons of the Past",
-        "source": "Carnegie Endowment for International Peace",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM1g1UEx1eWxZeXROUDVlNVZ0N0RfUjEyVmViTlhQRlplZkRMMUQ0R2MtWFpJbU9KUFlDRURLR0JwZ1ZLWjYxUFVNbDhlVE5EdHhrMzFtS2JyN3BSS3NVamI1RXFYdVNBemtwR3hLdWdaTkNTYVRoem5UVTRlQ01vNkxadjhRSlhvdGNfeVY3WkIyQQ?oc=5",
-        "date": "2026-06-18"
-      },
       {
         "title": "Joint Comprehensive Plan of Action",
         "source": "Encyclopedia Britannica",
@@ -1140,19 +1134,31 @@ const ARTICLES = {
         "date": "2026-03-07"
       },
       {
-        "title": "US to delay arms shipments to Europe, potentially affecting Ukraine, FT reports",
-        "source": "The Kyiv Independent",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQ1A3T0pRenhqMDZLa0JnN3FLNU55Y3pKLV9tdC1od3M2QTJJS1RpbG5UemhMODJNLVJJRk9OUXluYTEzeG5CbC1DN3RvbElvckF6SEs2QlJ3TGJNV29HQzlpbkU1Rm12cGVnMjlLY1NGQkJZT0xuVm1kWGZKTWdIblM4a1dEdGRSdjNocC1MRVpYY2JuVTZXVE9RUURPbFZ4TkFBQjIzYWZLVmhNQXZMRUNxak9sY0JISE9fV1h2UVF5bllsU2c?oc=5",
-        "date": "2026-05-02"
+        "title": "How the Iran War Broke US Arms Monopoly on Saudi Arabia",
+        "source": "houseofsaud.com",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5GVFZEZnhMTF8tdDMzQm9sbS0tdVZjMmVjd2tqY3Z3bmJhN0llaDNXR1RzNE10dFVKeGNfT0k2M3FQeVBkWDFHZm9KRGNlLVV5UHBtcGhBamc4RTFzUG0wTG1VMjZIVDhGOE1NcGkwR28?oc=5",
+        "date": "2026-03-14"
       },
       {
-        "title": "Morocco’s FAR, France’s Harmattan AI Sign Deal for Autonomous Defense Systems",
-        "source": "Morocco World News",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVjJIYlZuR2FuR0pnT1IzdXk4SEtteXpxY2poTEhzSXBoLXRFemU4d3ZjdlBRX2s3SE1XNC1laTFnY3RfUmZwVGFyNFBpSWJ2c2Rzczk5QmliWGM0YkhRbzFHY0RBV1k2bHliZDc5dzQ3eUlaRU1lZWVCbGlhU2ZDYlJ6YU40OEFPRUgyZHNhN240VkdOdnVGUUJXWjNXc3FmeXEtLWgweWxIdVRoYUY1RWI2WlpDNlBFQU4tSEwtTXE?oc=5",
-        "date": "2026-06-18"
+        "title": "What was in the Iran nuclear deal and why did Trump withdraw the US from it?",
+        "source": "ABC News - Breaking News, Latest News and Videos",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWXlxcGVxR012QmpPRjFUVThnRHhJSWU4VVczQm9FeWd5YmtWSXVDNzZPaGxjTU1tVUZrUEh6by1iSkhMY3ZxaFd5eUl0QWxkWUM1Wm4wU0tRLWRVWGVFSzgxOWZXUU9FSjJOMjNVdlNxeFBsQlZpdHFSU0J4SU53Skp2SXF1S1lsZDRkd3NR0gGTAUFVX3lxTFAwbDR2bGRBUnRFaWhCdmxDQndBa1ZCSlg3R0drb1RPbDluVzhoSmZXbU5uU1FyaWlsRk9ocGR5dHhKbjZub2V0ZGV0MTZzaHBDN1N6MkVkeFVwalBxTUUyTUFPbWVrOUFpdnNoaUNMUGNQeGtnWFo0aHhCTy1GcElsbHNaNlM2TjBMWjQ4QTI4bkU1bw?oc=5",
+        "date": "2026-02-10"
+      },
+      {
+        "title": "What’s in the New U.S.-Saudi Minerals Agreement?",
+        "source": "CSIS | Center for Strategic and International Studies",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE84ZTZWb011Z2JWdFE5d0pXZkxGQzQ0dVlZWFFQaXpiU19KellFZmlRRS0wMUt1RG5KVXNuOFRlWG1oY1hHLWFLTE1FNWFtdGNDajdYOXdSazNYWmlybW1HRC1DZ3B2UjNVZGNpTmEzaWdsRzJaRFE?oc=5",
+        "date": "2025-11-19"
       }
     ],
     "united kingdom→ukraine": [
+      {
+        "title": "EU Set to Allow Ukraine to Use €60 Billion Loan for British Arms Purchases",
+        "source": "UNITED24 Media",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUDIwQnRYXzVDSF9nZXZSMGk3WU1zdVcyZHBPZkZIZUU4VDltSUxMQUZzWnIyUUcxWkJYTlFNS3c1WUZDcE9Ga2NmbVE1QmN1bjA3M1E3Rk9CSTZ5bzZmVzVZOGFCekJHQlBPMVlNd0FRU3djaU9tX09fYS04Qll3M2NVSGZUNXAwRGp1V2FtN1dGNGRDTEI0U0QwLTI4ckFQREhjRHMycG9IbFdjWGlnSWkxX3o?oc=5",
+        "date": "2026-07-10"
+      },
       {
         "title": "Ukraine signs $2.5 billion contract with Sweden for Gripen E deliveries by 2029",
         "source": "Breaking Defense",
@@ -1172,16 +1178,16 @@ const ARTICLES = {
         "date": "2026-04-20"
       },
       {
-        "title": "UK, France, and Germany Agree to Help Ukraine Build Alternative to Patriot",
-        "source": "UNITED24 Media",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOMnYwT0RQRnl2X0NZRHhSRUZ5UXgxaE9QOHFZdF9pb0pZVmxhbG9CblN4STFBbmFYcG1vYUl5T2hRNkIzb003OVo0QXNfV0RfUHdlZnNjMng4aFZMaEZEYnpFZEtDWmQ1ZDMyTEdnMlY1RW00OVVWZUlrLXNSaGxjWXJpZUNZcWItUTlUMXkwREMzNHU2RnRhMi1yblRZb2pEd0xLcjk2RWJRY1BLMkVOZ1dyVkk5VThsMnV4MC0yTTg5bFNReHNWNFFHaG5PZw?oc=5",
-        "date": "2026-06-10"
-      },
-      {
         "title": "Ukraine expands missile cooperation with Europe's largest missile maker",
         "source": "The New Voice of Ukraine",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWVplUHp5SGp4cTZ5c0dObllGYnRRQ29pWV9TV0xMWG1ELTFmR2dqUFBtYm5DUW1FZFpJaktVbkxWdWhHNlRvUU14UUhtNXNGbEdRYWZYZFFjNDA5Ri1EOGliUTQxaHQyYWhaM2E3emxuUW9yakpNLTVCMVdGcnJDWTZvaVZybXlsaUdBbGt5TVVfc05UMHBaVW1ZR2NKajJBdFNybVU2NGXSAaQBQVVfeXFMTkVLeUZKWXhhQkRxTW04a1puNGtUTTlGRmRwQ1VtVi1EWkRtemFHZzN2emFtdGJETl9QcU9Lc1hENkZocUFMU1IzaEUydVl2b0gydkN0Z1BkWVA0YmR5aWg0UUYtX1pfbFJQU3FUekFEcE1NVTAwYkNCNlU1U3dVQjYzanZoWjJaZ0d6Mml2T1I5cTl2MVRQMU5MbjIwWVdyb1p2dEQ?oc=5",
         "date": "2026-06-17"
+      },
+      {
+        "title": "5 European allies pledge millions to build cheap drone defenses with Ukrainian know-how",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVWd2OGQxa2xNVnFlNHNqek1faVUtNEctdF92LVl2NzVwdHZiOTliOEZFMWFvNWJWNDlYMkRPbXNiQUpzd0o5VFdXdVltSUxHQ1dybGFaQ3ZSWS04UGpJMW5SLXBWOFRIbllGOWRMbFlYVFYxTWtOWGkwYWFVb2M3eXdwbF9tN2NFcXlfS2VHWm83LU9aV1Vrb1RENXdzUUdRUUtIMERtbzRZWThSenZFdXpSTElnOVJmMEFnUXRFVdIBxAFBVV95cUxPbDJ2Tk1xaDBQU1FXSUs3VEIwblhuTlJxaktZbzBTaTlKZDlWaUM2UG9LZF9WRnFDQjhkZkpHZXpsUUF6UHlYOVNsT1d1X2xmd1BySEc3Q1RpR2F0MHIyWWlMdy1oLXhRQ256YWx4dDlscVIxLXV4cmdIR0w4aGRUVzhDZ3RYTzE4d0YwTUNoeFZxNGZrRVdINC1sc3hpY0R1Rno0WEJkdy01Q2JyLWdvaG1Gb0pwOFZ3NEZuU1g5Wm5EWkFJ?oc=5",
+        "date": "2026-02-20"
       },
       {
         "title": "Saudi-Ukraine Arms Deal Breaks Western Defense Monopoly",
@@ -1194,12 +1200,6 @@ const ARTICLES = {
         "source": "The Moscow Times",
         "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRmZMYVhKZko0RXZOMTNWaEtMSE02VFNtQWl6Qi1XRGxvUWlVNndBNFJoTlkzUUJsbjNWTWtuWG5YMmRrM09LMTlnbVZoTXl3eEp4SUpnMGQtQ081dzNWejhIN3dyZmJua1VNUlVkQ2tKNzRCTTlFNGZ4MjVuU0VxZVdfbldVRXNTRE1WYjlKaGppTjctOGlhaG5adGdrbnE0ZUo2MVZYUVFIZUg4ZHdDRFVmWmZYcmhYRElmM2trWjBkbnpWY1lPSQ?oc=5",
         "date": "2026-02-24"
-      },
-      {
-        "title": "Britain Signs £36M LMM Deal After Using Missile to Down 100+ Drones in Middle East",
-        "source": "Defense Express",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVUdpUm05NjV1My1JZG5lRUlBaTh4UnBEb0wyaWVPTkcxU1IzcUJ3Y295aHc0TWpHTzM4b21xZlhnZVdtTjZZemJmVHhKMzFUT1NJQUIySkxCMXlMWElDS0ZFQWs1N1dpWWcwUkp1Nkt6Tk9xZmtKb05yMUZqY2RzcHpQdDg0YWJQLTN5bFBHVFpJOUUtajkzX0I0eE5GTGstR3JXVVJEZFVHR3FNVUt4MldVMFRVRXZuWmlZNkZEVF9RZGE3Q250eUdscm80MnRRb2c?oc=5",
-        "date": "2026-06-03"
       }
     ],
     "south korea→poland": [
@@ -1222,6 +1222,12 @@ const ARTICLES = {
         "date": "2026-06-29"
       },
       {
+        "title": "US Allies Are Becoming All-Star Weapons Sellers",
+        "source": "American Enterprise Institute - AEI",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdjRSZ3NEdUdNOGFxLUx0NFVWQnNSUGFYN29QcjhaMnQzLU1CVjI4dGZPemVwVkwwNVc3aFczWklJbnBxZi1PVzh6Rjl2WHNVbFczanBWQjlVUVhGWHNSeHJwWV91czJhLXVzZWU1ZnJjZ1I0amtnZnQ1bHNrbTNabQ?oc=5",
+        "date": "2026-04-22"
+      },
+      {
         "title": "Poland Begins Receiving South Korean K9 Self-Propelled Howitzers Under Its Second Contract",
         "source": "Defense Express",
         "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSzl6ZnlXNEdOaHVnb1RtOU5IZzBPbkoxSV9GVTJIOGRDSHNnbW5lUWJWdVlCVk91eExnU2xmeXpKNW8tNXRsUm9RSW9nbGNKR19zMl9Rc2ZuWWgyelZGcWJpVTZ0Zk5GNnBOU2lWMUZjTmRHMlRmYlVJdjlIT0h1U3JzT3Zkc1picGR2Qi1LV3dKRjBpWFd1bXc4WXVYV29QczJjNk9OcnpLMTdTSURJZnFWbG5jbHJncWZvYXZGeFRFbTZUUllKWU5nSlY?oc=5",
@@ -1232,12 +1238,6 @@ const ARTICLES = {
         "source": "Breaking Defense",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQY1NnVkRBck1jMTNnblZZalpRR2RUbjNGSWtXUERTd2kyUzd4NzVaWGllQnVqd0pUcWJjdHo5a1UwLVgwNV9EWkhkci1IX1VySGc4TUl1c25VSDlCUG0tX0k4QzVSSWZYdllHeF8wMWh2d0p0MHFxU21Ia3pjZVpQNlkzLUNzaHN4bTZNZ05FZUthSU9qTlJyT1ZxZ18tOFd5cHFzN0FNWno?oc=5",
         "date": "2026-06-11"
-      },
-      {
-        "title": "US Allies Are Becoming All-Star Weapons Sellers",
-        "source": "American Enterprise Institute - AEI",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdjRSZ3NEdUdNOGFxLUx0NFVWQnNSUGFYN29QcjhaMnQzLU1CVjI4dGZPemVwVkwwNVc3aFczWklJbnBxZi1PVzh6Rjl2WHNVbFczanBWQjlVUVhGWHNSeHJwWV91czJhLXVzZWU1ZnJjZ1I0amtnZnQ1bHNrbTNabQ?oc=5",
-        "date": "2026-04-22"
       },
       {
         "title": "Poland and South Korea upgrade ties to strategic defence partnership deal",
@@ -1278,6 +1278,12 @@ const ARTICLES = {
         "date": "2026-03-04"
       },
       {
+        "title": "South Korea Offers Massive 70 Percent Financing for KF-21 Fighters as Philippines Accelerates South China Sea Military Modernisation",
+        "source": "Defence Security Asia",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRkVJNTBtWGRrQ1NOTkZzQ0RPQ1BraGZlVDd4cTZ4dWwxTkN1MkcxSEtFNUVhSnBFMEIyUUxTTG5XLS04d2tJcXBLSjJPeVlLUGdibmhTVVVqRzBGcWxsalVMdnJqamFIUGc3N3h2Q3l4MDdiRjZyTUN3VWlBTHZQS2l5OERHalZNQ3c4M1R3SVl0OGdKYlRlYkFtZWtROU9uY0E?oc=5",
+        "date": "2026-07-02"
+      },
+      {
         "title": "Japan Ends 60-Year Weapons Ban, Challenging South Korea's Defense Industry",
         "source": "조선일보",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMldkLWRDOGJJWHYtYUpEeFNRUE5DN05sdEFwYnlNVG1wSGh0RVJVOVg5N3A3SjFGTlZ0ekt6YVI0LU1ldHlHUXF4RElSVFdOa0R2TUFJUzRSVGdiejJEcmlGdmN0VFVLMDBISm44MG1GRi0yTkFTMWctMWlQYmlMX2xDNU1YcEVO?oc=5",
@@ -1294,12 +1300,6 @@ const ARTICLES = {
         "source": "Nikkei Asia",
         "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbWh0T093RXlkbkpuOUFvUm93aGpXakN6QWVGXzVzTHJPUGpLTHVWdEljckQtZ3p5bkpOT3dKTmtuSnVNbXc2aHVwMjhLaGY0Q0FTdkZpUnhwSEZsQU00YTg5V29veVdlam84OVlBbmxTaHVFT0JJY0hYS2JUb2RzUDk0NTg4cjQzSVpiaXJDc29wUzFtMXpyclRLT1djcXFtUUx1U1BVSXBYM193QzFyalRfQkZLd1ktRzNpLXJpdkFSeVQyMXFSRHUwcw?oc=5",
         "date": "2026-03-04"
-      },
-      {
-        "title": "Philippines Moves to Acquire 20 KF-21 Boramae Fighters as South Korea Challenges Western Airpower Dominance in Indo-Pacific",
-        "source": "Defence Security Asia",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNHkwYVhOcHlDcnlLcWp2dmVRSUZvZGZCdnRvdWdrVjdQZ0dXT2Q2VUEzUG9HYXZpeGQyWUxsTHRJSllHUXJzbUEzOUJhOHl0Um5GeWxGWDZDZ1F5MDZhOGFVYUw0UUE4UmJBSV9sYXhVVXpkZGlfTXBWTWNRTjJHb3BMdTNNang0Y0tIeXo4TjdON1dheDBVaWU4LVk3c2c?oc=5",
-        "date": "2026-06-26"
       }
     ],
     "south korea→uae": [
@@ -1340,16 +1340,16 @@ const ARTICLES = {
         "date": "2026-02-17"
       },
       {
-        "title": "UAE Deploys Eight C-17s to Airlift South Korea’s M-SAM-II Missile Shield as Iran’s Hormuz Blockade Reshapes Gulf Warfare",
-        "source": "Defence Security Asia",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQUdjNGMyeEx3S0RzeWdrdldQeVdkeHo1cUZZbXZtRWREd2ZjSGNyQlJkOWhaX2YxNHZGc0hBVG9LY0U0NGhsd2lVRFUtUlBuQ2o4c3FlLVZEenl1YmUtckxsLVNfWTFQZkRtWEJZd1Z5NWR1NXhPMDFLSm1sZ2tOMGpURG5hcXVyOUlNS0FSZFYzbGtzZm9IX2pwT0ZkVk8yZmpRag?oc=5",
-        "date": "2026-06-13"
-      },
-      {
         "title": "UAE seeks early delivery of South Korea’s Cheongung-II interceptor missiles",
         "source": "The Korea Herald",
         "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12b01pOTFwV2hNSU1DQ2lWSlZQRWFnYWNTQ1p1aVota0I0VXBxUFU3RUI4RmxiUkozMFItMkdUU1ZZZ3NGTUo0YjVKX0J5MnM4Sm9FWC1NMA?oc=5",
         "date": "2026-03-09"
+      },
+      {
+        "title": "UAE Deploys Eight C-17s to Airlift South Korea’s M-SAM-II Missile Shield as Iran’s Hormuz Blockade Reshapes Gulf Warfare",
+        "source": "Defence Security Asia",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQUdjNGMyeEx3S0RzeWdrdldQeVdkeHo1cUZZbXZtRWREd2ZjSGNyQlJkOWhaX2YxNHZGc0hBVG9LY0U0NGhsd2lVRFUtUlBuQ2o4c3FlLVZEenl1YmUtckxsLVNfWTFQZkRtWEJZd1Z5NWR1NXhPMDFLSm1sZ2tOMGpURG5hcXVyOUlNS0FSZFYzbGtzZm9IX2pwT0ZkVk8yZmpRag?oc=5",
+        "date": "2026-06-13"
       }
     ],
     "spain→saudi arabia": [
@@ -1362,7 +1362,7 @@ const ARTICLES = {
       {
         "title": "Turkish armored vehicle maker FNSS in talks with Spain over PARS 6×6 deal",
         "source": "Turkish Minute",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdkFPN1d1VDQ3TlZIR2JubUY0R3BLWkZPMFBDRlFZN3NxbDJFc05MdFdvN2FwX1ZUclhscGQyRVZTMmRuc3B6SFZBaE0zQ0JTb0FwTzlPUldCU19kVmljb0JWQ1hJU1QwRURkNC1jckRSSlZnemJSUHUxQ0N1OU94ell5TVowMFNHZmxXVl9rV25MR0toQ2lpLXJFdml0VjZDcV9hRDl4aXZhZGpYOXNNadIBtgFBVV95cUxPV2VuZ200bHBfVHZLQU5KM0NKMDZQUHNYc3R2Yk5zRVY5WkJHOG5jd21PdG1tbkdvU2hESjB2T2VYOGs0bVdfYmNXMURDZm5SX1g5VWRReTF2M3o0ejRYQ2FyS3RDRm5WVVRYcDU1OXZTUlJMSVVlaENyTTdnaXh4WER2WHFaeEF4VVVpQm5zUHRtSl9WbFdwT1cwVTFxTEk1REVlcFBsclphUFk1WGkzWFMtalhwUQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdkFPN1d1VDQ3TlZIR2JubUY0R3BLWkZPMFBDRlFZN3NxbDJFc05MdFdvN2FwX1ZUclhscGQyRVZTMmRuc3B6SFZBaE0zQ0JTb0FwTzlPUldCU19kVmljb0JWQ1hJU1QwRURkNC1jckRSSlZnemJSUHUxQ0N1OU94ell5TVowMFNHZmxXVl9rV25MR0toQ2lpLXJFdml0VjZDcV9hRDl4aXZhZGpYOXNNadIBuwFBVV95cUxPOFFPUkF1QjdpcE1Nd2FnVHVidG1yRzJ3Mk9tU0tDVUxRMTQ3VGtqdTJ2eVN0MThIUGJCSS1Td2ZUeVRzbm9YcmpLdWREaXJmU1JKTWxhcmRYXzJiWmVJQXdlakxtWlQ4clE3X1dzcHNpR3hnbWNqR3YxVHdpSzNfZEJFUjBDczdBQUNzN20xczVQRUV5VnU1QWpDcHNPYWxrNlo5LVBWZmRpeHFOempnTU82V1kwaWdmaFB3?oc=5",
         "date": "2025-09-04"
       },
       {
@@ -1390,16 +1390,16 @@ const ARTICLES = {
         "date": "2018-09-10"
       },
       {
-        "title": "Spain to sell laser-guided bombs to Saudi Arabia",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdU80ZWJkWldRcll5emgyTXJ3WDAwTWtwdC12akxob3B2blpPYXN0cENZWWFtT3ZiUk5DczFGMmFYeE9MamtXTXgyQUM0LUZUQ2xBd2E5bVg3UHRRTU1pTTNHdkI0aFJPYjVZTExRWUtBTUEyMHd4T0hMVGZFZHlTVGQ3Mmc3aU420gGIAUFVX3lxTE5tX0JmVkhGa3ZjRmsyOVl3LWV4eG84SlhqbjdMQnlmejVXOEM4dTFFVjZXc2ZsdjF0VjdDdmM4RkhRZ2VKempxVVZuQ3pSTnU0cEhXTUU0ZWdkYzR3cXEweUExZ1ljNENiVHRPNEhORm14c1R6V2hrVXBXRk9FZ3pSUmQ3b1ZBRUk?oc=5",
-        "date": "2018-09-13"
-      },
-      {
         "title": "Spain cancels arms sale to Saudi Arabia over Yemen war concerns",
         "source": "The Independent",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPLVVaVG1xZXN6Y2U1ZVJ3UGVjOG0zc3MwRUxyVVBSLW1rTHpFRV9pNkNjV3UwN3pPSzhDWERQLW9iOGtzNFZ4VklJejAxckhfNmxpb3k4NUt1NFl2bnVxVVJscHd6SjZuZHhzbVF4cUVjOVppbnUxemlXTXNtRlVjQmVuSkFWTGtaUFNnMDNZbDNzVW1HRHRvdmJOX25idWxFX1Y0SFVITGttSC04c2NhNjVVMzRhRmlHdkdmcw?oc=5",
         "date": "2018-09-05"
+      },
+      {
+        "title": "Spain to sell laser-guided bombs to Saudi Arabia",
+        "source": "DW.com",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdU80ZWJkWldRcll5emgyTXJ3WDAwTWtwdC12akxob3B2blpPYXN0cENZWWFtT3ZiUk5DczFGMmFYeE9MamtXTXgyQUM0LUZUQ2xBd2E5bVg3UHRRTU1pTTNHdkI0aFJPYjVZTExRWUtBTUEyMHd4T0hMVGZFZHlTVGQ3Mmc3aU420gGIAUFVX3lxTE5tX0JmVkhGa3ZjRmsyOVl3LWV4eG84SlhqbjdMQnlmejVXOEM4dTFFVjZXc2ZsdjF0VjdDdmM4RkhRZ2VKempxVVZuQ3pSTnU0cEhXTUU0ZWdkYzR3cXEweUExZ1ljNENiVHRPNEhORm14c1R6V2hrVXBXRk9FZ3pSUmQ3b1ZBRUk?oc=5",
+        "date": "2018-09-13"
       }
     ],
     "spain→türkiye": [
@@ -1457,7 +1457,7 @@ const ARTICLES = {
         "title": "Spain vs. Belgium 2026 livestream: How to watch World Cup for free",
         "source": "Mashable",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRE5tRmRCWGRYOHFERzdjeDBqX3N3a2xVVW1Mcjh2ZHo3cm90QlFhaEQ1cmI0UUJlSWhESUxTM25WTHlPU0hJNW1qYjd1NW5ZQmg2LXF6dEVfazJiNHY4bXBpcjNjSEdGZ2p4Zk14X0hMQktTVzZzbWVPMlRMVWRicnU1bWtabkdaN19aVzVaa1VEVDA?oc=5",
-        "date": "2026-07-10"
+        "date": "2026-07-11"
       },
       {
         "title": "Spain vs. Belgium odds, prediction, time: 2026 World Cup quarterfinal picks from expert on 18-7 roll",
@@ -1469,19 +1469,13 @@ const ARTICLES = {
         "title": "Belgium Bid to Crack Spain’s Ironclad Defense in World Cup Quarter-Final",
         "source": "Asharq Al-Awsat English",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOelY1WmNIbnpqaXZDbDM1M3o4QXFKM3JkSXV0MTZDRXFITmxNWmRxN092RnhrYVBlMHlWZ0w3ZGdXU1ZOVXRFRzg4cXhCYUdUWTd5cERjZjBmb2RfV2QzbEg4dm54V2l4MUNjcmYwUkNSRmY4Yi1tRmduanlZTDZ4VjlJSU90d1kzMnY5bXpUSE5YRkJxU0duUEZUMzd3NUs2azVtdDk0SjJHLVVrUUk2cHlkQjl5NEE?oc=5",
-        "date": "2026-07-09"
+        "date": "2026-07-10"
       },
       {
         "title": "2026 World Cup picks, odds, predictions: Best bets for Spain vs. Belgium in quarterfinals on Friday",
         "source": "CBS Sports",
         "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPeTBzMk1NM1dDbzlHQnhaNjZYRm03RmZsc1VpWXkwRWREaEZSc2NkeThiQ19wdFZ1WS1DVnNNZWVieFh6ZWVueE40cFRMVnAwcjJRQmVaRHFBWGd3ZFU3N2pUQjRUUXpjWWZURmxMUXpnaXJvTEJUYm1pX0lscUNLYnlVUGJuN3ByR2ZRSkRmRVkxbnQ4SVVUNUZqV295aEdFcjFGdmtuMWNMR2lUM3Z6ZXZyY2g0MjVDSE1qYXV0MGdqU3ZBcEZueHlWdw?oc=5",
         "date": "2026-07-10"
-      },
-      {
-        "title": "Spain's unbreached defense faces Belgium test in quarterfinal",
-        "source": "China.org.cn",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9jZHVYdjRKZEdoZGFJdEpwaGw4QXNERUZ2b3F0eUd5UGNfWFk2am80VnZ1QVAteFdGTXNoaEVXRF94V1oyUDEzU2pYTUJKQ1V0V3loRmxwa0NCTkZYREFBZ1J4SHFMTU5oQ2c?oc=5",
-        "date": "2026-07-09"
       },
       {
         "title": "Spain vs Belgium: Defense is the Key",
@@ -1500,14 +1494,26 @@ const ARTICLES = {
         "source": "Anadolu Ajansı",
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSlU2Wk1udVpkbVF5LW5oVjJ0M1FPTHhXZmJ1dWx2X3ExcUdvbFNGSENPMENqeFUzX2RBYkhfeGtHdzRYdl8tRmVIel9hbGVweVZ0WTQ5TTY0Vzg1VEJ3T1VJRVBfa3ZZbk5zMngyYmJ3MFQxTGdZSlM4VGJabG92c2hHbEhQWUU1ZFhGRFQ1WEFYMjZSUjBUSzYyMlhjWDYxT1VXVU1jeVhzVlB2X1E?oc=5",
         "date": "2026-04-13"
+      },
+      {
+        "title": "Spanish, Belgian Firms Sign Deal to Market Counter-Drone System in Belgium",
+        "source": "The Defense Post",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Pd2p1UWEyWTVrdVp6bmJMQmtlTmllTUFESTNRaVNULUlSNFRVMnV0RVJwYnZDa0VEenJmaF9neE1WYm1GZDl2S2psMFI5d2pOZGRZUVhhN2ZNcFYzQXhQM25nR0JIaVV5MnFSUWFrdW8zNlY1ZUM5aFQ1aDBiclXSAYQBQVVfeXFMTU90NmphaVhlTkZXTmRTZklIX1JfME5mMFRjVGdFVmItSXlOZmVQd3RvbXRSVlJwRlFTSXQ0Yng2eHdkcXhEbGFDazhLU0lzY29ldTlTdTE1YXk1VWU3NmxBYUpiNF9pbXFNWk56YXFHZ01GRWpQS085TUdCNGowcjdiVHUt?oc=5",
+        "date": "2026-03-16"
       }
     ],
     "türkiye→pakistan": [
       {
-        "title": "Saudi objection stalls Pakistan's $1.5B Sudan weapons deal: Report",
+        "title": "Pakistan PM to visit Türkiye as Erdogan's guest for new trade, defense deals",
         "source": "Türkiye Today",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYXA4MnRyM2FJS1lwZmhFNGFnVTE4SkVOd0N3YmY3ZlEzM0ExaUx3TlQzVkhMRkEtYVNWazYyWjFrVmMxT0NSLUNKUTgwRHFNN1E5TXBfbThJNzRjQ2doR0k3bF8xNXdKcTJpSGJTZFBNcnNmRmJoT3NsN2syQURUcmdxcHdUZWw0NWthQ1JhdHVfcnpSbTV3em1JMFRMaENnNUNFOXhVRlY?oc=5",
-        "date": "2026-04-20"
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPS1c5S1Z4Wm9hY2dkVzROVzEtRnFnME1ibWxIRWM1RGVicl9ONjhVaGQtZU5KNGdneF9NeHJGMEFPZHEwT1BfUVRISkdHa3d0dzNHSnhhTjZBWUdzMXczSE1RZGlzWl81dm1SMGNTeUZSNHEzMzBTd2JlZUFPQW85amo4ZnNKZU9XVkxwRXFaQ1BoZ3F3VWFwUFF4VUc1Qmd0aGVJMDFJTE9PSDdqVi1namE0NGdvWThKQ2c?oc=5",
+        "date": "2026-06-30"
+      },
+      {
+        "title": "Pakistan, Türkiye discuss defense technology cooperation focused on drones, aerospace systems",
+        "source": "Arab News",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5PYUJoYWd3VmtSRkZDUEhPSTFRNnNaaURYRkp5cGZ5SzdqNUJSUG5yU2F3elg5ZUt2ak90cjZzc0tkN2JLcFE3U194N2lJSVdrLV8w?oc=5",
+        "date": "2026-05-22"
       },
       {
         "title": "Pakistan eyes expanding alliance with Qatar, Türkiye | Daily Sabah",
@@ -1534,25 +1540,25 @@ const ARTICLES = {
         "date": "2026-05-25"
       },
       {
+        "title": "Saudi objection stalls Pakistan's $1.5B Sudan weapons deal: Report",
+        "source": "Türkiye Today",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYXA4MnRyM2FJS1lwZmhFNGFnVTE4SkVOd0N3YmY3ZlEzM0ExaUx3TlQzVkhMRkEtYVNWazYyWjFrVmMxT0NSLUNKUTgwRHFNN1E5TXBfbThJNzRjQ2doR0k3bF8xNXdKcTJpSGJTZFBNcnNmRmJoT3NsN2syQURUcmdxcHdUZWw0NWthQ1JhdHVfcnpSbTV3em1JMFRMaENnNUNFOXhVRlY?oc=5",
+        "date": "2026-04-20"
+      },
+      {
         "title": "The Trilateral Shift",
         "source": "Modern Diplomacy",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVeURlbGE0VDZfeVdMcnIzUk53V0NLdWhwUUtZaVVNbjNWUjVYVHVzZXNxZTRNZVg0S3AzWW1sNENPbVpRU3hUb2xHM0VpQlJlQ2tLU2hXQVZDaG1Ud2hhbm5YdXp3YWg4TmNJ?oc=5",
         "date": "2026-02-10"
-      },
-      {
-        "title": "Pakistan expands Gulf defense push with Qatar deal after Saudi pact",
-        "source": "Türkiye Today",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVXNMOUNDYU9xWUJ5SjJjSmVlWlNpWEZOR3ptOU9zRUdFSVRpdEZ1dUoybmwzMUVKalZNTFRKeHBCOHE2MHZ6S3RxNXF2aC03ZFhpT1lOZGEwbUxRNU11TklpTzlpN3dOSVF6MUkySko4aHNwWmlabmY1N3JlU2UtMWtyUHIySlY4aC1wQW12SF9rM29Gc0J4S2R0dW5KeTZEWHE1VUR2RFJlOF96V2hV?oc=5",
-        "date": "2026-04-21"
-      },
-      {
-        "title": "Türkiye-Saudi Arabia-Egypt-Pakistan emerging bloc forms new regional balance - Article by Türkiye Today",
-        "source": "Caliber.Az",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdDItamJqZ21feWFLZWhmZk9Wdk5YYmowRWpiMUpaY0w1LXdHSTVtRXlKYlBKN01QWi04UGtCbTM0MlNSXzZsNVBjV0lnTFVmZ2RFTWxjTmdxaEFqUDhnTlp0SW9IQmdhSTZqVWhCbDAxLXFMMWp4VEQ5OTliUF96R3JSS2V0ZDJWbjU1bG9GNFdrR2YwM3hHWF9rQjkyYURSQ1lYbjlHSQ?oc=5",
-        "date": "2026-04-29"
       }
     ],
     "türkiye→uae": [
+      {
+        "title": "US eases export curbs, opens defense technology and AI chips to UAE",
+        "source": "Türkiye Today",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaTNSNXpJR1BHeXRiMzBHc3Z0cm1FeVZjdFJNSW41VnFWZ29QLUpVQW5iS2J3ZDBUcndsRkhKRVgybjh1NTg1WWNBTnB2d3NHMTJVdUdRZ2wyTHhZdW5Gb2tuRHc3b3NnUHdhV0FZbU1jbTVyYkF3aEE5Tng1T3RtNmhpNXZUTFVrUWdscHlDS0N5MlJMc1ZYeXFzV3Q3WDdzLTRhZnV3cGw2TWItTzZ1WGx3?oc=5",
+        "date": "2026-07-10"
+      },
       {
         "title": "UAE or Qatar? Turkish Report Fuels Speculation Over S-400 Sale",
         "source": "Caspianpost.com",
@@ -1584,22 +1590,16 @@ const ARTICLES = {
         "date": "2026-04-20"
       },
       {
-        "title": "Erdoğan delays UAE visit, due in Ethiopia for talks",
-        "source": "Hürriyet Daily News",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPR05ZcTNDYXF6TXJhcmNrWWUzRDBQOVFkMHdPQmk1ckw5RlpUWGROeV9ZbmxQSmdVbzN4ODZUVDk2RE5lTERrQTBTUnl3UEhFNHBNQjNSQTlTYmNfRmx5ZmE4NzJ4cEV3RE9WSEpZYUVmbEJHcE1wbDlnZ2JWazZkQ0V1VWZGQzNKYU04aEdKMmQ5bS0tQ0E4MnNheW1DSVBPRU0xQ1NGQlZQS1dqOVhscw?oc=5",
-        "date": "2026-02-16"
-      },
-      {
         "title": "Erdoğan offers condolences to UAE, Qatar leaders after Iran retaliatory strikes",
         "source": "Yeni Safak English",
         "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOHVfcW5PcmRHSnhQVm9pcDhNVUVKYjNfcFFCT1dKZzhvZC1EV3dLRVlodFEtNkdLRHhEMEpreHhMeW5RN3Q4ZXNWRDVYazFWel9EbUlCQ1dkOGhPbXpRYk9WNk5qd3JHOWMyZ0ZScEtOZnZXazRvWU9NTE5zOFVUeXZFU25GMTRFU29CZHBPNE9fdWJOWEJTd0pnSGJIYzVyakxzQWF4SWdoRk92MVRuQjFuS1VtZFR1UVRJ?oc=5",
         "date": "2026-03-01"
       },
       {
-        "title": "Saudi objection stalls Pakistan's $1.5B Sudan weapons deal: Report",
-        "source": "Türkiye Today",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYXA4MnRyM2FJS1lwZmhFNGFnVTE4SkVOd0N3YmY3ZlEzM0ExaUx3TlQzVkhMRkEtYVNWazYyWjFrVmMxT0NSLUNKUTgwRHFNN1E5TXBfbThJNzRjQ2doR0k3bF8xNXdKcTJpSGJTZFBNcnNmRmJoT3NsN2syQURUcmdxcHdUZWw0NWthQ1JhdHVfcnpSbTV3em1JMFRMaENnNUNFOXhVRlY?oc=5",
-        "date": "2026-04-20"
+        "title": "Sudan: Advanced Chinese weaponry provided by UAE identified in breach of arms embargo – new investigation",
+        "source": "Amnesty International",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQSlptYU1VVU9rbmxLR3NuVm53YkpCek1FanhpV3Nja1FyUDZGQU9LWm1Eb3l1NzhMVmNTRUxacDBMdDE2TW1OVlFhRTJMYWJaREg0cldRWGN2S0dJZEppQl9WTkhuOXFJU0Z1c0FhNnRhUGhaYm0yNVJVWm04XzJlU19KUzdWdVdQS1ZOU3JFMmxTbXNfQXIzckdEQlNKVUVWSEwwSTc4LWhLTUl3M0ZiQTFvVmlxUjdqY0ljLUtScTZUVGFDRlhsWGVCSzFtY0QwSEVHSWlfakFGWXNvazBZOUJoUUs?oc=5",
+        "date": "2025-05-08"
       }
     ],
     "türkiye→ukraine": [
@@ -1654,6 +1654,18 @@ const ARTICLES = {
     ],
     "netherlands→ukraine": [
       {
+        "title": "Netherlands Has Maxed Out Its Military Support For Ukraine",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYS1OdzJGUkJQdUdyWDliNTZWd2dqRWppNmNla2FnTGtERW5RWUFaZ3FBUEtOdkdCMHd3ODJDTkxEVFNyQWVLNjdzT1BCV3hPVE45b1RKRzFrNEdKaFRmbXlmUXUwcnY1cE1iYk5tOUI2QmlXVGw5TjM4YWVISTRsRzhXT01NZE1BVkRabnc0blJKSXY3Z1dEaTVrcmZ2MnJBWUxBMUEyTHFwalhwSlE?oc=5",
+        "date": "2026-07-07"
+      },
+      {
+        "title": "Ukraine signs 'drone deals' with three European countries",
+        "source": "France 24",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZnphS2RJVUVRRUU0M0VJbzB2VUZYcmg0eEo2RXN0UEk4SnFBS2otbVBzN2JsS21WSEhJaml6ek41Q21BeFZFNllUMEwyQ2h1cjBzbWh1T2Q2TFBCTVZyeGhCV1lxRWV4eERzN3RkVXVHdTdkenpWNDZlSTh6VWxlYTI1NXJWMjRSOFE1Z3pGeTUtTTBSaWtLNVVyeTEyZjE5MU9JUGJJNXpyTnZpOGFtaW5R?oc=5",
+        "date": "2026-07-07"
+      },
+      {
         "title": "Dutch PM: Drone Deal will strengthen Ukraine, the Netherlands, and NATO",
         "source": "Ukrinform - Ukrainian National News Agency",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNHdVV2xuQlYxMGtkc0ZVUU5vLWV5cHlleVhQejdXRGgteTJUdVRpSFRhdkQ0Y1AyTlhTQzdLT2RqaG11b3JOOTVRWWsyX3VHTWdCaVlUQy1iczBRMnUzRkdhTGJNTHZQM1FFZ3RkalN6bHFubEUxNjhTaWdWT181b2c0NWNvdHoxczdEcnJFS2xwcHBmRFJtMzVkZHhMSTdIRnk4T19xWlJ3WGw0SjF3V09kX2ExOGpCNXdfdC1ENEQ?oc=5",
@@ -1663,12 +1675,6 @@ const ARTICLES = {
         "title": "“Ukraine is becoming a security provider for Europe”: Ukraine signs Drone Deals with Estonia, the Netherlands, and Denmark as Europe taps Kyiv’s battlefield-tested weapons technology",
         "source": "Euromaidan Press",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOXo4VGN3bzR3eWRTNVdqeU5XN0FfMHpNcW9kZDlvNDRRNEY1V19qdFdkNnRLdDJOZXhEUmpRZXF2amEtNlA1WWdJbC1Zd1NQRmU0RGJxeG1IZzdBOFBtOHJqOXVvdUtwOHlfWUJ6X1dIVmVYck41ZTc5bGFFTTJmTWJoSHBNbUJtemJjTVlyN05aRTVUaXJZRm5DVjdPdnZSOUtrRUhhNjM4QQ?oc=5",
-        "date": "2026-07-07"
-      },
-      {
-        "title": "Ukraine signs 'drone deals' with three European countries",
-        "source": "France 24",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZnphS2RJVUVRRUU0M0VJbzB2VUZYcmg0eEo2RXN0UEk4SnFBS2otbVBzN2JsS21WSEhJaml6ek41Q21BeFZFNllUMEwyQ2h1cjBzbWh1T2Q2TFBCTVZyeGhCV1lxRWV4eERzN3RkVXVHdTdkenpWNDZlSTh6VWxlYTI1NXJWMjRSOFE1Z3pGeTUtTTBSaWtLNVVyeTEyZjE5MU9JUGJJNXpyTnZpOGFtaW5R?oc=5",
         "date": "2026-07-07"
       },
       {
@@ -1694,12 +1700,6 @@ const ARTICLES = {
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeElYQklPbmltLUZRbmFIc2JuWnh0YWVEQVhhbEJESmNlNU41VlRrbTFNYThQSHM5dUZPSm92VzdKbF9MaV85U0tRT3dXcGthbzVJd0Nmem5iVnlZYnozUmU5ckFYR0RKYkE2UDlKRlpmd21GeENHOTg0MTJJTmItaTd2dXc5RXRmYklMc2NKc0pzY0NJYXJZRTlacUNhLTU3RlFkTzBsY2c?oc=5",
         "date": "2026-06-17"
-      },
-      {
-        "title": "Ukraine Signs Three New Drone Deal Agreements with European Partners",
-        "source": "Odessa Journal",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTk9xYnRHMGhFd25JU3pEaVdNQkUza3pBMklQX19PRnVGOHVCNk43Ukg1SEc5c1pBVTlBVl92WkdqWE9mZ1p2SFhNX1dEbjRSTnJUMmQwUThQMm0zN0hrYXp0RWZMd0NuSHI5Tl9PX2FJQUtBVlNpNHNFU1FfRkxXUGp1V0Faa3l3Z2VBUVpYcWVQWmZYWW83OFRyUnVYeFR5U3NnMWUtV21FcW42dkhGeUFjdw?oc=5",
-        "date": "2026-07-08"
       }
     ],
     "netherlands→united states": [
@@ -1722,22 +1722,16 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "Netherlands aims to cut dependence on U.S. security guarantees, new strategy says",
-        "source": "NL Times",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUWtKOVdHOG03VjhaMnE2WlFTc1lWMUlxSjJhNk9SVGhjMzYtVEFCSnlMeEkwUDFqdTNrZlN0UkNVbWNQbm9fRlFFUmRza1prbS1zTGUyY1lIcWNsQVZZQUVPb21ETDZKNkRad18xLUpwMzdrbnR3c2NqUkh5eHQ2dWQtbS1fc08tUmdJWVB0RXEweWdJOGpxMVlnM2d3SG9hZkJ4ag?oc=5",
-        "date": "2026-06-17"
-      },
-      {
-        "title": "US Approves AIM-9X and Hellfire Missile Deals for NATO Allies",
-        "source": "The Defense Post",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdGxHOXdqZWZWWk9TSnpBNXhtUEhndnE0ODN0U01ZZXVkWTZzNmgtNlY4M2dEai0xMndMR0FBUjkxa3BTZi12VEQ2cFZXSFRCNWZxMHQzNF9SdW1CR3BuZnB4c21zS2lVaVpLSmh3T2g4aDBhWTFfQlZ5bEFfOVpvMk02MkF3c3c?oc=5",
-        "date": "2026-04-23"
-      },
-      {
         "title": "Netherlands, Lithuania cleared for USA missile buys",
         "source": "FlightGlobal",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNakdvbFc4NzFWU0RQcExzYWRNV01RaUxFV0NlTDBCaHB5RDNFdGRZNGstSkJEV2YwbFIxQ1ZlUW5iUGdVTXpZWDNwcXcyY3hHODh5bzhnY1MtVVRoX1pnNExpNXQzUWo0SXZrODBvdThYTUxUbUxnbmpYZmNPTUhlc2tCOVB5czQ1RmVjUE5hWGRSX2k2eXp4NE1QemY?oc=5",
         "date": "2026-04-23"
+      },
+      {
+        "title": "Netherlands' next government to reduce arms deals with Israel, citing Gaza war crimes",
+        "source": "Haaretz",
+        "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNSEFiaXV5YlJmRmRjNXpQN21MSjVfdTEyN0hXTjBxcmt6S1FUNDRObUJ3aTJ0b0hZckNFdGVYdy00Mk5TbU1WN2VySFd0Vjg4NVVjN0I3OEJVNHAxeVVrTURFclFFbi1MMEc3dEZ0YloyWFd2LTV5NDQxbU1taEoxTEw5WnRHUFEzWEZzMEQxbUVHbFZYaF9ILVFkX3cwYmVzMFpzOXJmSjBXc2F2QVY0eV9jSF9JbmYwa0Y4WUdjQkJGbjU3Nk5idDZMekZwdDBEWFVfaUJHZDBDdkFzN0JobkUxTEFFa2FJZFJtamVDa3FURUVyeExFTDFNZ25vUXdCS3lDSWRDaXRSajM3R2VYMTJzYTNsU3VSdUE?oc=5",
+        "date": "2026-02-07"
       },
       {
         "title": "Zelenskyy confirms EUR 500 million defense package from Netherlands and thanks country for support",
@@ -1746,10 +1740,16 @@ const ARTICLES = {
         "date": "2026-06-18"
       },
       {
-        "title": "Netherlands' next government to reduce arms deals with Israel, citing Gaza war crimes",
-        "source": "Haaretz",
-        "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNSEFiaXV5YlJmRmRjNXpQN21MSjVfdTEyN0hXTjBxcmt6S1FUNDRObUJ3aTJ0b0hZckNFdGVYdy00Mk5TbU1WN2VySFd0Vjg4NVVjN0I3OEJVNHAxeVVrTURFclFFbi1MMEc3dEZ0YloyWFd2LTV5NDQxbU1taEoxTEw5WnRHUFEzWEZzMEQxbUVHbFZYaF9ILVFkX3cwYmVzMFpzOXJmSjBXc2F2QVY0eV9jSF9JbmYwa0Y4WUdjQkJGbjU3Nk5idDZMekZwdDBEWFVfaUJHZDBDdkFzN0JobkUxTEFFa2FJZFJtamVDa3FURUVyeExFTDFNZ25vUXdCS3lDSWRDaXRSajM3R2VYMTJzYTNsU3VSdUE?oc=5",
-        "date": "2026-02-07"
+        "title": "Netherlands Considers Multi-Billion Armored Vehicle Deal for Local Firm",
+        "source": "The Defense Post",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBlaUdXcmU2aHdtT3E0dEJrU1dlM2s3akZwRmdfWEtuaXBiN0I2NEc0S080SXRFNTE5emNJZVZMY1JCWldXc3lYUERORV9QTkVXZzJ1WWo0cTJqWGMyZzBKNmlreUp3N3dnbFV4SGJvTC04QzI2V2UtM0RqVdIBgAFBVV95cUxQeWdrYlQxSTBySTBvQ0JHV19xT2hueGdPUlpaNzIxRGNSV0t5SzUzSGN6NGowb3BOQUVXZW40Szk0WW9jSTQ2UmNWTEkwS2VPdjJ5c1lBTmk5R3NKaXdsbTZYLUhQYmpDcVFzVjdldDB1VWVxSmtKZ2lmUFFTc1R3Vg?oc=5",
+        "date": "2026-03-02"
+      },
+      {
+        "title": "The CCA program offers the Netherlands a technological and industrial advantage in the field of escort drones.",
+        "source": "Meta-Defense",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSFFVN0JnWXZrMjNZbERwZU5IUUhtTjBfbmo1RE04WkFKV2RUTjRMdDRFU0RVM0RvS3I5eVItZGRVVTZKVHBzVzZ1cVZicjBOWmtpQkZvRzJkYURuZS00UWpWLURGRXNfMk1aUHZNTXFhc3FIYnRITDQ1ajlKTkN0UmhhX3k?oc=5",
+        "date": "2026-03-23"
       }
     ],
     "netherlands→pakistan": [
@@ -1758,6 +1758,12 @@ const ARTICLES = {
         "source": "ThePrint",
         "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWEthN1VXOXNCeU9mNlc1VnZqZWpvVVJkVy1KeHZjb0xjWEJQVUd3TkhUdW1JbXZwcVpyaEMtcXNBVGl4SGhCMW9vV3NEUVJTb1dwT2dRcE1IRnRiNFZVY1lZc0NNTE40SDRsZlZsd00yUHlpU1AzbGN3UHduTzE3Z2E1T2YzMkV2d0dja3NldTQtNzBFZFkyN3ROWThtdzM5R0R6aC1FcWJNSHRYdWc1TFNBbnU5cVRUNnNPYlhFTlloenVuMXI4WmlWN3U5a0M2Q0lv0gHYAUFVX3lxTFBzZkVveVhJT1VwRDMwMTRXTDVFVkIxZ1JhSFdYeEdNRkZtbzBpa2V2YjhxMVpjd0hIX3dxaG5fbnBqSEFMek84T0ZZVk1HTlpaS2QySjFpTjdNT3BtbDJNQkRjczA5d3VGamNKYkgzQlNWVWpub3RKb1ZXNDkxUVlqZkQtMllhQjNhYTVGQUhpb2o5RURMdGVJUmtRT2drbXNQbUZqRG5DdHFDbzE5OWdJZ2hHZkgydmIzRTRKakpnbjVXaTBKR2QtUFpoUm1iNFRzWlptM0NFaA?oc=5",
         "date": "2026-06-18"
+      },
+      {
+        "title": "Abdul Qadeer Khan | Biography, Nuclear Weapons, & Facts",
+        "source": "Encyclopedia Britannica",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1pOEJIVExmcFdtXzRhcUtzc3d2U2xIRGRKdlBHV0E5VlhFYUpkMEpzUEhUVUx0LVgxdFd4bG5LbjdZM0JNZk9CMS1nVUZfeDhoZUU4QTdjTWdFaW01MGIxSkJWdkY?oc=5",
+        "date": "2026-06-06"
       },
       {
         "title": "Netherlands cites strict ‘end user’ agreements on arms exports to Pakistan as India ties firms up",
@@ -1794,38 +1800,14 @@ const ARTICLES = {
         "source": "NPR",
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNb3pVTUs5ZklFMUFLQ0Q4Q1JZOUlRTnVlcHlJdnBLRlNNam5MSlR5a1d3VWxtR1JHcjhCSTAySmtRMS1zNE9paXJWM21CQ3dpd1VoRGdYVi1kQzhWUmROVTd2LTZoeWRSQVhuUEJVNVFMLW1lOXRkRzJRS1dLeF9HLUZCYy1nVDAydkNwaC1Ea2FqUWVtRmRn?oc=5",
         "date": "2021-10-10"
-      },
-      {
-        "title": "'Equipping Pakistan with arms undermines stability': Defence Minister Rajnath Singh tells Dutch counterpar",
-        "source": "The Economic Times",
-        "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNRnpWbm53akxOT1hmVjFtVFBCODVnbXhYQkkxaXluX1ZyYjlLQWNYTFRSZmdZbFBTLTBSb2dXQ29CakFsME5nWkR3UzJ2R1B0MWRHZnVxM1JiMXZsa1JuSmVXVTRaYllYSWVWRmVGVjBsRVdrOXliempWZE96MGtXSlZMQkJNYW9Ud093a0k3V2l4d1IxXzYzWU56dVB6YUkzb0xYQ0xGVnNKcF82V3hUTExlVktEOURMRTFodE9ibmU0ZzlzbFJ6NVNPWnhJbVJMeGhCYmRkQmdfWDMtM0hvRmt2NktqbnNBakVQSm5NUWNlaElRSlFkNGF4eVJqTXho0gGGAkFVX3lxTE1KbDR2NFgxX0podmtRMm5nR29Db2xvU2NUTnhWUGI2cmVvSEUwb2szWllVeTBROHM3dFhjYUttZ3psd24tcWtwSVZhU2xiSjJObnV2b3VuVWR3VjZVZGhnejN5eGRNVDR1eFJTWnQzbDdPXzZ6TF93QTJYSXVITk1xOUNJZEFKRXVERDV1YVVGbTVoU3Z1dzZBbFNmWTVRYXBock1sT3RFekdEM3FQa2pfWmJFZWFlZHVCM2dtSGFxVjUxQU1qQWl6NGQtNXFqWXhVd0NIUFdBSzlYMWg3U1FQeWdUVkFubkxQTURDNVN0OXcwN1BjUmVUaVhDWWtiMld3cDhIQnc?oc=5",
-        "date": "2025-03-18"
       }
     ],
     "norway→united states": [
       {
-        "title": "The US Air Force Just Spent $240 Million on ‘Stealth’ Cruise Missiles from Norway",
-        "source": "The National Interest",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVTFYLUIweWdDU1lmXzRKal9EdlNMOHBTOVEzMXBnTmQ3emFVdWxRSHd0N29iUTh0cURIazhPQ253ckZrR0gtOXMxd1dhd3BvbXI4bEFkV1MyTVpva0NMNTkwTkNudTdXVVJlMnFza29ZMDhqRUZESnExQjM4REpiZWhDOHRVWDJZMmd5d0dwMVdHeWJHVGtLWDVIOGVwY1Q5M254bkZOLWFfTUJTb0FMaWt4amEzN3o0V0tad2taX0k?oc=5",
-        "date": "2026-06-11"
-      },
-      {
-        "title": "US denies role in Norway’s cancelled missile sale to Malaysia",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQa1BhNUpHc2Z6YzlSUkt3YzdIalAxRWp1c21GY3Y2U1BKY0xaUWF0WXNSMm94bGZ2OHJ4Y0RsWmZXYm5maXhvQzVMYWlWY1diNThUUldNOEJ2WTZuN2xHa2hWd3AzM0ozVHdLZzZEeGVlbjdNY0hrTWNlaHVobWtHQWdlZm8tR2hWUklpajhTaVJvMDJXQ3VXLXlCRm9uekJxZHpKcVhSTWh5dkpwY0RN0gGvAUFVX3lxTFBZcUYtTl9mNzl0VnZ5VzFvS2JmVHBiRTZLRFU0OEx6bXVpTm5sRjVSNUtlZnpaUGpmRDJabS1aQXJwMUhpc1paSzFHb1kxbl82MVZjSkttWnZBRmtKd0J2S2d3VDZSWWVZQXMwWHRuVnNheDNZOVNoRm5uUTVYTmQ4OTNUaFpEVWJiNnUzOHZxTmFPeGFTVHVpU0t4dTFoMHNoVEJZM2plU1hYZmppckU?oc=5",
-        "date": "2026-05-21"
-      },
-      {
-        "title": "Norway joins France’s nuclear deterrence club",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMXlFZk1faTl3RkhVZjBaamZXb3ZwTUVqQllkM1RObmJPcEExQWpNUUs2SlcyS1FwWHpyUmY1N19QS0pPa1ZjaV8xNlJ3bno0Smh6bW1kSEJNMWxrX19GYzF4eXNyZW41SVE3T1JPZV9Od0d5eGE0SW5meDdnVDA3NU13?oc=5",
-        "date": "2026-05-27"
-      },
-      {
-        "title": "Norway cancels Naval Strike Missile deal with Malaysia, raising concerns over defense procurement stability",
-        "source": "Defence Industry Europe",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOQUV0ZnFTbjgwcTFEZTByODJrTkxiR3lyeDBPaENydE1kWnRPMlZrYzloTUFkcFZyNVFKNTFNQ09wWnpSY2k1NWFjWVJENlBJQ1Q1cEpVbjBmb21GMEpxRzh3VGNtNmRkaTJOVUo3VUpLdlVmenZqZFZOMEZJU21HOWtNVXpxU0J5cm1YQW1EZW9Za2swcWt5ajhOaVZmUTBRSmtURjFMN3JQTktRVEhTQ3J2VFRRUE5yMjUxTTZRamdnSUF4RUMzWnJqeDZXdjlu?oc=5",
-        "date": "2026-05-15"
+        "title": "DLA, Norway discuss common concerns, supply chain resilience",
+        "source": "dla.mil",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWElpMmZsaFg0SURHQlhrUWt0SEFQT3F0Skpnb3Zpc2V0RTJ6MjA0eFB0azEtdUZjTFJDeGc5cDh2VTRwZUhKZTVvMl9QcG81Q3JPVWwyTGhpMGVweHJnbkxNTnBJRkJCLXdaTGtYNEtCeTNfcUZOenUtcTB5Y0NuUGZYQ0MyY2h6X1dfRy0xNkRyQTFhdGV6Wjd4QWtGZzUyTlB4WnVMbjdGam5qSjF0REY1MEZkMEhCODdSeXlLcWlfZi1sWkJB?oc=5",
+        "date": "2026-01-12"
       },
       {
         "title": "Key US defense projects with Norway, Canada continue despite tensions",
@@ -1834,10 +1816,16 @@ const ARTICLES = {
         "date": "2026-01-22"
       },
       {
-        "title": "Norway Supplies New NASAMS Air Defense Missiles to Ukraine to Counter Russian Missile Threats",
-        "source": "UNITED24 Media",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNOUVFS0E0amxRdmFHZkhiSkNGTjBJSXRNcWtZaDk5ZFJSekgwdXA2R1dsQktwSnRQS2doakVoV1NzbTk2aF9OeDVmcFVPUkpOc21keGlVQ25URjBqdHZ1MXR5UkdmYXliVEFjRWUyRjdOR3duNTZjeEFQdVB4OHRHS0lQVzRzbzdQZk1LRTZjcFJLVHdpWHlPZkhVWjN3NVYwT1RxSVotdVowdHk1RXF4cEo3N2dadFlfbW80Nk03bTVSZ2d2cENsNFBkMktkUlA5alBB?oc=5",
-        "date": "2026-01-22"
+        "title": "US denies role in Norway’s cancelled missile sale to Malaysia",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQa1BhNUpHc2Z6YzlSUkt3YzdIalAxRWp1c21GY3Y2U1BKY0xaUWF0WXNSMm94bGZ2OHJ4Y0RsWmZXYm5maXhvQzVMYWlWY1diNThUUldNOEJ2WTZuN2xHa2hWd3AzM0ozVHdLZzZEeGVlbjdNY0hrTWNlaHVobWtHQWdlZm8tR2hWUklpajhTaVJvMDJXQ3VXLXlCRm9uekJxZHpKcVhSTWh5dkpwY0RN0gGvAUFVX3lxTFBZcUYtTl9mNzl0VnZ5VzFvS2JmVHBiRTZLRFU0OEx6bXVpTm5sRjVSNUtlZnpaUGpmRDJabS1aQXJwMUhpc1paSzFHb1kxbl82MVZjSkttWnZBRmtKd0J2S2d3VDZSWWVZQXMwWHRuVnNheDNZOVNoRm5uUTVYTmQ4OTNUaFpEVWJiNnUzOHZxTmFPeGFTVHVpU0t4dTFoMHNoVEJZM2plU1hYZmppckU?oc=5",
+        "date": "2026-05-21"
+      },
+      {
+        "title": "The US Air Force Just Spent $240 Million on ‘Stealth’ Cruise Missiles from Norway",
+        "source": "The National Interest",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVTFYLUIweWdDU1lmXzRKal9EdlNMOHBTOVEzMXBnTmQ3emFVdWxRSHd0N29iUTh0cURIazhPQ253ckZrR0gtOXMxd1dhd3BvbXI4bEFkV1MyTVpva0NMNTkwTkNudTdXVVJlMnFza29ZMDhqRUZESnExQjM4REpiZWhDOHRVWDJZMmd5d0dwMVdHeWJHVGtLWDVIOGVwY1Q5M254bkZOLWFfTUJTb0FMaWt4amEzN3o0V0tad2taX0k?oc=5",
+        "date": "2026-06-11"
       },
       {
         "title": "Trump’s Claims About Greenland",
@@ -1846,10 +1834,22 @@ const ARTICLES = {
         "date": "2026-01-22"
       },
       {
-        "title": "Did US restrictions sink Malaysia’s US$147 million Norway missile deal?",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQQnJFTkQxQmw2OTlXVzZ5Zkc4bmhGWko1OVY5RDlPZ3k1bXkwWW9nT21qcDljOEJUWkgydGNjbEFEMXBkcmpVYlcxaXRiMUkwMjRXb3pvdUFVbjZHVjF4OEhGTjVkSUEyQkJ4Q1V6R1FlYlJ0UTRZdmE1VkxSR05kc0doNndRbDVMeTJ6dDBnenpCRm9JUjdkbXM1UEJmWnVmT0plbUVkcUxuVWxqT0hIV3FuankzQTdWQkxiZTBRaG00dzkyd3lj0gHHAUFVX3lxTE5taGEwRkQ4THBTNURGUVozZEJldTRwMjhvVUhpVVI0czFKckttMjA5clVZRy1JOVE3cDNyVjl2MUZOV1E0ZE9RM2tSdHZPUDdHbHNVRVpDYnlHN05xN1BMR2dLZVRHbFZxNFB0a2xkUzdjLWJXRDEwRm44bU1MQUpHT3NWank5VmhGYjZWLWdJUEIxZmhLQ285SzlSTVFOWDZEdzNRUWxXdXF3djRZMGNnWEt4TFJmdHdCa3Q3YzY3Tk9vZ21nRWs?oc=5",
-        "date": "2026-05-20"
+        "title": "Norway joins France’s nuclear deterrence club",
+        "source": "politico.eu",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMXlFZk1faTl3RkhVZjBaamZXb3ZwTUVqQllkM1RObmJPcEExQWpNUUs2SlcyS1FwWHpyUmY1N19QS0pPa1ZjaV8xNlJ3bno0Smh6bW1kSEJNMWxrX19GYzF4eXNyZW41SVE3T1JPZV9Od0d5eGE0SW5meDdnVDA3NU13?oc=5",
+        "date": "2026-05-27"
+      },
+      {
+        "title": "Norway Supplies New NASAMS Air Defense Missiles to Ukraine to Counter Russian Missile Threats",
+        "source": "UNITED24 Media",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNOUVFS0E0amxRdmFHZkhiSkNGTjBJSXRNcWtZaDk5ZFJSekgwdXA2R1dsQktwSnRQS2doakVoV1NzbTk2aF9OeDVmcFVPUkpOc21keGlVQ25URjBqdHZ1MXR5UkdmYXliVEFjRWUyRjdOR3duNTZjeEFQdVB4OHRHS0lQVzRzbzdQZk1LRTZjcFJLVHdpWHlPZkhVWjN3NVYwT1RxSVotdVowdHk1RXF4cEo3N2dadFlfbW80Nk03bTVSZ2d2cENsNFBkMktkUlA5alBB?oc=5",
+        "date": "2026-01-22"
+      },
+      {
+        "title": "Norwegian PM warns nuclear treaty expiry a “dangerous turning point” [VIDEO REPORT]",
+        "source": "TVP World",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOd1Q0RGdlc2M4UVRmNVBVQ2JNSkozN3dUalJQNm1sQnpuZFF0UF9yODMybUJ1RktVbld0c3dqbkVEeDFTS05DX09fanF6bDV1aFRuRjNMcDZ3eG5RTjcwUzNCUWE0endraHU2Zk00RE5FOWVJMjlfekJxNkIwdjZCSjVBZ1drUldMd2xiSHZWeTVKSkljQVVjT2dxdHRWZTNsdUxjR0tYc0d6bFlhUmppMTV3?oc=5",
+        "date": "2026-02-04"
       }
     ],
     "norway→ukraine": [
@@ -1904,24 +1904,6 @@ const ARTICLES = {
     ],
     "norway→romania": [
       {
-        "title": "Hanwha Aerospace beats Lockheed to win $2 billion Norway artillery deal",
-        "source": "The Korea Economic Daily Global Edition",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1VY3JucHlWaDBNdkdTdFlibXBTeVh6X1NNRWs4U3FVYjNUdlRkejF4V1RQT0dTajcyazlDZzMzLWF0SUlvNFlLalNMT3VqSl81Ni16UU95dG1LcFBDNDF0LVIxdU9BZFdyWk5YLVhpOEl3eFJvQTVr?oc=5",
-        "date": "2026-01-30"
-      },
-      {
-        "title": "South Korea's K9 howitzer gains ground in Europe with Finland deal",
-        "source": "upi.com",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTTJxYjNvV2o5UmZsVVRGTjVsQllhd3hONHMxZHBsdGdOZmR5QVhFeEdpMWFQd3hwaFJaMTJIaGllenRDVDYxX3pnN2luMkZabXlkR3BhY2FDd0lycEtDTVcxeTIwOGVjUkNrMFJCYVh1bzZMRS1fTzZENUZIRWR0Q1lvNXUzS1BEYjRjVzR4ZHVjSHVw0gGaAUFVX3lxTE1KcU8tRHFud0xYR1Q1UjkyTzJOOXVzTi02T1E4Qkw1RmZOQ3h2TklFMTh0V0FsQXVFcGkzWUVsYUhmVjBqXzRKbk0tTVFBQmQtX2lJUV9IQjNtcmt3bElFTURYaDVBOUp4NXItZGY1RXZCdWpLejQ5NnQ1dDFMdnNVRUF3cFJNNU1Yd05NY2hDa1lvck9pZ05qRnc?oc=5",
-        "date": "2026-04-14"
-      },
-      {
-        "title": "Norway cancels Naval Strike Missile deal with Malaysia, raising concerns over defense procurement stability",
-        "source": "Defence Industry Europe",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOQUV0ZnFTbjgwcTFEZTByODJrTkxiR3lyeDBPaENydE1kWnRPMlZrYzloTUFkcFZyNVFKNTFNQ09wWnpSY2k1NWFjWVJENlBJQ1Q1cEpVbjBmb21GMEpxRzh3VGNtNmRkaTJOVUo3VUpLdlVmenZqZFZOMEZJU21HOWtNVXpxU0J5cm1YQW1EZW9Za2swcWt5ajhOaVZmUTBRSmtURjFMN3JQTktRVEhTQ3J2VFRRUE5yMjUxTTZRamdnSUF4RUMzWnJqeDZXdjlu?oc=5",
-        "date": "2026-05-15"
-      },
-      {
         "title": "Indra teams up with Hanwha for Spain’s $5.3 billion artillery order",
         "source": "Defense News",
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZTlFcG5lUVVWdFdXNkJsZks5THpKRmRGdGl4dHB6NzNyZ1M4dl9faktobkExMTRSZGNfa21rb1NyVHB5WE9pc3RIZEI3djdsaHJFeUR1UWNKWTJrMlphN0ItZUR5XzNQSVJaMElFQmlsR0VsQXU5akFsaVdGdHVwWkE2WjV4V0VLREMzeGs4VFhpSFZ6Q0UtWVhqdjQxZWhmbmI5YUtrNU1FRmdOM2xhWnZZMnJFN01vRUE?oc=5",
@@ -1934,25 +1916,49 @@ const ARTICLES = {
         "date": "2025-08-29"
       },
       {
-        "title": "Korea lands K9 howitzer deal with Vietnam",
-        "source": "동아일보",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5Dak52YUNoVVdPN3RmUkl3UzJHTnFXQkt5ODdVNHhuQ1I0WEd3aWpMVjFpUmk0MjVJTl90bTBVY01QZUlDY0xFQ2FNNVQ5ZHk4dFpXSVAxX2xWendYYzlmeEVlX091UQ?oc=5",
-        "date": "2025-08-15"
-      },
-      {
-        "title": "Norway Begins F-16 Deliveries To Romania",
-        "source": "Aviation Week",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQam1MRHBfel9MdUtoOVpWeWg0RGh1N1RTaXZ3clJKanVUbjdCaEtDRkpJWlQ0X3gtclVmaWRjdTg2MTUzdDV5ekZsdDdKYnlncFVUb1RBcVV0LU5aQmw2N00xeWRCMnFpdzl6YTJJLUNOWVQxajdzaU91WllmdG4zUlAtTnVBRzdzQUNNY3NKaHVMQXBu?oc=5",
-        "date": "2023-11-28"
-      },
-      {
         "title": "Romania Boosts Artillery Firepower with K9 Howitzers from Hanwha Aerospace",
         "source": "Defense Security Monitor",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObDNjWGQ3aExKN0I0b05sUkZIVkhHcVotMXR3aFNIZEI2VFoxclhsWm5CdmxJV0l0aWFlT18tOFdMWnpZVlc3aGszWjd4MHYweDQtUU1MdGtpZjR1UVdqdGFyNXpURDZ0TWdSMWdfRUIwR0FpZVN6bkNmTm9mWkd4WmItZHBFRDhQVTNobEVDcG9OWk1zc2x1TzRuck9tMHlBdEJJVEhndTRXeUthMTBnMEhjMUIySkp2T3JaRA?oc=5",
         "date": "2024-07-10"
+      },
+      {
+        "title": "Norway signs €388m deal with Romania to sell 32 F-16 fighter jets",
+        "source": "Airforce Technology",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1VWlJCa203NjM5M3JDdUp5QWNIcjBTRjYzVmlYcFJNMk1aLXczWUhPbDZ0ejRLN3dncnFHeGFldUZkTTAtcnJsTF9HdjlFQTlXNDJaS1ZfSHRKZWFRMzg0aDJvMTFkRE01MVJWM0Y0cFFfVm5ZS0Iw?oc=5",
+        "date": "2022-11-07"
+      },
+      {
+        "title": "Norway Gives Romania $127 Million For Patriot Missile System Sent To Ukraine",
+        "source": "Radio Free Europe/Radio Liberty",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9aaGVxdVdjb09VTnQ5SXFwV1JmcFp0S0czd3ZmUUFid1I3ZHdWaTNHY1RrYWZ6Y00wUmlLbTRVbkduaVFRQjZiMFVtQl9KS3N0czFEVW1uc0p6X3JQYlc4WmluVzAzLWdaZ1o3RjE5cXZsMmQxYjFr0gF6QVVfeXFMT2V6QllLRU1GUGtJN2NldG5QclBlMmFvVEh6OTVuOF9udUk1N1JCbTBpUUY1ZkNVNWUyLW5VcjZUbXRzeURGbEc4NElJcXQ1d3RmTWhpZ2VMRmdTWEhLUjZZeklRMURuWFJtNFhnYW1BWTY0Rjc3cEhKZEE?oc=5",
+        "date": "2024-10-30"
+      },
+      {
+        "title": "Norway to Sell 32 Used F-16 Fighters to Romania",
+        "source": "The Defense Post",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1mbE40Mk9HdUVyZVZhSmZhVU5EenhjNTUyWmdRcVRJT0Rrd2pDeXJCNmgyenFnd2F3dktzN3BKQ2d0SjhNRUhXakRLVW9hX0lQQ0IzRjZubHJ2QU1SVWZuMTk5dy1oUEpWUFl6TEhnaEbSAXZBVV95cUxNcElNNi16NmZYaFRyVVRsNlp4eEZBOFFQeTAwalBEQ3VvTkFpT2tVOUlQM2thUV9MRjFfNWhTQ0RYZHdORE9wNTEzRVktTEhmejI4ZGpJR01fM0VkOVJIZm5IZTB0aXk5STNnaUppYmFCR2V4TS1n?oc=5",
+        "date": "2022-11-07"
+      },
+      {
+        "title": "Romania Begins Largest Ever Arms Deal with Request to Buy F-35 Jets",
+        "source": "Balkan Insight",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSFhGRTBubEYzSWNKbkdGdURMZDRFOGVVLXdJUVNINmozeF9uc19aeHV5b084ZHA2WEZkZ01PQzhQUDNDZDdGZlpIZS1LbmNYUzQ4OW8yRy1PWmlEOWItX2x0dDhjRzlweFZGN1pUdUJUUEpIcUsxMVpfaEdxQUU1SllpcTlfMldwOGZJV3o0ZGo4ZHZFdXl3bG1RMTB4NWd2aXFkZ0l3T1BBTEhq?oc=5",
+        "date": "2023-09-26"
+      },
+      {
+        "title": "NATO Industry Forum: At least $50bn announced in new deals",
+        "source": "Euractiv",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUGxYdWlfNWNIUllHZGJhMHpyeTJBXzFxb1c4MFc2YkNGU2N3VlNLbHR5WkJqNjlTQlRSQ1kzbzUyQ0tCZjZOc1lLWjIxNUxVNDFwcFBQWFd5SENuZFlxd2RzeFFkOGZtbEtHR0dqM0VBTTVHUXhHanVmdnpuODRCdHdKdzJwRVFxUHMzM0RjUEg?oc=5",
+        "date": "2026-07-07"
       }
     ],
     "poland→ukraine": [
+      {
+        "title": "Poland could cut arms aid to Ukraine as WWII spat continues",
+        "source": "DW.com",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQc2hhTU54UVFjREJoNTc4SnViV1BQaGtFOGtYakJPa0dnVEJBenplTmJibUJWN2tMaG44Vk9EaUYtOGg1MU5lMGN5ZGxuQXRhMTE0VTJtVzRNSzF6T0NJTndScmtHU1RaZXZWMmN2WVpnNEJLQkROTnh2ampUNVVjYWZMOWFQVTF1MHQxWU9ZOEs4S3JuQ0VZ0gGXAUFVX3lxTE54aHpBTWk5THVYX0ZDUHJzaXd3TDhpaTBsUHlqMmpvWFJHQTg4TkpiMUQ5TVVDX1pVajNSek5ZMU1mWHdSOFJVZ1pvMG5QdnB0aE5JRzFreFp2ZXFHd1dxSkU3UHhvVmNVTzlEMFlyalpyTDFVa25OV2ZtUUhvUFFDbTNEY1FpVjdSR3hGY3lpYTg1NXo1REE?oc=5",
+        "date": "2026-07-11"
+      },
       {
         "title": "Poland to declassify Ukraine arms donations records",
         "source": "TVP World",
@@ -1978,31 +1984,31 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "Ukraine proposes drone deal as Poland weighs MiG-29 fighter transfer",
-        "source": "Межа. Новини України.",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9INmhjSzl6S29hXzM1dXJVMFViT0p0V0FZdGtMZmNIdHdOMGcyZ2JmcTVYVjdQT3g0TVp5SVhxX0txZXBNNi1TNHJqSm9NOHd4Yjh4bTVEN0tnbUJEeXUtblhGb24wWEx5dHA1WVZ4WWs3aVk?oc=5",
-        "date": "2026-07-07"
-      },
-      {
         "title": "Poland Withholds MiG-29 Jets After Ukraine Declines Drone Tech Share, Defense Minister Says",
         "source": "UNITED24 Media",
         "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVkhFaEFXX0IyTTVkYzRRRm9YOTZVQS0wMWc4RFpwZ2sxS1l1UzhTZHdEb29XSG0tSEY1Skt4QUtGMXFsaDdsSXZ3OWZ4RWtnNDhpVWNmMVppQ2JwalVta0dKNmgxLVFKckRvVktuNkNWeWs2ZkxNQkFIU1pmQ0JDZEIwYmk4UV9veGpKT0pZa295NWtmb0hvNk9lM2k0S1NsNDAzUlNYZHF4WjRhYmZOdENYdlBJUjFkN1g3dWpSWmlMZWhmVENrWmQtSTdzYXYtczhn?oc=5",
         "date": "2026-06-30"
       },
       {
+        "title": "Ukraine proposes drone deal as Poland weighs MiG-29 fighter transfer",
+        "source": "Межа. Новини України.",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9INmhjSzl6S29hXzM1dXJVMFViT0p0V0FZdGtMZmNIdHdOMGcyZ2JmcTVYVjdQT3g0TVp5SVhxX0txZXBNNi1TNHJqSm9NOHd4Yjh4bTVEN0tnbUJEeXUtblhGb24wWEx5dHA1WVZ4WWs3aVk?oc=5",
+        "date": "2026-07-07"
+      },
+      {
         "title": "Poland Warns Ukraine: No EU Entry ‘With Bandera’",
         "source": "Kyiv Post",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBKSV9qNV9CY1VQSi1uWk1uVXlRbnVEZllRVUs0WHBaU1hwVlE0NVV6d3hnU3NvQW5wQWV6a2hLU3FDZzEtRnZ1VFpFSQ?oc=5",
         "date": "2026-06-30"
-      },
-      {
-        "title": "Poland Decides Against Transferring Remaining MiG-29s to Ukraine, Opts to Scrap Them Instead",
-        "source": "Defense Express",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdk5VVlN0d3lEX203NkN2cThKU3B3aDlMMVR4WmRPMzhYUDdPamppQTRDT3FDR2ZkMDh4bUZJOEJRel8teU9vQzUxOXp6dEZnSmx0LWtHLTQyOGVUZ3BUZ2g1M1NvbG9TLW5qVUpYVTlFYWJlSEh6ZnViek02VURrbWlXVGd4WVlQZW9KZ0NwRndqZ0l1Rkw5Q1BZdVBzNzRfdWMzNzdIVDJRRV9wRlptTTE3OFNfNE9rYWYwUDN6R2ZRRnhITTdCNE9MZm04dw?oc=5",
-        "date": "2026-07-03"
       }
     ],
     "poland→estonia": [
+      {
+        "title": "Poland and Lithuania explore playing bigger role in NATO's nuclear deterrence",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZ0d1Nldmc25tRnVqaFRCQklOazljbHRrV2t2cnNqdVBqWnBWRWxCOEs2TkQwOUJOSWFFQ1lDSkI1RTVJZkhwNEpFM3JLVDVpVWdSX2JXVTA1dHctbS1KY09qMDIwNGlPVTdSdGVtRTdqel9Pam0xbmphdzk4MTlGeDFweFlGZ1ZDS2F4b056U2gwSmZyZ05XcXJjdDRVdWFzNzdibUhSX2F3U20ybnpsQ9IBtgFBVV95cUxQTUROZm5mZUVCN0F2RmF0VU9kckZQVG5reVk5VzBOcnhRSGs1LXJscjNZWHp2WDJfTEZ4YTltOHM2WHJEMVdGazRuQjhfRTJMamR4RnM0b3RMRW9KaDJOSDNWeU11WkhYNi00elRVZ3RaYXFfbG1rMEwyUVVXZTRTX2dMQTkyUE5RdklDdHFrbjlNZlB5QmwxMzNmaldUWjJqZXdQU3NraWl2bmU5em9BRlJpaTFvQQ?oc=5",
+        "date": "2026-06-03"
+      },
       {
         "title": "PGZ, Estonia's Frankenburg to build anti-drone defence plant in Poland",
         "source": "Reuters",
@@ -2016,22 +2022,22 @@ const ARTICLES = {
         "date": "2026-01-26"
       },
       {
-        "title": "US to delay arms shipments to Europe, potentially affecting Ukraine, FT reports",
-        "source": "The Kyiv Independent",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQ1A3T0pRenhqMDZLa0JnN3FLNU55Y3pKLV9tdC1od3M2QTJJS1RpbG5UemhMODJNLVJJRk9OUXluYTEzeG5CbC1DN3RvbElvckF6SEs2QlJ3TGJNV29HQzlpbkU1Rm12cGVnMjlLY1NGQkJZT0xuVm1kWGZKTWdIblM4a1dEdGRSdjNocC1MRVpYY2JuVTZXVE9RUURPbFZ4TkFBQjIzYWZLVmhNQXZMRUNxak9sY0JISE9fV1h2UVF5bllsU2c?oc=5",
-        "date": "2026-05-02"
-      },
-      {
-        "title": "Main",
-        "source": "Odessa Journal",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSWZtYjY4M1ZrZXM0VkJXaVF6YngwUXNERTJYSFctR19XU2ZuQ1J6dEZGNlNoaDZIOWdUQXpLNHRscDFTZG4yV2tFUDdMcUwtd0ZhbHNKYllwX2pZRFBPUHpuTnJkTjVUcHdjSXZqOTFNUE9hUktJejhWT1lPcUFkVmxIN0phZDhZejZUNUI3dE1lcmswUnFTUzhwYk5FcjFJb213bEs4d3lNdw?oc=5",
-        "date": "2026-03-28"
+        "title": "Milrem Robotics, PGZ Expand Estonia-Poland Defense Cooperation",
+        "source": "The Defense Post",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOW1Gcjk5ZndwRTRYY0VqQnJYMEN2QW16UGx3WGVtdmsyNmRuN3NoeVp6X3dkZ2tiZGhtQzFsSkZOVlFxRnJCdVk5aXotdlphV1RRWEQ5NGRnWDIxWkFDOXpEb08yaGtmeDFULWxHTnZHYl84aE1PaFcwQUhpT21RREd4dmfSAYoBQVVfeXFMTmJONmRmUXF1dldhRi05VVpRdU5KRXdYemJwOUh2MGgxd3JFZGZjYTRORVJnT3BRT1ZJY3pDNUs4YmE4SVl0VjRXemlmT0lFd2R3RlEtdng2WDViWHBHWmIwUDBqTDVPQ1FlanFXLXRKZG9EV3I4cWVmX3BSQk5HU3paM3JjYm9PNHdn?oc=5",
+        "date": "2026-03-24"
       },
       {
         "title": "Hanwha Aerospace to supply 3 additional Chunmoo rocket launchers to Estonia",
         "source": "The Korea Herald",
         "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBxakhwYUU2NnYyakt0OFVCeXM0cURoYUFJM0dCZ0dfaTF4Nk9jU2VnX0FNSDEycmRnN3IydkVkODBDNm1HVDZ0QzlycFFoNkZjWTBUOTVyRQ?oc=5",
         "date": "2026-05-11"
+      },
+      {
+        "title": "Main",
+        "source": "Odessa Journal",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSWZtYjY4M1ZrZXM0VkJXaVF6YngwUXNERTJYSFctR19XU2ZuQ1J6dEZGNlNoaDZIOWdUQXpLNHRscDFTZG4yV2tFUDdMcUwtd0ZhbHNKYllwX2pZRFBPUHpuTnJkTjVUcHdjSXZqOTFNUE9hUktJejhWT1lPcUFkVmxIN0phZDhZejZUNUI3dE1lcmswUnFTUzhwYk5FcjFJb213bEs4d3lNdw?oc=5",
+        "date": "2026-03-28"
       },
       {
         "title": "Hanwha Aerospace expands Baltic footprint with $302 million Estonia investment",
@@ -2044,12 +2050,6 @@ const ARTICLES = {
         "source": "UNITED24 Media",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPLUV5eW1zbVJaeHlrWEhucHZra2c4ZXplWVNFVTRSNXJHd1lGR3F2cXZ6VThkRjRSU3R0RGRSVFIzMDRnTHp0SUNSbkNYX1ZUbUlzNXlBZ3otOEdpM1AwcEpKbDZLVHhsN1lGMUVzR3NDTC02QVVrdWNZcUpUb3dVaEZZWlo3VVVvQXZSR2Q4bVpWaFotX3hleE40YXhMYWNBWGRpMnRJaldaalNITXE4QWhFOU5TRkRRWUs2cWZn?oc=5",
         "date": "2026-03-28"
-      },
-      {
-        "title": "Frankenburg, PGZ to Produce Drone Interceptor Missiles in Poland",
-        "source": "The Defense Post",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9hWmVCNEZzeGZmLVFWTGVZVkU4Qzl3SnRsbzlhM0p4aWVCWXROaWRjeXZLcXoxY1duazExZlpxMzRwbkdSeXZCdy0wTmJ2cmlVNERTOHY2VXhrN1hDQUswSU81bC1ST1BKVG5jR3ZMbU0wcy1HWHc2cDRYUjfSAYIBQVVfeXFMTkF5cUFtYXNxWDhwcEpfYWJPVXlZNWRhRmJjT0RPZFo3ZDZZbFNUcG1tT0c0M0FUSG1rTkh5el9pSTZ4bUZEZEtvRDkwWUlPRTFRcmQyVWNqMGc5RzE2T21Cc3NKME1YWTl6RkdEZ1d4NGVYekYzOW9hcEJTcFZfQlZhdw?oc=5",
-        "date": "2026-03-30"
       }
     ],
     "poland→sweden": [
@@ -2090,16 +2090,16 @@ const ARTICLES = {
         "date": "2026-06-29"
       },
       {
-        "title": "Poland, Sweden Finalize $4.8B Submarine Deal",
-        "source": "Briefs Finance",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNjFDZmtrREU0QlVMYklEblhfdFpPN0l4YlE4NV9zdmtIb0VwM3VDVlc1YndkWFhvYTBia0JVWHQyWi14NG9SdmtfejgwbmZwS1Bwa21CZkFxLUNpU2hJam9VYW9KOE9DQkxTZnFKdGJnUnc0cmpWUkdIdHJLYldmQ3QwOVNlZzNlVkJqNzN4UQ?oc=5",
-        "date": "2026-06-29"
-      },
-      {
         "title": "Poland and Sweden pledge support for Ukraine and sign A26 submarine deal",
         "source": "Межа. Новини України.",
         "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5yRXlzRExrMXV2N0VLVWxYcUhSQmpib3doRUVVVHNXVUpBZ0Y2V0haR0t6RndtU2pZZFlZVnRwME01UWFZZUk0LTBMMktyMVRZMDdZMFNNUnFLX3BRREFWNVN3RVBfZw?oc=5",
         "date": "2026-06-29"
+      },
+      {
+        "title": "Nuclear weapons talk to fresh arms deals: how Poland’s defence surge is reshaping Europe’s frontline",
+        "source": "EUobserver",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeEVGUFI2OEJwMFdCYThDajNtWGh6dEJOdXJHaGxUYmg4YUdMNTA4dGUyaVphczJES0hxWS1COGd6a05haDRhbm1ZUlhmUktNMmprQ2tHVTdheXRZZHNiaDdzSTg0ZmttalFZV3lNQi1VUEVvTVRfR0RjbldKVW9mU3RIOUU5ZUp4TlBOZXJOaHllSV9TR1RoTDlQb1NieEJPcS02ZFI0U2R6dVI5QlhEMnJKSmp1TlV1RFhLVkNtcFR6dzNhWU04?oc=5",
+        "date": "2026-02-18"
       }
     ],
     "sweden→brazil": [
@@ -2122,22 +2122,16 @@ const ARTICLES = {
         "date": "2026-06-05"
       },
       {
-        "title": "Brazil may add 20 more Gripen fighters after rejecting the Rafale, and Sweden’s bet on Latin America is suddenly growing",
-        "source": "OkDiario",
-        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQczdLb3lyLUZiS0ppNzZxM0pGZkczTXRPREpCWjlMRU4tZDI1aHViQWpRWk1hcC1fRFN0QnJuaFVNcVAxTHhwdVFuZDFoMi1Mb1J1bHhYR2hhXy1mMlJXTmRnT2hVY0pCTlNLRnBjT2w1TDhZVEFIcFJQd1BFYms1R2YtLTk2LVhLaUpQa2lKaWV5QkI3NXJYcm9SNGNaYUVmUXRySHl3UFpvdTlpMnRadmROQWFuT0ozTUx4YnlGa2pUMFlJbzJ4WmR4cXVubDhpeE1vdjhxWjRQVHQ2aHozbTB3c2VCdU9GdlE?oc=5",
-        "date": "2026-06-17"
-      },
-      {
         "title": "Brazil May Purchase 20 More Fighter Jets From Sweden",
         "source": "The Defense Post",
         "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE93dHp4YWhsazFWd0V4M2xGc2RtMnlEV05CRW1LcjFha2ZTVzNVUVJNT1hPYWhMbmRVNEwwWFFlMTYyNENIZXNYM2R1TlZiUm5sMTNFNUQwbllna2w5ZGdDaGZnNWd3ZzlKbnA0Zm1scHLSAXZBVV95cUxOQ0lpWmFXU0s4ZF9VMEFyYXluZnBCMVlKWjFZdklmcnZfa3JhWld3aXMyN0F4RVcwSDdOMFFxVDI2czFfUjhTanVBM2ZoNjZJSlp4ZlVxZWlNa3kwX2pnMlNTZndjTjJVNV92enpsMUE5ejNIaHFB?oc=5",
         "date": "2026-06-05"
       },
       {
-        "title": "Brazil rejected France’s Rafale and is now eyeing 20 more Saab Gripens, deepening a Sweden-Brazil defense pipeline that could reshape regional airpower for years ahead",
-        "source": "Vozpopuli",
-        "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPQ1dNQ3FVaC1ORjg3S18zVzhpN2RxTTlJQkRacFUzN09XbEJnSHRmaFBjdkY5VVF5bldaSVFwUTlFUERXNnpSR2s1TXQ1TzVZU1Fqa3U0MHRMLU05QjV5R0MxYnBRQWtqTk54cnlEOGVSUlJjSlpYazhLTldDYW8xVExzckEtM2NyMFdUbmVqSC1KSzYyTFhRRFNKODh6Zk9OckR1M01jR1N2YjFWTjFHQnBLOE95eFpwaUNHaVhMX0RSVFNITzNiZnBzUk9zZkNPb0hRaUVlazM4c09KRTI2ZGU3LUNkdG1FVnpuaTJTR0U4WjZxclZvVEg4Ry1nTWNzdXlsdzZZVG00U3lRVWktOENJcDJ0YWh1SklFaG1oelgxaF9VTGhHNWJUQ1hHZ1E?oc=5",
-        "date": "2026-06-19"
+        "title": "Brazil may add 20 more Gripen fighters after rejecting the Rafale, and Sweden’s bet on Latin America is suddenly growing",
+        "source": "OkDiario",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQczdLb3lyLUZiS0ppNzZxM0pGZkczTXRPREpCWjlMRU4tZDI1aHViQWpRWk1hcC1fRFN0QnJuaFVNcVAxTHhwdVFuZDFoMi1Mb1J1bHhYR2hhXy1mMlJXTmRnT2hVY0pCTlNLRnBjT2w1TDhZVEFIcFJQd1BFYms1R2YtLTk2LVhLaUpQa2lKaWV5QkI3NXJYcm9SNGNaYUVmUXRySHl3UFpvdTlpMnRadmROQWFuT0ozTUx4YnlGa2pUMFlJbzJ4WmR4cXVubDhpeE1vdjhxWjRQVHQ2aHozbTB3c2VCdU9GdlE?oc=5",
+        "date": "2026-06-17"
       },
       {
         "title": "CAAT - Brazil’s arms suppliers",
@@ -2146,10 +2140,16 @@ const ARTICLES = {
         "date": "2025-10-28"
       },
       {
-        "title": "As demand rises, Embraer readies for greater Gripen workshare",
-        "source": "Breaking Defense",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMXhTLXNBaWFFM1poV2NxcGVDVm5ONDBxSVB0MnlpZ2VkQW5PRWhab0JNTzFfSnY1dTY4M2d4MTRMcEFURTB2VGdkUldON1IyRzJ4MTljOWcyY0NvdEVEdHByU2x3TWZRb3ZwM080NGFYWnpNSnpnZ0E1aUUzTUgtY0Znd3BGTDBFaEk5Q0pVU3FIVFE0YTdqOXB4c2pIQQ?oc=5",
-        "date": "2026-06-15"
+        "title": "Brazil rejected France’s Rafale and is now eyeing 20 more Saab Gripens, deepening a Sweden-Brazil defense pipeline that could reshape regional airpower for years ahead",
+        "source": "Vozpopuli",
+        "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPQ1dNQ3FVaC1ORjg3S18zVzhpN2RxTTlJQkRacFUzN09XbEJnSHRmaFBjdkY5VVF5bldaSVFwUTlFUERXNnpSR2s1TXQ1TzVZU1Fqa3U0MHRMLU05QjV5R0MxYnBRQWtqTk54cnlEOGVSUlJjSlpYazhLTldDYW8xVExzckEtM2NyMFdUbmVqSC1KSzYyTFhRRFNKODh6Zk9OckR1M01jR1N2YjFWTjFHQnBLOE95eFpwaUNHaVhMX0RSVFNITzNiZnBzUk9zZkNPb0hRaUVlazM4c09KRTI2ZGU3LUNkdG1FVnpuaTJTR0U4WjZxclZvVEg4Ry1nTWNzdXlsdzZZVG00U3lRVWktOENJcDJ0YWh1SklFaG1oelgxaF9VTGhHNWJUQ1hHZ1E?oc=5",
+        "date": "2026-06-19"
+      },
+      {
+        "title": "Nuclear weapon - Proliferation, Arms Race, Deterrence",
+        "source": "Encyclopedia Britannica",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5PWDFHQzZURGNKQ0VWNXBUWlk3dDg0a3lDQlVlaVdYSmY5NUplRjh3OTRqWmp4ZjVtalBFNGZ1X0N1M0YzeVJSVmRhdzM2NkhVV1hKakN6c2ZoY1VhUER4ejJweEhUSmlVREdmNzlIakstaDBYSFhB?oc=5",
+        "date": "2026-06-13"
       }
     ],
     "sweden→ukraine": [
@@ -2158,12 +2158,6 @@ const ARTICLES = {
         "source": "Breaking Defense",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMV9ZVEtQVUhhOFRYOHd5bHV4WnppVGNEY0pxN0hfdE1CZXNiY1cyNUxCYjhXUFkyN0xZTllMUVNQRkVqWEN2bmg1cXpMRkM0enBUU255c3VleXNCOVU0RHNNT1BXVmk1cmFIdzBRNWI5WXhMY0l4LWR5bC13UU1wVlBmbkV6VHB4NXR1dTV0Umhua0EyR0lkQ1BaRVkxVmNNb0dxVlN3NnJTUW5jWU5VTlZWYWJOQQ?oc=5",
         "date": "2026-07-01"
-      },
-      {
-        "title": "Sweden agrees to Saab jet fighter deal with Ukraine",
-        "source": "MSN",
-        "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPSzBqcGVRYnNKNDc5cnZleVpob3BiY040QzRVV2k1bmJFbWhUQW5MM0laVTdrZlh2RGNGSTZaT3VzaDcyNUFEdE9rOTFmbjU4NjRVNDJtUHF3X0t5MmRUUnZtbVc1U2k1WVBENGtmLTc5d0FOQUNIZG9MT0MwS0Y2dkJtQmVKQzRhTGp1QWw2SUtZdmlQY0R3aDY4MG9UdWJCdDF1NjY2bkc4NlJMRndFajdZeTlWNzJDWWJxM1lBNC05SE9DMGlVNjhwdEpCbnpVT2s3WC1BNUpORUY5cVhkN0pTQk9kYXd5eUZXbXNhUGp6T3g1RGE0VDJndmsxM2FQQS1xU0QzWlMtOXlGVUhYY2dKXzFva29leWpkLWJxaWFPdFFlVGJrVEZ5WWk2VEI2eWNFdUh1TVoxXzNRejR2OUJLOWpQT0JJ?oc=5",
-        "date": "2026-07-10"
       },
       {
         "title": "Ukraine Signs Deal to Buy 16 Gripen E Jets From Sweden",
@@ -2176,6 +2170,12 @@ const ARTICLES = {
         "source": "The Defense Post",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5uRHA1MmtuXzNjMWMzbkNFMFNsN1lVZXVNMVRYSG05bTNnaUVvc3NYZ2tkTlRDeHJYRmowX1lySkFaYlFsODZnT0tsSmRHazl4b2lrUGp4YUQ2Qkx0a3lkaVpnallscjdQTm9qTTFuMA?oc=5",
         "date": "2026-07-02"
+      },
+      {
+        "title": "Sweden agrees to Saab jet fighter deal with Ukraine",
+        "source": "MSN",
+        "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPSzBqcGVRYnNKNDc5cnZleVpob3BiY040QzRVV2k1bmJFbWhUQW5MM0laVTdrZlh2RGNGSTZaT3VzaDcyNUFEdE9rOTFmbjU4NjRVNDJtUHF3X0t5MmRUUnZtbVc1U2k1WVBENGtmLTc5d0FOQUNIZG9MT0MwS0Y2dkJtQmVKQzRhTGp1QWw2SUtZdmlQY0R3aDY4MG9UdWJCdDF1NjY2bkc4NlJMRndFajdZeTlWNzJDWWJxM1lBNC05SE9DMGlVNjhwdEpCbnpVT2s3WC1BNUpORUY5cVhkN0pTQk9kYXd5eUZXbXNhUGp6T3g1RGE0VDJndmsxM2FQQS1xU0QzWlMtOXlGVUhYY2dKXzFva29leWpkLWJxaWFPdFFlVGJrVEZ5WWk2VEI2eWNFdUh1TVoxXzNRejR2OUJLOWpQT0JJ?oc=5",
+        "date": "2026-07-10"
       },
       {
         "title": "Ukraine and Sweden Signed an Agreement for the Procurement of 16 Gripen Fighter Jets",
@@ -2254,6 +2254,12 @@ const ARTICLES = {
     ],
     "canada→ukraine": [
       {
+        "title": "Canada Wins Support From Eight Countries for New Defense Bank",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNR3U4TmZyeUpxV0xhVzN5el9jd2ZiT1FILXF1dHdPa0RKYTFxV05ZOTNWLUhMVll6QU5xQmx4NjBaUGNnaTNUNXBNY29qTC1XUjNtdHNUUXlPeExtRVVwX050UG12MEZXRXItOEE4ZTBrazRBcnZCV2J6LThIb1FnSWJITUljejBaQlpjU0ZKMm96cFB5c29GOFBjRUhLODNldGhOWTBZQ0NDX3pubDl6TF9tMm9kWTRYTEt4Rk91ZlE3bTl1?oc=5",
+        "date": "2026-07-07"
+      },
+      {
         "title": "Canada pledges $900 million to Ukraine for vehicles and ammunition, but no air defense",
         "source": "The Kyiv Independent",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNFoxZ0UwdUlfMGw0RXFsYjBkWktwMkZ3ZVozWmdYLXdBYnlfblEwTTZoSW1KUDh1MU5mV1JoWE4wMzZ4OWVWZXBLenFMZG05MGFzeWVQNzRRYTIxWUh4WFhrV2tlUDZNSmVLOVA4VHBxM1RDaXg2QVFtSlJuMTVMaXZzenRMSDJzZ1Zqel83c2dPdzJQeEU5bkpVU3h4NE5MYWZhSFJDMTQ5ODg?oc=5",
@@ -2266,16 +2272,16 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "“Ukraine is becoming a security provider for Europe”: Ukraine signs Drone Deals with Estonia, the Netherlands, and Denmark as Europe taps Kyiv’s battlefield-tested weapons technology",
-        "source": "Euromaidan Press",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOXo4VGN3bzR3eWRTNVdqeU5XN0FfMHpNcW9kZDlvNDRRNEY1V19qdFdkNnRLdDJOZXhEUmpRZXF2amEtNlA1WWdJbC1Zd1NQRmU0RGJxeG1IZzdBOFBtOHJqOXVvdUtwOHlfWUJ6X1dIVmVYck41ZTc5bGFFTTJmTWJoSHBNbUJtemJjTVlyN05aRTVUaXJZRm5DVjdPdnZSOUtrRUhhNjM4QQ?oc=5",
-        "date": "2026-07-07"
-      },
-      {
         "title": "Canada Announces $633M Military Aid Package as Ukraine and Estonia Sign Drone Deal.",
         "source": "ubn.news",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORVZBVy04dTdQYXM5NW9KSE9PUndQb0ZPZnE0VmxTUDlxMGxyRlRybmR4Q3pMUHhMLXFiRk9RTzBBemJWRjdyNU1iMWdpMTBFbjgtbVFiVDhkMHVPR29UT1JYQXFhOWo4a3JYTzllVWNrZG1ReElYME5RY3g1dDZvU1RKUlZnSHZHR05SUDhqc2Uzd2lDLXdGNVJUd3NlSndV0gGoAUFVX3lxTE1MeklOVjJYc3RHTG8wZTRfZk5xRENZZFJadzJqZ1NpY19tMnYwZ2oxT2Zmemt5TjJlTUdYMWRLVE92dDZqWjUzVnlnazFjT1Jmc0FYemxDeWpXMUEwb2JZUkVCSDl3TXJCNEdlZ1EyOGpCZG92UV80QXhVVWtkbmRrS2N1ZXppZ1h3RkE4R0g4YkpULVl3QjFZRlFKREFRUm9PNkV5UHFYag?oc=5",
         "date": "2026-07-08"
+      },
+      {
+        "title": "“Ukraine is becoming a security provider for Europe”: Ukraine signs Drone Deals with Estonia, the Netherlands, and Denmark as Europe taps Kyiv’s battlefield-tested weapons technology",
+        "source": "Euromaidan Press",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOXo4VGN3bzR3eWRTNVdqeU5XN0FfMHpNcW9kZDlvNDRRNEY1V19qdFdkNnRLdDJOZXhEUmpRZXF2amEtNlA1WWdJbC1Zd1NQRmU0RGJxeG1IZzdBOFBtOHJqOXVvdUtwOHlfWUJ6X1dIVmVYck41ZTc5bGFFTTJmTWJoSHBNbUJtemJjTVlyN05aRTVUaXJZRm5DVjdPdnZSOUtrRUhhNjM4QQ?oc=5",
+        "date": "2026-07-07"
       },
       {
         "title": "Canada-Ukraine Drone Deal: A Win-Win?",
@@ -2290,16 +2296,10 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "Canada Announces $900 Million Aid Package for Ukraine as Kyiv Prepares Drone Deal — Zelenskyy",
-        "source": "uatv.ua",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOV3NZbm15SzgyM0I5RVNtMFh3bnk3cG13b2d4enVxZkNKS3J5Y1M2RnBucGRGcVFYWE1yc2tocTU3Y2hCaHU3SUszemFxQ29WZ1gzY2FNXy1kV2Q1VW5CSHBwVU96Mkxfa0JDM0k4aTBuejM2OW9BRVV6Y3VuLTNCajhmQi14amFCU0pta3hjTU1oT3pmZWoxQkNwa2Z2bXlvcWJndUlrVWpoQmk1eE9J?oc=5",
-        "date": "2026-07-07"
-      },
-      {
-        "title": "Ukraine signs drone technology cooperation deals with Estonia, Netherlands, Denmark in Ankara",
-        "source": "Anadolu Ajansı",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWkVaRzRISmZWM2xHOE1RR0w0VDNMNjNWOVBxUlB1OGdYbnhHOFlETzA2RXBSbm0yUGo4bnI5Q0E1cXhwYkJvYTVUdHpOLTZXc1R0aHFnR0ZSWTBTUThsQnBDd1JvM25fMzd5SXctX2ltSTFrU2xYSXR6QzVKXzJWeXp1NWZxY040TWhZQmhpam1PbzdyMWVFT0JXcWNfRDBWX2ZZSWRSeVJ5OUxSa0xCeTZ2WE5wdDYtOFlObnU4c0pzMU9ucS0xdzZLakdYUQ?oc=5",
-        "date": "2026-07-07"
+        "title": "Ukraine Turns To Canada And The U.S. With Its Battle-Tested Drones",
+        "source": "Forbes",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbzJoYTYwSmN3TzRrTUhiM3gxdXBFTFAtSVRnWDIwRjlMUW9DLWtNNm05c3BlYTNMMnh3VEJHY2Y4aE1TeWpZQVlNeFJDelp2WHJhVDZacjdIWWYteWZObFpOX3VwbmpBVEp5NEU2YjNXZ1dOZE9acDN3bnQ2cFpCdlpFU3JfcnRMSlpMMVgwa29jM2Fzc0h3SXZ1MVZpZTh2eXZkdFQ2SURIWnE0WUw0OV9ELXRoYl8tRVE?oc=5",
+        "date": "2026-06-11"
       }
     ],
     "canada→saudi arabia": [
@@ -2346,13 +2346,19 @@ const ARTICLES = {
         "date": "2025-11-20"
       },
       {
-        "title": "Canada pursues Gulf markets as its weapons fuel war in Sudan",
-        "source": "Canadian Dimension",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRXNLVG5vMURMN3duTF82cF8zcjRRcGFaUE95OGE3bmhNNmFRUlFDZUs3V0NhdzZjMUhnVTIzdEVCZ1pRUVU4aWx2UE9WRlMtdEZmYlZnUmxLUWtvbDh2SnVFVHo4Mk1QTGhzRS1MaEQ4WnAxTHpFaWY2VnNLQV81bWJhNmNWd3IxQ2JnQmFqYzB0ZmkwbDQ0clFrbGxxVVVaUXc2OUl3?oc=5",
-        "date": "2025-11-21"
+        "title": "Jobs are no excuse — Canada must stop arming Saudi Arabia",
+        "source": "The Conversation",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTGVOTHE4aXN0N09sNmo2OVB5TVU1YjhIUzJiY0FnRmh1RWZCR0FMLUw0LWc2bnpwVkk3NlBtVzJGbXVqY3ZSZDk4aERuaG9LWjhmRExTaEpKYkxmQXRUUWNBcWxuWkVZVW0zNnFqQUJidDNMNWR2V3lna1BrU3VRekdONlE5VWJRZ2wzRm9zUDU1bV8z?oc=5",
+        "date": "2021-11-18"
       }
     ],
     "canada→united states": [
+      {
+        "title": "Canada selects German company to build submarine fleet as it boosts NATO spending",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPT1hRak9valVrdXpiT1lkeWZkYS1YRHRPSmhLbzcwdFFPVnByTU8tT2wxaWNVOUZXU0FreHdmbXMwOEZ6MlNLV1FxYzBSa1FMTDVaZjEzNlB5VjBhak5Kb1pzWHlUVU1sanVmS0pWZTI0dVk0dm10bmxRRVV4TVh4RnpmSV9ITXRiWXBBQzIwbGRXNUlkaVJ1S3lxcy1vYkY5RU9lX2RhYmJIcTJESW1TN0IwRkNpNUXSAbwBQVVfeXFMT0xNRnd4UVJuS1hlSmVMS3RnMGZ6cVNRLUtVUWtXa1dSVFpNUW0tNHJLaDJSU2pVajY1ZmgxOGJLeVdVMFFERld3Q2o5QjVhQ0ZOV0dzYXNfY2VXTERIcXJwalA5U2FocnFEMEw3VTQxeGJDZVpPeGpyYk5ZbzBpek9Pb1FDNkFxNHA4VDJHRlhwUEdBVEQzcW1lMXdaZnVHdFB3dlRieVpYcXZlVERUVDY5bmlDS0c0cUVoQXc?oc=5",
+        "date": "2026-07-06"
+      },
       {
         "title": "Korean arms makers confront NATO market barriers",
         "source": "Korea JoongAng Daily",
@@ -2378,28 +2384,22 @@ const ARTICLES = {
         "date": "2026-02-15"
       },
       {
+        "title": "Pentagon pauses Canada joint military board, pointing to Carney remarks",
+        "source": "The Hill",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZHFxanRpNXV0V2huZE9jSW10ZXRnRVNWcjBLaHdjalEzRVZfTFhSSjNDUXp4eGdRQkNjc3pqYk5iMlZPRDZDNUpzVEgtelhUNGRZT2pGR2x1b0NvMjlnd0M4ZG1oOGNtOEdmMFNEYjJoN2F2VUpudDV3cnc3d2NxUjRKWUFxYnBtbkl4T2ZpU2U0VGhVUThv0gGcAUFVX3lxTFBWMjc3dlR0MnZpT2F2a3V6VGZBcDdOR0Z2RUszRWZRdEJUa05CNGFYdURsRVdFc1BlaHE3RkZHeFJsT3ZlVDdmRUdxZl9WalJpT1k0QTlBb0tsZk5pWGJmY1RETTZSVjVPaFhETzhlS2hDZTNBV0tjZXRUd2wxUEdoRnBEdEg5WXJTWTI4QmwzYkxfMm4zejk5OE5HQg?oc=5",
+        "date": "2026-05-18"
+      },
+      {
         "title": "Will U.S. Allies Succeed in Hedging Against the United States?",
         "source": "Council on Foreign Relations",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWWc4bnZaMkNLY1JMYXNBSXVCTFhnZllFbUhiNm12OGlzTGNieDU0ZDA3UWE4Y191VVZJcVdHN2t2QXBvQVQ1UjZWWTZFVkppUHY4X3ZWTzBMRFJSd0hEOFVyVllmX1c4d251UmdFZ3hOdHlBTWtCRXdremtpRFhXTklmY0w3QkVCcWhaWTJma3FZZm8?oc=5",
         "date": "2026-02-18"
       },
       {
-        "title": "Canada, seeking to cut reliance on US arms, plans to boost defense output",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQN0FYMXE5RldRNjZmWFVRT0Q5SUktZ0d6aktkRmt4eWFfVEEyR3lSVGU0eFZZQy1YbmpfR0RleE9Rdk5yeExpcEFDUHJIbi03ckctTEptY1dHWUltT2p5eEdPWHRqVmVjMXpPbjU2elFxNWQ1OHJ2M3hqMGJRdlJPMFpEU0d4dWZ4Y1QwUWV4NUxURG9MeXotUW1FYXp3UVRYQkhWdUkyNUEyT2s?oc=5",
-        "date": "2026-02-17"
-      },
-      {
         "title": "War with Iran Puts Pressure on Munitions Inventories and Signals Future Demand",
         "source": "Defense Security Monitor",
         "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWFZvQS05dDJ6RkV4V0NRRmNfSmRqVWhfVlZzQklMLWVHRlhtUTZybnktRGR0UUR3OGFNUVV2S3R4ZnFCNWhRU2ZXc3VHTGtJRE5ZU1JTQU51TUQ4cEtiTjVLcFVaOTAzTlh5SG5ReW9manI3WGdiSTd3NTRURnpVNlZRWVh6MmE3Qks4YWRQWC1WN0JaU25VS2JMNkhZT25BREdGTGIydUlsNHc5OGdmWUNjMlhaekpHS01MWjRqRDFvTVdZNEpr?oc=5",
         "date": "2026-03-03"
-      },
-      {
-        "title": "A Gatekeeper in Washington: The Limits to Canada’s EU Defense Pivot",
-        "source": "Geopolitical Monitor",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPU0hEeER1a1Z4UVRxWWdINWtnczZvNkdvaDhxUVlJV2JCTDB3X19HSzNKaUpqZXdVc2JlR2luazZESWZHb3FnX2hEYktRU2tZUDdoM3lLQmg3eHFnMi1xMU9Dc2VVZFRQcF82NzNxQkswaE9yRk03TjV1T0NIVXRDQ096bXhjbGdxN3ZHdG5lMHN4cXF5WjZ2NmFaWlBiZUtQTnJtRQ?oc=5",
-        "date": "2026-05-05"
       }
     ],
     "czechia→ukraine": [
@@ -2410,28 +2410,22 @@ const ARTICLES = {
         "date": "2026-07-08"
       },
       {
-        "title": "Ukraine's defense industry is building a direct pipeline into Europe's weapons market — one NATO certification at a time",
-        "source": "Euromaidan Press",
-        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOdnp3d2ZDekdXenFzTHlZTk9sQlpUTVZaVDhmSDZTS0ZFWW53YlEzNldoOG41b1MyXzJ5SERfOUFqeExzMl96bTJjMUF4MXg2QWV5YnBXbUlXTDkxd243N2kyVGdkYzR5SlhaSXZOV2dFX0FzWjljaTh0SmFucXJ0bnFHb2sycjh4VjdKRW9uZGZNVEpKUkxFVDJLRHdPV2xFVll3R0RUVjBrVDNLT1ZHaWR2SVV4cnZjcFc2MkdRMzNRZDcwN1pDNnB1VkVRb0h6TlJMaUYtU3ZIa3JXWkxBMW5rQk1QcnZIakxmSQ?oc=5",
-        "date": "2026-03-03"
-      },
-      {
-        "title": "Czechia to Send L-159 Jets to Ukraine to Take Down Russian Drones",
-        "source": "UNITED24 Media",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTFVhMktudzZzdksxZWtsWnlDZjZxTU5Wc0VYNkp5RGxUNVVxY1F1MTF2dzFKaVczcWNZLXF2VUlGeGZtSU44Nm03WHNGMnJ1T2FOTlI0aUNCMzJqQWlrbXcwYU5ldVM3NnhCZ0NuR19acE1taEFGcFd2WEE1dkJZcjNiZDVJUHowaG83aFNUZUhERkhyVFR0R3l2aG1Ub1dLYlZwbnZLOEJQUjFjT05id05vMExYYmhs?oc=5",
-        "date": "2026-01-17"
-      },
-      {
-        "title": "Anti-Israel group sets fire at Czech defense plant producing drones for Ukraine",
-        "source": "The New Voice of Ukraine",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQnZOeGNpR29DLWlBeVV1VHB0Y2tJSXk5X1BNNG9FY3dIM1gzWW9pWUVYWU9mRllBaGJBbkFYYVlLRTZyVG5UZElTNWpXcG95bFdtU1diYnRyU2VQM0F4bTRNdDJXVjBIMS1tWjBLeE5tdGdHc2VkVjVSTE5aTXc4cXFGQWV6TTg3aWM0RlYwZGh0TjFqYlJDV3R6dnFZYkM1endmdkFqMTM5aWxic1Mwajln0gGuAUFVX3lxTE13aGRjd0xaUGp0TmVCYXNCbnoxZUNTb3lpc0N0aXdrNWVLR0c2VHBDdGl2anJwNmptVzZvMHF2alptTVgwYXA1UGZBYTZ2X1NLb0hmWWEzc2VqaGNhOXBKYUdFeFNqZ2FGU2FxRXJxVkJndXR6empRNDVtNzNPcUVpMG5USktyLWFvUmNocW92bjl0d2VzZExXeWJuSWlyY2RHYUdxUmNFaThIS1lJZw?oc=5",
-        "date": "2026-03-21"
-      },
-      {
         "title": "Czechia as a Leading Arms Supplier to Ukraine: Really? And for How Much Longer?",
         "source": "Balkan Insight",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONFBkRVlOcHJoRlhpWk5SX3lzSUh3Nk9UT295a3hoWFctQkVYVnFZUDJ2T1E0eHV1al9oTk81NFhXb3NIenVhSlY1bGVzUVlEQjdpQV9pMzd4WENMRzR4WFZkRDN6QXh6ZGM2RVl3Yk9nNlpRWm9EaXU4a0JNZldvM3B3dWhlTzhCZkxQM1ZTSEpYTkZObjhFY25ELUhySXlNdy05bmFiU0oxZUlYREphS2stWTE0dnAt?oc=5",
         "date": "2025-08-27"
+      },
+      {
+        "title": "Czechia Delivers on Promise: 1.8 Million Ammunition Rounds for Ukraine’s Defense",
+        "source": "UNITED24 Media",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeUFHckJZQl9WQVFGZXYzR3NzOUhDcTZVT3ZRLWNhMlN3azlxamdJQ0hrN0l1UUtBU3d5c1UxX0hiMWJQMDhkQ3ZXblhWM3pCWmQ1TWtQR2UzdjJIQmlGdGU4MG9SaF9wQURNVGlHTlNHX0s4ZkZ6VTdLMm5ZczZsVUFTVmhmN0RLeWJxYktjdDNrRnN3TEdPNGV1a2UzaWI3MlgxOWxkeGNRNUE5RlItbDJaNXU5TGFWdGR5NHpn?oc=5",
+        "date": "2025-12-13"
+      },
+      {
+        "title": "Ukraine's defense industry is building a direct pipeline into Europe's weapons market — one NATO certification at a time",
+        "source": "Euromaidan Press",
+        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOdnp3d2ZDekdXenFzTHlZTk9sQlpUTVZaVDhmSDZTS0ZFWW53YlEzNldoOG41b1MyXzJ5SERfOUFqeExzMl96bTJjMUF4MXg2QWV5YnBXbUlXTDkxd243N2kyVGdkYzR5SlhaSXZOV2dFX0FzWjljaTh0SmFucXJ0bnFHb2sycjh4VjdKRW9uZGZNVEpKUkxFVDJLRHdPV2xFVll3R0RUVjBrVDNLT1ZHaWR2SVV4cnZjcFc2MkdRMzNRZDcwN1pDNnB1VkVRb0h6TlJMaUYtU3ZIa3JXWkxBMW5rQk1QcnZIakxmSQ?oc=5",
+        "date": "2026-03-03"
       },
       {
         "title": "Czechia ruling coalition divided on support for Ukraine",
@@ -2440,16 +2434,22 @@ const ARTICLES = {
         "date": "2026-01-09"
       },
       {
-        "title": "Italy, France and Czechia opt out of US-NATO weapons plan for Ukraine",
-        "source": "EUalive",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMHlmeXB3cmJmajUweGxpU1hTVGMtcmg0Qno2S3o2cFhTU3J3NGxrTUFKMmp2YXVNVENQc2c2dGEwb3JJV3JXUmtnbHlKcUdVcGZscEluMm1maFU1MGhJQ3ZIX29BWWRqNEFzV0FxMHprQkY3UnBrS2thY3FBdmxnVU5ESzlnSkVMbllvQ1VmYUd0Mmc?oc=5",
-        "date": "2025-07-17"
+        "title": "Germany donates tanks to Czechia as part of Ukraine swap deal",
+        "source": "Euractiv",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbzgxU0QzTVMzejZaM2dBeFRuNk5rUDU1REpGSzhWTWg5WUFfNHg4Nk5uV1pBQ0tfMHdCbHBpYXRYRW5vNlY3S1RhUkRHNk84M1MwdkRoZ3VUbWFiWTVLRXlUWXRFR3RhSVIycXkyRUliVUpfNjJjVzdqcWhKbWowZnhLYnM5WnRlY0tUX256ZjhxVHU3dG5r?oc=5",
+        "date": "2025-09-21"
       },
       {
-        "title": "Czechia Delivers on Promise: 1.8 Million Ammunition Rounds for Ukraine’s Defense",
-        "source": "UNITED24 Media",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeUFHckJZQl9WQVFGZXYzR3NzOUhDcTZVT3ZRLWNhMlN3azlxamdJQ0hrN0l1UUtBU3d5c1UxX0hiMWJQMDhkQ3ZXblhWM3pCWmQ1TWtQR2UzdjJIQmlGdGU4MG9SaF9wQURNVGlHTlNHX0s4ZkZ6VTdLMm5ZczZsVUFTVmhmN0RLeWJxYktjdDNrRnN3TEdPNGV1a2UzaWI3MlgxOWxkeGNRNUE5RlItbDJaNXU5TGFWdGR5NHpn?oc=5",
-        "date": "2025-12-13"
+        "title": "Greece Sets €520,000 Price on M110A2 Howitzers for Ukraine, Plans to Route Deal Via Czechia",
+        "source": "Defense Express",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdEdMc0Y2TUFxM0tnZWZKa3BuWVE5eWVVUDRBTkYwbjNtMHJpOWl2R2xvQ1pMaktzRDhvNjU4ekJ4SlFCdDdNM2gyNE5JYUhVdWU3ZUZmY2V0Y0JZdTRYZFFyZ0RtSjljbVpLcDBqV0JIOHprdm42MUNDcFFKUC02OG5KZ29RaUtEdVlSZWpkbmRfSTBXdHJDTVJjX2g0b0tiRmVkS1RaeVNWRS0tY29GZG1iYXZidnFJa1oycHpyMFlIOHpDZWhqTnZB?oc=5",
+        "date": "2025-10-05"
+      },
+      {
+        "title": "Ukraine won't receive Czech T-72 tanks: Defense Ministry explains why",
+        "source": "RBC-Ukraine",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPV2dDbG5XV2hBRXZGd29aMVZmdlppczBaOFU4OTJLZnprODZDZWhMcWFVLVJISklub0FQOHlRUS0yckVuLVBzN2JuVzY2ckE5SHV5ZndYemNpOVZ6Q2tlTTd3YWFEbmhkTVJ1TjlsZGNzSzZqR1E3c2doUzZOUTlrSDZSYUsyUURpN2ZPcnF3STl3dmtjUFJFN3Zn?oc=5",
+        "date": "2025-12-02"
       }
     ],
     "czechia→vietnam": [
@@ -2464,12 +2464,6 @@ const ARTICLES = {
         "source": "The Diplomat – Asia-Pacific",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcXpOVGstWTc1bENhSGplbDhxZ0xOUUlHeW9namU3dnJtMEtfcWNGTG1malRZZHZKRkhYb0ZkenBjM2N2Y1RSQ05raENUMFk2NG05TnFLT3J1eEtrd1E3M1d3NmtmcWpGTExTVHlNSTA2djFSOFFxSGlLN3lFT2R6MHJWUzFwNTFEeklXZ0dFdjlrNWVYSWo1ZXhrVkRuaGN5?oc=5",
         "date": "2022-12-13"
-      },
-      {
-        "title": "Vietnam and Czechia Elevate Relations to Strategic Partnership",
-        "source": "Vietnam Briefing",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOLTVhTnJxY25HNUlybzVzdGtmQkxTZ2pVQjBCMlhmbllLaEhxb2JzWTItOXh4OWQxdDRkTjJvbU5oMVRiM0VvOFZzQW5tX3RDRTZRX2ZGejNiazRHa1hXVXVaTlh5QThIeGxDbnQ3SnpURmxpM0pFV0RtRGF5MUJjU0ZxZjNLcFdXNWFFaGtPMklYNW1BYzFhSXNFREZjTGVyTF82N19B?oc=5",
-        "date": "2025-02-07"
       },
       {
         "title": "Revisiting Czechoslovak-Vietnamese relations 50 years after the Vietnam War",
@@ -2500,6 +2494,12 @@ const ARTICLES = {
         "source": "Tuoi Tre News | The News Gateway to Vietnam",
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWnB6d2I1RVJOc0pYVEhMSDBpeFZ0MHY1bTZUdzFmSndMUHpGR1BQMXVKYk5fR2xuYU9KWG9vdHBfRzdXcGkxQmJwRVFib3VXLVptM05seFhrUlRGeDhDQzZnekFtVTJqZGJ1ZUFrR1otRWpDUlBxZEtpbUxZY05VTEV4Vml5eHpwSEdEc1VaR19MeWhmc1lKc1hmR0dwQQ?oc=5",
         "date": "2024-12-20"
+      },
+      {
+        "title": "Greece Greenlights €199.4M Arms Package to Ukraine via Czechia, Featuring 60 M110A2 Howitzers",
+        "source": "Greek City Times",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQenBtaFJzcmQwYk5aeXlHMzZQRzY0YUEtQkRLNTM3em1YbEI2V2JVMnZhaWtaVUFlM1pPeWJNT0RUdm1zZTd4MjI5OFFpWDk5a1ZQWjNtZG5RQVlVN21wNW5DRmE0ZDZFT1U0cWZfQ1VjWEtSZHV3MHpYSk1wRk1acGV4WER5SzBzcE1lT2ZSZ2xwRnNISENndXRxN0F2XzNudTlidnpmbWN1R284cUZPa0tqbG90T2c1QW1mbXZLaENSdDVrU3lMQ0xtTQ?oc=5",
+        "date": "2025-11-04"
       }
     ],
     "czechia→hungary": [
@@ -2572,6 +2572,12 @@ const ARTICLES = {
         "date": "2025-11-26"
       },
       {
+        "title": "| Fake it ’till you make it: How an SA arms company built UAE armoured vehicles",
+        "source": "opensecrets.org.za",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbkNNd3F3dlEzdTR1YUNmelBtVFhDQWFUbExVRWxjVmFXR2dEckdjbGVqZ2VWaTNWaEpGR0VhYU5kYTRBcVRLZmNJeEt6c0dpVC1WUEhaaW5TN3FwX3cwYmxub3l3MUFQSkFXcGhhelRTUktOc1hZU1I1R0FGc2RDWWc5Qks5YUd0dFE?oc=5",
+        "date": "2025-11-28"
+      },
+      {
         "title": "South Africa blocks arms sales to Saudi and UAE in inspection row",
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMFoxNWxpTmJ2WU5yYzdYb0E3S3RjT0xQczgzZUJmSG1ydGdrX204S1lXaUQ5eEg2Z2VPR2RTdDM5OTdlbUtpN0R1YXc2SmhHaXRWNElESjY3QlI5ZFR3ZW1UTmlxZ2NqSnM0SGQtWFFNSG4wbHk0bmIwakVNV2k2c3V5aW50TWU5X1dFRDVpWUg3U0NhMzVQTFdwZldXQnBfcjk0TmVQTzVVWllfdFJrd1NHa0VZUms2ZVRPTWRnSUdoTERUc3FLTw?oc=5",
@@ -2582,12 +2588,6 @@ const ARTICLES = {
         "source": "Organized Crime and Corruption Reporting Project | OCCRP",
         "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQk9jZU5CVGlqb29sMUItb3AzQm9ZUnJoVnFwajhvLUEydmg3N3RkTHNNbTZQbmVmYnl0b1V1OVJYNEZTTUl4clB6UDRwTFRFVk9NWEw3YkNsbUpVX0dtTmxxNlY1N2ZMc3QwaVZWV1EzZzJYWk1RUktOVllLOGIwN2tjWUdOaGQ0MFhWMURXTGtBRUVHNGRRbTN4QWVEd0xSYkR6MGxIZjBmUW1tLTZqZ1ZXd0NBS2RwQktxOWNqTzVYa1pSUzB4Ng?oc=5",
         "date": "2025-05-26"
-      },
-      {
-        "title": "| Fake it ’till you make it: How an SA arms company built UAE armoured vehicles",
-        "source": "opensecrets.org.za",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbkNNd3F3dlEzdTR1YUNmelBtVFhDQWFUbExVRWxjVmFXR2dEckdjbGVqZ2VWaTNWaEpGR0VhYU5kYTRBcVRLZmNJeEt6c0dpVC1WUEhaaW5TN3FwX3cwYmxub3l3MUFQSkFXcGhhelRTUktOc1hZU1I1R0FGc2RDWWc5Qks5YUd0dFE?oc=5",
-        "date": "2025-11-28"
       },
       {
         "title": "The emerging sub-imperial role of the United Arab Emirates in Africa",
@@ -2608,12 +2608,6 @@ const ARTICLES = {
         "source": "Breaking Defense",
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaWs0ZG0wblBoOTRDa21YLVBBOVdrUHl2ZmlwR3lCZWl4TW1WRzl1V1hrYkxKN3VndnNuNVRhTjIxX0N0V202QlY5Rk1xLTNwS0FaS3hyLVlNblFqcE5PS3RJaFB6aHJEQjU0emFLVXVMa2tuNTNhd21hMEJBcXRDOTZfcXdpbVRJOFJpamtmVXlIS0liRThTZ0FFNFhoRS1BbXJrekJZQlhpWWczQjQ0RlBpR2E1TWdmdUE?oc=5",
         "date": "2026-01-16"
-      },
-      {
-        "title": "Iran rejects US deal without firm guarantees as Washington warns war could resume",
-        "source": "France 24",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObG5jQ3VPZlFZeXplaFYtelR6aXRoenFqWUNLaktXVDdxNUxmdWdaZ2ROaFd0cEI3Y2lvZUptUHpOcDgtVlNwOE9xSWstOS00S1dUSFNYUklwUWQyYS0zUHNMSDVjWkZUOVNCc3N1ZXdYeGFQMGlkOXJtUUdXOXg0UHB3cElkek0yakxQUXRmZHJZX09aZnh5ZUd5NlNaeGN5Um5yckFTN2hyOF8taGt5XzRiZUY5dWxkVzBrVQ?oc=5",
-        "date": "2026-05-31"
       },
       {
         "title": "Not just the US: India to Brazil, 51 nations armed Israel amid Gaza war",
@@ -2640,16 +2634,22 @@ const ARTICLES = {
         "date": "2026-05-28"
       },
       {
-        "title": "Hegseth tells China in first call that US is not seeking conflict",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUC1lLTl3UEQ2VFB2bWdTOWUtSXpXajdjTk9hTklqdVFfSkRBOHQwOWdfdlZqeEd3QmJnZkY3cmZndmFjbko1M1U1VGQyRldoZlRlVlBaV04yQ1kxZEZVbUpzUnpZeFg4anVYSE90Y282ekV3VGlJcmZ5bjJnZHcxMzZEdS1CT1I2cjVaaEhXMnp6MEJPTEtoYl9NblRZWmk3R05LaWZMQ0syc3p3aWln?oc=5",
-        "date": "2025-09-10"
-      },
-      {
         "title": "Germany's Merz promises arms cooperation as he seeks more Qatari energy",
         "source": "The Straits Times",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMzM3V3J4THE1d2ZjdlZ5cktBR1BDak5xVHBLcDQzSlpUakd3QmRQeWV4Z2k1Y183cU9Vd01uSEpKZkk0cXZhcW0wT3RaMEJnRDFwRFZIZUNHZmM4YmJRSWpRcU9CaHJoRUZaSExRejFxcnpMVXVGWkJKS2dsdFF5a1hUMnZmdEktRUFTVEktRnduWlpvM1pnaGxHQTYzOEQyV1htMmx5Y01KcmpIU21TQ2MwR3NheG1Z?oc=5",
         "date": "2026-02-05"
+      },
+      {
+        "title": "Putting the Defense Industry Through Wargames",
+        "source": "War on the Rocks",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYXZsQ2YwTkdNMFVqa2JJc2VsMkVlek1OdTF4QUJBTE9UZk0xb3Qxa1JteFpBcFk5V1R2eEZNU3FxYTZUT3MxTHdKYzlVbTIxdjJiYzBvQWY0U1FCMlZEa0thODc5OFF5eXBhUFdBMG9UTVFxelBFSlJHX2otSGlOY1owV0pNSFpUbTJPag?oc=5",
+        "date": "2025-06-23"
+      },
+      {
+        "title": "Singapore Scores a Kazakh Arms Deal",
+        "source": "Asia Sentinel",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA1X0pzMkJ2N0FQajl6ZFNoa1ZZQS1EcGQ3LWtDQzVEWk4tUGlpOFhGcE9ZSzFSemVoMk96ZS01bTVCSkhva2RWcjRiemo5N0pwbWpJdElyTkR5NzRsalBORnFzUVFORS1SSGE1UEV4VDBYQQ?oc=5",
+        "date": "2024-12-19"
       }
     ],
     "south africa→drc": [
@@ -2710,15 +2710,15 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "“Ukraine is becoming a security provider for Europe”: Ukraine signs Drone Deals with Estonia, the Netherlands, and Denmark as Europe taps Kyiv’s battlefield-tested weapons technology",
-        "source": "Euromaidan Press",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOXo4VGN3bzR3eWRTNVdqeU5XN0FfMHpNcW9kZDlvNDRRNEY1V19qdFdkNnRLdDJOZXhEUmpRZXF2amEtNlA1WWdJbC1Zd1NQRmU0RGJxeG1IZzdBOFBtOHJqOXVvdUtwOHlfWUJ6X1dIVmVYck41ZTc5bGFFTTJmTWJoSHBNbUJtemJjTVlyN05aRTVUaXJZRm5DVjdPdnZSOUtrRUhhNjM4QQ?oc=5",
-        "date": "2026-07-07"
-      },
-      {
         "title": "Ukraine signs 'drone deals' with three European countries",
         "source": "France 24",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZnphS2RJVUVRRUU0M0VJbzB2VUZYcmg0eEo2RXN0UEk4SnFBS2otbVBzN2JsS21WSEhJaml6ek41Q21BeFZFNllUMEwyQ2h1cjBzbWh1T2Q2TFBCTVZyeGhCV1lxRWV4eERzN3RkVXVHdTdkenpWNDZlSTh6VWxlYTI1NXJWMjRSOFE1Z3pGeTUtTTBSaWtLNVVyeTEyZjE5MU9JUGJJNXpyTnZpOGFtaW5R?oc=5",
+        "date": "2026-07-07"
+      },
+      {
+        "title": "“Ukraine is becoming a security provider for Europe”: Ukraine signs Drone Deals with Estonia, the Netherlands, and Denmark as Europe taps Kyiv’s battlefield-tested weapons technology",
+        "source": "Euromaidan Press",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOXo4VGN3bzR3eWRTNVdqeU5XN0FfMHpNcW9kZDlvNDRRNEY1V19qdFdkNnRLdDJOZXhEUmpRZXF2amEtNlA1WWdJbC1Zd1NQRmU0RGJxeG1IZzdBOFBtOHJqOXVvdUtwOHlfWUJ6X1dIVmVYck41ZTc5bGFFTTJmTWJoSHBNbUJtemJjTVlyN05aRTVUaXJZRm5DVjdPdnZSOUtrRUhhNjM4QQ?oc=5",
         "date": "2026-07-07"
       },
       {
@@ -2754,10 +2754,10 @@ const ARTICLES = {
     ],
     "denmark→argentina": [
       {
-        "title": "US forced Britain to allow sale of F-16s to Argentina",
-        "source": "The Telegraph",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOejJUUHdYOGVMU3ZSaHFIR2N0TG5jNUpZRjNmdUtZSzNmRlRkUlhvRy1TeHdYYmtCcThNS2RRX1RHY29HeVNudUVuWTEweFJYTnNsWm52aS1FZmJOSlBzc21zVFNlZjhETlU5cUxsR29qUXljZTNGMGhVSHoweDNVTTM3cXl5NjJzRnZFdUkybGxKY0p6NkZ5dksxbnBIenlWRGRILVhzYmk5QQ?oc=5",
-        "date": "2026-04-24"
+        "title": "Argentina’s F-16 deal signals a strategic pivot toward Washington",
+        "source": "Argentina Reports",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNR0IzVV92NkltM1BwaVU3LXpGTXJnelVqOGJ0TExuZVVqWkhIc2Z5RzdqWmV1aHJURG1OVFFMNGYtTnhuM09DT0wxWnlNMWY0Y25UdWtIYXY0RkVLOTJKbmVOUVVSQlRCcEljQU5pQklab2dVbzhHdE9LR081MGFEb0xxa1pTeGFxVEs3UWVpd1c4S3VNSmYxR1JaMGsxMm1DczlZSThR?oc=5",
+        "date": "2026-01-23"
       },
       {
         "title": "Denmark will transfer to Ukraine funds obtained from the sale of its F-16 fighter jets to the Argentine Air Force",
@@ -2766,22 +2766,16 @@ const ARTICLES = {
         "date": "2026-02-23"
       },
       {
-        "title": "Argentina’s F-16 deal signals a strategic pivot toward Washington",
-        "source": "Argentina Reports",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNR0IzVV92NkltM1BwaVU3LXpGTXJnelVqOGJ0TExuZVVqWkhIc2Z5RzdqWmV1aHJURG1OVFFMNGYtTnhuM09DT0wxWnlNMWY0Y25UdWtIYXY0RkVLOTJKbmVOUVVSQlRCcEljQU5pQklab2dVbzhHdE9LR081MGFEb0xxa1pTeGFxVEs3UWVpd1c4S3VNSmYxR1JaMGsxMm1DczlZSThR?oc=5",
-        "date": "2026-01-23"
-      },
-      {
-        "title": "Argentina seals $300 million deal for 24 F-16 jets from Denmark",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPXzAzVW8yOHRxRUlNOUR2Rk1BR1UzdUlUU3RLN3Q4Rm9Xa09LTXJTNmFrOUNKNTgtTXRTNDdBVHhzNlZmMXlIbmdmb1VBckpRT2xndXN0Y09URmdOTFNhZktJaW5DNjRNRERIQ0g4VWR4UXlsZVYxYW9WUWZmT0lmdUlWN29JMlpFdjBlYnJxclp3Q0dXay1IMFRtWlV3cU5WbUppY1hIc3VVU2FGdlN4di1IZDkxZw?oc=5",
-        "date": "2024-04-16"
-      },
-      {
         "title": "Argentina Just Got Its First Batch of F-16 Fighter Jets from Denmark",
         "source": "The National Interest",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQzY0ZEQtSHl4UEdnQ1NNalRKWlZHYkhySWxJUFU5NXRuQ2puZG9lWER2U1I5SnZGTGdmWmJLcDE2cTZtOExjcTAxSjVtWUdtLUhfaGVMUDdEOFBZbDR6Q095MFQ5X283TFp1OVJTdWdEcTRNTDdUb1NITEdadDB1T1RuX3h6N3phcXdvZVFHVHFZZXlHNnMzZmFJdWp0UWV3Zk5fU3NxMTRneExUNzV1bWtoOA?oc=5",
         "date": "2025-12-11"
+      },
+      {
+        "title": "US forced Britain to allow sale of F-16s to Argentina",
+        "source": "The Telegraph",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOejJUUHdYOGVMU3ZSaHFIR2N0TG5jNUpZRjNmdUtZSzNmRlRkUlhvRy1TeHdYYmtCcThNS2RRX1RHY29HeVNudUVuWTEweFJYTnNsWm52aS1FZmJOSlBzc21zVFNlZjhETlU5cUxsR29qUXljZTNGMGhVSHoweDNVTTM3cXl5NjJzRnZFdUkybGxKY0p6NkZ5dksxbnBIenlWRGRILVhzYmk5QQ?oc=5",
+        "date": "2026-04-24"
       },
       {
         "title": "Argentina Unveils First F-16 Fighter Jets Procured from Denmark",
@@ -2790,16 +2784,22 @@ const ARTICLES = {
         "date": "2025-12-11"
       },
       {
-        "title": "Argentina to buy surplus F-16 jets from Denmark",
-        "source": "Defense News",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbXlQTVFiVEtweW9KWFRiQTVpYmpqS1VrZlFybzRKUlJxWnlZQlNocmU3ckhPOEhjUkxkQzY3OXE1elEwbnA2V2FHQVE5VHVNY1NGdU4yZEFWTjdkdUVuS0hjaDk2a19aSEVUeERZU0hROEJIM1loWHRUY1dsLXFkOTYzd2VnWFdKNE44Z3h4bDVmSTdSMXc?oc=5",
-        "date": "2024-03-29"
+        "title": "Argentina seals $300 million deal for 24 F-16 jets from Denmark",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPXzAzVW8yOHRxRUlNOUR2Rk1BR1UzdUlUU3RLN3Q4Rm9Xa09LTXJTNmFrOUNKNTgtTXRTNDdBVHhzNlZmMXlIbmdmb1VBckpRT2xndXN0Y09URmdOTFNhZktJaW5DNjRNRERIQ0g4VWR4UXlsZVYxYW9WUWZmT0lmdUlWN29JMlpFdjBlYnJxclp3Q0dXay1IMFRtWlV3cU5WbUppY1hIc3VVU2FGdlN4di1IZDkxZw?oc=5",
+        "date": "2024-04-16"
       },
       {
         "title": "Argentina’s Realignment with the United States: Milei’s Reforms Gain Strategic Support",
         "source": "CSIS | Center for Strategic and International Studies",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSUxjSXJtczd4QXB1ZW94emF5RjBSNldtU0dOR2Z2SThwT3p3c3o4Uk8tbTM2Z25DbC1yTHNwZjl5OVRJeVgtdG9RR3NQWmxLcmFXRHlUWXFucERzcWlqdTd3Mkd6aVh3SnhONTNnUmFFejZUTU9lSTNtMjBPS2tLSWxrU1k1MFd6RUVyLXkxWjJCWXJrdVJtLU94Rl9vZWg2eFBWYTF1SQ?oc=5",
         "date": "2025-04-30"
+      },
+      {
+        "title": "Argentina to buy surplus F-16 jets from Denmark",
+        "source": "Defense News",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbXlQTVFiVEtweW9KWFRiQTVpYmpqS1VrZlFybzRKUlJxWnlZQlNocmU3ckhPOEhjUkxkQzY3OXE1elEwbnA2V2FHQVE5VHVNY1NGdU4yZEFWTjdkdUVuS0hjaDk2a19aSEVUeERZU0hROEJIM1loWHRUY1dsLXFkOTYzd2VnWFdKNE44Z3h4bDVmSTdSMXc?oc=5",
+        "date": "2024-03-29"
       }
     ],
     "denmark→norway": [
@@ -2810,16 +2810,10 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "Norway and France in Nuclear Cooperation",
+        "title": "Denmark and Norway Present New Weapons Packages to Ukraine",
         "source": "Nordic Defence Sector",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdFlnYXdBWjltVVRtemNKVGM3QTlWbzQyb3lXejI5UDZSNWJXOUp5YmhiaDBYQnVHRV96eE4wVkpPQjN2OThsdGVfUVpRTjM2cEE1MWNjNlhlamU5SE8zajI0YkZ4M1dzY0hKNFkxM1B2R1VYOWY1SG5fMlY4TmtPOUg1T1ZLWnhLOXJQRmMzSm5yUTJfSmc?oc=5",
-        "date": "2026-05-30"
-      },
-      {
-        "title": "Norway joins France’s nuclear deterrence club",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMXlFZk1faTl3RkhVZjBaamZXb3ZwTUVqQllkM1RObmJPcEExQWpNUUs2SlcyS1FwWHpyUmY1N19QS0pPa1ZjaV8xNlJ3bno0Smh6bW1kSEJNMWxrX19GYzF4eXNyZW41SVE3T1JPZV9Od0d5eGE0SW5meDdnVDA3NU13?oc=5",
-        "date": "2026-05-27"
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQX3dzYkVMRVU1b3lJYkFmdllCbkI0ODdvNFFudUdLYS0wNGI4X2VJeDE1QmdBRlctSlJERUZzSk15cDNoYmRKU2N5eDFwUWZ0TTlXbFBYeTVWRTdxbkFLLTJjYlNVcXM2ekFfVWx5T0JubkFyN2k2X3VOQ3BfMDA4bmVJSnFuN1JvR0p2SWFJOUhRT2d4Y2ZmTlNmVkxQd290LXVR?oc=5",
+        "date": "2025-12-17"
       },
       {
         "title": "With Trump-NATO deal on Greenland unclear, experts push allies to expand Arctic drone presence",
@@ -2840,25 +2834,25 @@ const ARTICLES = {
         "date": "2026-01-19"
       },
       {
+        "title": "Denmark buys Kongsberg missile systems to defend strategic coastlines",
+        "source": "Defense News",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV3dsUGEtSXlja05xSkdJbElFSFp3WHUwd3Fteng4M01NRWtKbGlnbWtlc2FDOUxhMUk0NE1xRjdiNXBhdV9HeG4wcHh6aklGQWxxVkVOVlRYc3hzRkhZZDFabnNlUXJud3hZcV9pNjRYRGFqd1dxTFR0aUo1ME50R21mMlhPMEQ5X3UzTHRhQktsYTdQQVhteWRvZzhGd3dYbHk4dVdwZjJQemdUb1NKakdNak9FRnRmcVJCS0Y1VXQ?oc=5",
+        "date": "2025-12-18"
+      },
+      {
         "title": "Donald Trump tariffs Greenland: Trump says 8 European countries will be charged 10% tariff for opposing US control of Greenland",
         "source": "ABC7 Chicago",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWXZ3am40MThvdmJ6LV9hWUJhNmI4elVHclp3OHdFX2lsV25NRFlCM2swMkZISzdqVUtveXpXbFlmVnJSY3FRdG9oQnZkbUdhZ3AxOXk0SkkxTkpwNnJIaXgtbDl5SHc1MUw4SUFuU1hHdjdWNXN4amdLLTNFdU5Ma1I4Njk4MXJqU09HdXdQX05Vczg2VWtMRzBPakNlMlQxUEk1LVRkSjI0U2l1RXVJWU1Dc3ZIQXBHM2RvS3FpMjDSAcYBQVVfeXFMTnU2UTEyVWVTMS1seUwtUW1BN0tXOEE4bHpFRHg5eWlMa3BjOHlLZ25mcFg5OTZZOXVhNlFBTEtEZWtCaFJNV0F2UkdhVmJLYm53SjcwMi1RV2dkamdQTkw2VThENWc2eV8tLUx2YXphaUtEY2ZOd3hsQ0V2MlNERklCdGZFTlRlQWpKSjlSb2RkTWhDRVc5VUdnTlltZVhpbTY3XzRiUVpUMk1kLUVCR2FYekVaOGJUNTFKY296VXU1N1B0R2h3?oc=5",
         "date": "2026-01-17"
       },
       {
-        "title": "Denmark buys Kongsberg missile systems to defend strategic coastlines",
-        "source": "Defense News",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV3dsUGEtSXlja05xSkdJbElFSFp3WHUwd3Fteng4M01NRWtKbGlnbWtlc2FDOUxhMUk0NE1xRjdiNXBhdV9HeG4wcHh6aklGQWxxVkVOVlRYc3hzRkhZZDFabnNlUXJud3hZcV9pNjRYRGFqd1dxTFR0aUo1ME50R21mMlhPMEQ5X3UzTHRhQktsYTdQQVhteWRvZzhGd3dYbHk4dVdwZjJQemdUb1NKakdNak9FRnRmcVJCS0Y1VXQ?oc=5",
-        "date": "2025-12-18"
+        "title": "Norway to buy two more subs, Denmark buys new surveillance ship in Nordic maritime push",
+        "source": "Breaking Defense",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPX2ZBZ0V3YkFER1ZJOFFtZi1DUGQxZnlJZjB4eE5pT1RFeFFQRVUzTEZpMmtqcmFRTzVNX1dNYURpZl84RjdLamZPZzRfWE1yUFN4d0hkbjZmNVNtMThzWF9WQjkzRC1BWVNIOGkzc01jclVXbzZkc18zQmd2UzlzS2xHb21VRk8wejFnbnpLcU5NMVlERzhGaFFNLXhBdjVMWHEtOWtFNDk4WWlBSElfdjhXQTdkQXdYcW9HUzdZQWVfcWtHOWhUcWZR?oc=5",
+        "date": "2025-12-09"
       }
     ],
     "switzerland→spain": [
-      {
-        "title": "Why The Remaining 8 World Cup Teams Each Could Win It All — And Why They Won't",
-        "source": "FOX Sports",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNV0xMXzAxSkp4Zjc5cnRuS2RwQ1V1N2JvLWNRakJUWnc2TFRhcjhUTUFwdHlUVnlKZHJLa09KQWtIN0tybXNCcjg2TXhmZ0NWWFRSZjlrbllZdlhyVm43WlVPVUxDNGVKeE80RTZyS05GU1gtMWdISWVEY245QWhsVnpPMlpzSmdaZDRyanF6NnFQbHB4T3VTelM5Yk5CRjhZamfSAaIBQVVfeXFMTURZTGN0RUs5b0tLelhUakpZUzJnWGhvYWZJdndISE85ek9KUzNmblB3RE8yaWhDTV9QQ1VaUnMzV0JYVnpsdXhkcXN3MzJwUHJvRVFXWmkzQzhYZ1hDQno0SFhLYlRjZk16TmQwMWdGRzdQcDNPZHptampxUWlaOTlZTE44NHJ2TGZ5VTYwTW1SMDRiTHEtbGdlaGVhS3pVTkt3?oc=5",
-        "date": "2026-07-08"
-      },
       {
         "title": "Trump’s Iran War Costs Us Access to Massive Weapons Deal",
         "source": "The New Republic",
@@ -2872,12 +2866,6 @@ const ARTICLES = {
         "date": "2026-03-04"
       },
       {
-        "title": "From French drug pricing to 'loser' windmills: A rundown of who Trump criticized at Davos",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUjhYbVdGcDBzX25sSW5YSVl6LWtKc3lXX2lUQ3NHSVhKVVNWYXpZMmRYWVMtWGtWU1pkc010bFJ5alFHQ3FHT1NqSl9BcVZYTVdEZnFjdlYzUGJ3VEZMdnl0NVlKRjNFNWh1U2dvSElSOUhoUDNKaVgtLTEzWnRaZ2U0WG4zbm9kYkFPYUxSdnpiZ0lrSVpieNIBngFBVV95cUxQQUVreXZMMkFqZVFMM3k0V2ZsOHpaUldzNGxuWjVLS2tqcDNyMnVwY3dMWFd6VlhpOEpxUlZOTnMtWndYRHNOb0dsZ0YzajctNUppLUVSaGp3bVFHZVdfczRua0c1TjBpeHAwcWt1TDVWX2tTU0gyT1J5bEx3OE1nUEExcl9uSGo1QXduQzIyUU1kNzZUVXkyVWYxR29qdw?oc=5",
-        "date": "2026-01-23"
-      },
-      {
         "title": "F-35 Procurements Face Setbacks In Spain And Switzerland",
         "source": "Aviation Week",
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOGhtY25FUnFoUzdxOXJ1V09zTDB6Q3o3Nnp2WTVfUnBVMHRNWlFiTDdWVFhHYk4zQXl3Uk81TFNXQk9JR1EzYURCZlJja2RMSHBjY2k1YVh4dkh6cUIxT1ZMNEltb3BzR3d6VnJocnF3Z3NKR3R4VjltcE5ucFFuM1VDLUtsZzRCZW9GRmRvZU5zM0EtSWpkY1V3N0hhV0E2SXYweA?oc=5",
@@ -2888,6 +2876,18 @@ const ARTICLES = {
         "source": "Fortune",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVGhXNjBzMUtQMUlCRWdEY2tYMjJrOHBHSlF6dDZXaXpKcmt4WWg1cVVFX2NXY3pHUnF5VURIZTRYYzZMRXgwTXZiQ0pZaVZjTTdBSHpzc1NkbU8tU0p5T3VDNElvUzZnYzJJMmJTanpVY1labDZwcmw2SWdGQzJUbnktdGlJRXk5WlFzX2JvZTRnd0piYkVGenhCX2VzMjJiZkNhZ2ZRSmE1QQ?oc=5",
         "date": "2025-08-08"
+      },
+      {
+        "title": "From French drug pricing to 'loser' windmills: A rundown of who Trump criticized at Davos",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUjhYbVdGcDBzX25sSW5YSVl6LWtKc3lXX2lUQ3NHSVhKVVNWYXpZMmRYWVMtWGtWU1pkc010bFJ5alFHQ3FHT1NqSl9BcVZYTVdEZnFjdlYzUGJ3VEZMdnl0NVlKRjNFNWh1U2dvSElSOUhoUDNKaVgtLTEzWnRaZ2U0WG4zbm9kYkFPYUxSdnpiZ0lrSVpieNIBngFBVV95cUxQQUVreXZMMkFqZVFMM3k0V2ZsOHpaUldzNGxuWjVLS2tqcDNyMnVwY3dMWFd6VlhpOEpxUlZOTnMtWndYRHNOb0dsZ0YzajctNUppLUVSaGp3bVFHZVdfczRua0c1TjBpeHAwcWt1TDVWX2tTU0gyT1J5bEx3OE1nUEExcl9uSGo1QXduQzIyUU1kNzZUVXkyVWYxR29qdw?oc=5",
+        "date": "2026-01-23"
+      },
+      {
+        "title": "Why Switzerland Just Scaled Back Its Big F-35 Order",
+        "source": "The National Interest",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPaTkxblg0STlHREVSR1Vib3lnWDlrbHplU2FuRHlvQmVlb2lsUVhFWmZ2aDhCLXVubl9QaU04R2JSY19WTDkxT20yVEhDd29QeTZUQnZFSHZjMUl5TFpmVEpiWnQxUGtYa3FzSF82dkhxa3h5c0t0SjZ6VEw1blQxcFJJX3ZIWU9pWUU1cUpRT0Rka1Y0dFdOdC0tZXU?oc=5",
+        "date": "2025-12-16"
       },
       {
         "title": "Swiss lawmakers turn against F-35 deal after Trump’s tariff bombshell",
@@ -2946,10 +2946,10 @@ const ARTICLES = {
         "date": "2026-03-11"
       },
       {
-        "title": "Trump’s proposed Greenland deal may give US control of land around military bases",
-        "source": "New York Post",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMFVyVE1UQ09oLUZTX09aYm1sZ1AxMjQ5TEd5S1dDa2VFSWktelM0OURzZXp0RHc1ZmRlRXNlVnBvVlYxdzdXcWwyVDBpUTluLS1PdVg3NXBsMHIyYVR3aE51dzQzb2RLRkZOSkZKQi0yMnMzb3pQdlBTNEIzcEJpRUx0VGNVckc4clpuQnktelFDOUhyXzduY1U4M1hjLTRWWUhtTm5GLUk0aktUY0FndjlxN3hiR1lCUDVJ?oc=5",
-        "date": "2026-01-21"
+        "title": "What's in Trump's \"ultimate long-term deal\" on Greenland?",
+        "source": "CBS News",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOU0tJd1ZReHNxVHZ2M29CRWFXeEFWVXl1TnRFaDdRZnBReXdDeEFGMTE5MmdfajgyWkhESlhLOFRPajlUSFh4dVM1TFN4SUVFMFhoNl9sR09sQUR1SjZScmxVRXZ5UjY5RmphbWpKVUhXZmZzVGZTTlY4S0dVR2VtQ2REZkEyai1OWHBTUGRpbEhmbkRC0gGaAUFVX3lxTFB4Ny10cDhuZHZmdWlzLWJ3WFM4RlYyS085a3hDMk1KWnFZNVpEbnBqZmlGRV9DRFFweXRpUGcyelpnTndkb2YyT25pQ01WZHV3MVVkZ1kyTWh1YklmTHFON1RvOVMyRHdzRy13WlFLU1c2WWhFQUdxTGh4ak5zb1F3OXE1cFAtZV9BRzBhNlBESHVhVE1WemYtdWc?oc=5",
+        "date": "2026-01-22"
       }
     ],
     "switzerland→romania": [
@@ -2966,21 +2966,15 @@ const ARTICLES = {
         "date": "2026-04-02"
       },
       {
-        "title": "Germany news: Merz on Gulf tour talks arms deals in Doha",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSHBzVU53QUVhVmtOUHhZdFZFYXJYX2V3TTd6ckFBeEkwQl9scU5VNlVvT3lORU9kZVpnU0lmZHA2NE1JUXN2Qk9id3hGdkJxT0FJZHh0U0Z4aWJ5YUhQOThnNDB4QUpXaEFDaER3WldHMDYxZUpXOUJpeXZ1UnJ2SEp1U0tfU29Vb2g3dGNvWmJTSk9TeGc?oc=5",
-        "date": "2026-02-05"
-      },
-      {
-        "title": "Contracts For Sep. 29, 2023",
-        "source": "U.S. Department of War (.gov)",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9iQ3EwS3haa2lKb1ZqMzQyWUNMV3l6SmE1UmNBMF91R3hWd1ptb2RDNXlvUkh1WFVZc0JGZGd1eXlfSFRwUzZ5S2pXTER4MmRialF1SnJTa3lPcDNFaFdxVHlYb09ncm9US2lVbQ?oc=5",
-        "date": "2025-09-11"
-      },
-      {
         "title": "US redirects Switzerland’s F-35 funds to Israel for Patriot missiles",
         "source": "Yeni Safak English",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcHU4SXlzbTRqSktLNk1zZHpUaG45TWZqUXoxazU0TG1hYm1XOVFqWU5Hd3VXVXhHeld0blpoQXFROEEtdkh1RXVjaTBMZF9tVlFkYVVjcVdSM1FqeXZ3XzRlMXhpWFZnYkR1QVEyWUV5YnBXQ0lXbERMZlBKOWtBVG5hazBHWGtDYkZ3MjZqQWRfZ0dFZ1BiMWtfa21SWVRETk1qcHo0NWE1UQ?oc=5",
+        "date": "2026-04-07"
+      },
+      {
+        "title": "Raytheon Secures $708M StormBreaker Smart Bomb Order From US",
+        "source": "The Defense Post",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBpMHhSYWhUbWRON0F4Tm53S0k2LS1icjZhV09uM0l6WXFDV2taYUJ1aHJnNzdYaUoyOWYyQ1hOT0oxS3JkNU13Y1RXWnc4aTR3LXlmWndDMF9rTms1M3h0M3BjcmJ1eHIzUmRBaHlhd1NkbTTSAXhBVV95cUxNcWlHVmtkQ0tZYUpaR3dNU3lsTmxrTHg2QU8tX0xHVWZGTjVHdk9LWFdLdmt6LTN2TlFPUEV3cjdkbkpoOUFqekk4YzV0c3dmNEpqU1R0a0hMM1c0clRmNXFZc3YtcFBGZWxpY3BWX3NUSm45WWhZMW0?oc=5",
         "date": "2026-04-07"
       },
       {
@@ -2990,16 +2984,22 @@ const ARTICLES = {
         "date": "2026-06-03"
       },
       {
-        "title": "Why Switzerland Just Scaled Back Its Big F-35 Order",
-        "source": "The National Interest",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPaTkxblg0STlHREVSR1Vib3lnWDlrbHplU2FuRHlvQmVlb2lsUVhFWmZ2aDhCLXVubl9QaU04R2JSY19WTDkxT20yVEhDd29QeTZUQnZFSHZjMUl5TFpmVEpiWnQxUGtYa3FzSF82dkhxa3h5c0t0SjZ6VEw1blQxcFJJX3ZIWU9pWUU1cUpRT0Rka1Y0dFdOdC0tZXU?oc=5",
-        "date": "2025-12-16"
+        "title": "Germany news: Merz on Gulf tour talks arms deals in Doha",
+        "source": "DW.com",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSHBzVU53QUVhVmtOUHhZdFZFYXJYX2V3TTd6ckFBeEkwQl9scU5VNlVvT3lORU9kZVpnU0lmZHA2NE1JUXN2Qk9id3hGdkJxT0FJZHh0U0Z4aWJ5YUhQOThnNDB4QUpXaEFDaER3WldHMDYxZUpXOUJpeXZ1UnJ2SEp1U0tfU29Vb2g3dGNvWmJTSk9TeGc?oc=5",
+        "date": "2026-02-05"
       },
       {
         "title": "Five European Patriot Operators, Zero Searching for Alternatives — Why That Is Unlikely to Change Soon",
         "source": "Defense Express",
         "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPNUloUV9CZHNvVWh2VW9aclpZRUdFYUhwZFVHTlUteUxxYmNuWEVrVWZTUjJLN3IxTFVBbEdZYU1fWS1NQ2VKMUpmOVFoTm5EeV9ReGtCbk9ySXR2R19DN050SFpKQUR5TE04LU9iUktSSjZwbDBzOU1nRk96WXlzcFpMR3hwWklDdmNuWkdqVXMtN1kybXBZN1lRbVpNUk5tbEtxQ25DSmpQMU5DMGtaUmJJRmxINUQwRUp6WG5rblFXbFREX3NiRDU1NVZxczlyUU9mRi1zaUYxSWNZdWtPeA?oc=5",
         "date": "2026-05-12"
+      },
+      {
+        "title": "Contracts For Sep. 29, 2023",
+        "source": "U.S. Department of War (.gov)",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9iQ3EwS3haa2lKb1ZqMzQyWUNMV3l6SmE1UmNBMF91R3hWd1ptb2RDNXlvUkh1WFVZc0JGZGd1eXlfSFRwUzZ5S2pXTER4MmRialF1SnJTa3lPcDNFaFdxVHlYb09ncm9US2lVbQ?oc=5",
+        "date": "2025-09-11"
       }
     ],
     "ukraine→china": [
@@ -3028,12 +3028,6 @@ const ARTICLES = {
         "date": "2026-03-02"
       },
       {
-        "title": "Mutually Automated Destruction: The Escalating Global A.I. Arms Race",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNbDBmdkFTT05KYk9JNnJBdGlrRWt0NGFaOXZvUkFEak1QcmJJYzZ1c0F1WUt2SHhwZ1U5UlRPVVlOQ01tbU11ekhfLUpaS2sxTnMwb24zaDNtbkNCdDZ4cWUySFNmYktGWFNGQklzaEU5XzFNYmxmX1RjbDNLLXoydzFySQ?oc=5",
-        "date": "2026-04-12"
-      },
-      {
         "title": "Why Russia and China Aren’t Helping Iran",
         "source": "The National Interest",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQMVRvLS1NWWdQazI1MkVFeUVxVkFtaUl6alQyTlFzTWY2WUxrV0pNaTJDQW1vY21iZUsyQWpkMlhIbS1IcFAtQWJZOVhWak10UUpYd2w0b21zVExLTHdxazhHUHdaNVFRZ0g3QVg0NUZDVW5VM0MxT2RaZVZZTm9RQ0pB?oc=5",
@@ -3050,20 +3044,20 @@ const ARTICLES = {
         "source": "BBC",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8zUXptMUZkSEQxenp4TmJsaGpNc0toU3NILWFHZ01aRnNSTndqNDJKNExSMkotYjJCMDRUZ1dyS1RXdmVNYlJFQkhjZ2h1T1NtUEJfVVloaVAwUQ?oc=5",
         "date": "2026-02-05"
+      },
+      {
+        "title": "Chinese state company helps Russian ally build ammunition plant",
+        "source": "Nikkei Asia",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOelEtVF9IbXZzcnhTZThDeVJCbzcwUnN2dW0tSjFUTWpHU3dFMEVudWJQbnZMaXJIYl9VRm5BdFNaTTBxMnBOS1BrZURrM3o2MzVDQi1SZmlXYXk5Z2JENGt5TjNhejhibVk1RUhwS0IwLUxtcDVLa2ctcVl6dXI1OVh6VzlOaDFkenNOOVhmSVRxVGhmNERlbXFxQVlUM3hOdFdCTTFzRDkxWmt4?oc=5",
+        "date": "2026-02-23"
       }
     ],
     "ukraine→india": [
       {
-        "title": "Trump offers Ukraine Patriot production rights, but weapons may take years",
+        "title": "Trump says Iran sought talks, US agreed, but warns Tehran the ceasefire is over",
         "source": "India Today",
         "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOOUdWcnVCQlo0aDBwM0RqVHNBcEFqLVYzdFZXNGdZeXNpMzBCRFF6Wm1QRU8tNkpzZGRvOHJyeThrcWF4NURrT2d0SWp6MllRVEEzbkZ4dEl1eFExTmV5VzlDbTF0X3dKa05NeVlPMDBCc2cwMG00dWZBcmp1TnM0MG5fUlU4VWhTZzFhVzRrd1BwZEk5TzJ1VE5Ic2xfa2Jsc0ZmRFhIV3RxWWxta2NtbkliYWliU1VRNUxnR1BTYjNVMnJfbF9hSGFlTmpXYV91bVHSAdcBQVVfeXFMT1BucTkxbHhjRWpNWGttdnVZNnJOR0k1S0lueXQzZDhaUDZqMzRXUUk5WW1JWXBJVElJLXZtRXd0Y0FwN1pQWFNDTl9sUkNrUkxMYmZjaGZFSTFJSk9HU1o1QlE3c0hTYUlxMTVzUzdKdjRZSnhzc190bXZ5VDhjWElZRUxpZzM2YWVyclZVcW52cnNabERwaVJfaFBBamZzMHMydWZVdjV0SXFpWGtUNmxqS3lGNU5xMjlmbW1XRnNXcHM0LVVxVmZkZEJPVFdZcjhYUVp1ZVU?oc=5",
         "date": "2026-07-10"
-      },
-      {
-        "title": "DW News. . India is one of the world’s biggest arms importers, second only to war-torn Ukraine. Now it wants to become a major exporter, too. Indian weapons are now seen in Armenia, Vietnam and several other countries. Can India really pull off the transform",
-        "source": "facebook.com",
-        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxObDlqU0RoN3Zyek5JTW1oYVRWTE9COHpFLXRHNUxaMklkOG9YQUJ3Zm4zQkhjcWlJNEN0MTBsZ3BsWjdzRGwxOVpRVlhXWmZDRzIydEdWMGNfWFNrTEFhRlFEYkw1N21kTlIzaU96MlBDWGhvT2F0RHdzQm51M2c3ejczaTE5NERXZ3hHLWVtbFVlOW5IRlZFMzRFTjJYRDNCZ3oyWnIyZTBpdDYyTllVVGJLRDVSeDdaeU5zTW1pOU1BYndWMzZVUlVFR2h1ZlJiOEsyczZ0ZXl1TnFvZzlDNnZR?oc=5",
-        "date": "2026-06-18"
       },
       {
         "title": "Ukraine reaches security deal with India — Zelenskyy says documents being finalized",
@@ -3084,12 +3078,6 @@ const ARTICLES = {
         "date": "2026-06-01"
       },
       {
-        "title": "India approves $25B arms deal including more Russian S-400 systems",
-        "source": "The New Voice of Ukraine",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPNnpDeU5tRTNTT3VYcDFUd3RhYnlNenNKMHBEMmFTRHNYdlNCWUJoX0RTRzBKc19ad24yVEY5OThQRHhNbXQ3T0diRWhXNlZIVHhSWW9JX2pUdlZ0cVVrbjBvM3RwVTJkZEZxajJ5Mk5XbkZHajR3bDFCT3VYbUhZWjU3MlJ4dnN2cDNkTHNvVF9taTRZcWxWTnA3OFJFWnR0aW1ERl81QUhWdXZTQUZwQl9fS1V4LVZ2S2VjZ3N2YVMzWnlsdHJHdDBCUdIBxwFBVV95cUxPUDZtMzNOWjhWdEFad1VGWkhKb2tWbVdDQ2hseHRyM0FRQkJSVmhLNTVkd3ZlaFh5akx4WEh1RW9QLTVJQmFQSEs1eVFGaEtvY3dHenBDeFBCbVVfTXhMcjM4a1l4dk5DdFY1UVAxM1ZyTU5nenZDYjdPMjdTU1UyMjVKMm0zREE2T0RwTy1Mc3VqVlUzeTMtUUUyX0VmX0NkSWhhTzRPYzJaT05Pck4wdHBjRVZnUEhCMVZaSkUyVjEzeWpuZ1RB?oc=5",
-        "date": "2026-03-28"
-      },
-      {
         "title": "India’s $40 Billion Rafale Deal Could Leave Ukraine Further Back in Line",
         "source": "UNITED24 Media",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQLXNOdHNXalNFVThNUUJIbTRSSTRjbmpRMkhXV08xY3U4cUdCbkhTeGRZX0JnR3hyOGRKRl9YOGRIMnFoUm9DYVF1V2RvbkJtc1B2NVVMUVJhRHhZYWoyZEhVc0hTZjRaT0lyY282TFJ5alhaWGh2bGFNZHBqczJiMlhIVzdxbUNtUGRlNERGZE03bklZb2JOYnRGbDdfTmZWVkdCSF9kYWVyTVVq?oc=5",
@@ -3100,6 +3088,18 @@ const ARTICLES = {
         "source": "The Indian Express",
         "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOak93aXh6cWo3eVlNUzdLWnl6bkN2WjM3Tk1zWk9JS2gyMVUyX2xRTUlXSjJnQ0VWazU4Vy1zdUc4aVBWM0ZTUmRPYWhRNGNYSm9lZmthc3ZCVWlZQVFOVHB0NDlrRWtHZGpTOUdwMUhEbGlGcGE3dVF4U2N4MGNYMW5VRnZIcm5IVDNzcnhtdGs1a1hwcE84enA0QzlEOVdiczlHOXhxeVVxM1l3SE9LOXJra2Z1WUFXX29z0gHCAUFVX3lxTE05V0lYOTVVT2t0VThieVJkSjhsNjJ6X2dXcVp6QnBreWlhTmVqUmkzc1J1VDBBT2ViVng2cHd3NzF3bnVEVW0yZlZYbXh6cHZsZzVjREN5OHk3aG9oaWFNYmtOUm1iVTZyd2hoV2NtNnpjY0JqeXVuc3kyeDZxNU1UV2h3ZGVYbDg4OWNuZW5VSVdJeU1GZ2paandfanRxb043TTMwVVF2Z2hwTDdPNmxqUkhCY0NZN09WUmg3SllqclB3?oc=5",
         "date": "2026-04-20"
+      },
+      {
+        "title": "India second-largest arms importer after Ukraine; Pakistan relies heavily on China: SIPRI report",
+        "source": "Moneycontrol.com",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWkM2M3NQcEVHQTYtQ24waFdHU1lTZ1NOYUVwOFdXU3N5RFBYUlJWTDhpMTU2RThSenA5cGhLd2NNZmtELTAxbUxFMHdxR1dBLWdCVnFIdGVxUHFqTlJrWTh2SDBybEZNOS0xZERVeW0yV0tVeExNaXZYR3BKQVJNeFE5bnRzM25Hbm9fQkJPX1AtQ0lHa09oOWM0bkIta1pQQmJGVHc3MTVldXJxYlRFbGZHS3lUcmVNbzZqWmJsQ044X29NUG1kMGZzZ0dyeldwbnRMMDFmZ1pwRUtxQjA5NC1n0gHnAUFVX3lxTE5tMmtHaHJzYUI4b1VxU0l5NzlPeVJGX2N0TVFvQTN4ZjdjMkY0RGdtM2NuVzJCbFF2aWVjbXBUUFJobGdwTFhzXzFMY0h6enJHUDlkWjBlaGo3ODBZTjdzVlgzOVNwYy15NE9LRk1RdHZkVzRIa2JBcFJsdElHakJFTDFabjJ1aGt3MUp0UFhuRTNJdWlWSTdDV2lRWE1QRGs4bG9JWkRtUy1TQTVabUhEYkcySV9LVkNXUjJLeVc0bkx6OS0yd3lVazVwUkQ5ekNOOXZfcWo1aWxPMnJpWDVYODIxZ1BzMA?oc=5",
+        "date": "2026-03-09"
+      },
+      {
+        "title": "Defense Express' Weekly Review: India's 114 Rafale Deal Stalls as Ukraine Destroys Sprint-030, U.S. Orders 405 PAC-3 MSE, China Builds Zubr Craft, and Admiral Makarov Is Struck",
+        "source": "Defense Express",
+        "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxQTVgxR1VrOVRFWlZ3M1hnSmZMRHh4dVhsMjVJajluNGFtQVI1NVg5UDRVOWRJQ2xFeTg2cUdDR29UYlM1RTdheWkyS1Vwb3A4OG1ERURlbS0tN0Z2bmZOTFdNQVJYVkxQNDFkcFJRYklybWtkdVhQekswV0twVFplanFqTE0ybjhqekpUbmYzTXQ1NFFOTzZPd09TMkx0WjIxTEFOeXNPWmhKODZLS296NVJNM2FCNmFaZzZXVHczeTFRQV9mWTV5a3p2Qzd5M3l2Z2ZlR2hLRVVuTXdJZklfeFFwMWZWTHlKVHdjWUw2YUk5clY0aG5oSC03cGdSWW9TZnNJaFdkeGFlcXl1TFRrb1Jva19zSGFwQUFva2NCYmRybjVEVkItelZKZ2otQk5sX1p1RG10Wm53Zw?oc=5",
+        "date": "2026-04-12"
       }
     ],
     "ukraine→qatar": [
@@ -3134,21 +3134,21 @@ const ARTICLES = {
         "date": "2026-04-20"
       },
       {
-        "title": "Ukraine agrees on ten-year defense deals with three Gulf states, receives interest from 11 more countries – Zelensky",
-        "source": "Ukrinform - Ukrainian National News Agency",
-        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOWEZ4Z2ZJbTV0ZThIWFUtTHNUd0FlM0t3QUJINUJMNThXZEtXN0VaWHNqd3BzQnhsYmktcFFiYmRmVW1CVW13Ql9BYXZjMW55U29Hc1ZJRGRranVwWVlEYnppRVQ2eXpIZkhfV0lLZXAxRHd5ZnF3Qk95clJNYXljdVRtbDJKcXBpX09JVHlXYjVzMGVleFRwaFFCRTd4aXZGR1FWS3JJaUJMTEdLcUY0cTdlVlY4UERLejVZWXJfV3ZYZWRxVXFaQldLTFFqNTZ0bjlVQWxuWS1ISE51Sm5vV3FXNXBfNzUxVjdkODdVVkdfUVFSTF9ZS21yNA?oc=5",
-        "date": "2026-04-19"
-      },
-      {
         "title": "Zelenskyy visits Doha as Ukraine, Qatar sign defense pact",
         "source": "DW.com",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUDFBa3RTYTcyOFhvOUJsaU9VTFZJWWRuS1I5NG0wbHp2dF96T01tMlVRa1hhUVZzako3S0hMT1RLbVZPdkdCVVlLRFkzb3JUd3JPZk5SSkJaTk90Tk9aMTJBNkt2cWlTcU9oUkY2c3pKV093S1VfU001eTdUamd0UVVfd05qazQxeUQ3TVMzMkdYNGPSAZMBQVVfeXFMTU1NZFFJNkFLLXRlbTZnRllUb2YxRDhZQkNCaVZpSjJnUlpvUGd4RjJ6aUltSjRUckRaWUFxWEFad3JJMVZoQ000WHFRZXIwb2N0MmpQMEgxUjNTWnhMeUh1RmhySTh0cmtsQkRxMHM5MF9fSW1jZ0RRd0UzbG95Ti1WOFA3dFZSN3ViVHAzdGdFa29r?oc=5",
         "date": "2026-03-28"
       },
       {
-        "title": "Ukraine agrees defence cooperation with UAE, Qatar as Zelenskiy visits Gulf",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMExaUVg0ODN5bkEzcEc0Z2NFN3NmSS03UjdMclZDYWc4V3BxSnhpbWMtZ2FmREo5akhIdEZ3NUU3MjRUdHJlUElOV3d2LVltM09HZFo1WEc5S0dmVFBiZ0t1b2YzOUhrQjRFSW1UWkZ0RkhIYWk4RW5PaDU3dW8zOWhydkJrdHRLNG4zTW9qaE55akxQWDhNaVN3amNieEtTSWsybWU3dw?oc=5",
+        "title": "Ukraine agrees on ten-year defense deals with three Gulf states, receives interest from 11 more countries – Zelensky",
+        "source": "Ukrinform - Ukrainian National News Agency",
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOWEZ4Z2ZJbTV0ZThIWFUtTHNUd0FlM0t3QUJINUJMNThXZEtXN0VaWHNqd3BzQnhsYmktcFFiYmRmVW1CVW13Ql9BYXZjMW55U29Hc1ZJRGRranVwWVlEYnppRVQ2eXpIZkhfV0lLZXAxRHd5ZnF3Qk95clJNYXljdVRtbDJKcXBpX09JVHlXYjVzMGVleFRwaFFCRTd4aXZGR1FWS3JJaUJMTEdLcUY0cTdlVlY4UERLejVZWXJfV3ZYZWRxVXFaQldLTFFqNTZ0bjlVQWxuWS1ISE51Sm5vV3FXNXBfNzUxVjdkODdVVkdfUVFSTF9ZS21yNA?oc=5",
+        "date": "2026-04-19"
+      },
+      {
+        "title": "Ukraine’s Zelenskyy signs air defence deals with UAE, Qatar on Gulf tour",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMW5jOVYzbFZFY29BdExUX2tPVzRwQ2h4VlppUEtKWkxGTWlqTTBVRGRQa21TV0RIRlBMakxUX1ByWEZvakJia0hUSE1NSm5xckpnU0ZKZ05UTXZiZ1RZS2szNFhTamxFRFlyUGFfSi1vaU0zemxSejFraUxwT3NnXy1jOVJtdnpJME1oOTV3OTVRenQ1WUhrZ0dobC1iZHdBbGpSMdIBqgFBVV95cUxQUlliS1VkX19tOTItWGRpdEhfaGVCTVZQdEI1STV0NDBsaWxTZXloVlJ2OFFPaE5neGVMRHdtM2lVMU1CYXlURnZLYndUUUdTZkdydzhKcG0wTkFISTRzNm1UR0ZYekZvSFdBWVd6VTg0YUhxZFpBTHJIdG9VVmpKSVI4S001eV9sVXhpY21CdHNjT2J2UzJXZmtaTEFsdmZLdFRwNnlNRDhnZw?oc=5",
         "date": "2026-03-28"
       }
     ],
@@ -3234,12 +3234,6 @@ const ARTICLES = {
         "date": "2026-07-03"
       },
       {
-        "title": "Canada Signs $2.5B Radar Deal to Expand Arctic Threat Detection",
-        "source": "The Defense Post",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9JbzhMa1RzS2RRa0V6RmRoTTd3cWJ5T0ZsdXl3QzB4RmJQclh1MmEtSWw4SlNZQUo2elJxaTVCMVB5UUpRRHJyeU0yQkVBbjdaN0xvclVRZXg4amx6a1gwd09QV3VWUUHSAWxBVV95cUxPenRxRmxPbFZvU2t1d1BFalRfQ1VxcXd6TU1tbEFjMVk4SkFpTUw3NG5taUs2eEt2SERLaTBrZXB1T0p4YmV1NnJNUDdxZDhBTXpqVGQtUXNFWmZVNTdnM09TeDNINGk2WlptcFM?oc=5",
-        "date": "2026-06-23"
-      },
-      {
         "title": "Australia lands record defense export deal with Canada",
         "source": "Latest news from Azerbaijan",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUVFOTDNia1JGT3ZabmpFMUlPclFuRURRVng0Q0FjVmZ4NUl5bDhOSF9yOTBlZ3d4dU05bVB3YXg3Tjd1RGt2M19EbkYtUWNBSWZkQUxXOG5BbnY0VkViMkt1amtyZUNhVTlWZklsTzFoUlhPR1ZMLTczRWFuY1pGMg?oc=5",
@@ -3250,6 +3244,12 @@ const ARTICLES = {
         "source": "Overt Defense -",
         "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNczRpdDNEWFIxNHBZaVpvU0NuQ2Z1MUNyTDNTUzBOMGdzRVNLRGtsMlh4bEFzNmlMWDdJRWdPT3BKeGxFUlhWVlNEekM3TUNWaE1MVjBCSF9zUWVOX1RtRDdORXZTbjR3ZUNEWXRZZm43akhQZXFOOVJLTVB1MEo0bGpfelRWN2NIYVVwV1lJenlvTTF2Y3JJV0VYTUNST3hMRWo2aVZWNFRQNTRubDJCS2huZ2FVWVZ5QmdaUVpBYmI2MkdyS3FXVkQ1cTVMaGM4VWF2TXJ3?oc=5",
         "date": "2026-06-26"
+      },
+      {
+        "title": "Australia Signs Biggest Defense Export Deal",
+        "source": "اسلام تايمز",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWkJkZDBEakIycTNpZ2gwUmFIa2ppOXBHNmpoYmZkdEo1YngtZ3F5OFF2dmpJODVnMHJuazRVRE9pOS13aDAyMUZxX1AxZHhCeXBzZUIyTkd4ZjJad1lWZ04yNjBoczNjaWs3emQwZ2R2VEJNOW1YS05qeDNucmxOeW1TZUpYR1NRV0tpTEdMa3FCbDIweG5NOGhuc19YNnJLSWxVWklwSkNCSk45LVJwRTRvWHlaaF9aNmJEVmxpaWpMbDNI?oc=5",
+        "date": "2026-06-22"
       }
     ],
     "australia→united states": [
@@ -3272,6 +3272,18 @@ const ARTICLES = {
         "date": "2026-07-06"
       },
       {
+        "title": "US military plans major war stockpile on Australian soil",
+        "source": "SBS",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMW00eWhOcE9acU1KeVA2X1htVkdsakJqNHNwcDBvSVdQck9qRUV2cjBqOG5pZmw3SFZUVHAyN29Zc2JzNDE5NzQxaE5hWUZwUjh2Tk9CeVNVdEpFbkwwT0tmRjRRRTF6bDZxMncwME9nc3U1RWJmSUctRlJnRy1YcHUxTk1uWkxiWDlSQU5UY1BPY0lqby1lZ0hsRk9zOW1QdHUxMw?oc=5",
+        "date": "2026-06-16"
+      },
+      {
+        "title": "Australia lands record defense export deal with Canada",
+        "source": "Latest news from Azerbaijan",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUVFOTDNia1JGT3ZabmpFMUlPclFuRURRVng0Q0FjVmZ4NUl5bDhOSF9yOTBlZ3d4dU05bVB3YXg3Tjd1RGt2M19EbkYtUWNBSWZkQUxXOG5BbnY0VkViMkt1amtyZUNhVTlWZklsTzFoUlhPR1ZMLTczRWFuY1pGMg?oc=5",
+        "date": "2026-06-22"
+      },
+      {
         "title": "Why Japan is now opening its door to lethal weapons exports",
         "source": "DW.com",
         "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9vdDV0cEVyV042V2tqeUhlLTNXb2dndlZNUE96amNBY2tfYTU2bXpRcUdkaDl3X1I5c0Z3Nk15VlF1dEJNdlJPSmVXMUlFQlRaeXBmNXIwMnl5T1JpSy1OckR5Y19YYjNvYUpJREhhZU9mRFFGQTl5RjZCcFfSAXxBVV95cUxOUmpCQUVyNVROZDRzWFFMOWhLdzlvVUl5Z0dPc3NqcGIxTURSMVRQdzQ3NHJMTlZpbVBacmR5MDJtUWFYRV9BQzNIZFJqdEl0dXpFUW9oZTdxaWxWbzdwcHBFSzY2MkJBWkRuTTZZa2dEYmR5S2ZfcXY5VWNM?oc=5",
@@ -3282,18 +3294,6 @@ const ARTICLES = {
         "source": "USNI News",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUkZZLTl2Qk4zUnJ6YlZqVkJCbTN4enE5YTlDcFp1ODQyeWdDOHRnYVUzUW51NnlqeTdxbGpfYXlNckZGT1dYREpUQzBPbmtmUzlUUGh1c05haXRkR1NZZndtTFdfcVFvN2NUVFNhTVJuYW45em9xZXNRWHVGXzFfOENZTW0wQUVULVd0T2VwLXdTcEt2dlZQLWwwbWl5eGVvZ1pGNkRHaWVTeDdvd0lnc25FZzBaY1E?oc=5",
         "date": "2026-06-01"
-      },
-      {
-        "title": "US military plans major war stockpile on Australian soil",
-        "source": "SBS",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMW00eWhOcE9acU1KeVA2X1htVkdsakJqNHNwcDBvSVdQck9qRUV2cjBqOG5pZmw3SFZUVHAyN29Zc2JzNDE5NzQxaE5hWUZwUjh2Tk9CeVNVdEpFbkwwT0tmRjRRRTF6bDZxMncwME9nc3U1RWJmSUctRlJnRy1YcHUxTk1uWkxiWDlSQU5UY1BPY0lqby1lZ0hsRk9zOW1QdHUxMw?oc=5",
-        "date": "2026-06-16"
-      },
-      {
-        "title": "U.S., Australian Cooperation on Land, Air, Sea, Industrial Base Top Topics at 40th AUSMIN",
-        "source": "U.S. Department of War (.gov)",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNUFpGQy00eEoyYWVXdzNMdTFxZDNGZXdxOVBxZENpTk9DT2tQLXlHRW9aalZ5VE1Ibk55d0JjdnluSTluUGhrNlFmS2l3eFNvb2RsTFRHdTlfZDNwU1FJb0tGaWZabHA3YWxtVlhPSWMtWEJVR0RVc19JRFprYkFGekQ3eHRkc0NTbHMyTHhsNmE2WE1QRDB0emNGWUxCUml6aFFEV3MxN2JWcG8wT0tVZjNvUGdsZTVBWi1OMmd1Q2tnVkZuaDNWQ2hIWHRqNTN0Q2dPbnZ3TWVxQQ?oc=5",
-        "date": "2025-12-08"
       },
       {
         "title": "US will send only used nuclear submarines to Australia under amended AUKUS defence deal",
@@ -3346,10 +3346,10 @@ const ARTICLES = {
         "date": "2023-03-14"
       },
       {
-        "title": "US and Saudi Arabia sign $142bn arms deal as Trump to meet Syrian leader",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMXZ5X2hZaFRPR3NEdFl1MWxNZERsVUVKV2ItOTFBM3pyeUNJUmc5M2FMXzlFWkxmaTR6bmdpMEp1U2hHRzNMd3R2bnlyMUIzdVFTVDhUNXpUWXRkck9DX3d6dk04NU5RVTZfeWtDUTVmclZuMWJYaFpuRnRxWXZ1V3Z3M2xUZDNFR2Z2bXRCMktNeDRpMlFVbw?oc=5",
-        "date": "2025-05-13"
+        "title": "Belgium to impose sanctions on Israel, expand restrictions",
+        "source": "Anadolu Ajansı",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVVZ3Q2ZlVFNaNFhqSTdFak51ZExENV9sOGs3ZVNtcUFkN2JlME1NSEh4RUtwVEhMSkg5eU5hQ2gteWxFNUpBajdqTUF4Yll1UWx4aGF2dGJ3VEZRZkd2THdUQUNiYWE4RmphVFZQM0M0TEQxV1FCaUZIZzJaVnZZeXFPVEVSMncwaHpULUNhR3FkRmhLLVd0Um85WnI5QQ?oc=5",
+        "date": "2025-09-03"
       }
     ],
     "belgium→ukraine": [
@@ -3372,41 +3372,41 @@ const ARTICLES = {
         "date": "2026-04-23"
       },
       {
-        "title": "Belgium Seeks $236M JSM Deal to Arm F-35s as It Prepares to Transfer 53 F-16s to Ukraine From 2026",
-        "source": "Defense Express",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSFRubVM5a0VlbmtQZmxQcXhjaENWOVV2cy0weXFNcF9vRHh4UjIzQjlHVURwaFpqTHdsclZmMEtnMFBEQlhpdGt6NjBhNEpPc3ZpNG0zU2ZfUFhxMkk1Q09OV0doVmVNR0xBYmJhZTRqa3RLa09XUUFmeWpqdmRjTVhfWnpnYURleTgwN2pET3o4NFVsRWdCaHlZV3BYd1dhTmpwb21mYU1ZOUlLZXpxcFc4U0h4Y2JCMnhpQnBsc0JPRHZBaDJscDFEYXF6TDM4U0Q1Zi1SN0VmVVA1N3c?oc=5",
-        "date": "2026-05-21"
-      },
-      {
         "title": "Belgium and Ukraine to Jointly Produce Drones and Counter-Drone Systems",
         "source": "UNITED24 Media",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTkJ4UUdIZGlNSG9zTFVYcmVRWUpMYlBJZmFlQVYzNURUbjE3clJBM3BLeEZpanUwVzlXNkRLN0REQjdaTGpzY0VhZUNXREpyUUlhX2tBN3VwM2FUanZPbTdqemNoLU9Hb2d2NnJ3RkZQZGgtdkFOQUUtMmV5cHMwTE1HOGdCa2ttNzJndG1rblIxWV9UOEdEem0yTE43VnBDRFRXN3FvcU9jYmVqcXREaDdTX0lXdw?oc=5",
         "date": "2026-03-12"
       },
       {
-        "title": "Belgium's De Wever calls for EU to negotiate with Russia for Ukraine peace",
-        "source": "Euractiv",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONVdvTDNOZzhSUGlMelJvYlk1c3VZdXN6TllnLTFkSlluWVpSV2tWV2luaC0xelpiQ3pTM0VKMEJLdmFQMWQ3MHlPU01sUUxzclBRMXF0cnphelhXUHNmXzFuLXhlRTBuVkpVSFdHZkVUckE0ZDVUeGhzMjVJdzA3dVJCb3RMd0pmcHk4NmdRU0VraWlFckFFVWFpZGVBbFd0aG1nOGU2aw?oc=5",
-        "date": "2026-03-16"
-      },
-      {
-        "title": "Ukraine gets $235 million boost from DOD with long-term F-16 maintenance deal",
-        "source": "stripes.com",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdFlrbURQakdGbjNldG1BMkhHLW56c1BtN3NoQVZJYWVBVU1UV0N6MHlvbk9ocjE4RUFfOTBGTjZjWGRLMkFITUplUW83VGd4OVkwQXZqRTBwTFdEdGs5NlRmaXlMOUs0SnM5UDF6V1hUUHQ1ZWUtVlUzQkRtNm5OeWZvaExIYW1EcHF4NGJUTk5oOWExbzFOM0VOS1hEZzdQM214WjM3aUlGUGtLMU5MOTlvOFk?oc=5",
-        "date": "2026-02-02"
-      },
-      {
         "title": "Belgium to purchase batch of Gepard air defense systems for Ukraine",
         "source": "RBC-Ukraine",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOGZFbERjUUxXVmVXMjBvY0cyU1dvRWluWjFaTTE1ajlybXJ5OERFR2x4VFFmWGZZOEIxekQtZ29IVzRXT1RDb2xYWDhEYmtRRzVkZVBLb3JLaURwYXFLMm00WEdXQWpRbHA5aFc5eFU0VGk0ZFo2dG1WQklTTjB1YTlaOFJGeEpDTHo2ZFh4d1FvRlBNNVU1am1Ldw?oc=5",
         "date": "2026-04-22"
+      },
+      {
+        "title": "Weapons to Start Flowing Into Ukraine Under European Deal With Trump",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQkQzRXNpZnh2X3V2UXZfODNDY3B1ckxvMGhFU1JXaVVLUzVzemtNVXA2ZWN3a2tRbU1RdnVmbjA3a3Z2X1lXYTY1NG9tRXhhbmtScEU2OHJMbFdaaXBqWC1rVnItZVhubUdJd2FldmlGMGRxZnhPZEcyTnBhVGVCZ1VUMmx0bDBNRVc4SjhB?oc=5",
+        "date": "2025-08-29"
+      },
+      {
+        "title": "EU nations boost drone defense, pledge more US weapons for Ukraine",
+        "source": "Defense News",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcTRnNWRxX1I3TkFlenFxdkpfbXhWWkpXZmxtV2NUMDgtdmZEUXlTalc3ZURVQWJBLTh3bFVlYkRTcGFXbnJDSmtsOHVTUmFUaDR6QzNMZTF2c1JLb1lTSVM5dUQ3M2NPVEpEV3NNcThNLVc0UjNJTXduRUxrVzVYY0VISHlOcFM2clZqeW5pc1g5ai15RGUtRHpUeDhJUldlMVRVeTVDZTdvdnZUZUpXMUxTdU9rRVAzWW5z?oc=5",
+        "date": "2025-11-14"
+      },
+      {
+        "title": "Ukraine’s $200 Billion Lifeline From Europe Stumbles on Pushback in Belgium",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOV2l0TFlvdmFKNXpob01VWHExdUpjRlVJVUtTWmZNb0hwVk9jSktIcVEwbURtRlV2S0w0bkhtcW8yeTFETHBLaHRjT29WdFJyOUpXeC1XVGlpMGtORlFZT1BYQmtpcjkzVHJaNVktT3V5QVlzSmg3Qk5OWnI1NUJyRjVEZGJqbE5wOHd6XzBJVkloX214OGlhUUo5VV9YZ0s4b0dCd25UVUNCV1I1OTQ1TjhnT1VJZw?oc=5",
+        "date": "2025-11-14"
       }
     ],
     "belgium→canada": [
       {
-        "title": "NATO Industry Forum: At least $50bn announced in new deals",
-        "source": "Euractiv",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUGxYdWlfNWNIUllHZGJhMHpyeTJBXzFxb1c4MFc2YkNGU2N3VlNLbHR5WkJqNjlTQlRSQ1kzbzUyQ0tCZjZOc1lLWjIxNUxVNDFwcFBQWFd5SENuZFlxd2RzeFFkOGZtbEtHR0dqM0VBTTVHUXhHanVmdnpuODRCdHdKdzJwRVFxUHMzM0RjUEg?oc=5",
+        "title": "Canada Wins Support From Eight Countries for New Defense Bank",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNR3U4TmZyeUpxV0xhVzN5el9jd2ZiT1FILXF1dHdPa0RKYTFxV05ZOTNWLUhMVll6QU5xQmx4NjBaUGNnaTNUNXBNY29qTC1XUjNtdHNUUXlPeExtRVVwX050UG12MEZXRXItOEE4ZTBrazRBcnZCV2J6LThIb1FnSWJITUljejBaQlpjU0ZKMm96cFB5c29GOFBjRUhLODNldGhOWTBZQ0NDX3pubDl6TF9tMm9kWTRYTEt4Rk91ZlE3bTl1?oc=5",
         "date": "2026-07-07"
       },
       {
@@ -3422,22 +3422,10 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
-        "title": "Rutte: NATO allies agree to invest over $40 billion in antidrone capabilities",
-        "source": "The Jerusalem Post",
-        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9IWXZpZXQ0cVN2bXYtNlZld01Dd3I1cVlSSng2SmpiNWQxNmVHUms4THlZYjR0Z2lvR09iWnVjOUpxTVhNamZIM3VsSTIzaUJZUUxWSWk3T0JjLVRkaHM0?oc=5",
-        "date": "2026-07-07"
-      },
-      {
         "title": "Canada pledges $900 million to Ukraine for vehicles and ammunition, but no air defense",
         "source": "The Kyiv Independent",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNFoxZ0UwdUlfMGw0RXFsYjBkWktwMkZ3ZVozWmdYLXdBYnlfblEwTTZoSW1KUDh1MU5mV1JoWE4wMzZ4OWVWZXBLenFMZG05MGFzeWVQNzRRYTIxWUh4WFhrV2tlUDZNSmVLOVA4VHBxM1RDaXg2QVFtSlJuMTVMaXZzenRMSDJzZ1Zqel83c2dPdzJQeEU5bkpVU3h4NE5MYWZhSFJDMTQ5ODg?oc=5",
         "date": "2026-07-07"
-      },
-      {
-        "title": "These countries no longer arm Israel. It’s not making much difference.",
-        "source": "The Washington Post",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObW1tcVhUbUExb0xhUUxhMHRrY2Z0QnNfaVFYdGZQUmhzdW5TLUJqS2xya0VLbU5Ld1FBQVZ6STlUMnl0SUhxaFoyaDBXQVpuV2MwZ3Fvdko4WlFETkZ4RjMtU05oTHh1R1dBVEpuN3F4ZGdJT2h4YnRlNm1uMi1hYTF3Zw?oc=5",
-        "date": "2025-10-16"
       },
       {
         "title": "Contracts For Dec. 23, 2025",
@@ -3446,13 +3434,31 @@ const ARTICLES = {
         "date": "2025-12-23"
       },
       {
+        "title": "These countries no longer arm Israel. It’s not making much difference.",
+        "source": "The Washington Post",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObW1tcVhUbUExb0xhUUxhMHRrY2Z0QnNfaVFYdGZQUmhzdW5TLUJqS2xya0VLbU5Ld1FBQVZ6STlUMnl0SUhxaFoyaDBXQVpuV2MwZ3Fvdko4WlFETkZ4RjMtU05oTHh1R1dBVEpuN3F4ZGdJT2h4YnRlNm1uMi1hYTF3Zw?oc=5",
+        "date": "2025-10-16"
+      },
+      {
         "title": "Canada Lays the Groundwork to Pivot Away From the United States",
         "source": "Council on Foreign Relations",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNjBzUHk0cjk5VVJZNUtER2cxZ0QxTkJJV0ZFTW9LclJubHF0QWJJeFZBTW9Ba3pDeU51ei1ldEFNcWpRVVVUMmpPWGluczNJOUVvcktUb1lMOEF2Ujl6bHJVZVVTVXp6QkxOV0dReTl3dGpYYzFMamVHWFY5WVdFT1dR?oc=5",
         "date": "2025-09-10"
+      },
+      {
+        "title": "Canada has officially joined the EU's loans-for-weapons program",
+        "source": "CBC",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYUJRX0dsNWFFb3ZyME00dTJFdlEzY2NkYTNWSFBzRkhfWVNnRFpaRXVpZDJtZ0szWFBIcGdPVlMzY1JmZ1ZKMDh3N2tTQlZIYmQwT2xOSEkwRzdLV1UyRTRRRWdxV1ZPWGRHWG4talBGaFVCd1VpLUlBSlRJYUZaX1VPcTEtVC1Zb0VlZWNRQ3ZfMW8?oc=5",
+        "date": "2026-02-14"
       }
     ],
     "brazil→portugal": [
+      {
+        "title": "World Cup 2026 Power Rankings before round of 16: Who's No. 1?",
+        "source": "ESPN",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPV0Z4dmxQc2ptcEh2YUNWTE1ESFAxZGJaXzkzZ0ZQSXZhOElTWXVKWFpucWRXNk1EM0VnU2V5N3ctbFVtRkhSajNzNmR1cGhRS2ZSb0NkS0dtdTQwYk9nRDdiTklfaXFLdHR1MUZQSnAtTkdyS05lcWg5TWxPM1A2SEQ0WlM0ZVc2em1uSmZ5NldHZklqV1ExODczalZFNlBTYXN1OFBtdzVCZm92S2drTGF5QjgzdFh3Z1FzS3lEaS1ramFVeF81NmVtaEZpcUU?oc=5",
+        "date": "2026-07-04"
+      },
       {
         "title": "New Entrants in the European Defense Market: A Study of Korea, Brazil and Turkey",
         "source": "Fondation pour la Recherche Stratégique | FRS",
@@ -3464,6 +3470,12 @@ const ARTICLES = {
         "source": "Eurasia Review",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRU8ybzVyR25OTkZUVkhRUDBFMW84X2dJRzh6aU1PV3JLbjdUbnRXaGZ2X29NNWZ4RHowWXdKclAwYVBLVXNWbWQ3Skt0VUh3cnQwanVISEo5ZFVpV0RHbVRQTFg0bTJDWjIzRW5ET09wcWZkaUdyeWpEUmhkaDdydmRZbjFXaXUyX2ZYVEtDQzZHR1JUU2djTjNZaUV1d0E?oc=5",
         "date": "2026-01-15"
+      },
+      {
+        "title": "Saab Eyes Portuguese Gripen Production With Local Partner",
+        "source": "The Defense Post",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBaU3otRVlSOHZscnY5eEN2ZG9Wcm5kUXd1VWF5M0tsNndXVzloYXNwaTFVVFBqQjEyd1JlTTBFMU42SEhFRm10RTl6eXcycklCd3M3cmhuTG9xc0stVVFuSHVYc09kNjVEWG41Z05XclFndE1KNUHSAXtBVV95cUxNVlEtS1plWHdtSWI1UDM0Wk9NaXNCaXYtS0hNOU5HSDk3ZFRCNmNtbzQwbkItMzJCQkQxZ3FnN3VuLVQ5QWNOVFZKTGFlMXJRUWJsaTM1NGFNZ3NQNlU3ZEZIeTVNUXhzb0hEMmZMSXdfUU9xaERaM2d4UW8?oc=5",
+        "date": "2026-03-09"
       },
       {
         "title": "Morocco Reportedly Nears $600 Million Deal With Brazil for KC-390 Aircraft",
@@ -3478,12 +3490,6 @@ const ARTICLES = {
         "date": "2025-10-29"
       },
       {
-        "title": "Saab Eyes Portuguese Gripen Production With Local Partner",
-        "source": "The Defense Post",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBaU3otRVlSOHZscnY5eEN2ZG9Wcm5kUXd1VWF5M0tsNndXVzloYXNwaTFVVFBqQjEyd1JlTTBFMU42SEhFRm10RTl6eXcycklCd3M3cmhuTG9xc0stVVFuSHVYc09kNjVEWG41Z05XclFndE1KNUHSAXtBVV95cUxNVlEtS1plWHdtSWI1UDM0Wk9NaXNCaXYtS0hNOU5HSDk3ZFRCNmNtbzQwbkItMzJCQkQxZ3FnN3VuLVQ5QWNOVFZKTGFlMXJRUWJsaTM1NGFNZ3NQNlU3ZEZIeTVNUXhzb0hEMmZMSXdfUU9xaERaM2d4UW8?oc=5",
-        "date": "2026-03-09"
-      },
-      {
         "title": "Sweden orders four Embraer C-390 Millennium as part of joint European procurement; contract includes seven additional options paving the way for future acquisitions",
         "source": "EDR Magazine - European Defence Review",
         "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNdkRNX3ZqZU1QRFNiLWdOT1UtWmxZR1MxODhrYnFHWENfNDNiVXVzYmVlSGhGOWRRME52bG5uQzRXMVBueXAtZHpwUU9PNUZGMzFHZ2o4UHo5UmVYcWVaNEttNEoxUDZDQ1ZXd2pZNVk5MEFQTVpfNDFGLURlUE5JXzlSQk4zWUc0TWZ2UmR6NHpkRzZES2tHRl94Q3BNZmk2YndzZ3BPaHR5VHcyd0Y1ajZhYzRwQUZFakM4U1d5YTIxRFVSaW1YVEE4WlMtT0lOWWF3MnRrUXF6TThfc0VtZDRkd0lFN1NldU1FU3JzM1ZSa0lJWV9lWHBzdkhIZWgwNzhEUUVhSzRGZVNrT2xmeThtcDA4dHlxamc?oc=5",
@@ -3494,12 +3500,6 @@ const ARTICLES = {
         "source": "The Aviationist",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1XWVRCUWw0RUhJY3RxRGNneVdERjBGM3NJemlISzd2X3ZiLUNCdXZac3VnTnN2WXI3UUV1UTFSRmRJZnNfNmV4NDBGd1dXSVdmanJrbTNTY3VVc2NxaE1nN1dXanEyUVE1MG5BVEdFRzQ2QktOVG9FeUUwbVphQQ?oc=5",
         "date": "2025-09-02"
-      },
-      {
-        "title": "Matheus Nunes: The Versatile Dynamo in Portugal's World Cup Squad",
-        "source": "Devdiscourse",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQUl6SlN6Y2hKa0F2dklEQ2F6alc2dFlnSVI3c2oyOTkxaEV1TEVEU3NQOVUtU043azRkWVFsWDdtaFpnWnpfOTgweWw2SjF6ZjRNcVhTV09jZXpPX3ZUUHBZTFhuUlBfYjRrWnZweUxaQXlseGZnbDJEV0JlclBWRjY3eWVndlVDaHdfb003UkZYQ1l4dnp1NU9mXzdxUHdnd3RqemdmdnlrRWk4RTI4eUtHR1JiRnFfQVNpdVV30gHDAUFVX3lxTE9pYXJIV1oxXzh0bndmY1pYXzB2T2wxaFJ5MVQ5YWFuRGtLMDJRaUxYQS05a3Y3MElzOFc4OEFORXVpV2xCd3J1dW1VTzlHdHdiMmVwcUV5SjRBR2RKaXh0RDh5Tk5KRFhwUlJfMEFHYkRtRlZ3Y0VSZjRUa1AtYmVBZmVsX1FEaXd0U3RELUYtTjhoTEV2Q0l0SjUtemV1aERZV0JiTDEtVE5sR3NOQlRlVE1JNDJ3OTBPcEdIYmg4dGllNA?oc=5",
-        "date": "2026-06-15"
       }
     ],
     "brazil→hungary": [
@@ -3510,16 +3510,22 @@ const ARTICLES = {
         "date": "2026-04-01"
       },
       {
+        "title": "Hungary’s Rearmament: Past and Future",
+        "source": "Hungarian Conservative",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbG52cXZhRzdGMDBlSXcyZkxCUmlEdDNWS0JrRnN0aFJqU2VlQ2hKTTUwYzRkNlVKVlVXTW8yRGEyMl80QVlFMnZ0eHFhODRZazZMSW9JQk5GRERCVm94el90VjN2WDY1b3B4ZTBoS2ZDUkx1UHkzZUhpQTdTeG8zamdsc2M3OEpGZUpkMzNFSTNsX0M3ZXNwdlVFSUZEU1FBTWV4ME1B?oc=5",
+        "date": "2026-01-02"
+      },
+      {
         "title": "Brazil’s Gripen bet is growing again, and Saab’s fighter could become the aircraft that keeps Sweden inside Latin America’s airpower race",
         "source": "OkDiario",
         "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNUmstTzZvTk9fdDE1UnJVTHVHcFdBRG52ZWQzdzZlNEVHME1ub2FmUG9LUHFuRk5YSktKdnpKQ3R5WHU1X2pnb3FNb2lfYnpOTDU1dmI4X0tUUUV0bXFLSG1mZHQ0NFU0RkZKLU9MUUdMcGNtVUFyMmJ1cS1KNXlSSVJXNVU2aHluOEkzX09kbDBQU1NOcmRPaFZnMVpXUlluN2ppUXh6WFl1aHQ4SmVLdFIzMHp6eC16a1FtWXNUaHEzNnh1WGwzall0U2ZnQ0JOWTFyeGQtRVZiWWtZM2RmMTU5Y3VGLVlRS1NtUm43UlZpTjNMMVgxQmJsSVJ1dw?oc=5",
         "date": "2026-06-19"
       },
       {
-        "title": "Morocco Reportedly Nears $600 Million Deal With Brazil for KC-390 Aircraft",
-        "source": "Morocco World News",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSE8xOVJKTmc2UmhpM245M3FYOVhMOXd3azRaaFdsMERuaElJaHBLSV9LbnFGVHU1eHVCWUVsalJXQXVRQzhlTjVpT2hsWVdmcW0wTHF5NXZaaXBROHFxZ29vczNPMDBnc2dnbmp5M2VfMkJwR1J0Y0VmcVJSX2lYVXkwZzRPZU9lVF9MMktsNlc5cS1iUlE2bnZsRVFOSG9lX1k5LXBZcmd2RE94QWhLcEpab2ZOVGJrNWhCYjVNbw?oc=5",
-        "date": "2026-05-04"
+        "title": "UAE buying as many as 20 Embraer C-390s",
+        "source": "Axios",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0xN0oyRWVXc0VDYmIzMHFTanlsX2t0TktLZTdOaHhEVlktT3hKd1N0N2pTeHFtSlM4VnhQRjU2Q0RGbVBlcGdzN09WX21GYTR6Rmp4Y1F5cWttN09ISU8tazQwZ3dfUUg0OGo5THZ5OA?oc=5",
+        "date": "2026-05-06"
       },
       {
         "title": "H225M Helicopter Operators Meet in Hungary for International Defense Conference",
@@ -3534,22 +3540,16 @@ const ARTICLES = {
         "date": "2025-10-29"
       },
       {
+        "title": "Saab Is Back on an American Continent, And This Time It Brings Fighter Jets",
+        "source": "autoevolution",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeFFQVE9DVkVROXBQOWdpb0l1ODZ1R3ZLNGhUU2dhTlNWbnAyRUV5Y0NhSjB1XzYzWEo3V0czTHBfem5KMGQyUmU2dThGcXRuakRuTmFrTUVZQnM5Vi1tOUZyRURRTWRWTVRVNWJNRkJuT29NX3RvNEI1Z1VlUDJZVG02NkFBZUpvTUkxRFc1WGphRXhMQXVJU0lHWnpTMlo0bDRsQVNSZTNTM2FNb2ZzcHJ4cVkteVMybWRPcEZn?oc=5",
+        "date": "2026-03-26"
+      },
+      {
         "title": "Sweden to Acquire Four Embraer C-390 Airlifters",
         "source": "The Aviationist",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1qT1RrVTJTbExDdHJQb01ma0NVTmpPTUlaaVhTamNNTjNfS0RwUG81SHhMNGk4a1NORHVwck1FbVdVbkJEVFVqb0Rwd1lSb0xNREduS3BkOG84d1o0UTcwNzgzakVEd1hKckJ3cTZkSk9CbThjSlE?oc=5",
         "date": "2025-10-06"
-      },
-      {
-        "title": "Sweden orders four Embraer C-390 airlifters under trilateral European framework",
-        "source": "AeroTime",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQcjFTWXI5aFhfam9GTVZhUEZUS2JvSWo1NXhHZlFpMmtZcWI4ZFBnNWdmV0hGSFFGWDFySU1fZUx4VGtEWVZxRG9lc0F4VDcxSjhhbGpYa3laMktneFRiVmVkOVY4c3h0MDNPSERFM1J4ZFZzak5zNzBRZ2tOV3dHalcyaGpXd0RhTjRKclZja9IBlAFBVV95cUxPd09EWTgtS3pRMUg3N2pKR3ZLUHlOZzBVdEFLSjB2bUlFSFJQYUxKbGFFemNUSmlnVHdyanVxNWduVjZjeTRnMzh3ZTRWZjhfNlJOaUoyLVlKT1kzcFR3Vk9TZDNHbTZrSTdmOUNNYWw4V2NGWk9nWXRIT25wcFpxOGplYlhRdGItWmhjWXdnT0w0bEFz?oc=5",
-        "date": "2025-10-06"
-      },
-      {
-        "title": "After Thailand’s Gripen combat mission, questions of future sales",
-        "source": "Breaking Defense",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOV1lOYi1fRF9VMTIybUZRQWwtdGJYM3lpLWJLalNROVRYOXRadHBDRkdqV0tNLXA5bUNHbDBTNVNBZkZiMlkwUTFUZVQ3Z3UtSkc5bXhTZzZ5cDAtdkhFU2YzN1JxaTQ3T1VSeUxiQ0NhSExBQmpqQ0dpRDFPZldUSnZYaldUNnV6LU5QWEMxYkUwSG9WWk9iSjVxY3R5SzdDU3Q0?oc=5",
-        "date": "2025-07-29"
       }
     ],
     "brazil→nigeria": [
@@ -3566,18 +3566,6 @@ const ARTICLES = {
         "date": "2025-08-22"
       },
       {
-        "title": "Nigeria replaces top security officials days after coup plot denial",
-        "source": "Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPb3lqN1RxUUswNEVrSDhzRmszVTJ3dVVGSmpnbWE1UWlLZHd5RmoxWUZ4YmtwLVhzdU03RDhDZEFhdnM3dTB0WU1Vakp0VTFVY3JUSkhMSEYtTUw2bm1oLTh3M3I0M2dvUUMwRk5PM0ZaZEktLWNoUkpRVnVINmlnRk9jdVMyS2gwNUdPOFZSRGVKNXBLUG9KUzNSdDlTYml0VS1LeGt3cWFBZnp1WUHSAbMBQVVfeXFMUFlzMG4tUnpwRlpoS2lQSHJmRG9VN0JaX3cyVHlTSHlMTnplVzVrT0NPZU5tTFRuTHRjQVVmWVRWb0lldWxQNnBDQXQwS1NEUzNyanNTTTFBM1ZvcW9vM3BEQ2x2WUt2eG80RDdEMTdtZTNEdE54a0F3XzJfYmI4V2dROTBtbF9sTllubDIzNi1BMnRGcWJiSlBoWGlPaFotb040c3p4SnAyTnhfSjN1MnZzUUE?oc=5",
-        "date": "2025-10-24"
-      },
-      {
-        "title": "NATO Agrees to New Defense Spending Target",
-        "source": "Council on Foreign Relations",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1WWW9TMk1kM1pNUjdpcXRHdUV1a2FlTXNTYjhSWFg0c0lTbUJZLVFJcGdYNVBuT3BDS0pLWUNuV0x2dVZWLVFCNEZxWVZlM3haWDZtcy1kaDdWckhtb1VCUzZLZktxcUxYUktyZVhVNmkyWmFVbHhZ?oc=5",
-        "date": "2025-06-25"
-      },
-      {
         "title": "Nigeria and Brazil ink $1 billion deal to transform agriculture sector",
         "source": "Business Insider Africa",
         "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdnpyVldBSzYwWnhPYk9SbHN0eUxkV1U4YXAyeDJXQk5TeC1KelFvMUkweXlFTEpGa3R3elZ6RElUaWt0ZGZwNzdpbHEzeUNWMGNyRnBkWHM4Mk1SNzRZdGxPci1fT21mZlBQbmZEa093aVZqeWl4QXNZdHZwY1ppOVV1T0V2RWkzbjgtaXRBODVwdWFNZDc4cVdzaFRWUWx1a2ZoNlBjOU1fa2NhRjd3WldiU19YWWNDOEtFVGNUVnZ6aVROYXZmXzkyaGs?oc=5",
@@ -3590,16 +3578,28 @@ const ARTICLES = {
         "date": "2024-04-09"
       },
       {
-        "title": "US-Nigeria relations: what it means to be a ‘country of particular concern’ and why it matters",
-        "source": "The Conversation",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNktPZl9Bem5hNGdtbkRETGt0N3pqWFhJVzgzRVM1TlpUNmtqdmZ6RjlpV1NCNjdvTndxaHhqc3o0S1EtZHhnVEoyTGZCN3BiNWVlZGllejVNSmJaX2hmUzJnWDhVWXZKWllfTlhoQmJPU296N21NZWpGcE1Hd0xMVWoxR3lnbnNkcnBTUXVnVDlzTXdSOGpiTUEzSzFKQUxGVlFkYjJMSTBWSkF2a1RDWHhGcnZncERILWJGZEJsekJ0S3k2?oc=5",
-        "date": "2025-11-16"
+        "title": "Taliban Capture of Super Tucano Highlights Risk in Nigeria",
+        "source": "Council on Foreign Relations",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeTlwNXRFWkRxaWpIOWVYZ1U2NXE2UmRNbVR0cUwwanE2MjYyUWNfT0Z3X3BYYlBHc0VpTzRzTkpoaVcxaWJNZ1dSY0FOT0xta001NVBkRFptS3FhWmdsZmVOYy1vRmpwVlM0RDZWOXpSVzIzZkVwLXRQOVluQ1R3MzlwV1NEakxM?oc=5",
+        "date": "2021-09-02"
       },
       {
         "title": "Nigeria and Brazil sign $1bn agreement to boost agriculture",
         "source": "CNBC Africa",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMnExS21FMEYzc214RUtWc0wzNUhXZm5rVFhWZTNaUGtSTW1kSWNaZGEzZjlEc08yZlNDeGd5TFVtUmV1d2p5bzROUGxNZTNwcUxRSXg3TlpfYUJrQjc4MmtQYzdGQmFJYnh5bng0VHh6MGxYUG5qV196Y1l3SG9aS0lyRjYtQ3AxRDNmejN5djRzcHRabk5FUzZYbVVsdVk0bTJjcFdUd2k?oc=5",
         "date": "2025-06-25"
+      },
+      {
+        "title": "Nigeria Military Equipment 2021",
+        "source": "Grey Dynamics",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MZnhwQXJtVFhKUmM3czJKdEl6MkVza3MzZ3pVTFdvaXJ5d2FLdXBTSWpxZldmcy1XdTJ2eXBoUldJcU9KUkg0dmFHeFd4SlZQWERuZ3NjMlhBLTI4N3Z6VzAwcGQ0ZUx0?oc=5",
+        "date": "2024-05-29"
+      },
+      {
+        "title": "Nigeria replaces top security officials days after coup plot denial",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPb3lqN1RxUUswNEVrSDhzRmszVTJ3dVVGSmpnbWE1UWlLZHd5RmoxWUZ4YmtwLVhzdU03RDhDZEFhdnM3dTB0WU1Vakp0VTFVY3JUSkhMSEYtTUw2bm1oLTh3M3I0M2dvUUMwRk5PM0ZaZEktLWNoUkpRVnVINmlnRk9jdVMyS2gwNUdPOFZSRGVKNXBLUG9KUzNSdDlTYml0VS1LeGt3cWFBZnp1WUHSAbMBQVVfeXFMUFlzMG4tUnpwRlpoS2lQSHJmRG9VN0JaX3cyVHlTSHlMTnplVzVrT0NPZU5tTFRuTHRjQVVmWVRWb0lldWxQNnBDQXQwS1NEUzNyanNTTTFBM1ZvcW9vM3BEQ2x2WUt2eG80RDdEMTdtZTNEdE54a0F3XzJfYmI4V2dROTBtbF9sTllubDIzNi1BMnRGcWJiSlBoWGlPaFotb040c3p4SnAyTnhfSjN1MnZzUUE?oc=5",
+        "date": "2025-10-24"
       }
     ],
     "iran→russia": [
@@ -3622,22 +3622,16 @@ const ARTICLES = {
         "date": "2026-04-30"
       },
       {
-        "title": "Weapons, money and ships: How is this Iran deal different from others?",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBXSVRzOW5NTEwtZGk4RFdHelNuWFl6N3FmeEo1Q3lRcnRya09nR083alNIQzRqblhmc1QyVzBqOGNHREl2eS1WV25pRmRBYkNzYi1ZWGY2WG4xZw?oc=5",
-        "date": "2026-06-18"
+        "title": "From drones to rocket fuel, China and Russia are helping Iran through supply chains",
+        "source": "Atlantic Council",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRF9Qd2phXzhYYUQ0WldmeXppTEZTSHB6bWF4WEV6NHVuTUZRdWZtcVk3TkhFcEkwcmdwX3NZbWhvbnh2R2k0OER0VU14V1BBSGN4WlBiNmpIWHZLT0xxVWt4aDlTamg0QmlnbDJTX0NqdnlTODBWTUJEZ0xjT0VqNS1tQXpzUUFqNjFjSXRIalJud1pxSG5zTF8tbndwcTBSMnp0UnduU3dtYmlhSTNwS1J6MlNIdnRjaVRPRWVIRFdJMTRx?oc=5",
+        "date": "2026-03-25"
       },
       {
         "title": "Russia may have helped Iran rebuild missile arsenal during ceasefire with US – Bloomberg",
         "source": "Українська правда",
         "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE52TGNWbmhZMllVRTFNdGVOVGtBUHBYOUtUOWdSZk5RbXBUcURleFB6U0tTbUF2R3ZhcWVfX0lCUkZKUFVzRUxlMHQwOVRIQzd6QjUteGV2bVJRVzA1SE1HZUl4M03SAXBBVV95cUxQc1l1ckxmUENmR0p2dERTaFBVQV92a2JiOVU5RXlMWXdXSVVtbkxDZzNRTXoyR2VySnpjelFEUndwY1phVU1pMS0wUEZqdkdfU1ZZM3YycEEteGdpaVh0NjhHUkJjQmtzUFZwMmpxMUg2?oc=5",
         "date": "2026-06-13"
-      },
-      {
-        "title": "From drones to rocket fuel, China and Russia are helping Iran through supply chains",
-        "source": "Atlantic Council",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRF9Qd2phXzhYYUQ0WldmeXppTEZTSHB6bWF4WEV6NHVuTUZRdWZtcVk3TkhFcEkwcmdwX3NZbWhvbnh2R2k0OER0VU14V1BBSGN4WlBiNmpIWHZLT0xxVWt4aDlTamg0QmlnbDJTX0NqdnlTODBWTUJEZ0xjT0VqNS1tQXpzUUFqNjFjSXRIalJud1pxSG5zTF8tbndwcTBSMnp0UnduU3dtYmlhSTNwS1J6MlNIdnRjaVRPRWVIRFdJMTRx?oc=5",
-        "date": "2026-03-25"
       },
       {
         "title": "In Iran’s War, Russia Serves as Backstage Partner",
@@ -3647,9 +3641,15 @@ const ARTICLES = {
       },
       {
         "title": "Russia to supply Iran with shoulder-fired air defense system",
-        "source": "The Long War Journal",
+        "source": "Long War Journal",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbUtwUllaWGJ6dTR3VkhWTThURnBoOURHRElDZkM2Sm1fempscVdGd3R5OUxDQmxKV0lMQk5IRkZwVFNhd3FTc2RkQlZ2enhGMmVDSW9mbGZMblJ4ZkYzSkFGb0lZc1g0eXhsZGJQejNYVHJXWmRRbEdOM0lFNDBVazBmSklYWktVQjI1a0pWZGwybndlc1VGRkxEM0N1WDhnUWNnOUdDTU9LbW1idnR6d3pR?oc=5",
         "date": "2026-02-26"
+      },
+      {
+        "title": "NATO allies to pledge billions in arms deals, Ukraine aid at Ankara summit",
+        "source": "politico.eu",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMldMZG1jRHp1RXFmdmJtaV9Bbk9zR2dHQjFkVzBPWEZJMWVVOC16ZFBtemhXNU1PMnFyU3JuUm1lZExvV255QkpRWHIxMFFnNUZBb2RyZ2dzaGpBZzNzSV9hUF95S1Q3dWNkVlVxSjZNTGlqby1BWWhKUVo2dURmNHpLNFhOTTJhYl96ZC1qX1ZlcElMaHc?oc=5",
+        "date": "2026-06-25"
       }
     ],
     "iran→venezuela": [
@@ -3690,16 +3690,16 @@ const ARTICLES = {
         "date": "2026-01-28"
       },
       {
+        "title": "Trump says 'massive Armada' heading to Iran, warns time is running out for nuclear deal",
+        "source": "ABC News - Breaking News, Latest News and Videos",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPLXg5STNfSVg4YUxoQ0JzTFBMZDlqSjR2bjliT2pNcW5vaDI3djgzT3hfZlpnQW42Q2xvbGRtcnRNaHlMLXZReVhSdm5OMk9fQjF6VFdpLWg5UENhVHBpNUVVZWxvTXl6cVpWbzl0b0VRbUVGNVN6bjU4UVNfaWZ3NUQ3LUp0UnVvNmRxSUdWTmlFMm1FdWUwa2ZDTDRMMzVlVXfSAacBQVVfeXFMUFkzajV3WFlwelpLb0RWUlZrVUE0Vzh5dGpfbENVNGZzWGRTUF9RNHFlSTV4V2RTZmI1RjFUWGRRTnpVaWo5UXRRYkc0MC1NRXY1ZTFXcWRQTGtXc245dXplWGtKWk8tZGxLbjVyWGxNTzAzQk4yZE83S1lxZ001OHJydGROeDY3MU05NjE4bHB2cWR0dTlUX0g3c2NFa3l1b2FTcFROaHc?oc=5",
+        "date": "2026-02-10"
+      },
+      {
         "title": "Grand Strategy in Iran and Venezuela",
         "source": "National Review",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORkJaSUFMekI2dmMtUkNyUXg4ZmtFNC14WW5BWkxsOVY1VllSUVNDdVk1b20zbWF3ZGxRUndmaV93V3hnMkh5Wm55eUYteVFVTzJmMElvLWp5X0VzdnJ6MEJXd2RpcldLOGNjTzJEX2Z6UVpaNUNoOUMyckdONVZyONIBhgFBVV95cUxQNGNqRGtqUFhVNXdRSmtrTU1ubzAxa2RUMnJWWXZFQ2trRnlDeDQ4VEQ1WkJPeDFWN1ZyY2taYjJVaUt4Z0pkdE5tUHdjRHhnVEk2c3pTdGlRMWtrY3JaeXRvT3J6cUFTZmVaWlV3akRUVlotSDhzYzhOT205RTlrYURnUWFidw?oc=5",
         "date": "2026-03-02"
-      },
-      {
-        "title": "Trump threatens Iran with ‘massive Armada,’ ‘able to rapidly fulfill its mission, with speed and violence’",
-        "source": "Politico",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbmxMendNMmt1LXh3a1RyUEpHS2thOU40eTFBbmtrTERPNDMzMENhWXB3dmRmRENmUUFOY0h2dW1HVzN3aDRCdlhtWUFGeGV1YldndWFkODFUNjNRUG5RWmVHanRJaVpBcHVHekJWZ3NKaWFJTGdVVXVOZDA1anF5dXVPMHRMZk1nQWVJ?oc=5",
-        "date": "2026-01-28"
       }
     ],
     "iran→houthi rebels (yemen)": [
@@ -3760,16 +3760,10 @@ const ARTICLES = {
         "date": "2026-03-25"
       },
       {
-        "title": "Can Pakistan play brother-in-arms role as Gulf states eye security shifts?",
+        "title": "The UAE denies shipping weapons to Yemen after overnight Saudi strike",
         "source": "France 24",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM1pFV2taUENHY0x4VWZ1dWs1b21qSEpMc0s2U1plRHJORXV4a2Z5SFlvWDR3bHM5bDlLcGp4eUxZV1hXNFl1dlJRRVF5YTRJRS1TcEtjd3VsVTV6SE51cXdWSUljZkNfTnMwSGhMV3lJRDlIbXZZNHJBZ0xycE4yR0JjbUVtWEE5RzBuaERVN1FMOXBxaTdNMEZIVlE1LUlIX3ZNbWp1SlNYMDEzd1g0d2lneGVFSFdjaXpycTV4NA?oc=5",
-        "date": "2026-05-05"
-      },
-      {
-        "title": "Saudi Defense Industry Transformation in Iran War 2026",
-        "source": "houseofsaud.com",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNR21zQnRiNURZSnhLV3Q0WlNlanh1NXM5eU1WT1NWNV9MZDNpMkVJQ0JlWlFBcF9ycnFyODkyMm1CekZNMXkxaXVuT215aWtuNnM2NWJwdUw1dTNidWtwSDE0NE0wZ3VaelJTaXVqcmYzSW5pVW4tU1VxREpKWFFwakRSblY?oc=5",
-        "date": "2026-03-10"
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSnozbmhFZGpDV1JZcnVqQldveFZSbE1JV0d2MTByci1CT3NEdXNyN1lUamZPOTZCMjJ1WWxWYkFtTmNJVXhDM255VGdBSEhzZnUtYlgxM3lfVVhEY1puZGNYamc2V2RhZjgzVThWdHlaUDhkSFk3UDRmOWNSRTdEMUhfQmx3a1V6aWJYUTdfb0lUS2V0NG9WRFhOTTByUGhtSTNGcUd4ZXV6LTJIV2c5bmtB?oc=5",
+        "date": "2025-12-30"
       },
       {
         "title": "France Should Stop Selling Arms to the United Arab Emirates, Saudi Arabia",
@@ -3790,10 +3784,16 @@ const ARTICLES = {
         "date": "2019-05-28"
       },
       {
-        "title": "Saudi Air Defense Coalition Faces Interceptor Crisis",
+        "title": "Can Pakistan play brother-in-arms role as Gulf states eye security shifts?",
+        "source": "France 24",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM1pFV2taUENHY0x4VWZ1dWs1b21qSEpMc0s2U1plRHJORXV4a2Z5SFlvWDR3bHM5bDlLcGp4eUxZV1hXNFl1dlJRRVF5YTRJRS1TcEtjd3VsVTV6SE51cXdWSUljZkNfTnMwSGhMV3lJRDlIbXZZNHJBZ0xycE4yR0JjbUVtWEE5RzBuaERVN1FMOXBxaTdNMEZIVlE1LUlIX3ZNbWp1SlNYMDEzd1g0d2lneGVFSFdjaXpycTV4NA?oc=5",
+        "date": "2026-05-05"
+      },
+      {
+        "title": "Saudi Defense Industry Transformation in Iran War 2026",
         "source": "houseofsaud.com",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5xQ0RubTBvNUl4b0l4YjZOQkRwR1RPNFlabHZWQVpmTjFxOF9qVm05U0JFc1NOcUpjZVFHZ1AwaXh1ajR2MVF1X05TMDJ6bHdNZXVBNS1uVVFyWXRtTVdfTUphQ0dIajJ6SlNGYk9Raw?oc=5",
-        "date": "2026-03-29"
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNR21zQnRiNURZSnhLV3Q0WlNlanh1NXM5eU1WT1NWNV9MZDNpMkVJQ0JlWlFBcF9ycnFyODkyMm1CekZNMXkxaXVuT215aWtuNnM2NWJwdUw1dTNidWtwSDE0NE0wZ3VaelJTaXVqcmYzSW5pVW4tU1VxREpKWFFwakRSblY?oc=5",
+        "date": "2026-03-10"
       },
       {
         "title": "Saudi Arabia, Qatar, Egypt among world's top arms importers: SIPRI",
@@ -3872,16 +3872,16 @@ const ARTICLES = {
         "date": "2026-03-22"
       },
       {
+        "title": "Japan Dismantles Pacifist Constitution, Dreaming of Becoming a Defense Industry Powerhouse",
+        "source": "Businesskorea",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4za01JUkJKRUhHbEQyNTJwNXphSTJFVll2VkpOSmFoS3p3ZG05UDBGbFJsVHdXMEk5cXloLVZoems2WU1PeFp4enk4b24zSEZfRUI5SEtzMU5PaDRhczBxRE5EMWNUZzJPSUtHcC1iVWJXbUFT?oc=5",
+        "date": "2026-04-21"
+      },
+      {
         "title": "Missiles Against Ballistic Threats for Patriot, Air Defense Systems, Ships and Aviation — What Japan Can Now Sell to Ukraine's Partners",
         "source": "Defense Express",
         "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQbHdub1hxSWk0MElhQjlPc2xRVzNtLWVtNTFua3RtY291QlNxUlBmUlltWEhZX3MtZWZWUHFQM1A4TjVraXY3Z1hRaFhheHVXbmI2MnZsQWgwTkJqV1RqVGxNWmY0bTZDa2tMTjR4Vjd5dVdZQ0NUdE9hUG1TRzBHdjVFRU9QWjQ5NTBoVnYyT2VlX2tobTdmWWtsMEdQZ3ptTmxqNUFZTWROU3F3VGpFQmRtZ0NTR0J1LTdRbUdSUGZETHo1Q1c1NHpOem1VVEVEb2J6MDV4SzN1UktBWmphZHpJWWdXajlsUC00MjlYZWkxQ0ZMRXFIalQ3bWxVRC10RVE?oc=5",
         "date": "2026-04-21"
-      },
-      {
-        "title": "Japan Signs $275M Deal With Mitsubishi for PAC-3 MSE Missiles",
-        "source": "Мілітарний",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMFNOZ3JqTHNsQThNOXJ6NWdaMGVSQkRFY0hhclNqbjBxek9uc252YUVtdk9vRUtNUHcyX3pTUUJROE9PU2p4b0VrUU5MSDJmVVpPanhsOU5CVWxxUzlrT3dEVXdDV3Jnd3hBa04xUjVhend1aDlEMzlDVEs1OHd4a3J4akNoODRsclBnbXk3Y0JYaVJCNFln?oc=5",
-        "date": "2026-03-09"
       },
       {
         "title": "Japan, Australia seal $14.4 billion frigate defense deal",
@@ -3904,6 +3904,12 @@ const ARTICLES = {
     ],
     "norway→japan": [
       {
+        "title": "Japan to Sell More Weapons Abroad, Breaking With Postwar Pacifism",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQM2RnSXN4M0dCQ0YxeHlMNU1VVERMeUhRUWt0Q3VpOEs2UzB2aEJiYktUbFI5SUVVYWVZRDRhMVYzRmVsaXI0T3VWVzZMcGdFVklNdHJsM3B3UGZ1bEVTUUVnWDNOUXpKcHdqOFE3czJMSUl2cmFaQW0tQmlrZHNNRlBpQTY5Zw?oc=5",
+        "date": "2026-04-20"
+      },
+      {
         "title": "Canada Orders Joint Strike Missiles for Future F-35 Fighter Fleet",
         "source": "The Defense Post",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5TRjgyU1R4SXpCb1VReUhkTzd0ZnBCSWZoYmEwazlCbWdpLUczUnlfMGdZTVBhOEE2RXZrNTg5c3YtS0w0QjhKZ0lzaF8wZm5EbGZDZFhfbUJER0RPb25ibmt6cEtyRDlmZG9XaWJWQ0xENzQ3QkHSAXtBVV95cUxPS2MxR1JfbFVBVFlzUnJlczZqOXd2aU9hSmpIQzZ4MGhPX1Jxb2ZQdnVKVDBQNkpyV3hPRnVYbjVSejFpNlk1R2Y4eHhCbnY1eERqekJYeFAyUWw1S1o2MUlHb1JtTGt2Z0NNX3pFSWdORTZxQnVjLXlwak0?oc=5",
@@ -3916,22 +3922,16 @@ const ARTICLES = {
         "date": "2026-07-08"
       },
       {
-        "title": "Japan to Sell More Weapons Abroad, Breaking With Postwar Pacifism",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQM2RnSXN4M0dCQ0YxeHlMNU1VVERMeUhRUWt0Q3VpOEs2UzB2aEJiYktUbFI5SUVVYWVZRDRhMVYzRmVsaXI0T3VWVzZMcGdFVklNdHJsM3B3UGZ1bEVTUUVnWDNOUXpKcHdqOFE3czJMSUl2cmFaQW0tQmlrZHNNRlBpQTY5Zw?oc=5",
-        "date": "2026-04-20"
-      },
-      {
         "title": "The US Air Force Just Spent $240 Million on ‘Stealth’ Cruise Missiles from Norway",
         "source": "The National Interest",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVTFYLUIweWdDU1lmXzRKal9EdlNMOHBTOVEzMXBnTmQ3emFVdWxRSHd0N29iUTh0cURIazhPQ253ckZrR0gtOXMxd1dhd3BvbXI4bEFkV1MyTVpva0NMNTkwTkNudTdXVVJlMnFza29ZMDhqRUZESnExQjM4REpiZWhDOHRVWDJZMmd5d0dwMVdHeWJHVGtLWDVIOGVwY1Q5M254bkZOLWFfTUJTb0FMaWt4amEzN3o0V0tad2taX0k?oc=5",
         "date": "2026-06-11"
       },
       {
-        "title": "The Japanese women's junior handball team shook off Norway's last-minute chase and confirmed its adv..",
-        "source": "매일경제",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE53bUtydEVtTGxfSmFsLThzRjkxSXdxa0g1VEdHSzhodnVFOFNXNVZfR0ptektxSVJZb0x0SlNJNGpWRl9HazNkS1psaHJabG03?oc=5",
-        "date": "2026-06-26"
+        "title": "U.S. Gun Policy: Global Comparisons",
+        "source": "Council on Foreign Relations",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA0NHZHQW5ZZG9kRHplOFNZUlhoWTdvMjc1NXpMLXF4Y1gyNUFRcjFvM1dVQ1I4d0tWamdsbzhmTDBLQkNYTlFSLXZRaGJVYzVxMHdvMjNqRG84UWdIYW9LbDdLMVU5OG80aTl0aTNDM3FaenBU?oc=5",
+        "date": "2025-10-13"
       },
       {
         "title": "Japan Receives First Tomahawk, Joint Strike Missiles",
@@ -3946,10 +3946,10 @@ const ARTICLES = {
         "date": "2026-05-31"
       },
       {
-        "title": "Canada Secures First EU SAFE Defense Contract With Polish Radio Deal",
-        "source": "The Defense Post",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5RS3Y0dWVkaVN2Qy1LVjNBLU45c3htVzVkNXA4cVB1aDFOMWJMejAzZTN1NkZvZV9zSlV1UXJXaXZ6eWZQWkp1dDZFSFI3b29Yd3lzNTVaTG0zd3J4ODNHYko5bHRhMWtVajhZTXM3UG5HUk8y0gF6QVVfeXFMUGRaa3cwTTdCbzJ3T3FldWUtRXprSWVqSHY1MkNTckIwZWowZEE3d2FHZzJiS3VzX0hVVEpiQ0JscUVKVmNjNmIxWHZqU3NtUk1DSHZNM0ZPMnpLOENLaGhINWF5NVBhaDhySE5NY3dxLWp5Q3p3SWZFbWc?oc=5",
-        "date": "2026-06-16"
+        "title": "The Japanese women's junior handball team shook off Norway's last-minute chase and confirmed its adv..",
+        "source": "매일경제",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE53bUtydEVtTGxfSmFsLThzRjkxSXdxa0g1VEdHSzhodnVFOFNXNVZfR0ptektxSVJZb0x0SlNJNGpWRl9HazNkS1psaHJabG03?oc=5",
+        "date": "2026-06-26"
       }
     ],
     "united states→poland": [
@@ -3990,30 +3990,30 @@ const ARTICLES = {
         "date": "2026-06-01"
       },
       {
+        "title": "Poland and Lithuania explore playing bigger role in NATO's nuclear deterrence",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZ0d1Nldmc25tRnVqaFRCQklOazljbHRrV2t2cnNqdVBqWnBWRWxCOEs2TkQwOUJOSWFFQ1lDSkI1RTVJZkhwNEpFM3JLVDVpVWdSX2JXVTA1dHctbS1KY09qMDIwNGlPVTdSdGVtRTdqel9Pam0xbmphdzk4MTlGeDFweFlGZ1ZDS2F4b056U2gwSmZyZ05XcXJjdDRVdWFzNzdibUhSX2F3U20ybnpsQ9IBtgFBVV95cUxQTUROZm5mZUVCN0F2RmF0VU9kckZQVG5reVk5VzBOcnhRSGs1LXJscjNZWHp2WDJfTEZ4YTltOHM2WHJEMVdGazRuQjhfRTJMamR4RnM0b3RMRW9KaDJOSDNWeU11WkhYNi00elRVZ3RaYXFfbG1rMEwyUVVXZTRTX2dMQTkyUE5RdklDdHFrbjlNZlB5QmwxMzNmaldUWjJqZXdQU3NraWl2bmU5em9BRlJpaTFvQQ?oc=5",
+        "date": "2026-06-03"
+      },
+      {
         "title": "Germany, Poland to sign a new defense deal as the balance of power in Europe shifts",
         "source": "The Tribune-Democrat",
         "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQTnRzd3E3NkVQcndZd0hrZ0pTczQxSEFUYlNmUU1YVlFoamg1Z3JLTUZaZDZRc21zbXdUM1Y1cjN6VWJrWkdTZFptU21TTS1FOHdlVl9wSEhOd2lWeGh6UlBSbk5wTlZFU1dGaEhEVk81Y1pOTWRxbzBXb1dMZ3VrTWNoekItVGE3dndJbDdJbWZDNDYzVWJ6R0k4aDgxdnQ5RDB1U0dmN3d1UlpqUEZyZ2hndlRxNU9WbVJINndhVVlzRjhmenBYN0ZVbFdib292VnYta0d1bVhzT2pQYW1PRU5DVjVMekx6ak05VnJ1eFRUV3lwMHBoajNR?oc=5",
         "date": "2026-06-17"
-      },
-      {
-        "title": "Are Long-Term NATO–South Korea Defense Ties Possible? Transitioning From an Arms Exporter to a Trusted Defense Partner",
-        "source": "Carnegie Endowment for International Peace",
-        "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPTGplUExJbnp4eDRFNGstZGwxODFSNFFRMGRfYmpkODJBcEd2bGQ3RnB6clJURXE2aDFkVkZZTU1lbHpLVExucTd1NnEyMzVHNFJrcFJ5TzFBQlZzOHB0QlZkeTRkTHRJZjZxeF94d18yajVHc1hvOVczeVh2TFZzSHg0dE9WU2xVNmNNY21FMjgtN2tCT3dpM19ONHh2UmwwaU8yeEczb01Td0pZVFliR09vRm43VFdZWWFzTFU1X2NRZzhMcnF6eVZCSWwxTE43bklKd0ZyUlNvNjBkR0pQeEJHT3ladTk5Nk9PLU5mYURmQUU2VkF3?oc=5",
-        "date": "2026-02-18"
       }
     ],
     "italy→poland": [
+      {
+        "title": "Poland teams up with Spain to double tanker aircraft purchase",
+        "source": "Defense News",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUEFpa3hJSWdwcVdqOGR6ZXc1NmZ6dldMbktEQTJWVnRCNXlsbnkxdWpEMGNKTjhaY1I3Tko2NnVndG9uV0xlZUE1U184TlBLWEYzOGtCWVkxRHQ0R2FrelNvckZjR3Z3eHhLYm5aU2ozZHhtZHc2VE9tMkF5bFVJTGVYWTZ4WktaTl9fQVEzeHZZbU9kbWc2RDc2VFdtQkJmZU91b2JjcklpRXpNWkhybmFHUjI4UQ?oc=5",
+        "date": "2026-07-03"
+      },
       {
         "title": "UK and Poland sign new defense and migration pact",
         "source": "politico.eu",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQU3RBTktWbW44M0RKaVZiQm9JeENiY0VXWXZjX0NPWk1DWHlhbkI5cEFVbEx4elpoSmdPZkliSXJ3Y0hTNjkzeFI0ekZEelVfZVFqQXZCRXNFZmtXQUUwaFJ6d2h3bG9xWThWN2hpbTZJekRabTFwSHN6Mkl1VUlxYTY5OXl6Vzhn?oc=5",
         "date": "2026-05-27"
-      },
-      {
-        "title": "Poland eyes benefits of joining GCAP sixth-generation fighter project",
-        "source": "Defense News",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdGJCRHNCWV9nN1B6SGwzdTRfZW45T1RyVWphRGVueUd6YWItR3J2OHUzNFo2NVZrUDA5OHFFQjUxaGkwU3kwVUdTYjFMQmhULWlvVFZ1MWM2RkZPSDBTV2ptRFNkNzJoLWo3YVljQXliSG9sbUc4NU8yLXNXd1Y5S2RnNmxXazNkbUNpdERZdmxUeTVlRWRhRWx3Y2NFMml6Q2E2dXNuOWhpNTJsUXhaeTd6M2YxcXlQUHR3eFhFNzA?oc=5",
-        "date": "2026-03-23"
       },
       {
         "title": "Poland unveils detailed defense spending for $51B in EU SAFE loans",
@@ -4022,37 +4022,43 @@ const ARTICLES = {
         "date": "2026-02-27"
       },
       {
-        "title": "Pentagon offers details on troop reduction plan amid confusion in Europe",
-        "source": "stripes.com",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNVRlMGtwaDExVzRmYXdvd2wwSy15SFo2MDFpb01lcFAxT2pheTlISlBpOGRxNmFmRzg5ajlRZExxTUt6WFJwdF92QWxpSzVVU2l5MzI5Z1Jmd0wyaVRvV2E4dmxtOXlnaXBmaktiNGNubXdTb3FnZmNMNklMS0dISGZzbU1GY2tXaEN2b1REcFMxVUU3c0hIZmJqR19ZRF9NU3RBdA?oc=5",
-        "date": "2026-05-20"
-      },
-      {
         "title": "Poland, Germany, France, Italy and UK to jointly develop low-cost air-defence systems",
         "source": "Notes From Poland",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObllCUGdpZldaRVQwOS1nc3ZsSGxqbnd4aXVMaXl5dWNiZUlBN3FyVDdJajRhM0dKTEE2bk1DOXVIWkZXUF82MmlzNk9Ha1dCNVlxZlR5MW1rb2ttVUxlQkZxQm54WDUtQUZSNGxiSm1MZWxWY2Jsc0d0R2NFZ0Z3Ni0tTldrN1c3WDBZZ3ZGYWtKR2w4RGdmdTBPN2RVQko1RjgxdFc3MEdoUWJzZ2lUd1UzYzlYaTlBcXpuT3pJSQ?oc=5",
         "date": "2026-02-23"
       },
       {
-        "title": "NATO OWE 500+ Program Aims for 500 km Range at Under €100,000 per Unit",
-        "source": "Defense Express",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdVVhWFQ2V0p2YTJRenpLZV94S0pWSDBPbGJoem5MeW9BMXMza1RadFRwWHgxa3UwdjJ6WEJDT0hrX1ZSdlZtUjdIUnBoXzZ0VlJ5QWNreDAxc21IUi1lUnd5eFB0YzA4WXJfOFZfR0lkakZ5REpIdTY1aU95aGtRWVVRamxFNUdjelI0Z1B1S0ZpNVMyN1llOGNtTE9NQ01IaXVieENXb0x6cGtpZm5JVGZsakR5dw?oc=5",
-        "date": "2026-02-13"
+        "title": "5 European allies pledge millions to build cheap drone defenses with Ukrainian know-how",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVWd2OGQxa2xNVnFlNHNqek1faVUtNEctdF92LVl2NzVwdHZiOTliOEZFMWFvNWJWNDlYMkRPbXNiQUpzd0o5VFdXdVltSUxHQ1dybGFaQ3ZSWS04UGpJMW5SLXBWOFRIbllGOWRMbFlYVFYxTWtOWGkwYWFVb2M3eXdwbF9tN2NFcXlfS2VHWm83LU9aV1Vrb1RENXdzUUdRUUtIMERtbzRZWThSenZFdXpSTElnOVJmMEFnUXRFVdIBxAFBVV95cUxPbDJ2Tk1xaDBQU1FXSUs3VEIwblhuTlJxaktZbzBTaTlKZDlWaUM2UG9LZF9WRnFDQjhkZkpHZXpsUUF6UHlYOVNsT1d1X2xmd1BySEc3Q1RpR2F0MHIyWWlMdy1oLXhRQ256YWx4dDlscVIxLXV4cmdIR0w4aGRUVzhDZ3RYTzE4d0YwTUNoeFZxNGZrRVdINC1sc3hpY0R1Rno0WEJkdy01Q2JyLWdvaG1Gb0pwOFZ3NEZuU1g5Wm5EWkFJ?oc=5",
+        "date": "2026-02-20"
       },
       {
-        "title": "Poland picks Sweden's Saab to supply it with three submarines",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZzFvRHhUSUlIbXhXRG1SclJMcEVxelo3RFZWRTRiU0ZfaEU1S1BWUWJDMkZoSF9RS3hLREtKVm9vaURXeW44RTZWTHVTMzZLcE40N0otZHg5am4zbG9JNjdpVHpybm00T3Rva0I4bWxIVkJySzJFMkR4U0hZTDhSRG9xRjNKelNabXBlWGFPUFRxLUZ5clJvSGZOaGtEMkV2MTI0RF9kMFEyUWM0UFhzSEp2YmIxYUk?oc=5",
-        "date": "2025-11-26"
+        "title": "Poland eyes benefits of joining GCAP sixth-generation fighter project",
+        "source": "Defense News",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdGJCRHNCWV9nN1B6SGwzdTRfZW45T1RyVWphRGVueUd6YWItR3J2OHUzNFo2NVZrUDA5OHFFQjUxaGkwU3kwVUdTYjFMQmhULWlvVFZ1MWM2RkZPSDBTV2ptRFNkNzJoLWo3YVljQXliSG9sbUc4NU8yLXNXd1Y5S2RnNmxXazNkbUNpdERZdmxUeTVlRWRhRWx3Y2NFMml6Q2E2dXNuOWhpNTJsUXhaeTd6M2YxcXlQUHR3eFhFNzA?oc=5",
+        "date": "2026-03-23"
       },
       {
         "title": "Poland to Outgun UK, Germany, France and Italy in Tanks by 2030",
         "source": "Kyiv Post",
         "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9RV3EzNlVoQktHYW1kd0RQU3lpeFNEbk5qTnZFUG9NOXNHekc2YjRQTEdqX0ZYS1FEYlR6NGZOVEFheWdsZWE4SmhXRQ?oc=5",
         "date": "2025-08-04"
+      },
+      {
+        "title": "Favourite revealed for historic submarine deal with Poland",
+        "source": "TVP World",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObVNHc3FOTDNSc1M5Sk5Kc2NiRUVOQ0YyckFBbk5SNmJfLVlBNU1nRGliMjhsMEFUSnRDNDlFekZLU1lGTTREYTQxaTFiRGphcVFhNzVvLVJreC1wY2xMcXhJOUNGQzFya3RsNzhvOVlvdlZ6NEtBNFRLdUE5bTFpU3pXWm9ORjVXU3ZIVmJmN09VTF9FOEUtRA?oc=5",
+        "date": "2025-11-26"
       }
     ],
     "france→united states": [
+      {
+        "title": "International report - Summit host Turkey eyes major weapons deals with NATO allies",
+        "source": "RFI",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPUDMyUXU0anczdGFQV2NsNWFfa0szTDdnc1FBSGg3bmZfTGMwVE80cWNURV9IeGlhYnJLdWlkdWJ0amNObUFFOGdEVmI2eWFfYWJQMEFIbks3OGdPSGdNZGQ3dkhYaDk2NzNaeUg3UC05aVMtdzl4VWpIZ2pGZkFqM3JnMHJKYzNtZkZMdFdfM1hzekVuWW5xVFk1RkNsWWY0UC1scGNKUDdmaXVGS0FiejZVREZ2Rml3OVk2YWp3?oc=5",
+        "date": "2026-07-05"
+      },
       {
         "title": "Deal States 'Loud And Clear' Iran Won't Have Nuclear Weapons, Trump Says",
         "source": "Radio Free Europe/Radio Liberty",
@@ -4066,10 +4072,10 @@ const ARTICLES = {
         "date": "2026-06-22"
       },
       {
-        "title": "Iran rejects US deal without firm guarantees as Washington warns war could resume",
-        "source": "France 24",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObG5jQ3VPZlFZeXplaFYtelR6aXRoenFqWUNLaktXVDdxNUxmdWdaZ2ROaFd0cEI3Y2lvZUptUHpOcDgtVlNwOE9xSWstOS00S1dUSFNYUklwUWQyYS0zUHNMSDVjWkZUOVNCc3N1ZXdYeGFQMGlkOXJtUUdXOXg0UHB3cElkek0yakxQUXRmZHJZX09aZnh5ZUd5NlNaeGN5Um5yckFTN2hyOF8taGt5XzRiZUY5dWxkVzBrVQ?oc=5",
-        "date": "2026-05-31"
+        "title": "Morocco’s FAR, France’s Harmattan AI Sign Deal for Autonomous Defense Systems",
+        "source": "Morocco World News",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVjJIYlZuR2FuR0pnT1IzdXk4SEtteXpxY2poTEhzSXBoLXRFemU4d3ZjdlBRX2s3SE1XNC1laTFnY3RfUmZwVGFyNFBpSWJ2c2Rzczk5QmliWGM0YkhRbzFHY0RBV1k2bHliZDc5dzQ3eUlaRU1lZWVCbGlhU2ZDYlJ6YU40OEFPRUgyZHNhN240VkdOdnVGUUJXWjNXc3FmeXEtLWgweWxIdVRoYUY1RWI2WlpDNlBFQU4tSEwtTXE?oc=5",
+        "date": "2026-06-18"
       },
       {
         "title": "EU and France to sign €15B defense loan deal Wednesday under SAFE program",
@@ -4078,28 +4084,22 @@ const ARTICLES = {
         "date": "2026-06-15"
       },
       {
-        "title": "Morocco’s FAR, France’s Harmattan AI Sign Deal for Autonomous Defense Systems",
-        "source": "Morocco World News",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVjJIYlZuR2FuR0pnT1IzdXk4SEtteXpxY2poTEhzSXBoLXRFemU4d3ZjdlBRX2s3SE1XNC1laTFnY3RfUmZwVGFyNFBpSWJ2c2Rzczk5QmliWGM0YkhRbzFHY0RBV1k2bHliZDc5dzQ3eUlaRU1lZWVCbGlhU2ZDYlJ6YU40OEFPRUgyZHNhN240VkdOdnVGUUJXWjNXc3FmeXEtLWgweWxIdVRoYUY1RWI2WlpDNlBFQU4tSEwtTXE?oc=5",
-        "date": "2026-06-18"
-      },
-      {
         "title": "South Africa makes record arms sales of over $550 million to France, Turkey, Kenya, UAE and 38 others",
         "source": "Business Insider Africa",
         "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWVkxU0hiSTdkS2RXRW1YUzFsV2g2UmtmeWxvSG9NRHI0MWhaU1Bxc1hWdjdhbEhHSXRObm5QQ0hHNnFac0xieDRJeWFmUFJMM3FyQ1VjN1J0cVM2cndOT3NiOXQ0Q0ItRUlGNTc5Rm9nWXlJc3dFckVrRWFkNi1OUUlwMjU0akdib3dwaGdQaFhpZkRLcG1sQWpQTm5MT01WVGNJTGo5TVFQMmpsYUM5YlAwMmpJTzV0dXh0X0xVbVpKcDUyZVZMTm1DTDJ0UTlwanUxcGRFUTRfQQ?oc=5",
         "date": "2026-04-08"
       },
       {
-        "title": "France and UK Send Warships to Mediterranean",
-        "source": "Council on Foreign Relations",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9XMDlaZlJhYkk3cXJvMHU4a1N1c2xxNG9STEhnVy1aQ0FZMmpVT1RlNlBKdHpuNERPdFNXRVFkXzF3Z2otQWltN3VFa3RkbXpoNVBYOExEZEd5OWtWY3ZKeWY3eXc5VGN0RzMtYklhRWFpTDBoOFAyd1RTSnZldw?oc=5",
-        "date": "2026-03-04"
+        "title": "Fact-checking Trump's comments that a 2015 deal gave Iran the right to nuclear weapons",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY0JIY1Z2ZTczOFdrOTBOSXFmTVd5SmhhbzVBRGluVWRsRklhVEQ0blFiU3dfRk5PMm1UOXpZWDR1TGg0Vk5xX1JrWkUwc1J2MnZQazFESXNERnRUM2hoZG0ta0FrS2VfZnI2a0pQRlJrcktnOVZWREdXWlVhd2xrVW1TZDJINEJ2c3BUU01MVW43STNBSjBXRk1BQzdqbmxwQVMzb1hRN3lTZzI1elhwWEZwX2xtMU9LTGJ2bdIBwgFBVV95cUxQNnJjYzZmMFFRY0VYVzJPcEc4T0tXLUVaRDNDUzBCLXZPeGpEdVdvRXFNelRTWV9QWEVzMGY3OVFsZmU1OVBRLU0tdXBkZ0NqM1lhZXRicEFZT0ZMdnJGS2ZyN3R1Z0ZRblB0aUsxVUpvQ2RoX1RHYS13SHFFRkFlLWRaMVhERzJ6Nnl2OGpIS0QxbVVxSEwtQnRnTWlRVGsxUHk4VHhZVlFoa24zbXB1OEoxSzNqcXk2RURUOVI0RmpoZw?oc=5",
+        "date": "2026-03-07"
       },
       {
-        "title": "France and Ukraine agree weapons production deal, as US peace talks announced",
-        "source": "RFI",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUS05eTQ5TnBsell1OTJYUXFHQVZMVkItSUYtbTM2OG4yellFRkVLdmpOTUNaX1NrTlFrNlR5YUl3NXMxNFhPRjN4b1J5YmV3ak1qNnZWdEdKVlMxajNSZDYwcjQyVVZVcUZ1QW9EMVY4SmRndURmc002ZmpZTGlUdDVxeV8xZDNoR2J1dlc2UHA2Qk9mTkZvXw?oc=5",
-        "date": "2026-02-09"
+        "title": "Macron prepares France for ‘an age of nuclear weapons’ as Iran war rages",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONnk1MmJleTJTcnJfUzdDVTRzZ2VXQXVlYzRvRnc4YWhyX3JSTWUyRjB4dzV1S3IxSFBnZktIRWVBLUx0WF9Lamhqd0FTd2J0VnQ3Vm52OEJhdERNUktVbURWNGp5Qnp0NFoybU9pWnJjaDltbnEyLWROUk04cmRadVFOTWduOGsyaEFSbUsyeDRIZ2ZMa2VyM3VnZk1DU3dseDAyTjNaQ1AtNFRxZWNOX9IBtgFBVV95cUxNTzg5NXNIeXEwSU4wczh1bElBRDg4S2lFdUVOX2lMN2swSGVqUm05MlVQdlQzUFJROUJMTE5iOHloV0czV3c1UFZ4c3h1cmxUckFLejFyTmR1OXpUOEIxclROQVNfV2lBYk51cmh5ek5uTjFrcmxMTmVQdzlWeDRXR3JkcEFmVWluQjJaNkZKajVnSGwxTVNueG00NU9sQ0FlWDZ2VmM3dENfcWFrNlRxUWltN3BNUQ?oc=5",
+        "date": "2026-03-17"
       }
     ],
     "italy→united states": [
@@ -4108,12 +4108,6 @@ const ARTICLES = {
         "source": "PBS",
         "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNd1NjeUZwY0YycUZUNkNURXJRNHU3a3MtVG83OHBEbXVpQ2ZDNWhWa2NCdTk2VU9nbEZER09kNmpTX2NLQ25HVzg3NFpXRjdtalBfekVlYXRyUlRMN1V1bWQxTlhWTkVhYzlyNXdPUlcyVlJwalk4elRDVXNwQ3kyWkg1ZFVIbzQzd25ENkN0XzhzZktRYXlPRVYxYVczWmc5Q3NKZFlmZnNyNE96WHBXc2RiNzB6cFRSSHhXdVJRb1R6enRuSnfSAcsBQVVfeXFMTURYVmstVVFubWxlMUpuY3ZHSFNCVEdIcnlqYmVQel8yaXhtcFFfRFFJaUVlM1JfbUpGSWVRUGdFMnBYTm9fclI3YTEtek1Vd0NPbUdsLXE1RGxHcVVPTk5WVnh0bVFldTRRb0Z1WVJrcEU3ZXprR05jSHU4ZFQzaTU3QTkyQkhKUDNxbUxPZkJDY1VSb0oyQlZlblczbnQ4TEVQMTBmbFEzdHR4RFIzbGE4UlNibTg2ZGNvbUxaZWhleFowQ1FjWkJQNkE?oc=5",
         "date": "2026-06-20"
-      },
-      {
-        "title": "Too Big To Break Again: India, Italy, and the Defense Partnership That Almost Wasn’t",
-        "source": "War on the Rocks",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTEExUVNHMXFvQUhkMEtmQ2xXSWl0QWVLRktONWNnVWlpdjNra09QODZkOXBvdEh5Zzg3RVR6NHJZdTR5VDhsdlVWUFZ6OThxZi1NSklCYTl0UVZOY0FkOTJPZ2k5QkFZTXkzUXpXN0FyS0FxNWZRZjZXYm12T2hLR1RfOFFrXzhaOV9WdDk4TE5tOWFIc19wRXNYZ0xocElpU3BUNjMzckpvaEk?oc=5",
-        "date": "2026-06-22"
       },
       {
         "title": "Italy Consolidates Defense Industry as Leonardo Absorbs Iveco’s Military Vehicle Business",
@@ -4149,6 +4143,12 @@ const ARTICLES = {
         "title": "Why has Italy’s Giorgia Meloni suspended a defence pact with Israel?",
         "source": "Al Jazeera",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPM2FxTHVIdUZCc281YzI2QVoxTFZwRXd0R3lKTXBEaERKVDlNTk85NUZzdVNaSndsVUVoWmFrdzQ5R1BKRjNJeDRXQy12THYtQ0trMF9DTU9DSUZjaHVEYjVQTld4VDZlOW9ZUGdrQU9fSXM3U1pZVlZxcXBVVEtaX3dWNm9yTXJtaUhkQkNlYzN6V2xnallwNmZMaDVnRWwwV0cySU1tUXJkelnSAbABQVVfeXFMTkhxOHJEZW14di1lY0ItTnlaRDVNZGNrVl9MSGg4TVc5em9QV1E0a3NTNnBOWUM4cWtFNkNWay1ZQ0R4eEU0R0w2dnA1cVhYVVFJZDhKbk9td3hESTVURXRIbjFiR2QtMmFsMThNY1pWUjFBaDVOQWZnR1pnLVFNRlNoQktpYnM0YkNzSEVNUmwzS1YxcmllTk9BRzNoMFFPNFgzd2JLTlpYZGFSVHc1dnE?oc=5",
+        "date": "2026-04-15"
+      },
+      {
+        "title": "Trump turns on Meloni, his top European ally, as Italy suspends defense deal with Israel",
+        "source": "MercoPress",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWWkzNGhkNUtxV2FJSExUSlk1d2tPbmprcjJoeElGWnE4eDBpQ0lhc0t4U25aX1ZfUEpGa0xEbHFrVkIybWwyNnFkZXROZXBITkRwZ0Q4cmRvWkJHd3FvQUtuVFdwVmlfUnZrdzdGbDRyNlBQWjNlUlpYRWNWZEp3MVhoLXFfRmwwWElrRXBqSWVMWGpZaGNfU1drd04yMjQzQ3lHWWhtZXhMSDBvc2g2a2RDNzlKZlFNbjhZOElPVGM?oc=5",
         "date": "2026-04-15"
       }
     ],
@@ -4196,10 +4196,10 @@ const ARTICLES = {
         "date": "2026-06-01"
       },
       {
-        "title": "Ukraine Agrees to Mutually Beneficial Defense Deals With Gulf Arab States",
-        "source": "Foundation for Defense of Democracies",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOVppZjVvTzBaSEpMS1c4RktVeXRhanNRbVBIUnVwV1FwYWRnbDFVcC1lLXZBQlVMcGpROXFRUi16ZTFuczFKc1VJSWFQNjh4QmRHdm1EOGRyV0QyNGM3ei1FaFBCdERvY2VjOXpzZ2wxTVNuU1ViRkhjMWlkOXF2Mmh6bXVON0I1NTFwbEFEd09YTVB1QWFNTTEwWGNwSlRQY0dxTlB3S2dodUZ1Z2JXMm5VY3o?oc=5",
-        "date": "2026-04-01"
+        "title": "US approves $8.6bn in arms sales to Middle East allies",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdWJWTm5KbnBCeTdWa0VjbzJTRi1tWVBsQTB2RVJOYTlFdkhoa0tqN18xTEFqUGFHeW5SUVN4clN6T25iTXNVQTZrdXk3VzNPOHJxX0VldmF1WUZPSVhEdkRxZ211UGJwbjZqc2lsX280RUN6RGQ1S2xHQU5PbkVvdnlYSVJTdm80QnF2NUU5T3VTcThDa0Q3cURyWGLSAaIBQVVfeXFMTU41LTl0eWpDajk1XzRfT1h5MEdpU1RIT1BHRmhwd2pLeHlxY2Z5Qk81NjhwSFBOTmVyVjdHc3lMVHB6TElRYTV5QmlRbzBSQ1J0cXRkTFJ3TXhBaXJwQUJUaUZYc2dPcVRhV1JyaEMxckwycnU5WXYxaHZuMXBua1dsek50ekVqNk5fUXotTFo1ejNhSUI1T3UzbmRuQ2t3NkR3?oc=5",
+        "date": "2026-05-03"
       }
     ],
     "france→kuwait": [
@@ -4272,6 +4272,18 @@ const ARTICLES = {
         "date": "2026-07-06"
       },
       {
+        "title": "Australia lands record defense export deal with Canada",
+        "source": "Latest news from Azerbaijan",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUVFOTDNia1JGT3ZabmpFMUlPclFuRURRVng0Q0FjVmZ4NUl5bDhOSF9yOTBlZ3d4dU05bVB3YXg3Tjd1RGt2M19EbkYtUWNBSWZkQUxXOG5BbnY0VkViMkt1amtyZUNhVTlWZklsTzFoUlhPR1ZMLTczRWFuY1pGMg?oc=5",
+        "date": "2026-06-22"
+      },
+      {
+        "title": "US military plans major war stockpile on Australian soil",
+        "source": "SBS",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMW00eWhOcE9acU1KeVA2X1htVkdsakJqNHNwcDBvSVdQck9qRUV2cjBqOG5pZmw3SFZUVHAyN29Zc2JzNDE5NzQxaE5hWUZwUjh2Tk9CeVNVdEpFbkwwT0tmRjRRRTF6bDZxMncwME9nc3U1RWJmSUctRlJnRy1YcHUxTk1uWkxiWDlSQU5UY1BPY0lqby1lZ0hsRk9zOW1QdHUxMw?oc=5",
+        "date": "2026-06-16"
+      },
+      {
         "title": "Why Japan is now opening its door to lethal weapons exports",
         "source": "DW.com",
         "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9vdDV0cEVyV042V2tqeUhlLTNXb2dndlZNUE96amNBY2tfYTU2bXpRcUdkaDl3X1I5c0Z3Nk15VlF1dEJNdlJPSmVXMUlFQlRaeXBmNXIwMnl5T1JpSy1OckR5Y19YYjNvYUpJREhhZU9mRFFGQTl5RjZCcFfSAXxBVV95cUxOUmpCQUVyNVROZDRzWFFMOWhLdzlvVUl5Z0dPc3NqcGIxTURSMVRQdzQ3NHJMTlZpbVBacmR5MDJtUWFYRV9BQzNIZFJqdEl0dXpFUW9oZTdxaWxWbzdwcHBFSzY2MkJBWkRuTTZZa2dEYmR5S2ZfcXY5VWNM?oc=5",
@@ -4282,18 +4294,6 @@ const ARTICLES = {
         "source": "USNI News",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUkZZLTl2Qk4zUnJ6YlZqVkJCbTN4enE5YTlDcFp1ODQyeWdDOHRnYVUzUW51NnlqeTdxbGpfYXlNckZGT1dYREpUQzBPbmtmUzlUUGh1c05haXRkR1NZZndtTFdfcVFvN2NUVFNhTVJuYW45em9xZXNRWHVGXzFfOENZTW0wQUVULVd0T2VwLXdTcEt2dlZQLWwwbWl5eGVvZ1pGNkRHaWVTeDdvd0lnc25FZzBaY1E?oc=5",
         "date": "2026-06-01"
-      },
-      {
-        "title": "U.S., Australian Cooperation on Land, Air, Sea, Industrial Base Top Topics at 40th AUSMIN",
-        "source": "U.S. Department of War (.gov)",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNUFpGQy00eEoyYWVXdzNMdTFxZDNGZXdxOVBxZENpTk9DT2tQLXlHRW9aalZ5VE1Ibk55d0JjdnluSTluUGhrNlFmS2l3eFNvb2RsTFRHdTlfZDNwU1FJb0tGaWZabHA3YWxtVlhPSWMtWEJVR0RVc19JRFprYkFGekQ3eHRkc0NTbHMyTHhsNmE2WE1QRDB0emNGWUxCUml6aFFEV3MxN2JWcG8wT0tVZjNvUGdsZTVBWi1OMmd1Q2tnVkZuaDNWQ2hIWHRqNTN0Q2dPbnZ3TWVxQQ?oc=5",
-        "date": "2025-12-08"
-      },
-      {
-        "title": "Australia, Japan strike $10 billion frigate deal to boost security ties",
-        "source": "stripes.com",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYVhHa3BSM0ViU0hYb0MyeWtMdndEdmVRY2RaTHBmWkVfMWE0M0ItVTdNMGpkT1NkRXl4djBlX3BDNzhjZ0ZCejJkMVhHN3U2QTcyM0tzYy1iUmtTZ3VjTUU4NWJLNkZ0LTdFcElNUjAtcU9wTDlVd1V2WTduX3RhdFpBaE5KU0tIYkEyZmFWb3RZX1AxYlpDQmJJQzJ1Qkx4TTlua2pJNVg?oc=5",
-        "date": "2026-04-20"
       },
       {
         "title": "US to Send Only Used Nuclear Subs to Australia in Amended Defense Deal",
@@ -4310,12 +4310,6 @@ const ARTICLES = {
         "date": "2026-03-05"
       },
       {
-        "title": "Committee Probes Australia-Spain Defense Treaty",
-        "source": "Mirage News",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaGtyODZZMWU2QTRsTEpoUVdxSldPcHFCMVBXVlZybzgxdzJaeG53RmhxanZxUkNzb1ZDd0poa0tJejJqV05OcWMzMmRmTmE0bUUyWFM5dmhmMzJybDd6ejZmN1pKcHBVYnQ0SlJfRm5FWE9xekhxYzNzdlp4d3F0S0IwaFhCLU5ieHJn?oc=5",
-        "date": "2026-06-22"
-      },
-      {
         "title": "Why have Europe, Australia sent military assets to the Middle East?",
         "source": "Al Jazeera",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVHhkN0lIcFI2U05mT3A2NmZrT1lvYWtuYndXRHlReHluLXQ5TzNnMHJsM1RGbW9VZEZnS05qM2VKMXNQd1hVT3JqM2JYcml6YmJxdTNtVHdyME1idnhraUxialBBcnp6MVJNR0VfdktRT3g1elVhNU02Q0xxNFRYRlhOcVpNc2hyMTd2OERVTGIyNXhYa1prNkkwczdkSEJnZzZOMjZ3MEHSAa4BQVVfeXFMUFp5czVXbDkyXzIzd2JmTzNkc2tTVmFrV3d0a1h5c3RqMjVZZGlfb1RKTF9qdUUwbUJYby1EZVNNcWhHenRBdWdOeXZmN1RoeEx5anIzbm5vVm5hX2FfLUlKZUhIMWtNTTRBa1RNaC1tUTh5QXVaSGhhS2ZHUEV6SnRFdFVpdDNERkIyYTN4ME5uZFMwVVBBSnpTSm1tb3Q2emhzTTB2cHBwUDhPanVB?oc=5",
@@ -4328,28 +4322,34 @@ const ARTICLES = {
         "date": "2026-03-03"
       },
       {
+        "title": "Contracts For Sep. 30, 2025",
+        "source": "U.S. Department of War (.gov)",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNWJLQ0I3QVNaSnpGWTI4dklPVGROVmxYM09nX3l2QWF2OVEwMGZ1Tk9vNVhaX0RORjh4SzRfVDU5S1hKWmxUVXBwM1hNR1hCQ0pSOGMzQjR4WWk0d2pKalV1VkhCZjh1ejlyVDlYSmdmYmtRdThCbFNCX2JlQkFmcFFLWEtyNWhOYlBmQVB5Zw?oc=5",
+        "date": "2025-09-30"
+      },
+      {
+        "title": "Committee Probes Australia-Spain Defense Treaty",
+        "source": "Mirage News",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaGtyODZZMWU2QTRsTEpoUVdxSldPcHFCMVBXVlZybzgxdzJaeG53RmhxanZxUkNzb1ZDd0poa0tJejJqV05OcWMzMmRmTmE0bUUyWFM5dmhmMzJybDd6ejZmN1pKcHBVYnQ0SlJfRm5FWE9xekhxYzNzdlp4d3F0S0IwaFhCLU5ieHJn?oc=5",
+        "date": "2026-06-22"
+      },
+      {
         "title": "Hanwha Aerospace to share K9 platform with Spain’s Indra",
         "source": "The Korea Economic Daily Global Edition",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9EekY3bzFIRUtXbEN3T1pTOWdhcXFJYlFuckVCMTRQbklqTUlNWEhyYUwyMURpQ3IwVWtfRnRXeGdrSGNMbEgyTFdmNWw1SFlGd1dxenhQdDh4d2NsdFNtdjVnblNyMXlBOEd5NHVMNXJPNEZ1VTBn?oc=5",
         "date": "2026-03-25"
       },
       {
-        "title": "Spain's F-110, Britain's Type 26 and Italy's FREMM: Three frigates competing for the Atlantic's future",
-        "source": "Escudo Digital",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTjJybFRhY3hoWElXMHNmLXNvN1hpZXI5enVFTTRNSFJXQW0tal9wajBWdXVSd1FLN2FDVlc3OFphc0pUS0dHU3BFZ2ZBY19VTEVUQkdJX0w0YmVQMXU5TmVRRGRJQS1lNW9FYmxKZlhpY0wwOXdtMGVQb2NoODZ4TGNzZUg5aW9nNDBPNm1Ra1ZpVHg0UU9XQWJkNWxSdWdYTGlkR3FiT2tIcjItMWU4N1ZQM3Fha1hMRTEwMWFMOFBCWm5sbkFFaXIwWllrM2VTMnJr?oc=5",
-        "date": "2026-05-25"
+        "title": "‘Time proved us right,’ Sanchez says in defense of Spain’s stance on Palestine",
+        "source": "Anadolu Ajansı",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQLWJ5VjFWX3RYcEd6U0JZOHVGX1d3Ty1iNWFDTTJVd2Q5VGRSeVdTdmZ5MWhDUFFQSXRUVFdUVjNXdVltMEpNT3FEV01ncnJNX3p0QVhSWC1aS3pIQ0N1cTBBMVVDX0JueHdObktpTEtsNUlDdnVyUC1PbGVCQ0lsRG5xRWtLMHJ2Tl9yV1NNdzNhd0pyTHZZWmpaUW8yV0Z3OEZYRWpuUHNXdlcwQWlOVEhFRVNWU1E?oc=5",
+        "date": "2025-12-15"
       },
       {
-        "title": "Japan, Australia Join U.K., Spain in Refusing Trump’s Request to Send Warships to Strait of Hormuz",
-        "source": "Defensemirror.com",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNb2VXLXpVdm5BWlZJR0lYZjlRdmNjVzdEQ29oOTg0bWpLa0t5Ql9OckRYaTlDbktLbG8xclFPMzZrRDdZVnNVY3VNT09QVWVOYU1odW5hdTRHaDh0TmtFYmh2cW5fZ1hpaXVJMDh2Ri1XM3Vaakprcm5NR3NsVE5zallHUnFBakE3NVBhM2NuWC1RZkFfVlZ2YkNFVHFoT05vd0VPdW8ydmdKcWgwZmwteEQwMHBsUWpoRVJ6OG9wNWs2Yjl3cng0NjB3d1gtWE9lQ1JJ?oc=5",
-        "date": "2026-03-16"
-      },
-      {
-        "title": "Contracts For Sep. 30, 2025",
-        "source": "U.S. Department of War (.gov)",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNWJLQ0I3QVNaSnpGWTI4dklPVGROVmxYM09nX3l2QWF2OVEwMGZ1Tk9vNVhaX0RORjh4SzRfVDU5S1hKWmxUVXBwM1hNR1hCQ0pSOGMzQjR4WWk0d2pKalV1VkhCZjh1ejlyVDlYSmdmYmtRdThCbFNCX2JlQkFmcFFLWEtyNWhOYlBmQVB5Zw?oc=5",
-        "date": "2025-09-30"
+        "title": "As Canada’s World Cup prep intensifies, attack needs sharpening, defense offers hope",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeXhpVFRlanJIN3Q1R2pwU3Y1ajBpSGN0SzZsYXRqOUMxWVcyRUNYeWhLRWxvUWhqNXNXSUFRWElfZnQ3R0pTREY4Ym95Ull4Mk9LNWFLVmdwandUem1YZEhwRVhvdGlQaUJscl9Cd0RsR2Z3NEZoaHZ6TndTSkJKY1BESTE1VThPTXp4T3VGdkNWQWFGZkE2dXdvUEMzXzZaRUZBaTFsY1VPZzBmejB2b1JTUEJLbEJybG01TTVvdw?oc=5",
+        "date": "2025-10-16"
       }
     ],
     "germany→australia": [
@@ -4384,12 +4384,6 @@ const ARTICLES = {
         "date": "2026-03-27"
       },
       {
-        "title": "Australia-Germany 2+2 Ministerial Highlights an Expanding Network of Partners",
-        "source": "The Diplomat – Asia-Pacific",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPN0Z1dkdoeG1UYV9wQU41V1lwak1QeEZDVTJuVkljZ2ZLc2dpZUFTVlVQR202T29LUnI1U08xQzRiRVY1Z29uQ2JDc19XdVREalp5cEM5RzZWN0lYUmU3dXk0M010Q1BuVnBnaXF0OEdhNmhqU2xjLVFYU2Jqb2lNeFByNVllQmZDZlFtU1owY3RSOUZreFg5b0tOcmtsWERFZnRMNzJHTHBtSTRJOEE?oc=5",
-        "date": "2026-06-10"
-      },
-      {
         "title": "Germany weighs buying Australian-made combat drones",
         "source": "politico.eu",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQ3lfOS1WWW10RnJxVVFBcDdXSmwzYm5wZ3ZEWS03RFRSTUZ1OEZGNy1kc1dzd21ERXEzaEJ0NUJ5UDRiXzM2V0xCeFZtXzFVdGlLYWVsdmJoMzdmYVpIN21PNmdNY2NjXzZjVjZ3WnQ5TkxaMkl5QXQ4WFM3dzdkellYV0RuVzNFT2F3?oc=5",
@@ -4400,6 +4394,12 @@ const ARTICLES = {
         "source": "Breaking Defense",
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcEF4QlhqSUJjN0V5R19XLS1uOEV4T0RqRTI4ZVNRRC1LeEoyN2NEd3NPc3E4UmtOZDdrcnBpSXBkUE1pb0VTVzRiN2k2aktoNnRaZWR1N3FJSnpaamhNOFlhc2RpaXdfUUhNV1E0YWlWR3ctOVlXTnRabjFBemJzZm5HcnVpMmR4Smc5UHZWMHpOTDl0LVctMWRGSjUyRldrRlI1N2J3MEpKUDdmVWc?oc=5",
         "date": "2024-03-21"
+      },
+      {
+        "title": "Germany sees no exit strategy in Iran, but offers help with a ceasefire",
+        "source": "politico.eu",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOd1Y5QXNCeU93dmt6R24zWHhJNXlZaHl2cVl0SVBHZVNNOU1QOUlod2xhZWFpYkNSUHZFRm9YeUhEbnVrZU9HOVhWd0NvMjNyNnpvaTdwakdUT210RnpvQjc3aDRySEdTNFVsbndpdlZBRzItSC1FV292YkoxMThVSldyZkkxNFp1eS1ZQTUwTFVZTmRCRGFETFpMLTlVNUpkaU56UVFPWlY?oc=5",
+        "date": "2026-03-26"
       }
     ],
     "united states→uae": [
@@ -4416,16 +4416,16 @@ const ARTICLES = {
         "date": "2026-05-03"
       },
       {
-        "title": "US fast-tracks $16.5B arms sales to UAE, Jordan, Kuwait amid Iran attacks",
-        "source": "Al-Monitor",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWDBwaUMxMXlmSXVrd2tfSHlINGdFOHIya19yZkpsQ2xIRnpHN3RvRVZfR05KNnFUOVN3S3czbTVUa1E0UV9HUXIxaGlLSVlITjF4ZXVQOTh2d01mb3V1WjdpTEd5OThFZVNmVklBSFU4WVRaN3QzeWdPaTlPLUNKZ3Y1VWs3alV5eTQxbkNVYmljemhrN3VkWTloUjBhZmFfZ0lGdC0tOXdtMk9jWjdmXw?oc=5",
-        "date": "2026-03-19"
-      },
-      {
         "title": "BrahMos Advances West: The UAE, Russia, and the Next Phase of India’s Defense Export",
         "source": "The Diplomat – Asia-Pacific",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNck1uNV9Td25qdnJodFpvVng3ZkdHSXZ2bUY3c1hlTWhyM1JRcUdIX3gyNVIzQTNfeGpWSEU0bFRnd2Jma3RtV29QVWxLakVWNUVzUU81ZDlDYkZZa1RFajB5VmMzeUVQUlJ1Sldaa0t6MnQ4MkFDQldJLVUzTXlFa2pHbGRBYUlCckpxaDdhYWxzaTlPN29HSG4tckloTE10SGoycDJpWW9wdDZlVmpvanhTNA?oc=5",
         "date": "2026-07-01"
+      },
+      {
+        "title": "US fast-tracks $16.5B arms sales to UAE, Jordan, Kuwait amid Iran attacks",
+        "source": "Al-Monitor",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWDBwaUMxMXlmSXVrd2tfSHlINGdFOHIya19yZkpsQ2xIRnpHN3RvRVZfR05KNnFUOVN3S3czbTVUa1E0UV9HUXIxaGlLSVlITjF4ZXVQOTh2d01mb3V1WjdpTEd5OThFZVNmVklBSFU4WVRaN3QzeWdPaTlPLUNKZ3Y1VWs3alV5eTQxbkNVYmljemhrN3VkWTloUjBhZmFfZ0lGdC0tOXdtMk9jWjdmXw?oc=5",
+        "date": "2026-03-19"
       },
       {
         "title": "US approves $7 billion more in weapons for UAE, WSJ reports",
@@ -4454,16 +4454,16 @@ const ARTICLES = {
     ],
     "france→uae": [
       {
-        "title": "With new Paris office, UAE’s EDGE Group sees Europe as ‘next large market’: CEO",
-        "source": "Breaking Defense",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOREk3OXBrNTA1cHMyRnJleXZuODBMbzlNcUFsX0VsVmRSM0R5Q2VXNUlYYlJVU1E0OEYzdHRQZVc3LXBBeXA3LXBkSUlmV216NnJNTUx0UTdXbTdMNlpqNkxxeGpPRVB1aXRKSXloUm51QTU2OXVaRW9WUlpFc0VhVlB6alp1ZDlEUkpZUHRMbXJ6YXhIYklVWVllSkFNSk1lSEZBS1plRFVnanVSTWJMMQ?oc=5",
-        "date": "2026-06-16"
-      },
-      {
         "title": "UAE, France renew defense pact after Rafale jets controversy",
         "source": "Al-Monitor",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMUk0RUs3dy1tUzBNUkppRS1yMVVzdkNFSnczQ21iZFR2eVotbGd1WkgzTlliTVNuWEF6ME4xVTItQTB5bVU0M1AybzFLRlR2bmE4dGRrTThtdmRYVzhVNkU5ZUwta0N6cGc3alBiOWJfSlVHaHllNXR2UTFHN29JWW1VVm9jeU1xcG5PS3JEVGJsc1FBWEd4RFkzdHBLOFV2bmxzS1VxVQ?oc=5",
         "date": "2026-05-19"
+      },
+      {
+        "title": "With new Paris office, UAE’s EDGE Group sees Europe as ‘next large market’: CEO",
+        "source": "Breaking Defense",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOREk3OXBrNTA1cHMyRnJleXZuODBMbzlNcUFsX0VsVmRSM0R5Q2VXNUlYYlJVU1E0OEYzdHRQZVc3LXBBeXA3LXBkSUlmV216NnJNTUx0UTdXbTdMNlpqNkxxeGpPRVB1aXRKSXloUm51QTU2OXVaRW9WUlpFc0VhVlB6alp1ZDlEUkpZUHRMbXJ6YXhIYklVWVllSkFNSk1lSEZBS1plRFVnanVSTWJMMQ?oc=5",
+        "date": "2026-06-16"
       },
       {
         "title": "US-Iran agree to initial deal, Peru’s Fujimori expected to prevail in closest of elections, France eyes UAE as replacement defense partner",
@@ -4478,28 +4478,28 @@ const ARTICLES = {
         "date": "2026-04-08"
       },
       {
+        "title": "The UAE denies shipping weapons to Yemen after overnight Saudi strike",
+        "source": "France 24",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSnozbmhFZGpDV1JZcnVqQldveFZSbE1JV0d2MTByci1CT3NEdXNyN1lUamZPOTZCMjJ1WWxWYkFtTmNJVXhDM255VGdBSEhzZnUtYlgxM3lfVVhEY1puZGNYamc2V2RhZjgzVThWdHlaUDhkSFk3UDRmOWNSRTdEMUhfQmx3a1V6aWJYUTdfb0lUS2V0NG9WRFhOTTByUGhtSTNGcUd4ZXV6LTJIV2c5bmtB?oc=5",
+        "date": "2025-12-30"
+      },
+      {
         "title": "France left to fund Rafale F5 alone after UAE withdrawal",
         "source": "Defence24.com",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRkpSV0lDUEJhb3g2Z3Z3Z0FrT1Z0WDFsTFo3Tm82Y2Nta0RYVnFiM3dCSWRMaE5ZYk9PQ0d6VnRuMFowaUVZb1phaXpJVFF4Y3Vzelc3bUpoS3NZdF8wS0g3Z25QTWt0cXVtMWZGcU9kbEJOMFl1eVpJYnZBOXk2MUlreFdBWmtTQnZxS3h2R29wSDdk?oc=5",
         "date": "2026-04-02"
       },
       {
+        "title": "DW News. . Western countries remain silent about the UAE's role in the ongoing Sudan war. Why is this so? According to one analyst, \"The UAE is a very, very important buyer of Western arms. And beggars can't be choosers.\"",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSHRydTBUdFJVcmpLV005YktMWW16TTFfZDhnSFluZDBCS21UWl9vMjZ2Qlo0eENUaFR4enJyMXFTbjkxTWQyc3ZDQXB6Q3FtbDBFRklpdFF3aXlBLXo5dy1uaVdIZVl3ZHQ0cEs0ZlNFOHB1UHRFMnNFd1RmdGVkckxqa2xMSkVwTkJiR3JRcTZUTmVZRk9WQWxMcTVZOS13ZmVJdjY5ZFZ0elQweXJURFhRdlRmalpDaGFsOTJDNC1mY28?oc=5",
+        "date": "2025-11-11"
+      },
+      {
         "title": "France to finance Rafale F5 alone after UAE co-funding talks collapsed",
         "source": "AeroTime",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZE84MEs4MlVjUjR0ODNrM3JYWGt2bm9yaDY0amQtalZzMTZObngyOVJMRmNPYnZZdTBSNHNwLTZIV2VYZU9EQjBqRTF3cFhHODRzUjV3bmZsbmZiXzZrckp0YTQxNVJVQ3lNcko2blFidlpia1VJQWhOX3hwczZjUlBYUkPSAYoBQVVfeXFMUHVsYlBPU3BMOHl1VjdydFQzQ0xyb041c3Q5WVVtX01tWVh1aGkzV1h3LXdYLTZRU05zSzBZbmtIVG5WWG9yVUdmWDBSZGpOWDRXNDZOQWZjcUhpTHozdVZVc3owTVlTUTBkS2RESW1zNDltOGxwN0V2ZDY2Si15M05EOGRjYjV0SHF3?oc=5",
         "date": "2026-04-02"
-      },
-      {
-        "title": "France Offers Cyprus a Frigate and Missile defense systems, deploys Rafale jets to the UAE",
-        "source": "El Mundo America",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5sUUdnWmNvR1ZUZGRLNTVBM2ExUHBEdnNTT3lpZFg1a0ZHVVJoc196Qm9fOE8zMXlJUVk5TklXUmZLdjBLZkJMVXk0VWRWbzVoaEU1NC10SlRyUEs2TWRDMHk4LVlVNF9jd0dvZ3AtZnUyRzdHQmF3SmdOODR5czg?oc=5",
-        "date": "2026-03-03"
-      },
-      {
-        "title": "UAE Walks Away From Rafale F5: France Forced to Fund €5 Billion ‘Super Rafale’ Alone as Europe’s Future Fighter Strategy Enters Crisis",
-        "source": "Defence Security Asia",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdTNmd3ZEMzcwVnhNRjRZWWQ4eTlIVEFpN3hfTE1ZMGpJQ0Q4QXMxa283RFJzWWFCT3FMajk4OV9TSkFlMHdXSW9iT2pFZjlyQmM5Ym04VVRKR0F2NUNuR2hualdjQkdhYzZBSFZTTFRqTW1DRUFOMno1SEtCWmNBYVFfZ280elRWcG9GSFJKYjlsRFByYWE4YVV6bEJUWjhwWDZOYTZtNmszN3V2b2c?oc=5",
-        "date": "2026-04-03"
       }
     ],
     "italy→egypt": [
@@ -4508,12 +4508,6 @@ const ARTICLES = {
         "source": "Middle East Eye",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9JMW90MXJhTktaWURuRHg5RUk3WGdRVGVGNUdVZ2RuUENpaFVuQzZyeG45Tk1GeWVLTUEwM0Ftc2RRbU1YXzZSV2x0SnFZWWdFbDMtOEtTM1J4UWc3ZllES3paZndZS1hHLUNmSU1iTlIzcS1yOXNMOEhRZ0kxUQ?oc=5",
         "date": "2022-06-06"
-      },
-      {
-        "title": "Frigate sale to Greece turns Italy’s active warships into fast cash",
-        "source": "Defense News",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUGpXb2dMelU1MkNxd1A2MUUxWm53azJfbThzWW1EbTBaMlNSLTRlTGdTVldNdUxKcFpmYTdiRFdtd2h5OV80Rkh4blJZVXd5UXlGQlRjTWQ2SVNFOVBvZjdDekxweVhIc05Mc2QwWnc4WmNSS2hXOHp4ZHo1OW1qcEl6dG1ZWm5YR0hhUDdka2tyRHNxYjZCbWxhaHQxZ09mN21KSkJ3VkwxSE1NcFJLbVNCaktxWnZmT2lOUFRUZHM?oc=5",
-        "date": "2025-09-30"
       },
       {
         "title": "Sisi Intensifies Arms Imports to Secure External Support for His Policies",
@@ -4550,6 +4544,12 @@ const ARTICLES = {
         "source": "The Arab Weekly",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5MZVdERl9UQ19NWGhfQ0xYbGJNZ0RNRThNcTl6TXVHMmdtbW1sbUplWXFXUHNWUHphdnR1ZEJwbDZSdldadnI5R2dVZ1RYRS1iLVRxcmR0WWI3MVpxX01LZVNKMDdidW16Sm96dTFwRDdFV3Itbmc?oc=5",
         "date": "2020-02-16"
+      },
+      {
+        "title": "Egypt and Italy in talks on $9.8bn arms deal",
+        "source": "Middle East Monitor",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbklLUEVUNW9nM00tZnlRWXNCUk9xdFJwdzV6YXVfV3FYTDYycXh1MmF5ZkYyMklfOEI3X0RIUHlhbmppLXloU3JNb3R1OXJGMzB1RFdJY3gyZEpNc1hxcTJ6cy1UUDcxTzdQNS1lV1g3V1VVUFQzXzJLUENSNnpzQlFQSUFTVURfOEp3emo5T0w?oc=5",
+        "date": "2020-02-11"
       }
     ],
     "united states→united kingdom": [
@@ -4616,6 +4616,12 @@ const ARTICLES = {
         "date": "2026-06-15"
       },
       {
+        "title": "Israel’s arms sales are surging. So why are its weapons expos smaller than ever?",
+        "source": "+972 Magazine",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBqWjhsa3FqelMwMlFYNHBROE5SczZuXzE2dl9ZWGRqVWN6UTlmanQ4anBGTW91eXhobmU1bkxmc0JQTzVuM1loT2VKMlhXV1h2YnFGa0JQT2RnM0UtbzdNZXlEUXpzN2NyV08zZ2dyOA?oc=5",
+        "date": "2026-02-23"
+      },
+      {
         "title": "Israel has surpassed UK as 7th-largest global arms exporter, report shows",
         "source": "The Times of Israel",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWWZ5S3F2ajV1Z2pMR3lvM1psLUgzeEl4VWZrMVQtRUxmUVVxY2JJSHVnSWloVkdDcFNEQ2lscDQxMHpqWFgyU1NTUmpXSEM0WUpZaXFQenFxVGpLNVdtT0R5M0pURVFCNnZYVzJmMlRvYnJraU1jUnVLQ2dxQ2U5TE0zZlZGb2FTM3hWNGZuT3J3RndLUF9SeDYwYmRHS3Zh0gGmAUFVX3lxTE4wcldXd0t5ZUNDYWMycjJ6cHh5d3Mtd2E4S2dLV1gtNFVhZy1ZNjFPWWZBQkJGZGljSHpTWmg2SGI4UzhiblR5dk40b0otWGIxa0JvZ1B6V2htZFBHZDNnSWhhY29FWU1VZGtuQk9RQktqVmI3ZlYyUi0weUVGQXgwUkc0QXBhZzdtcmxmVzVHNGhsaU9TblhxZWNxX3JxNnZJajV6dnc?oc=5",
@@ -4644,12 +4650,6 @@ const ARTICLES = {
         "source": "NDTV",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYTg4bVhXYmF1SXpRR1A1NFZscHBiN3B1d2dBQTdKT0RLRnZQMzJGTWFDcU42Q2RhYmllZkFKbDlneFdzSGxHZGFYUlZuWElsVGdNSU9DNWZUWVVHbmhOS1FhQktSbFlVUFRVdElfN043YVNVb0NMRUMxZ1k0bTRrTUxkYkg0dEFrcnJYbG5iVnoyQmg4dXVmOHQ1QVpqYURjUWl4c3I1NFdPQ2xIYTN0QldpONIBuwFBVV95cUxNX3RaRUlxZ0U3bkRmZktJYVpZbjNYMGg2LWpVVkNnSG5iMS1Vd2tNaUYwVnVtSkVrNnNMdm5DMmNPblg3blRyazF4Y0stVlZGeGdkalVYWWJ0dkVNd2VtWndndnRFMXpHUk5YcEhCWnAwVjBrNFlLcUdmWG5fMldha18zeHQtbE1pYkc2aVB1Y3hXMFBaYjYwSHEzWGlzMUNtR1JHNHFQUkdYZW1SR1oyU0FfLVEtU09VY0g0?oc=5",
         "date": "2026-02-25"
-      },
-      {
-        "title": "Three Palestine Action activists end UK hunger strike",
-        "source": "Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPejl4bjZZU01zLTYxd3BUMEF0SllMVVpPTlVtSU1kY295Vk1jV3RDcGp0dThTUDJ1TmZETWFfUFVQdmJiX3N0dVhBdzZpYWFqa1JvUlRwRmhoU3VCLXVNV3RHUnFVRnlpMlV6TDlrb3Z5dFdqQW5SVW9nWWhIWFNxdS1QZXliZEFFeUxnaTFRLTBZbDNHdFhLZExB0gGfAUFVX3lxTFByV1g1OHpMTEVySWhVU1RRbC1Ma2Rzei1sdGVIVUJpUzRGWW1fTlhRT3A5aW1hWFMtdW5iVkpYU1Yxc3F2TFFuQzRFM0gwNUhHZGVOQkNqZEtxWjQ3ZFcyVGFWRVNEQTB1dks5d1phY2xjU3ZsWjF1c3dEX1ZJX2J4VFBqOHFheVJnUGtuS29CdG9CbWg1aVN2ZUdwalhhaw?oc=5",
-        "date": "2026-01-14"
       }
     ],
     "germany→united kingdom": [
@@ -4660,22 +4660,10 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "The Latest Iran Deal Ignores the Lessons of the Past",
-        "source": "Carnegie Endowment for International Peace",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM1g1UEx1eWxZeXROUDVlNVZ0N0RfUjEyVmViTlhQRlplZkRMMUQ0R2MtWFpJbU9KUFlDRURLR0JwZ1ZLWjYxUFVNbDhlVE5EdHhrMzFtS2JyN3BSS3NVamI1RXFYdVNBemtwR3hLdWdaTkNTYVRoem5UVTRlQ01vNkxadjhRSlhvdGNfeVY3WkIyQQ?oc=5",
-        "date": "2026-06-18"
-      },
-      {
         "title": "Poland and Germany Sign Scaled Down Defense Deals",
         "source": "The Defense Post",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Wb3dweEVkbEl3ZmZUbEVsRWpVeUNrTW44MXVDWXdNTHV6cmNERjFaVjNLemtNZUFYbGNuQTIzTFhGeWUtM3RLeENoRmRLQTJRdDBlbk01R1NDVC03Q1Jtc3kwNjRtNTBYVWNSOTdEQ0RtdWxYSnfSAXtBVV95cUxOS3JySlM2VWcyTU5La2xYN1hLSUNaV1EzdDBydnJ6MjNTREJOSF92M3NJaE9NUEpfdXlDcVNIX0kyaWNsMm5UdU9RcVltNlNraVhOSUFiZTVSSEYtRHpXamVULUpxS1lhUnZMZ0dhWjEtMEhLSzRJcDB5NUU?oc=5",
         "date": "2026-06-18"
-      },
-      {
-        "title": "Fact-checking Trump's comments that a 2015 deal gave Iran the right to nuclear weapons",
-        "source": "PBS",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY0JIY1Z2ZTczOFdrOTBOSXFmTVd5SmhhbzVBRGluVWRsRklhVEQ0blFiU3dfRk5PMm1UOXpZWDR1TGg0Vk5xX1JrWkUwc1J2MnZQazFESXNERnRUM2hoZG0ta0FrS2VfZnI2a0pQRlJrcktnOVZWREdXWlVhd2xrVW1TZDJINEJ2c3BUU01MVW43STNBSjBXRk1BQzdqbmxwQVMzb1hRN3lTZzI1elhwWEZwX2xtMU9LTGJ2bdIBwgFBVV95cUxQNnJjYzZmMFFRY0VYVzJPcEc4T0tXLUVaRDNDUzBCLXZPeGpEdVdvRXFNelRTWV9QWEVzMGY3OVFsZmU1OVBRLU0tdXBkZ0NqM1lhZXRicEFZT0ZMdnJGS2ZyN3R1Z0ZRblB0aUsxVUpvQ2RoX1RHYS13SHFFRkFlLWRaMVhERzJ6Nnl2OGpIS0QxbVVxSEwtQnRnTWlRVGsxUHk4VHhZVlFoa24zbXB1OEoxSzNqcXk2RURUOVI0RmpoZw?oc=5",
-        "date": "2026-03-07"
       },
       {
         "title": "Germany, Poland to sign a new defense deal as the balance of power in Europe shifts",
@@ -4690,16 +4678,28 @@ const ARTICLES = {
         "date": "2026-06-17"
       },
       {
-        "title": "Israel secures record gas deal with Egypt and record arms deal with Germany; Four men killed in U.S. airstrike on an alleged “drug boat” in the eastern Pacific",
-        "source": "Drop Site News",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdHRGdTZPYXBPWUJmRU43QmhnZU0yUjVYUEVCc1lhTjRvLUkwVkNYOXNPbFBhMVpsN3VScVUtUjhmQVJpcmg2eWsxNXBNdGxSM1hPd1dneWJVX213VGFGVEtBVmJNbktMclBWQzg5cDBxck9BWTZZeHJhQnZMaG9Rcmc2Y3RVU2V2WWxrNEE0S0x5R3VQQjhJOXVma1FOdElPc3M3akEzaHEzbFRiLVIwbmZDaXREaGlLQ2FDVw?oc=5",
-        "date": "2025-12-18"
+        "title": "Fact-checking Trump's comments that a 2015 deal gave Iran the right to nuclear weapons",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY0JIY1Z2ZTczOFdrOTBOSXFmTVd5SmhhbzVBRGluVWRsRklhVEQ0blFiU3dfRk5PMm1UOXpZWDR1TGg0Vk5xX1JrWkUwc1J2MnZQazFESXNERnRUM2hoZG0ta0FrS2VfZnI2a0pQRlJrcktnOVZWREdXWlVhd2xrVW1TZDJINEJ2c3BUU01MVW43STNBSjBXRk1BQzdqbmxwQVMzb1hRN3lTZzI1elhwWEZwX2xtMU9LTGJ2bdIBwgFBVV95cUxQNnJjYzZmMFFRY0VYVzJPcEc4T0tXLUVaRDNDUzBCLXZPeGpEdVdvRXFNelRTWV9QWEVzMGY3OVFsZmU1OVBRLU0tdXBkZ0NqM1lhZXRicEFZT0ZMdnJGS2ZyN3R1Z0ZRblB0aUsxVUpvQ2RoX1RHYS13SHFFRkFlLWRaMVhERzJ6Nnl2OGpIS0QxbVVxSEwtQnRnTWlRVGsxUHk4VHhZVlFoa24zbXB1OEoxSzNqcXk2RURUOVI0RmpoZw?oc=5",
+        "date": "2026-03-07"
       },
       {
-        "title": "Iran Turned to Russia, China for Missiles After 12-Day War",
-        "source": "Defense Security Monitor",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYW4xZnhLb2hmR29ZUVdhYk9yb3dubnhIYVU1OC1zZDdyejZCUFh5bkxQdFVobVR5UmdWaEN3Sks1QmdaN096Yk5WejBSRFNmWHRDMlhBR3duVjU4TTM3NmloQ2dWS01XdkRIU2VlejVGbldjVG11eXJ5ZHZJSUtqVTNVNXlDMGhuMi1fUV9pMEYtVkw1MEtJYnAyZlhEWDlKZ0Q4S1lBWlMteUU?oc=5",
-        "date": "2026-02-27"
+        "title": "5 European allies pledge millions to build cheap drone defenses with Ukrainian know-how",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVWd2OGQxa2xNVnFlNHNqek1faVUtNEctdF92LVl2NzVwdHZiOTliOEZFMWFvNWJWNDlYMkRPbXNiQUpzd0o5VFdXdVltSUxHQ1dybGFaQ3ZSWS04UGpJMW5SLXBWOFRIbllGOWRMbFlYVFYxTWtOWGkwYWFVb2M3eXdwbF9tN2NFcXlfS2VHWm83LU9aV1Vrb1RENXdzUUdRUUtIMERtbzRZWThSenZFdXpSTElnOVJmMEFnUXRFVdIBxAFBVV95cUxPbDJ2Tk1xaDBQU1FXSUs3VEIwblhuTlJxaktZbzBTaTlKZDlWaUM2UG9LZF9WRnFDQjhkZkpHZXpsUUF6UHlYOVNsT1d1X2xmd1BySEc3Q1RpR2F0MHIyWWlMdy1oLXhRQ256YWx4dDlscVIxLXV4cmdIR0w4aGRUVzhDZ3RYTzE4d0YwTUNoeFZxNGZrRVdINC1sc3hpY0R1Rno0WEJkdy01Q2JyLWdvaG1Gb0pwOFZ3NEZuU1g5Wm5EWkFJ?oc=5",
+        "date": "2026-02-20"
+      },
+      {
+        "title": "Germany pushes new military cooperation deal with Japan",
+        "source": "politico.eu",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOWh3V2N2QXNScldUUDF5bE5hRkdaZXpGT0JEUURyOVM0dVhwc1hJTUFXak9BTThyVDA1Zy1qVi1nSFRkWTBKX3ZwQVJUUE4tTEppQmFZbHhZSXZuVzFybHI4Nlg4eEk1ZExidzFjTEtqQ2J4cDNLZXZET3JiNkMtUEpMX082LVZxTWNCZ1pla3hsdw?oc=5",
+        "date": "2026-03-22"
+      },
+      {
+        "title": "UK and Poland sign new defense and migration pact",
+        "source": "politico.eu",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQU3RBTktWbW44M0RKaVZiQm9JeENiY0VXWXZjX0NPWk1DWHlhbkI5cEFVbEx4elpoSmdPZkliSXJ3Y0hTNjkzeFI0ekZEelVfZVFqQXZCRXNFZmtXQUUwaFJ6d2h3bG9xWThWN2hpbTZJekRabTFwSHN6Mkl1VUlxYTY5OXl6Vzhn?oc=5",
+        "date": "2026-05-27"
       }
     ],
     "united states→israel": [
@@ -4707,7 +4707,7 @@ const ARTICLES = {
         "title": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
         "source": "Encyclopedia Britannica",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
-        "date": "2026-07-09"
+        "date": "2026-07-10"
       },
       {
         "title": "Washington is subsidizing Israel's booming global arms trade",
@@ -4734,21 +4734,21 @@ const ARTICLES = {
         "date": "2026-06-17"
       },
       {
-        "title": "'Wake Up and Smell the Reality': JD Vance Warns Israel to Abide by Trump’s Iran Deal",
-        "source": "Time Magazine",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQlF1MTJ6bHJWNk9VRlh2WXJxY1MxSTRoMTg4TTBlNFAxYXJjMUZ0ZnFlSjQtNzRhdTQzQWdqSFN6NjFpeVJZVTduZGtjbVNPUUw4c2pKWERjNXFjeG8tallQSlkwTjYxMmJ3U2NYbmNYbmg1cjA3ZFJESEtCUVVuR2tjTVpna3hJTkJZ?oc=5",
-        "date": "2026-06-18"
+        "title": "U.S. intelligence warns Israel is likely to undermine Iran peace deal, officials say",
+        "source": "The Washington Post",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVmF4N2JBdnBNSzhUYnc0d2tIYllaenN5OEtMTDZBS1lWRHRodldDNTZsMTNuTjlPUjMyMi1MMk5sTTF1dDY1dVd3THZHOUxSaXFzUUZUWFRLd29QaVFJMl9Xek9fdnRucjZzZDlDWDFoWkNRU2xXQVBxR1ota0l3Wmp0SThTX1pwV1p4OXRJWkRLMllwU0ZCN1V0ampwRjFqTlJXa3RPX0JoZm9wek9sWXgzVlFqbGVGdWVMQjFRd1NLaHhEUU9nSUtBbmZDbklvel9pSGZR?oc=5",
+        "date": "2026-06-19"
       },
       {
-        "title": "How to Save the U.S.-Israeli Alliance: If Iran Gets a New Deal With America, So Must Israel",
-        "source": "Foreign Affairs",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBjQ0RKSW9icjNBX05BUXhONVBQZnEzWnQzcWhxczlsQTk0NXc3MXkzc2VSQlFjbHBSMzd4Qk80SlRSZlZoTTZTZGxURmxlM0RyLUlUMWhxRzlkT1BzS25Rc2FZSEFuWWhpV0NFSXExYU5uMnox?oc=5",
-        "date": "2026-07-01"
+        "title": "Iran says deal with U.S. requires Israeli forces to leave Lebanon",
+        "source": "CBS News",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWTBweC1tYndkYjVDOEZTeHc3UVBWVGtER2o5UmZsUzN4RUp3eUpXNjg1dm9TMTZfX21LT3RHaWRFNEJWYzMtT0hSWUlrX0FuUEVkUHBlek0xdVZmZllwTjFuWTI3cXpYZGdacHI2bmlDa3lydU9YdWxOREFadkhkekI0YVMxYldZZlQzUXNPRVVkUk04RnBySDVMVDFuLWp5SFM3UQ?oc=5",
+        "date": "2026-06-17"
       },
       {
-        "title": "Iran and US reach an initial deal to end the war and open the Strait of Hormuz but challenges remain",
-        "source": "ABC7 New York",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQUZTZnY5UzZ5VHR1YUJqdXpxeGhpWkhqUThoM0QwQVFfaGJVaHlKMTNSZkx2VGhMOHpSOXZVQkZqRUxLR0p3OVZHellpcVF3aVJqNEI0dk5sM0l6anZBM1JzTUV5RWduODZSbFFCdXVMOHllV0lweE9UNi02T3paTXRDTnEwQ3Bpb0VYcVl1OFVYNWFpZkZkSGRsQlpjYTdsODI2OEtYTFBXUQ?oc=5",
+        "title": "Israel rules out withdrawing from seized land",
+        "source": "The Hill",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNU3d1T3lKTVA4RFp2aElaWDEzYWpzNENxTFNHUVhuQlNkVktmTkNNTFR6azlsd3BBaXZBVS1nOEozNU9CR1dGYVRuaDA2alY4SUgzSzlCdi1vLTFMMEZxQVg0NXVJd3QxeXhGUWlwUkJZOF9TWTRxMGJmU0dlaERrbUFZV0ZzOTJrb3YxLVZ30gGTAUFVX3lxTFBqcWZLQWg4OHMtQWF6LW1STGZJQV91VlZpWjBRZVZHX3c2QU9oWmJ0bGF5Rk1RWFJzXzNyZTZrWXI1VHhtZWZ2ZjNaUU5SUXhfcy1VN0NFOUpWZ3J0NnRvU1pfcVhZSjR4Y0lueUlyclY4ckdGMGhJS0xRNHpvMTk3Y3lFZ2diZjBZYmdOdldmZUdjOA?oc=5",
         "date": "2026-06-15"
       }
     ],
@@ -4878,27 +4878,27 @@ const ARTICLES = {
         "date": "2026-02-02"
       },
       {
-        "title": "Raytheon to Supply Patriot Defense System Parts for Romania",
-        "source": "The Defense Post",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9aZFM0d0dscGM2QkpTMzlxQXVfSXBBQzEyRTlZQXNHemZZY0ZNM3NpeG1qS25sSE5aWnFmdHlyTWFLN1ppaFNheG1Ua2RhMWFYUUhMYUFOaUtJcXBWZUNYM1lHTVdEWUFnWmpZWTVtMXnSAXZBVV95cUxQYnk4YUtnUmRKdVVZRVNSVG84R2JTVjZZV1Zwd2RRMF9kREJaTTdWQjRkRlFLcFlCYWV6ZVl4RGNEcERiZGVHS3FMTFQzOGpKYWJwZ243UmZMM2NxWm85UHg1UDZCUWp4N1pBdjdocjUtd2pEVEV3?oc=5",
-        "date": "2025-12-22"
-      },
-      {
         "title": "News | RTX's Raytheon awarded $1.7 billion contract to deliver four Patriot fire units to Spain",
         "source": "RTX",
         "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNb2t2c1JyRnB0NTdUMVVkVkp3MHlwNE13WjBsNjVwaThNRjZCcHUyMm80a2JxWmRJWGViNF9kM1RvWVFHV1A2dFplaHhxSDVKMmpZczAtdFdNeDlRWklCR2xweU8wYzBjUHJ6bzU4OVhWR3lROEYzY2NBLURwS0FLXzJPRndKblJ4T194RVNFZ3VXaElfSm4wNkZmTzZxZzl5d2xTdHV2am9td2VxNnRBSXpfVHpJVlFiZGVHNG1VTXM3cVkxR1E?oc=5",
         "date": "2025-12-23"
       },
       {
-        "title": "Romania signs deal to take ownership of 18 Dutch F-16s for training center",
-        "source": "Romania Insider",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vYUpxek1CRC1YRmRuZjN4aHY0Vmx2QVdSbUtoVzRJeENHN1dDYlhGTHZLdThsdDY3MjFZZDJ1ZDFmNkFlVG03TVhycjktcUM1a0ttWURJdmg1X1hEbHlycENGalNlNWZjZ0dUVUJjQkQ0TG1jREdGZzNHeUpPb2_SAYQBQVVfeXFMT0hNaEhnc1dOdXNPVFQwVkZLZXF6SWVWNjFfbjV1a3p2ekRNbzlQOXQtTjQ3UzB4TlJXSUpDZzBHWGw1OXhERlJkek5IVVlkZVNFMWlxeG8xQXFZdGxkZW5UaXVJQk5sQTVhdTlWTEs5ZGxvaXB2VjdSMFFjUTdSNHBGa1dP?oc=5",
-        "date": "2025-11-04"
+        "title": "Raytheon to Supply Patriot Defense System Parts for Romania",
+        "source": "The Defense Post",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9aZFM0d0dscGM2QkpTMzlxQXVfSXBBQzEyRTlZQXNHemZZY0ZNM3NpeG1qS25sSE5aWnFmdHlyTWFLN1ppaFNheG1Ua2RhMWFYUUhMYUFOaUtJcXBWZUNYM1lHTVdEWUFnWmpZWTVtMXnSAXZBVV95cUxQYnk4YUtnUmRKdVVZRVNSVG84R2JTVjZZV1Zwd2RRMF9kREJaTTdWQjRkRlFLcFlCYWV6ZVl4RGNEcERiZGVHS3FMTFQzOGpKYWJwZ243UmZMM2NxWm85UHg1UDZCUWp4N1pBdjdocjUtd2pEVEV3?oc=5",
+        "date": "2025-12-22"
       },
       {
         "title": "Romania buys F-16s for just €1 to train NATO pilots",
         "source": "TVP World",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSmhMc3RzSE9WaXNvR09hV2hpRVNkZGxweEE4bTRobWswMWJNcG1YNWgzRXdxcHRwREktLXh1VmtCT19IYWo2WEJabm1oNFNMekZVa2NJMjRxOXNvQ0Q0Y0VyM0JQMVFzQ1FmdThqUDlpc1FnNUZDWlNoX3pyM3N3bW5kalRHbjF6UHEtam40bzhSdUdfN3lkeUp3?oc=5",
+        "date": "2025-11-04"
+      },
+      {
+        "title": "Romania signs deal to take ownership of 18 Dutch F-16s for training center",
+        "source": "Romania Insider",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vYUpxek1CRC1YRmRuZjN4aHY0Vmx2QVdSbUtoVzRJeENHN1dDYlhGTHZLdThsdDY3MjFZZDJ1ZDFmNkFlVG03TVhycjktcUM1a0ttWURJdmg1X1hEbHlycENGalNlNWZjZ0dUVUJjQkQ0TG1jREdGZzNHeUpPb2_SAYQBQVVfeXFMT0hNaEhnc1dOdXNPVFQwVkZLZXF6SWVWNjFfbjV1a3p2ekRNbzlQOXQtTjQ3UzB4TlJXSUpDZzBHWGw1OXhERlJkek5IVVlkZVNFMWlxeG8xQXFZdGxkZW5UaXVJQk5sQTVhdTlWTEs5ZGxvaXB2VjdSMFFjUTdSNHBGa1dP?oc=5",
         "date": "2025-11-04"
       }
     ],
@@ -5010,6 +5010,12 @@ const ARTICLES = {
         "date": "2026-05-26"
       },
       {
+        "title": "Tanks, guns and rocket launchers: The ties that bind the EU and South Korea",
+        "source": "politico.eu",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeFNaaEdkVDJwSEkzVUY1U1dyOXRNU1FDbUgzRWQ2TUJFc0xYNWNaVktRbHozVGNBSzJ6OGw4bm1WQWFRU19haW5LRXJNZEhRaFlNMmxmT3duMVlPR0p0VldkdGZIVDhCeU5tLVdScGtJRVUtYlN0ZEJiTExVcG1NTw?oc=5",
+        "date": "2026-06-09"
+      },
+      {
         "title": "Why U.S. Allies in Asia Are Chasing Nuclear Energy—And Eyeing Nuclear Weapons",
         "source": "Council on Foreign Relations",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV1FqRGJKLVlqSVNUM2xvM3lVa1c0Y0FwNE95YXBscWc4ZmxoeW5YbUxqblgtX01kM25JcXp2NWRlUlNlTTQ5QklkbTRETlFfVnNaS0FQanFNazg0NmdKeU1QaXU1UUg4d09rdW9NMDZNOVRmQ0djM3pJbDk0WHpfSGxKbS1SbUU4NEhxTVRNNjBfWVhYQVdXWHNtNkg2d0l2a0JQalNXMk4?oc=5",
@@ -5022,22 +5028,10 @@ const ARTICLES = {
         "date": "2026-03-08"
       },
       {
-        "title": "How the Iran War Broke US Arms Monopoly on Saudi Arabia",
-        "source": "houseofsaud.com",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5GVFZEZnhMTF8tdDMzQm9sbS0tdVZjMmVjd2tqY3Z3bmJhN0llaDNXR1RzNE10dFVKeGNfT0k2M3FQeVBkWDFHZm9KRGNlLVV5UHBtcGhBamc4RTFzUG0wTG1VMjZIVDhGOE1NcGkwR28?oc=5",
-        "date": "2026-03-14"
-      },
-      {
-        "title": "Top 10 Powerful Countries In the World By Military Strength",
-        "source": "Vajiram & Ravi",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYTV5RUlVSGFKdHJEUHhFX3JaTURPNFVXMkoxeU9kWW51SWhSTzRHWXRiQV85dmJadzlFcFNKTVo5NV95bnh4NzM5THRhZVBUUm50Qk1HUGQ1YXp3Mk5EMzJHNTF1TU5YSUUzR1ByeEFEb3NFUmtjd2JIT1JmZ2g2QTZKMWFCdm5MM1ZKRkk2cGRQRGxlSVdTNFJLMXRWZw?oc=5",
-        "date": "2026-07-01"
-      },
-      {
-        "title": "Hanwha, Babcock pitch Korea-UK-Canada partnership for $43 bil. submarine deal",
+        "title": "Korea weighs Hormuz mission options led by US, UK-France coalitions",
         "source": "The Korea Times",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWGVvTG1nNy03QlJNUVgybm5EbWc5cU0zbERJNVZmLWNXeWkzZjg5RkhxcTM2U3FKQlk5UzFzaDdlVV9Ibk9xMVBHNHM1aVg1eTM2TkhaWkZzcDlna2hJUFhENGdDaHlKelRidEx4bDAtOUQ5QnFQSkZjbWx0V0IxZ1E5TTRnWjFGYWl2Q3U5M2hfZHpPZllfeXdIYThMMVFiWXkzSGpycjM4aFVxamI0RWVkUmhNQTlaVTkxeEloZllfNnhWVVctM2Vxa9IB0AFBVV95cUxQa1lhNDhrUTJmd1BoU00zZFgxYW1LdjlRQm9aRWR0djFSTlU3UFVQQktCNHJ5bU1pWmk4SWExdFRVc2R3VGxqUzdFT2wzU0NIamRaeTJYbG9sWElYdkVvTXI5SFR5SG1LejNhYXVTT2VJLTRHbDhhRmlJM2FOZDVVcmpmY0V2U1BVcElvYWNBU2VnTnBGOFNLejczbXdyVXBSTy00b09HbjRMWkN5REk4SUZkNHROWGlfN0ExTkhjNW1TZG1TalRSWDJxdUN4UkNi?oc=5",
-        "date": "2026-01-20"
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZlllT0psaTA0MkFmbW5fWmhVRGZHZDY4Tzk0bzJfLTg1QVp4OUZTck1aMmJxUjlOU2x2UkpTMkJtZW92bFNIemdHS3lrUkpBNkt4S1VuQk9qdDJCWWhEUWRxRkNfY04xTjl6QjBjSDBCbjhua2VvQXRFZ3p5ZnNCT1VDT18taHM1RFAxcE5xX3RtT3ZRMnUxaTlmOG1sRkxmaUdhTS03dmF5UEVYa3FOWEJMaW1Xam1uYTdR0gHAAUFVX3lxTE5ZODB4d0ZlLWI1ZjdYeWZqWmZuZl8wcFljLVFtTTZHdWgwTjc4X0dOWS1rN21iNFUwVTd5TEtCYnlpNXdreElzbUVDNlU1Z3NMaHZqaWRQNWxpR1NacEJfTDhCRzl0OG5yU3ZGSndDdF9Tel80aE9pUXo4dUpfdjN2VXQtd29qWElQRlV0ZTJzZVlsN0pTYk11dVQ0cFJPSWlsVy1DaDg0MWprU2E4NTZyM2NOY2owSEJQWGUzX210bQ?oc=5",
+        "date": "2026-05-03"
       },
       {
         "title": "US will share tech to let South Korea build nuclear submarine: Trump",
@@ -5046,10 +5040,16 @@ const ARTICLES = {
         "date": "2025-10-29"
       },
       {
-        "title": "Will South Korea’s Defense Industry Boom Change U.S.-ROK Military Relations?",
-        "source": "Stimson Center",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbk5sd2VIcTZUMjJyNFlFeXJnWFRudUQ1MGdPSV80RTBPYmVObmxaNjd0VW14TWNXSWQ0VWEzNUJxR2JQc195bFp4TjRnTDFVZksyZEt4Z1RXY1JtSXNnVXZGRml0MFRYU2ZMZDREcVpqZ0tYWUM3d0VSY2Z2X1JoeHBFOFBCQzB5YzI5WF9UejNqaklfVVlzVi0wYjNuZHdxVjZfS3Jn?oc=5",
-        "date": "2024-08-19"
+        "title": "South Korea’s 30-year quest for nuclear subs pays off. What comes next?",
+        "source": "Breaking Defense",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcXE2Y3pjTnRTV1RfQ01wT2ZjbzA0bGV3VThHVHBjRHNkeVZidV9hQkszTWlIeXM1LTlqanlTVFRzbXhzSGw1ZDFmNXU4QjNlNmhLYk5UbnhaZl9LcTZJMm5JcDRxMndPY3A0Q3FlWWZsd0EwUlJSNTNqVzRHUTJ2ZlFDcGF4QQ?oc=5",
+        "date": "2025-10-30"
+      },
+      {
+        "title": "Trump says US to resume nuclear weapons tests, backs S Korean nuclear sub",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQV91bzBBcTVqQ0tqbWJGbjNsWWdrWDlpemptTUEtOHYxSXBfMGdGWlRialRDbFJtLXpnZ3RjZ3UxbE9FekN4Wk9TSngzQnd6NE1qRTRSVmJ0SXNCOHFOc2xUeXFKY19pVGJtOTJmeHpMOVE1ODlqUVdjWlhVOHdZNE1nVjI4aFlNTmZrSTlSVzVyTVUxOU40ZGRNZjJta1pJS01ZeXJ1alVuQW9EcWtKVTZuWDTSAboBQVVfeXFMT0tnNWVpQnk5OTZNR1o3WktEV3pLRDJXRTFycVBBdjh4bWZXZTUyM1BvdUxwNFFBTndhYnRLbG41VWJualcxNEZpM0pwcXRHNzNUYmdkWklmcnNzQzBLaVEzUmlNdXVCRW9XR0NUbVFudFRxaUdOY1B2UzlNWmtyOEl5eDVNRzBqMGpxUDJ1TmtoMDFkdnRkVy1xRk90Z1Y4bDlDWXZHQmllaE4ydlZQMWl2bjRXYUl0Ri1R?oc=5",
+        "date": "2025-10-30"
       }
     ],
     "israel→south korea": [
@@ -5066,10 +5066,10 @@ const ARTICLES = {
         "date": "2026-04-06"
       },
       {
-        "title": "UAE seeks early delivery of South Korea’s Cheongung-II interceptor missiles",
-        "source": "The Korea Herald",
-        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12b01pOTFwV2hNSU1DQ2lWSlZQRWFnYWNTQ1p1aVota0I0VXBxUFU3RUI4RmxiUkozMFItMkdUU1ZZZ3NGTUo0YjVKX0J5MnM4Sm9FWC1NMA?oc=5",
-        "date": "2026-03-09"
+        "title": "U.S. bears brunt of Israel’s missile defense, Pentagon assessments show",
+        "source": "The Washington Post",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQd2M0WGJQUFRLS0huUm5tWFhidnRXTVZGZnYyQS1ob2FpUUI1Rzc2X1gtRjhtcGVBc2VfSnNSSjVlTzZqandDaERBQmI5SnFqRXFCS1hZa3RYWkpKa1JtYUJISmk4dkpUSkhLdS1OMzZKVEhic2V4emMzTzNXbjZXT2xkX3pyY0J0dDZpczBWR0hscUo5NU04SV9SSllNM3lfaFZwWjFMUlI1bThxcWVyNThadWpGY3lUN1V5ajNmbFZyOUE?oc=5",
+        "date": "2026-05-21"
       },
       {
         "title": "Middle East turns to Korean air defense amid missile threats",
@@ -5078,10 +5078,10 @@ const ARTICLES = {
         "date": "2026-04-13"
       },
       {
-        "title": "U.S. Approves Major Arms Sales to South Korea and India",
-        "source": "Israel Defense",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1faFNOaW1hTWtzUUZoU0JKS2FHcUF5SUxSSloySTZGSXNnVEExNk1QWnJSNV9YTndBSE10MklFZmR3Z2RyNGt4ZnJGbEU2YnBoN2d1ZTNaUTE?oc=5",
-        "date": "2026-05-20"
+        "title": "UAE seeks early delivery of South Korea’s Cheongung-II interceptor missiles",
+        "source": "The Korea Herald",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12b01pOTFwV2hNSU1DQ2lWSlZQRWFnYWNTQ1p1aVota0I0VXBxUFU3RUI4RmxiUkozMFItMkdUU1ZZZ3NGTUo0YjVKX0J5MnM4Sm9FWC1NMA?oc=5",
+        "date": "2026-03-09"
       },
       {
         "title": "S. Korea rising in goal to become a top 4 global defense exporter",
@@ -5090,25 +5090,19 @@ const ARTICLES = {
         "date": "2026-05-23"
       },
       {
+        "title": "U.S. Approves Major Arms Sales to South Korea and India",
+        "source": "Israel Defense",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1faFNOaW1hTWtzUUZoU0JKS2FHcUF5SUxSSloySTZGSXNnVEExNk1QWnJSNV9YTndBSE10MklFZmR3Z2RyNGt4ZnJGbEU2YnBoN2d1ZTNaUTE?oc=5",
+        "date": "2026-05-20"
+      },
+      {
         "title": "What Czechoslovakia’s Arms Deals Teach Israel Today",
         "source": "The Times of Israel",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbHNzLVFjN0tseWdtYkl5bFRBQU9BT01JcnVCbXl5ZnVGaF9OUE1maHIydDVvUVk5TXFCVDBhZ1kwTkZLV1FURXRkXzhwZlFseVgtanRYVEE5Q0FwVjczZVppbV9rd1ZxbjBBY1VSLWU3ekNTODF4eVhmSGtKNUV0TkRqZFhjTGZ6My0w?oc=5",
         "date": "2026-05-24"
-      },
-      {
-        "title": "South Korea surges to world’s No. 4 arms exporter in 2025",
-        "source": "Hankyoreh : English Edition",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9PY0JJdXVOT1RkUElHNVZGeHBoYTEwS2E4d1ZnQkQ4MDVKMEx4RlVheHZOMDl1cUxSREZnSjdOSjlZZUZjUUtneGJQRExuU1c3eUh6V2F1SVIwQkxWNUpuTlItU0JDNGp1bndOZHlBTFQxdUZuX1ZWcDZTRQ?oc=5",
-        "date": "2026-04-14"
       }
     ],
     "united states→germany": [
-      {
-        "title": "Chancellor Friedrich Merz says Germany has reached a deal with the US to buy Tomahawk cruise missiles and station them on German territory. Merz told lawmakers in the Bundestag on Thursday, July 9 that the agreement was made on the sidelines of the N",
-        "source": "facebook.com",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNOTJpcUtrN1hwVGJMb05Zd2tHSXRfdTA0czRVNEViT2pfbGhNcERzRGU0djZqX2lodDF1UEhqSDdmb1JQV3F0Tm9Ddm5jeVNkaExMOXR6RmlqWThPYTQ3a3RYWnZmSThPdFpaOHFBRExYUHJ1UHZoVGI3a0RXOHp6Q2dPVTZPaDI3QnlvTXJhVW5mamxFLTlLRjVvV2w3VFhzcUlzSGdSc3czeE9FeFBsMVRHR1FwM0ZnQ3FocjhSSnFvb2FPQWtEdkxiSnA5eHFtaHJKdjdCZW1zQy15R3RLZQ?oc=5",
-        "date": "2026-07-10"
-      },
       {
         "title": "Germany set to become first international site for ATACMS missile production",
         "source": "Defense News",
@@ -5128,16 +5122,22 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
+        "title": "NATO allies to sign a raft of missile deals with US companies",
+        "source": "politico.eu",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdVZnU2p1US1zdVE5Y2o4aHJ4Zk9SRTZDeDN1RlJfWkZCWm5vanB6VFYzRkc4akFRckRqXzNFbEJRS1FLQWY1TUs0V0Y0U1ZWTU03QWQ4NktpWG4tU3k2VG1rM0pCWEU2X3czMUFYaGlxNVpuYXd4TU0zTzlWb18xWEh5aEZRNVpOWC1NNzNCbXNvcXA1MThOeU53?oc=5",
+        "date": "2026-07-07"
+      },
+      {
         "title": "Canada awards Germany major submarine contract",
         "source": "DW.com",
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNbmVyU1BrVXktZzVnRlM0OGYybDZxVkt0QnNOM016UGhYUXJuam1QVnFVbVdBWDUybFFaX2xuLTVBeFQzeHNMVHpUeVNJaDR6bnY3OEZaUkF5aGNELW9senAydlIxR2xvcjBJNEYwWWI0VDM4SHdlNXhmd0pkWHZOR01FWFlVZ9IBhgFBVV95cUxQclk3b0tvTmppZmNFZUVxaVBDUG41RTlHaTE5WnZfbzI4b1Q4WmFVX1VtS09ZeVZTOVgzYkxEOGtZY2ZNVXUyTHpWTTZpc0lfTUhjYl8zUVlXRXNGRnNqbE1KY3M2ZmtPd2RPVU8zcXRSY2VkS3FKSnBhZXFSVHQyOUVVd0Y4UQ?oc=5",
         "date": "2026-07-07"
       },
       {
-        "title": "Poland, allies sign deal to establish European Patriot missile servicing center",
-        "source": "Polskie Radio",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdVA1TXdZa2RhcUFKMnB5Ynd0NWJfVGNEOVAyWk9KeEFvNmVGcnVucVhRdV96a1FlNGFJbjYxOVJQQmFpRDZlUVpBUF9Sb3AxWkF2LUEtVmFleTRiMU9NUHpTaTdBaHN2Vm1rVzE4MVlDU1lLSFhENEtpY3h1NWpicmtiSXo4ODVBNkpCdzlPOHVZc2dCT2dwWUMybmdjdkI4U1JFUUpOMzFfTFFIRDBTbzA4VW1uS0hhcFZ6MzQteG92SXY4SUs4cFpfSQ?oc=5",
-        "date": "2026-07-07"
+        "title": "A Claim to Lead, a Hesitation to Act: Germany’s New Military Strategy",
+        "source": "War on the Rocks",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRmYxbW12U1dlbDV2UERkUkJ6Ni1jZDJ6YnhYem9raW55VmlzdFY3bXRSYzFXa2NSbXBmelR5Q3JpeklYZmZEUHZPWDBnMHAzY0lPTGZRcjdnNll2Z1V6RjNsMy04YWppYlhndWhNTVNZZnFLcmZMcEk1aWJ5M21jLWYzWFhnYUdFQnhrQ2RERDRJMTBPbWpleg?oc=5",
+        "date": "2026-06-23"
       },
       {
         "title": "Zelensky Says Ukraine Has Secured Contract for 600 Interceptor Missiles",
@@ -5146,10 +5146,10 @@ const ARTICLES = {
         "date": "2026-06-22"
       },
       {
-        "title": "France and Germany reach deal on arms maker KNDS",
-        "source": "Le Monde.fr",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVXhDWm5oVVdhcmN5Y3dveXJpdVg0T1FCdlFpem5jSTgtR3I1Z21rQlo0WGpIcklxbGxEV005ck9BYndyeXBnTVY2TjUwQk50cWVqRTd1NDZ2dUVkRVFCdlFkUklyWHNnRUFZN2tqWUMzNFZEeDRyMUxhTFNpbjNuTlBPTGszcnRKRlktMGFpNlFsV1hYc0hGa2R6UWlJY18zTG5lalR0ZEw2QTBubFkzcEdEWFZtYjZj?oc=5",
-        "date": "2026-06-22"
+        "title": "Poland, allies sign deal to establish European Patriot missile servicing center",
+        "source": "Polskie Radio",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdVA1TXdZa2RhcUFKMnB5Ynd0NWJfVGNEOVAyWk9KeEFvNmVGcnVucVhRdV96a1FlNGFJbjYxOVJQQmFpRDZlUVpBUF9Sb3AxWkF2LUEtVmFleTRiMU9NUHpTaTdBaHN2Vm1rVzE4MVlDU1lLSFhENEtpY3h1NWpicmtiSXo4ODVBNkpCdzlPOHVZc2dCT2dwWUMybmdjdkI4U1JFUUpOMzFfTFFIRDBTbzA4VW1uS0hhcFZ6MzQteG92SXY4SUs4cFpfSQ?oc=5",
+        "date": "2026-07-07"
       }
     ],
     "sweden→germany": [
@@ -5178,42 +5178,42 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
-        "title": "NATO’s newest member Sweden announces $4 billion defense investment; Saab pops 5%",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMU5kaDd4N3NTSkxzNk4tNUpZYjdHNHphaEctMEhnVWl2b0lBa3lvSE9INlRnMV9xTTRSVURTMW1aZF9ob0Uzc1M4TThYN1U5WWx4aVVjRXhGVWN1ZmsxVjEtaXRvQVZQS01pS1ZjcjNselNqVUlWSFdQZFlwaWlyeFVKVEtDZndLMURmdzZjcDgydDdkVEtj0gGcAUFVX3lxTE1DWGt3dDg2Vkc3dUh1R1JBejJ1cUxRdllBSUZ4ak9IRlNxWVpsU0xmU0xfZ054MWlndU1kSktvMzZZRzNaOEI2M09fWDJidmlRV0g2aElkSUwwSzQ2UnZjNTdvQWIwWk5jRUk0MEc5bWJDWkxkQTUyZmdLOXRXTjdySnlwMGtUcFZNZGlIRUsyWHpWTERhOWFBaHdycQ?oc=5",
-        "date": "2026-05-19"
-      },
-      {
         "title": "Belgium, Germany, Sweden, Netherlands announce new military aid, F-16s for Ukraine ahead of NATO defense ministers' meeting",
         "source": "The Kyiv Independent",
         "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNOHdvdjcwTEVtTlh6LTZHRk4yNXdIOElYRFU4NnlGXzBHOWo1Y20yallTV2JMY01rYmpaZUZSX0M3cENERDd2a0w4dFRLdVp2S3hVQzltQkp1WktPci1NV1IzVWh5Vml2T05jRHEzaWFlTTNLTGdaR3ZaeHJsWlRpQnU5RmM4ajBZdDhSWXdxVHFKV2ozT0c3OVZoYzV2Rm41Um9WaC1RLUtncUcyQkxNWXo3T2lxY25JbVhCMlVFY0xLcWxyN1Z0bG9kbGdycmFGS0YwN3dCbkE?oc=5",
         "date": "2026-06-18"
       },
       {
+        "title": "NATO’s newest member Sweden announces $4 billion defense investment; Saab pops 5%",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMU5kaDd4N3NTSkxzNk4tNUpZYjdHNHphaEctMEhnVWl2b0lBa3lvSE9INlRnMV9xTTRSVURTMW1aZF9ob0Uzc1M4TThYN1U5WWx4aVVjRXhGVWN1ZmsxVjEtaXRvQVZQS01pS1ZjcjNselNqVUlWSFdQZFlwaWlyeFVKVEtDZndLMURmdzZjcDgydDdkVEtj0gGcAUFVX3lxTE1DWGt3dDg2Vkc3dUh1R1JBejJ1cUxRdllBSUZ4ak9IRlNxWVpsU0xmU0xfZ054MWlndU1kSktvMzZZRzNaOEI2M09fWDJidmlRV0g2aElkSUwwSzQ2UnZjNTdvQWIwWk5jRUk0MEc5bWJDWkxkQTUyZmdLOXRXTjdySnlwMGtUcFZNZGlIRUsyWHpWTERhOWFBaHdycQ?oc=5",
+        "date": "2026-05-19"
+      },
+      {
+        "title": "Sweden and Germany Partner to Deepen Air Defense Cooperation",
+        "source": "News of Bahrain",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9GQ1BOOTRpVzk2OHg3d3d6QlJXeDNOMFNhTGxMMWhKZ19QSlNqRWFRNGp0NVhHRnFFbUVCNHMxTFNIU0JYaVpUbjBmNGVxdGVENkhnX0dEdXNhNjg?oc=5",
+        "date": "2026-07-09"
+      },
+      {
         "title": "Are Germany, Netherlands 2026 World Cup contenders? Plus, Sweden's strikers, and Ecuador's defense",
         "source": "CBS Sports",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOenl5bXNKVzgyNEFxQklGMUxCSnpiVE5TMnltR3R4YjdJUk8wZjNiWU9aelNqckxuX1hOVF9RZmFkWHVzUU1feXFZcnRjNy1pZ0lmQmRFanlQLUQyQzZ5RG9zMFlUV0NYaEU2eHU5MHVGcnNxWUFzajhFOG5HZDdVNzcxSl9oaVJWR1VwYW9UbHlSdw?oc=5",
         "date": "2026-06-14"
-      },
-      {
-        "title": "Europe’s 2025 defense winners include Saab, Rheinmetall; FCAS falters",
-        "source": "Defense News",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSGZDV21zcHdVQ05rUnB5bnZRc181NzFVU2toNWlGR01EQ1lwQXcxUndUaWszNnd0QnAxZlRiaXhDcnFrMzdwYTRiN3pnaktVM281Nnh5bTRtVXloZ1dmMFJQUmJlMWdrRGV2N2hyVE1od2NkdVdpQVA4cHFkUzFxeVN4NWJ0YXhMcnJVdkFIOGdjNXYyQ0VpWDdPcDJxVnhUVEk1bGVUMURlejRwMkRJVUlnWFp3UHRzcEViVg?oc=5",
-        "date": "2025-12-31"
       }
     ],
     "united states→indonesia": [
-      {
-        "title": "Indonesia, US sign ‘major’ defence cooperation agreement",
-        "source": "Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcmlrLTFDRWM0S21sbFB6UHJPZm5GSmswVnd5ZXE3ZEo2UzlRdk44MFZQR2ZjcmNoanJkYXVDbjBLQVlDZTJfRXExNTUtMmUxbUM5LVhQdEk1Qlp6aTNqX2NxV1BhcExNTnZPUlI4Vkp1eFF0Ul9BVHZ5VEFIVEFlbGZCV3NneXoyUWFZYVRTTkRRak9rVEVJQWZn0gGfAUFVX3lxTE05OWNuZXU5UzlqTnJON29kamtzSVExMUp2alRZbTVLbnB5NkRvZEdpYldOOWZ1d0RlVTNnSkMwTmhZZ1B4bThTLTVaWm5lS0d0NU1jT0NPc3FUeXF0N2szVTZYNl9mZXQ1cFktRWVlMlFGSFZvYjdZblZHYmlDTFJXMUx2N2JjRktHQmxUVzl1LXdEaklCdWdlN1B3bWt1bw?oc=5",
-        "date": "2026-04-14"
-      },
       {
         "title": "Hegseth, Indonesian Counterpart Announce Defense Partnership",
         "source": "U.S. Department of War (.gov)",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWkFYX1Nwc1R1b0I3ZHhfcFdNcXBlWmVPRUxVUHUzX24tTlViSWVoVmpCa1V3VlF5NmdxUnNSTFJCOTA5UGg5cGRRckRyaTV4S01xNl9fb19EUXZISm13Uk1IclB1WjNBLWhzTXVEVlFJODdZUHkxcTZvcnRxWWhDM0gycXZOZkxKMmo2aDdGdkk5eVkwMWlWSklVVlM2YWhrMjR5aXNrSmJsQUF0eHVBaEJUTWh3ZmpyZnZWR1A1bw?oc=5",
         "date": "2026-04-13"
+      },
+      {
+        "title": "Indonesia, US sign ‘major’ defence cooperation agreement",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcmlrLTFDRWM0S21sbFB6UHJPZm5GSmswVnd5ZXE3ZEo2UzlRdk44MFZQR2ZjcmNoanJkYXVDbjBLQVlDZTJfRXExNTUtMmUxbUM5LVhQdEk1Qlp6aTNqX2NxV1BhcExNTnZPUlI4Vkp1eFF0Ul9BVHZ5VEFIVEFlbGZCV3NneXoyUWFZYVRTTkRRak9rVEVJQWZn0gGfAUFVX3lxTE05OWNuZXU5UzlqTnJON29kamtzSVExMUp2alRZbTVLbnB5NkRvZEdpYldOOWZ1d0RlVTNnSkMwTmhZZ1B4bThTLTVaWm5lS0d0NU1jT0NPc3FUeXF0N2szVTZYNl9mZXQ1cFktRWVlMlFGSFZvYjdZblZHYmlDTFJXMUx2N2JjRktHQmxUVzl1LXdEaklCdWdlN1B3bWt1bw?oc=5",
+        "date": "2026-04-14"
       },
       {
         "title": "US and Indonesia Form Major Defense Cooperation Partnership",
@@ -5222,22 +5222,16 @@ const ARTICLES = {
         "date": "2026-04-13"
       },
       {
-        "title": "Indonesia, India sign defence, critical minerals pacts",
-        "source": "The Straits Times",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMlRZbHRHY2lwTE8xRjBGeThLOG9BaDlSSjZoSmgtR1pmbEUyTU04YXJPc1ZTam14aXVRVjBjUGk4Wk92RktpQlVlVlFsQzVSQjNZSV9nTF90Rnc1TWRrcmVEbzBORHpKUk52Y1ZhLXROanJLZVNNUzBOdDhydHBoaTJrUkNDWElZUk9haHhzLVloOGlxd2NwUXdZQ3VTM1o1aW1hVlY5aFJlOEZzQ09WU1VGeV9tdjNMWG9DNU9ocGpWUEE2TGdmNFNkd2NCR3dSVjlV?oc=5",
-        "date": "2026-07-07"
-      },
-      {
         "title": "Why the US-Indonesia defense pact is a big deal",
         "source": "Washington Examiner",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNTGdKSmhmYXpQcnpFaHgzT0M4dDlOWGE0R2xwdFVyeGMzV2h6Yzhncll2SXdMVThZeVJyX3BHZUJyNmR4ZWxWRWRhUVBUZXVFX3pKai1oNWcwMEJuS0RtRFBWR1AzUkQ2YUxBaXQ3T3BsUVpqWXgteTA5QkNidzd4ZHB2VVVyWUV1Y0V0b2NfMUV6NEpCdGl3SUJaYTV6M2JkMHdyOFRBbm1aTlB4YkZfbg?oc=5",
         "date": "2026-04-15"
       },
       {
-        "title": "Indonesia, US Announce New Defense Partnership as Prabowo Visits Russia",
-        "source": "The Diplomat – Asia-Pacific",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNaW40OEZWbEE3ZmJobXFZZjBVemp4a1ZzcHRWVE8xNEhPMkhSc0RYN2h6YmFfaThCZ0dhWmRQekI3NWhyOUJxcUZ3M1JWNG1NZ3prTmV1clMtNV9RVjlzeHFPZ2Ixd2VyRF9YYVE5ZVJyT2tRQjFKVTI2cFRwWGk4bmZXN2RLaXVtbTRPbmprcUdodkNhNWc0eFhYMGRoemwtZ0lMcVZR?oc=5",
-        "date": "2026-04-14"
+        "title": "Indonesia, India sign defence, critical minerals pacts",
+        "source": "The Straits Times",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMlRZbHRHY2lwTE8xRjBGeThLOG9BaDlSSjZoSmgtR1pmbEUyTU04YXJPc1ZTam14aXVRVjBjUGk4Wk92RktpQlVlVlFsQzVSQjNZSV9nTF90Rnc1TWRrcmVEbzBORHpKUk52Y1ZhLXROanJLZVNNUzBOdDhydHBoaTJrUkNDWElZUk9haHhzLVloOGlxd2NwUXdZQ3VTM1o1aW1hVlY5aFJlOEZzQ09WU1VGeV9tdjNMWG9DNU9ocGpWUEE2TGdmNFNkd2NCR3dSVjlV?oc=5",
+        "date": "2026-07-07"
       },
       {
         "title": "US, Indonesia discussing proposal allowing US military overflight in Indonesian airspace, defence ministry says",
@@ -5250,6 +5244,12 @@ const ARTICLES = {
         "source": "Deseret News",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb3UwTURpTUZpMnFSeHFBUkhkTlotdmVvZnJaLVNydlZfZDBZNzdxTnMzdzFCZThOcC1kaDZkanR1X1hkNXRobzJBUFNnWWtTVjRIQUVnU0RMTGpDR3QtVl83VlgxcXgwYll5Y2doYTd3RV8xUE05XzVuVk5KeG9Ccmd5Yk90X3A2bzQ1c1R0aw?oc=5",
         "date": "2026-04-25"
+      },
+      {
+        "title": "Indonesia, US Announce New Defense Partnership as Prabowo Visits Russia",
+        "source": "The Diplomat – Asia-Pacific",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNaW40OEZWbEE3ZmJobXFZZjBVemp4a1ZzcHRWVE8xNEhPMkhSc0RYN2h6YmFfaThCZ0dhWmRQekI3NWhyOUJxcUZ3M1JWNG1NZ3prTmV1clMtNV9RVjlzeHFPZ2Ixd2VyRF9YYVE5ZVJyT2tRQjFKVTI2cFRwWGk4bmZXN2RLaXVtbTRPbmprcUdodkNhNWc0eFhYMGRoemwtZ0lMcVZR?oc=5",
+        "date": "2026-04-14"
       }
     ],
     "france→indonesia": [
@@ -5266,16 +5266,16 @@ const ARTICLES = {
         "date": "2026-04-27"
       },
       {
-        "title": "France-Indonesia Defense Ties Take Off Ahead of More Rafale Jets This Year",
-        "source": "Jakarta Globe",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVUNiczZrbnhDTElzWGM2TDhTZHVBSFZqRFNJLVpkUERyOEV0c0V6ZFM5V05FQnVEdTgtaThIMVhGOWFqSXYyZld2XzhFdWE4VnA1QWNkem15NUFtakYtUTUxSnhEeC1pbWphSUQzZ2J4Wi1od3l1V2tNVHdSMEdMT0RYRnVjbnI1WHJ0Z0tDaFNubVNRQUZicTZQLXJTbllNUkJFRQ?oc=5",
-        "date": "2026-03-24"
-      },
-      {
         "title": "Indonesia Takes Delivery of First French-made Rafale Fighter Jets",
         "source": "The Diplomat – Asia-Pacific",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdE04elNYRllVR1l6XzFDdXVya3cyeGR6RlYwTXdwWUxBUl9kalozUmNPZXJObGpFaWlndExNY204VVBfY19EM3l0bzFXclhWOFVGUUtMTUxFWWMydGNiOUVfcUpPbko2bFFxcFlxZTl1MW9iOXNXR1FhWm5wcHhLUnhDMm5kREJ5NjZub0R5UEEzaGFpbDZTQnpKZk85THM?oc=5",
         "date": "2026-01-27"
+      },
+      {
+        "title": "France-Indonesia Defense Ties Take Off Ahead of More Rafale Jets This Year",
+        "source": "Jakarta Globe",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVUNiczZrbnhDTElzWGM2TDhTZHVBSFZqRFNJLVpkUERyOEV0c0V6ZFM5V05FQnVEdTgtaThIMVhGOWFqSXYyZld2XzhFdWE4VnA1QWNkem15NUFtakYtUTUxSnhEeC1pbWphSUQzZ2J4Wi1od3l1V2tNVHdSMEdMT0RYRnVjbnI1WHJ0Z0tDaFNubVNRQUZicTZQLXJTbllNUkJFRQ?oc=5",
+        "date": "2026-03-24"
       },
       {
         "title": "Indonesia receives first Rafale advanced fighter jets from France",
@@ -5303,12 +5303,6 @@ const ARTICLES = {
       }
     ],
     "united states→greece": [
-      {
-        "title": "Athens mulls clause to bar Turkey from future arms deals",
-        "source": "Euractiv",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdXBCTEN5d3VqU2RlSEVLcHd0R1MxSnpDeS0yQzdLTjZjUm9sRnRYb0xFX3pIc2F6U05RbnU0X1pxZUJMNW1yUUUzNWtlNWZkeFBzd1N6X1UydEZnNUQxM3A2X3JVN1hzcUc4NHBvd0ljZ0ZQelBlcDVlOWdLNFFBQldXMkp3WWNGeV9ReVl5VlA?oc=5",
-        "date": "2026-02-20"
-      },
       {
         "title": "Greece Moves Forward on Approving €3 Billion Air Defense Deal with Israel",
         "source": "Israel Defense",
@@ -5346,19 +5340,19 @@ const ARTICLES = {
         "date": "2026-05-15"
       },
       {
-        "title": "Weapons as strategy: Israel’s defense industry steps into a larger global role",
-        "source": "CTech",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2LVNENE9LT1c2bWlfZVg3WUVIUmVXMUNkM0hIcmxIa29iUC10WHZwS0swMjN3WG5ZMEtoMXotYW9pRWREMVBVQ0haLWE4a0NibnRvaUhFd0Jrb1lsR2FLSVBjNWdUMnM?oc=5",
-        "date": "2025-12-21"
+        "title": "Blinken says renewed U.S.-Greece defense deal to advance stability in Eastern Mediterranean",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQV9XTnpfS1E3Mklwb09OSmdwN3hubE84N1BydkktZnlqWk5QNWd1cE1Cemt6Ny01SlkzNElDOTFlbUlTMEhhX2dhVzJMcjVlNHZveVE2dmI3Y0piVEFrMk96MDBPTUI0NTBkMkhHem42X2lPcmRURzctZ3NKWEhXeFNnMjhLY0N5RXJLeXNnS3RBc0t5TmFIOEhEc2tDVUw3bU9TWkU1QnQxbEpmeFBDRHNnSXI?oc=5",
+        "date": "2021-10-14"
+      },
+      {
+        "title": "The Future of War Is Coming from India to Greece",
+        "source": "Global Security Review",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZ21tc0xYUDRZWVR3bzMwTWtvSHJURlRWWmthYlF3V2RNelNfeTZrMmZlbzRlVXp0dG9ya3U0VlJDV0RiaktRWWo2UGZIOTlzN2hPVUw2SWhWOU1XSXkzNzNkUWpseV91WU53cXVSdV9RLVpaR1JIZGVmQlZzSERPOHIyUG9kcDdGUVE?oc=5",
+        "date": "2025-07-03"
       }
     ],
     "italy→greece": [
-      {
-        "title": "Italy Vs Greece Vs Albania: Military Power Comparison 2026 Aéroport (vO0eSQrj6P)",
-        "source": "Mshale",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yVTQ2ZlFOSHlkeXluYko4dE00WG1LM01YUHg4RDZaTGZTNmJTb3hpdTRNUURrcFhkSUhISllJZ2xBSUFjV1lzcmw1Q0xSOXVENVhjdy1ONDk0OFdnbDhjVw?oc=5",
-        "date": "2026-06-29"
-      },
       {
         "title": "Italy and Greece deepen air defense coordination in the Mediterranean",
         "source": "Decode39",
@@ -5368,7 +5362,7 @@ const ARTICLES = {
       {
         "title": "Erdoğan, Macron negotiating major air defense deal before NATO summit: report",
         "source": "Turkish Minute",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNl9YX0xUaUJRNnl5Snl2WEhoY1cxOWJYdzBXdktQaFpXNkdyTkJLZWRmX2N3bjAtcWtfVkRGYzRqTGF3QWxPWmJVUDBhLUtaZG9SZWJqekptaWYxdU8zU3RsRmNHaEVOODBmZW14ZV9HMUpyRW9wdS1LdmZZRVlTOWdQMEc0REVKa01TdFZCVThuNFBEUnBidmpXT09mM0xFcjdLM25PMDB6ZW5aWW5RUURHTdIBuAFBVV95cUxOeXk5S2NTdy12elhFZERZTVFhMzZYMjMzaVhJOHpvTkZ2dFRUOUhWMXNRRThXY0hsc1BhZVZHOE9YU3ZCNlJhNlpvbWZsVTJxZTdGNTN4UmRjZFh0V1lWNG1iYTQ3NFhwS3FaTlEzdlF5SlNvclFFX0JtaU95SmhLa1BtQ0JEdDlldXBQUmEwMXFTV2tWUms5ZGNXU2JhWGp5aXJmbFFPTDRNSlhGcTJfZkZnR1BnR0Jh?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQc2RybzZJYXBHSWt1ZTlNR3FQdmVYbU5FSGEydmlUcm1ZLU9iM0dHcERxVzIzY19zcnFFaG5kVkFVTG1waXBBRkJVT09wX3pXSFlBTjRJSUxndnNnQTNLRWUwNldjU3Vsems2ZHpadzUwWl8yY0FGNDFnMTNvX1YwQWM1Rkkzc21NUDRFVTJNcnFfdnpRdnh5VnVZVDhjazExY3lMSG5iZlF6TjhZb3g5MlpSTjl2ek0z0gG4AUFVX3lxTE55eTlLY1N3LXZ6WEVkRFlNUWEzNlgyMzNpWEk4em9ORnZ0VFQ5SFYxc1FFOFdjSGxzUGFlVkc4T1hTdkI2UmE2Wm9tZmxVMnFlN0Y1M3hSZGNkWHRXWVY0bWJhNDc0WHBLcVpOUTN2UXlKU29yUUVfQm1pT3lKaEtrUG1DQkR0OWV1cFBSYTAxcVNXa1ZSazlkY1dTYmFYanlpcmZsUU9MNE1KWEZxMl9mRmdHUGdHQmE?oc=5",
         "date": "2026-05-18"
       },
       {
@@ -5378,16 +5372,16 @@ const ARTICLES = {
         "date": "2026-05-22"
       },
       {
-        "title": "Athens mulls clause to bar Turkey from future arms deals",
-        "source": "Euractiv",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdXBCTEN5d3VqU2RlSEVLcHd0R1MxSnpDeS0yQzdLTjZjUm9sRnRYb0xFX3pIc2F6U05RbnU0X1pxZUJMNW1yUUUzNWtlNWZkeFBzd1N6X1UydEZnNUQxM3A2X3JVN1hzcUc4NHBvd0ljZ0ZQelBlcDVlOWdLNFFBQldXMkp3WWNGeV9ReVl5VlA?oc=5",
-        "date": "2026-02-20"
-      },
-      {
         "title": "Greece advances FREMM frigate deal",
         "source": "eKathimerini.com",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQS1kZEROMFB0RnoxR1ZoNHdZT2ZEMGNtdWszaU1sS21oNkRFS1AyRG5ONnRlSzBfSk5CNVNTYjctR01CNUplNXlnc09jMHN2TEdGdW1Wdi1VU2xEQXRLOG8wZ2pkVHExNi04NC0zT2lBSHNzSFJid0lXUGlxaXozbDZSOXF1UmtoS2s5NWJUNEVTVlh6WkFsblZOYVI?oc=5",
         "date": "2026-05-02"
+      },
+      {
+        "title": "Athens mulls clause to bar Turkey from future arms deals",
+        "source": "Euractiv",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdXBCTEN5d3VqU2RlSEVLcHd0R1MxSnpDeS0yQzdLTjZjUm9sRnRYb0xFX3pIc2F6U05RbnU0X1pxZUJMNW1yUUUzNWtlNWZkeFBzd1N6X1UydEZnNUQxM3A2X3JVN1hzcUc4NHBvd0ljZ0ZQelBlcDVlOWdLNFFBQldXMkp3WWNGeV9ReVl5VlA?oc=5",
+        "date": "2026-02-20"
       },
       {
         "title": "FREMM: Greece finalizes the purchase of four second-hand frigates from Italy",
@@ -5400,6 +5394,12 @@ const ARTICLES = {
         "source": "Le Monde.fr",
         "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNUFItVU9tWWFRUkVmOHZxbWhuLUw2dEJxLUhzekNVOTA3cEZQOUhsM2JINU4tcjdkWml6TENIUmRYa01zamljdDZiOFZ2U2tla0kyMTdYYzhsNjBIMWdSa0RqQTdiU3F5TXBubi1SMDFOaEYyOHUwVElwN1Q2YU5GYzhldm5Uc01uS0RHZXdRNFVyZ2M5VnJWZEljMDFlajN1aEo2M2dKbGg2Z3lZWFJqclhFamFQdGxIbUVaaEZ1THFQTGo4MXc3UE5IMTEzWm9jODZBWW9vVkRiUkdtdHgwekllREZXQXRCajJSaA?oc=5",
         "date": "2026-03-05"
+      },
+      {
+        "title": "Greece in Talks to Sign Frigate Deal With Italy in April",
+        "source": "GreekReporter.com",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9CcVJwQnMyMlRNdlhwWF9oUHdUdmlXTjVMeGtqaHl1NjlDRnF3T1VjeGlpQkVKMEhTZm9hbGVkaXFiUlZIZE9uSFJvVy13b1N3MkZSSFZtR1g2Zk5qU2o4QS1ZQ2puOXJCdHZzSmdpeVFEM3hOcDRpVWcxUHFhb0E?oc=5",
+        "date": "2026-03-09"
       }
     ],
     "united states→norway": [
@@ -5410,16 +5410,16 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
+        "title": "DLA, Norway discuss common concerns, supply chain resilience",
+        "source": "dla.mil",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWElpMmZsaFg0SURHQlhrUWt0SEFQT3F0Skpnb3Zpc2V0RTJ6MjA0eFB0azEtdUZjTFJDeGc5cDh2VTRwZUhKZTVvMl9QcG81Q3JPVWwyTGhpMGVweHJnbkxNTnBJRkJCLXdaTGtYNEtCeTNfcUZOenUtcTB5Y0NuUGZYQ0MyY2h6X1dfRy0xNkRyQTFhdGV6Wjd4QWtGZzUyTlB4WnVMbjdGam5qSjF0REY1MEZkMEhCODdSeXlLcWlfZi1sWkJB?oc=5",
+        "date": "2026-01-12"
+      },
+      {
         "title": "US denies role in Norway’s cancelled missile sale to Malaysia",
         "source": "South China Morning Post",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQa1BhNUpHc2Z6YzlSUkt3YzdIalAxRWp1c21GY3Y2U1BKY0xaUWF0WXNSMm94bGZ2OHJ4Y0RsWmZXYm5maXhvQzVMYWlWY1diNThUUldNOEJ2WTZuN2xHa2hWd3AzM0ozVHdLZzZEeGVlbjdNY0hrTWNlaHVobWtHQWdlZm8tR2hWUklpajhTaVJvMDJXQ3VXLXlCRm9uekJxZHpKcVhSTWh5dkpwY0RN0gGvAUFVX3lxTFBZcUYtTl9mNzl0VnZ5VzFvS2JmVHBiRTZLRFU0OEx6bXVpTm5sRjVSNUtlZnpaUGpmRDJabS1aQXJwMUhpc1paSzFHb1kxbl82MVZjSkttWnZBRmtKd0J2S2d3VDZSWWVZQXMwWHRuVnNheDNZOVNoRm5uUTVYTmQ4OTNUaFpEVWJiNnUzOHZxTmFPeGFTVHVpU0t4dTFoMHNoVEJZM2plU1hYZmppckU?oc=5",
         "date": "2026-05-21"
-      },
-      {
-        "title": "Norway cancels Naval Strike Missile deal with Malaysia, raising concerns over defense procurement stability",
-        "source": "Defence Industry Europe",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOQUV0ZnFTbjgwcTFEZTByODJrTkxiR3lyeDBPaENydE1kWnRPMlZrYzloTUFkcFZyNVFKNTFNQ09wWnpSY2k1NWFjWVJENlBJQ1Q1cEpVbjBmb21GMEpxRzh3VGNtNmRkaTJOVUo3VUpLdlVmenZqZFZOMEZJU21HOWtNVXpxU0J5cm1YQW1EZW9Za2swcWt5ajhOaVZmUTBRSmtURjFMN3JQTktRVEhTQ3J2VFRRUE5yMjUxTTZRamdnSUF4RUMzWnJqeDZXdjlu?oc=5",
-        "date": "2026-05-15"
       },
       {
         "title": "Key US defense projects with Norway, Canada continue despite tensions",
@@ -5428,10 +5428,10 @@ const ARTICLES = {
         "date": "2026-01-22"
       },
       {
-        "title": "Norway backs Ukraine’s air defense push as Russian missile threats intensify",
-        "source": "The New Voice of Ukraine",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeE9ER2hpV2JKbllZd0dBbFpoUXFvWW5XZnc0Z1lXTnUxdzZLMGE5dVYzblBTTUVPZ2xTZXZldEx1bXJUanQ4RWQxY0JINmlkVGlESTg2TjZId0RCZGdnb3UyczVaN0o1S2FHb1Z5cmZ6SUN2Y0VwTzZxWUJHWXRLYkU3VUoybWs4clNCLUR2QXluaTNoaUoxWDU4dXhoNXZWLXhER2gza3h0VlBYM1dMWXd5TW5HcGRYMTBEdXpkRW5BNjk5MmxN0gHDAUFVX3lxTFB2MW1UYmFEYVh3SVdKSmhweXEtc0dPZlJET3hfMm5TY2R2VXNVZU9YTGRpRThKbVZlRl9FVk5Fam54X1ZDUU80d2o3U01ERkJRQWpTU0tpbzg1UGx2bEFJRGN5SmlJejRfNW9DN1JBU1hGTGI5aUNCaDQyZFY3b3k0aGR6cFJHZmtUU3pRQ2NWWmVsOTc4X2N2aVJTNmstQXZtRmZZcWNWNHBheFhscFFGYmJmS1FFTkNwSXU4eERDYjhSQQ?oc=5",
-        "date": "2026-06-03"
+        "title": "France extends nuclear umbrella to Norway",
+        "source": "China Daily - Global Edition",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNR01fRGg4UUJSU2hPWDVDbUhEMnc5SnJobUQ0VjRJOG9QcGdiV1BBZHc4bFg1WkIyYmtEUFVIZ0NhcXBPSUhKQzlWazIzUHJxVkFDbmJpNks5YmJEd09Xd0NFRVN2UXJielE0RzJpZEZaVUVtZHpHVHNWdVVCRWx6YTZB?oc=5",
+        "date": "2026-05-29"
       },
       {
         "title": "Norway Supplies New NASAMS Air Defense Missiles to Ukraine to Counter Russian Missile Threats",
@@ -5440,16 +5440,16 @@ const ARTICLES = {
         "date": "2026-01-22"
       },
       {
-        "title": "Norway obliged to speed up refund for canceled missile deal – Malaysia",
-        "source": "Inquirer.net",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMUpyZU1oZ2FNZUU0eTFCaklSMFM3QnZjVmQ0QUp0THg1NHQ2NFgtbTRFQXowYzhSMUx5RVN2M0h3MG5fekUzNi1vMXRoLWZHU2VwYzV5ZWRKaWxoQjJkME0yVWdsMFJtdjhmakJFTy1tX2lOY0tielNkWmtIZmgxaEh3X1JIcDY3RDVOMk9vRGJyeURtMGNoVkU0ODJ5UDFUVVc2QXF2ZXpoSzdNSlHSAbMBQVVfeXFMT1p4SmV3azhsWWdlX0RiOXIxZmw0NkhXTDJRUVBiWnZVbEJDdVBMLTFiNEFVWTZnQ2E2ZF9xZU92a2JPZjk1MG1ueXRwM05kanV5TDJBM2pRMlhkQWU3TWwwSmcyQ2lES1c4MXUzbmdHRk81eGhoTTgydXpGcFVOaFJOSm9xYTdSUHNackRvZWk4SHluN2VYVjZWZlp6Z2lPRWszWnNHRGxBaUhyQlB3THdxU0E?oc=5",
-        "date": "2026-06-02"
+        "title": "Trump’s Claims About Greenland",
+        "source": "FactCheck.org",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE02cUtYUXdEa2o4clZlYnFjaXNvRDNHbExwYlNoWHZibGNLbFVTSk1mM2kxZVhSWUVjeU42b2ROa1k1Q1piaTg5aWxFb2dUdERPSXJkWkdtU1U4bFpvby1WTGM0MmNEYUxKX0JZRW9BSzJqdw?oc=5",
+        "date": "2026-01-22"
       },
       {
-        "title": "Norway joins France’s nuclear deterrence club",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMXlFZk1faTl3RkhVZjBaamZXb3ZwTUVqQllkM1RObmJPcEExQWpNUUs2SlcyS1FwWHpyUmY1N19QS0pPa1ZjaV8xNlJ3bno0Smh6bW1kSEJNMWxrX19GYzF4eXNyZW41SVE3T1JPZV9Od0d5eGE0SW5meDdnVDA3NU13?oc=5",
-        "date": "2026-05-27"
+        "title": "Norwegian PM warns nuclear treaty expiry a “dangerous turning point” [VIDEO REPORT]",
+        "source": "TVP World",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOd1Q0RGdlc2M4UVRmNVBVQ2JNSkozN3dUalJQNm1sQnpuZFF0UF9yODMybUJ1RktVbld0c3dqbkVEeDFTS05DX09fanF6bDV1aFRuRjNMcDZ3eG5RTjcwUzNCUWE0endraHU2Zk00RE5FOWVJMjlfekJxNkIwdjZCSjVBZ1drUldMd2xiSHZWeTVKSkljQVVjT2dxdHRWZTNsdUxjR0tYc0d6bFlhUmppMTV3?oc=5",
+        "date": "2026-02-04"
       }
     ],
     "italy→norway": [
@@ -5472,6 +5472,12 @@ const ARTICLES = {
         "date": "2026-07-08"
       },
       {
+        "title": "Nations withdraw some equipment from NATO Arctic exercise amid Iran fallout",
+        "source": "Defense News",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbGNZYTVWLUdya3BSY0VsVlYwVERKZTdEQlVRZVFWZVlLdWNUQW9MdXlwQjRHa3pVNEY5YjZtRS1BTmdtNm1ycFZ1c1VROERCZnVPX0JqZ1BZZkx5b2hkX0cxS3pOcE5TVWNvR0s0dnJmRlVGM3ZSa1dTbUV5c3ptWlRVWUJfV3hPZkJSUS04bGhxM1JMOEJTU1hOVkUtRFhZeFpLRUg3eVE2YnlheDlUcjhiUUhSMmNuODdyaEtfQ1JITEN0dXBXSA?oc=5",
+        "date": "2026-03-12"
+      },
+      {
         "title": "Ukraine Launches CORPUS: A New Multinational Defense Procurement Coalition",
         "source": "UNITED24 Media",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQV2R3NXoteHJRcFNKRjZfOHpVaUlnbXFhajlnYTU1QzFBREhFbUEzNmZCOTgyMUE3WTZlNnBIY3AwbWk0dTNuS3BNZlVhbTZ4T1NhakJIcW5HY0RGY0FoUm10dkE2QXZha3Y0dDc0RHhjY3RvUmRRY3RhRndWMFM5TUd0YmtnVnFkYzFrZHVJc0JvaFc3Z0hya25WWWEwOUV1ekZQZmFHWnNobXpkRjFsVGF4UDQ3VGVKOUNSZw?oc=5",
@@ -5484,22 +5490,16 @@ const ARTICLES = {
         "date": "2026-04-15"
       },
       {
-        "title": "Why Italy matters in India’s new Europe strategy",
-        "source": "Decode39",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNDlIQU9RRjRKMDY4MnFWd2I2cVVOeXNSMV9YTjdXQXpmVDktdDdJeFl5WHlvbkUya0x1Ul81b0xzZU5kX0lHclNvQ3kxWml2QWJLVWlBTWxmd2lSS08yYTc4QTJyRGtaR0MwYVNlQnlfenNJQzMyd0NzNjU3bkcwWVdsUVdjSnU3MXBETHAwVEJlR0tmdHNqQQ?oc=5",
-        "date": "2026-05-21"
+        "title": "Ukraine Signs 10-Year Defense Export Deals With 3 Middle East Countries",
+        "source": "Kyiv Post",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5rbnBfV0VCbVE5empZR3RBTkl0NVJFaUtfN2JHQ2YtajBPMUtQTXo5Y0w1RklHZy1KUTlpNkxfUXRkOVNMeF9wYW11cw?oc=5",
+        "date": "2026-04-20"
       },
       {
-        "title": "Ukraine and five European partners just created a defense-buying coalition, and the hidden target is Russia’s supply advantage",
-        "source": "OkDiario",
-        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQaWpuTU51VjNNRGlLZzhPVG5lRE9UeGFXc3c2UENQS25WV19jQTc1RWdmUUJTUHlHNk8zMjhGUnMtLWtDTThKbERXZXdBQ2ludVdzaUU1ZjhieGwzd3lBcUtnclVoRFprTWhrSF9OQzl3Vnl3amtIcV82dFVITUxDQlBvbkxsQmdKbjBfbHZLOURtbEJyUXpMdXVrbXBmaGxScG9GYVlpSE03TWJtd00wVWpGaERKZ1dlbmRHUkdtcDU2SElOZzI1bm9QUGhxUmJodElmLXI0VFhWcGN0NFM2OWYwMVRLdXVfN2VGbnVNdDhSQQ?oc=5",
-        "date": "2026-05-09"
-      },
-      {
-        "title": "Nations withdraw some equipment from NATO Arctic exercise amid Iran fallout",
-        "source": "Defense News",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbGNZYTVWLUdya3BSY0VsVlYwVERKZTdEQlVRZVFWZVlLdWNUQW9MdXlwQjRHa3pVNEY5YjZtRS1BTmdtNm1ycFZ1c1VROERCZnVPX0JqZ1BZZkx5b2hkX0cxS3pOcE5TVWNvR0s0dnJmRlVGM3ZSa1dTbUV5c3ptWlRVWUJfV3hPZkJSUS04bGhxM1JMOEJTU1hOVkUtRFhZeFpLRUg3eVE2YnlheDlUcjhiUUhSMmNuODdyaEtfQ1JITEN0dXBXSA?oc=5",
-        "date": "2026-03-12"
+        "title": "Zelensky meets Meloni, touts upcoming drone deal with Italy",
+        "source": "The Kyiv Independent",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1kQ0t0OGdmSVdRWV9LUFJjRUdMdE5XZ21XSzNVc2RvVC1EQ1hURVFsVHM2SV9kcG5iQmxLS096dkJwcDZ4MHJNMUh6dmZPZEYtQkZQZU1RajB3R19mOHVJU0RQSzFYV05PTGNIY3ozWUs?oc=5",
+        "date": "2026-04-15"
       }
     ],
     "france→china": [
@@ -5516,10 +5516,10 @@ const ARTICLES = {
         "date": "2026-02-17"
       },
       {
-        "title": "China tells US to 'immediately' stop arming Taiwan after Washington approves arms package",
+        "title": "China threatens 'forceful measures' over $11.1 billion US arms sales package to Taiwan",
         "source": "France 24",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVENpNi1zMmh4MU5fb2E4WUNwYlh6VU5mYjVkaTZfYVJYeVRPZ1MyMTlFUkpmbTFKSU1WRTBmRHpKdW5GTEpEM1EweXc5ZTBSUzZBZDZuS3B3bDNYTURuNEFaMnFlN3N6bnhjUnhDQTNWekVha3dtQmJmZFdIRFR3VGNZM1c2Wk9OSjd5SVo0N1BiX0hnUDgtSDhCVVMzQVVwUzBHN2xKVjZnM0VMbDRkQkE5TWxsNU9uSzJV?oc=5",
-        "date": "2025-12-18"
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWll6MzdDbmN1amdONWF5RmQzNnpEelUwUWFfYzZPek1qOGd0TkU2aGVqamM1Z3RaYUw1b3ZOVjB0aU1vZDlRYW5vaVlWWnlrcXFSVzNaYWZ4WXRNQS12d3dZWnBhSEx3dldfLU9MWmhpZmpIMVREdXgxUFI1eVpwUElwS2pZbThrcGZIbkJoa21JdTgwZXU5TmR5R3Jyb2t5eHJWS0VJbnJBT1Axbnp2WlhFTllScW5ITFVEYi1VSFpyeGRPOUZ1Z19YUDhEdw?oc=5",
+        "date": "2025-12-19"
       },
       {
         "title": "How the Trump Administration Can Limit China’s Arms Exports",
@@ -5612,7 +5612,7 @@ const ARTICLES = {
       {
         "title": "Erdoğan, Macron negotiating major air defense deal before NATO summit: report",
         "source": "Turkish Minute",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNl9YX0xUaUJRNnl5Snl2WEhoY1cxOWJYdzBXdktQaFpXNkdyTkJLZWRmX2N3bjAtcWtfVkRGYzRqTGF3QWxPWmJVUDBhLUtaZG9SZWJqekptaWYxdU8zU3RsRmNHaEVOODBmZW14ZV9HMUpyRW9wdS1LdmZZRVlTOWdQMEc0REVKa01TdFZCVThuNFBEUnBidmpXT09mM0xFcjdLM25PMDB6ZW5aWW5RUURHTdIBuAFBVV95cUxOeXk5S2NTdy12elhFZERZTVFhMzZYMjMzaVhJOHpvTkZ2dFRUOUhWMXNRRThXY0hsc1BhZVZHOE9YU3ZCNlJhNlpvbWZsVTJxZTdGNTN4UmRjZFh0V1lWNG1iYTQ3NFhwS3FaTlEzdlF5SlNvclFFX0JtaU95SmhLa1BtQ0JEdDlldXBQUmEwMXFTV2tWUms5ZGNXU2JhWGp5aXJmbFFPTDRNSlhGcTJfZkZnR1BnR0Jh?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQc2RybzZJYXBHSWt1ZTlNR3FQdmVYbU5FSGEydmlUcm1ZLU9iM0dHcERxVzIzY19zcnFFaG5kVkFVTG1waXBBRkJVT09wX3pXSFlBTjRJSUxndnNnQTNLRWUwNldjU3Vsems2ZHpadzUwWl8yY0FGNDFnMTNvX1YwQWM1Rkkzc21NUDRFVTJNcnFfdnpRdnh5VnVZVDhjazExY3lMSG5iZlF6TjhZb3g5MlpSTjl2ek0z0gG4AUFVX3lxTE55eTlLY1N3LXZ6WEVkRFlNUWEzNlgyMzNpWEk4em9ORnZ0VFQ5SFYxc1FFOFdjSGxzUGFlVkc4T1hTdkI2UmE2Wm9tZmxVMnFlN0Y1M3hSZGNkWHRXWVY0bWJhNDc0WHBLcVpOUTN2UXlKU29yUUVfQm1pT3lKaEtrUG1DQkR0OWV1cFBSYTAxcVNXa1ZSazlkY1dTYmFYanlpcmZsUU9MNE1KWEZxMl9mRmdHUGdHQmE?oc=5",
         "date": "2026-05-18"
       },
       {
@@ -5622,22 +5622,16 @@ const ARTICLES = {
         "date": "2026-04-19"
       },
       {
+        "title": "U.S. Deal: Iran must never acquire nuclear weapons, West warns",
+        "source": "Peoples Gazette Nigeria",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOQWR6RHpZdHcwaVFqNHB5b09oLW81UDQwWG51TzNMRWw2NTZQUHA5N1FzQlh0UEZobDBLb25IWDhPanVGTVJvLXZjejY0LXBPLW45d2xUdm5POHJ3VmlGVEZtYWxXZElneXJpX2dNRzBoTVNlWWxmVEx3NU9wZzgxSHdlQlI1ckhtRTE0?oc=5",
+        "date": "2026-06-16"
+      },
+      {
         "title": "5 EU countries call for tougher trade weapons to tackle China",
         "source": "politico.eu",
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSDFKSzd5Vkw2bHB4cG1Cc0VMWTN5QjJ1bjFFRllSeTVoYXdPSnlIWjFLb0Z3eVdfbHhOWWI3aEdfMmxwMC1OMlNiREp2a2hacU5sRTFoUUE3YWh2VFN4Vmw5cU9hNTMzeWJGeU9rSHpWYVVqcmdNZUcyYWwwcUJZOHAxM1BGQQ?oc=5",
         "date": "2026-05-25"
-      },
-      {
-        "title": "Italy and France Push Back on US Arms Initiative—But Not for the Reason You Think",
-        "source": "UNITED24 Media",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWnRfXzNnLTE3X3dPWU1oVDZSM3ctSXNBYVM2MWxSZlFDZV85ZG9odWgyclJuRmFvZUl0TC0wRnNwZXAtX3B1VFdhbGNLTVhaUDdsOE5oVkxaZUx0anZyTFZGejZIM3B1UVFvdkJCMUtsanJ4Zm5WRWg5YjY2RmFQdlBPLWUxVGVuemh3ZlB0MV9zck5SREUxa1JUN0gzUmFLdmd3S2VMdnFCRktkT2syMEt0MzRBUWNSeXlpZkhlb2N1dw?oc=5",
-        "date": "2025-07-16"
-      },
-      {
-        "title": "France, Italy reportedly opt out of US-NATO arms deal for Ukraine",
-        "source": "The Kyiv Independent",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYW84V1BwWFZHRWRVZHhzcGJBYmdhbGY1Und2ZDZGUHBiZE45RVlaNV84WVdyajUzRmxYbG5UY2dObEluaGRESmZBVXB3eldVcGF6OWVCUU1uUk02UjFIaE1jQWFBT0tjTEY2NzJJcW0zc3VSYUNGZVFQdHFFUHI1VmRlNHJ4NkYyZ0VTQ2xManJYWWpBYnc?oc=5",
-        "date": "2025-07-16"
       },
       {
         "title": "Israel is losing its last friends in Europe as diplomatic collapse deepens across the continent",
@@ -5646,25 +5640,19 @@ const ARTICLES = {
         "date": "2026-04-14"
       },
       {
-        "title": "U.S. Deal: Iran must never acquire nuclear weapons, West warns",
-        "source": "Peoples Gazette Nigeria",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOQWR6RHpZdHcwaVFqNHB5b09oLW81UDQwWG51TzNMRWw2NTZQUHA5N1FzQlh0UEZobDBLb25IWDhPanVGTVJvLXZjejY0LXBPLW45d2xUdm5POHJ3VmlGVEZtYWxXZElneXJpX2dNRzBoTVNlWWxmVEx3NU9wZzgxSHdlQlI1ckhtRTE0?oc=5",
-        "date": "2026-06-16"
+        "title": "Erdogan and Macron Discuss Major Air Defense Deal",
+        "source": "BGNES",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNV3BiRG9Ra25tdU95YTNvSnRUUEVjTE4xWXFadE9CeFdGR040U1NTM2syNTVHajVrZ2RzZVZRUW1DWmtfNUowZ2tPMTlMMW00ckpudmFBQXNpWE1LNFcyelBQcVF2NThJQktqbUdsMEZtcDFsMHpFLVFfeHNha3hEWlNOM3JXdlk?oc=5",
+        "date": "2026-05-18"
+      },
+      {
+        "title": "UK spends over £400 million on long-range weapons as cooperation scales up with European allies",
+        "source": "GOV.UK",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbC1kQVJzRjFRNjQ3bmdXLW1FeU1ncld0eFdhT2lzOEtGSVNPaVBXQU1lblYyclZHdVk0RXJlamFRTjRoRUpCVGhqaWs0TjNkZkFiTEZpT1BCT1pqNUM5QUdPNjM4M3FqTVpabTBDM2s0ejE1QXozemZXQjR3eFNMVWpLajlGcElRblFabkQycWRkRVVqWUV6RV9kVlpzeGg4OFVmN1p5YzZlUXVHZVFoWHR6M1lOLXBmR3YtNTRneHQwUW4ySEFxVw?oc=5",
+        "date": "2026-02-13"
       }
     ],
     "germany→italy": [
-      {
-        "title": "Germany and Italy, EU's top manufacturers, unveil pro-industry alliance",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVF9QZFZENXBqUFFpZjBYS1hJSjZCazBkdXp0V0JPejdqMmZEVldwZE9SM0pxZjNKd1VXTkF5ZllYWklLcEhLcGRSNXkzcTlqcW9LQ2liQU1oR09rRkhkU3JrYkRvOHhHdi0tQmwzNTJXQ2RrUTRWNm9Fa0pmRE9xY01zck05eGNIVnQ3Z08zYnZrbXN5X3h1cHBnbzNJdm1taUwzZHJtVnZQTi1nN0VQZ0xhbElVbXBjM1d2X3JXY2RHOFBhOWc?oc=5",
-        "date": "2026-01-23"
-      },
-      {
-        "title": "Italy and Germany double down on competitiveness and defense at Rome summit",
-        "source": "Decode39",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUFVTVVlhS1FHem1XLXdLZl9fbXNaVDlET2VKNGxPYXJYNnJpOElEV3lnWXpIMTdTTGY5Yl9sTTQ0UE9lN1NFazVyQnhZREFTN3NwRXpWa18xeDh0MUFiUUhZcndCY1JEVkpzVFd0RmNtbmpaZ2d5aFNiRmxHcUNadXlSVHB6ZVZibHJYdEwxRGVHeFBrc3ZZdmhmNnlvMXpzaVlNdml3?oc=5",
-        "date": "2026-01-23"
-      },
       {
         "title": "Another drone deal: Italy and Ukraine seek tighter defense ties",
         "source": "TVP World",
@@ -5672,16 +5660,34 @@ const ARTICLES = {
         "date": "2026-04-15"
       },
       {
-        "title": "Germany news: Berlin, Rome sign cooperation agreement",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeWZoN0s2bnAydTZvSlEyb3BlamVxa2dyUVMxUUlvekRHWmZvTkw3T04xZDlGemp1U2N0eDYyOFYxUlJLbm1RenZ1UUtCZ1hvYkhHZF91RDl3YzlJVUFLajlFWldMdlU2cklUdDc3UkNuOEo5T2hZdzFvNVZXLW5MSXhDbHJOcnZacmVzLXlsWEY?oc=5",
-        "date": "2026-01-23"
+        "title": "U.S. Deal: Iran must never acquire nuclear weapons, West warns",
+        "source": "Peoples Gazette Nigeria",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOQWR6RHpZdHcwaVFqNHB5b09oLW81UDQwWG51TzNMRWw2NTZQUHA5N1FzQlh0UEZobDBLb25IWDhPanVGTVJvLXZjejY0LXBPLW45d2xUdm5POHJ3VmlGVEZtYWxXZElneXJpX2dNRzBoTVNlWWxmVEx3NU9wZzgxSHdlQlI1ckhtRTE0?oc=5",
+        "date": "2026-06-16"
       },
       {
-        "title": "Italy gets first Lynx fighting vehicles, due to reshape the army",
-        "source": "Defense News",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTGJWRzlfMG5HZWpJU1QtV1JJUjhMdHZoRHU4VXA0akp3Q0VSdVh2dVRpeC0tendrLW1VdVdZUWJ3VjJnMnplTnp3LUhZUWpPRlBISWFfRXo0LUF0SDVtbnB0YnRNcWstOTRFdEFjMjB4RWtVeXBZeU1fdkRRRVoyOWxCeUl6aXZHTnpEV2hhUW94Z0dQVHVPM2p0M1JtWFM2alVQeHl2TUhvZzdudnpQU19RdVhhU1Ri?oc=5",
-        "date": "2026-01-28"
+        "title": "Israel is losing its last friends in Europe as diplomatic collapse deepens across the continent",
+        "source": "Ynetnews",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iSjQxYU53UTMwQnRBS3VlYWktdWNWSVY4c25aM3hXZkJwWTJuYzd2VnI1N3NlNllWUGVaQ3RQanF5MTh2V3QwdW5xdElhNVptLXBmcnRR?oc=5",
+        "date": "2026-04-14"
+      },
+      {
+        "title": "Ukraine Signs 10-Year Defense Export Deals With 3 Middle East Countries",
+        "source": "Kyiv Post",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5rbnBfV0VCbVE5empZR3RBTkl0NVJFaUtfN2JHQ2YtajBPMUtQTXo5Y0w1RklHZy1KUTlpNkxfUXRkOVNMeF9wYW11cw?oc=5",
+        "date": "2026-04-20"
+      },
+      {
+        "title": "5 EU countries call for tougher trade weapons to tackle China",
+        "source": "politico.eu",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSDFKSzd5Vkw2bHB4cG1Cc0VMWTN5QjJ1bjFFRllSeTVoYXdPSnlIWjFLb0Z3eVdfbHhOWWI3aEdfMmxwMC1OMlNiREp2a2hacU5sRTFoUUE3YWh2VFN4Vmw5cU9hNTMzeWJGeU9rSHpWYVVqcmdNZUcyYWwwcUJZOHAxM1BGQQ?oc=5",
+        "date": "2026-05-25"
+      },
+      {
+        "title": "Germany and Italy, EU's top manufacturers, unveil pro-industry alliance",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVF9QZFZENXBqUFFpZjBYS1hJSjZCazBkdXp0V0JPejdqMmZEVldwZE9SM0pxZjNKd1VXTkF5ZllYWklLcEhLcGRSNXkzcTlqcW9LQ2liQU1oR09rRkhkU3JrYkRvOHhHdi0tQmwzNTJXQ2RrUTRWNm9Fa0pmRE9xY01zck05eGNIVnQ3Z08zYnZrbXN5X3h1cHBnbzNJdm1taUwzZHJtVnZQTi1nN0VQZ0xhbElVbXBjM1d2X3JXY2RHOFBhOWc?oc=5",
+        "date": "2026-01-23"
       },
       {
         "title": "The rise of ‘Merzoni’: How an alliance between Germany’s and Italy’s leaders is reshaping Europe",
@@ -5690,25 +5696,13 @@ const ARTICLES = {
         "date": "2026-02-11"
       },
       {
-        "title": "Israel is losing its last friends in Europe as diplomatic collapse deepens across the continent",
-        "source": "Ynetnews",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iSjQxYU53UTMwQnRBS3VlYWktdWNWSVY4c25aM3hXZkJwWTJuYzd2VnI1N3NlNllWUGVaQ3RQanF5MTh2V3QwdW5xdElhNVptLXBmcnRR?oc=5",
-        "date": "2026-04-14"
-      },
-      {
-        "title": "EU split over whether to let Ukraine use €140B loan to buy US weapons",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVnV5SEtubHBpRVlDbklrYlZSSjZmOU9qbzhGcjNCZUV2eHlnVkNKczA1RVpzOE13V2VMSGtfYjczdGt6Q1ZWck9EVlVkVWpOaHJYNEQ3aDloSjlfTlRlYXpHUHh5MzAtenUwRzByM0VaU3BtYVJPQ09qc0VoUy1OcW92Zlh1UWhzMkxZRVpxeW4?oc=5",
-        "date": "2025-10-22"
+        "title": "Italy and Germany double down on competitiveness and defense at Rome summit",
+        "source": "Decode39",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUFVTVVlhS1FHem1XLXdLZl9fbXNaVDlET2VKNGxPYXJYNnJpOElEV3lnWXpIMTdTTGY5Yl9sTTQ0UE9lN1NFazVyQnhZREFTN3NwRXpWa18xeDh0MUFiUUhZcndCY1JEVkpzVFd0RmNtbmpaZ2d5aFNiRmxHcUNadXlSVHB6ZVZibHJYdEwxRGVHeFBrc3ZZdmhmNnlvMXpzaVlNdml3?oc=5",
+        "date": "2026-01-23"
       }
     ],
     "israel→philippines": [
-      {
-        "title": "Israeli defense firms lament a chill from erstwhile client Philippines",
-        "source": "Defense News",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPVkRWTENpZkJmbXpOQjB4dVpQWDktRzZhbzU3aUxMZk5IejBYXzdjTnA3SGZnMGlFQjRWTWplaVc5aERCMW5kNk5tekg3LVJpT0puWlBsdS1oR2lLbVZyR3N5ekhUT2JQcFZPT1dKWHJMRHJjU2V2eDFYOXd0WVFkUGtFLTE0UFVhcEdaZ3pxam9lTkFac0RXWWZURThpcl9XSnZyM3p2R2FZWlZLSnZBcThnSkF4NkdpcWRfZ0JMWGJSX183S1p5R1pDVVE?oc=5",
-        "date": "2025-05-27"
-      },
       {
         "title": "Philippines says no new military acquisitions from Israel amid war in Gaza",
         "source": "Anadolu Ajansı",
@@ -5728,28 +5722,34 @@ const ARTICLES = {
         "date": "2025-08-01"
       },
       {
-        "title": "Philippines freezes Israeli arms deals over South China Sea standoff",
-        "source": "CTech",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ZREJidDRiZHBDQmQ3c1kxc2hIWHdnMnVBcVhXMk1yRzJYZXlZU2NDb1lZZnEwai1LZmh1TmhoSG9mM193emg1aXprWDI3eVFEaW1XcjNERG9Id2ZodExvamdGWEJDUFVKRnc?oc=5",
-        "date": "2025-05-20"
+        "title": "Israel's defense industry loses major Asian customer",
+        "source": "Globes - Israel Business News",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSnNGeENzTENla3pDTDhxSTkzSkJhZWJMZXB3MU53R1hybUtheVEtUlFudGtzXzN6ZFVKVG12QXM2aWR3T1RUSExpanYxeGE1NW5fX3RDRm9IZVFwQkJyVlBQb0FqLV8xMWtaa0hON2J4cFgtOU9PU0FPWmFKREphS2YyRmVLdjBVLWxaU2hZUUhBX1NBM1drOFVUWDJPdw?oc=5",
+        "date": "2025-09-17"
       },
       {
-        "title": "Philippine police are executing people with Israeli weapons",
+        "title": "Judge fines petitioners for challenging Israel’s arms sales to Philippines",
         "source": "+972 Magazine",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBjcjIwZ3RydVVlMXFxNk1fZS1FaVFFMWFuMWFuSEhQT3dUa1I2b0FNSTNmcV9sM3FHS1FKM1N5QzFHNy1OekhMZksyWWtQc193T2FYanFKSkpXOVAwVWxQNnljZTNsVDZDaGJz?oc=5",
-        "date": "2019-08-19"
-      },
-      {
-        "title": "What Israel can learn from the Philippines vs. China",
-        "source": "The Jerusalem Post",
-        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9VZDdkSXprSUJ1d3liOTJtRXNZWHgxSWphT1JxN0lZeDNwazVXNkVHanVuckZucUJqVDlHTFh3aGJUQk44dm5ob0c3Y3pHdTZDSWVUc0dJQUVzOWxwbnlNT1dZMA?oc=5",
-        "date": "2025-12-07"
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Pbldzb1NxM2w2dlY1NzkzVzdOelphMHVBRHVHcjlDWnl5dFp6Nk80aTJxc01aM1N0dllzUnNDMXBOVk5zeWRFeDVfQXh4aEpZWEUySDNaVnROOXBFaEFvek9TV3JoVjgyNzhzRw?oc=5",
+        "date": "2019-10-17"
       },
       {
         "title": "Philippines pressing Israel to take sides dispute with China",
         "source": "The New Arab",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNa0Y4bkxMdUtPbFpBZWNuZl8yLVNhZWJ5MkZzSmpkcXJ6SHA1UUxjaEZiaDQ2Q0xtSnlYZmRGMWNWUmtrZDZUa2w3S1NsOUZWZDY3TGc5ZUFtN1lDeWY1aWNrQnp4SmJ6WU1EM1Bndld4ZDAxa2c3RmtETTNfV1N5QnI4azd3cU9X?oc=5",
         "date": "2025-05-21"
+      },
+      {
+        "title": "Philippines Halts Israeli Arms Purchases Amid Gaza War That Killed 65,000 Civilians",
+        "source": "Defence Security Asia",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOS2F0cmFtY1pHc05zbVB6d00xMG8zTnVMZmt5bkYtUGFBeVc4V0xzSlREbGVRZ3V3Mk1nVmF0RHgyczl0R1RheUx6Z01BU2VoblFfZ3NqYXh1WEdhUkJ1LTU1NF92RlZUMWlPYk5UVHduXzNFOTVYNWFXU0ZXbXlmZTVoREVvRjlxRlBpYlRjdi0?oc=5",
+        "date": "2025-09-19"
+      },
+      {
+        "title": "The Military-Security Dimension of Israel-Southeast Asia Relations",
+        "source": "Middle East Institute",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNX0w4bzVueXl3T2QyeF84YUpMOEhJWTRnOFNOQVV6TWMtT1k0ZS0yVWs1T0pGeWtQaXZicmFjNzJkdzUxTld0YWEyTkMxTTZtdmR1V0xBaXRYZmV2OHhBMTNjczQ3bGx0TVJUY3h5NFY0NWx5UUhlbnJzRHhOaUp0NllJTEpEZU1LSjVmZm1RWVZyUQ?oc=5",
+        "date": "2020-01-07"
       }
     ],
     "united states→philippines": [
@@ -5778,16 +5778,16 @@ const ARTICLES = {
         "date": "2026-04-06"
       },
       {
+        "title": "'Pretty soon': Donald Trump hints at Taiwan weapons call",
+        "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVU1aMUtuSGg3WlFwSTc0Z1Zad3JhQW1iZWZrcUlLRHpFdTFBWV9wSFI0Y0lncDBxUjlKcXNGcHFKUWpEcDZSakYyTzU0WG53NF9MUmVLeER2bEZKQWMxSTlfcVhyMDB1eGNvc3hYMEh6U1dxcjlQdFhEZVV4cHU1cFVyREdkMmtpRjlhZVZzT1phb2VLaGtSNy1KZzFyM1c0?oc=5",
+        "date": "2026-02-17"
+      },
+      {
         "title": "Japan signs new defense agreements with the Philippines",
         "source": "World Socialist Web Site",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Pc3hzTlNDTllDT1ZaVldtNTY4T1pJU28yUGZhTFo5cUVsX3MxZWFHZTJNb3I0M3pGOFJFVm9QQ3lvUE5JdGhNYTZhNzlPUHVlRmlKbU9IeF9Pc3dnOE9HdU9kMTlCT1l1?oc=5",
         "date": "2026-01-21"
-      },
-      {
-        "title": "'Pretty soon': Donald Trump hints at Taiwan weapons call",
-        "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVU1aMUtuSGg3WlFwSTc0Z1Zad3JhQW1iZWZrcUlLRHpFdTFBWV9wSFI0Y0lncDBxUjlKcXNGcHFKUWpEcDZSakYyTzU0WG53NF9MUmVLeER2bEZKQWMxSTlfcVhyMDB1eGNvc3hYMEh6U1dxcjlQdFhEZVV4cHU1cFVyREdkMmtpRjlhZVZzT1phb2VLaGtSNy1KZzFyM1c0?oc=5",
-        "date": "2026-02-18"
       },
       {
         "title": "Manila’s Strongest Security Advantage",
@@ -5796,10 +5796,10 @@ const ARTICLES = {
         "date": "2026-02-02"
       },
       {
-        "title": "US, allies eye launching new ammunition product line in the Philippines",
-        "source": "Rappler",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOYnhTZEJySXc4NlRKQm1RV1hfZ0k5eU4xLVFLc0pLVE5IZXFtOVZWWTFLd2tQTmM1Y20wTXJXR2VIb0NfQl9hVlNJTm1kOGZzU3BsMVBfSDdkUXR4UWtFdmlsd1c2ZVdsV0Z1TUwzZHpMR1M4bUR0Mjc1V3EtLVpPanJnX3ZfTnI0ZHp2UHR2SVNPWVps?oc=5",
-        "date": "2026-03-21"
+        "title": "PBBM leaves for Japan to secure new economic, defense deals",
+        "source": "pna.gov.ph",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE40ZEFPSkJ0LUNpQmJ4YnA2RzBBWmQ5YTFiT0cxMTExQ01uQzFkbU1KdlhyS1hfWVMtU3pleWJuM2FZb3k5eUpvZWUxNXd1WGVn?oc=5",
+        "date": "2026-05-26"
       }
     ],
     "germany→türkiye": [
@@ -5828,10 +5828,10 @@ const ARTICLES = {
         "date": "2026-05-19"
       },
       {
-        "title": "Airbus Chief: Germany Won't Block Sale Of Eurofighter To Türkiye",
-        "source": "Simple Flying",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdzBEUXVRQVdJLUk5NW1KbVh4VngySjlkazlqbklmazFsSS1qeUYwMlNiUTFUbXdvVEhGUHJyM2J6NzBOMF9QRVNfWXJsb3FOZFhaU0hXSjUwS0dsc2gxaHVqYkVERHh4aVE4UWZ2VWs2cEZuR1ZSTHlZNWZ6dDc5Z0VVSUZaWHdvSlFvLUIwbw?oc=5",
-        "date": "2025-10-24"
+        "title": "Germany to Deploy Air Defense Unit to Türkiye, Relieving US",
+        "source": "Asharq Al-Awsat English",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOHlxc3hUd2FDUDA5RmRsdXhWQXBfZGg0QnJEQTEySTBMU1hGMHhkUWtPdWZodm5LbzBZYm9GZ3owdTJjb1lMd1BzcktpMV9RMWtvMkZUN1Z6UkpzT051MWVqUzNickg0UlRWeVRUOElGN2VPTjVmVmJPQ1FRdzhwVkF4NmpZb1d3bV9kWnBCajZNNWcySklBdEM2Y1F1Ujg?oc=5",
+        "date": "2026-05-18"
       },
       {
         "title": "How Türkiye carved out its place at the heart of NATO’s defense industry",
@@ -5840,10 +5840,10 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "Germany to Deploy Air Defense Unit to Türkiye, Relieving US",
-        "source": "Asharq Al-Awsat English",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOHlxc3hUd2FDUDA5RmRsdXhWQXBfZGg0QnJEQTEySTBMU1hGMHhkUWtPdWZodm5LbzBZYm9GZ3owdTJjb1lMd1BzcktpMV9RMWtvMkZUN1Z6UkpzT051MWVqUzNickg0UlRWeVRUOElGN2VPTjVmVmJPQ1FRdzhwVkF4NmpZb1d3bV9kWnBCajZNNWcySklBdEM2Y1F1Ujg?oc=5",
-        "date": "2026-05-18"
+        "title": "Airbus Chief: Germany Won't Block Sale Of Eurofighter To Türkiye",
+        "source": "Simple Flying",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdzBEUXVRQVdJLUk5NW1KbVh4VngySjlkazlqbklmazFsSS1qeUYwMlNiUTFUbXdvVEhGUHJyM2J6NzBOMF9QRVNfWXJsb3FOZFhaU0hXSjUwS0dsc2gxaHVqYkVERHh4aVE4UWZ2VWs2cEZuR1ZSTHlZNWZ6dDc5Z0VVSUZaWHdvSlFvLUIwbw?oc=5",
+        "date": "2025-10-24"
       },
       {
         "title": "Turkey inks deal for 20 Eurofighter Typhoon jets",
@@ -5863,12 +5863,6 @@ const ARTICLES = {
         "title": "France reportedly softens its opposition to Türkiye SAMP/T deal",
         "source": "Türkiye Today",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTm9sV1QyaFVrbC11bWxZX2ptSkdZOGp2LWJyY3lTTDBONzJKY2xDTldzU0pzRW92QVY0ZFhqN2lBMVlhRXhfYjRodFVsQU9odm5mci1GcjBtQ3MwcXhGbDFvdDd6emlFdzFvUmlzRm15X0I5emhLLVNyQkRSOC1aVnVwNGZUNmUtaVR2bE5HZ0RMSkExUmhtZWZSWWctVFhLSGRPUHM5RUFsUQ?oc=5",
-        "date": "2026-07-06"
-      },
-      {
-        "title": "France Softens Stance on SAMP/T Missile Defense Sale to Türkiye",
-        "source": "Caspianpost.com",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYnlDSVpvTUtfc0JLcC1lSzQ0QU90QTRqNlN3VmIySHhjVXAxbUkwT2RLNlF2bDQ1Y3VPX3FiZlFwNzJNam5PTHpfQ1UtN2NEUy04Y1VMZm5GakY4Tl81enBpVWVSVC1UaXNCYU1wWWZPTDU1TVcwdGlzTGM3SF9WcjdTa1BtejFIQXE5ZnV0Y1JwblV3QTh6QTJ0QQ?oc=5",
         "date": "2026-07-06"
       },
       {
@@ -5900,15 +5894,15 @@ const ARTICLES = {
         "source": "Мілітарний",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOb1VRNjZ6eFdnZG9YR3dwa2VheTBFNWVHTUJSUjVWUjExYjdmSUM1ZzVmVUd0SG1Fcy1yNFlBcmIzOUxvQ2VtOHVhUFpvX2RuSUYzeVF5Wm55TzRKaWdUTFp5SkRiLXM3bTRlX2NMSGJsbGxKS1hvbTlkYm9FbUZVY3o5QXZkUzFEV0l0WUlSbnZlZDE0aFppX0hJYjNFNG1jSThvS0Fn?oc=5",
         "date": "2026-04-09"
+      },
+      {
+        "title": "Italy approves Leonardo-Baykar drone joint venture with conditions",
+        "source": "Yeni Safak English",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUzgxQ2hlci1ublFaZWJVTHBVak1RQjNEU28zcW9HRGk5c3R5R3J4LUFsajRHOFNMLXhGSUoyNUhsR0Zmb05mTU80SVhVVnoyUFN2WklSaUM2Y0Y3UVdBSXZ0U2VTWUNTVU5oVVNyZmNCUm4yN0xhN3l4UnBCMEtkUU9sVTlZaFR4VjE0eDB0em44YmhrU2FGVS1PWjZtdmluUUo4aHAtOTI?oc=5",
+        "date": "2026-06-17"
       }
     ],
     "france→brazil": [
-      {
-        "title": "World Cup 2026 Power Rankings before round of 16: Who's No. 1?",
-        "source": "ESPN",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPV0Z4dmxQc2ptcEh2YUNWTE1ESFAxZGJaXzkzZ0ZQSXZhOElTWXVKWFpucWRXNk1EM0VnU2V5N3ctbFVtRkhSajNzNmR1cGhRS2ZSb0NkS0dtdTQwYk9nRDdiTklfaXFLdHR1MUZQSnAtTkdyS05lcWg5TWxPM1A2SEQ0WlM0ZVc2em1uSmZ5NldHZklqV1ExODczalZFNlBTYXN1OFBtdzVCZm92S2drTGF5QjgzdFh3Z1FzS3lEaS1ramFVeF81NmVtaEZpcUU?oc=5",
-        "date": "2026-07-04"
-      },
       {
         "title": "CAAT - Brazil’s arms suppliers",
         "source": "CAAT UK",
@@ -5928,16 +5922,22 @@ const ARTICLES = {
         "date": "2026-04-08"
       },
       {
+        "title": "Lula And Macron Talk Defense, Science, Tech, And Trade",
+        "source": "Eurasia Review",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPa0swU2FNdWxyakhhUXI1TlRscER6MDdjUXNqYUY3c2ZHRHFqeWpwMG5wYVZyc0U0ZEs5X3FQclFRUDNUb0xSMHBKSWNWQmVtZ1h4VlpwLWhua0RzaVRPU2E3dVJaMUV0Zl9lNzg5ZDNZNkpLNXFDRXlzbDYxMjF3YXRYVE1TTko0bDJ4OERSSVpRcHo4NWc?oc=5",
+        "date": "2026-02-21"
+      },
+      {
         "title": "Brazil rejected France’s Rafale and is now eyeing 20 more Saab Gripens, deepening a Sweden-Brazil defense pipeline that could reshape regional airpower for years ahead",
         "source": "Vozpopuli",
         "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPQ1dNQ3FVaC1ORjg3S18zVzhpN2RxTTlJQkRacFUzN09XbEJnSHRmaFBjdkY5VVF5bldaSVFwUTlFUERXNnpSR2s1TXQ1TzVZU1Fqa3U0MHRMLU05QjV5R0MxYnBRQWtqTk54cnlEOGVSUlJjSlpYazhLTldDYW8xVExzckEtM2NyMFdUbmVqSC1KSzYyTFhRRFNKODh6Zk9OckR1M01jR1N2YjFWTjFHQnBLOE95eFpwaUNHaVhMX0RSVFNITzNiZnBzUk9zZkNPb0hRaUVlazM4c09KRTI2ZGU3LUNkdG1FVnpuaTJTR0U4WjZxclZvVEg4Ry1nTWNzdXlsdzZZVG00U3lRVWktOENJcDJ0YWh1SklFaG1oelgxaF9VTGhHNWJUQ1hHZ1E?oc=5",
         "date": "2026-06-19"
       },
       {
-        "title": "Lula And Macron Talk Defense, Science, Tech, And Trade",
-        "source": "Eurasia Review",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPa0swU2FNdWxyakhhUXI1TlRscER6MDdjUXNqYUY3c2ZHRHFqeWpwMG5wYVZyc0U0ZEs5X3FQclFRUDNUb0xSMHBKSWNWQmVtZ1h4VlpwLWhua0RzaVRPU2E3dVJaMUV0Zl9lNzg5ZDNZNkpLNXFDRXlzbDYxMjF3YXRYVE1TTko0bDJ4OERSSVpRcHo4NWc?oc=5",
-        "date": "2026-02-21"
+        "title": "France blocks the use the €90bn EU loan to buy US weapons, insists on Europe-only supplies",
+        "source": "IntelliNews",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNm5zOUdmY29feXF0TEtFSkVqY3NVUllTVGxWaHB1WnltNF9kcXZkMl9VSmFMWTRUcTRSNC1VaUJxR21ZRXQ5RVdlYXQtNGJqUG80SEJwLTdVal9NTVg1eWVrRjhTUnFUZVNUZnc5R2RKWTRZUnlaZmkxTUNxclNQcGVnNlRuNUFBemw4RkdtVkkxbzZRYnBmWFQ5TTlZTGktdmxVaDFjNlVPVE1VZVdXT3JwWFZnSk1yeFN1cDFtcjIydw?oc=5",
+        "date": "2026-01-14"
       },
       {
         "title": "Lula and Macron discuss defense and digital sovereignty cooperation",
@@ -5984,12 +5984,6 @@ const ARTICLES = {
         "date": "2026-05-01"
       },
       {
-        "title": "CAAT - Brazil’s arms suppliers",
-        "source": "CAAT UK",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBuWlhsU2ljbXVlR0hvRWxtM1hYa0o1YmEwUHNrS3QyQlRFRk8xU2JQRWZaRlByLWFqSUZGSnNzZnRWdVVNeTZqRlBGR1BnSWFPV3R6Z3U4b0ExdVAwTTRDQkJPWTBEdThCR1BfRmJtR01JbVE?oc=5",
-        "date": "2025-10-28"
-      },
-      {
         "title": "Brazil eyes Italian weaponry to boost defense capabilities",
         "source": "MercoPress",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQVZpcU9zeVU2bUEzM2tDMmtObzZqYWRvUnNia0dnN3ZmQW1aTnZxVDFnMy1nUW1zVWF4blBHUTNXQi1NVFBqeGRwWk5MUUN4eDNGVnFfN2lhUlFUZ0dYZUdVSlJPc09xVnNwMGlHQk93VW5ORU9vVUQ5Y2haVXFCWE92TmxzbHhtZHRGak83MEEzWHBIYlltRzktQQ?oc=5",
@@ -6000,6 +5994,12 @@ const ARTICLES = {
         "source": "Breaking Defense",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPX1FPT2hTdng2YUlRVzdlckQyMzF0RzZnU09aQndudncwTmUwRUw2RnlGVUV5M0tiekR4VEx0RjRURkt3d3hqc240MWlPUXpZTUtPX29mTm1ZTUFpaElxMDNWcjVpUHJVdHg5X2V4aTdYUEpxaVFXOWRXZ0FwZldiZi15VThJZy1UVTZCb1RrV0NuM25Jc1p1aldMMjRSX0E?oc=5",
         "date": "2026-03-19"
+      },
+      {
+        "title": "Brazil Picks Obscure Italian Air Defense — There is Pragmatic Logic Behind It",
+        "source": "Defense Express",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUWV1d1lqT3B0NndDMXpUM0l1RnJpVnZ1Zy1kM3ZadFM1ZzJoXzlGTU5BQXpZUEpGRVBWWWRxaExQT2tfNWNUNTB5Snh1TWp2MEFWbFMzRUFqNHd2Q1dCVERsbWYzOVA4OWVXZENMeHYzZTF4TVEwWm80M0FOY25HRU5ic01rLVR6RTN6bENoOXJpYTJyc25lVUZkZWs3WXdDWGtocFZqOTZOSVMwWnFQNGR3cUd5MXVxOTI1MFppczY?oc=5",
+        "date": "2026-01-05"
       }
     ],
     "germany→singapore": [
@@ -6054,12 +6054,6 @@ const ARTICLES = {
     ],
     "united states→singapore": [
       {
-        "title": "US Greenlights HIMARS Fire Control Systems Transfer to Singapore",
-        "source": "The Defense Post",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5DeWl0OWFJNVowYlZpZ1lQT09vLWVrX2c1QUZyai1SRUJCdTRZNlRxaGE1SGxscW1ESVdmZXlLM1daelNrbGFUNXRCclM1VU5QXzUyRUhFd1VPeUgtV3NwWkE3eElFS3JNOWpYT3drRW5fLWlVemtZ0gF8QVVfeXFMTTM4X1NuM2NManYtSzJwNDBPTTFraFJqSVZSRzZhQ2laZm55YlN2bnpiRGtkbXhCdzdfTlBJb09ibDlSbGk1VzlrYkV5dUJtYkx0RllUYktSNUtaYXMxVjExVDhmM094SkZMU2RoanJjbVFGa1E2SlFZRzhpWQ?oc=5",
-        "date": "2026-06-18"
-      },
-      {
         "title": "Hegseth says 'no state, including China,' to dominate Asia",
         "source": "DW.com",
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRlh0eDU4bmY5QW5lWHFwNVQzQ0xlUHRiQ0s2TVdWMGtrb21WME05VFZ5OUl0T1RCajBpUERCS2xmUG9icV9odXMyelhFcHkxLXhyYV9IZFV1M0FJdlFBdEJoLUpyei1TUHlJeHY4cFlIMGRjajZ0TTFoaU13UVlVNERVc3JmN1dKdDJtZXhYQzdweHpzZ0ViWkZIbDJGTWFJQnptZHBqWUJDbExFenfSAa4BQVVfeXFMTW5INGFsRGJyeG5NS1ZnN21Ia1FIMGJ6T1RNZ2kxRGdvemZPMUx5Zk1TV0RhRGkzWl8zMW1nZ0ppTTlucEx5TmNFMVB4RlQ5TFRvanQ3Y1JPdm9HZGpNREsyYkVMdGd4YUl1Y2dhYnowQXlEZXEzNmpMV3dDa3p4RDVrNkJKOWowWjhIdDRtM0lLRmZnOHVta29JeW95UFI2emdSU3h6Vl9odV8xTXhR?oc=5",
@@ -6100,6 +6094,12 @@ const ARTICLES = {
         "source": "Haaretz",
         "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNdzhUbUt4a0dNM3BfMzhrQlNGakFud2NPdGo5Tkg2TFlKRW9KUnc2UjdmaHdpM2JZUGdaZmEzS3ZZd0xvU1YtcU9VclliajlZNURySXVtc3JGRVBOMklfR2dwcGowMlUxMUxKQzJYSGxBaTQyWk94ZWdDVVh4MzJvTHFlcVpoZWhwbjdYTlc2cmphRElfYVZKYXBQY3ZzbUt6THRYX29NcGc3TjZWQUJsQ2gyQjg1N0pyZ0VuVUJDTVh2LWE0dVIydWItR3dXcm95T0ZkaGMxRXkyUzBQZHd4S2Z1eW1sS2ZYMVhqdlB1TnNoR2ppRjBLakQ0WlNweWZvbkttNVpGbW9scTF6dnk3NDE4cng?oc=5",
         "date": "2026-05-30"
+      },
+      {
+        "title": "From Strait of Hormuz to Malacca: Is the US Expanding Its Strategic Grip?",
+        "source": "Open Magazine",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUVBib0VTYlJ2MHFOWklWbFFZdGhrc01zNmI1eU11MUoxVTQ0UUtGa1hhRE85NVN1WDFfei1KMThxRmNWZzUtTWpEOVN3OEdMaFZMSFVFU2lUal9wazZHTDlKN196LWZLenRlVW5UV0x4clU0Q3FKblJhNmN3UzZIOFcyY1lNMDNsS1B5R282TlE0Q29JRjBsTzVvdFBTNUZyTm1kNHFxZHc?oc=5",
+        "date": "2026-04-15"
       }
     ],
     "israel→singapore": [
@@ -6160,6 +6160,12 @@ const ARTICLES = {
         "date": "2026-07-01"
       },
       {
+        "title": "Iran war strains the Gulf states’ strategic relationship with the United States",
+        "source": "EL PAÍS English",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSEhNRW9rMkM3RmpiQklwN0ZVbkhpUko3aDZBMFJjd2wta3RuUERPaDRnSnJpM3prYWxucmdJTFdjRlc4enR1RFVoWUJHbFRZa0xCQ3B0TGpvQ3BidTduRUNxNHNuUTFET1UtOFJ2WmNOU0dNY2RmR1VsclhyOVEzRTd0T2dMd2VzNGZjRnRMYTJzNG8wS2hYZTI0by1uYWZYTGREdEdUd2hJY1FwTG56U2ZsaTFuRjFaWXpHTk9fd1VKM0tyUWlYWUxUcEZDcFBY0gHkAUFVX3lxTE9fX2Z5c3kyVVRFV1ZzNWk1YUl4d1F4ODRLR0x3a1ZJRlZxWXl0d3BUUVFRVEE1UEFVVlh5ekJISkQ2VTMydVlCa1Y1bnVBdU4zT3dTdkItME45SzF4RF9oZHJyY2VQWXZfeExXNy11clpwclo5Tm1jdFpKVWFtU1phVzJvRjlPa0hmanRXeUs4ZXBGWktzQzhReUdVdzNVR21hUGF0OWRoeThqMmdqSUJuVTA3NkE0STdLVWRob3g2Vk1HTjRhQkdVRVBmSGtjczZVaUNKMWZhR24xRXI1RU8xT2RZQQ?oc=5",
+        "date": "2026-06-27"
+      },
+      {
         "title": "U.S. says it carried out 'self-defense' strikes in Iran, including missile sites and boats placing mines",
         "source": "PBS",
         "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNa2RFSXFKUHhtXzhCbXZuSlJCOGVTREs0a01mM2h5T2lodW4yNDZVU25YdFlaMENjZjNiZ0YzNk9teGNRQ2t3WTZBVG1TaFpnaGVPLU1jM1h3YnEtNGs0Mjg1ZGpNZ3g3VjNONlRiZFgzT2tQbnRZeV8yR3h4a0hmUGpaT3c2bEZkMXRtRUJMbDM2UkFfNE5YTVdzZDVveS1Ld1h5UWpLSjgzcUR3TUFWSl9YbUVHa0NFMUljUzFqOTdqeHJLVWRTUXFFQWg4ZEZ30gHWAUFVX3lxTE03RnpqcGtDWk9nQ2lPUU9reURKZTJIRWt3cEtMZDYtZHpsQ0xEN0ROcjdhVjhWcmE1WUp4QjBHaHdhSmFIM2JGSktpcFFCOUY4OWpKQmNPNk1HbWtDR3FIYXg3VU5Gd3dld1EwekVST3dRTUpTSFFnM2swamN3Ym1QOGVSQXYzbV9jY2J0NVVOdUN0RG9GcmZYQi10MWNyVTlnMWZYNWQyRVVZSzViaDd0OVhDLWpJcE50bTE2S2JkbjhyOFBnZ2c2eHBrdlZoUFhHb050OEE?oc=5",
@@ -6170,12 +6176,6 @@ const ARTICLES = {
         "source": "CNBC",
         "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5sRm9EcldpYUsxdEx1MnNJUUhaVGc1a0hsUDN6am1PMnJXQWZ2c3lVSWFEMVRtcktEeE5EQUxpcC02Rzg1akFuMEd1VGhlRmxPYzV3RnBWMmVVejR5YkhhYWZfeDg3UWYwWlROZGY0SGtUREZQeTFDSTM4Z3XSAYIBQVVfeXFMTjB2aTYwNTNBOVpOWEhaVUl5ZGx1WFdMTUMwU3p3TkMtUlNfR2hEZTF0X2s5VWlZZUpsbnc4eXItazJEb2I4Y3VuV1BOa1FoX1NVSVJwblpyNmhNQ1hBSlhSV0FYb3Y1SFdiMUkxX2VuVXJoTDJJWW01Qk9OZFg3a1NtQQ?oc=5",
         "date": "2026-06-09"
-      },
-      {
-        "title": "Trump Weighs Iran Military Options Amid a Weekend of Clashes and Diplomacy",
-        "source": "Council on Foreign Relations",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORmdkcVpFMjFOeGxIbVJIbzhERFlWUUFBTkhfX0FybVJOUU4wYlVqallOa3JRRXI4UEdZQ290bkdLdEpDS2JmN0p0ZC1JakdNclhTUlQwM002Q1pmMUJNOFFvWnZfTHlpaS04R0M4bUszZ201b3h5OWl3c3o3d3pQaGktcExST3NvMndXQ2hmNTdON1FEYXF5eldCRWQ5T2lLVHAtTlZn?oc=5",
-        "date": "2026-03-30"
       },
       {
         "title": "Trump says he has canceled plans to strike Iran, claiming deal is near",
@@ -6196,10 +6196,10 @@ const ARTICLES = {
         "date": "2026-04-01"
       },
       {
-        "title": "Bahrain strikes raise questions on how US can deal with Iran retaliation",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Bc2tfVlExM2RtQy01LUNmS196a19WSzNmUDhVbGNrN3k4Yk1QdERNOEdSM29SRkJZRjdyOE9aZ2tKcklERy12a1RvbHhPVGxuOGYyTlJjR253dw?oc=5",
-        "date": "2026-02-28"
+        "title": "Gulf allies, under Iran strikes, feel the heat as US prioritises Israel's defence in arms hierarchy",
+        "source": "TRT World",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE81VEJQZmxYVTRnQmZ4Q0V4djM1MHFGamhEcFhySUFLVUFSX3JQUjVmcHh0SmV5eEFsNTNMVjNxMGxKYndJRGlJZy1BNEwwY0x6N1pzTE1fYjM?oc=5",
+        "date": "2026-03-09"
       }
     ],
     "türkiye→bahrain": [
@@ -6260,6 +6260,18 @@ const ARTICLES = {
         "date": "2026-03-30"
       },
       {
+        "title": "Nato unveils major arms agreements",
+        "source": "Gulf Daily News (Bahrain)",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQV83ZmR6OENmQy01SnkybnAwaFhfX0kwZEJ4OU1Rb2Zqd2pWdUVBU3FEVHVDNVlEVFRJVzBsb2tBVzNHZ3pnWnlmWjlxSXo1QmowLTY5R0JHRUU3d2VWV1UzZngzTW1IMlFuZ19zY04yUUhTU0pUODdNNEt6YlRrVnB3?oc=5",
+        "date": "2026-07-08"
+      },
+      {
+        "title": "DODEA teachers who evacuated Bahrain get new assignments for the upcoming school year",
+        "source": "stripes.com",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdlZTWkgtWGVrUmZmdXI5Ui15NERDbnJnZW1Xa3RXU21NZlVZOVhORXdHdjUxODBvdnA1OG44VHllTUhNdVRqNWV0LWJ4MjRlbDVSUzZPVERMSkpOTlVvWUZYUWZlTGU0WEZIc3BiUVAzdUt5bFRxX0ItRTBUQXJzcFFOQmsxaExHcVJlMGdLSXBkRDktUG9rLUhEQ05tZw?oc=5",
+        "date": "2026-06-08"
+      },
+      {
         "title": "Gulf States Request SAMP/T Air Defense, Anti-Drone Systems From Italy",
         "source": "The Defense Post",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE51TVVRME80WEEwOHR3cFV0THFQd0FsTXpGNkdFWUlOaHB3OFU3ell6NFQtTmQ4RlkzUU1TZmVuTGJ2X2F4ZURoSHdvV1FTU3lKV3k4SEZkcjZUbndkem9pNk9JTmNmT2lSVERHYk1hdFVTQdIBd0FVX3lxTE9raGxZMkp4UFpkb0JYVWNja1kxNlR2bjVISmZpb29oczM3d2xaSVBTQU5XMEl1QUMtMG5idGpTem10SkIzRVJrZE1ES3lxUmZzMjZqMTdCQUU2NGhHZkJlNTF6OXdTM2NyWjl6V01sZ3NFSE81LTdr?oc=5",
@@ -6272,34 +6284,22 @@ const ARTICLES = {
         "date": "2026-03-05"
       },
       {
+        "title": "U.S. death toll in Iran war rises to 6 as Trump says campaign could last 5 weeks",
+        "source": "CBS News",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWC0xdEpFYmZfRVFBMG9KVEUwWl9veU5JbEgyZDVxOGo0THVySl9iQkwydnR5MzNkQXpFcDRteFp6OHhrRGFzeG1qdzlsZXo2ekxxa0VRVXRWQUVuNjYyLTVmQjVwRWxhSHVIbjAxcXNueVhtVnYzZkNYU0IzWjROVHRDUTVsNEdXd0IxVDNDaUk1cWhnX0o5WjF5R3hWUjgyS3lmYjFmTkl5dEh0U2RF0gG0AUFVX3lxTFBaN2dOenBaem0wREh2ZVF3SDdpWjlFWC0xQ0VueUtzVWRtWFRnZkR0dXBTWGlJaWJ3NlRCeXlwMHJOQ3pKNGVCSFVxSnVOTUQzOXRhNUdhVDV1WS02WGhOZWVCY19qZDR3Z00wUENoeXNpbl9ncXBBaHBhNVUxbHFOdkNXV3d0Zjh4VjlRNmZXbllGazh1aFliUVV6aGVoNUxGX1ZKU1ladV9ZRFZqZWRFdXh6RQ?oc=5",
+        "date": "2026-03-03"
+      },
+      {
         "title": "Italy’s Parma expo becomes a gateway for defense and Indo-Mediterranean partnerships",
         "source": "Decode39",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONkM5X3ZNT0c3Q2lUSVdsLTYwSWZQc0NPM2NrLVczNUgwT1FPNFJNOXFINmN6RGg4dWlNaDdTdmNic2tRVUZlWXFndzN5LTR0TTFCWXpEYUFIek9BZjk0QTc3NGlmM2lFTFczNFVOS1lleDQ4SXlsa1dmdnZZbmVrWnJnWU9raGdtSlhGSHZTRkk5UkotMGZxck5FQ0xIVV81VE82YVhiMEswV0IyTkRQYw?oc=5",
         "date": "2026-04-07"
       },
       {
-        "title": "Sucked Into War, Gulf Countries Face the Limits of U.S. Security Guarantees",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNFVKMTkyNThHblRnODZOaHJJbXE5RWxETUpkM3RQbHI1dkgwcGJwNFpzZ0dFYVd6WHZXeXB4ZHcwMGxlR3Y4Mi1zZDV0WFlnSzhyWThsWS1DTllGdFQ2TGxkWC1UZmsySUM0RDd4SzlYQk5jNFhVM0thZDNLeHNfdHptR3ZLV0NiZlJSUEk2cExDbWFITzFwVUM1X1gycms?oc=5",
-        "date": "2026-03-17"
-      },
-      {
-        "title": "In the Iran war, it’s not the oil that’s important—it’s the water",
-        "source": "Fortune",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5mTk42VTVnUXExNVRNcFlLTkVSaGZhZ0lWLTFLUVB0M0tsSXpmR1FEdm9rNW5XdDBxQktaSjF0czljYWZPM0dWbGkyNG1HNG92SjdFZ2xneXdSc25fUmdkeHBweGZiWWhfUWN5TUI1RGd6T0dMOUduY3RR?oc=5",
-        "date": "2026-03-05"
-      },
-      {
-        "title": "Vicenza High School principal ousted amid DODEA probe into misconduct accusations",
-        "source": "stripes.com",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObjZmTUdJV2pRTjd2Qm02QjVFcDhJdHMzUklTTmZQSFZQdHZHb0NTZjNoeGR2eHB5QnBzLV9Ld196aVQwMEc5OTdtZDJzWVNsTHNHSnB5ZFBBUXNncDlHUFl2NHJ4T2pIWDVlR2R1SVl4R3ROR1VHcS1oWE1NYnJhZnlRUjZkbW1WM1FueGh0QWNUMkJQUmFlZ01pTmppTjVQ?oc=5",
+        "title": "Iranian Missile, Drone Strikes Target Gulf Countries",
+        "source": "Defense Security Monitor",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcXhNTEU3cG0ybEMyNm10MlgwVDJ3dFZqbjN3TGp4UUIyZjhCVi15Nzk1ekQ4cXAtM1V3UUg1Uy04NlEtd1pQWW1BMTlZMFF2S2N3WVZuLXlURGNsc2VrZHpRb2hYRlB0aFVfWlBQcFVpVDc1cmh6eWZLN3Y3NHpDT0VtbG1Zd09xS1NSZU01Qi1IRGlYQVZySTVkX2F6Y1B1Rlg0?oc=5",
         "date": "2026-03-02"
-      },
-      {
-        "title": "Trump signed his Gaza 'Board of Peace' into being. Here's who's on it — and who isn't",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBQdlR0MGFOOEtGUGhrWVlhLUdOYmlMWkt0U3c2cTNMX1JfRFV4VWpDZWRWSmdudEFLdkNkQWFLNjBYWmI5dkRPQlNyVkVGdU1PMExMNm5XdndybGhlOTIzWml2cHN5aGZhc3JFM084MEZjV3JpTlAxMGgtcE95UdIBgwFBVV95cUxQZjB4NEFBUXJEWUlBb1E3QTAwS2hGMjJnMDRqSFI2YWJ6RWtSZW9QY3BQd1hkdmdmX3lacmcwR01VNnFGZUMzWGxPR2FZY1hmTVdmdVpxbTVsWlk1NVFlVkZYb01pRERjMHRad2o1VTdjWkFMMjRmTm9CUVBWa2tJbzBWVQ?oc=5",
-        "date": "2026-01-22"
       }
     ],
     "united states→morocco": [
@@ -6410,6 +6410,18 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
+        "title": "France – Morocco: Defense Key To Les Bleus’s Suffocating Show (2-0)",
+        "source": "Between The Posts",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORXlJd2VFMmRNMjlKSUZqcEI5SDJMSU9mcG13T2MzekRZa2x2Vnpzd3JTM3BIUXdSelZBLXZySUEyTnp5LUl0OHVOSEdxaEMyUFRZZzFsV3gxcXRaZm5jVktmTEs4eW5kVVpjRXN0M2R6aXQyRlFsQkFJckRkYmNGMmxNUUhEM2U0ekV4NTlLM1phbkw4?oc=5",
+        "date": "2026-07-10"
+      },
+      {
+        "title": "France eyes second chance as Morocco revives interest in French Rafale jets",
+        "source": "The Arab Weekly",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPektnSEpLWnhHcUdFRm5iZ00zcUVlMGZOUnFIRS0tT3NOcEs5Y1ZSbWZLUi03YWRIUFZPNkRiVjJTZjQ2aTNmeTNaQWhwalBsX3ZGWEd6NVdQREM2eG82emVmN21QazRRel8zT25qaUMtZzZPbWFDaGtEUW1QczcweUpLRjZ5TGZtZUxGdGNYREVEeDVFeEVYNFp2VQ?oc=5",
+        "date": "2026-06-30"
+      },
+      {
         "title": "France, Morocco step up defence ties amid strategic arms projects",
         "source": "middle-east-online.com",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOenktYktqNzNzaXpGd0IwYmdIVGx4MmZqUTZ0bU95RWoxNUhqYXVpZ2RXUGljcUJZQndGSjctZzVKZWgyaTM5ZkZiUllBM3AtS2FqTllreE5uRGRKaV9jVGM2bFlWSVhVcHk2QmZHSGluMURfaElqcUh6c1h1NkQzMms0NWR2bUNmSlpnTFczS3ZDd1FSdXAyNnRRcw?oc=5",
@@ -6434,21 +6446,9 @@ const ARTICLES = {
         "date": "2026-01-07"
       },
       {
-        "title": "Morocco boosts military ties with Israel despite tensions",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRFFOOGhuRWNiQWVNZlBTd3ZfYVludzNGYS1XRjREYk1HTVBvT0ttbVRGbmVKX1NMM0VXR1FnUVppdEtra3hHZW1fejc5YXhkdTdZeW1WcnZYcTl1Rk5iVWFURnp4SjRuNTktR0plbkxLYzBnY25UU3J0WjV6WUFCNGlwcmNPOTlkVjd6bTdUM1FialBC0gGUAUFVX3lxTE5zM2M0a3VmdXJvYk9ldHNPZWlDQ0pibjM2cWNVWUJ5MUZSelhVT1NBTVhMZnBlbDRueWluUnB5Ml9uaU5hYUh5RDU0N1Z3Qzd6N2t5aEVaUXFwWEZnUWctUjRZaEF1VEpUSDl3dFpFVXFDWEZkbVhFeFFkWThVdDhTU3kwRjFUY3lWanRqWXBiNTBEU3Y?oc=5",
-        "date": "2026-01-10"
-      },
-      {
         "title": "Defense: Morocco and France hold talks on the sidelines of the Eurosatory trade show",
         "source": "Yabiladi.com",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRjJycEVWM3VDb0N6ZnI2ZktkOGxfVV91X0huWHRBcW1aMW5qWGZtYWhxU0p1WXA2WnlwbUhSMHVyZk5kSHVkbnBRdXBmZTRBemtvTFdwcjAtYUJhS3dGMDgyVWowODhMX1pOcVZXczdUM2pHWHpzVFV4ZlYyQW0yam9IckdJYjRvYV9LNi0yYw?oc=5",
-        "date": "2026-06-18"
-      },
-      {
-        "title": "Morocco’s FAR, France’s Harmattan AI Sign Deal for Autonomous Defense Systems",
-        "source": "Morocco World News",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVjJIYlZuR2FuR0pnT1IzdXk4SEtteXpxY2poTEhzSXBoLXRFemU4d3ZjdlBRX2s3SE1XNC1laTFnY3RfUmZwVGFyNFBpSWJ2c2Rzczk5QmliWGM0YkhRbzFHY0RBV1k2bHliZDc5dzQ3eUlaRU1lZWVCbGlhU2ZDYlJ6YU40OEFPRUgyZHNhN240VkdOdnVGUUJXWjNXc3FmeXEtLWgweWxIdVRoYUY1RWI2WlpDNlBFQU4tSEwtTXE?oc=5",
         "date": "2026-06-18"
       }
     ],
@@ -6463,6 +6463,12 @@ const ARTICLES = {
         "title": "NATO unveils billions in arms deals to prove its firepower as Trump again demands Greenland",
         "source": "The Washington Post",
         "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQcy1VQjE0NjBsalNEZXpXdGZ5bXU0U19xdTdwc0tYN3FQcVFVSmZIemVPc25IRjY0OWNZVVd4eUw3Yi1wT2Nkbl9KVzVWWWNSb3YwOUR2aGo4ZUgzOFJZWVljdXRERXpScF92Y0FqRWk3QWlLN0k3em43amhycFk4aWFfM0lrWWZPb05mOHVGTjdmY0RkdEhKR3FuU3V0bUxTUzFFX2dka3dKMldGakNlS2RVRFJVOG54S29ubG01bGtOVUYtRE1meW5OMUpwbnhiR2xnTTVMbFg5NkVjV2lJSg?oc=5",
+        "date": "2026-07-07"
+      },
+      {
+        "title": "Ukraine, Denmark sign defense cooperation agreement in Drone Deal format",
+        "source": "Interfax-Ukraine",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE95X2JrWHBEX25yTUdOWUdKN3N2ZHlvOUlabXlXbXBjR2xiMTRiczl5a2ZrVm5RRXBITTZFRlVCZm5DZmlQcEZ4VHhrd1BsaUljQ0c3VW9OODF1Y3I5VzdfTzNR0gFnQVVfeXFMT2ozelZYRk8wb0V4am1nSVRPZkl2bDNWVWx2Vm9OTmNoVTFCNVVXa3VNMS1uQzhNckJFR1NoX2VXdXNISmpOU3FfTF8wUXM4ZmtSUEhMUkFxNnBRUU1sb3BtSWQtTGwxcw?oc=5",
         "date": "2026-07-07"
       },
       {
@@ -6493,12 +6499,6 @@ const ARTICLES = {
         "title": "Trump Claims Greenland Compromise",
         "source": "Council on Foreign Relations",
         "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA0ajJEUHM1MkV4TVF2N290LWhmSFRhODB0YUdEeHpHaWNZZHlIRnh2TXhScTFCdzNNaXJaMjUyN1l4RnF4ZnFENFJNMmxKcGtza1RXVk5ENk9POGw5LXY0U0NEZXZjdjBwTm1DVUNiQQ?oc=5",
-        "date": "2026-01-22"
-      },
-      {
-        "title": "‘Old wine in a new bottle’: Greenland negotiations resemble an earlier deal",
-        "source": "Politico",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZ0FPTzJLVFpocHVyNVFfclhzd3RTUE1DUTJTWlhCSDVtbzNydzlEZ3BqcDN2Z2I1TkF4T0U1dkhsRWx1eWhWeUdUYnY3cUduRjVCSS12Z1F2SEVMd3VhVVJFZG1RZ2l2c0JwZkdZdDlYOURETWJiVDFiRDNjcV9rZ0FrMGxnYktiRmZoNU5OUUdZM3VzMTdKWUJhTQ?oc=5",
         "date": "2026-01-22"
       }
     ],
@@ -6590,16 +6590,16 @@ const ARTICLES = {
         "date": "2025-10-29"
       },
       {
+        "title": "“Elbit Out!” Activists launch campaign to expel arms company from Romania",
+        "source": "Peoples Dispatch",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRTZacHY3SWs1QVZNaTRzem5EQUlzeXkzeF8yc2czc2RPdndtMlBZVW5HY3VJb2xoSWpyZnUwVFZuQ2RBNUY2c0J4d1N5dlJjZDFaeGpnaHBUYXZKZjlLckpPU1RWckxSejZWd3ZiRmk0czJ3czUzNHo1bk0za2F4Und0akc1MHVBT2NzV21nVVJodHpjU3dteHQwZkdKdGtZYUtnY2NiWk5Vcnd1d2Rj?oc=5",
+        "date": "2025-09-25"
+      },
+      {
         "title": "Romania aims to buy Abrams tanks in $7 bln deal: Defense ministry",
         "source": "Al Arabiya English",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNUJOMm9WYXZ2Z1FYbWtrV1VSblVzUHZ1bDkzQ1NFU3lZcEtjV2Qwa3haTjVpSWg5VVpXZ1hySVRoU3NVNlVYZHpjMU5VRjB5RDNEOGZWTW9lWUpqbWdvYnhYdDRBZGs3ZW9kUGdZeEtCdTM1Q3JWcnlEMWw2a2REUExxTmVxcW4zS2QyVlJQcEQxazNDbHFUZGpXbElCQUo2RGlVMGVzaVpvSHZnRExXaTJ5VkFYNzTSAbwBQVVfeXFMTUczTG85aG5YbnFaUW1sTDVvaWVaX0U0ajNyVkY5VTlSdjJpclVHNW5QeXVWeVltOXVFNGlFTkRMbnZ2cFNVSzJyVmhBSkNMaml2b2ktM21YR1JoNnl1QmJINXpyZFVaOWJQamEtNDFCdVFRdUM4U2drVUkyZFpub0V5X0lZUmRZZjRGSTFwV2VpUEZNY2FDRTlPWWlwUFU3blNCLWVOSURaUm5OMkg4ZjB1OWhkOUVPTkEwbzc?oc=5",
         "date": "2025-09-30"
-      },
-      {
-        "title": "The Romanian defense industry and US policy",
-        "source": "Middle East Institute",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBsRzFxdFpDNkc5Q001TnFBQjF3OEhLSXA2QTNBdmhHVy11WS01TjlYNktjNzVnR0RodWdCblk5QjZwM2MweldfSk9naXFxVXRBNkRqYXYtVkRjdEJELWhfMUtFaDB5U2JPci1zYUoySTNBUEE4MnZz?oc=5",
-        "date": "2024-09-05"
       }
     ],
     "netherlands→romania": [
@@ -6608,12 +6608,6 @@ const ARTICLES = {
         "source": "Yeni Safak English",
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNXhaUTJXd1FpNllxb2VpZlhfdVlnU3pIR1FCalZRMDlXU3JWTWpiRmljb1Z5aTN5V2FDN0NtQXhDMFZTNUQzNlZaMUQ5SjNPeU5IRzlOTGtRUzlwV2tzdmtnTEdfSU1DNnZiS3JaTmhHTnItZ3gyMDByRmw4UzlQb3BsOXFsaWZ5bGliYlEtUW5BZ3BfOUNQY2JFRDR4LWZVLWc?oc=5",
         "date": "2026-07-07"
-      },
-      {
-        "title": "Romania rules out hosting nuclear weapons, says president",
-        "source": "Latest news from Azerbaijan",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOV0JFNGc1aDRoNnpMbDB3eXRkS3ZHV0VLV2hBemNERmNnWVludEtPek8yQURueTJ6Wk93NVYySGNoVmt4NkFXOTdTNUFvZW5RQlJDUTM0dFlhV2ViaFREQm91SVJReS1zc1p3VlJuMjBGT1hpZGU1Qy1mUlQwcjVCYlVqVQ?oc=5",
-        "date": "2026-03-06"
       },
       {
         "title": "Romania's 2020 IAR-99 Modernization Contract Still Unfinished, Company Begs To Avoid Bankruptcy",
@@ -6650,6 +6644,12 @@ const ARTICLES = {
         "source": "Business Insider",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWFZzSGlDZnotWmNKTkVDTE1DUWh1LW9MMVJ0XzhpMlpQOWtBbzEzWmZ5bkFCZ1pqZVlVLTR5SUdlVnR1R2dyVzRSNnp1VjktSi1YMjBydE53a2J6bzVkaW05OW9BbXlmWFl2RGZ5MTZTRXZoTzdCQVN3OHVoTzdzSEhqUjhaTF9C?oc=5",
         "date": "2025-11-05"
+      },
+      {
+        "title": "Romania buys F-16s for just €1 to train NATO pilots",
+        "source": "TVP World",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSmhMc3RzSE9WaXNvR09hV2hpRVNkZGxweEE4bTRobWswMWJNcG1YNWgzRXdxcHRwREktLXh1VmtCT19IYWo2WEJabm1oNFNMekZVa2NJMjRxOXNvQ0Q0Y0VyM0JQMVFzQ1FmdThqUDlpc1FnNUZDWlNoX3pyM3N3bW5kalRHbjF6UHEtam40bzhSdUdfN3lkeUp3?oc=5",
+        "date": "2025-11-04"
       }
     ],
     "united states→belgium": [
@@ -6690,16 +6690,16 @@ const ARTICLES = {
         "date": "2026-03-12"
       },
       {
-        "title": "Israel is losing its last friends in Europe as diplomatic collapse deepens across the continent",
-        "source": "Ynetnews",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iSjQxYU53UTMwQnRBS3VlYWktdWNWSVY4c25aM3hXZkJwWTJuYzd2VnI1N3NlNllWUGVaQ3RQanF5MTh2V3QwdW5xdElhNVptLXBmcnRR?oc=5",
-        "date": "2026-04-14"
+        "title": "Belgium downplays Greenland tensions with ‘Uncle Sam’ as Europe steps up Arctic presence",
+        "source": "politico.eu",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZ1BkMzBFQlJtblFHMTB4UWRMcnZhazJxTmIwbmc5V2tSSFRNRTNFRkdEWlM2YzluR0Y0MDdXd2M4YmMxZDJ1d1pzU3I5S1Q2bTBzQkpGci03RGpIWWRVdlVBTE00Tzl0VmZ1Mi10d1c3R2Zhc2ZDRkVWaEk3VUhmTlVsRkhvcFNvdUN3QlZrY0wybXJ5OTgwbWYtMG1sOGduNC0wd1BKWXppM1RpMk5sSWZ6dUVpdWNMZGc?oc=5",
+        "date": "2026-01-17"
       },
       {
-        "title": "US Approves $356M Communications Equipment Sales to South Korea and Belgium",
-        "source": "The Defense Post",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbENOZVNRR3Z2ZEo4WVJvWmxwRVg4SmJJemhBXzRTc1p5YzBwb1BidDJOVk5zLTFHZnVJeENSWWdTQ0hyQUdmdmJPaGJqNkJhMWtIWURWTGNfZ1VNeEtETjh0U1diSmVVWHdoWnBEUU1ldkxKdDlnOFVKMEN6NlNCcUZn0gGHAUFVX3lxTE42YXdFYVdyWnNHRmp0YWpYd1ZsOUhrVGhCRzN3Wi1hcVVvODJvMHppV1ZkdkUxQUxMbnd5bWs5eVVJOVhoN2YzLUpWR1Fkc2hOSXZVelR1YmxoY21GeHlwNVdkV3RxQXBRQU9zV1M1ektsRm03QVFQcklGa0J4QlF5eDFtWktMcw?oc=5",
-        "date": "2026-03-30"
+        "title": "These countries no longer arm Israel. It’s not making much difference.",
+        "source": "The Washington Post",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObW1tcVhUbUExb0xhUUxhMHRrY2Z0QnNfaVFYdGZQUmhzdW5TLUJqS2xya0VLbU5Ld1FBQVZ6STlUMnl0SUhxaFoyaDBXQVpuV2MwZ3Fvdko4WlFETkZ4RjMtU05oTHh1R1dBVEpuN3F4ZGdJT2h4YnRlNm1uMi1hYTF3Zw?oc=5",
+        "date": "2025-10-16"
       }
     ],
     "france→belgium": [
@@ -6716,10 +6716,16 @@ const ARTICLES = {
         "date": "2026-05-14"
       },
       {
-        "title": "Belgium Signs $263M Deal for Mistral Air Defense Missiles",
-        "source": "The Defense Post",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5zSTlfUllCTnE0MHhCRHdyRTJXeGp2X1FLR2ZwdEZlMGR4cUpIYWpVcGxpRFlBbU9NUklQZHFPY25pOUZOQ0VYNk0tcUxpY3dIWjVQUldlbTZaeTFSWENtOGxyOURIN1JvNmlrakRWdDbSAXZBVV95cUxPQ2ZuTzZ2ekZ0YzdXODdkTURqNENIdGxnU3FwYlFZOWZXYjJsTS1oel85RW5JZy1xVGpLbkEtVVU0RVBOajVBdVN0N3lvMlZ1UjNqNHhsRnB3ZFl1c0N4N2kxeEZtUVJka1N2cF9QamNvZVUzZ3JB?oc=5",
-        "date": "2026-03-04"
+        "title": "Macron says France will increase its nuclear arsenal, allow temporary deployment of nuclear-armed jets to European allies",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOeGFzR28wMERkdHhNNTQzVVVIcHY1OEJFY1RJRF94VE1XSEpFWjVVUTlzeUlhOGdsTTlpbDRWN3lYT3BuQ2hOWjNxdXlieTZXa1F6X2dFM2RiUi1VRlhvdTNVSXZrbWU5X3poM3lUWUlJSnViMExPWGp6ME5uWmJvLVd2U0x0cTQweEdlX0IxYmVfLUQway1UUU50V3laLXpzZG9kdExZNldycUx6OEpKSzJIV1JLUmZyN1ZmNVJzeS1YS0tUQ2hISGUxZVY2SDVvR3g2UmlCZWFFa2JoYTJVc0h2bTNseHFTcmJZ0gHwAUFVX3lxTE1iMVZRWnVHOHRtQ2lCVzBOTHl0SWdJUk5vQ3ppN2EzcVR1YnJIX29YOTZPckpzX0tvUnJQZHJsLW1Kem1Sdl9heHNRMUhvTU9VSzE1UzgwMW4zMDlYTEJqU0Fmb19uWjM4R3lhVENwVzN5aFJMelpYWW5VbzhPUFAwbjlkamFvbHZnMklRYVhmMko5RURkSGFBbTRNQk5laWpneHo5ZTlnNWQ1cGQtbkRfazdDNDNzX0MyUFNKc0F0VEJCM3R6SjNrbWdadEFNR2lkSTNsRmlJTkJJT1ZzdmhuR2ZBUlhrRGlZMkdicjZ1Sw?oc=5",
+        "date": "2026-03-02"
+      },
+      {
+        "title": "Belgium Eyes Thundart as France's First Export Customer, System Guided by Ukraine-Proven AASM Hammer Technology",
+        "source": "Defense Express",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNR0tTR2NXTDVtcXg4cGVIN2NtUkVLdWplZkVJTzVYSG03cmF6dnJXcUlNY2hFNkVwZUVlUndfUGl3OHJMTWJFMVZaR0J6VjhVREtIOFVXeGxSUjVXdFVqTDVmWUlTSUttVHNuRUs0UGlmNHNJSXVha3Q3eUpOWHNKTmVzd3c1QzllUFNoR2VUYnlidVhUNm8tV1BDOW5neEJTd0w5VEVFR3JOQ3hQU3J0UHc0UjNWaXpTVjgwamR5dVhMWmVxSWxESHZPSVVzaFNLcXpPR25KQ3ZYVU5WeVFfUVpVSHhOcWlZTkJnby1n?oc=5",
+        "date": "2026-07-02"
       },
       {
         "title": "Belgium among countries to host France's nuclear weapons",
@@ -6728,10 +6734,10 @@ const ARTICLES = {
         "date": "2026-03-03"
       },
       {
-        "title": "Ankara reiterates opposition to France-Cyprus military cooperation agreement",
-        "source": "eKathimerini.com",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQampJdldwZUZLTjhHQlVsUVI0czJYS1BhSllHUEdzMmo4TUhyWHlUbmtLZVh3OUdxTXU4cThKT29kU3R0R2V4VXpCUzdDWXRIVm1ieUxpU1ZNdU5lMVRkbnBGc0RSY014Q1RweldzSTcxTlJPUlc2OUtuNElqajBJWmVQYkY3X3JVMFl0aEg3emVuZUxGanJRenc1UmVydHdqU2JIcXA3LTBVdUMyV0tHQTgtdDhVcF9PcEI4bWVJUlF2a1RGUTAyZkVrYm8zTWdvS2dURA?oc=5",
-        "date": "2026-06-19"
+        "title": "Belgium Signs $263M Deal for Mistral Air Defense Missiles",
+        "source": "The Defense Post",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5zSTlfUllCTnE0MHhCRHdyRTJXeGp2X1FLR2ZwdEZlMGR4cUpIYWpVcGxpRFlBbU9NUklQZHFPY25pOUZOQ0VYNk0tcUxpY3dIWjVQUldlbTZaeTFSWENtOGxyOURIN1JvNmlrakRWdDbSAXZBVV95cUxPQ2ZuTzZ2ekZ0YzdXODdkTURqNENIdGxnU3FwYlFZOWZXYjJsTS1oel85RW5JZy1xVGpLbkEtVVU0RVBOajVBdVN0N3lvMlZ1UjNqNHhsRnB3ZFl1c0N4N2kxeEZtUVJka1N2cF9QamNvZVUzZ3JB?oc=5",
+        "date": "2026-03-04"
       },
       {
         "title": "Belgium seizes suspected Russian shadow fleet tanker",
@@ -6740,16 +6746,10 @@ const ARTICLES = {
         "date": "2026-03-01"
       },
       {
-        "title": "Israel is losing its last friends in Europe as diplomatic collapse deepens across the continent",
-        "source": "Ynetnews",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iSjQxYU53UTMwQnRBS3VlYWktdWNWSVY4c25aM3hXZkJwWTJuYzd2VnI1N3NlNllWUGVaQ3RQanF5MTh2V3QwdW5xdElhNVptLXBmcnRR?oc=5",
-        "date": "2026-04-14"
-      },
-      {
-        "title": "Thales eyes more SAMP/T deals after Denmark picks European anti-missile system",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPOXBjc1ZpRk9ZcHVxMVVldjdYR0RBbS1NSkFON0hCQkc5bWs4c1JYQ1RlQjl0SjNvVjJlZGhLOTUtZ1JlQWVMLXh6S0VUaE9acmZrZzZtT2JCbzdhQ0owaUNwVGJlUlpfb3RwSlZyakNIRHRHYTJJRXRKRDF2cTd6WG5BYlV4YXVFNUNueVlnTXgzd29YNzlwdVBjb0d6XzVRT21sQW5NbWxtYndJWEFLdVpUOXVvZmVlZmw2SHhqaWUySlBtTU0wXzZOU3c2NndoYUl1X3Fwdw?oc=5",
-        "date": "2025-09-15"
+        "title": "Britain, France, Germany aid Belgium after drone incursions",
+        "source": "upi.com",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWDBaNk9sQ2swS3E4eEJGWjctNWp4V2tyTXlEQnBwUU9oX3pVbjYwamRMVFNBRjdvVGhIMDhTaTA1anBSdGtsSGpDSkcyNFhQM19xZjh3TVh3MUVfVlZ0TnRoblpLZE85eGJCT3FYUmNSUV82aVlEdDdva3RHTGRqNGFSX015TFphQ0dFYi1mNFpWdy1DTGtqNUdOY1k2a0NzTThYbzRRaDhmOVdpWlHSAbMBQVVfeXFMUEdZeGxscWN4SVA0RkFoU3ZWXy1DbzkxNTJaRkxveDFrTWx3eEFfOXVLTG1nSFQxWjhYdGdFQ0NSeWh1T2w0cEVNU0h3VmpqTlJMMGlZZ1ZJbGZiMDRVSjFma0ZKUlFxVVJOY3JfU3pKR3BwTnZacTNvQXlTSjNheGZwdUVqdHNxRlp1WnQ3a0hodVd4S1NDc0tVZzBkQWRZNVp3dl9vMGh6dXNId3hCRmxvZ2M?oc=5",
+        "date": "2025-11-09"
       }
     ],
     "iran→belarus": [
@@ -6769,12 +6769,6 @@ const ARTICLES = {
         "title": "US sanctions 13 Iran-Belarus-China entities supplying Iran's IRGC. That's three of four \"Axis of Upheaval\" states",
         "source": "Euromaidan Press",
         "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPVkk0Q19NdmQtODBJbnVfVWJwaGVYaVZaT1BSaFBJWTlWemxXMm1ZeGFMX0t0TUtvWl93UEt5T0xrMDZkalprS3dXclpkNzdpcDdtQ3ZBU19zaENDei1IX29XaWNzZlJ4a0I3Z0Jrc2FiUDZvNElGSmJmNF9DWWc3eHBtZFFuNVpHdWVVYkwxdzE0YjBhMExpZlFibmRNMkp6UXdtR3QyZFE5cU14RGRyTk9LSmpJZUdxS2pLYmFPQmVJZkNzcXVoczRoOVV2amx4VTBWeWRuZFEwZGM2QTlSMXRB?oc=5",
-        "date": "2026-06-11"
-      },
-      {
-        "title": "U.S. Treasury Sanctions 11 China, Hong Kong, Iran, Belarus Entities Over Iran Weapons Procurement",
-        "source": "Forth.News",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5fa3NWX01PUEpUblFyRjNUSkVCczB4N3BhMzJrVzN6d0YtdzBTcUpxNVZCVWU2NlRrU0doa2xPZ2tKdFRhQTl5TlBIajRDSWZ2N0FpMTF6LTgzVVM4d0V2TVhn?oc=5",
         "date": "2026-06-11"
       },
       {
@@ -6800,6 +6794,12 @@ const ARTICLES = {
         "source": "Caspianpost.com",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWHhZMUNPdHB3UXNaUW54aFE3Y3lWa3JGQzNaWjEwU2E4bnBfX19zOGVMR3ZadzlPVjVXSkMweDNaTmc1X3lJcW0ybmpLNTR0cGxxZXcwaVR3MFMyVE82VTlfWll6RzNTakpDX2JrRGh5c2NPWlNQbHVfUGl0ZngxbWEyTnBtV3FnT2ZVSnpsX3BqOFUydGc?oc=5",
         "date": "2025-11-03"
+      },
+      {
+        "title": "Iran Turns to Belarus to Rebuild Air Defense and Electronic Warfare Systems",
+        "source": "UNITED24 Media",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcVhTOVdtenktZ2JLWDgxdGx6N2ZzUDlacnlDMnFnNVlHOTRXMGlxTXAxbmFnZnZja3pwRG5rOXUxR1BOYmpCdGR2YjlkbGxtb0VvSDJtejJzanZQQ2kwdlNNY1EyMUludVh2SE1aSjV6bEVuY3Vubl9SVHNlUDgwYmZMUGN0cXNrUTBUc2hYMXNRY0w3YWk1cDQ0Yk5oTjhTSFB2ZVBEamJiNnNYUWNqZHZKYy1MVlVfN0Mw?oc=5",
+        "date": "2025-08-22"
       }
     ],
     "china→belarus": [
@@ -6940,16 +6940,16 @@ const ARTICLES = {
         "date": "2026-03-10"
       },
       {
-        "title": "Algeria Successfully Launches Alsat-3A Satellite, Boosting High-Resolution Geospatial Capabilities",
-        "source": "AL24 News",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdllKMU9nSnhTbkJFUzFJcVpJY3ZRT3RfNndmMHdhM2NYY0tSTVplNmRNOXVvZ0RZa2oxNUtKUkNtd3libWpqNFVxRzZsWkR0VkFKeTZORm40TjZJY0NrWnBrbjZwdlRfTjhUb2U0MllkeEhsdDhUU2VNa3BIdkVEY2xjU2g0dXp3dmtvTl9tdWlLUVN1MGQ2OXRISVNRRHMwSzF4cTRBX0lXcWhxTEhYNTdySE9SSHdhWmxQZnhR?oc=5",
-        "date": "2026-01-15"
-      },
-      {
         "title": "Algerian military buildup diverts eyes from economic frustrations",
         "source": "GIS Reports",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9rNDRjU19MS1k4a1ZaRTFYZ0hKS2dybHBjRVFqbkdMZ1d1cndkTkotOXpCb2Q5aUtCbzIwckRpUllkcV9Qak9fMFpXbXFJaENRTDNMOWNQN0tkWFhsNktrQ1hnV0NKbWlDRWR1enNR?oc=5",
         "date": "2025-03-03"
+      },
+      {
+        "title": "China in the Maghreb: Forging a New Era of Geopolitical Influence",
+        "source": "Middle East Council on Global Affairs",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWkdZYlJiZVcyLUpNSE5pMGZPS25vNnlHM3JlNTFzQlpjZTdFUVBCbzdNTmRKaFlXRHRwM0NzTW4zT1ZlTE5tdTFjcGdlNGF1RWxPX095TW5XQklydFpoc3pvTXVVZGdxbTN2YkZDbVY3RWM0aXg4Yno3YUJkNE95Z204ZEI0QzdQcWtJSDlhdWtpMEpBQmtNRm43SnRyRTZX?oc=5",
+        "date": "2025-11-13"
       }
     ],
     "germany→algeria": [
@@ -6984,35 +6984,35 @@ const ARTICLES = {
         "date": "2026-06-17"
       },
       {
-        "title": "SIPRI: Morocco Overtakes Algeria as Africa’s Top Arms Importer",
-        "source": "Morocco World News",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcmV0UkhFWEg2VGxabUNRMmsybmMwdFNEeVZaZE1CRDFpcVNpMm43VVBQV2g4T2Q3b3VHVGxzRTNfRkc4aW5mX1hva3RwMS1WX194Q3FNb3VXbjM1WFF1eThjeUlaVk85Tnd0WEFYT3RzM2I4MERyWkFDQ3ZsTy13TXlESFpLUV9QcWdmeUFoa0xHMC1GbkZSc0dRd2UwbVN4N2JVV2p1TGdTN0F3RHc?oc=5",
-        "date": "2026-03-09"
-      },
-      {
         "title": "Morocco becomes Africa’s top arms importer, ranking 28th globally as Algeria drops to 33rd",
         "source": "HESPRESS English - Morocco News",
         "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSDBGdlliS2pMVFJfcVd1OGVoaGhJc2xfQjJaeXAwOUFZbFZ4N2NnQjVBY1pRbEMyZWl3WkhTcFNwNWVmQWsxU2JMM3IwV3lwSDUtd1dPTTVONUJYel9OUlg3c0labjR2c1MtNDl4dTRuRmhpY3hEQjVUelA4NVdlWHNzU1dycy1BV3loRGttOXZRem40Uk1OWG1kZ1RVR2QxeWlySHFKenhuZUtWc0J4MW45NEtfMlBXLVNQaS1ta08zdw?oc=5",
         "date": "2026-03-10"
       },
       {
-        "title": "Germany Approves Record $20.7B Worth of Defense Gear",
-        "source": "The Defense Post",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9MVWhXUlVPZzV0VDhCQ0I3M0o5Y2d0aVNuVVNmYVJFNjNJaEtJU2FVU3JXaERlVi1ZWDlLREl4WldycWlMa3lMM0p2NEotTExqb0hFTmJxOUdrZlhja2ZiaHlSSzNsbzdRa3A0dU1kMjJfSS0yUko40gF8QVVfeXFMTW4yckw1b213aWZUaW43cmR1REZZV1hzLW5KeXBITlBILW1NWDA0QzFueFpMMVIyQzBEUk1kOUt5N0QwUmFaSE83d2pGMWM3aTlxSWRtejA0VDdqVXVOajVuN2JleWkxd0FKVTZkNmhTNTBtMWRlb1VFNHpZeA?oc=5",
-        "date": "2024-12-19"
+        "title": "SIPRI: Morocco Overtakes Algeria as Africa’s Top Arms Importer",
+        "source": "Morocco World News",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcmV0UkhFWEg2VGxabUNRMmsybmMwdFNEeVZaZE1CRDFpcVNpMm43VVBQV2g4T2Q3b3VHVGxzRTNfRkc4aW5mX1hva3RwMS1WX194Q3FNb3VXbjM1WFF1eThjeUlaVk85Tnd0WEFYT3RzM2I4MERyWkFDQ3ZsTy13TXlESFpLUV9QcWdmeUFoa0xHMC1GbkZSc0dRd2UwbVN4N2JVV2p1TGdTN0F3RHc?oc=5",
+        "date": "2026-03-09"
+      },
+      {
+        "title": "Algeria-Russia Relations After the Ukraine Invasion",
+        "source": "The Washington Institute",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNakw0Um5tVHduYVR6a0xFcDRxUjdTN0tYeUVPYXJJY0ZXdExBck1nY2oxWTJoVzdiODZSNVJSNUxETjZjdnFYclg1M3p4V0NEQ1VpcnVkQURfSy1YZmtKbFZoYmhhOVluTlItYko1dW5EcHRrSzMyd0t2RW4xalVTWkpteUtKMnFwS3otOERMUTVBQ292RGtnQTFtNDJFSUFF?oc=5",
+        "date": "2023-05-18"
       }
     ],
     "united states→taiwan": [
       {
-        "title": "Senior US diplomat says Taiwan arms sale does not hinge on China",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNb2czdU9wc2MyeXFJb0Rpc25GM0FYN0hoR1plSjU1NTU2UnJjT3V1M2ZYNHYtX1o2b1dvazNyZWFKTGMycjhJQlJOLXN3VTU2ZVJ5SmpDNFJRdUR3R2Z4T0NkcDd5ZmZrcG1RUVdMR0pOQ0JuLXZpbktrOGJGSEMwVDZNS0hVZXZJaDJfU000NlFHNGhjWG0tampnTms0MVcyaHNZQjVFbWVDREVjRnc?oc=5",
-        "date": "2026-06-25"
+        "title": "Redwire (RDW) Lands Taiwan Defense Deal, Is The Stock Cheap?",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMndsN2pfbjl2R3hYbmJqNGV2andCa0prMXNYcDloZlBQc0NiWTRnb1B4QXJ6TEM5RU8zMS1PUUpDTlE4blBnVVIzZExaSS1wUzdOVUpmVVBjcnQyWkYwWUVFYk5RdUthaENmZEtrUE55SHRIdUd4OTFHd25iNVRoX1MwdHgtV215d1Q0c3YxejJ0S3FXZkhoWWE4YkZfNUxZT3M4WkFDc3hCRjZBd0xlbzVJNFlzVndjMDg2NWM2b0stUdIBxwFBVV95cUxPYWREWVJhTHJ4a2dXRjRvcGdpcVZEYS1DYVVSeVhTZGtTRXI0MGxhSDFRVDltSlpWZm1CMFIxdG1nVDJuQnRHVTJhVEViaVNySHNzZ2VVQ0sxYmF0MFpfWHhfMFF6TnhCazBfV3pSODUyUVdWVWhPTmNMdFQwa3FkVjhaOHU4Rk9HU0NtOWJzRXl6Q1NhRmx3NDZxbl8zcmQwSndyM1NxMGg3VjF2RG5sdUROOFRERE5vS2I3MWJKakREaVZEMXhJ?oc=5",
+        "date": "2026-07-10"
       },
       {
-        "title": "Taiwan’s President Says He Trusts Trump to Approve Arms Sales",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPR2dodjZ0LVc3TTJFUVVkR1hOcE91NWtQMWcycGg3ODdoM2tUUlQ1SkFrQ0tWdVQ3WExqTi1naUxJUU5rUzdHWnpRcFNSNTZsRWFWOW8wRl8wWUFkdndpVlBXNFRBZVBEenZRek4yU3lwME5seEdZU1NBcG1XZmFPUlhGeGxuamoycWc?oc=5",
+        "title": "Taiwan needs US weapons for self-defense as threat from China grows, diplomat tells AP",
+        "source": "AP News",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNXlQNjlmazB0SVA1UWJIaEVmbmZ0YWJNRml3MjZGOHhJdmNkQXZkaEcxbDRJUXNUM2k2VUpkOXdKQWlvRHhhYlZpOThsTDJIb1Z4bnkwS0JSLVZKT0NIS1poZ0NPQktOeHF4WkozT1E1cDZsNE1RdUZhNGVUendIRUtqZi15TFQ0cjNpNlViWl81R00?oc=5",
         "date": "2026-06-18"
       },
       {
@@ -7022,28 +7022,28 @@ const ARTICLES = {
         "date": "2026-06-18"
       },
       {
+        "title": "Taiwan’s President Says He Trusts Trump to Approve Arms Sales",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPR2dodjZ0LVc3TTJFUVVkR1hOcE91NWtQMWcycGg3ODdoM2tUUlQ1SkFrQ0tWdVQ3WExqTi1naUxJUU5rUzdHWnpRcFNSNTZsRWFWOW8wRl8wWUFkdndpVlBXNFRBZVBEenZRek4yU3lwME5seEdZU1NBcG1XZmFPUlhGeGxuamoycWc?oc=5",
+        "date": "2026-06-18"
+      },
+      {
         "title": "Taiwan president says hopes for $14 bn US arms sale 'as soon as possible'",
         "source": "France 24",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOR2hmTGxmNmg2OHJDS0VwbDd6V0k4LVhsbl9YX2xZYlpvTlRodUNlUTFEM2FLYUx6Zk9jTDBBOVdoWGlIeW1ya29nUU1qQ1NldUQ5eVBOSkRzc2RqajFfT0FHcEZBTEsyNVJFSXN4NW9xN1RzMnB5ajFZdHAtUWVkNGhmQ3Y5aTVZRXlTZFNLM1I0V0hDRWd6MjRxVVp1MG9ER3FtR2NpaE1DbWhtb3d4SGJUYXBSWkVr?oc=5",
         "date": "2026-06-18"
       },
       {
-        "title": "Trump weighs Taiwan arms package after summit aimed at steadying US-China ties",
+        "title": "Taiwan's president defends U.S. arms purchases after Trump sowed doubts following visit to China",
         "source": "PBS",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQS1veE1RaFVtNE1UeTF1ekxQbllBYkJ5QWxPZnJqb0N2b3V2bkRXYzE1WUgtWE9EQXpXdlQyX2hJTVhianU2SmZseUJ2Mmw4cmZhZjMweF9OcUJfSF9ROVptSm4zQ0JGTDJ6LUpNVDJpVk5WTGJsMWdUNl9Hd0xVYkladjd1YnFYVXRlN2lkcGdZR1gwMHR0SVBpUHFWZmlIeHpKQmlPSzBHRWppeXdNaVdvZ9IBuAFBVV95cUxPN0FCd25yTEU2bnR6RkI0Unp0eFU4dWJmMC1rS1NoUmFzMS11N0oxV1o3UjU5dmxZOTVhUGJIUWt0LTdFc1pOdFhWOGRnZzducHViVnpzbVNONEpPM3EyYmVvSGpnY0VzbV9GanJSbkJlMWRHY1g3bWEyUVRlOU82Uy0xY1lGenZMTG5Wc0h4UEhfYnloTDVjcDllNTBCdlpfQnRIQ0tiZkcxaU5Ud01oQWhSdmlUTGct?oc=5",
-        "date": "2026-05-15"
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOY1ZReGZiZnVBSTQzZDhDYVpreUhyNEtHbW5wNHp0clFLUXZ2MXc1QWt4c2gzdGc1eld4WExzOUtuTUw0YVNmVlFCNlhqb2Z3TEl0Zy1BYk9LbG8tRzhyemwxUUFia2JjNVc5WEpYVkxXQ3JuQUtjWEk4Nk1Pa3RYdEtUNEwwSGFjNW5xYnlSTGg3eTJhczZuT19XT0g5a2oyZC1vd1NJWmZnLVU?oc=5",
+        "date": "2026-05-17"
       },
       {
         "title": "Trade rep explains Trump's remarks on arms for Taiwan",
         "source": "Politico",
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSmVxQUNqMkVITWxuTWZiRGlNZmNZdUw5blhDcVRvMU9tMEJ4cC04ZmttV2Z1dHI3cU1pWkNHQWdEdVd4eC1ESHBHazhhbWZnd3oyM1REX1k3RXlzNTlyZlVDem8ycVh3dlducUtZVHBDQkY3UmVOZDQ0bEU0eTJyRXlrNmpVZw?oc=5",
         "date": "2026-05-17"
-      },
-      {
-        "title": "US navy chief says $14bn arms sale to Taiwan paused due to Iran war",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DQmx5Vm9oZTlhYXo0dVlDaHI1VUQ5eElKNEZlSWo0b3dMOXRoaGJyakl0RTlocU1hRDhBUC04SXRyaGJLSmJiTDAwRHlERzRDY2g4Qlk3WVpjUQ?oc=5",
-        "date": "2026-05-22"
       },
       {
         "title": "Will Trump Continue to Slow Arms Sales to Taiwan?",
@@ -7064,6 +7064,12 @@ const ARTICLES = {
         "source": "Global Taiwan Institute",
         "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1jaEVqRks3clVrdnVITlB5VklJR3hVVVY5X0p6cE9fbGkwZ3F2M1drNk9kRVMtbXo4YjVydG5OVXpERUR3bkhkYkVCbEttVExYS2wxSUhaeDE1QllIRFA5SkhDRGs?oc=5",
         "date": "2026-03-25"
+      },
+      {
+        "title": "U.S. Announces Largest-Ever Arms Deal With Taiwan",
+        "source": "Foreign Policy",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbkJ6YTRscXA1WHU4Z1dkdDR3VjZHNENvbldrSkFMNTBQdTB1WkRfa0dDNHJWa082TVlBWTk0YVF6blpzSDBJVWxWa1ZCa09vQzlkR01SdS1rZnZyWW9CX3BMamZaRXJCMUl4V0pnU2VZSHVzVGdlQTZoWU5oaUw3NzdwWURGMGdkTjFHd3owOXE5blk?oc=5",
+        "date": "2025-12-18"
       },
       {
         "title": "Taiwan’s Delicate Balance: Navigating Trump’s America, Europe’s Hesitations, and China’s Shadow",
@@ -7090,16 +7096,10 @@ const ARTICLES = {
         "date": "2026-03-20"
       },
       {
-        "title": "Will US bury $14-bn arms package promised to Taiwan after talks with Xi? Trump says 'will speak' to President Lai",
-        "source": "Firstpost",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOWEM2NDB0ZUVUS3lRTDBpS2hZMFRvNHJEZ3ZUMGp2QzEwNmlVRGhQMnUxOFIwY3hfbEtVMGNIWmROLXFrWlAzVWF5UkRUYlpNbE1yNlNfUFRWZThEZFFkeU45UzBPNWNoVXNReS1BZnBQckRQdlRCdTlwTE5jLXdwNWNwekNKM0xvNTlmUldpWGZ3cENEX2x1LTlmOGlTeXRiY1RWZy1KSjJEQlBybnJhNHNScW1Tcy1FcWtnWWl0TS03YmNRSGtjTnN3aWNiXzNVMlNPMHp1WGV0a3l4UTU1SzN4Z0o5NHFwdWNR0gHwAUFVX3lxTE1iZnBxallJNDF5RzVPOTBJYkQ5OG1yZ2NfLVFLeXhzTksyLXQ4ckJUdlYtSElrYVExUE1ySk9vbDZXLUk2Q2g3dmtqVVNFUTRNQ3V5ZlhOY3lBOUJCeXN3aUI4YkF5NDhhMGYxajFDLWpQaGU4QXI3bmVFYVFxNC1yWFVBSlVwRGgxeXo5SXV5eVFpSGVpcjZrcGtKcGJpcE5vYnJCa0g2cDNIS1J5cG4xaWxIaG96TldXbzdpYzlwdnA0Nk1SdUM1R05FejE4YnMyR2xkdTNpdTBYMEJFRHBaSkJOR1ZXTzdRc2J0UDlHbA?oc=5",
-        "date": "2026-05-20"
-      },
-      {
-        "title": "Russia is modernizing its arms factory with machinery from Italy, Germany, Taiwan, and the United Kingdom in the midst of war, plans to install at least 22 industrial machines, and a member of the European Parliament utters the most viral phrase: “Thank good",
-        "source": "OkDiario",
-        "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPRTRmTjhyR2FqeFVyYWJranZRQV81SmF2Y1NnRzJKUEdDei1XOVN3bUc4QS12dzNOZ0c0aGVWYTk5U29FQXVZYkZpYjBBcW8yd1lCMXBBdUZrLThBVmZhaE1adWd4OVVqUmlyaWhWTGlqQ0NBNERhRkJsdEVOWVdYek85WjdZNVVMMlYtTDdYQnRlZmt0VUs5RUlCblF0NFdZVzFkajFkeVFjWWpHaldkRWNBT2VhZVdsWmxteVBQT0hwSmNRaGRfV0xJdVJnNDk0WW12QXk0RDA2RVZjRjRoN0lBWXRvSzh1eDhkSC1GZ3FQSG1xMHhvZ3ZvaTRCdENoZUVnMGNBN2FHWVVsMjdmWDdfNmpEQVBodGk5YmpZWVFWTzRlZHRDd09NRWV3X1d0aXlWLTBKY1puLVRTbmlEQWpieHpUNWxXYURiUHNzdHk?oc=5",
-        "date": "2026-03-07"
+        "title": "China drills feed info war targeting faith in Taiwan’s defenses",
+        "source": "Asia Times",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdlFVN1JUbWdtZktUbXhsU2xvS3FvdWxGeVpmRmUwSER2RHpLTVJpYmZDb2pEUFJuajdSa3Y5VW42bVlJWjd2U0dFS3hPU1JoZThDcjBjR1piQzZYSFBmZXNOSk96QWNZMmpKdVUyaUI4bEJyU2hMaFg1QzZkbWpLYWxINThpWkRkYlVvY3FIbjByRHRKWXM1Vw?oc=5",
+        "date": "2025-12-31"
       }
     ],
     "germany→taiwan": [
@@ -7122,12 +7122,6 @@ const ARTICLES = {
         "date": "2026-05-13"
       },
       {
-        "title": "What Hegseth’s comments at Shangri-La Dialogue say about US foreign policy",
-        "source": "Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMTJDOG9KbXp3MEpwM09yckNEUl9mb2w0MEsyb0Jtekx0c3ZpYXBQSlI4VkJGWmtZODJHQ3RzLTFiTjE0dXIwM2tocEgza1pxQ3NFVmRkLVJaRzc1dVVnVGI5RHFpRVpkUFJYdTA2X3NEdGtFZV92aGhTUmZ6YWJMS1l6VzdVQmFDYl8zVXVjWFVYb3pSX2F1RENSaUstenNrZ3hvMW45XzhGVU0waTk2MnVGVFfSAboBQVVfeXFMTnlOUkRxWEFPalJxUVpaQnBjeERhdGl3S3dwWklOQlZfRm9NU1lsWGZlZE9Qbll1LXlYUGZBR0xoa254QTdhdVo2WmxRRmR0c2M4R1A0R1Z1X3V1ZGtza2lzUXVoZDhueVlNSzltTUQ1c3dpYU9jS0drcG9KRlhFRzFxRmJaT0FNR00tU1pPQXd4NkNwWTZQRzJpS2hEd3R3NTAwaDJnamNJelpDelJkcldsa1UtZHdDb0dB?oc=5",
-        "date": "2026-05-30"
-      },
-      {
         "title": "Taiwan-Germany ties not subject to PRC: lawmaker",
         "source": "Taipei Times",
         "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5XYU9nWURYdGJxVlUyQTlwMWpXRUNFQ3ZtaHk1d0ZTY3dDdFhDLUw1WGZHbU1VYUNnWThubnktbEFpNW9sVTN0RWdMaXZIYU9TWGJPU01xRTdnVmxTeHZJRWRieXl0dzVGWmxLVVA1SS1vT0FOVzhMSg?oc=5",
@@ -7138,6 +7132,12 @@ const ARTICLES = {
         "source": "조선일보",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVExlMzJKR3V0Z083UUdJOTdsbXdTczM4M3d4Vk12Wmd2dDNINE51TzYtcXV6aktCbks0cldjR0ptdi1OZUxWdzJEb29tVC1qODVpNDlRQ1UzR24wNDN2OC04Y3hUZnNERnVjUlZORkdGekZkSUpCaVRmVFVkNHIzRjJGOW8?oc=5",
         "date": "2026-05-18"
+      },
+      {
+        "title": "Global Energy Update: Pentagon, Rosneft, Taiwan, Germany, Africa, Romania",
+        "source": "IndexBox",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOS2ppaTNGaG9ETUltakRRa1FsTExveWJSQ0lMS2g0U1haVjhYd192TENDQ0pGT081NUxjLWM1TU55UXRNaGdlSGoyZ3ZYUUxXN0xodUdTQkU2RUhub2pXVDBESml0cDJQUDUyeFhRV0hSaFY0SFhxWDhlVERLbkdjQXpwQVJqSU9VQ3FPeTZMUEYxLVZnZkZ1U0FMNFZiQQ?oc=5",
+        "date": "2026-05-25"
       },
       {
         "title": "Russia is modernizing its arms factory with machinery from Italy, Germany, Taiwan, and the United Kingdom in the midst of war, plans to install at least 22 industrial machines, and a member of the European Parliament utters the most viral phrase: “Thank good",
@@ -7178,28 +7178,28 @@ const ARTICLES = {
         "date": "2026-02-27"
       },
       {
+        "title": "Ukraine and Germany sign defense deal, boost drone cooperation",
+        "source": "Courthouse News",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbExSYlZiMW1mSng3Z3pMUTdvMV9SVl8zZ0h6Z0ZsVXVGOUhVTDlsd0RGZjdhYTdrMWR5YVB3VE1Ba2VabS1oYWktYlZkZHU2Mm5OUG41bDl1cHpmQ25zdWI2ODNYc2psNUlqVW9zaUhlZXNiZENxZnJEdUY5T2Q2LXhtNXkyYWpWckNFSTExdEZOVlk?oc=5",
+        "date": "2026-04-14"
+      },
+      {
         "title": "Closer US – Hungary Military Cooperation is Good for Both Countries",
         "source": "The Jerusalem Strategic Tribune",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPY29LTmc2MmNkNG9tSHV0Y3RYWVp6NWRGMDhFMC1QZWVBLTB3X25ESVpES21DZEkybzZuR0pDTmlzMlJ4MUlWZlVfaE1pVG1zSFhxQks0LUlKM05nZG10ZGIxYzlVU3pYdFhpTEN3RU8yUFpnUm5tTFFqVVFoVHJpWmN3?oc=5",
         "date": "2025-07-28"
       },
       {
+        "title": "Ukraine agrees to defense deal with Germany to help in fight against Russia",
+        "source": "Los Angeles Times",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSXlkZmdfTUhaM0VlQ3NEWXBOcGw2R3hZLW1MWHJEbjU1YXU4VUpBWm11cGVSU2FoN29mOEdNc0RlQmU4U3VZVUZidWVQOVdaeVRrSDF5b2RjUXdDdVNNUFdKN1R5M2pJZDFGQ3dwekdVenBNdTNvMkJidGNDZklJV3JVY3lPY0ZmaE5pVHVyazdFU2xlS25tWnB4QmNvcE5xelp2ZnZZaDNkbjVETFMtMG1DZHJyUnRfNDJiUnZ3dkowa2J2REp4Rg?oc=5",
+        "date": "2026-04-14"
+      },
+      {
         "title": "How a Leopard Travels: The Logistics Behind Transporting Hungary’s Armored Fleet from Germany",
         "source": "Hungary Today",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSTA2cEQ2NE5RS180R1FhaFd0SHVMS3RwTEsxbEVGakNFUnNMemRWbmRkZzNfeVFtMzZ0YWVoSWVSMjU5QXZEbi1KcDdoSGZRemQ4UERRU200RTJDcjlEblZXWFYwZmhHdzVESFBGc2F3dzRwN2xMVVp6ZE1YYVVyRTFTbDN5aklxRkJ4VHRNSjI1TW5kOHJnYVdIbUlDTFRSVnI3Zl9mYWludDhuUzBTejZWVmpsY3c?oc=5",
         "date": "2025-12-18"
-      },
-      {
-        "title": "Eastern flank countries push to salvage EU’s anti-Russia defense projects",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZ21HWVh1bEc2X0twZ2xsZm1meFliUzBxYnZxeFVqR0xnZUlTMTU2ZzFLMHpDSlc3RDFGeEpTZXJDVXVEa1Z2RmVoOThIRnQwcUlIYS1aVEg0NG01NXRuaHlqS3lnTVVETHdoQ0dOdUcwTEQ0b1NSVkt3TElRZ0NNZkI2WWtBNjNkeUpEaXVfZGFiN3R2aWhxVUJMWkNwNHFaam1FdE45NVA?oc=5",
-        "date": "2025-12-16"
-      },
-      {
-        "title": "Ukraine and Germany sign defense deal, boost drone cooperation",
-        "source": "Courthouse News",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbExSYlZiMW1mSng3Z3pMUTdvMV9SVl8zZ0h6Z0ZsVXVGOUhVTDlsd0RGZjdhYTdrMWR5YVB3VE1Ba2VabS1oYWktYlZkZHU2Mm5OUG41bDl1cHpmQ25zdWI2ODNYc2psNUlqVW9zaUhlZXNiZENxZnJEdUY5T2Q2LXhtNXkyYWpWckNFSTExdEZOVlk?oc=5",
-        "date": "2026-04-14"
       }
     ],
     "united states→hungary": [
@@ -7213,12 +7213,6 @@ const ARTICLES = {
         "title": "Weapons, Oil, Nuclear Reactors — Vance’s Goody Bag for Hungary",
         "source": "Hungary Today",
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNVFyYWZWVzludmFCbFhRb1k3Vml3enViTllsSTVfblNZZGx4UGk3RHhzdkRhOEhHT2RlSmlVTHNzakZCN3ZYLTlya3J4WGpLUlloMjBmQ0xHbzJGLVJ5aTZZbE50WlJUYmJxWjVqWUtHbjd2ejNPaGw1WlZuZmZ5eFMwUHZ4dk9obFE?oc=5",
-        "date": "2026-04-08"
-      },
-      {
-        "title": "Vance calls Iran ceasefire a \"fragile truce,\" says some inside Iran \"lying\" about deal",
-        "source": "CBS News",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYVd2eUJvclBqMDlyZ1gxRFgtbFV6c1FlTzA3MTY2MDFtUWNMc0ZiekJ1RTZHNW5mM2gwd1FsbDZUdEZMVGNIaEpwcklEdUxxVHlzRXo4UUNSZnY4NlhVVF9qVzVxNUZOQ0ZPSThCQVpfclhMdE8yVExFUF9oMzIyRTlsRW3SAYoBQVVfeXFMTU5laFRPaWJYcld1dkloX3VWeFctTnhHTFpuNkdYSmtELVJWVkNUUUUzMWlENFJsVGtqNlQ3MWVuY0o3cWZKcWo4YUExdHBkUkR5SWpqTFFkVHhySXRLOW5mUEktVHQ2dXlNMzNyWUtlUjUtb0hrTUhyZWc5dVN1azV4MDh3LTg0LTRn?oc=5",
         "date": "2026-04-08"
       },
       {
@@ -7246,10 +7240,16 @@ const ARTICLES = {
         "date": "2025-07-28"
       },
       {
-        "title": "Hungary to buy US nuclear fuel and technology to store spent fuel, foreign minister says",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOampxWHZxalNYbXZ5RzJrYTdlYkZQa1JibWdPanhQek85empJWWJldjdKQi1wYkU4RnN0SktKc2ExZHJEYTkxampSQ3YxVlhvX1F3ajFYazhLVTMyUV81ekRZQ0RQY3J3RDREajlodnVDVFlfMDRmeE9GZnhkVHFfRG5MaW1uTk1LdEVjT1lBMFdxeWZJampmXzJrNVhIQWZUSUR0OENUSTdrQXU5MzZxYVpBT2NnMlFtYWdWVVpRZElfSlZoM2dmRQ?oc=5",
-        "date": "2025-11-07"
+        "title": "Hungary",
+        "source": "ICAN - International Campaign to Abolish Nuclear Weapons",
+        "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9GYk9laEcwaFo2a19fTnBWQWxxNktTQ005RS1NZjk2emU2QnhqbXhZSzVPMmljcjc1enZfQ0JIZWl6ZlE?oc=5",
+        "date": "2019-12-31"
+      },
+      {
+        "title": "Hungary in Talks to Acquire HIMARS From US: Hungarian Defense Minister",
+        "source": "The Defense Post",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE42aWV6UUJNWjBZNi0xZ1d0bUNPblBNaV9fRXZKOUZHY3dKaVVZVnh4ck5DNjRQVEhyMHBxUTdEa0FrejFsdFVfdkZHbHBCMm9meDdiemJoeVZPMWtKWno2bXhsZ2xGQUxFc3JLUEN5QdIBdEFVX3lxTE93T1l3UzNQY2pqbUJTOVVJMG16VHBUeHQxVDdVQmpqLVBaRzllaUptdEthNTduRVhCSy1zQlFnYkFOZ1dZOGcxcVpPcXpzWGFLaWVyRkt4TDBzYjd4UzNMbzFjR0NrMkNIMGJQcnJvSnU1cWZw?oc=5",
+        "date": "2025-11-11"
       }
     ],
     "france→hungary": [
@@ -7260,16 +7260,16 @@ const ARTICLES = {
         "date": "2026-04-29"
       },
       {
-        "title": "France and Ukraine agree weapons production deal, as US peace talks announced",
+        "title": "France denies blocking US flights as Israel cuts defence ties",
         "source": "RFI",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUS05eTQ5TnBsell1OTJYUXFHQVZMVkItSUYtbTM2OG4yellFRkVLdmpOTUNaX1NrTlFrNlR5YUl3NXMxNFhPRjN4b1J5YmV3ak1qNnZWdEdKVlMxajNSZDYwcjQyVVZVcUZ1QW9EMVY4SmRndURmc002ZmpZTGlUdDVxeV8xZDNoR2J1dlc2UHA2Qk9mTkZvXw?oc=5",
-        "date": "2026-02-09"
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWEtEQlJQdHlaNDhOdGhvR3ZKcXVlRkZaNnFUamZKUk5sdGhUb3RKaUZ5R1M2OS1mbWZLQjFLZnpKcWFVUVczejlsaFRfRW9KVUVWelllRVI1NWh4QTNSeXEwY1BCQXpaTjdaOW9NcGp4YzV5WnlIXzh1c1VZVGNaVU1GazdHREhXOTA2TnprQnRvSmFSemFfTHNqSl9VWXNkY251U2lzV3BmQQ?oc=5",
+        "date": "2026-04-01"
       },
       {
-        "title": "Israel is losing its last friends in Europe as diplomatic collapse deepens across the continent",
-        "source": "Ynetnews",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iSjQxYU53UTMwQnRBS3VlYWktdWNWSVY4c25aM3hXZkJwWTJuYzd2VnI1N3NlNllWUGVaQ3RQanF5MTh2V3QwdW5xdElhNVptLXBmcnRR?oc=5",
-        "date": "2026-04-14"
+        "title": "Peter Magyar: former Fidesz insider who vowed to dismantle Orban system 'brick by brick'",
+        "source": "France 24",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUEg1MHpuNW1uWnNmUUtQTUJVLWdJdzhsUmlmVzdtWW8yTVI4MDMzMXZjdnZfQmJ3M2RGczRMZmlLN19SZDdwV2tfQ0g4ZnYzVFdJZTg5SDhQQ2NNRV8zZ2Z2aXlrWXJRbGNlMXU5QzV1cjFYQ3R1VUYzZkRoQkNQTWN0bktoS0RvUVNFWVF3a0RXZ1UtNFVUSi1xeENweFZxal91TjdjTldzcnVaWVZfOGh2SmxpSXZLTlBYTEFYeGJuTjhtYWVXUDA4Yko?oc=5",
+        "date": "2026-04-13"
       },
       {
         "title": "Hungary left in the cold as European Commission keeps defense cash frozen",
@@ -7278,10 +7278,10 @@ const ARTICLES = {
         "date": "2026-03-25"
       },
       {
-        "title": "Germany news: Merz on Gulf tour talks arms deals in Doha",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSHBzVU53QUVhVmtOUHhZdFZFYXJYX2V3TTd6ckFBeEkwQl9scU5VNlVvT3lORU9kZVpnU0lmZHA2NE1JUXN2Qk9id3hGdkJxT0FJZHh0U0Z4aWJ5YUhQOThnNDB4QUpXaEFDaER3WldHMDYxZUpXOUJpeXZ1UnJ2SEp1U0tfU29Vb2g3dGNvWmJTSk9TeGc?oc=5",
-        "date": "2026-02-05"
+        "title": "European military installations are targeted in Iran retaliation",
+        "source": "Defense News",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOU5jWTQ3c3R6X3REbk02d2tWTDExalNSYnI3M3pXckNzUENjdk1ZTXFaLU9YOXZoallHVml4TEdqLXJSVnZ0aHhRY2Y0RGJ2dnh5Z2QwUlVhdkJzcmxpenpSZmVvRF9tYTN3VE5XR0FqZWpjWWs0M09LT2c0SjVOLXBaTVJ1U0phZ09xNjdDUXFTUFlIV3Fybm9Jck9JRnRYcF9KbUltYlV5Q0dhUUlPUF9OZ2plWjdmb0E?oc=5",
+        "date": "2026-03-02"
       },
       {
         "title": "EU optimistic Hungary veto on €90bn Ukraine loan will be lifted",
@@ -7296,19 +7296,13 @@ const ARTICLES = {
         "date": "2026-01-14"
       },
       {
-        "title": "France denies blocking US flights as Israel cuts defence ties",
-        "source": "RFI",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWEtEQlJQdHlaNDhOdGhvR3ZKcXVlRkZaNnFUamZKUk5sdGhUb3RKaUZ5R1M2OS1mbWZLQjFLZnpKcWFVUVczejlsaFRfRW9KVUVWelllRVI1NWh4QTNSeXEwY1BCQXpaTjdaOW9NcGp4YzV5WnlIXzh1c1VZVGNaVU1GazdHREhXOTA2TnprQnRvSmFSemFfTHNqSl9VWXNkY251U2lzV3BmQQ?oc=5",
-        "date": "2026-04-01"
+        "title": "How Europe deals with China in trade, technology, and security",
+        "source": "Atlantic Council",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbWwtY1J2WHNYVXVHbU55d09EYzZmdmUwQWVabGZURlFzSVBYaTFucFVLRjh4dzZVQkxrR1NLOV9HQ2YzUENVNERIcDFUQ3UwamZ3WWlLTHBjR01MUWpHWWViUG5aMkdEUnJwRjBCOHBZbFpJcnFvXy0zNE1MQWM2QjJPWkxWMk8tS2YxT1o0SjVRTTd4TENHWVVFc0dteC1yMG02Y0Z5eHJsYVE5blRuWjh4ZFFPT09NRG45Z1lVZFJ0bXV4?oc=5",
+        "date": "2025-11-10"
       }
     ],
     "russia→kazakhstan": [
-      {
-        "title": "Iran Turned to Russia, China for Missiles After 12-Day War",
-        "source": "Defense Security Monitor",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYW4xZnhLb2hmR29ZUVdhYk9yb3dubnhIYVU1OC1zZDdyejZCUFh5bkxQdFVobVR5UmdWaEN3Sks1QmdaN096Yk5WejBSRFNmWHRDMlhBR3duVjU4TTM3NmloQ2dWS01XdkRIU2VlejVGbldjVG11eXJ5ZHZJSUtqVTNVNXlDMGhuMi1fUV9pMEYtVkw1MEtJYnAyZlhEWDlKZ0Q4S1lBWlMteUU?oc=5",
-        "date": "2026-02-27"
-      },
       {
         "title": "Russia-Kazakhstan Sign $16.5 Billion Nuclear Power Deal",
         "source": "StratNews Global",
@@ -7350,20 +7344,32 @@ const ARTICLES = {
         "source": "Eurasianet",
         "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdy1SMjJJZ29EU2o2R0xGLTdJbEJxQW5acWF6akxVZlFHMkdVZlliWjNvZDBZNUJ6MjNKMm5vV0pYN2NlbTZqTFVGTXhLbl9JYWlNdTRrNkNBdjhST3FmRW12X2tlWmNmcDgtRUU2WTRSaEZlci1wWWRYSFFseXBZa0tR?oc=5",
         "date": "2025-03-18"
+      },
+      {
+        "title": "Russia’s war factories hum despite sanctions",
+        "source": "GIS Reports",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPR0NUcHhDVndOTXdvYnJOZ202UlpFUlQ4WXBoa2xwemE2dDVHNjVXX3JsLVZ4YUlIRmNNRW80N0RvV0FVVmlFN2dXQTc5cTloLVVvdEFwbWtuemc3UXh0WHJoVFNyanBnTjZVSC1JZTAwLTZiRTZHdzc4YlA4RG9iWkg1ajJZR3g0RXo0?oc=5",
+        "date": "2023-07-18"
       }
     ],
     "spain→kazakhstan": [
       {
-        "title": "BJK Cup 2026 Quarterfinal Draw: Italy-China, Ukraine-Belgium, Kazakhstan-Spain, Czech-GB",
-        "source": "Tennis Temple - Live tennis",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNODliTWsyV0l3MXJycTFaN1dRSVQtMGxXNS1JV0tnWE5YSFEzTDNoYXMzSTJUd24yV3BGU0swM0dRRjZZV0pqakJEdEQ0Q3dvd2txaVR0WVFFWXE4ajBmZElYYkpaQU82TnJoQW9lUHgwWjlqd3YyYmozTU4wcnN6UC1ibjlrRzM0UVZtOEpDWTdZdw?oc=5",
-        "date": "2026-06-11"
+        "title": "Kazakhstan open to hosting Iran's uranium stockpile if nuclear deal is reached",
+        "source": "Euronews.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOVpFVXZIMEFpQWhpSHdoVnZzWmZWRXV2T2NHVGJhWWRNMkoyM2dQN3ItNFFRQ09TY05GYTVRcGRfaS1uaXNLUWx6NEV4T1lMRTEzSkQ0TkJESWo2RlQxMFJoRUlOdEZZSzh5WFFKakx2QUNWM3lad0ZDdE8yZEJSV25PS3d5eHZBYVdsbVM3cnVZRk9RckVhck1kTXplNlFNckYxVF9OT1lKc09IZGRNSVVSYw?oc=5",
+        "date": "2026-02-06"
       },
       {
         "title": "Trump’s Sons Land Massive Pentagon Deal as They Flaunt Corruption",
         "source": "The New Republic",
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbDRCN3NxLVpUR1JKZTZ1OVFQZW9fMWxnM0FNYk1fTTQ2UGR1NnRFcENudzBkY1MtRjBwX0ozdnl1Z2FWV19EYnlqSnNZcS10V2lWLUczSkZjN1M3UE5vT2Z0RE1DSXNmSXQ1UGtYQ3V4ZGNvSDFDa3dLQ00zblVmQ0JNUTFKUE9VT2Z4eTVB?oc=5",
         "date": "2026-05-01"
+      },
+      {
+        "title": "BJK Cup 2026 Quarterfinal Draw: Italy-China, Ukraine-Belgium, Kazakhstan-Spain, Czech-GB",
+        "source": "Tennis Temple - Live tennis",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNODliTWsyV0l3MXJycTFaN1dRSVQtMGxXNS1JV0tnWE5YSFEzTDNoYXMzSTJUd24yV3BGU0swM0dRRjZZV0pqakJEdEQ0Q3dvd2txaVR0WVFFWXE4ajBmZElYYkpaQU82TnJoQW9lUHgwWjlqd3YyYmozTU4wcnN6UC1ibjlrRzM0UVZtOEpDWTdZdw?oc=5",
+        "date": "2026-06-11"
       },
       {
         "title": "Kazakhstan joins Abraham Accords to upgrade arms deals",
@@ -7384,22 +7390,16 @@ const ARTICLES = {
         "date": "2024-08-26"
       },
       {
+        "title": "Peru Localizes Production of Israeli PULS MLRS for its Military",
+        "source": "Мілітарний",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSmQ5b3VHY3lRdFNYTEVTNnpTTXNZUFpwUnZtcDNHUHd3SkpCcjA4aU9pcXhyTnhRbUdNd3VzazRRYjFlblFfOFZEd3JNMW01ZHNvNWVwMEJ0OTc2NjJ2Z1N6dzNFQ05MbGlaRngySzUyek9rUVdmYjN2c1Z3NC00VWd6bnN3ZXd2Mi1uem1NMEJDV1V2S1k4U2lSWQ?oc=5",
+        "date": "2025-07-27"
+      },
+      {
         "title": "Kazakhstan's Air Force receives new military aircraft from Spain",
         "source": "Qazinform",
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMzVIcmlJelZhaFhSX1YzandIY1l0aXFiQjg3Nno5WnZwbTZablZkeXVHRXVJTTRUb0drbWdXZXNVWmMxaFNqX1J6YUxkZnRhUlRZOWt0Tmo5czNONTJxcVdOQ2k3VTVMVWdUeVMwMW9yRlduMV8wN3E1cWk3ZkU1MElaWjI1bTBZV3RsTVc5LVpHNjFRT1ZTZXYwWktZZ9IBngFBVV95cUxONGNjeWFxaDk3d1dfbEUtSHV6WkJ6YTJ5Z3BnMkdiTGJsQTB0YXNsOWplTGs5eTY5bHlhRzBvYVFHNEdVZmJsczRpNXUwdjd1V0JUS3RNc19WMFcwQlo4UDVqVjgyOWdKMkgzaXRhUDB1eHpiNTRjTUhVMFFZOWJKeHpqMjM4VURYZUtVaVVmVktpOEJYVDczdUQ1T0pUZw?oc=5",
         "date": "2024-12-05"
-      },
-      {
-        "title": "Kazakhstan reports 36.8% increase in defense procurement",
-        "source": "Kursiv Media",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVzZweGhPOFNNaXozaTF5X2NHSFpjRVoxek9LZ2RBa0ZzVW5sOUk4V242eFlrWk52TDhueExEUzRnVVNzeTZCZ2N6TTdZZVVxNVR0SDJtcHloZXNTRi1BQXZ2ZWhJcnljZHQ4NUJBUXhxaHVfSFBNMXdlcUJGRlJyN0NBNVZyTTcwblF2am4tMHNQNXI0RlVROXFn0gGfAUFVX3lxTE96UzZUNThkN0tZVmp1bS1sU29BSmRhazBjajRJdy1mZjhza3FkUVdMalFaa1VMYVUwQWZ3OU9UN20zZ29oVjR6cXl3LTQyRUZ6Ukp1YW1lbkhKRWt6a21pSGxGVUN6ZXZsTU9DQXRHWG5tQWU0cEdyam5qdnpDN3BJbnAzejhkQnhsaE9JM1NIYXFhRGtaMGY3SjJaQkZKZw?oc=5",
-        "date": "2024-08-19"
-      },
-      {
-        "title": "Singapore Scores a Kazakh Arms Deal",
-        "source": "Asia Sentinel",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA1X0pzMkJ2N0FQajl6ZFNoa1ZZQS1EcGQ3LWtDQzVEWk4tUGlpOFhGcE9ZSzFSemVoMk96ZS01bTVCSkhva2RWcjRiemo5N0pwbWpJdElyTkR5NzRsalBORnFzUVFORS1SSGE1UEV4VDBYQQ?oc=5",
-        "date": "2024-12-19"
       }
     ],
     "france→kazakhstan": [
@@ -7554,6 +7554,12 @@ const ARTICLES = {
     ],
     "united states→canada": [
       {
+        "title": "Canada selects German company to build submarine fleet as it boosts NATO spending",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPT1hRak9valVrdXpiT1lkeWZkYS1YRHRPSmhLbzcwdFFPVnByTU8tT2wxaWNVOUZXU0FreHdmbXMwOEZ6MlNLV1FxYzBSa1FMTDVaZjEzNlB5VjBhak5Kb1pzWHlUVU1sanVmS0pWZTI0dVk0dm10bmxRRVV4TVh4RnpmSV9ITXRiWXBBQzIwbGRXNUlkaVJ1S3lxcy1vYkY5RU9lX2RhYmJIcTJESW1TN0IwRkNpNUXSAbwBQVVfeXFMT0xNRnd4UVJuS1hlSmVMS3RnMGZ6cVNRLUtVUWtXa1dSVFpNUW0tNHJLaDJSU2pVajY1ZmgxOGJLeVdVMFFERld3Q2o5QjVhQ0ZOV0dzYXNfY2VXTERIcXJwalA5U2FocnFEMEw3VTQxeGJDZVpPeGpyYk5ZbzBpek9Pb1FDNkFxNHA4VDJHRlhwUEdBVEQzcW1lMXdaZnVHdFB3dlRieVpYcXZlVERUVDY5bmlDS0c0cUVoQXc?oc=5",
+        "date": "2026-07-06"
+      },
+      {
         "title": "Korean arms makers confront NATO market barriers",
         "source": "Korea JoongAng Daily",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ0w2VDVJRlM4WkNrQUZNbThUN0l5YnMyTXdyaEs2SHlqTE1lTS1pZElla3NVZExYNHJCMnFPeWdNNF9XSHBNUE1iUGRsN1NSNkM3b25GTTFuWFlqZHRXZk9JdWhLU20yYV9ubTdVWU9DLXFUT29oUEhFN0Y2QjNPZU9BaldvdGFTeDhwQzdjaXZmQldaX0NGOFlpaWlNTWs?oc=5",
@@ -7578,6 +7584,12 @@ const ARTICLES = {
         "date": "2026-02-15"
       },
       {
+        "title": "Pentagon pauses Canada joint military board, pointing to Carney remarks",
+        "source": "The Hill",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZHFxanRpNXV0V2huZE9jSW10ZXRnRVNWcjBLaHdjalEzRVZfTFhSSjNDUXp4eGdRQkNjc3pqYk5iMlZPRDZDNUpzVEgtelhUNGRZT2pGR2x1b0NvMjlnd0M4ZG1oOGNtOEdmMFNEYjJoN2F2VUpudDV3cnc3d2NxUjRKWUFxYnBtbkl4T2ZpU2U0VGhVUThv0gGcAUFVX3lxTFBWMjc3dlR0MnZpT2F2a3V6VGZBcDdOR0Z2RUszRWZRdEJUa05CNGFYdURsRVdFc1BlaHE3RkZHeFJsT3ZlVDdmRUdxZl9WalJpT1k0QTlBb0tsZk5pWGJmY1RETTZSVjVPaFhETzhlS2hDZTNBV0tjZXRUd2wxUEdoRnBEdEg5WXJTWTI4QmwzYkxfMm4zejk5OE5HQg?oc=5",
+        "date": "2026-05-18"
+      },
+      {
         "title": "Will U.S. Allies Succeed in Hedging Against the United States?",
         "source": "Council on Foreign Relations",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWWc4bnZaMkNLY1JMYXNBSXVCTFhnZllFbUhiNm12OGlzTGNieDU0ZDA3UWE4Y191VVZJcVdHN2t2QXBvQVQ1UjZWWTZFVkppUHY4X3ZWTzBMRFJSd0hEOFVyVllmX1c4d251UmdFZ3hOdHlBTWtCRXdremtpRFhXTklmY0w3QkVCcWhaWTJma3FZZm8?oc=5",
@@ -7588,26 +7600,14 @@ const ARTICLES = {
         "source": "Defense Security Monitor",
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSmhDQmZGNVhnZHN0WjRPUUpsVmhNZkdrN1lSYmRvUkY3YzU4Q3lfd1pKU0wyTWIta0tfQkhRZmYxQjQ0ODJER1psYUtWSXFYOTc1WHI2NmxjZnhmVVhPejFudkNvLXZBU2hqZ1dodTNYRXI3eHZ1NV9INy0xYnFfSV9Qb3pXYkRwcjV1Qm9xVXZvYzRuVVZB?oc=5",
         "date": "2026-05-27"
-      },
-      {
-        "title": "Canada is still reviewing plan to buy US fighter jets, defense minister says",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWm9vaXAtR3A5Vk5xaWU1d1Y3SC1GbXJoemVEOTVYVTlsWFNUcFl6YXlIaVBzT3lLMVpHRGRMc0xvbnBvNGpfRXp5V3lrX3FiZW8ycnJjWFpiMThoMm9VR2VhY3FlbGZCc3FEV0lQbXNqSkl0MUk4RS1fZl9pQXBWSVc2U0wtdFRBRnBFejdmN0RFb19xdGVBbE5ZV2VrU25ZbTZCTGxqYUFRMFAyRnJ2bGRrTVc?oc=5",
-        "date": "2026-04-27"
-      },
-      {
-        "title": "Ukraine Turns To Canada And The U.S. With Its Battle-Tested Drones",
-        "source": "Forbes",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbzJoYTYwSmN3TzRrTUhiM3gxdXBFTFAtSVRnWDIwRjlMUW9DLWtNNm05c3BlYTNMMnh3VEJHY2Y4aE1TeWpZQVlNeFJDelp2WHJhVDZacjdIWWYteWZObFpOX3VwbmpBVEp5NEU2YjNXZ1dOZE9acDN3bnQ2cFpCdlpFU3JfcnRMSlpMMVgwa29jM2Fzc0h3SXZ1MVZpZTh2eXZkdFQ2SURIWnE0WUw0OV9ELXRoYl8tRVE?oc=5",
-        "date": "2026-06-11"
       }
     ],
     "spain→canada": [
       {
-        "title": "NATO summit: Trump threatens to cut trade with Spain",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNM25OSmJKY2txazJmNW1pbThGUVhkZG1Eb3o2ZkRFVE5sVHV5U2tqdjhPbE92alVVRHBWY2w4WWJ4c1hoMVJzT2poLU5MSTFFSnJDcFh4QjZKWEJiSkExc3VlTnhWNDdFV0twN1pnM3hPVnl3VUdfajRITXFvVHZHYnp0NElEb2g2TkRxelhyWmJldFdsZktlUVAyUElZWVBLTU5FbzZqRTA?oc=5",
-        "date": "2026-07-07"
+        "title": "Leaders of Canada and Australia urge Iran war de-escalation, affirm Iranians can't have nuclear weapons",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWnVjYzRGVERUM0JFSlJVeFpMc3FYNzJfb1VoNEVfVEthV3pMT1RrcmFwZV9JbXZJWElFQmQ1NDBuRHFvT01qaFBNRUxjRFRpMmxMUWJBLXRyS2stZXJSdTEyRmF1emxEbzRNU3RlRUJXY0ctWkxQSl9UdjF4Vm1OeFpVLU9vZHVjdk0wVE1FcERXU3NlVEhndmhvYnlMRVp5Y2N1Rk5xVHdDUjFRanVXVTR1U2NSUVpwbVQ1dzMxUUFBZ2xyVFZFN3JxTEZOMndxdUHSAdcBQVVfeXFMUFU2WEcwUENCLXpQTEkyN1BqU3U2LVM4VTFDVjQzcnJESExaa0VHNlF6M3pPc21CRkJCSDZPSWlwdGsyd1g3US04ekhnN3dvUHFDSEtRRkxJblNvUk85bWpsamM0Z1ZJRDkzTXRzQklJcEtoSldZMld5bWE3T2g3U2t6VVhmLW1PbXVqNVlmRFFscnJLRGN6TmFUUkJ4SUpRZWpfbFhEaVRSSHBLNFhnTmJEd3RIYTZhV2ZHaVQ4TzZSejhkYVVBMk5nbzdOY29vZ0pyTzNrVkk?oc=5",
+        "date": "2026-03-05"
       },
       {
         "title": "These countries no longer arm Israel. It’s not making much difference.",
@@ -7628,16 +7628,16 @@ const ARTICLES = {
         "date": "2026-04-23"
       },
       {
-        "title": "Canada F-35 Fighter Debate Is Now Almost Over",
-        "source": "19FortyFive",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxONHZ3Q2VpaXBlY0M5ZlNoRldQVnpwUDZtc3pURDVzM2R1emtHZlVvc3NNRTR5RENyM2JXMmZNcXBTSF9VMVhpcjF6UHFkel91bmhKcmRTZXFYTHpMT3F5OG81Vk4zcW8yakF5MWhYbHZ1TGtCTkdrZkphdk56c3JUOWptWmVoY0NqNmc?oc=5",
-        "date": "2026-01-08"
-      },
-      {
         "title": "America’s F-35 is stealthy in combat but lights up the radar in Trump’s trade war",
         "source": "Fortune",
         "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVGhXNjBzMUtQMUlCRWdEY2tYMjJrOHBHSlF6dDZXaXpKcmt4WWg1cVVFX2NXY3pHUnF5VURIZTRYYzZMRXgwTXZiQ0pZaVZjTTdBSHpzc1NkbU8tU0p5T3VDNElvUzZnYzJJMmJTanpVY1labDZwcmw2SWdGQzJUbnktdGlJRXk5WlFzX2JvZTRnd0piYkVGenhCX2VzMjJiZkNhZ2ZRSmE1QQ?oc=5",
         "date": "2025-08-08"
+      },
+      {
+        "title": "Canada has officially joined the EU's loans-for-weapons program",
+        "source": "CBC",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYUJRX0dsNWFFb3ZyME00dTJFdlEzY2NkYTNWSFBzRkhfWVNnRFpaRXVpZDJtZ0szWFBIcGdPVlMzY1JmZ1ZKMDh3N2tTQlZIYmQwT2xOSEkwRzdLV1UyRTRRRWdxV1ZPWGRHWG4talBGaFVCd1VpLUlBSlRJYUZaX1VPcTEtVC1Zb0VlZWNRQ3ZfMW8?oc=5",
+        "date": "2026-02-14"
       },
       {
         "title": "Spain rules out F-35 order, prioritizes Eurofighter and FCAS",
@@ -7666,10 +7666,10 @@ const ARTICLES = {
         "date": "2026-04-16"
       },
       {
-        "title": "Spain and the United States: A Defense Partnership That Strengthens Us All",
-        "source": "EL PAÍS English",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRmNyZGh0WDFPRzhVTkM4TzE2a1FZbDBhUEZjQVdrZzAyd3dLcjl6VEtMN3VnczZkempkM3YwVDdSTnZuQ1BEVy1FeGFVSnU3R2tWNElNVzUxbFNwTjZ5LUhaWWJ1MnFjUUg5eDBhM1VleFBsSmJMUEVhMzg3UFJvSUJhTGJsT1g2Sjg3bDFuU0NpVWZqZUtvRDZHM2pCWXZwUkxoTTZSSGE4Q1lDb29vRU50LTlfdXh5WHVoaG5UYXY2Z9IB1gFBVV95cUxPZDJzdldiR1VadUxvSlg0WDBBakVJZWpNdkhLTXBCRi1uNV9naDh1cXJaRGkzQnpYUXk2b1lHRkI0V2RiZXdSa2VHdXVWQVRqWjA4dkEtS1MtVXVmX2ctZ1pmX3ByektoMjN6cGJBdGJpZnBRLUR3a0pnVGh0bG5aRWFMQ1MwVmZCemwtZjJra3hnYkU5amlMTlNjQ0IyUEFUQ2I5ZW5VdGJGcTVlOXBuRmV2bDFwWmFUSDNpRVpyejhGV0tzbWx1YW5Fano3YVhmd3JYYWdB?oc=5",
-        "date": "2026-03-19"
+        "title": "Spain to Prevent Use of Its Bases for U.S. Weapons Shipments to Israel, Launch Probes Into Companies Advertising Israeli Products",
+        "source": "Foundation for Defense of Democracies",
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOaG84ZmFxbS1xQ2hpbkN0RG9Kam0wMnR5ajNOTU8zR3J1ZDBXbDJNN2swZld2WHNvTkU0WElxZ3pOUzVkYzJYUGZ2bjY1M3VuODMzaWlqRmR1UlU4YmYwUjZPd05fOVpKQXYweWpzVmZxcnFoMW1mbjJVYWtILXNYV2tRNEQwOHU5eGl2NmJqTEJseXJJNUE1YWRsSDdRb3g3TWtCaVpXVTg2bWpWQVhGNktJR0ZwaGJ2NVk0TFhrbWJMTXE4V0RzSHBEQlFoZW1aWXdqdjRFTXJ3aUtxaFp1RHR5QkNpTFRGelZNNnFVdi1BQjNpaE40NW9jZEc?oc=5",
+        "date": "2025-09-30"
       },
       {
         "title": "Spain rejects White House claim it agreed to cooperate with U.S. forces amid Iran war",
@@ -7678,16 +7678,10 @@ const ARTICLES = {
         "date": "2026-03-05"
       },
       {
-        "title": "Indra teams up with Hanwha for Spain’s $5.3 billion artillery order",
-        "source": "Defense News",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZTlFcG5lUVVWdFdXNkJsZks5THpKRmRGdGl4dHB6NzNyZ1M4dl9faktobkExMTRSZGNfa21rb1NyVHB5WE9pc3RIZEI3djdsaHJFeUR1UWNKWTJrMlphN0ItZUR5XzNQSVJaMElFQmlsR0VsQXU5akFsaVdGdHVwWkE2WjV4V0VLREMzeGs4VFhpSFZ6Q0UtWVhqdjQxZWhmbmI5YUtrNU1FRmdOM2xhWnZZMnJFN01vRUE?oc=5",
-        "date": "2026-03-24"
-      },
-      {
-        "title": "Spain to Prevent Use of Its Bases for U.S. Weapons Shipments to Israel, Launch Probes Into Companies Advertising Israeli Products",
-        "source": "Foundation for Defense of Democracies",
-        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOaG84ZmFxbS1xQ2hpbkN0RG9Kam0wMnR5ajNOTU8zR3J1ZDBXbDJNN2swZld2WHNvTkU0WElxZ3pOUzVkYzJYUGZ2bjY1M3VuODMzaWlqRmR1UlU4YmYwUjZPd05fOVpKQXYweWpzVmZxcnFoMW1mbjJVYWtILXNYV2tRNEQwOHU5eGl2NmJqTEJseXJJNUE1YWRsSDdRb3g3TWtCaVpXVTg2bWpWQVhGNktJR0ZwaGJ2NVk0TFhrbWJMTXE4V0RzSHBEQlFoZW1aWXdqdjRFTXJ3aUtxaFp1RHR5QkNpTFRGelZNNnFVdi1BQjNpaE40NW9jZEc?oc=5",
-        "date": "2025-09-30"
+        "title": "Spain and the United States: A Defense Partnership That Strengthens Us All",
+        "source": "EL PAÍS English",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRmNyZGh0WDFPRzhVTkM4TzE2a1FZbDBhUEZjQVdrZzAyd3dLcjl6VEtMN3VnczZkempkM3YwVDdSTnZuQ1BEVy1FeGFVSnU3R2tWNElNVzUxbFNwTjZ5LUhaWWJ1MnFjUUg5eDBhM1VleFBsSmJMUEVhMzg3UFJvSUJhTGJsT1g2Sjg3bDFuU0NpVWZqZUtvRDZHM2pCWXZwUkxoTTZSSGE4Q1lDb29vRU50LTlfdXh5WHVoaG5UYXY2Z9IB1gFBVV95cUxPZDJzdldiR1VadUxvSlg0WDBBakVJZWpNdkhLTXBCRi1uNV9naDh1cXJaRGkzQnpYUXk2b1lHRkI0V2RiZXdSa2VHdXVWQVRqWjA4dkEtS1MtVXVmX2ctZ1pmX3ByektoMjN6cGJBdGJpZnBRLUR3a0pnVGh0bG5aRWFMQ1MwVmZCemwtZjJra3hnYkU5amlMTlNjQ0IyUEFUQ2I5ZW5VdGJGcTVlOXBuRmV2bDFwWmFUSDNpRVpyejhGV0tzbWx1YW5Fano3YVhmd3JYYWdB?oc=5",
+        "date": "2026-03-19"
       },
       {
         "title": "Trump Threatens Spain With Higher Tariffs Over Defense Spending",
@@ -7700,20 +7694,32 @@ const ARTICLES = {
         "source": "stripes.com",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNRjVtaTg3bTRKRkZZSGVPbmIyUUdHcGVZNFlPNTROWlNCTzBITXpGc1dJLXN5TkpUU3hHdFpSclRZa1pQZUJvQmhYS0VoT1h3Z1FJY29Nbk0wWWh5a0xFSjRoeEhrUGlXSXZ5YTBXOEdCVGpjWVBOUUhYUWpFb0N5dTk1UzNDNFpMeXhlb1JNYzY?oc=5",
         "date": "2025-12-29"
+      },
+      {
+        "title": "Spain Blocks US Arms Shipments to Israel Through Its Bases",
+        "source": "The Defense Post",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ITzJxa2pUTktvV3BlUnljN2lPakotb2tCXzByNDVkOG1XWGg5TE8tazE1bGVfR2ktUEVwV0hDZjEtNGVUZTByc0s5eGxubGNOM2xFXzB1ZDlQWUZFaWI2dXR2UTM3ek56UkxtaUROUW1OdHZibkJNLdIBfkFVX3lxTFBETEFIQ0RFd09BREpPTENCUTM2bTBHVkJGZkhNTTVvM3pIMld4YTQyQnBoQTBYNW5FemRvTmh3SzJVUEdRR0RCbS04SDJDRmFpV0NOUzVtX3lWa3MyNnNkUWdjY0dLQklYQnhfQS1nRUNybjVDc2tlNDlTX0RrQQ?oc=5",
+        "date": "2025-09-30"
       }
     ],
     "france→spain": [
+      {
+        "title": "Germany Drops Jet Project With France in Setback for European Defense Sovereignty",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPV1pDMWUyNEdlZXNxU1kzV2haS0ZNbkhZN19ZSTllMTRlV19DcFh5bVVSZU84aDJZTG5wSWdsSUxqLVZVNWRUYzFsRmp0MTJ1WXZWVldDdHNodWZNNUVyVk9jYjhpcXhodFhJMUZ2LWIxMXlJX2FsdVNVTklpWXh2aTJyUmVaR2NJRy1vaWRoOXVuM1NfSkE0eFBMbnhpR0I4Yk5oQkdYUm9KQjNIMTczbV80azByQ040bUhYQXFXRlU?oc=5",
+        "date": "2026-06-08"
+      },
+      {
+        "title": "Spain closes airspace to U.S. planes involved in Iran war",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQV1JXbWdFdWZhWnlISFJfSUt0TTdDeHcxZzJtVkZpNnprUlZmZjB6XzNoTEVna3JVRHpKdW92cUJzcDFJY0tlZk16Y3J2Ukp3RTFndFZ1cjVJaFJsQjByNmNBUVZyTUgwTzVLVWc5dHFxcm10ckFpQkpQRlF1aURYZWhJSkhvaUFTYzJHWS1Xb185YWxTTkHSAZsBQVVfeXFMT09kRVdzcUdNaTY2XzhMMFVLX2o1QlhiV1o2anMwREUyUjFQcnFNM0FFSXI1VXNzc0ltaERhTS1yLTFDTzBqRXQtdnF4V2hZRncxbFEwT1BhbHU3ZVpJaHhYT1QyUWRnMlJGZmRWMkxvQkc5cnpmZ3hsZldFbFZDMnA1NXZpblN6dGs2MUVtN3RVLU1TSkxBazBidDA?oc=5",
+        "date": "2026-03-30"
+      },
       {
         "title": "France, Spain reassert faith in Europe’s next-gen future fighter, but Germany stays mum",
         "source": "Breaking Defense",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPX0pxYzBIbWVrTXd2akJ3THRYVko1UDY5aGVfYmF6VjNKRVpjR3lDUkYzeGFOblhHN2VFRGpPOWtMWHhETDlGejdYYkNGc2Q4Y0QzbFo2MHhQaWh5SlFubGFYTkhfeU5RT3ZrTHF2YjFQc0EwMGhHMmlyeVZnSHZlUXg3S1F4SnBRLWx0MGtGcEExTWIzV1NEVnpROGU0dHI2Y3ZZRW5RdGg0bkxOMHV3WHQzbkhaTGdiTzYwZlNR?oc=5",
         "date": "2025-12-12"
-      },
-      {
-        "title": "Germany bets on €580M software after fighter jet split with France",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcC1NNlJteVJwbFlMU2pZNllTTVpkMWxQYjhmOTVQdlZDT1k2YzlWaEdmdFdXZkFFZkR0Y3o3cWI4NlF1Y0g2QjlpdjdCcUZKQnkwLU4zeWVEcGhERTdBa29kSFcxMXFMa0FXOEtSeF8xZXB0c0x6Tk9VeWNKcnRFQ2VBR2U0eTQ1VXpvbQ?oc=5",
-        "date": "2026-06-25"
       },
       {
         "title": "Spain keeps scrapping arms deals, but Israel’s defense trade with Europe may be salvageable",
@@ -7734,22 +7740,16 @@ const ARTICLES = {
         "date": "2025-12-11"
       },
       {
-        "title": "Israel is losing its last friends in Europe as diplomatic collapse deepens across the continent",
-        "source": "Ynetnews",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iSjQxYU53UTMwQnRBS3VlYWktdWNWSVY4c25aM3hXZkJwWTJuYzd2VnI1N3NlNllWUGVaQ3RQanF5MTh2V3QwdW5xdElhNVptLXBmcnRR?oc=5",
-        "date": "2026-04-14"
+        "title": "5 EU countries call for tougher trade weapons to tackle China",
+        "source": "politico.eu",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSDFKSzd5Vkw2bHB4cG1Cc0VMWTN5QjJ1bjFFRllSeTVoYXdPSnlIWjFLb0Z3eVdfbHhOWWI3aEdfMmxwMC1OMlNiREp2a2hacU5sRTFoUUE3YWh2VFN4Vmw5cU9hNTMzeWJGeU9rSHpWYVVqcmdNZUcyYWwwcUJZOHAxM1BGQQ?oc=5",
+        "date": "2026-05-25"
       },
       {
         "title": "Spain does not rule out joining European military mission in Greenland: Defense minister",
         "source": "Anadolu Ajansı",
         "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZVZGZk9Mc1JVUjd5UFUxQ0FFcUFFR3E1QzcwRnAyRzhpZFUzQkEtRlNCWjYyTzF6LUc0TUkwNTZ5dklyS1ZONF9iY3FiWloxQjNQVkNkZzFwc1dTaVhBUFJYWFN2aEQ3NGFiTHZaRW95bkVHdTJpdmtjd01MWF9GY2xwbXFHSU9Fbjg0ZXRVWVpleXBzUVJ3VWhlNXpUU1hPUGpjZWx4SzlLRTV6azZuWGRlZUtfZUlNV0lCemVCdzg3QlkyM1E?oc=5",
         "date": "2026-01-15"
-      },
-      {
-        "title": "France Sails New Frigate to Sweden in $5B Defense Deal Push",
-        "source": "gCaptain",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbWM1LXMwTUR4VjBESEhvYTNOUE1meE1KdlkydGU4eGRnR1gzbTlNZzFmOHZ3UUZfaEVVYzhyQ1pFY09PbDFYcnpvOF9IMm5Fd3BPeGEtWFZoQi0yRkhhWmJxb1BiTXRfSXZqMWFiR01NR0xxbFl4OEN1R2hTME53RTBUN1BrTFRTMGRFallSQjI?oc=5",
-        "date": "2026-02-02"
       }
     ],
     "united states→thailand": [
@@ -7760,10 +7760,10 @@ const ARTICLES = {
         "date": "2026-01-24"
       },
       {
-        "title": "Cambodia Officially Removed from US Arms Embargo List",
-        "source": "CamboJA News",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTUt3cTJQZ2ZjWmNjcjJ6Y1l4d1FqOWJEaEJRMUtiZzg2WTc1b2c3YXZlbDItR3RfdnJNZEFWZEtBQWNWMkw3cUhURk5qX3VncDlSODBYZ0pPcU9rbDh2ZmNWdTRVaXZkblFQajZCb2NLMk9Mb0d6c0s0TTFYeUdONXZQMGY?oc=5",
-        "date": "2026-02-04"
+        "title": "Thailand’s tilt toward China tests treaty alliance with US",
+        "source": "Defense News",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPb2FPbEFRekdpVmZzWVZpMkVwN3h1NElrdzEtOS0wcnloRGU5YVppaWtTWWszbjZaLXotQ1pvQ2ZqVm4xN2treVRZRjdCY3F4cGRkUFVHOGNVeEtWbFhwaFpiNUNWUlFiZ2lLM1VDV0tnRkxpeU9PV1lZMFRoSFNTN0tvcWRhblJVU01qU3RqaERuamwxb2szSkFPZ00taEdwRkhWbERxNEdTczI4WkxXX2FZbWQ2cDEz?oc=5",
+        "date": "2026-01-05"
       },
       {
         "title": "US lifts arms embargo on Cambodia after Trump oversees ceasefire deal",
@@ -7772,10 +7772,16 @@ const ARTICLES = {
         "date": "2025-11-06"
       },
       {
-        "title": "Thailand’s tilt toward China tests treaty alliance with US",
-        "source": "Defense News",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPb2FPbEFRekdpVmZzWVZpMkVwN3h1NElrdzEtOS0wcnloRGU5YVppaWtTWWszbjZaLXotQ1pvQ2ZqVm4xN2treVRZRjdCY3F4cGRkUFVHOGNVeEtWbFhwaFpiNUNWUlFiZ2lLM1VDV0tnRkxpeU9PV1lZMFRoSFNTN0tvcWRhblJVU01qU3RqaERuamwxb2szSkFPZ00taEdwRkhWbERxNEdTczI4WkxXX2FZbWQ2cDEz?oc=5",
-        "date": "2026-01-05"
+        "title": "Thailand and Cambodia Sign New Ceasefire Agreement",
+        "source": "Newsweek",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5rc2tXNUd4SzBsZWxpWnFRTUstOVd4TFlDa0VqX3NGaDN4Ym5MSm9xaFAtUnljUmJoaDVDRlpZdTBOMldVWUxXdEhjcWgzSVZqQllackxDeTgwalVQQVN0UTd5bHpZREJmVHRTTXNGQ0E1UFlKTVVSMDY5ZmdXVms?oc=5",
+        "date": "2025-12-27"
+      },
+      {
+        "title": "Is the US About to Establish a Military Base in Thailand?",
+        "source": "The Diplomat – Asia-Pacific",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWllNWnVQdEVHQnhndG01N0xSdk1KNVNnenBkeS1KVXRoR2pnSHFUNXFpZkhWQzFzVl84b19Md3Bhalp0M2V1dkhLZzJCbmJnSnE2YXl3bUFwUm1BRU5SS3FRblVPVnBPdEF3cV9KN1E4VnZnLTBiWVE3UU8wbGs0c0RqSWRRVlRKR1ZwV3Axb2ZHR1U?oc=5",
+        "date": "2025-07-23"
       },
       {
         "title": "Creating Balance: The Evolution of Thailand’s Defense Diplomacy and Defense Relations",
@@ -7784,22 +7790,16 @@ const ARTICLES = {
         "date": "2023-12-11"
       },
       {
-        "title": "Thailand and Cambodia Sign New Ceasefire Agreement",
-        "source": "Newsweek",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5rc2tXNUd4SzBsZWxpWnFRTUstOVd4TFlDa0VqX3NGaDN4Ym5MSm9xaFAtUnljUmJoaDVDRlpZdTBOMldVWUxXdEhjcWgzSVZqQllackxDeTgwalVQQVN0UTd5bHpZREJmVHRTTXNGQ0E1UFlKTVVSMDY5ZmdXVms?oc=5",
-        "date": "2025-12-27"
+        "title": "Cambodia Officially Removed from US Arms Embargo List",
+        "source": "CamboJA News",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTUt3cTJQZ2ZjWmNjcjJ6Y1l4d1FqOWJEaEJRMUtiZzg2WTc1b2c3YXZlbDItR3RfdnJNZEFWZEtBQWNWMkw3cUhURk5qX3VncDlSODBYZ0pPcU9rbDh2ZmNWdTRVaXZkblFQajZCb2NLMk9Mb0d6c0s0TTFYeUdONXZQMGY?oc=5",
+        "date": "2026-02-04"
       },
       {
-        "title": "Russia’s Continuing Ties to Southeast Asia and How They Affect the Ukraine War: Part 2",
-        "source": "Council on Foreign Relations",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVWpNWVBFazFTUUhlME5kNnhxMWxuSlB2UmQ0WDEwa3BHYlRKelVCTUlzTVE4aVhLcm10RHlab3J1T2VHWF8ybzBLejNOWFNrWDQzRmZKdlRJMWpmNVZUNmJoZnJkcUVuM0pkNWg3SWctWVlaekhINzFfLXNTRkd1dlRYZXhYM3NBQmZlTy12QXhKTUNGR0hDZS1hQmhEbGg1TXRDX0lXa1JTZw?oc=5",
-        "date": "2022-03-14"
-      },
-      {
-        "title": "Fact Sheet: President Donald J. Trump Secures Peace and Prosperity in Malaysia",
-        "source": "U.S. Mission to ASEAN (.gov)",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOC1BT0JveF90LWdyWmE1REVjRnpqMC1QQklvaGl0Mk9LLWJfT3YwVUtUeDVRTGZUZ1RJcVFaT0FxczNNOHBwb2UxUFdOVGhBY1RCNzg3NmN3NHJ2S1FvbFpLYVFTdTZPMFR5cnctM3N1ZUYzazFyYks0eEg0YXlBVEFNMEJGUlpCQ1FTa0RDalExNlEwMWVWbGlMVDhONUFYdHlNanJUVVM?oc=5",
-        "date": "2025-10-26"
+        "title": "Thailand and Cambodia to Sign Peace Deal on October 26 Following July 28 Ceasefire",
+        "source": "Thai Enquirer",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRjFZcjNCaGpYWEdTd1R0dWVtX0RaODhWVjRQTWd5azI1cjktZUJvb2xqSmZOZndrUEViSWI3SGVqRXBQaVl2TTBnem5zcGx4UU9TWkN0UHFFZDJSa2JkQm1XenY5RmNxMnVGUHRHZmJWNUVYZVpIaEJGcXJEVms4aS1GdFVVeUQ3NnZsNVN3VzNyQUhHMlQ0V0FZVFNQeG1kV1hIMnlYa2FkLXJnd245cGR2aHNDVUxsT3c?oc=5",
+        "date": "2025-10-24"
       }
     ],
     "israel→thailand": [
@@ -7814,12 +7814,6 @@ const ARTICLES = {
         "source": "The Media Line",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPd1pWbDNjUjcwX2Y1bFJtbjF2VzMzZ2s5N2lDdUFXQklZc1pSclExUXlkYWVlNjhhektDSmxOa29obENYQ0lndm1Xam1yQWRZRkcxUjQyazlxOGx0LVBxUWJHUzJCTVlmeWFPQXU2NWp6N1VhbERuUlVzSDViQVA3Y1hWNHVYRVg4aU9INVpONk9lMHZCUjd3VndRM2tiNEw4bFNxdFhndDhaUUI2M2h0Tll5aVU?oc=5",
         "date": "2025-12-05"
-      },
-      {
-        "title": "Israeli arms used in Thai-Cambodia clashes shows global reach",
-        "source": "The New Arab",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOFFxRDliRDlpWlZjTWQ2RVNrM1NZMjNaVWphVUphQ1JkdHNsU0pXVG9WRndRUU5WcHljMVVfOGY3NXJuV0JMeTR6TkxUaXRHdWRMLWp3UWtvbWdZc081eUZ6NTc3SjZxRk5EMDd1TE9xXzJDX2pGX2dQMXRycExSeE1FT2p0UWxJOVVFVFhQWEc?oc=5",
-        "date": "2025-12-17"
       },
       {
         "title": "Thailand buys IAI's Barak 8 air defense system",
@@ -7850,11 +7844,23 @@ const ARTICLES = {
         "source": "JNS.org",
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaGh3Mk55eXhvTm9lSlBUMDZwVFRfSWFmTGU5STRCcnAzOTM1WXY4bHFsa3l3Z2xpemNqX29NQnRPa2dIMnZ1NVFmT3QtV29CSkUtVlhTVnE1ZnhHclA3SnlYbWVWQnJ1RUtOeXd3NnBmSl9OYTRSei1uRGphVGZyVWxzeWo0U2d0MC1OU3J4NjFuZ0NNcnNIWVZQRmNyMURPYmhV?oc=5",
         "date": "2025-12-03"
+      },
+      {
+        "title": "“Other countries have air-defense systems, but Israel’s are better”: Arrow 3 lands in",
+        "source": "CTech",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBoZ0ZGVXpJUDQ2MGdFTHktVVR3RkFqY1NERGRZYTVNd1RvSC15bHFJSkxVcWVlemh3eng4c2FqRElMMGZ1QXBteHFLcWFJYzRGZ3pOQ0RnTDRpcGh5WFZ6TkN0bUgwWHk4b3c?oc=5",
+        "date": "2025-12-03"
       }
     ]
   },
   "ticaret": {
     "china→united states": [
+      {
+        "title": "Comments to USTR Regarding the Scope and Operation of a Mechanism to Promote Reciprocal Managed Trade With China",
+        "source": "Information Technology and Innovation Foundation (ITIF)",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOemNjZ29EcDF2bnh6LVh0R1MxUUpiT0pEQ1BvQ20ydUJleE1CSHB4VGR0cHhLQUpRZXgtdGNZN24zQ3huWWFheE90QVVFU0dTNWNLZE5JNEw4bWEzNU5CSlUwNmtLdk9pWnBjeGJmVmN2OUN2RUIxVkY0OWNvTWRmQS05NjBManpEcWZIMVhwOVFuYUxtdWlCQmpSU2ZIMGFhRDZYWk5Jbw?oc=5",
+        "date": "2026-07-10"
+      },
       {
         "title": "China’s worker protections scrutinised as US weighs forced-labour tariffs",
         "source": "South China Morning Post",
@@ -7878,12 +7884,6 @@ const ARTICLES = {
         "source": "MEAT+POULTRY",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPLTNWWUpJam9CSjFWSGxLbG1hbi1Mb1hvMjFKb2s1S0lDN2RVYktrUVA3OEZPWUNTa1FQTlhEU2ZkLWJianVkV1NYVU8tN2hOSkVYSnU2WmpaVy1jVGJ2bk13MS1EYzV6QTBrUnN5MTdoX2lUZTNjRmVtaU9lTnBoVE5QUFZCck05OEJzM3lJSDVaUjV3eldtX2dlYjZKeHIxNng2bklB?oc=5",
         "date": "2026-07-07"
-      },
-      {
-        "title": "The U.S.-China Trade Relationship: What’s Behind the Competition?",
-        "source": "Council on Foreign Relations",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85R1Rxa096czZxUGpuWjB0T0RCeWtvNzUwM2kxcHRhVXp4MjBJUXVIbC1vU2EtRGZ6c2MxQnVNamVJUHhpZU4yMVBqRUZ3YUgxNGVRT0pRSWYteGpFeW1mRlBuazdselRXZDdpaVY1NW0xS2hzSlUtb1p1VWhwdw?oc=5",
-        "date": "2026-05-15"
       }
     ],
     "canada→united states": [
@@ -7920,10 +7920,22 @@ const ARTICLES = {
     ],
     "united states→canada": [
       {
-        "title": "Canada's trade surplus in May jumps to a four-year high as US exports surge",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNVBnMVdMY0JTdWZoUG1pTi1OUFBTUW9oQmlnM2tldnI4emY3eDlsOEh0NnhNZUZqWlpmMGN4aWE2RUNUTDdtSldROUJxNmRvODRCLXA0bFBfbm00TVpWcGNDVzFaU1BwWjRjbFdPODhRYlRaTFdBRld3UHhCNzRycUJ2ZXFiaENLZDJ3Y3d1WlNjenZ1aHhBYVhNNUlGdzYyU0FyVQ?oc=5",
+        "title": "U.S. Declines to Renew Trade Pact With Mexico And Canada. Here's What It Means for Each Country",
+        "source": "Time Magazine",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNbkpIREo4NF9PaDgtNTI2am1yQUJ3TF9BXzI5aUdqVXRyMkYyZ1FoNTJXWTZCcEV0ZllSWUx6SklnRXJSWGtFbkNLY3RmM3NYZmZoeVVlRzNaUWNySTVhY3Jyb3F6UmZsLUZDWl9kUUtKNTNzVl8yQk1CMjVUXzljbVRFTHN0VERJSEIyUmxheGtNUQ?oc=5",
+        "date": "2026-07-02"
+      },
+      {
+        "title": "Canada’s trade surplus in May jumps to a four-year high as US exports surge",
+        "source": "WTVB",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNT1R5WTFVSGhOaC1fZmc4VXVEX2wwQldNSm90TDBGaS1ZdGVzS3ZoQkFoSkdwMnZPVmh3SXhzQnltOEx6MjA2OWVfcld4ME1NVGF4dXc5ZE5CbWxoalJoQjFlS2l3SHNSWUU3U2UzazEtaXpuUzFwTjVrc2VrSEZLejlpRVZjaTRRT3NjTk1IOF9FTmNE?oc=5",
         "date": "2026-07-07"
+      },
+      {
+        "title": "U.S. says it won't extend key trade deal with Canada and Mexico",
+        "source": "CBS News",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1EbVNWY0hoQmlCX2k1VXhUV1lUTkJZWktnb1UzeEU5VDdvaS1POGY3RXhyQkRIQmJTQjFxSGFSVnZnXzdsMFZSZEhFM0cxQVl6RzRDWmJvLUMzbFJXTzAtN0F0M1pvNFdwMmxEdmhB?oc=5",
+        "date": "2026-07-01"
       },
       {
         "title": "U.S. won’t renew USMCA, opening door for negotiations with Canada and Mexico",
@@ -7932,21 +7944,9 @@ const ARTICLES = {
         "date": "2026-07-01"
       },
       {
-        "title": "U.S., Canada and Mexico begin bumpy negotiations to renew North American trade pact",
-        "source": "PBS",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbUpHM2J2SDM0ZWltUjJEcmREdDZUcDFVeXliMUwtU0dkUjhPdkFDNmtmQVBZR0FRVFNfTVRhYTE0ZUEwQ3pURU1IaFVia1E1OWFqM0hfQVB4QVBVRHg0M3dWU0xJTEE3OGktRnhhanQ3NzJoUDRvWXNyUHdkZURlamNaRkVOdzEzVmFYWGRhLVRaTkVRbmVrblZEaXN3ejk1R0N6c09hWG15UmVRdGlmaWVOcnlCd0HSAbwBQVVfeXFMT0FyYTQyT0kxUHpCWXFxbGdvaHAySzlpUm1EUjh1N0NRZGd6RlhJLThBZDF4RVdPQTY0dDgxN21MSXIzZnFHVWIzWmJnZnl3YThCLVV6NVkxWnV1RC0yQmZ2ck1RSHlIQWZiM0l2SF8zRWhlOXgyMzlydDItdGI3NHR5SkxMRFpfYzBkczJxZHZlbEVwcUVQTWVRZEd3d1VVQWxBOEFiLVQtZV9QVzVPa2JRTjlQaUpJLVp3cGQ?oc=5",
-        "date": "2026-07-01"
-      },
-      {
-        "title": "White House won't extend U.S.-Mexico-Canada trade agreement",
-        "source": "Axios",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE93TThoeW14TjAyMkZ4MzZaU1NPNzVhRFpzWE5VWDJJTFVjU3dCYzBhV1NiMkF4ZTNDZW1wdXpnekdMVkJWaDlVTEp0dXl4WTcwa1dKWnhGVHlyMjdobDNHV3hlUkZMRXg5QVE?oc=5",
-        "date": "2026-07-01"
-      },
-      {
-        "title": "US won't renew trade deal with Mexico and Canada that Trump struck in 1st term",
-        "source": "ABC News - Breaking News, Latest News and Videos",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQzF5QkZKdUhTQzRtVnplcFBTb1drSDUzTmpUYVRpZnF0emhyZnJFVlBfR1EwODN1Z0djSG9vM1k5allaN2Z4bkhrUjNTa29jSUdVZFROZk8xXzZ6S3JXQmhITWVBNE1ONjFTOWs1LTcySFJBdzlQNnRaWmkwRlgySEUyZ3BZTHp3djhFWndmdWZDYlgzcy1JMDV30gGfAUFVX3lxTFA5TnVYZVZyLVE2U1FqQ0JtYThOTUV3bjlMQjRoTlFkTkwyMTdyUDNFQ0Z6dXJtNVJuN0NCSHRlZjMyRWFNdTJEQUdHdmthUG5rTnZKUXZYT1NjMjgyV0xtM3pMZXpRUzFZRy1vcTNaMFhUMnpDWmRDUDQ0aFJsNERYUUttYWpreGV6ZkFhQXdYNlVaOUwxX2lWcU9Mem1kYw?oc=5",
+        "title": "US declines to extend North American trade deal, starting clock to end it while seeking changes",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORWxhSVNvODM1MVFkUkxYbEZKQ0FTbUhoOWpsdUdCTkRDYzlLTDZaTjlKOGQ5ZDQyd3MxOUUxblp4eUxtZGZIeEpKVGtkMXJMNFpkUVpNNnNHTzlSOU5rc21LU1dnNnBld0dmdzItZ2dpS05aOC1BRm8xdmt5WUduWDJjUUc0Nmd3OFdBX3JsbnhOY2RPdm50a2Vyek5IMGhWa1lPSHRWanNWMno1RkJOQkM3NFdOV3pSZVgzX053WnBOWGRGM3VF?oc=5",
         "date": "2026-07-01"
       }
     ],
@@ -7958,10 +7958,10 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "China’s Latest Pressure Tactics Are Tightening the Screws on Japan",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPY0UtWXo5RHRISGNOakJnaHVocE1RbWJDWG9FN0k0UTlUTjh4Q21Kb3ZkR1BLdm1jSDZ0SVFvZ05NOWZqWV9sa0hLQnZ2RmRiWEVHcHh5VHgya1RGd0RsMWNEWGJkYXBwN3FuNk9zLVB1LXhKYjkyQjJtcjNsZWJ2SDRFbmoxbmozQ0E?oc=5",
-        "date": "2026-06-30"
+        "title": "China widens Japan export curbs, targeting drone makers, nuclear firms and defense institutes",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdzZEcWhjZTNpNDNtOU9PcDZPQkxHWXd1cDR2RFRrSllMM09YWlZrVUdmYnVZMXM5Wi1tVW5pXzlkSHg3UUNscERSRVRNTlZwNEFGaHRzZTNMMFZqc1NIRVhyNG50NU92QXhzMS1kblRYSmJweFZ4NUc2cW9icGJ4NDBrc2UtWEEzeUM0RDZIVWpNaW9DQWJR0gGcAUFVX3lxTE0xdGJZQ21EbUc1M2JXam5hREhkU3NweVJxbUZ1VnJkVmRQbGJRWEVXMHBTSHlqU3ZYTmtrVnZtUmlkZ2l4ekNMeUVWZnhFYVhiUGdLQmRnOEFhaURpSEZJQXJoM01yeXZVdW5rT3BobDdxS1RKZHdELW42Q250X3hlMFkwREE5SXFXcVdVMmI3NXlleTZlQ20tRHM5YQ?oc=5",
+        "date": "2026-06-28"
       },
       {
         "title": "Japan, China Trade Accusations After Coast Guard Standoff Near Disputed East China Sea Islands",
@@ -7970,30 +7970,24 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
+        "title": "China’s Latest Pressure Tactics Are Tightening the Screws on Japan",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPY0UtWXo5RHRISGNOakJnaHVocE1RbWJDWG9FN0k0UTlUTjh4Q21Kb3ZkR1BLdm1jSDZ0SVFvZ05NOWZqWV9sa0hLQnZ2RmRiWEVHcHh5VHgya1RGd0RsMWNEWGJkYXBwN3FuNk9zLVB1LXhKYjkyQjJtcjNsZWJ2SDRFbmoxbmozQ0E?oc=5",
+        "date": "2026-06-30"
+      },
+      {
         "title": "China imposes export controls on 40 Japanese entities as tensions with Tokyo rise",
         "source": "ABC News - Breaking News, Latest News and Videos",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPT2xQUlkyalVfTkNpUHVlZTJxRzk4OEZ0Yks1NmFWLWZqaDc0RFdfQkd0WGY2VU1XNzEyMVhJWTEyalZvbnJPRDNMejRZeG51OFFRYUsxV1dxb2RrN3FYeTNwRF9MSWpvS2hvcFQ5dElrNjJWaHkybDlpYXFhdnlhbjJjVmRqUFlhenN5MHNmOEZOUVJRbmFTR1A5ci11bU5aaUFYVzZRQlZRTFIyYjQyRlhLONIBuAFBVV95cUxOTkJGV2tCSHBBYXdhX09fTU51WEgyVl8xdnhUVFZ1NTF0ZjZaR2s5dXBoYjNRc2t5TVpXOTkyR0MtUWNMc0s2Z2stVXA1a2Rxdi1FNnpfTDdfc1JKWjdUNU9JTWFsUEJzdUFpRlBiT2lBWHowbnM5TVF2Z3laRlEyOTYzd2ZrSzBjRDJOYWpHaUxzT2dFRE9XaldpdXY0MmY2czFqWllIS0pJZ1RCX1BOQzA3VTVxR1Vj?oc=5",
-        "date": "2026-06-28"
-      },
-      {
-        "title": "Stable China-Japan relations extremely important for Japanese companies: business representative",
-        "source": "Global Times",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE42UDhiMGFJUk9xSVg3ajJtX01vMUd1WGI5SFlyeFZLT1NITFFiQ2NPYjdUYVNURUd5LVNSRjc3Z2ljbUpHMmktN1F3MG1GODctRGZ2a1hNeFBMNkRaakxSNnFn?oc=5",
-        "date": "2026-07-09"
+        "date": "2026-06-29"
       }
     ],
     "japan→united states": [
       {
-        "title": "Tracking Trump’s Trade Deals",
-        "source": "Council on Foreign Relations",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9pcHRHUV9kaENRZFVCdTc4bTJScTllSlpfUk1xUU1OYmdBdlR0ZEdBNEFVeldRbUxrSjhYX0JON2daeHFBMlR5MGdtWUNwNnpDamxaa0VKdmhrRUNzMjl6MkNOMWRiM28?oc=5",
-        "date": "2026-03-17"
-      },
-      {
-        "title": "U.S. will respect trade deals with Japan and EU over new tariffs",
-        "source": "The Japan Times",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNV1dQWndneWNsbjQxS21sOFZDS2xzYnpJZUpObVpYVDVxZm1EOWVZZldEaXpwU3YtYW5DOXdRN2Itd3dTdXFkMlRPMUdfWnAtMGtvNHoxWDB5TWlZSFZXQWw0Y2wyZXJPZ2FHLXh4LV9PcTJ5SXRLZkpvTWRPUlBHOTlUWQ?oc=5",
-        "date": "2026-06-05"
+        "title": "Japan (JPN) and United States (USA) Trade",
+        "source": "The Observatory of Economic Complexity",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5sMHVydjlQTGxRcHMweXVwODUyNFc5MFhDTVNiMUw3TmRVcEJ0UHhVRW91WW9GR09SMi15QThzRFlLNUlzamdiTXpDeTNkWl9DNXU3dXFRZmdfeVNhY180TVFIMjVNb2RXX0FpdlN6QQ?oc=5",
+        "date": "2026-06-26"
       },
       {
         "title": "Trump Hails Japan’s First Batch of U.S. Investments",
@@ -8002,19 +7996,37 @@ const ARTICLES = {
         "date": "2026-02-17"
       },
       {
+        "title": "U.S. will respect trade deals with Japan and EU over new tariffs",
+        "source": "The Japan Times",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNV1dQWndneWNsbjQxS21sOFZDS2xzYnpJZUpObVpYVDVxZm1EOWVZZldEaXpwU3YtYW5DOXdRN2Itd3dTdXFkMlRPMUdfWnAtMGtvNHoxWDB5TWlZSFZXQWw0Y2wyZXJPZ2FHLXh4LV9PcTJ5SXRLZkpvTWRPUlBHOTlUWQ?oc=5",
+        "date": "2026-06-05"
+      },
+      {
         "title": "US and Japan Move to Strengthen Deep-Sea Mining Ties through Memorandum of Cooperation",
         "source": "Gibson Dunn",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObmtsVVRzZDllb0NSOW40eWo5aWZXY2ZwbWIwM1RMU0tjUUNjdUxBMllROXhTZlloUmh2YURvLWhHMlZ1N3Jqam1HTXJzQnpWMzdiWk5LT0l1NXZjMEV4UHRjVXNQZWthcWdDOWxwTjVFY1pwU1hHUW1SZXJZYWo1QWZaZVd5YnNBRlVzLUdidFRBbVJxSVlHNUp2Sy0tQjRVRW9xZzhfZ1M4S3NtMFRhQmc1NzM?oc=5",
         "date": "2026-04-13"
       },
       {
-        "title": "Japanese Prime Minister Looks To Balance Regional Issues With Iran War During Meeting With Trump",
-        "source": "Foundation for Defense of Democracies",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRzcxWVFwc01oa2ExWUZ3b3ZCbHZTdFY4ZnA3azdHYmduRzFfdzZkd192MVEtZFN5MzI1NlVKTzZlNzE1R2doZGdzU21HUExGWlpnNVNOaHlqa3JvNWlNRmtuUzU1TnhkRXhUVkFqWDZ6aC12cV9oSUE5LTdUM1RzcXFTMXcwb0xaMFJIdEVONExLWmNzNkxRTnpzNV9HekV2aklRbFpGenBFTXVqX290M3B6R2k2djNCSHVPR3JfZmZFd3JiVzFUQkd6RnozWEwyYV9z?oc=5",
-        "date": "2026-03-19"
+        "title": "Trade balance of Japan with the U.S. 2014-2024",
+        "source": "Statista",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQcWVNS25wcl9yTDNQVFpfRlh3X3ZRRF9ncXNJZkNseXNpeTNrV0dpTFVIUk5udlBWNTBMZVdrV2FXVnpUclBXNHlPRUs2dmNWM29QTGpJWEFMa3dqVkJiNjZkYmI1dEZrbEJzazJlTU9YbGs4NmlVTE1ta3NOSEpSd1oyaVg?oc=5",
+        "date": "2026-06-10"
       }
     ],
     "china→south korea": [
+      {
+        "title": "NATIONAL SECURITY RISK: China Buddies Up With US Ally",
+        "source": "Daily Signal",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAwcGlxVHpmZWpIRmhURjhQUXBkNEdlOUtfRFh5MDEyT0kxTmJkckdtS2oxMkxoM056ZWJTOFJiS3ozLXVXbWdUVVN2Q0llWUZEeTJNQkstQWpCTm5YSkVOM2NLQ3ZPcGpQb1FUVWRWdUlMTGVZUF81OQ?oc=5",
+        "date": "2026-07-10"
+      },
+      {
+        "title": "South Korea (KOR) Exports, Imports, and Trade Partners",
+        "source": "The Observatory of Economic Complexity",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBFb3pSd3NpT0s5andZTy02ZG15OUpWVGJjcmM2UGhwcjU4T1ZEOU1tUHRBN2NyeHhkS0k1bmN3c3RveGxyb3NUWUxZdmdNRVRQLXc?oc=5",
+        "date": "2026-07-07"
+      },
       {
         "title": "South Korea’s Companies Face Increasing Competition from Within China",
         "source": "Hudson Institute",
@@ -8022,16 +8034,30 @@ const ARTICLES = {
         "date": "2026-05-05"
       },
       {
-        "title": "Troubled Straits: Analyzing Trade Chokepoints in the South China Sea",
-        "source": "CSIS | Center for Strategic and International Studies",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5IRFI3dkRQQlc4OTVoNkV2TXFWVDVKMGF6ZjFJelZJR2hlZmlJZjhZdGJsTmxxX2gzeHRxVWJZNm4zT1pYQ0pBYlhab1dKNDlTT0ppcFRjNXd5UUFram9nbWR0dm5KT3dtdmxwb1p2ZTY?oc=5",
-        "date": "2026-07-01"
+        "title": "China, South Korea sign US$44 million in trade deals after years of friction",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQazJ0SkxHczEyUmE0TlBoZ1lPa0FwQm1KZ3pZR3hMVndVeE5meXhLQVBjdVRKVUNwQnBueFRuUm5POE45aUVFalozM2ZJeUlIaGNFeEJ3b0lzalEtRi05WmlzYjVoLTc0TUt2a2oyLTN6XzdNSWZPTWtGLWExRDc5NFBuWWppVUIyUXdSRUF5RXFBV0t4VXhxT1c0SWh0N0hGWV9BTTVXOVE3amlvU09VWlVPUDVTdXFoUExUQklTc0ZpbnZqUUHSAcYBQVVfeXFMTmlycWZLTmtKU2FHLVczYm5ueGJiT2tNMVpJRjUzUE05TnFJamY0T0tGZE94UjNSM0trWVJORWw4MkhNTDJ6cEs4TnRvcVEtYXRZRmNWQ3BBMk42TnNqcGtjRUhMejhMMWlscjUzQUZNbGR3c1hoeHEyTk01TTB2VlNQMEl4WUNSX21NX2hpeElRcjF4dmowbFZSajFhS1prMmVEV05uYnVwRnJBRTdUWTFaQkdxSzRYSnlZUEdSaHNUdkNsaFJ3?oc=5",
+        "date": "2026-01-07"
       },
       {
-        "title": "GT Voice: How currency internationalization unlocks China-SK financial co-op",
-        "source": "Global Times",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE45ZXhqZkIzOXpienpveEhpMWhVanpUdzdTaXBjMi1JcllEd1JvMDFTa1R6enlGaGtFbVU5TTQyVERjcDVob1V2YXBVVjY4TVYxQ1NnVjU0WVB6TENYYWlwa213?oc=5",
-        "date": "2026-07-07"
+        "title": "China's He to hold trade talks with US delegation in South Korea",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPR2pCZ3RMb0pGblpLeXVrd0x1UUw1bEFPMDl1c0Zyd3JHOE9yY2hNbUVvOFJaYlFGS3ktSWd4dTRIb0E1SmxHRzUzeWpwdXpoakFwLXZvN2hTZndLY0J3UnZmWVRiQnBPNlJtR0QtdW1jVExIYjl6R2tscWJsUU9pOXBEYkRmVkZEU0s0N0hKQ0k0OFVYaDRoN0tnNXprbjgzbU50TGV3cXk?oc=5",
+        "date": "2026-05-10"
+      }
+    ],
+    "south korea→china": [
+      {
+        "title": "NATIONAL SECURITY RISK: China Buddies Up With US Ally",
+        "source": "Daily Signal",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAwcGlxVHpmZWpIRmhURjhQUXBkNEdlOUtfRFh5MDEyT0kxTmJkckdtS2oxMkxoM056ZWJTOFJiS3ozLXVXbWdUVVN2Q0llWUZEeTJNQkstQWpCTm5YSkVOM2NLQ3ZPcGpQb1FUVWRWdUlMTGVZUF81OQ?oc=5",
+        "date": "2026-07-10"
+      },
+      {
+        "title": "South Korea’s Companies Face Increasing Competition from Within China",
+        "source": "Hudson Institute",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ1M0Nlh4NEhVcUg0LU1KNGxBRzhzVlJ4U0k0SmJNZHR6R1FyR2toY1RaYzVGaERXaHdNZGJFZ0pLY0dQVk1QUUtVdi00VjJ3d0JTQ3pjWk1QQVlPMDVSb1JqYUwta0I5VzNkdUtmNGtsa2otakNjU2hTdEQ4c09mTHZnbjhzbGNhUGxHZTJnUDlxbDJtMnBOOFJGUUhNRUp1ZWlYN2l6a2pzSTJQVjRuM093aVE5Zw?oc=5",
+        "date": "2026-05-05"
       },
       {
         "title": "China's He to hold trade talks with US delegation in South Korea",
@@ -8044,38 +8070,12 @@ const ARTICLES = {
         "source": "South China Morning Post",
         "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQazJ0SkxHczEyUmE0TlBoZ1lPa0FwQm1KZ3pZR3hMVndVeE5meXhLQVBjdVRKVUNwQnBueFRuUm5POE45aUVFalozM2ZJeUlIaGNFeEJ3b0lzalEtRi05WmlzYjVoLTc0TUt2a2oyLTN6XzdNSWZPTWtGLWExRDc5NFBuWWppVUIyUXdSRUF5RXFBV0t4VXhxT1c0SWh0N0hGWV9BTTVXOVE3amlvU09VWlVPUDVTdXFoUExUQklTc0ZpbnZqUUHSAcYBQVVfeXFMTmlycWZLTmtKU2FHLVczYm5ueGJiT2tNMVpJRjUzUE05TnFJamY0T0tGZE94UjNSM0trWVJORWw4MkhNTDJ6cEs4TnRvcVEtYXRZRmNWQ3BBMk42TnNqcGtjRUhMejhMMWlscjUzQUZNbGR3c1hoeHEyTk01TTB2VlNQMEl4WUNSX21NX2hpeElRcjF4dmowbFZSajFhS1prMmVEV05uYnVwRnJBRTdUWTFaQkdxSzRYSnlZUEdSaHNUdkNsaFJ3?oc=5",
         "date": "2026-01-07"
-      }
-    ],
-    "south korea→china": [
-      {
-        "title": "South Korea’s Companies Face Increasing Competition from Within China",
-        "source": "Hudson Institute",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ1M0Nlh4NEhVcUg0LU1KNGxBRzhzVlJ4U0k0SmJNZHR6R1FyR2toY1RaYzVGaERXaHdNZGJFZ0pLY0dQVk1QUUtVdi00VjJ3d0JTQ3pjWk1QQVlPMDVSb1JqYUwta0I5VzNkdUtmNGtsa2otakNjU2hTdEQ4c09mTHZnbjhzbGNhUGxHZTJnUDlxbDJtMnBOOFJGUUhNRUp1ZWlYN2l6a2pzSTJQVjRuM093aVE5Zw?oc=5",
-        "date": "2026-05-05"
-      },
-      {
-        "title": "China's He to hold trade talks with US delegation in South Korea",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPR2pCZ3RMb0pGblpLeXVrd0x1UUw1bEFPMDl1c0Zyd3JHOE9yY2hNbUVvOFJaYlFGS3ktSWd4dTRIb0E1SmxHRzUzeWpwdXpoakFwLXZvN2hTZndLY0J3UnZmWVRiQnBPNlJtR0QtdW1jVExIYjl6R2tscWJsUU9pOXBEYkRmVkZEU0s0N0hKQ0k0OFVYaDRoN0tnNXprbjgzbU50TGV3cXk?oc=5",
-        "date": "2026-05-10"
-      },
-      {
-        "title": "China’s AI chip demand is surging – and South Korea is riding the wave",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWXhQUFpaYldXck1yTHFZcVpRenNNdnBxYmthZjhrN0UzU29kWEhucG9jbHptZVo3R3ZNbEFZZFlCeEhjR0FBZEg5YnZGZFJQN3pCT3BhNmN1MjNYRDU4amhPYmE5c3Y1c0p4WmNaSFd2VzRiUGZIdTBKTlhmQW45TkN4RUpkdHBpVkNReEhIVDV1d1dhQy1VWEw4dW5FYzFJNFBfb3hEWXBYbkhKRGJyUjlscUNCMmtELW1DbDB4WHFneUZKN2NOWUhFc9IBywFBVV95cUxNdklfNTdOdkNNTGVxUFNqbmhMWUMzMkZidnJQa3M5cmZYWFV1NkpqY1NUTzRKNEJkWTNlYk9nZ3RNanVCYWlTd2VYbmI4aFl3TW5pZXpuZzNlZ1JxYW5XN2c0RnNzaDVHclF4aWhGOElaeG5xZlRkU2pLbUlKZGRFZUthZzdhaEU5aDhVU0pMTjgwbDRYYlZmUU1RYUtIcEJrX1NJcFAwMHNYV1lRT0RzYlQ2SkhQYUtHMnk3MjdSS2VnOEFRVEZOMFVHZw?oc=5",
-        "date": "2026-06-03"
       },
       {
         "title": "China and South Korea pledge to bolster ties as regional tensions rise",
         "source": "AP News",
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPblZham82Q1pVTzg2VnBnUGRwdnhUTjBLWFRveFJXcU9OLTVHYVRYNm9pU2oyTWpVUlZPRW9CWUgyRWJodkFSc0tyR19mcjBORXpzYTZqRUkyOHF5Sk9JbThOREViSFIwdnpoMS1MeUU4UkhnTXhFUXpPSmhyYm5GX2tsRVRRemgzMzZzTGZOV2JvSkk3VXk5ankxZG1BdUVxM3c?oc=5",
         "date": "2026-01-05"
-      },
-      {
-        "title": "Forget FXI. The South Korea Fund Beating China’s AI Trade Charges 19% Less",
-        "source": "24/7 Wall St.",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSFc3QzdlbVhtbTZiT216UENxVDhrNlRBeXk5X0hOdWpEUzk2R18yWU5CNG9mdC1tbi1weGxTY2d2YVVNdXNVRm92Q0dXSEFVZ2EzbmxPckVvT3Eyb1ljeUJvS0dUMXhNXzhMbkVQZkxRX2FjS1hhVFc0MVJKNkNpMEtwd0pNNC1sWnRvODQzVE5haDdnQjNEdG1kaHh2akg2cTlZVmFpeXlkbGN5cms3ZXlMZ2s3QQ?oc=5",
-        "date": "2026-06-25"
       }
     ],
     "russia→china": [
@@ -8112,33 +8112,33 @@ const ARTICLES = {
     ],
     "china→germany": [
       {
-        "title": "Germany could gain from planned U.S. port fees on China-built ships, DIW says",
-        "source": "Yahoo! Finance Canada",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNOUFxNUhmQzA5Um5ZdGRkRWl5V0g2Y1ktMWhqOEdIUEJTRHRoY2RyaWVZNGkxOHNHZVVsaHQ3WEh2ZlNHNWpXdk1LYV9mTTRPWXpsWVFtOFR2TkhURkhZRDZ5S25pNWhHX0J3YTZ3ZWtKR2pHVEtyczZLYzBvOFNVdTlnNA?oc=5",
-        "date": "2026-07-08"
-      },
-      {
-        "title": "Germany’s export-led economy faces mounting pressure from China - WSJ",
-        "source": "Investing.com",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTm1fV0hSZnJYT2VwZC10c0hfeFZYaThjaWVIRmdSOTZ4UEhodTdTc1FybnNjT19xM0dmS0pnZHpFOVV4bE0ybThGRFBjNVpWVXRKYjJOTGNFWEJuZU5jNjg0cmpnUkMzVG1BME1GbzJqb2Q0WWFhNlJya2JkeHRjTkduWWtXTWo0YXdzSjJKVjd6TDFPNUZZb3VfSkpST29XTzFudDJJcmVRM3BDdVZ0RE9zZUNMZzczamc?oc=5",
-        "date": "2026-06-27"
-      },
-      {
         "title": "Germany’s proposal to ease trade tensions with China has not gone down well in Beijing",
         "source": "The Conversation",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMGJGVk4yZnZkODFTUVFuMmc5dUNUYWJlSVBGMGY4SFZJV2xlSzJ0aUlVcld6a29vRGIyS2c2Sk9aSnNXMjdwSHdMbEd2dlFGeldvU0xjSTJIZEliZ3E2ZUk4aWRjSm1RT3dZSGhRWmZLbFpEaDRaS3YzNFFxTnVUbDRlbi1WS01GTDNWTFRZdnVoMkNRNF9wRVgyVTNUSEhqMWd4Y21xbElxSjFmUWdHN0k2WVFOSF9DVTVwNQ?oc=5",
         "date": "2026-06-29"
       },
       {
-        "title": "EU trade defense: Germany “very poorly prepared”",
-        "source": "Table.Briefings",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWUJyb19yZFdkRGJ2NkUxRTJJSWNCOXhncHNFdFpqb3BrV2l2ZzJfYjlOTmFFU01ZZ0NVdUx0ZjRrTDZsLTVUMDEwWG1TLWFBejB2bnhRbDdRcVVZeDg5QkM5dHM2dEwta0daUDdqT1dwUzdwdVZuVC0tTUtMZHQ0UUFLZW9tUQ?oc=5",
-        "date": "2026-07-08"
+        "title": "Germany’s China Shock",
+        "source": "Internationale Politik Quarterly",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1wMS1vZ1c5WTY2ektzQUQyTUhIaW9pRG5LLTVEQURhT3B4aGRCcklfUTJkek9ic3FXaEpXNnhYUk0zNDY2UXh1OUphYi1wdFBTMTRsTUg0TWlHLUFX?oc=5",
+        "date": "2026-02-23"
       },
       {
-        "title": "US port fees: Germany could achieve an export surplus",
-        "source": "All-About-Industries",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPemFHVmduQkZIbGJNajg4YWh2bnpFb1JSX2dYM0ZZRjRlejBseWxLOF9YS0lKOGR1YTZ5WlMyUWg0dS1UU3Aycm1SZU1NU21DZmJfM25WaU9xdmc1Tk1tS0hWNnlzUW1nZXhweVBKUm42R0RFWkpuLTl6YmhrVGhERGdlQXlGSWV5OGdvblFIMXZpakROd05TSjVDX0xGdUFtVVlpSE8tNmpQem5UWW9sZFN6VEFYT0hKT3c?oc=5",
+        "title": "Germany’s “China Shock” Revisited",
+        "source": "Rhodium Group",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1XenppaWR3RFNFczdWVGtlZGJwakZXeFVsbks2STU3RnlhYzZUajl6czhJQUZ3eURLU2NlUWRiaHVTalJ1MWF4dFZFWE9PbmxXd0xVbEc4azd4TGlkNlYtc2pEUFpqa0k?oc=5",
+        "date": "2026-02-10"
+      },
+      {
+        "title": "China Is Devastating the Last Stronghold of German Industry",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPS000VjJpQlpPMndQY0hMYk4ySGtiZ0MyUVMtQWd4V09YaUZJM3RuZHhTVmM2RDF1RWk2SC1qM3RQa1VVdHBfc3VKVVc5Y21wSl9pWHpNcHNuVVp5bkc4eUNkYlNYWDNITlgzTXJQZTR2OUc0Z0xRV1loMXJFdEVTVFJ6ek1PUW1uVl81QnZHSnpvNVN3enRDRDZXWUE?oc=5",
+        "date": "2026-07-04"
+      },
+      {
+        "title": "Germany could gain from planned U.S. port fees on China-built ships, DIW says",
+        "source": "Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNOUFxNUhmQzA5Um5ZdGRkRWl5V0g2Y1ktMWhqOEdIUEJTRHRoY2RyaWVZNGkxOHNHZVVsaHQ3WEh2ZlNHNWpXdk1LYV9mTTRPWXpsWVFtOFR2TkhURkhZRDZ5S25pNWhHX0J3YTZ3ZWtKR2pHVEtyczZLYzBvOFNVdTlnNA?oc=5",
         "date": "2026-07-08"
       }
     ],
@@ -8176,10 +8176,10 @@ const ARTICLES = {
     ],
     "germany→france": [
       {
-        "title": "Germany backs France’s push for US-style tariffs and quotas against Washington",
-        "source": "Crypto Briefing",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YSEd1Ui1mZ2tlNUNwVnlzMjdRSE5HOUUyY29pMVktaDNGbTR6cTk5T2p3MUt6SFdTZ2RSVjBTeTk2WXhPdEU1dW02UVMtMTdndk80NEVWUHduZ09SNFhCaGZQTXJSUXJHTVplYw?oc=5",
-        "date": "2026-06-17"
+        "title": "EU-China Relations After the 2024 European Elections: A Timeline",
+        "source": "China Briefing",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWHZOcGl1U24wVWpZdjNyTlFHVTdUNFFSOXBMVUI2clNsSzNMMmFUeFRtRmk4WXZjMDZXT1Y2eFBrMGh1QUU4M3p5eDh3VkxhUS1sbTIyOGE4WG9IOFBMRFpMOWI2Z3pWQUNTZWZkWmwtSEZsRUVtcUdad2RrLXduMXdHQ2trci1OQ3cxdE9Na3BBNV9rRVh0alZVdU42d0VVV0E?oc=5",
+        "date": "2026-07-07"
       },
       {
         "title": "US launches Germany pharma pricing probe, raising threat of new tariffs",
@@ -8188,16 +8188,16 @@ const ARTICLES = {
         "date": "2026-06-19"
       },
       {
+        "title": "Germany backs France’s push for US-style tariffs and quotas against Washington",
+        "source": "Crypto Briefing",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YSEd1Ui1mZ2tlNUNwVnlzMjdRSE5HOUUyY29pMVktaDNGbTR6cTk5T2p3MUt6SFdTZ2RSVjBTeTk2WXhPdEU1dW02UVMtMTdndk80NEVWUHduZ09SNFhCaGZQTXJSUXJHTVplYw?oc=5",
+        "date": "2026-06-17"
+      },
+      {
         "title": "EU Rejects US Plan to End Metals Tariff Spat and Mulls Response",
         "source": "Bloomberg.com",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSlpJVkJKOGt1cUlZbEIwX3RaNU5TNlhNSVJtdmVXdDhxV0JueldaMTRqd1BTZUV4R01iTnRuOS1qSzVnNHhna2NlUHYtWWVPRzJJNEFlczBxUVIzNFF3TzdiS3RFbEtkSjNjMVlvN3BTc1VyR0o5bWRITFQyNk5SbUdkQWtadGROZmwxWURlSGpQMmowb2tOTzhValBRM0wzY0Z6aW5nemF4RFBXVGw2M0c3S24?oc=5",
         "date": "2026-04-30"
-      },
-      {
-        "title": "Germany Backs France on US-Style Tariffs — and Europe’s Trade Strategy Just Changed",
-        "source": "European Business Magazine",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUWxhdHVsNEJCOUtBUV9xT1ZMS0lOdG5qeHNYNjZmbjlqWS1TUWM4ZThyUHY0UWlMZEhCbG9GaHhfanN6eHBVVXJ3SEVSZDVBLXZ4MXB6ZGhXRW0yV3R6SlZVMHBFckFfdUREQ2p5NTlvNl9hdUc2UGhfYWNRNUVYcUtB?oc=5",
-        "date": "2026-06-18"
       },
       {
         "title": "Germany warns US not to jeopardize trade truce with drug pricing probe",
@@ -8208,42 +8208,16 @@ const ARTICLES = {
     ],
     "netherlands→germany": [
       {
-        "title": "Gold in Netherlands Trade",
-        "source": "The Observatory of Economic Complexity",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBnUDQ5dVRJb0pXd2FRanVucjVjbkFObDgxNmtDZGFxeXVsbDdCS2JrSlhrZXN1NGFwTm40VUplZW8wNDNRNzhQV0kzZU1OWHd0dkV5WGNfX2NQSUtuTHhWeTJLa2lEWWdNdElsb1o1NnNzZw?oc=5",
-        "date": "2026-06-26"
-      },
-      {
-        "title": "World Cup Prediction Market Promos: Trade on Germany vs. Paraguay & Netherlands vs. Morocco Now",
-        "source": "Action Network",
-        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPamFwXzB3dUI1RlVzWUs0bFZrUll3bGZMZWhzTVJCVFBQVG1ZbnhTZjVhb2JPVHJCbG1BVWZkWFM2YVVjdGRMeG9hYllkc1lHTDRINFU4QTZ4STFSY1AzU2dQZ280ODJCS0h4TjMyWnROZzNKSFlUWjE2S09DNFdOTnBfblRVNERXQi1hbWtkLS1sSzJzOVhrUHI5MWNrSFBnS080RkZxSlh2VzVVQVlQOG56N3ItaGdpZl9WcUNVTlprTVJQSERIMklzUTdPT3ZKMDVoWUhVRTlNdjhyc0k5TEV3?oc=5",
-        "date": "2026-06-29"
-      },
-      {
         "title": "Soybeans in Netherlands Trade",
         "source": "The Observatory of Economic Complexity",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE44OFRVMXZYd0JfY182WW9TOV9HLTBVMUFPZXlYM1phVE1nSWNxckJSd0tXejRWeXZKWXV1dmVCbDMxUDNVbTBxT3B1VmpOYXY1THVESnNfTGFjZEJTS2g4Nm1hLTlnWEI5cWtDUVgwRlBidlNyUWxF?oc=5",
         "date": "2026-06-26"
       },
       {
-        "title": "Kalshi $10 cash bonus referral code “OREGONLIVE1″ updated for Netherlands, Germany World Cup Saturday",
-        "source": "OregonLive.com",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNdFNhUk16dVFyRnJ0TUN6UVVLN25rUmtfcTlsSmJzNTlXSzJ2b1BkVWd6Z0JUOG05bkxCZlUzb0drV2xQSE5YUmNIQklzRFpqclBDNjU2cHN4S05TMk1KOXozZk5iNjV4c2duWGszdDkxYUlzT2xxa3BvdTB1aUtpcFNpdHVBY1BLNlIzSE83Y3Yxckp3M3R2WVk5QU4yRjBWaHNSWXRwSkdxd20yZTFJOWVEMUN3VEw3aDFIcXBOSmVTQWpMMW9wNlZ2aEVhWlhwanVoa2o1LWhfN1pCTkE?oc=5",
-        "date": "2026-06-19"
-      },
-      {
-        "title": "Germany, Netherlands and Italy gain AI researchers, France loses out",
-        "source": "Science|Business",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaVNJT1lKX2hfaFd4UEhydUZfTU1EWGZpU09YT1ZWY1E0LUx6NHRtOFFLWDJpY2xtMEdpNkZSLS1lcFN2NkVVSG1ZbEJwVjhlUUUtbTRacFRBSWhVcnJXSnBoV3dmdUh4Y2RuWWx3Z2xxX1IyQXBoWmFzYlRUWVE0RDRVbk5Mc1dmSFNkSTh4YkFRZW1Xa2JQX2lqcGo0MDdGcVNHeA?oc=5",
-        "date": "2026-04-30"
-      }
-    ],
-    "germany→netherlands": [
-      {
-        "title": "Gold in Netherlands Trade",
-        "source": "The Observatory of Economic Complexity",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBnUDQ5dVRJb0pXd2FRanVucjVjbkFObDgxNmtDZGFxeXVsbDdCS2JrSlhrZXN1NGFwTm40VUplZW8wNDNRNzhQV0kzZU1OWHd0dkV5WGNfX2NQSUtuTHhWeTJLa2lEWWdNdElsb1o1NnNzZw?oc=5",
-        "date": "2026-06-26"
+        "title": "Dutch–German trade grows as Germany shifts away from China and the U.S.",
+        "source": "NL Times",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOczNTN2dCYmVBNG40QnRxb1ZlcGpaS2hZNFVDVUl0Z1dFc2E2azVQb1ctc0pRSXJvdkl1ZlBkNTQ5eGtocDdBQXVlM3pmWElnSmEyTERFZjFwUXJTWWVsMUxPLWRPWmxFWDRPZGk2U1lWazFjMkxOaHlMTGd1RjFmdXFRcWdNZmtQdHZn?oc=5",
+        "date": "2026-02-06"
       },
       {
         "title": "World Cup Prediction Market Promos: Trade on Germany vs. Paraguay & Netherlands vs. Morocco Now",
@@ -8252,25 +8226,57 @@ const ARTICLES = {
         "date": "2026-06-29"
       },
       {
-        "title": "European certificates: Deals surface in Germany, Netherlands",
-        "source": "Quantum Commodity Intelligence",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOWJ6RHd1SkNBX1ZFcUpfXy1HS2pFeGtNNnA3bGFsNmREa1Utd3htMVduX05IWDhESDZsV0pfOHFheTR1QWFGc21INDY5cUNrN3dUeXcwcmhvS3VUSDdWVHNXdW9VZGVOWE9TUWs1bHdrcHpkZEI1VnVmYVlKek9PWGlhZDgwUEMtOHpZSWl6MkJFeDg2bTVKYzNKUlJObURMeWdNcFZJR3ZFV1ItZG9n?oc=5",
-        "date": "2026-06-30"
+        "title": "Germany, Netherlands and Italy gain AI researchers, France loses out",
+        "source": "Science|Business",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaVNJT1lKX2hfaFd4UEhydUZfTU1EWGZpU09YT1ZWY1E0LUx6NHRtOFFLWDJpY2xtMEdpNkZSLS1lcFN2NkVVSG1ZbEJwVjhlUUUtbTRacFRBSWhVcnJXSnBoV3dmdUh4Y2RuWWx3Z2xxX1IyQXBoWmFzYlRUWVE0RDRVbk5Mc1dmSFNkSTh4YkFRZW1Xa2JQX2lqcGo0MDdGcVNHeA?oc=5",
+        "date": "2026-04-30"
       },
       {
-        "title": "Kalshi $10 cash bonus referral code “OREGONLIVE1″ updated for Netherlands, Germany World Cup Saturday",
-        "source": "OregonLive.com",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNdFNhUk16dVFyRnJ0TUN6UVVLN25rUmtfcTlsSmJzNTlXSzJ2b1BkVWd6Z0JUOG05bkxCZlUzb0drV2xQSE5YUmNIQklzRFpqclBDNjU2cHN4S05TMk1KOXozZk5iNjV4c2duWGszdDkxYUlzT2xxa3BvdTB1aUtpcFNpdHVBY1BLNlIzSE83Y3Yxckp3M3R2WVk5QU4yRjBWaHNSWXRwSkdxd20yZTFJOWVEMUN3VEw3aDFIcXBOSmVTQWpMMW9wNlZ2aEVhWlhwanVoa2o1LWhfN1pCTkE?oc=5",
-        "date": "2026-06-19"
+        "title": "Harris County Judge Lina Hidalgo attends Europe trade mission amid calls for her resignation over rodeo dustup",
+        "source": "Houston Public Media",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOclktY01GV19nMzBEZ2pYemVnbmlrZDBQVVNzN1R3cUFjX2NiTndWa0sybl9GaG9VZGd1ZXd1QXp1cHliZ0F2RGM4T19FWmZoQmpfMDM5ekMza05hbVBnSHMwMlhzLXlKTFRzd1B6R1RvRDdkV05ZMmVVNUZpR2ktMGF4ME9SOFZNUXNpVEhzSXZiMVg1YnhESnFscUx4enFrWThUQk9oNGdwS1hEMEhhM2l1SkxhYUJmVkdOdFZCdWliaV9EOGxaaU1OZ2pNdmV4X0laTHp5WV9BeFoxYV840gHnAUFVX3lxTE1SZTJQQnNBNDNXT1A4RElRM1dFWldkbE5iWTRnMlVNZ2xibURZWnRaTnp1aVNZeVlUbUNrZmJHRUFoOUhFZm83T05MQnBaZm9lSmM4aFhhclJ1MXAwS2ZsQXE2a09YMmlYREN0QXJlMllZTk9DVFFKNndPTWo2NmV1S3NqMUc0djlEY05qWUZjeXFvcVo4QVNEN1VaTGpWNGIyMHVPMGIzQ3RRSVBqX2VXekJuOWRKVzJuTU5LT1NSeTlOSzFwVlo5ZXJYMFk4UEVKMEVjZWNDbkhaYVlaVEhRckhSYzdkaw?oc=5",
+        "date": "2026-03-16"
+      }
+    ],
+    "germany→netherlands": [
+      {
+        "title": "Dutch–German trade grows as Germany shifts away from China and the U.S.",
+        "source": "NL Times",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOczNTN2dCYmVBNG40QnRxb1ZlcGpaS2hZNFVDVUl0Z1dFc2E2azVQb1ctc0pRSXJvdkl1ZlBkNTQ5eGtocDdBQXVlM3pmWElnSmEyTERFZjFwUXJTWWVsMUxPLWRPWmxFWDRPZGk2U1lWazFjMkxOaHlMTGd1RjFmdXFRcWdNZmtQdHZn?oc=5",
+        "date": "2026-02-06"
+      },
+      {
+        "title": "World Cup Prediction Market Promos: Trade on Germany vs. Paraguay & Netherlands vs. Morocco Now",
+        "source": "Action Network",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPamFwXzB3dUI1RlVzWUs0bFZrUll3bGZMZWhzTVJCVFBQVG1ZbnhTZjVhb2JPVHJCbG1BVWZkWFM2YVVjdGRMeG9hYllkc1lHTDRINFU4QTZ4STFSY1AzU2dQZ280ODJCS0h4TjMyWnROZzNKSFlUWjE2S09DNFdOTnBfblRVNERXQi1hbWtkLS1sSzJzOVhrUHI5MWNrSFBnS080RkZxSlh2VzVVQVlQOG56N3ItaGdpZl9WcUNVTlprTVJQSERIMklzUTdPT3ZKMDVoWUhVRTlNdjhyc0k5TEV3?oc=5",
+        "date": "2026-06-29"
       },
       {
         "title": "5 EU countries call for tougher trade weapons to tackle China",
         "source": "politico.eu",
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSDFKSzd5Vkw2bHB4cG1Cc0VMWTN5QjJ1bjFFRllSeTVoYXdPSnlIWjFLb0Z3eVdfbHhOWWI3aEdfMmxwMC1OMlNiREp2a2hacU5sRTFoUUE3YWh2VFN4Vmw5cU9hNTMzeWJGeU9rSHpWYVVqcmdNZUcyYWwwcUJZOHAxM1BGQQ?oc=5",
         "date": "2026-05-25"
+      },
+      {
+        "title": "State visit by the Federal President of Germany - programme",
+        "source": "Royal House of the Netherlands",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcHFucXlOT2lMOEk2Sy1uTmJicGhreUdhdFlPYUZHQjlPYnF4NElycjI3TXRHUDRRUzJVeFdXdFNFc01ZOXdmTThHQ1Z2SFN4c0RaMGxoS2hOaU1LNVM1ZER3ZVMzdm9JZ0hFUFBuZFdYOGxpclBPTHU0VDZOYWZFUkI2WkJOSklrX1puNW5OaWRVQzVKbUlzTG53V2JtYnBEakpQc3lyeHdzbFU?oc=5",
+        "date": "2026-05-27"
+      },
+      {
+        "title": "European certificates: Deals surface in Germany, Netherlands",
+        "source": "Quantum Commodity Intelligence",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOWJ6RHd1SkNBX1ZFcUpfXy1HS2pFeGtNNnA3bGFsNmREa1Utd3htMVduX05IWDhESDZsV0pfOHFheTR1QWFGc21INDY5cUNrN3dUeXcwcmhvS3VUSDdWVHNXdW9VZGVOWE9TUWs1bHdrcHpkZEI1VnVmYVlKek9PWGlhZDgwUEMtOHpZSWl6MkJFeDg2bTVKYzNKUlJObURMeWdNcFZJR3ZFV1ItZG9n?oc=5",
+        "date": "2026-06-30"
       }
     ],
     "france→germany": [
+      {
+        "title": "EU-China Relations After the 2024 European Elections: A Timeline",
+        "source": "China Briefing",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWHZOcGl1U24wVWpZdjNyTlFHVTdUNFFSOXBMVUI2clNsSzNMMmFUeFRtRmk4WXZjMDZXT1Y2eFBrMGh1QUU4M3p5eDh3VkxhUS1sbTIyOGE4WG9IOFBMRFpMOWI2Z3pWQUNTZWZkWmwtSEZsRUVtcUdad2RrLXduMXdHQ2trci1OQ3cxdE9Na3BBNV9rRVh0alZVdU42d0VVV0E?oc=5",
+        "date": "2026-07-07"
+      },
       {
         "title": "US launches Germany pharma pricing probe, raising threat of new tariffs",
         "source": "France 24",
@@ -8294,12 +8300,6 @@ const ARTICLES = {
         "source": "Bloomberg.com",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSlpJVkJKOGt1cUlZbEIwX3RaNU5TNlhNSVJtdmVXdDhxV0JueldaMTRqd1BTZUV4R01iTnRuOS1qSzVnNHhna2NlUHYtWWVPRzJJNEFlczBxUVIzNFF3TzdiS3RFbEtkSjNjMVlvN3BTc1VyR0o5bWRITFQyNk5SbUdkQWtadGROZmwxWURlSGpQMmowb2tOTzhValBRM0wzY0Z6aW5nemF4RFBXVGw2M0c3S24?oc=5",
         "date": "2026-04-30"
-      },
-      {
-        "title": "Germany warns US not to jeopardize trade truce with drug pricing probe",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeTh4MFF3QVYyeEtMX2pHMzVpaXA4Yjg4ZFhtd0FCMm44V0FielVtRmlIcU1CSGFoX3E4ckFxSFlHdkQtOE8wekgtSmZ1OXcteGdlVDBTeFFyRTd3ZU5wc0VWLVhaU3RKQmRHdFd2RjNQcTg4aFMyOURubnVta3FIb0hvbVFkR3BrVGhUVzhOMVhSSmlFOURBdmlBS29jdk5NLVkwRUxn?oc=5",
-        "date": "2026-06-19"
       }
     ],
     "poland→germany": [
@@ -8336,6 +8336,12 @@ const ARTICLES = {
     ],
     "united states→china": [
       {
+        "title": "Why Christmas trees are causing a ruckus in the US-China trade war",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVndUVkxnbndpblF1OWt6ZUZwVFphQWNwd1RYTnZfWTRFVG90OUtsR0N6SlF0OWY1Tnhzdi14RVFnbmhIX09RRHNBd0VRVXM1NnpiWFM1cFdKWWdyX0VTMG4wb0s3cWx6VTVnY2xzYURQeTk5d2ljeWQ0MjNXOFNFblRsRE1pVTVOUVVPN3lmZ1pJb1hON096djFrbV9PZkhEbzBLbHBn0gGmAUFVX3lxTE1fdWl6cHN4NFpseFI2WThoTTFIYUNVZS1GbkstQkd4em9fZ2ZFWlY4M0I1MUhfX3Ezc3VzYmxPNGZXU3VaclQ3al9OeGZiQXo3cHF3cFdWOUdxM3E5YnRucGswamZJZDRhVDVIZHlqVHRSWFRkU1VSMWdMeUdIdkFicHJJZDVxZVdTc3RtLVQ0RXJUbXBIU0hzWG9sWWd0TUFxWmU0aHc?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "U.S.-China Trade Talks Signal New Agricultural Commitments",
         "source": "American Farm Bureau Federation",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNGNhUUhzWkw4eWVGelZSVzdhMjJ5M3NVOXlfVERIV0JFVnV0a0QzU3Z0djBlYVNEZGE5cm9WNWFPSnNZOW5xck5hX0I0Tm44dHZPUzZTdDJ5ODBCS29FN05EWUFZT1BXbGYyd3F1SUY1Y2pVUW9uT09VbzJOc1VDblpqOFFfSVRZci1NclFRanJqWURi?oc=5",
@@ -8358,12 +8364,6 @@ const ARTICLES = {
         "source": "Woodworking Network",
         "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZkpJTHRoRFpIM3F6eTl2T2haQ3gtblMwdGFNcXl5dmNJeDhRWmQweVU4T2JaaTM1QWRSazNSRUgtWUprNHRPMWZxNWYwWXFrT3NaOUY2eVItWkp2SDcxWkNjX2hHdVJZbU95aVIwdGVCbF9ucWlWR05ZM1lPTTNaT1lObHhHMUdoYVJ0UEd5RHBMcV9EdVN6aW02R1YtaG5Lbm1HdEZvVDNOc3BfWE9heUpxSnctSEZpdkFhUmUtcnlPdGZjRWg0?oc=5",
         "date": "2026-07-09"
-      },
-      {
-        "title": "NARA highlights concerns of proposed US-China Board of Trade",
-        "source": "MEAT+POULTRY",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPLTNWWUpJam9CSjFWSGxLbG1hbi1Mb1hvMjFKb2s1S0lDN2RVYktrUVA3OEZPWUNTa1FQTlhEU2ZkLWJianVkV1NYVU8tN2hOSkVYSnU2WmpaVy1jVGJ2bk13MS1EYzV6QTBrUnN5MTdoX2lUZTNjRmVtaU9lTnBoVE5QUFZCck05OEJzM3lJSDVaUjV3eldtX2dlYjZKeHIxNng2bklB?oc=5",
-        "date": "2026-07-07"
       }
     ]
   },
@@ -8376,28 +8376,28 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
+        "title": "COLUMN: Russia, China, USDA reports feed grain bulls",
+        "source": "Enidnews.com",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQb3lZV0xDdFJZby1KSjVUbXdSZlZQcEhNZEI3dTYxT0RWQnN0OE10a3V0bmNtMFJRb2VPbzBfek1xekxFOEs4OFRFb0Q3UTFhNXo5TnB5QTVTN3RYRjUwZUlINUJKVEJUb0MzREs4eE5KUVQzQ0VVZHloY04wbVZ2OEVidjZEbWFxa0tCRTRNeXNuRzM3NEFiMWdrc0lLajBzRDlNYWl6VnNrRzkyTGZjWmhXOXBXUVFpckpCVjFDY3FKSy0xcTAxTzgyRUZDbUlubE5XUVpB?oc=5",
+        "date": "2026-07-11"
+      },
+      {
         "title": "Distillates: Russia ban and China pullback tighten market",
         "source": "Quantum Commodity Intelligence",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSmNtVkZWbGY3STlSMUw1RkxmcHA0U2lmOTNzTXFuOVZCYnJDWG94S29CQms1bjRYa3p3QktKM1lwTGN4cEpVZFRaYU5fV0QzNFdwdXd0UDBtT1d2bnRYSEJsUWJKTE9LNEhDQmpGc1h0YkNqeWEwSWpjSnZmNENVWGV0dXBEaUJ1aEpWUWxDQUV0MExPRGNUYl96cEZpWjVm?oc=5",
         "date": "2026-07-10"
       },
       {
+        "title": "Global Energy Developments: Ogaden Warning, China Investments, and Nuclear Phase-Outs - News and Statistics",
+        "source": "IndexBox",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSzR0bmdUeXpCckxnZkpJampfelZkaDZsai13TkZzUDBWZmE1UTAweGlOby1ValY4YnJKcENtdDBCUW1SU0xUOWNHYVhNYnZvbU1BZm5UTzg0c1RsYXIwSkZMcWhqOElpWTJkNFRUSlZnNW1SQ0tLb1FQZW84OW90UDkwdjN6d3k3bmNkSmpuR2lndw?oc=5",
+        "date": "2026-07-11"
+      },
+      {
         "title": "Russia and China veto UN resolution aimed at reopening Hormuz strait as US deadline for deal looms",
         "source": "Euronews.com",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcmpTZTZSYnZnbHVLbmU4LUI3WkJORUMzUnk5QmdkbGZ2LUJnTFk2b05LS0M3LUZMNWc3bzlhVW10ZEhldDNwbHpkdDg3eVl5TWUtQUl2Yy11bnI3UWZPZWtSY0c0TWVxTUY2LU1HNldXMUtGbmp4dzBsSXc2OTh5ZEFMSXFmWDJuYWRsbmVvYkp5YzN3cGZDYW5RRHJDQXp1YjM0ZElrLWJuWHJEZG5ONTY1OGNDcFBMNUJNM0UwckgxNlVD?oc=5",
         "date": "2026-07-04"
-      },
-      {
-        "title": "Not Middle East, Not Russia, China May Control Global Oil Market. Here's How",
-        "source": "NDTV",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNS0tVWUpubXpKWG95VDA3clpLWUlhRmIzeEMtNF9qVWJFU0xzMTFmVkJXdURXWXBXV2Vpd2s5OEVYOEhDOHR0Wk9TUUk3WVJ5Mlk4V0sta3dpVHZSY3dUMm53SlI3OWpldF82OGk1NWFidVFEWDdfaWlVY1hpRk4wb2dWMjVlZm1saE9GUmJwYzg2STVyMDVxNGNnbDhhc0tacXdobFNHaG9JLUNxc0NBaEN6dVNpYzdDM0JnRDR0ZlAyZnI5Z2s5SVZ30gHSAUFVX3lxTE0yT1JTX3RnUHdSQXBabHNZNW5JVzlrRkRLdWtTXzFzeEdHWUQ5Z1RwNmJBTVRxSk9CdkVRU2hNM0dTT0tWMWpMTjZ3eEt3UFRjMDZ5QmE4b0pjV2xheENUd3hmSjVWUGNVbDY1cEQ4ajRHWEFKRDJBMmsyVlhvcndMSzJWRjFQalR2dWI5eTY3cG41RG5JRzMxbDVaYUJhS2ZpSDdJTG1VSEdQWVhFd1VMaHQxYjdYYmx1bVd6MTZRdHc4ODItc2tDMDVVY0ktclYydw?oc=5",
-        "date": "2026-06-24"
-      },
-      {
-        "title": "Has the China-Russia Partnership Peaked?",
-        "source": "International Centre for Defence and Security",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBaZVpkb0k4U1MxOHRrdEdNZkR6aW5HYVRvNGJPeC1mdVJPYUFQck93cWNPaWdmQ1M4WFJLa1pZZHFSQUFwWUlQQWZqWjBXTUY0SVREUG5OVjJQYkM5c2Y2OWoyNHpPX1RZVkg0?oc=5",
-        "date": "2026-06-26"
       }
     ],
     "russia→india": [
@@ -8408,19 +8408,19 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
+        "title": "US senators push Russia sanctions bill that could impact India's oil imports",
+        "source": "Firstpost",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORTlWLWpYbk1uTGp4cXFQMktxbkt3MmtseFZDa0xGeWZrZ0lCUG5wSlJYd0hsd29mWWdYZmQ2YWxxQ205N2lTdEVZbEh4TzR6WWpVRHdQbTM1UDZwSnk2UTg0RmlBMGZmRWc4bGk2eGpSUlp6OVZ5UzRuLUZoOVpCc2JGZTZXQUtQMHZTMXFJS0t1Wmp5SU05WFJBQ18zR2htRVNnMjlsbjdGZHRyT0I0UXFnNWNkT3RhNHpWUjNLcEtleDJz0gHKAUFVX3lxTE9JSjVjTHctQzN1b1lNN0xHLS03bV83b1RHMWVvNTY5aWdxVTkwV09vOFVDRldTUFVCN0c5QTUyT2haV25aeng0UVA1UFRCTmd4QUZzSGMxMm1ZalFRN1ZWVlB3YnkxaUlVbHB1R3ZELU42alhrTngtMUUxV3RTQVMySmhTdnFrc2pTdWl3c2dDd1NIZTh4MUZSdkJNbE5FUmhoMXMyUUJDWldrYU5YeG13c3AyUnVER01fcVIwMlF4SmVCSDRwc1hfdGc?oc=5",
+        "date": "2026-07-11"
+      },
+      {
         "title": "Freight rates for Russia's Urals shipments to India fall on higher tanker availability, sources say",
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQWRjSEtBVlRScUN5YzNjNG50Ni1rbHVXRXBhVzU3bmxGRElOc0lwTFVJT1owN0gzSThuTmJWMkpNMUdzQVFESWM5eHJnZExlMm9nWGRjbkRBV1Joak1JMXNaN2JfSjItQjVHRExfSm9hcHVBR3ZTNE1WQjRzVmpoWXJJZGs2ZjQyMDlFcmtYRzVYNVl3aXBxd2dTQ0dfUDZFUllkOE9WYTFFR1RMeUNqOWdHYzcxa25UUkdkeWdwbEgzRmFpSnc?oc=5",
         "date": "2026-07-10"
       },
       {
-        "title": "Reverse oil flow: India supplies gasoline to Russia - why it matters",
-        "source": "The Times of India",
-        "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPQ0t3M3dLNXV3SzFlRDVMX1N3Mi16Ym9xaFlUdnBWQ0J1SlVxSmx5VnlDZ2p1ckduUEMybng5azRsbkUxa3FsZ0hKSnFuelFiMlVQQ25DaUVJdHRwdHFMeVVyNFd6Sm5tM0NxaWRNVm9yT1JoT0VpVWkzN1BwejhjT3BzYzR0ejRiZHlKZHp0aWxCdEJUYS0ta1lsSnVuMVR6dE1CWXZWQlYzMVdtU1NRakUxdThKSjdZUzhFeU95MnExMTBSNVhUTXNOQi0wQjVfcW9wQl9DUEM1bm95MG96N3NMREI3ZE81NDY5YkRoSURXUFF3aERiZkl1MDNqQnZtMktqdlZVLXYyejJEU1E?oc=5",
-        "date": "2026-07-10"
-      },
-      {
-        "title": "India Sticks With Favored Supplier Russia, as Iran Waivers Come and Go",
+        "title": "India Sticks With Russia Supply as Iran Waivers Come and Go",
         "source": "Energy Intelligence",
         "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1mbnJSZm1BYWhiOEV1VWllc3RZU3A4N1I5a29FSFNQY1VCaWFta1N0UlplS2pna1dBYXk2dEUya1FiVHZyZ00zNXo3cWtzNGlpSEhyQ0MteFlSNjdiVTRuWWRKLUZrUl94SVRWSnA0YXRhQQ?oc=5",
         "date": "2026-07-10"
@@ -8466,10 +8466,10 @@ const ARTICLES = {
     ],
     "russia→hungary": [
       {
-        "title": "Russia’s Druzhba oil exports to Hungary, Slovakia back to normal levels in May, sources say",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNS0pENUd3UmJQRnpWeXItRnR4cWRudG5UWUktSnl5eFVVTHdyWUItV25sM2VpZ0ZtbUg1TWY2OVpBZ19NZGx3T2Z0anQ0Q3FiM1lfb0FlcHh1NkdiRmlfOVZ4aE1lejh4Uy1IUUd0M0lDSmJNU2xVNm5keUJ3bVhOQUZkdGNwcEt6MmZPVl9xVFc1ekFFZWFjeXlrU0Zzcmo0X2tYRF8zbE1pMkt2UlJoUmtXQzlPN0JBb1BRUl9YVHhoRlRnaWRGMEV1cw?oc=5",
-        "date": "2026-06-03"
+        "title": "Will Hungary’s New Leader Really Change EU Policy on Russia and Ukraine?",
+        "source": "Carnegie Endowment for International Peace",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNjhiX2Q3TUpJcVNRNWdhWVdteng2YjU2eFQwaXJsNFJXQmFUV1FqdG5JRmd1MWVjNzJVeEVmMjR2VmZjV3VEUWZ4dXZnY3hmLUoyZW1BeWpia1dmWnpjUWJCSjVvSmg3RFFwYnZRYWphVXVTaFo4N1FuLXJYV3ZEcFdBenlaa0lfdHkzX3lR?oc=5",
+        "date": "2026-04-15"
       },
       {
         "title": "Report: Hungary using more Russian oil, despite EU phase out",
@@ -8478,22 +8478,22 @@ const ARTICLES = {
         "date": "2026-03-23"
       },
       {
+        "title": "Russia’s Druzhba oil exports to Hungary, Slovakia back to normal levels in May, sources say",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNS0pENUd3UmJQRnpWeXItRnR4cWRudG5UWUktSnl5eFVVTHdyWUItV25sM2VpZ0ZtbUg1TWY2OVpBZ19NZGx3T2Z0anQ0Q3FiM1lfb0FlcHh1NkdiRmlfOVZ4aE1lejh4Uy1IUUd0M0lDSmJNU2xVNm5keUJ3bVhOQUZkdGNwcEt6MmZPVl9xVFc1ekFFZWFjeXlrU0Zzcmo0X2tYRF8zbE1pMkt2UlJoUmtXQzlPN0JBb1BRUl9YVHhoRlRnaWRGMEV1cw?oc=5",
+        "date": "2026-06-03"
+      },
+      {
+        "title": "Russia and the Pain of Losing Hungary",
+        "source": "Center for European Policy Analysis (CEPA)",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Zc2JNUVltMC1tSmZJa3luODRkVVZjVXJGN295bzdXeUVnNDBicGtVRS1RNU40Ylp6NDBBR3A0RENLMF9ncFVpb1FvSVprR1BSdFZtZEZ6ZTgteXVZLU9kRy1NOFhzNWhLSk55QmEyUTQ?oc=5",
+        "date": "2026-04-15"
+      },
+      {
         "title": "Can Hungary wean itself off Russian energy, as its new leader has promised?",
         "source": "Al Jazeera",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNOGc3TXVTeFR5ZVlUdmNyUWZ0dmd3dW1wdVJQcWVDVEhMNF9nYUo0Z1NwTXJyaDNBcXpWZEVSb3RPdEpCTGxnd1VnR0lsdmpfLTYyZG5OQ0d5MHlWQ0N0cEpmUTNGV19GM3F6bVV0MEpvSlM1bUUwTmUxUEN2YnZWMFBpT1lMbmttQmQ2cVZlUzlmaXQ0OUFNeVJrd1FUSkVEeWVhTXYxN3htTDUyVWU1WHo1SnbSAboBQVVfeXFMUEM5QWlCekMzZk9fdXgtUWoxYnYxdHJNdndNc1hhYTM1a2pKaTIzNVBuUVIzVlVxbU0zNk5Bcy0tdXpxWS1qbzNOSDk4bWV6WWRmQmtlcm16NjN6MEFKdU05LU9FMEU3bm04Y1BiXzZrTVl6ckdKbExxOFdLQWd4V2NqcUo4RXFqQ2hycEc5ajZKRkgzU00tYXJKYjN4aDhiakJ3ZmRDNjdRdS1WbWFWNUhuMlZXdnlKX1d3?oc=5",
         "date": "2026-04-17"
-      },
-      {
-        "title": "By buying Russia’s oil, Hungary is fueling the Kremlin’s war machine – and enriching foundations linked to Orbán",
-        "source": "CNN",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4xMHRRZElxeVRwR3ZudjJOVlJkZ09NNDVFTnFoRXNsb1lWV1JZdnlmTGlqTkQxSFE4d3dSRUhBZkhZV0M0aFl2RFE5d01IekNHZjdTZHJHekxMeHhSTmFOc0NOcU41Y2RYMW50RG5DTUxnUGw5a1FxMkp5bVlwdw?oc=5",
-        "date": "2026-02-16"
-      },
-      {
-        "title": "Hungary threatens to block EU’s 20th sanctions package against Russia over oil disruption",
-        "source": "News On AIR",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZlRldlZiSlp0SlBsNFVpc3NIMzdTTHVtNXcxZlVBQUNUekdOY1c2UDFzZWwzdzFnS3gxYTAxRGVweGdRZEFjcUc4b3BzZUNBTG9ZRGRlSEc2RzNjZm45bFRIVEwwWXlzRUd5NURlb1lMZDJMU1JHMm5TTHYwaFRhMzlZelR0RUlDOTUtS2h0eUFhMEJjU1c0bFhFaWpNM1M2TVd0ektRdUxldzNkTE80SGtvTGg?oc=5",
-        "date": "2026-07-04"
       }
     ],
     "russia→serbia": [
@@ -8510,9 +8510,15 @@ const ARTICLES = {
         "date": "2026-06-25"
       },
       {
+        "title": "Serbia on a Sharpening Geopolitical Edge Between Russia and the European Union",
+        "source": "Clingendael",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNY2hMMXhWbnRoc29QZ2UxM1pRYlpxYlpQVWRwbDBaWnBvd3BzRjhUVEpiNHhjVkN0cGFOcTNOaWxjemk5VzVlR29KNTZYMDYxMm9oajZzamxuTzl1NVBvbDVib09vZ2VURVVOWlRkYjlDSGtOc3U1RllMNld1X0JObWhPaHVHanlDM0JTZ3hZYWJXck9MeUgtS2c0Tkx2VnNUNldZTklPWW0yM3owNmc?oc=5",
+        "date": "2026-02-16"
+      },
+      {
         "title": "Kremlin says Russia has had contacts with Serbia over NIS oil firm",
-        "source": "TradingView",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTVVaRXE1VG5ZM0JBUmE4Ymp3TlNkS2JXNjY4T053bmx3NVpIcGtSNHJZTFNpWVBHcmgtUE9MSXduclBkekdORDM5V0tSRFFtbXBhVXBwM0hJTnFZcWp3WndqX1ItSngtbTFUZ0FOcGNJV3gtQ3hmUUticENJUjh3N0xoYlVRSi0zVk5zaE9lTmZseUxGTF85TTA5bWU2dVFjdW9mRHhZdHpWbUJLTXdJUWVHMkVjWTZmOHJrX3JIN3g2Xy1kNmlQOHRyendNc1hxYmc?oc=5",
+        "source": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYzFyd25VbFZCYVAwMGxJWVNZbjI2YW1oZmJqSEYwUWpydUdfQXYtNEc4OWxSS2R1VjFnYlQzYTNLVmtJMjJLLVg0eUY2UzBLNjJYZTdDdHFWY1RWYXpXaGhlWVFjREh3VUYyVEM5dTVCV1JFa2NBV196aFd6cEhuQ29tUkN4UEJOVWRMR1dZSG5TR3prYVNJTVFWNFp3LXRiNUw3QkZtTFltRGppTVk1MzBSbloxRmFNTUxB?oc=5",
         "date": "2026-06-22"
       },
       {
@@ -8520,12 +8526,6 @@ const ARTICLES = {
         "source": "Osservatorio Balcani Caucaso Transeuropa",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeGVCMW1acVR5cE9VaVV6QmFJcVB0TWhsaE1HOV9Dcm15V1VMZ2VEV3RQYmZuVGtGQmw2N3BmLVB4bHJpcUFNQzg0NXktQlZnQk1hS3plTlFwLU1VTFFvczlocGpqS1hsQzZlWmI2dVpwTXY5V1Q2X1ZsbE9oQ3dlbmVEeDc1RWtCeno5ajRtY0xhbGtMSlAxcXI3WHg?oc=5",
         "date": "2026-06-11"
-      },
-      {
-        "title": "Serbia on a Sharpening Geopolitical Edge Between Russia and the European Union",
-        "source": "Clingendael",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNY2hMMXhWbnRoc29QZ2UxM1pRYlpxYlpQVWRwbDBaWnBvd3BzRjhUVEpiNHhjVkN0cGFOcTNOaWxjemk5VzVlR29KNTZYMDYxMm9oajZzamxuTzl1NVBvbDVib09vZ2VURVVOWlRkYjlDSGtOc3U1RllMNld1X0JObWhPaHVHanlDM0JTZ3hZYWJXck9MeUgtS2c0Tkx2VnNUNldZTklPWW0yM3owNmc?oc=5",
-        "date": "2026-02-16"
       }
     ],
     "russia→belarus": [
@@ -8548,15 +8548,15 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
-        "title": "Zelenskyy Warns Belarus To Remove Signaling Equipment Used By Russia For Attacks",
-        "source": "Radio Free Europe/Radio Liberty",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbGp4bV9XWUtQd3dyeDRNTDRPaHJrTllLRFJBN0Z0RDdlcGd1SEl0d0djd0l3ZTVSMThDdlVDdjZwRjE2cWg5SlNlQXdMNjd3bDZSSm5xc3pWRmVqbGdyZmJFeVVfcllQdGF5RTB4bkRVNUpzVlVNV2JJeDVYbm1FX3Nna2QxZHRnTjhNanJ2YzJMa2Q0R2pnMVpR?oc=5",
-        "date": "2026-06-20"
-      },
-      {
         "title": "Ukraine war briefing: Zelenskyy to Belarus – remove Russian relay stations or ‘we’ll do it’",
         "source": "The Guardian",
         "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWk41WTRodUpJQjRXbzN0dDkxWjVTSldMb05hcF9na3FIem82a1V1YVJiTm1TeG82cHZKVng1T0JYSGVDVnpmbExjRHNGb0VWeFFTN1ZtTlBrbm9QLTNOcFpzS1NHVU1MMG44dTR2bFZuTG5IUS1hQnY0Y0x5Qzd3X3FWV0NTTVlkNXVyckVWWDBQUElzcjVNZGdmMlNvVW5GeWZHRFVrQ3RTMWhhT2d0Ujk3bnMxSU9VYV9vSE10RXNtd2dkOW90YXRUQQ?oc=5",
+        "date": "2026-06-20"
+      },
+      {
+        "title": "Zelenskyy Warns Belarus To Remove Signaling Equipment Used By Russia For Attacks",
+        "source": "Radio Free Europe/Radio Liberty",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbGp4bV9XWUtQd3dyeDRNTDRPaHJrTllLRFJBN0Z0RDdlcGd1SEl0d0djd0l3ZTVSMThDdlVDdjZwRjE2cWg5SlNlQXdMNjd3bDZSSm5xc3pWRmVqbGdyZmJFeVVfcllQdGF5RTB4bkRVNUpzVlVNV2JJeDVYbm1FX3Nna2QxZHRnTjhNanJ2YzJMa2Q0R2pnMVpR?oc=5",
         "date": "2026-06-20"
       }
     ],
@@ -8580,16 +8580,16 @@ const ARTICLES = {
         "date": "2026-05-27"
       },
       {
-        "title": "Germany's gas reserves face crucial energy supply test",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRldvTm43OEpPTW5jejdHWnRWaGtsYWlFUWtQcGE4bHdZMDk3S3JCWUZ1ZDFBYTlDOXMtQTRCemFFbWJndS03VTMwUlMwMU1YYWUzMHZ6N21iSzVqT1ZSVkdQMkdGMWhBMTBrNXh2bjE2LUVaendGQVZWblZsNnRjTF9oTG15d3JveTdIVkJFRGI4dGPSAZMBQVVfeXFMUFhkeUdSLVprQXRfTHBEd3VYbVQ5UHlEV0FoY2s2NENQQnFKZjB0MDl3VXhuWXhnanUtREk1bnFKcGJuTjF4Q3ZjQ2JKM3pENVlKR1N0clFnUG5FS1BNUEU4eUJybVBPWnk5dFZzYXE0bEpJRUEyLUFOR2gtTW0xRkU3OGpwZEc3Y0JUdnVYLWh1eUVv?oc=5",
-        "date": "2026-02-09"
-      },
-      {
         "title": "We’re Europe’s largest gas supplier. Why does that matter?",
         "source": "Equinor",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9Za181bGRTREdTbm5MaUFHaWJkVTY4MjhLUkFGWWd0d2JUenNZYWIxWEFQcXZpLS1lbS1wbllQazFxRXk4dmRXSTF1TVNGZk9ZcXpWcDQ2NHBmZ2EtNjVnTUdWUWVmYkREVS10ZUxB?oc=5",
         "date": "2026-02-10"
+      },
+      {
+        "title": "Norway may break up with Europe's power grid over soaring energy prices",
+        "source": "Euractiv",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdC0wRFZfdlBpakw0a211STJybXh3cmZDQUNNckktQk9hNFFmUTRJOHkwczZTMVdNQkVjNXAwRS1GRy1qaENSeUptVFp1enEwcThOVVNSVlJLZFM0Ym1DeHRXcTZ5UkoyWVl1NzJkN2FacnFYNHd4SlM2alFSVFFPZzU1eC1hV3NZdkNQWUp0MGZpOU1jcnRxN29SMmxzVmxETnRv?oc=5",
+        "date": "2025-11-25"
       }
     ],
     "norway→united kingdom": [
@@ -8600,28 +8600,28 @@ const ARTICLES = {
         "date": "2026-06-18"
       },
       {
-        "title": "The Oil Money Britain Wasted",
-        "source": "Foundation for Economic Education",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9WWW1TOTJub093X3YzWFUyc0QzMG9TWTNtdXlDUHJTaUxpdjdxRlpuRFRUNDMtMUhhWkoyek9wZlRNeDFDRW90NjQxcG5XQkdiOFo1YWx4eUlxQndWbV9JblZ1Rjc?oc=5",
-        "date": "2026-04-30"
-      },
-      {
-        "title": "Trump extends feud with United Kingdom, Starmer with jab at drilling for North Sea oil",
-        "source": "The Hill",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUldlQU5ZU3FlbGZBU2o4Y2JPYmNLNEY5UTBydTFKc1ZiekFMNWhyRXltSjZ5M0w3MXJUM3NQaEthQlMwa0dnb19MdDJPbjBZYzdzLTBVUzBqS3lIZ0NfNl90c1VUWXNYVDFrNGRtVWoxX2VaZFIxMG1TODZQUTdfbk1CNA?oc=5",
-        "date": "2026-04-14"
-      },
-      {
         "title": "Trump renews criticism of UK, saying it should ‘drill, baby, drill’ for North Sea oil",
         "source": "CNBC",
         "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFByQWs4RUFmRk1pT2lMSXg3b3pRQ05pQnFoNGNQNE84RmpsRDBTeTJIeGE3aDVyb3cyZ1NEaHpjZTdid2Riak9JMV9KYVJWRmxVQmxMcEJidjQyQnYxUGhrbjFWcjN3Si1ySTNYUEtJTkw1WjhadFJ30gF8QVVfeXFMT2l6dkRHd3ZtSjZpOVNsak5qUHh0dDdFMTV6OUk1TzhiMDNnb2pFeWVlVEdqMlo5eEtzejZCdjFIeGt1ODJtMGxweXZUeV9RNHFZUUJjMFU2Yjl2bWJhc3ZpWmdlRkZVNW9FVG91V3ZfcHU5QzJrQ3NxOW5CMg?oc=5",
         "date": "2026-04-15"
       },
       {
-        "title": "Offshore drilling | industry",
-        "source": "Encyclopedia Britannica",
-        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNblB4aXg0eHNabkZBWjdqQjBReENfQTl5NDg3RjF3bUFGcmUyYm9SMEpRc3dtbVd6djA4ekF6N2Uxb3pnem5aRzZRTzlTX3N4dVlPLVd3aGJUM3I3SW53MWlvTUpDdw?oc=5",
-        "date": "2026-07-01"
+        "title": "Norway to reopen old gas fields to support Europe’s supply",
+        "source": "سانا",
+        "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE05Z2VfWHVjRmNGakZQb3lZVmlkNE5ZUzZkd2dPbEFJZnI4Mk9iZHl0U0EzQlRtcmRpWmFSUmdKNC11cllkMVF0RDNlSTU?oc=5",
+        "date": "2026-05-05"
+      },
+      {
+        "title": "Norway strengthens role as Europe’s low-risk alternative oil supplier - CHOSUNBIZ",
+        "source": "Chosunbiz",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUlJ6UXBNbXMtczJaNmdSdHd6UXNlMEhOaHdxYU5CM0swemtWS24yWDBjRHNXRTNWQUtPYW5JX01lX19kVmtEX01RSlBGZXloR05fc3Y5cWJmWDRWWWl5cGVXai0wMEFXM3VFazZQNC1ZakZOU3lfTWFpZDNSTHlXTnNKQnZEUkZP0gGcAUFVX3lxTE5kOW1DRGsxTUNfSmVqaVgxWUJ4cHdmQVRjWGpCVDFKNWYzVy1weGRPMTVTRUpjRXJqWXktTkRDX09mYWZDTUl6ZVQ3QTl0Y1pXNXdNVHJQQzliYlJZV0FYWmJodjFkTDIxVVJNS203VDlRYlZkaEMxUXNQQU0xT1JQSFJRQUhSSmRwQjN3RjA5RExzaXJnR2JqWUlwdg?oc=5",
+        "date": "2026-04-15"
+      },
+      {
+        "title": "Why UK should follow Norway's example to protect itself against global oil price crises",
+        "source": "The Scotsman",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZ2JsRnVmc2V4SzAzQmRFQWRsWS1lQUNPMC1kNWp0UUoxYWsxMUU2NHFNTUxsYWt4OXktVldsNjFLNFR4b252akVIQzFrOXRLSDNMZ1Q2VmpXakFKbm55T2drNHROdFlyQzM2dXNoM2Q0WjJOazVabEFkcHRBdUVIclNFT2dQMS1oTERaU2luMTJzcmtadzdmRGY5TnptUGRhcDRWQ1FkR2xxQkhXN2d4SlNMMmNWWnUzUXJHZXAtdGo0bjl5SU16ZlM3S3JOQlhqWlVfNlJnZXhCTVU?oc=5",
+        "date": "2026-03-17"
       }
     ],
     "norway→france": [
@@ -8650,30 +8650,30 @@ const ARTICLES = {
         "date": "2026-05-07"
       },
       {
-        "title": "France Detains Russian Arctic Oil Tanker",
-        "source": "High North News",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdWFnSnpaUjhncHJhQnduZHVqTlVHRlJ1bWlvNmQtdTExNG8wUVBUSXNDcmR4eVNxcXliY1VNeC1HV01aZ1E5c2FoT3ZuNktfMUQxcFp1MXhYRngzR2QwRV84X1dEQ2poQWo2dUNQYlVxOXlNX1hnbEFEWUNNWkF2UlpmT1hmTTQ4ZmM4UmkxUQ?oc=5",
-        "date": "2026-06-03"
+        "title": "Norway, Russia and Canada ‘will benefit most’ from higher energy prices",
+        "source": "gasworld",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQX0E2ZWVycjdiOHRqTnBnbTR6ampRMnRsMEdrczV0bC02SVN5QmZMQUdQbzYtYktxbEFPSVF3b2c2ZlFodU0wUDNBQWRUeHFKcU96SHEwWkdjOS1VRVc0VERiM0lFREJsdmtQRmV2a2FMV1dzNWVUcGhVSDdrXzhxdDk3Vk5zeGZpTWJvTmFDeU1GV2lXMHlCWVpQUXB3cTAwVUU3cnBiRmF6aWw2dXE3c29YU1Ayb1E?oc=5",
+        "date": "2026-03-11"
       }
     ],
     "qatar→south korea": [
       {
-        "title": "South Korea and China shipyard concentration could slow LNG expansion",
-        "source": "Baird Maritime",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTEt1dld3bkVZY0FDWUlSR243MmVpUk03WVhiTVlSZ0phS3lyQzk4Z2pzaF9ycHFWMURjQ3NQcm1fb05VQklaTlVsd0ZJdTZ3YmdCdUJPNmZOX2pDdkQ3enFPTDBqZzEwcjVxLTNIcUl3MVRCMERXMm1rSmlRNmxZUktRa1NETzhZQkIzY2ppOWFKdTBDY0w2UE11SE5GR1F4OGh3djdzMllKQmY4LXdNMnZDZ205d1I0Qlk3MdIBygFBVV95cUxQTi1VcVNqTHg3eVdRTGdSSy11V2cxOHBWcFpySkpoVDI1NVFSaUJVTmI1REhJY1I2RU9pNWlMM2hCT3Z5S0tOM1NobHhFbThGbzVuTnFzWTdnZWJDOWQ5RGJtX1JFVXgzV3ZncVdZRDNXSXk4NEh2eHZva2pBZ1U4RzQwTnBkcFROYno2Y0h2YUpCM1U1N1Q1cnJpcUNCa3NXM2phMmZRVTRUcjFmUURRcVpYdDV1MG5tb2Z2OTZRaUlZczMzc0JFUXVR?oc=5",
-        "date": "2026-07-08"
-      },
-      {
-        "title": "South Korea, Qatar Reaffirm LNG Priority, Expand High-Tech Ties",
-        "source": "조선일보",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVzF4WVBiZmdpcXFKcGRFS3czT1AzZmVDWng0b3B5LVRFQzBFU2wxM0ZDbGF4eGNRTndyLWcyZW8ybmdYazNVaFc3QnBCYTRNMENFSl9fTWdhNm1TZHhUd3RGNFBDWEhDaW9yNzFiZ0Z4TGF2TUhhVGFaQlIyamQzcU9tVXhTVEpY?oc=5",
-        "date": "2026-06-15"
+        "title": "China Leads Japan, Vietnam, India and South Korea to Face Asia Travel Uncertainty as Strait of Hormuz Chokepoint Crisis Exposes Aviation Fuel Risks, With Emirates, Qatar Airways, Etihad Airways and Asian Airlines Monitoring Future Flight Routes, Airfares",
+        "source": "Travel And Tour World",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1DRThwb01sTUZvOTFrdl92My1BN1U1QmlpY3c0MjVrbjNYU05fUGNRTWxsTHlWZmNoUExsNk1kRDhMejYyYUJPcU5zRWhxMHFnaTMyZktjLW45bFBSdTgxSWxOeUNXVTdtaFdSVGNR?oc=5",
+        "date": "2026-07-11"
       },
       {
         "title": "South Korea flags uncertainty from Qatar LNG plant damage, but downplays supply concerns",
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQ19IM2E1TGJvemU5WkROcWFEelVweVBBbHd0RWhYVnJ0TGdZYlA3N09PMW1KLXEzUVNDT0lTeDlfc1FrMEhEWTZIVHZhOF9TUmh3SHJUVjVPMzZaaU5icC1Vd0lWM3dDUXJKdFBaSTE1LUstNmdJdTlDSGhmUFF6aFIyak8yaXFEeEV5ZEt0NndLTUtRZnlOZjVPMTZnN2ZmdUVOalpNZVRLYnppcWI4NkVwcXFCMUk5cURfQzAzQ05zWUpmZEVTM2UyVzU?oc=5",
         "date": "2026-03-19"
+      },
+      {
+        "title": "South Korea, Qatar Reaffirm LNG Priority, Expand High-Tech Ties",
+        "source": "조선일보",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVzF4WVBiZmdpcXFKcGRFS3czT1AzZmVDWng0b3B5LVRFQzBFU2wxM0ZDbGF4eGNRTndyLWcyZW8ybmdYazNVaFc3QnBCYTRNMENFSl9fTWdhNm1TZHhUd3RGNFBDWEhDaW9yNzFiZ0Z4TGF2TUhhVGFaQlIyamQzcU9tVXhTVEpY?oc=5",
+        "date": "2026-06-15"
       },
       {
         "title": "The Iran War Is Stress-Testing South Korea’s Energy Model",
@@ -8696,10 +8696,10 @@ const ARTICLES = {
         "date": "2026-06-22"
       },
       {
-        "title": "UAE Stands With Oman, Turkey, Qatar, China and Others as Iran Confirms Strait of Hormuz Transit Fees and Regulatory Oversight With “Special Treatment” for Friendly Nations Amid a Global Race to Secure Energy Security, Shipping Corridors and Tourism R",
-        "source": "Travel And Tour World",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE81a2cxN2pLVDdqVWwxYXRleGRPbEhzX0J1RzBFcVRXczNxOHpncWJuVGlRc1BFcmlYSEJnZUdYVFRyM0VhWnpQSGRQS2JZQVNrajVFX1RQSFBUM05DYU9ieFRFR20tOE04blRRNWFn?oc=5",
-        "date": "2026-07-05"
+        "title": "Embassy says 12 Indians among 13 killed in Qatar gas plant explosion",
+        "source": "chinadailyhk",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HemFUUGR2S3hfMnRNMnZndUVncDJuOTMzWHVVRkhybnN3TThlVW1ScW1UZ0thRHFlWUVVY1ZLMGZWQnpidXpxX1l5aW1TNFRCdFBrQ1dzYklCdw?oc=5",
+        "date": "2026-06-23"
       },
       {
         "title": "Implications of the Conflict in the Middle East for China’s Energy Security",
@@ -8708,16 +8708,16 @@ const ARTICLES = {
         "date": "2026-03-04"
       },
       {
-        "title": "China faces LNG supply test amid Middle East crisis, spot price increase",
-        "source": "S&P Global",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOV2lPNXgwWkxoSjgtTjdrVUItQUNaU29IWnBzcGRtbXptRXU2TlVZWFpyVExqYk95alRKZ1NLa3dfYVQwQnFoZTlmUTQwS1JOVGd3UThnenQxcVhCZThqT2JHRnF1VUNpaTNOMWZlOW1maGcxbURySC01YTRxU3VZUmFzX2FDZkZ1SEx6cFhuRFBldjlfakZWbnl0Q1dnaktGR1JNaklLY1hqSHhUMXNSV1lXZFpOY2pNSzczT2JDTXNfQ01RSzRFMVBMcXRkVmtqQldkYllIVGRCOU0?oc=5",
-        "date": "2026-03-03"
+        "title": "How Qatar's halt in natural gas production will affect global supply",
+        "source": "marketplace.org",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObXd0TWFoem1RaExiSC1GWnBxYUNBVTFYd3RpSV9Cb2FvUEQxcS1EM3o4V1Azak41eUNOeWJ1U3dqUGdPVndMZmNxeHVoUlRwNnRva2JKSlo2Smt5TV9YZWVqSEp5NERJMkV0S2ZYbHQwTnNFRTlZZm9MUGVfbHIyQmIzZ0x6dnpwblRhZzNtVkJVQ1ZoOVdHN0dUeWp2M1ROSTBZVWFoMA?oc=5",
+        "date": "2026-03-02"
       },
       {
-        "title": "Qatari liquified natural gas tanker transits Hormuz, third to do so",
-        "source": "The Jerusalem Post",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE01STg3M2ZhMFVCTFJPamllYlkwdy1qeFVNRWhuUHphLVBvNExRbzRPSlo4V251THZyR3VUZVFkQ3RMTW1mV1E4Zzd3bFFJaGhKbjdyMFlxcnJfVUxl?oc=5",
-        "date": "2026-05-22"
+        "title": "Qatar Shuts Down LNG Production, Opening the Door for American Energy Leadership",
+        "source": "Foundation for Defense of Democracies",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMEFfem1oLUg1bk90eVRoVDV2SjlUUTdlUUQ3cDFCMVVsbWxUV0tMTmloQ2U0dy1zeWdva0xSdW9ob0t2N2dsbWt1RXZkV2pOZ1h6a1Z0aDlXYzhmU3czSXN1RmFtS2hfcUZTY0JrcHJaODFRV3VjZURHZ1ZQYThGRTBHWk9aVHJHR2tROXdwX2hRR3VfSlFsT3ZsNzR5LWVvVGY5MFk1WDNwLUgtUFkwU2pBQ2Q5SFVqRm12WQ?oc=5",
+        "date": "2026-03-03"
       }
     ],
     "qatar→india": [
@@ -8728,28 +8728,28 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
+        "title": "Sri Lanka Aligns With Thailand, India, UAE, Qatar, Malaysia and More in Facing Middle East Crisis Aftershocks as Rising Energy Prices, Expensive Flights and Supply Chain Problems Put Tourism Recovery Under Pressure",
+        "source": "Travel And Tour World",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9RT3ZSSXltZlNuX3psbmtHUERaeTFSbWZFelhiLWZmT0N0REI5aTJfRU0xUHpkUjZZNHp3amFTaHNLb29zZ3FVWkJXOHlrNmp3S0NqZ0lQLTI2cUNxaDRwYUM1SnBQc0NRUEt2SHdB?oc=5",
+        "date": "2026-07-11"
+      },
+      {
+        "title": "The Hormuz Crisis Has Forced India to Rethink Its Energy Strategy",
+        "source": "Crude Oil Prices Today | OilPrice.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSy1kLUxXUkthM2NwSVduVXdPaEFQYS1KMjU5TEZOSjBXSlB5c1RMWjlOX3d0SzdFU0V1NlJVRUVmUFFTUnJBYmtkS25Uc3FBaElJaU81VmFIV2h1ejZEUnZxQlVhVHM4YkV6ZWw0akVwREtCZC1xbkxDSVJhdktKWEc1MkkzdTZldENGTXhBN3VGM0tPSjJoQTBGMEYxNWtNbzRvb05BS3Q1MDBaQUlLZnVyWdIBuAFBVV95cUxNU1AyY0tSTTRtTGxKYkR4NWFIeVVjUnl0bjluRG82TzM5TjR6RlRPWlM0ZVZCMmNuOXEwNnNOWDVoV3VLTFhSY1RJdVdaRnhhQ01EaXlwdW9jcVBKMi1zdGMzTmE5VVUzT254aWNpMWVVS1JHVFlMZkZoTlJENW95V1FkTnhsdm01RnpIdjFGQ1V4RHVmeE8xdlRJeTlPVkNORWJtcmxtS3IxdmdveWwzUEZNekRPUXdO?oc=5",
+        "date": "2026-06-21"
+      },
+      {
         "title": "At least 13 killed and dozens injured after Qatar gas explosion",
         "source": "BBC",
         "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1GTjBmUTFuSVpwelR0UWl2aURNRmxCVHA0SGYzZklHU1ctOUIxUVlkU1AyaTNseWdrR1BmbnpraXNINjJ2SEhVZldGbURVeXFkZUVRQXVBUVhzQQ?oc=5",
         "date": "2026-06-22"
       },
       {
-        "title": "\"Very Unfortunate\": India Condoles Death Of 12 Indians In Qatar Gas Plant Explosion",
-        "source": "NDTV",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYll2emhfWTN5RDUxMGR5NmlfLU45a1lhcEp6UzNNVWpDWFBwQWZtYUtBTDlWdlJYak9oc0pzUjZGbGhuYll4bnRNVFo4a3pVZU00QTZ1NzNIdVE4TWZueXh6bGpmSVZ3bGlseHdFX0ZWRXp4SG01QTM5OGxBYTBsLXJzTTlhSjFTWEdvTjZvUkhqQ0lWUEhjdUp2STc3RlRlbzNZcmhkOEpXX0JPSElsdDBsVDhKOGJuQUxsY2l30gHGAUFVX3lxTE03RzJOLVVfSVZ4ZlFTVDY2RllKaUUxa1M1TjlrWURnZEZZeUdYLVVUTXJTLW9ZSnlsNUcxNVBGeW1GemxENXR3cXlaMkIxUlhKSGtUTjlmcG4yZGM1elZGenNzN3hycVctRTFESGZsb0hiMmxqbE9ZZzYzUko3UTAtaUU0MHNaeFV3a0QwV0RVUElFYkd3blRZT3NVWmJld0k3cjFvSHYwSmFDTTd3OTd4WHFiaWtfWElReENzbWpneTJ2WHhWZw?oc=5",
+        "title": "12 Indian Nationals Killed in Qatar Gas Facility Explosion",
+        "source": "INDIA New England News",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPX1Bxd0Z0WEdDcm5LOWI5bDktUHdiSWV0a2E4bVdYMWFoYUhyaXlHREYtcy1ERC1DSk1VUXNhRjJyVW9OdkFOLThwNWhSSFh1MC1FZmFNTV9ZdVc1ekpxcW9RNy0ta3IxbWtiUlF5RV9PVGpxZHVneTFfdGo0WlpPM21EbFJyaVFZMGk2Q25GbGc?oc=5",
         "date": "2026-06-23"
-      },
-      {
-        "title": "Indian oil minister to visit Qatar from Thursday",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOR2dWN25jRFRfZnM5ZzVRTElJUWRBb3plYzJ3SDhzUGoxMXRCOFJfSXh1RWNGWGtRZFdVUWdxRVVjRnM2VmVoenZ4akE0eFlBSXAwSmY1TFU0UXdtbXlWSzY5cTA2TXJOOGdKSkdEMXdlUXNtcUdGb3c5bjNHR04wSm5qcmNHQ2YzSnA1emlLel80UQ?oc=5",
-        "date": "2026-04-08"
-      },
-      {
-        "title": "NOW India, Qatar, United Arab Emirates, Oman, Saudi Arabia, Kuwait, Bahrain and Global Energy Markets Unite as LNG Supply Recovery Through the Strait of Hormuz Restores Travel Confidence, Eases Gas Restrictions and Strengthens Regional Connectiv",
-        "source": "Travel And Tour World",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBNUzQ0MU5hckFoUDJRd0pLbjM0Zk1qUnA3U2xpUW13TGx6Z0twSHk0VERCT29BWlNzMENkZFIwN1otQXhxSndOVW9fX1oxcG80UVJOSlcyMVdJQmVUeWY5bzZUX0tJbldHMFM2aGNn?oc=5",
-        "date": "2026-07-05"
       }
     ],
     "qatar→pakistan": [
@@ -8758,12 +8758,6 @@ const ARTICLES = {
         "source": "Crude Oil Prices Today | OilPrice.com",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOR1U4RDdrTGEtTkc3ejA4UmxkSlU3NjZyajcwWUdseFppQWRrODJzT2JheUtZc1pwTU1EMi1VYUliTDQ0UDJMaFp0c0VXRkZrZkozTGlMbzJ1RGFDWC13bFVIQk5QOFlxLUNMMi1hajdSdUphQW1nUlBFMkFHdmNESUdsTDhtTXQtV3E5SUhsTEdKZks2eWpnRFg4SXlqUVctakVraVBaWVpScE55VXA4bGlWMDNGTDctdXdzLWxQQdIBxAFBVV95cUxOM3R6LTJVYU1KTi1OZ0tzbjR6QWR1a0hMZ1BWTm0tdXJSeWFFSWpYMWVsMC1oT2FVa25jbWNYVlhJaGsyMGF0dVdZcWNGZjBMZkdkck15dG5LS0xQYnQ4bVQ4Z2hTOEh2S1JWV19maDVBUUp2TFZsOTVUeUVOZ2U4b0VIbThScFc1bHNhcjdtb09OX2xaUkpSMlgtVlNhaGtCcHNkSXhPMkd1UEtxYUVQUldHWjU1OWFYNmllRGNnTW9KbzFL?oc=5",
         "date": "2026-07-09"
-      },
-      {
-        "title": "West Asia tensions: Pakistan scrambles for LNG after Hormuz crisis blocks Qatar gas shipment",
-        "source": "WION",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxONkkzOVFJOGdTVm5LbzdQQWQ5c2VyMUd2M1NIVUY5QzVyZHpWQTN4ZVRpeEs4UkdYb3pXMzE0X2Y3dGQ5Skx2X3B1dWt0a1ZrT0tuNk41elNJTjJJQzBSYmRqN21XMzNURG5qVXVzMTZiZkF2YnYtWXg0dXFMZEZGOVNYUDVTM0J5Z2VqSjJWX3RpYmJ6N05CbE5HSVVvR1loODZLcTYwTVZTU3NjX3RURU9LSUxyR2lpV0NubXFlMF9KV3VLSzkwQU00NG5HeERzd1HSAdcBQVVfeXFMTy1IbGdJaERXd1M2dG8zRnh3NlRadExZdTY2Q3N2N0JQTDdycG1SdjB5YkdZV0xVWHgyeUlrVkxjTkNLeUFVTXlHQVNfa2dhUTBJZ1dDNjd2LVBSTFZON2RaMVBEU0lrMXNKeGNlOXlFN09kaW0tdzIzRnV3Y2ZYQ2ZNT0tSUlRhTGNlbW0zSkdZOXpjYWdFeWhrWXhkSndQNnQ1dURTcFUxTklJQTRhaGNKRzFhRXRtRVpaZW5OTnJxQjV3Y3pmTTNnUmEycXFKQ0w0aEdxQXc?oc=5",
-        "date": "2026-07-10"
       },
       {
         "title": "Pakistan buys LNG cargo as Qatar’s Hormuz flows stay constrained – Bloomberg",
@@ -8778,6 +8772,12 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
+        "title": "West Asia tensions: Pakistan scrambles for LNG after Hormuz crisis blocks Qatar gas shipment",
+        "source": "WION",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxONkkzOVFJOGdTVm5LbzdQQWQ5c2VyMUd2M1NIVUY5QzVyZHpWQTN4ZVRpeEs4UkdYb3pXMzE0X2Y3dGQ5Skx2X3B1dWt0a1ZrT0tuNk41elNJTjJJQzBSYmRqN21XMzNURG5qVXVzMTZiZkF2YnYtWXg0dXFMZEZGOVNYUDVTM0J5Z2VqSjJWX3RpYmJ6N05CbE5HSVVvR1loODZLcTYwTVZTU3NjX3RURU9LSUxyR2lpV0NubXFlMF9KV3VLSzkwQU00NG5HeERzd1HSAdcBQVVfeXFMTy1IbGdJaERXd1M2dG8zRnh3NlRadExZdTY2Q3N2N0JQTDdycG1SdjB5YkdZV0xVWHgyeUlrVkxjTkNLeUFVTXlHQVNfa2dhUTBJZ1dDNjd2LVBSTFZON2RaMVBEU0lrMXNKeGNlOXlFN09kaW0tdzIzRnV3Y2ZYQ2ZNT0tSUlRhTGNlbW0zSkdZOXpjYWdFeWhrWXhkSndQNnQ1dURTcFUxTklJQTRhaGNKRzFhRXRtRVpaZW5OTnJxQjV3Y3pmTTNnUmEycXFKQ0w0aEdxQXc?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "US Insists Iran 'Does Not Control' Strait Of Hormuz",
         "source": "Radio Free Europe/Radio Liberty",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWnhyaS1tS3NVV19VeVRlS1RUeUhFblVCTkRCWmg2Z2YwTW1uR051ZFctc3F2eEcyN29hbkJkLUY3THpPVzVaYVRlcTRybGlrTGVsX3ZvTFJyQmRELVNHckg3Nk9uOUw3V2RyN2lZY0dIMW1jLWVQSUVTdXBTZGpuVE55cDBQcG01?oc=5",
@@ -8786,15 +8786,21 @@ const ARTICLES = {
     ],
     "united states→netherlands": [
       {
-        "title": "Netherlands Oil Aging Removal Systems - Market Analysis, Forecast, Size, Trends and Insights",
+        "title": "Netherlands Relied on US for 24% of Energy in 2025, CBS Data Shows - News and Statistics",
         "source": "IndexBox",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeGpPQU02WEUwV3hCWEs3Tko5b2FnVGVrSkhkLVJ4UmMxZ0tlaXoxVWFyVkdMMzB4OEJtTmtEREtiRXNFbVludGUzYzdSekNwUlVUTGZ5V2lhQkxhLXRsZGhtUUtDUHZJamxDaHJNSjBYUTdOaUl1NHI0YUY5QllfYVA5VGVYY3ZsSHNtdkNvNUFJM2U1M0VybVcwdXMwT0xSb2Z2Z1c0YzJGMTBkc1J6Skw2a1hGSlQxeGc?oc=5",
-        "date": "2026-07-10"
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTkR4bG9meEMzUXNVZ0pibFBxOTI1UlRhY2hZandzVllveW5Yd1NFalR2MThGWnR1VWUtUzdfZlNfTGQ2NDAtczIxLS1oUWFqTDktTU0wQ2hNTzVYWWV1ZVh1eGo4a1dMMTlpb2oxTjN2bG1NNG50Sk4xcjgwRGVMb2FTZ0RjS01BYnQySWZLajNnanZLNEtKaQ?oc=5",
+        "date": "2026-06-29"
       },
       {
         "title": "Netherlands relies the most on the US to meet energy needs",
         "source": "Centraal Bureau voor de Statistiek | CBS",
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWFJET2NNeUljNnh6R2xwTGFrZnZBcmloVHJFU0lRSnAyVUk4ZXA0Zl9EcDZlZWU2QjVMem4tT0VqZ2ZvOElmZFdWU0JaQUE1YkUtazdBQjh1eFVPQ0lMWlBxczlsa1ZlZFNJNkFOVE1nZFVLTENvV2FySzV4RHJydUV6SGtrNDREdDd3bFVQMHU0WnJqaGxnYWlYZUc?oc=5",
+        "date": "2026-06-29"
+      },
+      {
+        "title": "US is now the Netherlands’ biggest energy supplier",
+        "source": "DutchNews.nl",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOcHJLTURjeE4xbjZUdzBoV21walJtUGFhSXZwV01MTDNLaE9lTjk3S3FjWTFlYTdmS0RRbnJtLXVIaXMwUWQ4LTA1THBpQkxQMTB0LVRiVTY2WHFSaHRzVnpfR1lLLVFNS2ZPa2FoUWw5M3RSTFF3Z0hIV1gwd1BBcUp4aDY4UjVrTzdn?oc=5",
         "date": "2026-06-29"
       },
       {
@@ -8804,16 +8810,10 @@ const ARTICLES = {
         "date": "2026-07-05"
       },
       {
-        "title": "US is now the Netherlands’ biggest energy supplier",
-        "source": "DutchNews.nl",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOcHJLTURjeE4xbjZUdzBoV21walJtUGFhSXZwV01MTDNLaE9lTjk3S3FjWTFlYTdmS0RRbnJtLXVIaXMwUWQ4LTA1THBpQkxQMTB0LVRiVTY2WHFSaHRzVnpfR1lLLVFNS2ZPa2FoUWw5M3RSTFF3Z0hIV1gwd1BBcUp4aDY4UjVrTzdn?oc=5",
-        "date": "2026-06-29"
-      },
-      {
-        "title": "Netherlands Relied on US for 24% of Energy in 2025, CBS Data Shows - News and Statistics",
-        "source": "IndexBox",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTkR4bG9meEMzUXNVZ0pibFBxOTI1UlRhY2hZandzVllveW5Yd1NFalR2MThGWnR1VWUtUzdfZlNfTGQ2NDAtczIxLS1oUWFqTDktTU0wQ2hNTzVYWWV1ZVh1eGo4a1dMMTlpb2oxTjN2bG1NNG50Sk4xcjgwRGVMb2FTZ0RjS01BYnQySWZLajNnanZLNEtKaQ?oc=5",
-        "date": "2026-06-29"
+        "title": "United Kingdom Joins Belgium, Denmark, France, Germany, Ireland, Luxembourg, the Netherlands and Norway to Drive North Sea Clean Energy and Offshore Power Reset as Russia, Ukraine, Iran and United States Fuel Security Pressures Put Aviation, Ferri",
+        "source": "Travel And Tour World",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1LUEo3bnM4MTNoT28yYU1YbVJFbWpUUGlacEhtQ0tpWW1GZUNWdHBEMDZxOXEydE1UNFNBZV9kUnF3Q2pwRXUzX1VXNVFiR3FzRXdJNGh0TmlKT05KWjhQcDQxZ3lCU09IZFNTcWVB?oc=5",
+        "date": "2026-06-24"
       }
     ],
     "saudi arabia→china": [
@@ -8856,28 +8856,28 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "Saudi Arabia’s next grand strategy is connectivity",
-        "source": "arabnews.jp",
-        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE85dzNJSHhUdUxndTZSQjRhX0w2MHhiU1FXU3d2bU9yVDRiREM1Ny04R3ZqOWNWcGFlLTJaVUhfYUkwZEdXa25WNVRQcEpqc0wtQzl5b25weVpLM3UxSzhN?oc=5",
-        "date": "2026-07-10"
-      },
-      {
         "title": "Saudi Arabia Sends 4 Million Barrels of Oil to Japan",
         "source": "Inspenet",
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUmI3b0hQX1NPQTdiRGZWME1YbEhUeVZuZjNhcjNoYzFlUFhLM256RU1DOWI3QW9Ra2hUbXEtWU5TTlBMeml6ZC1xR3MzN09xWFVfU01OeDV2LUhabThhSVZRdXhxbU1EVDNBb2ZQLWZxQWs3SzF0dXVMSEl5TGFac0hPS19KRUFBdGh2R3B1YzN3QlVZVDVra2VScEV6R3ZFSVc0?oc=5",
         "date": "2026-07-07"
       },
       {
-        "title": "Japan Eases Travel Risk Advisories for Saudi Arabia, UAE and Qatar as Business Travel Confidence Surges, Unlocking New Corporate Opportunities, Investment Connections and Stronger Middle East Global Mobility in 2026, Driving Fresh Economic Partner",
-        "source": "Travel And Tour World",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9KRGlBWnNWMDZtLXJDM2NSZVAtMjUwZnFlWVVRV0tJbUFRMU90LVNWUGFIUzF5d21QaVYtNjNPQm1aU0lUWmVhQkh1V2ZMdWVmRmRXZlBkTVF1OG13QXlkLXhYTTdoYk8xd1hqYnhB?oc=5",
+        "title": "Japan Asks Saudi Arabia for More Oil Supply",
+        "source": "Crude Oil Prices Today | OilPrice.com",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdVBVdzJEVVp6enVhcGhVaFQzdlVWNTl4d1pOYnhMdGpmWk5icHJqNkczU1ItdWJiMkNPOUU2NF9XSlhPRE5MQmFZd1VLUnFMUTFuX0hqNTIzZVpCSGRxb200VV81VW1WVVdDNEJKZkpTYzFlMERtMW5rVkJBUjhtWURUMHJKN0d0dEc3MGVqOWRFb185YldERlFFZzYxYTc20gGmAUFVX3lxTFA3X0kwcUJ2OEFPSnVJNko3NlFuZmk2Wk94R2c5R2FNWm5yVXZmZVllTHhEVFNIblAyTXJta2VMOVNucll4ZXJ2dUhxTlhuYXFGTkZvNGhwZzNqYjRKSFI3akJMUFBXWHJocnJhMlZQbGZyemwydjFzdVluWnMyTld2UEZBdnNPREhjNkFpSkNQcTNtdTFWemNGRDdCdVBlYjlQZkkzaHc?oc=5",
+        "date": "2026-04-23"
+      },
+      {
+        "title": "Saudi Arabia’s next grand strategy is connectivity",
+        "source": "arabnews.jp",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE85dzNJSHhUdUxndTZSQjRhX0w2MHhiU1FXU3d2bU9yVDRiREM1Ny04R3ZqOWNWcGFlLTJaVUhfYUkwZEdXa25WNVRQcEpqc0wtQzl5b25weVpLM3UxSzhN?oc=5",
         "date": "2026-07-10"
       },
       {
-        "title": "Japan-owned supertankers head to Strait of Hormuz with Saudi Arabian oil, data shows",
-        "source": "ZAWYA",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNcy1QZWg4bWpmdlU0V3l5SXRBR1pUY0o2aE5pUEE2NDlralkxT2VHb1hMeEpOMDZNRWtyVGstMjI0T0tzVGFoTVVCZ29WZDZXZGMwcVBYQWFkNmJwWDhCR1JlazAyelROaW1QaWZZc3hpUWxLOVJqQkZMVkQwb0I5MHZ2VElHdnBjeUpkM0hKSmhZX0h2X1JVWWROVmM4VnowUlZTWFRVVnprMFd2YlRjeGZCeVUwajRiRlBqYnYzV05ac25rNVU1TVRXamt1UQ?oc=5",
-        "date": "2026-07-07"
+        "title": "Japan, Saudi Arabia agree to cooperate on alternative oil transport route",
+        "source": "Japan Today",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWUEtNko2NjZwVDNkVnNEbTM4UGNveWZXT0lDNGtjU2RtQ0RFYldtQkR1QnI5OFBJQlBrSWFBVjYyeGdUdXNWOEpfMW5YMUxVdzZrRkw5QXd6N3c3dEs2NWVNWTh1WFVYejFqcXZpTDNqd19reUN1Tk1xeGY4X005RURJYkxDR0VrdUwxaEJjNi1vMmdHY1VmeVN3SnhIV2xsLUl5ekJXcHkzZk9pQ0VBeV9FM2djTlo1ejhuVlNB?oc=5",
+        "date": "2026-04-23"
       }
     ],
     "canada→united states": [
@@ -8888,16 +8888,16 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
+        "title": "USMCA Uncertainty Hangs Over US-Canada-Mexico Gas Trade",
+        "source": "Energy Intelligence",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1vZEhlUXZ0bUJfRFFoRkI2RFNrYmdJcVc5OEh4VnZtOWxCdDJwSWIwaGd5Y2ZtOWZQRWE5LWM1VFBiUmRqWV9Pd09aWlRTMXFXZVF4UGE4eGZtd2YtR1hBOWhocEVIajVhYXNka08zbzBXdw?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "Alberta and Ontario propose a pipeline to carry western Canada's oil to the east",
         "source": "WRAL",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZGZrN1FuZnAzYmlaRDM4XzZyVDBiZTZ1YldmRHlsZ19rTUJhdkFHRGZzTlZRakJZVUg1V1VRSWhHY1JHYl9UM0tOcGpWWWxvcGptdXphZ1dwZzdFbHhUUzZ0RTExVXhqSTRqXzZvdngwTXZpY3hjN2dLUmpQMDlKYXJSbFhCOU85OTR5NXNsUVBYQy0wT09TNEgzTUdONUI3aE1pWW1SVy11YkM3eG42elZjV2g3UQ?oc=5",
         "date": "2026-07-07"
-      },
-      {
-        "title": "America Once Had a Detailed Plan to Invade Canada: Poison Gas on Halifax, a Drive on Winnipeg, and No Plans to Give Anything Back",
-        "source": "19FortyFive",
-        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOTHA2Y2dxVFdOcndtQ18tYk0tT0VReHItZjVleGlMQnB3Yy1OSVpfQXFqUUFReVZwejh5ZnNvTE1aYW5uRWpZYW94TWp1MFF1NG12NFFfOWNkZTNheGhPY1FwczI2ZXdlc1V2YkdFX1ptbTA0OWVJQnU5ZFl2UFpCWnJGcm5iOWhZMzVVUm5obW9KdGtVd01ISTkyNXFCNG5sM29xcUJqZnM2OHZQZDlrVGRnVGs1czA5SFlEcksySWZON2swaV9DdTRfaXJtbXdPNUt4Nzk1SHlROGlHZ2J5V2ZkcDhodk80MzRneTVpV2pWQ0lXU3c?oc=5",
-        "date": "2026-07-10"
       },
       {
         "title": "Alberta and Ontario propose a pipeline to carry western Canada's oil to the east",
@@ -8906,10 +8906,10 @@ const ARTICLES = {
         "date": "2026-07-06"
       },
       {
-        "title": "Mark Carney shreds green credentials in rush to pump oil",
-        "source": "AFR",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONXhoc3k0ZU1BdUtpb2d0TEN2dnJUX0paZ0Q3MlJrb2VoX1JwT3RUOHI3ZWFOWFhfLXJQMjJzVktqajZOY3VVaTVPTmdqYWhZOGs5WERwTlRqNTBYVHBjLVN0b1hPdGJER3dFUHVoNVFBNGRGa3F4NlhxeF8wdFZRTHFTVFRlT1V6aTg4UnZWY2VLU2J1RlJQRlFaNA?oc=5",
-        "date": "2026-07-08"
+        "title": "America Once Had a Detailed Plan to Invade Canada: Poison Gas on Halifax, a Drive on Winnipeg, and No Plans to Give Anything Back",
+        "source": "19FortyFive",
+        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOTHA2Y2dxVFdOcndtQ18tYk0tT0VReHItZjVleGlMQnB3Yy1OSVpfQXFqUUFReVZwejh5ZnNvTE1aYW5uRWpZYW94TWp1MFF1NG12NFFfOWNkZTNheGhPY1FwczI2ZXdlc1V2YkdFX1ptbTA0OWVJQnU5ZFl2UFpCWnJGcm5iOWhZMzVVUm5obW9KdGtVd01ISTkyNXFCNG5sM29xcUJqZnM2OHZQZDlrVGRnVGs1czA5SFlEcksySWZON2swaV9DdTRfaXJtbXdPNUt4Nzk1SHlROGlHZ2J5V2ZkcDhodk80MzRneTVpV2pWQ0lXU3c?oc=5",
+        "date": "2026-07-10"
       }
     ],
     "algeria→italy": [
@@ -8938,10 +8938,10 @@ const ARTICLES = {
         "date": "2026-03-25"
       },
       {
-        "title": "Meloni’s Visit to Algeria: Energy Dependence As A Threat To Peace",
-        "source": "The Organization for World Peace",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOXJsNmc3SERjZUE5V2R4eHBfQjVBaXBhM043UTVoRnhTMldYOExOcGlrenRWOER4RWdMcHpvMmFhcFFncW12c2lSa1lEY2R3YnRxOXd5bVlWSUs2anl4MzZNM3VGNEZPUE5RNkZDVmtXTXc1OEhndW5samRxQUlDSThSZUw0Z0o2WFJn?oc=5",
-        "date": "2026-04-10"
+        "title": "Meloni vows to boost cooperation with Algeria on gas deliveries",
+        "source": "The New Arab",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObk5pZHphV0lpTnd4ZU5INmZvOEo4NXhjVUlkZXJnQ1ZvSXlXYjhBaHlwdG96R0dDQWtvUDRSNUhrUFd6YWNZc0ZBaVZHMF85ek9GX0pjbGVhMmE3dGthRG10Q3BjQkJ2bFBURjNIelB1Wl9hbm1nWlM0WEtWVUN6SDFNN2RTSHZW?oc=5",
+        "date": "2026-03-26"
       }
     ],
     "algeria→spain": [
@@ -8964,29 +8964,23 @@ const ARTICLES = {
         "date": "2026-03-26"
       },
       {
-        "title": "How the Iran war is redrawing Europe's energy map",
-        "source": "European Consortium for Political Research (ECPR)",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1fZ2V2eVpLUU1fMHpZMU8yYUtZOXAzQW5oX3JOdUViUWt2VHBHOW5ORDlqdy1OM3RVcEtKeGp3b1NjS0hobUY5dk9RdHFUc0JWbWU3UWcwdjBtVk84M2VqWmhWRGcxSlRPRGkyWU5WTUZ1Y21URjRsWm9zWFNrZw?oc=5",
-        "date": "2026-04-27"
-      },
-      {
         "title": "Algeria begins work on Trans-Saharan gas pipeline to Europe",
         "source": "Al-Monitor",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQVpzaHJndXdZcmotS1ZuNV82aFRWUTBFUnRrVm8wekd6M21WamhNS3hUdlhtWko2d0paUVJ0VFlZdXJBRENoQzd6eGd1OFB5VmZQZTVSNmhPVDVmLXlGeFpUR0ZUV0VzcU5DVmJqRzZ4aC1GSDFaeV9BNWJNR0pEUEJvdngydkpzZWZETnE4VDV1a1RZWGpxNW5ZRWJGQ2c?oc=5",
         "date": "2026-06-05"
+      },
+      {
+        "title": "How the Iran war is redrawing Europe's energy map",
+        "source": "European Consortium for Political Research (ECPR)",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1fZ2V2eVpLUU1fMHpZMU8yYUtZOXAzQW5oX3JOdUViUWt2VHBHOW5ORDlqdy1OM3RVcEtKeGp3b1NjS0hobUY5dk9RdHFUc0JWbWU3UWcwdjBtVk84M2VqWmhWRGcxSlRPRGkyWU5WTUZ1Y21URjRsWm9zWFNrZw?oc=5",
+        "date": "2026-04-27"
       }
     ],
     "iran→türkiye": [
       {
-        "title": "Oil jumps more than 3% as US-Iran tensions reignite supply fears",
+        "title": "Oil prices jump 6% as Trump says ceasefire with Iran ‘over’",
         "source": "Anadolu Ajansı",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOFFobFVUTVBxRU9yX3BLdUM5VXJYVUJsR1hzN1pqR3BtYkgzQVZTOTNXaHBZdnAxdVh6bzZjNHVrU2FzYWVtQ1d4VVZHX3l4Rk96Tmo1RUQ5RnEyWkFMZlptSExKckx5SmFGSGkzNlRIbjVvTmdGVjVZM0ctOF9HZzRFY21oTkVLd2ZNLWhZeEQ5OTBVOTZxV290YWdORmJ4Y3ZyNEtzMlg?oc=5",
-        "date": "2026-07-08"
-      },
-      {
-        "title": "Oil, gas prices surge 5% after Trump says Iran ceasefire collapses",
-        "source": "Türkiye Today",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMFRBc0RMV1FEcGh0X0xKYjVob0lSdVZhY1Njc2FfczVONzRtRm9keWJHZHJqRmVmcmcyNzYzWklOemJFUm9iOFhRc0VSS0Flcjk4OC1paW0tQWthMXVFWGlMeEl5cjZsVi1hdGRTSG4wVmRVY2UybmtRTGtoMmg3ZVhrR042dFI1UDRKajIwYkZnMThfOGtxdXNINmxoTmVoUkVpR3ZlV0lXQ2tzd1B3?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRmNIOUNzUG44ZGxrdVVNcDBWdnd3UGlPMzdCVmprcHVmRVIyQ1IwbkJQNGNtdUwzS0pmcnJkVXVfcFRwWVp5a3B0ei1UY2RiemlhSVpaTXRhVXVFT25pNElZRmt0WVFRenhQaW4xaXNQdUpoU05scENpdDYyeW81dFQ5RWFfVGtZbW5JcEd0RzJHdHN6MDlTSkRRc29PcUFB0gGoAUFVX3lxTE9Ta3J3V3c0Tk10YW81dkI1VHNEU083aWxiNGQ5Z0NpZEx6N2hzdlVLdW90YlRVdEJRLWNlQTNDenBqZERGWk1SdjJSd0pmV1ppQUNSckZyQXFDdWFEZzhlRzJFN1VmbGJVR2VtM0VHMy1kc21DcEN0TllTZWlMT1llZTA1MFpZSkJ5cVU5NnlUT1dXN0lkMG1FM1luQlhYd1FMOEFFRlFMUA?oc=5",
         "date": "2026-07-08"
       },
       {
@@ -8996,9 +8990,15 @@ const ARTICLES = {
         "date": "2026-07-08"
       },
       {
-        "title": "Oil prices jump 6% as Trump says ceasefire with Iran ‘over’",
+        "title": "Türkiye to phase out fuel tax buffer as oil markets settle after Iran war",
+        "source": "Türkiye Today",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWHhnUXV2MVBIaVVXbnB3LW53MXRyUHphaTBDMENHMXF1S3ZlUXdLVGNqV0NDV295cHkzTmF3TWlvcTBpSDlNZWxObEdZbFk4TVFYUjVQWFNsV2RsS3V0dmZhVkpEaFZOUER5b0hJTTd1dDNBUXp5OWRzLVEtUFNZVUxDYmVUZ21RUlkyMGpDREVhclpsbWh2NVVia1RRRFhUYTBZNklhVml0Y3BoYl9TdS1aSEpFeE5NWVMw?oc=5",
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Oil jumps more than 3% as US-Iran tensions reignite supply fears",
         "source": "Anadolu Ajansı",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRmNIOUNzUG44ZGxrdVVNcDBWdnd3UGlPMzdCVmprcHVmRVIyQ1IwbkJQNGNtdUwzS0pmcnJkVXVfcFRwWVp5a3B0ei1UY2RiemlhSVpaTXRhVXVFT25pNElZRmt0WVFRenhQaW4xaXNQdUpoU05scENpdDYyeW81dFQ5RWFfVGtZbW5JcEd0RzJHdHN6MDlTSkRRc29PcUFB?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOFFobFVUTVBxRU9yX3BLdUM5VXJYVUJsR1hzN1pqR3BtYkgzQVZTOTNXaHBZdnAxdVh6bzZjNHVrU2FzYWVtQ1d4VVZHX3l4Rk96Tmo1RUQ5RnEyWkFMZlptSExKckx5SmFGSGkzNlRIbjVvTmdGVjVZM0ctOF9HZzRFY21oTkVLd2ZNLWhZeEQ5OTBVOTZxV290YWdORmJ4Y3ZyNEtzMlg?oc=5",
         "date": "2026-07-08"
       },
       {
@@ -9030,16 +9030,16 @@ const ARTICLES = {
         "date": "2026-04-04"
       },
       {
-        "title": "Ukraine may face weaker wheat demand from key buyers in 2026/27 marketing year, analyst says",
-        "source": "Latifundist.com",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOREpRUmVZdU1hRU5tVVEybUJqNmhRRXladTRCVnBXOW5qcXVvNHA5TkNVVzdrZlZIbndFczNaZWhWbjNsVl9kSW4tcnZxNVRMWFdnWWhEMzVDWU43MmQ3OHNkbXRGUERRUkF4UjRsUnJHSW1hVnhkSVFId0ZDbnZVS0wwTEpqUU4tZk9Nc3hjbC1IcUZvX1V3bFBtSHItWHhScDFnZ3NqdGVzOTlWVzc5czE1U1IyVUV6eTlietIBxAFBVV95cUxQTXZLNVJDSTI1a0tScmxpa1VZOTZITDJxYkVfdF9LNnRDX3JwaUtna09aNm5BRVZ1Q1lNTE1HaC1kSG1vSHRHam5xYU1KSkV1S1ZNNlhVajYycGlQdlc2cGY3dkxoa1FjVWF3aFNCaGNSZ0JPQ3NzSEFxeDU0eXlia2IxVlVlUVZCT2w1bHNrSUpJSFc3aEFMZU9qUC1zLUFrN0R1a1J0cDRCdG9BbFBUNS0tLXFwQVVlTG1lMUVJbVV2dUhQ?oc=5",
-        "date": "2026-07-06"
-      },
-      {
         "title": "Egypt move to secure wheat imports from Russia as global food security fears grow",
         "source": "Business Insider Africa",
         "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQUVjVmZ4TC0wQVRhNVNvSjRKY24zVnYwT0JWbVdjcEU0RmpVNXI1Q29lMzUtNGFUeURvVXZvcXRTSnFiNHlYbnN1a3FtbWhrYXVuQXhFeVN3aHJuY0xCaF9vaDhUXzh2R0xtYXozaVE2VUdqcS1KNGlPTENpSmdfWjJXQWFvbDg5MDdfTHgwUWdNN0FqdDcxeDQyWlZLWXZVNW9zR3k4Y0prcXpNMFJPMENYaGV5bEtMMWNSbHVvRU84bS1Nb1FoX0VMTC05TXh6RVdiRg?oc=5",
         "date": "2026-05-24"
+      },
+      {
+        "title": "Russia's Fuel Crisis Raises New Risks for Global Grain and Energy Markets",
+        "source": "Agrolatam",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPS1RnRDdrZzZscG5ZZXUySF9IbUNZZU82ZWxKY1pYWWh0c2YzV3BzLU5DUlNWaGlCM3pNUTNCSHl2SmlLVU16RURwWjBaRi1Zd2luSm9QaG55REhldEloeEJ6R1ZDSTZPUkd0SVRXN1BILVlNbVZzNGMyU1VnQ2hRTjNkYlVIblVHS2c?oc=5",
+        "date": "2026-06-28"
       }
     ],
     "russia→türkiye": [
@@ -9056,12 +9056,6 @@ const ARTICLES = {
         "date": "2026-03-25"
       },
       {
-        "title": "Türkiye Today: Russia involves private sector in selling stolen Ukrainian grain to Syria",
-        "source": "news.liga.net",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQblBqUW03ZU84QkVjdTd1aGFOaHU4MmNDRWwtblBhdjlxMm5GWnhJRnNJdXJzbzc0dHhKc0tnNTNYNU1oN3VYeHJobDIwNm9iS09pemdqS0NZZkh5Zmh5NFlEcnhpeWV6ZE9Qb0JVVnY2SldrR2t0Vm1hNm81MC1UMWxWSlI4ZnlMUG1yQ0U5NlVQbHZZSGR1cTBCREEzVURVUzVUOWRLaGtQMjUxSFJvWXdGNmxiWkd5SDZzWkNKZ0J6S1cy?oc=5",
-        "date": "2026-04-30"
-      },
-      {
         "title": "Black Sea grain exports deal ‘a beacon of hope’ amid Ukraine war - Guterres",
         "source": "UN News",
         "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9SMGI2RVZvX1RIbHRQb241LU1oMjNLYkxaX0kxdXdrZnJaeWk5S0RfZld0eGwtb1lnSVhHYnpoMC1oX2stV1JHdGZFUS1uUGFKRUtxdEo3Yw?oc=5",
@@ -9072,6 +9066,12 @@ const ARTICLES = {
         "source": "consilium.europa.eu",
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUXVUYURDUVpmbnhjaW5ndGNrVTd5OExHVUtIb1d3Rl9ab1NDLUdURjlBaUw2N185MVVMMmlKcm95WUJLUUlxVWxrR1hwWUR2SHRHT2Mxa3pHcDljZTRzMElLXzJDOVBRc3MwUGtRUVkwYjJaNHo4ekZtdS1WLXNjcEtYdHZ2X21RbXc?oc=5",
         "date": "2022-11-11"
+      },
+      {
+        "title": "Understanding Türkiye’s Entanglement With Russia",
+        "source": "Carnegie Endowment for International Peace",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbGg5Q19NZFJEMUpYTGpVWFZUNjZWMC04M2pmZFM3ZUZjNlFoUXJuZHV1eXVHSWFSTUFCcnBMWkRrWWJnT2pEaTEzUDhmdDRxSmlMWnRoRjBWaU9KSjNabVZIQlZLYzVYcmFzVHJWbFFIX2dXMHZsSm5yQVduQ3RFZFF0NW9xQ2pFN1hkQkg1WTBoYkRsdzE0T0pR?oc=5",
+        "date": "2024-10-15"
       }
     ],
     "russia→iran": [
@@ -9210,16 +9210,16 @@ const ARTICLES = {
         "date": "2026-06-30"
       },
       {
-        "title": "Cdmo and biosimilars propel South Korea’s biopharma exports to record high - CHOSUNBIZ",
-        "source": "Chosunbiz",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNE05QUVsb3poU010RDdUMHFmNjIzYmVFWFZINGw0c0ZyX3lLUzVXZ21qRWh4aHFvWVdvd0VrYkRkcjRKVzBNTnRPVmlHVGcyTGVjdWhaWldxeWwtYjFORjdRbktjSjFHRE9pVW1xZE1YZEdERlJnRDFtUFNhVHBqZNIBlAFBVV95cUxQVHlzV0R2Sm5PNkRydHRfSnd6OGVwMW5pYmJaQmhZTG1ZbHVQcUZFdUJvQkQ1QmJBYnJlLTVjTDhWc19FZW1kTFNlYWptNkpsMk5RQjYycUl0emtVQURtZS1KV3RTMmZqcmZYR1RKMktkTHJrR3hrX0dGeDQ2NXV1V1ZKNlIxM1pibjVNVDlkQmROU1FU?oc=5",
-        "date": "2026-07-08"
-      },
-      {
         "title": "Wheat Farmers Explore South Korean Market During USW Board Team",
         "source": "U.S. Wheat Associates",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOamR2MFFDSUZvMG9jMWNGOHhYeGtzVWc3TDRfT2E4Q0VSbzFIYXZBYW9LUU54czE1NGJJdTBuY0J0VlFyYmZhRXM3anB3eVFLbmJnTV9OYWNseFppSmNENTNnMERaVE1SbjJuVDUzUml4T3IwQ2dGT1RjQ0Q1Slh3VHBCZEt6MUxuNmZfcmFfQm12c0tuUW9RWWtEWUhCTnpSb0ZIMS1WVUpWQVhTN2g0OVdwcjRsMl9tS0hSQw?oc=5",
         "date": "2026-03-26"
+      },
+      {
+        "title": "Cdmo and biosimilars propel South Korea’s biopharma exports to record high - CHOSUNBIZ",
+        "source": "Chosunbiz",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNE05QUVsb3poU010RDdUMHFmNjIzYmVFWFZINGw0c0ZyX3lLUzVXZ21qRWh4aHFvWVdvd0VrYkRkcjRKVzBNTnRPVmlHVGcyTGVjdWhaWldxeWwtYjFORjdRbktjSjFHRE9pVW1xZE1YZEdERlJnRDFtUFNhVHBqZNIBlAFBVV95cUxQVHlzV0R2Sm5PNkRydHRfSnd6OGVwMW5pYmJaQmhZTG1ZbHVQcUZFdUJvQkQ1QmJBYnJlLTVjTDhWc19FZW1kTFNlYWptNkpsMk5RQjYycUl0emtVQURtZS1KV3RTMmZqcmZYR1RKMktkTHJrR3hrX0dGeDQ2NXV1V1ZKNlIxM1pibjVNVDlkQmROU1FU?oc=5",
+        "date": "2026-07-08"
       },
       {
         "title": "K Food exports set to take major hit after losing Middle East growth",
@@ -9268,22 +9268,22 @@ const ARTICLES = {
     ],
     "canada→china": [
       {
-        "title": "The top 5 U.S. agricultural trading partners accounted for 56 percent of U.S. agricultural exports in 2025",
+        "title": "Ag and Food Statistics: Charting the Essentials - Agricultural Trade",
         "source": "USDA (.gov)",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5kcTF0dXJOajdDZ0Y4NnVVRW9nWW5jZmJFNGVkQXVBWFZVOHJNdlJFZEl2T3l1VUltdkxBaUpHNnU2NlJGZmNYMUUwNGdCbnpnMlgzSlJJd3dsM0s1bUFaRHY5QmZQVXZu?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNelVZbnNZeVVrLWpqVWFnZnpBdUZRekE3OHpvR3hMT1JLVVB3NEkwVXhvM0lCVEttTl83aHhhZ01lM3lBaWdBR0RuQmlJdFFFLWpJb25fZzVNNzVjUG15VWduWHhPcVY0VWFzcF8tMV9hTlJ1dFBUR294Z0s5NzZYaW9rTzc3aXhzbTJxZDFnZVpRRUlmQUVPZVd5S1hxc0xIaEhwWHJ3?oc=5",
         "date": "2026-06-30"
-      },
-      {
-        "title": "Corn Inspections Lead Weekly Exports as China Reenters U.S. Grain Market, Resumes Canada Trade Talks",
-        "source": "RFD-TV",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSWFWRXVBNENwcldRbW5jblluTGRmUEdCRkc3djkwdmtYNHBBWmYzWlJLVzdBc2pfVjFUOFBFV1hzeVBlOG1jX211NDFRNHVnLTVYbHh0NFo1bHExUjdPUlYwc3o3bmdUUUROQmJPaUxGdDgtNDY4ZS1Id0pOS1FwdTNvOVBHcGtnS013eEcyaUNBanpPdktMSDFhTnVGZnZ1LVh3b0JVNzZTWGY5VTdyU1pScGJ3d3ZFNUd6Sg?oc=5",
-        "date": "2026-04-07"
       },
       {
         "title": "China plays significant role in barley export demand",
         "source": "The Western Producer",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNm45enN5dkpyYjN3OVJtazlxcFVVQ0MzcUd5cGJaLWZWekVvSzQtTHNKRFhWcGZPM1Jzc3VHa2Rud2FSakFOVEdsYmVxblp4eXJtdjYwVWgzeWt4ZXg3eEhoTjNYVVNsVGtqYndsSWFHRWEweVNnbXpTS2hoTWJobi01UTVsRVNleHR4NGZmQQ?oc=5",
         "date": "2026-06-27"
+      },
+      {
+        "title": "Corn Inspections Lead Weekly Exports as China Reenters U.S. Grain Market, Resumes Canada Trade Talks",
+        "source": "RFD-TV",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSWFWRXVBNENwcldRbW5jblluTGRmUEdCRkc3djkwdmtYNHBBWmYzWlJLVzdBc2pfVjFUOFBFV1hzeVBlOG1jX211NDFRNHVnLTVYbHh0NFo1bHExUjdPUlYwc3o3bmdUUUROQmJPaUxGdDgtNDY4ZS1Id0pOS1FwdTNvOVBHcGtnS013eEcyaUNBanpPdktMSDFhTnVGZnZ1LVh3b0JVNzZTWGY5VTdyU1pScGJ3d3ZFNUd6Sg?oc=5",
+        "date": "2026-04-07"
       },
       {
         "title": "CHARLEBOIS: On Canada Day, our biggest export is uncertainty",
@@ -9300,12 +9300,6 @@ const ARTICLES = {
     ],
     "canada→indonesia": [
       {
-        "title": "Indonesia’s Trade Pact with Canada to Kick In By End-2026",
-        "source": "Jakarta Globe",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQby0zMTRzWm1FbWxhUHBTdGVWeEozQ0R2Q3JCejlFR0Y2VDhMbWJvbFdiSVh1S3BRZk0wUmxPVUpBenFvUDdHQmhHYW1oU3NZRU1EdVNmc0J3VURrTkM0Z0NlOFhJVnBxaXhLMm5JZWZQWHJtNTBkOHpfLWFISmxqYkV3S2tLbXZvRHA1MGxrdWxzdw?oc=5",
-        "date": "2026-06-15"
-      },
-      {
         "title": "U.S. wheat sales to Indonesia about to rise significantly",
         "source": "The Western Producer",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZWFCR3F4U1h0MUozcWF3N2NmOW5ERDRLbmJ4c2E5VUNsdTBwZXhXQk5fZ3JCMWszVjdEZjFtd3YwQlpJaUE1dU40dEhudkYxOVdiMXVyR1VJWThkSl9DeDVLX0Vib1h3dFNHUkVRUi15QnJnVmhGYWVBRjdpQ0pZSERfUHJNMFZVZFRpSE9fM1E?oc=5",
@@ -9318,16 +9312,22 @@ const ARTICLES = {
         "date": "2026-03-08"
       },
       {
-        "title": "Sharing export data could cost farmers money: grain industry rep",
-        "source": "The Western Producer",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNmRUTTQ3OFg5MUNOQmh4MXhCQjI3NGZ3SmdsUVJqc0hIM243STN3NVM5dHU1WHVZTERTMExEc01aNWlMTk9FaW1ndlBvTE1nOW82VGtYNEs3WVBUS1NUSGpsLUFhOG1FZ3lSV1htOEl5U25ubU5xZEFoTExOT1pTWnhYZ3UxWGdVdXQtNDdyZTZKbHBkemwxMWwxYWJqZ2t1?oc=5",
-        "date": "2026-06-10"
+        "title": "Indonesia’s Trade Pact with Canada to Kick In By End-2026",
+        "source": "Jakarta Globe",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQby0zMTRzWm1FbWxhUHBTdGVWeEozQ0R2Q3JCejlFR0Y2VDhMbWJvbFdiSVh1S3BRZk0wUmxPVUpBenFvUDdHQmhHYW1oU3NZRU1EdVNmc0J3VURrTkM0Z0NlOFhJVnBxaXhLMm5JZWZQWHJtNTBkOHpfLWFISmxqYkV3S2tLbXZvRHA1MGxrdWxzdw?oc=5",
+        "date": "2026-06-15"
       },
       {
-        "title": "Prabowo, Canadian PM explore post-ICA-CEPA economic cooperation",
-        "source": "ANTARA News",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcXBOMXo1eDV6MGNpdXU3Y1NHMFAwT3pJT3JZcUZydXhOelEwdG1jdlFQVWxMNVBDNm1kLVF6Zk1Pc2VmVF9MejJEX1NZaGY3UmF4MGRvaVdkQ3hwOWdqWjZCWW9HRXZlbE5EajROVkFscW83SWNUSDRrZ1JKekdOVGRDenFUY3hpLVRNbEMxTGJpNVpXSGFFdFNnWmhfMXdibFHSAacBQVVfeXFMUGdlbllScGx4YzB2dko2dFFzcm1uMEJ4UUxqNWhWNTFhS0g4Q01TZWJhYzdkeV9NM1FpVjZoZVJZSzY3Vkw2ZW40bHhXSE90ZmI4THpzVDg4eFY2a3pfRmNYdndhUGJmeDV6X1Rrd3lOYU5kZ090UzNNNlBIVHV5MURPUWpzNkdha1ZScldyNkFvb0ZEQWtIX1R5Q2F1NFprbXhwRnZ2Wnc?oc=5",
-        "date": "2026-06-11"
+        "title": "Market Overview – Indonesia",
+        "source": "Agriculture and Agri-food Canada",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYnZWbWJoRnJNdDBLeGVvcVVhVEY3UFRQTXZYSkdoTUpMSWY1akNVLW01WWozZm5RMldnbUR0SE1QX0I0aHlqd2xFVGpMcUU1YU9GY3NvOG9ERDI1YkRlb011X2xnMjZVVVRyZUw5TVRTMVE5ZGxCWm40dmtRdjZMN2kxTEpqZGhRT01BU1NRYTBROXl0em1WdnZJRGNTQQ?oc=5",
+        "date": "2026-01-21"
+      },
+      {
+        "title": "US Deals Threaten Canadian Wheat Exports to Key Markets",
+        "source": "UkrAgroConsult",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcl9jUVV0dDhtMWpYQ3FUdlE2c2xOZGNCYllMcnhOVWt5NUZvMmluSUtUeFhVZHhNVVpOM2JWQ3ZfbF9lZk1VR2RaQzNISzZDU3JqNXd0bDRBRy1xOEJOVFVIakZVeGttZURLNnppQWZUekp1UWc5VjF2eE1OMzY4ejNqejZkOE56SGhmcVo2ZEtOWVh5ZkE?oc=5",
+        "date": "2025-09-22"
       }
     ],
     "canada→japan": [
@@ -9382,10 +9382,10 @@ const ARTICLES = {
         "date": "2026-02-03"
       },
       {
-        "title": "Indonesia-US deal could challenge Aus wheat market: GPA",
+        "title": "Australia’s Feb wheat exports down 19pc from Jan",
         "source": "Grain Central",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQekhWLXVXV2M3aldaX0Y0ZUpYRXkwU2lDVHI3eTN6Mm9OZ3p4XzRYazIyQThjaDV5d1RRRkJvWUF1N2w3SFZTc2h2LTgxS2pGdDVjQ0M2MGtxZm5mVGRzRDBoUndwdm9aWURmQnNoWF8taFFOZDBZOTRBR043bnRuYV82RkJ1OXhkMzFqMkVnTVZkSlRT?oc=5",
-        "date": "2026-03-09"
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1yV1FpOXBKVGlqMlIxNkxiRmpFMm8yYnRLQkc0dlhtc0tkTFdfOWpsZWMtMXNWNGdwc1kyNzNXRTNFTFAySllLZEdwNUtrWXB3TlZ6OUJ0aTdlZG5lRVBuU0FfSUxnSmJwMHJ2QzQ1aDUyc1pDUWo0RFJobnhfZw?oc=5",
+        "date": "2026-04-08"
       },
       {
         "title": "Indonesia partnership underpins northern profitability",
@@ -9398,7 +9398,7 @@ const ARTICLES = {
       {
         "title": "Egypt secures top spot among Ukrainian wheat buyers",
         "source": "The New Voice of Ukraine",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWk1jZXF3RUxSWUZCamFFaU0zcFp3ZU5ldDlCX1Fud2MtVVFqR29NclhRanFDTV9fVE9qMEVwSFVkUFBGZmpNbWxTNFpZNWJ6NzhWTUpqaTZBaElXQ2s0aF9LRXpGZzVtMHBUM0RjYmtPNjJ4NG9xZkVQSHlZWWxUTTg2RDFXZ2RpLVNGa1R1a2ZHdVpMYkRqTFk4TmhENjFYeHJXbEcwTDNPRG5YMWJ1TWJFMNIBrAFBVV95cUxNVnYweGc2aGdnZ1hobnMyZ2VVOEE4LW01M2IwbGVaMWZELVVzYm5QTDA0a0Jld1d5SmwzamxSVVdYM0dHNWI0REljV0lWMnlSVUVXRTF6WjJCRHFOeGNaUnM1MDVQYl9jc1dwN2FjNGtFZFM5YVluVVFxV3JOMmlhamN5dm5jbXNDUWNLTW9GVkVyaFZ4UlBpajNfNXVwZ1htNERyeEFJX0VUYmpj?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVnYweGc2aGdnZ1hobnMyZ2VVOEE4LW01M2IwbGVaMWZELVVzYm5QTDA0a0Jld1d5SmwzamxSVVdYM0dHNWI0REljV0lWMnlSVUVXRTF6WjJCRHFOeGNaUnM1MDVQYl9jc1dwN2FjNGtFZFM5YVluVVFxV3JOMmlhamN5dm5jbXNDUWNLTW9GVkVyaFZ4UlBpajNfNXVwZ1htNERyeEFJX0VUYmpj0gGsAUFVX3lxTE1WdjB4ZzZoZ2dnWGhuczJnZVU4QTgtbTUzYjBsZVoxZkQtVXNiblBMMDRrQmV3V3lKbDNqbFJVV1gzR0c1YjRESWNXSVYyeVJVRVdFMXpaMkJEcU54Y1pSczUwNVBiX2NzV3A3YWM0a0VkUzlhWW5VUXFXck4yaWFqY3l2bmNtc0NRY0tNb0ZWRXJoVnhSUGlqM181dXBnWG00RHJ4QUlfRVRiamM?oc=5",
         "date": "2026-07-08"
       },
       {
@@ -9440,22 +9440,22 @@ const ARTICLES = {
         "date": "2026-07-06"
       },
       {
-        "title": "China overtakes Turkiye and Libya as largest importer of Ukrainian barley",
-        "source": "The New Voice of Ukraine",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZkdQaVAyR3JFRWF1aURrT3hDWEtsVm10OUxJX2h5SGF3dldfQ1ByZVpYZGpuZTMtaEkyaUhvdkw2bEh6MTdxbW5mbFpfbjdrVnlQaU9BS2lyd0ttQWFqNjBYbGlVeUNvNnpBbER0V2NxUkhUS0xGWDdRaVRjOEVjY3FZb3JDeTJMZGV4a2dvLTFOalhEWkdGWTR1d3VVcmh4S2l1TEpIMzc0V2lyRnAtTnVjU0VnTlNSYmcxTHI0QW1WaVV6Ync4bkU3MNIBxwFBVV95cUxOY0JMQk9oMEhTN3JBVW5ySXZ6MUNWY2hDZzhnM3hENU5aWHdKNGVZZktaaWt2RjR4LXlVdEhBdHJYaDZJbm5HcE9Pc0NOejFuVDdCN1cwNV9kSndES3YweUJsc0JZRkFaVVA4X2cyblBXZlhrT2FYYmd3QXE2bnBPTnNXY2dKUjJHYng2UzBseDcyLVQ5ZVZyeHFrR25fVGZkcVlvclNXa1FmZ2V2d2l5V1hIbm5BdEtOYXJKVW1VczJQQXRoWEVr?oc=5",
-        "date": "2026-07-07"
-      },
-      {
-        "title": "Beyond Russian oil, China also increases appetite for Ukrainian wheat flour",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPdWcyRzhJcjZJWHUwVm1xeVdRdTBTQUhURWFKSE5UclRsMERZcVlVLU15ZDQtbncwSTRWa1NBQUV3YTlzRjFsSHllaVFKZHlibmZaOFVGVW83dEdDT1hDTGxmWGxySU45YmlGZGlqanEyX3J6c0lZRTRnSTd1TTRtejN5enU2ZXlQcEM5cjVDaXAzQTlIWEd6WHBtYVg3RXVvdW16c1RkMjNmT29Cd2RBMnB1SW05bVBsbWdMOU1BVFhNR0hHT0taX9IByAFBVV95cUxNUkMzbzhjQk52QzNOWlVkUVdWdUROWmo1cHFMNWwtNjUwclFHVWFUVElmOVMyZmpEd3dEdkhmMnBJM012R3JxYTlRWmg4RlMta2kzalNDZHZneTNhZWVkNVFody1taFB0NkgxbWhSZ0xDY2dka2tXYmJKdVRab1Z2blpCcTN4TmtyZjNJaEdLdTh4enBGaGl4cW9kbF9NMXZxelJCbXhFVUJJd2lTcnBwS0drUEgyZlYyU3dmNU1lb2RsdGliem8wNQ?oc=5",
-        "date": "2026-04-07"
-      },
-      {
         "title": "China Confirms Trust in Ukrainian Food Safety Systems for Flour Exports",
         "source": "UNITED24 Media",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNY1JQaHhFdUF6LUplWXJjMGk5V1JkU0Z4elY0VjU0alZDZFZDLUpvN3o4OGc2bWtqR0JlRGxGWWx1am90dTd4cmp4RUp6WXdQWHhTWmRaVFZMVUR4eFA3RnlZdk5tY0ZvUG9uQ1pvdnVhUGhPMVlLZ3lVdi1Ud3A1NklObFlXeElGZWVfYkxCQ1hvTnFVTXIxaGluY0lZb3FSbGc2bnZyVVNmeTZFUGRELUwwaEN3QQ?oc=5",
         "date": "2026-04-06"
+      },
+      {
+        "title": "China opens its flour market to Ukraine as Kazakh producers pay for using Russian wheat",
+        "source": "Euromaidan Press",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdG9Sam9OSGtYVllxMmV1c3F6aG1CLUQzaWl3UnAzVnFJOUplU2JNSmxoMFg0THV4em52dzBCSHdPVnpWdU5mZ0E5YmM4aUdnZDZ1SHhCNXZicmlweGVrNHZydkZtSUF5OHIwMjVFZ3Q0dGE0ZUNkNUVtUFo1NFg0YXZ3Y0tMcDRGZ1A0MDQxMS0tRTc0?oc=5",
+        "date": "2026-04-07"
+      },
+      {
+        "title": "Which Countries Export the Most Food?",
+        "source": "WorldAtlas",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZkxOaTcweWhHb2xBUENGdWRIWklwOVFXUFdxNkdyOUxHcEpkN2hFUUk2MndDYXp2ek5fZnBvNU84c3dLS1NUdnJrN0VaaVRxdGE1bEtNZzBWZTlhYnNteUROV2Q5anNYZE8xU0pLSWNsNHZtd1dJdnpHZjRKR3FYY3VQM0JuOFU2WEh5Qi13?oc=5",
+        "date": "2026-06-27"
       }
     ],
     "france→morocco": [
@@ -9484,10 +9484,10 @@ const ARTICLES = {
         "date": "2026-04-21"
       },
       {
-        "title": "France to supply two thirds of Morocco’s soft wheat needs, industry group says",
-        "source": "Arab News",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5HSFR6S3doYXlBVXhLT2M0VmZQa3ZZekZKVkZXYjZKeUFSZ2J3ZzVhaHNqSWxablRVZDJrTDJXblhWYnRoV3N5QWVaNnRGb0F4ZWthODY4VDN2aC1DMGc?oc=5",
-        "date": "2025-10-07"
+        "title": "EU wheat faces stiff competition",
+        "source": "Grain Central",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1pUVpwUGc0dE1aMHdVZzR5TFFVZVlxUDdxWjNnaS1nZzhuekNUbWtRcUM0V1lLOEpDdlhjeGtvM0JrMTZRa1FRZkJCMnJmOE05UU5KUG01enhOdTAxU21fNXMzNDJvQWxqYWJjTlIxVVRjOUdjNkVZVW53?oc=5",
+        "date": "2026-02-03"
       }
     ],
     "brazil→china": [
@@ -9516,10 +9516,10 @@ const ARTICLES = {
         "date": "2026-03-12"
       },
       {
-        "title": "Expanding Iran conflict threatens Brazil grain exports, fertilizer supplies",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOYnUzU1VnLU5VeFZJeElKWHVaX0RCOVBGTjNPSHFKZGhxRU9fc0V2VFpTMnNFNGpTSUcydmhrbTl2cndmMERXU283RFZsRGw0SVJuX24zVElDRnZMdjM0NVhVSDlyTnV6eHJRZ2loVEc5a3E1bTdtU0h2a1NlazJOWE8ySnVzQUN3UTFRZ2JfbU5CdXZXanhqN09rMzg0LTNid0Znc2M1VnJMejhmUEtvU0NDTXVZYm0wYTlTUFZEMUt3YkZEbjBF?oc=5",
-        "date": "2026-03-05"
+        "title": "China is investing billions in Latin America, potentially sidelining US farmers for decades to come",
+        "source": "Arkansas Advocate",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQWR0bzFTT3Ezc2x3UVE2VXlNRTZndlVGWWJrcnJIUHM1MkpmWndnaVFiX0J4LUtRMGpHbU9ISzVBNTBwR0JwLWdCQ0xFcElnUE9GWm1RVUlkT3RTWmZGVG91aFNPX1lGZGRUM09nYXhnNmFFc1JFMG9hUy1zSXZJSkRjck9JU2pUY3FuaEx6QjRVUzNsb3VVeHhBcWM0TjBpaFl5M1lEZ0dRRkxKbW1DRmhUeE8xaDdBSG4zMEVzbm1QcWVOcl9BMjRyTjhtbzRzVC1MUDF3?oc=5",
+        "date": "2025-12-24"
       }
     ],
     "argentina→china": [
@@ -9548,10 +9548,10 @@ const ARTICLES = {
         "date": "2025-10-03"
       },
       {
-        "title": "Soybeans see follow through buying linked to China demand talk",
-        "source": "Brownfield Ag News",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcVZlX1dGc2FRZm1taGc0OFk4V24zUmhON0RIX19JTDNiZVoxWkpOTTJydXgydmk3c3lfMlZYd3pTc3BQR1RiY1lYQjVUbnloNXFCVWtJWFBmalNZY3F5QUk4UXY2dUFFR19rT2dtNmFfQ1Y2VTM0Y0ZFN19uRzd6NjAtS3FRVFVOZjNOXzJyMEt4OXhnbUZ5aWIxRno0Smh1endXY014eThJNi0t?oc=5",
-        "date": "2026-02-05"
+        "title": "Argentina Grain Exports Jump as Strong Harvest Meets Global Turmoil",
+        "source": "Successful Farming",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdTgxcGNaNVJVNWRNRENlbENDWkttbTV4ZTYzRG9sZjlKVU5aajNRR3pxMWpPYWZ3eTRRNzlUYmRsYk1LSnBEWi1jY2dVaTlxTkhPUms4RlZnd1Q4RWRhbjB1bFdiU05UZEo2aTh1RVhvTEpfcEpUaGNWQktBaHJfN3FyQ296bEdMc0syNDl4bV9ibTYzNzlCcF82ZWNmaG5sREFkRC1RWEFxMVVVNEpKM0Y3VQ?oc=5",
+        "date": "2026-03-23"
       }
     ]
   },
@@ -9576,16 +9576,16 @@ const ARTICLES = {
         "date": "2026-06-22"
       },
       {
-        "title": "Closing gaps: Japan’s evolving missile air- and missile-defence capabilities",
-        "source": "The International Institute for Strategic Studies",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWDljd3dXTm9BYlYyTXBNdjQ5WFpfMlRDV0ZkUG9fMlc0d01nM3JJVzJzSTdpVnB2aVBOS29tZ25qaEFRZURFTW9YUkxVdUdGQ3pPVVhadEx1TXZLOXU3R2hUWTdsTEtZZHcxeG9sTmxhN080a2pXSmh3aUttQ2gwQnVOVVJZQ0Z4dGJYWEZtUG5UWlRlZTJvcVpXWlQyWTlFdGZhWUR2RDJhVUlXdC1VU05ZU2ZPMk1BUjllcXVOb2hrcXc0N0Y2UHRJMHUwSDdJMlFR?oc=5",
-        "date": "2026-06-16"
-      },
-      {
         "title": "Operationalizing US Forces Japan: Why Japan Is the Optimal Location for a Joint Force Headquarters",
         "source": "armyupress.army.mil",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdllUc09ZeFU5aURoRjk4REwtQ2dwUUZCWjd0TWJSbnFzdzlKS3AyNFZYUHUxcDd6eE5NY3BGNjZUWEFHaW93SlF5WmNYRk9fdHFGWVFqa2ozZzhvXzlqMHdJb1dpQVJmT2Jvc0V1aGR2M1RyZ3A1WTNYR1RoNVV0d2pBZXZhSXQ4SHcxYzV3VklpRmRMdE1FOVFrdzUxdDNr?oc=5",
         "date": "2026-04-16"
+      },
+      {
+        "title": "Closing gaps: Japan’s evolving missile air- and missile-defence capabilities",
+        "source": "The International Institute for Strategic Studies",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWDljd3dXTm9BYlYyTXBNdjQ5WFpfMlRDV0ZkUG9fMlc0d01nM3JJVzJzSTdpVnB2aVBOS29tZ25qaEFRZURFTW9YUkxVdUdGQ3pPVVhadEx1TXZLOXU3R2hUWTdsTEtZZHcxeG9sTmxhN080a2pXSmh3aUttQ2gwQnVOVVJZQ0Z4dGJYWEZtUG5UWlRlZTJvcVpXWlQyWTlFdGZhWUR2RDJhVUlXdC1VU05ZU2ZPMk1BUjllcXVOb2hrcXc0N0Y2UHRJMHUwSDdJMlFR?oc=5",
+        "date": "2026-06-16"
       }
     ],
     "united states→south korea": [
@@ -9596,37 +9596,31 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
-        "title": "North Korea has decided to beef up its nuclear force \"both in quality and quantity\" as it moves to modernize its military and strengthen combat readiness, state news agency KCNA reported. | via ANC 24/7 Link to full story in the comments section.",
-        "source": "facebook.com",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZzBTN0JGc0FhU0FxdGZxd2tpeXlrUlFxZjI5Tm14Z1JjTExhTGpBRER1eDhLeDFYX0NyZnczMHFwbXJLa01YVFBqUGhPMU9NdThkbmFqbXVRTlNGcXpSWWhVMXhOdHJqdFVxdlFtZFdsTHM2Sk10WmRuVWotZkJwWmpkR0VldGQ5V1p4SHlEZmRManVYc0RncTlYZHE5QjE2OHZjZTRyRlpRMjBUYUV5enVNV0lZR080NzFyQzc0ODh3dklTbndQMHBrZnBhY05ja1Rhc1FxQQ?oc=5",
-        "date": "2026-07-10"
-      },
-      {
         "title": "The Path Forward for Alliance Modernization and Redesigning the U.S.-South Korea Alliance",
         "source": "Korea Economic Institute of America -",
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdlR4SWNjT3l0NTBTbTVic2hzZjNaZW1nZjRqZmdWRnl4Z0R0TUtZVFVkaFhiQUV2UmtTdDFjT3d4TUVhckRGWGFoYVRUQVlXVl9SNHY2S0JIVkh4VkJxdTFoRUY4ZU5LdmdIWXgweExYbFRNU0hUb2twckJ5UmxXcDUyNUpaUnBDYng3UTVoNXI3T1otSW9WN0diSVVfNHVsNk5pc1lLUURUV2lSTTUtX0x1aF80a0UyN2c?oc=5",
         "date": "2026-07-01"
       },
       {
-        "title": "N. Korea slams S. Korea-Japan military cooperation as 'self-destruction'",
-        "source": "The Korea Times",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSmtOcWdxU1FqQzE0NmJONzZ6QktJZU9XT0JQMUdOZGdQblExRExRWFQ4YnVqbUw5elM4eWd1LU9pUHhZVHpxQzJfbjhQY2JiZTYzRWVldG9Jbmo4eVUzN2RDWlNxOVlaVXlVOHlCdTJNQVF0N1pkMUgya3JzeE9UVXhxb09hY1ZjY3NFTGZ4V3cxb2hOTXpkdWtodE1nVU5wZ3Nzbk1YZUZlTFRCQzAyLXdpMkZvaVkxVUJjMHg1N0dJZDRYRDd1VXhub2HSAdIBQVVfeXFMTW5TZGhsMFdyTEs3UWE0TzR0SDlnX0ZhYW1kLXBmcFZvak8za1BIQVR0cEJYd1BzME5UWXB3OUpIZGg4X2U1enFkeC1IN1ExTlFvZ2hTdTB1WkU2LTBrbVVJTm10T1ViZ25jS0JiaUU5Wk52S1hvS0ZDUVlUZkQ5ZmJ2czROdVJYM0hydHpjQ1lhWUN5cEExUUgyNzJsR0djdGZIcFR1ajZHcjJTTVBLRXBObGJ5NkhvcjUwRHlmb1hmVVpJNlNFLTd4aGdTNmVBS3Zn?oc=5",
-        "date": "2026-07-08"
-      },
-      {
         "title": "The case for a US Northeast Asia Command",
         "source": "Atlantic Council",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONzFwVUlxa1pIVjVxX2FaN3VoOWwwem9UXzlWY25Ja2E1SWd3TEcwX3lWM21lRm1TcFpyazI5ZVV2Q1VZMzZVNHhkRWZOZ0JxVnlYVHI5dlVXQXdUc2NKeXd6VzJQOG1CSEdVZk5RT1VvTmZQeWJYNFNxNllKYjhxaGRISUE2dTdPaG4weEwtTUNaTG01aHFOaFdfOWJSc2pTU1lxd0FMX0gtdmRJUHpOUw?oc=5",
         "date": "2026-06-18"
+      },
+      {
+        "title": "North Korea's Kim calls for 'destructive' military posture as South vows to boost drones",
+        "source": "ABC News - Breaking News, Latest News and Videos",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeUNVVUZuSlgyOHRIV3ZFS2JGbGg0UmhzalE2VFRLUTItQ3pZVTVEamd1d2hJVUJISkZod1VxOTNiam43dkZtTk5LcnVmWlNRYjlsY2hGSWNBZWgycTVJdm8ycXQ5TnBRZXprV3N0OUt2UHNRcDJOX1VtUWU4Vm1ULXo2bjU1NmVOSllyRlFTRHV1T2laWTd5LUNIZTBVTWdqeVNsdDJlNUJkVWRLZ09KWdIBtgFBVV95cUxQQ3cxcUx5OVVOa09PenBfc1NUTXBUV2VzRnZhdlpkMF9vNW1Ra1VTVmY4eVJvUnVtQmJRUEhaQTdrTURPcUlyNllnczdhQ1k3ZGZuUE5EVkQ1eEtvWlh3NGRpMWUyTEEzWVNlNkxBUkFJX1Z5QnJuNElUMFdQOVhDanlxRkMwVTZRaWtPODBXUFJjOTdiQW5tRVBnVmtqY1BfeVhDZ2ZSWkJPdTZYWkNicjVPanRsZw?oc=5",
+        "date": "2026-06-25"
+      },
+      {
+        "title": "N. Korea slams S. Korea-Japan military cooperation as 'self-destruction'",
+        "source": "Yonhap News Agency",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9YNWJJZ1JoaHJ0ODd4TkF6dF9TaVczT3NJUVNZQks0ektTR0ZlNWRXSlU2ZmNWYnhyOGs3X1dWOFJzYWRwdEhfemM4N2tWOW5qSlpBODlKSEh4UQ?oc=5",
+        "date": "2026-07-08"
       }
     ],
     "united states→philippines": [
-      {
-        "title": "U.S. Marine Corps Forces, Pacific Band celebrates enduring U.S.-Philippine friendship through music",
-        "source": "DVIDS",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSmtxY1plT0J2Y3dYRWtYa0ExcGRhSnhZdDFyam5lUGRrc2NFUUplYnBxaVBraEItX3RKbXpCMWlOZzQ0UklEdER0Z3dnUlVWQVZOX2VJNkh0bE43aHRrWWx4Mm5SSy1JamtseFNGMmhHSV95cWhmb1Q0d0xaQkJXcW43NjFENTVxYTFpVklXSEstbWhTb2d4MDEwWjVvZTBPMTV1bkdmR2g5ZXhfTndUUG9aYnVtSEd6YUV4eEVTdERCMWpEMUIyczJJbw?oc=5",
-        "date": "2026-07-01"
-      },
       {
         "title": "KAMANDAG 10 strengthens combined readiness and Alliance integration across the Philippines",
         "source": "pacom.mil",
@@ -9646,23 +9640,29 @@ const ARTICLES = {
         "date": "2026-03-12"
       },
       {
-        "title": "Q&A: As South China Sea confrontations ramp up, what’s the risk of open conflict?",
-        "source": "ACLED",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNb2NtSE9tamU1LUVfYm0zOHgxOU1EVllhV2x0d3JlU1BsMnNRaUxkVXB2RUtsMnFzd0NKZjBOQjAtVjBWMVpQVWh6YUtBQWlJYlhIYTctSmI1cU1OY1BTTllQQzhWekhFbHVDUTQzZE9McE04R3lLZUxZTTJZcnVOaEpxRnBXOHJTRldGU1EwMWRadw?oc=5",
-        "date": "2026-06-11"
+        "title": "Multinational forces exercise coastal defense in Northern Luzon during Balikatan 2026",
+        "source": "army.mil",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTHNiVDJwRkRaWnFLeENGR1VuQ0JTbUVhVnVESnFpSnNtdU0wenBvNXJIZ0hhUmxjYWxUT3BJSWVsTzNIMzFDaWM3QzVuUThWNlR3VHJlNWVlTnloNmZXNkJVMERrZnFDdnFSQnJNdEtsZm5oRlNwby1Tb2NUYzlCOUpyNmVwVXF2dVdic2s3RlhyRWFGb1V5eTNydHdfV3pTYzIyWDFqU3J3cnY3ZkFBRlh5bkh1dkxrUlU3NWFB0gHDAUFVX3lxTE1HZU9kSVZtWklXaUFEWnNJUnVTWGZMOUcwbFdfWmpXUkF3LUpSdVM4dWZCdTVFNmlyVEo5Um5qQ2N2WUpkVTFvUUVqZEItMUYtZUE4V3Rfa0hZOV9xY18tRUpPWElkVTBKSE00QlVzbk05TUpqemJPYWh5NUdUUHQ5Y1M2WVdHdExyZi13cFF0eTMtM3hSZXhWTEx2dTFWRC1SN3ZPaGd4dFRZT0NVVlJvRzdlaElIOG5GQldCaVZHNU95dw?oc=5",
+        "date": "2026-05-06"
+      },
+      {
+        "title": "The Future of Defense Cooperation and Regional Security Challenges: Lessons From the Philippines",
+        "source": "Perry World House",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOUDRHMjJMYU9sMFpOb0hBaGJaQS13M0QtVWJoZVVxTnFfMERKYl9ydE16ZzdwckhvREJheVlFeEhMSDl1ZjkzRElVLVFPdkpxeXRERGZrd25BcEN1dUFYMjNtSjBSUjFtMW9YQU9reE1MMFN1eE9taGZFLS1PTkRNeUJ6UlljMkUycXRqMWNQNnFzQklLVW5JeVNRdVFTR1JRdEFnTEhXX05IUl9qRDByRVdDZVdIdXJ1NTY5NGJUcEZkY3FET1dEcUJ3RkNfNXRkaEd3NDNwbVh1VG5GWVFIQw?oc=5",
+        "date": "2026-04-28"
       }
     ],
     "united states→australia": [
       {
-        "title": "Australia and Fiji seal a new mutual defense pact in a push to counter China in the Pacific",
-        "source": "AP News",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZkhRcEhYaUVJTGg5aGNpamRlbURUMVlVU2IyamlMSGt5aFJWOGdwNnRURFBVRm0tTF9TNHZMTFB1d1lNWnp0b1ZZUGJPM0JFSWQ3UENmV0UwbVlWRDN0LU9WUVBZOUxHQWNCN21JLXBrV3BVM0dYaVBXYWJhSnFPVEZsTFRGWktpNTh0amdXczJ5eFlHanNJUDVkR0ZMQQ?oc=5",
-        "date": "2026-07-06"
+        "title": "Australia-Fiji pact signals Canberra-led Pacific security posture",
+        "source": "Radio Free Asia",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeXBLWE1IdlZ6ZVV4bmlVVlZKV00yYlNORWd1N2pNQXZEY1VNMkNISlhJZXZ1dUJNNVZVNlJXSFphaXA1bWNyQjRoUU40RFlPMFZlS1kwVjE0T0diVkhlTXR4OWlFZkIxVTJmU2VoRFdpc0J3R0lPQi1pLUpSVmpadER1a2JVZ1l1MTllclR4RQ?oc=5",
+        "date": "2026-07-10"
       },
       {
-        "title": "China tests missile in the Pacific hours after Australia-Fiji alliance signed",
-        "source": "BBC",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBSS1BmM3hJY21ybmZDRE1OQUluVHRwZnN2R0dxZk9MelA1WnhQV1M5WjZrdFVxRXU4VnpqelRvcE5TaUkxMWxoZFZUQmZERG1HWW80YVRMUnpxdw?oc=5",
+        "title": "Australia and Fiji seal a new mutual defense pact in a push to counter China in the Pacific",
+        "source": "Washington Times",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORXpZWTFJdmFtZkNEYXZRTy1FUXFOSlRQUjBRWGEwakpWVVVsclB5ZldSbTVuSWdlOFBaTThQVWlDMmRTMDkxamhCX1BOSXl1M25wMXZ6dWdFRWdlV2lqNUxCcVBJYnR3aE9ScE5kMjlLcDBieWJ1Y05Ic0dmUVUtbWR4dVhCSWU2cmVHQXVWSk9yYnkxSjhKQVlPOGllMTJJRURSTU0td2E4RkZjWU1PSTVNRmk?oc=5",
         "date": "2026-07-06"
       },
       {
@@ -9678,10 +9678,10 @@ const ARTICLES = {
         "date": "2026-07-08"
       },
       {
-        "title": "Australia signs defence alliance with Pacific nation Fiji",
-        "source": "France 24",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRjZlSU5QcXNLY2VDVThjaWU4azNnOVZWZEMzUEZ0ZE5JSWIwRElnR2FVWThvSkN2UE44SjltdGtrb0Nvd2FwQ3pxc19aRDA2NFlFUHZBUVE5RVhJRVlJQjNScEdKWGFyN2tiX2FZNDBfM0xzU1psckI5V09sY3MtRHNRNDBUOThPNEJSS0I3UEV5M1hyLVpoZXJEY01yRUZZY2tLU1hvYw?oc=5",
-        "date": "2026-07-06"
+        "title": "Pacific front: why Australia and Fiji forged a military alliance",
+        "source": "Caliber.Az",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOUZOZFptTEp2dXZIYnJGOUNIUkIxcHBqc0c2RGNIZ1VIajl3bGl3MlQ3dHlVZnBNMHRkNHFLb1B6X1EzWmNZa3Jkb3o3NU8wYlc0cWdzaDhGX0YteENVbFlCaHZYc3luRUtodUV3Smxfa1ZjNkp0NGxmR2dtMnpXNE1raTktWmtyLUtGckJIZmE0bVhB?oc=5",
+        "date": "2026-07-09"
       }
     ],
     "united states→israel": [
@@ -9692,37 +9692,31 @@ const ARTICLES = {
         "date": "2026-07-06"
       },
       {
+        "title": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
+        "source": "Encyclopedia Britannica",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "Cooperation without Oversight: The United States–Israel Defense Technology Cooperation Initiative",
         "source": "Quincy Institute for Responsible Statecraft",
         "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPXzh1RzR1YU1mS0lOMDJ2dzFOMjlZTDEyUDg5MlYtVExRMVZma2RVQ1d1M0NtNUc2NkhaWm10VXp3LW1CcVBCQkdyRF9JSkdlaU0tUXlNSlBqczlGcVVTSlkwNDkxNEZnZFBiT21leU1RRGJXTzJEczhXcFpZV2NIaWhiRzVOcU5JTmJ0RlNvc0tJUG0zRVQtdUlsOUNSdXg0Ny1nOW85dkpXdzZFSDRlWmR6STlfSE9pQUVnUmtJWi1QcWlaRjI5Uw?oc=5",
         "date": "2026-06-16"
       },
       {
-        "title": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
-        "source": "Encyclopedia Britannica",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
-        "date": "2026-07-09"
+        "title": "Trump Could Move U.S. Bases to Israel. Here’s Why They’d Become Netanyahu’s Newest Human Shields",
+        "source": "Zeteo",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAtTjJqNnVhaUpzNlZZVy1ZYS0wcGh5dF96MnZwZURpUGo3dkplbzYyMlNabWpFQThtV3dBTFRXVmhHcjZXZXNaZHgyRlJGUnJzV2p5VG5PUFlHdnRwNDBPNkFGUkktWHFSQWNSOXFEVlI?oc=5",
+        "date": "2026-07-10"
       },
       {
-        "title": "How to Save the U.S.-Israeli Alliance: If Iran Gets a New Deal With America, So Must Israel",
-        "source": "Foreign Affairs",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBjQ0RKSW9icjNBX05BUXhONVBQZnEzWnQzcWhxczlsQTk0NXc3MXkzc2VSQlFjbHBSMzd4Qk80SlRSZlZoTTZTZGxURmxlM0RyLUlUMWhxRzlkT1BzS25Rc2FZSEFuWWhpV0NFSXExYU5uMnox?oc=5",
-        "date": "2026-07-01"
-      },
-      {
-        "title": "US Insists Iran 'Does Not Control' Strait Of Hormuz",
-        "source": "Radio Free Europe/Radio Liberty",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWnhyaS1tS3NVV19VeVRlS1RUeUhFblVCTkRCWmg2Z2YwTW1uR051ZFctc3F2eEcyN29hbkJkLUY3THpPVzVaYVRlcTRybGlrTGVsX3ZvTFJyQmRELVNHckg3Nk9uOUw3V2RyN2lZY0dIMW1jLWVQSUVTdXBTZGpuVE55cDBQcG01?oc=5",
-        "date": "2026-07-09"
+        "title": "US Defense Secretary Is Expected To Arrive To Israel On Wednesday - Report",
+        "source": "i24NEWS",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQS0ZEcHFTMVM0WkpVTUZYNkg5SXdBQ05yUWZsMDBoNmJJeVNuZjZqOXJVOGxCUk5YQTFWZXpmc2VhbW16YnRGeHZVckdFdE8tUUY2aUlKV0N6aTZlZnlNN1BKV1BBMExXLURtSmJaVHhJTllUSWh5YWFNcFBkVHk5MTlRdkV0TzZkRWpVaDBid1E0NzBnR1JLeUJuNFQtbTVZLVM0a3BmX180a3F3MEFxWWpRNVhkOXl0M19RRUVBWUc?oc=5",
+        "date": "2026-07-08"
       }
     ],
     "united states→saudi arabia": [
-      {
-        "title": "How the Iran War Weighs on the U.S.-Saudi Partnership and Prospects for Normalization with Israel",
-        "source": "CSIS | Center for Strategic and International Studies",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOX19Yd1E1Y2ZzZWJveU5ENFBlX2h6TkpJZVMyU2loOHpRRlJCXzIyNjRtOVAycXJFMXVyN2kwZmRTOEpOUXNURFJaREpobF9NT24tY1BmdlJwLXA1MUR0VnNtRjB1WVVNWUJsblVtNlJSdW56alRCc2ZvclpIMnJ6aDJ3ZW8wb3M2QTk3OEVWUDlnZUxMQkxFOXpwYVFWc2lkYy1OU2UzMlk?oc=5",
-        "date": "2026-07-06"
-      },
       {
         "title": "CENTCOM Leads Regional Security Dialogue with 12 Nations in Bahrain",
         "source": "centcom.mil",
@@ -9730,25 +9724,37 @@ const ARTICLES = {
         "date": "2026-07-01"
       },
       {
-        "title": "How Pakistan Enables China’s Expanding Defense Presence in the Middle East",
-        "source": "Middle East Forum",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbnVSVEJ0Yk1zZThvdXZ1RlNrNTBfbThYZVRWa2l1MVBLSHBUU0lmNnVWVUl1YkpxZy01cDNGWGc1RTNXMEx5aUJMTVhOaFpkWHprQVR0dUszVEN5d1Jxcm9FM3RqbE9ib1J3aWxuN0tSQmQxc3ZQMzJqZ1JWcWFFX2g3ZWFVUU9ZZVdVaG9Zd294TzdkZ2I2MUlKVy0ycUQwaEk3bUFHWkdXb1VSWG5R?oc=5",
-        "date": "2026-07-02"
+        "title": "The Saudi-Pakistani Defense Pact and U.S. Force Posture in the Gulf",
+        "source": "Georgetown Journal of International Affairs",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPS2d1a3RMdlBTUVoxUjFUWTBkTnNGUlNTVV95TklqazhDcFRZNGpsbXA5Vm00SU1FSFZnbFpqWTJ3ZVZSc1E4T1pOajA3YWtlU1k2eDQzZTREczRSTnd5ZTQ2ODRscjM3TzkxYU1WaEZaRHBaaDlNNTBmaG5sS2t1NzFkQ19mX3BsZDVtRWlvRm1rZ1dLMHZPXzlobXQ4ZjU1VFlWT1Rjd2M?oc=5",
+        "date": "2026-04-20"
       },
       {
-        "title": "The Iran War and Saudi Arabia’s Strategy of Self-Reliance",
-        "source": "The National Interest",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMUJFZmF4aHhJMVhrYktpVTY2ZEc4Znk5N2pFaHBrZlpweFRGY0sxeGdPX3dWODAxVHJoQU1pSkZnZklJd2hlMzNqbVJRX09hNmJxSGMyTjNSdFRUVUNTUDJjV25seDhZdWJXV3ZVVEpkN1VCR3BUSUVPRUhHbTdMQVlrdlgtUWJKeExsWEFoa2w1YThZUHJjNHdBaG9TcW9KZ0ptVk5aQVZiZ2ZH?oc=5",
-        "date": "2026-06-26"
+        "title": "How Does Saudi Arabia See the War with Iran?",
+        "source": "CSIS | Center for Strategic and International Studies",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuaW9ZV1BIcDl0bVI4bUpDUGUwaFFkY3ZDUU1NenJFSVZsUlJGMWd0Vm9pSFFBTnZtU21paFdWVzBRX2xpTlVMcFJCYVY1MUFXQXFhaGx0UW84Y3FDSnY4MmN1eXZoVWd3c3hlLUxwazF5QQ?oc=5",
+        "date": "2026-03-18"
       },
       {
-        "title": "Half of new Pentagon advisory board works for military industry",
-        "source": "Responsible Statecraft",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5LLXhVVEdCYk9POGN1NHlKS3ZiV0cxNmhfMlR3SzVrczZhNzkxc0hfVHlyYmI3NlRJam5HSk1ZQlZBWnV0dFFOR3FUeWJFdUlxd3oxdGo5LTgwSnJVb2dJWUNoaEljT0VNVVNwWXZ3ei0?oc=5",
-        "date": "2026-06-30"
+        "title": "The Iran war has forced the US-Gulf alliance out of the shadows",
+        "source": "Atlantic Council",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOLUxFM0tMOGlSblJqTGxobnRURXExR1N5b0M3SVZWdWN4SmRRbTdMWnZjOUJJbHV5a25rRGpWdUJ4dWJsMHl0NS04MlByZ2MtUm1waW03U1YybFZEb2U4c1JjLXFqeHd6Q1ZLR1ZPNi1NS3NBZGFwWWFfc3AxUFdpa2lScEpJOC1BOXN4TDBDRENNR3NGWnM1a2FvZzRVLVVWNU9vMlJac1YwR0NsT0VuVjNVdw?oc=5",
+        "date": "2026-04-20"
+      },
+      {
+        "title": "The Emergence of a Regional Security Framework: Türkiye, Pakistan, Saudi Arabia and Egypt",
+        "source": "Al Jazeera Centre for Studies",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWnl4cFBrSGEwamp0Q2tHNzNSa2VjeVB2MFU4M0VZUFZMa3RqVERvVUJraVlNZTZKQXpUaGFyTnVvM1lXS2xHT0otbnlfRmU0LVR4VmtkY09pYnRWTHNJTE1ManZYX1NOWEpJOWs1Q0E1OTFadC1TWjFiMWNZQS1HUUcteW84WDZRTmpjNjA0Q2JqT2pJd19QalFkc1hGNnlMejJVWUxqQWxZSUtjdzZzSXBEck1lWlYwNDYzSG0wQ1o?oc=5",
+        "date": "2026-05-18"
       }
     ],
     "united states→taiwan": [
+      {
+        "title": "David Petraeus: The Ukraine Lesson Taiwan Keeps Missing",
+        "source": "Foreign Affairs",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQeVV1WXBJZktpQkZXM2hoMUxEUUxoWnB0LTh6bl9xeFV1NlptRmxDdFE5VmJnVjJoaVoxMkc3OEhrdEx5eUx0akZLbmtBN0gwZWpsZlZmY2w1QjVEWnRpTDJ2c3dQdDRmNFRaZ0V2UU1zdjA5dU42Nk8yQnNkTUFkOEh2VzUzY1U?oc=5",
+        "date": "2026-07-08"
+      },
       {
         "title": "Taiwan Debates Spending To Close Drone Development Gap",
         "source": "Foundation for Defense of Democracies",
@@ -9756,28 +9762,22 @@ const ARTICLES = {
         "date": "2026-06-22"
       },
       {
-        "title": "China Could Win Taiwan Without Fighting",
-        "source": "Foreign Affairs",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOY1dpekFVa215N3RRMHp2UWl2cGRKRXFiTk03QjhObVNTUXVCX3NFRThpNzR5RS1wU05YYjhaMUhyemJXSDFaRHdxcTNsR3V1NUpFdHVPSkszTUEwYmxaMnRxOWFSQk5PWmo4aDNLY0JfN0JFRjJWVjVNeno0ekRYTVBuMA?oc=5",
-        "date": "2026-06-22"
-      },
-      {
-        "title": "U.S. Defense Demands Are Pushing Asian Allies Toward China",
+        "title": "Taiwan Explained: Why China Claims It, and Why the U.S. Is Involved",
         "source": "Council on Foreign Relations",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQnYzWjgtTTZuX2lVYmw4S2dmckJMWTl4STlrYW9QTHpDTlNuNkJzZzl2eUhmWFBLNUNaaG5EdEVDTWlucmlsY3ZmWlBlUVRuMjA5VW1hbXJheUNZOE9UUlN3V1FZcVl1QWtvaFdCUVpvSnJrZUdIUURBUExKZlhfN0NjaHRNd2ZURHJjQ0d1YVhmd2M?oc=5",
-        "date": "2026-06-17"
-      },
-      {
-        "title": "How partisan is Taiwan’s security debate?",
-        "source": "Brookings",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcU9YRzlTVXB4TGJZV1pKdEdwTDNFQnpfbnMtQjZsQ0pXLTFhazU5MHJ5ejM5ZGIzRjNHYzE2VnpTVEtmbDllRFVEdzFacEtxLWphTE9pRXY5d0RyZlBHMnhNY3M0SWNWVWFHcnhIeDVkdkI1eVlOS05PZ0lnTGVCSw?oc=5",
-        "date": "2026-05-28"
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUWtjZU9zLWRLOGU5MnJVd1hwTFpDY2xqNTBmY0dKR2pBYk1iOFhuRHpjV2tZdnJ5akpjajRrc0J6dm04TzNZbVF6cFBHc1lWU05IcjZBMk9QX1M4RDg2U2NOMnhOU1VUcDBTU1AtaEw5VlFzckQ0TzZfRklfOFNWUzJQSDJ6YWc?oc=5",
+        "date": "2026-03-13"
       },
       {
         "title": "Between Beijing and the Budget: The Domestic Realities of Taiwan’s Defense Spending Drama",
         "source": "War on the Rocks",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLUlIMVVmWGxtMmQtc2FPVVlXTU0ybUx0Nk9fQ2NVMFFQc3R1Zi1Fcmhtdml2OGtmYnhkT1B3dEtaQ1ZNYVNVRDFaSzltUUxkVkRiMHBoVWEyaWNOb2ZVUTJBWWZsN2lzSnYydnhxSWYyZktxRUpaVTFtNDYyU2xJRmw4YVVudDlEUE5zb1F3ajJia0hyejRrR0tMWnY1dXNWeWVVZkNhR1VwV1JhLWtHdnI3WE0?oc=5",
         "date": "2026-06-02"
+      },
+      {
+        "title": "Is the United States Prepared for a War with China?",
+        "source": "CSIS | Center for Strategic and International Studies",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1FTTZxcFFuWUhkajFVODFvWEVQd051WG9VT0FpVkQ4MXlFRkQwdS1xN3ZRUE00c3B3SzdQNVIzSEZTV2trTUVKWTY2dDltaXdPSTJvMGdxd0JsTUVTOUhFbGFlSHpIVFpvTEtKcmdwWQ?oc=5",
+        "date": "2026-05-12"
       }
     ],
     "united states→poland": [
@@ -9800,16 +9800,16 @@ const ARTICLES = {
         "date": "2026-07-08"
       },
       {
-        "title": "Strengthening NATO’s eastern flank",
-        "source": "North Atlantic Treaty Organization | NATO",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOb0lJaHFFWmtoOVNvV3NULWl6SG03alRxX2xrUlAxNkRCMUlQU1NkWEdpQjFhSWRFQ1hpckdfLWN6ci1waU1iVVQ5UVdXb1NwRHdCT0dpTTZaallpcFR3SVJudmluSjdkcXZobUpYTTlhSUtJXzZjSmppV2FkZHJBTnE0UmFaRGhOZ05xX0Z6TWxqLWdndXc?oc=5",
-        "date": "2026-06-17"
-      },
-      {
         "title": "Poland to declassify Ukraine arms donations records",
         "source": "TVP World",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMGpsWVpfMnFSZ192bFJaZm41UFZkVURRampwekIydjNmM2ZadTZxWVRLdm5hREFFYzk3TnlZQ1lkc3BJTFVubGtpU3VsMF9NbG9YbzlONmVUYTBsUGxnTWtJVUQwUWxTSENsb2U4UWRsQUotUVJrNGZwcFVwWFpDSHlXZEFCZ3FSQTg0WW5qLXI0d0NiWkFrXzh0VFV2WHBMTUd6OHlPNVdUaUxRWHNn?oc=5",
         "date": "2026-07-05"
+      },
+      {
+        "title": "Strengthening NATO’s eastern flank",
+        "source": "North Atlantic Treaty Organization | NATO",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOb0lJaHFFWmtoOVNvV3NULWl6SG03alRxX2xrUlAxNkRCMUlQU1NkWEdpQjFhSWRFQ1hpckdfLWN6ci1waU1iVVQ5UVdXb1NwRHdCT0dpTTZaallpcFR3SVJudmluSjdkcXZobUpYTTlhSUtJXzZjSmppV2FkZHJBTnE0UmFaRGhOZ05xX0Z6TWxqLWdndXc?oc=5",
+        "date": "2026-06-17"
       }
     ],
     "united states→germany": [
@@ -9820,28 +9820,28 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
-        "title": "Germany to purchase US Tomahawk missiles to build own long-range strike capability",
-        "source": "Harici",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZVhkQXdENFoyYm5EMjBkT1pha3pvY3VacjB5dWU2bUVJMkNIcjNxYnVVeG1zWkdCTVlwYUdpN0x5VkxrUE9GR09wcE81LVpjczNnREpDNDBIa2ZuLWNQdEwzWTFPWkR4RTRLQXdCb0VmdW5TWUo4ckRjdG8tSGEyaHNRYUxMdFg5QzhHTWpVU3kzT2lSVktSRGl3R05QVHdvMDQ3NmYzTENJWTB30gGsAUFVX3lxTFBlWGRBd0Q0WjJibkQyMGRPWmFrem9jdVpyMHl1ZTZtRUkyQ0hyM3FidVV4bXNaR0JNWXBhR2k3THlWTGtQT0ZHT3BwTzUtWmNzM2dESkM0MEhrZm4tY1B0TDNZMU9aRHhFNEtBd0JvRWZ1blNZSjhyRGN0by1IYTJoc1FhTEx0WDlDOEdNalVTeTNPaVJWS1JEaXdHTlBUd28wNDc2ZjNMQ0lZMHc?oc=5",
-        "date": "2026-07-10"
-      },
-      {
         "title": "A Claim to Lead, a Hesitation to Act: Germany’s New Military Strategy",
         "source": "War on the Rocks",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRmYxbW12U1dlbDV2UERkUkJ6Ni1jZDJ6YnhYem9raW55VmlzdFY3bXRSYzFXa2NSbXBmelR5Q3JpeklYZmZEUHZPWDBnMHAzY0lPTGZRcjdnNll2Z1V6RjNsMy04YWppYlhndWhNTVNZZnFLcmZMcEk1aWJ5M21jLWYzWFhnYUdFQnhrQ2RERDRJMTBPbWpleg?oc=5",
         "date": "2026-06-23"
       },
       {
-        "title": "Germany ramps up defense spending in new budget plan ahead of NATO summit",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZGIzd3RDdnFTUWxrUFZ0R1lQQmFpS3F3VzJORHZGVEo0ZGJiZkNrNnhCQzl4OTBLMWZMWEhUaGEtOXA2SlJPSnFfemF1VXIyMkhJRHZBNHl0RDY3ZXdZOGw2cjNDV25jTDBtQkJLQmdlckhDc2JGSndvcjd3YlRxaDJ1UHQ3YzVUSFJKM0ZsbjVFeDZlOFlKWW1MbldqZHQwWm52QzJOVjNhQQ?oc=5",
-        "date": "2026-07-06"
-      },
-      {
         "title": "Germany to buy U.S. Tomahawk cruise missiles for domestic deployment to close strategic defense gap",
         "source": "Defence Industry Europe",
         "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNb3NTVHpibm1raUtzSjJHdGxBRlF4N2l0N3VpR2MwMmswaE1ZMHBrZlN5R0xTNWRCUTFFV25nYl9LLVBIUFBIWGQyalhpdGY2ZElwZklPZ1g3Zm5rWkNBMksyaVJLNkl1Ry1kbzdkNFhoN0c0d1FvWXZtUk93RlRDWmVkQ1lHWlV3Y1Qtd05BRkkwdURhRnUxTVVNcDBsSF9SWnJKMUIxMElqY0VGZWpEZ29BOE9kSC1Dcmp3bWlEeEFJY2c3c3c?oc=5",
         "date": "2026-07-09"
+      },
+      {
+        "title": "Strengthening NATO’s eastern flank",
+        "source": "North Atlantic Treaty Organization | NATO",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOb0lJaHFFWmtoOVNvV3NULWl6SG03alRxX2xrUlAxNkRCMUlQU1NkWEdpQjFhSWRFQ1hpckdfLWN6ci1waU1iVVQ5UVdXb1NwRHdCT0dpTTZaallpcFR3SVJudmluSjdkcXZobUpYTTlhSUtJXzZjSmppV2FkZHJBTnE0UmFaRGhOZ05xX0Z6TWxqLWdndXc?oc=5",
+        "date": "2026-06-17"
+      },
+      {
+        "title": "Germany and Japan Are Rearming Again, 80 Years After World War II",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVU1ZVlNCZl9yYjlodVVwTDJPVjhEVnQydkkwdU5hU0UyVF9PQkRqWkUtMGtWSTRCWlpCb0ZTVThiMjZYYzR5Q2F2M0tfNl9oZEt3eHNxeGxwRFNldzBFaUU5WUhjcXVpNHJ3Ui1DWmZyQ2pUUEhUdEkxMmxEQkU4VUtVUzZUeEFidnlIdXgzNA?oc=5",
+        "date": "2026-06-14"
       }
     ],
     "united states→united kingdom": [
@@ -9878,6 +9878,12 @@ const ARTICLES = {
     ],
     "united states→türkiye": [
       {
+        "title": "Türkiye’s NATO commitment and the trial by fire of the Korean War",
+        "source": "TRT World",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE15aFJyOVFURmZiZ1BHUzRoWDdTWnNNZG1yTGdoTGRRV3lGY3BybFh2ZG5qejAxOEZxOV91R08tS00wbWFnMHpJdjdpcXZlZ0thZnNuLWxyN2c?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "Türkiye Urges NATO to Turn Defense Spending into Military Capabilities",
         "source": "Politics Today",
         "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcDRyY0JwSUx2YVFoQUI3YWF1N1lTVmZ2Z2tRUjdMSXREMFQ4RkJ6WXVjc3lpdkZsV0xFTTFYZ3FmdkFxZFY0Y2RJemtsbGw1S3lfWl9nR1ZmU1BzY3dlcWRoYVpfSlk0cjFaN0MtTlYxYVBSbnF4MTkwSk03bUF2MWJKTFV5WU9wREFiZTliR1pKaEJyd2FzZmk0ci1Qdw?oc=5",
@@ -9886,7 +9892,7 @@ const ARTICLES = {
       {
         "title": "Türkiye Casts Itself as NATO's Second-Largest Military Force",
         "source": "Kurdistan24",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5zaEpaOU9iaXJQenowR1owM3hOcXdLZk1BQXk2WXp3T09lTUUyVFZWNk9Ud1psMTNMUTNJZ0VrQVhTQzZ5SFY0aUNna0tpZzdEODNVWFVR?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbTRoalhTak9MYS1UTU9xY244VWVJbjRwaEQ1VDJHLWMxbm5uODlqcDNNUG9uRE15eVc5MnpObktkVlNCTVBDT3I4T2trS1p2dUxheGtXbDhhOGpvNWxFa0h2amtyLVR5NTZWWlJnWWtZZG85anBGeHVvNi1Bb0lFM2l5ZHBTWEpwUmQxYjVMT0VjU19GZlRCcjJQdTBoakM3OHFDSDJjbzhnNzhq?oc=5",
         "date": "2026-07-07"
       },
       {
@@ -9898,34 +9904,16 @@ const ARTICLES = {
       {
         "title": "Güler hosts NATO reception at Türkiye's flagship military HQ | Daily Sabah",
         "source": "Daily Sabah",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVWFMalg5VHVlcmMxQkpPdlZ3Q3ZDeGJVWkxpUmRUbHk0T2lBcnRxS1M4VnFHcGxxZXNxOHczTnFfYXdEcUdQRFRoQnJSbWtzVDJTMVZOclVBZkFMZkpXWjZjQ1NfdkR1WWpFay1xV3J1Q3dELXBhSWxKMk9weUNLNnRlN1U1VDFfSWVyX0ZNNE1Vb0FKYnV6TzI5LWRWZ2pweWh4TGRrSWNzWWFQUGfSAa4BQVVfeXFMUFVhTGpYOVR1ZXJjMUJKT3ZWd0N2Q3hiVVpMaVJkVGx5NE9pQXJ0cUtTOFZxR3BscWVzcTh3M05xX2F3RHFHUERUaEJyUm1rc1QyUzFWTnJVQWZBTGZKV1o2Y0NTX3ZEdVlqRWstcVdydUN3RC1wYUlsSjJPcHlDSzZ0ZTdVNVQxX0llcl9GTTRNVW9BSmJ1ek8yOS1kVmdqcHloeExka0ljc1lhUFBn?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVml5V3Brb1FlcWdZam9Id3FVV3JpMkdzNGItZkhEYW1acHNoVld3LUJfeXlUSzFYWkp4OTN4ODI2NnRiUm84UG9WT2V2YmI5dFdsN3VFNXRjWTQ0dXByTUJBN05SdlR2TG52N3k1UDQ2OVBqWW9CQkx0azVFcnJuS3d2TjI4dEU2eEs3TVpOMHdRaFpnQldOcUZrem02d1c5RWFGd19vemfSAa4BQVVfeXFMUFVhTGpYOVR1ZXJjMUJKT3ZWd0N2Q3hiVVpMaVJkVGx5NE9pQXJ0cUtTOFZxR3BscWVzcTh3M05xX2F3RHFHUERUaEJyUm1rc1QyUzFWTnJVQWZBTGZKV1o2Y0NTX3ZEdVlqRWstcVdydUN3RC1wYUlsSjJPcHlDSzZ0ZTdVNVQxX0llcl9GTTRNVW9BSmJ1ek8yOS1kVmdqcHloeExka0ljc1lhUFBn?oc=5",
         "date": "2026-07-07"
-      },
-      {
-        "title": "Türkiye’s NATO commitment and the trial by fire of the Korean War",
-        "source": "TRT World",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE15aFJyOVFURmZiZ1BHUzRoWDdTWnNNZG1yTGdoTGRRV3lGY3BybFh2ZG5qejAxOEZxOV91R08tS00wbWFnMHpJdjdpcXZlZ0thZnNuLWxyN2c?oc=5",
-        "date": "2026-07-08"
       }
     ],
     "united states→canada": [
-      {
-        "title": "Canada Bets on NATO Partners for Its Expanded Submarine Fleet",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORFlXWWNrTzdSYkVDRW44ODBMX0xrZ2N6Y1NUNzlpUWs3R211ejFxR2Q1TFJJYW9ZSGktekpFdTNrdU5wellOU2J3YlRoZVFNZk1PV3FVRkptV1RSTWwzVWR3SFVXYjFhOGFsT0VNZmxCN19sRFROV0xIWnVXMlF0NHVrbUQ5eGYtLVJ4amwzNzM?oc=5",
-        "date": "2026-07-06"
-      },
       {
         "title": "‘It’s Not Going to Stop a Hypersonic Missile’: The End of Canada Nice",
         "source": "Politico",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNN3V2c0oyVU1DRU1ZSTBzbjdVV0YtaWZtRHBiaFlGUHdrTWtpemdmSnM2MkpyWDZMcFV1UW8wODBwTURNRU1WbXdydHBhbXdPVWpRakJMSTQtX2VlUnNrcS01RG9DTF9hZl9UNnFUS05ZcFpzR00tNE8yZDJpNHg4YUF5U3g4cW1nOERxZWN2UnY5cHFKLXUzdzczVzZpejg?oc=5",
         "date": "2026-07-03"
-      },
-      {
-        "title": "Fractures Emerging in 86-Year U.S.-Canada Military Coordination as Trump’s Alliance Pressure Fuels Anti-American Drift",
-        "source": "economy.ac",
-        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1VQUJqaGN1cmNmMWJXN3JkTTVFUS1sWW1PR1h5TDZ2SElfZHJWVVdKS29mLUtBY0w0Z3prU1gza2ZfallJeUdreE1GdV96cVpHRXI3U3hLbw?oc=5",
-        "date": "2026-07-02"
       },
       {
         "title": "ALGORITHMIC WARFARE: Canada Launches Its Own Version of CMMC",
@@ -9938,6 +9926,18 @@ const ARTICLES = {
         "source": "North Atlantic Treaty Organization | NATO",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOb0lJaHFFWmtoOVNvV3NULWl6SG03alRxX2xrUlAxNkRCMUlQU1NkWEdpQjFhSWRFQ1hpckdfLWN6ci1waU1iVVQ5UVdXb1NwRHdCT0dpTTZaallpcFR3SVJudmluSjdkcXZobUpYTTlhSUtJXzZjSmppV2FkZHJBTnE0UmFaRGhOZ05xX0Z6TWxqLWdndXc?oc=5",
         "date": "2026-06-17"
+      },
+      {
+        "title": "Canada Is Spending More. Is It Buying Military Power?",
+        "source": "RealClearDefense",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQV9LazZEcDhGODI5bzc0a1JoRVhHT0dDZ05sdkp1MjRxWEtycFhPU01jNjdKcjFaNHZkZG1ieWRiVmF3a21RMWxRVHRHeDhud21yTUUzRll6WHJGcWZLWnczQUdnSUdsUEZvUldwUUlneFRxZU90MmFtTFo1U3pvc2RQSnRaSUFldk56OXpkZGtobnVub2xVcVIxMWlQRU0zZWhNb1F6aS1CQ3F1TzFVcXRUZ2V5YkRr?oc=5",
+        "date": "2026-07-03"
+      },
+      {
+        "title": "The Politics and Repercussions of Washington’s Permanent Joint Board on Defense Pause",
+        "source": "CSIS | Center for Strategic and International Studies",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUW4tSkI3MTMyQlNrSmJWYTFkUG9UNkNINjZEXzRLWlpnSGtOV3VjcHZOSnlrUjhJSlFFcjV5QjZERXVOTll4cHp6ZG9pMzkxTjRKTmVFSmttZURjS2JUejdKd0xKMmhGaUl0Q2JUQUVwVmx0YW9QMG1GSkwzVS1EM3FSTHRTWllGZVdZYnlQNmxwOXhGX2NQQk5jUVFtdV9OUTVaNEQtQQ?oc=5",
+        "date": "2026-05-26"
       }
     ],
     "united states→romania": [
@@ -9992,15 +9992,15 @@ const ARTICLES = {
         "date": "2026-05-01"
       },
       {
-        "title": "DLA, Norway discuss common concerns, supply chain resilience",
-        "source": "dla.mil",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWElpMmZsaFg0SURHQlhrUWt0SEFQT3F0Skpnb3Zpc2V0RTJ6MjA0eFB0azEtdUZjTFJDeGc5cDh2VTRwZUhKZTVvMl9QcG81Q3JPVWwyTGhpMGVweHJnbkxNTnBJRkJCLXdaTGtYNEtCeTNfcUZOenUtcTB5Y0NuUGZYQ0MyY2h6X1dfRy0xNkRyQTFhdGV6Wjd4QWtGZzUyTlB4WnVMbjdGam5qSjF0REY1MEZkMEhCODdSeXlLcWlfZi1sWkJB?oc=5",
-        "date": "2026-01-12"
-      },
-      {
         "title": "NATO Is Expected to Step Up Arctic Security. Here’s Why.",
         "source": "The New York Times",
         "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTVQ2WXJzdWtEY1V6WlF0azdIRWxrN2I5cWpIRUxfLXRVeEYxbGJ0QW5GWW1VZm9MclE1RlBkREV4YU1zX3BEbmI3elNncHVZODI5dTdfMF9PNXlJb2szNjBuVGxNZXNRN0RIWDYwZF9lVUptYXU3cVhaeDRiNjY5SXFnX3JkeTg?oc=5",
+        "date": "2026-02-11"
+      },
+      {
+        "title": "Russia May Launch Arctic Ground Operation to Defend Nuclear Assets, Norway’s Defense Chief Warns",
+        "source": "UNITED24 Media",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcEl2RTNqc1NjN3duN20yczcxWWZNY0gzNmg2enlIa3pHdWRwbnlET0NMV200VkRTaU9icEp1Ul8xYTlPVGJPa0ZvSFZxdHRieXFEdVFVU0NtUUNwY2dZdFd0LUh3NUhYa3RjWC1IUTFBeW9qZm9mVjF6ZkJLMWQ5amZvczZlUm9ROXVQZ2RCVl9lbDV3b0tYWTc3dkpFRjBRaEltRWJxN2tfNTZkUkJSSF9YcGM2bGVzZEs1WTBsMks4cm1zQ0NaWHJ3dVNyYWVKTF9KMA?oc=5",
         "date": "2026-02-11"
       }
     ],
@@ -10050,16 +10050,16 @@ const ARTICLES = {
         "date": "2026-05-17"
       },
       {
-        "title": "Can Russia Revitalize the CSTO?",
-        "source": "The National Interest",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOY0I5OUJaY2VfdXMtN1JFVkU1MG9RZV83MWN6bi1JMkV1bTB1aEVVMnlyZkRCX3pxdTZTdGxPX2p5VzR2TlhBV3VLSzhYR0dmWFpyb1lwTDZVWlZkeWprWkRESGQ2Yk41RUZTaHVNTm9fRS02dlAxeGdOVXpWVVJySnVrb2RfX0o2RVVLSQ?oc=5",
-        "date": "2026-01-23"
-      },
-      {
         "title": "Belousov’s Bishkek Warning: Russia Uses SCO Meeting to Target Outside Influence in Central Asia",
         "source": "The Times Of Central Asia",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZF9hWmJtczVmaHh2UFJnV3U3OEZDWlAzYjBVUTJMM1BMZDl2X3FLdVkzQ3FVZUR1ZExneWdDV2tmVURGV3BkYjBQNWtqQ3pyS25OT290Yk01dnVpOEJQbGdtVFkydnkzak8wblVvVGhqOENtalFYVkl0M2NGTWhQR3lmTkdiZ05ValpNbUhZTW52dmxENnljSm9UVEVkUlNNaXRkSmV6al8tajBrTUQyaV9QX3k?oc=5",
         "date": "2026-05-01"
+      },
+      {
+        "title": "Can Russia Revitalize the CSTO?",
+        "source": "The National Interest",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOY0I5OUJaY2VfdXMtN1JFVkU1MG9RZV83MWN6bi1JMkV1bTB1aEVVMnlyZkRCX3pxdTZTdGxPX2p5VzR2TlhBV3VLSzhYR0dmWFpyb1lwTDZVWlZkeWprWkRESGQ2Yk41RUZTaHVNTm9fRS02dlAxeGdOVXpWVVJySnVrb2RfX0o2RVVLSQ?oc=5",
+        "date": "2026-01-23"
       },
       {
         "title": "Central Asia Diversifies and Indigenizes Defense Procurement to Limit Reliance on Moscow",
@@ -10094,15 +10094,33 @@ const ARTICLES = {
         "date": "2026-05-14"
       },
       {
-        "title": "‘Pure stupidity’: Belgian PM slams Franco-German fighter jet failure",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaGxkR2tBRGxfUkdBeHVkTGlRNXlQWmxpY3dhbllxRk5QcXc0UlByOXJUQ05VOHNKVlFMSUZmeE1xWGsyVG1lcFAxSHJCTy1yMTNTLUhrcGRKSW5aTlRrRm5zNTVjWDBOWTlsWHExS0M2S25LQ09qVmEwaG9UbFF6Nm5vRldzVEtLalk0LUwxdmJwRm9EQ3JPLURGSnE3c0k?oc=5",
-        "date": "2026-06-09"
+        "title": "Belgian, French Forces Seize Russian ‘Shadow Fleet’ tanker in North Sea",
+        "source": "USNI News",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdmliNHpDYmZ3bnVnS0VLeDB6aXRtSDVhRzRVdGE5bVJMM3kycWFWc0ZleTJaR182NFdqbHJ1Umh4Rnp6YWpQQ0ZjbEZRWWk1S2FDeFRCS0wwc0VWUlBVZG9mcGNicVRZX0VVb1dndTYtajc4TXlIdjhlcWJOVVhrcXhYYU9iNkZjcTBUcDZHaXRlSGxCN3J3SHRZQ09jOU5oWlRJ?oc=5",
+        "date": "2026-03-02"
       }
     ]
   },
   "yaptirim": {
     "united states→russia": [
+      {
+        "title": "US Senators, Administration Agree To Advance Russia Sanctions Bill; Kyiv Hails Move",
+        "source": "Radio Free Europe/Radio Liberty",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVHdDUTJ1QW1mMlRfTmp1czNETXhlVXYtRkhPRjF1U1NIaDZTcjFGOWkwUl9tWDJWMFpaclg0czgwckdyaDJ3dmlGQWxGY1IwZWt0S0F2LXd0WHhYLUdCbUNncHdqOWxjR1prZFc1U0ZzbFVhVE13T0puR2xKSGhqWTZWeXE1bEZpTEHSAYwBQVVfeXFMTnB1Qmk3QWJUdTdiNk1EMnV6S2laUmU5NVJ6azNUV1hNSGVmOTBaam9ISXlhNTFIOWdBcTlXaE44bFNQWWN2VktoZ3k4bzlHS1YzTEZqNlJzeUpDYm1vcUpnUjFlS0tqU2o0S2FNMWZEMzNfSUhERDhKb1BhaHdZUHZtRWxWZGVOSXVydlI?oc=5",
+        "date": "2026-07-10"
+      },
+      {
+        "title": "US senators announce Trump deal on Russia sanctions bill",
+        "source": "RFI",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRVQ1NE5rUHRITTF4R2FrTmU0TmpITFhDQU9mNC1rYWd1TEZyelBmXy1Lak9BbHlfTUZEVUNqSndxQTZ5WjV2ZEU4SGhjZk9ldzB0dXp3X1BCNktWVHQ4X0l5Y3psSUxjMjNjWHl0aU8teURXZlJpVE9TTVRLVGFHTHdpVldIV2pDa0ZlTkJvNWJKbUFvTE4xWmE4TTNFdFpnaE1xYVNZQ2dEZw?oc=5",
+        "date": "2026-07-10"
+      },
+      {
+        "title": "Bipartisan senators announce agreement with Trump administration on Russia sanctions",
+        "source": "Local 3 News",
+        "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPOS05MW5kU1c1UlM3dzBIbF9PSmJGMzlCOTNRWFAxRmtEcHBQQ0s5bkdWYXdlTi1UdHJkWE5JS0IyTV9wUEVWOUxVNG9lSVl4aEtoQzZmSXJaYjNjSVJ4aUJIVmE1Q1BZNHdpWlBTVnNUQkdVOEJ3R0xTS0xId1lRb3dKMVlUbzRld1hRd3haVWxvemtSeUJXZGl6eDczZzN6dGFBbWNUenV3ZklnNF8zYzJra3c4ek16anVHdjlMMWxVbGoxV3BLaTlqYUpyMUF5ZWJqMG1QMDI1dk4wZUNSempNTnJjcGVTcTBBWXlXWHp1Qzc1OElfZTlHOWprQTg5ZS1GVmhWSllPODQ?oc=5",
+        "date": "2026-07-10"
+      },
       {
         "title": "Graham Announces White House Deal on Russia Sanctions Bill, Says It Will Become Law",
         "source": "UNITED24 Media",
@@ -10114,27 +10132,21 @@ const ARTICLES = {
         "source": "Al Arabiya English",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZUJlQ0hvcnlpRjdhRkdlVl9vcHNWaVNldXJNUll0TnJkLWRWYm5zaTFscFZnamY3SFNmZmp0QlNIM2Q3RmFlU2dNN0dVZWJzbkpxUU5HdnlqY3JVa3BiRk5jRGVfaW1tUTdTbC1RREVZenRsNzQwU2xBM3d0MnFYQXVtLXo0c19ZMEQyUG9mQnlNbEt3NVpNZ1EwVldwVk1oTFJmT2VMWlFWdjBKaGlCTndEckxEQ1RiQXdxZ3Nn0gHDAUFVX3lxTE9wbVBHQ09VYWtzODhnRjBWOEtQcnk2TVZQSVUxVnJOMkMtUzJpNlU2bl9jTklPak1LWXZ1dmRhb3o5TmJRMm9McVRIVmY3RmQ1LVV0MFhpd3NrUWxWYkQ2MGR2dW5UNjZ1NTdjMjVlY0ZsMW53OWpwMzRNVXdYUWpCYi10bTZCODNkbHFWT184ZW53UTh3aG56akVLMTJaRzEteU9VcGdKS0drOWQwZnBQcWl5aVVrNVdxdEFDLVFlTFp0TQ?oc=5",
         "date": "2026-07-10"
-      },
-      {
-        "title": "Trump signals he may reimpose sanctions on Russian oil as G7 refocuses on Ukraine",
-        "source": "PBS",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUDRxWXZmbi1HYnhVOHI2Tk1jTExLd1JLN0Z3a3R2R3hZUXhfaFFiUGFkOUdSTkdfLXNJd2c1cE92ZEtxcHUxdWFzNmpFYmN0Y294SUpmamtsSm91SW56VUpUNEZRV3c0US1QNFBqcXc2SHlfWGNfOTl5NVdwbEcyYlZxUVoyLVZSYWc2SDRkZ3FVdFlRQUZuUUJFWmZ0aVRmcGxPRWdFMTgyczMzRjNMS0FkNGY2aDTSAbwBQVVfeXFMTkQ4d3JRMDAwZGZfcFNabUNtek1ONGd2UUFoOFRUZ0dBSmd3Mnp4TkFJZFJTaW9GOUhiT3BRaHF4bHRUQjBELUpVQTI0bzhuNzdacmxpNFRHVzFWSzBiVlFFZjRWNUVGeGpuWFd5Mk9WeGwyeEYxWGdPRHpfb255QTRmakM1SXYwS2pqRTRmVDk5YS1CaVpwa3puV1hPdVlyMEtOZjRLR2ZZeXVmR0NOaUZYOXNpX1ZPZXhHbm0?oc=5",
-        "date": "2026-06-16"
-      },
-      {
-        "title": "G7 leaders to boost Ukraine air defences, tighten sanctions on Russia",
-        "source": "Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORjJZQ1JDSzR2UkdBZXJpRHNPaS1tblRUWW0zbDk4NU1aX3ZodlJFQUFIQzdkeXBreXRpSW5VcWMwWVBhekdNczZCMTB1aVJvcVlkUEdpTkY1N1B2T3lVMm92Ym5mWmsxdXI2THJZR3ViQjllWGVkeG9MTHgzVGx1c3A0Z21EQ2dZZ1h1Y19wY19haXUxQlc2MlQzUnpZa3NZUUZzV203eVNhbmg0b2fSAbMBQVVfeXFMUGNjZkJ6WXhhcXp5bWJKclBKOVpnLXQza2g1Qy10WHVjNXVTUHRhOHlPRVRLUjBsdWlRMl9FRlBjaWJHSk9Mcl9OSkIyT0JoVUZHYlZwR2x5bk1YbGc2dzFjMTJld3ZkTTB1eUJoM1ozbjZjZUtSQzR5S3F6ZHNvN25Zc1FpUFdzOVpVZlVVQVpEMjFkRmlPQlRDY1FDLWc2OG1mXzU4b3JtMEs1Y3A2SEVCcWM?oc=5",
-        "date": "2026-06-17"
-      },
-      {
-        "title": "Trump hints US could resume oil sanctions on Russia as G7 ups pressure on Kremlin",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNGdHUGplOVktX2t5SWFqSUJTVFFBWHQzMHk3R2tnTWlmN3JKUmN1RFozb0JiMjRpUVhlMDdFa3I0LXFTS3VsQVplSkpBNnRRTFAzV1RGTzItamRBQTkwQTFqM290YUphU1Q5R1h5ajhXb19NTndrZzRJRXdZXzhjblZuYy1RaVV0QmpaY21CQmdoWlZC?oc=5",
-        "date": "2026-06-16"
       }
     ],
     "united states→iran": [
+      {
+        "title": "US issues fresh Iran-related sanctions as conflict flares",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQM3VkRHJQX280dm52aTMzUkNlOHJKNVNFQ2g2d19JWVc4dkVCMzBiSUhyR01LaTJkalhNQnMybnNrTk9QVWZwSng1TXZGalh6QnVsekV5bVVKN3kwcE02X19TT2ZuZzFfeHQ4RDlHSG84eHFjaEsxRUtlSDlVanpfb2lSVE0zVnhVZlpWd0JuR1VEeU9BQ2stcVpmMll5SjcxUWdTWVk1cmIzUQ?oc=5",
+        "date": "2026-07-10"
+      },
+      {
+        "title": "US imposes new sanctions on Iran, IRGC-linked entities following attacks in Strait of Hormuz",
+        "source": "The Jerusalem Post",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBzTVRLWWdhRGJ5OU5hVnlhUHU0NUlDQ3RHSENkTGhpVWNtZWJnTUFHcXhqOHdLSG9IZy12LXE1UTV6TTBmOVRnZktwR0k5ZHhscDMwZE5jNzNfRGtfRTlZ?oc=5",
+        "date": "2026-07-10"
+      },
       {
         "title": "United States launches new strikes against Iran, reimposes sanctions",
         "source": "upi.com",
@@ -10142,27 +10154,15 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "U.S. revokes Iran oil sales authorization after tanker attacks",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZVRxZXNWUFRGenJ0RXR2cDhVMk9kYUY1a3RaQ1dWT2RPaDMxT194b2Z5WHV3WUZOSktFY0RXTU91ZzZxaUJRZDlrTWZRYnppYUp4Qmpzd2xwQW5MbDhNYlRwLTBpcV9fdDhBdFBYM2F0Q3dodE45akJ4dVVFVVRjbWZTQmx5TldzUGNCTmxpWVhHUdIBlwFBVV95cUxPMDE4b0Zqd0dKVnFrUTZVc25ZTjFQWHkxTFVpTlpNLVlTc2w0Y1VkT3NmbFI5RHoxTWRtYjBpRVJnMmxpbTNvZ3lVeFVJYlEzNF9IZzdPWU9uRktfeHRMc2xFSW5TTFBfcnlTdjROSzItcUpfbDhmWDFNMTk5cG53Nms5ZExHbkpqNHZ4LWpkazQxVElSV00w?oc=5",
-        "date": "2026-07-07"
+        "title": "US Expands Pressure Campaign With New Sanctions On Iran's Financial Networks",
+        "source": "Radio Free Europe/Radio Liberty",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbHBEdlNvM2JaenFTOTdMVTh5aTFKM01lcnRaR1dHSGR6MVJVRjZIZTJ3c2tvSU9Zc284RGg0NTJ4dFFZVU5ORUxRWElqV3BsLS1wNnJEdXNqdmE4WnFDbEI1MW0zMktMMHZySHdNelZIZnV6NVdvbTFzV1FWNGpYWnJycUdZbzDSAYoBQVVfeXFMTTFibUpCUGZpWDcxYXdsVEdBcUFQY2drNXp5MnNJa1hhd3p1THF1VEY3X25QeG5FYWlFWTMxRGJNNWtEU2hSZV94TDhacnRvdVd3Z0txajJMaU82bnQ0NDM2WFhzckZtMGQ3Q212NUcxSXRWVEFSQUxDNjloYkhFT01WNTRlS1VXSDV3?oc=5",
+        "date": "2026-07-10"
       },
       {
         "title": "Trump administration reimposes sanctions on Iran oil sales",
         "source": "Politico",
         "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNW1hMndELUdWVmtWZjNZY0VaX25JQWxlVzN3SlIwLUVoUlRtY0RrT2djSmhYaHg0MU1BcTFPaVFUUUF4SlowbDQ1LTRGYks0MjdZN21BYkpqNzZVTU9JczV2WWhmN1hJNkpUTEdvRnQyWkY2MmotTExKWjV4WXBENm10bzVDcWpjR0RNTWo0TUZOUy10bDdwLWh3?oc=5",
-        "date": "2026-07-07"
-      },
-      {
-        "title": "US reinstates sanctions on Iranian oil sales after LNG, oil tanker attacks",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRF9kZUxkQm9QMzgwTWI4c0hrMXRiWkdFWGNOZk9KSkxfcFplSUxKLWlwZGFRWTVCYnRSZzdBRU82eXJMRHduenF5RTF4bVBVSVNVMWcwNkdjUElzd05RcjVya2hsRkplYWhRcnR4ajBhVWphWW5rdS1UZlNBSjFPNUVzcXlxSHhrUWdkZC1pcHVjQUtLV0pzUFd5UXhoY01DaE9zYUQ0V3FqemM1UW8wTm9LUlpreFJfdnBj?oc=5",
-        "date": "2026-07-07"
-      },
-      {
-        "title": "U.S. Strikes Iran and Reimposes Sanctions in Retaliation for Tanker Attacks",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNanZwd1p4OHJCOWJVUlhMMFpUTEVfZ0sycGNKeFFPMjlkelJTbEZldUxUS2VldDEwQTM5Mlo3b056ZkxZTS0xdFBrdTZaMzFvOW5jZjJCSmdiS0F5SWxtRGpka1UwMVB6RlJtZHpoNFI0Si1HSlFkck1ERUQ1eXB6b2xtV1NfWUZBZ0E?oc=5",
         "date": "2026-07-07"
       }
     ],
@@ -10174,16 +10174,16 @@ const ARTICLES = {
         "date": "2026-05-15"
       },
       {
+        "title": "China Sanctions 56 U.S. Firms in Rare Earth, Defense Sectors",
+        "source": "조선일보",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbGVLSkVRMDBlV1Qta1JfeXp4ZmZ2Q1lJYktCeWY1QjhLTUpkOFRYbHRXZmdXWC1CLU90VGhVOEZKT0FBVU1WdlBIVFk2emxQaDVaTGlVaG5fbWZLUFVmaVc1VVltOHQ3UWdETnNVVFEzYXlfd2VPTnE0Z1ZKWFlfOEVHd3I?oc=5",
+        "date": "2026-06-22"
+      },
+      {
         "title": "China sanctions US defense, rare earth firms in retaliation",
         "source": "Asia Times",
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRkxPb1FJZjRZRldVU3B3OU1XS1NfOWgtWV9VUmY0QUhnSldvZTV6NXpQekNVcFVpQU9hOHpLekROTU1QeWlIbmZudG5VeWpraTNZdzktN2hBa2NtV0MxMDZxcGhXbFhqR0VnR0ZXY3RqXzFrc2ZYZjRRaHhDTUVXMF9yRllxdG8wMFduNkFldWtHSXc?oc=5",
         "date": "2026-06-23"
-      },
-      {
-        "title": "China hits back at US sanctions on tech giants, restricting its exports to American defense firms",
-        "source": "Toronto Star",
-        "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNTDhVWEh2bWp4RTdCUFJjMjZMcG1SZm5TVzBNVEk5cnB3Rzk2Z1ltLWZTV1pSTGJGeU01WEViN284MktiWmlrRV83b0NyaFZDS21hN3hqM3A3LWk1OFVkeXBpLWF6dmxDbXlINlJ5WjAzeTFMcmRLM1Z0aHdmT0l1aDltVEJGckh0LVlQMmZrbXJrR0pwMU04TUhRNzRPREdyMVZSUWFzNEJvNktIVEppNWVHemJtV3k1YnJzV25GN3h2eUUta3RyX2FXQUxYSHJoSUEtTEd4SHp3ZEVCd2lwZXlCcjNGeTA4eUltdkx6UFk4SV83ZUt4WUx5WW5jaER5bmx5a0VaTlkwSURLS05Sd3dVYTRnQ3E4NDFhSVhmUkk?oc=5",
-        "date": "2026-06-21"
       },
       {
         "title": "United States Sanctions Iranian Financial and Shipping Networks",
@@ -10192,17 +10192,29 @@ const ARTICLES = {
         "date": "2026-05-19"
       },
       {
-        "title": "China sanctions 10 US firms over Pentagon blacklist",
-        "source": "CNA",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdjEyNHExMjRqbU9WOFFlQWQ5M2tWWmp6bHlJcDVNOW92NENiNk5ZUk1uS191d0RWR01JOFhWQmUxcm9ER1g3a2RldTRMM05VdmlGRmNVSXUwQ3RBRmtOZXdJTXJTR1VQZzlvdDZtSHNJRFBEQVZSblhLMFJzemE2cHVXWjA4cTA1aV9rSF9vVmZqdnpPUHVzNllLYw?oc=5",
-        "date": "2026-06-22"
+        "title": "China hits back at US sanctions on tech giants, restricting its exports to American defense firms",
+        "source": "Toronto Star",
+        "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNTDhVWEh2bWp4RTdCUFJjMjZMcG1SZm5TVzBNVEk5cnB3Rzk2Z1ltLWZTV1pSTGJGeU01WEViN284MktiWmlrRV83b0NyaFZDS21hN3hqM3A3LWk1OFVkeXBpLWF6dmxDbXlINlJ5WjAzeTFMcmRLM1Z0aHdmT0l1aDltVEJGckh0LVlQMmZrbXJrR0pwMU04TUhRNzRPREdyMVZSUWFzNEJvNktIVEppNWVHemJtV3k1YnJzV25GN3h2eUUta3RyX2FXQUxYSHJoSUEtTEd4SHp3ZEVCd2lwZXlCcjNGeTA4eUltdkx6UFk4SV83ZUt4WUx5WW5jaER5bmx5a0VaTlkwSURLS05Sd3dVYTRnQ3E4NDFhSVhmUkk?oc=5",
+        "date": "2026-06-21"
       }
     ],
     "united states→venezuela": [
       {
+        "title": "To Help Venezuelans After the Quake, End U.S. Sanctions",
+        "source": "Just Security",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oOEF4Z2JpR0RmbjJwMjlQTVI2VU1LWVROZDBJWVh4alUtYTdTQXRSYkxPR0hlQ0NMQnJtREpCdG5Vb3JLNUwyclJ1UmtLdzdqUHI2ak03bkV5X0ltREZ2b1EyZ0FiY2ljdko5eFpMRTZNMldJUTVaS19OQUhGdjA?oc=5",
+        "date": "2026-07-07"
+      },
+      {
         "title": "Venezuela earthquakes: How will sanctions impact aid operations?",
         "source": "Al Jazeera",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNc2hIb0dWcU5RamdQcnBkRnljR2pTNmhhVERaUXVVT3NfMFdsdjVSSm40NGppYnFnb1E0djZVRFU3dWl5Z0RXakQ0YUl6QjMxLVFXc1RTVG1DeUpYcmQ2NnpwcDRTdGU2Q0lYRHVobDQzUk12TXF4b0tsLWV2cVhUY1g0NXhSVjdsWjk3U29TQWR4LU41LXFHaE1KcEVGLVHSAaQBQVVfeXFMTkk1bXAtWWJjUDhxbzBfbkJINlAwZEQ5TWprb2l5YWc0M3VzY3hERlptVDlJZzNVSnhBal92TlhwaVRXaFNZbUpHSTlnWG1nNFdERjdKa01kbkJ3ek5VRDRxc05XTU1tb1pQR3k2U2NxSFgzSjRBVVRVeXdUUDZZVGRRbUY1VUNSMjVucHBSUVo1ckV0LWxJMkE4UU5SUk5kUHFYQ3I?oc=5",
+        "date": "2026-06-25"
+      },
+      {
+        "title": "Advocates Renew Call for End to US Sanctions After Devastating Venezuela Earthquakes",
+        "source": "Common Dreams",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBqcWYxZW1RTzRLYmVNUTYzMDVIRlJCbEpjb1JwS0Mya0swUWxOWDZQQjBVSlI3c2l0YkU2eG5qNG5EdERJbXo3SXlubWRJQlhKOVNmbVduTmtQT24zMDdlQVJyQXp0U0lNUGJER25xVFB3SVp5dGc?oc=5",
         "date": "2026-06-25"
       },
       {
@@ -10216,18 +10228,6 @@ const ARTICLES = {
         "source": "MercoPress",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPV1M3UlpBd3VvaXVXb2RCRUxiNHJSYjlDQ3dlWE40U3p5ZmNGUG1ZYmVWWHcwb3ZlME5WWjQwZ2UyYXpvdlhxNHUzN0VhQ2ZuTS1OM3hRZ2QtOTNpZzhJcXUyT1kyQl9fTlFtTU5GUEVmY1lmaU8xd1dxZFlxSUoxQ3hndDR4UXc1bjFqQmVSVFVNYk9FZjQ4MjNNZTc2VmItOHBnVEZsUm9NSkZpdUZnZEtsSmxvSmhYWkJHNg?oc=5",
         "date": "2026-07-08"
-      },
-      {
-        "title": "Advocates Renew Call for End to US Sanctions After Devastating Venezuela Earthquakes",
-        "source": "Common Dreams",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBqcWYxZW1RTzRLYmVNUTYzMDVIRlJCbEpjb1JwS0Mya0swUWxOWDZQQjBVSlI3c2l0YkU2eG5qNG5EdERJbXo3SXlubWRJQlhKOVNmbVduTmtQT24zMDdlQVJyQXp0U0lNUGJER25xVFB3SVp5dGc?oc=5",
-        "date": "2026-06-24"
-      },
-      {
-        "title": "U.S. eases sanctions on Venezuelan oil as Trump seeks to boost world oil supply during Iran war",
-        "source": "PBS",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcGIwWWJ6NmJMSnhhbkR4RGg1S1YzZG9pY2NOTGNlWFZuMy0wck0xTzdfLTJWLUgtTUU4THFMcng0ZTFYR1hqTU1Pd3dONWQ0Vk9vcjJmSHpaMUdlRjlqR0RNeXB6b214MzhVZ1BPdHBVZ2UwbDRrbnI2T28zMjQzWU1kSDV5NkEtQ1lxRjczRUJrdnAzNGdRaG1XdVk5bm12U0xUUG1qVlVKWDMyblJVZkdzdlozR1VQY0NBbmxxMzR4WllXLUUwcNIBzgFBVV95cUxQWkNpWnNqMlA5WEZDUU5sMl9xc2s4Z2pYdnpsNDd0bGtlaDFJYlNRampTUXg0bXJVWW9rR01QQUhyN3p1eWE4UmFuajZWZmhDNUhhbzJoa0U1ZXdpQWdlTm1GcW04a2lONTVWUUZ3NWhad3ZsQzI0dlVrWm9EZUNWSVhBSlV4UlRiV0VQT3R1bG1OQWNwZHF4dzRWWUt5NWJkS0J4eDRONnZaWWN3eUJYTU1uTi04NE0zYVdpSVh5Qzhpd19Jbm5IM3hCQUllZw?oc=5",
-        "date": "2026-03-18"
       }
     ],
     "united states→belarus": [
@@ -10290,12 +10290,6 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
-        "title": "UK imposes 70 new sanctions targeting Russia’s shadow fleet, military supply chains and finance networks",
-        "source": "Georgia Today",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQczhMTFlXUWtCM0VsbFNqVi1VZ2phenVvand0MUZGd1BkeHlpa2tCYUUtNmwyaGNXN3dvSXN4MVpfT0VmVlRhYTQ0VFI1TFN0aGRKQTJiRjR0anVqUUJiRktBUDJ3bWoybTFJY1ZfY0RRNGYxbFk2SHJrVmgwcnRDSDlLd0UwR1d1azlUWE81SmNIT3NvQkt4dmtVdzBXYnpOaXdTOHU4LVl6eHNxek9sbTk1UVdaODdlWEhtbHlaaC1XcE5aNnc?oc=5",
-        "date": "2026-07-05"
-      },
-      {
         "title": "A New Era of Enforcement in UK Sanctions",
         "source": "JD Supra",
         "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQXJBUjZqQ2cweHZTM1l3UThjT0dGaU9hOExreTdROGZWLW1valdzMWE1Y1B1Vk1qbkFZeFc4ZUlrbkZwQmwyTFB4Y0pVYzJDU2syc1RJVGhzUE5wYzdnQklERE1uTnZOS3BpWW1DOFBCeWxucllUd2dzcDRfTHQtQ2kzRnZudHZmVHhN?oc=5",
@@ -10312,6 +10306,12 @@ const ARTICLES = {
         "source": "GOV.UK",
         "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPQ24tZDVqTm51YVdqbElJY3h3ck42RHNfUzFfUWEyeEdpUEZuTUM5RUdJS2NORU9EV09zWDJUenVwRkt6SC1uRjRkUHI0V0lVNWdnZXBUN0Z3VjJlXy1GLVdhU0s4Q3BHR0YwWkUzRjJvT0hXcUVIRnNFVGFVU3E5c0Foek1kcC1ZOE1JNUt5dm94VUtsVUxDU0NJWkJ1Qk5CSUF3T0VkY3REQ1JQWGl5VWY3WDR3ZkhKcENPZk0wUXlPZ3N1NVprTERLS2JvandJbWJ2ZlVMYw?oc=5",
         "date": "2026-06-17"
+      },
+      {
+        "title": "LNG, shadow fleet, intelligence operatives: UK unveils new Russia sanctions package",
+        "source": "Українська правда",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5BLU9nS3hROGN4ZkVXMUJsY0NSc0ZyeXpvTXh0U1R0TE84YnI1VG8xN1pnWlNDMDU2Q2lZelNwS1FvQ2dOQ0NaZGVNNm8zbVhGSUNUbHlOU2g4WVJFU2xqOWZJdC3SAXBBVV95cUxPb012R3AzNWFuajB0UTF0YmNvMC1XeFlQVzBaUGpRcDVucnUxbnJBUjd2cjhFTDB3Z2xiM0YzdkZoRnEzVjlmTEFlbWl2QldpdldfTGxkSWVqV1l4cy1hTmtzM3dLRGlGaGtyQUtKS0p4?oc=5",
+        "date": "2026-06-16"
       }
     ],
     "germany→russia": [
@@ -10348,16 +10348,16 @@ const ARTICLES = {
     ],
     "france→russia": [
       {
+        "title": "US senators announce Trump deal on Russia sanctions bill",
+        "source": "France 24",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcmhsMUxQRFRQMmZMMEw5RElDYWJlS2hlNHcteG9OX3lnNUM0d3B5T0paVEdYOVB5dzhGMklMNzhkeWZSOGlteENDNllDekxMVzBTWDVmeGtUUXZwczU1WFpJaEVMTGZoRUJxdjA4SkkwcEhpZ1FYNlFxTlJuclpTTE1LUVJrc3NvaEExaHpydHI1MHd5cVRQV3JqNEg0b0M2SUFVVzh3?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "EU narrows ban on Russian combatants to appease France and Italy",
         "source": "Euronews.com",
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTHdCZDRBd3ZsNl94ZklSVmQ2bHAzTjBSN2xITDA4SXFfQVBIRTFrME1mTDY3b181SDBKSDVRNFBaZHk4RmFuYXZucGY1cmEta2w3VnhVVnltLXdDdnVZSG1HbjRUdzNENjRpUHJ6Q0NGdU5KWEMyX01rZHRtVHlHblFOUkFsajhBOHVybjZ3c1pnSVpaUkxLWGNXMVVYRFJweFRyM0NJX0RIZU1kUjdj?oc=5",
         "date": "2026-07-08"
-      },
-      {
-        "title": "G7 leaders to boost Ukraine air defences, tighten sanctions on Russia",
-        "source": "Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORjJZQ1JDSzR2UkdBZXJpRHNPaS1tblRUWW0zbDk4NU1aX3ZodlJFQUFIQzdkeXBreXRpSW5VcWMwWVBhekdNczZCMTB1aVJvcVlkUEdpTkY1N1B2T3lVMm92Ym5mWmsxdXI2THJZR3ViQjllWGVkeG9MTHgzVGx1c3A0Z21EQ2dZZ1h1Y19wY19haXUxQlc2MlQzUnpZa3NZUUZzV203eVNhbmg0b2fSAbMBQVVfeXFMUGNjZkJ6WXhhcXp5bWJKclBKOVpnLXQza2g1Qy10WHVjNXVTUHRhOHlPRVRLUjBsdWlRMl9FRlBjaWJHSk9Mcl9OSkIyT0JoVUZHYlZwR2x5bk1YbGc2dzFjMTJld3ZkTTB1eUJoM1ozbjZjZUtSQzR5S3F6ZHNvN25Zc1FpUFdzOVpVZlVVQVpEMjFkRmlPQlRDY1FDLWc2OG1mXzU4b3JtMEs1Y3A2SEVCcWM?oc=5",
-        "date": "2026-06-17"
       },
       {
         "title": "G7 leaders vow increased sanctions on Russia's oil, gas sectors",
@@ -10366,10 +10366,10 @@ const ARTICLES = {
         "date": "2026-06-17"
       },
       {
-        "title": "The Debate - Ukraine back in favour? At G7, Trump threatens return of Russia oil sanctions",
-        "source": "France 24",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNMkJQalZ6NzFpRVZQbG5JQzJndkxpR1gtQnlYVkl1SmY0cGx5WUhqcnR4bjI4SEF5OVA2NHV4Ny11bkJsM0dNRnJ5RmN0WXRyYjhlQzAweXZfcWdXTGxiSEZoRXRhY3hQWUNYVkFBbnI0OTJaeXZ2MXFzLWxheVlhRER4U2xRY0Rhc3hjSmtfMkRma01xSFJUQmFHeVdDRjBsa2xENFVoWlNGSjBWZVpPNmZMZEp2ZFRTd2xSZ0ludUk3bDczY2tNaE8zVTU?oc=5",
-        "date": "2026-06-16"
+        "title": "G7 leaders to boost Ukraine air defences, tighten sanctions on Russia",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORjJZQ1JDSzR2UkdBZXJpRHNPaS1tblRUWW0zbDk4NU1aX3ZodlJFQUFIQzdkeXBreXRpSW5VcWMwWVBhekdNczZCMTB1aVJvcVlkUEdpTkY1N1B2T3lVMm92Ym5mWmsxdXI2THJZR3ViQjllWGVkeG9MTHgzVGx1c3A0Z21EQ2dZZ1h1Y19wY19haXUxQlc2MlQzUnpZa3NZUUZzV203eVNhbmg0b2fSAbMBQVVfeXFMUGNjZkJ6WXhhcXp5bWJKclBKOVpnLXQza2g1Qy10WHVjNXVTUHRhOHlPRVRLUjBsdWlRMl9FRlBjaWJHSk9Mcl9OSkIyT0JoVUZHYlZwR2x5bk1YbGc2dzFjMTJld3ZkTTB1eUJoM1ozbjZjZUtSQzR5S3F6ZHNvN25Zc1FpUFdzOVpVZlVVQVpEMjFkRmlPQlRDY1FDLWc2OG1mXzU4b3JtMEs1Y3A2SEVCcWM?oc=5",
+        "date": "2026-06-17"
       },
       {
         "title": "France seizes 'shadow fleet' tanker, stepping up pressure on Russia",
@@ -10404,10 +10404,10 @@ const ARTICLES = {
         "date": "2026-06-17"
       },
       {
-        "title": "Russia Sanctions UN Watch Executive Director Hillel Neuer",
-        "source": "UN Watch",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOOTl5RjlKUWRJeEdXVWN1U0EtN2E4dWNiWDJhVjladFl3a1I2b1BwT2FsVVJMbU5INzlJeWljNF9qOUJOQW5BaUNEaU5uSHl5Z193dTJ5RkgtdjBIWFFaNUhsSm03UzRQMTBOZS1HRVlOWkNacnpQLUlaQWVGRDhVb1h6Wmk?oc=5",
-        "date": "2026-06-17"
+        "title": "Putin offers talks as Canada expands Russia sanctions",
+        "source": "MSN",
+        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNR1RpQlRVZU8zdnE4aWNkRFFvX1Z1cUNXaXg3Qkd6dkQtcFpNTmdiUU9XU19qRW5Zb01aTFRPSVdrbjlHWW0yTTlOYnN2OG8zajdWWDl6eG5pbUhWbEdVZ18tLXZVdEp0cDRGY1ZCdHpzS3NPUVlweFkycjFxVFFGTGNndXN2dC00VHZjSEdMZWYtVmFTSndFSzNIMXRPcVVrS2UtXzF1ekR6dWxXRm5LYzJMMjM0b1dsYzY5dHZKendNLURfWE1yd0xNTDJtZUhheUJNVjd0VmpmeHBkS2t2Szk1V0x2WFMzN0p5Mw?oc=5",
+        "date": "2026-06-24"
       }
     ],
     "australia→russia": [
@@ -10430,19 +10430,31 @@ const ARTICLES = {
         "date": "2026-02-24"
       },
       {
-        "title": "Raids in relation to suspected breaches of sanctions against Russia carried out by police",
-        "source": "RNZ",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWklqZVUxb2FmbTk1eTBpYl9VNFpwZU9UT3ZWdm85amJ3V1p2SWFvR3J6dVdMZnhuVjJiZ0paTU14bXd1Y1Y4NzBXZTRxYTIyYzYwS0JDMmt2OGdMdGtFUUVWMUhreGlyUmp4MmI5QzVNTFYtVFRFWUJzT0I1YTN0WXhiNFRkVDFUNWEzc2F5aDN4dXJTQktaRlFJZ0liTXJjTHRDUkNkUm9sX01yNEE3czdCYlN1M2ktV2ZZVkhfdzllVVhvZkp3dDI0Y0c0ZjF3RGpDNmpIUWE?oc=5",
-        "date": "2026-06-29"
-      },
-      {
         "title": "Russian timber getting into Australia by exploiting loopholes, industry says",
         "source": "ABC News & Headlines – Australian Broadcasting Corporation",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMG1WZEIzT2VkMVVGal9NaHdibVBNR0ZrUUlhV1ozUnZFa1czSzBQTlg0Wkd6NXF6d2ViTmdOSVkwWDdqaThzNW9qSWlxX244amVJcHBsTVo2M3FEUWJpY3hQVzEtd2tMbjhhQ2h6TUxrT0RMZXhmbUZ1SGFuVncxcWxJZE16cWlKRlBIdlM3cnQteE9lZXJ1M3JnNUoxNGxvc1N4a09SUmllYm8?oc=5",
         "date": "2026-06-21"
+      },
+      {
+        "title": "Raids in relation to suspected breaches of sanctions against Russia carried out by police",
+        "source": "RNZ",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWklqZVUxb2FmbTk1eTBpYl9VNFpwZU9UT3ZWdm85amJ3V1p2SWFvR3J6dVdMZnhuVjJiZ0paTU14bXd1Y1Y4NzBXZTRxYTIyYzYwS0JDMmt2OGdMdGtFUUVWMUhreGlyUmp4MmI5QzVNTFYtVFRFWUJzT0I1YTN0WXhiNFRkVDFUNWEzc2F5aDN4dXJTQktaRlFJZ0liTXJjTHRDUkNkUm9sX01yNEE3czdCYlN1M2ktV2ZZVkhfdzllVVhvZkp3dDI0Y0c0ZjF3RGpDNmpIUWE?oc=5",
+        "date": "2026-06-29"
       }
     ],
     "russia→united states": [
+      {
+        "title": "US Senators, Administration Agree To Advance Russia Sanctions Bill; Kyiv Hails Move",
+        "source": "Radio Free Europe/Radio Liberty",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVHdDUTJ1QW1mMlRfTmp1czNETXhlVXYtRkhPRjF1U1NIaDZTcjFGOWkwUl9tWDJWMFpaclg0czgwckdyaDJ3dmlGQWxGY1IwZWt0S0F2LXd0WHhYLUdCbUNncHdqOWxjR1prZFc1U0ZzbFVhVE13T0puR2xKSGhqWTZWeXE1bEZpTEHSAYwBQVVfeXFMTnB1Qmk3QWJUdTdiNk1EMnV6S2laUmU5NVJ6azNUV1hNSGVmOTBaam9ISXlhNTFIOWdBcTlXaE44bFNQWWN2VktoZ3k4bzlHS1YzTEZqNlJzeUpDYm1vcUpnUjFlS0tqU2o0S2FNMWZEMzNfSUhERDhKb1BhaHdZUHZtRWxWZGVOSXVydlI?oc=5",
+        "date": "2026-07-10"
+      },
+      {
+        "title": "US senators announce Trump deal on Russia sanctions bill",
+        "source": "RFI",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRVQ1NE5rUHRITTF4R2FrTmU0TmpITFhDQU9mNC1rYWd1TEZyelBmXy1Lak9BbHlfTUZEVUNqSndxQTZ5WjV2ZEU4SGhjZk9ldzB0dXp3X1BCNktWVHQ4X0l5Y3psSUxjMjNjWHl0aU8teURXZlJpVE9TTVRLVGFHTHdpVldIV2pDa0ZlTkJvNWJKbUFvTE4xWmE4TTNFdFpnaE1xYVNZQ2dEZw?oc=5",
+        "date": "2026-07-10"
+      },
       {
         "title": "Trump signals he may reimpose sanctions on Russian oil as G7 refocuses on Ukraine",
         "source": "PBS",
@@ -10453,18 +10465,6 @@ const ARTICLES = {
         "title": "US quietly allows waiver on Russian oil to expire",
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeWxhc0h1U2FZZFM4OGRYMnVqUVNZOFhjOVNmSGtyMlc1VUhIZS1kc2dFV2drRi1qdy1zQklPMjlhVHNsbUpYelhyU0staWI0Mm5BNWp5U2pRaEZfREFpRDJlVVdZcTJvNGZXY0dOYzF2UnIwdWVudGtwMDRUc09DUzZsMklmNlBuTzZTUExLbkJDTkdpRmdXWll1QQ?oc=5",
-        "date": "2026-06-17"
-      },
-      {
-        "title": "Trump hints US could resume oil sanctions on Russia as G7 ups pressure on Kremlin",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNGdHUGplOVktX2t5SWFqSUJTVFFBWHQzMHk3R2tnTWlmN3JKUmN1RFozb0JiMjRpUVhlMDdFa3I0LXFTS3VsQVplSkpBNnRRTFAzV1RGTzItamRBQTkwQTFqM290YUphU1Q5R1h5ajhXb19NTndrZzRJRXdZXzhjblZuYy1RaVV0QmpaY21CQmdoWlZC?oc=5",
-        "date": "2026-06-16"
-      },
-      {
-        "title": "White House Allows Russian Oil Sanctions Waiver to Expire for Third Time",
-        "source": "The Moscow Times",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUWpBTGxXQlg1OVYzNzNYSEhBTTJvZEVNOXh0TWpwZ1dDVlpDcVV6X3gzYk81YjlIaWVpak5zVFNZNzY1Nmt3QWltdEpZaFUzbFd1SnRHb1IxVkg0aFJ5MGRMZ3FRd0tJRGtsYWh3UFFnQWxFeXpLNUZKVTNVRDBoZDNVUjE2ZVcyM0pRVm56dEZJZ09WMm9ld1VmaHc4SHpoZlJRcjRkRURlSXlEdEg1US1CU012NC10SFpaYUJ3?oc=5",
         "date": "2026-06-17"
       },
       {
@@ -10500,10 +10500,10 @@ const ARTICLES = {
         "date": "2026-03-13"
       },
       {
-        "title": "Moscow’s German front company: How the Russian military busted through sanctions",
-        "source": "politico.eu",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdVB2N240dllDdkRXcXE0amtxRkE1cHpTeFpIT3EwNTZoSndFOWVJYmZ3dzNDd2JOZ09hTE1DSktydTJsSkRfZHh4Q3NZSEdnNF9xdVh0SF9vaGFCcFZLZy1zeXRBY0tQNE5TcWQ3dHdXUmJfbWk5RVpnaGwwQV92VVZQelB0M29lTjNZ?oc=5",
-        "date": "2026-05-18"
+        "title": "AfD Russia Energy Pledge Turns German Election Pressure Into an EU Sanctions Test",
+        "source": "EU Today",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1tRGVyOTkzVXJzZjhsWmc5MlUwSnFPRE9pY0p3OU9pcF9ycjh0QS1xcVB4Q0UtdndvazFOUGxPS180WmFTc05hckVEWkRFYjExZ2JvTklvZ1ZWRnZMTWtsRkZXRkV0X2szWWVzQnBaMHdIQQ?oc=5",
+        "date": "2026-06-30"
       }
     ],
     "china→united states": [
@@ -10520,6 +10520,12 @@ const ARTICLES = {
         "date": "2026-05-15"
       },
       {
+        "title": "China Sanctions 56 U.S. Firms in Rare Earth, Defense Sectors",
+        "source": "조선일보",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbGVLSkVRMDBlV1Qta1JfeXp4ZmZ2Q1lJYktCeWY1QjhLTUpkOFRYbHRXZmdXWC1CLU90VGhVOEZKT0FBVU1WdlBIVFk2emxQaDVaTGlVaG5fbWZLUFVmaVc1VVltOHQ3UWdETnNVVFEzYXlfd2VPTnE0Z1ZKWFlfOEVHd3I?oc=5",
+        "date": "2026-06-22"
+      },
+      {
         "title": "US issues new sanctions over Iran's oil shipments to China",
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSFRSdkI1TWxrTWJCT1VHQjdsVjNmM05xVDRDMGM4eDRnbC1xd3Bqb3RoS1JnQU51NERCWVRoVWRlVmppV2Nvdk1iSWM0cmhpQnpEY18yQk5rbmxXSE82X3RuczRfUGdoQzBSSTY4bkNIcnctSS1FSDFGSzJuQ1ptSlM0SENqM0NFeVRuUjBHTGtJWHZRbWFRTzdiYnBwRmlVVTJ2Vw?oc=5",
@@ -10530,20 +10536,26 @@ const ARTICLES = {
         "source": "Al-Monitor",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUVFFNm0xXzBraUhrNmVrLXVOa2RsRmdrTmltOURlVnBoQzktX3hyQ1NLbnJqVVBHa3FkM0VmZjFhU3JTUEk3UjdrNEJyQVBGdnQ0UlgyenpiVm1hOTltbVQxR0hkSU8wUVg2NVBNS3pkbUhxX2VMY2dYTHZJQ19vc0lTRTRpbzhJc3ZqRzJ3M0J0STlBWlBId25CZlNQMnp5T3EyMENjdTlCMUk?oc=5",
         "date": "2026-05-11"
-      },
-      {
-        "title": "China summit is Trump’s best chance to choke off Iran’s terror cash",
-        "source": "Foundation for Defense of Democracies",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRVBCbGI4dTBiOVRBYTZMcjlhbFF5TWVCWG03YThMcGlZSkgwWkotVGx4UlM5QzJhaTE1ZC03dEQtSUVFYXZ6QVNuZTNXX1RvNGRGeHNRZ0hwMjlhdjdjWkhjeDNhWEYzM3UyLWNFVHFmc2VTNXl0U2VWeFU4a3dNT1FrblNMRXBOMHVDR1ZzNFY4bThkdGxmemdoUklqMTBQWDZIMS12dFJIdw?oc=5",
-        "date": "2026-05-13"
       }
     ],
     "iran→united states": [
       {
+        "title": "Trump Declares Iran Ceasefire Over as U.S. Unveils New Sanctions",
+        "source": "gCaptain",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMllTd0NvdXpVNWNneW1xQ01ITWYtM2luTG1aLXQ4MTFFVkdYejRhX0lZM01LZWlHTTc1X3BSWEF1MjBFOXNMbF9RRVFjV1JSakpYMmVaOXNMR2Nvcy0wM2xQY1I0Ry1RNEtGWjNXVG1neklwVEVLcVdEODA1RmN0YUZDQVVScnBKNXV4SmN3?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "United States launches new strikes against Iran, reimposes sanctions",
         "source": "upi.com",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbkJKUldaWW1QdGsySWRjUWZqVmUtLXR0bEQ1dVpLVmxkVXFnbk5qeXdjUmxxYmhmYi1nbUpjSFVRYnR1UkdiT3VORWJNU0JtbXdDNnFjb2ljbkloMy15TVJ0REZmWjlSUDBpYkExQmlxa2s2OTQ5bXB2ek1NTGtrM2Zadjg0VHBFeURYdGd4eWR2Zk8xVEZV0gGcAUFVX3lxTE1reDFMWWQ1S1Rya1RCcDRDVGx0RmZrbV9STnFuNTBSa3J3NGFGMmxnOWlOWXhSMmEwSXNkc0h2LV95US1kdUR3QzNyQXJaWEI1cGF5Zi13cGhYTjAzSFE2TDBvVWFNOV9tV2NlMDNUdXYwWWJyU0dCbmxXZnZ6VXc1a0J3ZXNENk4tR0pEaVdHVW4ybVBVaWFYU1FvRA?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWWVFOFBwd1JmTmxneDZQbENaU05GQVZWcXVlQ2FDOEstMU5MZTdtS0xKRGRtakZDSjBaYndpMWZSVlhhV0FTNG5KS0k1RjVYMk56T0trM3hRVGE5MFJZVVhFd1JzQW9iV2RJOGxKVDFvTUV6N0RzaFhldDRMUGFZRXhlQjRWS2FGdk1KWEpBMGkwTGlYQmZDRHZBVUdyOElMRXfSAacBQVVfeXFMUGVZOTVlOWZQd2gwRmFybDZWRDRaZ0RMU2I1X3Q3Z3R6NzJEc2NKTW5KaS1RLW9hV01rQmRoV213OHE0emY5UjZQVWJ6RmFJZTM0ZmxzUjdXbU5HaDhFYTJiVi1mT1dBekV2MHhsbldCVzJwYkptZVRJd28ybXRpVzJiLTBDV2ZVZGpEOElGSnJDTlEtTHJlLTlsQ1gyMW5hS3Q3X3JPQlU?oc=5",
         "date": "2026-07-07"
+      },
+      {
+        "title": "U.S. Imposes New Sanctions on Iran",
+        "source": "WANA News Agency",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBRQmdBdUZ2Nk13R2FhTkVQMGoxMkYwUzF3eVpQZnlsaVMyQU95ZWI1cFVCM3dsT081RmVlZnN3RWJvZWpYNVIwbXRYemZTT0tZb2t4Zk4yUmRzQTJGcWhhSjZCTVQ4dw?oc=5",
+        "date": "2026-07-10"
       },
       {
         "title": "Trump administration reimposes sanctions on Iran oil sales",
@@ -10552,22 +10564,10 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "U.S. revokes Iran oil sales authorization after tanker attacks",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZVRxZXNWUFRGenJ0RXR2cDhVMk9kYUY1a3RaQ1dWT2RPaDMxT194b2Z5WHV3WUZOSktFY0RXTU91ZzZxaUJRZDlrTWZRYnppYUp4Qmpzd2xwQW5MbDhNYlRwLTBpcV9fdDhBdFBYM2F0Q3dodE45akJ4dVVFVVRjbWZTQmx5TldzUGNCTmxpWVhHUdIBlwFBVV95cUxPMDE4b0Zqd0dKVnFrUTZVc25ZTjFQWHkxTFVpTlpNLVlTc2w0Y1VkT3NmbFI5RHoxTWRtYjBpRVJnMmxpbTNvZ3lVeFVJYlEzNF9IZzdPWU9uRktfeHRMc2xFSW5TTFBfcnlTdjROSzItcUpfbDhmWDFNMTk5cG53Nms5ZExHbkpqNHZ4LWpkazQxVElSV00w?oc=5",
-        "date": "2026-07-07"
-      },
-      {
-        "title": "US reinstates sanctions on Iranian oil sales after LNG, oil tanker attacks",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRF9kZUxkQm9QMzgwTWI4c0hrMXRiWkdFWGNOZk9KSkxfcFplSUxKLWlwZGFRWTVCYnRSZzdBRU82eXJMRHduenF5RTF4bVBVSVNVMWcwNkdjUElzd05RcjVya2hsRkplYWhRcnR4ajBhVWphWW5rdS1UZlNBSjFPNUVzcXlxSHhrUWdkZC1pcHVjQUtLV0pzUFd5UXhoY01DaE9zYUQ0V3FqemM1UW8wTm9LUlpreFJfdnBj?oc=5",
-        "date": "2026-07-07"
-      },
-      {
-        "title": "United States launches new strikes against Iran, reimposes sanctions",
-        "source": "Gephardt Daily News",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNcVpPREpYeVNsSDRGemNlaG54eTZjU1F5MlJrbjJnR3M3eXV6clN1Z1YyR3dSdDlvaDJNamdJb1NQZUNsMU9jRHllSkREUjhzNUozSVFIYUdQUE53aUNkdmNHRHE0NTNyZkdqU1VKZVk1THBJa3BUQ1BWM1FrWUdTdXJEbXlTVV9CRkdIdmNvYThhOVBhVFlqeGQxMkdJMldJcWlMdXZ5djh4UQ?oc=5",
-        "date": "2026-07-08"
+        "title": "US Announces Fresh Iran-Related Sanctions",
+        "source": "Caspianpost.com",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1MN3RkRjAwQTVjUjNrQlNVMTA5UGNzV3B0eFFkbHl3RUd2ZkNoM0NncFBEWGkyaUo3RkFWR2FSTE82YXpwbmp4ckNRU3hQYV8tSkNsdFhRb3YyZVFGQkdNeFZLQUJwUWRlOGhENmFianl5ajVIY1NoZm5n?oc=5",
+        "date": "2026-07-10"
       }
     ],
     "united kingdom→belarus": [
@@ -10584,12 +10584,6 @@ const ARTICLES = {
         "date": "2026-06-03"
       },
       {
-        "title": "European Security, Policy Coordination With the EU, and Media Support: What Tsikhanouskaya and Starmer Disc...",
-        "source": "REFORM.news (ранее REFORM.by)",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQS1MyT3VZbmpad0ZrblZWY3RQS21MRlBXRTdMcU5pWFNjOVFjRHVNMTF6N0VCMnJjNGwxRGtMUm5WMDU1aU91RFZJZkRVYmoxMi03WWd4dk5TWGxDWl8xVks1OElEdWc5YjRLbjhUVVB1UTlyMXBWWUJ2OFZ4VWZFSU1QeUd0elVJeDdzOHg3TDIwamRTV3hoOW13enlrV3ltWkZZYldJbTZXd3hQdmZPZVlhMm92OWRuRU03OXFrd1UtVkxqdUEwRkF6eFNlZ9IB0gFBVV95cUxQdk5Hd2lCNWU2b0VnVW9MOUxLZ1Ixekp1b196cnkxdVRmQXJGdnRqV1o4M2FJZjFkUlIzc0h3OVNLUldheVQ1c1JEbC0tT1NCX2dQazlKSEFyWm5vdVVSY2NpMGNFaVdrWExtUFF4NU54UDViU3Y5blh6b3lDQTNKZi1nOVNjSWp1NDFGQnBhNTRYWlVadXJUMEd4UjlqNlVuaE9sWE1JTk1tZ1FkTEVWLXhrME9fbVJQU1J4TGdialFXUldPVGJCUVhueFhsTl81Tmc?oc=5",
-        "date": "2026-06-02"
-      },
-      {
         "title": "Discussion “Eastern Shield: How to Strengthen European Security from the United Kingdom to the Belarus–Baltic Line”",
         "source": "Святлана Ціханоўская",
         "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxObm1PeTRWbkFZZERiSWtHOVdSdVVINDE2TTBZaFdDWXlxMjgtWjF0UjA5N0p5d1U0UDMtLXl5SmFaTU9zMld0SzBmcVJWcERTR1BFcFVrSnlQV2tZMGtWZXBvOU1XQ1V0RjNWa3RQdjVRVXVSZklhMllfUHZyblktTGlTbEZvMVdMVGNWNHhBdFd1S0dtbzlTVlA5N2gxQlkwTmVQOG5mLTV5cXQ2NVUyWEkzZk1JUW5DMFhUbFhYQUpEYllXNjZqdWZVYk5hZVhjMVAwVzVseDJjaEM5dDBuWGpR?oc=5",
@@ -10600,6 +10594,12 @@ const ARTICLES = {
         "source": "Al Jazeera",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNR2Z6TkZncEEyZ3hVbGZ0QmJHcVpiQ2Nnc2xrTmh3YkZBZHVPRE5sSDhYOEhpRWRROGNuZG1faXRFd3M4bVBrM2hOcXR4TDNtWDROeGdLY2RjVDRfejBRbm1PT3hGR09nZjJSWWNObzYtbzZSeTc4R2x0SWZSaXJ0VzB3NWxQNzlrT2dpdjBSSWljaGNBeDhVOTNpRVNXWGtKTHRoUkN3OExaUWNZZHp4Q0sxbWJZS3RW0gG-AUFVX3lxTE45T0pUQjdmeUtMcWVYTGFuVk5tOV8yUWVmeDJiYlFuZGhPWGlwU21XSFllRDlQS3ZDTW5IaHJxMTRrT2JYQlNrdXIxUFNyT1FKY2NhZm9LbmxVRTJIWkpEWnFjSlh6eHl0X0ZGZ3VQa3lEc3ZZVDZaZ0R5V1hia3hsVUhSbUVZZmRWbWM0OU0wMGFidmZGekNfWW1BbWF4LU1xQmw3eDh4SFpiNkRfN01yWmJTX05FYUh6MVpmMmc?oc=5",
         "date": "2025-12-13"
+      },
+      {
+        "title": "The new US sanctions on Belarus: Strong, but not enough",
+        "source": "Atlantic Council",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbUpOU2k3N3JQS3V1djctdjF5SUVDRFJMVFdDWThwUTNCdkM4Wkd1ZUVmQVBhTDJSS2E0cGlFd2lybC1oN0NaMU5ZdXpvT2Q2OHlPRW5EZndnTjlkUVBuQk5JTGFyVk1WbjlraWExeDFra3h6LWpMcGVZOTc5QTZYQXRrZzRCNmJOY1lKdnBGd2c4LWtUbGJiMHY5anN3S2JtVWt0WXFlb1VURG5X?oc=5",
+        "date": "2021-08-09"
       }
     ],
     "canada→iran": [
@@ -10628,10 +10628,10 @@ const ARTICLES = {
         "date": "2026-03-18"
       },
       {
-        "title": "Video: U.S. eases Iran sanctions after talks, Lebanon ceasefire still holds",
-        "source": "The Globe and Mail",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQzA4LTRoWDg0T2t0dHF5eFg4TzU2aGVHUWhHakQ4cVRNNmI2WFZ3TFZDWVV1RWtZeHpFZWhTZ1Y3REpQVnpZSVZ6SnoyeTNOQnQ4Ym4xTnB2MkhDc2k1R1lmT25pWmdLNTFSOWJ1cmVMcEV0V3F3NHVteUhYZFlfSG14R3paNnFCVUtvVTRIR1dkOWFUcXlWT09fdEh1Qkp1d0hBWWxfY0pPZE1PUF9r?oc=5",
-        "date": "2026-06-23"
+        "title": "Canada imposes new sanctions on Iranian businessmen involved in tech procurement for war effort",
+        "source": "National Post",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOM1BQWTdOU3pKLVJ0VXRDT0lvVFhUVnhmTWN5VXJMQUVmWXVNQmc2alhmNTAxTTVHeS1EcmlIc0lIaUVKek1sRmpiX2o1amY5azFKanU2VkF6RWV2S3BjX0wycHotWHMyMXBCUUw2aGlUTW5TRTFhWUFEZDIwRHZzX1piSTM0ZGlDUmtWWm5YVW9JQVpUWnZwM21TU2VFT1BkeEwwX1pMaE9peTNsa1Jzd1hUNlhLcGdUWml2YXhnNGdWQTMtYVdUbm1PRDU?oc=5",
+        "date": "2026-03-26"
       }
     ],
     "japan→russia": [
@@ -10639,12 +10639,6 @@ const ARTICLES = {
         "title": "Japan's ban on jet fuel exports to Russia includes indirect shipments",
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSnZFRlpGZlI3NlNfREZyRVJaUDQ1RXl6aXlPbWlITE11LXA5bkhGZ0VkOVNDek5tLXJVRWhicWt3Y3hYZ2VITGdpNlY2SmZoYmpld3I1d0FsdWl4M1d3YVhZX3hQY0FBd2gySG5QcGZ2QTl6T3Z1X2FLaXBzOEFWTmtpT0tpbkJLcnpjbi1ydjd6cFFUSTNINzFQSFZRNmNrNUgxcFB0dHFOdVdJa3JSUnp5MFI?oc=5",
-        "date": "2026-07-07"
-      },
-      {
-        "title": "Japan Clarifies That Jet Fuel Ban on Russia Covers Third Countries and At-Sea Transfers",
-        "source": "UNITED24 Media",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQ2dtQVRWbkROSlNJa1gxcmNZU2UxSHE0VVVZTjMwaHVZWWRWT3BIZV9mYmktYlVuVjBoNUhnNkxtWGVQME5pLWJ2aTVUOEhnWHU2cFZOdjBGSEJLTVR6ME04QXdia05YaXVBTG55WFd0aXBLdkJrdlBVU1JaZDhzOXpyNTJFenBVRXhDemlNMEF2b01ta3R0MHl5SzdwSW9kd05xTGJneEtPcW9sa1l5aU1JeDFpM2liSTBLSWRLbWxwRTA?oc=5",
         "date": "2026-07-07"
       },
       {
@@ -10664,6 +10658,12 @@ const ARTICLES = {
         "source": "Inquirer.net",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdzFyVmNHSnFHcnVFYUJybDVDZHNXdFhTTW55OEZCSjlaUDEtbVlHUkZsYThHaDdXQUVxTHM1UjV4NVdSR2xKZEFTdEFTVzFLbjd4ckxkNU1BWHk4bjg3M0RZYzJYQV9lSFN5a0w0U3dkcXo0WXVXQng4N1hUVnFZTy14d19JeHZDSHAzT0o3S3FlNUJLQVlPRUU0bHdnQXhyTExRZU1mc9IBrAFBVV95cUxQeU1JbU5EOVI3U0M5NGhZdUw2bjRCbGNKdzFZWTRoZXRqRERKelBNeEZseHBJWHJpTXdXaEoyTTNEYk1fQjVmQnd3NUkzQWNOOG9DeS1iVlFKRmlBY294ZXRXSWJ4S3U3eE83TWp3aUMybXBKM1RNS1R4TVcyQTU2a1BHblFLNkdJMDBUUjRuSWZBNGpkdHcwYS1OcU5hQmE1em9fSGtkUzZVSnJF?oc=5",
         "date": "2026-07-02"
+      },
+      {
+        "title": "Japan pledges continued backing for Ukraine, sanctions on Russia",
+        "source": "nhk.or.jp",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9NMWNqeWZkSElqMi1mdzFLR1o5T1hvV21POFJOaTdXdzZWQWdzVGZwY2VaSHk1SFB2RXRhMnZBTG1YbkxJVkRHTXFkWTY1MkxOakxlOWlfbDdUSTQwMTVybGR3?oc=5",
+        "date": "2026-07-01"
       }
     ]
   },
@@ -10702,10 +10702,16 @@ const ARTICLES = {
     ],
     "ukraine→germany": [
       {
-        "title": "Germany to maintain Ukraine aid despite political headwinds",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1CTVdSSXlKc1k3THl3QUJJeGpxTjljbG1hSWo4bEhJUWMyb085YlppUW5CMHp5S2xUS3F3VVJKb0NQd3NNSEtYSFpBZUpmUmdabjQ0OXo4TXRBdDJVZ3NISTFTMGRaQm90VE9tQUhieXFzMkpIUnM2SGhZLVFnUdIBfkFVX3lxTE1jbTQ0azZEVktuMlk3UWhQMkRlMzlncTU4aEY0ZmhnR0FIXzlSV2NHTVlQSGJBcFdTLXZfV3BrSlFrWEtseVcweXZRbVRtV3VGcFhBSmZLT3JidndMTGo1OWVBTHJWdENEajFIUHhySzdNQVUxMDRYeXlXYzRGdw?oc=5",
-        "date": "2026-04-14"
+        "title": "Temporary protection for persons fleeing Ukraine - monthly statistics",
+        "source": "European Commission",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPYzJhZHVWUnRVbzVSdGV6MGVLVW5ZaDlXbVZmTnV3OVB6cGVjWHhEWVB3LXlkZnJHZVdFWFVLcDJNekdEcmNyaXhoeDkybmN6SWhZakUxeWlYeWF1UUp2eUhyMjlXLWxiVzhoSEpIYXRseWU5SEw4MHlpNXI1WURqdjFZLVMydDdNeTA3V1lGTno0TzE5d0xnZjc2Mkx4Yi1ha2phdDBRRnVjcDVIdGJPYTh6Rm8tdHpqckZoRXdNRkZ3T3ZvLS1zRGZGVWVUR2loYnc?oc=5",
+        "date": "2026-07-07"
+      },
+      {
+        "title": "Number of Ukrainian refugees 2026, by country",
+        "source": "Statista",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1kMVFHcU5sMmR6REtreW9NaTQ3VmNrVEJqRkRCWHdGcm54cnZ2UDZiZlpOdUJpZGJvd29tcENiZkY2TFVHbEx3YTd5UGE1Y3Qta3UtbG9QSkU0M3BjN3V5UUVHWXowTWVjYVdhTWJRWHZjcFZGN3dRZHRwS0s1LUk?oc=5",
+        "date": "2026-04-01"
       },
       {
         "title": "Germany to Limit Ukrainian Men Seeking Asylum as Kyiv, Berlin Sign Defense Pact",
@@ -10724,12 +10730,6 @@ const ARTICLES = {
         "source": "Межа. Новини України.",
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XT3E1eFN1MXNGU3pxQlhEdlV1bFU4UnMyTHg4dVhmbU1zWDJkRmh0d2lDRy01Wmd3REhfZ2Y2NFRRS3lqd1RFcjFnZGFlRDJhM3FsQnBNRm9MV2xnUFhCcklBZTZ5V1k?oc=5",
         "date": "2026-06-09"
-      },
-      {
-        "title": "Germany considers incentives to reduce Ukrainian refugee numbers",
-        "source": "The New Voice of Ukraine",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONFFkUk15M1BoTkFFbUV3NnBGRE9TeFJ3dGQwSVlRajVFV2JsUnBIU3JUOUFRdHcySlpZZ25xNG1UNmRzT1RpZThabEhmYVloanNlTmtETlNpT2tDQ0xHM0ZxN2tjRGYzQzhxc0NxWHFtM25ScUdJdi1uVUEzalBnR01PeWtkMEtMcDhFTExoYnk3ZzFXeTMyNnNod3RESl9nUjNVc2thc9IBowFBVV95cUxQVGtScFZlUmVWdUVmV2VFUGZLY1FQUmZUN25UVXJCQ2tNX3M3N1FaZTg3ZUh3SHQwMVl6S2UxSG5kLUZYMm9KWE5fWGFWUWVpLUpjSjA2Z0pmc3pVZHNrU09EYUxlbDlySWs1ci1JRXlibmRMNndRd0RTYWY2UGhKVmY1NktsYWk1VUk3bXNpVHo5QkZGSE5sWmNCLUVvVU9NUjRF?oc=5",
-        "date": "2026-04-28"
       }
     ],
     "ukraine→czechia": [
@@ -10894,16 +10894,16 @@ const ARTICLES = {
     ],
     "india→saudi arabia": [
       {
-        "title": "South Asia-Gulf migration tops 19 million since 2010, surpassing Mexico-US flows: Study",
-        "source": "Firstpost",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNS2JFaWdtTzB6djB1YlRoLVM0SWxLSnlFc0hNbDdGX0phQ2ExSFg1TXdlNEpPM0lhQ1lHRDZsR1M0UzBkX0dSUi1aNjRKZmt1ZWk1SFhVWl9NdEhRNENuNEd4SE9rLWYwbDVPTHR0TERuZUl1ckF3YlRqa3RQYW5VSDY4aG5WZndrbWwwQzktOEtvUkxIMFo4dEl5dVViR1RjRnpOZmJFTU9rSm9fUTd4TzdOUEZ0ZVBQY1BzVXFyNEVCMUxUcFR2aE930gHPAUFVX3lxTE56cUVvdS16aFJoS0pDZ0VFN1kyazRvNlhsTEoyUTZZb3VrU3oyelNBLXZuZTZpbW56MXRMRXBLcWtwRkZuaHV6Um1nVWtkcGFDRUFZbGhIM2tLMXltNDJJNmtjVnZHb2pJYjdPRDFBdGt1SHdHb29FRHN3ZkJ3OTNUblQzSmFTLTR1T3pEN0NUQ2RDU0RWNU5zMTNKaGQ5R3JSeUEtbGZSVmtOTUZMc1MzNU9sbUIxVDhmdnptcHhkNGE3dEtFYzlZOFNYS3R0OA?oc=5",
-        "date": "2026-06-11"
-      },
-      {
         "title": "Iran War Exposes Structural Flaws in India’s Migration Policy",
         "source": "Frontline Magazine",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSk9qX0ZxeVJndExGRnpIbTMwNW9NaTk4Tkp6cEFBY3V3SVNJcERxcU95RF9HdEpNcUIzRnJtdXlkazhRTDVpUFJyMF9KbUJUZnpaYWdGTHNWUmxWaERvcUQzUVhjNUZxTmlrTnBuMEsxUTlMN2FPUU1QWGluSWtNMGNnbS1rR0FHUXgtSlF1VkZyUUp4SHk1V2UwTzROR3FGLUNCc1h3VmFNQWdqVExJOHlOems4VlQ0ZEltMkdR0gHEAUFVX3lxTE45dFYxbXBhNjVsOFA1LXFMVnFzd25idks1T20wVU1VM18tWlVxVUVTOERpbFRNNDdMZ2VtTnZ6QVVNZGZIbjRmZXUtbzI0VTVacEtEN0hyYUx3OWZLcERLb3JNV2lvZmtMYWYyWkk3N2JudUFSbG9OcUZ3ZWlEYVY2MnFCMk1zQmNrMzYtR1BWRXFRcDc4QVJ3Rkh6NFVNdldyOXlwTmFkSXB5cEdSTHNHcmRBdDN0T2d6bGMtU21IZFZmNmo?oc=5",
         "date": "2026-03-13"
+      },
+      {
+        "title": "South Asia-Gulf migration tops 19 million since 2010, surpassing Mexico-US flows: Study",
+        "source": "Firstpost",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNS2JFaWdtTzB6djB1YlRoLVM0SWxLSnlFc0hNbDdGX0phQ2ExSFg1TXdlNEpPM0lhQ1lHRDZsR1M0UzBkX0dSUi1aNjRKZmt1ZWk1SFhVWl9NdEhRNENuNEd4SE9rLWYwbDVPTHR0TERuZUl1ckF3YlRqa3RQYW5VSDY4aG5WZndrbWwwQzktOEtvUkxIMFo4dEl5dVViR1RjRnpOZmJFTU9rSm9fUTd4TzdOUEZ0ZVBQY1BzVXFyNEVCMUxUcFR2aE930gHPAUFVX3lxTE56cUVvdS16aFJoS0pDZ0VFN1kyazRvNlhsTEoyUTZZb3VrU3oyelNBLXZuZTZpbW56MXRMRXBLcWtwRkZuaHV6Um1nVWtkcGFDRUFZbGhIM2tLMXltNDJJNmtjVnZHb2pJYjdPRDFBdGt1SHdHb29FRHN3ZkJ3OTNUblQzSmFTLTR1T3pEN0NUQ2RDU0RWNU5zMTNKaGQ5R3JSeUEtbGZSVmtOTUZMc1MzNU9sbUIxVDhmdnptcHhkNGE3dEtFYzlZOFNYS3R0OA?oc=5",
+        "date": "2026-06-11"
       },
       {
         "title": "Top 10 international migration corridors: India-UAE and India-US rank among world’s largest migrant routes",
@@ -10912,16 +10912,16 @@ const ARTICLES = {
         "date": "2026-05-09"
       },
       {
-        "title": "India-UAE, India-US among top 10 migration corridors in 2024: UN",
-        "source": "The Tribune",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOemlBaktGUU1MRmZhd054ZmdOTGNWRFpOa3pnS1c3ZFAyOTBrSXpsVnBjT0c3RlI4ODBtYldIWEVXZ29BcnYzMDNjNWJTLTdKdlVKRjFXbEpnOFJITmVOQjNZTVc4emhNcEt0OGNTcl94UFNRUXltX281TTE0MUhDeUlkT1F2bWdsNDI3VXhpMEZZXzNLZlpvQ2xaRHlwQS1ocjBtcTdB0gGqAUFVX3lxTE1Jb0JkX0xkWVlPQ04ySzZDZGphQ25vNHdSUTRsb2R1eEJxNVJpbFowQVpNMi1hbVYxN0JDRF84RV9qYXNRQVB5OG5tNUFKMUhnNTJZUUNWR1NEeXlGdXVWNVdVVkJNNVFMVVBJTGVja0JrVklPSHZUX3Fubzk0SkFqNk1VU3ZVSUpCVWdSRXNkajktcVR3cS1FQzQ5dzVGS0x2THBGYUx1X29R?oc=5",
-        "date": "2026-05-05"
-      },
-      {
         "title": "India Migration Crisis: Gulf Conflict Exposes Gaps",
         "source": "Frontline Magazine",
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVUFRc1Q4WWVjSFIwS0xERDE1QVljMHFxNXFHR2pDNDlkQjdsb0tPMmd5VFBMN2J2OEdTX3FFUHplU2RybWVhXzlJOXRIVjY1dEl2NmJpMEU4SV8zNmpPdUNWMmVRMmNwMXRtbWNVOG1pLWJPUUNHQXRyNWw2QV8yRGVCYjJTZEY2MTRqMnpISmZZcHZUUkF30gGeAUFVX3lxTE8yaWEzRG0wY1MtM2c3MXdFc01NZjVKY3RNRlpfazdZa3FObmdRSWZwbWV1SWJqRzBia0FCNWpsUVpHc0swWlJBRmdDdFVYMlFfcnZBVXRJRDFEWmFzSG1La3ByQi1SRmREVHpYVzhRUjhXQkd3LWthT0pyeEdHWnRkRmt5TkJ2eUVGTWsxbEl0ZVBkOVVMMTZWT21vU0N3?oc=5",
         "date": "2026-03-26"
+      },
+      {
+        "title": "UAE emerges as top destination for Indian blue-collar workers, overtaking Saudi Arabia",
+        "source": "The New Indian Express",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNaGNOWllvSXYzeFJsUVJ2QjN1QlREREhldldJVkpjNU1DT0lsN0NoWVdmM0xtZVhyUFpta3NCclFFQWdXYlRySkJfWXdMS2pXZFdEVmZLOU5QWVBrQnM1cVlWR2t0X2JlUzM2MV82NjY4bExHTTE1SmlIejZETVd0aVcwSkh1d3VmTVljQlAyOUotdTlScHk2VW5Qbmh4SmlDbzk5ZU84OE9fQXNpdGkzbWJJNDBVN2NJT1Z4WS1xNlp5ZHRvelN0a3NoTlNnZ0JkVWfSAd8BQVVfeXFMT21JeGs5ckJ3ZHNBLUtIMnNzVmU1Rnc5cldIWnB4SFUxV2g2bzhOMzhNTnNWazNTbXNCdGs3bkJOQU1MYXZMYTRyMnpXM3p2TFJrN2I2Q25weDRsU3JFWk5PdThBeFpOdHJjS0l1bmVfRTFSZ3hsbGRLZ041NXBJR0pVM0I3d2Jmb1RGN1JvTU5PdmNKQ1JzQ3EtMkdoR2dBRnlxaXpqQl9nR191ckswT21BVG1mUUtUd2tjSGNzd19QalNzeFg2UVpIUWQ2UWlPU1hjMUxXdUNReEFPNHJSaw?oc=5",
+        "date": "2026-02-06"
       }
     ],
     "india→united states": [
@@ -10958,28 +10958,28 @@ const ARTICLES = {
     ],
     "pakistan→saudi arabia": [
       {
+        "title": "Pakistan, UK agree to expand cooperation on counterterrorism, illegal migration",
+        "source": "Dawn",
+        "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBmNDJhQkpjLW81WWFWNy13NlB5dFlXRGdGWVB2enBHREVCZmVSaVR6WE9ldVFGNkFhMW4xWHZqTXQzSU0wd1BHRA?oc=5",
+        "date": "2026-06-17"
+      },
+      {
         "title": "South Asia-Gulf migration tops 19 million since 2010, surpassing Mexico-US flows: Study",
         "source": "Firstpost",
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNS2JFaWdtTzB6djB1YlRoLVM0SWxLSnlFc0hNbDdGX0phQ2ExSFg1TXdlNEpPM0lhQ1lHRDZsR1M0UzBkX0dSUi1aNjRKZmt1ZWk1SFhVWl9NdEhRNENuNEd4SE9rLWYwbDVPTHR0TERuZUl1ckF3YlRqa3RQYW5VSDY4aG5WZndrbWwwQzktOEtvUkxIMFo4dEl5dVViR1RjRnpOZmJFTU9rSm9fUTd4TzdOUEZ0ZVBQY1BzVXFyNEVCMUxUcFR2aE930gHPAUFVX3lxTE56cUVvdS16aFJoS0pDZ0VFN1kyazRvNlhsTEoyUTZZb3VrU3oyelNBLXZuZTZpbW56MXRMRXBLcWtwRkZuaHV6Um1nVWtkcGFDRUFZbGhIM2tLMXltNDJJNmtjVnZHb2pJYjdPRDFBdGt1SHdHb29FRHN3ZkJ3OTNUblQzSmFTLTR1T3pEN0NUQ2RDU0RWNU5zMTNKaGQ5R3JSeUEtbGZSVmtOTUZMc1MzNU9sbUIxVDhmdnptcHhkNGE3dEtFYzlZOFNYS3R0OA?oc=5",
         "date": "2026-06-11"
       },
       {
-        "title": "Pakistan needs structured migration pathways",
+        "title": "IT talent export to KSA hits new high",
         "source": "The Express Tribune",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPR3JUVGtSdVNoUVZDYy1NYlVmM1dqazFjLXhGeW5IZnU5R0VQSkppRkJ5YXNJUHdNX3gzVVpnRkE5MThZSjdfZVlMTHVJQkxQNlZUVEhDRDMxX3ZsZ21fY0QxZGszX1NQdnNCeUM2TWdoVzZqZFpJSUFPMGIzSi0xSU9MQmJiamQt0gGQAUFVX3lxTE9XNzZFZUQzdWRuOWRjTEhXR1RELUdsRnpwNnJaUXhZUlZqWkV2cFRGWnlpRS1VY1l1dUx3SjNic29keHdnX1hqNnpBTE1YVGFKbDlPQW50OGtxeHY0NEVwc1U5TVhKckt0YXpvc2k5aHI2NW5veXJMeUpxME1aTmtfTGNteWFaVEhQVTJZZl93bQ?oc=5",
-        "date": "2026-05-06"
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9yMlA0cEpzbHFxRnNoZmxfUWIwZ0dnQ3pEZXQtN0FQMjNXNlZ0UHhtM0x4NUo2WThkemRXUG5qWktBWUMxZHl3bnB2azhaeFhmMXpraUxGcExYMUF5cm54VzZHMW5XQTRQQlN2TGpRSzI1VFg1SktoOWVEMlhDcUHSAYcBQVVfeXFMTk4tc2Vmb0pPUDBwaXI5N25QZDJQYUdkaS1pT2o3YkMyQllfSzREMko1a2ItMDJ1TEJuQVpyM1Q0TmI0NXhtcEpqc3JwUnNNLWJVcHBIVGtJSXVxYmF4T1J2UnhVR1FQdE5PTUFjcHY5N0tWQnBWLS1KdlJOOW1Dc3ljMmkxZzBv?oc=5",
+        "date": "2026-02-08"
       },
       {
         "title": "Migrant outflow declines in recent years due to visa restrictions: report",
         "source": "Dawn",
         "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5JdjdRVHFwY0c3V0d3bU1QN192a0lxZHRIOXVlSFpITVF3enJuUk1GU3RLYkQwaC1JMy01WUdrRVhxTkIzell5dNIBTkFVX3lxTFBZcl9qNkZvbWNlV0t6UnlQcVA5bDBQdHY3OXgwOHAyeXVXVFBkMkRBbUEtcko5NncxNVNfdXJIemJoSVNkeVJkY2pwZ2ZUdw?oc=5",
         "date": "2026-05-20"
-      },
-      {
-        "title": "IT talent export to KSA hits new high",
-        "source": "The Express Tribune",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9yMlA0cEpzbHFxRnNoZmxfUWIwZ0dnQ3pEZXQtN0FQMjNXNlZ0UHhtM0x4NUo2WThkemRXUG5qWktBWUMxZHl3bnB2azhaeFhmMXpraUxGcExYMUF5cm54VzZHMW5XQTRQQlN2TGpRSzI1VFg1SktoOWVEMlhDcUHSAYcBQVVfeXFMTk4tc2Vmb0pPUDBwaXI5N25QZDJQYUdkaS1pT2o3YkMyQllfSzREMko1a2ItMDJ1TEJuQVpyM1Q0TmI0NXhtcEpqc3JwUnNNLWJVcHBIVGtJSXVxYmF4T1J2UnhVR1FQdE5PTUFjcHY5N0tWQnBWLS1KdlJOOW1Dc3ljMmkxZzBv?oc=5",
-        "date": "2026-02-08"
       },
       {
         "title": "Pakistan’s Human Corridor to the Persian Gulf Is the Security Risk Europe Ignores",
@@ -11118,16 +11118,16 @@ const ARTICLES = {
     ],
     "morocco→france": [
       {
-        "title": "Two contrasting models: France and Morocco show how migration is reshaping modern global football",
-        "source": "The Daily Star",
-        "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPQUNvbUFuTmFpY2loMEFoUU9udDh0Um03Y2ZnakJlMlhDRGVwdmxmb0VzeEtiQ2ZoalhIc3ZpSzgzNlQ5a3pGbmlOSW9MeUlnMUdKUE5YWTRrQ2IzVm5ScjJLV3RCUzZJOW9BRWF4MDh3N0lNMnd3YWJZM05fOWZNeHJGTWFpalN0Zk5MVTdkNFZXYTFOdjFxdDhjdExFNTZhVURTOXk5bVFDbmJZaXU3SGc5Z1BFTGdVNURqbTFoaGlCUlBLaVhveTVpb0FpSUhOajhSNm9LQ09QVFdkX2dkLU9NeFJGbFk0UlZ0UHpNUnI5RkhlOWhoWWJ3eGMzY05Qc2hVaTFqVU8?oc=5",
-        "date": "2026-07-10"
-      },
-      {
         "title": "World Cup melting pot: How migration is rewriting soccer’s national storylines",
         "source": "Scripps News",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUE9SY1RFNmkxY3BnYkxDQVpoMk1WS1VrcmhuZTVsNDU3TzktVWlvRy1wT1lZOWgzS3h2dU12WjF3T0M0YjY4UklPSWNsaXpIcmFSbXZYck5iMDhtNmJlYm13bVJmWFJQR0J0YVRyYXBHWGRDZXhWbTVaQU5rLWt4eXUzd1AzRW9vNk0zbGVvTklZSEk3aVFjSFQwOFpZMXZBaE1fV2I0WlV6SlNacUJVVw?oc=5",
         "date": "2026-07-08"
+      },
+      {
+        "title": "Two contrasting models: France and Morocco show how migration is reshaping modern global football",
+        "source": "The Daily Star",
+        "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPQUNvbUFuTmFpY2loMEFoUU9udDh0Um03Y2ZnakJlMlhDRGVwdmxmb0VzeEtiQ2ZoalhIc3ZpSzgzNlQ5a3pGbmlOSW9MeUlnMUdKUE5YWTRrQ2IzVm5ScjJLV3RCUzZJOW9BRWF4MDh3N0lNMnd3YWJZM05fOWZNeHJGTWFpalN0Zk5MVTdkNFZXYTFOdjFxdDhjdExFNTZhVURTOXk5bVFDbmJZaXU3SGc5Z1BFTGdVNURqbTFoaGlCUlBLaVhveTVpb0FpSUhOajhSNm9LQ09QVFdkX2dkLU9NeFJGbFk0UlZ0UHpNUnI5RkhlOWhoWWJ3eGMzY05Qc2hVaTFqVU8?oc=5",
+        "date": "2026-07-10"
       },
       {
         "title": "France vs Morocco: A World Cup quarter-final shaped by shared roots, migration",
@@ -11168,16 +11168,16 @@ const ARTICLES = {
         "date": "2025-11-05"
       },
       {
-        "title": "Poland rises to 7th most popular destination for UK migrants",
-        "source": "Anadolu Ajansı",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPU1J4amtUMDJJNE92Z0pkM3FzaEtocmxZc0J0d3FBREp3SUR0ZGxoNHc1SEZORk1hR2NkU01Rb1ZmdkJxWnZhLTFrd3VNMFVzT2VMTm9aRFp1YlRMajhVMEJiRXJxUmsyejJ1ekt3ZGxzSFFkZTRhNHRYbW5NVjBNRUFSRk9HLWNoU2ZjY2dtM3hwdmllUS1MZ1dLcjdOMzd1cFE?oc=5",
-        "date": "2026-01-06"
-      },
-      {
         "title": "Poland, Hungary stand alone in opposing EU migration reform",
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTmJsOE1YbmpoSmQ5bTBLUTdhS3VlRWdDY2Y3VzZsODhCREhIdU1lOUJjSmdlRTVRVzJhZjhMUjF2cXB4d1FiNDNfXzdSOGtJa0JmNTFpQUJZdmZKbVh0bUpFS1pVbTk1U0ZIUndNNUZRSUg2Yk5penVqaEJaZExLVmZja0VMcUt4bzFiaWtkTUVuTzlYTVJlVg?oc=5",
         "date": "2023-10-06"
+      },
+      {
+        "title": "Poland rises to 7th most popular destination for UK migrants",
+        "source": "Anadolu Ajansı",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPU1J4amtUMDJJNE92Z0pkM3FzaEtocmxZc0J0d3FBREp3SUR0ZGxoNHc1SEZORk1hR2NkU01Rb1ZmdkJxWnZhLTFrd3VNMFVzT2VMTm9aRFp1YlRMajhVMEJiRXJxUmsyejJ1ekt3ZGxzSFFkZTRhNHRYbW5NVjBNRUFSRk9HLWNoU2ZjY2dtM3hwdmllUS1MZ1dLcjdOMzd1cFE?oc=5",
+        "date": "2026-01-06"
       }
     ],
     "romania→italy": [
@@ -11254,16 +11254,16 @@ const ARTICLES = {
         "date": "2026-07-04"
       },
       {
-        "title": "China-Pakistan financial ties deepen as first joint venture listed",
-        "source": "Global Times",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBrNHVIVnN0WXYxWXp2MktqUVMtX2Z2YmtZcTFQakdHcnFxNXk5MnpUQ3JIX3lmSUJHRGNEMUtlWnFFNU5jdVJjbHk5Y2JTVWpVQm1GTWlLRC10RVBmSUFDN2Rn?oc=5",
-        "date": "2026-06-16"
-      },
-      {
         "title": "Pakistan in Talks With Saudi Arabia, China After UAE’s Loan Move",
         "source": "Bloomberg.com",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNOVZQc2NNZzVPbmJHdTYzTTI5b1JMdWNIUjZtcE1kS01mNm0zdjJoM2QwNjNwUE9BZnFtWjF6U3NnTGZKVjRfUHNKLWJuZ2NJbUo3aUQ0WWJsOVljTmctLUV6bWRhRWhQN2Y2d0QzS2xhRDlBbnhaMV9EY2pLYkIyMUJ2VzFFZkxuOWI2dFBfdU1sWGM0TWJkdUJDaWNsRGVtbFRvZWowczhzSjR5ZW1nVWJqRFk?oc=5",
         "date": "2026-04-13"
+      },
+      {
+        "title": "China-Pakistan financial ties deepen as first joint venture listed",
+        "source": "Global Times",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBrNHVIVnN0WXYxWXp2MktqUVMtX2Z2YmtZcTFQakdHcnFxNXk5MnpUQ3JIX3lmSUJHRGNEMUtlWnFFNU5jdVJjbHk5Y2JTVWpVQm1GTWlLRC10RVBmSUFDN2Rn?oc=5",
+        "date": "2026-06-16"
       },
       {
         "title": "CPEC 2.0: new green hope or new China debt trap for Pakistan?",
@@ -11272,10 +11272,10 @@ const ARTICLES = {
         "date": "2026-06-02"
       },
       {
-        "title": "HBL CEO highlights financial connectivity at China-Pakistan seminar",
-        "source": "China.org.cn",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA4QmR6TUtCaG9UUFM5MkJsYXpQak41OEJ0NGgyU2RvbFVoa0lfUHFVMl9USFZnU2NfUEduVDF6a25LTmhrYUZGYXZvcjhfXzlyLUdGaERSdDllUXFxMENoYUJQazRJb3ZtVGc?oc=5",
-        "date": "2026-07-01"
+        "title": "Pakistan Seeks Financial Support from Saudi Arabia, China After UAE Loan Repayment: Bloomberg",
+        "source": "thekabultribune.com",
+        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBuUXE0SkxsbUVBVE9GRldMZ2JWaTh5Tl9GbU5XYTVGaEVRUHBzTVJHZkhydEF5VlAwR3lzNjBCb29zWlFPdHJSbkUwbU9lUlE?oc=5",
+        "date": "2026-04-13"
       }
     ],
     "china→argentina": [
@@ -11284,12 +11284,6 @@ const ARTICLES = {
         "source": "South China Morning Post",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdjJaSlhZNk9YdURqQ0VxbndVZTh0R2ZsSGZqd2hITFNDYWVIeFMycVZjcUFwMktxTzZfS1hNNUNpNTZxeFU2U3cxek9GVlV4alV1UnVlT1BBTEZSVFR0OW80Z1V1YlN0WWF1SGJKbjJKRnhXNnJMUGppczJ0MFp5NWRXYzVteWx4U244YmIxcExyWFl6WTIyT1JTNFBrNFlsTW5DR0w4b3pPYlEz0gGsAUFVX3lxTE5jTGpXUGtHWUtMZk43MzJzU0YyamVhYmdaUG5QWnlwR3prazBSTzM0blZxR29DbXFkWkNsbFRweFBtT2ZEeW9RbTg0bWxETEozbkJFWVQ3MkhGSUJpS09NUVd6VmpNeERIZ3VfQS13aDZ1Z2FhY1k2dmdrbTliV2h2MGVPOWttOW0yUTZNVmxqOWFrUk5hWnZWT2tRQmh1enJsV1hoRVc1Ny1RanQ?oc=5",
         "date": "2026-06-16"
-      },
-      {
-        "title": "Chinese investment in Argentina tops US$23 billion, defying Milei’s alignment with Trump",
-        "source": "Buenos Aires Times",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZ3JzMlEzaE9kUG9xYkxIby11SzdsY2hoc2g4aHJCTkh3RWlwNDlHdEFXamdpYnpwTk1jVS1abmdoWU1PSE5zek1qR1p4VUVoRDJuX1NPNlFfUmZlemZQWkgxS0ZNZXU1bWhMZS1ZalUyR3AtZElValdPWGtxYnQyWG1LeFYwZDFTa2lPRlV6UnBpUmJpdVBDMU5kOTItTHRaMnRPUm9sLWpQZGxUdmJSXzM3Z2MwdVB6V2J5aHhuTjJjdTFkT1NwMWFRTdIB0AFBVV95cUxNY1FCWEZUZ1dqQ1FkTEZydVFIcWtORXNXRVd4WGVjY0otNDJqX3lIZlNmU1JoVGJZNHR6elNhU3JqZU5zLWNoOXpvSzBKZjA4eTlOdEZjX0JZa0pTMUQxVG0xek02ZDVHUmxyelJpLUlaNlVVdjJfRmE2NklkUENyRWVOd3VzQ0FOZ1F4RmQ0ZVNSZ2pvdUVSa3lrTnpwQm0wdUhoOGZ3Z1BfQjJoRUgtU3VQS3hNa0Z5UG5YeVFCX0hJTmZnMVJ3dGR3MFNaem9a?oc=5",
-        "date": "2025-11-26"
       },
       {
         "title": "The Argentina-US trade agreement turns the RIGI into a mega investment protection treaty",
@@ -11304,10 +11298,16 @@ const ARTICLES = {
         "date": "2026-03-23"
       },
       {
-        "title": "Why Trump is giving Argentina a $20 billion lifeline to help its flailing economy",
-        "source": "PBS",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNc3ExeHpDRWRlYUljYnFlN3hha0QxcjBLTjBWUlJRR3NlRHNFdEV0UmE1bThZUzRtTXdlVE5uOUNOaXcwV0JLU3ZobTE2anA4aGk2dzBPVkRvRTM4RWV0ekc2Q3NiVW84c3lReloya1M5Z043NUNBdVd6QmIzemZzcVFuYWRIX0k2ajVPaFBBaWwwOTA1TDlBVFlkVmVYTEJwLUsyRjQ2UUI1b1YxQWtIUXpBcnc?oc=5",
-        "date": "2025-10-17"
+        "title": "China in Latin America: February 2026",
+        "source": "Council on Foreign Relations",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5pWFhMUzM5QlJzX0RDNjdIMFFOd1J5SHZGWmdEZjVBeVVJTDZLdUt4bWdacXREckVMU1h0M0E4OWo1Q3pjTEhwcmdIZkdqV21tY1c2U19oZjBOakZMYnlOU1YwU2piUmQzaktFZXhOMmN1cWs?oc=5",
+        "date": "2026-03-31"
+      },
+      {
+        "title": "World Bank plans up to $2 billion guarantee to help Argentina refinance debt",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZ19TUE1WcUR6c3pjWGo1eVVXUDJlZmFJNXR1d1lka3pBd2ktdTVjRC1fODVmTVRlaXVRZGlPQm5ZTUhSNmpwem9RWm1OOF9fSnlXRVhSMTNaZ05WRXVUT3ZPaE9LblFzMUkxLXhnMFdKT2M5NzhjUDdPbUNWTUJhZi11Y1gtTFRMcXVHYTJxRE53RWhfWXRXeU1WMnoycG5qVE9ocmtjSDZocWZBWXJscUJjVFowaEczR2F2Nw?oc=5",
+        "date": "2026-04-16"
       }
     ],
     "china→venezuela": [
@@ -11414,37 +11414,31 @@ const ARTICLES = {
         "date": "2026-07-06"
       },
       {
-        "title": "Kazakhstan taking on lots of debt to China",
-        "source": "Eurasianet",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9VVlpFMEMzWlVaczBnQjQ4X05rTFJyZmVVbWJSQTVWbjI0ZzEwRDE0UTlFbTk5RzRFUk5mNkpmT3U4Y2Y0XzE3MU9MalBEUDdfbVpwN0w3ejgwZENKUFJMMVdocGhDelVySjdjakJfbktMRXc?oc=5",
-        "date": "2026-06-01"
-      },
-      {
         "title": "Kazakhstan Seeking to Turn Transit Routes Into Investment Growth, Vice Minister Says",
         "source": "The Times Of Central Asia",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPR2hjTW1QYTZaZkw2TDZsNVY2akZBSTQzeFR4bXVXQUFqZEFfUE1DWGhheWI5eVRXV1ViMTB0U3NIODNHU0ExZ2pOSU9zRFlJNENaaTNpdjFIclBxQ0VfWDA3N0JER1ZlZjNXdFk4SmxPRjVDaXluMkpaMFh5UklKM2kxMzZwT2NaSTN3OHBUSlhKOEpRQmdaWnRzWjJONmY0YmtObDZHcw?oc=5",
         "date": "2026-07-09"
       },
       {
-        "title": "Reordering Central Asia: China’s Emerging Economic Hierarchy",
-        "source": "Foreign Policy Research Institute",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVHE4dHdfZXAyX0t6em5HMXU0T0IxWFI5OFFBQXc1SDhTa0J2dVdSZXZtem9ibExYTHotR0Vyb2hFNXhQdUJMUnJUX0F0aDN5QktFU3Q1NVdFd1BQdTl3N1ppWVhTUHhIU0U4c1RPN3gzenlzbnF3eng4WW9PbTlrR2UxYmliZFJnVVVZRkQtc2d0RnpYYU9IR0p3amY?oc=5",
-        "date": "2026-05-05"
+        "title": "Kazakhstan taking on lots of debt to China",
+        "source": "Eurasianet",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9VVlpFMEMzWlVaczBnQjQ4X05rTFJyZmVVbWJSQTVWbjI0ZzEwRDE0UTlFbTk5RzRFUk5mNkpmT3U4Y2Y0XzE3MU9MalBEUDdfbVpwN0w3ejgwZENKUFJMMVdocGhDelVySjdjakJfbktMRXc?oc=5",
+        "date": "2026-06-01"
       },
       {
         "title": "Kazakhstan, China Pledge Deeper Trade and Connectivity Cooperation",
         "source": "The Astana Times",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTnRJbkV0emJTOVcwSUR5eGk5NS1KcmNQR0JFMjZwanpheWYta0ZwNXdCejdPckZuU3JDQkpXUXhKdkZYcGE1TWtfLTFpRk5vdkxXdUxMX3NWYThURzVPS3ZyM1FRaGY2T2Zia1lWY1JadFZPRUFxX0VUclh5VHZ3ejRzS0xmNUNPYV9wQURQemtVd0JEbVNkRkFyOThIY28?oc=5",
         "date": "2026-06-23"
+      },
+      {
+        "title": "Kazakhstan–China trade hit record levels",
+        "source": "AzerNews",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9WWktIWWVEU3hOWWJWM2lOZXdjaEs3UE5BYVRvNlNrb0ktbElfVDhMeUlPeXpqbmRHR0xERlhCWTRKU2RDZmNEZHFfM1piMjNEZ0ZCeg?oc=5",
+        "date": "2026-06-23"
       }
     ],
     "china→nigeria": [
-      {
-        "title": "Nigeria in Talks With China for $2 Billion Loan for Super Grid",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYS1GcDZBYllUbTJYblhsUXRQS2p4UmRZdk9HZ3ZrczgwM2JmZzloWTlHTlVCYXdaY1MxRmY1eUVDMmZuNUtZb1ZYOEdydDBveXczSjhwNy15QVl4MW1HRFQ1cE9XODVBMXFOQl9CYjAyUHp6aVB3OXRYMUhPNHdwbzhyaGVnaUNrLXVhTFhtdVI3cXZ0eTV1X1JVX3Nya2VvRGg2NVFRdkR0eDlTZ3lCaDFR?oc=5",
-        "date": "2025-10-06"
-      },
       {
         "title": "China warns Nigeria of satellite shutdown over $11.4 million debt",
         "source": "Business Insider Africa",
@@ -11458,30 +11452,36 @@ const ARTICLES = {
         "date": "2026-05-04"
       },
       {
-        "title": "No, China has not ordered closure of Lagos airport or seaports in ‘$300 billion loan dispute’ with Nigeria",
-        "source": "Africa Check",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOLW1aZU9uRVN4NlU0RlFQMzZacGFsMzRYVXJRQlBGeHZRRFNBLWt2R1UySmo4b3ZBY1BjME1TYVN2cVhHVUx4ZlZGb3RjV0poZVNOckVfVUtxYnBULXpFU1FDdjc1Vm5JMmhSYmVYMGE3RFVfdW1xY1ZXUmltZGtQUWw3Xy1vWHpSenNVWDI0MDNST0J3VlN5UDNRb1VPRkhzcmZ1Wm5keDhNSVE4SUlleE1SV2d5Rl9KNzU2U3FB?oc=5",
-        "date": "2026-02-27"
+        "title": "Nigeria, China dey strengthen export and energy partnership",
+        "source": "TRT Afrika",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9PbTJXN2pXdEcwaHdTT3NYS1ZKZ3pXbThpZnBLcUZFV1FXZTlNWXhVMDNYSVc0OGpSZF9XTUEtTUlhR3lwQ0hBTjBXd0lxeWY0ZEdBeFo5dEdleEo0RTNuQ2VONW1RdEkwd2RfcXV4MA?oc=5",
+        "date": "2026-07-05"
       },
       {
         "title": "Enhancing Nigeria’s Clean Energy Transition: Mapping Chinese Investment and Strategic Priorities",
         "source": "APRI – Africa Policy Research Institute",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOV1FSdlBDb1BNMDgtQ1B4czBRR0dFdzJEM25wVU1HSER2c3NLVlVpVkExc1NqUUx2MGE5T0hpWG5kNkNQd251VTZQMnZ1b244Z3B5VXpVNmdkZnE3N2JMVEVseVRreVFjM3VOcldrV1MwZENxOGVTMTdtYnEtZXJkQ3psVUxueEVMQ1ZSak82LW1fbHpqWHRWbEwyTC01RmlqeGdwMWExcTRVUEh6Z19JbGh3bjM0Zw?oc=5",
         "date": "2026-03-17"
+      },
+      {
+        "title": "No, China has not ordered closure of Lagos airport or seaports in ‘$300 billion loan dispute’ with Nigeria",
+        "source": "Africa Check",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOLW1aZU9uRVN4NlU0RlFQMzZacGFsMzRYVXJRQlBGeHZRRFNBLWt2R1UySmo4b3ZBY1BjME1TYVN2cVhHVUx4ZlZGb3RjV0poZVNOckVfVUtxYnBULXpFU1FDdjc1Vm5JMmhSYmVYMGE3RFVfdW1xY1ZXUmltZGtQUWw3Xy1vWHpSenNVWDI0MDNST0J3VlN5UDNRb1VPRkhzcmZ1Wm5keDhNSVE4SUlleE1SV2d5Rl9KNzU2U3FB?oc=5",
+        "date": "2026-02-27"
       }
     ],
     "china→egypt": [
-      {
-        "title": "China's Jiangsu Changhong plans $20mln automotive equipment factory in Egypt",
-        "source": "ZAWYA",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbU9NSVJNMmtQb2ViZUlhOC1mVjM5NldhNHpIQzN3Mlc4N2ZnMVZ2UE1sZmdadW1RZEJDU2hfUW1mMFFfTUE4Q3Z4Q0ozbFU5VnRlb24yRnVZS1FodzhJRHZhRmFFU05JcEpUTkwxb3podDdtQmZkZGp0V1hrRy1CWlhJZVc3UmtwYWpOUW1GR3c4Q28xLTNVZ3RuYmNEUUxvWnV5UFVnVW9NY2MwMFNyaDNmenRlSEhxNzZoNzB0eWwyTzRMX09WdQ?oc=5",
-        "date": "2026-07-10"
-      },
       {
         "title": "Egypt, China's Jiangsu Changhong discuss establishing $20 mn smart auto manufacturing hub",
         "source": "Egypt Independent",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYjFWaTBQZkpfT1dvSko0QlJvT2MwZmo2bHk1Q2ptVmpZcVJDMzhZWXpNQzROYnlrQ2NSU0JYdzNZRFhGYTZOOGlOMzVKYUFvRTFQRGY0NjNMU2lFc2dta3ZLTVczbHRWQTNMNUJxVmpsQUdDY25fYU83YW5vbmRiVXBBMTN2RnlfUXZoM2RaaXg5d3otLWppbFBKdmdtMUdYeFFNbWNiM1RMQlQ1cmRWOElUUXF4WFZzbERkYQ?oc=5",
         "date": "2026-07-09"
+      },
+      {
+        "title": "China's Jiangsu Changhong plans $20mln automotive equipment factory in Egypt",
+        "source": "ZAWYA",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbU9NSVJNMmtQb2ViZUlhOC1mVjM5NldhNHpIQzN3Mlc4N2ZnMVZ2UE1sZmdadW1RZEJDU2hfUW1mMFFfTUE4Q3Z4Q0ozbFU5VnRlb24yRnVZS1FodzhJRHZhRmFFU05JcEpUTkwxb3podDdtQmZkZGp0V1hrRy1CWlhJZVc3UmtwYWpOUW1GR3c4Q28xLTNVZ3RuYmNEUUxvWnV5UFVnVW9NY2MwMFNyaDNmenRlSEhxNzZoNzB0eWwyTzRMX09WdQ?oc=5",
+        "date": "2026-07-10"
       },
       {
         "title": "Why China’s Growing Economic Ties With Egypt Matter",
@@ -11529,7 +11529,7 @@ const ARTICLES = {
       },
       {
         "title": "China-Belarus industrial, investment cooperation takes center stage at Minsk forum",
-        "source": "bastillepost.com",
+        "source": "巴士的報",
         "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNlpCajVYZzEtaHhvdTJpS2pqWFRIY29hMF83VWMxVDFLVHk4RnRHTllIeTNFdl9FNGVrT3pYN1hJNlhoWHUwdE9uaFk3cWdMb2RjVVFXUDRSQklGNmx5azFRTElORy1mWlM2UkZsNnNnaWVrSFVDam1Hbk5ia2ZvRWFPaHUwMHlTTTRtb1hFUkZFQTRpVWs2NGNIZ2RBeUdoQ2ZOelBGN215VHVhMnlfT2pLYXFJbW5ZdEoydU1XX3EtUFAzMy1IVDdRbXc3dw?oc=5",
         "date": "2026-06-08"
       }
@@ -11540,6 +11540,12 @@ const ARTICLES = {
         "source": "Foundation for Defense of Democracies",
         "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1UNy1sdUdXZ1JLZFFGMW1MN2pQN25YdTlCc2tDenROcHRvUU1TQ0ZjWjdSdDdEY1RRYXFrd3dKbnZKdkYtLWVlaDctMVM0UTdHMGhtdWRNbW5QUVM2TnFBZ2V5cXRaanVzYl93b3BEcmZMR2VwNC1nVmFaVlI?oc=5",
         "date": "2026-04-29"
+      },
+      {
+        "title": "The “ironclad friendship”: How Russia lost out to China in the competition to be Serbia’s key eastern partner",
+        "source": "theins.press",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1mUlQyc0xnSVUyQUduU3FSQ3ZZcE0zazFmQlZkemZSb2Jiam9IV2p0QnQ3aVVsaUdscHJwTy1pVVlDZ1pzbW5oQ3dFUHUxNVRZaUY0aWVKNmNJb3lfRXloRmYtc3dybUk?oc=5",
+        "date": "2026-06-15"
       },
       {
         "title": "Serbia – China 2026: Technological partnership, geopolitical positioning and a new phase of the Chinese presence in the Western Balkans",
@@ -11554,15 +11560,9 @@ const ARTICLES = {
         "date": "2026-05-27"
       },
       {
-        "title": "The “ironclad friendship”: How Russia lost out to China in the competition to be Serbia’s key eastern partner",
-        "source": "theins.press",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1mUlQyc0xnSVUyQUduU3FSQ3ZZcE0zazFmQlZkemZSb2Jiam9IV2p0QnQ3aVVsaUdscHJwTy1pVVlDZ1pzbW5oQ3dFUHUxNVRZaUY0aWVKNmNJb3lfRXloRmYtc3dybUk?oc=5",
-        "date": "2026-06-15"
-      },
-      {
-        "title": "Serbia secures nearly €1bn in new Chinese investments",
-        "source": "IntelliNews",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMjQ1b3VsT1lWTUE2TU1wMTdtNWZlQURENmd1T0ZFelVsSEUzRVpFWEhFOWduVVBhdVJ0WDd4R0x4VWJTZGxTdG1STWNvT09OanFMbDdfMFg0QldMdnp0SjQ5MnhsQU03Y2szZHN2aXMxMjZVYkx5VjhaYk00bllhNDkzOTQycGNqcDJyVXJpWjZGQQ?oc=5",
+        "title": "China-Serbia cooperative leap from roads to robots",
+        "source": "China Daily",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE40S1JkM0p0MGRncXVrNzNZM2RhalF5VXBZYmE4N1dwai1kNjFic1dRd204MGJjYThPc2dESlZyV3phR2dyNHRvMDRwNm5pdDFvR0N5M0FpNFppS29LdUpPaF9vMG0waHhBYVhXR0dSRGlFYTJVRVBOX0t2TGllZw?oc=5",
         "date": "2026-05-27"
       }
     ],
@@ -11600,10 +11600,10 @@ const ARTICLES = {
     ],
     "china→brazil": [
       {
-        "title": "Chinese investment in Brazil jumps 45% to $6.1bn in 2025",
-        "source": "Valor International",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVGx2Z2pZakl5X1g3eFo1dGRDb295ZV9DQzc4VXd3TmNqRnhhR3REcnFvRUtKV0xjbVh1ckpETWhSeVlKU0RKMnl0V1hWWTZaS1NxSUZNd0o4Q3hvWWcyQk1qR2VBd2QtT01DemUwd3J0c2VnaGVNcjVZU1l5RHdvRGN6VEY1ald3RGJfeldlb1dRVXRfY0NDRkdxWWsxV2Exek5QSHJrZXR0NVo4c0s4TVFXOGVCbEM5WDRHOXlqQmUxVTJ0Nmln0gHWAUFVX3lxTE9tbUtGRm83VlRnZFdzSGJTRE9BN0lwWVpHSDJ4TkplRmlJWUNsMlQ4aFZuUVZRckVqS0N4WmViQ0pzc0I1VGVudWhkQ0hOTVhHWnFHZndqT2FIUGRDZ0xqLWRvNkdFVklKaGo3SU9JbHBEVDF1V0tKTzI5blQyaW9KMkhpYjJWelJESEJaVjk0TVhMZkphRnM1enZFSEdySjRTRU5xNi1aYnl1MENKbUJmdzQtaFlSTmZLeDlTQzRNNEZweF9vMG5HR25YMGpJX2h4Wk81LWc?oc=5",
-        "date": "2026-07-05"
+        "title": "EXCLUSIVE: Brazil plans largest panda bond debut to 'test' waters",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZ2YwY3pHem9fSG42aWFwV200M1FEcTJkZFlvOHlvNXJ6bUdyV2U1OFFwRm1kYjAtUnNaSmx2TW1Lc2hpejRMeTg3ZHZEQXg2OTJpV0RSZ0pQdE5XdjIxMFRPTlVac0swY2ZIZThxSkZBYktVN3A5dWxlSkllc3FrOURsR2ZyaTZHTWhxMDFFTm8tT2JIcXhXQl8zM1NQTm1JVzk2Uk9FLW5aa1p5LU9CN1c2RmZ4WHNkWFpkb210OU8?oc=5",
+        "date": "2026-06-24"
       },
       {
         "title": "ByteDance Picks Brazil for Its Largest Data Center Outside China",
@@ -11612,16 +11612,16 @@ const ARTICLES = {
         "date": "2026-07-01"
       },
       {
-        "title": "EXCLUSIVE: Brazil plans largest panda bond debut to 'test' waters",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZ2YwY3pHem9fSG42aWFwV200M1FEcTJkZFlvOHlvNXJ6bUdyV2U1OFFwRm1kYjAtUnNaSmx2TW1Lc2hpejRMeTg3ZHZEQXg2OTJpV0RSZ0pQdE5XdjIxMFRPTlVac0swY2ZIZThxSkZBYktVN3A5dWxlSkllc3FrOURsR2ZyaTZHTWhxMDFFTm8tT2JIcXhXQl8zM1NQTm1JVzk2Uk9FLW5aa1p5LU9CN1c2RmZ4WHNkWFpkb210OU8?oc=5",
-        "date": "2026-06-24"
+        "title": "Chinese investment in Brazil jumps 45% to $6.1bn in 2025",
+        "source": "Valor International",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVGx2Z2pZakl5X1g3eFo1dGRDb295ZV9DQzc4VXd3TmNqRnhhR3REcnFvRUtKV0xjbVh1ckpETWhSeVlKU0RKMnl0V1hWWTZaS1NxSUZNd0o4Q3hvWWcyQk1qR2VBd2QtT01DemUwd3J0c2VnaGVNcjVZU1l5RHdvRGN6VEY1ald3RGJfeldlb1dRVXRfY0NDRkdxWWsxV2Exek5QSHJrZXR0NVo4c0s4TVFXOGVCbEM5WDRHOXlqQmUxVTJ0Nmln0gHWAUFVX3lxTE9tbUtGRm83VlRnZFdzSGJTRE9BN0lwWVpHSDJ4TkplRmlJWUNsMlQ4aFZuUVZRckVqS0N4WmViQ0pzc0I1VGVudWhkQ0hOTVhHWnFHZndqT2FIUGRDZ0xqLWRvNkdFVklKaGo3SU9JbHBEVDF1V0tKTzI5blQyaW9KMkhpYjJWelJESEJaVjk0TVhMZkphRnM1enZFSEdySjRTRU5xNi1aYnl1MENKbUJmdzQtaFlSTmZLeDlTQzRNNEZweF9vMG5HR25YMGpJX2h4Wk81LWc?oc=5",
+        "date": "2026-07-05"
       },
       {
-        "title": "The panda bonds: how China uses assets to boost yuan, cement partnerships",
+        "title": "EU pitches Brazil a ‘more beneficial’ rare earths deal than US or China",
         "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNc09nY3E1NWdhb0RTMjRadHl0cnJNc21GVEx0WEwwOHQxYktKWHE4cGJzU0xvdGV2bk03QURtRkN1Y3p2UzUyTjYxd0wyUHk1RXlRVXVBQy1oSUt3MmRPZTEweDZocUxYZUxtdjlLd283UmNpYzlZOWFwWGNqNFo5ZUNreGRDRHBaNzRQbW5JM0tIY3lIaWNQUF8xVmlXZGF6R2ZLVTJQekR4QnphWVZlRm1Fcnc5aGtySy1HWENycTNSTVh5dHRVR0FhbmNVZmJm0gHQAUFVX3lxTFBHbnVSclc3c1k1d29aWVJIVTd1ZkdjYTdQbnBPZ0xQODJWSHQtRENqR0VINlVldExYSGFWQ3pXVmpUQTNfTDB4SXRkYW1aSDBrVC03RnVzVXllSUQ2VnFrOFBLUUJuN3RJWHRoZ1RWYmZSOFBjc3JGSEdrd2U4YXBmQnpPclhlaWpMU1MzeUQ1bUlsOFNBU0RrSFF0WXh4SzZZZmZYWTdhYUI5Q3NCdXNPWUxiQUtfS1VjZ3VocnViZWw1RWVsRFBJSkIzRVg2aks?oc=5",
-        "date": "2026-06-22"
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM0tyYUxDd24zNlVpRFEzY0VTdEFHbUEwTFgwa2RuZlE4d2UwcTFKZkJ4TXg4Q081RDFONjlkNFBiRmdDRU1RbnpUdkpMSmkyTWk1ZVgzbWNPMFBaSEZjcHhYcTZRUlRTRzdCWTZEaGVKZW9VQ1gzWTE5SllyM01OZWdFenRad1BTbm1jYWlSNmtncUo0SUdqeDNQWnByMG9hYThncVRCYXphU3hBU3Nwd1NPRTlTT3huTzM0cNIBvAFBVV95cUxOQ3UwN2R5QjI2RlEzQklSc0REZkJIZ0xTNk1lM1BRdlZlcnVyV0YycVR2cEJZWV9WNl91MnkxcERwQlgxUmtORG4tbElXa01WRGhOTFpOSmE0ako0X1dnUXpBcTZMN1p1R3pSYURDYThRZC00R0FwZkNzUzczcjdmZnQtLVBBdVRUXzhoRmt0blNKOXplcWNWbjJsVHlqRnRJTlJIM1V5NmFGRERMQjBTZHJfY0hsWmxobUhmRw?oc=5",
+        "date": "2026-06-26"
       },
       {
         "title": "China-Brazil Financial Cooperation: Brazil's Finance Minister shares insights on Panda Bonds and bilateral investment",
@@ -11638,6 +11638,12 @@ const ARTICLES = {
         "date": "2026-06-17"
       },
       {
+        "title": "South Africa Promotes Itself in China, But Complexities Remain",
+        "source": "The China-Global South Project",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObUpjN0NCSU1xLU1TY2psYUp1ekdILXl4YXU3c19Wa3FxNU5JTWE2Yjlva0tnZHlHYnI0ZV9uYUhYZHE2Mkk5YUYwY3hqbDRmY3JPeW5lejJhQXFEd284bVprblhuOEplRXNpU0JyX1p2Sk5DcXJMY1BsRGRzUXRSaXNfazBWUUNXTHU1ZUpHUQ?oc=5",
+        "date": "2026-06-29"
+      },
+      {
         "title": "From Infrastructure Investment to Expanded Market Access: China’s Belt and Road Initiative in Africa and the Implications for U.S. Trade Policy",
         "source": "farmdoc daily",
         "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQQlJ4cm1KakgxQnFGcDlYdlpFM0Q3bTJqbXR1SnB4Z3dVZm9FRXFPSU1NdjBKTGlsTzBmTDVCWHFnYXdXY29GVFVOTHNfRFZnMHB5QjNvcVFsdmEzYVZ2RW11Q2l4S20zaGFVQXdQMFZTalNjbXlnekl1bUVTUXZweVg2NVBtWEM2eUM4Zmx6bkxzdlBjbDh1aEJVUFYwRkdMRWlvXzJKNnNBSUY3MnhjNlVyY0JwaEhmVDJhWHE5aDNPTXFDWmZzSUFONlJOS0tPSEM3QWRSdm1QWUg1OVJGa3JYTTAxVlRINVNxN0k2RnFFX2N2eGtEbGFKaUNQdFpwZHcwZGdDNDV1NUR1YnFmTmtUeXk?oc=5",
@@ -11650,12 +11656,6 @@ const ARTICLES = {
         "date": "2026-05-13"
       },
       {
-        "title": "China-Africa Economic Bulletin, 2026 Edition",
-        "source": "Boston University",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRkJwV0t5ZnF6bGFYT0RnRDlINzQxZ05YVzlZNjZhWGJOUWVQemNpemR5dEsyOTczMDNMMDJvSUhzOUdPY3dGU282SVZJVFFTMUpXb0dwc2NST1RJd1dOV2ZWeVVqRHljNDNJTTlYT3Zlc09mcmdwY3laNE1JNkhEdTM3Snk?oc=5",
-        "date": "2026-05-20"
-      },
-      {
         "title": "China in Africa: investment and trade work well when there’s strong oversight, and badly when there isn’t",
         "source": "The Conversation",
         "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeVhpWVdnTDJDb29yeDNqcjVJNWRWbTZhVGV4S2RXZFpjT0NkOGVXSkVEMnRIT2dmVXVkT1RRN0NZcFVhMk9zMTZoeU1aZW54UHd5MXYwVG1wUGlpV0RyM1I3QWRRWW9XeW1HVlVnSFoxTDlVRzVXdUdIS19vOE1XTFE3RndGUThDZWkzQzZYMXRiNjRWRWJITThpZWJhR1I5YVFmUk1KTnlvYUdUYzZDUk4yUzNwVGtFOEpkaTkyQTdmMlpmVHhPckgyZElOUEVWQnc?oc=5",
@@ -11663,6 +11663,12 @@ const ARTICLES = {
       }
     ],
     "china→thailand": [
+      {
+        "title": "China, Thailand eye deeper trade, investment ties at CIIE promotion event",
+        "source": "People's Daily Online",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9yOF9pdm5zVkdIZllySGRac0NiN2JFbHFoVmJFU01Ba3hGR2J3ZHNfVTJyLXktbXRHSzF3bzB1LUg5OFJCYUNRNnV1YzdvaXNWTUk4ektadTRtbmtoNXVRRjBjQQ?oc=5",
+        "date": "2026-07-11"
+      },
       {
         "title": "Thailand secures $4.1B in EV supply chain investment, featuring investments from China, Korea, Japan",
         "source": "TNGlobal",
@@ -11676,22 +11682,16 @@ const ARTICLES = {
         "date": "2026-06-15"
       },
       {
-        "title": "China+1 strategy transforms Thailand's industrial future",
-        "source": "JLL",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMktqVFVSdV9tdWlzYjZ3ak1ycU1GSWlocUVHSm50UHljNHpDN0xmTnZ0MWJHNXN3a1VIRjd2T0E2MEVSdzJBUGc2dENmdFBPTy1mNVZ0WVlFM1hxeW0ycGEwcnNkM0hUbXhKcGpmaFp6bnZ0alU4LXhwTDdINVcycHI4RUpRUXI3MEI2WVNFNklSQmtqUEE?oc=5",
-        "date": "2026-03-02"
+        "title": "Thailand auctions US$18 million superyacht linked to supersized fraud",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSTN1NFc4ZEtSWFFSYzNwMDZmeHNFVzVhZEhtYzJhUEFBS2s5dE4tZWNhSHNteTM2Z0dOeS05NzB1WWx2Znp5UEg2Wm41SF9BQ0pwMEJnUjVRT1o4NVNjSmplU0FpYWozVkd5ZmpoNE1aQnBiZ3lUUW9GLVhNbkVqeUpWSzNyWHpOSmdKVUNKMWI0QkpTeEozMGt1eThhY1BJSEhhTWpVZ1JpYzFzRTJmSXg1UE81dWY0S21uWjNJZ9IBvwFBVV95cUxOdmVCc0xjcVd4ci04U2xSZ09qRzEtNTlUSVRzTkxuREJEMXRmellObzdXRUV1NGdpeWxsbVdjc2hQekhyWk1PcUFmWWZrRWw4dC05Z3V4TlZRTGJtNjF0NTFaTXFZNlE4dzI0bDFfTVdmZ01zc21yQWw0RTdaNzRPWDIzblZmOTFDX09jUy0xdXNPaDU4aHZ5dXpNSGdLeFYyRVlLdGNoZG1NRm5laVp5Q1B5Wl80TERsb21ZMTZLRQ?oc=5",
+        "date": "2026-06-23"
       },
       {
         "title": "Thailand and Taiwan: A Chance for Enhancing Relations",
         "source": "Taiwan Insight",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZDQ5NFVDbkltS1MwRERXOFQ4Nm1vV1BmVW9OQWxUNnlXcHNlaDFXUVdER0QweXpWeTFUeWlsLXFMemNWbVFtSlJUS252azJpQzE2Z3Rlb1VFWXgwdTJ6WU1YOXItelRRVFB5ak1zdjFPejQ5NENjWkwtTHhualBSTnRJLXNFVVM3azl1VDR3RUJJbXRj?oc=5",
         "date": "2026-05-25"
-      },
-      {
-        "title": "TikTok invests record US$25b to expand digital infrastructure in Thailand",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUFl4bUEtR3F2cW5xQzFBOXJ5R0Z1R0hsMHF2M1pXOVhZRlJEaHEyb1diQTdoSTBRT2VBTGt2UkFzb25MOWdmbzVMa0tTRE1FMjB1TmE2bTN5U3RjVXMxdE1lYWZsQjFFcm83QkI4UVRfcGU2c0premhYQUFfRHZZLWdFY0dDelhreXUzaDF5TW1NS0d0ZVQzLW9lVTMxMDNFcnp2dnVrdUFnbVZfbk53SFB5Sml5QmFk0gG4AUFVX3lxTE9uaVlwdGJQdmh1Y2lsaXJHM2Iya2R0VFVZYTQ4NEd1Smc1TlF2ajJ3QmlZRjNHRW9Uei1jVWNQRUZtM0dkQUVyalp3UGRyNC15VnVnd01sZzVGemI5WGd6ZzhJRkswYkpxOWdZWlhzVmRfT2dmS3YxZVFWS3RXQWROM01RdGR4WUxCbV9vNmU1QTY0MEtWemV1Rm1LTTE5cmp2MURlQUVOVFVqN040alR2OFFKNjJTaTg?oc=5",
-        "date": "2026-05-07"
       }
     ],
     "china→philippines": [
@@ -11734,16 +11734,16 @@ const ARTICLES = {
         "date": "2026-06-25"
       },
       {
-        "title": "China's Xi calls for strategic clarity, political security with Vietnam",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcWFsc28tRTN3V2ZtWWdfYk4xMWZ4eEhvZ0gtZXZRejE5QUEtZE9QYl9jVXg5Ti1FVEdWdHd1MmliajhwblB5c1hoS1ktd3F1aXBkUzFsdHk4Z180bmxYdGpTVFpLZzMwcDloX0N6SzE0UExENk8wek0zQmtxdkd2QjRMLW5PdGRUTDRqMXdoVUJaUFdwVTlFbkNlLTllVGd2Q0g1cGt2MXVvdkJQYzlCUWFZTQ?oc=5",
-        "date": "2026-04-15"
-      },
-      {
         "title": "Australian Investment in Asia: China, India or Vietnam?",
         "source": "China Briefing",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONGNNOTM1eWFkRzhjbmpEUzg5RlF6cTZscXk5MXRwbjc0dHVWTFpaQkF2MC1OdGMyOGMyZXpTbnhHRWFiNlQ5UVczRUlCX3FuWXQ1RHZ0THgwV2EzYWwwZnFkOVQxNW43cHNqNWpMcGNueDByWE1vcXNDUUFRaDcyQ3JOTTlydHc1d3R5V2dTcw?oc=5",
         "date": "2026-05-12"
+      },
+      {
+        "title": "China's Xi calls for strategic clarity, political security with Vietnam",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcWFsc28tRTN3V2ZtWWdfYk4xMWZ4eEhvZ0gtZXZRejE5QUEtZE9QYl9jVXg5Ti1FVEdWdHd1MmliajhwblB5c1hoS1ktd3F1aXBkUzFsdHk4Z180bmxYdGpTVFpLZzMwcDloX0N6SzE0UExENk8wek0zQmtxdkd2QjRMLW5PdGRUTDRqMXdoVUJaUFdwVTlFbkNlLTllVGd2Q0g1cGt2MXVvdkJQYzlCUWFZTQ?oc=5",
+        "date": "2026-04-15"
       },
       {
         "title": "Vietnam and China Deepen Financial Collaboration with Launch of Cross-Border Payment Network",
@@ -11762,27 +11762,27 @@ const ARTICLES = {
   "diplomasi": {
     "united states→israel": [
       {
+        "title": "Incoming Colombian government announces diplomatic shift",
+        "source": "upi.com",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOb1R2UnFqV0s2RFdVZnFHcTRncDN5WWpqWHdtc1NVM0pQb2dqTlh2YXRVdWVvcmc1aWhNdEh4ZWxfZENwcmo4RHpDVzU5c3hvbjJ5eGlVLU0ya2NyeWhQeEtFTlNqS2xCSjRHeGtVbzZKYWFqWjVudGNPWVlfT3M5Z2FlQnQ2by1NZzJpeTFQNnBQR19hd0tIM0F1a2o4MGU5SGdF0gGoAUFVX3lxTE44SElnel83M0xRa1hNNk16ZW1YUWd3OTJCSTNxdDQ3MHlnWmUxaG5OMGRld01UU0ZvVUJPUDQ4Umt3WFFHcXJ3T2hkUDU0TkFiMlZNZy1JcnQ5Z0xqakgwRERKTEFwYkMzSlg3R1RieHBDWjYxNmhUQy04Z2NGQmg0NHNiQW5iVWxXNmxHTE1CakJTSGRaaDFiWU5iMFJxdmJuMGI3cWJtZA?oc=5",
+        "date": "2026-07-10"
+      },
+      {
+        "title": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
+        "source": "Encyclopedia Britannica",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "Israel shared intelligence with US of Iranian plot to assassinate Trump, sources say",
         "source": "Local 3 News",
         "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNQ1VtSlpSTkdOSVl2Wml1SjFxcTRuUmw3ZFJLd3haVElRUHhwbkxKTDNXY3pBWElVbGllZjNJVFA5X2x3UVdyeTVleGthX0sxX1NOSzNoYl9remxVak5WaDZtTWUwekZVemZ6M0JLdU9sVDlfMHE3VnBnclIzTEJ0ZWY0cHowa0FoZkx2Vk9ZNHpBLVRBR3doWDR6UjFlcVNscWZrY3VBR2tneXNLZk1UMm1SOWxIM3lsUmk5NmRxYnhVQlhTZ3FwdXo5R21pczFBTnZwWE1tREpUemcycmplaTdqb2tuNkJWVnJiMnM5eDBFSF9PTUxrdzRwOFJ2RHpwNk1OLVhhcl9pdw?oc=5",
         "date": "2026-07-09"
       },
       {
-        "title": "It's a mystery who launched latest airstrikes against Iran",
-        "source": "The Tribune-Democrat",
-        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQcFNlRkxtNkV5UnROYmZVRGNIbU56a3RiVVBITFNLZE9GZ25rVzRNRm95NmJIc2FJWkF3M2dodW5mR0ZDLU4wb2xEUk1DMHJxaG5PTEFOMW00eXA2SFp0TTBpQ1l0RFRrNnI1Q1Y4N3h3TTVVUFhhQUhSN2I2b0hfMEpHa1p4elV0bXg5YnZwRWdmLTBIdy1Ebm44eTdreGFZcmxjY3dGcVZRQmlUMmk2WU1FRDhIX3hDQW5zUklfY3JsSHItam1Ub0piVXdDREdUZlZzZ1I3MTJzWVBqX1p4bDNR?oc=5",
-        "date": "2026-07-10"
-      },
-      {
         "title": "In the Middle East and North Africa, America and China Converge More Than They Diverge",
         "source": "Carnegie Endowment for International Peace",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQY2Z1M244eHU3aG1POTdOY0lJcm5uWG1xbVVwNFN0MG1jWFdSaDJLQUoyeWdKdnVMZkZoc2VNNWtnbWRuMmpSWDlfbVIwYnplYjdscDhyWjRGOHliU0ExS0lPR05LUGZUSmswamkxSXQ2X2loX1BDRkhKMVpEczQwcklWSy0zQmFJSGJEXzNyYTFMNFVFSWh6aWdCS0ZQWmxydkdGam9FZExURlNKbzdtWnJmRnpWVzg?oc=5",
-        "date": "2026-07-01"
-      },
-      {
-        "title": "How to Save the U.S.-Israeli Alliance: If Iran Gets a New Deal With America, So Must Israel",
-        "source": "Foreign Affairs",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBjQ0RKSW9icjNBX05BUXhONVBQZnEzWnQzcWhxczlsQTk0NXc3MXkzc2VSQlFjbHBSMzd4Qk80SlRSZlZoTTZTZGxURmxlM0RyLUlUMWhxRzlkT1BzS25Rc2FZSEFuWWhpV0NFSXExYU5uMnox?oc=5",
         "date": "2026-07-01"
       },
       {
@@ -11794,22 +11794,10 @@ const ARTICLES = {
     ],
     "united states→united kingdom": [
       {
-        "title": "Here’s How Much Aid the United States Has Sent Ukraine",
-        "source": "Council on Foreign Relations",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5HelNkR0NFLWxjYno4Nlo3clRmU3NkYmZ6UFMzN3M1eHZQMUxIdGdYSTZHWW5Ba3pPQ0ZldGZWaHAzQkpxZEpFN2hEb3JvZmtfSkNIMWNHX0tla1VxdHNKVzVJWHRNLUJfSHc?oc=5",
-        "date": "2026-07-06"
-      },
-      {
         "title": "What Does the G7 Do?",
         "source": "Council on Foreign Relations",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE85eXlCQUNQUkFQNkxGNjA4WTBqREI0TE9ENVg0S1NXcTdyOEJ4Y3ZxSEU0UnZOOE4tN3c3ekY0cTcwMTBRMFUzVFlsbHYybTNha2JhQUR3S3cyQ1Zrcnc?oc=5",
         "date": "2026-06-25"
-      },
-      {
-        "title": "Italy Joins United States, France, Germany, United Kingdom, Canada, Japan and European Allies as Donald Trump Escalates Giorgia Meloni G7 Summit Photo Dispute While Iran Cooperation Row Draws Global Attention for International Travel and Diplomati",
-        "source": "Travel And Tour World",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBkbTFyU01NOVo3aTc4WlBUM1l2X3ljcWNRUVluVGJ4WktveU1HNVdHZzBCMEpkZE5HWG52TEdrcTVNbTBEZWt6S3VTXzFWNXlCR1ByYmNINVd2R0lMUGt5VGF3MXc5X0xFYW1wX0h3?oc=5",
-        "date": "2026-06-20"
       },
       {
         "title": "Can a Royal Visit Salvage the Unraveling U.S.-UK Alliance?",
@@ -11818,24 +11806,36 @@ const ARTICLES = {
         "date": "2026-04-27"
       },
       {
+        "title": "Italy Joins United States, France, Germany, United Kingdom, Canada, Japan and European Allies as Donald Trump Escalates Giorgia Meloni G7 Summit Photo Dispute While Iran Cooperation Row Draws Global Attention for International Travel and Diplomati",
+        "source": "Travel And Tour World",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBkbTFyU01NOVo3aTc4WlBUM1l2X3ljcWNRUVluVGJ4WktveU1HNVdHZzBCMEpkZE5HWG52TEdrcTVNbTBEZWt6S3VTXzFWNXlCR1ByYmNINVd2R0lMUGt5VGF3MXc5X0xFYW1wX0h3?oc=5",
+        "date": "2026-06-20"
+      },
+      {
         "title": "Germany and the United Kingdom: Bilateral relations",
         "source": "Auswärtiges Amt",
         "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5UWjNMRV85SjZjMDZWZzNtb0N2XzFXU3J2RjBTR0oxMkFJaXhnbEZTTXpKT0hpUjVXVzVXT1NoeTRYQVBTcjVhWUV1YXQ2WWxHZUdFczdBYmR6eFNqaWo1aWhrX1poWGJQdk52TlNIX0YtNE9RYThxODFB?oc=5",
         "date": "2026-03-04"
+      },
+      {
+        "title": "United Kingdom Joins United States, Iran, Moldova, Poland, Ukraine, Belgium and Qatar as High-Level Diplomatic Talks, Political Uncertainty and European Security Reshape Global Travel Confidence and Cross-Border Mobility",
+        "source": "Travel And Tour World",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBneUg2T0tYQXJBYnZfNXdHMmNkWUtFTXZ4ejUzZjgwbXFnRHB5RjZWUGlHSnlBaG1nSV82eHllenRJam02aHhhOU8xVlphTldFQXcwZUxZb3pqUlAxUXBxbkJSc2dhZ1hHaC1FdFlB?oc=5",
+        "date": "2026-06-22"
       }
     ],
     "united states→south korea": [
-      {
-        "title": "Top diplomats of S. Korea, U.S., Japan to meet in Turkey on sidelines of NATO summit",
-        "source": "upi.com",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdjFlSTBzLW1GWmpYYi1ubk4yVGJXT2lmdHNFeVFHWHB6Tk9KaTNxY09EN19xeVlDZmJjV0FsNGdKOGlTSFM0RXRCUHM1OVJxUlNJU3drdGcwLVNrTl96RldKX1ZnRVdXLWhuemg3MHp1YWZ4dTZmZHVqRlUxWTlzMWFjbjV6a3EyR1dUNUdJNm1zVmtmZWVaU3VzV2hqMVdNQ1kwLVc3RXp4eXdVNHZ0cmFvXzloQmVMcWgxcDRuZXd1dGNsUzRpUdIBzgFBVV95cUxPR0FFSlJRbTc0bHpDWm5uTVEwRUFpdG5tdkZ6Q3B0dU5JNkhVanZUSllkVkNRaXVtODBZcko2Q0poYU5ZdmhxVTJhYVZXWFpDc1pYTS1KVmFac0Ewa3ZudHpsTnRpdzBLX3dXWFVwcDRsRGk1UDZ2THRWbElDcUcwTVNybFBPdlRYUURFa0ZOSk9rNVBLbk9yTnRiWVh3QUwzcnRROFM4TkxxTmdROGZYQmQ2NmRDTG9TcC15Qjd0SUtiWEJYakhNeTFNb1JkQQ?oc=5",
-        "date": "2026-07-07"
-      },
       {
         "title": "How Lee Jae Myung Bought South Korea Diplomatic Space, Time, and Leverage",
         "source": "Korea Economic Institute of America -",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZGM4Z0txWnBHTXEwODBpOUpibTk1Z1ZGQVV4MW9YVHhJNzhRVGVpOU1ENl9TV1NVSTE4RlVWREphb0laVlBNX1o3THZjYmJ3N2Fpbl9peGp1NmFvT3ZjVGxzV2xqbmZ6c3dmNi1OZUpzUmRyRTU5a3Yya0JzbFE2YkhQTXZyejNyQjRVUjlfZ3B0OHlsMHVBWWtsc1E3eDA?oc=5",
         "date": "2026-06-29"
+      },
+      {
+        "title": "Top diplomats of S. Korea, U.S., Japan to meet in Turkey on sidelines of NATO summit",
+        "source": "upi.com",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdjFlSTBzLW1GWmpYYi1ubk4yVGJXT2lmdHNFeVFHWHB6Tk9KaTNxY09EN19xeVlDZmJjV0FsNGdKOGlTSFM0RXRCUHM1OVJxUlNJU3drdGcwLVNrTl96RldKX1ZnRVdXLWhuemg3MHp1YWZ4dTZmZHVqRlUxWTlzMWFjbjV6a3EyR1dUNUdJNm1zVmtmZWVaU3VzV2hqMVdNQ1kwLVc3RXp4eXdVNHZ0cmFvXzloQmVMcWgxcDRuZXd1dGNsUzRpUdIBzgFBVV95cUxPR0FFSlJRbTc0bHpDWm5uTVEwRUFpdG5tdkZ6Q3B0dU5JNkhVanZUSllkVkNRaXVtODBZcko2Q0poYU5ZdmhxVTJhYVZXWFpDc1pYTS1KVmFac0Ewa3ZudHpsTnRpdzBLX3dXWFVwcDRsRGk1UDZ2THRWbElDcUcwTVNybFBPdlRYUURFa0ZOSk9rNVBLbk9yTnRiWVh3QUwzcnRROFM4TkxxTmdROGZYQmQ2NmRDTG9TcC15Qjd0SUtiWEJYakhNeTFNb1JkQQ?oc=5",
+        "date": "2026-07-07"
       },
       {
         "title": "South Korea’s middle power diplomacy at an inflection point",
@@ -11857,6 +11857,12 @@ const ARTICLES = {
       }
     ],
     "united states→japan": [
+      {
+        "title": "Japan-U.S. Foreign Ministers’ Meeting and Japan-ROK Foreign Ministers’ Meeting",
+        "source": "mofa.go.jp",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5POVI2RGJtX3M3WnY0MXJHaEZuYWRvbjJKRmNYU2VnU2NTZ19oRHplZGNyYTV2dlg0VTFoLXRhdU1qQmRKSFZQZFBLNS12M0VyWmd0V0JGWUNhRkEwVGdnWmMtS2JKMjQwUEE?oc=5",
+        "date": "2026-07-08"
+      },
       {
         "title": "Top diplomats of S. Korea, U.S., Japan to meet in Turkey on sidelines of NATO summit",
         "source": "upi.com",
@@ -11880,12 +11886,6 @@ const ARTICLES = {
         "source": "Council on Foreign Relations",
         "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5rVFRxQWZhclk3bW9SN2p6TUR3dmZzM1pFcWp4bHRxVWFMZzQzY3U1dGc2TzNGck5PcFNpTVpSNk5Dc2EzTmwyOUd0Mkd6cDRjX09RMGo0X0x6RlVSU0JQcVcyXzVTZw?oc=5",
         "date": "2026-03-18"
-      },
-      {
-        "title": "Japan Doubles Down on “Plan A” vis-à-vis America",
-        "source": "Internationale Politik Quarterly",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE54MlFSUzdJaEJyU0Fzb0N4M1VBTzNITVRKamk0TV9qZ3FKTFp6TlZHVUltYjFraktOM1JJbEMwTTFqMVl2ZGc1S0M5WTRZYjN5Q1piQ0RqcXFpMlg1bDVEcFRlNW4zV0ZYbzNNc3RoUzBIb09yT3c?oc=5",
-        "date": "2026-03-09"
       }
     ],
     "united states→australia": [
@@ -11922,10 +11922,22 @@ const ARTICLES = {
     ],
     "united states→canada": [
       {
+        "title": "Canada - Foreign Relations, Trade, Immigration",
+        "source": "Encyclopedia Britannica",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1iZENTbjVLdHdEVzctYlB5c1NzUENIQmEwWTZjLW1GTjEwSW41NDNBeWVHbTFib1JydEFiaV9xYlNmZDlTWVNiUHM0d2twWmZ4UjN3NmNndHd3LXFOSDA3cVJqVURRUQ?oc=5",
+        "date": "2026-07-08"
+      },
+      {
         "title": "Colombia Resets Foreign Policy With Omar Bula as Incoming Foreign Minister",
         "source": "The City Paper Bogotá",
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOG15U2FWT2pHOVh3WEV6eVdnU1NvMkRya1g4cDhiVmRjRHZNdkZkajdnTldEMFBheFFONGttZlNzdXV4NC00MGRvOTFpalhudFJySHkyX0JtUG0yN1NFblA1R2M5aVNGV1d0RTNKdWhUWEhGLTlwMDhsd1VObUc2bEFJYkxfWnROaEQtUGJQRkg4ZTRUMVhRWll5WEU3Vk5KRS1wSHBtQkVzSDdCcVdpNQ?oc=5",
         "date": "2026-07-09"
+      },
+      {
+        "title": "Incoming Colombian government announces diplomatic shift",
+        "source": "Yahoo News Canada",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOem5aeElleDlVUk9wcW1kRklGMk45OElYcnl4S2lKdE11OE9tRVp1Nk5EY1E0dk1XWnE2ODZfZkthQUFSeFhPVDV3ZmgzTjE1ckVFY2QxbUpKZkpzbFlzTG0tUUI5ZFZydmV1ZDQza21NY052ajhkbzZrcW5JREYxWHpweGZKZTRxLTJUbEZHZmF0VGJXMFE?oc=5",
+        "date": "2026-07-10"
       },
       {
         "title": "North America - Canada and the United States",
@@ -11938,18 +11950,6 @@ const ARTICLES = {
         "source": "Council on Foreign Relations",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE85eXlCQUNQUkFQNkxGNjA4WTBqREI0TE9ENVg0S1NXcTdyOEJ4Y3ZxSEU0UnZOOE4tN3c3ekY0cTcwMTBRMFUzVFlsbHYybTNha2JhQUR3S3cyQ1Zrcnc?oc=5",
         "date": "2026-06-25"
-      },
-      {
-        "title": "Carney courts Saudi Arabia as U.S.-Iran ceasefire collapses",
-        "source": "CBC",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQLWQtdTlUenRGV1lSY3U0VkZ2NGw1Rm9QYzBVVEtGc0N0bDBxX3FQRHVkemlwZGMzd1ZTZzJfYXRuTUdRRjdPNzYyM1dNNC1iMC11MklkWFNScXVYRFVxT09QMzQzSlVNdjZHeHBWczlxU0tpMlNjWlY3Z0RnbnNnd3ZOaTc?oc=5",
-        "date": "2026-07-09"
-      },
-      {
-        "title": "Is Canada on a forked road away from North America?",
-        "source": "Brookings",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbXFvVy1WXzJOTmZPVGNfNm5DaUFqdGJmM2U0RWZFTTg1OEpnOVhkNHZxbk1xdElKREZobmFYT2ZYRnQ3bno4VVRGOVp2cVUyRU1CcWdKWTVrcEFCYm1oVUs3ci1BZUsxdFlTYnVkNnRsek1reFpUX3JvaEpPRk5IYUljNVVoeEhtRnVQQ0pBYw?oc=5",
-        "date": "2026-03-04"
       }
     ],
     "china→russia": [
@@ -11986,6 +11986,12 @@ const ARTICLES = {
     ],
     "china→pakistan": [
       {
+        "title": "Ironclad Alliances: China's Strategic Ties with Serbia and Pakistan",
+        "source": "Alwihda Info",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQLVBjWEFjRnhEZUtaWV9raDFwM0trazdrbFI0SmtZT2FpMlR3V2ZGeG9xRTBUZzZKNVFmamRDUEtMOXJJWWgzY0d0U1pIemJYOS1Dal9mNXZMcmZlZklYbmJ0SHZyTmZsUGU2d1NIdkprNXplTGpJLXVBTWlYczg0MXBtVTlrRkdmQjE4VEdXUnYyRzBnRDdXS01n?oc=5",
+        "date": "2026-07-11"
+      },
+      {
         "title": "China–Pakistan diplomacy is moving beyond bilateralism",
         "source": "East Asia Forum",
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcVZQQzVJeEt5UTVhTkNkWm5EeWdvY2xTNDZjLWR0UzFPZGxRWVgxZFFSMTVmTzJUMGU1VUlNNVktU2NaMlg1ampuNFI5TFJpVEhkZnA0Y2c0elRDLTJEQWJGVFFLNk5hUE1lZ1ZhOEp2alFwbURvTlpXWmFqb3hYeUFkbkd1aXlGblNpUldMR2p5NzJsMGtv?oc=5",
@@ -12002,12 +12008,6 @@ const ARTICLES = {
         "source": "The Diplomatic Insight",
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaUJ6RmRCeGhTUU5RaWFwNVlUZzJDR0tveDVFaHVpMGpsVnhBR2tDaklrbi03N3JWZEVqSTJWV3dYM2NSWUN0Y00yRXNvZWVxNEhWY2NtUWFwQkI5V3I4RVFDZVFNQWZ5TTZjRGU4MzFqNmZTb1JWSFhDZ1M3WndHa0F4Nml2YmRlcHNmMmNEbXQtUQ?oc=5",
         "date": "2026-07-09"
-      },
-      {
-        "title": "Sino-Pak friendship continues to grow stronger: Acting CG",
-        "source": "Business Recorder",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBMZDFiV1ZZRU9CU1oydWhvVkdkREszVVNXOU9RbDVMdERuWnVETGF0eWZFVEhfOGVpeFBFLUxtSHRBblRDNG5POWo2cG1UaTV3cGtJX1lB0gFWQVVfeXFMUExkMWJXVllFT0JTWjJ1aG9WR2RESzNVU1c5T1FsNUx0RG5adURMYXR5ZkVUSF84ZWl4UEUtTG1IdEFuVEM0bk85ajZwbVRpNXdwa0lfWUE?oc=5",
-        "date": "2026-07-10"
       },
       {
         "title": "Sun Haiyan Meets with a Delegation of Political Parties of Pakistan",
@@ -12068,16 +12068,16 @@ const ARTICLES = {
         "date": "2026-06-17"
       },
       {
-        "title": "Trump Puts Russia-Ukraine War on the Back Burner",
-        "source": "Foreign Policy",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdUpXUVJ6MENrbTJ1cTFsSzNZeEE0amloREhMcGZRTk5YOTJwSWVEUlVBUl9HNHlpdkFCelY4emcyWnh3d1NmVWNFT1hHbUFZYjEtcndJUlRpWmkxZ1ZObmNENU5paGctandxTWJjd2pxSFYyTkRrWGFOcmJnQUhWaERGZ281V1plY3UyS2t6cw?oc=5",
-        "date": "2026-06-16"
+        "title": "Russia Balances Relationship with Iran and Other Gulf States",
+        "source": "The Jamestown Foundation",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTFFMRE1QYWw1NzB4WGxlQ0FTYzVpLUpuZXo0NFlRcWo4eDRBVTdtRjNjU0t3dE13ZC13ZnVUVkxlN01jVGJaXzlsb09tQlM3c0pzQ0tMMjlHeE44VG01c1JpZ3ZPaUpkREU1MDBIYWVYLWJobnMzQmZwOENCSzVUb1B3VTZKUnhQZFE0?oc=5",
+        "date": "2026-06-10"
       },
       {
-        "title": "How China and Russia Can Exploit the Iran War",
-        "source": "Foreign Affairs",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRHJJSXI2emE1M1lJb25Rcjhvc2ZUblVuYlNHSDFXWWNEWUl3MnZiVUcySFN2d2ZkcTRkeEI1MHhsR20tQzBBSmc3MmZVOGMtRGdUMDVIUjhMeGo5c3NjeEFPVDl4Y1pKRDV5VnpEdkVTcHUxZm80dXN1dkRYMlBHbVZMWWw0dnhCeHVmWjlybw?oc=5",
-        "date": "2026-04-23"
+        "title": "Tracking Chinese and Russian Statements on the Iran War",
+        "source": "The Washington Institute",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOb1lSUjFCUWJDako4dVNNNmNIQVd3ZXp0MlhGVGhDZjhwMG1US0hMM3Z1MENsZnljd2ZKM0pjclZUOE9GcW1xT1hiaFd0TkdEV1h0QXZKU29YblM2S0hMeElveEZpQU5MV0YtYThIT1kxbWQ0ZU9PV2ZFTW92UzlIVDhWRndGMWxkVld1dWphd2ZXal9sMmJETVRTZTVBT2FwWmc?oc=5",
+        "date": "2026-04-25"
       }
     ],
     "russia→india": [
@@ -12094,22 +12094,22 @@ const ARTICLES = {
         "date": "2026-05-11"
       },
       {
-        "title": "Foreign Minister Sergey Lavrov’s interview with RT India, Moscow, May 13, 2026",
-        "source": "Министерство иностранных дел России",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53Rk9OdXBlV1JMSlpyR3BYNlVOU3FNSV9mTkluMFdoZjRMX3FYZjJGSFpNTzU4TjFIdDhBNng0OVZiNkZJb293RDJDVTJJZDh3MjMybTI4aE90RjM1S0ZHQkowZVVtdmpxOHc?oc=5",
-        "date": "2026-05-13"
+        "title": "India Russia Relations, Cooperation, Challenges, UPSC Notes",
+        "source": "Vajiram & Ravi",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9xRHRBN0x5TVl6cVNfSkpseVVNLUJCZnZ6RzMwbXQ5elhmY1dsLU9xdHpPcFZNLVJ0clhFZjNGLW5feFRPZGF0eTctTEJLQnF6WE1GR1FjRWpHY0NydDhBTmdwSlJ5bHZhbFNLVw?oc=5",
+        "date": "2026-07-06"
       },
       {
-        "title": "India Confronts the US-China-Russia Triangle",
-        "source": "The National Interest",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTFdNUUk0WFV5M3hxSlE4X1pBLW1KSEkwYURSTDBwMnlhVWhXMU9qVFVNZko0Q1lPTWlBb3F1Qk5ZbTRqcXg5cHFNSWR5R1B1aVQ5dFo1NHlIaFo2NU9HMUZrMmEtRDNFWms5Q0gzSzhvTG5xLW5TUlh1Z25WcWVmTTBabkZ3SDlZ?oc=5",
-        "date": "2026-05-18"
+        "title": "Russia, India Review Strategic Partnership",
+        "source": "Modern Diplomacy",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWEFxREVhRXBjMkFQQ3lzTmVtVXNKa05Ud3JvUzgwZVVHRld6ejhTOEVDbVNCRzBIS3duV2doWFgwaTB5ZnYxMkNFdjA0S0w0YTRLRUpPUzdwY1N5QlhmN091RGxPelR1M0g0cWlkOGFnd3ItdGFMY0dtQlFkTzhvM0FtU2xndU0?oc=5",
+        "date": "2026-03-26"
       },
       {
-        "title": "Growing Sino-Russian Cooperation Worries India",
-        "source": "The Diplomat – Asia-Pacific",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTkRlZWFXekdQRmg0b0NsQWU5TndNcTl4czVweTdrSVpkUGFGcDVMSUFfYnYyUEpLSS1IaWhQWE9vMDE4ZG1HWUpvamRFdDhBMDA2dVhnYmlIVUlZVTQtbC1hd1drN05VeC1aTkFLNUgtemRxRG5oX0pkT1labG1MUk1pZXhzUQ?oc=5",
-        "date": "2026-05-26"
+        "title": "India and a Changing Global Order: Foreign Policy in the Trump 2.0 Era",
+        "source": "Carnegie Endowment for International Peace",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTjJONzVWVFB2X252UHc4VnpvQV9GLTQtdUx6N250NHRvbC1XcXdsLVJoUVBTdmkwWWJmaEhFVXF0V0NJZHBKUUFnR2M0VzhGZEhMUnZvY01JeG5aQ25TeENjYzZ6dGI3a0dlVjZRZUc3Sl9Wa3Nvb2lyLUhjLU96WUNaN3ktTkFGQzFqVkExTkNQVWtPQzdibEFESlFJOXp2WWhZbzh2clVNa2dpUXRLTnVJOWpLRDg?oc=5",
+        "date": "2026-03-25"
       }
     ],
     "saudi arabia→pakistan": [
@@ -12126,6 +12126,12 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
+        "title": "How Saudi Arabia Derailed Pakistan’s Africa Drive",
+        "source": "The Diplomat – Asia-Pacific",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUEJncXNHcEl5SGZpcFNPVDNsdDYyRVFaQkNHSG43d2FLemEtNDAtdkktVjlIYUQ1TGM0V28yTDJnbGtXS3cweU5qMG1lSGxlWV82X2hFRUVObG9CaXQwb1VmMEY5dkpONlhXaldpakRBTmN0MFJvUzBZMzNZRzByRHk3RnVmcHd5?oc=5",
+        "date": "2026-06-19"
+      },
+      {
         "title": "Saudi Arabia, Egypt, Türkiye, Pakistan Move to Deepen Partnership, Cooperation",
         "source": "Asharq Al-Awsat English",
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPczdpeTI1aUg0dWZKR1VpcVk3c1lham1LbkFuOVhWYVQzbC1pcXFzdDZhdU5fTTlPVklfSVBHdkFjMGJQcEpLMXFUMHAtMDBKTUZmdllCU1FmYlFFTGszNG14SVVyYmpHN1k3RkpjcGtIanB4ei1ITU0xVmVrYThrMVN3UmY4aDBmWUxVdGF0NkZMdnFkaGREVTJEd1RRNzIzWkZ5NGFtdmY3eGVQNFV6MTJ2LU1rYkE?oc=5",
@@ -12136,15 +12142,15 @@ const ARTICLES = {
         "source": "Middle East Council on Global Affairs",
         "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9EOVAxNFdVWVNwUzBBT0s0NmtVOTF3dEM0S1FSMFY5cG9MNUV5OWVRUHZQNjVYSW1zN3oxN3p1YVV3b09zeUhrNjZQa3BjMEtTVFAwSEQtTjVLbVVibUNrdDVXcmg5RmdXWW9oZHdsOEc0WnBMWDNhYWRpbw?oc=5",
         "date": "2026-06-21"
-      },
-      {
-        "title": "Pakistan, Saudi Arabia to deepen ties",
-        "source": "The Nation (Pakistan )",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1wR21IYTBEVldwWVNkb3FZMWRsLWpUR0dDbXdhanp4Y3BsZEdlaDlUS1JXeGwzZ01nR0oyRzBYdGhPSWVtNjVPY1N1MFozSWxLeXprQVVadFc5RUlvN3JId3hiZmNIT1FwRzlOU1JOZHQ5OWp5NU96ZnlEUQ?oc=5",
-        "date": "2026-07-09"
       }
     ],
     "france→germany": [
+      {
+        "title": "EU-China Relations After the 2024 European Elections: A Timeline",
+        "source": "China Briefing",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWHZOcGl1U24wVWpZdjNyTlFHVTdUNFFSOXBMVUI2clNsSzNMMmFUeFRtRmk4WXZjMDZXT1Y2eFBrMGh1QUU4M3p5eDh3VkxhUS1sbTIyOGE4WG9IOFBMRFpMOWI2Z3pWQUNTZWZkWmwtSEZsRUVtcUdad2RrLXduMXdHQ2trci1OQ3cxdE9Na3BBNV9rRVh0alZVdU42d0VVV0E?oc=5",
+        "date": "2026-07-07"
+      },
       {
         "title": "What Does the G7 Do?",
         "source": "Council on Foreign Relations",
@@ -12168,12 +12174,6 @@ const ARTICLES = {
         "source": "Travel And Tour World",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00MlJMRHFLYTQ2UTN5RjkwSXA0aUs3VGxBRlB6MFhlckpxVmtCRzlzR1JtLUp1amFaQ1hKT21fTmJuQ1BoSVB0ekM0aXN6MktuNnhwNEhmWDFaNXZLdGMtaG9aSjNOUVpxOEc5UjdB?oc=5",
         "date": "2026-06-26"
-      },
-      {
-        "title": "Germany and France ‘too small to govern Europe’ alone, Polish FM says",
-        "source": "TVP World",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMG5NSkN1M3F6anRpcExUUUVQblZFSkFTMXEtSjNVajZlUnpaUUE0R1hFZ2tWQWdXTnQ2bk4yWUtjeUJTT1pfZlZhbXZ6MW5iYVFoNkRSYUtYU0xjdEt1dW5XTy12U2h3QVFwS1B0czNlVnVEWWQ5MGJlZTRnNzZIak5jNV9iMkJDRE05Z1dtX3ZUaTNQc2V3Zmh2NA?oc=5",
-        "date": "2026-02-18"
       }
     ],
     "united kingdom→australia": [
@@ -12222,22 +12222,22 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
-        "title": "It's a mystery who launched latest airstrikes against Iran",
-        "source": "The Tribune-Democrat",
-        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQcFNlRkxtNkV5UnROYmZVRGNIbU56a3RiVVBITFNLZE9GZ25rVzRNRm95NmJIc2FJWkF3M2dodW5mR0ZDLU4wb2xEUk1DMHJxaG5PTEFOMW00eXA2SFp0TTBpQ1l0RFRrNnI1Q1Y4N3h3TTVVUFhhQUhSN2I2b0hfMEpHa1p4elV0bXg5YnZwRWdmLTBIdy1Ebm44eTdreGFZcmxjY3dGcVZRQmlUMmk2WU1FRDhIX3hDQW5zUklfY3JsSHItam1Ub0piVXdDREdUZlZzZ1I3MTJzWVBqX1p4bDNR?oc=5",
-        "date": "2026-07-10"
-      },
-      {
         "title": "Carney courts Saudi Arabia as U.S.-Iran ceasefire collapses",
         "source": "CBC",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQLWQtdTlUenRGV1lSY3U0VkZ2NGw1Rm9QYzBVVEtGc0N0bDBxX3FQRHVkemlwZGMzd1ZTZzJfYXRuTUdRRjdPNzYyM1dNNC1iMC11MklkWFNScXVYRFVxT09QMzQzSlVNdjZHeHBWczlxU0tpMlNjWlY3Z0RnbnNnd3ZOaTc?oc=5",
         "date": "2026-07-09"
       },
       {
-        "title": "Abraham Accords",
-        "source": "Encyclopedia Britannica",
-        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9fVzNfdlgtOTd5Q3puczJvMnZoRWlqZ0p3N2NsVGJDYVdGcHdEcjNHTTNOWENSdG0zQVRrWE1XRWNTeEVHRWRmaFZlSkpFTEpxWHhMWDZhVVVlUUtP?oc=5",
-        "date": "2026-06-24"
+        "title": "Opinion: Canada should deepen its ties with Saudi Arabia",
+        "source": "The Globe and Mail",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTUdBVl9ya295ZzVpUGlZeF9nbnRkbGJGZnk0M2ZIOWgyRWVkZF9JSzRvc05TLU1RZ2JNbDN6SEowVWVhZ3NzMndMcVRESzJQaVhaWFFMQWVud2NfNEIzV09fZTg4QmxOeWN5bE1aYkNJNGRiMHpqVzB4N1hvMGU0TVpmek9WUWhVTUZ3QXhmTE4?oc=5",
+        "date": "2026-07-08"
+      },
+      {
+        "title": "It's a mystery who launched latest airstrikes against Iran",
+        "source": "The Tribune-Democrat",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOT0lSTDF1S1hEZmJLVHNDbEs4T2xoTTNhNzg5VzJYOFJTZ25uUnIxRUszWUVQNTZ3dnlXM1FUOTZudFU5VkV3M3M2SDBIWlJrcktUTFR3bl9BOU1tcUptbzBsdHdKWVNmU1NPMkNkZXhmZzlKZEoxaFIzM0toM05WdFdLaGlrOFlCTlBQOG9xV2FscFlpbWo5OS1VOFhrTVVYRUNrTmdKenVoczZUVHdLeUx0ZnVVRGdaM3F5aXdabE5Pa3oxRDhYdkhJTlk2Z3J1?oc=5",
+        "date": "2026-07-10"
       }
     ],
     "united states→germany": [
@@ -12248,16 +12248,16 @@ const ARTICLES = {
         "date": "2026-06-29"
       },
       {
-        "title": "Germany reaches deal with U.S. to buy long-range Tomahawk missiles, Merz says",
-        "source": "The Tribune-Democrat",
-        "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQbnk3cW1YMWpzellkWkFKOEJ6NW94YnQ0Z3Y0bS16R0NXTzNSbkVGYUdYN2JWWGRTaWcyYWk3YVZXa043RXBIbHNrb3pXV01TUUpaYXJ0WllMelluSjhEcVRSS3NORmpsejFHcEJ6X1habk94SGhSS2hGd0hOWFJuR3VsdTlyTEd6bzhLckZGcjV1S1lBTllCemhzV2xxb2RBNFUxN3FzOHo1QXJnMU93eHlPV3JnWmx1a0tNWGZ5YnBXZlRoR0NRLVo5SURJazhSajVLWHYzVzgyN3VJWktlZ2tFYWlaMGRJNkpxTzRhUGlwWG9EZFd1ODZn?oc=5",
-        "date": "2026-07-09"
-      },
-      {
         "title": "What Does the G7 Do?",
         "source": "Council on Foreign Relations",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE85eXlCQUNQUkFQNkxGNjA4WTBqREI0TE9ENVg0S1NXcTdyOEJ4Y3ZxSEU0UnZOOE4tN3c3ekY0cTcwMTBRMFUzVFlsbHYybTNha2JhQUR3S3cyQ1Zrcnc?oc=5",
         "date": "2026-06-25"
+      },
+      {
+        "title": "Germany reaches deal with U.S. to buy long-range Tomahawk missiles, Merz says",
+        "source": "The Tribune-Democrat",
+        "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQbnk3cW1YMWpzellkWkFKOEJ6NW94YnQ0Z3Y0bS16R0NXTzNSbkVGYUdYN2JWWGRTaWcyYWk3YVZXa043RXBIbHNrb3pXV01TUUpaYXJ0WllMelluSjhEcVRSS3NORmpsejFHcEJ6X1habk94SGhSS2hGd0hOWFJuR3VsdTlyTEd6bzhLckZGcjV1S1lBTllCemhzV2xxb2RBNFUxN3FzOHo1QXJnMU93eHlPV3JnWmx1a0tNWGZ5YnBXZlRoR0NRLVo5SURJazhSajVLWHYzVzgyN3VJWktlZ2tFYWlaMGRJNkpxTzRhUGlwWG9EZFd1ODZn?oc=5",
+        "date": "2026-07-09"
       },
       {
         "title": "With, Without, Against Washington: Redefining Europe’s Relations With the United States",
@@ -12282,10 +12282,10 @@ const ARTICLES = {
         "date": "2026-07-06"
       },
       {
-        "title": "All-In on AI: How the United States and Taiwan Are Deepening Their Chip Partnership",
-        "source": "Stimson Center",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZHVLVkJYT1dLQzQ3aEZfUTBxY0tTMDdMRHpldnlVbmo3UDNVaGRwbmJzUElQcjFYMEthNGdqVlYxYklhS1dGbGxxRUc2TlZKWGpSLXZtVk11NXB1YTdCd3dkQ0FFYm5NVlFFaXBsNUdhcHE1MHYzMFA0OVJyZEU3bGRnUXlQQV9XZmpUVGdUQVg1dXdIeC1VN3V3QXBHa1VFM2FRdFg4dDdMUDNqV1ItbGJR?oc=5",
-        "date": "2026-05-08"
+        "title": "America’s Chip Future Still Runs Through Taiwan",
+        "source": "stimson.org",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZ1NqOFJKa21wanVZQkZONHNZODhNREdjQWdrMkFLRS1HVDcya0dHZUZNWFFjYzJfY2I5WWtGNHBoa1ZLRFp6QTEyenJxalVaR2FoZXNENnRaYUdpdUZld0FITUdGcWQxN3g0eW5EWnI1cl8xdDB1QTZkSmNGRUFzSFBR?oc=5",
+        "date": "2026-06-30"
       },
       {
         "title": "Taiwan semiconductor suppliers are moving to the US, creating new opportunities",
@@ -12346,22 +12346,22 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
+        "title": "IMF Lifts South Korea's 2026 Growth Forecast on Chip Demand, China Outlook Upgraded",
+        "source": "Yahoo Finance Singapore",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPc1RyTTdTQlpwaTVkUm5aaXFRTW92ZjdnRGZiZ1JKRV9xTVZhV2FEdGRic2V0cXBzYjJFUkZ5WWNfMDdvY1B6Unh3ZEgtQkQyQU5ScUpFUEJRX1VVaDdQMmVpVUd5c01vVlFtbkdTV1p4MkZBZ29qcVYtaFVUWldubw?oc=5",
+        "date": "2026-07-09"
+      },
+      {
         "title": "China Bans Helium Exports Vital for Semiconductor Production",
         "source": "조선일보",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZnBuTVAwemlna1p4MWRQYkxZNUpRZFQzMG56QWdZWEt3ek1ta1htN0V4eWZJNWhKZnBGVjhwTFN6RlBoN0ZVSThrNDZVdk81MFppVEhQaTNFZExYT0dpTEQ5Znp6OXk3dk5lVWc3YmpLSjJ0T3BHOHU3UUFmQXVIWll3b0Q?oc=5",
         "date": "2026-07-10"
       },
       {
-        "title": "China Slaps Immediate Export Ban on Helium, a Critical Semiconductor Material; South Korean Industry on High Alert",
-        "source": "finance.biggo.com",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB5SnNheEhQeldRYVRabDJlR0U0ZzJjVE9Xb0JoNlpla2RVMVplSVg4QXNEelJOU3BZcU1NTF9BdllrTC1xc2xlNkt2d2cyWlZ6MnQ3REp1bTdJMzRib2dnRjNHNUZjMUEwaktiT1VIRUwxaG94NHc?oc=5",
-        "date": "2026-07-10"
-      },
-      {
-        "title": "IMF Lifts South Korea's 2026 Growth Forecast on Chip Demand, China Outlook Upgraded",
-        "source": "Yahoo Finance Singapore",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPc1RyTTdTQlpwaTVkUm5aaXFRTW92ZjdnRGZiZ1JKRV9xTVZhV2FEdGRic2V0cXBzYjJFUkZ5WWNfMDdvY1B6Unh3ZEgtQkQyQU5ScUpFUEJRX1VVaDdQMmVpVUd5c01vVlFtbkdTV1p4MkZBZ29qcVYtaFVUWldubw?oc=5",
-        "date": "2026-07-09"
+        "title": "South Korea's SK Hynix launches $28 billion US listing to ride global AI wave",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOExMMERoTnlfeUtLdDFoejc3emp1SXBuQ3NHUGk4YndsTjBxamcyYnh5Qmp6ckFrNk4xTGtld1ZNT2NDOVJHZGVwODVfSENhYXA1Qkg3SjhnZnNjTmhmSjg5Y2x5MzhZbWRDU3M1VHhBV0NxdGJqYkg0ZnlUSUEybVVNRm9MN3R2VnBWRHZVN2NTbFZJZjVSVEpaV3k3ZGVGOXg1Rl9Hd0dveVlLMGRYQ0xtQWx3VkM4N3Bmc1p1MmRSMVk?oc=5",
+        "date": "2026-07-06"
       },
       {
         "title": "‘A decisive moment’: South Korea unveils US$518b AI chip plan to counter China",
@@ -12372,34 +12372,34 @@ const ARTICLES = {
     ],
     "south korea→united states": [
       {
+        "title": "Lutnick urges Samsung, SK Hynix to expand U.S. chip output",
+        "source": "upi.com",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ2w0V1JXUGpYMTJ1V2NuZ2VHajhxaTE5d3ptek53TUlnbWZXZkliV25vMnRPelZRM01iSU1IOXhpY0d0cXRBS1kzdmxkZ3hFeTV3bEZwSXlBSFNtTTM1VDhVeEhEdVcxMm5DbVl2ZTNQVGVuRnZGVHh6NUhZMTg1M09ZUkRkS1IwREo4NDNjbUI1YlF0RHVtTDRId05kZlJyVDR3V9IBqgFBVV95cUxPcm13clFZRnlqdnhzdnA1UlFpY0tRMnhaSk5sSWN5WFVFWWNHUVFGSmc1V2xNTUlXTW1QdlRmVnFBSVZ6cFJ3cHcxZzNhY2NmV2JmLWIyNllBMVVfSnlZWmEyYXIzRzNseDdBVkw5WTZoeUl4T1FPcUxNY1BlX3NQWXlJaDBKTlFPR2hubkhyU1RFTmh2emNSNEEtUHdUSmcwZTVMWEtNb2x0QQ?oc=5",
+        "date": "2026-07-10"
+      },
+      {
+        "title": "Korea must prioritize chip investment",
+        "source": "동아일보",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5IdVN1ZjJjdEtvV1psX2dxVFVfamV5TklWZDFza2NZNTgzWS1XRFM4RmRYMjNheXV0Q2dXN1hJZ2gwSUd0eVNxNGQ5WE8zZDE4b1A2ZzZtaDFvdmRyWGVwYTNtN3lqdw?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "China Bans Helium Exports Vital for Semiconductor Production",
         "source": "조선일보",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZnBuTVAwemlna1p4MWRQYkxZNUpRZFQzMG56QWdZWEt3ek1ta1htN0V4eWZJNWhKZnBGVjhwTFN6RlBoN0ZVSThrNDZVdk81MFppVEhQaTNFZExYT0dpTEQ5Znp6OXk3dk5lVWc3YmpLSjJ0T3BHOHU3UUFmQXVIWll3b0Q?oc=5",
         "date": "2026-07-10"
       },
       {
+        "title": "South Korea (KOR) Exports, Imports, and Trade Partners",
+        "source": "The Observatory of Economic Complexity",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBFb3pSd3NpT0s5andZTy02ZG15OUpWVGJjcmM2UGhwcjU4T1ZEOU1tUHRBN2NyeHhkS0k1bmN3c3RveGxyb3NUWUxZdmdNRVRQLXc?oc=5",
+        "date": "2026-07-07"
+      },
+      {
         "title": "South Korea exports post strongest growth since 1978 on AI chip boom",
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZElrVk0xeThybHcwN21YZ0IwMUtHTnB1T0xoZDFNdUloZEhsM1RMWEV5WWwtV3dTZVd6aUJtdGo2d0VVVk9QTnVUekQ5TXdTank4Tko2UEg3VnpRQ0pIRG5YOFZ1blFDT29yOTlGeWpwRThMZWRudGNaS09mNFBHeTdCbGp2dDZsLUFkdERvMU8ycmx0TUhWeUxFTnI0UFNzVkU3SV9JVHZvMUU?oc=5",
         "date": "2026-06-30"
-      },
-      {
-        "title": "South Korea Reveals $576 Billion AI Chip Expansion Plan",
-        "source": "Thomasnet",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPeXN4S2hQRUJCN013eDlwMW1JR0hMTXZoaXUzRmdTTkNIUnJZWlgxbHhsdncwMnBXdFZIQzBqZ3ZWd0xFYTVlR1U1QzhHY0VtdWthNEJxRVJmUmc4aDAwN2VuQU5hTktqM3dDN011S2pKcXdnYTVDcUxFREtZWE44WG53RGo2QWI5OExJ?oc=5",
-        "date": "2026-07-02"
-      },
-      {
-        "title": "South Korean AI chip startup Rebellions targets IPO next year",
-        "source": "ET Manufacturing",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWjRzU2p4ekNCTmtqU1c2T1FHN0xLdVNzbTZxNFpKakhNbXBCa0V0Q2pDODhWTEZ1LVlTbkZZTWdjM2x4YUpXZ3NIWS1WNE1ONVFVVWU2MWZ5M09yZjV1V05WZHBRSkRZRExidzYyLVVleXdWVVdqaUdVV2lxVF9zRTczSmZVMG5HN2J0aDR4ZV9LRXZoTmdrR09vempDX2sydXZ5SHBwTlBuMXNPTjFHSEMzSFdRYTlndkZwaUdDcmpubjJ2aE15RU5lYkx3d0F20gHWAUFVX3lxTE90Wk9zR1ppblNTQ1RzVTh0dUEyVWZ1LVBLUHRRcVZQRlR1dHdOX21MT2FveGdibk5ublpXdUotRXRhc2NSWUR6Q0JRejFpVVJrTW56TDJGdVViUEdMOXBiNXdLazVvQ3lMQkhiY1JfMDNxV3FsNHowaEJBdnFXa2xBSUdZOS1qc3dSMlJyb01SZ3UxY2k3SDJac2otRl92cDU0WVZEYVRyUjlwdUgxN0lLYlRYUTJYeGdUemZXYVVRYW9VZS15RjdFZUZCTkRTbW1IaWF6Unc?oc=5",
-        "date": "2026-07-09"
-      },
-      {
-        "title": "'One-time opportunity': South Korea bets big on AI boom",
-        "source": "Tech Xplore",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAweVFIemtrUkxWdG1pcnk0NTBCQWpUa1B6eTZWdkRBcklyMTctVElLVGhCX3lvTzBuNjRvZ24wQWNfNi1VcEJIYVFiV0Rlc0xLRTJIcDhJYWRSU2tTajB0dUZXZHFZN2hKUmtab21uMk0xcmk4Q01xeURvMA?oc=5",
-        "date": "2026-06-29"
       }
     ],
     "netherlands→taiwan": [
@@ -12460,10 +12460,10 @@ const ARTICLES = {
         "date": "2026-01-14"
       },
       {
-        "title": "South Korea Overtook China as ASML’s Largest Market Last Quarter",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWmRMTzlUdFduanozYk02dzduX3JrS1VTaHR2R0F0Z1ljMUw5Q3UtQTk1akMzZ1BPRFBVeWNQejVuR2VpbDRydGJLejhSLU5ZNldvdXFkRy1jQ0hQRmRBM1A3d25pdHZBWVZsZXF4VXNqT2pxWVJGSkJ0S1lDNG5ORFBZNndXU0FORlpUX1pFRjNhZHJlUVZxQlNNR3hGZ3hJQjZkck1mQlp1cGdFSEZ4RjcxLW1OQQ?oc=5",
-        "date": "2026-04-15"
+        "title": "Switzerland Pairs Up With Italy, Netherlands, South Korea and Other Global Destinations in Solar Railway Revolution Transforming Rail Infrastructure, Renewable Energy Mobility and Sustainable Tourism, and Travel Networks Across Europe and Asia",
+        "source": "Travel And Tour World",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBQbUtndEc1WGdaT0xLV2p0MmxNRWNfZGlJUjV1bXlPTWp0SFg0V3lpQTE2aVJGNVloZjItU3cwb3lQeGRJLUc1TWRjNWVxY01xVzNvdFFlbDFoRDlqOFpZdGg2ZS1qNUdORUl6ZDRn?oc=5",
+        "date": "2026-07-06"
       }
     ],
     "united states→china": [
@@ -12474,16 +12474,16 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
-        "title": "The Digital Scramble for Africa: Understanding Chinese Smart Cities in Africa",
-        "source": "Small Wars Journal",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTzQtcURPRFo2SnpSNUlyOWZIaW1KLS1TOGZ2T1RkRk9zUTE1cTMzTERYY3B1bU9qamV1ZXkxaHd1alZ3QldGWDBaMm5FbGFfRU0yM3hVU19lYUdWWlktOXotVENVakR5ZjJxdkVyd21oZjZLS1c0SDhMY1pHeTNzUVRsR2hYUnNKRWRvbVVrYU1HRmdMX3hrWFlpRXJwUFNqcFhHUVB4LXczaExkVnRCUTRmTGd0VzlC?oc=5",
-        "date": "2026-07-10"
-      },
-      {
         "title": "It Takes More Than Two to Tango: Creating Effective Export Controls on Semiconductor Manufacturing Equipment",
         "source": "Just Security",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQOHFVbGJtSUZfMnZzTDV2cmVYV1lFcmh3dGZ2S1haOGFhc0JKNGxmSXUzRklRVG53cVFrU3h4T2RLVDg4Mm1mQUktS01Xc3hGTzlGQ0toY2dZSVhvcVVBb1RrQWlJaFRhcTh0d2N2UG5GNzJZWjZUNlZ0U0FPRENnU1RvNFllcUNmQmVBZ3Bybw?oc=5",
         "date": "2026-07-09"
+      },
+      {
+        "title": "The Digital Scramble for Africa: Understanding Chinese Smart Cities in Africa",
+        "source": "Small Wars Journal",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTzQtcURPRFo2SnpSNUlyOWZIaW1KLS1TOGZ2T1RkRk9zUTE1cTMzTERYY3B1bU9qamV1ZXkxaHd1alZ3QldGWDBaMm5FbGFfRU0yM3hVU19lYUdWWlktOXotVENVakR5ZjJxdkVyd21oZjZLS1c0SDhMY1pHeTNzUVRsR2hYUnNKRWRvbVVrYU1HRmdMX3hrWFlpRXJwUFNqcFhHUVB4LXczaExkVnRCUTRmTGd0VzlC?oc=5",
+        "date": "2026-07-10"
       },
       {
         "title": "China Bans Helium Exports Vital for Semiconductor Production",
@@ -12506,36 +12506,36 @@ const ARTICLES = {
         "date": "2026-06-23"
       },
       {
-        "title": "Dutch government irritated by U.S. plans for new ASML export restrictions",
-        "source": "NL Times",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYkdlQndzUTMzLXBrSWF5MmJwSVVpNUlkb3VGMFA2MHdCblpxMkloRW9lM0xXRUpaTEg1RFF1Rm1WWW9aMFBvNHlCZW1CeVJEXzN3SzFBX1NpcmZhOEVGSTJaUkQ4M1k2cEtMSmFfdGIxOHEwLXJyWUZaV2NxRXdLN1p3ZWxfRWJmQVR4Y0xSamRDWnFNbEYwN1F3?oc=5",
-        "date": "2026-06-24"
+        "title": "China calls on Netherlands to correct ‘mistake’ over chipmaker Nexperia",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOczZILUk1WlJ3Y3ppcDFWOFB1Zy1KRnpOQlJZN0ZBVnFacHZMVXlWa0pKZ0VmSEpfR1pHM1RwcTdJMk9tUDVVX0J3eDVkbzU3c1NyMU56eGpYWFZldnJndU5HOExodjh1R0QyVnNzbDlMYkdBSnlXNGJfd3pzSzBpZlN1Q0kzMWZQZVZSaW5pcU1lbkpYTnA3NzE1QjZCYTQwcjV1dlNEcVpXeFZFa3lteXlYUlrSAboBQVVfeXFMTlViWHlxSl9vSjl0SzJscWhGMlk1c0JLYXFrSV9JTFJOQkJzc2txTTI5TkNtYS1wZ2U3clI2Ukk5OUVmdUhPREw4eXVlRVdWallnTEdJdmlTR3lTMFFHSjhUYXczM0MtSW5vZVROdmZHMEZSb0hTSmZ0UHlTNGI2VGVRdHdQMTFRREM2dEpZVW14NkZnbU9WQUE5Ny1RdWFBdGZkZV9FcE1XWWVockwxRE5iSlV3ZXpYeVhB?oc=5",
+        "date": "2025-12-31"
       },
       {
-        "title": "The Netherlands lobbies US to drop chip curbs",
-        "source": "The Star",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNa1o5RGJiQTA4SkFqWjJZX0hCT2FWenV6TXE0TmVhLW11dTV4T2o4R1FLTFM2dEFMWG4zem8xdDFaWGR0dEFpdWNyc0ZpMVdUMnZobG94VzJ0UW5Fcm5yTmN4RzlzZTdweV9aUE9TZUJWXzVMeU1BbzR1YXhjREVfMkNMOUdhXzliREJzRmhSS0d3N215WDN1R0tQZDV6TFRhTEd0VjVLaENNQQ?oc=5",
-        "date": "2026-06-25"
+        "title": "China, Netherlands move to resolve Nexperia chip row",
+        "source": "Courthouse News",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZ3BaWnd0UGZwTTg2ZXJlQ1NCNUNEbjZsa3JmZ0tSczBOSEVQUzI0RDRpV0JrVER1MGxncjZndmtKQnZ1MXVZa1J0UkxBM0JvcUlUdlF0RW80VkhhVHZzVEhGWjl6VTdNVFBqWk85ZXZCc2phbzBGbk1MZXJENUJjN2xDLW9VQQ?oc=5",
+        "date": "2025-11-19"
       },
       {
-        "title": "Despite ASML Dispute, Netherlands Joins U.S. AI Alliance 'Pax Silica'",
-        "source": "아시아경제",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9xUVhuYW1lZzZ6bUhQQlBDZ3VYVVdvY21aMzlOT2IyYkd6ZzlVYk9Ua2liNjRKYk9zU242TWFjMDFCeEZQMjJJTVpvZGdsWGxhalR5czFGU0ZGd0ZFenJ3M0JSczY?oc=5",
-        "date": "2026-06-23"
+        "title": "The Netherlands rethinks its US tech addiction",
+        "source": "politico.eu",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORWN1T2lVX0dQb0c2VkZHSG5sOWRHMk9DUk5fVS1OeG1BdmNuMnJEdzdDUktEQkdSTER0VnJxY0VXU1RhVFdMaXVmVFFld3lpUGRxb1RuZEFsdGpIVGI2SnpKcU5mQ0xZcWdJWGR0bWhSa3pjQm1MaklJRVdhYVhwamVEWTJNTTVY?oc=5",
+        "date": "2026-01-28"
       },
       {
-        "title": "China and the Netherlands seek ‘pragmatic’ reset as Nexperia row rolls on",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNXZCcXlrekJxdFRMaTNET3Y0NlZZSFc2bnNIRWdGOVFzNjRBTWFOM2I5UlJxMzRwY0JiZGFxQ3ZsQXpuNWstTHNySVc1Rjd4eTlSaWpjeVFjV0Q3YzVZSWxpN2szc09jQTNDTUM5TDhHMGlOOVFJRkQ5blY0eDBZWUJMaVU2WlZfOWhfX1djNjZXLXg0WGxhNDc2bzdLd3JZR2R1dXExV3Z4bVEtS2cwWk1yMkQ1ZS1XMXFr0gG7AUFVX3lxTFBUQWdhOVNKNnVBMWdoWGNfeGJYY1c2NEZBd0dwQkdiS0ZCVXB4aTZGUlRGX2doa3JEX003aDl3OUNOc09ySlRaNEJVOFItc2I4MUxXR1NSY2J4SXJ4dUpNTFhUaHY3NFhyaGVGR2l0a0lEMFJlZVZRTGRkZ1RzVWdtWEVpNFZRSEk1dlhfanl2dml3ejZWLXVkdTFxcTdmMzM3QVRaNGRkS0xVRTFvNGNYUUk2MXg1NWx4TkE?oc=5",
-        "date": "2026-03-21"
+        "title": "Netherlands Hands Back Control of Chinese-Owned Chipmaker Nexperia",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMjB0WlB0Q2E0SHRLdjNqVHdlQ3A4WFIxVXppbXN4Z2tWRmVBTDI3b2NjbWYyc1liSDUxTUdhOC05SzIyY1ZsMUFNaWxpTlRvbE5remM1RDZKQTZ2TXc3ZUdHVVZwQTNIV3JxTnY2X2tvc2tjNXM5Sm1EZWNQMHFCeTE5elVMb0lJ?oc=5",
+        "date": "2025-11-19"
       }
     ],
     "united states→japan": [
       {
-        "title": "Spent fuel recycling and conditioning topic of U.S.-Japan meeting",
-        "source": "American Nuclear Society -- ANS",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOM1JLUjFqcC1FOWR6enlMbWpCRkFYbnhZUi14WTVYVmlkSjZwZnhuWUtPV2JjcGhzSzZqZ252S1NaMXo0UzlTbEhIR2FqT0E3ZlZrM1p5ZHFCcVI5R0xNekU4YkVuYnZGZ3hibjNXclFMOGItNWdWYUotVFU4OF9CUm9xc2Jaem5Uc0dnY0ZZc3Rja1IwdDRuSVVYR195c3plWVhz?oc=5",
-        "date": "2026-07-09"
+        "title": "Japan (JPN) Exports, Imports, and Trade Partners",
+        "source": "The Observatory of Economic Complexity",
+        "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBLZVhaZ3lHM2JoeUNsV0lnUVpMT0k5WUZrVk15ZHd0ZW5sUHlGVUMxM1A2U0pnSFB0TFVJTnNUMFRkVWZ6dVYtMVhNUTNEMDVRX0E?oc=5",
+        "date": "2026-07-07"
       },
       {
         "title": "Japan’s Technology Paradox: World-Class Engineering, Weak Economic Growth",
@@ -12576,36 +12576,36 @@ const ARTICLES = {
         "date": "2026-07-08"
       },
       {
-        "title": "Do China’s export curbs on tungsten threaten Japan’s AI chip supply chain?",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTjYyVWdHa216eTdhU2lXaXRicmxVY1FMTDhQSzNxdVB4TkJFNmIxalNEZVRRdnpKVGdXMk1wMGh3RFBZcHpVV29PLTVZeGJqS0h4cDJZTVBlckg2YjJZX3h4NmVJSkVTbnZYX0JyM3FoTldNNi1OTFZ4SDVJVzZmbndOaFM3bDBmUWx0d3IxTUFWXy1pSDYzWXVHRWJYQjBVaHF0Yk5XXzd4V0hUUldEQW9Eb2l6VTNsUmYxN1hwWHk1RGF5Z1Aw0gHHAUFVX3lxTE9ianRpeXNzWTA1VldibTV3bmxOYTctNWJXWHhrblFnczE2R2ZwVmp4RWN5TktRc2tVc1BoUUJoclA0WHBsbFNmc1hMbEQ0eGpLRlRaV1dGUloyUkRLb1RWdFVjTVpieGdXSmMxbzlPU3V2VXNfZWR4NGNnREh6ZlhSbHFXbm1VeXNFUVJzTkIzVDg5SHlyZjhCN3BFTXpua2k4NFhHZVJwbHN6cUlOMDM4SkNGT25EWU00eFZYWEZQU25lT3d1ZUk?oc=5",
-        "date": "2026-06-13"
+        "title": "Japanese chip equipment sales to China fall 10%, as curbs ‘backfire’",
+        "source": "Global Times",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBjTkh5NHZzTmpoZGRKc0NjN0twV1BYaXdHdWNfVEN0ejZjcllQRWJOQ1NVbnJ4eHJRbWtqR0ZOUFRSSnlfSnk5WndQV3J6bm52bDJzMHh1ckJJbXZTTVZSb3NB?oc=5",
+        "date": "2026-06-21"
       },
       {
         "title": "China chip material makers battle Japan rivals for $73bn market",
         "source": "Nikkei Asia",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONURzZW5iNDNKTWEzWWxHRV9NUTlZSVpzRGZ3dW00TXRnVWhodkFnNlg5MUItOWdMbTBMd3lyTm9DZkVhbk1nMmhoZFc5ZG5PVGxDaTFyZGR2NXBncFc0eGVDak5mTnRveWlkeThKcU5Tb2N6ZmRZdUJJdTltSHNScm1nemNxOE81UENCRFkxOEdXQ3BsR3ZhREZSbHU5ZWFjWWJyX1dqeG5HaVZYcmNmZXZIdWlzQQ?oc=5",
-        "date": "2026-06-30"
+        "date": "2026-07-01"
       },
       {
-        "title": "China's chip material makers riding the AI boom close in on Japan",
-        "source": "digitimes",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWUlXN3BmMWViZUtOSWdJLTRRMDVpaGFveDV2ZVNYaTZ2T01NYVhRVDBpdTk4aWs0Qnh1WUYzV1plZ3NMdHZiQV8xLWRwczhvRDFNNHpDYV83OUFQbVBNZUVlcDE2Z0RMbVQ3bm9WRGc1bldOWWdkSER1UTJCem9zODEzQjM5SjhnMFVFYVEwejJIMFozczJHdg?oc=5",
-        "date": "2026-07-01"
+        "title": "Do China’s export curbs on tungsten threaten Japan’s AI chip supply chain?",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTjYyVWdHa216eTdhU2lXaXRicmxVY1FMTDhQSzNxdVB4TkJFNmIxalNEZVRRdnpKVGdXMk1wMGh3RFBZcHpVV29PLTVZeGJqS0h4cDJZTVBlckg2YjJZX3h4NmVJSkVTbnZYX0JyM3FoTldNNi1OTFZ4SDVJVzZmbndOaFM3bDBmUWx0d3IxTUFWXy1pSDYzWXVHRWJYQjBVaHF0Yk5XXzd4V0hUUldEQW9Eb2l6VTNsUmYxN1hwWHk1RGF5Z1Aw0gHHAUFVX3lxTE9ianRpeXNzWTA1VldibTV3bmxOYTctNWJXWHhrblFnczE2R2ZwVmp4RWN5TktRc2tVc1BoUUJoclA0WHBsbFNmc1hMbEQ0eGpLRlRaV1dGUloyUkRLb1RWdFVjTVpieGdXSmMxbzlPU3V2VXNfZWR4NGNnREh6ZlhSbHFXbm1VeXNFUVJzTkIzVDg5SHlyZjhCN3BFTXpua2k4NFhHZVJwbHN6cUlOMDM4SkNGT25EWU00eFZYWEZQU25lT3d1ZUk?oc=5",
+        "date": "2026-06-13"
       }
     ],
     "japan→south korea": [
+      {
+        "title": "Why Japan and South Korea’s Deepening Defense Ties Are Good News for the US",
+        "source": "Daily Signal",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5mS19xWVZpTFVJUGNaRkVRMTUxVE1VTWtpaXo3OTlSMEgtVFJ3ckgxd2xUMnI5WGNzc3E5V28tc0c5TWROWWttaGdjT1h1Znh2NE1JdjNtS1ptUmZVWTRLc0dfZFVrLXkzLTJFc1U2VjczeVU?oc=5",
+        "date": "2026-07-10"
+      },
       {
         "title": "S. Korea & Japan: AI/Semiconductor Investment Push",
         "source": "CreditSights",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZS1MZjBFbXJVRjl5NjFNLTVkeno2cWJJVVYzc0hmOG8zLUtheTFMVW5uQ2hERUNyZS1tcGZ5TFlOWm94RWRSSHFlT3N5Rmx3Y3ZwV2oxN1E2STNVTXk3T3dfVjhIYTZPMjNRcVpjWHoyQ2FFTW1OV1BBRVk5Q1RfNEVkczBnRUZ4WWZra1RScw?oc=5",
         "date": "2026-07-08"
-      },
-      {
-        "title": "Mizuho targets South Korea, India hires to join top dealmaking ranks",
-        "source": "The Japan Times",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRlI5eVVCdnB6RF91b3J5NTVUZ3Q5a3BldE54aVpqSm1qa2tRclVwMjAxTGlrdThHeWFHbmZIdjhhQW1zS3VRRWFsR1Vub1pQY3ZzWkh2dDM1NTlDWTZlSHZCb1U3WVJLRXFNTVloeHhWZ0J6Z1dkcUF5ekhGOS04OU9nZE4?oc=5",
-        "date": "2026-07-10"
       },
       {
         "title": "Asia stocks ease as Japan, South Korea chipmakers retreat after rally",
@@ -12620,10 +12620,10 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
-        "title": "Chief Market Strategist Says Japan and South Korea Could Be Flashing Early Warning Signs for Investors",
-        "source": "24/7 Wall St.",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMndmTVRmbjlLa3o5UXN5eFJwaGFwMXdBQ3JmSXIzcDhKVEVheUtzU1dMVVM1MmNrNE5femczS2x2OEp4XzNmMDRDQnhwOW5BcWx2REg4aEs1Z2F0ZXNTYS1LeXBjNUtHTUNnallCN2VRM3lRYWwtX1BHTWc5TjlLUHdnc1ZBdEsyNExJcUJrQmRuTHliRmFYamQ1NmVpem1iZ0g0d3RfcENLSVVCNzJONDZVSzRob3YxLUY2amMyVkZJVDJmbEJCY09fQnYxLVJkS0Z3aDVxV0MxcE9qQS1j?oc=5",
-        "date": "2026-07-07"
+        "title": "Japan to End Export License Waivers for Key Semiconductor, Display Materials to South Korea",
+        "source": "동아사이언스",
+        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ZWHd3aHVjNlNVTFpPX09iNVhVME9iRHlNRUNPWnZfTFJaTTFTMFNsZTNnLXNhaTFjR2pSM0VaOFd6aDhfN3N0UkZESEVnT1k?oc=5",
+        "date": "2026-07-09"
       }
     ],
     "china→united states": [
@@ -12631,12 +12631,6 @@ const ARTICLES = {
         "title": "Cornyn: CHIPS Act will help America win the AI race with China",
         "source": "Dallas News",
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQ3NyYmNycEZhQ1ItR2ZuTFQ0SG1JcnhyLUFTNnNlSFFvaGJPanhVTjU4czVWaks5SVdCVHVieGxoUEdoemdramxGTHFLRXdRcUhGVW9EY1owMXRldEFzUE5IZUtldXVaN1Y1U09rR0NMblpCc3F4bFlPZ3MzdTlqcUl4NzFxVnFTVEZkU3E4bWpLZWprRGc?oc=5",
-        "date": "2026-07-10"
-      },
-      {
-        "title": "The Digital Scramble for Africa: Understanding Chinese Smart Cities in Africa",
-        "source": "Small Wars Journal",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTzQtcURPRFo2SnpSNUlyOWZIaW1KLS1TOGZ2T1RkRk9zUTE1cTMzTERYY3B1bU9qamV1ZXkxaHd1alZ3QldGWDBaMm5FbGFfRU0yM3hVU19lYUdWWlktOXotVENVakR5ZjJxdkVyd21oZjZLS1c0SDhMY1pHeTNzUVRsR2hYUnNKRWRvbVVrYU1HRmdMX3hrWFlpRXJwUFNqcFhHUVB4LXczaExkVnRCUTRmTGd0VzlC?oc=5",
         "date": "2026-07-10"
       },
       {
@@ -12652,10 +12646,16 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
-        "title": "The Chip War with China Is Failing",
-        "source": "Foreign Policy in Focus",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9NMlJoMmdIenRaVHZfMy1OUnVBZE1CRFpObkgzSnhPaW4zUmdzdTRrVmktZVI1SGNQMDdUTUFWQVkzRTdSNS1PQ2VKbkw1Rk1wSXpQOF9uVHZmY1ItNWZCcU5n?oc=5",
-        "date": "2026-06-30"
+        "title": "The Digital Scramble for Africa: Understanding Chinese Smart Cities in Africa",
+        "source": "Small Wars Journal",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTzQtcURPRFo2SnpSNUlyOWZIaW1KLS1TOGZ2T1RkRk9zUTE1cTMzTERYY3B1bU9qamV1ZXkxaHd1alZ3QldGWDBaMm5FbGFfRU0yM3hVU19lYUdWWlktOXotVENVakR5ZjJxdkVyd21oZjZLS1c0SDhMY1pHeTNzUVRsR2hYUnNKRWRvbVVrYU1HRmdMX3hrWFlpRXJwUFNqcFhHUVB4LXczaExkVnRCUTRmTGd0VzlC?oc=5",
+        "date": "2026-07-10"
+      },
+      {
+        "title": "A New Economic Security Consensus? Semiconductor Nationalism in China and the United States, and Europe’s Choices",
+        "source": "Institut Montaigne",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZWtVNHVNNXRlUE0zSTJsb0twUUVleGxHemFpN1JrdEhZejhmVFRpS1Y0VW0yRk1PQkJlWG5HRWJqVEtSVTEySHE1UWJRLXBFQXRwQ25yNVFmZUZURHlaVUV3V1FQUmVJdnBncGlIMjdHM19FT2JoQ2FkSExydTU3YWwyUkZmNUJ2U1hDZmZXMjZaYXZWV2oyMFdKVjI4cGtYQk91UjJtdmF4eXp3WGNnRXhaWkZYd0VJUXB3b1l3?oc=5",
+        "date": "2026-03-17"
       }
     ],
     "china→netherlands": [
@@ -12664,12 +12664,6 @@ const ARTICLES = {
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQjE3U21NTkQ0UXBMRDk5MXZzU1N2WXNFWDNDWlNkaHYzNXlrN2VtVHNXbmE3cVpNdVY3Q3hWa1Q0bDA0MVllMzloOUZlSmNtNmVGSmphNmlnbmwtSWZ2VnlSMWROdzk1d2lIVnI5SUQwRWMwYU1wcWhwU1NKYzF4ZExWNWZ5LTdydGxlaEM3STBlYVpDRlU5Um1JYmpKYWhfVlgwZVJSV2Z4YUpGWF9najJsaHJWbDU0VVRBOXdyc28?oc=5",
         "date": "2026-07-07"
-      },
-      {
-        "title": "Beijing seeks chip stability and fair market access during Dutch trade mission",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOdGVjNTNUU0NxZV9jTmpmTWZ6cXhSeWpZcjNlOV9RYWFkYlJfMUJ5bG9Yc0ZodlZISEExczJqZXFhY3FNTzlycUg0R3loc3RCSVVnUXA3dDJtdlhBZmcxQ0twMFlXN0d6aVdTUk5HeHhHRzBCN2hNSzRONmV0Y2ZNNUdfWG5pU3BSdHQwX3NUZXpMMGZrVGNLd20xYlc5LTNTeUgzTm93aDRPT3c3aFdzQTM0UmJNZHVmYkkyYmZBTkhaa1Q4TmQ3RXpEdnFwV2FpWXk1bzJVVEYtNkxIa0HSAd4BQVVfeXFMTkxhLXQxdWxHaWtNdDZVRnlkZVVIQXRYTVBCTkhEQUV4d2tDS3ctTVkwQTViQ2JWUXJxcG5CaU5zWVlreEk5YjdCbDh3Ym0yVWRvOWRlSEVzTHRVcHg2VU9mVWRxbkRfVnh1WWJlMVA2eFBnWS1XM29YeXhCZ3BicDM4NFhmc2MwM3VuZ1lJNDJoZVVabGVVUlBfZzZ5cHRwQjVYTDlGaDlVUEhuYXNiMTM0eTlXSk0wSkY1cGtwSkd1VklKZ2xtblJlSzA0SEhDYkprWWVwV0NoVldpa1NR?oc=5",
-        "date": "2026-07-08"
       },
       {
         "title": "Semiconductors: China and the Netherlands seek way out of Nexperia dispute",
@@ -12687,6 +12681,12 @@ const ARTICLES = {
         "title": "MOFCOM urges the Netherlands to stabilize semiconductor supply chains; pragmatic engagement offers hope, ‘greater sincerity’ still needed: expert",
         "source": "Global Times",
         "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1GaGxoRFJ1WGJNU3VQSjRJTFpsaWFxN0p3ZDFyOUI0RzZfZ0VRSWpwZUhDMVd5YVNZbW4tY3lmZEVVSmZvMDJjX0RKbEdxeHFZTTh2dkN1b20wVF9UeHBEeWhn?oc=5",
+        "date": "2026-07-08"
+      },
+      {
+        "title": "China hopes Netherlands ensures fair investment environment, stable chip supply chains",
+        "source": "ecns.cn",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5BUlR5aWFaZ2JPUHZRS2RiUWlZZGZ4MlRaNWJ0bnRXYVVEOXJZY1BHQjNSbWJKM0hQS2RfMEtjYmJqRXBWOWhZc0RXZXhCdFpYSXlmRlN3OXJjRmlvNEhLMUkwdEZ4eVRickNXNHlxUnFNa1pZRUt0Q3JR?oc=5",
         "date": "2026-07-08"
       }
     ],
@@ -12704,10 +12704,10 @@ const ARTICLES = {
         "date": "2026-07-08"
       },
       {
-        "title": "Beijing seeks chip stability and fair market access during Dutch trade mission",
+        "title": "Exclusive | Dutch semiconductor giants join delegation to China as US pushes curbs: source",
         "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOdGVjNTNUU0NxZV9jTmpmTWZ6cXhSeWpZcjNlOV9RYWFkYlJfMUJ5bG9Yc0ZodlZISEExczJqZXFhY3FNTzlycUg0R3loc3RCSVVnUXA3dDJtdlhBZmcxQ0twMFlXN0d6aVdTUk5HeHhHRzBCN2hNSzRONmV0Y2ZNNUdfWG5pU3BSdHQwX3NUZXpMMGZrVGNLd20xYlc5LTNTeUgzTm93aDRPT3c3aFdzQTM0UmJNZHVmYkkyYmZBTkhaa1Q4TmQ3RXpEdnFwV2FpWXk1bzJVVEYtNkxIa0HSAd4BQVVfeXFMTkxhLXQxdWxHaWtNdDZVRnlkZVVIQXRYTVBCTkhEQUV4d2tDS3ctTVkwQTViQ2JWUXJxcG5CaU5zWVlreEk5YjdCbDh3Ym0yVWRvOWRlSEVzTHRVcHg2VU9mVWRxbkRfVnh1WWJlMVA2eFBnWS1XM29YeXhCZ3BicDM4NFhmc2MwM3VuZ1lJNDJoZVVabGVVUlBfZzZ5cHRwQjVYTDlGaDlVUEhuYXNiMTM0eTlXSk0wSkY1cGtwSkd1VklKZ2xtblJlSzA0SEhDYkprWWVwV0NoVldpa1NR?oc=5",
-        "date": "2026-07-08"
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNeTRHMFJSMUZLT3VTY0MtVVdBaGJScFotYXhWUDFtbENBN0xnVnVNVGVoMHprdExzRE8zOUpqOHhoaDVXdW1jV0hYRGtDY2o1ak1DaFQ5VkJ6QnJFZTJ0VGt4djl5cFJSc3VVbi00WWNjelBTQ2tET2hhQ3l5d29pb0xuRkNEWkdMOEozVDhYQ3NrQ1pDdnBVZ0JMdk1aT2kzUHNpWGtiaVlPVWhMWFFIQ3FQelJIRUpxQTFQODVobEZDeHRBMmY5WWR4YzhpamRPZmpBQS1la1VJT2PSAdsBQVVfeXFMUFZuMVhDRHNaRXNKbDdPR09VQkdxN084TGk0aGxITG9yajZ5Z1ByUTBmUC13cGw1RGR4YnlJbUtWdUJQNEhDUUpGWXNweU1pWkFOMDZ4SVhrSWowSVJZX0dVWXBaaEFTbGM0Sm5NWUxtYXpWOE1JSlZ5UDVocGVHMDZ3ZjlEYUNzZG5lZ1QxVks5ZkV5d21lMjBfSHA3SkVINW41akZSMzFXZ3VrRjhvMjBjdzRsbkVGUnR0RXZOVWVyNmpHT28xc3pjanJjTU1fV3FQeElLVzllMVEw?oc=5",
+        "date": "2026-06-24"
       },
       {
         "title": "Netherlands Lobbies US to Drop Chip Curbs Targeting ASML Sales",
@@ -12724,22 +12724,22 @@ const ARTICLES = {
     ],
     "china→south korea": [
       {
+        "title": "Huawei's Korea push signals new front in U.S.-China tech rivalry",
+        "source": "upi.com",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWDNic0NsczZzRUNBTnV6SVV3ZEZNQnhPRVRHZktrM2tjSnFRTU5OSlJyZmpkenZ0eVU1SG55UmFzZnNFbkNQczdMbzlDd3UwLW13Ynl6U2tVeVk4WW1mUG5vMVJtYkdxUmRHVFVUMTNZQ0pPc2hkM3BaaF9sZk45TXAtSTJjWlZqZnN6TlNYXzlzNmpaaHl1RkpZME5vRUVLMWlsWdIBqgFBVV95cUxQMm9LaFY2aTVWM3FDclNobXlYYVBZeEFaU1VORURtbkxJNTVBY3NsVVNwdWk3YjVQbm4yNUJOcms3NS00RVRKV3REZmlwWm5qOWRSay1ybXJvbWlkSzRBSWxsc0tOQTlyWEZGQTA5YVFuVVpIOGRhT29ibGllWXVpeUI2bWpmaEhHc1hKeWlJVlZVNDNEOUtsWWZ1Z1pLUnIxSUVoU0p1dlZOQQ?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "IMF Lifts South Korea's 2026 Growth Forecast on Chip Demand, China Outlook Upgraded",
         "source": "Yahoo Finance Singapore",
         "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPc1RyTTdTQlpwaTVkUm5aaXFRTW92ZjdnRGZiZ1JKRV9xTVZhV2FEdGRic2V0cXBzYjJFUkZ5WWNfMDdvY1B6Unh3ZEgtQkQyQU5ScUpFUEJRX1VVaDdQMmVpVUd5c01vVlFtbkdTV1p4MkZBZ29qcVYtaFVUWldubw?oc=5",
         "date": "2026-07-09"
       },
       {
-        "title": "China Slaps Immediate Export Ban on Helium, a Critical Semiconductor Material; South Korean Industry on High Alert",
-        "source": "finance.biggo.com",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB5SnNheEhQeldRYVRabDJlR0U0ZzJjVE9Xb0JoNlpla2RVMVplSVg4QXNEelJOU3BZcU1NTF9BdllrTC1xc2xlNkt2d2cyWlZ6MnQ3REp1bTdJMzRib2dnRjNHNUZjMUEwaktiT1VIRUwxaG94NHc?oc=5",
-        "date": "2026-07-10"
-      },
-      {
-        "title": "China Bans Helium Exports Vital for Semiconductor Production",
-        "source": "조선일보",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZnBuTVAwemlna1p4MWRQYkxZNUpRZFQzMG56QWdZWEt3ek1ta1htN0V4eWZJNWhKZnBGVjhwTFN6RlBoN0ZVSThrNDZVdk81MFppVEhQaTNFZExYT0dpTEQ5Znp6OXk3dk5lVWc3YmpLSjJ0T3BHOHU3UUFmQXVIWll3b0Q?oc=5",
-        "date": "2026-07-10"
+        "title": "South Korea's SK Hynix launches $28 billion US listing to ride global AI wave",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOExMMERoTnlfeUtLdDFoejc3emp1SXBuQ3NHUGk4YndsTjBxamcyYnh5Qmp6ckFrNk4xTGtld1ZNT2NDOVJHZGVwODVfSENhYXA1Qkg3SjhnZnNjTmhmSjg5Y2x5MzhZbWRDU3M1VHhBV0NxdGJqYkg0ZnlUSUEybVVNRm9MN3R2VnBWRHZVN2NTbFZJZjVSVEpaV3k3ZGVGOXg1Rl9Hd0dveVlLMGRYQ0xtQWx3VkM4N3Bmc1p1MmRSMVk?oc=5",
+        "date": "2026-07-06"
       },
       {
         "title": "‘A decisive moment’: South Korea unveils US$518b AI chip plan to counter China",
@@ -12748,18 +12748,18 @@ const ARTICLES = {
         "date": "2026-06-30"
       },
       {
-        "title": "South Korea's SK Hynix launches $28 billion US listing to ride global AI wave",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOExMMERoTnlfeUtLdDFoejc3emp1SXBuQ3NHUGk4YndsTjBxamcyYnh5Qmp6ckFrNk4xTGtld1ZNT2NDOVJHZGVwODVfSENhYXA1Qkg3SjhnZnNjTmhmSjg5Y2x5MzhZbWRDU3M1VHhBV0NxdGJqYkg0ZnlUSUEybVVNRm9MN3R2VnBWRHZVN2NTbFZJZjVSVEpaV3k3ZGVGOXg1Rl9Hd0dveVlLMGRYQ0xtQWx3VkM4N3Bmc1p1MmRSMVk?oc=5",
-        "date": "2026-07-06"
+        "title": "China Bans Helium Exports Vital for Semiconductor Production",
+        "source": "조선일보",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZnBuTVAwemlna1p4MWRQYkxZNUpRZFQzMG56QWdZWEt3ek1ta1htN0V4eWZJNWhKZnBGVjhwTFN6RlBoN0ZVSThrNDZVdk81MFppVEhQaTNFZExYT0dpTEQ5Znp6OXk3dk5lVWc3YmpLSjJ0T3BHOHU3UUFmQXVIWll3b0Q?oc=5",
+        "date": "2026-07-10"
       }
     ],
     "taiwan→japan": [
       {
-        "title": "TSMC (NYSE:TSM) Expands 3 Nanometer Capacity Across Taiwan Arizona And Japan",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMjl0WW9MT25EdHMyWjN5QkxoVzk2OVJkcEhUa3dQZFJIU3hsZDdrUjAwZ0E1MWtnNC1GWjJwUGd1NGthMnB5aGlScHVtdjdUV3k3TkY3QndzeExZbklMUnBQdUsyNmljSFFUUFZCUkNmSFlvN1NyWjBJM3N5X2ZDYXV4bUdhc2FHUTNNVnpKMFc2Zw?oc=5",
-        "date": "2026-07-03"
+        "title": "Taiwan-Japan ties crucial to Strait’s stability: expert",
+        "source": "Taipei Times",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5NRDdrVkZ1aDFZYmp6dFk0TW05blFnei04Qzd3Y3RSSVNLMWxqSmVvMXhpckQxeC1FRTlXYUFwQlllTnNDeklnS3VzYmtmU2ktTFluR2VCZW1HTFh4TXRwSXN6SEtEQWZ6VWlFNC11cEh1RTgyVmhFWXd3?oc=5",
+        "date": "2026-07-10"
       },
       {
         "title": "Arizona, Taiwan and Japan MOU Signing",
@@ -12768,22 +12768,22 @@ const ARTICLES = {
         "date": "2026-03-12"
       },
       {
-        "title": "Taiwan raids Super Micro in widening China chip smuggling probe",
-        "source": "The Japan Times",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUkRNZDVFZDFnU0FyMHdoRXVpXzQwUnVQaEhKcXZURjY4TDdYOXl1djU2OUdmd2g1NnJsS1BBMFVESVlGUnY3OGRhZTQ3eENZOEpjQXdPa3o5ZUJ4U1ZpRkxQNWdiWkNCbXlvRnpyQTBjTU04dUVxMWtuTG90a2ZWWmszTFpfTGhoUnpfNGhtaW5UTHM?oc=5",
-        "date": "2026-06-30"
+        "title": "TSMC (NYSE:TSM) Expands 3 Nanometer Capacity Across Taiwan Arizona And Japan",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMjl0WW9MT25EdHMyWjN5QkxoVzk2OVJkcEhUa3dQZFJIU3hsZDdrUjAwZ0E1MWtnNC1GWjJwUGd1NGthMnB5aGlScHVtdjdUV3k3TkY3QndzeExZbklMUnBQdUsyNmljSFFUUFZCUkNmSFlvN1NyWjBJM3N5X2ZDYXV4bUdhc2FHUTNNVnpKMFc2Zw?oc=5",
+        "date": "2026-07-03"
       },
       {
-        "title": "Sony, TSMC plan new Japan joint venture for next-generation image sensors",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUjZaZ2JnZGh6RUYtNzBfQjFLV1ZfaWJ3M3RmOEI4dG12UlEzanVsRDZDcXhPOUhicldoSWctRDRxZzJxc1hDQmlNTEJwY0x5LWw2REpUU29RUFBnc0FVWDExLWI3WjJjWG4zZnZ6NW5DVGpTWFJxbE9uQWNZaVpsbkVpSTBKSngyNC11aGhTZmFHb1hOaVY0eE5ZSUZyRHlPeC1wTlI3ZmpTRDd0OEJuaWZyemp0ZldOZndHNVdoOUY?oc=5",
-        "date": "2026-05-08"
+        "title": "TSMC to make advanced AI semiconductors in Japan in boost for its chipmaking ambitions",
+        "source": "AP News",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeXd2WXFnZzQwY1NORTFoWFA5bWxENEstbXJiTUcxLXVkSU82UDVtSDNuZnBESzFzQnJLMG5xb25paVRwZHdTaTdfX0otbDdZbnlHd1dXMklJekhQMXNCUUJkNUNXNzNfeVZuelduR1NKcDFkbE1wUnJGX0FrdTAwWTVKMURzRFVrOFFfUklHQXZnRWVTZXRlRmpvUQ?oc=5",
+        "date": "2026-02-05"
       },
       {
-        "title": "Why Japan matters in TSMC’s global expansion",
-        "source": "East Asia Forum",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcmo3RWxnanlUUlhma29mVTI4MW1qRmdxVkM0MmttWFNuUzdDZTFsRmFTaHFFNERkeHFIRHd3aGM1ZGR2b2VhOFdFN2VpVGs3a09pX253VU1weTFzMmd1ZFk3Ny0zeUdsVUZvbVRsM2hLSWpKZElaWjlpSmdDZlVuZ0FzWnpCWmp1?oc=5",
-        "date": "2026-01-15"
+        "title": "Why Taiwan’s semiconductor industry matters to Milwaukee’s manufacturers and tech sectors",
+        "source": "Milwaukee Independent",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQcjRGVGpOSVlNT0lqN2huVDZyeEdXNGcteENReld2WDF2ajdSbl84a3FrT0FMTmlBcmJudDh1d0FEV1NuTzUwRFVkS2x4dGg5dXJ1V2FGU2JOc2NzbFNBUjZvMWV3STY0TFp0RnNGU2lLLWdMNk10U3R6V1pXRGRjenN3WVE0VUx0NmFiQWFTdmtrNG04T0xvSFNJMXRlYUxyRm9IUUdCZWZLVlRlRE0yRnBVNDFkTjdxdzIyamFwWU1BUQ?oc=5",
+        "date": "2026-05-02"
       }
     ],
     "taiwan→germany": [
@@ -12860,6 +12860,12 @@ const ARTICLES = {
         "date": "2026-06-21"
       },
       {
+        "title": "Germany plans to withdraw its troops from Erbil, Iraq by September",
+        "source": "صوت الإمارات",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQclhNWWdmTG5BZjBkU0hVZ2duOWJta3p0OGVnWmt3cTdJd3F1endrb0x3MVFhTW12WDdubEZLUHM1R2J6SUs1bmJQU09jNWpJZGhBOVJXVFR3YW1RWUM5Q09sOGZKM2FnU0VUV0pLM0YwV2gwdWs2aDJTejdDNGNOWmFjem5tTWlVVjNxMkU2UW5EYVd2dU0wR2lJTmJpUFdlVzR4ajNjNjlpT1RKOTBqWGNNUm5vUUJX?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "Trump Is Pulling Troops From Germany. The Missiles Are a Bigger Problem.",
         "source": "Council on Foreign Relations",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPYWFHaVVOMG5VeUMyQU8xeWc4OHZEM1BXRFp2ZGtKR3c1LWdXQjhfbHZNc014aFEwYThtbDdPbUg1MVBOMXVrNFBHZTgyWV9SU21wQlI0VjZYR2lLSkZ5SVNlcFVVd0hOMks1U2szQmVEMHNFc2FqcUpsdjVfLVhJenFFRGd6QTJSa2pmVEJPQl9DSVRrMzV0aWJGMXZtNmE3?oc=5",
@@ -12876,12 +12882,6 @@ const ARTICLES = {
         "source": "The American Legion",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObGwzdXlLRVloWENfSTBLMHhBeE5BZHBDVlNlaFpsOExIZWRGWmlZYzF2RE5PNi1ndXhZalg5YTdxS19WUG5STXVBckhCaXRqYnFOSzU1eDd1VmlwTzlNM254VUNLekJlUFkyTnVacFdsOU5XcVVHU2M3TDcwSkZfQzVIdEJDY1N6WE5MMU1PM21pTW9fYTcwYUZHR3piOEtmZ0pBclMtSzFHZFM1c3l4bzZwWjgxUQ?oc=5",
         "date": "2026-04-30"
-      },
-      {
-        "title": "Why Trump’s call to pull 5,000 US troops from Germany will hurt America",
-        "source": "The Conversation",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZDVQYzJ4aS1PMHJhRm45Rzl5ZFZiRDZPeGU1VzNKTVdqbzBiVGR4RHk4YzRiM3lWV1pDd3hzUHFhVW1HM2tzZDh2bG5qeFo5dTJTN2ZkUURXbkhyZGJCTXZRTXR4U21pS3N6OFR1ZEE2MjFhRFQ0bUxkNDRQUVRCU3NpVFNLY3FyMVY3dVZDMThvM25YUHVUc3RmMmRrc1VfTFpDcy1UaWo?oc=5",
-        "date": "2026-05-13"
       }
     ],
     "united states→japan": [
@@ -12899,7 +12899,7 @@ const ARTICLES = {
       },
       {
         "title": "The Time is Ripe for Next Steps on US-Japan Military Shipbuilding Cooperation",
-        "source": "Stimson Center",
+        "source": "stimson.org",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdF91ekoxTDBWMDVJYTA5a1Q2Rm1qXzlZQVVvbFZ6a0VqNmNadFUyZXF5YVZvV2V4STUxNzNha1JGbFBEaV9WNFNsbkwxNUR4Q0ctTDh2Y1l1ZUU1YTRBQ0w3ZkUwWlBub25fd0xLQVVmcHZKMTRBaGhDUkQzdWp1aWFWeEt5UEcwSTJjaF9ncmJ4V0hJb0d1RFBGWXUzYkhpMmwzRU5GUnNkTVU?oc=5",
         "date": "2026-04-23"
       },
@@ -12917,6 +12917,12 @@ const ARTICLES = {
       }
     ],
     "united states→south korea": [
+      {
+        "title": "South Korea, U.S. begin Gwangju base talks",
+        "source": "동아일보",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5qZXNHMUd4SXBqU1k4Zzk4Rmx5RXRLakdtLUxvZDZMS0N6TU52U0xnZm1mVTNOd1BDMHpEeExXM2pVNmNYdzdORGlqTmVjYnNMb3o2MktEckFxczJhdW5qMkdBNzVQQQ?oc=5",
+        "date": "2026-07-10"
+      },
       {
         "title": "North Korea's Kim calls for 'destructive' military posture as South vows to boost drones",
         "source": "ABC News - Breaking News, Latest News and Videos",
@@ -12940,12 +12946,6 @@ const ARTICLES = {
         "source": "The Korea Herald",
         "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE85OGIwLUptYWd1TzZsQ2g2WnE3MlUzRUg0NmxZaGhEbEhLMXE5c0xDSFM4VUMteVZEVnVicWNGVHo0Z2lYN0c1dEFsa3JuOFhvTWd3c3J5Zw?oc=5",
         "date": "2026-06-21"
-      },
-      {
-        "title": "The Largest Armies In The World",
-        "source": "WorldAtlas",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNM0JZZ3piaUhCLU5WTS1LdmRHQTZFeEtlVXU0V1ZXR0lxTnZNUjM3UDhVbkRfWXBUWXctMTdUX3lFOFR2cklzNGppQ3pNU0I1NnJ3ck42N3Z6YkR5dTZBU0RhZnpBTG12YU5yQ0VOR1BGcFF4Z245VXFyVXZucm0tQmxSMA?oc=5",
-        "date": "2026-07-06"
       }
     ],
     "united states→italy": [
@@ -12974,10 +12974,10 @@ const ARTICLES = {
         "date": "2026-06-16"
       },
       {
-        "title": "Strengthening NATO’s eastern flank",
-        "source": "North Atlantic Treaty Organization | NATO",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOb0lJaHFFWmtoOVNvV3NULWl6SG03alRxX2xrUlAxNkRCMUlQU1NkWEdpQjFhSWRFQ1hpckdfLWN6ci1waU1iVVQ5UVdXb1NwRHdCT0dpTTZaallpcFR3SVJudmluSjdkcXZobUpYTTlhSUtJXzZjSmppV2FkZHJBTnE0UmFaRGhOZ05xX0Z6TWxqLWdndXc?oc=5",
-        "date": "2026-06-17"
+        "title": "Italy denies US permission to use key airbase in Sicily for flight linked to operations in West Asia",
+        "source": "News On AIR",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOLXA4S3d0Z254cWJ0S3RsaDVaWkZJNlpYQnJVSnI3Tk9Hd0xCVHJOOEp6MFFLODFWWWpMdU03dHRWTmhzVW1KWE43OTBnOGM3RUhVSGhnZ3VfSzlQam5xVGZjMjExQWpnYlUwd2xTVmVjLVZTVUpfdm96X3pRckl5OXkxRDkzVHQ2NkR4M0ZZaTF3eElwdFdjUTljSVlxTDhTZU5Oa3RBYlNRRUFnN3htU2FsYkprc3h2ZV9xQ1c2SVF0LW9q?oc=5",
+        "date": "2026-07-07"
       }
     ],
     "united states→united kingdom": [
@@ -13001,7 +13001,7 @@ const ARTICLES = {
       },
       {
         "title": "What to Know About the US Military Presence in Europe as Trump Seeks Drawdown of Thousands of Troops",
-        "source": "WTTW News",
+        "source": "WTTW",
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbDllbUpPWXhWdnNSaWlTWVZITGRmT3llVm5CdDlzcHpNR1J1RXN2VzZESkctQ1VaSmE1eFQ2QjJOSDllU2JybDczbVBLRFhVaGMxbGs0UkdJYmVkMFNSV0Y4djd5UTJFUC12YmhiY2g1RTZqWUh0dFZNOWktMDU4TVFWLV96Z21ldFB1X0piS0kxaE0xYUgwdW9UT1MxN0pwZ3FvWVpaMXdaYzRCckstRC1scFQ?oc=5",
         "date": "2026-05-04"
       },
@@ -13026,16 +13026,16 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
+        "title": "Renewed US-Iran war would hit Gulf countries hard",
+        "source": "DW.com",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRVJaWGxHZmRjR2hrQVpUWWtNQnFUaHhaeWdWeVdZRldkRmpIRjlpUDF4VEhSU3poN2RORnNTTDQ0NkQ3WGh0bFhFelFYNGlFMUdsN2lhSmlLSDE1X3BxbWhVYkwxbXJmT05HR2pyWWZ3U0M2U05qTVROTXNwdjR5NVZtTnY3WEZjQl9hVlZNNEVyM3BNWTNZS0hMcmthQUIzdl9Ta09LNUh5eTllMnFyRtIBsAFBVV95cUxPUUVJbDdCSDBHTzBqaXpKcHYxVlBaNXk1dlIzb3FHYjVnN0FwcmMteVBoTmF6bUFNWUE5MURWSXRFY1AzMXZBTzhHTlJPdXp3emF1cUJLNkFqZmcxM044QS1Vb05PNjhoaVlDYy01TzFfSHhDUjRpVEp0VHR0Q0RPdGdQcVhuVnZ1U3o5YlFlbU90aFJjVEN0R3A3SVhvQjczdHlyWWhpVjhoRmZVNERBeQ?oc=5",
+        "date": "2026-07-08"
+      },
+      {
         "title": "How Iran Devastated an American Naval Base—and Caused a U.S. Recalculation",
         "source": "WSJ",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBXQ3d3ME5VclhzVzFQcHhab3BZMEg4QTFTYzFVb0dnN2RqcXI4VzVpMDJkX1hsTWpjVF9GYlgzclQ5UFFIZmtpMDU2NTdvRGgzeHhvWDF4bHRPODVRQ2pWQzJtTVE4anN4MF9VUjRHckdOQ2RiNlZ0bVRaV2FMZw?oc=5",
         "date": "2026-06-25"
-      },
-      {
-        "title": "Renewed US-Iran war would hit Gulf countries hard",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMEtEZFNJVmtEbnNfaEg2U2NkN20yMFVNWXFVb254YlJ1d1hxVWNMaDk2U1NkTzZfek9SZFd0bnpxS2otOG1PUGlVcTZyWlVzZ3FJUDZodURYMW9oVV96MDVMekRnZW16Q1pvQ1dBUWpOVmV3U05rREMtX2pQQmFVNEtBVnUwQkk5WlHSAYoBQVVfeXFMT3NaNWdpNFFXazB6M29LdlU3RlczSXdUenVuMjZPaG9iNDZDRjJwdktDVTZTb0FMU2NKbDBpajM0S2dsdmZaTGJ2WTV6QTVQZ0dQUnJDTXhaQjMyY3NkaE1fSktmcVExQkdlRDE0cmhVcDRKX2xGeWNZVTFyZXp2NWsxUGIta3hMOGZ3?oc=5",
-        "date": "2026-07-09"
       },
       {
         "title": "US evaluates moving CENTCOM forces and naval assets to Israel after Iran war",
@@ -13046,9 +13046,21 @@ const ARTICLES = {
     ],
     "united states→qatar": [
       {
+        "title": "The Bases That Couldn’t Protect Themselves – OpEd",
+        "source": "Eurasia Review",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNEVDaUp5dWlWOG14WXV6Ym9EY0gyWDAySGV1NnZDVUJjcEdZTDlvWTFEWjhwWDBMRk9rUGdNUGgyVm5MSnMxRTFiU1pDSE9rdC1TZ1I2MUp1enc0aWpMLW0wNGI5RjJrSEVJUFkyOWQ5cDdHS3NFVzVCa1NJeW9HRWItRUFXa1ZEMkVwWFFIWQ?oc=5",
+        "date": "2026-07-10"
+      },
+      {
         "title": "Iran says it hits U.S. military targets in Gulf, buries slain leader Khamenei",
         "source": "Reuters",
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU0l1cEJNcjlUQjVYcXFjUVViTThKdnVqSGJMTUpEM2Jqem5HUGJyN1VvcEtyQUdrUnFBYWFhNXB3aEFUX2RmRHhCbXJxQ1JhX1Y1RXVyZUp3TXFlY1RFRXpLMWxHQnlQa3Q2OU1wekRWOEY4dGVzNVhQMnhYd1gyVEM0c080bUdGY01KNGJ2RW05MnlQMER1Q21EeUNfME1TVTh2aFk3TFZqMnpnOFowUzhmMWpXdUVHTmJtaXE1VkU?oc=5",
+        "date": "2026-07-09"
+      },
+      {
+        "title": "Trump flies partway home from Turkey in an old Air Force One",
+        "source": "NPR",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE05c1RocG9mUlFycEJFQTRDamdiVk1mTGlpLXV5Q2VRYVJ5SjNXWjZVWTVoMjZ5V3RGX0hwOVh6ZXJUQXJjMU1haHR4MFYzVmpnaVVfcUpGeFoySDVVRGZKRklVdFNmcG5QR210LTNvaXgtZw?oc=5",
         "date": "2026-07-09"
       },
       {
@@ -13058,21 +13070,9 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
-        "title": "U.S. and Iran exchange intensifying fire across Persian Gulf",
-        "source": "CBC",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA2TTRaZXlyNXBab1N6N1ltdU4tekVrT0NEZEx5Q2JiamhEdHF2SVVHMkF6RnR2STQ3UDFMM2JhSTJucmRUNkxlb1k5Y0NJTF9lT0V0NlVZUlk1Tllxa3RsVWRJREc0bDBRWjg2cU84R3dWWXVsSmRR?oc=5",
-        "date": "2026-07-09"
-      },
-      {
         "title": "Renewed US-Iran war would hit Gulf countries hard",
         "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMEtEZFNJVmtEbnNfaEg2U2NkN20yMFVNWXFVb254YlJ1d1hxVWNMaDk2U1NkTzZfek9SZFd0bnpxS2otOG1PUGlVcTZyWlVzZ3FJUDZodURYMW9oVV96MDVMekRnZW16Q1pvQ1dBUWpOVmV3U05rREMtX2pQQmFVNEtBVnUwQkk5WlHSAYoBQVVfeXFMT3NaNWdpNFFXazB6M29LdlU3RlczSXdUenVuMjZPaG9iNDZDRjJwdktDVTZTb0FMU2NKbDBpajM0S2dsdmZaTGJ2WTV6QTVQZ0dQUnJDTXhaQjMyY3NkaE1fSktmcVExQkdlRDE0cmhVcDRKX2xGeWNZVTFyZXp2NWsxUGIta3hMOGZ3?oc=5",
-        "date": "2026-07-09"
-      },
-      {
-        "title": "Trump switches back to flying on older Air Force One for England trip instead of new Qatari jet",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRWd0dHg3VXdzLXh0cERrbHZQNFE4QWtMZDQwd2txY0UxTjh5eUdibG5lZ0xUcnFsM1pXeE8zdVcxX2VnRWlMeEVoNkRYdEtBdk1iemszWktpYlYtZ0JqNjN3Sks2WFkyTFRBM1dLdW5qUV9XWmJjc3R5VGhRcEc1ZG4wbEt1OVU?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRVJaWGxHZmRjR2hrQVpUWWtNQnFUaHhaeWdWeVdZRldkRmpIRjlpUDF4VEhSU3poN2RORnNTTDQ0NkQ3WGh0bFhFelFYNGlFMUdsN2lhSmlLSDE1X3BxbWhVYkwxbXJmT05HR2pyWWZ3U0M2U05qTVROTXNwdjR5NVZtTnY3WEZjQl9hVlZNNEVyM3BNWTNZS0hMcmthQUIzdl9Ta09LNUh5eTllMnFyRtIBsAFBVV95cUxPUUVJbDdCSDBHTzBqaXpKcHYxVlBaNXk1dlIzb3FHYjVnN0FwcmMteVBoTmF6bUFNWUE5MURWSXRFY1AzMXZBTzhHTlJPdXp3emF1cUJLNkFqZmcxM044QS1Vb05PNjhoaVlDYy01TzFfSHhDUjRpVEp0VHR0Q0RPdGdQcVhuVnZ1U3o5YlFlbU90aFJjVEN0R3A3SVhvQjczdHlyWWhpVjhoRmZVNERBeQ?oc=5",
         "date": "2026-07-08"
       }
     ],
@@ -13092,8 +13092,8 @@ const ARTICLES = {
       {
         "title": "Renewed US-Iran war would hit Gulf countries hard",
         "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMEtEZFNJVmtEbnNfaEg2U2NkN20yMFVNWXFVb254YlJ1d1hxVWNMaDk2U1NkTzZfek9SZFd0bnpxS2otOG1PUGlVcTZyWlVzZ3FJUDZodURYMW9oVV96MDVMekRnZW16Q1pvQ1dBUWpOVmV3U05rREMtX2pQQmFVNEtBVnUwQkk5WlHSAYoBQVVfeXFMT3NaNWdpNFFXazB6M29LdlU3RlczSXdUenVuMjZPaG9iNDZDRjJwdktDVTZTb0FMU2NKbDBpajM0S2dsdmZaTGJ2WTV6QTVQZ0dQUnJDTXhaQjMyY3NkaE1fSktmcVExQkdlRDE0cmhVcDRKX2xGeWNZVTFyZXp2NWsxUGIta3hMOGZ3?oc=5",
-        "date": "2026-07-09"
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRVJaWGxHZmRjR2hrQVpUWWtNQnFUaHhaeWdWeVdZRldkRmpIRjlpUDF4VEhSU3poN2RORnNTTDQ0NkQ3WGh0bFhFelFYNGlFMUdsN2lhSmlLSDE1X3BxbWhVYkwxbXJmT05HR2pyWWZ3U0M2U05qTVROTXNwdjR5NVZtTnY3WEZjQl9hVlZNNEVyM3BNWTNZS0hMcmthQUIzdl9Ta09LNUh5eTllMnFyRtIBsAFBVV95cUxPUUVJbDdCSDBHTzBqaXpKcHYxVlBaNXk1dlIzb3FHYjVnN0FwcmMteVBoTmF6bUFNWUE5MURWSXRFY1AzMXZBTzhHTlJPdXp3emF1cUJLNkFqZmcxM044QS1Vb05PNjhoaVlDYy01TzFfSHhDUjRpVEp0VHR0Q0RPdGdQcVhuVnZ1U3o5YlFlbU90aFJjVEN0R3A3SVhvQjczdHlyWWhpVjhoRmZVNERBeQ?oc=5",
+        "date": "2026-07-08"
       },
       {
         "title": "US Insists Iran 'Does Not Control' Strait Of Hormuz",
@@ -13154,16 +13154,16 @@ const ARTICLES = {
         "date": "2026-07-10"
       },
       {
-        "title": "Polish defense chief: U.S. to put troops back in rotation in Poland",
-        "source": "upi.com",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUEVaTXNteFdHbVFvRm5vOXpLOU5aZVQ3THZOQjQtbnA4aE4zdFpVdVBaaEtrazNVQzhDSElGWjBCM1RXZ1RXSHBSUzNjSzA3Ny00SnNUZi1lU2huSnRjWDdVM1A0N1QyUjE1SWgzUzk4djVUc05oWnVQLXBQc2xSME9kNG9HM2dESG85ZW5sOWrSAZYBQVVfeXFMTXhzbkxIMnRKVHNoNUFPazkzUlRTTHJKc2otYmZuOWRpMFF5djB3STRzVm1MS1VPaUhMR0J6dFIzX2tjcEJnY1FWSm8xeFJxUkViT0xhVUptR0c0YlJ2SHFycU5IekFqOU15ZVlBV1R6TlZuaTZtaUc2S1pISG56bTdibHE5S3I4S0lwcVRENGNneHdTOVNR?oc=5",
-        "date": "2026-07-06"
-      },
-      {
         "title": "US Army Troop Rotations to Poland Are Back On—for Now",
         "source": "The National Interest",
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVW8tTzE4UFNFREFDQkM2SEZ5UXNoLXhxQTdqMmZqcWNoNFBjM3dVX19Sdm02dlRtWHJKd0MxVjlnSkFHeGFtdHhYUDVZWHRfUXg1eDhSQ2tOM2M5cmN3enNkclUwUWxTOFExWkR5WlllQnFfSFBIN25mVnR5OTZrSVlnYlN4eV9xS3MwN1hMb3NUY1RtYURqb3kwb1FJam8?oc=5",
         "date": "2026-07-09"
+      },
+      {
+        "title": "Polish defense chief: U.S. to put troops back in rotation in Poland",
+        "source": "upi.com",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUEVaTXNteFdHbVFvRm5vOXpLOU5aZVQ3THZOQjQtbnA4aE4zdFpVdVBaaEtrazNVQzhDSElGWjBCM1RXZ1RXSHBSUzNjSzA3Ny00SnNUZi1lU2huSnRjWDdVM1A0N1QyUjE1SWgzUzk4djVUc05oWnVQLXBQc2xSME9kNG9HM2dESG85ZW5sOWrSAZYBQVVfeXFMTXhzbkxIMnRKVHNoNUFPazkzUlRTTHJKc2otYmZuOWRpMFF5djB3STRzVm1MS1VPaUhMR0J6dFIzX2tjcEJnY1FWSm8xeFJxUkViT0xhVUptR0c0YlJ2SHFycU5IekFqOU15ZVlBV1R6TlZuaTZtaUc2S1pISG56bTdibHE5S3I4S0lwcVRENGNneHdTOVNR?oc=5",
+        "date": "2026-07-06"
       },
       {
         "title": "US troops could restart Poland deployments in the ‘coming weeks’",
@@ -13192,16 +13192,16 @@ const ARTICLES = {
         "date": "2026-07-09"
       },
       {
-        "title": "Trump orders cutoff of 'all' US trade with Spain",
-        "source": "TVP World",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUlpEQlBBRWYtTC1tYlZ6ZlN0VHpkcndfLThTWTdCbUozeHBSNFBKLTM4RnVuS1oyMElaMHJxbXVMMGhvUFBkaXc1VUNjLWFwNFViMkZiNld4OWZWcDF6MjBvX1Z4SXZ3RENuWWdRZktoZFhwckxoVVdSc0NrbjRGaUx1MjdvYmtqUmkwemxUMlVXV1dvX2c?oc=5",
-        "date": "2026-07-08"
+        "title": "Spanish Armada and U.S. Navy personnel participate in a bilateral oil spill response exercise",
+        "source": "navy.mil",
+        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPbjU5RVl4U2JVQ0Jld0tEM21HSnR4UXNkdDY4OF81U0FCRU1QUmlOWEdRUkNuajF4VnZHNW5iX1FxZzlsWFpGdFcxaVhOcVJSV0YzYzM4UVo2YkRWV3dnamR3a1FuMTdEU2pTcU5VYzMxZy1kTy1uU2NtOVE5VEpXdFJnam1SR1ZmOUM4blV1eEVsRnZfWmlTSTczUXpUM2ZHY0ZKczZ2d19ITFI0QnlVUVFBR1pUU081QzY0SkEtZENTck5JRjZRbzAxbnY4NUI5bDVPblNsVEMwZ1BiOXVqb0pLek96TlRNazBGbg?oc=5",
+        "date": "2026-06-05"
       },
       {
-        "title": "Trump threatens to cut trade with Spain over NATO spending",
-        "source": "Yabiladi.com",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOThCeDV0OVFPaVc3cUNYb3dCem5Td3NJdVpCTl8zWjVsRGpBNzFqeWRDd1h5UFVBT2gtTlBoNXZla0ZyZmJrVkxvZVN4bXpIQ1FvUTluRzVYSDlYTmxSRUY2NjU5NGNsd285UWc5NHpuellPc25LVmV4UTgtNVNNT2N2QXg5TFNtSDhDbDdR?oc=5",
-        "date": "2026-07-09"
+        "title": "The U.S. Military Should Replace Rota with Gibraltar",
+        "source": "Middle East Forum",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWHlpaS16dEhnUGM1RHlMQmw1RWNwQmVfYThTd292WW96WnhPcTA2T3EzNWNFS1VNY1ludFJraEluRWdhRTR5M1BoZUpaMXZMUW1BZkkzN2I4NHZOcnVmV1doRzJJZzc5cmY4YUQyenR1YWNIS19qTEZ1aWNUV0NqdWdMUGtoNGNWRUZ4V3RhMEM5UQ?oc=5",
+        "date": "2026-05-17"
       }
     ],
     "united states→australia": [
@@ -13238,6 +13238,12 @@ const ARTICLES = {
     ],
     "russia→belarus": [
       {
+        "title": "Russia and Belarus held major nuclear drill",
+        "source": "Defence24.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZENiN0dhUk1mT2UzVHZSZnd4SkxzdlE0eDlWeEU4TDItWVFxbFh6VmRhV1EtY1IxemVhblBza1RjVHlNT3RFRkU2Wk5obFJxOUpGZ2d3SGpRS0sxNXVPSGNwM2JCRG5zdlZtOE1FeHBZSXpPME9BRFZjSnZzTnpNazlNb2w?oc=5",
+        "date": "2026-07-11"
+      },
+      {
         "title": "Belarus Highlights Contribution to Russia’s Defense Industrial Base",
         "source": "Foundation for Defense of Democracies",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQb3JzMkt0NTkwMEdwcmdIekx5S0tpcENhWENJTE50Z3MxZ0Y3d3l3YkRFOGE3Y0V4VEY0M3huVU0zVmgzUkhJMDM4Q2JSVnF0Z2VUMTBTYkc4Tkc4VGtNOE5GQWFYbDNmS2Y3S3U2WmVkOGFIVWZvazFxS2ZtelUwY1ZTdlpnV1dfd3NkSF9EZTk3Zm9ublFJZUx5LTZsaHZ4NkxjQjROXy1NZms?oc=5",
@@ -13250,31 +13256,19 @@ const ARTICLES = {
         "date": "2026-07-07"
       },
       {
-        "title": "On the Ground Along NATO’s Eastern Flank — as Russia Threatens",
-        "source": "Politico",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxORlB5V3V0T0ltc3NrTHJlc2N5QkVfWGJ0aFNSNWI1QWkxUWNoM0d1NnNFdXBtbnV2dkIyekhoQUQtYlE2YXpzOUZlRmR6VXZwNDNBV1BhQ1dNX2JyQ1NqX05sbndVbG5hUXVhTkktM0ZJMXJXeVkzWHBTY1JyUVVtVnZSTlExNmVFU25sdm9jOHJzU3QteXFyX0xCemsyTkE?oc=5",
-        "date": "2026-07-05"
-      },
-      {
         "title": "Blunting the Belarusian blade: The growing threat Belarus poses to European security",
         "source": "European Union Institute for Security Studies |",
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPLVZ6eDItZnlpT0JfT2VpTHM3STdpeTgtbzBKV3FHb1ZobVhTQmlBalYzeHVhSkJQNTFzRTY0WEJ1QlN5c1JkbWxIbUJCUEQzR0QxSEQ2LXQ2M2FZcW9DSHlYdWlJZmdGd3VURzRZRi04amlWNzZEcmRaR0xTMVRNNUtNQ3FNT3lPbDVqT2tTMVgwM19oTm5fVUIwYzJhd2pmMnRPd2R0TUMxakdPRWtFLVBlNlBlVUJOclE?oc=5",
         "date": "2026-06-23"
       },
       {
-        "title": "Belarus is quietly preparing to play a larger role in Russia’s Ukraine war",
-        "source": "Atlantic Council",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPM1R1bUpqcEhFMmZpNUVzaW1iWXY3ZU9xTGVHdXhOTHhDMkV1RXBrYVhvUGhCeXVtUkVPOHoyUkJEMVhuVzh0aUVYQmNpX3F6Qm90c1l3Wm9aMXk5NHRaei1lc2x2bFFsanJ5NW5HSnZiWElYdjFrNzBFZnNtNTVHdUtudkxra25yS1hjOHc2OXV1OUZUeEMxb3dzT0dCQXNDdk14Z1hyaVRKVlo0enhzQXZTMVlRWkNPYURLSEp4NE10d3c?oc=5",
-        "date": "2026-06-25"
+        "title": "Lukashenko Says Belarus Won't Send Troops to Ukraine, Accuses 'War Party' of Prolonging Conflict",
+        "source": "Kyiv Post",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBjWUFsY3ZKbTcyekRuOWtXOVNyV3ZxM19oaUhwUTN5N091UnRRUWNxNWE2aXRQLUZQSG16dDVSdmV5c0F2VXMyZURFaw?oc=5",
+        "date": "2026-07-06"
       }
     ],
     "russia→kazakhstan": [
-      {
-        "title": "CSTO enhancing security measures along Afghan-Tajik border",
-        "source": "Eurasianet",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPV0VvdVFpZG9YY2xYSmxncnhrbHllWUd5TGR5UklNQmFMdjBTTFJpcGJkaDczQ3lYaGlnazY2bEZrak50dUZTdVV2Nk1PeDZqTTBJVmk5bGszRlN0aWozS3FqbW1aNXQ3OXZPeXFXZGNneDc0Um9xdTBCRDVJU1BrN1Y5dkVOMDct?oc=5",
-        "date": "2026-06-29"
-      },
       {
         "title": "Can Russia Revitalize the CSTO?",
         "source": "The National Interest",
@@ -13282,10 +13276,10 @@ const ARTICLES = {
         "date": "2026-01-23"
       },
       {
-        "title": "Unidentified Boeing 787 from a US military base crossed the border into Kazakhstan, flying through Russia",
-        "source": "open.kg",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOd19XeWwwenRMTmpRUGZpcEo4MHFfS2tIY0h4bjd3SXZ3NDFCSUxSMGlscmtqWW5qamszZmlDazFrcFVfLVJJV2ExVGJ2MmxlQ3JmaVRTZjNEYUhBcnZheGJ1Ml9MSnoyYzU5aXZxakxRMjQ5MTNaVHBCc3hxQld1WHF3X0ZTNmYzZVNBMUpoTFNjWEp6S3FzTHVOWU1zVm5lYnctV0d5Q1VfQVplREVlMEZVYnh2ZEEzdHFmNnkxUXBEZ3EtV21zNE5hNkhqVkUwNzZPRHZVWQ?oc=5",
-        "date": "2026-02-20"
+        "title": "Russian-Led Mission in Kazakhstan Unveils New Peacekeeping Model (Part One)",
+        "source": "The Jamestown Foundation",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNS21XVGJyQnlqMWJTQm85eWtZdEtEOU5KNlFFQkJ3d2RBRlpJYkZhd3pGYkdJbjFvdXZMY3dScXJYOXJpd1pKQndUZGhGN1Q2N2J6MExUOVdldzVlU2RvdXNSYzVzM1hiRWxfbmtKU1g5T0lnUHJrSmhqNzNpS2w5MEQxb3JLeGFNZmg5Ym5sNEtSTXZYQUFSOTRzcTA?oc=5",
+        "date": "2025-11-13"
       },
       {
         "title": "China and Russia Push India Out of Air Base in Backyard: Reports",
@@ -13298,6 +13292,12 @@ const ARTICLES = {
         "source": "The Washington Post",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcWI0Y0J3UFVQQzY1QVo0MFEtREJMMjdzUGdJTUY3UWRmT25ySkZCSUtRRGxMQmhaRXRrRm0xZ3lpdE45Q0hKRm1LOUFvVU4yS01QdGVwNTc1N0FscFoyRDdaZkxkMF9PNWpoLV9Yb2FMa2lIcUVhdnlsZlRLMlYyTnoyWWVmYnplaW5pMVVEbE1FOHd0dVhpWXEzaGpPM0gy?oc=5",
         "date": "2025-11-03"
+      },
+      {
+        "title": "Russian-led security troops leave Kazakhstan as president fires defense minister",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxON2FucndfdW9HWXNzbDJ5M2ptbklUYVI0Ri1SdEdaemx0Y3BvdUlxODRHQ04zQ0tnUmZOX0h6SDlDN1pCMWNITWswZHAwUnI3aWlmclR6QUZ4a09xN3pfRGo2LTZ0TkF2TlFSUVI1R0FaU2VwV2ZHMTF6RDZNSGs0ZWFEUnVReU91U3BvbzZjbmRuOTcwS1BnWDl5TW5YUXFjWkVrM2xvQVlCSDFBTmNBVmtrbE56UdIBuwFBVV95cUxNRnlocGVGMzFvMFJZZVVsbTJ3T2M2RklMY1d0RTZDZTB0ZDlCQTdDUDRoQUxJelV3bGlpMnBWcHF5ajRVejdONmVudGd6T1Nfam0xdFc3dDh1ajg3TDRQQUlydHRBSjNHY1lRek1LY3Ria0cyOHN0QkZIemgxOHlybkd3c011N1J4RWd3QTlxWnZRcHR0NlZTRmtQM2haXzFrWUwwbExZUkZQTEhnbU9BYUxCY2pXQ212bUFv?oc=5",
+        "date": "2022-01-19"
       }
     ],
     "france→uae": [
@@ -13308,10 +13308,16 @@ const ARTICLES = {
         "date": "2026-07-06"
       },
       {
-        "title": "Iran targets US military bases in the Middle East with retaliatory strikes",
+        "title": "France deploys fighter jets over UAE to protect its military bases",
         "source": "France 24",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONUxIak81ZUF2RktDN25uNVpNLU8zN0xXemtSQ1dLemhQS1VWYTRxOENBbGNsVTBBMGI1SEpOVms5VVk4cmlnaUg1QlZ2N0YxMEMzM3YtMi1LS080NWczeHZ4YV9nN1RXdHM1T0tLVWEtSl9IRXAta3lsNExmemVoeXN1TWxDOUJfOGtseGhyLXpLZ2FWbGRmLUE2aHRpMGVXSF95YVZhVk84M0kteVdURTlNTTdIbzhrLUg3ejFmZ3R6YUpDa0RCaHhtd20?oc=5",
-        "date": "2026-02-28"
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPR2dLYlpJXzRVd0NrWXJhejRZTWZKVzJjWWpCeTFFZ1ByMUVOOWNVZnItVmc1RXBRQ3drTFJfRk1GdTlNYmxJbWpVXzRLWldLYWtmNWJDM285dG9qd0hsdExtMFJXSldpTUVicnFvOFdYSmtVejBtcTN0NFd5aEo5MWc5QWsyaUhCZWdhQUJUVHg1d1RiMUtLNTU1cEk1VjJTa2stMUJpLUFQdEhOMnNFcmh6ZS1jdw?oc=5",
+        "date": "2026-03-03"
+      },
+      {
+        "title": "UAE, France renew defense pact after Rafale jets controversy",
+        "source": "Al-Monitor",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMUk0RUs3dy1tUzBNUkppRS1yMVVzdkNFSnczQ21iZFR2eVotbGd1WkgzTlliTVNuWEF6ME4xVTItQTB5bVU0M1AybzFLRlR2bmE4dGRrTThtdmRYVzhVNkU5ZUwta0N6cGc3alBiOWJfSlVHaHllNXR2UTFHN29JWW1VVm9jeU1xcG5PS3JEVGJsc1FBWEd4RFkzdHBLOFV2bmxzS1VxVQ?oc=5",
+        "date": "2026-05-19"
       },
       {
         "title": "France Deploys Rafale Jets Over UAE",
@@ -13324,21 +13330,9 @@ const ARTICLES = {
         "source": "RFI",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQnd0Smw5dHVQTHMtWnBoYzM5NjBDelZyTGk1TC1yUzllbzBXRGlhZDdNaFRnbkZHSXJjVUdZc1VINDZaQng2V2lXSDJrWkVKWjlHV056ZlQ3bVZnM3NRWnF0eWRlSXN0blVfMnpYaWNZUTBnLUxEZ1QxVFN6UkFsbl9XZkdzbE9td0V3QWM0Mm4xdUZ5RzEwVWRfZ1U1Wi1PY2NEQkwwOFRVS0lj?oc=5",
         "date": "2026-03-03"
-      },
-      {
-        "title": "UAE, France renew defense pact after Rafale jets controversy",
-        "source": "Al-Monitor",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMUk0RUs3dy1tUzBNUkppRS1yMVVzdkNFSnczQ21iZFR2eVotbGd1WkgzTlliTVNuWEF6ME4xVTItQTB5bVU0M1AybzFLRlR2bmE4dGRrTThtdmRYVzhVNkU5ZUwta0N6cGc3alBiOWJfSlVHaHllNXR2UTFHN29JWW1VVm9jeU1xcG5PS3JEVGJsc1FBWEd4RFkzdHBLOFV2bmxzS1VxVQ?oc=5",
-        "date": "2026-05-19"
       }
     ],
     "united kingdom→bahrain": [
-      {
-        "title": "Latest war news. The US has launched new attacks on Iran. Air-raid sirens in Bahrain. Trump changes planes",
-        "source": "Il Sole 24 ORE",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeEdSblM2QmsySlFUQ1NRS2NpUndsdVJ6MWlNRjVHZEF1STVNN1RYeElwLVFhQkU5Qi0yWXdJdHljN3VORzBVLVBuN0pZOTlkRzZWRmROVm1JbjNDbWR2RF82SU1oeHdpMHNnQUpjQUdfMTJzVXBwN01MVG04aEVGSHJRQUdwbk53dERhRFVrSG04LTY2UmVNRU1BTi1CdlRyLVE?oc=5",
-        "date": "2026-07-08"
-      },
       {
         "title": "American air and naval assets head to Middle East as Iran impasse looms large",
         "source": "The American Legion",
@@ -13362,6 +13356,12 @@ const ARTICLES = {
         "source": "The Conversation",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYVFKbm01bE1UTFdaN1hYZ213U0JDY1d1Y2phWGhXRWhSbXZiSUxCNlFpbUFVOVN4WG9lTzFDRjA5dVp6N01Ycl90RHlCNTBSN3F1S3MwMnR4azB6d3F4Ny1vRFJpNFJlbGFrYkNPdWhoclpWZ0p3RkRwcHBxWWFha2lVTG4tRHI4Z1drUkI3SVVMX1Q0NUs2Nm0tMXZKYVpiWnpwOEMzS01hVUJXVUZfWHVGcnoxaUEz?oc=5",
         "date": "2026-03-02"
+      },
+      {
+        "title": "US-Israel attacks on Iran: Death toll and injuries live tracker",
+        "source": "Al Jazeera",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNejktU2hOR25jX3gya0NiZFFRWFFIU1pRTzZkbGJDazRlUTR5RXJfN3cwZnJyV25HX1g5bGZkWmN0YmpILXV1TXZaRUl6cXpSY2ZJNkNGZFYxcUFLdDRsSGw4UlVZTnUxdUdvdkNwTDlaRUlBVjg2OXlzZEZoQnpCVFpqNnhVcmI1ejQ4V2M5U1VxdlZ5bFdsYmdIY2dIQUprMUFZY9IBqgFBVV95cUxQa3JzejVyemNBVFJUWmI0SHJMbGF1azJaWmJVVzVtWUF4SWRlaFNXeWhVZkVnZ05nU0pmQXZIbkxYemdDeEpxLWItTHZRWUJsa3JCRkhPTFRjMHIwUWltTTlnNzJVZmRhZmNwTVFQcDR1Nnl5LWtFSGk0QkpvQWo1U25GbmJpZWE4RVhKZWpNYmRQWjBONkItN21rd3packdHbFVXWVpnZlRZdw?oc=5",
+        "date": "2026-03-01"
       }
     ],
     "türkiye→qatar": [
@@ -13498,7 +13498,7 @@ const ARTICLES = {
       {
         "title": "India-Japan co-operation is transitioning from a development partnership to a geo-economic alliance",
         "source": "Down To Earth",
-        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUVY1OWNlUlE5dHZWYWFuclVYTHRwa09ZUGh3ZFVoSEc3TUNUTVV2OUM3S3dZNEdLZjVIT3V2aUZlT1JvYkcyUThmSjVBbzd5VjVvOFB1ZWhPRkN1cGVwbFFwaER3MTROTEJPbXdUazBINnJYU0dtRkVwNmh5Ymd1dWtjb0h1QnAtc2JsWWFyczB6ZkxCeDdKelkwd2VWN2dnbm5DU2pWaURGMnhYZElPT0xIbzZXMkxIQ1cyQXpYYnRTRURWdW04Ung3dnBTMG1iVmdHNkozalZISjNlSko4UFJB0gHiAUFVX3lxTE1RVjU5Y2VSUTl0dlZhYW5yVVhMdHBrT1lQaHdkVWhIRzdNQ1RNVXY5QzdLd1k0R0tmNUhPdXZpRmVPUm9iRzJROGZKNUFvN3lWNW84UHVlaE9GQ3VwZXBsUXBoRHcxNE5MQk9td1RrMEg2clhTR21GRXA2aHliZ3V1a2NvSHVCcC1zYmxZYXJzMHpmTEJ4N0p6WTB3ZVY3Z2dubkNTalZpREYyeFhkSU9PTEhvNlcyTEhDVzJBelhidFNFRFZ1bThSeDd2cFMwbWJWZ0c2SjNqVkhKM2VKSjhQUkE?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOajczUTFXMzdybVF6QVF3ajZCT0o2OENLRURFWUhxR05MRjQwNC1QOVo3RzBBTEVCYWFQZDVBeFI2X1J0VzlpazJKUnYtLWd5ckdsdjFVdmNwR2dfQW1zWDBvM3hBSVRIdEVBTXFGbjNrRTNycGExems2QkNlSzlZTVByUEJyX24wLXhWaF9XdjlVYWhrNkVpUzZPZ1VBM1FwTkM4eExfQk1LZ0tRMG9lX3I0dDVha0JKampBczRiTzV4VFlYNGktTTdlQzY4RlFpQ0d4NdIB4gFBVV95cUxNUVY1OWNlUlE5dHZWYWFuclVYTHRwa09ZUGh3ZFVoSEc3TUNUTVV2OUM3S3dZNEdLZjVIT3V2aUZlT1JvYkcyUThmSjVBbzd5VjVvOFB1ZWhPRkN1cGVwbFFwaER3MTROTEJPbXdUazBINnJYU0dtRkVwNmh5Ymd1dWtjb0h1QnAtc2JsWWFyczB6ZkxCeDdKelkwd2VWN2dnbm5DU2pWaURGMnhYZElPT0xIbzZXMkxIQ1cyQXpYYnRTRURWdW04Ung3dnBTMG1iVmdHNkozalZISjNlSko4UFJB?oc=5",
         "date": "2026-07-10"
       },
       {
@@ -13566,10 +13566,10 @@ const ARTICLES = {
         "date": "2026-07-06"
       },
       {
-        "title": "Where Do Japan and Vietnam Stand?",
-        "source": "The Diplomat – Asia-Pacific",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1oa25HYzdKTnppQUpjRmFGQ0IyZjRrQlJmUzRnV0VIblNrYUUtQlM1MGFuTG9NOERaQkREbWFYUnZobFUzNWxDUFBwMF80S041al9BRG1oOVk3SFcwbmwyaFF4eDE2OVVnZi1PcWp3bGF0WWs?oc=5",
-        "date": "2026-07-02"
+        "title": "Hormuz is Making Natural Allies of Vietnam and Japan",
+        "source": "International Policy Digest",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTm9ERzd1c1VVb1hLOUJwc2EtSl9uQy1iQWpzVzM2eHVxekZfeXZaQmZueDVtbmkxUUxUdDdOaUJwckZYeXlhODQ1NjBFeDl6VFZLN2p3ZlctUVQ5aVNWNFp2VXFrQkM1T1NCckMyVFluTXpfWjRONDI5VFFGMHl0b1pObTlaUTFX?oc=5",
+        "date": "2026-06-15"
       },
       {
         "title": "Japan to use ODA to help Vietnam, other nations curb manga, anime piracy",
@@ -13578,16 +13578,16 @@ const ARTICLES = {
         "date": "2026-07-05"
       },
       {
-        "title": "Hormuz is Making Natural Allies of Vietnam and Japan",
-        "source": "International Policy Digest",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTm9ERzd1c1VVb1hLOUJwc2EtSl9uQy1iQWpzVzM2eHVxekZfeXZaQmZueDVtbmkxUUxUdDdOaUJwckZYeXlhODQ1NjBFeDl6VFZLN2p3ZlctUVQ5aVNWNFp2VXFrQkM1T1NCckMyVFluTXpfWjRONDI5VFFGMHl0b1pObTlaUTFX?oc=5",
-        "date": "2026-06-15"
-      },
-      {
         "title": "Japan to use ODA to help Vietnam, others combat manga, anime piracy",
         "source": "Tuoi Tre News | The News Gateway to Vietnam",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdDdOQU5GeHV5Uk03cGNpc1VqRElOX0tuUVVsU0pwWW9zRzBmWU1mVF83bTg4Si14NnBtZWp2Sm14MTh5NnFtOV81Q1A2c25YaEk1Q0NtUzNWY1NjV182ZmlzVFBMMGtBXzBKMllqOHdoLVFqMVgxZUE2ekkwWWNWd3p5Wl9KaW55OERPZER3bmtCRWExVWpvVVBkdXFBdkVJZG9UZXpSeEt4SGFYa2pPaFRn?oc=5",
         "date": "2026-07-07"
+      },
+      {
+        "title": "Vietnam, Japan deepen strategic cooperation in education, workforce development",
+        "source": "VOV.VN",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZ3JWLW1PLTNRTjFNT2FXX2h0S2VHT1pzZ0ZiSGlXS0NHYzB6ZW5GcV9pd2JRdm1Ic3dkLS00SDhMTFBtWkxfVjBfV2pvUmp3NHVHcTFXZ1VqbW1IT2thQXI1Wm9EdnRzN1cyVHdRUzVJS184bUNaaW9jemVPdmZuYzVWSnVDUWhzeWpNZXZnZDFvUjB0UTg0LVBScFVYQjdxWjNFVTVPSWNReWxfQjZrNXlZOVJCcWxPR0h2M2tWTFNxVmc0TXJjNE4yOXVPbHJUQTBKMw?oc=5",
+        "date": "2026-06-26"
       }
     ],
     "japan→philippines": [
@@ -13610,25 +13610,19 @@ const ARTICLES = {
         "date": "2026-05-27"
       },
       {
-        "title": "Japan Designates Philippines as 'Top Priority' Partner for Strategic Oil Reserve Support - ROIC Trend Report",
-        "source": "lwvtexas.org",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWEEwblEyZlRtZmZieDQyNEFpRlJQOWVidVRldEpKWERZeGRhMjZoSF8tT1NFdmlOekZSRF9EYS1Fa0ZUZXNMdV82UzFUSjRXSi1EbG5Sd25kbE8tSlJBb1NCam9KU243LVV0bk9iU1VacEtmVTF1YkhtT1ZMX1BJV3NQY1RTRVYyOVRHdnpPdklibzRvQVp6anVvbkdOaEpRamdIT2hSNGFfcHFpdGhYMzIyVGZFSkhXYUdfdWttNThhM2JQMTFpT05Maw?oc=5",
-        "date": "2026-06-06"
-      },
-      {
         "title": "Japan support to PH growth ‘unchanged’ amid UMIC status: embassy",
         "source": "pna.gov.ph",
         "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1oMU04RHlUeURiNGpBMHlIaTBpeU5DV09ld3FIZFNSWV9KTUotUFIydXZYZF9MYlFtSHFLaTA0NlB5WXdPOGxyTkh1LXhGbTYz?oc=5",
         "date": "2026-07-03"
+      },
+      {
+        "title": "PH welcomes Japan power aid initiative",
+        "source": "Inquirer.net",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORlpfOTBLbHp5dFJNalI5NlBjR19BcVdmclNDVkp6bEJlcFpiM2xqT193U1R3QjdmRE9xY3VBWl8waXMxbDBWb3VaMDFNNjZqeGs1TVdleVAyVE5QRGo1M2c1MFU4ZWI0RHV2TmUxajFjY0hpSEswVXo5Z2ZSdDNVZ1hON2Rid9IBiwFBVV95cUxQVTNCYjRqZjc3V3c1bHV4T3F3bVdtR3NjcjkzZzdCVmJfWF9zNENHRm1NQjhtUDFRMFd4c3ZXZnVzYjVraFYwTnBhMmZsSGV1MGw3RXBfaVBsWExXUm92SkNTU3BuMURuS3huclU4TklnaVNfeUk0OHh1eS1WVm1SUkZjY2o5UUtYRG1V?oc=5",
+        "date": "2026-05-29"
       }
     ],
     "germany→ukraine": [
-      {
-        "title": "Germany to maintain Ukraine aid despite political headwinds",
-        "source": "DW.com",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1CTVdSSXlKc1k3THl3QUJJeGpxTjljbG1hSWo4bEhJUWMyb085YlppUW5CMHp5S2xUS3F3VVJKb0NQd3NNSEtYSFpBZUpmUmdabjQ0OXo4TXRBdDJVZ3NISTFTMGRaQm90VE9tQUhieXFzMkpIUnM2SGhZLVFnUdIBfkFVX3lxTE1jbTQ0azZEVktuMlk3UWhQMkRlMzlncTU4aEY0ZmhnR0FIXzlSV2NHTVlQSGJBcFdTLXZfV3BrSlFrWEtseVcweXZRbVRtV3VGcFhBSmZLT3JidndMTGo1OWVBTHJWdENEajFIUHhySzdNQVUxMDRYeXlXYzRGdw?oc=5",
-        "date": "2026-04-14"
-      },
       {
         "title": "Germany Announces New Ukraine Military Aid Package With Air-to-Air Missiles and IRIS-T Boost",
         "source": "UNITED24 Media",
@@ -13636,54 +13630,60 @@ const ARTICLES = {
         "date": "2026-06-19"
       },
       {
-        "title": "Germany pledges more military aid as Ukraine puts 2026 defense needs at $120 billion",
-        "source": "PBS",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVkRQSzNXeHJMWnJoV2dxLTFPdFB4Zk1CQVRYbzZjVnVzRE1kSnp6WVRNOU9hckpTeXl3VXY3NXMyYjlKVF9fZ1ZYN0ItS3JfNVpMYUxjX0lrQUtUZnFiXzlMckx5U2NIdTF5elRWdm0xTkJBZlM4b0lCdHhNbUltZmNxbjVueWlORlBCRnVLTzV6cUVvejRDcEpHSTdxdS1acWhfRkEzYS13c3BZZXRCY2lHVXBzQ0JVUWfSAb8BQVVfeXFMTjBVRDdycVR6ZkxLdk9LQXl6VnNHY1YxdHJ6Z1ZRVkxGLUJybHRDX2VhQXJ1Z0xVZ3BBMmFuZG9qUGJPdjg0WXpvUjBYV0p5X0o3bWxNWEFqbTF3bVVOanpZZXExTmY4YjVnNmEyMTJSMGt3YWtaR1A5NmVrUkxvUGxoeERMQTlDaXdBeXROUnJuZnZReW4wN0NKUmdWTG1kTW9pV3pxcEt4UzNMcXVwWFgyWW1aTFVCUjNPQzZmMk0?oc=5",
-        "date": "2025-10-15"
-      },
-      {
-        "title": "Germany set to boost Ukraine aid by 3 billion euros in 2026",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdVl2TlZFNVlacVVOQTdyYzVoLXNTYS1GdlBPLXBGR2dEb2NyT19iYjUwTkxZTHdzX3hxREVuSnNiSTJ3WThuUUpLLVZlb1ZlWDAwcXJEbGkwR0Q2cDluTFFNNTlrbjNQN3Z1QVV4dEFocFB4TGM4WV9HblpHdXg3V2hfRzNGNXYwTzBUWVZYSldqSXFOb3RYZ3hLZEZZWmJ1Z0tPdGdXdG1LRENUa3d3?oc=5",
-        "date": "2025-11-04"
+        "title": "Germany to maintain Ukraine aid despite political headwinds",
+        "source": "DW.com",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1CTVdSSXlKc1k3THl3QUJJeGpxTjljbG1hSWo4bEhJUWMyb085YlppUW5CMHp5S2xUS3F3VVJKb0NQd3NNSEtYSFpBZUpmUmdabjQ0OXo4TXRBdDJVZ3NISTFTMGRaQm90VE9tQUhieXFzMkpIUnM2SGhZLVFnUdIBfkFVX3lxTE1jbTQ0azZEVktuMlk3UWhQMkRlMzlncTU4aEY0ZmhnR0FIXzlSV2NHTVlQSGJBcFdTLXZfV3BrSlFrWEtseVcweXZRbVRtV3VGcFhBSmZLT3JidndMTGo1OWVBTHJWdENEajFIUHhySzdNQVUxMDRYeXlXYzRGdw?oc=5",
+        "date": "2026-04-14"
       },
       {
         "title": "Belgium, Germany, Sweden, Netherlands announce new military aid, F-16s for Ukraine ahead of NATO defense ministers' meeting",
         "source": "The Kyiv Independent",
         "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNOHdvdjcwTEVtTlh6LTZHRk4yNXdIOElYRFU4NnlGXzBHOWo1Y20yallTV2JMY01rYmpaZUZSX0M3cENERDd2a0w4dFRLdVp2S3hVQzltQkp1WktPci1NV1IzVWh5Vml2T05jRHEzaWFlTTNLTGdaR3ZaeHJsWlRpQnU5RmM4ajBZdDhSWXdxVHFKV2ozT0c3OVZoYzV2Rm41Um9WaC1RLUtncUcyQkxNWXo3T2lxY25JbVhCMlVFY0xLcWxyN1Z0bG9kbGdycmFGS0YwN3dCbkE?oc=5",
         "date": "2026-06-18"
+      },
+      {
+        "title": "Germany plans largest contribution to NATO military aid package for Ukraine",
+        "source": "Caliber.Az",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT1RaVWIwelU1Uzk2R0xNRC1vWllfb0pDODVpbUNIYmZ2OVAzRTJfc29jMGNqdFBTVnhid1hQdTdQcFFlVHhmN3FvbGxVMHE0UXZnZkcyemhrYUtFdkpWWXFrMUc1Z3FlUVB4b0tfM1gxa2w1Sm5ZNGFKMXdoOXNLbzBLNm5UTG9rb0o2b29NN0EwNnp1VnA1NG54UHoyVVpGYmtGeg?oc=5",
+        "date": "2026-07-05"
+      },
+      {
+        "title": "The German government has approved a budget of €11.6 billion for Ukraine",
+        "source": "Цензор.НЕТ",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRVVDWEZXeXpJQkZYN2hIWDgxeGZrenRXOEVOYmFDOGJLVVEtYThFaHZHVDlXaFNwdWpva3lySHQwN2l2R3lsTi1oUW5EekFDdEM1dTE4c1F3ZXVuNGJQS0M0UlU1YUVoR0RmTWY4TnFJMjkwTTlva0NJQVFkUEJyVHpySUJVWVUyVHNOM1hVT1BDMVdXSkl2Z3FfMzZQZEpaY0FRdzVpV0RQUQ?oc=5",
+        "date": "2026-07-06"
       }
     ],
     "germany→india": [
-      {
-        "title": "India, Germany agree to deepen cooperation in defence, other key areas",
-        "source": "Asia News Network",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUWF3X3hPQmtNT09WWmFXN3pjT0xpVmNnU2g3QkNDSjNhZUlYNlItTWZxenI2QmpFOUFjSS1CWEJPT1IwaFF3SFhVbWpJWW9pbDI0ck1tZEJ1RjBjVmFlcGhmQmpQSXM4dHBFYW9MeS10NDcxSDhsMTlVSUdQLXpoVkRQVlFtTDZ2c2xLZHlzUHE2NlRxM2dPMjRB?oc=5",
-        "date": "2026-04-16"
-      },
-      {
-        "title": "India-Germany launch logo marking 75 years of diplomatic ties, review strategic partnership during FOC",
-        "source": "The Tribune",
-        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTlM3NWJsejJKY1hLXzRXekxza0NxbnJlcEdTYUpGd19IWlZiamRLek9FelI2cDU2SThWU0JRN09uVllxNmtvTU5Cb2cxVTlyZjFURFNlVGE5V3BWQVEzQlcxcGdzZ3VnTkJqSGZaUXRoSW95OFdUOUpzZGkzMGttWlhYRU80Y2hwWjMyZHZCYVBvUGxYSjY1Rkk0bEJZNnpONXo0T0hBM2FxbkdsTmpfMjR2bXZ5UlRjN0ladHUtcE1NbmNkUmljR3ZNZUdfd2tvU2JSWFBMdS00QdIB3gFBVV95cUxNVkxVd0hPUkIxSGF4cjhMMFdWMy1GbUUxekliNndqUFJUT0l4c0pyRFJkdEQ2WnRFX2NRcXluWWhfYnZZai1aeU9kMkFTQUFBYzdMVGNhWjhLSGpBbWFmTEp6dFhFT3J3Xzk1OU1raUZTSXlWbXN0VmN1TDBtcFFiYzdyX1NDU3lTNEdFeUFQamptcS14T0pTdy1OR1VBYnhLTnZKUUQxT3ZNUk1nS05NLU1nY05UQUJxLWZLSGstZGNWc2ZFd3ZqWlUtNUNnWmVaTHEtUXM3eWxKXzJpaHc?oc=5",
-        "date": "2026-04-15"
-      },
-      {
-        "title": "Egypt seeks deeper economic partnerships with Germany, India",
-        "source": "Dailynewsegypt",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdExuenZoQzZ1RWtGRUdxRHBsME5kaFR0RFc5TDFjV3JxTW5NY0RkbGotYy02allrVFlrWnQtUjZJZy1rU29nZXVnSnlrRVV2YjhESzRDQkg2WTJReEVSSEJsUjNzeWJyQnBaRWtpSGdsWjAyYUxqRS10c2ZwbEJ1VXRxYmZZQ3BldjYxeG9kMlpPeVlSOHItSFhYbFlOeEFrR2Nvbw?oc=5",
-        "date": "2026-03-10"
-      },
-      {
-        "title": "Italy Joins Germany, Canada, India, UK, China, And More Countries In Urgent Global Collaboration To Aid Stranded Tourists As UAE Introduces Groundbreaking 30-Day Visa Extension And Automatic Departure Permit",
-        "source": "Travel And Tour World",
-        "url": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxNTEZmdDlVQzhfbUR6UVJ2RmdrV2NidWtQZHlGZF9jNEkwZDJWWVprSmVCOENXTjU5SWpDZlVqRHhHdjlidEItYlFqYWZ4TUx6NXZ2eEtZTGxfc1FRSk96Sk5KNW9fdmw4VWtFVmlhM1lmUnhkUHNWRXVFRm40cnhVVGRRMTJsRlRHTGI0QkwyeFQzdW0zSE5hT0FwbXVLT3ZsRGZIa2otY21kQXRlVE5iU3hnY25aOVV0MjJndG00TXJCWGdHNFQwQnpRdlpCcWlfRDc3WVFVX1RoenExcnBVdllJQktEdHRtSFluMzltVmxtQUJmNzZxMzZqelNVLWdlNzZ6UnRpbEs0TTFGSWtmS0dNeThBRVR4TTlMdDFjVl9UX2lfeWtTYkF2YmpDVkhoNmN1U21fVU9JeEZpVnp6anJGNGNRY1BfVFNpU1BybmJCZHNjX193dk5Fb19SSkNUU3c?oc=5",
-        "date": "2026-03-18"
-      },
       {
         "title": "India and Germany: Modi and Merz seek deeper defence, trade and skills partnership",
         "source": "INSIGHT EU MONITORING",
         "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPa2Nwd3dyeHYwTl9hNkRnVU9hY1dkVk03d3NsdEIwWmVpOW9QSEQwTDQ4M2JVaU1MNGlHV2lMWW1YOWRNbTg4dWpZY1NrVHFRMy11d0w2MU5ua0JIQTlZWGtZTEpXVUdEREZZRDUwY1NBUXEzOUVqc3VEc2Q0NUE0cWo0UXdBLUxEeGZZcFdHVXNPRlRYY3Z3b2Vzb1NTMjFLUTNBQnZOZmI1cGVqeDdWdFQ4a3k2ZVQwam5uV21jYThIbGRXNHFtQTVvc280ZVpXWlI2TmI1LV9KRExaUlBN?oc=5",
         "date": "2026-01-13"
+      },
+      {
+        "title": "A Migration Miracle? Indian Migration to Germany",
+        "source": "Stiftung Wissenschaft und Politik (SWP)",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA2VnI2RTlvR05sSUxtZmdHRk1SRkRWZDlFN2JhOGk4eHRoZ2c0cDZKYk5BS3RBdnBKNVNNeHBhYVlmM3JmLWYtSTJETFQ0NU4wZ2E2aWNRQ2g?oc=5",
+        "date": "2025-09-15"
+      },
+      {
+        "title": "Indian Market Support Programs",
+        "source": "Trend Hunter",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE83bXlaRHRZWUJDUWNuUGtCMDh3YkhGdkx5cDQ4NjFTUUZEZGNkVnh5a3VrVUY1SXJzQ2t2YUtsVGpTaldUVHV0WEFESElscFFzaTR4bmNZZE5pRkxIbnJla1JR0gFnQVVfeXFMTlhob2R1Qk5LdWxodUJSbzhreWlTZVduVUcwdnl2aVZ1YURIbVNSZzE0MnJaaF9aUjJ3Y3FHNzlJSFZvRHIwSmNIT2ZONWlHQkhINVZpMkxaXzVqYlF2UWMzdFRsQV95QQ?oc=5",
+        "date": "2026-05-14"
+      },
+      {
+        "title": "India, Germany Seal €1.3bn Green Cooperation Deal",
+        "source": "StratNews Global",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVzdRVlZYd19PVDVtWlJoYUI0THBsQmhJY0ktRUxDTk9OM2VpQnVnbzBwaVZLTExkSTZUbEMxMGl0OU9uOFRKalBLV01mTFVPRFBRVjF3M1QxUEItRDBieUc3ZkRFQVlScVJyUnlQWnFsMmh1VldOSmpTNUtmRTU3Zmp6SXk3Wi1zcHFjMU9B?oc=5",
+        "date": "2025-12-08"
+      },
+      {
+        "title": "India – Germany Joint Statement",
+        "source": "PM India",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9aNDNTZC1XWk1RSlNKMmQ2UkhLUVU1WXhrWFNzc0laVGZKem4tRE1vYVN2amlzeUFoQzJ3eE92eW4zX1ZDamk4QTNZRWpuaW5JcDZjSFIzZmZsMHVfbFpVZTNZOWtqVEdFUEstcklQaG9IWDcxRjdRcmZtLVNjQQ?oc=5",
+        "date": "2026-01-12"
       }
     ],
     "united kingdom→ukraine": [
@@ -13706,16 +13706,16 @@ const ARTICLES = {
         "date": "2026-06-25"
       },
       {
-        "title": "United Kingdom To Provide Ukraine with 150,000 Drones and LMM Missiles",
-        "source": "Мілітарний",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNeHZRQkY3SmN3c0RFZEo3RWxKVlJJR21TbmlnbWxFZTNneDBnbEhWUUlQd0NrRktlM1FXNzJXRV9UWmYtVVhvMWZvOFpaNXJocXpLUWNidVUwOVp0cjB5Y21XVU50aE93c0ptV3VoOG1KSjhJX1AzMUh2SzY2SWMybg?oc=5",
-        "date": "2026-06-18"
-      },
-      {
         "title": "UK, France Among NATO States Blocking Proposal to Boost Military Aid for Ukraine",
         "source": "UNITED24 Media",
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRVFvYk92Ujd4eGx2NlpRX3F5bV9iUHhISVVLMmhNaEJFODB3bENRbE1UUzNOZ0Q4aVBNYlVWek16SVl2NFpmTWNxTmh5MkVFS2U1SVVxcnQ0emVremF1elR3QWM0ZE9xUXVpaWVmTE5naThSZE5uZWc1YXE5NjVDUmRuUlo3S1VWRVhKRFp0eXlYS1hiNFZSMFFNUDZHRVkyZ05teUZRQ1dfUTFkN1dMUzhUbTJ0dzRRNmVaV3BpSm5aWDlJ?oc=5",
         "date": "2026-05-25"
+      },
+      {
+        "title": "Pentagon says Ukraine support can’t rely on American contributions",
+        "source": "politico.eu",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNby14dlJQUGktcnhkVTd6RTd2WGhwRUlNUUZpZ3pIcWF1TnFXZFJwS243aFZ4VFNuakMyNi1TSkpKb3FXSEU0VGROZjFpQnRnNlRHUHJId0UxLUZQN0cwTE9UNEg4T0FGY1VzbE5MRTdGZGJQQVNsSFRFaXAwQlFQVEJIdEVTa3R0T29pcjdnUnVRSEVpeFlFekNoWm8zZWs?oc=5",
+        "date": "2026-04-17"
       }
     ],
     "france→morocco": [
@@ -13724,6 +13724,12 @@ const ARTICLES = {
         "source": "Morocco World News",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPR1l3ckdFYmFYS3hwZ0FuLUE1VnpjWTYxVFhibDhobS1sQXhUdHBzUWtQQVZycFVPVzV5MW5OZ0staV80X3NUVFNjWGJWenkzNGg1MWlUYVB6OXFpLUVldDhLamVNN3AwZ20xbklrZDBJZmhFalk0Z1dPeS15cnhLY2lBbS1BdUpETC10SDV1VlVabks4cWxUdmFheDhtTDlaNE4tUEpTdWlqUExOR24yOWtnNFpSUQ?oc=5",
         "date": "2026-07-06"
+      },
+      {
+        "title": "Morocco, France discuss expanding bilateral cooperation in AI & digital technology in Geneva",
+        "source": "MSN",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaGNhSF9qN0tKRE80eEVlbWFBSTlNaWxKWnl5aENwcnJpLVhKTUpJemt1N1NrZXdNOXpCWnB6SkxENUJOU0RfVzNIOV9MNmpJTk9fSnBCcXFKbENTSUFtQkgxUmJ3UWp5bU9aYmpmNzYzV0tuWkxLdkhELXA5SERQWmZIMXJrNFRLRXE3d1NEYnZoTVBwMzI3V2Q3TkxVenJJcGdRZkRERVNtT285NDYyUktBQlhhYlRKT1FUUlM2NmpjNDRvRFFmUUt5MVZRLTZaTE9OTA?oc=5",
+        "date": "2026-07-07"
       },
       {
         "title": "France pledges continued development support for Western Sahara",
@@ -13738,19 +13744,19 @@ const ARTICLES = {
         "date": "2026-05-04"
       },
       {
-        "title": "Rescue teams are frustrated that Morocco did not accept more international help after earthquake",
-        "source": "AP News",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWHhzaWp1Yi03ZUpTNE8ySC1sNGx6Y3d5WkdBT05iWUx1WkVlOFBnQ2lycmR6RVBWdy1FZ1hkLWZMR2FTckJER1lpNUhjSlB4MklpZTJHR1hWaEFiYVJEcmN6dEFxNmlQZ1JZb3pHZUVYOW14cVV6ZzVfOFNXRnM3dmhOaVE4eHBNblZENVpWdXctLUE?oc=5",
-        "date": "2023-09-12"
-      },
-      {
-        "title": "Morocco earthquake: Why authorities accepted limited foreign aid",
-        "source": "Al Jazeera",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNLWNiX3l6ZzV6NGIzd0lWMFlXRzNfWHRBZWRmdFNJXzVzckFjM2JEaUljdmJNN0Y0cTVIQTJxRzhFcEplS1ZyQ1Y3VUxNdFJ3RHp0alowV01IT1BrbUhXZ0E2TVFBR0dlSXFIb2UtNUhmQXljRVM2TTNiVFRkdFhaaFhGT0NmekpoaW5jLVg5NGkxOXRzaUdhYmFlWDhIdHNKbHNr0gGoAUFVX3lxTFBYVW42bFNhcUFCRmNDYmtiTWRJOGx0aEZOaXRxd081dk1wd2drVlVRRUx2ZzRybUJfSTAzOEpYRmRjMG5OUC1PajVkSWZxMlpIRjE5LXRBdW9DY1BnM0hUWjVZdV9RZVVVeDRXZExqMl9CdEN0bVNhRXRrNlE0bXVuX0M4dl93S014RDdpd2tnNU5YajNEVmJJc2FQOWwzR1B3Z3NhZWJmdQ?oc=5",
-        "date": "2023-09-12"
+        "title": "France Says Morocco Economic Partnership Is a Model for Africa",
+        "source": "Morocco World News",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNXZ3cGZ3TW10MjJDanJkMnNrZUNzeHltSzJRdW9JSWZzcUhEeUptWUJtSHYzTk03OG1qVjFySThld0VoaDFpWnZUZVQ4NUNCNDVsVnlHTkh0TnA5YzJVS0FlQXUtM3dlTlUxVmlFMXNvN0oxTGVtdjVsOFRsYXpjVjU5TTRSZXlIbTl4VUpORFBNX1JRcmZFRFZrRlNxTzF6Q0V5VHdKOUVTazJ6MXFmWg?oc=5",
+        "date": "2026-07-02"
       }
     ],
     "china→pakistan": [
+      {
+        "title": "How Pakistan Enables China’s Expanding Defense Presence in the Middle East",
+        "source": "Middle East Forum",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbnVSVEJ0Yk1zZThvdXZ1RlNrNTBfbThYZVRWa2l1MVBLSHBUU0lmNnVWVUl1YkpxZy01cDNGWGc1RTNXMEx5aUJMTVhOaFpkWHprQVR0dUszVEN5d1Jxcm9FM3RqbE9ib1J3aWxuN0tSQmQxc3ZQMzJqZ1JWcWFFX2g3ZWFVUU9ZZVdVaG9Zd294TzdkZ2I2MUlKVy0ycUQwaEk3bUFHWkdXb1VSWG5R?oc=5",
+        "date": "2026-07-02"
+      },
       {
         "title": "Gilani reaffirms Pakistan-China ‘Iron Brotherhood’, calls for deeper strategic cooperation",
         "source": "cpecinfo.com",
@@ -13762,12 +13768,6 @@ const ARTICLES = {
         "source": "Arab News",
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ZeTM3Y19WbE5nTFh4WDBaVFdsWVhOcXM4SEdsVGl1UThFXy1ZNGlCWWt0MVRZMWhlLXhfbEphQ01CWnRtWlFNWVVEeDh1MUV2R1M4?oc=5",
         "date": "2026-07-02"
-      },
-      {
-        "title": "Governor KP, Chinese Ambassador discuss strengthening bilateral cooperation, CPEC projects",
-        "source": "cpecinfo.com",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQUVCUEhQaS1KeWdZRUxWLUpnQ2pfaHR3ZmFkRnNaNVdRWjZvdmJaekR1VkpuaXJsbGRhTG9QQ0VGenRYcXotLWctTmU0LUZ1dy01NzFoajcyMHNtbzRjelNnZzhtVnBoZVdwVHd0Y3g1ZjAweW9JbnNlU0FsQ3E3bHQ3d0JvQlpucXBFVEhsbUdHWDh6NmFMNElHQ3k0cEx1Z1JNd3VqbmpjcVk4aUpB?oc=5",
-        "date": "2026-07-10"
       },
       {
         "title": "From All-Weather to All-Domain: China-Pakistan Space Cooperation and South Asian Security",
@@ -13822,16 +13822,16 @@ const ARTICLES = {
         "date": "2026-05-06"
       },
       {
-        "title": "Somalia and Egypt Deepen Port Cooperation as Cabinet Endorses Maritime Agreement",
-        "source": "FTL Somalia",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb0FpUEtneFhJcE1JYnhoaHRBSzZrME56Qk9Lak82ZjZtZkM3OWhHUUtKZF9pMkItblVINDBRdHB2amtiVzc4LVhPd0FCczNXSXNvZk01N3EzVDJQcTNhWVQ4TmFVdVhnOXYzeFItRGU4U1V1R3RLUTg3d29PYThuQ3J3ck41c2Qyc2NaT0o5cnFYbjFLbFRKNG5Fa1loRzhZWWNrcXM0Sl8tcW5z?oc=5",
-        "date": "2026-07-10"
-      },
-      {
         "title": "A new Middle Eastern quadrilateral is taking shape",
         "source": "The International Institute for Strategic Studies",
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOb052RWFXYkpZQWdyT012dS1Gd1JqTHphbld1bXVLc2p4WGUxV0dpOEFMZTI4NVVyY09BY2phUXNsMFROV2JBeWxmRFJ4a0lPZzlKSEVhTjVaSm5wWU1lZXZBYzllOVZFdmZOdHptZWl4S1kwUHFqYkxzUUJETVgxWTd4Y2EtM3BzMUM4Z2Q0VGNRd0JneExsRmFJODFWTm13THhreXpFQW9sQk1uYlV0WUZB?oc=5",
         "date": "2026-05-06"
+      },
+      {
+        "title": "Somalia and Egypt Deepen Port Cooperation as Cabinet Endorses Maritime Agreement",
+        "source": "FTL Somalia",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb0FpUEtneFhJcE1JYnhoaHRBSzZrME56Qk9Lak82ZjZtZkM3OWhHUUtKZF9pMkItblVINDBRdHB2amtiVzc4LVhPd0FCczNXSXNvZk01N3EzVDJQcTNhWVQ4TmFVdVhnOXYzeFItRGU4U1V1R3RLUTg3d29PYThuQ3J3ck41c2Qyc2NaT0o5cnFYbjFLbFRKNG5Fa1loRzhZWWNrcXM0Sl8tcW5z?oc=5",
+        "date": "2026-07-10"
       },
       {
         "title": "Egypt, Saudi Arabia discuss cooperation in agriculture, food security",
@@ -13866,16 +13866,16 @@ const ARTICLES = {
         "date": "2026-03-11"
       },
       {
-        "title": "Pakistan Says Will Be There Before It Is Needed for Saudi Arabia",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYTZJaWRmUk51NWl2QVQyXy1kdDRRUnZkLWtIQlZuV3VURWdXd2ZJVUs1UVVmS00yZVVSM0o3UENXendZdlo4dHhwVWltVEx0X3hNVndINjRjY3BRc1ZlTWppdFFENTZWYTFJUmlreFhjc2RDLVNrMmpqa29GVjR0QTJuVjJWTFFnQ2FtUEkyX1FkMmQwX203RHB3YU9tWWVDbHlhZEVnck9sS09wUGtCNVJDNXQ5Zw?oc=5",
-        "date": "2026-03-11"
-      },
-      {
         "title": "Opinion | Pakistan's Ever-Running Saudi 'Lifeline' Has Its Limits",
         "source": "NDTV",
         "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNlZQTkNlUDZOWHcwS0JCbS1DbDgyYkdXTTMzMjBQU0JNbXNGTUQ4a0lJMTRKMkI4T0VfLTdlUkhpNi13aXhkWk5qM1dTa2FRejhaNllYOHVfeUtTU2IydDdxR1otVEh4cjFxWnZIQ21VT1Y1dGhCREVpNnZ5T2RrMHI1cGx6bzN5Zjc4VE1vcTB0STVD?oc=5",
         "date": "2026-04-20"
+      },
+      {
+        "title": "Pakistan Says Will Be There Before It Is Needed for Saudi Arabia",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYTZJaWRmUk51NWl2QVQyXy1kdDRRUnZkLWtIQlZuV3VURWdXd2ZJVUs1UVVmS00yZVVSM0o3UENXendZdlo4dHhwVWltVEx0X3hNVndINjRjY3BRc1ZlTWppdFFENTZWYTFJUmlreFhjc2RDLVNrMmpqa29GVjR0QTJuVjJWTFFnQ2FtUEkyX1FkMmQwX203RHB3YU9tWWVDbHlhZEVnck9sS09wUGtCNVJDNXQ5Zw?oc=5",
+        "date": "2026-03-11"
       }
     ],
     "uae→egypt": [
@@ -13904,10 +13904,10 @@ const ARTICLES = {
         "date": "2026-02-27"
       },
       {
-        "title": "UAE President discusses bilateral ties and regional developments with President Sisi",
-        "source": "Gulf News",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZUM4R0RCUTQ1dHpnaGtobmM1X0VDcVpPNl8xZGNpek4xNXJWWUxQbG8tTlg4eFdrR3lSako1WjVFb1E3VGZZYlZvTGxodWRoQVM5dlVFQkJGaHRhM25oeHY5RUhJaTNPMVV3Q2l3TUxiYlpvMTZrT21PaEp3ZWQ1VFAwSDlVRWxPa0prU3VKRFByUXNWcE5ZX3dYd3h1TDJfQ3RIc2YycVBaeWowczVqdDJDSTJkUzdGVjZub2xXOWFvSi1DRE94bjh0cnPSAd8BQVVfeXFMUGxyLTBCUEU2Q0dwaVhjSXV6VDZaQW05V2dnRmR1enlsMEZQbDhBQ0lkT1NaQnhnM2FRV2E3WGZqclo4YnBJWlFuZm5LUWdkbDRWTkNtckZNdmJGaFVYVlZIZUU0Y2x2elpfUWVXT2pHdU5URjVRSFZHRk9zNWtFNEV3SW1GaXpYQWxTNVIyUk0xbXJ3MDhWcW5BQjY2U0Myd0RxaXRNVllHS3FPS0lyZXNNRXB5Z2xNU2xDaFFKU0ktbzJEZzVYeFB0Qkc5WmJKWFY3QmJWRENMMUVXSG5XMA?oc=5",
-        "date": "2026-06-15"
+        "title": "Aid for Security: The Gulf-Egypt Dynamic Supporting Egypt’s Economy",
+        "source": "The Washington Institute",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVldobnYtM1JqbGdIQ245aWpyMVRPUGZaSi1QSTNmWGNyNk9mZjBMUHBfZGVOQWlBaGZrUE42MTV2U3FESldHdmhpU0RoRUtoc2VCaXVFdUFTLWhoR0ZmdFhSbkUwTzZUZFVWZXlfQTA0blEybV9xbWwzZ2Z3a29mT25icS01ZlRUbV90UWRhN1Zad3FrMHlsbVFqRV9iU1psWG0wUkNWN3ZBeVhta1E?oc=5",
+        "date": "2022-06-07"
       }
     ],
     "south korea→vietnam": [
