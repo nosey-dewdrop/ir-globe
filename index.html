@@ -66,14 +66,14 @@
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="uye.html">üyelik</a> · <a href="gizlilik.html">gizlilik</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v59</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v60</span></span>
   </footer>
 </section>
 
 <script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js"></script>
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=55"></script>
-<script src="js/main.js?v=59"></script>
+<script src="js/main.js?v=60"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -112,7 +112,9 @@
     var decaying = now - lastT < 140 && mag <= lastMag * 1.4;
     lastMag = mag; lastT = now;
     if (lock || now < cool || mag < 12) return;
-    if (decaying && now < cool + 900) return;
+    /* uzun momentum kuyrukları (macOS'ta 2 sn'ye varır) için geniş pencere:
+       yeni kasıtlı kaydırma delta'yı YÜKSELTECEĞİ için bundan asla etkilenmez */
+    if (decaying && now < cool + 1600) return;
     go(idx + (e.deltaY > 0 ? 1 : -1));
   }, { passive: false });
   window.addEventListener("keydown", function (e) {

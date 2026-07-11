@@ -51,8 +51,12 @@ DOES push overlapping blocks below (variable-width masonry, blocks store __c0/__
 3. Trackpad momentum tail re-triggered page jumps after the 1050 ms scroll animation
    ("akıcı değil"): wheel handler now has a 220 ms cooldown + decaying-delta detection —
    only a RISING delta (a new deliberate swipe) or a gapped event turns the page.
-4. Arc hover rebuilt arcsData (filter+sort ~900 ties per mousemove) → now only refreshes
-   arcColor/arcStroke accessors; majorTies() result memoized (tiesRev cache).
+4. Arc hover re-sorted ~900 ties per hover change → majorTies() result now memoized
+   (tiesRev cache); hover/redraw keep the PROVEN v58 refresh path (arcsData/polygonsData
+   re-set with same objects) so highlight behavior is guaranteed identical.
+Hardening (2026-07-12 late): initGlobe wrapped in try/catch (no WebGL → rest of page still
+works), CDN-late retry loop (500 ms × 40) so lazy init can't be permanently missed, wheel
+momentum rejection window widened to 1.6 s (rising delta always passes).
 Also deleted dead code: js/articles.js (18k lines) + js/layers.js + js/data.js (legacy,
 loaded by nothing), renderList/NAMES in main.js, dead CSS blocks (#countries, .subscribe,
 .ed-in/.page.ed, .below*, .cwall, .masthead, dupes). Security pass: see

@@ -114,6 +114,7 @@ let globe = null;
 
 function initGlobe() {
   if (globe || typeof Globe === "undefined") return;
+  try {
   globe = Globe()(document.getElementById("globe"))
   .backgroundColor("#ffffff")
   .globeImageUrl(null)
@@ -136,9 +137,10 @@ function initGlobe() {
   .arcDashLength(1).arcDashGap(0).arcDashAnimateTime(0)   // solid lines, never dashed
   .onArcHover((t) => {
     document.body.style.cursor = t ? "pointer" : "default";
-    /* PERF: eskiden her hover'da arcsData yeniden kuruluyordu (900 bağın filtre +
-       diff'i); renk/kalınlık accessor'ını tazelemek aynı görsel sonucu bedavaya verir */
-    if (t !== hovered) { hovered = t; globe.arcColor((x) => arcColor(x)).arcStroke((x) => arcStroke(x)); }
+    /* hover vurgusu v58'in kanıtlı yoluyla (arcsData aynı nesnelerle tazelenir →
+       renk/kalınlık accessor'ları yeniden uygulanır); PERF farkı listenin artık
+       önbellekli olması — eskiden her hover 900 bağı yeniden sıralıyordu */
+    if (t !== hovered) { hovered = t; globe.arcsData(visibleTies()); }
   })
   .onArcClick((t) => { if (gesturing) return; focusOnTie(t); })
   .onGlobeClick(() => { if (gesturing) return; reset(); });
@@ -232,12 +234,27 @@ globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0);
       }, { threshold: 0.15 }).observe(glPage);
     }
   }
+  } catch (e) {
+    /* WebGL yok / driver sorunu: küre kurulamasa da sayfanın kalanı (hero, akış
+       linkleri, hikaye paneli) çalışmaya devam eder — sessizce statik kal */
+    console.error("[globe] küre kurulamadı:", e);
+  }
 }
 
 /* kurulum tetikleyicileri: sayfa yüklendikten sonra boşta, ya da ilk kullanıcı
-   niyetinde (hangisi önce gelirse) — initGlobe kendini bir kez kurar */
+   niyetinde (hangisi önce gelirse). CDN (unpkg) geç gelirse pes etme: Globe
+   tanımlanana kadar 500 ms arayla tekrar dene (en çok ~20 sn). */
 (function scheduleGlobeInit() {
-  const kick = () => initGlobe();
+  let tries = 0;
+  const kick = () => {
+    if (globe) return;
+    if (typeof Globe === "undefined") {
+      if (++tries <= 40) setTimeout(kick, 500);
+      else console.error("[globe] globe.gl kütüphanesi yüklenemedi (CDN erişilemedi)");
+      return;
+    }
+    initGlobe();
+  };
   ["wheel", "keydown", "touchstart", "pointerdown"].forEach((ev) =>
     window.addEventListener(ev, kick, { once: true, passive: true }));
   const idle = () => ("requestIdleCallback" in window)
@@ -494,9 +511,7 @@ function reset() {
 }
 function redraw() {
   if (!globe) return; // küre daha kurulmadıysa initGlobe kurulumda kendisi çizer
-  /* PERF: polygonsData'yı yeniden set etmek yerine renk accessor'ını tazele —
-     aynı görsel sonuç, poligon diff maliyeti yok */
-  globe.polygonCapColor((f) => polyColor(f));
+  globe.polygonsData(globe.polygonsData() || []); // aynı nesneler → sadece renkler tazelenir
   globe.arcsData(visibleTies());
 }
 function renderAll() {
