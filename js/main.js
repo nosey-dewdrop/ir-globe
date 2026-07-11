@@ -150,6 +150,11 @@ globe.arcsData(visibleTies());
 renderLayers();
 globe.controls().autoRotate = true; // spins freely on its own; drag also spins it
 globe.controls().autoRotateSpeed = 0.35; // slow, calm
+
+/* ince okları seçmek zordu: raycaster'ın çizgi toleransını büyüt — okları GÖRSEL
+   olarak kalınlaştırmadan, tıklama/hover'ın oka "yakın" saymasını kolaylaştırır.
+   globe.gl varsayılanı 1px; 8px ince oku bile rahat seçtirir. */
+if (typeof globe.lineHoverPrecision === "function") globe.lineHoverPrecision(8);
 /* dokunmatik cihazda küre parmakla büyütülebilsin (pinch-zoom); masaüstünde
    tekerlek sayfayı kaydırdığı için zoom kapalı kalır */
 const isTouch = window.matchMedia("(pointer: coarse)").matches || window.innerWidth < 820;
@@ -189,6 +194,17 @@ globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0);
       resume = setTimeout(() => { if (ctrls()) ctrls().autoRotate = true; }, 3000);
     }
   }, { passive: true });
+
+  /* MASAÜSTÜ: fare küreye gelince otomatik dönüş dursun (ince oku seçmek için
+     sabit hedef şart), fare ayrılınca 2.5sn sonra devam etsin. */
+  el.addEventListener("mouseenter", () => {
+    if (resume) { clearTimeout(resume); resume = null; }
+    if (ctrls()) ctrls().autoRotate = false;
+  });
+  el.addEventListener("mouseleave", () => {
+    if (resume) clearTimeout(resume);
+    resume = setTimeout(() => { if (ctrls()) ctrls().autoRotate = true; }, 2500);
+  });
 })();
 
 /* ── colour rules ── */
