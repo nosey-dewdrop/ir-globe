@@ -4,8 +4,8 @@ name: refresh news
 # committed back so the static site always shows fresh, verified news.
 on:
   schedule:
-    - cron: "0 6 * * *"   # every day at 06:00 UTC
-  workflow_dispatch: {}     # and on manual run
+    - cron: "0 */6 * * *"   # every 6 hours — keep the flow fresh
+  workflow_dispatch: {}      # and on manual run
 
 permissions:
   contents: write
