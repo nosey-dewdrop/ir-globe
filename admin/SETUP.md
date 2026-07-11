@@ -30,5 +30,16 @@ Gerçek backend Supabase. Bağlamak için:
 - **Kategoriler:** katman ekle/sil, sıra ver.
 - **Aboneler:** globe'daki "bültene katıl" kutusundan gelen mailler; CSV indir, bültenini onlara at.
 
-## Not (globe'un Supabase'den okuması)
-Şu an globe verisini `js/layers.js`'ten okuyor. Panel Supabase'e yazıyor. İkisini bağlamak (globe'un doğrudan Supabase'den okuması) bir sonraki adım — Damla/Claude bir fonksiyonla halleder. Şimdilik panel + abone toplama canlı; bağlantı senkronu istenince eklenir.
+## Globe artık Supabase'den okuyor ✅
+Bağlandı: `admin/config.js` doldurulur dolmaz küre, bağlantıları **doğrudan Supabase'den** okur
+(`js/main.js` → `hydrateFromSupabase()`). Bera panelden bir ok ekler/siler → sayfa yenilenince küreye
+yansır, kod/deploy gerekmez.
+
+Nasıl çalışıyor (kullanılan API = Supabase REST / PostgREST):
+- `GET {SUPABASE_URL}/rest/v1/layers?select=key,label,ord&order=ord` → katman menüsü
+- `GET {SUPABASE_URL}/rest/v1/connections?select=layer,s,r,note` → oklar
+- Header: `apikey: <anon>` + `Authorization: Bearer <anon>`. RLS'de "herkes okur" olduğu için anon key yeter.
+- **silah** katmanı istisna: yüzdeleriyle birlikte SIPRI verisinde (`js/data.js`) kalır, DB'yi ezmez.
+- **Config boşsa** küre eskisi gibi `js/layers.js` + SIPRI ile statik çalışır (hiçbir şey bozulmaz).
+- Bir bağlantının ülkeleri küre koordinat listesinde (`js/data.js`) yoksa o ok sessizce atlanır
+  (konsola uyarı düşer) — Bera ülke adını küçük harf ve mevcut anahtarla girmeli.
