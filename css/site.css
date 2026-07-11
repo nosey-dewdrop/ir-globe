@@ -321,3 +321,11 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .benim-day h2 .cnt { font-family: var(--sans); font-size: 12px; color: var(--muted); font-weight: 400; }
 .prefrow { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--muted); margin: 6px 0; font-family: var(--sans); }
 .prefrow input { accent-color: var(--navy); }
+
+/* ── sayfalar ilişik: cross-document view transition (style.css ile aynı kural —
+   iki taraf da opt-in olmalı ki konu/ülke/üyelik sayfaları da akışa bağlansın) ── */
+@view-transition { navigation: auto; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.28s; }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+}

@@ -334,3 +334,12 @@ footer {
 /* çıkış partı: hesap aç çağrısı */
 .jn-cta { font-family: var(--serif); font-size: 20px; color: var(--navy); border-bottom: 1px solid var(--navy); padding-bottom: 2px; }
 .jn-cta:hover { color: var(--royal); border-color: var(--royal); }
+
+/* ── sayfalar ilişik: cross-document view transition — aynı origin'deki her
+   gezinti (küre↔akış↔konu↔ülke, geri/ileri dahil) yumuşak crossfade ile bağlanır.
+   Desteklemeyen tarayıcıda hiçbir şey değişmez (bugünkü normal geçiş). ── */
+@view-transition { navigation: auto; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.28s; }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+}

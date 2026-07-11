@@ -155,6 +155,11 @@ reports, Bera revenue split (Damla's call).
   dead index.html#subscribe link → uye.html. Security review: RLS schema solid, no tracked
   secrets, all innerHTML sinks escape; hardened: news pipeline drops non-http(s) URLs,
   admin CSV export quotes formula-leading cells. Report: reports/2026-07-12-ir-globe-temizlik-guvenlik.md
+  Later same night (v60-v62): lazy-init hardening (try/catch, CDN retry), globe.gl script
+  deferred, geojson prefetch, wall density scales with viewport, hover delta cache, renderer
+  pixel ratio capped 1.5 on retina, and "sayfalar ilişik değil" SOLVED with cross-document
+  View Transitions (0.28s crossfade in style.css + site.css, site.css bumped to v9 across
+  all generated pages via build-seo).
 
 ## Verification playbook
 
