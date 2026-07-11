@@ -471,8 +471,10 @@ function renderCards() {
   cardsEl.classList.add("show");
   layoutCards();
 }
-/* kartları kürenin SAĞ kavisine sarar: geniş yay (üst → sağ → alt) sayesinde
-   x değeri değişir, düz sütun değil kavis olur. yarıçap sabit (desktop'ta zoom yok). */
+/* kartları kürenin SAĞ kavisine sarar. Yay artık kart sayısıyla ORANTILI açılır
+   (kart başına 22°): 6 kart ±55°, 3 kart ±22° — eski sabit ±84° az kartta devasa
+   boşluklar bırakıp başlıkları sahnenin üstünden/altından taşırıyordu. Üst/alt
+   güvenlik payı da var: kart ne olursa olsun sahne içinde kalır. */
 function layoutCards() {
   const cards = [...cardsEl.querySelectorAll(".card")];
   const n = cards.length;
@@ -481,12 +483,15 @@ function layoutCards() {
   const w = stage.clientWidth, h = stage.clientHeight;
   const cx = w / 2, cy = h / 2;
   const R = Math.min(w, h) * 0.46 + 30;  // kürenin sağ kavisinin hemen dışı + nefes payı
-  const a0 = -84, a1 = 84;               // geniş yay → gerçekten kavislenir (dar açıda düz sütun olurdu)
+  const STEP = 22;                       // iki kart arası açı — sıkı ama üst üste binmez
+  const half = Math.min(66, ((n - 1) * STEP) / 2);
+  const pad = 56;                        // sahnenin üst/alt kenarına asgari mesafe
   cards.forEach((c, i) => {
-    const deg = n > 1 ? a0 + (i * (a1 - a0)) / (n - 1) : 0;
+    const deg = n > 1 ? -half + (i * 2 * half) / (n - 1) : 0;
     const rad = (deg * Math.PI) / 180;
+    const y = Math.max(pad, Math.min(h - pad, cy + R * Math.sin(rad)));
     c.style.left = (cx + R * Math.cos(rad)).toFixed(1) + "px";
-    c.style.top = (cy + R * Math.sin(rad)).toFixed(1) + "px";
+    c.style.top = y.toFixed(1) + "px";
   });
 }
 
