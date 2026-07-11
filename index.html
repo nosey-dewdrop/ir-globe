@@ -25,8 +25,11 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css?v=59">
+<!-- küre verisini tarayıcı boş kalınca sessizce indir — initGlobe cache'ten bulur -->
+<link rel="prefetch" href="data/countries.geojson?v=6">
 </head>
 <body class="pages">
 
@@ -66,14 +69,16 @@
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="uye.html">üyelik</a> · <a href="gizlilik.html">gizlilik</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v60</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v61</span></span>
   </footer>
 </section>
 
-<script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js"></script>
+<!-- defer: 500 KB'lık kütüphane HTML'i ve alttaki inline scriptleri BEKLETMESİN —
+     paralel iner; initGlobe zaten Globe tanımlanana dek bekleyip yeniden dener -->
+<script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js" defer></script>
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=55"></script>
-<script src="js/main.js?v=60"></script>
+<script src="js/main.js?v=61"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -149,6 +154,7 @@
       if (span > cols) span = 1;
       spans.push(span);
       el.classList.remove("big"); el.style.transform = "";
+      el.__delta = null; // genişlik değişti → hover büyüme ölçüsü geçersiz
       el.style.width = (span * cw + (span - 1) * GAP) + "px";
     }
     var hs = [];
@@ -173,8 +179,11 @@
   }
   function build(items) {
     var tiers = ["s1", "s1", "s1", "s2", "s2", "s3", "s3", "s4", "s5"];
-    var fill = []; while (fill.length < 240) fill = fill.concat(items);
-    wall.innerHTML = fill.slice(0, 240).map(function (a) {
+    /* blok sayısı ekran ALANINA göre: masaüstünde yine 240, telefonda ~60-80 —
+       görünen yoğunluk aynı, layout işi dörtte bire iner */
+    var COUNT = Math.max(60, Math.min(240, Math.round(wall.clientWidth * wall.clientHeight / 4500)));
+    var fill = []; while (fill.length < COUNT) fill = fill.concat(items);
+    wall.innerHTML = fill.slice(0, COUNT).map(function (a) {
       var t = tiers[Math.floor(Math.random() * tiers.length)];
       var span = Math.random() < 0.32 ? 2 : 1;   // ~%32 iki kolon geniş → ızgara kırılır
       return '<span class="wl ' + t + '" data-span="' + span + '">' + esc(a.t) + "</span>";
@@ -187,7 +196,13 @@
     wall.addEventListener("mouseover", function (e) {
       var el = e.target.closest && e.target.closest(".wl");
       if (!el || el.classList.contains("big") || el.__c0 == null) return;
-      var oldH = el.offsetHeight; el.classList.add("big"); var delta = el.offsetHeight - oldH;
+      var delta = el.__delta; // büyüme farkı ilk hover'da ölçülür, sonra önbellekten
+      if (delta == null) {
+        var oldH = el.offsetHeight; el.classList.add("big");
+        delta = el.__delta = el.offsetHeight - oldH;
+      } else {
+        el.classList.add("big");
+      }
       blocks.forEach(function (b) {
         if (b.top > el.__top && b.c0 < el.__c1 && b.c1 > el.__c0) b.el.style.transform = "translateY(" + delta + "px)";
       });

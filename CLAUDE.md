@@ -57,6 +57,12 @@ DOES push overlapping blocks below (variable-width masonry, blocks store __c0/__
 Hardening (2026-07-12 late): initGlobe wrapped in try/catch (no WebGL → rest of page still
 works), CDN-late retry loop (500 ms × 40) so lazy init can't be permanently missed, wheel
 momentum rejection window widened to 1.6 s (rising delta always passes).
+Round 3 (v61, "daha hızlı" order): globe.gl script now `defer` (500 KB lib no longer blocks
+HTML/inline scripts — safe because lazy init retries until Globe exists), preconnect unpkg +
+prefetch countries.geojson, wall block count scales with viewport area (desktop still 240,
+phones ~60), wall hover growth delta cached per block (invalidated on relayout), globe
+renderer pixel ratio capped at 1.5 on retina (≈44% fewer pixels/frame — if Damla finds the
+globe soft, revert the setPixelRatio line in initGlobe).
 Also deleted dead code: js/articles.js (18k lines) + js/layers.js + js/data.js (legacy,
 loaded by nothing), renderList/NAMES in main.js, dead CSS blocks (#countries, .subscribe,
 .ed-in/.page.ed, .below*, .cwall, .masthead, dupes). Security pass: see

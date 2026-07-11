@@ -145,6 +145,11 @@ function initGlobe() {
   .onArcClick((t) => { if (gesturing) return; focusOnTie(t); })
   .onGlobeClick(() => { if (gesturing) return; reset(); });
 
+/* retina'da tam 2x piksel çizmek GPU'yu ikiye katlıyordu; 1.5x görsel olarak
+   ayırt edilmez ama kare hızını belirgin rahatlatır (DPR 1 ekranda no-op) */
+if (globe.renderer && globe.renderer())
+  globe.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+
 /* ocean = grey sphere with real shading so it reads as a 3D globe, not a flat disc.
    lowering emissiveIntensity lets the directional light fall off toward the edge = depth. */
 const mat = globe.globeMaterial();
