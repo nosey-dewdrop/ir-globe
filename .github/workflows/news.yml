@@ -34,11 +34,11 @@ jobs:
           fi
       # supabase free projeyi uyanık tut (7 gün hareketsizlikte duraklıyor)
       - name: keep supabase awake
-        if: ${{ secrets.SUPABASE_URL != '' }}
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_ANON: ${{ secrets.SUPABASE_ANON }}
         run: |
+          if [ -z "$SUPABASE_URL" ]; then echo "no supabase secret, skip"; exit 0; fi
           curl -s -o /dev/null -w "keep-alive HTTP %{http_code}\n" \
             "$SUPABASE_URL/rest/v1/layers?select=key&limit=1" \
             -H "apikey: $SUPABASE_ANON" -H "Authorization: Bearer $SUPABASE_ANON"
