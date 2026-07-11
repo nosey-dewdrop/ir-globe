@@ -149,7 +149,9 @@ renderLayers();
 globe.controls().autoRotate = true; // spins freely on its own; drag also spins it
 globe.controls().autoRotateSpeed = 0.35; // slow, calm
 globe.controls().enableZoom = false; // single-page: wheel scrolls the page, drag spins the globe
-globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0); // fits fully but a tick bigger
+/* dar ekranda küre kesilmesin: telefonda biraz daha uzaktan çerçevele (arclar yüzeyin üstünde) */
+const FIT_ALT = window.innerWidth < 700 ? 2.75 : 2.2;
+globe.pointOfView({ lat: 20, lng: 20, altitude: FIT_ALT }, 0); // fits fully but a tick bigger
 
 /* ── colour rules ── */
 function isActiveCountry(c) {
