@@ -1,5 +1,8 @@
 # ir-globe (WORKING NAME — real name is Damla's to give)
 
+## Commit rules (READ THIS — mobile/web sessions too)
+Commit messages: lowercase english, no emojis, no dashes. Author is Damla ONLY. NEVER add a `Co-authored-by: Claude` / `Claude-Session` trailer or any "Generated with Claude" line — Claude must not appear as a contributor on this repo. (These rules live in Damla's global config on her Mac, which cloud/mobile sessions can't see — so they are restated here.)
+
 Product for Damla's IR-student friend (asked for it 2026-07-10). A rotating WebGL globe showing country-to-country networks — v1 is the arms trade; the ask also covers grain and other ties, plus a custom weekly newsletter on top. DECISION (Damla, 2026-07-10): this is a GIFT, not a commission — friend may take it into journalism; the @damlahelloworld signature in the footer travels with it. If other IR people/journalists want their own globes later, the template itself can become the sellable thing.
 
 ## Status (2026-07-10 pm — REAL SITE: landing + SEO + membership)
