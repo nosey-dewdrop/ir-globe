@@ -131,6 +131,14 @@ reports, Bera revenue split (Damla's call).
   Separate Supabase project (not the shared one) — may be handed to Bera; keep-alive ping will
   ride the 6-hourly news workflow. Personal features launch FREE. Plans are written in Turkish now.
 - 2026-07-11: payload refactor shipped; "TÜRkiye" display bug fixed via registry.
+- 2026-07-12: long LANDING (index.html page 1) design iteration with Damla → build v58.
+  Hero background = JS variable-width masonry of faint real headlines (1-2 col blocks → mosaic, not
+  columns), varied fonts 11-26px. Foreground = text left-aligned, "hesap aç" right-aligned, white
+  hugs characters per line (.hl + box-decoration-break, not a card), counters back on hero, wall
+  hover grows + pushes overlapping blocks below. Visible build tag in page-3 footer (bump each deploy).
+  OPEN (Damla, not done): homepage personalize-when-logged-in, globe cards on left + story panel curve,
+  globe pinch-zoom→cards move, smooth page transitions. TOP PRIORITY next: PERF ("aşırı yavaş") — profile
+  masonry relayout + full-page wheel hijack + globe render. ALWAYS test on github.io (custom domain lags).
 - 2026-07-11 (late): phases 2-7 shipped in one run. Dataset layers replaced curated ties for
   goc/yardim/diplomasi/tahil (+ new kablo); ittifak deliberately stays curated (COW frozen 2012);
   siber deferred (no open endpoint). Emails one-click-unsubscribe via token RPC (no login).
