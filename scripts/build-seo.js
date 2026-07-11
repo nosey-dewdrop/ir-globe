@@ -18,6 +18,25 @@ const COUNTRIES = readJSON("data/countries.json");
 const LAYERS = readJSON("data/layers/index.json"); // [{key,label,blurb}]
 const LAYER_BY_KEY = Object.fromEntries(LAYERS.map((l) => [l.key, l]));
 
+/* başlıklar soru cümlesi — marka sesi ("kim kime ne satıyor?") */
+const SORU = {
+  silah: "kim kime silah satıyor?",
+  ticaret: "kim kime ne satıyor?",
+  enerji: "kim kime enerji satıyor?",
+  tahil: "kim kimi doyuruyor?",
+  ittifak: "kim kiminle ittifak kurdu?",
+  yaptirim: "kim kime yaptırım uyguluyor?",
+  goc: "kim nereye sığınıyor?",
+  borc: "kim kime borç veriyor?",
+  diplomasi: "kim kiminle yakın duruyor?",
+  teknoloji: "kim kime çip satıyor?",
+  us: "kim nerede üs kuruyor?",
+  yardim: "kim kime yardım ediyor?",
+  kablo: "kim kiminle aynı kabloya bağlı?",
+  siber: "kim kime siber saldırıyor?",
+};
+const soru = (key, fallback) => SORU[key] || fallback;
+
 const TIES = [];
 const ARTICLES = {};
 let supShare = {};
@@ -117,7 +136,7 @@ function layerPage(layer) {
   const key = layer.key;
   const all = TIES.filter((t) => t.type === key);
   const ties = all.slice(0, 100); // layer files are value-sorted; page shows the top 100
-  const title = `${layer.label} ağı — kim kime ${layer.label.split(" ")[0]} veriyor`;
+  const title = `${soru(key, layer.label + " ağı")} — kim kime ne satıyor?`;
   const desc = layer.blurb;
   const canonical = `${SITE}/konu/${key}/`;
 
@@ -149,7 +168,7 @@ function layerPage(layer) {
   const body = `${nav(2)}
 <main class="wrap">
   <nav class="crumb"><a href="ROOT/index.html">ana sayfa</a> › <a href="ROOT/konu/index.html">konular</a> › ${esc(layer.label)}</nav>
-  <h1>${esc(layer.label)}</h1>
+  <h1>${esc(soru(key, layer.label))}</h1>
   <p class="lede">${esc(desc)}</p>
   <p class="meta">${all.length} yönlü bağ${all.length > ties.length ? ` · en büyük ${ties.length} tanesi aşağıda` : ""} · <a href="ROOT/index.html">küre üstünde gör →</a></p>
   <section class="edges">
@@ -218,7 +237,7 @@ function konuIndex() {
   const rows = LAYERS.map((l) => {
     const n = TIES.filter((t) => t.type === l.key).length;
     return `<article class="trow">
-      <h2><a href="ROOT/konu/${l.key}/">${esc(l.label)}</a></h2>
+      <h2><a href="ROOT/konu/${l.key}/">${esc(soru(l.key, l.label))}</a></h2>
       <p>${esc(l.blurb)}</p>
       <a class="tcount" href="ROOT/konu/${l.key}/">${n} bağ →</a>
     </article>`;

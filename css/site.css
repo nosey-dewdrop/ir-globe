@@ -61,7 +61,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ── layer page: edges ── */
 .edges { display: flex; flex-direction: column; }
-.edge { padding: 16px 0; border-top: 1px solid var(--rule); }
+.edge { padding: 14px 0; }
 .edge h3 { font-size: 19px; line-height: 1.25; }
 .edge h3 a { color: var(--ink); }
 .edge h3 a:hover { color: var(--navy); }
@@ -75,7 +75,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 /* ── country page ── */
 .wrap h2 { font-size: 24px; margin: 34px 0 4px; letter-spacing: -0.01em; }
 .wrap h2 .cnt { font-family: var(--sans); font-size: 14px; }
-.cgroup { padding: 12px 0; border-top: 1px solid var(--rule); }
+.cgroup { padding: 12px 0; }
 .cgroup h3 { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-family: var(--sans); color: var(--navy); margin-bottom: 6px; }
 .cgroup h3 a { color: var(--navy); }
 .clist { list-style: none; display: flex; flex-direction: column; gap: 4px; }
