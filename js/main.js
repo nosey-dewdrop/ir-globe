@@ -69,6 +69,7 @@ let layer = "silah";
 let selected = null;  // a country
 let focusTie = null;  // a single arc
 let hovered = null;   // arc under the cursor
+let gesturing = false; // touch: a pinch/drag is in progress → don't treat its end as a click
 
 const layerNav = document.getElementById("layers");
 function renderLayers() {
@@ -114,7 +115,7 @@ const globe = Globe()(document.getElementById("globe"))
   .polygonAltitude(0.006)
   .polygonsTransitionDuration(0)
   .onPolygonHover((f) => { document.body.style.cursor = f ? "pointer" : "default"; })
-  .onPolygonClick((f) => { const c = countryOfFeature(f); if (c) selectCountry(c === selected ? null : c); })
+  .onPolygonClick((f) => { if (gesturing) return; const c = countryOfFeature(f); if (c) selectCountry(c === selected ? null : c); })
   .arcLabel((t) => tieLine(t))
   .arcStartLat((t) => COORDS[t.s][0]).arcStartLng((t) => COORDS[t.s][1])
   .arcEndLat((t) => COORDS[t.r][0]).arcEndLng((t) => COORDS[t.r][1])
@@ -127,8 +128,8 @@ const globe = Globe()(document.getElementById("globe"))
     document.body.style.cursor = t ? "pointer" : "default";
     if (t !== hovered) { hovered = t; globe.arcsData(visibleTies()); }
   })
-  .onArcClick((t) => focusOnTie(t))
-  .onGlobeClick(() => reset());
+  .onArcClick((t) => { if (gesturing) return; focusOnTie(t); })
+  .onGlobeClick(() => { if (gesturing) return; reset(); });
 
 /* ocean = grey sphere with real shading so it reads as a 3D globe, not a flat disc.
    lowering emissiveIntensity lets the directional light fall off toward the edge = depth. */
@@ -160,6 +161,25 @@ if (isTouch) {
 }
 /* mobilde küreyi geniş çerçevele — ekran genişliğini doldursun, küçük durmasın */
 globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0);
+
+/* dokunmatikte pinch/döndürme jesti seçimi SIFIRLAMASIN: jest sırasında
+   biten dokunuş "boş küreye tıklama" sayılıp seçili bağlantıyı uçuruyordu.
+   İki parmak (pinch) ya da tek parmakla ~10px kayma = jest → tıklama yok say.
+   Seçim yalnızca aynı bağlantıya/ülkeye tekrar dokununca kalkar. */
+(function guardGestureClicks() {
+  const el = document.getElementById("globe");
+  if (!el) return;
+  let sx = 0, sy = 0;
+  el.addEventListener("touchstart", (e) => {
+    if (e.touches.length > 1) { gesturing = true; }
+    else { gesturing = false; sx = e.touches[0].clientX; sy = e.touches[0].clientY; }
+  }, { passive: true });
+  el.addEventListener("touchmove", (e) => {
+    if (e.touches.length > 1) { gesturing = true; return; }
+    const dx = e.touches[0].clientX - sx, dy = e.touches[0].clientY - sy;
+    if (dx * dx + dy * dy > 100) gesturing = true;  // >10px hareket = döndürme
+  }, { passive: true });
+})();
 
 /* ── colour rules ── */
 function isActiveCountry(c) {
