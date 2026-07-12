@@ -161,12 +161,13 @@ mat.specular && mat.specular.set("#f2f4f7");
 
 fetch("data/countries.geojson?v=6")
   .then((r) => r.json())
-  .then((geo) => globe.polygonsData(geo.features.filter((f) => f.properties.ISO_A2 !== "AQ")))
+  .then((geo) => { globe.polygonsData(geo.features.filter((f) => f.properties.ISO_A2 !== "AQ")); wakeGlobe(); })
   .catch(() => {});
 
 globe.arcsData(visibleTies());
-globe.controls().autoRotate = true; // spins freely on its own; drag also spins it
-globe.controls().autoRotateSpeed = 0.35; // slow, calm
+/* dönüşü kaldırdık (Damla: parmakla zaten çeviriyor). Onun yerine on-demand:
+   herhangi bir kamera değişimi küreyi uyandırır, boşta uyur → sıfır boşta yük. */
+globe.controls().addEventListener("change", () => wakeGlobe());
 
 /* ince okları seçmek zordu: raycaster'ın çizgi toleransını büyüt — okları GÖRSEL
    olarak kalınlaştırmadan, tıklama/hover'ın oka "yakın" saymasını kolaylaştırır.
@@ -190,38 +191,21 @@ globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0);
       bağlantıyı uçurmaz. Tek parmak dokunuşuna KARIŞMAZ; drag/tık ayrımını
       globe.gl kendi yapıyor (önceki "10px kayma" kuralı tek parmak tıklamayı
       zorlaştırıyordu, kaldırıldı).
-   2) Parmak küreye değince otomatik dönüş DURUR, 3sn hareketsizlikte devam eder
-      — sabit küreye ince oka dokunmak çok daha kolay. */
+   2) Dönüş kalktı; etkileşim küreyi uyandırır, boşta uyur. */
 (function globeTouchUX() {
   const el = document.getElementById("globe");
   if (!el) return;
-  let resume = null;
-  const ctrls = () => globe.controls();
   el.addEventListener("touchstart", (e) => {
     gesturing = e.touches.length > 1;           // yalnızca pinch tıklamayı bastırır
-    if (ctrls()) ctrls().autoRotate = false;    // dokunurken küre dursun
-    if (resume) { clearTimeout(resume); resume = null; }
+    wakeGlobe();
   }, { passive: true });
   el.addEventListener("touchmove", (e) => {
     if (e.touches.length > 1) gesturing = true;
+    wakeGlobe();
   }, { passive: true });
-  el.addEventListener("touchend", (e) => {
-    if (e.touches.length === 0) {
-      if (resume) clearTimeout(resume);
-      resume = setTimeout(() => { if (ctrls()) ctrls().autoRotate = true; }, 3000);
-    }
-  }, { passive: true });
-
-  /* MASAÜSTÜ: fare küreye gelince otomatik dönüş dursun (ince oku seçmek için
-     sabit hedef şart), fare ayrılınca 2.5sn sonra devam etsin. */
-  el.addEventListener("mouseenter", () => {
-    if (resume) { clearTimeout(resume); resume = null; }
-    if (ctrls()) ctrls().autoRotate = false;
-  });
-  el.addEventListener("mouseleave", () => {
-    if (resume) clearTimeout(resume);
-    resume = setTimeout(() => { if (ctrls()) ctrls().autoRotate = true; }, 2500);
-  });
+  el.addEventListener("pointerdown", () => wakeGlobe(), { passive: true });
+  el.addEventListener("wheel", () => wakeGlobe(), { passive: true });
+  el.addEventListener("mouseenter", () => wakeGlobe());
 })();
 
   sizeGlobe();
@@ -233,8 +217,8 @@ globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0);
     if (glPage) {
       new IntersectionObserver((es) => {
         es.forEach((e) => {
-          if (e.isIntersecting) { globe.resumeAnimation(); globe.controls().autoRotate = true; }
-          else { globe.pauseAnimation(); }
+          if (e.isIntersecting) { wakeGlobe(1800); } // gör: bir kez çiz + otur, sonra uyu
+          else { globe.pauseAnimation(); if (_glSleep) { clearTimeout(_glSleep); _glSleep = null; } }
         });
       }, { threshold: 0.15 }).observe(glPage);
     }
@@ -545,14 +529,14 @@ function focusOnTie(t) {
   redraw();
   const midLat = (COORDS[t.s][0] + COORDS[t.r][0]) / 2;
   const midLng = (COORDS[t.s][1] + COORDS[t.r][1]) / 2;
-  if (globe) globe.pointOfView({ lat: midLat, lng: midLng, altitude: 1.7 }, 800);
+  if (globe) { globe.pointOfView({ lat: midLat, lng: midLng, altitude: 1.7 }, 800); wakeGlobe(1400); }
   renderAll();
 }
 function selectCountry(c) {
   focusTie = null;
   selected = c;
   redraw();
-  if (globe && c && COORDS[c]) globe.pointOfView({ lat: COORDS[c][0], lng: COORDS[c][1], altitude: 1.8 }, 700);
+  if (globe && c && COORDS[c]) { globe.pointOfView({ lat: COORDS[c][0], lng: COORDS[c][1], altitude: 1.8 }, 700); wakeGlobe(1400); }
   renderAll();
 }
 function reset() {
@@ -561,10 +545,21 @@ function reset() {
   redraw();
   renderAll();
 }
+/* on-demand render kapısı: küre boştayken HİÇ çizmesin (eski sürekli autoRotate
+   tüm sayfayı kastırıyordu). Kamera değişimi, veri tazeleme ya da odak animasyonu
+   küreyi uyandırır; ~2.6 sn hareketsizlikte tekrar uyur → boşta sıfır GPU. */
+let _glSleep = null;
+function wakeGlobe(ms = 2600) {
+  if (!globe || !globe.resumeAnimation) return;
+  globe.resumeAnimation();
+  if (_glSleep) clearTimeout(_glSleep);
+  _glSleep = setTimeout(() => { if (globe && globe.pauseAnimation) globe.pauseAnimation(); }, ms);
+}
 function redraw() {
   if (!globe) return; // küre daha kurulmadıysa initGlobe kurulumda kendisi çizer
   globe.polygonsData(globe.polygonsData() || []); // aynı nesneler → sadece renkler tazelenir
   globe.arcsData(visibleTies());
+  wakeGlobe(); // renk/bağ değişimini bir kare çiz, sonra uyu
 }
 function renderAll() {
   document.querySelector(".stage").classList.toggle("sel", anySelection());
