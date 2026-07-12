@@ -67,6 +67,18 @@ display names and slugs come ONLY from the registry (fixes the old "TÜRkiye" ti
   `sitemap.xml`, `robots.txt` from `data/`. Run after any data change.
 - `scripts/migrate-legacy.js` — ONE-TIME converter (already run 2026-07-11); harmless to rerun,
   but the data/ files are the source of truth now.
+- `scripts/extract-relations.js` — **relation-extraction engine** (started 2026-07-12). Reads every
+  headline in `data/news/*.json` and DERIVES a directed, event-coded, Goldstein-scored tie FROM THE
+  TEXT (not from which RSS query fetched it). 100% deterministic, no API, no network — Damla's call.
+  Writes `data/events/<layer>.json`. Run: `node scripts/extract-relations.js [--report]`.
+  Engine libs in `scripts/lib/extract/`: `gazetteer.js` (actor NER: country aliases + curated
+  demonyms + leader→country), `cameo.js` (CAMEO event coding + Goldstein −10..+10 conflict/coop
+  weights, same scheme as GDELT/TABARI), `relate.js` (fuse actors+event → directed tie, negation
+  filter, subject-before-verb direction, self-scored confidence, keep ≥0.8).
+  Coverage 2026-07-12: 3181 unique headlines → 789 confident ties (24.8%), 220 conflict / 569 coop.
+  NEXT: expand verb dict for recall; conjunction handling ("X and Y" as co-targets); then graph
+  analytics (centrality/community/spike) over the event store; then extractive per-cluster summaries
+  (also API-less — cluster + representative-sentence pick, NOT LLM).
 
 ## Roadmap status (approved 8-phase plan — plan file: ~/.claude/plans/merhaba-kanka-ir-globe-humble-haven.md)
 

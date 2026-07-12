@@ -1,0 +1,92 @@
+/* lib/extract/cameo.js — event coding + Goldstein scoring.
+
+   Maps the action in a headline onto a CAMEO-style event category and its
+   published Goldstein conflict<->cooperation weight (-10 hostile .. +10
+   cooperative). This is the same coding scheme GDELT/TABARI use, reduced to a
+   curated, high-precision phrase dictionary tuned for the layers this product
+   covers (diplomacy, sanctions, arms, trade, energy, aid, migration, alliances).
+
+   Precision over recall on purpose: a phrase that isn't confidently an event is
+   left uncoded (confidence 0) and handed to the LLM fallback later, rather than
+   guessed. Longer/rarer phrases are tested first so "impose sanctions" wins over
+   a bare "impose".
+
+     headline text  ->  {code, root, label, goldstein, matched} | null
+*/
+
+/* Each rule: [regex, cameoRoot, goldstein, label]. Goldstein values follow the
+   standard CAMEO->Goldstein table (Goldstein 1992 + CAMEO codebook). */
+const RULES = [
+  // --- material conflict (most hostile) ---
+  [/\b(invade|invasion|full[- ]scale (war|assault))\b/, "19", -9.4, "askeri işgal"],
+  [/\b(air ?strikes?|missile strikes?|bomb(ard|ed|ing)?|shell(ed|ing)?|drone strikes?)\b/, "19", -9.2, "hava/füze saldırısı"],
+  [/\b(attack(ed|s|ing)?|assault|offensive|raid(ed|s)?)\b/, "18", -9.0, "silahlı saldırı"],
+  [/\b(kill(ed|s|ing)?|deadly|casualties|troops? (killed|die))\b/, "18", -8.0, "ölümlü çatışma"],
+  [/\b(clash(es|ed)?|firefight|cross[- ]border fire|exchange(d)? fire)\b/, "19", -7.0, "sınır çatışması"],
+  [/\b(seiz(e|ed|ing)|captur(e|ed)|occup(y|ied|ation))\b/, "17", -6.5, "el koyma / işgal"],
+  [/\b(deploy(ed|s|ment)?|mass(es|ed)? troops|military build[- ]?up|mobiliz)/, "15", -5.5, "askeri yığınak"],
+
+  // --- coercion / sanctions ---
+  [/\b(sanction(s|ed|ing)?|embargo|blacklist(ed)?|asset freeze|freeze(s)? assets)\b/, "163", -5.4, "yaptırım"],
+  [/\b(ban(s|ned|ning)?|restrict(s|ed|ions)?|curb(s|ed)?|tariffs?|levy|levies|duties)\b/, "162", -4.0, "kısıtlama / tarife"],
+  [/\b(expel(s|led)?|expuls|deport(s|ed|ation)?)\b/, "162", -4.4, "sınır dışı / ihraç"],
+  [/\b(cut(s|ting)? (ties|relations|off)|sever(s|ed)? (ties|relations)|suspend(s|ed)? (ties|relations))\b/, "162", -4.9, "ilişki kesme"],
+  [/\b(recall(s|ed)? (its )?ambassador|summon(s|ed)? (the )?ambassador)\b/, "154", -3.8, "büyükelçi geri çağırma"],
+
+  // --- verbal conflict ---
+  [/\b(threaten(s|ed|ing)?|warn(s|ed)? of|ultimatum)\b/, "138", -6.9, "tehdit"],
+  [/\b(accus(e|es|ed|ation)|blam(e|es|ed))\b/, "112", -2.0, "suçlama"],
+  [/\b(condemn(s|ed|ation)?|denounc(e|ed)|slam(s|med)?|protest(s|ed)?)\b/, "111", -1.6, "kınama / protesto"],
+  [/\b(reject(s|ed)?|refus(e|es|ed)|oppos(e|es|ed)|deny|denies)\b/, "120", -2.2, "ret / karşı çıkma"],
+  [/\b(tension(s)?|dispute|row|stand[- ]?off|escalat)/, "110", -2.0, "gerginlik"],
+  [/\b(summon(s|ed)?|demand(s|ed)?)\b/, "130", -3.4, "resmi talep / çağrı"],
+
+  // --- verbal cooperation ---
+  [/\b(talks?|dialogue|negotiat(e|es|ed|ions?)|discuss(es|ed|ions?)?)\b/, "036", 4.0, "görüşme / müzakere"],
+  [/\b(meet(s|ing)?|summit|hold(s)? talks|phone call|calls? for (calm|talks))\b/, "036", 3.5, "üst düzey görüşme"],
+  [/\b(visit(s|ed|ing)?|arrives? in|trip to|tour(s)?)\b/, "042", 3.4, "resmi ziyaret"],
+  [/\b(praise(s|d)?|welcom(e|es|ed)|hail(s|ed)?|backs\b|backed\b|support(s|ed)?)\b/, "051", 3.4, "destek / övgü"],
+  [/\b(pledge(s|d)?|vow(s|ed)?|promis(e|es|ed)|commit(s|ted)?)\b/, "057", 4.5, "taahhüt"],
+  [/\b(apolog(y|ize|ized)|express(es|ed)? regret|condolences?)\b/, "055", 4.0, "özür / taziye"],
+
+  // --- material cooperation (most friendly) ---
+  [/\b(sign(s|ed)?|ink(s|ed)?)\b.*\b(deal|agreement|pact|treaty|accord|mou|memorandum|contract)\b/, "057", 7.0, "anlaşma imzası"],
+  [/\b(deal|agreement|pact|treaty|accord|partnership)\b/, "057", 6.0, "anlaşma / ortaklık"],
+  [/\b(alliance|allies|coalition|bloc|join(s|ed)? (nato|the))\b/, "056", 6.0, "ittifak"],
+  [/\b(aid|assistance|humanitarian|relief|donat(e|es|ed|ion)?)\b/, "070", 7.0, "yardım"],
+  [/\b(loan(s)?|bailout|credit line|financ(e|es|ing)|bond(s)?|debt relief)\b/, "071", 6.5, "kredi / finansman"],
+  [/\b(invest(s|ed|ment)?|fund(s|ing)?|billion|\$\d|pipeline|infrastructure)\b/, "071", 6.4, "yatırım"],
+  [/\b(export(s|ed)?|import(s|ed)?|trade deal|supply|shipment|grain|wheat|energy deal|gas deal|oil)\b/, "061", 5.0, "ticaret / tedarik"],
+  [/\b(cooperat(e|ion|ive)|collaborat|joint (venture|exercise|project)|strengthen(s|ed)? ties|deepen(s|ed)? ties)\b/, "050", 5.0, "işbirliği"],
+  [/\b(cease[- ]?fire|truce|peace (deal|talks|plan)|de[- ]escalat|normaliz)/, "046", 7.0, "ateşkes / normalleşme"],
+  [/\b(prisoner (swap|exchange)|swap prisoners|releases? (detainees|prisoners|hostages)|hostage release)\b/, "080", 5.0, "esir takası / serbest bırakma"],
+
+  // --- recall expansion (lower priority: generic verbs, tested last) ---
+  [/\b(kidnap(s|ped)?|abduct(s|ed)?|hostage[- ]?tak)/, "181", -8.5, "kaçırma"],
+  [/\b(arrest(s|ed)?|detain(s|ed)?|jail(s|ed)?|imprison)/, "173", -4.4, "gözaltı / tutuklama"],
+  [/\b(cyber ?attack(s|ed)?|hack(s|ed|ing)?|espionage|spy(ing)?|breach(es|ed)?)\b/, "175", -5.0, "siber saldırı / casusluk"],
+  [/\b(veto(es|ed)?|block(s|ed)? (a )?(resolution|deal|bid))\b/, "121", -3.0, "veto / engelleme"],
+  [/\b(coup|overthrow|topple(s|d)?)\b/, "180", -7.0, "darbe"],
+  [/\b(withdraw(s|al|n)?|pull(s|ed)? (out|back)|retreat)/, "087", 2.0, "geri çekilme"],
+  [/\b(urge(s|d)?|call(s|ed)? on|press(es|ed)? |push(es|ed)? for|appeal(s|ed)?)\b/, "020", 2.8, "çağrı / baskı"],
+  [/\b(seek(s|ing)?|offer(s|ed)?|propos(e|es|ed|al)|host(s|ed)?|invite(s|d)?)\b/, "030", 3.2, "girişim / davet"],
+  [/\b(boost(s|ed)?|expand(s|ed)?|deepen(s|ed)?|strengthen(s|ed)?|grow(s|ing)? ties|forge(s|d)?)\b/, "050", 4.5, "ilişki güçlendirme"],
+  [/\b(supply|supplie[sd]|deliver(s|ed|y)?|send(s)? (arms|weapons|troops|missiles|drones)|arms? (sale|deal))\b/, "060", 3.0, "silah/malzeme tedariki"],
+  [/\b(agree(s|d)?|approv(e|es|ed)|ratif(y|ies|ied)|endorse(s|d)?)\b/, "050", 5.0, "onay / mutabakat"],
+  [/\b(help(s|ed)?|assist(s|ed)?|rescue(s|d)?|evacuat)/, "070", 4.0, "yardım / tahliye"],
+];
+
+const ROOT_QUAD = {
+  // CAMEO quad-class for coloring: verbal-coop / material-coop / verbal-conf / material-conf
+};
+
+function code(text) {
+  const t = " " + String(text || "").toLowerCase() + " ";
+  for (const [re, root, gold, label] of RULES) {
+    const m = t.match(re);
+    if (m) return { code: root, root, label, goldstein: gold, matched: m[0].trim() };
+  }
+  return null;
+}
+
+module.exports = { code, RULES };
