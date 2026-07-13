@@ -79,6 +79,16 @@ display names and slugs come ONLY from the registry (fixes the old "TÜRkiye" ti
   NEXT: expand verb dict for recall; conjunction handling ("X and Y" as co-targets); then graph
   analytics (centrality/community/spike) over the event store; then extractive per-cluster summaries
   (also API-less — cluster + representative-sentence pick, NOT LLM).
+- `js/motor.js` — **A5: engine outputs → UI** (2026-07-13, build v68). Pure render helpers
+  (`radarTie`/`radarCountry`/`akisRadar`), no fetch, node-tested, esc'd/XSS-safe, null-safe
+  (returns "" when a pair is uncoded or a file is missing → no empty box). Consumers each load the
+  two engine files themselves: globe (`js/main.js`) lazy-loads `events/index.json`+`graph.json` on
+  the FIRST tie/country selection only (no boot cost; index 401 KB → 30 KB gzip) and shows an "olay
+  radarı" (tie → last coded events + this-week spike; country → PageRank rank/partners/tone/recent
+  events); `akis.js` renders this-week spikes as a radar callout; `dizin.js` ulke view adds a "haber
+  ağında" section. Country keys match the globe registry 119/119 (verified). NOT built: "×N kaynak"
+  badges from `ozet.json` (137 KB gzip for ~13% multi-source coverage — would need a small title→n
+  build artifact first; deferred as a bad trade).
 
 ## Roadmap status (approved 8-phase plan — plan file: ~/.claude/plans/merhaba-kanka-ir-globe-humble-haven.md)
 
