@@ -1,107 +1,83 @@
-# linkedin / reels malzemesi — kim kime ne satıyor? (ir-globe)
+# linkedin yazı malzemesi — kim kime ne satıyor? (ir-globe)
 
-her giriş bir reels: HOOK (ilk 2 saniye) + 30-60 saniyelik anlatım iskeleti + ekranda ne göster.
-iskeletler senaryo değil, damla kendi ağzıyla anlatır. hepsi gerçek, kanıtı repo'da.
+linkedin = yazı. her giriş bir post taslağı: bizim 1-2-3-4 formatı (ne yaptım → neden →
+hangi karar). taslaklar damla'nın elinden geçer, ton onun. hepsi gerçek, kanıtı repo'da.
+reels malzemesi instagram.md'de.
 
 ---
 
-## r1 — hook: "arkadaşıma hediye yazdım, elimde istihbarat ürünü var"
-anlatım: hediye olarak başladı → 3d küre, kim kime silah satıyor → sonra durduramadım →
-bugün 13 katman, 198 ülke, 6 saatte bir kendini yenileyen canlı sistem.
-ekran: küre dönüşü + katman geçişleri.
+## p1 — hediyeden ürüne
+1. arkadaşım uluslararası ilişkiler okuyor; ona hediye olarak "kim kime silah satıyor"u
+   gösteren bir 3d küre yazdım.
+2. ilk versiyon bana slopware hissi verdi: elle girilmiş veri, tek dev dosya, statik vitrin.
+3. o yüzden tek bir kural koydum: uydurma veri asla. her bağlantı ya gerçek bir veri setine
+   dayanacak ya da hiç olmayacak.
+4. bugün: 13 katman, 198 ülke, unhcr/oecd/faostat gibi kaynaklardan haftalık otomatik veri,
+   6 saatte bir kendini yenileyen haber akışı. hâlâ tek kişiyim, aylık maliyet sıfıra yakın.
+kapanış: hediye diye başlayan şey ürün oldu çünkü ilk versiyonu beğenmedim ve durmadım.
 
-## r2 — hook: "ilk versiyonum çöptü ve bunu size göstereceğim"
-anlatım: ilk hali elle veri + 18 bin satırlık tek dosya, slopware → tek karar her şeyi değiştirdi:
-uydurma veri asla, her bağın kaynağı olacak → şimdi her ok bir dataset'e gidiyor.
-ekran: eski commit diff'i (18k satır kırmızı) + yeni veri sayfası.
+## p2 — llm çağında llm'siz motor
+1. haber başlığından "kim kime ne yaptı"yı çıkarmam gerekiyordu; kolay yol bir llm api'sine
+   para vermekti.
+2. yapabiliyorsak kendimiz yapalım dedim: aktör tanıma + olay kodlama (cameo) + skorlama,
+   yüzde yüz deterministik bir bilgi çıkarım motoru yazdım. api yok, maliyet sıfır.
+3. ilk kapsam %22'ydi; pasif çatı, bağlaç grupları, lider→ülke eşlemesi derken %30'a çıktı.
+   kuralım: kapsam yavaş büyür, yanlış kodlama güveni hızlı öldürür.
+4. hata payını da saklamıyorum: örneklem doğruluğu ölçülü ve açık.
+kapanış: ai kullanmak marifet değil; neyi kendin yazacağını bilmek marifet.
 
-## r3 — hook: "llm çağında llm'siz bilgi çıkarım motoru yazdım"
-anlatım: haber başlığından "kim kime ne yaptı"yı çıkarmak lazımdı → kolay yol api'ye para vermek →
-yapabiliyorsak biz yapalım dedik → aktör tanıma + olay kodlama + skor, yüzde yüz deterministik →
-maliyet: sıfır. hız: 4500 başlık saniyeler.
-ekran: terminalde extract-relations koşusu, akan çıktı.
+## p3 — yapay zekam kendi kodumun hatasını buldu
+1. özetleyicime öğrenen bir eşleyici ekledim; eğitim verisini kim etiketledi? kendi motorum.
+   ilk gün 404 örnek, her 6 saatte otomatik büyüyor.
+2. encoder'ı kendi verimde ölçtüm: seçtiğim eşikte yanlış birleştirme %0.35.
+3. asıl sürpriz: "yanlış" görünen birleştirmelerin çoğu aslında motorun aynı hikayeyi ikiye
+   bölmesiydi. ml, klasik motorun hatasını onarıyor.
+4. tek yeminim var: model asla cümle üretmeyecek. sadece gerçek başlıkları seçer ve gruplar.
+kapanış: ölçmeden eşik seçseydim bunların hiçbirini görmeyecektim.
 
-## r4 — hook: "sitem aşırı yavaştı, suçlu 240 kere aynı hatayı yapan bendim"
-anlatım: profilledim → layout 240 forced reflow → okuma/yazma fazlarını ayırdım → 1 reflow →
-ders: his değil ölçüm; profiler açmadan optimizasyon yapılmaz.
-ekran: devtools performance kaydı önce/sonra.
+## p4 — sitem yavaştı, suçlu bendim
+1. landing "aşırı yavaş"tı ve nedenini bilmiyordum.
+2. profiler açtım: layout kodum 240 kez forced reflow tetikliyormuş. okuma ve yazmayı
+   ayırdım, 240 → 1.
+3. sonra 500kb'lık webgl küreyi açılıştan çıkarıp ilk kullanıcı niyetine erteledim.
+4. en zoru: 18 bin satırlık eski dosyayı silmek. 1.4mb ölü kod gitti.
+kapanış: performans his işi değil ölçüm işi; profiler açmadan dokunma.
 
-## r5 — hook: "2.8 megabayt html'i sildim, google hâlâ beni seviyor"
-anlatım: 211 seo sayfası bake ediliyordu → "çok html var" → hepsi 3kb kabuk oldu, gövde canlı
-veriden çiziliyor → %90 küçüldü, sıralama kaybı yok.
-ekran: repo dil grafiği (html'den js'e dönüş) + bir ülke sayfası açılışı.
+## p5 — kullanıcıyı izlemeden saymak
+1. kaç okurum var bilmek istedim ama takip sistemi kurmak istemedim.
+2. çerezsiz, birinci taraf bir sayaç yazdım: ip yok, kimlik yok, tarayıcı parmak izi yok.
+3. "günün ilk ziyareti" bilgisi kullanıcının cihazında duruyor; bana sadece anonim bir
+   sayı geliyor.
+4. gizlilik sayfasına aynı gün, açık türkçeyle yazdım. kvkk bir yük değil, tasarım kısıtı.
+kapanış: analytics ile mahremiyet arasında seçim yapmak zorunda değilsin, mühendislik burada.
 
-## r6 — hook: "haber başlığı yalan söyler: 'ukraine hit by russian strikes' kim saldırıyor?"
-anlatım: motorun ilk hali özneyi yanlış alıyordu → pasif çatıyı çevirmeyi öğrettim →
-"attack drones" saldırı değil ürün adı → her düzeltme ayrı commit, hepsi ölçüldü.
-ekran: aynı başlığın önce/sonra kodlaması.
+## p6 — kırmızı test, veri güncellemesini durdurur
+1. sistemim 6 saatte bir dünya haberlerini çekip işliyor, ben uyurken de.
+2. bir gece pipeline çöktü: yeni eklediğim dosya motoru şaşırtmış. logu okudum, tek satır.
+3. düzeltmekle kalmadım: o hatayı bir daha imkansız kılan testler yazdım ve pipeline'ın
+   EN BAŞINA koydum. test kırmızıysa güncelleme yok.
+4. üretim verisini koruyan şey umut değil disiplin.
+kapanış: otomasyonun bedeli, otomasyonu koruyacak testleri de yazmak.
 
-## r7 — hook: "makaleleri kimse okumuyor, ben de 4500 başlığı 3 bine indirdim"
-anlatım: aynı hikayeyi 9 kaynak yazıyor → kümeleme + merkezilik, yine api'siz →
-9 haber 1 satır → "×9 kaynak" rozeti güven veriyor.
-ekran: akış sayfasında ×N kaynak rozetleri.
+## p7 — 2.8 megabayt html'i sildim
+1. seo için 211 sayfa statik html bake ediyordum; repo "html projesi" gibi görünüyordu.
+2. hepsini ~3kb'lık ince kabuklara indirdim: başlık ve meta statik kaldı (google mutlu),
+   gövde canlı veriden çiziliyor (kullanıcı mutlu).
+3. %90 küçülme, sıfır sıralama kaybı.
+4. karar basitti: aynı veriyi iki yerde tutma; tek kaynak, iki tüketici.
+kapanış: seo ile modern mimari düşman değil, tembellik düşman.
 
-## r8 — hook: "modelim asla cümle kurmayacak, buna yemin ettim"
-anlatım: uydurma yasağı → ml var ama üretmiyor, sadece seçiyor ve grupluyor →
-eğitim verisini kim etiketliyor? kendi motorum. ilk gün 404 örnek, her 6 saatte artıyor.
-ekran: train.jsonl'dan akan satırlar.
+## p8 — lisans okuyan mühendis
+1. ürünüm başkalarının açık verisi üstünde duruyor; hepsi kaynaklı.
+2. bir katmanın lisansı non-commercial çıktı. çoğu kişi görmezden gelir.
+3. ben kayda yazdım: satış günü gelirse o katman ürün dışı kalır ya da yenisiyle değişir.
+4. hukuk sonradan hatırlanınca ürün gömer; baştan okununca sadece bir satır nottur.
+kapanış: gerçek ürün ile demo arasındaki fark özelliklerde değil, bu satırlarda.
 
-## r9 — hook: "yapay zekam kendi kodumun hatasını buldu"
-anlatım: encoder'ı ölçtüm, eşik 0.75, yanlış birleştirme %0.35 → "yanlış" görünenlere baktım →
-çoğu motorun aynı hikayeyi ikiye bölmesiydi → ml motoru onarıyor → 145 satır katlandı.
-ekran: eval tablosu + birleşen başlık çiftleri.
-
-## r10 — hook: "kullanıcılarımı sayıyorum ama kim olduklarını bilmiyorum, bilerek"
-anlatım: analytics lazımdı ama izleme istemedim → çerezsiz sayaç: ip yok, kimlik yok,
-tekillik cihazda kalan bayrak → kvkk'ya uygun, gizlilik sayfasında açık açık yazıyor.
-ekran: gizlilik sayfası + admin ziyaret sekmesi.
-
-## r11 — hook: "bu haftanın dünya gerginlik haritasını 0 liraya çıkarıyorum"
-anlatım: her olay skorlanıyor (-10 çatışma, +10 işbirliği) → haftalık seriler → z-score →
-"bu hafta bu hatta anormallik var" → bloomberg terminali değil, öğrenci yurdu + github actions.
-ekran: akıştaki "bu hafta hareketlenenler" radarı.
-
-## r12 — hook: "aylık sunucu masrafım: 0 tl. nasıl?"
-anlatım: statik site + github actions + supabase free → kişisel akış istemcide hesaplanıyor →
-ölçek bedava → mühendislik kararı en baştan buydu.
-ekran: mimari çizim (actions → json → tarayıcı).
-
-## r13 — hook: "kırmızı test görürsem dünya haberlerini güncellemiyorum"
-anlatım: 6 saatte bir veri güncelleniyor → önce 9 test koşar → biri kırmızıysa güncelleme yok →
-üretim verisini koruyan şey disiplin.
-ekran: actions'ta yeşil pipeline akışı.
-
-## r14 — hook: "kullanıcıya 'hesabını sil' butonu koydum, kimse koymuyor"
-anlatım: kvkk silme hakkı → çoğu site mail atmanı ister → bizde tek tık: onay, rpc, cascade →
-her aksiyonun tersi olacak kuralı.
-ekran: hesap silme akışı.
-
-## r15 — hook: "gece 3'te pipeline'ım çöktü, sabah 6'da kendi kendine düzelmedi, ben düzelttim"
-anlatım: yeni eklediğim dosya motoru şaşırttı, typeerror, koşu kırmızı → log okudum, tek satır
-suçlu → düzeltme + o hatayı bir daha imkansız kılan test → hata olur, tekrarı olmaz.
-ekran: actions'ta kırmızı koşu → yeşil koşu.
-
-## r16 — hook: "tasarımı 10 kere reddedildi, 11.'de gazete çıktı"
-anlatım: küre süslü olabilirdi → gazete çizgisi seçtik: serif, beyaz, lacivert →
-desen economist'ten, görünüm bizim → tasarım kural: referans olmadan redesign yok.
-ekran: landing'in manşet duvarı + küre geçişi.
-
-## r17 — hook: "hangi ülke haber ağının merkezinde? pagerank'e sordum"
-anlatım: google'ın algoritması ülkelere uygulandı → olaylardan ağ → sıralama + topluluklar
-(yaptırım bloğu kendiliğinden çıktı) → veri konuşunca harita değişiyor.
-ekran: ülke panelindeki "haber ağında" bölümü.
-
-## r18 — hook: "6 saatte bir dünyayı tarayan bir robotum var"
-anlatım: github actions cron → haber çek, motoru koştur, özetle, indeksle, commit'le →
-ben uyurken 4 koşu → sabah taze veri.
-ekran: gece commit'lerinin listesi ("refresh news articles" 03:00, 09:00...).
-
-## r19 — hook: "başkasının verisiyle ürün kuranın lisans okuması şart, ben okudum"
-anlatım: bir katmanın verisi non-commercial lisanslı → satış günü gelirse o katman çıkar,
-kayıtlara yazdım → hukuku sonradan hatırlayan ürün gömer.
-ekran: veri kaynakları ve lisans tablosu.
-
-## r20 — hook: "motorumun hata payını herkese açık yayınlıyorum, pazarlamaya ters, güvene doğru"
-anlatım: kapsam %30, örneklem doğruluğu ölçülü, ml eşiği ölçümle seçildi → hepsi açık →
-ft/economist seviyesinin sırrı mükemmellik değil şeffaflık.
-ekran: metodoloji sayfası (yakında) / eval çıktısı.
+## p9 — bir haftada nelere karar verdim (seri: karar günlüğü)
+1. statik vitrine kimse para vermez → kişiselleştirme: hesap, takip, haftalık kişisel brifing.
+2. api'ye para vermek yerine kendi motorunu yaz → yazdım, çalışıyor, ölçülü.
+3. kullanıcı verisi toplamaya başladığın an gizlilik + silme hakkı aynı gün gelir → geldi:
+   tek tık hesap silme, tek tık unsubscribe.
+4. her deploy'da görünür sürüm etiketi, her 6 saatte testli pipeline.
+kapanış: ürün, verilen kararların toplamıdır; kod sadece kararların kanıtı.
