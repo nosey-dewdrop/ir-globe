@@ -180,3 +180,236 @@ Otomasyon hakkında öğrendiğim en net şey şu: robotun kendisi değil, robot
 değerli. Testsiz otomasyon, uyurken evi gezen ama düştüğünde kimsenin duymadığı bir robot
 süpürge. Benimki düşerse alarm çalıyor ve ev turu iptal oluyor. Üretim verisini koruyan
 şey umut değil, disiplin.
+
+## essay 7 — "kimse buna para vermez" cümlesi en iyi ürün kararımdı
+
+1. Küre bitmişti, güzeldi, herkes bir kez bakıp gidiyordu. Kendime en acımasız soruyu sordum:
+buna kim ikinci kez gelir? Cevap netti: kimse. Statik bir vitrin, ne kadar güzel olursa olsun,
+ziyaret edilir ama yaşanmaz.
+
+2. O gün ürünü iki bacak üstüne oturtmaya karar verdim. Birinci bacak içerik motoru: veri benim
+elimle değil, resmi kaynaklardan otomatik akacak. İkinci bacak kişiselleştirme: kullanıcı ülke
+ve konu takip edecek, ana akışı ona göre kurulacak, haftada bir kendi brifingi mailine gelecek.
+
+3. Çünkü geri gelme sebebi olmayan ürün, ürün değil poster. İnsan kendi seçtiği üç ülkenin
+haberini görmek için döner; dünyanın tamamı için dönmez. Kişiselleştirme süs değil, dönüş
+biletinin ta kendisi.
+
+4. Bir günde sekiz fazlık bir sprint yaptım: veri pipeline'ı, üyelik, takip sistemi, kişisel
+akış sayfası, brifing ve uyarı mailleri, tek tık abonelik iptali. Gece bittiğinde site aynı
+görünüyordu ama artık başka bir şeydi: içine girilebilen bir sistem.
+
+5. Bu karar zinciri bana ürünle proje arasındaki farkı öğretti. Proje "ne yapabilirim"in
+cevabı, ürün "neden dönsünler"in cevabı. İkinci soruyu sormadan yazılan her satır, ne kadar
+zekice olursa olsun, dekora yazılıyor.
+
+Bugün hâlâ her özelliği o cümleyle test ediyorum: bu, birini geri getirir mi? Getirmiyorsa
+güzel olması umurumda değil. Getiriyorsa çirkin doğmasına razıyım, güzelleştiririz.
+
+## essay 8 — motorumun hatalarını tek tek avladım, en komiği kanada'ydı
+
+1. Bilgi çıkarım motorum çalışıyordu ama dil, kural tanımayan bir hasım. "Ukraine and Estonia
+sign drone deal" cümlesinde motor, cümlenin başka yerindeki Kanada'yı özne sanıp anlaşmayı
+Kanada'ya yazdı. Kanada masumdu.
+
+2. Bu tip hataları tek tek avlamaya başladım ve her birini ayrı bir kurala çevirdim. Fiile
+bitişik grup öznedir: Kanada aklandı. "Talks between A and B in Washington" cümlesinde
+Washington taraf değil mekandır: şehirler aklandı. "Attack drones" bir saldırı değil ürün
+adıdır: yanlış alarm bitti. Çöken ateşkes normalleşme değil kötüleşmedir: skor düzeldi.
+
+3. Neden bu kadar uğraştım? Çünkü motorun tek bir yanlış oku, iki gerçek devlet hakkında
+yanlış bir iddia demek. Bir eğlence uygulamasında bug can sıkar; bir haber-veri ürününde bug
+iftiradır. Hassasiyet bu yüzden kapsamdan önce gelir: motorun emin olmadığını kodlamaması,
+yanlış kodlamasından bin kat iyidir.
+
+4. Her düzeltmeyi ayrı commit yaptım ve her birinden sonra aynı örneklemi yeniden ölçtüm.
+Kapsam yüzde 22'den 30'a çıkarken şüpheli kodlama oranı yüzde kırklardan yüzde bire indi.
+
+5. Bu süreçte en çok şuna şaşırdım: hataların hiçbiri egzotik değildi. Pasif cümle, bağlaç,
+mekan adı, ürün adı. Dilin en sıradan halleri, en sinsi tuzaklar.
+
+Ders basit: kural tabanlı sistem yazıyorsan hata avı işin cilası değil, işin kendisi. Ve her
+avlanan hata, bir daha giremesin diye teste dönüşmeli. Benim motorumda artık Kanada'yı kimse
+suçlayamıyor; test var.
+
+## essay 9 — google'ın algoritmasını ülkelere uyguladım
+
+1. Elimde binlerce kodlanmış olay birikmişti: kim kime ne yaptı, hangi tonda. Ama "bu hafta
+dünyada asıl ne oluyor" sorusuna hâlâ elle bakıyordum. Veri vardı, bakış yoktu.
+
+2. Olayları bir ağa çevirdim: ülkeler düğüm, olaylar bağlantı. Sonra üç klasik algoritma
+koştum. PageRank ile "haber ağının merkezinde kim var" sorusuna sayısal cevap aldım.
+Topluluk tespitiyle ağın kaç kampa bölündüğünü buldum: on altı grup çıktı ve yaptırım bloğu
+kendiliğinden belirdi, ben söylemeden. Z-score ile de haftalık anormallik yakaladım: hangi
+ülke çifti bu hafta tarihsel ortalamasının belirgin üstünde haber üretiyor.
+
+3. Çünkü "kim önemli" ve "ne değişti" sorularına his değil, hesap cevap vermeli. Ben İran ile
+Venezuela'nın aynı blokta çıkacağını tahmin etmezdim; veri gösterdi.
+
+4. Bu üçlü şimdi ürünün radar katmanı: bağ seçince son olaylar ve haftalık kırılma, ülke
+seçince ağdaki sırası ve genel tonu, akışın tepesinde de haftanın hareketlenen hatları.
+Hepsi kaynaklı, hepsi "haberlerden otomatik çıkarıldı" etiketiyle.
+
+5. En sevdiğim yanı maliyeti: bu analizlerin hepsi altı saatte bir, bedava bir pipeline'da
+koşuyor. Kurumsal istihbarat platformlarının abonelik sattığı görünümlerin iskeletini,
+klasik algoritmalar ve açık veri taşıyor.
+
+Kırk yıllık algoritmaları küçümseme. PageRank 1998'de web'i sıraladı; 2026'da benim
+küremde dünyayı sıralıyor. Yenilik bazen yeni model değil, eski aleti yeni yere taşımak.
+
+## essay 10 — bir haberin tarihi hangisidir? duvar saatim yalan söyledi
+
+1. Radar bölümüm hazırdı: her ülke çiftinin son olayları. Ama bazı çiftlerde "son olay" diye
+2006'dan kalma bir haber görünüyordu. Feed'lerden biri arşiv sayfası veriyordu ve tek bir
+bayat kayıt, koca radarı eskitiyordu.
+
+2. İlk refleksim "bugünden doksan gün geriye" filtresiydi. Sonra fark ettim: bu da yalan
+söylerdi. Veri güncellenemediği bir hafta boyunca site "taze" pencereyi boş gösterecekti,
+sanki dünya durmuş gibi.
+
+3. Pencereyi duvar saatine değil veri saatine bağladım: en yeni olayın tarihinden doksan gün
+geriye. Çünkü kullanıcıya verdiğim söz "en güncel bildiğimi gösteriyorum", "bugün her şeyi
+biliyorum" değil. Veri saati bu sözü her koşulda tutuyor; duvar saati sadece her şey
+yolundayken tutuyor.
+
+4. Aynı gün ikinci bir kural daha çıktı: veri yoksa bölüm hiç yok. Boş kutu kullanıcıya
+"site bozuk" der; hiç görünmeyen bölüm hiçbir şey demez. Kodlanamayan çiftte radar sessizce
+kaybolur, yarım veriyle görünmez.
+
+5. Bu iki küçük karar, ürünün "dürüstlük katmanı" oldu. İkisinin de kullanıcı yüzü yok;
+kimse "vay, veri-göreli pencere" demeyecek. Ama ikisi de yanlış izlenim vermeyi imkansız
+kılıyor ve güven tam olarak böyle, görünmeyen yerlerde birikiyor.
+
+Zamanla ilgili her gösterimde kendime sorduğum soru artık şu: bu tarih neye göre? Duvar
+saatine göre taze olan, veriye göre bayat olabilir. Kullanıcı ikisinin farkını bilmez;
+senin bilmen gerekir.
+
+## essay 11 — sıfır liralık mimari nasıl kurulur
+
+1. Ben öğrenciyim; kullanıcı sayısı arttıkça faturası artan hiçbir şey kuramam. Bu bir
+kısıt ve ben kısıtları severim: mimariyi baştan netleştirdi.
+
+2. Kurallar şöyle oturdu. Site statik: HTML, CSS, JavaScript, o kadar. Sunucu tarafı hesap
+yok; kişisel akış dahil her şey kullanıcının tarayıcısında hesaplanıyor. Zamanlanmış işler
+GitHub Actions'ta: haber altı saatte bir, resmi veriler haftada bir, brifing pazartesi.
+Veritabanı ve kimlik Supabase'in ücretsiz katmanında, güvenlik satır bazlı kurallarda.
+
+3. Çünkü ölçeğin bedava olduğu tek yer istemci. Bin okur da gelse yüz bin de, statik dosyayı
+CDN dağıtıyor ve hesabı herkesin kendi cihazı yapıyor. Benim maliyetim değişmiyor: sıfır.
+
+4. Bu mimarinin küçük tuzakları da var ve onları da çözmek gerekti. Ücretsiz veritabanı yedi
+gün hareketsizlikte uyuyor; altı saatlik workflow'a bir uyandırma pingi bindirdim. Açılışta
+her şeyi yüklemek statik sitede bile siteyi boğuyor; katmanları tembel yüklemeye çevirdim,
+açılış 1.2 megabayttan 30 kilobayta indi.
+
+5. En güzel yan etkisi şu oldu: para bittiğinde ölmeyen ürün. Yatırım, gelir, sponsor;
+hiçbirine muhtaç değil. Beş yıl sonra da bu site kendi kendini güncelliyor olacak, ben
+unutsam bile.
+
+Bütçesizlik çoğu öğrenci için bahane; doğru mimariyle süper güç. "Sunucum yok" cümlesi
+"ölçeğim bedava" cümlesinin kötü söylenmiş hali. Fatura yerine tasarımla ödersin, o kadar.
+
+## essay 12 — iki uygulamam aynı veritabanında yaşıyor ve birbirini göremiyor
+
+1. İkinci ürünüme kullanıcı hesabı gerekince bir karar anı geldi: her uygulamaya ayrı
+veritabanı mı, hepsine tek ortak kasa mı? Ayrı proje temiz ama israf; ortak kasa verimli
+ama tehlikeli. Yanlış kurarsan bir uygulamanın migration'ı diğerinin tablosunu ezer.
+
+2. Ortak kasayı seçtim ve tehlikeyi kurallarla kestim. Kimlik ve profil tabloları ortak
+taban: ilk uygulama kurar, sonrakiler aynen kullanır. Uygulamaya özel her tablo kendi
+önekiyle yaşar. Ve demir kural: hiçbir uygulamanın şeması, komşusunun tablosuna dokunan
+tek bir satır içeremez.
+
+3. Çünkü çok uygulamalı tek kasa, disiplinle cennettir, disiplinsiz kabus. Tek kayıt sistemi
+demek: kullanıcı bir kez hesap açar, benim bütün ürünlerimde geçer. Ama bunun bedeli, her
+şema dosyasını "komşuya zarar verir mi" gözüyle okumak.
+
+4. Güvenlik de aynı felsefeyle: API anahtarım GitHub'da herkese açık ve bu bir sızıntı
+değil, tasarım. Anon anahtar sadece kapı zili; kimin neyi görebileceğini satır bazlı
+güvenlik kuralları söylüyor. Takip listeni sadece sen okursun, sayaç tablosunu sadece
+yönetici, yazma işlemleri sadece kontrollü fonksiyonlardan.
+
+5. Bu kurulumun sınavı ikinci uygulama bağlandığında geçildi: sıfır çakışma, sıfır yeniden
+yazım.
+
+Öğrendiğim şu: paylaşılan altyapı bir teknoloji kararı değil, sözleşme kararı. Teknoloji
+zaten izin veriyor; yaşatan şey, kimin neye dokunamayacağını en baştan yazıya dökmek.
+Kod gider gelir, sözleşme kalır.
+
+## essay 13 — tasarımım on kere reddedildi ve bu en iyi haberdi
+
+1. Kürenin ilk arayüzleri süslüydü: gradyanlar, renkli etiketler, parlak kartlar. Hepsi
+birer birer reddedildi. On tur. Her turda "daha iyi" sandığım şey, aslında internetin
+geri kalanına daha çok benziyordu.
+
+2. On birinci turda süsü tamamen bıraktık ve bir gazeteye baktık: serif başlık, beyaz
+kağıt, tek lacivert vurgu, keskin köşeler. Oturdu. O gün bir de yasa çıkardık: bu stil
+artık değişmez; Economist'ten, NYT'den desen alınabilir ama görünüm asla kopyalanmaz.
+
+3. Çünkü veri ürününde süs, güvenden çalar. Renkli baloncuklarla dolu bir ekran oyun gibi
+durur; oyun gibi duran şeye kimse jeopolitik analiz için güvenmez. Gazete estetiği yüz
+yıldır aynı işi yapıyor: "burada yazılana güvenebilirsin" duygusunu taşımak.
+
+4. Stil yasasının asıl faydası sonra çıktı: karar yorgunluğunu bitirdi. Yeni bir sayfa mı
+gerekiyor? Font belli, renk belli, köşe belli. Tasarım tartışması sıfır dakika; bütün enerji
+içeriğe gidiyor. Radar bölümü, dizin sayfaları, üyelik ekranı; hepsi ilk seferde aynı aileden
+doğdu.
+
+5. Reddedilen on turun hiçbiri boşa gitmedi. Her red, neyin İĞRETİ durduğunu öğretti; yasa
+o derslerin damıtılmış hali.
+
+Şimdi kural olarak söylüyorum: tasarımda referanssız iterasyon, karanlıkta dart. Önce neye
+benzemek istediğini bir örnekle sabitle, sonra tek bir görsel yasa çıkar, sonra o yasaya
+sadık kal. Özgünlük kaostan değil, kısıttan çıkar.
+
+## essay 14 — ayrılmayı kolaylaştırdım, güven kazandım
+
+1. Mail bültenim hazırdı ama bir detay beni rahatsız etti: abonelikten çıkmak için siteye
+girip hesapla uğraşmak gerekiyordu. Ben de dahil herkes böyle sitelerden nefret eder;
+çıkışı zorlaştırmak, kapıyı kilitleyip misafirperverlik taslamak.
+
+2. Tek tık iptali kurdum: mailin altındaki bağlantı, giriş istemeden, token'la aboneliği
+kapatıyor. Aynı felsefeyle hesap silmeyi de uygulamanın içine koydum: onay ver, bir tık,
+hesap ve bütün veri zincirleme silinir. Mail atmak, form doldurmak, beklemek yok.
+
+3. Çünkü her aksiyonun tersi olmalı. Kayıt olabilen silebilmeli, abone olan çıkabilmeli,
+takip eden bırakabilmeli. Tersi olmayan aksiyon tuzaktır ve kullanıcı tuzağı kokusundan
+tanır.
+
+4. İşin hukuk tarafı da aynı yere çıkıyor: KVKK zaten silme hakkı diyor. Çoğu ürün bunu
+"bize e-posta atın" diye geçiştiriyor; yasal olarak idare eder, ürün olarak zayıftır. Ben
+KVKK'yı yük değil tasarım kısıtı olarak okuyorum: hak neyse, arayüzde buton olarak dursun.
+
+5. Paradoks şurada: çıkışı kolaylaştırmak, kalmayı artırır. Kapının açık olduğunu gören
+misafir rahat oturur. "İstediğim an tek tıkla giderim" duygusu, kalma kararını her gün
+yeniden ve gönüllü verdirir.
+
+Ürününe güveniyorsan çıkışı büyüt, gizleme. Gizliyorsan zaten ürünle değil kilitle
+tutuyorsun demektir ve kilitle tutulan kullanıcı, ilk fırsatta kapıyı kırarak çıkar.
+
+## essay 15 — seo ile modern mimari kavga etmek zorunda değil
+
+1. Küre muhteşem ama Google küreyi göremiyor; arama motoru JavaScript dünyasında kördür.
+Bu yüzden her ülke ve her konu için statik sayfalar üretiyordum: iki yüz on bir sayfa,
+toplam 2.8 megabayt bake edilmiş HTML. Repo bir motor projesi değil, HTML çöplüğü gibi
+görünüyordu.
+
+2. Damla'nın tek cümlesi ameliyatı başlattı: "çok html var." Sayfaları üçer kilobaytlık
+ince kabuklara indirdim. Kabukta Google'ın istediği her şey duruyor: başlık, açıklama,
+yapısal veri, ilk paragraf. Gövdeyi ise kullanıcının tarayıcısı, kürenin kullandığı aynı
+canlı veriden çiziyor.
+
+3. Çünkü asıl hata aynı veriyi iki yerde tutmaktı. Bake edilmiş sayfa, verinin donmuş
+fotoğrafı; canlı veri değişince fotoğraf yalan söylüyor. Tek kaynak, iki tüketici kuralına
+dönünce hem tekrar hem bayatlama sorunu kökten bitti.
+
+4. Sonuç: yüzde doksan küçülme, sıfır sıralama kaybı, ve her sayfa artık küreyle aynı
+tazelikte. Bonus olarak repo kimliğine kavuştu; üretilen dosyaları "makine yaptı" diye
+işaretleyince GitHub projeyi nihayet JavaScript motoru olarak tanıdı.
+
+5. Bu iş bana eski bir önyargıyı bozdurdu: "SEO istiyorsan her şeyi sunucuda bas" ezberi,
+çoğu durumda tembelliğin teorisi. Arama motoru senin mimarini değil, vaadini denetliyor:
+başlık doğru mu, içerik var mı, hızlı mı.
+
+İkisini de istiyorsan al: iskelet statik, et canlı. Google iskeleti okur, insan eti yer,
+kimse aç kalmaz.
