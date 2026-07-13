@@ -701,7 +701,7 @@ async function hydrateFromSupabase() {
   const headers = { apikey: window.SUPABASE_ANON, Authorization: "Bearer " + window.SUPABASE_ANON };
   let dbConns;
   try {
-    const cr = await fetch(base + "/rest/v1/connections?select=layer,s,r,note,hidden", { headers });
+    const cr = await fetch(base + "/rest/v1/irglobe_connections?select=layer,s,r,note,hidden", { headers });
     if (!cr.ok) throw new Error("HTTP " + cr.status);
     dbConns = await cr.json();
   } catch (e) {

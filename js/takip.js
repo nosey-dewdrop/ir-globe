@@ -21,7 +21,7 @@ const Takip = (() => {
   async function list(userId) {
     const c = client();
     if (!c) return [];
-    const { data, error } = await c.from("follows").select("id,kind,key").eq("user_id", userId).order("created_at");
+    const { data, error } = await c.from("irglobe_follows").select("id,kind,key").eq("user_id", userId).order("created_at");
     if (error) throw error;
     return data || [];
   }
@@ -29,7 +29,7 @@ const Takip = (() => {
   async function add(userId, kind, key) {
     const c = client();
     if (!c) return null;
-    const { data, error } = await c.from("follows")
+    const { data, error } = await c.from("irglobe_follows")
       .upsert({ user_id: userId, kind, key }, { onConflict: "user_id,kind,key", ignoreDuplicates: true })
       .select();
     if (error) throw error;
@@ -39,14 +39,14 @@ const Takip = (() => {
   async function remove(followId) {
     const c = client();
     if (!c) return;
-    const { error } = await c.from("follows").delete().eq("id", followId);
+    const { error } = await c.from("irglobe_follows").delete().eq("id", followId);
     if (error) throw error;
   }
 
   async function prefs(userId) {
     const c = client();
     if (!c) return null;
-    const { data, error } = await c.from("email_prefs").select("briefing,alerts").eq("user_id", userId).maybeSingle();
+    const { data, error } = await c.from("irglobe_email_prefs").select("briefing,alerts").eq("user_id", userId).maybeSingle();
     if (error) throw error;
     return data || { briefing: true, alerts: true }; // defaults until first save
   }
@@ -54,7 +54,7 @@ const Takip = (() => {
   async function setPrefs(userId, p) {
     const c = client();
     if (!c) return;
-    const { error } = await c.from("email_prefs")
+    const { error } = await c.from("irglobe_email_prefs")
       .upsert({ user_id: userId, briefing: !!p.briefing, alerts: !!p.alerts, updated_at: new Date().toISOString() });
     if (error) throw error;
   }

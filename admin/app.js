@@ -69,8 +69,8 @@ function renderDash(email) {
 /* ── bağlantılar ── */
 async function renderConns() {
   const panel = document.getElementById("panel");
-  const { data: layers } = await sb.from("layers").select("*").order("ord");
-  const { data: conns } = await sb.from("connections").select("*").order("created_at", { ascending: false });
+  const { data: layers } = await sb.from("irglobe_layers").select("*").order("ord");
+  const { data: conns } = await sb.from("irglobe_connections").select("*").order("created_at", { ascending: false });
   const opts = (layers || []).map((l) => `<option value="${esc(l.key)}">${esc(l.label)}</option>`).join("");
   panel.innerHTML = `
     <form id="add" class="row-form">
@@ -93,7 +93,7 @@ async function renderConns() {
     <p class="hint">${(conns || []).length} bindirme satırı</p>`;
   document.getElementById("add").addEventListener("submit", async (e) => {
     e.preventDefault();
-    await sb.from("connections").insert({
+    await sb.from("irglobe_connections").insert({
       layer: document.getElementById("c-layer").value,
       s: document.getElementById("c-s").value.trim().toLowerCase(),
       r: document.getElementById("c-r").value.trim().toLowerCase(),
@@ -104,17 +104,17 @@ async function renderConns() {
   });
   panel.querySelectorAll(".hid").forEach((b) =>
     b.addEventListener("click", async () => {
-      await sb.from("connections").update({ hidden: b.dataset.h !== "1" }).eq("id", b.dataset.id);
+      await sb.from("irglobe_connections").update({ hidden: b.dataset.h !== "1" }).eq("id", b.dataset.id);
       renderConns();
     }));
   panel.querySelectorAll(".del").forEach((b) =>
-    b.addEventListener("click", async () => { await sb.from("connections").delete().eq("id", b.dataset.id); renderConns(); }));
+    b.addEventListener("click", async () => { await sb.from("irglobe_connections").delete().eq("id", b.dataset.id); renderConns(); }));
 }
 
 /* ── kategoriler ── */
 async function renderLayers() {
   const panel = document.getElementById("panel");
-  const { data: layers } = await sb.from("layers").select("*").order("ord");
+  const { data: layers } = await sb.from("irglobe_layers").select("*").order("ord");
   panel.innerHTML = `
     ${(layers || []).length ? "" : `<p class="hint">bindirme satırı ekleyebilmek için önce katman anahtarları gerekli —
       <button id="seed" class="link">sitedeki katmanları içe aktar</button></p>`}
@@ -131,7 +131,7 @@ async function renderLayers() {
     <p class="hint">kategori silinince o katmandaki bağlantılar da silinir</p>`;
   document.getElementById("add").addEventListener("submit", async (e) => {
     e.preventDefault();
-    await sb.from("layers").insert({
+    await sb.from("irglobe_layers").insert({
       key: document.getElementById("l-key").value.trim().toLowerCase(),
       label: document.getElementById("l-label").value.trim(),
       ord: parseInt(document.getElementById("l-ord").value) || 0,
@@ -139,12 +139,12 @@ async function renderLayers() {
     renderLayers();
   });
   panel.querySelectorAll(".del").forEach((b) =>
-    b.addEventListener("click", async () => { if (confirm("emin misin?")) { await sb.from("layers").delete().eq("key", b.dataset.k); renderLayers(); } }));
+    b.addEventListener("click", async () => { if (confirm("emin misin?")) { await sb.from("irglobe_layers").delete().eq("key", b.dataset.k); renderLayers(); } }));
   const seed = document.getElementById("seed");
   if (seed) seed.addEventListener("click", async () => {
     const res = await fetch("../data/layers/index.json");
     const idx = await res.json();
-    await sb.from("layers").insert(idx.map((l, i) => ({ key: l.key, label: l.label, ord: i })));
+    await sb.from("irglobe_layers").insert(idx.map((l, i) => ({ key: l.key, label: l.label, ord: i })));
     renderLayers();
   });
 }

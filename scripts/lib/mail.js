@@ -31,9 +31,9 @@ async function fetchUsers() {
   const e = env();
   const h = { apikey: e.service, Authorization: "Bearer " + e.service };
   const [prefsR, profR, folR] = await Promise.all([
-    fetch(`${e.url}/rest/v1/email_prefs?select=user_id,briefing,alerts,unsub_token`, { headers: h }),
+    fetch(`${e.url}/rest/v1/irglobe_email_prefs?select=user_id,briefing,alerts,unsub_token`, { headers: h }),
     fetch(`${e.url}/rest/v1/profiles?select=id,email`, { headers: h }),
-    fetch(`${e.url}/rest/v1/follows?select=user_id,kind,key`, { headers: h }),
+    fetch(`${e.url}/rest/v1/irglobe_follows?select=user_id,kind,key`, { headers: h }),
   ]);
   if (!prefsR.ok || !profR.ok || !folR.ok)
     throw new Error(`supabase HTTP ${prefsR.status}/${profR.status}/${folR.status}`);
