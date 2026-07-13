@@ -18,16 +18,26 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+          cache: npm
+      - run: npm ci
+      # sentence-encoder model cache (ml merge pass; ~23 MB, downloaded once)
+      - uses: actions/cache@v4
+        with:
+          path: ~/.hf-cache
+          key: hf-minilm-l6-v2
       - name: fetch news
         run: node scripts/fetch-news.js
       # deterministic relation-extraction engine over the fresh headlines,
-      # then the consolidated event index (dedupe + weekly pair series)
+      # then the consolidated event index (dedupe + weekly pair series).
+      # ml merge pass folds same-story lines the classical pass missed; it
+      # exits 0 and leaves the classical summary if the encoder is unavailable.
       - name: extract relations
         run: |
           node scripts/test-motor.js
           node scripts/extract-relations.js
           node scripts/build-event-index.js
           node scripts/build-ozet.js
+          node scripts/ml/merge-ozet.js
           node scripts/build-graph.js
       - name: commit if changed
         run: |

@@ -93,7 +93,15 @@ display names and slugs come ONLY from the registry (fixes the old "TÜRkiye" ti
   unaffected either way.
 - `scripts/test-motor.js` — persisted node tests (Motor render helpers + Ilgi interest model,
   9 checks incl. XSS + empty-state + stale-window). Runs FIRST in news.yml; red test blocks refresh.
-- `js/motor.js` — **A5: engine outputs → UI** (2026-07-13, build v68). Pure render helpers
+- `scripts/ml/` — **ML summarizer step 2 (2026-07-13 night)**: `eval-encoder.js` measures
+  all-MiniLM-L6-v2 (via @xenova/transformers, local ONNX, no API) against the engine-labeled corpus:
+  positives median cosine 0.69 vs hard negatives 0.29; at threshold 0.75 diff-pair false-merge is
+  0.35% and the same-pair "false" hits are mostly ENGINE fragmentation (same story coded under two
+  cameo roots) — i.e. correct merges. `merge-ozet.js` applies that: within one layer+pair, story
+  lines whose titles score ≥0.75 fold together (rep = biggest/newest thread, shape unchanged,
+  threads.json rebuilt, train.jsonl NEVER touched — no feedback loop). First real run: 3265 → 3125
+  lines, 140 folded, multi-source stories 387 → 442. Runs in news.yml after build-ozet with npm ci
+  + cached model; exits 0 (classical summary ships) if the encoder is unavailable. Pure render helpers
   (`radarTie`/`radarCountry`/`akisRadar`), no fetch, node-tested, esc'd/XSS-safe, null-safe
   (returns "" when a pair is uncoded or a file is missing → no empty box). Consumers each load the
   two engine files themselves: globe (`js/main.js`) lazy-loads `events/index.json`+`graph.json` on
