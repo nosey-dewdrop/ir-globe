@@ -68,3 +68,28 @@ const TRDate = (() => {
     },
   };
 })();
+
+/* canlı "son güncelleme" damgası — statik yazı yerine nabız atan bir işaret:
+   yanıp sönen bir nokta + göreli zaman DAKİKADA BİR yeniden yazılır (donmaz) +
+   "6 saatte bir taze" kadansı, ki yüzey de yaşayan/güncellenen sistemi göstersin.
+   Damla'nın notu: sadece bu değişsin, gerisi aynı kalsın. */
+const LiveStamp = (() => {
+  function label(iso) {
+    const rel = TRDate.rel(iso);            // "az önce" / "3 saat önce" ...
+    return rel ? rel + " güncellendi" : "";
+  }
+  function mount(el, iso) {
+    if (!el || !iso) return;
+    el.classList.add("live-stamp");
+    el.innerHTML =
+      '<span class="live-dot" aria-hidden="true"></span>' +
+      '<span class="live-txt"></span>' +
+      '<span class="live-cad"> · 6 saatte bir taze</span>';
+    const txt = el.querySelector(".live-txt");
+    const tick = () => { txt.textContent = label(iso); };
+    tick();
+    if (el._liveT) clearInterval(el._liveT);       // aynı el'e ikinci mount'ta çift interval olmasın
+    el._liveT = setInterval(() => { if (!document.hidden) tick(); }, 60000);
+  }
+  return { mount };
+})();

@@ -43,7 +43,7 @@
 
   Store.newsMeta().then(function (nm) {
     var el = document.getElementById("fresh");
-    if (el && nm && nm.updated) el.textContent = "son güncelleme: " + TRDate.rel(nm.updated);
+    if (el && nm && nm.updated) LiveStamp.mount(el, nm.updated);
   });
 
   /* motor radarı: bu haftanın spike'ları akışın başında editoryal satırlar.

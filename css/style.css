@@ -42,6 +42,18 @@ html { scroll-snap-type: y proximity; }
 .mast h1 { font-size: 34px; white-space: normal; }
 .mast-sub { display: block; font-size: 13px; color: var(--muted); margin-top: 4px; }
 .mast-fresh { display: block; font-size: 12px; color: var(--faint); margin-top: 3px; font-variant-numeric: tabular-nums; }
+
+/* canlı "son güncelleme" nabzı: yanıp sönen nokta (radar-ping) + tik-eden zaman.
+   inline (flex değil) — hero'daki .hl beyaz zemin sarması korunuyor. */
+.live-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--navy); vertical-align: middle; margin-right: 6px;
+  animation: live-pulse 2.2s ease-in-out infinite; }
+.live-cad { color: var(--faint); font-size: 0.92em; }
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(23, 53, 107, 0.35); }
+  50%      { opacity: 0.5; box-shadow: 0 0 0 5px rgba(23, 53, 107, 0); }
+}
+@media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }
 .dg-new { color: var(--navy); font-weight: 700; text-transform: lowercase; }
 .countdown { margin-top: 22px; font-size: 12.5px; color: var(--faint); font-variant-numeric: tabular-nums; }
 /* makaleler doğal kolonlara akar — satır hizası kaynaklı boşluk yok */

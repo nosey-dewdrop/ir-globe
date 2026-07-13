@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=67">
+<link rel="stylesheet" href="css/style.css?v=69">
 <!-- küre verisini tarayıcı boş kalınca sessizce indir — initGlobe cache'ten bulur -->
 <link rel="prefetch" href="data/countries.geojson?v=6">
 </head>
@@ -69,7 +69,7 @@
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="app.html#uye">üyelik</a> · <a href="gizlilik.html">gizlilik</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v68</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v69</span></span>
   </footer>
 </section>
 
@@ -77,7 +77,7 @@
      paralel iner; initGlobe zaten Globe tanımlanana dek bekleyip yeniden dener -->
 <script src="https://unpkg.com/globe.gl@2.34.5/dist/globe.gl.min.js" defer></script>
 <script src="admin/config.js"></script>
-<script src="js/store.js?v=56"></script>
+<script src="js/store.js?v=69"></script>
 <script src="js/motor.js?v=68"></script>
 <script src="js/main.js?v=68"></script>
 <script>
@@ -234,9 +234,9 @@
     var m = r[0] || {}, nm = r[1] || {};
     render(nm.total || 0, m.ties || 0, m.countries || 0, m.layers || 12);
 
-    /* canlılık: başta "son güncelleme" damgası (haber tazeleme zamanı) */
+    /* canlılık: başta CANLI "son güncelleme" nabzı (yanıp sönen nokta + tik-eden zaman) */
     var fresh = document.getElementById("fresh");
-    if (fresh && nm.updated) fresh.textContent = "son güncelleme: " + TRDate.rel(nm.updated);
+    if (fresh && nm.updated) LiveStamp.mount(fresh, nm.updated);
 
     /* çıkışta gün sayacı: haftalık veri güncellemesine kalan gün */
     var cd = document.getElementById("countdown");
