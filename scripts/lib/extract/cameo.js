@@ -24,7 +24,10 @@ const RULES = [
   [/\b(hit|struck|pounded|battered|targeted) by (?!(new |fresh |further |more )?(sanction|tariff|ban|restriction|curb))/, "19", -8.5, "saldırıya uğrama"],
   [/\b(invade|invasion|full[- ]scale (war|assault))\b/, "19", -9.4, "askeri işgal"],
   [/\b(air ?strikes?|missile strikes?|bomb(ard|ed|ing)?|shell(ed|ing)?|drone strikes?)\b/, "19", -9.2, "hava/füze saldırısı"],
-  [/\b(attack(ed|s|ing)?|assault|offensive|raid(ed|s)?)\b/, "18", -9.0, "silahlı saldırı"],
+  // "attack" as a WEAPON-PRODUCT modifier ("attack drones/jets/helicopters/subs")
+  // is not an attack event — a supply/deal headline, not "X attacks Y". Negative
+  // lookahead keeps the verb ("Israel attacks Iran") while dropping the product noun.
+  [/\b(attack(ed|ing|s)?(?!\s+(drones?|aircraft|jets?|fighters?|helicopters?|choppers?|copters?|submarines?|subs?|vehicles?|boats?|craft|missiles?)\b)|assault|offensive|raid(ed|s)?)\b/, "18", -9.0, "silahlı saldırı"],
   [/\b(kill(ed|s|ing)?|deadly|casualties|troops? (killed|die))\b/, "18", -8.0, "ölümlü çatışma"],
   [/\b(clash(es|ed)?|firefight|cross[- ]border fire|exchange(d)? fire)\b/, "19", -7.0, "sınır çatışması"],
   [/\b(seiz(e|ed|ing)|captur(e|ed)|occup(y|ied|ation))\b/, "17", -6.5, "el koyma / işgal"],

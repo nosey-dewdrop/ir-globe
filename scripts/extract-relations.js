@@ -21,7 +21,7 @@ const MIN_CONF = 0.8;
 const reportOnly = process.argv.includes("--report");
 
 function headlines() {
-  const files = fs.readdirSync(NEWS).filter((f) => f.endsWith(".json") && !["meta.json", "digest.json"].includes(f));
+  const files = fs.readdirSync(NEWS).filter((f) => f.endsWith(".json") && !["meta.json", "digest.json", "ozet.json", "threads.json"].includes(f));
   const rows = [];
   for (const f of files) {
     const layer = f.replace(/\.json$/, "");

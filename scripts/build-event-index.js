@@ -31,7 +31,7 @@ function isoWeek(dateStr) {
   return `${d.getUTCFullYear()}-W${String(week).padStart(2, "0")}`;
 }
 
-const files = fs.readdirSync(EVDIR).filter((f) => f.endsWith(".json") && f !== "index.json");
+const files = fs.readdirSync(EVDIR).filter((f) => f.endsWith(".json") && !["index.json", "graph.json"].includes(f));
 let raw = 0, undated = 0;
 const merged = new Map(); // mergeKey -> consolidated event
 
