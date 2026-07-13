@@ -85,12 +85,14 @@ function clusterPair(arts) {
     return {
       t: c.rep.title, n: c.items.length, s: c.rep.source || "", d: c.latest,
       e: ev ? { s: ev.s, r: ev.r, root: ev.root, event: ev.event, goldstein: ev.goldstein } : null,
+      m: c.items.map((i) => i.title), how: c.items[0].ev ? "engine" : "token",
     };
   });
 }
 
 const files = fs.readdirSync(NEWS).filter((f) => f.endsWith(".json") && !["meta.json", "digest.json", "ozet.json", "threads.json"].includes(f));
 const out = {};
+const mlRows = []; // multi-source threads -> training corpus for the learned summarizer
 let arts = 0, stories = 0;
 for (const f of files) {
   const layer = f.replace(/\.json$/, "");
@@ -100,11 +102,45 @@ for (const f of files) {
     const list = data[pairKey] || [];
     arts += list.length;
     const cl = clusterPair(list);
-    if (cl.length) { out[layer][pairKey] = cl; stories += cl.length; }
+    if (cl.length) {
+      out[layer][pairKey] = cl.map(({ t, n, s, d, e }) => ({ t, n, s, d, e }));
+      stories += cl.length;
+      for (const c of cl) if (c.n >= 2) mlRows.push({ layer, pair: pairKey, rep: c.t, m: c.m, how: c.how, d: c.d });
+    }
   }
 }
 
 fs.writeFileSync(path.join(NEWS, "ozet.json"), JSON.stringify(out));
+
+/* data/ml/train.jsonl — self-supervised corpus for the ML summarizer phase:
+   every multi-source thread is a labeled example (members = same-story titles,
+   rep = the pick). Engine-keyed threads ("how":"engine") pair paraphrases even
+   with zero token overlap — those are the gold positives a learned encoder
+   trains on. Accumulates across runs, deduped by member-set hash. */
+const crypto = require("crypto");
+const ML = path.join(ROOT, "data/ml");
+fs.mkdirSync(ML, { recursive: true });
+const trainPath = path.join(ML, "train.jsonl");
+const rowKey = (m) => crypto.createHash("md5").update(m.slice().sort().join("\n")).digest("hex").slice(0, 16);
+const seen = new Set();
+const lines = [];
+if (fs.existsSync(trainPath)) {
+  for (const line of fs.readFileSync(trainPath, "utf8").split("\n")) {
+    if (!line.trim()) continue;
+    lines.push(line);
+    try { seen.add(JSON.parse(line).k); } catch {}
+  }
+}
+let freshRows = 0;
+for (const r of mlRows) {
+  const k = rowKey(r.m);
+  if (seen.has(k)) continue;
+  seen.add(k);
+  lines.push(JSON.stringify({ k, ...r }));
+  freshRows++;
+}
+fs.writeFileSync(trainPath, lines.join("\n") + "\n");
+console.log(`wrote data/ml/train.jsonl (+${freshRows} new, ${lines.length} threads total)`);
 
 /* tiny sidecar for the akış "×N kaynak" badge: representative title → source
    count, ONLY for multi-source threads (n>1). ~12 KB gzip vs 137 KB for the

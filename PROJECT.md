@@ -79,6 +79,12 @@ display names and slugs come ONLY from the registry (fixes the old "TÜRkiye" ti
   NEXT: expand verb dict for recall; conjunction handling ("X and Y" as co-targets); then graph
   analytics (centrality/community/spike) over the event store; then extractive per-cluster summaries
   (also API-less — cluster + representative-sentence pick, NOT LLM).
+- `scripts/build-ozet.js` — API-less extractive summarizer (`data/news/ozet.json` + `threads.json`
+  sidecar). Since 2026-07-13 it ALSO accumulates `data/ml/train.jsonl`: every multi-source thread
+  (member titles + chosen representative + how it was keyed) as self-supervised training data for
+  the **ML summarizer phase** (plan: ~/.claude/plans/ir-globe-ml-ozetleyici.md — learned extractive
+  matching/ranking, never generative; engine-keyed threads are zero-overlap paraphrase positives).
+  Deduped by member-set hash, grows every 6h run, committed by news.yml.
 - `js/motor.js` — **A5: engine outputs → UI** (2026-07-13, build v68). Pure render helpers
   (`radarTie`/`radarCountry`/`akisRadar`), no fetch, node-tested, esc'd/XSS-safe, null-safe
   (returns "" when a pair is uncoded or a file is missing → no empty box). Consumers each load the
