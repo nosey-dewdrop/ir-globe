@@ -404,7 +404,9 @@ function renderStory() {
       <div class="lbl">bu ilişki</div>
       <h2>${t.s} → ${t.r}</h2>
       <div class="writing">${tieStory(t)}</div>
+      <div class="radar-slot"></div>
       ${srcLine()}`;
+    attachRadar();
     return;
   }
   if (selected) {
@@ -412,13 +414,50 @@ function renderStory() {
       <div class="lbl">ülke</div>
       <h2>${selected}</h2>
       <div class="writing">${countryStory(selected)}</div>
+      <div class="radar-slot"></div>
       ${srcLine()}`;
+    attachRadar();
     return;
   }
   story.innerHTML = `<div class="writing intro-writing">
     <p>dünyanın bağ haritası. her ok, bir ülkeden bir ülkeye giden büyük transferi gösteriyor.</p>
     <p>bir <strong>oka</strong> tıkla: o ilişkinin sayıları, yazısı ve haberleri açılır. bir <strong>ülkeye</strong> tıkla: kiminle bağlı olduğunu gör.</p>
   </div>`;
+}
+
+/* v2 motor: olay radarı hikaye paneline TEMBEL biner. events+graph ilk seçimde
+   bir kez çekilir; gelince o an seçili olan bağ/ülke için radar basılır. Motor
+   yoksa (indirilemedi / henüz üretilmedi) panel eskisi gibi çalışır — slot boş
+   kalır, hiçbir yerde boş kutu görünmez (Motor.radar* boşsa "" döner). */
+let motorData = null, motorPromise = null;
+function ensureMotor() {
+  if (motorData) return Promise.resolve(motorData);
+  if (!motorPromise)
+    motorPromise = Promise.all([Store.events(), Store.graph()])
+      .then(([events, graph]) => (motorData = { events, graph }))
+      .catch(() => (motorData = { events: null, graph: null }));
+  return motorPromise;
+}
+/* küre paneli ülke isimlerini ham anahtarla (küçük harf) gösteriyor → radar da
+   aynı gösterimi kullansın ki h2 ile tutarlı olsun (kimlik disp) */
+function attachRadar() {
+  const slot = story.querySelector(".radar-slot");
+  if (!slot || typeof Motor === "undefined") return;
+  const wantTie = focusTie, wantSel = selected;   // enjeksiyon anındaki seçim
+  ensureMotor().then((md) => {
+    if (!md || (!md.events && !md.graph)) return;
+    if (focusTie !== wantTie || selected !== wantSel) return; // seçim değişti → bırak
+    const cur = story.querySelector(".radar-slot");
+    if (!cur) return;
+    const html = focusTie
+      ? Motor.radarTie(md.events, md.graph, focusTie.s, focusTie.r)
+      : selected
+        ? Motor.radarCountry(md.events, md.graph, selected)
+        : "";
+    if (!html) return;
+    cur.innerHTML = html;
+    curveStory();  // panel boyu değişti → kavis yeniden hesaplansın
+  });
 }
 
 /* numbers under the story (silah only — the other layers have no percentages) */
