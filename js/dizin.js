@@ -56,6 +56,9 @@
   const crumb = (leaf, mid) =>
     `<nav class="crumb"><a href="${ROOT}index.html">ana sayfa</a> › ${mid || ""}${esc(leaf)}</nav>`;
 
+  /* dürüst hata-payı notu — konu/ülke sayfalarının altına biner (haber + motor içeriği var) */
+  const DISCLAIM = `<p class="disclaim">bağlantılar kaynaklı verilerden; olaylar ve haber-çıkarımı <strong>otomatik</strong> derlenir — hata payı taşır, resmi ya da kesin bir kaynak değildir.</p>`;
+
   /* motor: bu ülkenin haber ağındaki yeri (kodlanmış olaylar + graf). Ayrı
      dosyalar; yoksa bölüm hiç basılmaz — sayfa eskisi gibi çalışır. */
   async function motorSection(base, name) {
@@ -106,7 +109,8 @@
   <p class="meta"><a href="${ROOT}index.html">${esc(dn)}'i küre üstünde gör →</a></p>
   ${motorHtml}
   ${outgoing.length ? `<h2>${esc(dn)} → dünya <span class="cnt">(veren / satan)</span></h2>${block(outgoing, "out")}` : ""}
-  ${incoming.length ? `<h2>dünya → ${esc(dn)} <span class="cnt">(alan)</span></h2>${block(incoming, "in")}` : ""}`;
+  ${incoming.length ? `<h2>dünya → ${esc(dn)} <span class="cnt">(alan)</span></h2>${block(incoming, "in")}` : ""}
+  ${DISCLAIM}`;
   }
 
   /* ── one layer ── */
@@ -137,7 +141,8 @@
   <p class="meta">${all.length} yönlü bağ${all.length > ties.length ? ` · en büyük ${ties.length} tanesi aşağıda` : ""} · <a href="${ROOT}index.html">küre üstünde gör →</a></p>
   <section class="edges">
     ${rows || "<p>bu katman için bağ derleniyor.</p>"}
-  </section>`;
+  </section>
+  ${DISCLAIM}`;
   }
 
   /* ── indexes ── */

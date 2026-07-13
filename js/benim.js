@@ -93,7 +93,8 @@
       '<label class="prefrow"><input type="checkbox" id="p-brief"> haftalık kişisel brifing</label>' +
       '<label class="prefrow"><input type="checkbox" id="p-alert"> takip ettiklerimde gelişme olunca uyar</label>' +
       '<div id="feed" style="margin-top:22px"></div>' +
-      '<button class="akis-more chip" id="more" hidden>daha eskiyi göster</button>';
+      '<button class="akis-more chip" id="more" hidden>daha eskiyi göster</button>' +
+      '<p class="danger-zone"><a href="#" id="delacc">hesabımı ve tüm verimi kalıcı olarak sil</a></p>';
 
     renderChips();
     renderFeed(arts);
@@ -106,6 +107,21 @@
     document.getElementById("more").addEventListener("click", function () {
       shownDays += CHUNK_DAYS;
       renderFeed(myArticles());
+    });
+
+    /* KVKK/GDPR silme hakki: tek tikla hesabi + tum veriyi sil (delete_me RPC,
+       auth.users silinince irglobe_* FK cascade ile gider). Onaysiz calismaz. */
+    document.getElementById("delacc").addEventListener("click", function (e) {
+      e.preventDefault();
+      if (!confirm("Hesabın ve tüm verin (takipler, e-posta tercihleri) kalıcı olarak silinecek. Bu geri alınamaz. Emin misin?")) return;
+      e.target.textContent = "siliniyor…";
+      var c = Takip.client();
+      c.rpc("delete_me").then(function () {
+        c.auth.signOut().finally(function () { location.href = "index.html?silindi=1"; });
+      }).catch(function () {
+        alert("Silme sırasında bir sorun oldu. hello@damlahelloworld.com'a yazarsan hemen sileriz.");
+        e.target.textContent = "hesabımı ve tüm verimi kalıcı olarak sil";
+      });
     });
   }
 

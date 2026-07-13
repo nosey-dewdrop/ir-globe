@@ -87,7 +87,7 @@ function head(title, desc, canonical, extraLd) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="ROOT/css/site.css?v=10">
+<link rel="stylesheet" href="ROOT/css/site.css?v=11">
 </head>
 <body class="doc" data-root="ROOT/">`;
 }
@@ -106,7 +106,7 @@ function nav() {
 function foot() {
   return `<footer class="docfoot">
   <p>veri: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" rel="noopener">SIPRI</a> (silah) · diğer katmanlar açık kaynak + google news · uydurma veri yok.</p>
-  <p>bağımsız · açık · kaynaklı · bir <span class="sig">damlahelloworld</span> yayını · <a href="ROOT/gizlilik.html">gizlilik</a></p>
+  <p>bağımsız · açık · kaynaklı · bir <span class="sig">damlahelloworld</span> yayını · <a href="ROOT/gizlilik.html">gizlilik</a> · <a href="ROOT/kosullar.html">koşullar</a></p>
 </footer>`;
 }
 /* thin shell body: crawlers get h1 + lede; js/dizin.js draws the rest live */
@@ -121,7 +121,7 @@ function shell({ view, key, crumbMid, crumbLeaf, h1, lede }) {
 </main>
 ${foot()}
 <script src="ROOT/js/motor.js?v=68" defer></script>
-<script src="ROOT/js/dizin.js?v=2" defer></script>
+<script src="ROOT/js/dizin.js?v=3" defer></script>
 </body></html>`;
 }
 // rewrite the ROOT token to the right relative depth (ROOT/ -> ../.., ROOT -> ..)

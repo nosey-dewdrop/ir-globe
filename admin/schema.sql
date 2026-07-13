@@ -35,6 +35,16 @@ returns boolean language sql stable security definer set search_path = public as
   select exists (select 1 from public.profiles where id = auth.uid() and role = 'admin');
 $$;
 
+-- KVKK/GDPR silme hakki: kullanici kendi hesabini in-app silebilir. auth.users
+-- silinince profiles + irglobe_* satirlari FK cascade ile temizlenir (shared base).
+create or replace function public.delete_me()
+returns void language plpgsql security definer set search_path = public as $$
+begin
+  delete from auth.users where id = auth.uid();
+end; $$;
+revoke all on function public.delete_me() from public, anon;
+grant execute on function public.delete_me() to authenticated;
+
 alter table profiles enable row level security;
 drop policy if exists "own profile" on profiles;
 drop policy if exists "admin profiles" on profiles;

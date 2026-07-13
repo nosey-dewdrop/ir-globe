@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=69">
+<link rel="stylesheet" href="css/style.css?v=70">
 <!-- küre verisini tarayıcı boş kalınca sessizce indir — initGlobe cache'ten bulur -->
 <link rel="prefetch" href="data/countries.geojson?v=6">
 </head>
@@ -52,10 +52,11 @@
 
 <!-- SAYFA 2 — KÜRE: kategoriler + dönen küre -->
 <section class="page gl">
-  <nav id="layers"></nav>
+  <nav id="layers" aria-label="katmanlar"></nav>
   <main class="stage">
     <aside class="col left"><div id="story"></div><div id="detail"></div></aside>
-    <div id="globe"></div>
+    <div id="globe" role="img" aria-label="ülkeler arası ilişki ağını gösteren interaktif dünya küresi"></div>
+    <p class="sr-only">İnteraktif küre: ülkeler arası silah, ticaret, enerji ve diğer bağların haritası. Üstteki katman düğmeleriyle konu değiştir; sol paneldeki hikâye ve haberler seçtiğin bağı/ülkeyi anlatır. Tam liste için <a href="konu/index.html">konular</a> ve <a href="ulke/index.html">ülkeler</a> sayfaları klavyeyle gezilebilir.</p>
     <div id="cards"></div>
   </main>
 </section>
@@ -65,11 +66,12 @@
   <div class="close-in">
     <p class="bhead">gerçek, kaynaklı, her hafta taze</p>
     <p class="countdown" id="countdown"></p>
+    <p class="disclaim">bağlantılar kaynaklı verilerden; olaylar ve radar haberlerden <strong>otomatik çıkarılır</strong> — hata payı taşır, resmi ya da kesin bir kaynak değildir.</p>
     <p class="bfine" style="margin-top:20px"><a class="jn-cta" href="app.html#uye">hesap aç →</a></p>
   </div>
   <footer>
-    <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="app.html#uye">üyelik</a> · <a href="gizlilik.html">gizlilik</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v69</span></span>
+    <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="app.html#uye">üyelik</a> · <a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v70</span></span>
   </footer>
 </section>
 
@@ -79,7 +81,7 @@
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=69"></script>
 <script src="js/motor.js?v=68"></script>
-<script src="js/main.js?v=68"></script>
+<script src="js/main.js?v=70"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */

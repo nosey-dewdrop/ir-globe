@@ -305,6 +305,20 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .topbar, .wrap, .section, .hero, .join, .docfoot { padding-left: 22px; padding-right: 22px; }
 }
 
+/* hesap silme (benim sayfası altı) — sessiz, alarm vermez ama net */
+.danger-zone { margin-top: 30px; padding-top: 14px; border-top: 1px solid var(--rule); }
+.danger-zone a { font-size: 12.5px; color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+.danger-zone a:hover { color: #a3341f; }
+
+/* erişilebilirlik: ekran-okuyucu metni + klavye odak halkası */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+
+/* dürüst hata-payı notu (konu/ülke sayfaları altı) */
+.disclaim { font-size: 12.5px; color: var(--muted); max-width: 60ch; margin: 28px 0 0; line-height: 1.55; padding-top: 14px; border-top: 1px solid var(--rule); }
+.disclaim strong { color: var(--ink, #171b22); font-weight: 700; }
+
 /* ── motor: haber ağında (ülke dizin sayfası) ── */
 .motor-sec { margin-top: 22px; }
 .radar { margin-top: 6px; max-width: 66ch; }

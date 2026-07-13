@@ -51,7 +51,7 @@ const layerNav = document.getElementById("layers");
 function renderLayers() {
   const total = activeTies().length;
   layerNav.innerHTML = LAYERS.map((l) =>
-    `<button class="layerbtn${l.key === layer ? " on" : ""}${l.live ? "" : " soon"}" data-l="${l.key}">${l.label}</button>`).join("") +
+    `<button class="layerbtn${l.key === layer ? " on" : ""}${l.live ? "" : " soon"}" data-l="${l.key}" aria-pressed="${l.key === layer}">${l.label}</button>`).join("") +
     (total > CAP_DEFAULT
       ? `<button class="layerbtn viewcap" id="viewcap">${showAll ? `ilk ${CAP_DEFAULT}` : `tümünü göster (${Math.min(total, CAP_ALL)})`}</button>`
       : "");
