@@ -85,6 +85,14 @@ display names and slugs come ONLY from the registry (fixes the old "TÜRkiye" ti
   the **ML summarizer phase** (plan: ~/.claude/plans/ir-globe-ml-ozetleyici.md — learned extractive
   matching/ranking, never generative; engine-keyed threads are zero-overlap paraphrase positives).
   Deduped by member-set hash, grows every 6h run, committed by news.yml.
+- `js/sayac.js` + `irglobe_hits`/`irglobe_hit` (schema.sql) — **cookieless first-party counter**
+  (2026-07-13). Every page fires one anonymous RPC (path + daily-unique boolean from a device-local
+  flag; no IP/UA/cookie stored, localhost skipped). Read is admin-only (RLS `is_admin()`); admin
+  panel "ziyaret" tab shows last-14-days views/uniques + top pages. gizlilik.html discloses it.
+  NEEDS: rerun admin/schema.sql in the shared Supabase (idempotent) or hits 404 silently — site
+  unaffected either way.
+- `scripts/test-motor.js` — persisted node tests (Motor render helpers + Ilgi interest model,
+  9 checks incl. XSS + empty-state + stale-window). Runs FIRST in news.yml; red test blocks refresh.
 - `js/motor.js` — **A5: engine outputs → UI** (2026-07-13, build v68). Pure render helpers
   (`radarTie`/`radarCountry`/`akisRadar`), no fetch, node-tested, esc'd/XSS-safe, null-safe
   (returns "" when a pair is uncoded or a file is missing → no empty box). Consumers each load the

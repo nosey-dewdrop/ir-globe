@@ -33,6 +33,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="admin/config.js"></script>
+<script src="js/sayac.js?v=1"></script>
 <script>
 /* tek üye kabuğu: eski uye.html + benim.html buraya taşındı (#uye / #benim).
    Görünüm scriptleri olduğu gibi kalır; kabuk doğru DOM'u kurup scriptleri
@@ -46,12 +47,12 @@
             '<p class="pitchlede">Ülke ve konu seç; anasayfan sana özel aksın. Takip ettiklerinde gelişme olunca haber ver, haftada bir kendi brifingin mailine gelsin. Gerçek veri, gürültü yok.</p>' +
             '<div class="authbox" id="auth"><p class="loading">yükleniyor…</p></div>' +
             '</div></main>',
-      js: ["js/store.js?v=48", "js/takip.js?v=1", "js/auth.js?v=4"],
+      js: ["js/store.js?v=48", "js/takip.js?v=1", "js/auth.js?v=5"],
     },
     benim: {
       title: "benim akışım — kim kime ne satıyor?",
       html: '<main class="wrap"><div id="app"><p class="loading">yükleniyor…</p></div></main>',
-      js: ["js/store.js?v=48", "js/takip.js?v=1", "js/benim.js?v=2"],
+      js: ["js/store.js?v=48", "js/takip.js?v=1", "js/benim.js?v=3"],
     },
   };
   const name = (location.hash || "#uye").slice(1).split("?")[0];

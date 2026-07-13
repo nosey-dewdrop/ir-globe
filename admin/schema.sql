@@ -121,3 +121,30 @@ on conflict (key) do nothing;
 -- OPTIONAL, do later: make Bera admin (skip for now; site works without it).
 -- 1) Authentication > Users > Add user with Bera's email.
 -- 2) update public.profiles set role = 'admin' where email = 'BERA_EMAIL';
+
+-- cerezsiz sayac: gunluk sayfa goruntuleme + tekil tahmini. kisisel veri yok
+-- (IP/UA/kimlik tutulmaz, cerez yok); "tekil" istemcinin cihazinda kalan gunluk
+-- localStorage bayragindan gelen tek bir boolean'dir. yazma yalnizca rpc ile,
+-- okuma yalnizca admin. safe to rerun.
+create table if not exists irglobe_hits (
+  day date not null,
+  path text not null,
+  views bigint not null default 0,
+  visitors bigint not null default 0,
+  primary key (day, path)
+);
+alter table irglobe_hits enable row level security;
+drop policy if exists "hits admin read" on irglobe_hits;
+create policy "hits admin read" on irglobe_hits for select using (is_admin());
+
+create or replace function public.irglobe_hit(p text, uniq boolean default false)
+returns void language plpgsql security definer set search_path = public as $$
+begin
+  insert into irglobe_hits (day, path, views, visitors)
+  values (current_date, left(coalesce(p, '?'), 80), 1, case when uniq then 1 else 0 end)
+  on conflict (day, path) do update
+    set views = irglobe_hits.views + 1,
+        visitors = irglobe_hits.visitors + (case when uniq then 1 else 0 end);
+end; $$;
+revoke all on function public.irglobe_hit(text, boolean) from public;
+grant execute on function public.irglobe_hit(text, boolean) to anon, authenticated;

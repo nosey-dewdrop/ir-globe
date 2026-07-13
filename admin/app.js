@@ -57,13 +57,38 @@ function renderDash(email) {
       <button data-t="conn" class="${tab === "conn" ? "on" : ""}">editoryal bindirme</button>
       <button data-t="layer" class="${tab === "layer" ? "on" : ""}">kategoriler</button>
       <button data-t="subs" class="${tab === "subs" ? "on" : ""}">üyeler</button>
+      <button data-t="hits" class="${tab === "hits" ? "on" : ""}">ziyaret</button>
     </nav>
     <div id="panel"></div>`;
   appEl.querySelectorAll(".tabs button").forEach((b) =>
     b.addEventListener("click", () => { tab = b.dataset.t; renderDash(email); }));
   if (tab === "conn") renderConns();
   else if (tab === "layer") renderLayers();
+  else if (tab === "hits") renderHits();
   else renderMembers();
+}
+
+/* ── ziyaret (çerezsiz sayaç) ── */
+async function renderHits() {
+  const panel = document.getElementById("panel");
+  const since = new Date(Date.now() - 13 * 86400000).toISOString().slice(0, 10);
+  const { data: rows, error } = await sb.from("irglobe_hits").select("*").gte("day", since);
+  if (error) { panel.innerHTML = `<p class="hint">ziyaret verisi okunamadı: ${esc(error.message)}</p>`; return; }
+  if (!rows || !rows.length) { panel.innerHTML = `<p class="hint">henüz ziyaret verisi yok.</p>`; return; }
+  const byDay = {}, byPath = {};
+  rows.forEach((r) => {
+    byDay[r.day] = byDay[r.day] || { v: 0, u: 0 };
+    byDay[r.day].v += r.views; byDay[r.day].u += r.visitors;
+    byPath[r.path] = (byPath[r.path] || 0) + r.views;
+  });
+  const days = Object.keys(byDay).sort().reverse();
+  const paths = Object.entries(byPath).sort((a, b) => b[1] - a[1]).slice(0, 15);
+  panel.innerHTML = `
+    <p class="hint">çerezsiz sayaç, son 14 gün. "tekil" ≈ cihaz başına günde 1 (yerel bayrak, kişisel veri yok).</p>
+    <table><thead><tr><th>gün</th><th>görüntüleme</th><th>tekil ≈</th></tr></thead>
+    <tbody>${days.map((d) => `<tr><td>${esc(d)}</td><td>${byDay[d].v}</td><td>${byDay[d].u}</td></tr>`).join("")}</tbody></table>
+    <table style="margin-top:14px"><thead><tr><th>sayfa</th><th>görüntüleme</th></tr></thead>
+    <tbody>${paths.map(([p, n]) => `<tr><td>${esc(p)}</td><td>${n}</td></tr>`).join("")}</tbody></table>`;
 }
 
 /* ── bağlantılar ── */

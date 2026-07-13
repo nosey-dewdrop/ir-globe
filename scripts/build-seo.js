@@ -122,6 +122,8 @@ function shell({ view, key, crumbMid, crumbLeaf, h1, lede }) {
 ${foot()}
 <script src="ROOT/js/motor.js?v=68" defer></script>
 <script src="ROOT/js/dizin.js?v=3" defer></script>
+<script src="ROOT/admin/config.js" defer></script>
+<script src="ROOT/js/sayac.js?v=1" defer></script>
 </body></html>`;
 }
 // rewrite the ROOT token to the right relative depth (ROOT/ -> ../.., ROOT -> ..)

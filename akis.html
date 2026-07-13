@@ -37,11 +37,13 @@
   <span class="mast-fresh" id="fresh"></span>
 </header>
 
-<nav class="akis-filters" id="filters"></nav>
+<nav class="akis-filters" id="filters" aria-label="katman filtreleri"></nav>
+<main>
 <div id="mine"></div>
 <div id="radar"></div>
-<div id="feed"><p class="dg-load">akış yükleniyor…</p></div>
+<div id="feed" aria-live="polite"><p class="dg-load">akış yükleniyor…</p></div>
 <button class="akis-more" id="more" hidden>daha eskiyi göster</button>
+</main>
 
 <footer>
   <span class="foot-nav">
@@ -56,6 +58,8 @@
 <script src="js/store.js?v=69"></script>
 <script src="js/ilgi.js?v=71"></script>
 <script src="js/motor.js?v=68"></script>
-<script src="js/akis.js?v=5"></script>
+<script src="js/akis.js?v=6"></script>
+<script src="admin/config.js"></script>
+<script src="js/sayac.js?v=1"></script>
 </body>
 </html>
