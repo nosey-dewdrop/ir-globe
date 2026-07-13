@@ -112,13 +112,13 @@
       <p class="lede">Seçtiklerin senin akışını kurar: sana özel manşetler, haftalık brifing, gelişme uyarıları. Sonradan değiştirebilirsin.</p>
       <div class="lbl">ülkeler</div>
       <div class="chips" id="ob-c">${popular.map((k) =>
-        `<button type="button" class="chip" data-kind="country" data-key="${esc(k)}">${esc(k)}</button>`).join("")}</div>
+        `<button type="button" class="chip" data-kind="country" data-key="${esc(k)}" aria-pressed="false">${esc(k)}</button>`).join("")}</div>
       <div class="field" style="margin-top:10px"><label for="ob-search">başka ülke ara</label>
         <input type="text" id="ob-search" placeholder="yazmaya başla…" autocomplete="off"></div>
       <div class="chips" id="ob-results"></div>
       <div class="lbl" style="margin-top:18px">konular</div>
       <div class="chips" id="ob-l">${layers.map((l) =>
-        `<button type="button" class="chip" data-kind="layer" data-key="${esc(l.key)}">${esc(l.label)}</button>`).join("")}</div>
+        `<button type="button" class="chip" data-kind="layer" data-key="${esc(l.key)}" aria-pressed="false">${esc(l.label)}</button>`).join("")}</div>
       <button class="authbtn" id="ob-done" style="margin-top:22px">akışımı kur</button>
       <p class="autherr" id="ob-err"></p>`;
 
@@ -126,8 +126,8 @@
     function wireChips(root) {
       root.querySelectorAll(".chip").forEach((c) => c.addEventListener("click", () => {
         const id = c.dataset.kind + "|" + c.dataset.key;
-        if (picked.has(id)) { picked.delete(id); c.classList.remove("on"); }
-        else { picked.set(id, { kind: c.dataset.kind, key: c.dataset.key }); c.classList.add("on"); }
+        if (picked.has(id)) { picked.delete(id); c.classList.remove("on"); c.setAttribute("aria-pressed", "false"); }
+        else { picked.set(id, { kind: c.dataset.kind, key: c.dataset.key }); c.classList.add("on"); c.setAttribute("aria-pressed", "true"); }
       }));
     }
     wireChips(box);
@@ -142,7 +142,7 @@
         .slice(0, 8);
       results.innerHTML = hits.map((c) => {
         const on = picked.has("country|" + c.key) ? " on" : "";
-        return `<button type="button" class="chip${on}" data-kind="country" data-key="${esc(c.key)}">${esc(c.key)}</button>`;
+        return `<button type="button" class="chip${on}" data-kind="country" data-key="${esc(c.key)}" aria-pressed="${!!on}">${esc(c.key)}</button>`;
       }).join("");
       wireChips(results);
     });

@@ -63,7 +63,7 @@
     var el = document.getElementById("filters");
     var chips = [{ key: "hepsi", label: "hepsi" }].concat(index.map(function (l) { return { key: l.key, label: l.label }; }));
     el.innerHTML = chips.map(function (c) {
-      return '<button class="layerbtn' + (filter === c.key ? " on" : "") + '" data-f="' + c.key + '">' + esc(c.label) + "</button>";
+      return '<button class="layerbtn' + (filter === c.key ? " on" : "") + '" data-f="' + c.key + '" aria-pressed="' + (filter === c.key) + '">' + esc(c.label) + "</button>";
     }).join("");
     el.querySelectorAll("[data-f]").forEach(function (b) {
       b.addEventListener("click", function () {

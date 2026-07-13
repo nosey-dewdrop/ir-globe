@@ -87,7 +87,7 @@
       '<div class="chips" id="mychips"></div>' +
       '<div class="lbl" style="margin-top:14px">takibe ekle</div>' +
       '<div class="chips" id="addlayers"></div>' +
-      '<div class="field" style="max-width:320px;margin-top:10px"><input type="text" id="csearch" placeholder="ülke ara ve takip et…" autocomplete="off"></div>' +
+      '<div class="field" style="max-width:320px;margin-top:10px"><input type="text" id="csearch" placeholder="ülke ara ve takip et…" aria-label="ülke ara ve takip et" autocomplete="off"></div>' +
       '<div class="chips" id="cresults"></div>' +
       '<div class="lbl" style="margin-top:16px">e-posta</div>' +
       '<label class="prefrow"><input type="checkbox" id="p-brief"> haftalık kişisel brifing</label>' +
@@ -129,7 +129,7 @@
     var el = document.getElementById("mychips");
     el.innerHTML = FOLLOWS.map(function (f) {
       var label = f.kind === "layer" ? labelOf(f.key) : f.key;
-      return '<button class="chip on" data-id="' + esc(f.id) + '">' + esc(label) + '<span class="x">×</span></button>';
+      return '<button class="chip on" data-id="' + esc(f.id) + '" aria-label="takibi bırak: ' + esc(label) + '">' + esc(label) + '<span class="x" aria-hidden="true">×</span></button>';
     }).join("") || '<span class="who">henüz takip yok — aşağıdan ekle.</span>';
     el.querySelectorAll(".chip").forEach(function (c) {
       c.addEventListener("click", function () {
