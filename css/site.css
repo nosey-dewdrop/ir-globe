@@ -305,6 +305,19 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .topbar, .wrap, .section, .hero, .join, .docfoot { padding-left: 22px; padding-right: 22px; }
 }
 
+/* ── motor: haber ağında (ülke dizin sayfası) ── */
+.motor-sec { margin-top: 22px; }
+.radar { margin-top: 6px; max-width: 66ch; }
+.radar .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 14.5px; padding: 3px 0; border-bottom: 1px solid var(--rule); }
+.radar .row b { color: var(--navy); font-variant-numeric: tabular-nums; font-weight: 700; }
+.radar-spike { font-size: 14px; color: var(--navy); font-weight: 700; margin-bottom: 8px; }
+.radar-evs { margin-top: 12px; }
+.ev { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 14px; padding: 4px 0; }
+.ev-h { color: var(--ink, #171b22); }
+.ev-d { color: var(--faint); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.radar-more { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.radar-note { font-size: 12px; color: var(--faint); font-style: italic; margin-top: 8px; }
+
 /* ── takip çipleri (onboarding + benim sayfası) ── */
 .lbl { font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-family: var(--sans); margin: 14px 0 8px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }

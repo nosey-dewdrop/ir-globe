@@ -56,6 +56,19 @@
   const crumb = (leaf, mid) =>
     `<nav class="crumb"><a href="${ROOT}index.html">ana sayfa</a> › ${mid || ""}${esc(leaf)}</nav>`;
 
+  /* motor: bu ülkenin haber ağındaki yeri (kodlanmış olaylar + graf). Ayrı
+     dosyalar; yoksa bölüm hiç basılmaz — sayfa eskisi gibi çalışır. */
+  async function motorSection(base, name) {
+    if (typeof Motor === "undefined") return "";
+    const [events, graph] = await Promise.all([
+      j("data/events/index.json").catch(() => null),
+      j("data/events/graph.json").catch(() => null),
+    ]);
+    if (!events && !graph) return "";
+    const html = Motor.radarCountry(events, graph, name, base.disp);
+    return html ? `<section class="motor-sec"><h2>haber ağında</h2>${html}</section>` : "";
+  }
+
   /* ── one country ── */
   async function ulke(base) {
     const keys = base.LAYERS.map((l) => l.key);
@@ -85,11 +98,13 @@
       }).join("");
     }
 
+    const motorHtml = await motorSection(base, name);
     mount.innerHTML = `
   ${crumb(dn, `<a href="${ROOT}ulke/index.html">ülkeler</a> › `)}
   <h1>${esc(dn)}</h1>
   <p class="lede">${esc(dn)}, ${layerKeys.length} katmanda ${ties.length} ülke bağıyla haritada. Aşağıda kimden alıp kime verdiği.</p>
   <p class="meta"><a href="${ROOT}index.html">${esc(dn)}'i küre üstünde gör →</a></p>
+  ${motorHtml}
   ${outgoing.length ? `<h2>${esc(dn)} → dünya <span class="cnt">(veren / satan)</span></h2>${block(outgoing, "out")}` : ""}
   ${incoming.length ? `<h2>dünya → ${esc(dn)} <span class="cnt">(alan)</span></h2>${block(incoming, "in")}` : ""}`;
   }
