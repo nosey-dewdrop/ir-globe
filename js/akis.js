@@ -43,6 +43,18 @@
     if (el && nm && nm.updated) el.textContent = "son güncelleme: " + TRDate.rel(nm.updated);
   });
 
+  /* motor radarı: bu haftanın spike'ları akışın başında editoryal satırlar.
+     graf + ülke adları yüklenir; motor yoksa/spike yoksa bölüm hiç basılmaz. */
+  if (typeof Motor !== "undefined")
+    Promise.all([Store.graph(), Store.countries()]).then(function (r) {
+      var graph = r[0], countries = r[1] || {};
+      if (!graph) return;
+      var disp = function (n) { return countries[n] ? countries[n].disp : n; };
+      var html = Motor.akisRadar(graph, disp);
+      var mount = document.getElementById("radar");
+      if (mount && html) mount.innerHTML = html;
+    }).catch(function () { /* radar yoksa akış aynen çalışır */ });
+
   function renderFilters(index) {
     var el = document.getElementById("filters");
     var chips = [{ key: "hepsi", label: "hepsi" }].concat(index.map(function (l) { return { key: l.key, label: l.label }; }));

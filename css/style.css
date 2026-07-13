@@ -250,9 +250,9 @@ h1 { font-size: 22px; font-weight: 400; letter-spacing: -0.01em; white-space: no
 .radar-note { font-size: 11px; color: var(--faint); font-style: italic; margin-top: 4px; }
 
 /* ── akış radarı: bu haftanın spike'ları (akis.html) ── */
-.akis-radar { margin: 0 0 26px; padding-bottom: 18px; border-bottom: 1px solid var(--line, #e7e9ee); }
-.akis-radar h2 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
-.akis-radar h2 .cnt { font-family: var(--sans); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 400; }
+.akis-radar { margin: 0 0 6px; padding: 14px 0 18px; border-top: 1px solid var(--rule); }
+.akis-radar h2 { font-family: var(--serif); font-size: 19px; font-weight: 500; margin: 0 0 10px; }
+.akis-radar h2 .cnt { font-family: var(--sans); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); font-weight: 400; }
 .radar-lines { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px 24px; }
 .rl { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 13.5px; padding: 2px 0; }
 .rl-n { color: var(--navy); font-variant-numeric: tabular-nums; white-space: nowrap; }
