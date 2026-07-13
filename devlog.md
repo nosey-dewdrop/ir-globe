@@ -350,3 +350,10 @@ ekran: akışta "russia" yazıp süzme.
    sayıyı okumak bedava. çıkışta ve hesap silmede temizlenir.
 4. sonuç: ana sayfa seni tanıyor ama sunucu kim olduğunu bilmiyor.
 ekran: iki hâlin yan yana kaydı.
+
+## r50 — hook: "iki ülke yaz, aralarındaki her şeyi tek sayfada gör"
+1. sorun: "iran-israil'de ne var" sorusunun tek adresi yoktu; küre + dizin + akış gezmek gerekiyordu.
+2. bugün ilişki sayfasını kurdum: kayıtlı bağlar + olay radarı + haftalık ton çizgisi + tüm manşetler, tek URL.
+3. çünkü kurumsal kullanıcının sorusu hep çift bazlı; cevabın adresi olmalı. ton çizgisi kütüphanesiz saf SVG.
+4. sonuç: 126 çiftte hazır trend, ülke sayfalarından ↔ ile tek tık.
+ekran: iliski.html?a=iran&b=israel açılışı.

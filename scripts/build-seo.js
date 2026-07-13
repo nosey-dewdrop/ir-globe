@@ -121,7 +121,7 @@ function shell({ view, key, crumbMid, crumbLeaf, h1, lede }) {
 </main>
 ${foot()}
 <script src="ROOT/js/motor.js?v=68" defer></script>
-<script src="ROOT/js/dizin.js?v=4" defer></script>
+<script src="ROOT/js/dizin.js?v=5" defer></script>
 <script src="ROOT/admin/config.js" defer></script>
 <script src="ROOT/js/sayac.js?v=1" defer></script>
 </body></html>`;

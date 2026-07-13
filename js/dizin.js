@@ -94,7 +94,7 @@
           const other = dir === "out" ? t.r : t.s;
           const num = t.exp != null ? ` <span class="pct">%${t.exp}</span>` : "";
           const note = t.note ? ` — <span class="note">${esc(t.note)}</span>` : "";
-          return `<li><a href="${ROOT}ulke/${base.slug(other)}/">${esc(base.disp(other))}</a>${num}${note}</li>`;
+          return `<li><a href="${ROOT}ulke/${base.slug(other)}/">${esc(base.disp(other))}</a>${num}${note} <a class="pairlink" href="${ROOT}iliski.html?a=${encodeURIComponent(name)}&amp;b=${encodeURIComponent(other)}" aria-label="ilişki sayfası: ${esc(base.disp(other))}">↔</a></li>`;
         }).join("");
         const more = arr.length > top.length ? `<li class="note">+ ${arr.length - top.length} bağ daha (küre üstünde)</li>` : "";
         return `<div class="cgroup"><h3><a href="${ROOT}konu/${lk}/">${esc(labOf[lk] || lk)}</a></h3><ul class="clist">${items}${more}</ul></div>`;
