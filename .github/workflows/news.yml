@@ -24,6 +24,7 @@ jobs:
       # then the consolidated event index (dedupe + weekly pair series)
       - name: extract relations
         run: |
+          node scripts/test-motor.js
           node scripts/extract-relations.js
           node scripts/build-event-index.js
           node scripts/build-ozet.js
