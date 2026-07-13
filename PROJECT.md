@@ -153,8 +153,9 @@ display names and slugs come ONLY from the registry (fixes the old "TÜRkiye" ti
 
 ## Setup checklist (Damla's manual steps — everything else is automated)
 
-1. Supabase SQL Editor → run `admin/schema.sql` (safe to rerun). Then Authentication →
-   Users → add Bera → `update public.profiles set role='admin' where email='…';`
+1. ~~Supabase SQL Editor → run `admin/schema.sql`~~ DONE 2026-07-13 (delete_me + irglobe_hit
+   verified live with real HTTP calls). Still optional: add Bera →
+   `update public.profiles set role='admin' where email='…';`
 2. GitHub repo → Settings → Secrets and variables → Actions → add:
    `SUPABASE_URL`, `SUPABASE_ANON` (keep-alive), `SUPABASE_SERVICE` (service_role key,
    Project Settings → API), `RESEND_KEY` (resend.com account), `BRIEFING_FROM`
@@ -162,12 +163,29 @@ display names and slugs come ONLY from the registry (fixes the old "TÜRkiye" ti
    domain in Resend; without it Resend only delivers to the account owner's address).
 3. UN Comtrade: register free at comtradeplus.un.org → `COMTRADE_KEY` secret → ping
    Claude to write `scripts/sources/enerji.js`.
+4. Vercel DNS → add CNAME record: name `chiquitita`, value `damlahelloworld.github.io`.
+   Tell Claude when added; Pages binding + canonical migration happens AFTER (never before —
+   github.io 301s immediately and the site would drop on dead DNS).
 
 Money ideas parked (not in scope yet): paywall over personal features once there's an audience,
 premium depth (trends, CSV, API), embeddable globe widget, IR-department licences, PDF country
 reports, Bera revenue split (Damla's call).
 
 ## Decisions log
+
+- 2026-07-13/14 (mega session): ship-check warnings CLOSED (cookieless first-party counter live +
+  verified with real RPC calls, admin "ziyaret" tab, a11y pass, kosullar page, in-app account
+  deletion, 9 tests gate news.yml). ML summarizer steps 1+2 SHIPPED (self-supervised train corpus
+  in data/ml, MiniLM eval → threshold 0.75 at 0.35% false-merge, merge pass in prod pipeline:
+  first cloud run folded 145 lines, multi-source 456). B1 trust layer: metodoloji.html (public
+  error rates) + veri.html auto-baked from layer files. Product: akış country search, ulke index
+  live filter, C1 hero swap via localStorage, PAIR PAGE (iliski.html: ties + radar + weekly tone
+  SVG + merged headlines; entry via ↔ links on ulke pages). Analysis: PM/customer/VC report +
+  league verdict (reports/2026-07-13-ir-globe-pm-vc-analizi.md). NAME DECIDED:
+  chiquitita.damlahelloworld.com (Damla adds Vercel CNAME → then Pages binding + canonical flip;
+  do NOT bind before DNS). Content system: devlog.md (50 reels + carousels, instagram build in
+  public) + linkedin.md (15 essays 300-500 words). Paywall rule removed globally 13 Tem; B2B plan
+  lives at ~/.claude/plans/ir-globe-b2b-plani.md.
 
 - 2026-07-10: gift for Bera; signature travels; editorial design approved after much thrash.
 - 2026-07-11: "nobody pays for it as-is" → personalization direction (see Product direction).
