@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>üyelik — kim kime ne satıyor?</title>
+<meta name="description" content="Üye ol, kendi akışını kur: takip ettiğin ülke ve konulardan kişisel brifing. Bir damlahelloworld yayını.">
+<link rel="canonical" href="https://damlahelloworld.github.io/ir-globe/app.html">
+<meta name="robots" content="noindex,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=9">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html">kim kime ne satıyor?</a>
+  <nav class="topnav">
+    <a href="index.html">küre</a>
+    <a href="akis.html">akış</a>
+    <a href="konu/index.html">konular</a>
+    <a href="ulke/index.html">ülkeler</a>
+    <a href="app.html#benim">benim akışım</a>
+  </nav>
+</header>
+
+<div id="view"></div>
+
+<footer class="docfoot">
+  <p>bağımsız · açık · kaynaklı · bir <span class="sig">damlahelloworld</span> yayını · <a href="gizlilik.html">gizlilik</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="admin/config.js"></script>
+<script>
+/* tek üye kabuğu: eski uye.html + benim.html buraya taşındı (#uye / #benim).
+   Görünüm scriptleri olduğu gibi kalır; kabuk doğru DOM'u kurup scriptleri
+   sırayla enjekte eder. Hash değişince temiz init için sayfa yenilenir. */
+(function () {
+  const VIEWS = {
+    uye: {
+      title: "üyelik — kim kime ne satıyor?",
+      html: '<main class="center"><div class="center-in">' +
+            '<h1 class="serif">kendi akışını kur</h1>' +
+            '<p class="pitchlede">Ülke ve konu seç; anasayfan sana özel aksın. Takip ettiklerinde gelişme olunca haber ver, haftada bir kendi brifingin mailine gelsin. Gerçek veri, gürültü yok.</p>' +
+            '<div class="authbox" id="auth"><p class="loading">yükleniyor…</p></div>' +
+            '</div></main>',
+      js: ["js/store.js?v=48", "js/takip.js?v=1", "js/auth.js?v=4"],
+    },
+    benim: {
+      title: "benim akışım — kim kime ne satıyor?",
+      html: '<main class="wrap"><div id="app"><p class="loading">yükleniyor…</p></div></main>',
+      js: ["js/store.js?v=48", "js/takip.js?v=1", "js/benim.js?v=1"],
+    },
+  };
+  const name = (location.hash || "#uye").slice(1).split("?")[0];
+  const v = VIEWS[name] || VIEWS.uye;
+  document.title = v.title;
+  document.getElementById("view").innerHTML = v.html;
+  for (const src of v.js) {
+    const s = document.createElement("script");
+    s.src = src; s.async = false;
+    document.body.appendChild(s);
+  }
+  addEventListener("hashchange", () => location.reload());
+})();
+</script>
+</body>
+</html>

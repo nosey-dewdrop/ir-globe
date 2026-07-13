@@ -93,7 +93,7 @@ function renderEmail({ heading, intro, items, labels, unsubToken, what }) {
       <a href="${esc(a.u)}" style="color:#16191f;text-decoration:none;font-family:Georgia,serif;font-size:16px;line-height:1.3">${esc(a.t)}</a><br>
       <span style="font-size:12px;color:#6b7280">${esc(a.src)}${a.d ? " · " + esc(a.d) : ""} · ${esc(labels[a.l] || a.l)} · ${esc(a.edge)}</span>
     </p>`).join("");
-  const unsub = `${SITE}/benim.html?unsub=${unsubToken}&what=${what}`;
+  const unsub = `${SITE}/app.html?unsub=${unsubToken}&what=${what}#benim`;
   return `<!DOCTYPE html><html><body style="margin:0;background:#ffffff;color:#16191f;font-family:-apple-system,Helvetica,Arial,sans-serif">
   <div style="max-width:560px;margin:0 auto;padding:28px 20px">
     <p style="font-family:Georgia,serif;font-size:22px;margin:0 0 4px">kim kime ne satıyor?</p>
@@ -101,7 +101,7 @@ function renderEmail({ heading, intro, items, labels, unsubToken, what }) {
     ${intro ? `<p style="font-size:14px;color:#37414d;margin:0 0 20px">${esc(intro)}</p>` : ""}
     ${rows}
     <p style="font-size:12px;color:#6b7280;margin:26px 0 0">
-      <a href="${SITE}/benim.html" style="color:#2b5cad">akışına git</a> ·
+      <a href="${SITE}/app.html#benim" style="color:#2b5cad">akışına git</a> ·
       <a href="${esc(unsub)}" style="color:#6b7280">bu e-postayı kapat</a>
     </p>
     <p style="font-size:11px;color:#aeb4be;margin:12px 0 0">gerçek, kaynaklı veri · bir damlahelloworld yayını</p>

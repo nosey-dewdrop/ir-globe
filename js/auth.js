@@ -28,7 +28,7 @@
   async function afterLogin(user) {
     let follows = [];
     try { follows = await Takip.list(user.id); } catch (e) { /* tablo yoksa onboarding'e düş */ }
-    if (follows.length) { location.href = "benim.html"; return; }
+    if (follows.length) { location.href = "app.html#benim"; return; }
     renderOnboarding(user);
   }
 
@@ -154,7 +154,7 @@
       try {
         for (const f of picked.values()) await Takip.add(user.id, f.kind, f.key);
         await Takip.setPrefs(user.id, { briefing: true, alerts: true });
-        location.href = "benim.html";
+        location.href = "app.html#benim";
       } catch (e) {
         err.textContent = "kaydedilemedi — bağlantını kontrol edip tekrar dene.";
       }

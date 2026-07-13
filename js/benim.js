@@ -18,8 +18,8 @@
     Takip.client().rpc("email_unsubscribe", { token: q.get("unsub"), what: what }).then(function (r) {
       app.innerHTML = r.data
         ? '<h1>tamam</h1><div class="notice">' + (what === "alerts" ? "Gelişme uyarıları" : "Haftalık brifing") +
-          ' kapatıldı. Fikrini değiştirirsen <a href="benim.html">akış sayfandan</a> tekrar açabilirsin.</div>'
-        : '<h1>olmadı</h1><div class="notice">Bağlantı geçersiz ya da süresi geçmiş. <a href="benim.html">Akış sayfandan</a> tercihlerini yönetebilirsin.</div>';
+          ' kapatıldı. Fikrini değiştirirsen <a href="app.html#benim">akış sayfandan</a> tekrar açabilirsin.</div>'
+        : '<h1>olmadı</h1><div class="notice">Bağlantı geçersiz ya da süresi geçmiş. <a href="app.html#benim">Akış sayfandan</a> tercihlerini yönetebilirsin.</div>';
     });
     return;
   }
@@ -28,12 +28,12 @@
   var shownDays = 0, CHUNK_DAYS = 7;
 
   Takip.session().then(function (session) {
-    if (!session) { location.href = "uye.html"; return; }
+    if (!session) { location.href = "app.html#uye"; return; }
     USER = session.user;
     return Promise.all([Takip.list(USER.id), Store.layerIndex(), Store.countries()])
       .then(function (r) {
         FOLLOWS = r[0]; LAYERS = r[1]; COUNTRIES = r[2];
-        if (!FOLLOWS.length) { location.href = "uye.html"; return; }
+        if (!FOLLOWS.length) { location.href = "app.html#uye"; return; }
         return Promise.all(LAYERS.map(function (l) { return Store.news(l.key); })).then(function (bags) {
           LAYERS.forEach(function (l, i) { NEWSBAGS[l.key] = bags[i] || {}; });
           render();
