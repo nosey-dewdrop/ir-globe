@@ -35,11 +35,32 @@ const Motor = (() => {
     return String(d).slice(5); // "07-11"
   }
 
-  /* recent coded events for a pair / country, newest first */
+  /* the radar sells "her hafta taze" — so displayed event rows are limited to a
+     recent window. Half the coded pairs have their newest event months/years back
+     (one stale feed reaches 2006); showing those reads as broken, not thin. The
+     cutoff is data-relative (newest event − N days), not wall-clock, so it stays
+     honest whenever the page is viewed. Aggregate stats (rank/tone/spike) are NOT
+     date-filtered — those are network-wide, not a dated headline. */
+  const RECENT_DAYS = 90;
+  function cutoffOf(events) {
+    if (!events) return "";
+    if (events.__cut == null) {
+      let max = "";
+      (events.events || []).forEach((e) => { if (e.date > max) max = e.date; });
+      if (!max) { events.__cut = ""; return ""; }
+      const d = new Date(max);
+      d.setDate(d.getDate() - RECENT_DAYS);
+      events.__cut = d.toISOString().slice(0, 10);
+    }
+    return events.__cut;
+  }
+
+  /* recent coded events for a pair / country, newest first, within the window */
   function eventsFor(events, filterFn, limit) {
     if (!events || !Array.isArray(events.events)) return [];
+    const cut = cutoffOf(events);
     return events.events
-      .filter(filterFn)
+      .filter((e) => (!cut || e.date >= cut) && filterFn(e))
       .sort((a, b) => String(b.date).localeCompare(String(a.date)))
       .slice(0, limit || 3);
   }
@@ -73,16 +94,16 @@ const Motor = (() => {
     disp = disp || ((x) => x);
     const key = pairKey(s, r);
     const spike = spikeFor(graph, key);
-    const evs = eventsFor(events, (e) => e.pair === key, 3);
-    if (!spike && !evs.length) return ""; // nothing engine-coded → no empty box
-    const pair = events && events.pairs && events.pairs[key];
+    const recent = eventsFor(events, (e) => e.pair === key, 99); // all recent, window-filtered
+    const evs = recent.slice(0, 3);
+    if (!spike && !evs.length) return ""; // nothing recent/coded → no empty box
     let html = `<div class="lbl">olay radarı</div><div class="radar">`;
     if (spike)
       html += `<p class="radar-spike">bu hafta hareketlendi · ${spike.n} haber</p>`;
     if (evs.length) {
       html += evs.map((e) => evRow(e, disp)).join("");
-      if (pair && pair.n > evs.length)
-        html += `<p class="radar-more">+ ${pair.n - evs.length} kodlanmış olay daha</p>`;
+      if (recent.length > evs.length)
+        html += `<p class="radar-more">+ ${recent.length - evs.length} olay daha</p>`;
     }
     html += `</div><p class="radar-note">haberlerden otomatik çıkarıldı</p>`;
     return html;
