@@ -18,6 +18,10 @@
    standard CAMEO->Goldstein table (Goldstein 1992 + CAMEO codebook). */
 const RULES = [
   // --- material conflict (most hostile) ---
+  // passive "X hit by Y" FIRST so the by-marker survives into `matched` and
+  // relate.js can flip direction; lookahead keeps "targeted by sanctions" for
+  // the sanctions rule below.
+  [/\b(hit|struck|pounded|battered|targeted) by (?!(new |fresh |further |more )?(sanction|tariff|ban|restriction|curb))/, "19", -8.5, "saldırıya uğrama"],
   [/\b(invade|invasion|full[- ]scale (war|assault))\b/, "19", -9.4, "askeri işgal"],
   [/\b(air ?strikes?|missile strikes?|bomb(ard|ed|ing)?|shell(ed|ing)?|drone strikes?)\b/, "19", -9.2, "hava/füze saldırısı"],
   [/\b(attack(ed|s|ing)?|assault|offensive|raid(ed|s)?)\b/, "18", -9.0, "silahlı saldırı"],
@@ -31,6 +35,7 @@ const RULES = [
   [/\b(ban(s|ned|ning)?|restrict(s|ed|ions)?|curb(s|ed)?|tariffs?|levy|levies|duties)\b/, "162", -4.0, "kısıtlama / tarife"],
   [/\b(expel(s|led)?|expuls|deport(s|ed|ation)?)\b/, "162", -4.4, "sınır dışı / ihraç"],
   [/\b(cut(s|ting)? (ties|relations|off)|sever(s|ed)? (ties|relations)|suspend(s|ed)? (ties|relations))\b/, "162", -4.9, "ilişki kesme"],
+  [/\b(suspend(s|ed)?|freez(e|es|ing)|halt(s|ed)?)\b.*\b(deals?|agreements?|pacts?|trea(ty|ties)|accords?|cooperation|exports?|imports?|shipments?)\b/, "162", -4.5, "askıya alma"],
   [/\b(recall(s|ed)? (its )?ambassador|summon(s|ed)? (the )?ambassador)\b/, "154", -3.8, "büyükelçi geri çağırma"],
 
   // --- verbal conflict ---
@@ -38,10 +43,12 @@ const RULES = [
   [/\b(accus(e|es|ed|ation)|blam(e|es|ed))\b/, "112", -2.0, "suçlama"],
   [/\b(condemn(s|ed|ation)?|denounc(e|ed)|slam(s|med)?|protest(s|ed)?)\b/, "111", -1.6, "kınama / protesto"],
   [/\b(reject(s|ed)?|refus(e|es|ed)|oppos(e|es|ed)|deny|denies)\b/, "120", -2.2, "ret / karşı çıkma"],
-  [/\b(tension(s)?|dispute|row|stand[- ]?off|escalat)/, "110", -2.0, "gerginlik"],
+  [/\b(tension(s)?|dispute|row|stand[- ]?off|(?<!de[- ])escalat)/, "110", -2.0, "gerginlik"],
   [/\b(summon(s|ed)?|demand(s|ed)?)\b/, "130", -3.4, "resmi talep / çağrı"],
 
   // --- verbal cooperation ---
+  // signing a deal outranks the meeting/visit it happened at, so test it first
+  [/\b(sign(s|ed)?|ink(s|ed)?)\b.*\b(deals?|agreements?|pacts?|trea(ty|ties)|accords?|mous?|memorandums?|contracts?)\b/, "057", 7.0, "anlaşma imzası"],
   [/\b(talks?|dialogue|negotiat(e|es|ed|ions?)|discuss(es|ed|ions?)?)\b/, "036", 4.0, "görüşme / müzakere"],
   [/\b(meet(s|ing)?|summit|hold(s)? talks|phone call|calls? for (calm|talks))\b/, "036", 3.5, "üst düzey görüşme"],
   [/\b(visit(s|ed|ing)?|arrives? in|trip to|tour(s)?)\b/, "042", 3.4, "resmi ziyaret"],
@@ -50,7 +57,6 @@ const RULES = [
   [/\b(apolog(y|ize|ized)|express(es|ed)? regret|condolences?)\b/, "055", 4.0, "özür / taziye"],
 
   // --- material cooperation (most friendly) ---
-  [/\b(sign(s|ed)?|ink(s|ed)?)\b.*\b(deal|agreement|pact|treaty|accord|mou|memorandum|contract)\b/, "057", 7.0, "anlaşma imzası"],
   [/\b(deal|agreement|pact|treaty|accord|partnership)\b/, "057", 6.0, "anlaşma / ortaklık"],
   [/\b(alliance|allies|coalition|bloc|join(s|ed)? (nato|the))\b/, "056", 6.0, "ittifak"],
   [/\b(aid|assistance|humanitarian|relief|donat(e|es|ed|ion)?)\b/, "070", 7.0, "yardım"],

@@ -12,7 +12,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const { extract } = require("./lib/extract/relate");
+const { extractAll } = require("./lib/extract/relate");
 
 const ROOT = path.join(__dirname, "..");
 const NEWS = path.join(ROOT, "data/news");
@@ -37,7 +37,7 @@ function headlines() {
 
 const rows = headlines();
 const seenTitle = new Set();
-let total = 0, coded = 0, kept = 0;
+let total = 0, coded = 0, kept = 0, ties = 0;
 const byLayer = {}; // layer -> [event]
 
 for (const row of rows) {
@@ -46,21 +46,26 @@ for (const row of rows) {
   seenTitle.add(t);
   total++;
 
-  const ev = extract(t);
-  if (!ev) continue;
+  const evs = extractAll(t);
+  if (!evs.length) continue;
   coded++;
-  if (ev.confidence < MIN_CONF) continue;
+  const good = evs.filter((e) => e.confidence >= MIN_CONF);
+  if (!good.length) continue;
   kept++;
+  ties += good.length;
 
-  (byLayer[row.layer] ||= []).push({
-    s: ev.s, r: ev.r, event: ev.event, root: ev.root, goldstein: ev.goldstein,
-    confidence: ev.confidence, title: t, source: row.source, url: row.url, date: row.date,
-  });
+  for (const ev of good) {
+    (byLayer[row.layer] ||= []).push({
+      s: ev.s, r: ev.r, event: ev.event, root: ev.root, goldstein: ev.goldstein,
+      confidence: ev.confidence, title: t, source: row.source, url: row.url, date: row.date,
+    });
+  }
 }
 
 console.log(`\nheadlines (unique): ${total}`);
 console.log(`event-coded:        ${coded}  (${((coded / total) * 100).toFixed(1)}%)`);
 console.log(`kept (conf>=${MIN_CONF}):   ${kept}  (${((kept / total) * 100).toFixed(1)}%)`);
+console.log(`ties emitted:       ${ties}  (${(ties / kept).toFixed(2)} per kept headline)`);
 console.log(`layers with ties:   ${Object.keys(byLayer).length}`);
 const sample = Object.values(byLayer).flat().slice(0, 8);
 console.log("\nsample coded ties:");

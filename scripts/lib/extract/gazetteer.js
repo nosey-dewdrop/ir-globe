@@ -18,7 +18,7 @@ const REG = JSON.parse(fs.readFileSync(path.join(ROOT, "data/countries.json"), "
    Curated for the IR-relevant actors that actually show up in the feeds — not
    every country, on purpose (a wrong demonym is worse than a missing one). */
 const DEMONYMS = {
-  russia: ["russian"], china: ["chinese"], "united states": ["american", "u.s.", "us", "washington"],
+  russia: ["russian", "moscow", "kremlin"], china: ["chinese", "beijing"], "united states": ["american", "u.s.", "us", "washington"],
   "united kingdom": ["british", "uk", "u.k.", "london"], france: ["french", "paris"],
   germany: ["german", "berlin"], japan: ["japanese", "tokyo"], india: ["indian", "delhi", "new delhi"],
   "south korea": ["south korean", "seoul"], "north korea": ["north korean", "pyongyang", "dprk"],
@@ -55,13 +55,20 @@ const LEADERS = {
 
 /* Short aliases that collide with plain english words — never let these match. */
 const STOP = new Set(["us", "uk", "chad", "mali", "oman", "togo", "benin", "guinea", "jordan", "georgia", "china sea"]);
+/* Stop-listed forms that ARE allowed when the original headline spells them in
+   ALL CAPS ("US and UK impose sanctions" vs "let us in"). Normalized space. */
+const CAPS_OK = new Set(["us", "uk", "u s", "u k"]);
 
-/* Build the lookup: surface form -> canonical key. Longer forms win. */
+const PUNCT = /[.,;:!?()"'`]/g;
+const clean = (s) => String(s).replace(PUNCT, " ").replace(/\s+/g, " ").trim();
+
+/* Build the lookup: surface form -> canonical key. Longer forms win. Forms are
+   normalized like the haystack so dotted aliases ("u.s.") can actually match. */
 const FORMS = []; // {form, key, len}
 function add(form, key) {
-  const f = String(form).toLowerCase().trim();
+  const f = clean(String(form).toLowerCase());
   if (!f) return;
-  FORMS.push({ form: f, key, len: f.length, stop: STOP.has(f) });
+  FORMS.push({ form: f, key, len: f.length, stop: STOP.has(f), caps: CAPS_OK.has(f) });
 }
 Object.values(REG).forEach((c) => {
   add(c.key, c.key);
@@ -82,17 +89,23 @@ FORMS.sort((a, b) => b.len - a.len);
 /* word-boundary aware scan; returns actors in order of first appearance,
    de-duplicated by key (first mention position kept). */
 function detect(text) {
-  const hay = " " + String(text || "").toLowerCase().replace(/[.,;:!?()"'`]/g, " ").replace(/\s+/g, " ") + " ";
+  const orig = " " + clean(String(text || "")) + " "; // original case, same positions
+  const hay = orig.toLowerCase();
   const seen = new Map(); // key -> {key, disp, at, matched}
   const claimed = []; // [start,end) spans already consumed by a longer form
-  for (const { form, key, stop } of FORMS) {
-    if (stop) continue;
+  for (const { form, key, stop, caps } of FORMS) {
+    if (stop && !caps) continue;
     const needle = " " + form + " ";
     let idx = hay.indexOf(needle);
     while (idx !== -1) {
-      const start = idx, end = idx + needle.length;
+      // claim only the form's own characters, not the boundary spaces —
+      // otherwise adjacent mentions ("saudi arabia china" after comma
+      // normalization) share a space and the second one is swallowed.
+      const start = idx + 1, end = idx + 1 + form.length;
       const overlap = claimed.some((c) => start < c[1] && end > c[0]);
-      if (!overlap) {
+      // stop-listed short aliases only count when spelled in ALL CAPS
+      const ok = !stop || (caps && orig.slice(start, end) === form.toUpperCase());
+      if (!overlap && ok) {
         claimed.push([start, end]);
         if (!seen.has(key)) seen.set(key, { key, disp: REG[key].disp || key, at: start, matched: form });
       }
