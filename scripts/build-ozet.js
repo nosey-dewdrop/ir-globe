@@ -89,7 +89,7 @@ function clusterPair(arts) {
   });
 }
 
-const files = fs.readdirSync(NEWS).filter((f) => f.endsWith(".json") && !["meta.json", "digest.json", "ozet.json"].includes(f));
+const files = fs.readdirSync(NEWS).filter((f) => f.endsWith(".json") && !["meta.json", "digest.json", "ozet.json", "threads.json"].includes(f));
 const out = {};
 let arts = 0, stories = 0;
 for (const f of files) {
@@ -105,6 +105,18 @@ for (const f of files) {
 }
 
 fs.writeFileSync(path.join(NEWS, "ozet.json"), JSON.stringify(out));
+
+/* tiny sidecar for the akış "×N kaynak" badge: representative title → source
+   count, ONLY for multi-source threads (n>1). ~12 KB gzip vs 137 KB for the
+   full ozet, so akış can show corroboration without loading the summaries. */
+const threads = {};
+for (const layer of Object.keys(out))
+  for (const pairKey of Object.keys(out[layer]))
+    for (const t of out[layer][pairKey])
+      if (t.n > 1 && t.t) threads[t.t] = t.n;
+fs.writeFileSync(path.join(NEWS, "threads.json"), JSON.stringify(threads));
+console.log(`wrote data/news/threads.json (${Object.keys(threads).length} multi-source stories)`);
+
 const kb = Math.round(fs.statSync(path.join(NEWS, "ozet.json")).size / 1024);
 console.log(`articles in:   ${arts}`);
 console.log(`story lines:   ${stories}  (${(arts / stories).toFixed(1)}x compression)`);

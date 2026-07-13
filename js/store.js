@@ -25,6 +25,7 @@ const Store = (() => {
     meta: () => j("data/meta.json", null),
     /* v2 motor çıktıları: özet iplikleri, olay deposu, graf analitiği */
     ozet: () => j("data/news/ozet.json", {}),
+    threads: () => j("data/news/threads.json", {}),
     events: () => j("data/events/index.json", null),
     graph: () => j("data/events/graph.json", null),
   };

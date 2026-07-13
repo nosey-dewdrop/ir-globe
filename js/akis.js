@@ -8,6 +8,7 @@
     return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
 
   var ALL = [];          // her makale: {t, src, d, u, l, edge}
+  var THREADS = {};      // temsili başlık -> kaç kaynak (n>1) — "×N kaynak" rozeti
   var filter = "hepsi";  // katman anahtarı ya da "hepsi"
   var shown = 0;         // kaç GÜN gösterildi
   var CHUNK_DAYS = 7;
@@ -17,7 +18,9 @@
 
   Store.layerIndex().then(function (index) {
     var keys = index.map(function (l) { return l.key; });
-    return Promise.all(keys.map(function (k) { return Store.news(k); })).then(function (bags) {
+    return Promise.all([Store.threads()].concat(keys.map(function (k) { return Store.news(k); }))).then(function (res) {
+      THREADS = res[0] || {};
+      var bags = res.slice(1);
       var seen = {};
       keys.forEach(function (k, i) {
         var edges = bags[i] || {};
@@ -78,9 +81,11 @@
   }
 
   function item(a) {
+    var n = THREADS[a.t];
+    var kaynak = n > 1 ? ' · <span class="dg-src">' + n + " kaynak</span>" : "";
     return '<a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
       '<span class="dg-t">' + esc(a.t) + "</span>" +
-      '<span class="dg-m">' + esc(a.src) + " · " + (LAB[a.l] || a.l) +
+      '<span class="dg-m">' + esc(a.src) + " · " + (LAB[a.l] || a.l) + kaynak +
       (TRDate.isToday(a.d) ? ' <span class="dg-new">yeni</span>' : "") + "</span></a>";
   }
 
