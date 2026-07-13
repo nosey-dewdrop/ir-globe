@@ -323,3 +323,15 @@ tembel yükleme / cdn)
 17. motor kendi eğitim verisini etiketliyor: 404 thread, 6 saatte büyüyor. model asla üretmez.
 18. minilm ölçüldü (eşik 0.75, gerçek yanlış %0.35), birleştirme prod'da: 145 satır katlandı.
 19. çerezsiz sayaç + gizlilik aynı gün. 20. in-app hesap silme. 21. 9 test pipeline'ın önünde.
+
+## r46 — hook: "hata payımı ana sayfama yazdım, pazarlamacım ağlıyor"
+1. sorun: motor tahminleri resmi veri gibi okunabilirdi. 2. bugün metodoloji sayfası açtım:
+kapsam %30, doğruluk %87, ml eşiği ölçümle. 3. çünkü ft/economist güveni şeffaflıktan gelir.
+4. sonuç: hata payı artık ürün özelliği.
+ekran: metodoloji sayfası.
+
+## r47 — hook: "kaynak sayfam elle yazılmıyor, yalan söyleyemiyor"
+1. sorun: kaynak listeleri hep bayatlar. 2. veri sayfası artık veri dosyalarından otomatik
+basılıyor: kaynak, yıl, lisans, güncelleme, bağ sayısı. 3. çünkü elle yazılan liste veriyle
+çelişebilir, üretilen liste çelişemez. 4. sonuç: soyağacı sayfası hep taze.
+ekran: veri.html.

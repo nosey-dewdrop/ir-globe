@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>metodoloji — kim kime ne satıyor?</title>
+<meta name="description" content="Veriyi nasıl derliyoruz, olayları nasıl çıkarıyoruz, ne kadar yanılıyoruz: ölçülmüş hata paylarıyla, açık metodoloji.">
+<link rel="canonical" href="https://damlahelloworld.github.io/ir-globe/metodoloji.html">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=11">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html">kim kime ne satıyor?</a>
+  <nav class="topnav">
+    <a href="index.html">küre</a>
+    <a href="akis.html">akış</a>
+    <a href="konu/index.html">konular</a>
+    <a href="ulke/index.html">ülkeler</a>
+    <a href="app.html#uye">üyelik</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <nav class="crumb"><a href="index.html">ana sayfa</a> › metodoloji</nav>
+  <h1>metodoloji</h1>
+  <p class="lede">Nasıl sayıyoruz, nasıl çıkarıyoruz ve ne kadar yanılıyoruz. Bu sayfa pazarlama değil, ölçüm raporudur; hata paylarımız dahil her şey burada açıktır.</p>
+
+  <h2>iki tür bilgi gösteriyoruz, ikisi aynı şey değil</h2>
+  <div class="cgroup">
+    <ul class="clist">
+      <li><strong>Yapısal katmanlar</strong> (silah, göç, dış yardım, diplomasi, tahıl, kablo...): resmi ve açık veri setlerinden otomatik derlenir ya da kamu kayıtlarından elle küratörlüdür. Her katmanın kaynağı, yılı ve lisansı <a href="veri.html">veri sayfasında</a> tek tek yazar. Uydurma bağlantı yoktur; kaynağı olmayan bağ yayınlanmaz.</li>
+      <li><strong>Olaylar ve radar</strong> ("olay radarı", "bu hafta hareketlenenler", ton skorları): gerçek haber başlıklarından <strong>algoritmayla, otomatik</strong> çıkarılır. Bu çıkarım hata payı taşır ve arayüzde her zaman "haberlerden otomatik çıkarıldı" etiketiyle gezer. Resmi veri değildir, motor tahminidir.</li>
+    </ul>
+  </div>
+
+  <h2>motor nasıl çalışıyor</h2>
+  <p class="lede" style="font-size:15px">Olay çıkarımını büyük dil modeli olmadan, tümüyle deterministik bir motor yapar: aynı başlık her koşuda aynı sonucu verir. Motor üç adımdan oluşur: aktör tanıma (ülke adları, başkentler, liderler, halk adları), olay kodlama (siyaset biliminin CAMEO şeması; her olay tipi −10 çatışma ile +10 işbirliği arasında bir skor taşır) ve yön çözümü (özne-nesne, pasif çatı, bağlaç grupları). Motor emin olmadığı başlığı <strong>kodlamaz</strong>; eksik bırakmayı yanlış iddiaya tercih ederiz.</p>
+
+  <h2>ne kadar yanılıyoruz (ölçülmüş, 13 temmuz 2026)</h2>
+  <div class="cgroup">
+    <ul class="clist">
+      <li><strong>Kapsam:</strong> motor, işlediği İngilizce başlıkların yaklaşık <strong>%30'unu</strong> güvenle olaya çevirebiliyor. Kalanı kodlanmadan kalır; radar bu yüzden eksik olabilir ama uydurmaz.</li>
+      <li><strong>Doğruluk:</strong> elle kontrol edilen örneklemde kodlanmış olayların yaklaşık <strong>%87'si</strong> (15'te 13) doğru çıktı. Yani gördüğün her 7-8 olay satırından biri yanlış yön, eksik bağlam ya da yanlış eşleşme içerebilir.</li>
+      <li><strong>Hikaye birleştirme (ML):</strong> aynı hikayeyi farklı kelimelerle yazan başlıkları bir sinir ağı kodlayıcısı eşler. Eşik değeri his ile değil ölçümle seçildi; ölçülen yanlış birleştirme oranı <strong>%0.35</strong>. Model hiçbir aşamada metin üretmez: yalnızca gerçek başlıkları seçer ve gruplar. Eğitim verisini de motorun kendi kodlamaları üretir; elle etiket ve dış servis yoktur.</li>
+      <li><strong>Tazelik:</strong> radarda yalnızca son 90 günün olayları görünür (en yeni olaya göre hesaplanır). Aynı olayı birden çok kaynak yazdıysa tekilleştirilir; kaynaklar yönde çelişirse çoğunluk esas alınır.</li>
+    </ul>
+  </div>
+  <p class="lede" style="font-size:15px">Bu sayılar motor her önemli değişiklik geçirdiğinde yeniden ölçülür ve bu sayfada güncellenir. Sayfanın en altındaki sürüm etiketi hangi sürümü okuduğunu gösterir.</p>
+
+  <h2>neyi asla yapmayız</h2>
+  <div class="cgroup">
+    <ul class="clist">
+      <li>Veri uydurmak. Kaynağı olmayan bağ, doğrulanamayan sayı, üretilmiş cümle yayınlanmaz.</li>
+      <li>Modelle metin üretmek. Okuduğun her başlık gerçek bir yayın organının başlığıdır ve kaynağına tıklayarak gidebilirsin.</li>
+      <li>Motor tahminini resmi veri gibi sunmak. Otomatik çıkarılan her şey etiketlidir.</li>
+    </ul>
+  </div>
+
+  <h2>düzeltme politikası</h2>
+  <p class="lede" style="font-size:15px">Yanlış kodlanmış bir olay, hatalı bir bağlantı ya da bayat bir kayıt görürsen <a href="mailto:hello@damlahelloworld.com">hello@damlahelloworld.com</a> adresine yaz. Doğrulanan hatanın kuralı motorda düzeltilir ve düzeltme en geç bir sonraki 6 saatlik veri koşusunda yayına girer; hatayı doğuran örüntü ayrıca test olarak eklenir ki bir daha yaşanmasın. Yayını etkilemiş önemli düzeltmeler bu sayfada duyurulur.</p>
+
+  <p class="meta" style="margin-top:30px">Bu ürün bir <span class="sig">damlahelloworld</span> yayınıdır. Metodoloji değişirse bu sayfadan duyururuz.</p>
+</main>
+
+<footer class="docfoot">
+  <p>bağımsız · açık · kaynaklı · bir <span class="sig">damlahelloworld</span> yayını · <a href="veri.html">veri ve kaynaklar</a> · <a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></p>
+</footer>
+
+<script src="admin/config.js"></script>
+<script src="js/sayac.js?v=1"></script>
+</body>
+</html>

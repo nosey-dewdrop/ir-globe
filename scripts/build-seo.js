@@ -106,7 +106,7 @@ function nav() {
 function foot() {
   return `<footer class="docfoot">
   <p>veri: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" rel="noopener">SIPRI</a> (silah) · diğer katmanlar açık kaynak + google news · uydurma veri yok.</p>
-  <p>bağımsız · açık · kaynaklı · bir <span class="sig">damlahelloworld</span> yayını · <a href="ROOT/gizlilik.html">gizlilik</a> · <a href="ROOT/kosullar.html">koşullar</a></p>
+  <p>bağımsız · açık · kaynaklı · bir <span class="sig">damlahelloworld</span> yayını · <a href="ROOT/metodoloji.html">metodoloji</a> · <a href="ROOT/veri.html">veri</a> · <a href="ROOT/gizlilik.html">gizlilik</a> · <a href="ROOT/kosullar.html">koşullar</a></p>
 </footer>`;
 }
 /* thin shell body: crawlers get h1 + lede; js/dizin.js draws the rest live */
@@ -196,7 +196,70 @@ function writeFile(rel, html) {
 }
 
 let count = 0;
-const urls = [`${SITE}/`, `${SITE}/akis.html`, `${SITE}/bulten.html`, `${SITE}/konu/`, `${SITE}/ulke/`];
+/* ── veri.html: layer × source × year × license × updated, baked from the live
+   layer files so the provenance page can never drift from the data ── */
+const veriRows = LAYERS.map((l) => {
+  const lay = readJSON(`data/layers/${l.key}.json`);
+  const s = lay.source || {};
+  const parts = [
+    s.url ? `<a href="${esc(s.url)}" rel="noopener">${esc(s.name || l.key)}</a>` : esc(s.name || "—"),
+    s.year ? esc(String(s.year)) : "",
+    s.license ? esc(s.license) : "",
+    lay.updated ? `güncelleme: ${esc(String(lay.updated).slice(0, 10))}` : "",
+    `${(lay.ties || []).length} bağ`,
+  ].filter(Boolean).join(" · ");
+  return `      <li><strong>${esc(l.label)}</strong> — ${parts}</li>`;
+}).join("\n");
+const veriHtml = `<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>veri ve kaynaklar — kim kime ne satıyor?</title>
+<meta name="description" content="Her katmanın veri kaynağı, yılı, lisansı ve son güncelleme tarihi. Uydurma veri yok; kaynağı olmayan bağ yayınlanmaz.">
+<link rel="canonical" href="${SITE}/veri.html">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=11">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">kim kime ne satıyor?</a>
+  <nav class="topnav">
+    <a href="index.html">küre</a>
+    <a href="akis.html">akış</a>
+    <a href="konu/index.html">konular</a>
+    <a href="ulke/index.html">ülkeler</a>
+    <a href="app.html#uye">üyelik</a>
+  </nav>
+</header>
+<main class="wrap">
+  <nav class="crumb"><a href="index.html">ana sayfa</a> › veri ve kaynaklar</nav>
+  <h1>veri ve kaynaklar</h1>
+  <p class="lede">Her katmanın verisi nereden geliyor, hangi yıldan, hangi lisansla ve en son ne zaman güncellendi. Bu sayfa elle yazılmıyor; her veri güncellemesinde doğrudan veri dosyalarından yeniden üretiliyor, bu yüzden veriyle çelişemez.</p>
+  <h2>yapısal katmanlar</h2>
+  <div class="cgroup">
+    <ul class="clist">
+${veriRows}
+    </ul>
+  </div>
+  <h2>haberler ve olaylar</h2>
+  <p class="lede" style="font-size:15px">Haber başlıkları Google News ve seçili yayınların (BBC, Al Jazeera, Guardian, DW, France24, UN News ve diğerleri) açık RSS akışlarından 6 saatte bir çekilir; her başlık kaynağına link verir. Olaylar, ton skorları ve radar bu başlıklardan <strong>otomatik çıkarılır</strong> ve hata payı taşır: nasıl çalıştığı ve ölçülmüş doğruluğu <a href="metodoloji.html">metodoloji sayfasında</a> açıktır.</p>
+  <p class="meta" style="margin-top:30px">Bu ürün bir <span class="sig">damlahelloworld</span> yayınıdır. Kaynağı olmayan bağ yayınlanmaz.</p>
+</main>
+<footer class="docfoot">
+  <p>bağımsız · açık · kaynaklı · bir <span class="sig">damlahelloworld</span> yayını · <a href="metodoloji.html">metodoloji</a> · <a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></p>
+</footer>
+<script src="admin/config.js"></script>
+<script src="js/sayac.js?v=1"></script>
+</body>
+</html>
+`;
+writeFile("veri.html", veriHtml);
+
+const urls = [`${SITE}/`, `${SITE}/akis.html`, `${SITE}/bulten.html`, `${SITE}/metodoloji.html`, `${SITE}/veri.html`, `${SITE}/konu/`, `${SITE}/ulke/`];
 
 writeFile("konu/index.html", konuIndex());
 writeFile("ulke/index.html", ulkeIndex());
