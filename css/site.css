@@ -356,3 +356,8 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) {
   ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
 }
+
+/* ülke dizini canlı filtre kutusu */
+.ufilter-row { margin: 4px 0 14px; }
+.ufilter-row input { font: inherit; font-size: 14px; border: 1px solid var(--rule); padding: 8px 12px; width: min(340px, 100%); background: #fff; }
+.ufilter-row input:focus { border-color: var(--navy); outline: none; }

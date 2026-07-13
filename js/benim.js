@@ -27,12 +27,23 @@
   var USER = null, FOLLOWS = [], LAYERS = [], COUNTRIES = {}, NEWSBAGS = {};
   var shownDays = 0, CHUNK_DAYS = 7;
 
+  /* C1: anasayfa hero'sunun "hesap aç"ı "akışın →"a çevirebilmesi için takip
+     sayısı localStorage'a yazılır — index SADECE bunu okur, supabase'e girmez.
+     Çıkışta ve hesap silmede temizlenir. */
+  function saveCache() {
+    try { localStorage.setItem("irglobe.follows.v1", JSON.stringify({ n: FOLLOWS.length })); } catch (e) {}
+  }
+  function clearCache() {
+    try { localStorage.removeItem("irglobe.follows.v1"); } catch (e) {}
+  }
+
   Takip.session().then(function (session) {
     if (!session) { location.href = "app.html#uye"; return; }
     USER = session.user;
     return Promise.all([Takip.list(USER.id), Store.layerIndex(), Store.countries()])
       .then(function (r) {
         FOLLOWS = r[0]; LAYERS = r[1]; COUNTRIES = r[2];
+        saveCache();
         if (!FOLLOWS.length) { location.href = "app.html#uye"; return; }
         return Promise.all(LAYERS.map(function (l) { return Store.news(l.key); })).then(function (bags) {
           LAYERS.forEach(function (l, i) { NEWSBAGS[l.key] = bags[i] || {}; });
@@ -102,6 +113,7 @@
 
     document.getElementById("out").addEventListener("click", function (e) {
       e.preventDefault();
+      clearCache();
       Takip.client().auth.signOut().then(function () { location.href = "index.html"; });
     });
     document.getElementById("more").addEventListener("click", function () {
@@ -115,6 +127,7 @@
       e.preventDefault();
       if (!confirm("Hesabın ve tüm verin (takipler, e-posta tercihleri) kalıcı olarak silinecek. Bu geri alınamaz. Emin misin?")) return;
       e.target.textContent = "siliniyor…";
+      clearCache();
       var c = Takip.client();
       c.rpc("delete_me").then(function () {
         c.auth.signOut().finally(function () { location.href = "index.html?silindi=1"; });
@@ -135,6 +148,7 @@
       c.addEventListener("click", function () {
         Takip.remove(c.dataset.id).then(function () {
           FOLLOWS = FOLLOWS.filter(function (f) { return String(f.id) !== c.dataset.id; });
+          saveCache();
           shownDays = 0;
           renderChips(); renderAddable(); renderFeed(myArticles());
         });
@@ -174,6 +188,7 @@
   function addFollow(kind, key) {
     Takip.add(USER.id, kind, key).then(function (row) {
       if (row) FOLLOWS.push(row);
+      saveCache();
       shownDays = 0;
       renderChips(); renderFeed(myArticles());
     });

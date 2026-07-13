@@ -335,3 +335,18 @@ ekran: metodoloji sayfası.
 basılıyor: kaynak, yıl, lisans, güncelleme, bağ sayısı. 3. çünkü elle yazılan liste veriyle
 çelişebilir, üretilen liste çelişemez. 4. sonuç: soyağacı sayfası hep taze.
 ekran: veri.html.
+
+## r48 — hook: "sitene gelen insan sana soru soramıyorsa kaybettin"
+1. sorun: "iran israil'de ne oluyor" diye gelen biri küreyi gezmek zorundaydı, arama yoktu.
+2. bugün akışa ülke araması, ülke dizinine canlı filtre ekledim.
+3. çünkü cevap hızı ürünün ilk sözü; 3 tık, 1 kutuya indi.
+4. sonuç: yaz, seç, akış o ülkeye süzülsün. × ile geri.
+ekran: akışta "russia" yazıp süzme.
+
+## r49 — hook: "siteme üye olan kişiye hâlâ 'hesap aç' diyordum"
+1. sorun: üye olup takip kuran kullanıcı ana sayfada hâlâ 'hesap aç' görüyordu.
+2. bugün hero, takipli kullanıcıda "akışın →"a dönüyor.
+3. çünkü bunu sunucudan sormak ana sayfayı yavaşlatırdı; localStorage'a yazılan minik bir
+   sayıyı okumak bedava. çıkışta ve hesap silmede temizlenir.
+4. sonuç: ana sayfa seni tanıyor ama sunucu kim olduğunu bilmiyor.
+ekran: iki hâlin yan yana kaydı.

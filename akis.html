@@ -26,6 +26,12 @@
   .akis-more { margin: 24px 0 0; font-size: 13.5px; color: var(--muted); background: none; border: 1px solid var(--rule); padding: 8px 18px; cursor: pointer; }
   .akis-more:hover { color: var(--navy); border-color: var(--navy); }
   .akis footer { border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 16px; }
+  .akis-ara { margin: 8px 0 2px; }
+  .akis-ara input { font: inherit; font-size: 13.5px; border: 1px solid var(--rule); padding: 7px 10px; width: min(320px, 100%); background: #fff; }
+  .akis-ara input:focus { border-color: var(--navy); outline: none; }
+  .akis-ara .chips { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .akis-ara .chip { font-size: 12.5px; border: 1px solid var(--rule); background: #fff; padding: 4px 10px; cursor: pointer; font-family: var(--sans); }
+  .akis-ara .chip.on, .akis-ara .chip:hover { border-color: var(--navy); color: var(--navy); }
   @media (max-width: 560px) { .akis .digest { column-count: 1; } }
 </style>
 </head>
@@ -38,6 +44,10 @@
 </header>
 
 <nav class="akis-filters" id="filters" aria-label="katman filtreleri"></nav>
+<div class="akis-ara">
+  <input type="text" id="cara" placeholder="ülke ara: akışı ona göre süz…" aria-label="ülke ara" autocomplete="off">
+  <div id="cara-list" class="chips" aria-live="polite"></div>
+</div>
 <main>
 <div id="mine"></div>
 <div id="radar"></div>
@@ -58,7 +68,7 @@
 <script src="js/store.js?v=69"></script>
 <script src="js/ilgi.js?v=71"></script>
 <script src="js/motor.js?v=68"></script>
-<script src="js/akis.js?v=6"></script>
+<script src="js/akis.js?v=7"></script>
 <script src="admin/config.js"></script>
 <script src="js/sayac.js?v=1"></script>
 </body>

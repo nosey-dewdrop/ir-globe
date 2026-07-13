@@ -174,7 +174,15 @@
   ${crumb("ülkeler")}
   <h1>ülkeler</h1>
   <p class="lede">Her ülkenin dünyayla kurduğu silah, ticaret, enerji ve diğer bağların tam listesi. <span class="meta">(${names.length} ülke)</span></p>
+  <p class="ufilter-row"><input type="text" id="ufilter" placeholder="ülke ara…" aria-label="ülke ara" autocomplete="off"></p>
   <section class="uwall">${links}</section>`;
+    const inp = mount.querySelector("#ufilter");
+    const cards = [...mount.querySelectorAll(".ulink")];
+    const norm = (s) => String(s).toLocaleLowerCase("tr");
+    inp.addEventListener("input", () => {
+      const q = norm(inp.value.trim());
+      cards.forEach((a) => { a.style.display = !q || norm(a.textContent).includes(q) ? "" : "none"; });
+    });
   }
 
   loadBase()

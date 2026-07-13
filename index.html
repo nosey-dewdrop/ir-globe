@@ -71,7 +71,7 @@
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="app.html#uye">üyelik</a> · <a href="metodoloji.html">metodoloji</a> · <a href="veri.html">veri</a> · <a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v73</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">damlahelloworld</span> yayını · <span class="build">v74</span></span>
   </footer>
 </section>
 
@@ -267,6 +267,21 @@
     new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) run(); }); }, { threshold: 0.4 }).observe(el);
   } else run();
   }
+})();
+</script>
+<script>
+/* C1: üye + takipli kullanıcıda hero CTA'sı kişisel akışa döner. SADECE
+   localStorage okur (index'e supabase girmez, perf); cache'i benim.js yazar,
+   çıkışta/hesap silmede siler. */
+(function () {
+  try {
+    var f = JSON.parse(localStorage.getItem("irglobe.follows.v1") || "null");
+    if (!f || !f.n) return;
+    document.querySelectorAll(".jn-cta").forEach(function (a) {
+      a.textContent = "akışın →";
+      a.setAttribute("href", "app.html#benim");
+    });
+  } catch (e) {}
 })();
 </script>
 <script src="js/sayac.js?v=1"></script>

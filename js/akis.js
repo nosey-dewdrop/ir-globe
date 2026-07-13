@@ -10,6 +10,7 @@
   var ALL = [];          // her makale: {t, src, d, u, l, edge}
   var THREADS = {};      // temsili başlık -> kaç kaynak (n>1) — "×N kaynak" rozeti
   var filter = "hepsi";  // katman anahtarı ya da "hepsi"
+  var cfilter = null;    // ülke anahtarı — "sorumu sorayım" kapısı
   var shown = 0;         // kaç GÜN gösterildi
   var CHUNK_DAYS = 7;
 
@@ -127,8 +128,38 @@
     Ilgi.note({ countries: edgeCountries(a.dataset.edge), layers: [a.dataset.l], w: 2 });
   });
 
+  /* ülke araması: yaz, seç, akış o ülkenin bağlarına süzülsün (× ile kaldır) */
+  Store.countries().then(function (countries) {
+    var inp = document.getElementById("cara"), box = document.getElementById("cara-list");
+    if (!inp || !box) return;
+    var all = Object.keys(countries).map(function (k) { return { k: k, d: countries[k].disp || k }; });
+    function selChip() {
+      return '<button class="chip on" id="cara-clear" aria-label="ülke filtresini kaldır">' +
+        esc((countries[cfilter] || {}).disp || cfilter) + ' <span aria-hidden="true">×</span></button>';
+    }
+    inp.addEventListener("input", function () {
+      var q = inp.value.toLocaleLowerCase("tr").trim();
+      if (q.length < 2) { box.innerHTML = cfilter ? selChip() : ""; return; }
+      var hits = all.filter(function (c) {
+        return c.k.indexOf(q) > -1 || c.d.toLocaleLowerCase("tr").indexOf(q) > -1;
+      }).slice(0, 8);
+      box.innerHTML = hits.map(function (c) {
+        return '<button class="chip" data-k="' + esc(c.k) + '">' + esc(c.d) + "</button>";
+      }).join("");
+    });
+    box.addEventListener("click", function (e) {
+      var b = e.target.closest(".chip");
+      if (!b) return;
+      if (b.id === "cara-clear") { cfilter = null; inp.value = ""; box.innerHTML = ""; shown = 0; render(); return; }
+      cfilter = b.dataset.k;
+      inp.value = ""; box.innerHTML = selChip(); shown = 0; render();
+      if (typeof Ilgi !== "undefined") Ilgi.note({ countries: [cfilter], w: 1 });
+    });
+  }).catch(function () { /* arama yoksa akış aynen çalışır */ });
+
   function render() {
     var list = filter === "hepsi" ? ALL : ALL.filter(function (a) { return a.l === filter; });
+    if (cfilter) list = list.filter(function (a) { return edgeCountries(a.edge).indexOf(cfilter) > -1; });
     // gün gün grupla (tarih sırası korunur)
     var days = [], byDay = {};
     list.forEach(function (a) {
@@ -137,7 +168,7 @@
       byDay[d].push(a);
     });
     if (!days.length) {
-      feedEl.innerHTML = '<p class="dg-load">bu katmanda henüz manşet yok.</p>';
+      feedEl.innerHTML = '<p class="dg-load">' + (cfilter ? "bu filtrede manşet yok." : "bu katmanda henüz manşet yok.") + "</p>";
       moreEl.hidden = true;
       return;
     }
