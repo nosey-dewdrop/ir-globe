@@ -23,6 +23,10 @@ const Store = (() => {
     newsMeta: () => j("data/news/meta.json", null),
     digest: () => j("data/news/digest.json", []),
     meta: () => j("data/meta.json", null),
+    /* v2 motor çıktıları: özet iplikleri, olay deposu, graf analitiği */
+    ozet: () => j("data/news/ozet.json", {}),
+    events: () => j("data/events/index.json", null),
+    graph: () => j("data/events/graph.json", null),
   };
 })();
 

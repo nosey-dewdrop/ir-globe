@@ -166,22 +166,33 @@ fetch("data/countries.geojson?v=6")
 
 globe.arcsData(visibleTies());
 /* dönüşü kaldırdık (Damla: parmakla zaten çeviriyor). Onun yerine on-demand:
-   herhangi bir kamera değişimi küreyi uyandırır, boşta uyur → sıfır boşta yük. */
-globe.controls().addEventListener("change", () => wakeGlobe());
+   herhangi bir kamera değişimi küreyi uyandırır, boşta uyur → sıfır boşta yük.
+   Kamera mesafesi ayrıca kart ölçeğini besler: pinch-zoom'da kartlar küreyle
+   birlikte yaklaşır/uzaklaşır (Damla'nın isteği). */
+globe.controls().addEventListener("change", () => {
+  wakeGlobe();
+  const base = globe.getGlobeRadius ? globe.getGlobeRadius() * 3.2 : 320; // altitude 2.2 başlangıcı
+  const k = Math.max(0.55, Math.min(2.0, base / globe.camera().position.length()));
+  if (Math.abs(k - zoomK) > 0.03) { zoomK = k; requestAnimationFrame(() => { layoutCards(); curveStory(); }); }
+});
 
 /* ince okları seçmek zordu: raycaster'ın çizgi toleransını büyüt — okları GÖRSEL
    olarak kalınlaştırmadan, tıklama/hover'ın oka "yakın" saymasını kolaylaştırır.
    globe.gl varsayılanı 1px; 8px ince oku bile rahat seçtirir. */
 if (typeof globe.lineHoverPrecision === "function") globe.lineHoverPrecision(8);
 /* dokunmatik cihazda küre parmakla büyütülebilsin (pinch-zoom); masaüstünde
-   tekerlek sayfayı kaydırdığı için zoom kapalı kalır */
+   normal tekerlek sayfayı kaydırır ama Mac trackpad PINCH'i (ctrl+wheel olarak
+   gelir) küreyi yakınlaştırır — iki parmak kaydırmadan ayrışır (Damla'nın notu) */
 const isTouch = window.matchMedia("(pointer: coarse)").matches || window.innerWidth < 820;
 globe.controls().enableZoom = isTouch;
+globe.controls().minDistance = 140;  // en fazla yakınlaşma (büyük küre)
+globe.controls().maxDistance = 520;  // en fazla uzaklaşma
 if (isTouch) {
-  globe.controls().minDistance = 140;  // en fazla yakınlaşma (büyük küre)
-  globe.controls().maxDistance = 520;  // en fazla uzaklaşma
   globe.controls().zoomSpeed = 1.1;
   globe.controls().enablePan = false;  // sadece döndür + yakınlaştır, kaydırma yok
+} else {
+  const gel = document.getElementById("globe");
+  gel.addEventListener("wheel", (e) => { globe.controls().enableZoom = e.ctrlKey; }, { capture: true, passive: true });
 }
 /* mobilde küreyi geniş çerçevele — ekran genişliğini doldursun, küçük durmasın */
 globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0);
@@ -455,10 +466,11 @@ function renderCards() {
   cardsEl.classList.add("show");
   layoutCards();
 }
-/* kartları kürenin SAĞ kavisine sarar — hiçbir sabit adet YOK, her şey yerden türetilir:
-   ÖNCE dikey kolon dolar, taşınca SAĞA yeni kolon açılır, yatay yer de biterse
-   (ancak o zaman) font kademeli küçülür. Kart ne olursa olsun sahnenin içinde kalır,
-   hiçbir makale atılmaz. */
+/* kartları kürenin İKİ kavisine sarar (Damla: "sol tarafa da kart") — sabit adet
+   YOK: sağ yay birincil, kartların ~üçte biri SOL yaya gider (hikaye paneliyle
+   küre arasına sığıyorsa). Dikey kolon dolunca dışa yeni kolon açılır, yer
+   biterse font kademeli küçülür. zoomK: pinch-zoom kart ölçeğini küreyle izler. */
+let zoomK = 1;
 function layoutCards() {
   const cards = [...cardsEl.querySelectorAll(".card")];
   const n = cards.length;
@@ -467,7 +479,7 @@ function layoutCards() {
 
   /* mobil: kartlar CSS ile kürenin altında düz liste — konumlandırma/font override yok */
   if (window.matchMedia("(max-width: 820px)").matches) {
-    cards.forEach((c) => { c.style.left = ""; c.style.top = ""; });
+    cards.forEach((c) => { c.style.left = ""; c.style.top = ""; c.classList.remove("solyay"); });
     cardsEl.style.removeProperty("--card-fs");
     cardsEl.classList.remove("dense");
     return;
@@ -479,46 +491,88 @@ function layoutCards() {
   const usable = h - pad * 2;
   const FS_MAX = 14.5, FS_MIN = 10.5;
   const rowH = (fs) => fs * 2.6 + 13;     // 2 satır başlık + kaynak + nefes → dikey adım
+  const cardW = 210;
+  const story = document.querySelector(".col.left");
+  const storyEdge = story ? story.offsetWidth + 8 : 320;   // sol kartların sol sınırı
+  const Redge = Math.min(w, h) * 0.40 * zoomK;             // küre kenarı (yaklaşık, zoom'la ölçekli)
+  const leftFits = cx - Redge - storyEdge >= cardW - 30;   // sol yaya kolon sığıyor mu
 
-  /* AZ KART (≤6): kürenin sağ kavisine yaslı, sayıyla orantılı yay — kanıtlanmış görünüm */
-  const Rbig = Math.min(w, h) * 0.46 + 30;
-  if (n <= 6) {
-    const STEP = 22, half = ((n - 1) * STEP) / 2;
-    cards.forEach((c, i) => {
-      const deg = n > 1 ? -half + (i * 2 * half) / (n - 1) : 0;
-      const rad = (deg * Math.PI) / 180;
-      const y = Math.max(pad, Math.min(h - pad, cy + Rbig * Math.sin(rad)));
-      c.style.left = (cx + Rbig * Math.cos(rad)).toFixed(1) + "px";
+  /* iki yayın paylaşımı: sol sığıyorsa ve kart ≥4 ise üçte biri sola */
+  const leftN = leftFits && n >= 4 ? Math.floor(n / 3) : 0;
+  const right = cards.slice(0, n - leftN), left = cards.slice(n - leftN);
+  cards.forEach((c, i) => c.classList.toggle("solyay", i >= n - leftN));
+
+  /* bir yayı döşe: side=+1 sağ, -1 sol. Az kartta orantılı yay, çokta kolon-fan. */
+  function place(list, side) {
+    const m = list.length;
+    if (!m) return FS_MAX;
+    const Rbig = (Math.min(w, h) * 0.46 + 30) * zoomK;
+    if (m <= 6) {
+      const STEP = 22, half = ((m - 1) * STEP) / 2;
+      list.forEach((c, i) => {
+        const deg = m > 1 ? -half + (i * 2 * half) / (m - 1) : 0;
+        const rad = (deg * Math.PI) / 180;
+        const y = Math.max(pad, Math.min(h - pad, cy + Rbig * Math.sin(rad)));
+        let x = cx + side * Rbig * Math.cos(rad);
+        if (side < 0) x = Math.max(storyEdge, x - cardW);
+        c.style.left = x.toFixed(1) + "px";
+        c.style.top = y.toFixed(1) + "px";
+      });
+      return FS_MAX;
+    }
+    const colCap = Math.max(1, Math.floor(usable / rowH(FS_MAX)));
+    const colGap = cardW + 8;
+    const r0 = Math.min(w, h) * 0.40 * zoomK + 10;         // ilk kolonun kavis yarıçapı
+    const room = side > 0 ? w - cardW - 14 - (cx + r0) : cx - r0 - storyEdge;
+    const maxCols = Math.max(1, Math.floor(room / colGap) + 1);
+    const cols = Math.min(maxCols, Math.ceil(m / colCap));
+    const cap = Math.ceil(m / cols);
+    const fs = Math.max(FS_MIN, Math.min(FS_MAX, (usable / cap - 13) / 2.6));
+    list.forEach((c, idx) => {
+      const col = Math.floor(idx / cap);
+      const row = idx % cap;
+      const inCol = Math.min(cap, m - col * cap);
+      const y = inCol > 1 ? pad + (row * usable) / (inCol - 1) : cy;
+      const Rk = r0 + col * colGap;
+      const t = Math.max(-0.985, Math.min(0.985, (y - cy) / Rk));
+      let x = cx + side * Rk * Math.cos(Math.asin(t));
+      if (side < 0) x = Math.max(storyEdge, x - cardW);
+      c.style.left = x.toFixed(1) + "px";
       c.style.top = y.toFixed(1) + "px";
     });
-    cardsEl.style.setProperty("--card-fs", FS_MAX + "px");
-    cardsEl.classList.remove("dense");
-    return;
+    return fs;
   }
 
-  /* ÇOK KART: bir kolon tam fontla kaç kart alır → colCap. Gerekli kolon = ceil(n/colCap).
-     Yatayda ancak maxCols kolon sığar (kürenin sağından sahne kenarına). Kolon yetmezse
-     kolon başına düşen kartı fontu kısarak sığdır (SON çare). */
-  const colCap = Math.max(1, Math.floor(usable / rowH(FS_MAX)));
-  const cardW = 210, colGap = cardW + 8;
-  const x0 = cx + Math.min(w, h) * 0.40 + 10;   // ilk kolon: kürenin sağı (biraz içeri, sağa yer kalsın)
-  const maxCols = Math.max(1, Math.floor((w - cardW - 14 - x0) / colGap) + 1);
-  const cols = Math.min(maxCols, Math.ceil(n / colCap));   // önce sağa: gerektiği kadar kolon
-  const cap = Math.ceil(n / cols);                          // kolon başına kart
-  const fs = Math.max(FS_MIN, Math.min(FS_MAX, (usable / cap - 13) / 2.6));  // ancak gerekiyorsa küçült
+  const fsR = place(right, 1), fsL = place(left, -1);
+  const fs = Math.min(fsR, fsL);
   cardsEl.style.setProperty("--card-fs", fs.toFixed(1) + "px");
   cardsEl.classList.toggle("dense", fs < FS_MAX - 0.1);
+}
 
-  cards.forEach((c, idx) => {
-    const col = Math.floor(idx / cap);
-    const row = idx % cap;
-    const inCol = Math.min(cap, n - col * cap);   // bu kolondaki kart adedi (son kolon eksik olabilir)
-    const y = inCol > 1 ? pad + (row * usable) / (inCol - 1) : cy;
-    const Rk = (x0 - cx) + col * colGap;          // bu kolonun kavis yarıçapı → sağa doğru fan
-    const t = Math.max(-0.985, Math.min(0.985, (y - cy) / Rk));
-    c.style.left = (cx + Rk * Math.cos(Math.asin(t))).toFixed(1) + "px";
-    c.style.top = y.toFixed(1) + "px";
-  });
+/* hikaye panelini kürenin SOL kavisine gerçekten sardır: .writing içine görünmez
+   bir float konur, shape-outside küre dairesini oyar → satırlar kavisi izler.
+   Geometri küreden türetilir (kör piksel yok); dar ekranda kendini kapatır. */
+function curveStory() {
+  const el = story.querySelector(".writing");
+  if (!el) return;
+  let f = el.querySelector(".curveflow");
+  if (!f) { f = document.createElement("i"); f.className = "curveflow"; f.setAttribute("aria-hidden", "true"); el.prepend(f); }
+  const stage = document.querySelector(".stage");
+  if (!stage || window.matchMedia("(max-width: 1100px)").matches) { f.style.display = "none"; return; }
+  const w = stage.clientWidth, h = stage.clientHeight;
+  const cx = w / 2, cy = h / 2, R = Math.min(w, h) * 0.40 * zoomK + 16;  // küre kenarı + nefes
+  f.style.display = "none";                       // ölçümü float'suz yap
+  const wr = el.getBoundingClientRect(), sr = stage.getBoundingClientRect();
+  const wx = wr.left - sr.left, wy = wr.top - sr.top;
+  const overlap = wx + wr.width - (cx - R);       // yazı kutusu daireye ne kadar giriyor
+  if (overlap <= 6) return;                       // kavise değmiyor → düz kalsın
+  f.style.display = "block";
+  f.style.width = Math.min(overlap, wr.width * 0.65).toFixed(1) + "px";
+  f.style.height = Math.max(el.scrollHeight, 40) + "px";
+  /* dairenin merkezi float'ın KENDİ kutusuna göre verilir */
+  const fx = cx - wx - (wr.width - parseFloat(f.style.width));
+  const fy = cy - wy;
+  f.style.shapeOutside = `circle(${R.toFixed(1)}px at ${fx.toFixed(1)}px ${fy.toFixed(1)}px)`;
 }
 
 /* ── actions ── */
@@ -563,7 +617,7 @@ function redraw() {
 }
 function renderAll() {
   document.querySelector(".stage").classList.toggle("sel", anySelection());
-  renderStory(); renderDetail(); renderCards(); runCountUps();
+  renderStory(); renderDetail(); renderCards(); runCountUps(); curveStory();
 }
 
 function sizeGlobe() {
@@ -573,6 +627,7 @@ function sizeGlobe() {
     globe.height(el.clientHeight);
   }
   layoutCards();
+  curveStory();
 }
 renderAll();
 window.addEventListener("resize", sizeGlobe);
