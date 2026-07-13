@@ -49,6 +49,13 @@ const RULES = [
   [/\b(tension(s)?|dispute|row|stand[- ]?off|(?<!de[- ])escalat)/, "110", -2.0, "gerginlik"],
   [/\b(summon(s|ed)?|demand(s|ed)?)\b/, "130", -3.4, "resmi talep / çağrı"],
 
+  // "X blocks/vetoes/scraps a deal/venture" (either word order) is OBSTRUCTION,
+  // not the cooperation its object names — tested BEFORE the deal/venture rules
+  // below (first match wins). "cancel/halt a strike/war" is deliberately NOT here:
+  // that de-escalation stays positive (handled by the ceasefire rule).
+  [/\b(veto(es|ed)?|block(s|ed)?|scrap(s|ped)?|derail(s|ed)?|scupper(s|ed)?|torpedo(es|ed)?|reject(s|ed)?)\b[^.]{0,40}\b(deals?|joint ventures?|ventures?|agreements?|pacts?|trea(ty|ties)|accords?|partnerships?|bids?|resolutions?)\b/, "121", -3.0, "veto / engelleme"],
+  [/\b(deals?|joint ventures?|ventures?|agreements?|pacts?|accords?|partnerships?)\b[^.]{0,40}\b(block(ed)?|vetoed|scrapped|derailed|scuppered|torpedoed|rejected|collapsed?|(fell|falls) through)\b/, "121", -3.0, "veto / engelleme"],
+
   // --- verbal cooperation ---
   // signing a deal outranks the meeting/visit it happened at, so test it first
   [/\b(sign(s|ed)?|ink(s|ed)?)\b.*\b(deals?|agreements?|pacts?|trea(ty|ties)|accords?|mous?|memorandums?|contracts?)\b/, "057", 7.0, "anlaşma imzası"],

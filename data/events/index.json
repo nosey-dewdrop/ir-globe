@@ -4,9 +4,9 @@
   "from": "2006-03-23",
   "to": "2026-07-12"
  },
- "raw": 1266,
+ "raw": 1267,
  "merged": 1128,
- "duplicatesRemoved": 138,
+ "duplicatesRemoved": 139,
  "undated": 0,
  "weeks": [
   "2006-W12",
@@ -3029,10 +3029,10 @@
    "avg": -1.1
   },
   "egypt|italy": {
-   "n": 4,
+   "n": 5,
    "last": "2022-06-06",
    "layers": {
-    "silah": 4
+    "silah": 5
    },
    "weekly": {
     "2020-W07": {
@@ -3040,15 +3040,15 @@
      "avg": 5
     },
     "2020-W25": {
-     "n": 1,
-     "avg": 3
+     "n": 2,
+     "avg": 0
     },
     "2022-W23": {
      "n": 1,
      "avg": 6
     }
    },
-   "avg": 4.75
+   "avg": 3.2
   },
   "egypt|russia": {
    "n": 1,
@@ -5586,18 +5586,18 @@
    "avg": -6.25
   },
   "israel|qatar": {
-   "n": 2,
+   "n": 1,
    "last": "2026-07-10",
    "layers": {
-    "silah": 2
+    "silah": 1
    },
    "weekly": {
     "2026-W28": {
-     "n": 2,
-     "avg": 5.5
+     "n": 1,
+     "avg": -3
     }
    },
-   "avg": 5.5
+   "avg": -3
   },
   "israel|romania": {
    "n": 1,
@@ -8901,9 +8901,9 @@
    "avg": 3.89
   },
   "egypt": {
-   "n": 19,
+   "n": 20,
    "partners": 9,
-   "avg": 3.44
+   "avg": 3.12
   },
   "el salvador": {
    "n": 1,
@@ -8991,14 +8991,14 @@
    "avg": 4.2
   },
   "israel": {
-   "n": 49,
+   "n": 48,
    "partners": 27,
-   "avg": 1.33
+   "avg": 1.07
   },
   "italy": {
-   "n": 41,
+   "n": 42,
    "partners": 15,
-   "avg": 2.04
+   "avg": 1.92
   },
   "ivory coast": {
    "n": 1,
@@ -9156,9 +9156,9 @@
    "avg": 6
   },
   "qatar": {
-   "n": 28,
+   "n": 27,
    "partners": 12,
-   "avg": 3.15
+   "avg": 2.75
   },
   "romania": {
    "n": 12,
@@ -9554,6 +9554,19 @@
    "goldstein": 3,
    "week": "2020-W25",
    "date": "2020-06-16",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "italy",
+   "r": "egypt",
+   "pair": "egypt|italy",
+   "layer": "silah",
+   "root": "121",
+   "event": "veto / engelleme",
+   "goldstein": -3,
+   "week": "2020-W25",
+   "date": "2020-06-17",
    "articles": 1,
    "sources": 1
   },
@@ -23628,26 +23641,13 @@
    "r": "israel",
    "pair": "israel|qatar",
    "layer": "silah",
-   "root": "057",
-   "event": "anlaşma / ortaklık",
-   "goldstein": 6,
+   "root": "121",
+   "event": "veto / engelleme",
+   "goldstein": -3,
    "week": "2026-W28",
    "date": "2026-07-10",
-   "articles": 4,
-   "sources": 4
-  },
-  {
-   "s": "qatar",
-   "r": "israel",
-   "pair": "israel|qatar",
-   "layer": "silah",
-   "root": "050",
-   "event": "işbirliği",
-   "goldstein": 5,
-   "week": "2026-W28",
-   "date": "2026-07-10",
-   "articles": 1,
-   "sources": 1
+   "articles": 5,
+   "sources": 5
   },
   {
    "s": "pakistan",
