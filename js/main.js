@@ -487,6 +487,13 @@ function renderDetail() {
 
 /* ── liquid cards: real articles arranged along the globe's curve, they flow on change ── */
 const cardsEl = document.getElementById("cards");
+/* bir habere tıklamak = en güçlü ilgi sinyali (gerçekten okumaya gidiyor). Delege
+   dinleyici bir kez kurulur; o an seçili bağ/ülke + katman on-device kaydedilir. */
+cardsEl.addEventListener("click", (e) => {
+  if (!e.target.closest(".card") || typeof Ilgi === "undefined") return;
+  const cs = focusTie ? [focusTie.s, focusTie.r] : selected ? [selected] : [];
+  Ilgi.note({ countries: cs, layers: [layer], w: 2 });
+});
 function currentArticles() {
   if (focusTie) return tieArticleList(focusTie);   // hiç kırpma yok — veri neyse o
   if (selected) return countryArticleList(selected);
@@ -619,6 +626,7 @@ function focusOnTie(t) {
   if (t === focusTie) { reset(); return; } // click the same arc again → deselect
   focusTie = t;
   selected = null;
+  if (typeof Ilgi !== "undefined") Ilgi.note({ countries: [t.s, t.r], layers: [t.type], w: 1.5 });
   redraw();
   const midLat = (COORDS[t.s][0] + COORDS[t.r][0]) / 2;
   const midLng = (COORDS[t.s][1] + COORDS[t.r][1]) / 2;
@@ -628,6 +636,7 @@ function focusOnTie(t) {
 function selectCountry(c) {
   focusTie = null;
   selected = c;
+  if (c && typeof Ilgi !== "undefined") Ilgi.note({ countries: [c], layers: [layer], w: 1 });
   redraw();
   if (globe && c && COORDS[c]) { globe.pointOfView({ lat: COORDS[c][0], lng: COORDS[c][1], altitude: 1.8 }, 700); wakeGlobe(1400); }
   renderAll();

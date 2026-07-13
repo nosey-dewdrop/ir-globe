@@ -36,6 +36,7 @@
       document.getElementById("akis-count").textContent = ALL.length.toLocaleString("tr-TR");
       renderFilters(index);
       render();
+      renderMine();
     });
   }).catch(function () {
     feedEl.innerHTML = '<p class="dg-load">akış şu an yüklenemedi — birazdan tekrar dene.</p>';
@@ -67,11 +68,37 @@
     el.querySelectorAll("[data-f]").forEach(function (b) {
       b.addEventListener("click", function () {
         filter = b.dataset.f;
+        if (typeof Ilgi !== "undefined" && filter !== "hepsi") Ilgi.note({ layers: [filter], w: 0.5 });
         shown = 0;
         renderFilters(index);
         render();
       });
     });
+  }
+
+  /* "sana göre" — akışın başında, SENİN cihazındaki ilgine göre (okuduğun ülke/
+     katman) öne çıkan taze manşetler. Sinyal yoksa ya da yeterli eşleşme yoksa
+     hiç basılmaz. Tamamen yerel; sunucuya hiçbir şey gitmez. */
+  function renderMine() {
+    var mount = document.getElementById("mine");
+    if (!mount) return;
+    if (typeof Ilgi === "undefined" || !Ilgi.has()) { mount.innerHTML = ""; return; }
+    var cTop = {}, lTop = {};
+    Ilgi.top("country", 8).forEach(function (x) { cTop[x.key] = x.score; });
+    Ilgi.top("layer", 5).forEach(function (x) { lTop[x.key] = x.score; });
+    var scored = ALL.map(function (a) {
+      var s = (lTop[a.l] || 0) * 0.6;
+      edgeCountries(a.edge).forEach(function (c) { s += (cTop[c] || 0); });
+      return { a: a, s: s };
+    }).filter(function (x) { return x.s > 0.2; })
+      .sort(function (p, q) { return q.s - p.s || String(q.a.d).localeCompare(String(p.a.d)); })
+      .slice(0, 6);
+    if (scored.length < 3) { mount.innerHTML = ""; return; }
+    mount.innerHTML = '<section class="mine-strip"><h2>sana göre <span class="cnt">okuduklarından</span></h2>' +
+      '<div class="digest">' + scored.map(function (x) { return item(x.a); }).join("") + "</div>" +
+      '<p class="mine-note">yalnızca <strong>senin cihazında</strong> — neyi açtığından oluşur, bize gönderilmez. <a href="#" id="mine-forget">sıfırla</a></p></section>';
+    var f = document.getElementById("mine-forget");
+    if (f) f.addEventListener("click", function (e) { e.preventDefault(); Ilgi.forget(); mount.innerHTML = ""; });
   }
 
   function dayLabel(d) {
@@ -83,11 +110,22 @@
   function item(a) {
     var n = THREADS[a.t];
     var kaynak = n > 1 ? ' · <span class="dg-src">' + n + " kaynak</span>" : "";
-    return '<a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
+    return '<a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener"' +
+      ' data-l="' + esc(a.l) + '" data-edge="' + esc(a.edge || "") + '">' +
       '<span class="dg-t">' + esc(a.t) + "</span>" +
       '<span class="dg-m">' + esc(a.src) + " · " + (LAB[a.l] || a.l) + kaynak +
       (TRDate.isToday(a.d) ? ' <span class="dg-new">yeni</span>' : "") + "</span></a>";
   }
+
+  /* bir manşete tıklamak = güçlü ilgi sinyali (on-device, sunucuya gitmez). */
+  function edgeCountries(edge) {
+    return String(edge || "").split(/→|->/).map(function (s) { return s.trim(); }).filter(Boolean);
+  }
+  document.body.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest(".dg[data-l]");
+    if (!a || typeof Ilgi === "undefined") return;
+    Ilgi.note({ countries: edgeCountries(a.dataset.edge), layers: [a.dataset.l], w: 2 });
+  });
 
   function render() {
     var list = filter === "hepsi" ? ALL : ALL.filter(function (a) { return a.l === filter; });

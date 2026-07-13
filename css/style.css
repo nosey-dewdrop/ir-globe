@@ -272,6 +272,16 @@ h1 { font-size: 22px; font-weight: 400; letter-spacing: -0.01em; white-space: no
 .radar-more { font-size: 12px; color: var(--muted); margin-top: 2px; }
 .radar-note { font-size: 11px; color: var(--faint); font-style: italic; margin-top: 4px; }
 
+/* ── "sana göre": on-device ilgine göre öne çıkan manşetler (akis.html başı) ── */
+.mine-strip { margin: 0 0 6px; padding: 14px 0 18px; border-top: 2px solid var(--navy); }
+.mine-strip h2 { font-family: var(--serif); font-size: 19px; font-weight: 500; margin: 0 0 12px; }
+.mine-strip h2 .cnt { font-family: var(--sans); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); font-weight: 400; }
+.mine-strip .digest { column-count: 2; }
+.mine-note { font-size: 11.5px; color: var(--faint); margin: 6px 0 0; }
+.mine-note strong { color: var(--muted); font-weight: 700; }
+.mine-note a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 560px) { .mine-strip .digest { column-count: 1; } }
+
 /* ── akış radarı: bu haftanın spike'ları (akis.html) ── */
 .akis-radar { margin: 0 0 6px; padding: 14px 0 18px; border-top: 1px solid var(--rule); }
 .akis-radar h2 { font-family: var(--serif); font-size: 19px; font-weight: 500; margin: 0 0 10px; }
