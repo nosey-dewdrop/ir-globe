@@ -74,6 +74,10 @@ const RULES = [
   [/\b(invest(s|ed|ment)?|fund(s|ing)?|billion|\$\d|pipeline|infrastructure)\b/, "071", 6.4, "yatırım"],
   [/\b(export(s|ed)?|import(s|ed)?|trade deal|supply|shipment|grain|wheat|energy deal|gas deal|oil)\b/, "061", 5.0, "ticaret / tedarik"],
   [/\b(cooperat(e|ion|ive)|collaborat|joint (venture|exercise|project)|strengthen(s|ed)? ties|deepen(s|ed)? ties)\b/, "050", 5.0, "işbirliği"],
+  // a COLLAPSING ceasefire is conflict resumption, not normalization — tested
+  // before the positive ceasefire rule so "truce collapses / ceasefire is over"
+  // doesn't read as peace. "agree/hold a ceasefire" stays positive below.
+  [/\b(cease[- ]?fire|truce|peace (deal|talks|plan|process))\b[^.]{0,24}\b(collapse[sd]?|fail(s|ed)?|breaks? down|broke down|violat(e|ed|ion|ing)?|broken|shatter(s|ed)?|fell apart|in tatters|(is|was|now|declared)?\s?over)\b/, "190", -6.0, "ateşkes çöküşü"],
   [/\b(cease[- ]?fire|truce|peace (deal|talks|plan)|de[- ]escalat|normaliz)/, "046", 7.0, "ateşkes / normalleşme"],
   [/\b(prisoner (swap|exchange)|swap prisoners|releases? (detainees|prisoners|hostages)|hostage release)\b/, "080", 5.0, "esir takası / serbest bırakma"],
 
