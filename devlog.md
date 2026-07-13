@@ -1,278 +1,325 @@
 # devlog — instagram build-in-public malzemesi (ir-globe)
 
-gelistirme sureci instagram'da paylasilir: reels, post, carousel. her giris hook'lu,
-reels'ler 30-60 saniye. iskeletler senaryo degil, damla kendi agziyla anlatir.
-sinir yok. linkedin essay'leri ayri: linkedin.md.
+gelistirme sureci instagram'da paylasilir: reels, post, carousel. olabildigince MINIK parca,
+cok icerik. anlatim bicimi HEP numarali zincir, gunluk konusma tonunda:
+"bugun sunu degistirdim arkadaslar, cunku soyle bir sorun vardi!"
+iskelet: 1. sorun neydi → 2. ne degistirdim → 3. cunku (karar) → 4. sonuc. + ekranda ne goster.
+reels 30-60 saniye, hook sart. sinir yok. linkedin essay'leri ayri dosyada: linkedin.md.
 
-# REELS (30-60 sn, hook + anlatim iskeleti + ekranda ne goster)
+# REELS
 
 ## r1 — hook: "arkadaşıma hediye yazdım, elimde istihbarat ürünü var"
-anlatım: hediye olarak başladı → 3d küre, kim kime silah satıyor → sonra durduramadım →
-bugün 13 katman, 198 ülke, 6 saatte bir kendini yenileyen canlı sistem.
+1. arkadaşım IR okuyor, hediye olarak "kim kime silah satıyor" küresi yapıyordum.
+2. bugün geldiği yer: 13 katman, 198 ülke, 6 saatte bir kendini yenileyen sistem.
+3. çünkü ilk versiyonu beğenmedim ve durmadım; her beğenmediğim şey bir sonraki fazı doğurdu.
+4. sonuç: hediye ürüne evrildi, hâlâ tek kişiyim.
 ekran: küre dönüşü + katman geçişleri.
 
 ## r2 — hook: "ilk versiyonum çöptü ve bunu size göstereceğim"
-anlatım: ilk hali elle veri + 18 bin satırlık tek dosya, slopware → tek karar her şeyi değiştirdi:
-uydurma veri asla, her bağın kaynağı olacak → şimdi her ok bir dataset'e gidiyor.
-ekran: eski commit diff'i (18k satır kırmızı) + yeni veri sayfası.
+1. sorun: elle girilmiş veri + 18 bin satırlık tek dosya. slopware hissi.
+2. hepsini attım, kural koydum: uydurma veri asla, her bağın kaynağı olacak.
+3. çünkü güzel görünen ama yaşamayan vitrin, ürün değil dekor.
+4. sonuç: artık her ok gerçek bir veri setine gidiyor (unhcr, oecd, sipri, fao).
+ekran: eski commit diff'i (18k satır kırmızı) + veri kaynakları.
 
 ## r3 — hook: "llm çağında llm'siz bilgi çıkarım motoru yazdım"
-anlatım: haber başlığından "kim kime ne yaptı"yı çıkarmak lazımdı → kolay yol api'ye para vermek →
-yapabiliyorsak biz yapalım dedik → aktör tanıma + olay kodlama + skor, yüzde yüz deterministik →
-maliyet: sıfır. hız: 4500 başlık saniyeler.
-ekran: terminalde extract-relations koşusu, akan çıktı.
+1. sorun: başlıktan "kim kime ne yaptı"yı çıkarmam lazım, kolay yol api'ye para vermek.
+2. kendi motorumu yazdım: aktör tanıma + olay kodlama + skor, yüzde yüz deterministik.
+3. çünkü yapabiliyorsak biz yaparız; maliyet sıfır, dışa bağımlılık sıfır.
+4. sonuç: 4500 başlık saniyeler içinde işleniyor, her 6 saatte.
+ekran: terminalde motor koşusu, akan çıktı.
 
 ## r4 — hook: "sitem aşırı yavaştı, suçlu 240 kere aynı hatayı yapan bendim"
-anlatım: profilledim → layout 240 forced reflow → okuma/yazma fazlarını ayırdım → 1 reflow →
-ders: his değil ölçüm; profiler açmadan optimizasyon yapılmaz.
-ekran: devtools performance kaydı önce/sonra.
+1. sorun: açılışta yarım saniye donma, sebebini bilmiyorum.
+2. bugün layout kodumu üç faza ayırdım: yaz, oku, yaz.
+3. çünkü profiler gösterdi: kendi kodum 240 kez forced reflow tetikliyormuş.
+4. sonuç: 240 → 1. aynı görünüm, akıcı site.
+ekran: devtools kaydı önce/sonra.
 
 ## r5 — hook: "2.8 megabayt html'i sildim, google hâlâ beni seviyor"
-anlatım: 211 seo sayfası bake ediliyordu → "çok html var" → hepsi 3kb kabuk oldu, gövde canlı
-veriden çiziliyor → %90 küçüldü, sıralama kaybı yok.
-ekran: repo dil grafiği (html'den js'e dönüş) + bir ülke sayfası açılışı.
+1. sorun: seo için 211 sayfa bake ediyordum, repo html çöplüğü gibiydi.
+2. bugün hepsini 3kb'lık kabuklara indirdim, gövdeyi canlı veri çiziyor.
+3. çünkü aynı veriyi iki yerde tutuyordum; tek kaynak, iki tüketici olmalı.
+4. sonuç: %90 küçülme, sıralama kaybı yok.
+ekran: repo dil çubuğu + ülke sayfası açılışı.
 
 ## r6 — hook: "haber başlığı yalan söyler: 'ukraine hit by russian strikes' kim saldırıyor?"
-anlatım: motorun ilk hali özneyi yanlış alıyordu → pasif çatıyı çevirmeyi öğrettim →
-"attack drones" saldırı değil ürün adı → her düzeltme ayrı commit, hepsi ölçüldü.
-ekran: aynı başlığın önce/sonra kodlaması.
+1. sorun: motorum özneyi yanlış alıyordu, saldıran ukrayna sanıyordu.
+2. bugün pasif çatı çevirmeyi öğrettim: participle + by görünce yön döner.
+3. çünkü tek yanlış ok, iki gerçek devlet hakkında yanlış iddia demek.
+4. sonuç: aynı başlık artık doğru kodlanıyor.
+ekran: önce/sonra kodlama.
 
 ## r7 — hook: "makaleleri kimse okumuyor, ben de 4500 başlığı 3 bine indirdim"
-anlatım: aynı hikayeyi 9 kaynak yazıyor → kümeleme + merkezilik, yine api'siz →
-9 haber 1 satır → "×9 kaynak" rozeti güven veriyor.
-ekran: akış sayfasında ×N kaynak rozetleri.
+1. sorun: aynı hikayeyi 9 kaynak yazıyor, akış tekrar dolu.
+2. bugün özetleyici ekledim: kümeleme + merkezilik, yine api'siz.
+3. çünkü okuyucuya 9 tekrar değil "9 kaynak doğruladı" güveni lazım.
+4. sonuç: en büyük thread 9 haber → 1 satır, "×9 kaynak" rozeti.
+ekran: akıştaki rozetler.
 
 ## r8 — hook: "modelim asla cümle kurmayacak, buna yemin ettim"
-anlatım: uydurma yasağı → ml var ama üretmiyor, sadece seçiyor ve grupluyor →
-eğitim verisini kim etiketliyor? kendi motorum. ilk gün 404 örnek, her 6 saatte artıyor.
-ekran: train.jsonl'dan akan satırlar.
+1. sorun: ml istiyorum ama üretken model uydurma riski demek.
+2. karar: model sadece seçer ve gruplar, metni hep gerçek gazeteci yazar.
+3. eğitim verisini kendi motorum etiketliyor: ilk gün 404 örnek, 6 saatte bir büyüyor.
+4. sonuç: kendi kendini besleyen, uydurmayan ml hattı.
+ekran: train.jsonl akışı.
 
 ## r9 — hook: "yapay zekam kendi kodumun hatasını buldu"
-anlatım: encoder'ı ölçtüm, eşik 0.75, yanlış birleştirme %0.35 → "yanlış" görünenlere baktım →
-çoğu motorun aynı hikayeyi ikiye bölmesiydi → ml motoru onarıyor → 145 satır katlandı.
-ekran: eval tablosu + birleşen başlık çiftleri.
+1. sorun: encoder'ın "yanlış birleştirmeleri" vardı, oranı ölçtüm: binde 3.5.
+2. bugün o yanlışlara tek tek baktım.
+3. çünkü tabloya güvenirim ama örneklem okumadan eşik seçilmez.
+4. sonuç: çoğu yanlış değilmiş; motor aynı hikayeyi ikiye bölmüş, ml onarmış. 145 satır katlandı.
+ekran: eval tablosu + birleşen çiftler.
 
 ## r10 — hook: "kullanıcılarımı sayıyorum ama kim olduklarını bilmiyorum, bilerek"
-anlatım: analytics lazımdı ama izleme istemedim → çerezsiz sayaç: ip yok, kimlik yok,
-tekillik cihazda kalan bayrak → kvkk'ya uygun, gizlilik sayfasında açık açık yazıyor.
+1. sorun: kaç okurum var bilmiyorum ama izleme scripti de istemiyorum.
+2. bugün çerezsiz sayaç yazdım: 25 satır, ip yok, kimlik yok.
+3. çünkü gizlilik sayfamda "takip yok" yazıyor ve o cümle bozulmaz.
+4. sonuç: sayı bende, mahremiyet kullanıcıda, kvkk temiz.
 ekran: gizlilik sayfası + admin ziyaret sekmesi.
 
 ## r11 — hook: "bu haftanın dünya gerginlik haritasını 0 liraya çıkarıyorum"
-anlatım: her olay skorlanıyor (-10 çatışma, +10 işbirliği) → haftalık seriler → z-score →
-"bu hafta bu hatta anormallik var" → bloomberg terminali değil, öğrenci yurdu + github actions.
-ekran: akıştaki "bu hafta hareketlenenler" radarı.
+1. her olay skorlanıyor: -10 çatışma, +10 işbirliği.
+2. haftalık serilerden z-score ile anormallik yakalıyorum.
+3. çünkü "bu hafta bu hatta kırılma var" cümlesi ürünün kancası.
+4. sonuç: bloomberg terminali değil, öğrenci + github actions.
+ekran: "bu hafta hareketlenenler" radarı.
 
-## r12 — hook: "aylık sunucu masrafım: 0 tl. nasıl?"
-anlatım: statik site + github actions + supabase free → kişisel akış istemcide hesaplanıyor →
-ölçek bedava → mühendislik kararı en baştan buydu.
-ekran: mimari çizim (actions → json → tarayıcı).
+## r12 — hook: "aylık sunucu masrafım: 0 tl"
+1. sorun: öğrenciyim, sunucu kirası yok.
+2. mimari karar: statik site + actions cron + supabase free + hesaplama tarayıcıda.
+3. çünkü ölçek bedava olsun istedim, kullanıcı arttıkça maliyet artmasın.
+4. sonuç: sıfır lira, sınırsız okur.
+ekran: mimari çizim.
 
 ## r13 — hook: "kırmızı test görürsem dünya haberlerini güncellemiyorum"
-anlatım: 6 saatte bir veri güncelleniyor → önce 9 test koşar → biri kırmızıysa güncelleme yok →
-üretim verisini koruyan şey disiplin.
-ekran: actions'ta yeşil pipeline akışı.
+1. sorun: sistem ben uyurken çalışıyor, ben uyurken de bozulabilir.
+2. bugün 9 testi pipeline'ın EN BAŞINA koydum.
+3. çünkü bozuk kod taze veriye dokunmamalı; en kötü ihtimal 6 saat eski veri.
+4. sonuç: kırmızı test = güncelleme iptal. veriyi disiplin koruyor.
+ekran: actions yeşil akış.
 
 ## r14 — hook: "kullanıcıya 'hesabını sil' butonu koydum, kimse koymuyor"
-anlatım: kvkk silme hakkı → çoğu site mail atmanı ister → bizde tek tık: onay, rpc, cascade →
-her aksiyonun tersi olacak kuralı.
-ekran: hesap silme akışı.
+1. sorun: kvkk silme hakkı çoğu sitede "bize mail atın"da bitiyor.
+2. bugün tek tık silme ekledim: onay + rpc + cascade.
+3. çünkü her aksiyonun tersi olmalı; kayıt olabilen, silebilmeli.
+4. sonuç: mail fallback'li, gerçek in-app silme.
+ekran: silme akışı.
 
-## r15 — hook: "gece 3'te pipeline'ım çöktü, sabah 6'da kendi kendine düzelmedi, ben düzelttim"
-anlatım: yeni eklediğim dosya motoru şaşırttı, typeerror, koşu kırmızı → log okudum, tek satır
-suçlu → düzeltme + o hatayı bir daha imkansız kılan test → hata olur, tekrarı olmaz.
-ekran: actions'ta kırmızı koşu → yeşil koşu.
+## r15 — hook: "gece 3'te pipeline'ım çöktü"
+1. sorun: gece 03:16 koşusu kırmızı; yeni eklediğim dosya motoru şaşırtmış.
+2. sabah logu okudum, tek satır suçlu, düzelttim.
+3. ama asıl iş: o hatayı bir daha imkansız kılan testleri yazdım.
+4. sonuç: hata olur, tekrarı olmaz.
+ekran: kırmızı koşu → yeşil koşu.
 
-## r16 — hook: "tasarımı 10 kere reddedildi, 11.'de gazete çıktı"
-anlatım: küre süslü olabilirdi → gazete çizgisi seçtik: serif, beyaz, lacivert →
-desen economist'ten, görünüm bizim → tasarım kural: referans olmadan redesign yok.
-ekran: landing'in manşet duvarı + küre geçişi.
+## r16 — hook: "tasarımım 10 kere reddedildi, 11.'de gazete çıktı"
+1. sorun: küre süslü dursun istedim, hepsi ucuz göründü.
+2. gazete çizgisine döndük: serif başlık, beyaz kağıt, tek lacivert.
+3. çünkü desen economist'ten alınır, görünüm kopyalanmaz.
+4. sonuç: stil yasası; o gün bugündür değişmedi.
+ekran: manşet duvarı + küre.
 
 ## r17 — hook: "hangi ülke haber ağının merkezinde? pagerank'e sordum"
-anlatım: google'ın algoritması ülkelere uygulandı → olaylardan ağ → sıralama + topluluklar
-(yaptırım bloğu kendiliğinden çıktı) → veri konuşunca harita değişiyor.
-ekran: ülke panelindeki "haber ağında" bölümü.
+1. google'ın algoritmasını ülkelere uyguladım.
+2. olaylardan ağ kurdum, sıralama + topluluklar çıktı.
+3. çünkü "kim önemli" sorusuna his değil grafik cevap vermeli.
+4. sonuç: yaptırım bloğu kendiliğinden belirdi.
+ekran: ülke paneli "haber ağında".
 
 ## r18 — hook: "6 saatte bir dünyayı tarayan bir robotum var"
-anlatım: github actions cron → haber çek, motoru koştur, özetle, indeksle, commit'le →
-ben uyurken 4 koşu → sabah taze veri.
-ekran: gece commit'lerinin listesi ("refresh news articles" 03:00, 09:00...).
+1. github actions cron: haber çek, motoru koştur, özetle, commit'le.
+2. ben uyurken 4 koşu tamamlanıyor.
+3. çünkü canlılık elle beslemeyle olmaz.
+4. sonuç: sabah site benden güncel.
+ekran: gece commit listesi.
 
-## r19 — hook: "başkasının verisiyle ürün kuranın lisans okuması şart, ben okudum"
-anlatım: bir katmanın verisi non-commercial lisanslı → satış günü gelirse o katman çıkar,
-kayıtlara yazdım → hukuku sonradan hatırlayan ürün gömer.
-ekran: veri kaynakları ve lisans tablosu.
+## r19 — hook: "başkasının verisiyle ürün kuranın lisans okuması şart"
+1. sorun: bir katmanın verisi non-commercial lisanslı çıktı.
+2. bugün kayda yazdım: satış günü gelirse o katman çıkar ya da değişir.
+3. çünkü hukuk sonradan hatırlanınca ürün gömer.
+4. sonuç: bir satır not, sıfır gelecek riski.
+ekran: kaynak/lisans tablosu.
 
-## r20 — hook: "motorumun hata payını herkese açık yayınlıyorum, pazarlamaya ters, güvene doğru"
-anlatım: kapsam %30, örneklem doğruluğu ölçülü, ml eşiği ölçümle seçildi → hepsi açık →
-ft/economist seviyesinin sırrı mükemmellik değil şeffaflık.
-ekran: metodoloji sayfası (yakında) / eval çıktısı.
+## r20 — hook: "motorumun hata payını herkese açık yayınlıyorum"
+1. sorun: motor bazen yanlış kodluyor, saklamak kolaydı.
+2. kararım: kapsam %30, doğruluk ölçümleri, ml eşiği; hepsi açık.
+3. çünkü ft/economist seviyesinin sırrı mükemmellik değil şeffaflık.
+4. sonuç: güven, pazarlamadan daha hızlı birikiyor.
+ekran: eval çıktısı / metodoloji.
 
-# CAROUSEL / POST HAMMADDESI — kronolojik karar zinciri
-(her gun/asama bir carousel olabilir: 1 slayt = 1 karar. yeni gelistirmede buraya ANINDA madde eklenir.)
+# MIKRO REELS (tek bug / tek karar / tek sayı)
 
-## 10 tem — doğuş
-1. arkadaşıma (IR okuyor) hediye olarak ülkeler arası ilişkileri gösteren bir 3d küre yazıyordum.
-   amaç "kim kime silah satıyor"u tek bakışta göstermekti.
-2. ilk versiyon slopware hissi verdi: elle derlenmiş bağlar, 18 bin satırlık tek js dosyası,
-   statik vitrin. karar: uydurma veri asla — her bağın kaynağı olacak ya da bağ olmayacak.
-3. tasarımda çok tur attık; sonunda gazete çizgisi oturdu (serif başlık + beyaz kağıt + lacivert).
-   karar: economist/nyt'den desen alınır, görünüm kopyalanmaz.
-
-## 11 tem — "kimse buna para vermez"
-4. statik vitrin kimseye lazım değildi. karar: iki bacak — veri kendi kendine tazelenecek
-   (içerik motoru) + kullanıcı kendi akışını kuracak (kişiselleştirme).
-5. bir günde 8 faz: unhcr/oecd/wikidata/faostat/telegeography'den GERÇEK veri çeken haftalık
-   pipeline, 13 katman 3882 bağ, 6 saatte bir haber tazeleyen workflow, üyelik + takip +
-   haftalık kişisel brifing maili + tek tık unsubscribe.
-6. neden supabase: rls ile güvenlik, sıfır sunucu maliyeti. kişisel akış istemcide hesaplanır,
-   ölçek bedava.
-
-## 12 tem — performans savaşı + büyük temizlik
-7. site "aşırı yavaştı". profilledim: masonry layout 240 kez forced reflow yapıyormuş.
-   yazma/okuma fazlarını ayırdım → 1 reflow. karar: tasarımdan ödün yok, ölçüp düzelt.
-8. webgl küre açılışta 480kb geojson'la ana sayfayla yarışıyordu. karar: küre tembelleşti,
-   ilk niyette (scroll/tık) ya da boşta kurulur. açılış uçtu.
-9. 18 bin satırlık articles.js + iki legacy dosyayı komple sildim (1.4mb ölü kod).
-   karar: geriye dönüş bir release beklenir, sonra acımadan silinir.
-10. "çok html var" dedi damla: 2.8mb bake edilmiş seo sayfası vardı. hepsini ~3kb'lık ince
-    kabuklara indirdim, gövdeyi istemci canlı veriden çizer. %90 html gitti, seo kaldı.
-
-## 12-13 tem — motor: projenin ruhu
-11. haber başlıklarını rss sorgusuna göre değil METNE göre eşlemek istedim. kolay yol: llm api.
-    damla'nın kararı: "api çekmicem, biz yapabiliyorsak yapalım." yüzde yüz deterministik,
-    llm'siz bilgi çıkarım motoru yazıldı: aktör tanıma (gazetteer) + cameo olay kodlama +
-    goldstein skoru. başlıktan yönlü, skorlu bağ çıkarır.
-12. ilk kapsam %22.6. conjunction gruplama, pasif çatı çevirme ("ukraine hit by russian
-    strikes" → rusya→ukrayna), lider→ülke eşleme derken %30.4. karar: kapsam yavaş büyür,
-    yanlış kodlama hızlı öldürür — hassasiyet önce.
-13. yanlışları tek tek avladım: "attack drones" saldırı değil ürün adı; bloklanmış anlaşma
-    işbirliği değil engelleme; çöken ateşkes normalleşme değil. her düzeltme ayrı commit.
-14. olaylar tekilleşti (1266→1128), haftalık seriler + pagerank + topluluk tespiti + z-score
-    spike'lar çıktı. artık "bu hafta bu hatta anormallik var" diyebiliyoruz.
-15. motor ekrana bağlandı: bağ seçince "olay radarı", ülke seçince ağ sıralaması. tembel
-    yüklenir (30kb gzip), kodlanamayan çift boş kutu değil hiç görünmez.
-
-## 13 tem — ml fazı: motor kendi öğretmenini besliyor
-16. özetleyici: "makaleleri kimse okumaz." 4500 başlık 3265 hikaye satırına indi —
-    yine api'siz: kümeleme + merkezilik. en büyük thread 9 haber → 1 satır.
-17. karar: kendi ml modelimiz olacak ama asla metin ÜRETMEYECEK (uydurma yasağı), sadece
-    seçecek ve gruplayacak. motorun kendi kodladığı thread'ler eğitim verisi oldu —
-    ilk gün 404 örnek, her 6 saatte büyüyor. etiketleyen: kendi motorumuz.
-18. minilm encoder'ı bu korpusta ÖLÇTÜM: eşik 0.75'te yanlış birleştirme %0.35. asıl sürpriz:
-    "yanlış" görünenlerin çoğu motorun aynı hikayeyi ikiye bölmesiydi — ml, motorun hatasını
-    onarıyor. birleştirme pası prod'a girdi: 145 satır katlandı, çok-kaynaklı hikaye 456'ya çıktı.
-
-## 13 tem — güven ve ölçüm
-19. analytics istedim ama kullanıcıyı izlemeden. karar: çerezsiz birinci taraf sayaç —
-    ip yok, kimlik yok, "tekil" bilgisi cihazda kalan bir bayrak. supabase'e tek anonim rpc.
-    gizlilik sayfasına aynı oturumda yazıldı.
-20. hesap silme in-app oldu (kvkk): tek tık, onay, rpc, cascade. mail fallback'li.
-21. testler pipeline'ın önüne geçti: 9 test kırmızıysa 6 saatlik veri güncellemesi bloklanır.
-    karar: üretim verisini koruyan şey disiplin, dua değil.
-
-# MIKRO REELS (tek karar / tek bug / tek sayi = tek icerik)
-
-## r21 — hook: "sitem 'TÜRkiye' yaziyordu, utandim"
-title-case kodu TÜRkiye üretiyordu. çözüm: gösterim adları asla kodla üretilmez, tek kayıt
-defterinden gelir. ekran: bug'lı ekran görüntüsü + düzeltme commit'i.
+## r21 — hook: "sitem 'TÜRkiye' yazıyordu, utandım"
+1. title-case kodu TÜRkiye üretti. 2. gösterim adlarını tek kayıt defterine taşıdım.
+3. çünkü isim kodla üretilmez, kayıttan okunur. 4. bug sınıfı komple öldü.
+ekran: bug görüntüsü + commit.
 
 ## r22 — hook: "saatlerce 'site güncellenmiyor' diye debug yaptım, site çoktan güncellenmişti"
-suçlu custom domain cache'i. ders: her deploy'a görünür sürüm etiketi + tek doğruluk kaynağı
-adres. ekran: footer'daki v72 etiketi.
+1. custom domain cache'i eski sürümü gösteriyordu. 2. her deploy'a görünür sürüm etiketi koydum.
+3. çünkü hangi sürümün canlıda olduğu tartışılmaz olmalı. 4. o debug seansı bir daha yaşanmadı.
+ekran: footer v72.
 
 ## r23 — hook: "duvarım kolon gibi görünüyordu, sorun matematikti"
-eşit genişlikte bloklar kolon illüzyonu yaratıyor. 1-2 kolonluk değişken bloklar = mozaik.
-ekran: önce/sonra duvar.
+1. eşit genişlik blokları kolon illüzyonu yaratıyor. 2. 1-2 kolonluk değişken blok yaptım.
+3. çünkü mozaik hissi kırılımdan gelir. 4. duvar canlandı.
+ekran: önce/sonra.
 
 ## r24 — hook: "mac trackpad'i sayfa geçişimi deli ediyordu"
-momentum kuyruğu yeni swipe sanılıyordu. çözüm: sönen delta = aynı jest, yükselen delta =
-yeni niyet. ekran: sayfa geçişi akıcı hali.
+1. momentum kuyruğu yeni swipe sanılıyordu. 2. sönen delta = aynı jest kuralı ekledim.
+3. çünkü niyet ile atalet ayrılmalı. 4. geçişler yumuşadı.
+ekran: akıcı geçiş.
 
-## r25 — hook: "retina ekranda %44 daha az piksel çiziyorum, kimse fark etmedi"
-pixel ratio 1.5'e sabitlendi, kare hızı arttı. ekran: fps sayacı önce/sonra.
+## r25 — hook: "retina'da %44 daha az piksel çiziyorum, kimse fark etmedi"
+1. küre her pikseli çiziyordu. 2. pixel ratio'yu 1.5'e sabitledim.
+3. çünkü göz farkı görmüyor, gpu görüyor. 4. kare hızı arttı.
+ekran: fps önce/sonra.
 
-## r26 — hook: "'russia backs plan' ile 'hit by russia' aynı kelimeyle başlıyor, anlamı zıt"
-pasif çatı tespiti: participle + by. "backs plan by Russia" tuzağına düşmeyen lookahead.
-ekran: iki başlığın kodlanışı.
+## r26 — hook: "'russia backs plan' ile 'hit by russia' zıt anlam, aynı kelime"
+1. pasif tespiti "backs plan by" tuzağına düşüyordu. 2. lookahead ekledim.
+3. çünkü dil kural değil istisna yumağı. 4. iki başlık da doğru kodlanıyor.
+ekran: iki kodlama.
 
 ## r27 — hook: "motorum kanada'yı suçladı, kanada masumdu"
-"...as Ukraine and Estonia sign drone deal" cümlesinde fiile bitişik grubu seçme kuralı
-geldi. ekran: yanlış/doğru ok animasyonu.
+1. cümledeki ilk ülke grubunu alıyordu. 2. fiile bitişik grubu seçtirdim.
+3. çünkü özne fiilin yanındadır. 4. kanada aklandı.
+ekran: ok animasyonu.
 
-## r28 — hook: "washington'da görüşme = washington taraf değil"
-"talks between A and B in Washington": bağ between-grubunun içinde, mekan yok sayılır.
+## r28 — hook: "washington'da görüşme yapıldıysa washington taraf değildir"
+1. mekan adı taraf sanılıyordu. 2. between-grubu içi bağ kuralı ekledim.
+3. çünkü "A ile B, C'de görüştü"de C seyirci. 4. mekanlar aklandı.
 ekran: üçlü örnek.
 
-## r29 — hook: "kremlin dedi = rusya dedi. bunu bilgisayara öğretmek zor"
-beijing/moscow/kremlin metonimleri + lider→ülke sözlüğü. ekran: gazetteer satırları.
+## r29 — hook: "kremlin dedi = rusya dedi, bunu bilgisayara öğretmek zor"
+1. metonimler kaçıyordu. 2. beijing/moscow/kremlin + lider sözlüğü ekledim.
+3. çünkü basın ülke adıyla konuşmaz. 4. kapsam sıçradı.
+ekran: gazetteer satırları.
 
-## r30 — hook: "2006'dan kalma bir haber bütün radarımı bayatlatıyordu"
-tek eski rss kaydı yüzünden pencere kararı: en yeni olaydan geriye 90 gün, duvar saati değil
-veri saati. ekran: radar taze hali.
+## r30 — hook: "2006'dan kalma tek haber bütün radarımı bayatlatıyordu"
+1. eski bir rss kaydı en üste çıkıyordu. 2. pencereyi veri saatine bağladım: en yeni olaydan
+geriye 90 gün. 3. çünkü duvar saati yalan söyler, veri saati söylemez. 4. radar hep taze.
+ekran: radar.
 
-## r31 — hook: "aynı olayı 3 kaynak 3 yönle yazdı, kim haklı?"
-tekilleştirmede yön çoğunluk oyuyla, eşitlikte en güvenilir makale. ekran: index.json satırı.
+## r31 — hook: "aynı olayı 3 kaynak 3 farklı yönle yazdı, kim haklı?"
+1. tekilleştirmede yön çelişiyordu. 2. çoğunluk oyu + eşitlikte en güvenilir makale.
+3. çünkü kural belirsizse çıktı belirsiz. 4. 1266 ham olay 1128 temiz olaya indi.
+ekran: index satırı.
 
 ## r32 — hook: "grafiğe sordum: dünya kaç kampa bölünmüş? 16 dedi"
-topluluk tespiti kendiliğinden yaptırım bloğunu buldu. ekran: topluluk listesi.
+1. toplulukları elle sayamazdım. 2. modülerlik algoritması koştum.
+3. çünkü blokları veri bulmalı. 4. yaptırım bloğu kendiliğinden çıktı.
+ekran: topluluk listesi.
 
 ## r33 — hook: "bu hafta hiç spike yok ve bunu göstermiyorum"
-boş kutu kuralı: veri yoksa bölüm hiç yok. boş kutu 'bozuk' okunur. ekran: akış radarlı/radarsız.
+1. boş bölüm "site bozuk" okunur. 2. veri yoksa bölüm hiç yok kuralı.
+3. çünkü boş kutu, boş vaattir. 4. arayüz hep dolu görünür.
+ekran: radarlı/radarsız akış.
 
-## r34 — hook: "mail listemden çıkmak için login isteyen siteden nefret ederim, benimki istemiyor"
-tek tık unsubscribe: token'lı rpc, giriş yok. ekran: mailin altındaki link.
+## r34 — hook: "mail listemden çıkmak için login isteyen siteden nefret ederim"
+1. unsubscribe login istiyordu (tasarım hatam). 2. token'lı tek tık rpc yaptım.
+3. çünkü ayrılmak kayıt olmaktan kolay olmalı. 4. tek tık, giriş yok.
+ekran: mail alt linki.
 
-## r35 — hook: "iki app'im aynı veritabanını paylaşıyor ve birbirini göremiyorlar"
-çok-app şema: ortak profiles tabanı + app önekli tablolar + hiçbir drop başkasını ezmez.
+## r35 — hook: "iki uygulamam aynı veritabanında ve birbirini göremiyorlar"
+1. ikinci app aynı kasaya gelecekti, çakışma riski. 2. ortak taban + app önekli tablolar.
+3. çünkü hiçbir drop komşuyu ezmemeli. 4. çok-app şema hazır.
 ekran: şema diyagramı.
 
-## r36 — hook: "api anahtarım github'da herkese açık ve bu bir hata değil"
-anon key tasarım gereği public; asıl kilit satır bazlı güvenlik (rls). ekran: config.js + policy.
+## r36 — hook: "api anahtarım github'da herkese açık ve bu hata değil"
+1. "anahtar sızdı!" sanılır. 2. anon key tasarım gereği public; kilit rls'te.
+3. çünkü güvenlik gizlilikten değil kurallardan gelir. 4. satır bazlı güvenlik her şeyi kapatıyor.
+ekran: config + policy.
 
-## r37 — hook: "csv export'una formül enjeksiyonu koruması koydum, çünkü excel bir saldırı yüzeyi"
-=HYPERLINK ile başlayan hücre tırnaklanır. ekran: kod satırı.
+## r37 — hook: "excel bir saldırı yüzeyidir"
+1. csv export'una =HYPERLINK enjekte edilebilir. 2. formül başlatan hücreleri tırnakladım.
+3. çünkü admin'in excel'i de üründür. 4. formül enjeksiyonu kapandı.
+ekran: kod satırı.
 
 ## r38 — hook: "github repom 'html projesi' görünüyordu, kimliğimi geri aldım"
-üretilen sayfalar linguist-generated işaretlendi; repo şimdi javascript. ekran: dil çubuğu.
+1. üretilen sayfalar dili domine ediyordu. 2. linguist-generated işaretledim.
+3. çünkü repo motoru anlatmalı, çıktıyı değil. 4. repo şimdi javascript.
+ekran: dil çubuğu.
 
-## r39 — hook: "supabase free projeni 7 gün unutursan uyuyor, benimki uyumuyor"
-6 saatlik workflow'a keep-alive ping'i bindirildi. ekran: workflow adımı.
+## r39 — hook: "supabase free projeni 7 gün unutursan uyur, benimki uyumuyor"
+1. free tier hareketsizlikte duraklıyor. 2. 6 saatlik workflow'a ping bindirdim.
+3. çünkü altyapı bakım istemeden yaşamalı. 4. proje hep uyanık.
+ekran: workflow adımı.
 
-## r40 — hook: "cron için sunucu mu kiralanır? github actions bedava"
-zamanlanmış her iş actions'ta: haber 6 saatte, veri haftalık, brifing pazartesi.
+## r40 — hook: "cron için sunucu mu kiralanır? bedava robotum var"
+1. zamanlanmış işler için sunucu gerekirdi. 2. hepsi github actions'ta.
+3. çünkü public repo'da actions bedava. 4. haber 6 saatte, veri haftalık, brifing pazartesi.
 ekran: workflow listesi.
 
 ## r41 — hook: "sayfalar arası geçişim tek satır css ile sinema oldu"
-cross-document view transitions: 0.28s crossfade, mpa spa gibi. ekran: geçiş kaydı.
+1. sayfa geçişleri sert kesmeydi. 2. cross-document view transitions ekledim.
+3. çünkü mpa, spa gibi hissettirebilir. 4. 0.28 saniye crossfade.
+ekran: geçiş kaydı.
 
-## r42 — hook: "açılışta 1.2 megabayt js yüklüyordum, şimdi 30 kilobayt"
-tembel katman yükleme: ilk tıkta o katmanın verisi gelir. ekran: network tab.
+## r42 — hook: "açılışta 1.2 megabayt yüklüyordum, şimdi 30 kilobayt"
+1. tüm katman verisi boot'ta iniyordu. 2. tembel yükleme: ilk tıkta o katman gelir.
+3. çünkü kullanıcının %90'ı tek katman geziyor. 4. 40 kat küçülme.
+ekran: network tab.
 
 ## r43 — hook: "modelimin çıktısını asla eğitim verisine geri koymuyorum"
-feedback döngüsü modeli kendi hatalarıyla besler. eğitim seti sadece motor etiketli kalır.
-ekran: veri akış şeması.
+1. birleştirme sonuçlarını eğitime katmak cazipti. 2. eğitim seti motor etiketli kaldı.
+3. çünkü feedback döngüsü modeli kendi hatasıyla besler. 4. veri hattı temiz.
+ekran: akış şeması.
 
-## r44 — hook: "negatif test setim kirliydi, fark etmesem eşiği yanlış seçecektim"
-"farklı çift" sanılan bazı örnekler aynı haberin iki çiftte görünmesiydi. ekran: eval tablosu.
+## r44 — hook: "negatif test setim kirliydi, az kalsın yanlış eşik seçiyordum"
+1. "farklı çift" sanılan örnekler aynı haberin iki çiftte görünmesiymiş. 2. operasyonel
+negatif seti kurdum: aynı çift, farklı hikaye. 3. çünkü ölçüm yanlışsa karar yanlış.
+4. eşik tablodan seçildi.
+ekran: eval tablosu.
 
 ## r45 — hook: "hesap silme butonumu bilerek herkesin gözüne koydum"
-kvkk silme hakkı: onay + rpc + cascade, mail fallback. ekran: silme akışı.
+1. silme hakkı gömülüydü. 2. profil altına açık buton.
+3. çünkü güven, çıkış kapısını gösterenden yanadır. 4. onay + rpc + cascade.
+ekran: silme akışı.
 
-# CAROUSEL FIKIRLERI (1 slayt = 1 madde)
+# CAROUSEL FIKIRLERI (1 slayt = 1 madde, ayni numarali anlatimla)
 
 ## c1 — "motorumun 5 aptal hatası" (attack drones / kanada masum / washington taraf değil /
-TÜRkiye / ateşkes çöküşü pozitif kodlanıyordu)
-## c2 — "0 liralık mimari, 6 slayt" (statik site / actions cron / supabase free / istemci
-hesaplama / tembel yükleme / cdn)
-## c3 — "bir günde 8 faz" (11 tem sprintinin fazları, faz başına slayt)
+TÜRkiye / ateşkes çöküşü pozitif)
+## c2 — "0 liralık mimari, 6 slayt" (statik / actions / supabase free / istemci hesap /
+tembel yükleme / cdn)
+## c3 — "bir günde 8 faz" (11 tem sprinti, faz başına slayt)
 ## c4 — "kvkk'yı tasarım kısıtı yap" (çerezsiz sayaç / tek tık sil / tek tık unsub / açık metin)
-## c5 — "yanlış birleştirme sanılan 5 doğru" (rafale, lng, drone, pipeline, kazakistan örnekleri)
-## c6 — "ürün = karar zinciri" (devlog'un 1-2-3-4'ü, karar başına slayt)
+## c5 — "yanlış birleştirme sanılan 5 doğru" (rafale, lng, drone, pipeline, kazakistan)
+## c6 — "ürün = karar zinciri" (karar başına slayt)
 
-# TEK POST FIKIRLERI (görsel + kısa metin)
+# TEK POST FIKIRLERI (gorsel + kisa metin)
 
-## tp1 — gece commit'leri ekran görüntüsü: "ben uyurken 4 koşu"
+## tp1 — gece commit'leri: "ben uyurken 4 koşu"
 ## tp2 — eval tablosu: "eşiği his değil tablo seçti"
-## tp3 — dil çubuğu değişimi: "html slopware'den javascript motoruna"
-## tp4 — footer v72: "her deploy görünür, 'bende çalışıyor' yok"
-## tp5 — küre + radar tek kare: "poster küre, ürün radar"
+## tp3 — dil çubuğu: "html slopware'den javascript motoruna"
+## tp4 — footer v72: "'bende çalışıyor' tartışması yok"
+## tp5 — küre + radar: "poster küre, ürün radar"
+
+# KRONOLOJIK KARAR ZINCIRI (hammadde — yeni gelistirmede buraya ANINDA madde eklenir)
+
+## 10 tem — doğuş
+1. arkadaşıma hediye 3d küre yazıyordum, amaç "kim kime silah satıyor"u göstermek.
+2. ilk versiyon slopware hissi verdi: elle veri, 18k satırlık dosya, statik vitrin.
+3. karar: uydurma veri asla. tasarımda gazete çizgisi (desen alınır, görünüm kopyalanmaz).
+
+## 11 tem — "kimse buna para vermez"
+4. karar: içerik motoru (kendi kendine tazelenen veri) + kişiselleştirme (hesap/takip/brifing).
+5. bir günde 8 faz: gerçek dataset pipeline'ı, 13 katman, üyelik, mailler, unsubscribe.
+6. supabase: rls + sıfır maliyet; kişisel akış istemcide.
+
+## 12 tem — performans savaşı + temizlik
+7. 240 forced reflow → 1 (yaz/oku/yaz fazları). 8. küre tembel kuruluma alındı.
+9. 1.4mb ölü kod silindi. 10. 2.8mb bake html → 3kb kabuklar (%90 kesinti).
+
+## 12-13 tem — motor
+11. "api çekmicem, biz yapalım" → deterministik bilgi çıkarım motoru (gazetteer+cameo+goldstein).
+12. kapsam %22.6 → %30.4 (conjunction, pasif çatı, lider→ülke). hassasiyet önce.
+13. yanlış avı: attack drones, bloklanan anlaşma, çöken ateşkes. her düzeltme ayrı commit.
+14. tekilleştirme (1266→1128) + haftalık seriler + pagerank + topluluklar + z-score spike.
+15. motor ekrana: olay radarı (tembel, 30kb gzip), boş kutu asla.
+
+## 13 tem — ml fazı + güven
+16. özetleyici: 4500 başlık → 3265 satır, api'siz.
+17. motor kendi eğitim verisini etiketliyor: 404 thread, 6 saatte büyüyor. model asla üretmez.
+18. minilm ölçüldü (eşik 0.75, gerçek yanlış %0.35), birleştirme prod'da: 145 satır katlandı.
+19. çerezsiz sayaç + gizlilik aynı gün. 20. in-app hesap silme. 21. 9 test pipeline'ın önünde.
