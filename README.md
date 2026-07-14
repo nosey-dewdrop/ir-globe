@@ -1,43 +1,47 @@
 # chiquitita (ir-globe)
 
-A 3D editorial globe of country-to-country relations: 13 layers of real sourced ties, an auto-refreshing news flow, and a deterministic relation-extraction engine with an ML merge pass on top — all served as a static site with zero server compute.
+ülkeler birbirine ne yapıyor — kim kime silah satıyor, kim kimden tahıl alıyor, kim kime yaptırım koyuyor. hepsi dönen bir 3d küre üstünde, gerçek kaynaklı, uydurma tek veri yok.
 
-Live: https://nosey-dewdrop.github.io/ir-globe/ (target domain: chiquitita.noseydewdrop.com, DNS pending)
+canlı: https://nosey-dewdrop.github.io/ir-globe/ (hedef domain: chiquitita.noseydewdrop.com, dns bekliyor)
 
-## What it does
+## neden yaptım
 
-- Draws directed country ties (arms, trade, energy, grain, alliances, sanctions, migration, debt, diplomacy, technology, bases, aid, cables) as arcs on a rotating globe. 13 layers, 3,882 ties, 198 countries — every tie carries a source name, URL, year and license. No fabricated data, ever.
-- Refreshes ~4,500 real news headlines every 6 hours from Google News RSS plus curated feeds (BBC, Al Jazeera, Guardian, DW, France24, UN News, Politico EU, FP), matched per country pair and topic.
-- Runs its own relation-extraction engine over every headline: actor NER (country aliases, demonyms, leader-to-country), CAMEO event coding with Goldstein −10..+10 conflict/cooperation weights, direction and negation handling. 100% deterministic, no API, no network.
-- Folds same-story headlines with a neural encoder (all-MiniLM-L6-v2, local ONNX): threshold picked by measurement, not feel. The model never generates text — it only selects and groups real headlines.
-- Personal layer: accounts, country/topic follows, a personal feed, weekly e-mail briefing and alerts. Follows live in Supabase; the feed is computed client-side against the static JSON, so scale costs nothing.
-- Trust layer: a public methodology page with measured error rates (metodoloji.html) and an auto-baked data provenance page (veri.html). A cookieless first-party visit counter — no IP, no user agent, no cookies stored.
+haberleri takip ederken hep aynı duvara çarpıyordum: "bu iki ülke arasında ne dönüyor" sorusunun cevabı yüzlerce habere dağılmış oluyor, kimse tek yerde toplamıyor. toplayanlar da ya kaynak koymuyor ya da adam kafasından "ilişkiler gergin" diye yazıyor. ben ölçülebilir, kaynağı tıklanabilir, yalan söylemeyen bir şey istedim. o yüzden buraya hiçbir veri "hissederek" girmiyor — ya kaynağı var ya da hiç yok.
 
-## Measured, not claimed
+## ne yapıyor
 
-Numbers below come from the repo's own methodology page and pipeline reports:
+- 13 katman ilişkiyi küre üstünde ok olarak çiziyor: silah, ticaret, enerji, tahıl, ittifak, yaptırım, göç, borç, diplomasi, teknoloji, üsler, yardım, kablo. 3.882 bağ, 198 ülke. her bağın kaynak adı, url'si, yılı ve lisansı var.
+- 6 saatte bir ~4.500 gerçek haber başlığını çekiyor (google news rss + bbc, al jazeera, guardian, dw, france24, un news, politico eu, fp), ülke çiftine ve konuya göre eşliyor.
+- kendi çıkarım motorumu her başlığın üstünde çalıştırıyorum: ülke/lider tanıma, cameo olay kodlaması, goldstein −10..+10 çatışma/işbirliği ağırlığı, yön ve olumsuzluk. %100 deterministik, api yok, internet yok — tamamen benim yazdığım kural motoru.
+- aynı olayı anlatan başlıkları bir sinir ağıyla katlıyorum (all-minilm-l6-v2, lokal onnx). eşik değerini hisle değil ölçerek seçtim. model asla metin üretmiyor, sadece gerçek başlıkları seçip gruplayor.
+- kişisel katman: hesap aç, ülke/konu takip et, kendi akışını gör, haftalık e-posta brifingi al. takipler supabase'de ama akış statik json üstünde tarayıcıda hesaplanıyor, o yüzden ölçeklenmesi bedava.
+- güven katmanı: ölçülmüş hata oranlarını gösteren metodoloji sayfası + otomatik üretilen veri kaynağı sayfası. çerezsiz, ip'siz ziyaretçi sayacı.
 
-- Extraction engine converts ~30% of processed English headlines into confidently coded events; sampled manual check puts coded-event accuracy at ~87% (13/15). Uncoded headlines stay uncoded — the radar can be incomplete, never invented.
-- ML merge pass: on the engine-labeled corpus, positive pairs score median cosine 0.69 vs 0.29 for hard negatives; at threshold 0.75 the measured false-merge rate is 0.35%. First production run folded 140 summary lines and raised multi-source stories from 387 to 442.
-- Training data is self-supervised: the engine's own thread codings accumulate in data/ml/train.jsonl (838 threads and growing every 6h run). No hand labels, no external service, and the merge output never feeds back into the training file.
-- Initial JS payload dropped from ~1.2 MB to ~30-60 KB after the lazy-loading refactor: the client boots with the country registry, the layer index and one layer; everything else loads on first click.
-- 9 node tests (XSS, empty states, stale windows) run first in the 6-hour pipeline; a red test blocks the refresh.
-- Pair pages (iliski.html?a=&b=) render ties, an event radar and a weekly tone SVG; 126 country pairs have at least 3 weeks of trend data.
+## iddia değil, ölçüm
 
-## Stack
+aşağıdaki sayılar repo'nun kendi metodoloji sayfasından ve pipeline raporlarından geliyor:
 
-- Frontend: vanilla JavaScript + globe.gl (CDN), no framework, no build step. Newsreader serif + Inter, editorial white/navy style.
-- Hosting: GitHub Pages, fully static.
-- Pipelines: Node scripts on GitHub Actions — news every 6h (news.yml), official datasets weekly (data.yml: UNHCR, OECD, Wikidata, FAOSTAT, TeleGeography, SIPRI), briefing mail weekly (briefing.yml).
-- ML: @xenova/transformers running all-MiniLM-L6-v2 as local ONNX inside the Action — no inference API, no key. If the encoder is unavailable the classical summary ships and the run still exits 0.
-- Auth + follows + admin: Supabase (RLS-gated, anon key public by design), e-mail via Resend with one-click token unsubscribe.
-- SEO: generated konu/ (layer) and ulke/ (country) pages, sitemap, robots — rebuilt by scripts/build-seo.js after every data change.
+- motor işlenen ingilizce başlıkların ~%30'unu güvenle kodlanmış olaya çeviriyor; elle örneklem kontrolünde kodlama doğruluğu ~%87 (13/15). kodlanamayan başlık kodlanmadan kalıyor — radar eksik olabilir ama asla uydurma olmaz.
+- ml katlama: pozitif çiftler medyan 0.69 kosinüs, zor negatifler 0.29; eşik 0.75'te ölçülen yanlış-katlama oranı %0.35. ilk prod koşusu 140 özet satırını katladı, çok-kaynaklı hikayeleri 387'den 442'ye çıkardı.
+- eğitim verisi kendi kendini besliyor: motorun kodlamaları data/ml/train.jsonl'a birikiyor (838 thread, her 6 saatte artıyor). elle etiket yok, dış servis yok, katlama çıktısı eğitim dosyasına geri beslenmiyor.
+- ilk js yükü lazy-loading refactoründen sonra ~1.2 mb'tan ~30-60 kb'a düştü: istemci sadece ülke kaydı + katman indeksi + tek katmanla açılıyor, gerisi ilk tıklamada geliyor.
+- 6 saatlik pipeline'ın en başında 9 node testi koşuyor (xss, boş durumlar, bayat pencereler); kırmızı test yenilemeyi durduruyor.
+- ilişki sayfaları (iliski.html?a=&b=) bağları, olay radarını ve haftalık ton grafiğini çiziyor; 126 ülke çiftinin en az 3 haftalık trendi var.
 
-## Repo map
+## stack
 
-- `data/layers/` static tie data per layer, `data/news/` fetched headlines, `data/events/` engine output, `data/ml/` training corpus
-- `scripts/` all pipelines (fetch, extract, summarize, merge, SEO, mail), `scripts/lib/extract/` the engine (gazetteer, cameo, relate)
-- `js/` client modules (lazy store, globe, feed, auth, follows, counter)
-- `admin/` editorial panel + schema.sql
+- ön yüz: sade javascript + globe.gl (cdn), framework yok, build adımı yok. newsreader serif + inter, beyaz/lacivert editöryel stil.
+- barındırma: github pages, tamamen statik.
+- pipeline: github actions üstünde node scriptleri — haber 6 saatte (news.yml), resmi veri setleri haftalık (data.yml: unhcr, oecd, wikidata, faostat, telegeography, sipri), brifing maili haftalık (briefing.yml).
+- ml: @xenova/transformers, all-minilm-l6-v2'yi action içinde lokal onnx olarak koşuyor — inference api yok, key yok. encoder yoksa klasik özet gidiyor ve koşu yine 0 ile çıkıyor.
+- hesap + takip + admin: supabase (rls korumalı, anon key bilerek public), e-posta resend ile tek tık token'lı abonelikten çıkma.
+- seo: üretilmiş konu/ (katman) ve ulke/ (ülke) sayfaları, sitemap, robots — her veri değişiminde scripts/build-seo.js yeniden üretiyor.
 
-Architecture details and design rationale: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). Living project doc: PROJECT.md.
+## repo haritası
+
+- `data/layers/` katman başına statik bağ verisi, `data/news/` çekilen başlıklar, `data/events/` motor çıktısı, `data/ml/` eğitim korpusu
+- `scripts/` tüm pipeline'lar (çek, çıkar, özetle, katla, seo, mail), `scripts/lib/extract/` motorun kendisi (gazetteer, cameo, relate)
+- `js/` istemci modülleri (lazy store, küre, akış, auth, takip, sayaç)
+- `admin/` editöryel panel + schema.sql
+
+mimari detayı ve tasarım gerekçesi: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). yaşayan proje dosyası: PROJECT.md.
