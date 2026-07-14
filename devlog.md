@@ -357,3 +357,10 @@ ekran: iki hâlin yan yana kaydı.
 3. çünkü kurumsal kullanıcının sorusu hep çift bazlı; cevabın adresi olmalı. ton çizgisi kütüphanesiz saf SVG.
 4. sonuç: 126 çiftte hazır trend, ülke sayfalarından ↔ ile tek tık.
 ekran: iliski.html?a=iran&b=israel açılışı.
+
+## r51 — hook: "hocalarım 'güzel ama ne işe yarıyor' dedi, cevabım arama kutusu oldu"
+1. sorun: küreyi ilk kez görenler (bilkent hocalarım dahil) ürünün ne sunduğunu çözemiyordu; bir bağa tıklayınca onlarca başlık kavise saçılıyordu, kaç haber var, içinde ne var belli değildi.
+2. bugün küre kartlarına gerçek bir arama motoru yazdım: ekranda ilk 10 makale, sağ üstte "bu konuda N makale bulundu" ve kelimeyle arama kutusu.
+3. çünkü hazır kütüphane taşımak istemedim; kendi motorum türkçe harf katlama (misir→mısır) + yazım hatası toleransı yapıyor — damerau-levenshtein mesafesiyle "yaptirin" yazsan da yaptırım'ı bulur, harf takasını tek hata sayar. 9 node testi 6 saatlik haber pipeline'ının önünde kapı.
+4. sonuç: sayı ürünün derinliğini söylüyor, kutu istediğini buldurtuyor; kırmızı test varsa haber tazelenmesi bile durur.
+ekran: rusya bağına tıkla, "yaptirin" yaz, doğru makalelerin süzülüşü.

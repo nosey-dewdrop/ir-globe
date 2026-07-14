@@ -499,16 +499,52 @@ function currentArticles() {
   if (selected) return countryArticleList(selected);
   return [];
 }
+/* öğretmen geri bildirimi ("ne sunduğu anlaşılmıyor"): ekranda İLK 10 makale +
+   sağda kaç makale bulunduğu + yazım hatasına toleranslı kelime araması (js/ara.js).
+   Yazarken input yeniden yaratılmaz (odak kaçmasın) — sadece sayı + liste tazelenir. */
+const CARD_CAP = 10;
+let araQuery = "";
+function cardsHTML(arts) {
+  return arts.map((a, i) =>
+    `<a class="card" style="--i:${i}" href="${esc(a.url)}" target="_blank" rel="noopener">
+      <span class="card-title">${esc(a.title)}</span>
+      <span class="card-meta">${esc(a.source)}${a.date ? " · " + esc(TRDate.short(a.date)) : ""}</span>
+    </a>`).join("");
+}
+function araHits(all) {
+  return typeof Ara !== "undefined" ? Ara.search(all, araQuery) : all.slice();
+}
+function countLine(all, hits) {
+  const q = araQuery.trim();
+  if (q && !hits.length) return "eşleşme yok — başka kelime dene";
+  const n = q ? hits.length : all.length;
+  const base = q ? `aramanda <b>${n}</b> makale bulundu` : `bu konuda <b>${n}</b> makale bulundu`;
+  return base + (n > CARD_CAP ? ` · ilk ${CARD_CAP} gösteriliyor` : "");
+}
+function updateCards() {
+  const all = currentArticles();
+  const hits = araHits(all);
+  const list = cardsEl.querySelector(".cards-list");
+  const cnt = cardsEl.querySelector(".cards-count");
+  if (!list || !cnt) return;
+  list.innerHTML = cardsHTML(hits.slice(0, CARD_CAP));
+  cnt.innerHTML = countLine(all, hits);
+  layoutCards();
+}
 function renderCards() {
-  const arts = currentArticles();
-  if (!arts.length) { cardsEl.classList.remove("show"); cardsEl.innerHTML = ""; return; }
+  const all = currentArticles();
+  if (!all.length) { cardsEl.classList.remove("show"); cardsEl.innerHTML = ""; return; }
+  const hits = araHits(all);
   cardsEl.innerHTML =
-    `<div class="cards-lbl">${focusTie ? "bu ilişkinin haberleri" : "bu ülkenin haberleri"}</div>` +
-    arts.map((a, i) =>
-      `<a class="card" style="--i:${i}" href="${esc(a.url)}" target="_blank" rel="noopener">
-        <span class="card-title">${esc(a.title)}</span>
-        <span class="card-meta">${esc(a.source)}${a.date ? " · " + esc(TRDate.short(a.date)) : ""}</span>
-      </a>`).join("");
+    `<div class="cards-find">
+      <div class="cards-lbl">${focusTie ? "bu ilişkinin haberleri" : "bu ülkenin haberleri"}</div>
+      <p class="cards-count" aria-live="polite">${countLine(all, hits)}</p>
+      <input class="cards-search" type="search" placeholder="haberlerde ara" aria-label="haberlerde kelimeyle ara" autocomplete="off">
+    </div>
+    <div class="cards-list">${cardsHTML(hits.slice(0, CARD_CAP))}</div>`;
+  const inp = cardsEl.querySelector(".cards-search");
+  inp.value = araQuery;
+  inp.addEventListener("input", () => { araQuery = inp.value; updateCards(); });
   cardsEl.classList.add("show");
   layoutCards();
 }
@@ -626,6 +662,7 @@ function focusOnTie(t) {
   if (t === focusTie) { reset(); return; } // click the same arc again → deselect
   focusTie = t;
   selected = null;
+  araQuery = "";              // yeni konu → eski arama taşınmaz
   if (typeof Ilgi !== "undefined") Ilgi.note({ countries: [t.s, t.r], layers: [t.type], w: 1.5 });
   redraw();
   const midLat = (COORDS[t.s][0] + COORDS[t.r][0]) / 2;
@@ -636,6 +673,7 @@ function focusOnTie(t) {
 function selectCountry(c) {
   focusTie = null;
   selected = c;
+  araQuery = "";
   if (c && typeof Ilgi !== "undefined") Ilgi.note({ countries: [c], layers: [layer], w: 1 });
   redraw();
   if (globe && c && COORDS[c]) { globe.pointOfView({ lat: COORDS[c][0], lng: COORDS[c][1], altitude: 1.8 }, 700); wakeGlobe(1400); }
@@ -644,6 +682,7 @@ function selectCountry(c) {
 function reset() {
   focusTie = null;
   selected = null;
+  araQuery = "";
   redraw();
   renderAll();
 }

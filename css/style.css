@@ -221,6 +221,16 @@ h1 { font-size: 22px; font-weight: 400; letter-spacing: -0.01em; white-space: no
 }
 #cards.show { opacity: 1; }
 .cards-lbl { display: none; }
+
+/* ── makale arama: sağ üstte "bu konuda N makale bulundu" + kelime araması
+   (js/ara.js: yazım/harf hatasına toleranslı). Kutu yok — çizgi altı input. ── */
+.cards-find { position: absolute; top: 12px; right: 40px; width: 235px; text-align: right; pointer-events: auto; z-index: 3; }
+.cards-find .cards-lbl { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+.cards-count { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; margin-bottom: 7px; }
+.cards-count b { color: var(--navy); font-weight: 700; }
+.cards-search { width: 100%; font: 13px/1.4 var(--sans); color: var(--ink); background: transparent; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; padding: 3px 0; text-align: right; appearance: none; -webkit-appearance: none; }
+.cards-search:focus { outline: 0; border-bottom-color: var(--navy); }
+.cards-search::placeholder { color: var(--faint); }
 .card {
   position: absolute;            /* JS places each along the sphere's edge */
   width: 250px;
@@ -365,6 +375,8 @@ footer {
     position: static; inset: auto; opacity: 1;
     pointer-events: auto; padding: 4px 20px 10px;
   }
+  .cards-find { position: static; width: auto; text-align: left; margin-bottom: 12px; }
+  .cards-search { text-align: left; max-width: 320px; display: block; }
   .card {
     position: static !important; width: auto;
     transform: none !important; translate: 0 !important;
