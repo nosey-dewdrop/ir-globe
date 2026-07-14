@@ -423,4 +423,7 @@ footer {
 /* ── sol yay kartları + kavisli hikaye paneli (C2) ── */
 .card.solyay { text-align: right; }
 .curveflow { float: right; }
-@media (min-width: 1100px) { .col.left { width: clamp(300px, 34vw, 430px); } }
+/* wide screens: keep the ülke story panel narrow enough that its right edge never
+   reaches the globe body — Damla: "açıklama kürenin üstüne gelmesin". Extra right
+   padding pulls the text left, off the sphere. */
+@media (min-width: 1100px) { .col.left { width: clamp(300px, 30vw, 400px); padding-right: 48px; } }
