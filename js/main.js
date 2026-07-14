@@ -590,6 +590,15 @@ function layoutCards() {
   const cx = w / 2, cy = h / 2;
   const pad = 46;                         // üst/alt kenara asgari mesafe
   const usable = h - pad * 2;
+  /* the search panel (üstte "bu ülkenin haberleri" + sayı + arama kutusu) sits
+     top-right; no card may float under it. rightTop = the Y below that panel,
+     measured live, so right-arc cards start beneath it. */
+  const find = cardsEl.querySelector(".cards-find");
+  let rightTop = pad;
+  if (find) {
+    const fr = find.getBoundingClientRect(), sr = stage.getBoundingClientRect();
+    rightTop = Math.max(pad, fr.bottom - sr.top + 14);
+  }
   const FS_MAX = 14.5, FS_MIN = 10.5;
   const rowH = (fs) => fs * 2.6 + 13;     // 2 satır başlık + kaynak + nefes → dikey adım
   const cardW = 210;
@@ -607,13 +616,14 @@ function layoutCards() {
   function place(list, side) {
     const m = list.length;
     if (!m) return FS_MAX;
+    const topGuard = side > 0 ? rightTop : pad; // right arc clears the search panel
     const Rbig = (Math.min(w, h) * 0.46 + 30) * zoomK;
     if (m <= 6) {
       const STEP = 22, half = ((m - 1) * STEP) / 2;
       list.forEach((c, i) => {
         const deg = m > 1 ? -half + (i * 2 * half) / (m - 1) : 0;
         const rad = (deg * Math.PI) / 180;
-        const y = Math.max(pad, Math.min(h - pad, cy + Rbig * Math.sin(rad)));
+        const y = Math.max(topGuard, Math.min(h - pad, cy + Rbig * Math.sin(rad)));
         let x = cx + side * Rbig * Math.cos(rad);
         if (side < 0) x = Math.max(storyEdge, x - cardW);
         c.style.left = x.toFixed(1) + "px";
@@ -621,19 +631,21 @@ function layoutCards() {
       });
       return FS_MAX;
     }
-    const colCap = Math.max(1, Math.floor(usable / rowH(FS_MAX)));
+    const topY = topGuard;                                 // right arc starts below the panel
+    const usableSide = h - pad - topY;                     // vertical room on this side
+    const colCap = Math.max(1, Math.floor(usableSide / rowH(FS_MAX)));
     const colGap = cardW + 8;
     const r0 = Math.min(w, h) * 0.40 * zoomK + 10;         // ilk kolonun kavis yarıçapı
     const room = side > 0 ? w - cardW - 14 - (cx + r0) : cx - r0 - storyEdge;
     const maxCols = Math.max(1, Math.floor(room / colGap) + 1);
     const cols = Math.min(maxCols, Math.ceil(m / colCap));
     const cap = Math.ceil(m / cols);
-    const fs = Math.max(FS_MIN, Math.min(FS_MAX, (usable / cap - 13) / 2.6));
+    const fs = Math.max(FS_MIN, Math.min(FS_MAX, (usableSide / cap - 13) / 2.6));
     list.forEach((c, idx) => {
       const col = Math.floor(idx / cap);
       const row = idx % cap;
       const inCol = Math.min(cap, m - col * cap);
-      const y = inCol > 1 ? pad + (row * usable) / (inCol - 1) : cy;
+      const y = inCol > 1 ? topY + (row * usableSide) / (inCol - 1) : (topY + h - pad) / 2;
       const Rk = r0 + col * colGap;
       const t = Math.max(-0.985, Math.min(0.985, (y - cy) / Rk));
       let x = cx + side * Rk * Math.cos(Math.asin(t));

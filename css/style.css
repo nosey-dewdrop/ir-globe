@@ -224,9 +224,9 @@ h1 { font-size: 22px; font-weight: 400; letter-spacing: -0.01em; white-space: no
 
 /* ── makale arama: sağ üstte "bu konuda N makale bulundu" + kelime araması
    (js/ara.js: yazım/harf hatasına toleranslı). Kutu yok — çizgi altı input. ── */
-.cards-find { position: absolute; top: 12px; right: 40px; width: 235px; text-align: right; pointer-events: auto; z-index: 3; }
-.cards-find .cards-lbl { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
-.cards-count { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; margin-bottom: 7px; }
+.cards-find { position: absolute; top: 4px; right: 40px; width: 235px; text-align: right; pointer-events: auto; z-index: 3; }
+.cards-find .cards-lbl { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+.cards-count { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; margin-bottom: 6px; }
 .cards-count b { color: var(--navy); font-weight: 700; }
 /* rounded search pill with a magnifier on the right (Damla: "yuvarlak köşe,
    büyüteç sağda, bu bölgeyi kaplasın"). Opaque fill + soft shadow so it reads as
