@@ -11,9 +11,14 @@ const SRC = {};         // layer -> source meta {name, url, year}
 let supShare = {}, recShare = {};  // silah (SIPRI) global shares
 const loadedLayers = new Set();
 
+const newsLoading = {}; // layer -> Promise, so parallel callers share one fetch
+
+// ties are what the globe draws — fetch them fast (12KB). The per-layer news
+// (up to ~730KB) is NOT needed until the reader opens a country/tie, so it is
+// loaded lazily by ensureNews(); this keeps it off the first-paint path.
 async function ensureLayer(k) {
   if (loadedLayers.has(k)) return;
-  const [lay, news] = await Promise.all([Store.layer(k), Store.news(k)]);
+  const lay = await Store.layer(k);
   if (loadedLayers.has(k)) return; // a parallel call already applied it
   loadedLayers.add(k);
   SRC[k] = lay.source || null;
@@ -24,9 +29,20 @@ async function ensureLayer(k) {
         v: c.v != null ? c.v : null,
         exp: c.exp != null ? c.exp : null, imp: c.imp != null ? c.imp : null });
   });
-  NEWS[k] = news || {};
   tiesRev++;
   applyOverlay(k); // Bera'nın editoryal bindirmesi (varsa) bu katmana da uygulanır
+}
+
+// lazy news loader: fetches data/news/<k>.json once, then refreshes the article
+// panel if it's open. Returns a promise callers can await.
+function ensureNews(k) {
+  if (NEWS[k]) return Promise.resolve(NEWS[k]);
+  if (newsLoading[k]) return newsLoading[k];
+  return (newsLoading[k] = Store.news(k).then((news) => {
+    NEWS[k] = news || {};
+    if (typeof renderCards === "function" && (selected || focusTie)) renderCards();
+    return NEWS[k];
+  }).catch(() => (NEWS[k] = {})));
 }
 
 function countryOfFeature(f) {
@@ -502,7 +518,7 @@ function currentArticles() {
 /* öğretmen geri bildirimi ("ne sunduğu anlaşılmıyor"): ekranda İLK 10 makale +
    sağda kaç makale bulunduğu + yazım hatasına toleranslı kelime araması (js/ara.js).
    Yazarken input yeniden yaratılmaz (odak kaçmasın) — sadece sayı + liste tazelenir. */
-const CARD_CAP = 10;
+const CARD_CAP = 6;
 let araQuery = "";
 function cardsHTML(arts) {
   return arts.map((a, i) =>
@@ -539,7 +555,10 @@ function renderCards() {
     `<div class="cards-find">
       <div class="cards-lbl">${focusTie ? "bu ilişkinin haberleri" : "bu ülkenin haberleri"}</div>
       <p class="cards-count" aria-live="polite">${countLine(all, hits)}</p>
-      <input class="cards-search" type="search" placeholder="haberlerde ara" aria-label="haberlerde kelimeyle ara" autocomplete="off">
+      <div class="cards-search-wrap">
+        <input class="cards-search" type="search" placeholder="haberlerde ara" aria-label="haberlerde kelimeyle ara" autocomplete="off">
+        <svg class="cards-search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><line x1="15.5" y1="15.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
     </div>
     <div class="cards-list">${cardsHTML(hits.slice(0, CARD_CAP))}</div>`;
   const inp = cardsEl.querySelector(".cards-search");
@@ -704,6 +723,9 @@ function redraw() {
 }
 function renderAll() {
   document.querySelector(".stage").classList.toggle("sel", anySelection());
+  // reader just selected something -> pull this layer's news now (lazy). When it
+  // arrives ensureNews re-renders the cards; until then the panel shows the ties.
+  if ((selected || focusTie) && !NEWS[layer]) ensureNews(layer);
   renderStory(); renderDetail(); renderCards(); runCountUps(); curveStory();
 }
 

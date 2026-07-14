@@ -228,9 +228,14 @@ h1 { font-size: 22px; font-weight: 400; letter-spacing: -0.01em; white-space: no
 .cards-find .cards-lbl { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
 .cards-count { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; margin-bottom: 7px; }
 .cards-count b { color: var(--navy); font-weight: 700; }
-.cards-search { width: 100%; font: 13px/1.4 var(--sans); color: var(--ink); background: transparent; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; padding: 3px 0; text-align: right; appearance: none; -webkit-appearance: none; }
-.cards-search:focus { outline: 0; border-bottom-color: var(--navy); }
+/* rounded search pill with a magnifier on the right (Damla: "yuvarlak, büyüteç sağda") */
+.cards-search-wrap { position: relative; width: 100%; }
+.cards-search { width: 100%; font: 13px/1.4 var(--sans); color: var(--ink); background: var(--paper, #fff); border: 1px solid var(--rule); border-radius: 999px; padding: 6px 34px 6px 14px; text-align: right; appearance: none; -webkit-appearance: none; transition: border-color .15s ease; }
+.cards-search:focus { outline: 0; border-color: var(--navy); }
 .cards-search::placeholder { color: var(--faint); }
+.cards-search::-webkit-search-cancel-button { -webkit-appearance: none; }
+.cards-search-icon { position: absolute; top: 50%; right: 11px; transform: translateY(-50%); width: 15px; height: 15px; color: var(--muted); pointer-events: none; }
+.cards-search:focus + .cards-search-icon { color: var(--navy); }
 .card {
   position: absolute;            /* JS places each along the sphere's edge */
   width: 250px;
@@ -376,7 +381,8 @@ footer {
     pointer-events: auto; padding: 4px 20px 10px;
   }
   .cards-find { position: static; width: auto; text-align: left; margin-bottom: 12px; }
-  .cards-search { text-align: left; max-width: 320px; display: block; }
+  .cards-search-wrap { max-width: 320px; }
+  .cards-search { text-align: left; display: block; }
   .card {
     position: static !important; width: auto;
     transform: none !important; translate: 0 !important;
