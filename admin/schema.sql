@@ -1,4 +1,4 @@
--- ir-globe schema for the SHARED damlahelloworld Supabase project.
+-- ir-globe schema for the SHARED nosey-dewdrop Supabase project.
 -- Paste into Supabase SQL Editor and Run. Safe to re-run (if not exists / or replace).
 -- Comments are ASCII only on purpose: fancy quotes / box chars broke the paste before.
 --
@@ -8,7 +8,7 @@
 --   Every ir-globe table is irglobe_ prefixed so future generic tables never collide.
 --   No drop table touches another app; profiles creation is additive.
 
--- shared base (all damlahelloworld apps share these)
+-- shared base (all nosey-dewdrop apps share these)
 create table if not exists profiles (
   id uuid primary key references auth.users(id) on delete cascade,
   email text,

@@ -132,7 +132,7 @@
       c.rpc("delete_me").then(function () {
         c.auth.signOut().finally(function () { location.href = "index.html?silindi=1"; });
       }).catch(function () {
-        alert("Silme sırasında bir sorun oldu. hello@damlahelloworld.com'a yazarsan hemen sileriz.");
+        alert("Silme sırasında bir sorun oldu. hello@noseydewdrop.com'a yazarsan hemen sileriz.");
         e.target.textContent = "hesabımı ve tüm verimi kalıcı olarak sil";
       });
     });

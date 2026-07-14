@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.join(__dirname, "..", "..");
-const SITE = "https://damlahelloworld.github.io/ir-globe";
+const SITE = "https://nosey-dewdrop.github.io/ir-globe";
 const readJSON = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), "utf8"));
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -104,7 +104,7 @@ function renderEmail({ heading, intro, items, labels, unsubToken, what }) {
       <a href="${SITE}/app.html#benim" style="color:#2b5cad">akışına git</a> ·
       <a href="${esc(unsub)}" style="color:#6b7280">bu e-postayı kapat</a>
     </p>
-    <p style="font-size:11px;color:#aeb4be;margin:12px 0 0">gerçek, kaynaklı veri · bir damlahelloworld yayını</p>
+    <p style="font-size:11px;color:#aeb4be;margin:12px 0 0">gerçek, kaynaklı veri · bir nosey-dewdrop yayını</p>
   </div></body></html>`;
 }
 

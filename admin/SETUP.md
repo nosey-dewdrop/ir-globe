@@ -1,6 +1,6 @@
 # yönetim panosu — kurulum (5 dakika, tek seferlik)
 
-Gerçek backend Supabase — **ORTAK damlahelloworld projesi** (ir-globe'a ayrı proje AÇMA;
+Gerçek backend Supabase — **ORTAK nosey-dewdrop projesi** (ir-globe'a ayrı proje AÇMA;
 ileride tüm auth'lı app'ler aynı kasayı paylaşacak). Bağlamak için:
 
 1. **Proje HAZIR:** ortak proje `https://xjtmqncfhuidctxgthhv.supabase.co`. Yeni proje açma.

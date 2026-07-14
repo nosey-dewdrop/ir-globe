@@ -1,4 +1,4 @@
-/* Supabase bağlantısı — ORTAK damlahelloworld projesi (13 Tem, Damla'nın kararı:
+/* Supabase bağlantısı — ORTAK nosey-dewdrop projesi (13 Tem, Damla'nın kararı:
    ir-globe'a ayrı proje AÇMA, auth-lı tüm app'ler tek ortak kasayı kullanır).
    Bunlar gizli değildir (anon key public'tir); asıl koruma RLS + auth. */
 window.SUPABASE_URL = "https://xjtmqncfhuidctxgthhv.supabase.co";

@@ -2,7 +2,7 @@
 
 Bu, dünyanın ilişki ağını gösteren gerçek bir web sitesi: kendini haftalık güncelleyen veri, 6 saatte bir tazelenen haberler, kişisel akış kuran üyelik ve haftalık kişisel e-posta brifingi. Sen **kurucu & editörsün** — isim, konu düzeni ve editoryal çizgi senin.
 
-Canlı: https://damlahelloworld.github.io/ir-globe/ · Kod: github.com/damlahelloworld/ir-globe
+Canlı: https://nosey-dewdrop.github.io/ir-globe/ · Kod: github.com/nosey-dewdrop/ir-globe
 
 ## Sitenin yapısı
 - `index.html` — 3 partlı ana sayfa: en taze manşetler (üstte "son güncelleme" damgası) → dönen küre → "kendi akışını kur" çağrısı (altta sonraki veri güncellemesine gün sayacı).
@@ -35,4 +35,4 @@ Statik veri setlerini panelden DEĞİŞTİRMEZSİN (onlar haftalık pipeline'dan
 İsim ("kim kime ne satıyor?" çalışma adı), katman etiketleri ve gruplama senin kararın. Katman etiketleri `data/layers/index.json`'da.
 
 ## Kendine taşımak istersen
-Repoyu fork'la, kendi alan adına bağla. Alt köşedeki "damlahelloworld" imzası kalır — yapımcı damlahelloworld.
+Repoyu fork'la, kendi alan adına bağla. Alt köşedeki "nosey-dewdrop" imzası kalır — yapımcı nosey-dewdrop.

@@ -1,8 +1,8 @@
 # ir-globe — PROJECT.md (living doc)
 
-Working name: "kim kime ne satıyor?" (real name = Bera's call). Live: https://damlahelloworld.github.io/ir-globe/
+Working name: "kim kime ne satıyor?" (real name = Bera's call). Live: https://nosey-dewdrop.github.io/ir-globe/
 A 3D editorial globe of country-to-country relations (12 layers, all real sourced data) with an
-auto-refreshing news flow. Built by damlahelloworld for Bera (founder & editor). Future sessions:
+auto-refreshing news flow. Built by nosey-dewdrop for Bera (founder & editor). Future sessions:
 READ THIS FILE INSTEAD OF THE CODE — it is kept accurate on purpose.
 
 ## Product direction (decided 2026-07-11 with Damla)
@@ -159,11 +159,11 @@ display names and slugs come ONLY from the registry (fixes the old "TÜRkiye" ti
 2. GitHub repo → Settings → Secrets and variables → Actions → add:
    `SUPABASE_URL`, `SUPABASE_ANON` (keep-alive), `SUPABASE_SERVICE` (service_role key,
    Project Settings → API), `RESEND_KEY` (resend.com account), `BRIEFING_FROM`
-   (e.g. `kim kime ne satıyor? <bulten@damlahelloworld.com>` — requires verifying the
+   (e.g. `kim kime ne satıyor? <bulten@noseydewdrop.com>` — requires verifying the
    domain in Resend; without it Resend only delivers to the account owner's address).
 3. UN Comtrade: register free at comtradeplus.un.org → `COMTRADE_KEY` secret → ping
    Claude to write `scripts/sources/enerji.js`.
-4. Vercel DNS → add CNAME record: name `chiquitita`, value `damlahelloworld.github.io`.
+4. Vercel DNS → add CNAME record: name `chiquitita`, value `nosey-dewdrop.github.io`.
    Tell Claude when added; Pages binding + canonical migration happens AFTER (never before —
    github.io 301s immediately and the site would drop on dead DNS).
 
@@ -182,7 +182,7 @@ reports, Bera revenue split (Damla's call).
   live filter, C1 hero swap via localStorage, PAIR PAGE (iliski.html: ties + radar + weekly tone
   SVG + merged headlines; entry via ↔ links on ulke pages). Analysis: PM/customer/VC report +
   league verdict (reports/2026-07-13-ir-globe-pm-vc-analizi.md). NAME DECIDED:
-  chiquitita.damlahelloworld.com (Damla adds Vercel CNAME → then Pages binding + canonical flip;
+  chiquitita.noseydewdrop.com (Damla adds Vercel CNAME → then Pages binding + canonical flip;
   do NOT bind before DNS). Content system: devlog.md (50 reels + carousels, instagram build in
   public) + linkedin.md (15 essays 300-500 words). Paywall rule removed globally 13 Tem; B2B plan
   lives at ~/.claude/plans/ir-globe-b2b-plani.md.

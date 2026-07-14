@@ -27,8 +27,8 @@ jobs:
         run: node scripts/build-seo.js
       - name: commit if changed
         run: |
-          git config user.name "damlahelloworld-bot"
-          git config user.email "noreply@damlahelloworld.com"
+          git config user.name "nosey-dewdrop-bot"
+          git config user.email "noreply@noseydewdrop.com"
           git add data konu ulke sitemap.xml robots.txt veri.html
           if ! git diff --cached --quiet; then
             git commit -m "weekly layer data refresh"
