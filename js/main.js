@@ -135,7 +135,9 @@ function initGlobe() {
   .backgroundColor("#ffffff")
   .globeImageUrl(null)
   .showGraticules(false)
-  .showAtmosphere(false)
+  .showAtmosphere(true)          // soft halo gives the sphere air + depth
+  .atmosphereColor("#9fb2d4")    // muted editorial navy-grey, not a neon glow
+  .atmosphereAltitude(0.14)
   .polygonCapColor((f) => polyColor(f))
   .polygonSideColor(() => "#00000000")
   .polygonStrokeColor(() => "#cfd4db")
@@ -169,11 +171,11 @@ if (globe.renderer && globe.renderer())
 /* ocean = grey sphere with real shading so it reads as a 3D globe, not a flat disc.
    lowering emissiveIntensity lets the directional light fall off toward the edge = depth. */
 const mat = globe.globeMaterial();
-mat.color.set("#dce0e6");
-mat.emissive.set("#dce0e6");
-mat.emissiveIntensity = 0.55;
-mat.shininess = 6;
-mat.specular && mat.specular.set("#f2f4f7");
+mat.color.set("#dde3ec");
+mat.emissive.set("#eef1f6");        // brighter core, so light falls off toward the rim = roundness
+mat.emissiveIntensity = 0.42;
+mat.shininess = 14;                 // a touch more sheen -> a gentle highlight on the ocean
+mat.specular && mat.specular.set("#ffffff");
 
 fetch("data/countries.geojson?v=6")
   .then((r) => r.json())
@@ -233,6 +235,16 @@ globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0);
   el.addEventListener("pointerdown", () => wakeGlobe(), { passive: true });
   el.addEventListener("wheel", () => wakeGlobe(), { passive: true });
   el.addEventListener("mouseenter", () => wakeGlobe());
+
+  /* click the empty space around the globe -> drop the selection (Damla: "boş yere
+     tıklayınca işaretleme boşa düşsün"). Clicks on a card, the search panel, the
+     story panel, or the globe canvas itself are left to their own handlers. */
+  const stage = document.querySelector(".stage");
+  if (stage) stage.addEventListener("click", (e) => {
+    if (gesturing) return;
+    if (e.target.closest(".card, .cards-find, .col, canvas")) return;
+    if (anySelection()) reset();
+  });
 })();
 
   sizeGlobe();
