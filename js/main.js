@@ -307,11 +307,15 @@ function arcColor(t) {
   if (t === hovered) return ["#171b22", "#171b22"];    // hover → near black
   return ["#49515f", "#49515f"];                       // default: dark grey, the darkest resting layer
 }
+/* stroke doubles as the click hit-area in globe.gl (there is no separate hitbox),
+   so the resting line is thicker than it looks pretty — the arcs are easier to
+   grab. Hover fattens it more for clear feedback. Damla: tıklamak beceri
+   gerektirmesin. */
 function arcStroke(t) {
-  if (isActiveTie(t)) return 0.95;
-  if (anySelection()) return 0.07;
-  if (t === hovered) return 0.7;
-  return 0.38;
+  if (isActiveTie(t)) return 1.1;
+  if (anySelection()) return 0.09;
+  if (t === hovered) return 1.0;
+  return 0.6;
 }
 
 function esc(s) {
@@ -588,93 +592,50 @@ function layoutCards() {
 
   const w = stage.clientWidth, h = stage.clientHeight;
   const cx = w / 2, cy = h / 2;
-  const pad = 46;                         // üst/alt kenara asgari mesafe
-  const usable = h - pad * 2;
-  /* the search panel (üstte "bu ülkenin haberleri" + sayı + arama kutusu) sits
-     top-right; no card may float under it. rightTop = the Y below that panel,
-     measured live, so right-arc cards start beneath it. */
+  const pad = 46;
+  const cardW = 210;
+  const FS_MAX = 14.5, FS_MIN = 11;
+  const story = document.querySelector(".col.left");
+  const storyEdge = story ? story.offsetWidth + 8 : 320;
+
+  /* RIGHT + LEFT arc, ordered (not scattered), each hugging the globe's edge.
+     Right arc starts BELOW the search panel. Cards split evenly: first half right
+     (reading order top->bottom), rest left. Damla: "sağ ve sol yay, sıralı". */
+  const sr = stage.getBoundingClientRect();
   const find = cardsEl.querySelector(".cards-find");
   let rightTop = pad;
-  if (find) {
-    const fr = find.getBoundingClientRect(), sr = stage.getBoundingClientRect();
-    rightTop = Math.max(pad, fr.bottom - sr.top + 14);
-  }
-  const FS_MAX = 14.5, FS_MIN = 10.5;
-  const rowH = (fs) => fs * 2.6 + 13;     // 2 satır başlık + kaynak + nefes → dikey adım
-  const cardW = 210;
-  const story = document.querySelector(".col.left");
-  const storyEdge = story ? story.offsetWidth + 8 : 320;   // sol kartların sol sınırı
-  const Redge = Math.min(w, h) * 0.40 * zoomK;             // küre kenarı (yaklaşık, zoom'la ölçekli)
-  const leftFits = cx - Redge - storyEdge >= cardW - 30;   // sol yaya kolon sığıyor mu
+  if (find) rightTop = Math.max(pad, find.getBoundingClientRect().bottom - sr.top + 12);
 
-  /* iki yayın paylaşımı: sol sığıyorsa ve kart ≥4 ise üçte biri sola */
-  const leftN = leftFits && n >= 4 ? Math.floor(n / 3) : 0;
-  const right = cards.slice(0, n - leftN), left = cards.slice(n - leftN);
-  cards.forEach((c, i) => c.classList.toggle("solyay", i >= n - leftN));
+  const leftFits = cx - Math.min(w, h) * 0.40 * zoomK - storyEdge >= cardW - 30;
+  const rightN = leftFits ? Math.ceil(n / 2) : n;   // right takes the (larger) first half
+  const right = cards.slice(0, rightN), left = cards.slice(rightN);
+  cards.forEach((c, i) => c.classList.toggle("solyay", i >= rightN));
 
-  /* bir yayı döşe: side=+1 sağ, -1 sol. Az kartta orantılı yay, çokta kolon-fan. */
+  /* place one ordered arc down the globe's edge. side=+1 right, -1 left. Cards run
+     top->bottom evenly; x follows the sphere curve so the column is a gentle bow. */
   function place(list, side) {
     const m = list.length;
-    if (!m) return FS_MAX;
-    const topGuard = side > 0 ? rightTop : pad; // right arc clears the search panel
-    const Rbig = (Math.min(w, h) * 0.46 + 30) * zoomK;
-    if (m <= 6) {
-      const STEP = 22, half = ((m - 1) * STEP) / 2;
-      list.forEach((c, i) => {
-        const deg = m > 1 ? -half + (i * 2 * half) / (m - 1) : 0;
-        const rad = (deg * Math.PI) / 180;
-        const y = Math.max(topGuard, Math.min(h - pad, cy + Rbig * Math.sin(rad)));
-        let x = cx + side * Rbig * Math.cos(rad);
-        if (side < 0) x = Math.max(storyEdge, x - cardW);
-        c.style.left = x.toFixed(1) + "px";
-        c.style.top = y.toFixed(1) + "px";
-      });
-      return FS_MAX;
-    }
-    const topY = topGuard;                                 // right arc starts below the panel
-    const usableSide = h - pad - topY;                     // vertical room on this side
-    const colCap = Math.max(1, Math.floor(usableSide / rowH(FS_MAX)));
-    const colGap = cardW + 8;
-    const r0 = Math.min(w, h) * 0.40 * zoomK + 10;         // ilk kolonun kavis yarıçapı
-    const room = side > 0 ? w - cardW - 14 - (cx + r0) : cx - r0 - storyEdge;
-    const maxCols = Math.max(1, Math.floor(room / colGap) + 1);
-    const cols = Math.min(maxCols, Math.ceil(m / colCap));
-    const cap = Math.ceil(m / cols);
-    const fs = Math.max(FS_MIN, Math.min(FS_MAX, (usableSide / cap - 13) / 2.6));
-    list.forEach((c, idx) => {
-      const col = Math.floor(idx / cap);
-      const row = idx % cap;
-      const inCol = Math.min(cap, m - col * cap);
-      const y = inCol > 1 ? topY + (row * usableSide) / (inCol - 1) : (topY + h - pad) / 2;
-      const Rk = r0 + col * colGap;
-      const t = Math.max(-0.985, Math.min(0.985, (y - cy) / Rk));
-      let x = cx + side * Rk * Math.cos(Math.asin(t));
+    if (!m) return;
+    const topY = side > 0 ? rightTop : pad;
+    const botY = h - pad;
+    const R = Math.min(w, h) * (0.44 + m * 0.012) * zoomK; // curve radius, softer w/ few cards
+    list.forEach((c, i) => {
+      const y = m > 1 ? topY + (i * (botY - topY)) / (m - 1) : (topY + botY) / 2;
+      const t = Math.max(-0.96, Math.min(0.96, (y - cy) / R));
+      let x = cx + side * R * Math.cos(Math.asin(t));
       if (side < 0) x = Math.max(storyEdge, x - cardW);
+      else x = Math.min(x, w - cardW - 16);
       c.style.left = x.toFixed(1) + "px";
       c.style.top = y.toFixed(1) + "px";
     });
-    return fs;
   }
+  place(right, 1);
+  place(left, -1);
 
-  const fsR = place(right, 1), fsL = place(left, -1);
-  const fs = Math.min(fsR, fsL);
+  const span = right.length > 1 ? (h - pad - rightTop) / (right.length - 1) : 80;
+  const fs = Math.max(FS_MIN, Math.min(FS_MAX, (span - 16) / 2.6));
   cardsEl.style.setProperty("--card-fs", fs.toFixed(1) + "px");
   cardsEl.classList.toggle("dense", fs < FS_MAX - 0.1);
-
-  /* final collision pass: no card may overlap the search panel, whichever arc it
-     came from. Measure the panel box (stage-relative) and push any card whose box
-     intersects it straight down to just below the panel. Runs after placement so
-     it catches left- AND right-arc cards alike (top-guard alone missed the left). */
-  if (find) {
-    const sr = stage.getBoundingClientRect(), fr = find.getBoundingClientRect();
-    const pL = fr.left - sr.left, pR = fr.right - sr.left, pB = fr.bottom - sr.top + 12;
-    const chW = cardW * (fs / FS_MAX);           // card scales with font size
-    cards.forEach((c) => {
-      const x = parseFloat(c.style.left) || 0, y = parseFloat(c.style.top) || 0;
-      const overlapsX = x < pR && x + chW > pL;  // card box crosses the panel's x-band
-      if (overlapsX && y < pB) c.style.top = pB.toFixed(1) + "px";
-    });
-  }
 }
 
 /* hikaye panelini kürenin SOL kavisine gerçekten sardır: .writing içine görünmez
