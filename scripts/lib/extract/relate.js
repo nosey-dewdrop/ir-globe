@@ -36,6 +36,13 @@ function norm(text) {
 const NEG = /\b(not|never|no|n't|without|deny|denies|denied|dismiss(es|ed)?|rules? out|ruled out|refus\w*|reject\w*|halt\w*|scrap\w*|cancel\w*|call(s|ed)? off|fail(s|ed)? to|unlikely to)\b/;
 const CONJ_GAP = /^\s*(and|&)?\s*$/; // what may sit between two actors of one group (commas already normalized to spaces)
 const MAX_TIES = 9;
+// speculative / hypothetical framing — the tie is not asserted, just floated
+// ("may put Kazakhstan at the center of a deal"). Down-weighted, not dropped.
+const SPEC = /\b(may|might|could|would|expected to|set to|plan(s|ned)? to|weigh(s|ing)?|mull(s|ing)?|consider(s|ing)?|eyes?|seeks? to|appears? to|reportedly|rumou?red)\b/;
+// max words allowed between the two actors of a tie; farther apart = more likely
+// they live in unrelated clauses ("Iran's stockpile … Kazakhstan at the center").
+const MAX_GAP_WORDS = 8;
+const wc = (s) => (s.trim() ? s.trim().split(/\s+/).length : 0);
 
 function extractAll(text) {
   const actors = detect(text);
@@ -110,17 +117,59 @@ function extractAll(text) {
       const t = subj; subj = targ; targ = t;
       clearDir = true;
     }
+    // buyer/importer framing: "India clears/approves/signs a deal FOR|FROM US jets"
+    // — the subject is the BUYER, the counterpart named after "for/from" is the
+    // supplier, so the trade flows target→subject. Flip so the seller is source.
+    else if (/\b(buy(s|ing)?|purchas\w+|import(s|ed|ing)?|clear(s|ed)?|approv\w+|order(s|ed)?|acquir\w+)\b/.test(hay.slice(0, targ.start)) &&
+             /\b(for|from)\s*$/.test(hay.slice(0, targ.start))) {
+      const t = subj; subj = targ; targ = t;
+      clearDir = true;
+    }
   }
 
-  let confidence = 0.5 + 0.3;
-  if (clearDir) confidence += 0.1;
-  if (ev.root.length === 3) confidence += 0.1;
-  confidence = Number(Math.min(1, confidence).toFixed(2));
+  // honest confidence: a deterministic regex match is never "certain" (max 0.95).
+  //   base 0.45 (event coded + two actors) then evidence adjusts:
+  //   +0.20 direction is clear (actors bracket the verb / passive by-agent)
+  //   +0.10 exactly two actors in the whole headline (no ambiguous pairing)
+  //   −0.15 speculative framing ("may/could/plans to")
+  //   −0.15 the two actors sit more than MAX_GAP_WORDS apart (unrelated clauses)
+  let confidence = 0.45;
+  if (clearDir) confidence += 0.2;
+  if (actors.length === 2) confidence += 0.1;
+  else confidence -= 0.05 * (actors.length - 2); // more actors -> more pairing doubt
+  if (SPEC.test(hay)) confidence -= 0.15;
+
+  // distance + clause guard: look at the text BETWEEN the subject and target.
+  //   − far apart  -> likely unrelated clauses
+  //   − a clause boundary sits between them ("… deal AS Iran war …",
+  //     "Russia Sanctions Bill targets China") -> the second actor belongs to a
+  //     different clause / is a compound-noun modifier, not a real counterpart.
+  const CLAUSE = /\b(as|after|while|amid|amidst|despite|over|during|when|following|ahead of|before)\b/;
+  if (subj.end != null && targ.start != null) {
+    const lo = Math.min(subj.end, targ.start), hi = Math.max(subj.end, targ.start);
+    const gapText = hay.slice(lo, hi);
+    if (wc(gapText) > MAX_GAP_WORDS) confidence -= 0.15;
+    if (CLAUSE.test(gapText)) confidence -= 0.25; // cross-clause pairing is usually noise
+  }
+  // compound-noun subject: actor immediately followed by a noun it modifies
+  // ("Russia Oil …", "US Navy …", "China's exports …") is not the acting subject.
+  if (subj.list.length === 1 && subj.list[0].at != null) {
+    const s0 = subj.list[0];
+    const tail = hay.slice(s0.at + s0.matched.length, s0.at + s0.matched.length + 22);
+    if (/^\s*('?s\s+\w|(oil|gas|navy|army|military|bill|law|sanctions?|tariffs?|deal|policy|exports?|imports?|troops?)\b)/.test(tail)) {
+      confidence -= 0.2;
+    }
+  }
+  confidence = Number(Math.max(0.1, Math.min(0.95, confidence)).toFixed(2));
 
   const out = [];
+  const seenEdge = new Set(); // one headline -> at most one s->r edge (kills dupes)
   for (const s of subj.list) {
     for (const r of targ.list) {
       if (s.key === r.key) continue;
+      const ek = s.key + ">" + r.key;
+      if (seenEdge.has(ek)) continue;
+      seenEdge.add(ek);
       out.push({
         s: s.key, r: r.key,
         event: ev.label, root: ev.root, goldstein: ev.goldstein,

@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.join(__dirname, "..", "..");
-const SITE = "https://nosey-dewdrop.github.io/ir-globe";
+const SITE = "https://ir-globe.noseydewdrop.com";
 const readJSON = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), "utf8"));
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 

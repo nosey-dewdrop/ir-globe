@@ -17,7 +17,11 @@ const { extractAll } = require("./lib/extract/relate");
 const ROOT = path.join(__dirname, "..");
 const NEWS = path.join(ROOT, "data/news");
 const OUT = path.join(ROOT, "data/events");
-const MIN_CONF = 0.8;
+// keep ties the engine is reasonably sure of. Lowered from 0.8 when the
+// confidence formula was made honest (regex matches now cap at 0.95, a clean
+// two-actor directed tie lands ~0.75, a noisy/speculative one ~0.4). 0.55 keeps
+// the solid ties and drops the mention-noise and reversed-direction guesses.
+const MIN_CONF = 0.55;
 const reportOnly = process.argv.includes("--report");
 
 function headlines() {
@@ -42,8 +46,11 @@ const byLayer = {}; // layer -> [event]
 
 for (const row of rows) {
   const t = row.title.trim();
-  if (seenTitle.has(t)) continue; // dedup identical headlines across pairs
-  seenTitle.add(t);
+  // dedup across pairs/feeds: normalize case + punctuation so the same headline
+  // arriving via two RSS sources is counted once, not twice.
+  const tKey = t.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  if (seenTitle.has(tKey)) continue;
+  seenTitle.add(tKey);
   total++;
 
   const evs = extractAll(t);

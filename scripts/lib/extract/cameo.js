@@ -71,8 +71,16 @@ const RULES = [
   [/\b(alliance|allies|coalition|bloc|join(s|ed)? (nato|the))\b/, "056", 6.0, "ittifak"],
   [/\b(aid|assistance|humanitarian|relief|donat(e|es|ed|ion)?)\b/, "070", 7.0, "yardım"],
   [/\b(loan(s)?|bailout|credit line|financ(e|es|ing)|bond(s)?|debt relief)\b/, "071", 6.5, "kredi / finansman"],
-  [/\b(invest(s|ed|ment)?|fund(s|ing)?|billion|\$\d|pipeline|infrastructure)\b/, "071", 6.4, "yatırım"],
-  [/\b(export(s|ed)?|import(s|ed)?|trade deal|supply|shipment|grain|wheat|energy deal|gas deal|oil)\b/, "061", 5.0, "ticaret / tedarik"],
+  // bare "billion"/"$" alone are NOT an investment event — a sanctions or aid
+  // headline can name a sum too. Require an investment verb/noun near the money,
+  // and never fire if a coercion word already colours the sentence.
+  [/\b(invest(s|ed|ment)?|fund(s|ing)?|pipeline|infrastructure)\b/, "071", 6.4, "yatırım"],
+  [/(?<!\b(sanction|embargo|ban|tariff|levy|penalt|fine)\w*[^.]{0,30})\$?\d[\d.,]*\s*(billion|trillion|bn)\b[^.]{0,30}\b(invest|deal|fund|stake|pledge|project)/, "071", 6.4, "yatırım"],
+  // bare "oil"/"gas" is a topic, not a trade event ("Russia Oil Sanctions Bill").
+  // require an actual trade action next to the commodity.
+  [/\b(export(s|ed)?|import(s|ed)?|trade deal|supply|shipment|grain|wheat)\b/, "061", 5.0, "ticaret / tedarik"],
+  [/\b(oil|gas|energy|crude|lng)\s+(deal|trade|export|import|supply|shipment|sales?|purchase|contract)\b/, "061", 5.0, "ticaret / tedarik"],
+  [/\b(buy|buys|import|imports|purchas\w+)\b[^.]{0,20}\b(oil|gas|crude|lng)\b/, "061", 5.0, "ticaret / tedarik"],
   [/\b(cooperat(e|ion|ive)|collaborat|joint (venture|exercise|project)|strengthen(s|ed)? ties|deepen(s|ed)? ties)\b/, "050", 5.0, "işbirliği"],
   // a COLLAPSING ceasefire is conflict resumption, not normalization — tested
   // before the positive ceasefire rule so "truce collapses / ceasefire is over"

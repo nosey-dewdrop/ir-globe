@@ -1,6 +1,6 @@
 # ir-globe — PROJECT.md (living doc)
 
-Working name: "kim kime ne satıyor?" (real name = Bera's call). Live: https://nosey-dewdrop.github.io/ir-globe/
+Working name: "kim kime ne satıyor?" (real name = Bera's call). Live: https://ir-globe.noseydewdrop.com (dev: nosey-dewdrop.github.io/ir-globe/)
 A 3D editorial globe of country-to-country relations (12 layers, all real sourced data) with an
 auto-refreshing news flow. Built by nosey-dewdrop for Bera (founder & editor). Future sessions:
 READ THIS FILE INSTEAD OF THE CODE — it is kept accurate on purpose.

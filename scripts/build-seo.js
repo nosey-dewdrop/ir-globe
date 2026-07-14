@@ -13,7 +13,7 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.join(__dirname, "..");
-const SITE = "https://nosey-dewdrop.github.io/ir-globe";
+const SITE = "https://ir-globe.noseydewdrop.com";
 const readJSON = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), "utf8"));
 
 /* ── load the live data (single source of truth) — only for meta + LD ── */
