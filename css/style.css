@@ -191,7 +191,7 @@ h1 { font-size: 22px; font-weight: 400; letter-spacing: -0.01em; white-space: no
   width: 300px;
   display: flex; flex-direction: column; justify-content: center;   /* dikey ortala → kürenin sol kavisi hizasında */
   overflow-y: auto;
-  padding: 26px 26px 26px 44px;                                     /* soldan nefes payı */
+  padding: 26px 26px 26px 28px;                                     /* içeriği biraz sola çek → ekran ferahlar (yayı bozmadan) */
   z-index: 2;
 }
 .col.left { left: 0; }
