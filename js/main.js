@@ -626,7 +626,7 @@ function layoutCards() {
   if (find) {
     const fr = find.getBoundingClientRect();
     panelBox = { l: fr.left - sr.left, r: fr.right - sr.left, b: fr.bottom - sr.top };
-    rightTop = Math.max(pad, panelBox.b + 40);   // clear the search box with real breathing room
+    rightTop = Math.max(pad, panelBox.b + 56);   // more gap below the search box (Damla)
   }
 
   const leftFits = cx - Math.min(w, h) * 0.40 * zoomK - storyEdge >= cardW - 30;
@@ -639,11 +639,18 @@ function layoutCards() {
   function place(list, side) {
     const m = list.length;
     if (!m) return;
-    const topY = side > 0 ? rightTop : pad;
+    // cards are center-anchored (translateY -50%): first card center sits half a
+    // card below its top so its upper half doesn't cross the panel.
+    const halfCard = (FS_MAX * 2.6 + 22) / 2;
+    const topY = (side > 0 ? rightTop : pad) + halfCard;
     const botY = h - pad;
+    // TIGHT fixed step (Damla: "daha sıkışık"), not spread across the whole height.
+    // Shrink the step only if the stack would overflow the stage.
+    let step = 96;
+    if (m > 1 && topY + (m - 1) * step > botY) step = (botY - topY) / (m - 1);
     const R = Math.min(w, h) * (0.44 + m * 0.012) * zoomK; // curve radius, softer w/ few cards
     list.forEach((c, i) => {
-      const y = m > 1 ? topY + (i * (botY - topY)) / (m - 1) : (topY + botY) / 2;
+      const y = topY + i * step;
       const t = Math.max(-0.96, Math.min(0.96, (y - cy) / R));
       let x = cx + side * R * Math.cos(Math.asin(t));
       if (side < 0) x = Math.max(storyEdge, x - cardW);
@@ -655,22 +662,8 @@ function layoutCards() {
   place(right, 1);
   place(left, -1);
 
-  const span = right.length > 1 ? (h - pad - rightTop) / (right.length - 1) : 80;
-  const fs = Math.max(FS_MIN, Math.min(FS_MAX, (span - 16) / 2.6));
-  const chW = cardW * (fs / FS_MAX);
-
-  /* safety net: if the arc curve still tucks any card under the search panel box,
-     push it straight down below the panel. Catches the top-right card every time. */
-  if (panelBox) {
-    cards.forEach((c) => {
-      const x = parseFloat(c.style.left) || 0, y = parseFloat(c.style.top) || 0;
-      if (x < panelBox.r && x + chW > panelBox.l && y < panelBox.b + 24)
-        c.style.top = (panelBox.b + 24).toFixed(1) + "px";
-    });
-  }
-
-  cardsEl.style.setProperty("--card-fs", fs.toFixed(1) + "px");
-  cardsEl.classList.toggle("dense", fs < FS_MAX - 0.1);
+  cardsEl.style.setProperty("--card-fs", FS_MAX.toFixed(1) + "px");
+  cardsEl.classList.remove("dense");
 }
 
 /* hikaye panelini kürenin SOL kavisine gerçekten sardır: .writing içine görünmez
