@@ -660,6 +660,21 @@ function layoutCards() {
   const fs = Math.min(fsR, fsL);
   cardsEl.style.setProperty("--card-fs", fs.toFixed(1) + "px");
   cardsEl.classList.toggle("dense", fs < FS_MAX - 0.1);
+
+  /* final collision pass: no card may overlap the search panel, whichever arc it
+     came from. Measure the panel box (stage-relative) and push any card whose box
+     intersects it straight down to just below the panel. Runs after placement so
+     it catches left- AND right-arc cards alike (top-guard alone missed the left). */
+  if (find) {
+    const sr = stage.getBoundingClientRect(), fr = find.getBoundingClientRect();
+    const pL = fr.left - sr.left, pR = fr.right - sr.left, pB = fr.bottom - sr.top + 12;
+    const chW = cardW * (fs / FS_MAX);           // card scales with font size
+    cards.forEach((c) => {
+      const x = parseFloat(c.style.left) || 0, y = parseFloat(c.style.top) || 0;
+      const overlapsX = x < pR && x + chW > pL;  // card box crosses the panel's x-band
+      if (overlapsX && y < pB) c.style.top = pB.toFixed(1) + "px";
+    });
+  }
 }
 
 /* hikaye panelini kürenin SOL kavisine gerçekten sardır: .writing içine görünmez
