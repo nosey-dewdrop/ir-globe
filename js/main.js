@@ -61,6 +61,7 @@ let layer = "silah";
 let selected = null;  // a country
 let focusTie = null;  // a single arc
 let hovered = null;   // arc under the cursor
+let hoverPoly = null; // country polygon under the cursor
 let gesturing = false; // touch: a pinch/drag is in progress → don't treat its end as a click
 
 const layerNav = document.getElementById("layers");
@@ -143,7 +144,7 @@ function initGlobe() {
   .polygonStrokeColor(() => "#cfd4db")
   .polygonAltitude(0.006)
   .polygonsTransitionDuration(0)
-  .onPolygonHover((f) => { document.body.style.cursor = f ? "pointer" : "default"; })
+  .onPolygonHover((f) => { document.body.style.cursor = f ? "pointer" : "default"; hoverPoly = f || null; })
   .onPolygonClick((f) => { if (gesturing) return; const c = countryOfFeature(f); if (c) selectCountry(c === selected ? null : c); })
   .arcLabel((t) => tieLine(t))
   .arcStartLat((t) => COORDS[t.s][0]).arcStartLng((t) => COORDS[t.s][1])
@@ -236,13 +237,19 @@ globe.pointOfView({ lat: 20, lng: 20, altitude: 2.2 }, 0);
   el.addEventListener("wheel", () => wakeGlobe(), { passive: true });
   el.addEventListener("mouseenter", () => wakeGlobe());
 
-  /* click the empty space around the globe -> drop the selection (Damla: "boş yere
-     tıklayınca işaretleme boşa düşsün"). Clicks on a card, the search panel, the
-     story panel, or the globe canvas itself are left to their own handlers. */
+  /* click empty space -> drop the selection (Damla: "boş yere tıklayınca işaretleme
+     boşa düşsün"). globe.gl's onGlobeClick only fires on the sphere surface, never
+     on the void around it, so we listen on the canvas directly: if the click lands
+     while no arc AND no country is under the cursor, it's empty space -> reset. */
+  el.addEventListener("click", () => {
+    if (gesturing) return;
+    if (!hovered && !hoverPoly && anySelection()) reset();
+  });
+  /* also the truly-outside area (story/card gaps within the stage but off-canvas) */
   const stage = document.querySelector(".stage");
   if (stage) stage.addEventListener("click", (e) => {
     if (gesturing) return;
-    if (e.target.closest(".card, .cards-find, .col, canvas")) return;
+    if (e.target.closest(".card, .cards-find, .col, #globe")) return;
     if (anySelection()) reset();
   });
 })();
@@ -615,8 +622,12 @@ function layoutCards() {
      (reading order top->bottom), rest left. Damla: "sağ ve sol yay, sıralı". */
   const sr = stage.getBoundingClientRect();
   const find = cardsEl.querySelector(".cards-find");
-  let rightTop = pad;
-  if (find) rightTop = Math.max(pad, find.getBoundingClientRect().bottom - sr.top + 12);
+  let rightTop = pad, panelBox = null;
+  if (find) {
+    const fr = find.getBoundingClientRect();
+    panelBox = { l: fr.left - sr.left, r: fr.right - sr.left, b: fr.bottom - sr.top };
+    rightTop = Math.max(pad, panelBox.b + 40);   // clear the search box with real breathing room
+  }
 
   const leftFits = cx - Math.min(w, h) * 0.40 * zoomK - storyEdge >= cardW - 30;
   const rightN = leftFits ? Math.ceil(n / 2) : n;   // right takes the (larger) first half
@@ -646,6 +657,18 @@ function layoutCards() {
 
   const span = right.length > 1 ? (h - pad - rightTop) / (right.length - 1) : 80;
   const fs = Math.max(FS_MIN, Math.min(FS_MAX, (span - 16) / 2.6));
+  const chW = cardW * (fs / FS_MAX);
+
+  /* safety net: if the arc curve still tucks any card under the search panel box,
+     push it straight down below the panel. Catches the top-right card every time. */
+  if (panelBox) {
+    cards.forEach((c) => {
+      const x = parseFloat(c.style.left) || 0, y = parseFloat(c.style.top) || 0;
+      if (x < panelBox.r && x + chW > panelBox.l && y < panelBox.b + 24)
+        c.style.top = (panelBox.b + 24).toFixed(1) + "px";
+    });
+  }
+
   cardsEl.style.setProperty("--card-fs", fs.toFixed(1) + "px");
   cardsEl.classList.toggle("dense", fs < FS_MAX - 0.1);
 }
