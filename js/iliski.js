@@ -131,14 +131,23 @@
         });
       });
       arts.sort(function (x, y) { return y.d.localeCompare(x.d); });
-      var newsHtml = arts.slice(0, 40).map(function (a) {
-        // show the real publisher name + domain so an analyst/journalist can trust
-        // and cite it, even though the click goes through Google News.
+      var ENh = typeof I18N !== "undefined" && I18N.isEn;
+      var artRow = function (a) {
         var outlet = esc(a.src) + (a.pub ? ' <span class="dg-dom">(' + esc(a.pub) + ")</span>" : "");
         return '<a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
           '<span class="dg-t">' + esc(a.t) + '</span>' +
           '<span class="dg-m">' + outlet + " · " + esc(a.l) + (a.d ? " · " + esc(a.d) : "") + "</span></a>";
-      }).join("");
+      };
+      // group headlines by recency so "this week" is trustworthy at a glance and
+      // a stale 2025 item can never be mistaken for a current transfer.
+      var today = new Date();
+      var daysAgo = function (d) { return d ? (today - new Date(d)) / 86400000 : 9999; };
+      var buckets = { week: [], month: [], older: [] };
+      arts.slice(0, 60).forEach(function (a) { var g = daysAgo(a.d); (g <= 7 ? buckets.week : g <= 30 ? buckets.month : buckets.older).push(a); });
+      var bucketHtml = function (label, list) { return list.length ? '<h3 class="news-bucket">' + label + ' <span class="cnt">(' + list.length + ")</span></h3>" + list.map(artRow).join("") : ""; };
+      var newsHtml = bucketHtml(ENh ? "this week" : "bu hafta", buckets.week) +
+        bucketHtml(ENh ? "this month" : "bu ay", buckets.month) +
+        bucketHtml(ENh ? "older" : "daha eski", buckets.older.slice(0, 20));
 
       if (!tieRows && !radar && !arts.length) {
         fail(da + " ile " + db + " arasında kayıtlı bağ ya da haber yok.");
