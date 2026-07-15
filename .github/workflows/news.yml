@@ -35,6 +35,7 @@ jobs:
         run: |
           node scripts/test-motor.js
           node scripts/test-ara.js
+          node scripts/test-extract.js
           node scripts/extract-relations.js
           node scripts/build-event-index.js
           node scripts/build-ozet.js

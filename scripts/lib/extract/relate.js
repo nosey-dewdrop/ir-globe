@@ -69,6 +69,10 @@ function extractAll(text) {
   // theft/plunder/smuggling is not a trade tie: "Ukrainian grain stolen, relabeled
   // Russian and sold" — an adversarial act, drop the fake supply relationship.
   if (/\b(stol(e|en)|theft|plunder\w*|looted|smuggl\w+|seized cargo|illegally (sold|exported)|black market)\b/i.test(text)) return [];
+  // refugee/asylum framing belongs to the migration domain, which we never draw as
+  // a directed bilateral arrow (a flow is not a chosen act). Consistent with the
+  // gated göç layer, drop any headline centred on refugees/asylum.
+  if (/\b(refugees?|asylum|displaced|migrants?|deportation of)\b/i.test(text)) return [];
   // rhetorical/hypothetical headlines assert nothing: "Can Trump cut off trade
   // with Spain?", "Will China invade Taiwan?", "Should the US arm Ukraine?" —
   // a question is not an event. Also "here's what/why/how" explainer framing.
@@ -109,6 +113,25 @@ function extractAll(text) {
   { const tl = text.toLowerCase(); if (/\b(reduc\w+|cut(s|ting)?|lower(s|ed|ing)?|eas(e|es|ed|ing)|scrap\w*|lift\w*|roll(s|ed)? back|drop(s|ped)?|slash\w*|remov\w*)\b[^.]{0,20}\b(tariffs?|duties|levies)\b/.test(tl)) return []; }
   // cooperative verb but target introduced across an adversary marker: drop.
   { const ev0 = code(text); if (ev0 && /\b(05\d|06\d|07\d)\b/.test(ev0.root) && /\b(against|in conflict with|at war with|war with|fighting|vs\.?|versus|to counter|to fend off)\b/.test(text.toLowerCase())) return []; }
+  // DEFENSIVE deployment to a protected ally is cooperation toward that ally, NOT
+  // an aggressive buildup against it: "Germany deploys Patriot to Türkiye under
+  // NATO mission" must not read as germany menacing türkiye. Drop the hostile
+  // reading (the coded "askeri yığınak" g-5.5) when the deployment is protective.
+  { const tl = text.toLowerCase();
+    if (/\bdeploy\w*|send\w*|station\w*/.test(tl) &&
+        /\b(under (a )?(nato|alliance|un|coalition)|to (defend|protect|reinforce|shield|bolster|support|help defend)|defensive|air ?defen[cs]e|patriot|peacekeep\w*)\b/.test(tl)) return []; }
+  // "X threatens [a consequence noun]" — the threatened thing is a VICTIM of a
+  // situation, not a country X is menacing: "Iran conflict threatens Brazil grain
+  // exports", "US aid cutoff threatens Ethiopia's displaced millions". Drop.
+  { const tl = text.toLowerCase();
+    if (/\bthreaten\w*\b[^.]{0,30}\b(exports?|imports?|supplies|supply|shipments?|civilians?|millions?|refugees?|economy|growth|security|stability|prices?|food|grain|energy|jobs?)\b/.test(tl) &&
+        !/\bthreaten\w*\s+(to\s+\w+\s+)?\w*\s*(war|attack|strike|invasion|force|retaliation)\b/.test(tl)) return []; }
+  // coercive main clause, cooperative noun buried in an "over ..." subordinate
+  // clause: "China threatens forceful measures OVER US arms sales to Taiwan" — the
+  // real event is China's threat, not a rosy US->Taiwan arms tie. Drop the incidental.
+  { const tl = text.toLowerCase();
+    if (/\b(threaten\w*|warn\w*|condemn\w*|slam\w*|protest\w*|oppos\w*|retaliat\w*)\b[^.]{0,40}\bover\b/.test(tl) &&
+        /\b(sales?|deals?|agreements?|pacts?|supply|supplies|exports?|aid|support)\b/.test(tl)) return []; }
   // coercive event yoked to an incidental cooperation noun in another clause:
   // "Germany to LIMIT Ukrainian asylum AS Kyiv, Berlin SIGN pact" would code the
   // +7 "sign pact" and bury the real restrictive event. If a coercion trigger and
@@ -301,6 +324,11 @@ function extractAll(text) {
     // place) is a real bilateral nod — only drop when a third location follows.
     return [];
   }
+  // clear two-actor COERCIVE act ("China sanctions US", "Israel strikes Iran") is
+  // unambiguous subject-verb-object — floor it at 0.70 AFTER all penalties so a
+  // compound-noun object ("US defense firms") can't sink it below the keep bar.
+  const COERCE = /\b(sanction(s|ed)?|strikes?|struck|bomb\w*|invade(s|d)?|attacks?|expels?|deport\w*|blockades?)\b/;
+  if (actors.length === 2 && COERCE.test(hay) && ev.goldstein < -3) confidence = Math.max(confidence, 0.7);
   confidence = Number(Math.max(0.1, Math.min(0.95, confidence)).toFixed(2));
 
   const out = [];
