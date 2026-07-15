@@ -350,6 +350,9 @@ function arcStroke(t) {
 function esc(s) {
   return String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
+/* only ever emit http(s) links — a feed or ML step could one day carry a
+   javascript:/data: url; this permanently neutralises it. */
+function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : "#"; }
 
 /* count-up: a number that animates from 0 when it appears */
 function cnt(v) { return `<span class="cnt" data-to="${v}">0</span>`; }
@@ -442,7 +445,7 @@ function countryArticleList(c) {
 function srcLine() {
   const s = SRC[layer];
   return s && s.url
-    ? `<p class="src"><em>kaynak: <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}${s.year ? ", " + esc(s.year) : ""} ↗</a></em></p>`
+    ? `<p class="src"><em>kaynak: <a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener">${esc(s.name)}${s.year ? ", " + esc(s.year) : ""} ↗</a></em></p>`
     : `<p class="src"><em>bağlantılar açık kaynaklardan derlendi · haberler: google news</em></p>`;
 }
 const story = document.getElementById("story");
@@ -555,7 +558,7 @@ const CARD_CAP = 6;
 let araQuery = "";
 function cardsHTML(arts) {
   return arts.map((a, i) =>
-    `<a class="card" style="--i:${i}" href="${esc(a.url)}" target="_blank" rel="noopener">
+    `<a class="card" style="--i:${i}" href="${esc(safeUrl(a.url))}" target="_blank" rel="noopener">
       <span class="card-title">${esc(a.title)}</span>
       <span class="card-meta">${esc(a.source)}${a.date ? " · " + esc(TRDate.short(a.date)) : ""}</span>
     </a>`).join("");
