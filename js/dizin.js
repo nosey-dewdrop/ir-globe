@@ -149,7 +149,7 @@
       const num = t.exp != null ? ` <span class="pct">${t.s} ihracatının %${t.exp}'i</span>` : "";
       const note = t.note ? `<span class="note">${esc(t.note)}</span>` : "";
       const news = (arts[`${t.s}→${t.r}`] || []).slice(0, 2).map((a) =>
-        `<a class="hl" href="${esc(a.url)}" rel="noopener">${esc(a.title)}</a> <span class="hl-src">${esc(a.source)}</span>`).join("");
+        `<a class="hl" href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a> <span class="hl-src">${esc(a.source)}${a.pub ? ` · ${esc(a.pub)}` : ""}</span>`).join("");
       return `<article class="edge">
       <h3><a href="${ROOT}ulke/${base.slug(t.s)}/">${esc(base.disp(t.s))}</a> → <a href="${ROOT}ulke/${base.slug(t.r)}/">${esc(base.disp(t.r))}</a>${num}</h3>
       ${note}
