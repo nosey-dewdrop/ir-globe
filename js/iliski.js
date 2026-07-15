@@ -91,7 +91,7 @@
         // layers is an object {key:count}; take the busiest layer names
         var layerNames = Object.keys(pairData.layers || {})
           .sort(function (a, b) { return pairData.layers[b] - pairData.layers[a]; })
-          .map(function (k) { var lab = LAYERS.filter(function (l) { return l.key === k; })[0]; return lab ? lab.label : k; })
+          .map(function (k) { var lab = LAYERS.filter(function (l) { return l.key === k; })[0]; var nm = lab ? lab.label : k; return (typeof I18N !== "undefined") ? I18N.layer(nm) : nm; })
           .slice(0, 3).join(", ");
         // date-stamped narrative — the paste-ready sequence an analyst writes a brief from.
         var mine = (events && events.events || [])
@@ -136,9 +136,10 @@
       var ENh = typeof I18N !== "undefined" && I18N.isEn;
       var artRow = function (a) {
         var outlet = esc(a.src) + (a.pub ? ' <span class="dg-dom">(' + esc(a.pub) + ")</span>" : "");
+        var lyr = (typeof I18N !== "undefined") ? I18N.layer(a.l) : a.l;
         return '<a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
           '<span class="dg-t">' + esc(a.t) + '</span>' +
-          '<span class="dg-m">' + outlet + " · " + esc(a.l) + (a.d ? " · " + esc(a.d) : "") + "</span></a>";
+          '<span class="dg-m">' + outlet + " · " + esc(lyr) + (a.d ? " · " + esc(a.d) : "") + "</span></a>";
       };
       // group headlines by recency so "this week" is trustworthy at a glance and
       // a stale 2025 item can never be mistaken for a current transfer.

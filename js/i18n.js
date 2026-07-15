@@ -66,6 +66,16 @@ const I18N = (() => {
     "yardım / tahliye": "aid / evacuation",
   };
 
+  // layer display labels TR -> EN (also used on feed/country pages).
+  const LAYER = {
+    "silah": "arms", "ticaret": "trade", "enerji": "energy", "tahıl & gıda": "grain & food",
+    "tahıl": "grain", "ittifaklar": "alliances", "yaptırımlar": "sanctions", "yaptırım": "sanctions",
+    "göç & mülteci": "migration & refugees", "göç": "migration", "borç & kredi": "debt & credit",
+    "borç": "debt", "diplomasi": "diplomacy", "teknoloji & çip": "tech & chips", "teknoloji": "tech",
+    "askeri üsler": "military bases", "üs": "base", "dış yardım": "foreign aid", "yardım": "aid",
+    "denizaltı kabloları": "undersea cables", "kablo": "cables",
+  };
+
   // UI strings used on the pair page and shared surfaces.
   const T = {
     en: {
@@ -105,6 +115,7 @@ const I18N = (() => {
     lang: L,
     isEn: L === "en",
     ev: (trLabel) => (L === "en" && EV[trLabel]) ? EV[trLabel] : trLabel,
+    layer: (trLabel) => (L === "en" && LAYER[trLabel]) ? LAYER[trLabel] : trLabel,
     t: (key, trFallback) => (L === "en" && T.en[key]) ? T.en[key] : (trFallback || key),
   };
 })();
