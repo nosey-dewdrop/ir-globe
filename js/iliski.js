@@ -89,8 +89,21 @@
           .sort(function (a, b) { return pairData.layers[b] - pairData.layers[a]; })
           .map(function (k) { var lab = LAYERS.filter(function (l) { return l.key === k; })[0]; return lab ? lab.label : k; })
           .slice(0, 3).join(", ");
-        summary = '<p class="pair-summary">motorun okuduğu son haberlerde bu ilişkide <strong>' + yon + '</strong>' +
-          " (" + pairData.n + " kodlanmış olay" + (layerNames ? " · " + esc(layerNames) : "") + ")." +
+        // date-stamped narrative: the last few notable coded events, newest first,
+        // as "olay (tarih)" — the paste-ready sequence an analyst writes a brief
+        // from ("ateşkes çöktü 8 tem, yaptırım 14 tem"). Built from real events.
+        var mine = (events && events.events || [])
+          .filter(function (e) { return e.pair === pairKey; })
+          .sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
+        var trMonth = ["oca","şub","mar","nis","may","haz","tem","ağu","eyl","eki","kas","ara"];
+        var shortD = function (d) { var p = String(d).split("-"); return p.length === 3 ? (parseInt(p[2], 10) + " " + (trMonth[parseInt(p[1], 10) - 1] || "")) : d; };
+        var seq = mine.filter(function (e) { return typeof e.goldstein === "number" && Math.abs(e.goldstein) >= 4; })
+          .slice(0, 4)
+          .map(function (e) { return esc(e.event) + " (" + esc(shortD(e.date)) + ")"; })
+          .join(", ");
+        summary = '<p class="pair-summary">motorun okuduğu son haberlerde ' + esc(da) + " ile " + esc(db) +
+          " arasında <strong>" + yon + "</strong> (" + pairData.n + " kodlanmış olay" + (layerNames ? " · " + esc(layerNames) : "") + ")." +
+          (seq ? " Öne çıkanlar: " + seq + "." : "") +
           " Aşağıdaki her olay ve manşet gerçek bir kaynağa tıklanır.</p>";
       }
 
