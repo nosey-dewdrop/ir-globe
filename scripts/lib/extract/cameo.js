@@ -24,6 +24,10 @@ const RULES = [
   [/\b(hit|struck|pounded|battered|targeted) by (?!(new |fresh |further |more )?(sanction|tariff|ban|restriction|curb))/, "19", -8.5, "saldırıya uğrama"],
   [/\b(invade|invasion|full[- ]scale (war|assault))\b/, "19", -9.4, "askeri işgal"],
   [/\b(air ?strikes?|missile strikes?|bomb(ard|ed|ing)?|shell(ed|ing)?|drone strikes?)\b/, "19", -9.2, "hava/füze saldırısı"],
+  // "fire/launch missiles|rockets|drones at X" is a strike, not cooperation — must
+  // outrank the support rule so "Iranian-backed Houthis fire missiles at Riyadh"
+  // codes hostile, not "backed".
+  [/\b(fire(s|d)?|launch(es|ed)?|rain(ed|ing)?|unleash(es|ed)?)\b[^.]{0,24}\b(missiles?|rockets?|ballistic|drones?|projectiles?|shells?|strikes?)\b/, "19", -9.0, "füze/roket saldırısı"],
   // "attack" as a WEAPON-PRODUCT modifier ("attack drones/jets/helicopters/subs")
   // is not an attack event — a supply/deal headline, not "X attacks Y". Negative
   // lookahead keeps the verb ("Israel attacks Iran") while dropping the product noun.
@@ -40,6 +44,9 @@ const RULES = [
   [/\b(cut(s|ting)? (ties|relations|off)|sever(s|ed)? (ties|relations)|suspend(s|ed)? (ties|relations))\b/, "162", -4.9, "ilişki kesme"],
   [/\b(suspend(s|ed)?|freez(e|es|ing)|halt(s|ed)?)\b.*\b(deals?|agreements?|pacts?|trea(ty|ties)|accords?|cooperation|exports?|imports?|shipments?)\b/, "162", -4.5, "askıya alma"],
   [/\b(recall(s|ed)? (its )?ambassador|summon(s|ed)? (the )?ambassador)\b/, "154", -3.8, "büyükelçi geri çağırma"],
+  // withdrawing/ending support is NOT support — tested before the positive support
+  // rule so "Ireland to End Housing Support for Ukrainians" codes as a pull-back.
+  [/\b(end(s|ed|ing)?|cut(s|ting)?|halt(s|ed|ing)?|withdraw(s|al|ing|n)?|scrap(s|ped)?|slash(es|ed)?|pull(s|ed)? (its )?)\b[^.]{0,18}\b(support|aid|assistance|funding|backing|deal|troops?|forces?)\b/, "162", -3.5, "destek/yardım kesme"],
 
   // --- verbal conflict ---
   [/\b(threaten(s|ed|ing)?|warn(s|ed)? of|ultimatum)\b/, "138", -6.9, "tehdit"],
@@ -56,13 +63,22 @@ const RULES = [
   [/\b(veto(es|ed)?|block(s|ed)?|scrap(s|ped)?|derail(s|ed)?|scupper(s|ed)?|torpedo(es|ed)?|reject(s|ed)?)\b[^.]{0,40}\b(deals?|joint ventures?|ventures?|agreements?|pacts?|trea(ty|ties)|accords?|partnerships?|bids?|resolutions?)\b/, "121", -3.0, "veto / engelleme"],
   [/\b(deals?|joint ventures?|ventures?|agreements?|pacts?|accords?|partnerships?)\b[^.]{0,40}\b(block(ed)?|vetoed|scrapped|derailed|scuppered|torpedoed|rejected|collapsed?|(fell|falls) through)\b/, "121", -3.0, "veto / engelleme"],
 
+  // --- arms/goods trade (very common, direction-bearing) ---
+  // "A buys/orders X from B" and "A sells/supplies X to B": these carry a clear
+  // buyer<-seller direction that relate.js resolves via the from/to marker. Tested
+  // high so a concrete transfer beats a generic "deal".
+  [/\b(buy(s|ing)?|bought|purchas\w+|order(s|ed)?|acquir\w+|import(s|ed|ing)?)\b[^.]{0,40}\bfrom\b/, "061", 5.0, "silah/malzeme alımı"],
+  [/\b(sell(s|ing)?|sold|export(s|ed|ing)?|suppl(y|ies|ied)|deliver(s|ed|ing)?|ship(s|ped|ping)?)\b[^.]{0,40}\bto\b/, "060", 4.0, "silah/malzeme tedariki"],
+
   // --- verbal cooperation ---
   // signing a deal outranks the meeting/visit it happened at, so test it first
   [/\b(sign(s|ed)?|ink(s|ed)?)\b.*\b(deals?|agreements?|pacts?|trea(ty|ties)|accords?|mous?|memorandums?|contracts?)\b/, "057", 7.0, "anlaşma imzası"],
   [/\b(talks?|dialogue|negotiat(e|es|ed|ions?)|discuss(es|ed|ions?)?)\b/, "036", 4.0, "görüşme / müzakere"],
   [/\b(meet(s|ing)?|summit|hold(s)? talks|phone call|calls? for (calm|talks))\b/, "036", 3.5, "üst düzey görüşme"],
   [/\b(visit(s|ed|ing)?|arrives? in|trip to|tour(s)?)\b/, "042", 3.4, "resmi ziyaret"],
-  [/\b(praise(s|d)?|welcom(e|es|ed)|hail(s|ed)?|backs\b|backed\b|support(s|ed)?)\b/, "051", 3.4, "destek / övgü"],
+  // "backs/backed" only as a verb — NOT the "-backed" adjective ("Iranian-backed
+  // rebels"), which names an actor, not an act of support between the two states.
+  [/\b(praise(s|d)?|welcom(e|es|ed)|hail(s|ed)?|(?<!-)\bbacks\b|(?<!-)\bbacked\b|support(s|ed)?)\b/, "051", 3.4, "destek / övgü"],
   [/\b(pledge(s|d)?|vow(s|ed)?|promis(e|es|ed)|commit(s|ted)?)\b/, "057", 4.5, "taahhüt"],
   [/\b(apolog(y|ize|ized)|express(es|ed)? regret|condolences?)\b/, "055", 4.0, "özür / taziye"],
 

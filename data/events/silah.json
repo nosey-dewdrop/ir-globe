@@ -1,7 +1,7 @@
 {
  "layer": "silah",
- "generated": "2026-07-14",
- "count": 366,
+ "generated": "2026-07-15",
+ "count": 383,
  "events": [
   {
    "s": "united states",
@@ -29,6 +29,30 @@
   },
   {
    "s": "india",
+   "r": "united states",
+   "event": "anlaşma / ortaklık",
+   "root": "057",
+   "goldstein": 6,
+   "confidence": 0.6,
+   "title": "India Clears $40 Billion Defense Deal for US and French Jets",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNM1RQUHA5QkE5VFZ5NDRPSWQ4b2dCYUVGZnlmVE1qdDFqcThlQkNRdEdpOGZGek4zSEpXM1FaR0Zsd0FLOGUyUzNOUmFzT3VfOHdGMGkteTA2S1JNVF9sZnI0dFZiUXhUaHdNUHl3VnUzdjBhTVNYbmh0QWFJallfeGFnN1liQURKNV9GeTlDcjBEVmV4X3p2ZTVGaWpBRzVzNDlwUTdaM19TUkhEU0NN?oc=5",
+   "date": "2026-02-12"
+  },
+  {
+   "s": "india",
+   "r": "france",
+   "event": "anlaşma / ortaklık",
+   "root": "057",
+   "goldstein": 6,
+   "confidence": 0.6,
+   "title": "India Clears $40 Billion Defense Deal for US and French Jets",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNM1RQUHA5QkE5VFZ5NDRPSWQ4b2dCYUVGZnlmVE1qdDFqcThlQkNRdEdpOGZGek4zSEpXM1FaR0Zsd0FLOGUyUzNOUmFzT3VfOHdGMGkteTA2S1JNVF9sZnI0dFZiUXhUaHdNUHl3VnUzdjBhTVNYbmh0QWFJallfeGFnN1liQURKNV9GeTlDcjBEVmV4X3p2ZTVGaWpBRzVzNDlwUTdaM19TUkhEU0NN?oc=5",
+   "date": "2026-02-12"
+  },
+  {
+   "s": "india",
    "r": "france",
    "event": "görüşme / müzakere",
    "root": "036",
@@ -42,9 +66,9 @@
   {
    "s": "france",
    "r": "india",
-   "event": "anlaşma / ortaklık",
-   "root": "057",
-   "goldstein": 6,
+   "event": "silah/malzeme alımı",
+   "root": "061",
+   "goldstein": 5,
    "confidence": 0.6,
    "title": "Indian officials clear deal to purchase Rafale fighter jets from France",
    "source": "Le Monde.fr",
@@ -244,8 +268,20 @@
    "date": "2026-02-28"
   },
   {
-   "s": "ukraine",
-   "r": "germany",
+   "s": "russia",
+   "r": "belarus",
+   "event": "destek/yardım kesme",
+   "root": "162",
+   "goldstein": -3.5,
+   "confidence": 0.55,
+   "title": "EU wants Russia to hold free elections and withdraw troops from Belarus, Georgia, Armenia, and Transnistria— as part of a Ukraine peace deal, leaked paper shows",
+   "source": "Euromaidan Press",
+   "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQOE16ZUY1UnJZTFA4NGhpV09LeUVQVXRpdGNMbG81NG1DTy1fWS1YaFd1SUl5YmhIX0hjMU9UeFd1TjJZbkVuSGFITnZ3dWZGTURxM1lBbjdmMGx3SUhhMThsY0s3RExjdzE1cGs5X2ZMWDBUVk9wb3NpTHpmQ0oxU1piYnN4VDZCaThaaHYxaWlOc1lqMmtBVVljSU1IdEV0b1dpdElleEluNUVoRVpPdFVzZ0ItWV9TVHhaR2VQS0JrWndRN0tHUHdWaGNlSnFVbF9vM2wyTHdON0c2UnpsVzRub3ZFZDdZSDM1T3BHVnBDcnEyekkweFJRcjNhdkxVVFFaaEZMSVVscElaankxZ3VKYVpIdHVqd3VRb3k3d2U?oc=5",
+   "date": "2026-02-19"
+  },
+  {
+   "s": "germany",
+   "r": "ukraine",
    "event": "kredi / finansman",
    "root": "071",
    "goldstein": 6.5,
@@ -390,9 +426,9 @@
   {
    "s": "germany",
    "r": "israel",
-   "event": "ticaret / tedarik",
-   "root": "061",
-   "goldstein": 5,
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
    "confidence": 0.6,
    "title": "Report: Germany has okayed $7.8m in arms exports to Israel in Iran war, below earlier deals",
    "source": "The Times of Israel",
@@ -652,18 +688,6 @@
    "date": "2026-03-05"
   },
   {
-   "s": "iran",
-   "r": "united states",
-   "event": "yaptırım",
-   "root": "163",
-   "goldstein": -5.4,
-   "confidence": 0.55,
-   "title": "Iran nuclear deal negotiations (2025–26) | United States, Trump, Obama, Snapback Sanctions, Program, & Weapons",
-   "source": "Encyclopedia Britannica",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB2NWxEcFBnMHJpcm92bE15UDFGMWNCcklxZUxlcVR6T0FfUjlYUjdjSm5KSGI3eS0tcEFNNjNRaXA0bUc5eXBKQmpUZEFQNjhpSmtscWYtTkZpU1VWNXJVSlJ0SUJFeHg4dm1LN3dLa2s?oc=5",
-   "date": "2026-06-18"
-  },
-  {
    "s": "saudi arabia",
    "r": "united states",
    "event": "anlaşma / ortaklık",
@@ -726,6 +750,18 @@
   {
    "s": "poland",
    "r": "south korea",
+   "event": "silah/malzeme alımı",
+   "root": "061",
+   "goldstein": 5,
+   "confidence": 0.75,
+   "title": "Poland Bought Up to 1,000 K2 Tanks From South Korea. The Real Prize Was the Factory",
+   "source": "19FortyFive",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQc2VybWxCb2RvQWg4MF9vZmpscm5vOTdGUFJqT244eTJWUWoxUGVCRDl1eVFKR1I5Y3EzSjBocHlIdFl3Q0NSU2Q2QmZGblAtVXkxbndjYm5fblRvczhZbGpWc2hvbV9neUVhY0pHUjFwVFlscDhpVjhHa2V6cTlXSTQxRjJ6d2tkTmZWRllpUHR1UFdfLVA5WVdVSTNHZ1JaeEhzSFQ4Y0RCN3QyMEdpNmNiNDE0N21mSlE?oc=5",
+   "date": "2026-07-09"
+  },
+  {
+   "s": "poland",
+   "r": "south korea",
    "event": "anlaşma / ortaklık",
    "root": "057",
    "goldstein": 6,
@@ -774,9 +810,9 @@
   {
    "s": "south korea",
    "r": "philippines",
-   "event": "ticaret / tedarik",
-   "root": "061",
-   "goldstein": 5,
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
    "confidence": 0.75,
    "title": "South Korea to step up arms exports to Philippines as security ties expand",
    "source": "Nikkei Asia",
@@ -822,9 +858,9 @@
   {
    "s": "spain",
    "r": "saudi arabia",
-   "event": "ticaret / tedarik",
-   "root": "061",
-   "goldstein": 5,
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
    "confidence": 0.75,
    "title": "Spain: Government must stop authorising arms exports to Saudi Arabia or risk complicity in war crimes",
    "source": "Amnesty International",
@@ -868,11 +904,35 @@
    "date": "2018-09-10"
   },
   {
+   "s": "spain",
+   "r": "saudi arabia",
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
+   "confidence": 0.75,
+   "title": "Spain to sell laser-guided bombs to Saudi Arabia",
+   "source": "dw.com",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdU80ZWJkWldRcll5emgyTXJ3WDAwTWtwdC12akxob3B2blpPYXN0cENZWWFtT3ZiUk5DczFGMmFYeE9MamtXTXgyQUM0LUZUQ2xBd2E5bVg3UHRRTU1pTTNHdkI0aFJPYjVZTExRWUtBTUEyMHd4T0hMVGZFZHlTVGQ3Mmc3aU420gGIAUFVX3lxTE5tX0JmVkhGa3ZjRmsyOVl3LWV4eG84SlhqbjdMQnlmejVXOEM4dTFFVjZXc2ZsdjF0VjdDdmM4RkhRZ2VKempxVVZuQ3pSTnU0cEhXTUU0ZWdkYzR3cXEweUExZ1ljNENiVHRPNEhORm14c1R6V2hrVXBXRk9FZ3pSUmQ3b1ZBRUk?oc=5",
+   "date": "2018-09-13"
+  },
+  {
    "s": "türkiye",
    "r": "spain",
-   "event": "anlaşma imzası",
-   "root": "057",
-   "goldstein": 7,
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
+   "confidence": 0.55,
+   "title": "Türkiye Exports Hürjet to Spain in Landmark Defense Deal",
+   "source": "politicstoday.org",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObHhVTzFxUU9KLVg0WW1QcVZYbllZNFpmWGlkUnZKNVYwTG04TEdnSk02alFPeWh0YWlJc09FMHZKSlh5ZWZWbVd4d0d0cVNiMDRobTFpRDBKWjN1d2FaM2xCTDhZbW1NbVJmQ2lxQUx6VGR4cU51MWhGVWhGdV85bUpNZ2RTVzR1Tlow?oc=5",
+   "date": "2026-02-27"
+  },
+  {
+   "s": "türkiye",
+   "r": "spain",
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
    "confidence": 0.75,
    "title": "Türkiye Signs Deal to Export Hurjet Jets to Spain",
    "source": "Caspian Post",
@@ -1220,7 +1280,7 @@
    "r": "ukraine",
    "event": "silah/malzeme tedariki",
    "root": "060",
-   "goldstein": 3,
+   "goldstein": 4,
    "confidence": 0.6,
    "title": "Norway Supplies New NASAMS Air Defense Missiles to Ukraine to Counter Russian Missile Threats",
    "source": "UNITED24 Media",
@@ -1276,6 +1336,18 @@
    "date": "2026-04-14"
   },
   {
+   "s": "norway",
+   "r": "romania",
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
+   "confidence": 0.75,
+   "title": "Norway to Sell 32 Used F-16 Fighters to Romania",
+   "source": "The Defense Post",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1mbE40Mk9HdUVyZVZhSmZhVU5EenhjNTUyWmdRcVRJT0Rrd2pDeXJCNmgyenFnd2F3dktzN3BKQ2d0SjhNRUhXakRLVW9hX0lQQ0IzRjZubHJ2QU1SVWZuMTk5dy1oUEpWUFl6TEhnaEbSAXZBVV95cUxNcElNNi16NmZYaFRyVVRsNlp4eEZBOFFQeTAwalBEQ3VvTkFpT2tVOUlQM2thUV9MRjFfNWhTQ0RYZHdORE9wNTEzRVktTEhmejI4ZGpJR01fM0VkOVJIZm5IZTB0aXk5STNnaUppYmFCR2V4TS1n?oc=5",
+   "date": "2022-11-07"
+  },
+  {
    "s": "poland",
    "r": "ukraine",
    "event": "yatırım",
@@ -1302,9 +1374,9 @@
   {
    "s": "poland",
    "r": "ukraine",
-   "event": "yardım",
-   "root": "070",
-   "goldstein": 7,
+   "event": "destek/yardım kesme",
+   "root": "162",
+   "goldstein": -3.5,
    "confidence": 0.6,
    "title": "Poland could cut arms aid to Ukraine as WWII spat continues",
    "source": "dw.com",
@@ -1348,6 +1420,18 @@
    "date": "2026-06-29"
   },
   {
+   "s": "sweden",
+   "r": "poland",
+   "event": "silah/malzeme alımı",
+   "root": "061",
+   "goldstein": 5,
+   "confidence": 0.55,
+   "title": "Poland inks order for three submarines from Sweden's Saab for $4.8 billion",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPd21JNnhUUERVd1FfbjNxQVFqaUdiTlU5dmVOWmt6bl9yOHlxa3V4aXJTVW9fbE5vTEVwcnFzWDRBMG5udUk4c09zNG5WazlwRk1BWWpfZWZWclJxeGZXNkE1RDFWdnBpVWRudHhjM2tHQ2dwOFlWbEFONGRRUUk0eEctSTdPR2ZsVG9QX3lNcVZpWEQ1TTFBdXRPOHpRcEs4dGJFNUpkOTVlVU0?oc=5",
+   "date": "2026-06-29"
+  },
+  {
    "s": "poland",
    "r": "sweden",
    "event": "anlaşma imzası",
@@ -1386,9 +1470,9 @@
   {
    "s": "sweden",
    "r": "ukraine",
-   "event": "anlaşma imzası",
-   "root": "057",
-   "goldstein": 7,
+   "event": "silah/malzeme alımı",
+   "root": "061",
+   "goldstein": 5,
    "confidence": 0.6,
    "title": "Ukraine Signs Deal to Buy 16 Gripen E Jets From Sweden",
    "source": "Kyiv Post",
@@ -1422,10 +1506,10 @@
   {
    "s": "sweden",
    "r": "ukraine",
-   "event": "anlaşma / ortaklık",
-   "root": "057",
-   "goldstein": 6,
-   "confidence": 0.55,
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
+   "confidence": 0.75,
    "title": "Sweden supplies Meteor missiles to enhance Ukraine's Gripen fleet in multi-billion dollar deal",
    "source": "Crypto Briefing",
    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1mZWQyeE5CTEw2QWpvWDA4V1o4WFhSQTF6SnlMVnZyMWx3ZVdHYlNDN0RBZnJTeTBRbWRhNUpKVzFTRzl6TUZMTC01aXQ0ZGd4aUVfZXZZVUJSd1V0Q3o4SEduWXhST1dIbTNHakc2Z3FnSE0?oc=5",
@@ -1662,9 +1746,9 @@
   {
    "s": "south africa",
    "r": "congo",
-   "event": "geri çekilme",
-   "root": "087",
-   "goldstein": 2,
+   "event": "destek/yardım kesme",
+   "root": "162",
+   "goldstein": -3.5,
    "confidence": 0.75,
    "title": "South Africa to Withdraw Troops From UN Mission in DR Congo",
    "source": "The Defense Post",
@@ -1674,9 +1758,9 @@
   {
    "s": "drc",
    "r": "rwanda",
-   "event": "destek / övgü",
-   "root": "051",
-   "goldstein": 3.4,
+   "event": "anlaşma / ortaklık",
+   "root": "057",
+   "goldstein": 6,
    "confidence": 0.55,
    "title": "Experts react: The DRC and Rwanda agreed to a US-backed peace deal. Can critical minerals help end this conflict?",
    "source": "Atlantic Council",
@@ -1754,6 +1838,18 @@
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPXzAzVW8yOHRxRUlNOUR2Rk1BR1UzdUlUU3RLN3Q4Rm9Xa09LTXJTNmFrOUNKNTgtTXRTNDdBVHhzNlZmMXlIbmdmb1VBckpRT2xndXN0Y09URmdOTFNhZktJaW5DNjRNRERIQ0g4VWR4UXlsZVYxYW9WUWZmT0lmdUlWN29JMlpFdjBlYnJxclp3Q0dXay1IMFRtWlV3cU5WbUppY1hIc3VVU2FGdlN4di1IZDkxZw?oc=5",
    "date": "2024-04-16"
+  },
+  {
+   "s": "denmark",
+   "r": "argentina",
+   "event": "silah/malzeme alımı",
+   "root": "061",
+   "goldstein": 5,
+   "confidence": 0.75,
+   "title": "Argentina to buy surplus F-16 jets from Denmark",
+   "source": "Defense News",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbXlQTVFiVEtweW9KWFRiQTVpYmpqS1VrZlFybzRKUlJxWnlZQlNocmU3ckhPOEhjUkxkQzY3OXE1elEwbnA2V2FHQVE5VHVNY1NGdU4yZEFWTjdkdUVuS0hjaDk2a19aSEVUeERZU0hROEJIM1loWHRUY1dsLXFkOTYzd2VnWFdKNE44Z3h4bDVmSTdSMXc?oc=5",
+   "date": "2024-03-29"
   },
   {
    "s": "united states",
@@ -1922,6 +2018,18 @@
    "source": "The Indian Express",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOak93aXh6cWo3eVlNUzdLWnl6bkN2WjM3Tk1zWk9JS2gyMVUyX2xRTUlXSjJnQ0VWazU4Vy1zdUc4aVBWM0ZTUmRPYWhRNGNYSm9lZmthc3ZCVWlZQVFOVHB0NDlrRWtHZGpTOUdwMUhEbGlGcGE3dVF4U2N4MGNYMW5VRnZIcm5IVDNzcnhtdGs1a1hwcE84enA0QzlEOVdiczlHOXhxeVVxM1l3SE9LOXJra2Z1WUFXX29z0gHCAUFVX3lxTE05V0lYOTVVT2t0VThieVJkSjhsNjJ6X2dXcVp6QnBreWlhTmVqUmkzc1J1VDBBT2ViVng2cHd3NzF3bnVEVW0yZlZYbXh6cHZsZzVjREN5OHk3aG9oaWFNYmtOUm1iVTZyd2hoV2NtNnpjY0JqeXVuc3kyeDZxNU1UV2h3ZGVYbDg4OWNuZW5VSVdJeU1GZ2paandfanRxb043TTMwVVF2Z2hwTDdPNmxqUkhCY0NZN09WUmg3SllqclB3?oc=5",
    "date": "2026-04-20"
+  },
+  {
+   "s": "russia",
+   "r": "india",
+   "event": "silah/malzeme alımı",
+   "root": "061",
+   "goldstein": 5,
+   "confidence": 0.6,
+   "title": "India to Purchase S-400 Systems and Drones From Russia for $25 Billion",
+   "source": "UNITED24 Media",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOY2hoUDNHckFacUZGa1JEelNDWEs3VzJuRDgtcXNOZWZJTU5WZHo0Ny1LcHhkSEhuQ2xGX2FyUjFtUFkzRk40OWZNOWRfSW5YaDVuYld1MEJTRDBBWmdOUFJ6TndzeFBmc0hQSGV3NUd3alAxNGJickhDRVZjWlk3QlJHd0pfVzZ0QjVkLXNJVmFNbTlLSXdwZzNCbThMajF5UTBJRm0zXy1icDRRazdVcTd2aw?oc=5",
+   "date": "2026-03-27"
   },
   {
    "s": "india",
@@ -2142,10 +2250,10 @@
   {
    "s": "australia",
    "r": "canada",
-   "event": "ilişki güçlendirme",
-   "root": "050",
-   "goldstein": 4.5,
-   "confidence": 0.55,
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
+   "confidence": 0.75,
    "title": "Australia will sell Canada a radar system to strengthen Arctic defense for $1.8 billion",
    "source": "Українські Національні Новини (УНН)",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOHh4V2RoeXpMUUVZZjhYODdicDZRNE9HWF9YdWxWUHVmX21ySkI2MFJJNUtJUnZhZEsyaVVNbkMwd3pXUU5PRW83a0pqZzFBREJERGZBdU5oaEhVbWNZQlR2SC16RHV1dzZ2b0xfaFhNQUs4MzhmV2JsS3pvQXUyWjhKSEJPU2xteFJCM182ZnlwZk5sVjVoLUpDdE1Sb2xkQV9oZmJwYTI5a2dkY3VqRlpxLXLSAbMBQVVfeXFMTVNxd3A0cTBpX2loT21VMmFNSVkyRkV6ZE85V0diR01ZZ0piSlpQMEdnR1NZcWJDSVRkeldHc2ctdnpYczRldTc5eVBlX0VUblU0WFZ5d21kX1ZqRTh6NU1fRUFXeUNSamVhYlRmUjJnN2lNZWV5ODlaNm92MDJFR0I4WTFpZ2Zzd1pLMzhVcTRkLTlhVmZHeWtkWWNkVkx5RkhLckNRdFQwOGFJS2p2UWZiYjA?oc=5",
@@ -2174,6 +2282,18 @@
    "source": "Anadolu Ajansı",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQWhtczVnZWZGYkFFcUhhdW81dHRqQVJUcHlOQW9lc3RPQmhiUVYzZkVKaDZULVhUOUlxYmVlWmZBOFA5aXFFbHlTMXdRMGZKYjVlZ2ZxQlE2Tzdfc2ZRa2M1S0JERTJFeTVJTjFnYjlsNU5PSWdGeUZSZDdRUVRjTFNIeUhfaUFkajJVS1pQV3ZmajNncFlUSHQ4endHZjgtWUhOUklveWdfMkU?oc=5",
    "date": "2026-03-07"
+  },
+  {
+   "s": "united states",
+   "r": "australia",
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
+   "confidence": 0.75,
+   "title": "U.S. Will Sell 3 In-service Virginia Subs to Australia Instead of 1 New, 2 In-service",
+   "source": "USNI News",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUkZZLTl2Qk4zUnJ6YlZqVkJCbTN4enE5YTlDcFp1ODQyeWdDOHRnYVUzUW51NnlqeTdxbGpfYXlNckZGT1dYREpUQzBPbmtmUzlUUGh1c05haXRkR1NZZndtTFdfcVFvN2NUVFNhTVJuYW45em9xZXNRWHVGXzFfOENZTW0wQUVULVd0T2VwLXdTcEt2dlZQLWwwbWl5eGVvZ1pGNkRHaWVTeDdvd0lnc25FZzBaY1E?oc=5",
+   "date": "2026-06-01"
   },
   {
    "s": "united states",
@@ -2224,6 +2344,18 @@
    "date": "2026-04-18"
   },
   {
+   "s": "united states",
+   "r": "saudi arabia",
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
+   "confidence": 0.75,
+   "title": "Trump says US will sell F-35s to Saudi Arabia, first Arab country to acquire jets",
+   "source": "Al-Monitor",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQ2RSYTlESWVFcnVRQlE5cE82aERHMHg3dnFXcl9uVFBjYTI0WXN5R2p3ZGNjLWxyY0cxYVhsbFFDdGVRVXJnSUZOOEwxNlR1Q0c1V0J4SFZubXVBX2pfZThST01fR3FsY1p4cVY3eDQwTXYzZTUyS1o4U0tIU3RFanhHUzJIT1dYVVpqU3Jsc1VhSE45S0FFVE9wOTV5SW1mc2c3VmktLV9nUVhnYlZ3LWYyU1Q3bXYwbHNr?oc=5",
+   "date": "2025-11-17"
+  },
+  {
    "s": "belgium",
    "r": "israel",
    "event": "yaptırım",
@@ -2270,6 +2402,18 @@
    "source": "The Defense Post",
    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB4czlRdmZfZGdfN1lhRkYwRDlYRmwwRXp1Smt5RmtwUERHOXdYekV2cTNqdVYySHMtcFdnTEFabHQ5WmVRZXVTSlNibk5pZV9yaHJTQTlIMTBuQndtVExMQXpVcmZSNGJzTXVlOEpiUmNjeUdVell5T0RYZmx6UdIBgwFBVV95cUxNZGFDUENrY1p0eFVFZ3dtN1ZBV2R1SUJDOWR4eHJSUUQtWmlkalotTDczLTN1ZEtsN29qWDYxODNSN19VWVNEby1HQjNxcElXNkJWV3RSV1hhY01ZVm9fazRkam1OTEZpWjFvekZGdFdNOGhaN0tSOVR6WWxfWGhUNjd2QQ?oc=5",
    "date": "2026-04-23"
+  },
+  {
+   "s": "belgium",
+   "r": "ukraine",
+   "event": "füze/roket saldırısı",
+   "root": "19",
+   "goldstein": -9,
+   "confidence": 0.55,
+   "title": "Belgium and Ukraine to Launch Production of Drones and Interception Systems",
+   "source": "Мілітарний",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5HZ2FzMFFVNGR2VGRCUUVIbVZsaFRtRE52bVFwY2htSUVTTWRCdE9Ub05GNld0VUx5SW8walRobFNaclF1cXotcEwtOUlpVldRNXZKTlBaMFI1dmNaQVpKcVd4NWNwNm5nTW93SGR1emcxT0tZdC1VcXk0RjFCUQ?oc=5",
+   "date": "2026-03-11"
   },
   {
    "s": "morocco",
@@ -2348,7 +2492,7 @@
    "r": "iran",
    "event": "silah/malzeme tedariki",
    "root": "060",
-   "goldstein": 3,
+   "goldstein": 4,
    "confidence": 0.75,
    "title": "What Weapons Russia Supplied To Iran Ahead Of The 2026 US-Israeli Strike",
    "source": "UNITED24 Media",
@@ -2430,10 +2574,10 @@
   {
    "s": "yemen",
    "r": "saudi arabia",
-   "event": "destek / övgü",
-   "root": "051",
-   "goldstein": 3.4,
-   "confidence": 0.55,
+   "event": "füze/roket saldırısı",
+   "root": "19",
+   "goldstein": -9,
+   "confidence": 0.75,
    "title": "Iranian-backed Houthi rebels in Yemen fire ballistic missiles at Riyadh",
    "source": "Middle East Institute",
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQN3ZTdDE1U0FuaHJjWm0xWnhPdHotQzQzTTBFNDJvbGZJNDRYcHFsN2R4RXFtdzBxd0lNVkZfbWtKNDh1NktGSWl2NWVSYzBSQkpnSW9MemFsS090RUZ5UWdJRDNhT0pUU0hOOFAxLUhYanZILVhUcmV6bUhxeW5VMGFZOVJadFRCQ1dDWWNkM2dsMzRuYjVJbUhR?oc=5",
@@ -2488,6 +2632,30 @@
    "date": "2025-12-30"
   },
   {
+   "s": "france",
+   "r": "uae",
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
+   "confidence": 0.6,
+   "title": "France Should Stop Selling Arms to the United Arab Emirates, Saudi Arabia",
+   "source": "Human Rights Watch",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbkhPY3BQcGdvdk9Kdlgxb0lhMDg0elFvQWQ2Y1NzdUFxWHVrb3NmZnJvT2ZUWlVJRG9XYlVueXByT1N4WkNSVVJDME5HcXRXRFBERE9XZllMc0Fab3p4TjVULUxXcTZ0RVpxcG9pUTVhWTlwSzVDaWM4Tjg2X0lGX1dOMk55MFRXNUdxV0hLaFJfRlNUSGNsQkQ2LWNKVGJwMGJR?oc=5",
+   "date": "2021-12-02"
+  },
+  {
+   "s": "france",
+   "r": "saudi arabia",
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
+   "confidence": 0.6,
+   "title": "France Should Stop Selling Arms to the United Arab Emirates, Saudi Arabia",
+   "source": "Human Rights Watch",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbkhPY3BQcGdvdk9Kdlgxb0lhMDg0elFvQWQ2Y1NzdUFxWHVrb3NmZnJvT2ZUWlVJRG9XYlVueXByT1N4WkNSVVJDME5HcXRXRFBERE9XZllMc0Fab3p4TjVULUxXcTZ0RVpxcG9pUTVhWTlwSzVDaWM4Tjg2X0lGX1dOMk55MFRXNUdxV0hLaFJfRlNUSGNsQkQ2LWNKVGJwMGJR?oc=5",
+   "date": "2021-12-02"
+  },
+  {
    "s": "germany",
    "r": "japan",
    "event": "anlaşma / ortaklık",
@@ -2498,6 +2666,18 @@
    "source": "politico.eu",
    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOWh3V2N2QXNScldUUDF5bE5hRkdaZXpGT0JEUURyOVM0dVhwc1hJTUFXak9BTThyVDA1Zy1qVi1nSFRkWTBKX3ZwQVJUUE4tTEppQmFZbHhZSXZuVzFybHI4Nlg4eEk1ZExidzFjTEtqQ2J4cDNLZXZET3JiNkMtUEpMX082LVZxTWNCZ1pla3hsdw?oc=5",
    "date": "2026-03-22"
+  },
+  {
+   "s": "japan",
+   "r": "ukraine",
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
+   "confidence": 0.55,
+   "title": "Missiles Against Ballistic Threats for Patriot, Air Defense Systems, Ships and Aviation — What Japan Can Now Sell to Ukraine's Partners",
+   "source": "Defense Express",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQbHdub1hxSWk0MElhQjlPc2xRVzNtLWVtNTFua3RtY291QlNxUlBmUlltWEhZX3MtZWZWUHFQM1A4TjVraXY3Z1hRaFhheHVXbmI2MnZsQWgwTkJqV1RqVGxNWmY0bTZDa2tMTjR4Vjd5dVdZQ0NUdE9hUG1TRzBHdjVFRU9QWjQ5NTBoVnYyT2VlX2tobTdmWWtsMEdQZ3ptTmxqNUFZTWROU3F3VGpFQmRtZ0NTR0J1LTdRbUdSUGZETHo1Q1c1NHpOem1VVEVEb2J6MDV4SzN1UktBWmphZHpJWWdXajlsUC00MjlYZWkxQ0ZMRXFIalQ3bWxVRC10RVE?oc=5",
+   "date": "2026-04-21"
   },
   {
    "s": "japan",
@@ -2669,6 +2849,18 @@
   },
   {
    "s": "kuwait",
+   "r": "united states",
+   "event": "silah/malzeme alımı",
+   "root": "061",
+   "goldstein": 5,
+   "confidence": 0.55,
+   "title": "Kongsberg Gruppen signs $400 million order from Kuwait through Raytheon, US FMS",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUlBnbDlOeGZIaDFpTDZRamsyZERvQlFuQ3JwOEFqUVJFWmVPcm85MVVBQXZkSE5ONGhCb2pRTEVOZVRDMUc1RERSczdvdWRSUlJuQWZOTENkVklJRVJOOWFPcGp3NnhiSk5oNUNWQlJuajZNbmNzc0RueUhaelB5Qm9VWkVMdG9laEw5V3VnNTJVZHFUT2FobS1VVncwLXprNUtEeEw2NEQwV0dvcTVjUU4wOXBldXhPTmRmcEdyZlhHNXpoRy1BdDd5ZWxtQmkx?oc=5",
+   "date": "2026-06-30"
+  },
+  {
+   "s": "kuwait",
    "r": "france",
    "event": "anlaşma / ortaklık",
    "root": "057",
@@ -2754,9 +2946,9 @@
   {
    "s": "australia",
    "r": "germany",
-   "event": "anlaşma / ortaklık",
-   "root": "057",
-   "goldstein": 6,
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
    "confidence": 0.6,
    "title": "Australia racks up biggest arms export deal: $1B AUD for Boxers to Germany",
    "source": "Breaking Defense",
@@ -2766,9 +2958,9 @@
   {
    "s": "japan",
    "r": "australia",
-   "event": "anlaşma / ortaklık",
-   "root": "057",
-   "goldstein": 6,
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
    "confidence": 0.6,
    "title": "Japan, in its biggest arms deal since World War II, sells stealth frigates worth $6 billion to Australia",
    "source": "Fortune",
@@ -2788,12 +2980,12 @@
    "date": "2026-05-08"
   },
   {
-   "s": "uae",
-   "r": "united states",
+   "s": "united states",
+   "r": "uae",
    "event": "onay / mutabakat",
    "root": "050",
    "goldstein": 5,
-   "confidence": 0.6,
+   "confidence": 0.75,
    "title": "US approves $7 billion more in weapons for UAE, WSJ reports",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYV9FZ21kM2hnT3RMZXNfNUNZNGZzblpVV3hlX0JTTkJuUGRCc2NKci1CaTM3ZldyN2R2ZE9PbVpWXy1tSDkwc0ZVam85N3luRlRwVHU3WTNTSW5QVF9IajlNWXdEYkhPSGIyWlpnRWlYS2lzVzY3Ym10b1h4TFQwQ2c2WUFfT181VTF6QVBNeEhBb1RlaGpKQUlVb203UGU3aWFIa1lRNA?oc=5",
@@ -2810,18 +3002,6 @@
    "source": "The Christian Science Monitor",
    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSUtaS0xDcGlKMEk4RVVUVV9mM1c2U3BHWWhhczNLWUN1ekFmb1VxUVNqaG5xSl9oUGZoT0JwTjhxOGQyOVlDSG9YcGdDMDVDLUtwOU4wUGRIZk9Sb25uQVJaOXcwMDl4OWYzaDZILTNtQlhCcWdXRTUtN1h5eTJ1SmZ5c3IxWHI0M3JlaHFQOUJqb1hrZUJYVFpKNUZoM1nSAbgBQVVfeXFMTTdNUWhMbmtVRHJ5bXhES1BpNnZPYmVaSHRiTUQzLWMtbDFadkJGcVdNd0xFRlZZb0xmd2dmOTJOeDc4ZjhHQ3p4azBrYjJZNHpjcWhTbkphTVlQcHZiUXVlQjVXLWU2Wnk5Z2FRcnRjT2VJcWtULXNYZnNmSjVrWk1SZXRKQS1jRGpBamE5LTdpQTI5SUNrSXdteDBxUkIzT3VfOFctTy1TRVhjYUJiaUpVb3lYT3hzcg?oc=5",
    "date": "2026-04-29"
-  },
-  {
-   "s": "uae",
-   "r": "france",
-   "event": "yatırım",
-   "root": "071",
-   "goldstein": 6.4,
-   "confidence": 0.55,
-   "title": "UAE Walks Away From Rafale F5: France Forced to Fund €5 Billion ‘Super Rafale’ Alone as Europe’s Future Fighter Strategy Enters Crisis",
-   "source": "Defence Security Asia",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdTNmd3ZEMzcwVnhNRjRZWWQ4eTlIVEFpN3hfTE1ZMGpJQ0Q4QXMxa283RFJzWWFCT3FMajk4OV9TSkFlMHdXSW9iT2pFZjlyQmM5Ym04VVRKR0F2NUNuR2hualdjQkdhYzZBSFZTTFRqTW1DRUFOMno1SEtCWmNBYVFfZ280elRWcG9GSFJKYjlsRFByYWE4YVV6bEJUWjhwWDZOYTZtNmszN3V2b2c?oc=5",
-   "date": "2026-04-03"
   },
   {
    "s": "uae",
@@ -2874,9 +3054,9 @@
   {
    "s": "united kingdom",
    "r": "israel",
-   "event": "ticaret / tedarik",
-   "root": "061",
-   "goldstein": 5,
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
    "confidence": 0.55,
    "title": "5 things to know about the U.K.'s suspension of some arms exports to Israel",
    "source": "NPR",
@@ -3256,6 +3436,30 @@
    "date": "2026-05-14"
   },
   {
+   "s": "italy",
+   "r": "greece",
+   "event": "silah/malzeme alımı",
+   "root": "061",
+   "goldstein": 5,
+   "confidence": 0.75,
+   "title": "Why Greece Is Buying Secondhand Frigates from Italy",
+   "source": "The National Interest",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxONVpHTFdzMlNhMG5BT2JBcU5QSFV2S0JlOVNxLXhFbFZ6bDU0LWNMNlROaVBidlRiNmlEM1ZYR2RDSTc5WkxLeTZmcWlHcmpMUUFwZ3lQcmhwVWxtZ2tkV0JoanNqczhkLW02UkxwMkVpaXVEQ3p0VlJ3eWcwZXdZUnR4RE5ySFRuR1JtZ0xlX3ZxVVpTMFduaWlJV3Qwdw?oc=5",
+   "date": "2026-05-22"
+  },
+  {
+   "s": "italy",
+   "r": "greece",
+   "event": "silah/malzeme alımı",
+   "root": "061",
+   "goldstein": 5,
+   "confidence": 0.6,
+   "title": "FREMM: Greece finalizes the purchase of four second-hand frigates from Italy",
+   "source": "Meta-Defense",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5fTFZUYTJkR0NXcmtVSFlPRlZBYTNtQXZQZHk5YmozTms1V21sVDhtU2ZCUWtMZm9QaWcwMUFpSlQtZjdxVnI4bWxteUtnNVpQOVNQT0ZNUlRTT2J1YmZjOTM2c2ZVVFhHT3RNR0dYVUs5UzZHc2tRUkVVNFo3V1k?oc=5",
+   "date": "2026-05-04"
+  },
+  {
    "s": "greece",
    "r": "italy",
    "event": "anlaşma imzası",
@@ -3268,12 +3472,12 @@
    "date": "2026-03-09"
   },
   {
-   "s": "ukraine",
-   "r": "united states",
+   "s": "united states",
+   "r": "ukraine",
    "event": "anlaşma / ortaklık",
    "root": "057",
    "goldstein": 6,
-   "confidence": 0.75,
+   "confidence": 0.55,
    "title": "Binge, borrow and deal: Europe digs deep to buy U.S. arms for Ukraine",
    "source": "The Washington Post",
    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNbVR5T2FiRjBMOVlXS1pSaU40NmEwVmY3U1Mxc0JncVdQclVFV2ZfdzhjY09idl92NFlLbUR4Y2ZRSDhzNWQ0ejJrUjA3eTFNSzU4SHhzQ3dYa2dlNVJLLTZfNVFYekNVWmN2cG5qNnBENFRSZW5BZVBxSzh0ekdkN19kbUlLZw?oc=5",
@@ -3784,6 +3988,18 @@
    "date": "2026-07-07"
   },
   {
+   "s": "denmark",
+   "r": "greenland",
+   "event": "silah/malzeme alımı",
+   "root": "061",
+   "goldstein": 5,
+   "confidence": 0.6,
+   "title": "Denmark Is Buying US Missiles to Defend Greenland From the United States — Yes, Really",
+   "source": "Military.com",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeGlhNDRCNU9uRGdqZGQxMUxMVXlZWm1QdWNLVjJOTnJQRlRSYWdlOXdsclpKdDNoSEl6RTRCcUV2amlBVVFyd1AwazZITkE2WXY3dDVoTDFqeGNxYWFodU84Z1hKdjJSWHhHWTFyd0l3bkZ6RUdMRmtKdnBTeEtqZzNGbkxLajhHMUV4blFKNUkzMnNuMnFUWGZkVWp3bEozdjFpS0pkTVFhOW9ZQVJUazctMDZ3eW9K?oc=5",
+   "date": "2026-02-20"
+  },
+  {
    "s": "united states",
    "r": "greenland",
    "event": "anlaşma / ortaklık",
@@ -3822,9 +4038,9 @@
   {
    "s": "denmark",
    "r": "israel",
-   "event": "ticaret / tedarik",
-   "root": "061",
-   "goldstein": 5,
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
    "confidence": 0.6,
    "title": "Denmark: NGOs sue the Danish state to stop arms exports to Israel",
    "source": "Amnesty International",
@@ -3870,26 +4086,14 @@
   {
    "s": "united states",
    "r": "romania",
-   "event": "geri çekilme",
-   "root": "087",
-   "goldstein": 2,
+   "event": "destek/yardım kesme",
+   "root": "162",
+   "goldstein": -3.5,
    "confidence": 0.75,
    "title": "U.S. to withdraw some troops from Romania, NATO’s eastern flank",
    "source": "The Washington Post",
    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPY09Ub3h5cEhtQWpPZklkQzZ0Vmo3R1p4RUZ6VUJSUzBKUFFMYkxBSTA0TDZXUHZaWEN0S0pGSTNHbU50S0VTaXdoSFNsUFhRQjBtcDRDd0pMMUphQ2FSZ2VoWnNmX19VQndRS3B5elBkR05IeThRZ21md2FOMXV4S1lvdHJpRHdLbUE?oc=5",
    "date": "2025-10-29"
-  },
-  {
-   "s": "france",
-   "r": "romania",
-   "event": "destek / övgü",
-   "root": "051",
-   "goldstein": 3.4,
-   "confidence": 0.6,
-   "title": "France vows support for NATO ally Romania after US cuts troops",
-   "source": "Le Monde.fr",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTFNvMWh3bmtDclJaRC05bDZEaDBMMTRvMWRZNkN2T1pjNmNFX1JOTGJCZEFRajRoNi11ekVFOWZ1dlNFNGx0b0F6VWh0eU5ud1dpa1hSQU4wRHVFVzh3S2R4SHdOS3JjSHdBRG5jRURkbl9FNE5yNWJXcDBRSTJDdGVVVmhSVF9GdEZGSWUwWnlDYjY1Mk03YUZzUG5DbzlZZGUtTWNrekV4WHFfM2tvMjM0VzBzWWt4R3Y4TEYzRDJ3U05UYzZSMUQ2MWI0dEliS3c?oc=5",
-   "date": "2025-10-30"
   },
   {
    "s": "romania",
@@ -4170,9 +4374,9 @@
   {
    "s": "united states",
    "r": "hungary",
-   "event": "görüşme / müzakere",
-   "root": "036",
-   "goldstein": 4,
+   "event": "silah/malzeme alımı",
+   "root": "061",
+   "goldstein": 5,
    "confidence": 0.75,
    "title": "Hungary in Talks to Acquire HIMARS From US: Hungarian Defense Minister",
    "source": "The Defense Post",
@@ -4190,18 +4394,6 @@
    "source": "RFI",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWEtEQlJQdHlaNDhOdGhvR3ZKcXVlRkZaNnFUamZKUk5sdGhUb3RKaUZ5R1M2OS1mbWZLQjFLZnpKcWFVUVczejlsaFRfRW9KVUVWelllRVI1NWh4QTNSeXEwY1BCQXpaTjdaOW9NcGp4YzV5WnlIXzh1c1VZVGNaVU1GazdHREhXOTA2TnprQnRvSmFSemFfTHNqSl9VWXNkY251U2lzV3BmQQ?oc=5",
    "date": "2026-04-01"
-  },
-  {
-   "s": "russia",
-   "r": "france",
-   "event": "ticaret / tedarik",
-   "root": "061",
-   "goldstein": 5,
-   "confidence": 0.6,
-   "title": "Hungary buys gas from France's Engie, diversifying supply from Russia",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQ1ZJcWFwSDR5SVR6MWhOb2RmQzR4cmh6ZHVVTllieXp4Tm05OFNjSTB6M0E0SE93TEFseENHQVd3Z2JBX3hJbFpURUMwclQ3NkxpOFJkRnJjalFNSVk2SGRTUzNNSm4zZVZUcXUwSmx4aTF4T2o0YXNkbXVPUVZub3pJQjBNeGE2MTV5Y1B1SmZJUWJ5WUxlN1lVdWwwaDUwZXNrU01ncm9LS2MzUmc?oc=5",
-   "date": "2025-10-02"
   },
   {
    "s": "russia",
@@ -4254,9 +4446,9 @@
   {
    "s": "serbia",
    "r": "croatia",
-   "event": "ticaret / tedarik",
-   "root": "061",
-   "goldstein": 5,
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
    "confidence": 0.55,
    "title": "France’s controversial arms exports to Serbia and Croatia",
    "source": "Defence24.com",
@@ -4310,6 +4502,18 @@
    "source": "AP News",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcm4yZmNIcjNabE9Ja283bTQtV0djdllFM3psajBSQldGbEZQVXlraVVvaGxEeUFnZjBhaDRFcXg4TmxUNnpfbFBXbEdyaWxjWVh6VlliYzN1WXByMXpzYUhkMWp3Y2x1dldJVVMtbTd6MkN3Q3VydDdVbU1pVHg4b1R4QXlEdG9aa3FoVHRWODBzaDNUcXkzTkxHdE5rWXdkVlZNRFZrV2NybFc2?oc=5",
    "date": "2025-05-29"
+  },
+  {
+   "s": "russia",
+   "r": "ukraine",
+   "event": "silah/malzeme tedariki",
+   "root": "060",
+   "goldstein": 4,
+   "confidence": 0.6,
+   "title": "Serbia says it will investigate Russian accusations that it ships arms to Ukraine",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVi1VbEhsM09OQXA2S3JUWTU3QkVtWUZWYlpFWUxKUE9Sbk9DbVpieUhCb3FHbFlWMXp0U19BUUlkdF9jZGd0VXY3WWQ1Y0x2Nll0NGlHano5bGFGWUN3SWJQaWJhWGNUNTJHSnlJcjNGamFkeEY2U18takxRbDJkalBCTXduY1FrUE5WNVpjT2xQQTFQdG9icElKalhoUFhDQUFVR2hkUnZZVUlYRGY0TWxyVmlRcVNNZWRyajdFd2l4S0dTc3pqZjdzRjRPcU5YYW82WG84RUg?oc=5",
+   "date": "2025-05-30"
   },
   {
    "s": "russia",

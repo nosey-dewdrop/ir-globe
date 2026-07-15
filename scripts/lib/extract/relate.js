@@ -44,11 +44,22 @@ const SPEC = /\b(may|might|could|would|expected to|set to|plan(s|ned)? to|weigh(
 const MAX_GAP_WORDS = 8;
 const wc = (s) => (s.trim() ? s.trim().split(/\s+/).length : 0);
 
+// SEO/aggregator tag-soup titles ("2026 Iran war | Deal, Explained, United
+// States, Israel, Strait of Hormuz, ...") are keyword lists, not events. A pipe
+// followed by 3+ comma-separated fragments is the tell — drop them, they only
+// manufacture fake ties.
+const TAGSOUP = /\|\s*[^|]*,[^|]*,[^|]*,/;
+
 function extractAll(text) {
+  if (TAGSOUP.test(text)) return [];
   const actors = detect(text);
   const ev = code(text);
   if (!ev) return [];               // no event -> nothing to assert
   if (actors.length < 2) return []; // need two sides for a tie
+
+  // "diversifying / moving away / reduce reliance FROM X" negates X as a partner —
+  // the headline is about leaving that counterpart, not trading with it.
+  const away = /\b(diversif\w+|away from|reduce\w*\s+(its\s+)?(reliance|dependence)|wean\w*|cut(s|ting)? reliance|less dependent)\b/.test(text.toLowerCase());
 
   const hay = norm(text);
   const mNorm = norm(ev.matched).slice(1, -1); // verb phrase in the same coordinate space
@@ -117,11 +128,14 @@ function extractAll(text) {
       const t = subj; subj = targ; targ = t;
       clearDir = true;
     }
-    // buyer/importer framing: "India clears/approves/signs a deal FOR|FROM US jets"
-    // — the subject is the BUYER, the counterpart named after "for/from" is the
-    // supplier, so the trade flows target→subject. Flip so the seller is source.
-    else if (/\b(buy(s|ing)?|purchas\w+|import(s|ed|ing)?|clear(s|ed)?|approv\w+|order(s|ed)?|acquir\w+)\b/.test(hay.slice(0, targ.start)) &&
-             /\b(for|from)\s*$/.test(hay.slice(0, targ.start))) {
+    // buyer/importer framing: "India clears/approves/signs a deal FROM US jets"
+    // — the subject is the BUYER, the counterpart after "from" is the supplier, so
+    // the trade flows target→subject. Flip so the seller is source. BUT never flip
+    // when a financing/aid verb governs the sentence ("Germany finances drones FOR
+    // Ukraine"): there the money/goods flow subject→beneficiary, not the reverse.
+    else if (!/\b(financ\w+|fund(s|ed|ing)?|gift(s|ed)?|donat\w+|grant(s|ed)?|supply|supplies|supplied|deliver\w+|sends?|sent|aid|bankroll\w*|underwrit\w+)\b/.test(hay) &&
+             /\b(buy(s|ing)?|purchas\w+|import(s|ed|ing)?|clear(s|ed)?|approv\w+|order(s|ed)?|acquir\w+)\b/.test(hay.slice(0, targ.start)) &&
+             /\bfrom\s*$/.test(hay.slice(0, targ.start))) {
       const t = subj; subj = targ; targ = t;
       clearDir = true;
     }
@@ -138,6 +152,9 @@ function extractAll(text) {
   if (actors.length === 2) confidence += 0.1;
   else confidence -= 0.05 * (actors.length - 2); // more actors -> more pairing doubt
   if (SPEC.test(hay)) confidence -= 0.15;
+  // "diversifying supply from Russia": if the target is the one being moved away
+  // from, this isn't a partnership — sink it below the keep threshold.
+  if (away && targ.start != null && /\bfrom\b/.test(hay.slice(0, targ.start + (targ.list[0] ? targ.list[0].matched.length : 0)))) confidence -= 0.35;
 
   // distance + clause guard: look at the text BETWEEN the subject and target.
   //   − far apart  -> likely unrelated clauses
