@@ -178,12 +178,11 @@ function extractAll(text) {
     }
   }
   // indirect-approval framing: "Trump welcomes China['s] investment in Venezuela"
-  // — subject approves of what the target does ELSEWHERE; it's not a bilateral act
-  // between subject and target. If an approval verb governs and the target is
-  // followed by an activity noun + "in/into" (a third place), sink it.
+  // — subject approves of what the target does ELSEWHERE; not a bilateral act. This
+  // is a structural false-positive, so DROP the tie outright rather than nudging.
   if (/\b(welcom\w+|hail(s|ed)?|praise\w+|backs?|backed|applaud\w+)\b/.test(hay.slice(0, verbAt + mNorm.length)) &&
       targ.start != null && /^\s*('?s\s+)?\w*\s*(investment|deal|move|bid|plan|push|expansion|entry|role|presence)\b[^.]{0,20}\b(in|into|across)\b/.test(hay.slice(targ.start + (targ.list[0] ? targ.list[0].matched.length : 0)))) {
-    confidence -= 0.42;
+    return [];
   }
   confidence = Number(Math.max(0.1, Math.min(0.95, confidence)).toFixed(2));
 
