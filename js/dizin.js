@@ -68,8 +68,34 @@
       j("data/events/graph.json").catch(() => null),
     ]);
     if (!events && !graph) return "";
-    const html = Motor.radarCountry(events, graph, name, base.disp);
-    return html ? `<section class="motor-sec"><h2>haber ağında</h2>${html}</section>` : "";
+    const EN = typeof I18N !== "undefined" && I18N.isEn;
+    const radar = Motor.radarCountry(events, graph, name, base.disp);
+
+    // THE journalist's page: this country's recent dated, sourced developments —
+    // "who armed Ukraine this week", clickable to the publisher. Built from the
+    // coded events (which now carry title/url/pub), newest first.
+    let freshHtml = "";
+    if (events && events.events) {
+      const today = new Date();
+      const mine = events.events
+        .filter((e) => (e.s === name || e.r === name) && e.title && e.url && e.date &&
+          (today - new Date(e.date)) / 86400000 <= 45)
+        .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+      const seen = {}, top = [];
+      mine.forEach((e) => { const k = (e.title || "").slice(0, 40).toLowerCase(); if (!seen[k] && top.length < 15) { seen[k] = 1; top.push(e); } });
+      if (top.length) {
+        const labOf = Object.fromEntries(base.LAYERS.map((l) => [l.key, l.label]));
+        const rows = top.map((e) => {
+          const other = e.s === name ? e.r : e.s;
+          const arrow = e.s === name ? `${esc(base.disp(name))} → ${esc(base.disp(other))}` : `${esc(base.disp(other))} → ${esc(base.disp(name))}`;
+          const src = e.pub || e.src || "";
+          return `<a class="dg" href="${esc(e.url)}" target="_blank" rel="noopener"><span class="dg-t">${esc(e.title)}</span><span class="dg-m">${arrow} · ${esc(labOf[e.layer] || e.layer)}${src ? " · " + esc(src) : ""} · ${esc(e.date)}</span></a>`;
+        }).join("");
+        freshHtml = `<section class="motor-sec"><h2>${EN ? "recent developments" : "son gelişmeler"} <span class="cnt">(${EN ? "dated, sourced" : "tarihli, kaynaklı"})</span></h2><div class="fresh-list">${rows}</div></section>`;
+      }
+    }
+    const radarHtml = radar ? `<section class="motor-sec"><h2>${EN ? "in the news" : "haber ağında"}</h2>${radar}</section>` : "";
+    return freshHtml + radarHtml;
   }
 
   /* ── one country ── */

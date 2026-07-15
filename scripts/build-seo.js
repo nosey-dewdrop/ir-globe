@@ -120,8 +120,9 @@ function shell({ view, key, crumbMid, crumbLeaf, h1, lede }) {
   <noscript><p class="note">Bu dizin canlı veriden çizilir — <a href="ROOT/index.html">küreden devam et →</a></p></noscript>
 </main>
 ${foot()}
-<script src="ROOT/js/motor.js?v=108" defer></script>
-<script src="ROOT/js/dizin.js?v=110" defer></script>
+<script src="ROOT/js/i18n.js?v=115" defer></script>
+<script src="ROOT/js/motor.js?v=115" defer></script>
+<script src="ROOT/js/dizin.js?v=115" defer></script>
 <script src="ROOT/admin/config.js" defer></script>
 <script src="ROOT/js/sayac.js?v=1" defer></script>
 </body></html>`;
