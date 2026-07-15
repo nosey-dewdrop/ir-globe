@@ -48,6 +48,30 @@ for (const l of LAYERS) {
 }
 const NAMES = [...new Set(TIES.flatMap((t) => [t.s, t.r]))].sort();
 
+/* coded events (with source urls) so we can BAKE the latest dated, sourced
+   headlines into each country shell — the page is useful on first paint and
+   indexable, instead of a bare "canlı veri yükleniyor…" placeholder. */
+let EVENTS = [];
+try { EVENTS = (readJSON("data/events/index.json").events || []); } catch (e) {}
+const trMonth = ["oca", "şub", "mar", "nis", "may", "haz", "tem", "ağu", "eyl", "eki", "kas", "ara"];
+const shortD = (d) => { const p = String(d).split("-"); return p.length === 3 ? (parseInt(p[2], 10) + " " + (trMonth[parseInt(p[1], 10) - 1] || "")) : d; };
+function bakedFor(name) {
+  const today = new Date("2026-07-15"); // stamped at build; page JS re-renders live
+  const mine = EVENTS
+    .filter((e) => (e.s === name || e.r === name) && e.title && e.date)
+    .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  const seen = {}, top = [];
+  for (const e of mine) { const k = (e.title || "").slice(0, 40).toLowerCase(); if (!seen[k]) { seen[k] = 1; top.push(e); } if (top.length >= 6) break; }
+  if (!top.length) return "";
+  const rows = top.map((e) => {
+    const other = e.s === name ? e.r : e.s;
+    const arrow = `${esc(disp(e.s === name ? name : other))} → ${esc(disp(e.s === name ? other : name))}`;
+    const lnk = e.pub && e.title ? `https://www.google.com/search?q=${encodeURIComponent('site:' + e.pub + ' "' + e.title + '"')}` : (e.url || "#");
+    return `<li><a href="${esc(lnk)}" rel="noopener">${esc(e.title)}</a> <span class="baked-m">${arrow} · ${esc(e.event || "")}${e.pub ? " · " + esc(e.pub) : ""} · ${esc(shortD(e.date))}</span></li>`;
+  }).join("");
+  return `<section class="baked"><h2>son gelişmeler</h2><ul class="baked-list">${rows}</ul></section>`;
+}
+
 /* ── helpers ── */
 const esc = (s) =>
   String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
@@ -87,7 +111,7 @@ function head(title, desc, canonical, extraLd) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="ROOT/css/site.css?v=12">
+<link rel="stylesheet" href="ROOT/css/site.css?v=13">
 </head>
 <body class="doc" data-root="ROOT/">`;
 }
@@ -110,13 +134,14 @@ function foot() {
 </footer>`;
 }
 /* thin shell body: crawlers get h1 + lede; js/dizin.js draws the rest live */
-function shell({ view, key, crumbMid, crumbLeaf, h1, lede }) {
+function shell({ view, key, crumbMid, crumbLeaf, h1, lede, baked }) {
   return `${nav()}
 <main class="wrap" id="dizin" data-view="${view}"${key ? ` data-key="${esc(key)}"` : ""}>
   <nav class="crumb"><a href="ROOT/index.html">ana sayfa</a> › ${crumbMid}${esc(crumbLeaf)}</nav>
   <h1>${esc(h1)}</h1>
   <p class="lede">${esc(lede)}</p>
-  <p class="dg-load">canlı veri yükleniyor…</p>
+  ${baked || ""}
+  <p class="dg-load">güncel liste yükleniyor…</p>
   <noscript><p class="note">Bu dizin canlı veriden çizilir — <a href="ROOT/index.html">küreden devam et →</a></p></noscript>
 </main>
 ${foot()}
@@ -171,6 +196,7 @@ function countryPage(name) {
     view: "ulke", key: name,
     crumbMid: `<a href="ROOT/ulke/index.html">ülkeler</a> › `, crumbLeaf: dn,
     h1: dn, lede: `${dn}, ${layerKeys.length} katmanda ${ties.length} ülke bağıyla haritada. Aşağıda kimden alıp kime verdiği.`,
+    baked: bakedFor(name),
   });
   return fix(head(title, desc, `${SITE}/ulke/${slug(name)}/`, { "@type": "Place", name: dn, description: desc }) + body, 2);
 }
@@ -223,7 +249,7 @@ const veriHtml = `<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=12">
+<link rel="stylesheet" href="css/site.css?v=13">
 </head>
 <body>
 <header class="topbar">

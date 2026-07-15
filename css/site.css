@@ -365,3 +365,12 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 /* ülke sayfasından ilişki sayfasına köprü */
 .pairlink { color: var(--faint); text-decoration: none; font-size: 13px; padding: 0 3px; }
 .pairlink:hover { color: var(--navy); }
+
+/* baked recent headlines on country shells (useful on first paint) */
+.baked { margin: 14px 0; }
+.baked h2 { font-size: 15px; margin-bottom: 8px; }
+.baked-list { list-style: none; padding: 0; }
+.baked-list li { padding: 8px 0; border-top: 1px solid #e4e7ec; }
+.baked-list a { font-family: Newsreader, Georgia, serif; color: #16191f; text-decoration: none; font-size: 15px; }
+.baked-list a:hover { color: #17356b; }
+.baked-m { display: block; font-size: 12px; color: #6b7280; margin-top: 2px; }
