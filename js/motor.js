@@ -74,7 +74,8 @@ const Motor = (() => {
 
   function evRow(e, disp) {
     const who = `${esc(disp(e.s))} → ${esc(disp(e.r))}`;
-    const label = e.event ? ` · ${esc(e.event)} ${toneMark(e.goldstein, e.layer)}` : ` ${toneMark(e.goldstein, e.layer)}`;
+    const evName = (typeof I18N !== "undefined" && e.event) ? I18N.ev(e.event) : e.event;
+    const label = e.event ? ` · ${esc(evName)} ${toneMark(e.goldstein, e.layer)}` : ` ${toneMark(e.goldstein, e.layer)}`;
     return `<p class="ev"><span class="ev-h">${who}${label}</span><span class="ev-d">${esc(shortDate(e.date))}</span></p>`;
   }
 

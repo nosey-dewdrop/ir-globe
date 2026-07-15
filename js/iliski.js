@@ -83,28 +83,32 @@
         var weeks = pairData.weekly || {}, sum = 0, wc = 0;
         Object.keys(weeks).forEach(function (w) { if (typeof weeks[w].avg === "number") { sum += weeks[w].avg; wc++; } });
         var avg = wc ? sum / wc : 0;
-        var yon = avg < -1 ? "gerginlik ağır basıyor" : avg > 1 ? "işbirliği ağır basıyor" : "hem işbirliği hem gerginlik var";
+        var EN = typeof I18N !== "undefined" && I18N.isEn;
+        var yon = avg < -1 ? (EN ? "tension is dominant" : "gerginlik ağır basıyor")
+          : avg > 1 ? (EN ? "cooperation is dominant" : "işbirliği ağır basıyor")
+          : (EN ? "both cooperation and tension" : "hem işbirliği hem gerginlik var");
         // layers is an object {key:count}; take the busiest layer names
         var layerNames = Object.keys(pairData.layers || {})
           .sort(function (a, b) { return pairData.layers[b] - pairData.layers[a]; })
           .map(function (k) { var lab = LAYERS.filter(function (l) { return l.key === k; })[0]; return lab ? lab.label : k; })
           .slice(0, 3).join(", ");
-        // date-stamped narrative: the last few notable coded events, newest first,
-        // as "olay (tarih)" — the paste-ready sequence an analyst writes a brief
-        // from ("ateşkes çöktü 8 tem, yaptırım 14 tem"). Built from real events.
+        // date-stamped narrative — the paste-ready sequence an analyst writes a brief from.
         var mine = (events && events.events || [])
           .filter(function (e) { return e.pair === pairKey; })
           .sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
-        var trMonth = ["oca","şub","mar","nis","may","haz","tem","ağu","eyl","eki","kas","ara"];
-        var shortD = function (d) { var p = String(d).split("-"); return p.length === 3 ? (parseInt(p[2], 10) + " " + (trMonth[parseInt(p[1], 10) - 1] || "")) : d; };
+        var mo = EN ? ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"] : ["oca","şub","mar","nis","may","haz","tem","ağu","eyl","eki","kas","ara"];
+        var shortD = function (d) { var p = String(d).split("-"); return p.length === 3 ? (EN ? (mo[parseInt(p[1], 10) - 1] + " " + parseInt(p[2], 10)) : (parseInt(p[2], 10) + " " + (mo[parseInt(p[1], 10) - 1] || ""))) : d; };
+        var evName = function (e) { return (typeof I18N !== "undefined") ? I18N.ev(e) : e; };
         var seq = mine.filter(function (e) { return typeof e.goldstein === "number" && Math.abs(e.goldstein) >= 4; })
           .slice(0, 4)
-          .map(function (e) { return esc(e.event) + " (" + esc(shortD(e.date)) + ")"; })
+          .map(function (e) { return esc(evName(e.event)) + " (" + esc(shortD(e.date)) + ")"; })
           .join(", ");
-        summary = '<p class="pair-summary">motorun okuduğu son haberlerde ' + esc(da) + " ile " + esc(db) +
-          " arasında <strong>" + yon + "</strong> (" + pairData.n + " kodlanmış olay" + (layerNames ? " · " + esc(layerNames) : "") + ")." +
-          (seq ? " Öne çıkanlar: " + seq + "." : "") +
-          " Aşağıdaki her olay ve manşet gerçek bir kaynağa tıklanır.</p>";
+        summary = '<p class="pair-summary">' +
+          (EN ? "In the news the engine read, between " + esc(da) + " and " + esc(db) + " <strong>" + yon + "</strong>"
+              : "motorun okuduğu son haberlerde " + esc(da) + " ile " + esc(db) + " arasında <strong>" + yon + "</strong>") +
+          " (" + pairData.n + (EN ? " coded events" : " kodlanmış olay") + (layerNames ? " · " + esc(layerNames) : "") + ")." +
+          (seq ? (EN ? " Highlights: " : " Öne çıkanlar: ") + seq + "." : "") +
+          (EN ? " Every event and headline links to a real source.</p>" : " Aşağıdaki her olay ve manşet gerçek bir kaynağa tıklanır.</p>");
       }
 
       /* manşetler: iki yönün tüm katmanlardaki haberleri, yeni üstte */
@@ -134,21 +138,23 @@
         return;
       }
 
+      var EN = typeof I18N !== "undefined" && I18N.isEn;
+      var langToggle = '<p class="lang-toggle">' +
+        (EN ? '<a href="?a=' + encodeURIComponent(A) + "&b=" + encodeURIComponent(B) + '&lang=tr">TR</a> · <strong>EN</strong>'
+            : '<strong>TR</strong> · <a href="?a=' + encodeURIComponent(A) + "&b=" + encodeURIComponent(B) + '&lang=en">EN</a>') + "</p>";
       mount.innerHTML =
-        '<nav class="crumb"><a href="index.html">ana sayfa</a> › <a href="ulke/index.html">ülkeler</a> › ' + esc(da) + " ↔ " + esc(db) + "</nav>" +
+        langToggle +
+        '<nav class="crumb"><a href="index.html">' + (EN ? "home" : "ana sayfa") + '</a> › <a href="ulke/index.html">' + (EN ? "countries" : "ülkeler") + "</a> › " + esc(da) + " ↔ " + esc(db) + "</nav>" +
         "<h1>" + esc(da) + " ↔ " + esc(db) + "</h1>" +
-        (nmeta && nmeta.updated ? '<p class="asof">güncel: ' + esc(String(nmeta.updated).slice(0, 10)) + " · haberler 6 saatte bir tazelenir</p>" : "") +
-        '<p class="lede">İki ülke arasındaki kayıtlı bağlar, olay geçmişi ve gerçek manşetler. Ülke sayfaları: ' +
-        '<a href="ulke/' + esc(COUNTRIES[A].slug) + '/">' + esc(da) + "</a> · " +
-        '<a href="ulke/' + esc(COUNTRIES[B].slug) + '/">' + esc(db) + "</a></p>" +
+        (nmeta && nmeta.updated ? '<p class="asof">' + (EN ? "as of " : "güncel: ") + esc(String(nmeta.updated).slice(0, 10)) + (EN ? " · news refreshes every 6h" : " · haberler 6 saatte bir tazelenir") + "</p>" : "") +
         summary +
         trend +
         (radar ? '<section class="motor-sec">' + radar + "</section>" : "") +
-        (tieRows ? '<h2>kayıtlı bağlar</h2><div class="cgroup"><ul class="clist">' + tieRows + "</ul></div>" : "") +
-        (newsHtml ? '<h2>manşetler <span class="cnt">(' + arts.length + ")</span>" +
-          (arts.length ? ' <button class="csv-btn" id="csvBtn" type="button">CSV indir</button>' : "") + "</h2>" +
+        (tieRows ? "<h2>" + (EN ? "recorded ties" : "kayıtlı bağlar") + '</h2><div class="cgroup"><ul class="clist">' + tieRows + "</ul></div>" : "") +
+        (newsHtml ? "<h2>" + (EN ? "headlines" : "manşetler") + ' <span class="cnt">(' + arts.length + ")</span>" +
+          (arts.length ? ' <button class="csv-btn" id="csvBtn" type="button">' + (EN ? "download CSV" : "CSV indir") + "</button>" : "") + "</h2>" +
           '<div class="pair-news">' + newsHtml + "</div>" : "") +
-        '<p class="meta" style="margin-top:24px">olaylar ve ton haberlerden otomatik çıkarılır, hata payı vardır — <a href="metodoloji.html">metodoloji</a>.</p>';
+        '<p class="meta" style="margin-top:24px">' + (EN ? "events and tone are auto-extracted from news and carry a margin of error — " : "olaylar ve ton haberlerden otomatik çıkarılır, hata payı vardır — ") + '<a href="metodoloji.html">' + (EN ? "methodology" : "metodoloji") + "</a>.</p>";
 
       /* CSV export: an analyst can pull the full sourced record of this pair as a
          spreadsheet (date, layer, source, headline, url) — the "take the data with
