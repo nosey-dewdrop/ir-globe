@@ -85,11 +85,19 @@
       mine.forEach((e) => { const k = (e.title || "").slice(0, 40).toLowerCase(); if (!seen[k] && top.length < 15) { seen[k] = 1; top.push(e); } });
       if (top.length) {
         const labOf = Object.fromEntries(base.LAYERS.map((l) => [l.key, l.label]));
+        const I18Nok = typeof I18N !== "undefined";
         const rows = top.map((e) => {
           const other = e.s === name ? e.r : e.s;
           const arrow = e.s === name ? `${esc(base.disp(name))} → ${esc(base.disp(other))}` : `${esc(base.disp(other))} → ${esc(base.disp(name))}`;
           const src = e.pub || e.src || "";
-          return `<a class="dg" href="${esc(e.url)}" target="_blank" rel="noopener"><span class="dg-t">${esc(e.title)}</span><span class="dg-m">${arrow} · ${esc(labOf[e.layer] || e.layer)}${src ? " · " + esc(src) : ""} · ${esc(e.date)}</span></a>`;
+          // event type up front so a reader doesn't mistake a THREAT for a transfer
+          const evt = e.event ? (I18Nok ? I18N.ev(e.event) : e.event) : "";
+          const lyr = e.layer ? (I18Nok ? I18N.layer(labOf[e.layer] || e.layer) : (labOf[e.layer] || e.layer)) : "";
+          const meta = [arrow, evt, lyr, src, e.date].filter(Boolean).map(esc).join(" · ");
+          // publisher-scoped search lands on the real outlet article, not a dead
+          // Google News redirect (which can't be decoded).
+          const lnk = e.pub && e.title ? "https://www.google.com/search?q=" + encodeURIComponent('site:' + e.pub + ' "' + e.title + '"') : e.url;
+          return `<a class="dg" href="${esc(lnk)}" target="_blank" rel="noopener"><span class="dg-t">${esc(e.title)}</span><span class="dg-m">${meta}</span></a>`;
         }).join("");
         freshHtml = `<section class="motor-sec"><h2>${EN ? "recent developments" : "son gelişmeler"} <span class="cnt">(${EN ? "dated, sourced" : "tarihli, kaynaklı"})</span></h2><div class="fresh-list">${rows}</div></section>`;
       }

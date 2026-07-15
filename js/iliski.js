@@ -7,6 +7,15 @@
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
     return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
 
+  // Google News redirect links can't be decoded (Google encrypts + blocks it) and
+  // land on a blank interstitial. When we know the real publisher domain, send the
+  // click to a publisher-scoped search that lands ON the outlet's own article
+  // instead — one hop to a citable page, not a dead Google wrapper.
+  var bestLink = function (a) {
+    if (a && a.pub && a.t) return "https://www.google.com/search?q=" + encodeURIComponent('site:' + a.pub + ' "' + a.t + '"');
+    return (a && a.u) || "#";
+  };
+
   var q = new URLSearchParams(location.search);
   var A = (q.get("a") || "").toLowerCase().trim();
   var B = (q.get("b") || "").toLowerCase().trim();
@@ -111,7 +120,8 @@
           });
         var seq = hi.map(function (e) {
           var line = esc(e.title) + " (" + esc(shortD(e.date)) + (e.pub ? " · " + esc(e.pub) : e.src ? " · " + esc(e.src) : "") + ")";
-          return e.url ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + line + "</a>" : line;
+          var lnk = e.pub && e.title ? "https://www.google.com/search?q=" + encodeURIComponent('site:' + e.pub + ' "' + e.title + '"') : e.url;
+          return lnk ? '<a href="' + esc(lnk) + '" target="_blank" rel="noopener">' + line + "</a>" : line;
         }).join("<br>");
         summary = '<p class="pair-summary">' +
           (EN ? "In the news the engine read, between " + esc(da) + " and " + esc(db) + " <strong>" + yon + "</strong>"
@@ -145,7 +155,7 @@
         // (a URL is NOT required for a valid citation) — this finishes the job even
         // though the click routes through Google News. data-cite holds the string.
         var cite = (a.src || a.pub || "") + ', "' + a.t + '"' + (a.d ? ", " + a.d : "");
-        return '<div class="dg-wrap"><a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
+        return '<div class="dg-wrap"><a class="dg" href="' + esc(bestLink(a)) + '" target="_blank" rel="noopener">' +
           '<span class="dg-t">' + esc(a.t) + '</span>' +
           '<span class="dg-m">' + outlet + badge + " · " + esc(lyr) + (a.d ? " · " + esc(a.d) : "") + "</span></a>" +
           '<button class="cite-btn" type="button" data-cite="' + esc(cite) + '" title="' + (ENh ? "copy citation" : "alıntıyı kopyala") + '">' + (ENh ? "cite" : "alıntı") + "</button></div>";
@@ -204,7 +214,7 @@
       if (csvBtn) csvBtn.addEventListener("click", function () {
         var q = function (v) { return '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"'; };
         var rows = [["tarih", "katman", "yayin", "yayin_alan_adi", "baslik", "link"].join(",")];
-        arts.forEach(function (a) { rows.push([q(a.d), q(a.l), q(a.src), q(a.pub), q(a.t), q(a.u)].join(",")); });
+        arts.forEach(function (a) { rows.push([q(a.d), q(a.l), q(a.src), q(a.pub), q(a.t), q(bestLink(a))].join(",")); });
         var blob = new Blob(["﻿" + rows.join("\r\n")], { type: "text/csv;charset=utf-8" });
         var url = URL.createObjectURL(blob);
         var link = document.createElement("a");
