@@ -115,6 +115,7 @@ function extractAll(text) {
     // carries the event ("…as Ukraine and Estonia sign drone deal" -> the
     // ukraine+estonia group, NOT canada from the other clause).
     const g = after.length ? after[0] : before[before.length - 1];
+    if (!g) return [];                 // locative filter removed every candidate
     if (g.list.length >= 2) {
       subj = { list: [g.list[0]] };
       targ = { list: g.list.slice(1) };
