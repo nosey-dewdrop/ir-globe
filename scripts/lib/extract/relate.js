@@ -52,6 +52,11 @@ const TAGSOUP = /\|\s*[^|]*,[^|]*,[^|]*,/;
 
 function extractAll(text) {
   if (TAGSOUP.test(text)) return [];
+  // rhetorical/hypothetical headlines assert nothing: "Can Trump cut off trade
+  // with Spain?", "Will China invade Taiwan?", "Should the US arm Ukraine?" —
+  // a question is not an event. Also "here's what/why/how" explainer framing.
+  if (/^\s*(can|could|will|would|should|is|are|does|do|why|what if|what|how|when)\b[^?]*\?/i.test(text.trim()) ||
+      /\bhere'?s (what|why|how)\b/i.test(text)) return [];
   const actors = detect(text);
   const ev = code(text);
   if (!ev) return [];               // no event -> nothing to assert

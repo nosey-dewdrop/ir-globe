@@ -37,6 +37,12 @@ const RULES = [
   [/\b(seiz(e|ed|ing)|captur(e|ed)|occup(y|ied|ation))\b/, "17", -6.5, "el koyma / işgal"],
   [/\b(deploy(ed|s|ment)?|mass(es|ed)? troops|military build[- ]?up|mobiliz)/, "15", -5.5, "askeri yığınak"],
 
+  // "arms sales/transfers/exports to X" is a supply relationship even when the
+  // sentence also mentions sanctions elsewhere — tested before the sanctions rule
+  // so "France topped arms sales to Israel while backing mini-sanctions" codes as
+  // a transfer, not a sanction.
+  [/\b(arms?|weapons?|defen[cs]e|military) (sales?|transfers?|exports?|deliveries|shipments?|deals?|supplies)\b[^.]{0,20}\bto\b/, "060", 3.0, "silah/malzeme tedariki"],
+
   // --- coercion / sanctions ---
   // a "sanctions waiver/relief/exemption" is LIFTING sanctions, not imposing them
   // — negative lookahead so those headlines don't code as "yaptırım".
