@@ -24,6 +24,10 @@ const RULES = [
   [/\b(hit|struck|pounded|battered|targeted) by (?!(new |fresh |further |more )?(sanction|tariff|ban|restriction|curb))/, "19", -8.5, "saldırıya uğrama"],
   [/\b(invade(s|d)?|invading|invasion|full[- ]scale (war|assault))\b/, "19", -9.4, "askeri işgal"],
   [/\b(air ?strikes?|missile strikes?|bomb(ard|ed|ing)?|shell(ed|ing)?|drone strikes?)\b/, "19", -9.2, "hava/füze saldırısı"],
+  // bare "X strikes Y" / "strikes on/against Y" — the single most common war
+  // headline shape, previously UNCODED (only "launches strikes" matched). Guard
+  // against the finance/labor senses ("strikes a deal", "workers strike").
+  [/\b(strikes?|struck|strik(ing|es))\b(?!\s+(a\s+)?(deal|agreement|balance|pact|accord|gold|oil|chord|back|out)\b)(?<!\bworkers?\s(strikes?|struck))/, "19", -9.2, "hava/füze saldırısı"],
   // "fire/launch missiles|rockets|drones at X" is a strike, not cooperation — must
   // outrank the support rule so "Iranian-backed Houthis fire missiles at Riyadh"
   // codes hostile, not "backed".
