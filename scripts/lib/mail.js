@@ -47,9 +47,28 @@ async function fetchUsers() {
     .filter((u) => u.email && u.follows.length);
 }
 
-/* tüm katman haberlerini yükle: [{t,src,d,u,l,edge}] tarih sıralı, tekilleştirilmiş */
+/* tüm katman haberlerini yükle: [{t,src,d,u,l,edge,g,c}] tarih sıralı, tekilleştirilmiş.
+   g = goldstein (olayın çatışma/işbirliği şiddeti), c = motor güveni — bunlar
+   olay dosyalarından (data/events) başlığa eşlenir; kişisel bültende ÖNEM sıralaması
+   için kullanılır. Ayrıca bu haftanın spike'lı çiftleri (graph.json) işaretlenir. */
 function loadArticles() {
   const index = readJSON("data/layers/index.json");
+  // title -> {g,c} from the engine's coded events (richer than raw headlines)
+  const evByTitle = {};
+  for (const l of index) {
+    let ev = null;
+    try { ev = readJSON(`data/events/${l.key}.json`); } catch (e) {}
+    (ev && ev.events || []).forEach((e) => {
+      if (e && e.title) evByTitle[e.title] = { g: e.goldstein, c: e.confidence };
+    });
+  }
+  // this week's spiking pairs, so a followed pair that just moved gets boosted
+  let spikePairs = new Set();
+  try {
+    const g = readJSON("data/events/graph.json");
+    (g.spikes || []).forEach((s) => spikePairs.add(s.pair));
+  } catch (e) {}
+
   const all = [], seen = new Set();
   for (const l of index) {
     let bag = {};
@@ -58,12 +77,27 @@ function loadArticles() {
       (arr || []).forEach((a) => {
         if (!a || !a.title || !a.url || seen.has(a.title)) return;
         seen.add(a.title);
-        all.push({ t: a.title, src: a.source, d: a.date || "", u: a.url, l: l.key, edge });
+        const ev = evByTitle[a.title] || {};
+        const pk = edge.split("→").sort().join("|");
+        all.push({ t: a.title, src: a.source, d: a.date || "", u: a.url, l: l.key, edge,
+          g: ev.g, c: ev.c, spike: spikePairs.has(pk) });
       }));
   }
   all.sort((a, b) => b.d.localeCompare(a.d));
   const labels = Object.fromEntries(index.map((l) => [l.key, l.label]));
   return { all, labels };
+}
+
+/* importance score for the personal briefing: recent + high-conflict-or-cooperation
+   magnitude + engine-confident + on a spiking pair rank higher. This is what makes
+   the briefing a signal, not just a filtered dump. */
+function importance(a, cutoffTs) {
+  let s = 0;
+  if (a.d) { const age = Math.max(0, (cutoffTs - Date.parse(a.d)) / 86400000); s += Math.max(0, 7 - age); } // freshness (0..7)
+  if (typeof a.g === "number") s += Math.min(6, Math.abs(a.g)) * 0.8;  // event magnitude
+  if (typeof a.c === "number") s += a.c * 3;                            // engine confidence
+  if (a.spike) s += 4;                                                  // just moved this week
+  return s;
 }
 
 /* kullanıcının takiplerine uyan makaleler (benim.js ile aynı mantık) */
@@ -74,13 +108,17 @@ function personalArticles(all, follows, { sinceDays = null } = {}) {
     else if (f.kind === "layer") l.add(f.key);
     else if (f.kind === "pair") p.add(f.key);
   });
+  const cutoffTs = Date.now();
   const cutoff = sinceDays == null ? null
-    : new Date(Date.now() - sinceDays * 86400000).toISOString().slice(0, 10);
-  return all.filter((a) => {
+    : new Date(cutoffTs - sinceDays * 86400000).toISOString().slice(0, 10);
+  const matched = all.filter((a) => {
     if (cutoff && (!a.d || a.d < cutoff)) return false;
     const [s, r] = a.edge.split("→");
     return l.has(a.l) || c.has(s) || c.has(r) || p.has(a.edge);
   });
+  // rank by importance so the briefing leads with what actually matters to this
+  // user (the algorithmic, personal signal — not a reverse-chronological dump).
+  return matched.sort((x, y) => importance(y, cutoffTs) - importance(x, cutoffTs));
 }
 
 const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (ch) =>
