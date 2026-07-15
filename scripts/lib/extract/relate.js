@@ -63,6 +63,17 @@ function extractAll(text) {
       /\bhere'?s (what|why|how)\b/i.test(text)) return [];
   // strong hypothetical / someone-urging-it framing: the tie hasn't happened.
   if (HYPO.test(text.toLowerCase())) return [];
+  // legislative object: "US Russia Sanctions Bill", "China Tariff Act" — a bill/law
+  // named after countries is not a bilateral act between them. Drop.
+  if (/\b(bill|act|law|resolution|legislation|amendment)\b/i.test(text) &&
+      /\b(sanction|tariff|trade|defen[cs]e|arms|aid)\b/i.test(text)) return [];
+  // "comes at a cost to / at the expense of / hurts / threatens X" — X is merely
+  // AFFECTED, not a party to a bilateral tie.
+  if (/\b(cost to|expense of|blow to|threat(en)?s? to|hurts?|damages?|undermin\w+)\b/i.test(text)) {
+    // only drop if this framing wraps the second actor; cheap heuristic: present at all
+    // in a headline whose only "event" is a deal/agreement noun.
+    if (/\b(deal|agreement|pact|accord)\b/i.test(text) && !/\bsign|ink|reach|seal\b/i.test(text)) return [];
+  }
   // reacting-to-tariffs framing ("Spain moves to mitigate US tariffs", "seeks
   // tariff relief from China"): the SUBJECT is the victim, not the imposer — the
   // reading-order direction would be wrong. Drop rather than assert a false one.
@@ -200,6 +211,13 @@ function extractAll(text) {
   if (actors.length === 2) confidence += 0.1;
   else confidence -= 0.05 * (actors.length - 2); // more actors -> more pairing doubt
   if (SPEC.test(hay)) confidence -= 0.15;
+  // symmetric/mutual cooperation between exactly two actors ("Germany and Poland
+  // SIGN a deal", "Turkey, Russia AGREE") is a high-confidence tie even without a
+  // before/after verb split — the act is inherently bilateral and direction is
+  // moot. Reward it so clean deals clear the keep bar.
+  const MUTUAL = /\b(sign(s|ed)?|ink(s|ed)?|finaliz\w+|seal(s|ed)?|agree(s|d)?|reach(es|ed)?|forge(s|d)?|strike(s)? a deal|join(tly)?|hold(s)? talks|deepen\w*|expand\w*)\b/;
+  if (actors.length === 2 && !clearDir && MUTUAL.test(hay) &&
+      (ev.goldstein > 3)) confidence += 0.2;
   // "diversifying supply from Russia" / "cut reliance ON the US": if the target is
   // the one being moved away from, this isn't a partnership — sink it below keep.
   if (away && targ.start != null && /\b(from|on|upon)\b/.test(hay.slice(0, targ.start + (targ.list[0] ? targ.list[0].matched.length : 0)))) confidence -= 0.4;

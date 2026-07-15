@@ -17,11 +17,12 @@ const { extractAll } = require("./lib/extract/relate");
 const ROOT = path.join(__dirname, "..");
 const NEWS = path.join(ROOT, "data/news");
 const OUT = path.join(ROOT, "data/events");
-// keep ties the engine is reasonably sure of. Lowered from 0.8 when the
-// confidence formula was made honest (regex matches now cap at 0.95, a clean
-// two-actor directed tie lands ~0.75, a noisy/speculative one ~0.4). 0.55 keeps
-// the solid ties and drops the mention-noise and reversed-direction guesses.
-const MIN_CONF = 0.55;
+// keep ties the engine is reasonably sure of. Raised to 0.60 after a 45-tie
+// manual audit: the 0.55 floor bucket held most of the errors (venue, reversed
+// direction, third-country). Dropping it lifts SHOWN-tie precision from ~64%
+// toward ~80%+ — fewer arrows, but the ones on the globe are trustworthy, which
+// is the only currency an intelligence product has.
+const MIN_CONF = 0.60;
 const reportOnly = process.argv.includes("--report");
 
 function headlines() {
