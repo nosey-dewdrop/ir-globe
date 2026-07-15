@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=116">
+<link rel="stylesheet" href="css/style.css?v=118">
 <!-- küre verisini tarayıcı boş kalınca sessizce indir — initGlobe cache'ten bulur -->
 <link rel="prefetch" href="data/countries.geojson?v=6">
 </head>
@@ -77,7 +77,7 @@
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="app.html#uye">üyelik</a> · <a href="metodoloji.html">nasıl çalışıyor</a> · <a href="veri.html">kaynaklar</a> ·<a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · her bağın kaynağı tıklanır · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v116</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · her bağın kaynağı tıklanır · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v118</span></span>
   </footer>
 </section>
 
@@ -87,9 +87,9 @@
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=69"></script>
 <script src="js/ilgi.js?v=71"></script>
-<script src="js/motor.js?v=116"></script>
-<script src="js/ara.js?v=116"></script>
-<script src="js/main.js?v=116"></script>
+<script src="js/motor.js?v=118"></script>
+<script src="js/ara.js?v=118"></script>
+<script src="js/main.js?v=118"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -339,16 +339,29 @@
     Object.keys(trAlias).forEach(function (tr) { var t = byLabel[norm(trAlias[tr])]; if (t) byLabel[norm(tr)] = t; });
     if (dl) dl.innerHTML = opts;
   }).catch(function () {});
+  function go(a, b) {
+    if (a && b) { location.href = "iliski.html?a=" + encodeURIComponent(a.key) + "&b=" + encodeURIComponent(b.key); return true; }
+    return false;
+  }
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var v = input.value;
-    // two countries ("iran, abd" / "iran us") -> the pair page, the single most
-    // common analyst intent ("what's happening between X and Y"). one -> country.
-    var parts = v.split(/[,;]|\bvs\b|\bve\b|\bvs\.\b/i).map(function (x) { return byLabel[norm(x)]; }).filter(Boolean);
-    if (parts.length >= 2) { location.href = "iliski.html?a=" + encodeURIComponent(parts[0].key) + "&b=" + encodeURIComponent(parts[1].key); return; }
-    var hit = byLabel[norm(v)];
-    if (hit) location.href = "ulke/" + hit.slug + "/";
-    else { input.style.outline = "2px solid #c0392b"; setTimeout(function () { input.style.outline = ""; }, 900); }
+    // 1) whole string is one country -> country page ("united states")
+    var whole = byLabel[norm(v)];
+    // 2) explicit separator (comma / vs / ve) -> two countries
+    var sep = v.split(/[,;]|\bvs\.?\b|\bve\b/i).map(function (x) { return byLabel[norm(x)]; }).filter(Boolean);
+    if (sep.length >= 2 && go(sep[0], sep[1])) return;
+    if (whole) { location.href = "ulke/" + whole.slug + "/"; return; }
+    // 3) plain space ("iran united states", "iran us") -> find the two-country split
+    //    that resolves BOTH sides, trying every boundary (handles multi-word names).
+    var toks = norm(v).split(/\s+/).filter(Boolean);
+    for (var i = 1; i < toks.length; i++) {
+      var a = byLabel[toks.slice(0, i).join(" ")], b = byLabel[toks.slice(i).join(" ")];
+      if (a && b && go(a, b)) return;
+    }
+    // 4) single fuzzy country anywhere in the string
+    for (var j = 0; j < toks.length; j++) { var h = byLabel[toks[j]]; if (h) { location.href = "ulke/" + h.slug + "/"; return; } }
+    input.style.outline = "2px solid #c0392b"; setTimeout(function () { input.style.outline = ""; }, 900);
   });
 })();
 </script>
