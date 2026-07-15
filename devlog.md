@@ -8,6 +8,20 @@ reels 30-60 saniye, hook sart. sinir yok. linkedin essay'leri ayri dosyada: link
 
 # REELS
 
+## r_gece1 — hook: "ürünüm 'İran ABD'ye silah satıyor' diyordu, gece boyu düzelttim"
+1. sorun: motor bir başlıkta geçen HER ülkeyi bağlıyordu. "İran destekli Husiler Riyad'a füze attı" → küreye "İran → Suudi DESTEK" oku (çünkü 'Iranian-backed' içindeki 'backed'i 'destek' sandı). saldırı, haritada dostluk gibi.
+2. ne değiştirdim: motora cümle-yapısı öğrettim — '-backed' sıfattır fiil değil; 'end support' desteğin bitmesi; 'A buys from B' → satıcı kaynak.
+3. çünkü bu oyuncak değil; yatırımcının, gazetecinin göreceği ürün. yüksek-güvenli bir yalan, sessizlikten beterdir.
+4. sonuç: 918 → 775 bağ. 143 uydurma/ters/bayat ok elendi. güven artık asla "kesin" demiyor.
+ekran: aynı başlık, önce yanlış yeşil ok → sonra kaybolur.
+
+## r_gece2 — hook: "kendi ürünüme 4 kişilik jüri kurdum, beni ben eleştirdim"
+1. sorun: kendi ürününe âşıksın, kusuru göremiyorsun.
+2. ne yaptım: mühendis + ürün yöneticisi + pazarlamacı + sıradan kullanıcı gözüyle didik didik eleştirdim. her tur yeni kusur, düzelt, tekrar eleştir.
+3. çünkü övgü değil kusur lazımdı; bu YC/yatırım seviyesi ürün olacak.
+4. sonuç: mekan-ülkesi sahte okları, bayat 2006 haberleri, ters yönler — hepsi turlarca temizlendi.
+ekran: jüri bulgu listesi akıyor, her satır bir düzeltme.
+
 ## r1 — hook: "arkadaşıma hediye yazdım, elimde istihbarat ürünü var"
 1. arkadaşım IR okuyor, hediye olarak "kim kime silah satıyor" küresi yapıyordum.
 2. bugün geldiği yer: 13 katman, 198 ülke, 6 saatte bir kendini yenileyen sistem.
