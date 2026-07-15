@@ -56,6 +56,12 @@ const TAGSOUP = /\|\s*[^|]*,[^|]*,[^|]*,/;
 
 function extractAll(text) {
   if (TAGSOUP.test(text)) return [];
+  // analysis/comparison/history pieces, not events: "US Occupation Assistance:
+  // Iraq, Germany, Japan Compared", "X vs Y: who wins", "a history of ...".
+  if (/\b(compared|comparison|vs\.?|versus|a history of|explained|analysis|opinion|op-ed|why .* matters|ranked|explainer)\b/i.test(text)) return [];
+  // theft/plunder/smuggling is not a trade tie: "Ukrainian grain stolen, relabeled
+  // Russian and sold" — an adversarial act, drop the fake supply relationship.
+  if (/\b(stol(e|en)|theft|plunder\w*|looted|smuggl\w+|seized cargo|illegally (sold|exported)|black market)\b/i.test(text)) return [];
   // rhetorical/hypothetical headlines assert nothing: "Can Trump cut off trade
   // with Spain?", "Will China invade Taiwan?", "Should the US arm Ukraine?" —
   // a question is not an event. Also "here's what/why/how" explainer framing.
