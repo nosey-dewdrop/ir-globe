@@ -6,6 +6,38 @@ hepsi gerçek, kanıtı repo'da. instagram malzemesi devlog.md'de.
 
 ---
 
+## essay — kendi ürünüme bir jüri ordusu kurdum, sonra beni yerden yere vurdular
+
+1. Bir gece ir-globe için tek başıma oturmak yerine, ürünüme karşı bir denetçi ordusu kurdum.
+Önce dört rol: bir CTO kodun doğruluğunu, bir CMO anlatının dürüstlüğünü, bir ürün yöneticisi
+kullanıcı yolculuğunu, bir de sıradan kullanıcı "beş saniyede anlıyor muyum" diye baktı. Sonra
+işi ağırlaştırdım: uluslararası ilişkiler ve hukuk alanında kıdemli bir akademisyen ile bir
+bilgisayar mühendisliği dekanı çağırdım. Biri ülke ilişkilerini bir oka indirgememin nerede
+yalan söylediğini, diğeri "2026'da regex yığınıyla ilişki çıkarımı" yaklaşımımın tavanını
+gösterecekti. En sonunda da en acımasızları: yatırım vermemek için ellerinden geleni yapan
+düşman girişim sermayedarları.
+
+2. İtiraf: acıttı. Ama her tur bana tek bir başlık üzerinden kanıt getirdi, ve kanıt tartışılmaz.
+En sert olanı bir kesme işaretiydi. Motorum "Almanya İsrail'e silah SATMAYACAK" cümlesini
+"satıyor" diye okuyordu; çünkü metni temizlerken kesme işaretini siliyor, "won't" bir anlam
+ifade etmez hale geliyordu. Bir istihbarat aracında olumsuzu olumlu göstermek, ürünün kalbine
+saplanan bir bıçaktır.
+
+3. O yüzden her eleştiriyi bir kurala çevirdim. Olumsuzluğu kesme işaretini koruyan ayrı bir
+kontrole taşıdım. "Rusya'nın işgalinden bu yana" gibi arka-plan cümlelerini gerçek işgalden
+ayırdım. Yardımın yönünü düzelttim: parayı veren kaynaktır, isteyen değil. Mekân ülkesini taraf
+sanmayı, soru başlıklarını olgu sanmayı, çift sayılan makale sayısını tek tek kestim. En önemlisi:
+motorun asla "kesinim" demesine izin vermedim ve sadece güven eşiğini geçen okları çizdim.
+
+4. Altta yatan karar tek cümle: yüksek güvenle söylenen bir yalan, hiç konuşmamaktan beterdir.
+Bir gecede motor 918 bağdan ~340'a indi — üçte ikisi eleme, hepsi bir gürültü ya da yalan. Gösterilen
+okların ölçülen doğruluğu yükseldi ve bu sefer sayıyı ben uydurmadım, örnekleyip elle saydım,
+çıkan aralığı olduğu gibi siteye yazdım. Bir ürünü tek başına yaparken en zor şey, kendi eserini
+bir düşman gibi sorgulayabilmek. Ben bunu dışarıdan bir orduya yaptırdım, ve sabaha daha dürüst,
+daha sağlam bir küreyle çıktım. Kanıt repoda: her eleştiri bir commit.
+
+---
+
 ## essay — ürünüm bir gece boyunca yalan söyledi, kanıtla susturdum
 
 1. Bir gece küreme dört ayrı gözle baktım: mühendis, ürün yöneticisi, pazarlamacı ve
