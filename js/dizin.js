@@ -92,7 +92,11 @@
         const top = arr.slice(0, 10); // layer files are value-sorted
         const items = top.map((t) => {
           const other = dir === "out" ? t.r : t.s;
-          const num = t.exp != null ? ` <span class="pct">%${t.exp}</span>` : "";
+          // an IR student's professor rejects a bare "%16" — spell out what the
+          // figure means, its period and source, inline. (arms shares = SIPRI 2021–25)
+          const pctVal = dir === "out" ? t.exp : t.imp;
+          const num = pctVal != null
+            ? ` <span class="pct" title="SIPRI silah transferleri 2021–2025">%${pctVal}<span class="pct-src"> ${dir === "out" ? "ihracat payı" : "ithalat payı"} · SIPRI ’21–’25</span></span>` : "";
           const note = t.note ? ` — <span class="note">${esc(t.note)}</span>` : "";
           return `<li><a href="${ROOT}ulke/${base.slug(other)}/">${esc(base.disp(other))}</a>${num}${note} <a class="pairlink" href="${ROOT}iliski.html?a=${encodeURIComponent(name)}&amp;b=${encodeURIComponent(other)}" aria-label="ilişki sayfası: ${esc(base.disp(other))}">↔</a></li>`;
         }).join("");
@@ -108,9 +112,28 @@
   <p class="lede">${esc(dn)}, ${layerKeys.length} katmanda ${ties.length} ülke bağıyla haritada. Aşağıda kimden alıp kime verdiği.</p>
   <p class="meta"><a href="${ROOT}index.html">${esc(dn)}'i küre üstünde gör →</a></p>
   ${motorHtml}
+  ${ties.length ? `<p class="meta"><button class="csv-btn" id="ulkeCsv" type="button">tüm bağları CSV indir</button> <span class="note">kaynaklı, tablo hazır</span></p>` : ""}
   ${outgoing.length ? `<h2>${esc(dn)} → dünya <span class="cnt">(veren / satan)</span></h2>${block(outgoing, "out")}` : ""}
   ${incoming.length ? `<h2>dünya → ${esc(dn)} <span class="cnt">(alan)</span></h2>${block(incoming, "in")}` : ""}
   ${DISCLAIM}`;
+
+    // country-page CSV: pull all of this country's sourced ties as a spreadsheet
+    // (an IR student's citable dataset in one click).
+    const csvBtn = document.getElementById("ulkeCsv");
+    if (csvBtn) csvBtn.addEventListener("click", () => {
+      const q = (v) => '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"';
+      const rows = [["yon", "ulke", "karsi_ulke", "katman", "pay_yuzde", "pay_turu", "not", "kaynak"].join(",")];
+      ties.forEach((t) => {
+        const out = t.s === name;
+        rows.push([q(out ? "ihracat/veren" : "ithalat/alan"), q(dn), q(base.disp(out ? t.r : t.s)),
+          q(labOf[t.type] || t.type), q(out ? t.exp : t.imp),
+          q(t.type === "silah" ? "SIPRI silah payı 2021-25" : ""), q(t.note), q(t.type === "silah" ? "SIPRI" : "acik kaynak + google news")].join(","));
+      });
+      const blob = new Blob(["﻿" + rows.join("\r\n")], { type: "text/csv;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a"); a.href = url; a.download = "ir-globe_" + base.slug(name) + "_baglar.csv";
+      document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+    });
   }
 
   /* ── one layer ── */
