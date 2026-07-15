@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=109">
+<link rel="stylesheet" href="css/style.css?v=116">
 <!-- küre verisini tarayıcı boş kalınca sessizce indir — initGlobe cache'ten bulur -->
 <link rel="prefetch" href="data/countries.geojson?v=6">
 </head>
@@ -46,7 +46,7 @@
     <p class="bfine cta-line"><span class="hl"><a class="jn-cta" href="app.html#uye">hesap aç →</a></span></p>
     <p class="bfine"><span class="hl">genel akışa bak · bu haftanın bülteni'ne <a href="akis.html">göz at</a></span></p>
     <form class="hero-search" id="heroSearch" role="search" autocomplete="off">
-      <input type="text" id="heroQ" list="heroCountries" placeholder="bir ülke ara: iran, türkiye, ukrayna…" aria-label="ülke ara">
+      <input type="text" id="heroQ" list="heroCountries" placeholder="bir ülke ara — ya da iki ülke: iran, abd" aria-label="ülke ara">
       <datalist id="heroCountries"></datalist>
       <button type="submit" aria-label="git">→</button>
     </form>
@@ -87,9 +87,9 @@
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=69"></script>
 <script src="js/ilgi.js?v=71"></script>
-<script src="js/motor.js?v=109"></script>
-<script src="js/ara.js?v=109"></script>
-<script src="js/main.js?v=109"></script>
+<script src="js/motor.js?v=116"></script>
+<script src="js/ara.js?v=116"></script>
+<script src="js/main.js?v=116"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -331,7 +331,7 @@
     Object.keys(reg).forEach(function (k) {
       var c = reg[k]; if (!c || !c.slug) return;
       var names = [c.disp || c.key, c.key].concat(c.aliases || []);
-      names.forEach(function (nm) { if (nm) byLabel[norm(nm)] = { slug: c.slug, disp: c.disp || c.key }; });
+      names.forEach(function (nm) { if (nm) byLabel[norm(nm)] = { slug: c.slug, disp: c.disp || c.key, key: c.key }; });
       opts += '<option value="' + (c.disp || c.key) + '">';
     });
     // common TR spellings so "ukrayna", "turkiye" resolve
@@ -341,7 +341,12 @@
   }).catch(function () {});
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    var hit = byLabel[norm(input.value)];
+    var v = input.value;
+    // two countries ("iran, abd" / "iran us") -> the pair page, the single most
+    // common analyst intent ("what's happening between X and Y"). one -> country.
+    var parts = v.split(/[,;]|\bvs\b|\bve\b|\bvs\.\b/i).map(function (x) { return byLabel[norm(x)]; }).filter(Boolean);
+    if (parts.length >= 2) { location.href = "iliski.html?a=" + encodeURIComponent(parts[0].key) + "&b=" + encodeURIComponent(parts[1].key); return; }
+    var hit = byLabel[norm(v)];
     if (hit) location.href = "ulke/" + hit.slug + "/";
     else { input.style.outline = "2px solid #c0392b"; setTimeout(function () { input.style.outline = ""; }, 900); }
   });
