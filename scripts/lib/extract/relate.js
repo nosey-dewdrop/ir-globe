@@ -313,6 +313,11 @@ function extractAll(rawText) {
   const MUTUAL = /\b(sign(s|ed)?|ink(s|ed)?|finaliz\w+|seal(s|ed)?|agree(s|d)?|reach(es|ed)?|forge(s|d)?|strike(s)? a deal|join(tly)?|hold(s)? talks|deepen\w*|expand\w*|restor\w+|normaliz\w+|re-?establish\w*|resum\w+|rebuild\w*|reopen\w*|strengthen\w*|bolster\w*|drills?|exercises?|man(o|oe)uvers?|war ?games?)\b/;
   if (actors.length === 2 && !clearDir && MUTUAL.test(hay) &&
       (ev.goldstein > 3)) confidence += 0.2;
+  // directional supply/aid with a clear "to" target ("US sends missiles TO Japan",
+  // "US has sent aid to Ukraine") is unambiguous — reward so it clears the gate.
+  if (actors.length === 2 &&
+      /\b(send(s|ing)?|sent|deliver\w+|dispatch\w+|suppl(y|ies|ied)|ship(s|ped|ping)?|provid\w+)\b/.test(hay) &&
+      /\b(aid|weapons?|arms?|missiles?|systems?|jets?|drones?|troops?|support|assistance|funds?|equipment)\b/.test(hay)) confidence = Math.max(confidence, 0.65);
   // "diversifying supply from Russia" / "cut reliance ON the US": if the target is
   // the one being moved away from, this isn't a partnership — sink it below keep.
   if (away && targ.start != null && /\b(from|on|upon)\b/.test(hay.slice(0, targ.start + (targ.list[0] ? targ.list[0].matched.length : 0)))) confidence -= 0.4;

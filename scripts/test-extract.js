@@ -124,6 +124,7 @@ keep("Morocco, Syria move to restore full diplomatic relations", "morocco->syria
 keep("China courts Uruguay", "china->uruguay");
 keep("Poland Withholds MiG-29 Jets from Ukraine", "poland->ukraine");
 keep("US-Japan hold joint military drills", "united states->japan"); // hyphen-compound split
+keep("Here is how much aid the United States has sent Ukraine", "united states->ukraine"); // directional supply floor
 
 /* ── label sanity ── */
 label("Israel strikes Iran with missiles", "hava/füze saldırısı");
