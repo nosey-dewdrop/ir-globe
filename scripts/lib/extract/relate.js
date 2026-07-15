@@ -49,7 +49,7 @@ const SPEC = /\b(may|might|could|would|expected to|set to|plan(s|ned)? to|weigh(
 // STRONG hypothetical/urging framing — the event has NOT happened, someone is
 // only pushing for or speculating about it. Drop, don't just down-weight.
 // ("Pakistan urges Turkey to join pact", "may reduce aid", "could cut ties if").
-const HYPO = /\b(urg(e|es|ed|ing)|call(s|ed)? on|press(es|ed|ing)?|push(es|ed|ing)? (for|to)|propos(e|es|ed|al)|may (reduce|cut|halt|end|raise|lower)|could\b[^.]{0,40}\bif\b|would\b[^.]{0,40}\bif\b|if\b[^.]{0,30}\b(cuts?|ends?|halts?|leaves?)\b|reportedly (nears?|weighs?))\b/;
+const HYPO = /\b(urg(e|es|ed|ing)|call(s|ed)? on|press(es|ed|ing)?|push(es|ed|ing)? (for|to)|propos(e|es|ed|al)|may (reduce|cut|halt|end|raise|lower)|could\b[^.]{0,40}\bif\b|would\b[^.]{0,40}\bif\b|if\b[^.]{0,30}\b(cuts?|ends?|halts?|leaves?)\b|reportedly (nears?|weighs?)|should\s+\w+)\b/;
 // max words allowed between the two actors of a tie; farther apart = more likely
 // they live in unrelated clauses ("Iran's stockpile … Kazakhstan at the center").
 const MAX_GAP_WORDS = 8;
@@ -103,7 +103,15 @@ function extractAll(text) {
     const coercion = /\b(tariff|duties|levy|levies|sanction)/.test(tl);
     if (victim && coercion) return []; // subject is reacting to coercion, not imposing it
   }
+  // suspended/cancelled/frozen arms deals: the tie is being UNDONE, not formed.
+  { const tl = text.toLowerCase(); if (/\b(suspension|suspend(s|ed|ing)?|cancell?ation|cancell?ed|cancels?|delay(s|ed|ing)?|freezes?|freeze|frozen|moratorium|halts?|halt(ed|ing)?|scrapp?(ing|ed|s)?|scraps?)\b/.test(tl) && /\b(arms?|weapons?|defen[cs]e|missile|deal|agreement|sale|export|shipment|pact|accord|contract)\b/.test(tl)) return []; }
+  // de-escalation: lifting/cutting tariffs is not a coercive tie; drop over mislabel.
+  { const tl = text.toLowerCase(); if (/\b(reduc\w+|cut(s|ting)?|lower(s|ed|ing)?|eas(e|es|ed|ing)|scrap\w*|lift\w*|roll(s|ed)? back|drop(s|ped)?|slash\w*|remov\w*)\b[^.]{0,20}\b(tariffs?|duties|levies)\b/.test(tl)) return []; }
+  // cooperative verb but target introduced across an adversary marker: drop.
+  { const ev0 = code(text); if (ev0 && /\b(05\d|06\d|07\d)\b/.test(ev0.root) && /\b(against|in conflict with|at war with|war with|fighting|vs\.?|versus|to counter|to fend off)\b/.test(text.toLowerCase())) return []; }
   const actors = detect(text);
+  // modifier-country actors are not parties: "US ally Japan", "Russian-backed Syria".
+  { const h0 = norm(text); for (let i = actors.length - 1; i >= 0; i--) { const a = actors[i]; const tail = h0.slice(a.at + a.matched.length, a.at + a.matched.length + 14); if (/^\s+(ally|allies|partner|backed|aligned|led)\b/.test(tail)) actors.splice(i, 1); } }
   const ev = code(text);
   if (!ev) return [];               // no event -> nothing to assert
   if (actors.length < 2) return []; // need two sides for a tie
@@ -225,6 +233,10 @@ function extractAll(text) {
              /\b(seek(s|ing)?|need(s|ing)?|request(s|ed|ing)?|ask(s|ing|ed)? for|awaits?|urgently|plead\w*|appeal(s|ed)? for|wants? more|calls? for)\b/.test(hay.slice(0, verbAt))) {
       const t = subj; subj = targ; targ = t;
       clearDir = true;
+    }
+    // receive-flip: "A receives aid/loan FROM B" — B is the source, A the target.
+    else if (/\b(070|071|072|073|051|057|050)\b/.test(ev.root) && /\bfrom\s*$/.test(hay.slice(0, targ.start)) && /\b(receiv\w+|gets?|got|secur\w+|obtain\w+|awarded|granted|wins?|won)\b/.test(hay.slice(0, targ.start))) {
+      const t = subj; subj = targ; targ = t; clearDir = true;
     }
   }
 
