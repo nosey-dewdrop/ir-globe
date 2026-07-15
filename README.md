@@ -33,7 +33,7 @@ all numbers come from the repo's own methodology page and pipeline reports, noth
 - accounts, follows and admin: supabase (rls protected, anon key intentionally public), email via resend with one-click tokenized unsubscribe.
 - seo: generated konu/ (layer) and ulke/ (country) pages, sitemap, robots. scripts/build-seo.js regenerates on every data change.
 
-## why i built it ❤️
+## why i built it 💐
 
 following the news i kept hitting the same wall: the answer to "what is going on between these two countries?" is scattered across hundreds of articles and nobody collects it in one place. the ones who do either cite nothing or just write "relations are tense" from the top of their head. i wanted something measurable, with clickable sources, that does not lie. so nothing enters this project by feel. either it has a source or it does not exist.
 
