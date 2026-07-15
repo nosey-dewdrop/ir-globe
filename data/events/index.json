@@ -4,8 +4,8 @@
   "from": "2026-01-17",
   "to": "2026-07-14"
  },
- "raw": 395,
- "merged": 339,
+ "raw": 411,
+ "merged": 355,
  "duplicatesRemoved": 56,
  "undated": 0,
  "weeks": [
@@ -51,6 +51,20 @@
     }
    },
    "avg": 5
+  },
+  "afghanistan|pakistan": {
+   "n": 1,
+   "last": "2026-06-03",
+   "layers": {
+    "tahil": 1
+   },
+   "weekly": {
+    "2026-W23": {
+     "n": 1,
+     "avg": -2
+    }
+   },
+   "avg": -2
   },
   "afghanistan|uzbekistan": {
    "n": 1,
@@ -109,18 +123,23 @@
    "avg": -5.4
   },
   "argentina|brazil": {
-   "n": 1,
+   "n": 2,
    "last": "2026-05-28",
    "layers": {
+    "kablo": 1,
     "tahil": 1
    },
    "weekly": {
+    "2026-W04": {
+     "n": 1,
+     "avg": 4.5
+    },
     "2026-W22": {
      "n": 1,
      "avg": 5
     }
    },
-   "avg": 5
+   "avg": 4.75
   },
   "australia|canada": {
    "n": 3,
@@ -303,32 +322,22 @@
    "avg": 6
   },
   "belarus|china": {
-   "n": 1,
-   "last": "2026-06-07",
+   "n": 3,
+   "last": "2026-06-08",
    "layers": {
-    "borc": 1
+    "borc": 3
    },
    "weekly": {
     "2026-W23": {
+     "n": 2,
+     "avg": 5.7
+    },
+    "2026-W24": {
      "n": 1,
      "avg": 5
     }
    },
-   "avg": 5
-  },
-  "belarus|eu": {
-   "n": 1,
-   "last": "2026-04-23",
-   "layers": {
-    "silah": 1
-   },
-   "weekly": {
-    "2026-W17": {
-     "n": 1,
-     "avg": -5.4
-    }
-   },
-   "avg": -5.4
+   "avg": 5.47
   },
   "belarus|russia": {
    "n": 2,
@@ -364,23 +373,27 @@
    "avg": -2.2
   },
   "belarus|united states": {
-   "n": 2,
+   "n": 3,
    "last": "2026-06-11",
    "layers": {
     "silah": 1,
-    "yaptirim": 1
+    "yaptirim": 2
    },
    "weekly": {
     "2026-W12": {
      "n": 1,
      "avg": -5.4
     },
+    "2026-W16": {
+     "n": 1,
+     "avg": 6
+    },
     "2026-W24": {
      "n": 1,
      "avg": -5.4
     }
    },
-   "avg": -5.4
+   "avg": -1.6
   },
   "belgium|france": {
    "n": 2,
@@ -692,6 +705,20 @@
    },
    "avg": 6
   },
+  "china|japan": {
+   "n": 1,
+   "last": "2026-02-28",
+   "layers": {
+    "yardim": 1
+   },
+   "weekly": {
+    "2026-W09": {
+     "n": 1,
+     "avg": 5
+    }
+   },
+   "avg": 5
+  },
   "china|lithuania": {
    "n": 1,
    "last": "2026-07-08",
@@ -990,20 +1017,6 @@
    },
    "avg": 7
   },
-  "drc|united states": {
-   "n": 1,
-   "last": "2026-03-27",
-   "layers": {
-    "borc": 1
-   },
-   "weekly": {
-    "2026-W13": {
-     "n": 1,
-     "avg": -2
-    }
-   },
-   "avg": -2
-  },
   "egypt|germany": {
    "n": 1,
    "last": "2026-03-10",
@@ -1031,6 +1044,20 @@
     }
    },
    "avg": 3.2
+  },
+  "estonia|poland": {
+   "n": 1,
+   "last": "2026-03-24",
+   "layers": {
+    "silah": 1
+   },
+   "weekly": {
+    "2026-W13": {
+     "n": 1,
+     "avg": 5
+    }
+   },
+   "avg": 5
   },
   "estonia|ukraine": {
    "n": 1,
@@ -1073,6 +1100,20 @@
     }
    },
    "avg": 7
+  },
+  "eu|hungary": {
+   "n": 1,
+   "last": "2026-03-20",
+   "layers": {
+    "enerji": 1
+   },
+   "weekly": {
+    "2026-W12": {
+     "n": 1,
+     "avg": -6.9
+    }
+   },
+   "avg": -6.9
   },
   "eu|israel": {
    "n": 1,
@@ -1191,32 +1232,40 @@
    "avg": 5.25
   },
   "france|india": {
-   "n": 2,
-   "last": "2026-02-12",
+   "n": 3,
+   "last": "2026-06-13",
    "layers": {
-    "silah": 2
+    "silah": 3
    },
    "weekly": {
     "2026-W07": {
      "n": 2,
      "avg": 5.5
+    },
+    "2026-W24": {
+     "n": 1,
+     "avg": -2
     }
    },
-   "avg": 5.5
+   "avg": 3
   },
   "france|indonesia": {
-   "n": 1,
+   "n": 2,
    "last": "2026-04-15",
    "layers": {
-    "silah": 1
+    "silah": 2
    },
    "weekly": {
+    "2026-W05": {
+     "n": 1,
+     "avg": 3
+    },
     "2026-W16": {
      "n": 1,
      "avg": 4.5
     }
    },
-   "avg": 4.5
+   "avg": 3.75
   },
   "france|morocco": {
    "n": 5,
@@ -1271,24 +1320,29 @@
    "avg": -4.12
   },
   "france|türkiye": {
-   "n": 1,
+   "n": 2,
    "last": "2026-07-08",
    "layers": {
-    "diplomasi": 1
+    "diplomasi": 1,
+    "silah": 1
    },
    "weekly": {
+    "2026-W24": {
+     "n": 1,
+     "avg": -1.6
+    },
     "2026-W28": {
      "n": 1,
      "avg": 3.5
     }
    },
-   "avg": 3.5
+   "avg": 0.95
   },
   "france|uae": {
-   "n": 3,
-   "last": "2026-06-15",
+   "n": 2,
+   "last": "2026-05-19",
    "layers": {
-    "silah": 2,
+    "silah": 1,
     "us": 1
    },
    "weekly": {
@@ -1299,13 +1353,9 @@
     "2026-W21": {
      "n": 1,
      "avg": 7
-    },
-    "2026-W25": {
-     "n": 1,
-     "avg": 6
     }
    },
-   "avg": 2.5
+   "avg": 0.75
   },
   "germany|india": {
    "n": 2,
@@ -1505,10 +1555,10 @@
    "avg": 1.55
   },
   "germany|united states": {
-   "n": 2,
+   "n": 3,
    "last": "2026-07-09",
    "layers": {
-    "silah": 1,
+    "silah": 2,
     "us": 1
    },
    "weekly": {
@@ -1517,11 +1567,11 @@
      "avg": -3.5
     },
     "2026-W28": {
-     "n": 1,
-     "avg": 5
+     "n": 2,
+     "avg": 5.5
     }
    },
-   "avg": 0.75
+   "avg": 2.5
   },
   "greece|israel": {
    "n": 1,
@@ -1538,13 +1588,17 @@
    "avg": 6
   },
   "greece|italy": {
-   "n": 4,
+   "n": 5,
    "last": "2026-05-14",
    "layers": {
     "kablo": 1,
-    "silah": 3
+    "silah": 4
    },
    "weekly": {
+    "2026-W10": {
+     "n": 1,
+     "avg": 7
+    },
     "2026-W11": {
      "n": 1,
      "avg": 7
@@ -1558,7 +1612,7 @@
      "avg": 4.5
     }
    },
-   "avg": 5.72
+   "avg": 5.98
   },
   "greece|south korea": {
    "n": 1,
@@ -1645,18 +1699,23 @@
    "avg": 7
   },
   "india|uae": {
-   "n": 1,
-   "last": "2026-06-22",
+   "n": 2,
+   "last": "2026-07-14",
    "layers": {
-    "silah": 1
+    "silah": 1,
+    "tahil": 1
    },
    "weekly": {
     "2026-W26": {
      "n": 1,
      "avg": 4
+    },
+    "2026-W29": {
+     "n": 1,
+     "avg": 3.4
     }
    },
-   "avg": 4
+   "avg": 3.7
   },
   "india|ukraine": {
    "n": 2,
@@ -1770,12 +1829,17 @@
    "avg": 5.33
   },
   "iran|israel": {
-   "n": 1,
+   "n": 2,
    "last": "2026-07-09",
    "layers": {
-    "silah": 1
+    "silah": 1,
+    "us": 1
    },
    "weekly": {
+    "2026-W09": {
+     "n": 1,
+     "avg": -9
+    },
     "2026-W28": {
      "n": 1,
      "avg": -9
@@ -1844,32 +1908,18 @@
    "avg": 4
   },
   "iran|russia": {
-   "n": 2,
-   "last": "2026-02-28",
+   "n": 1,
+   "last": "2026-02-26",
    "layers": {
-    "silah": 2
+    "silah": 1
    },
    "weekly": {
     "2026-W09": {
-     "n": 2,
-     "avg": -2.1
-    }
-   },
-   "avg": -2.1
-  },
-  "iran|spain": {
-   "n": 1,
-   "last": "2026-04-09",
-   "layers": {
-    "diplomasi": 1
-   },
-   "weekly": {
-    "2026-W15": {
      "n": 1,
-     "avg": 7
+     "avg": 5
     }
    },
-   "avg": 7
+   "avg": 5
   },
   "iran|türkiye": {
    "n": 1,
@@ -1904,14 +1954,14 @@
    "avg": -5.05
   },
   "iran|united states": {
-   "n": 19,
+   "n": 17,
    "last": "2026-07-14",
    "layers": {
     "diplomasi": 1,
     "enerji": 2,
-    "silah": 5,
+    "silah": 4,
     "us": 5,
-    "yaptirim": 6
+    "yaptirim": 5
    },
    "weekly": {
     "2026-W05": {
@@ -1930,17 +1980,9 @@
      "n": 1,
      "avg": -9.2
     },
-    "2026-W20": {
-     "n": 1,
-     "avg": -5.4
-    },
     "2026-W22": {
      "n": 1,
      "avg": -9.2
-    },
-    "2026-W24": {
-     "n": 1,
-     "avg": -5.4
     },
     "2026-W25": {
      "n": 1,
@@ -1959,25 +2001,21 @@
      "avg": -7.87
     }
    },
-   "avg": -6.5
+   "avg": -6.63
   },
   "iraq|japan": {
-   "n": 2,
-   "last": "2026-04-01",
+   "n": 1,
+   "last": "2026-02-09",
    "layers": {
-    "yardim": 2
+    "yardim": 1
    },
    "weekly": {
     "2026-W07": {
      "n": 1,
      "avg": 6.5
-    },
-    "2026-W14": {
-     "n": 1,
-     "avg": 4.5
     }
    },
-   "avg": 5.5
+   "avg": 6.5
   },
   "iraq|türkiye": {
    "n": 1,
@@ -2078,13 +2116,18 @@
    "avg": 3.2
   },
   "italy|ukraine": {
-   "n": 2,
+   "n": 3,
    "last": "2026-07-13",
    "layers": {
+    "diplomasi": 1,
     "silah": 2
    },
    "weekly": {
     "2026-W16": {
+     "n": 1,
+     "avg": 3.5
+    },
+    "2026-W26": {
      "n": 1,
      "avg": 3.5
     },
@@ -2093,7 +2136,7 @@
      "avg": 6
     }
    },
-   "avg": 4.75
+   "avg": 4.33
   },
   "italy|united states": {
    "n": 1,
@@ -2126,6 +2169,20 @@
     }
    },
    "avg": 4.25
+  },
+  "japan|north korea": {
+   "n": 1,
+   "last": "2026-06-29",
+   "layers": {
+    "ittifak": 1
+   },
+   "weekly": {
+    "2026-W27": {
+     "n": 1,
+     "avg": -1.6
+    }
+   },
+   "avg": -1.6
   },
   "japan|philippines": {
    "n": 2,
@@ -2179,18 +2236,27 @@
    "avg": 4
   },
   "japan|south korea": {
-   "n": 1,
-   "last": "2026-04-24",
+   "n": 3,
+   "last": "2026-07-02",
    "layers": {
+    "diplomasi": 2,
     "silah": 1
    },
    "weekly": {
     "2026-W17": {
      "n": 1,
      "avg": -4
+    },
+    "2026-W25": {
+     "n": 1,
+     "avg": 6
+    },
+    "2026-W27": {
+     "n": 1,
+     "avg": 3.4
     }
    },
-   "avg": -4
+   "avg": 1.8
   },
   "japan|taiwan": {
    "n": 1,
@@ -2233,19 +2299,33 @@
    "last": "2026-07-08",
    "layers": {
     "diplomasi": 1,
-    "silah": 1
+    "us": 1
    },
    "weekly": {
-    "2026-W12": {
+    "2026-W14": {
      "n": 1,
-     "avg": 4
+     "avg": 6
     },
     "2026-W28": {
      "n": 1,
      "avg": 5
     }
    },
-   "avg": 4.5
+   "avg": 5.5
+  },
+  "kazakhstan|russia": {
+   "n": 1,
+   "last": "2026-05-28",
+   "layers": {
+    "silah": 1
+   },
+   "weekly": {
+    "2026-W22": {
+     "n": 1,
+     "avg": 7
+    }
+   },
+   "avg": 7
   },
   "kazakhstan|uzbekistan": {
    "n": 1,
@@ -2420,18 +2500,18 @@
    "avg": 3.4
   },
   "nato|ukraine": {
-   "n": 2,
+   "n": 1,
    "last": "2026-07-07",
    "layers": {
-    "silah": 2
+    "silah": 1
    },
    "weekly": {
     "2026-W28": {
-     "n": 2,
-     "avg": 5.5
+     "n": 1,
+     "avg": 7
     }
    },
-   "avg": 5.5
+   "avg": 7
   },
   "nato|united states": {
    "n": 2,
@@ -2591,6 +2671,20 @@
     }
    },
    "avg": 3.7
+  },
+  "pakistan|united states": {
+   "n": 1,
+   "last": "2026-04-20",
+   "layers": {
+    "ittifak": 1
+   },
+   "weekly": {
+    "2026-W17": {
+     "n": 1,
+     "avg": 6
+    }
+   },
+   "avg": 6
   },
   "paraguay|philippines": {
    "n": 1,
@@ -2906,6 +3000,20 @@
    },
    "avg": 5
   },
+  "somalia|united states": {
+   "n": 1,
+   "last": "2026-05-15",
+   "layers": {
+    "yardim": 1
+   },
+   "weekly": {
+    "2026-W20": {
+     "n": 1,
+     "avg": 4
+    }
+   },
+   "avg": 4
+  },
   "south africa|un": {
    "n": 1,
    "last": "2026-02-08",
@@ -3124,10 +3232,11 @@
    "avg": 3
   },
   "taiwan|united states": {
-   "n": 2,
+   "n": 4,
    "last": "2026-07-14",
    "layers": {
-    "tahil": 1,
+    "silah": 1,
+    "tahil": 2,
     "teknoloji": 1
    },
    "weekly": {
@@ -3135,12 +3244,20 @@
      "n": 1,
      "avg": 7
     },
+    "2026-W08": {
+     "n": 1,
+     "avg": 3.4
+    },
+    "2026-W24": {
+     "n": 1,
+     "avg": -5.5
+    },
     "2026-W29": {
      "n": 1,
      "avg": 4.5
     }
    },
-   "avg": 5.75
+   "avg": 2.35
   },
   "tanzania|united states": {
    "n": 1,
@@ -3260,18 +3377,19 @@
    "avg": 7
   },
   "united states|venezuela": {
-   "n": 1,
-   "last": "2026-06-25",
+   "n": 2,
+   "last": "2026-06-26",
    "layers": {
+    "borc": 1,
     "yaptirim": 1
    },
    "weekly": {
     "2026-W26": {
-     "n": 1,
-     "avg": -5.4
+     "n": 2,
+     "avg": 0.55
     }
    },
-   "avg": -5.4
+   "avg": 0.55
   },
   "united states|zambia": {
    "n": 1,
@@ -3304,9 +3422,9 @@
  },
  "countries": {
   "afghanistan": {
-   "n": 2,
-   "partners": 2,
-   "avg": 5
+   "n": 3,
+   "partners": 3,
+   "avg": 2.67
   },
   "algeria": {
    "n": 3,
@@ -3314,9 +3432,9 @@
    "avg": 0.87
   },
   "argentina": {
-   "n": 1,
+   "n": 2,
    "partners": 1,
-   "avg": 5
+   "avg": 4.75
   },
   "australia": {
    "n": 13,
@@ -3339,9 +3457,9 @@
    "avg": 6
   },
   "belarus": {
-   "n": 7,
-   "partners": 5,
-   "avg": -0.77
+   "n": 9,
+   "partners": 4,
+   "avg": 1.93
   },
   "belgium": {
    "n": 6,
@@ -3349,9 +3467,9 @@
    "avg": 3.43
   },
   "brazil": {
-   "n": 4,
+   "n": 5,
    "partners": 4,
-   "avg": 4.97
+   "avg": 4.88
   },
   "burkina faso": {
    "n": 2,
@@ -3364,9 +3482,9 @@
    "avg": 2.28
   },
   "china": {
-   "n": 27,
-   "partners": 18,
-   "avg": 1.69
+   "n": 30,
+   "partners": 19,
+   "avg": 2.06
   },
   "colombia": {
    "n": 1,
@@ -3388,20 +3506,15 @@
    "partners": 2,
    "avg": 6
   },
-  "drc": {
-   "n": 1,
-   "partners": 1,
-   "avg": -2
-  },
   "egypt": {
    "n": 3,
    "partners": 3,
    "avg": 4.13
   },
   "estonia": {
-   "n": 1,
-   "partners": 1,
-   "avg": 7
+   "n": 2,
+   "partners": 2,
+   "avg": 6
   },
   "ethiopia": {
    "n": 1,
@@ -3411,22 +3524,22 @@
   "eu": {
    "n": 11,
    "partners": 9,
-   "avg": 1.71
+   "avg": 1.57
   },
   "france": {
-   "n": 27,
+   "n": 29,
    "partners": 12,
-   "avg": 1.81
+   "avg": 1.46
   },
   "germany": {
-   "n": 31,
+   "n": 32,
    "partners": 16,
-   "avg": 3.06
+   "avg": 3.16
   },
   "greece": {
-   "n": 8,
+   "n": 9,
    "partners": 4,
-   "avg": 5.8
+   "avg": 5.93
   },
   "greenland": {
    "n": 2,
@@ -3439,49 +3552,49 @@
    "avg": 7
   },
   "hungary": {
-   "n": 1,
-   "partners": 1,
-   "avg": -9
-  },
-  "india": {
-   "n": 13,
-   "partners": 9,
-   "avg": 5.12
-  },
-  "indonesia": {
-   "n": 12,
-   "partners": 8,
-   "avg": 4.99
-  },
-  "iran": {
-   "n": 35,
-   "partners": 12,
-   "avg": -4.78
-  },
-  "iraq": {
-   "n": 3,
-   "partners": 2,
-   "avg": 5
-  },
-  "israel": {
-   "n": 13,
-   "partners": 11,
-   "avg": -0.62
-  },
-  "italy": {
-   "n": 11,
-   "partners": 7,
-   "avg": 3.2
-  },
-  "japan": {
-   "n": 26,
-   "partners": 17,
-   "avg": 4.2
-  },
-  "kazakhstan": {
    "n": 2,
    "partners": 2,
-   "avg": 5.5
+   "avg": -7.95
+  },
+  "india": {
+   "n": 15,
+   "partners": 9,
+   "avg": 4.53
+  },
+  "indonesia": {
+   "n": 13,
+   "partners": 8,
+   "avg": 4.84
+  },
+  "iran": {
+   "n": 32,
+   "partners": 11,
+   "avg": -5.1
+  },
+  "iraq": {
+   "n": 2,
+   "partners": 2,
+   "avg": 5.25
+  },
+  "israel": {
+   "n": 14,
+   "partners": 11,
+   "avg": -1.22
+  },
+  "italy": {
+   "n": 13,
+   "partners": 7,
+   "avg": 3.52
+  },
+  "japan": {
+   "n": 29,
+   "partners": 19,
+   "avg": 4.12
+  },
+  "kazakhstan": {
+   "n": 3,
+   "partners": 3,
+   "avg": 6
   },
   "kenya": {
    "n": 1,
@@ -3529,9 +3642,9 @@
    "avg": 5.2
   },
   "nato": {
-   "n": 6,
+   "n": 5,
    "partners": 4,
-   "avg": 5.32
+   "avg": 5.58
   },
   "netherlands": {
    "n": 4,
@@ -3544,9 +3657,9 @@
    "avg": 6
   },
   "north korea": {
-   "n": 2,
-   "partners": 2,
-   "avg": 1.2
+   "n": 3,
+   "partners": 3,
+   "avg": 0.27
   },
   "norway": {
    "n": 5,
@@ -3554,9 +3667,9 @@
    "avg": 5.18
   },
   "pakistan": {
-   "n": 10,
-   "partners": 6,
-   "avg": 3.82
+   "n": 12,
+   "partners": 8,
+   "avg": 3.52
   },
   "paraguay": {
    "n": 1,
@@ -3569,9 +3682,9 @@
    "avg": 5.58
   },
   "poland": {
-   "n": 8,
-   "partners": 6,
-   "avg": 3.51
+   "n": 9,
+   "partners": 7,
+   "avg": 3.68
   },
   "qatar": {
    "n": 4,
@@ -3585,8 +3698,8 @@
   },
   "russia": {
    "n": 29,
-   "partners": 13,
-   "avg": -3.5
+   "partners": 14,
+   "avg": -2.94
   },
   "saudi arabia": {
    "n": 9,
@@ -3608,20 +3721,25 @@
    "partners": 4,
    "avg": 5.47
   },
+  "somalia": {
+   "n": 1,
+   "partners": 1,
+   "avg": 4
+  },
   "south africa": {
    "n": 5,
    "partners": 3,
    "avg": -0.82
   },
   "south korea": {
-   "n": 17,
+   "n": 19,
    "partners": 9,
-   "avg": 3.9
+   "avg": 3.98
   },
   "spain": {
-   "n": 14,
-   "partners": 8,
-   "avg": 4.52
+   "n": 13,
+   "partners": 7,
+   "avg": 4.33
   },
   "sudan": {
    "n": 1,
@@ -3639,9 +3757,9 @@
    "avg": 5.5
   },
   "taiwan": {
-   "n": 5,
+   "n": 7,
    "partners": 4,
-   "avg": 4.4
+   "avg": 2.84
   },
   "tanzania": {
    "n": 1,
@@ -3654,19 +3772,19 @@
    "avg": 4.25
   },
   "türkiye": {
-   "n": 14,
+   "n": 15,
    "partners": 8,
-   "avg": 4.07
+   "avg": 3.69
   },
   "uae": {
    "n": 11,
    "partners": 7,
-   "avg": 2.62
+   "avg": 2.38
   },
   "ukraine": {
    "n": 57,
    "partners": 28,
-   "avg": 4.42
+   "avg": 4.41
   },
   "un": {
    "n": 3,
@@ -3679,9 +3797,9 @@
    "avg": -0.46
   },
   "united states": {
-   "n": 94,
-   "partners": 47,
-   "avg": 0.14
+   "n": 98,
+   "partners": 48,
+   "avg": 0.56
   },
   "uruguay": {
    "n": 1,
@@ -3694,9 +3812,9 @@
    "avg": 5
   },
   "venezuela": {
-   "n": 1,
+   "n": 2,
    "partners": 1,
-   "avg": -5.4
+   "avg": 0.55
   },
   "vietnam": {
    "n": 1,
@@ -3773,6 +3891,19 @@
    "sources": 1
   },
   {
+   "s": "brazil",
+   "r": "argentina",
+   "pair": "argentina|brazil",
+   "layer": "kablo",
+   "root": "050",
+   "event": "ilişki güçlendirme",
+   "goldstein": 4.5,
+   "week": "2026-W04",
+   "date": "2026-01-25",
+   "articles": 1,
+   "sources": 1
+  },
+  {
    "s": "united states",
    "r": "mozambique",
    "pair": "mozambique|united states",
@@ -3793,6 +3924,19 @@
    "root": "042",
    "event": "resmi ziyaret",
    "goldstein": 3.4,
+   "week": "2026-W05",
+   "date": "2026-01-27",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "indonesia",
+   "r": "france",
+   "pair": "france|indonesia",
+   "layer": "silah",
+   "root": "060",
+   "event": "silah/malzeme tedariki",
+   "goldstein": 3,
    "week": "2026-W05",
    "date": "2026-01-27",
    "articles": 1,
@@ -4098,6 +4242,19 @@
    "sources": 1
   },
   {
+   "s": "taiwan",
+   "r": "united states",
+   "pair": "taiwan|united states",
+   "layer": "tahil",
+   "root": "051",
+   "event": "destek / övgü",
+   "goldstein": 3.4,
+   "week": "2026-W08",
+   "date": "2026-02-17",
+   "articles": 1,
+   "sources": 1
+  },
+  {
    "s": "eu",
    "r": "italy",
    "pair": "eu|italy",
@@ -4293,13 +4450,13 @@
    "sources": 1
   },
   {
-   "s": "russia",
-   "r": "iran",
-   "pair": "iran|russia",
-   "layer": "silah",
-   "root": "19",
-   "event": "hava/füze saldırısı",
-   "goldstein": -9.2,
+   "s": "japan",
+   "r": "china",
+   "pair": "china|japan",
+   "layer": "yardim",
+   "root": "050",
+   "event": "işbirliği",
+   "goldstein": 5,
    "week": "2026-W09",
    "date": "2026-02-28",
    "articles": 1,
@@ -4315,6 +4472,19 @@
    "goldstein": -9.2,
    "week": "2026-W09",
    "date": "2026-02-28",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "israel",
+   "r": "iran",
+   "pair": "iran|israel",
+   "layer": "us",
+   "root": "18",
+   "event": "silahlı saldırı",
+   "goldstein": -9,
+   "week": "2026-W09",
+   "date": "2026-03-01",
    "articles": 1,
    "sources": 1
   },
@@ -4419,6 +4589,19 @@
    "goldstein": 3,
    "week": "2026-W10",
    "date": "2026-03-04",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "greece",
+   "r": "italy",
+   "pair": "greece|italy",
+   "layer": "silah",
+   "root": "057",
+   "event": "anlaşma imzası",
+   "goldstein": 7,
+   "week": "2026-W10",
+   "date": "2026-03-08",
    "articles": 1,
    "sources": 1
   },
@@ -4684,25 +4867,25 @@
   },
   {
    "s": "hungary",
+   "r": "eu",
+   "pair": "eu|hungary",
+   "layer": "enerji",
+   "root": "138",
+   "event": "tehdit",
+   "goldstein": -6.9,
+   "week": "2026-W12",
+   "date": "2026-03-20",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "hungary",
    "r": "czechia",
    "pair": "czechia|hungary",
    "layer": "silah",
    "root": "18",
    "event": "silahlı saldırı",
    "goldstein": -9,
-   "week": "2026-W12",
-   "date": "2026-03-21",
-   "articles": 1,
-   "sources": 1
-  },
-  {
-   "s": "united states",
-   "r": "japan",
-   "pair": "japan|united states",
-   "layer": "silah",
-   "root": "036",
-   "event": "görüşme / müzakere",
-   "goldstein": 4,
    "week": "2026-W12",
    "date": "2026-03-21",
    "articles": 1,
@@ -4731,6 +4914,19 @@
    "goldstein": 3.4,
    "week": "2026-W13",
    "date": "2026-03-23",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "estonia",
+   "r": "poland",
+   "pair": "estonia|poland",
+   "layer": "silah",
+   "root": "050",
+   "event": "işbirliği",
+   "goldstein": 5,
+   "week": "2026-W13",
+   "date": "2026-03-24",
    "articles": 1,
    "sources": 1
   },
@@ -4770,19 +4966,6 @@
    "goldstein": 5,
    "week": "2026-W13",
    "date": "2026-03-26",
-   "articles": 1,
-   "sources": 1
-  },
-  {
-   "s": "united states",
-   "r": "drc",
-   "pair": "drc|united states",
-   "layer": "borc",
-   "root": "110",
-   "event": "gerginlik",
-   "goldstein": -2,
-   "week": "2026-W13",
-   "date": "2026-03-27",
    "articles": 1,
    "sources": 1
   },
@@ -4839,19 +5022,6 @@
    "sources": 1
   },
   {
-   "s": "japan",
-   "r": "iraq",
-   "pair": "iraq|japan",
-   "layer": "yardim",
-   "root": "050",
-   "event": "ilişki güçlendirme",
-   "goldstein": 4.5,
-   "week": "2026-W14",
-   "date": "2026-04-01",
-   "articles": 1,
-   "sources": 1
-  },
-  {
    "s": "ethiopia",
    "r": "united states",
    "pair": "ethiopia|united states",
@@ -4861,6 +5031,19 @@
    "goldstein": 4,
    "week": "2026-W14",
    "date": "2026-04-02",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "united states",
+   "r": "japan",
+   "pair": "japan|united states",
+   "layer": "us",
+   "root": "056",
+   "event": "ittifak",
+   "goldstein": 6,
+   "week": "2026-W14",
+   "date": "2026-04-03",
    "articles": 1,
    "sources": 1
   },
@@ -4887,19 +5070,6 @@
    "goldstein": 6.5,
    "week": "2026-W15",
    "date": "2026-04-06",
-   "articles": 1,
-   "sources": 1
-  },
-  {
-   "s": "spain",
-   "r": "iran",
-   "pair": "iran|spain",
-   "layer": "diplomasi",
-   "root": "046",
-   "event": "ateşkes / normalleşme",
-   "goldstein": 7,
-   "week": "2026-W15",
-   "date": "2026-04-09",
    "articles": 1,
    "sources": 1
   },
@@ -5099,6 +5269,19 @@
    "sources": 1
   },
   {
+   "s": "united states",
+   "r": "belarus",
+   "pair": "belarus|united states",
+   "layer": "yaptirim",
+   "root": "057",
+   "event": "anlaşma / ortaklık",
+   "goldstein": 6,
+   "week": "2026-W16",
+   "date": "2026-04-16",
+   "articles": 1,
+   "sources": 1
+  },
+  {
    "s": "india",
    "r": "germany",
    "pair": "germany|india",
@@ -5177,15 +5360,15 @@
    "sources": 1
   },
   {
-   "s": "eu",
-   "r": "belarus",
-   "pair": "belarus|eu",
-   "layer": "silah",
-   "root": "163",
-   "event": "yaptırım",
-   "goldstein": -5.4,
+   "s": "pakistan",
+   "r": "united states",
+   "pair": "pakistan|united states",
+   "layer": "ittifak",
+   "root": "057",
+   "event": "anlaşma / ortaklık",
+   "goldstein": 6,
    "week": "2026-W17",
-   "date": "2026-04-23",
+   "date": "2026-04-20",
    "articles": 1,
    "sources": 1
   },
@@ -5541,19 +5724,6 @@
    "sources": 1
   },
   {
-   "s": "iran",
-   "r": "united states",
-   "pair": "iran|united states",
-   "layer": "yaptirim",
-   "root": "163",
-   "event": "yaptırım",
-   "goldstein": -5.4,
-   "week": "2026-W20",
-   "date": "2026-05-11",
-   "articles": 1,
-   "sources": 1
-  },
-  {
    "s": "philippines",
    "r": "paraguay",
    "pair": "paraguay|philippines",
@@ -5613,6 +5783,19 @@
    "root": "19",
    "event": "sınır çatışması",
    "goldstein": -7,
+   "week": "2026-W20",
+   "date": "2026-05-15",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "united states",
+   "r": "somalia",
+   "pair": "somalia|united states",
+   "layer": "yardim",
+   "root": "070",
+   "event": "yardım / tahliye",
+   "goldstein": 4,
    "week": "2026-W20",
    "date": "2026-05-15",
    "articles": 1,
@@ -5827,6 +6010,19 @@
    "sources": 1
   },
   {
+   "s": "russia",
+   "r": "kazakhstan",
+   "pair": "kazakhstan|russia",
+   "layer": "silah",
+   "root": "057",
+   "event": "anlaşma imzası",
+   "goldstein": 7,
+   "week": "2026-W22",
+   "date": "2026-05-28",
+   "articles": 1,
+   "sources": 1
+  },
+  {
    "s": "sweden",
    "r": "ukraine",
    "pair": "sweden|ukraine",
@@ -5918,6 +6114,19 @@
    "sources": 1
   },
   {
+   "s": "pakistan",
+   "r": "afghanistan",
+   "pair": "afghanistan|pakistan",
+   "layer": "tahil",
+   "root": "110",
+   "event": "gerginlik",
+   "goldstein": -2,
+   "week": "2026-W23",
+   "date": "2026-06-03",
+   "articles": 1,
+   "sources": 1
+  },
+  {
    "s": "france",
    "r": "russia",
    "pair": "france|russia",
@@ -5996,6 +6205,19 @@
    "sources": 1
   },
   {
+   "s": "belarus",
+   "r": "china",
+   "pair": "belarus|china",
+   "layer": "borc",
+   "root": "071",
+   "event": "yatırım",
+   "goldstein": 6.4,
+   "week": "2026-W23",
+   "date": "2026-06-07",
+   "articles": 1,
+   "sources": 1
+  },
+  {
    "s": "china",
    "r": "belarus",
    "pair": "belarus|china",
@@ -6007,6 +6229,19 @@
    "date": "2026-06-07",
    "articles": 2,
    "sources": 2
+  },
+  {
+   "s": "china",
+   "r": "belarus",
+   "pair": "belarus|china",
+   "layer": "borc",
+   "root": "050",
+   "event": "işbirliği",
+   "goldstein": 5,
+   "week": "2026-W24",
+   "date": "2026-06-08",
+   "articles": 1,
+   "sources": 1
   },
   {
    "s": "spain",
@@ -6087,6 +6322,19 @@
    "sources": 1
   },
   {
+   "s": "türkiye",
+   "r": "france",
+   "pair": "france|türkiye",
+   "layer": "silah",
+   "root": "111",
+   "event": "kınama / protesto",
+   "goldstein": -1.6,
+   "week": "2026-W24",
+   "date": "2026-06-11",
+   "articles": 1,
+   "sources": 1
+  },
+  {
    "s": "germany",
    "r": "russia",
    "pair": "germany|russia",
@@ -6114,19 +6362,6 @@
   },
   {
    "s": "united states",
-   "r": "iran",
-   "pair": "iran|united states",
-   "layer": "silah",
-   "root": "163",
-   "event": "yaptırım",
-   "goldstein": -5.4,
-   "week": "2026-W24",
-   "date": "2026-06-11",
-   "articles": 1,
-   "sources": 1
-  },
-  {
-   "s": "united states",
    "r": "south korea",
    "pair": "south korea|united states",
    "layer": "silah",
@@ -6135,6 +6370,32 @@
    "goldstein": 5,
    "week": "2026-W24",
    "date": "2026-06-11",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "taiwan",
+   "r": "united states",
+   "pair": "taiwan|united states",
+   "layer": "silah",
+   "root": "15",
+   "event": "askeri yığınak",
+   "goldstein": -5.5,
+   "week": "2026-W24",
+   "date": "2026-06-11",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "india",
+   "r": "france",
+   "pair": "france|india",
+   "layer": "silah",
+   "root": "110",
+   "event": "gerginlik",
+   "goldstein": -2,
+   "week": "2026-W24",
+   "date": "2026-06-13",
    "articles": 1,
    "sources": 1
   },
@@ -6185,19 +6446,6 @@
    "root": "057",
    "event": "anlaşma imzası",
    "goldstein": 7,
-   "week": "2026-W25",
-   "date": "2026-06-15",
-   "articles": 1,
-   "sources": 1
-  },
-  {
-   "s": "france",
-   "r": "uae",
-   "pair": "france|uae",
-   "layer": "silah",
-   "root": "057",
-   "event": "anlaşma / ortaklık",
-   "goldstein": 6,
    "week": "2026-W25",
    "date": "2026-06-15",
    "articles": 1,
@@ -6542,6 +6790,19 @@
    "sources": 1
   },
   {
+   "s": "japan",
+   "r": "south korea",
+   "pair": "japan|south korea",
+   "layer": "diplomasi",
+   "root": "057",
+   "event": "anlaşma / ortaklık",
+   "goldstein": 6,
+   "week": "2026-W25",
+   "date": "2026-06-21",
+   "articles": 1,
+   "sources": 1
+  },
+  {
    "s": "australia",
    "r": "canada",
    "pair": "australia|canada",
@@ -6672,6 +6933,19 @@
    "sources": 1
   },
   {
+   "s": "italy",
+   "r": "ukraine",
+   "pair": "italy|ukraine",
+   "layer": "diplomasi",
+   "root": "036",
+   "event": "üst düzey görüşme",
+   "goldstein": 3.5,
+   "week": "2026-W26",
+   "date": "2026-06-25",
+   "articles": 1,
+   "sources": 1
+  },
+  {
    "s": "united states",
    "r": "venezuela",
    "pair": "united states|venezuela",
@@ -6711,6 +6985,19 @@
    "sources": 1
   },
   {
+   "s": "venezuela",
+   "r": "united states",
+   "pair": "united states|venezuela",
+   "layer": "borc",
+   "root": "071",
+   "event": "kredi / finansman",
+   "goldstein": 6.5,
+   "week": "2026-W26",
+   "date": "2026-06-26",
+   "articles": 1,
+   "sources": 1
+  },
+  {
    "s": "burkina faso",
    "r": "france",
    "pair": "burkina faso|france",
@@ -6733,6 +7020,19 @@
    "goldstein": 5,
    "week": "2026-W26",
    "date": "2026-06-27",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "north korea",
+   "r": "japan",
+   "pair": "japan|north korea",
+   "layer": "ittifak",
+   "root": "111",
+   "event": "kınama / protesto",
+   "goldstein": -1.6,
+   "week": "2026-W27",
+   "date": "2026-06-29",
    "articles": 1,
    "sources": 1
   },
@@ -6997,6 +7297,19 @@
    "sources": 1
   },
   {
+   "s": "japan",
+   "r": "south korea",
+   "pair": "japan|south korea",
+   "layer": "diplomasi",
+   "root": "042",
+   "event": "resmi ziyaret",
+   "goldstein": 3.4,
+   "week": "2026-W27",
+   "date": "2026-07-02",
+   "articles": 1,
+   "sources": 1
+  },
+  {
    "s": "taiwan",
    "r": "japan",
    "pair": "japan|taiwan",
@@ -7094,19 +7407,6 @@
    "layer": "tahil",
    "root": "061",
    "event": "ticaret / tedarik",
-   "goldstein": 4,
-   "week": "2026-W28",
-   "date": "2026-07-06",
-   "articles": 1,
-   "sources": 1
-  },
-  {
-   "s": "ukraine",
-   "r": "nato",
-   "pair": "nato|ukraine",
-   "layer": "silah",
-   "root": "036",
-   "event": "görüşme / müzakere",
    "goldstein": 4,
    "week": "2026-W28",
    "date": "2026-07-06",
@@ -7530,6 +7830,19 @@
    "sources": 1
   },
   {
+   "s": "germany",
+   "r": "united states",
+   "pair": "germany|united states",
+   "layer": "silah",
+   "root": "057",
+   "event": "anlaşma / ortaklık",
+   "goldstein": 6,
+   "week": "2026-W28",
+   "date": "2026-07-09",
+   "articles": 1,
+   "sources": 1
+  },
+  {
    "s": "united states",
    "r": "germany",
    "pair": "germany|united states",
@@ -7933,8 +8246,8 @@
    "sources": 1
   },
   {
-   "s": "saudi arabia",
-   "r": "yemen",
+   "s": "yemen",
+   "r": "saudi arabia",
    "pair": "saudi arabia|yemen",
    "layer": "silah",
    "root": "19",
@@ -7966,6 +8279,19 @@
    "root": "162",
    "event": "ilişki kesme",
    "goldstein": -4.9,
+   "week": "2026-W29",
+   "date": "2026-07-14",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "india",
+   "r": "uae",
+   "pair": "india|uae",
+   "layer": "tahil",
+   "root": "042",
+   "event": "resmi ziyaret",
+   "goldstein": 3.4,
    "week": "2026-W29",
    "date": "2026-07-14",
    "articles": 1,

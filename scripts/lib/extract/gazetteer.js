@@ -60,7 +60,11 @@ const STOP = new Set(["us", "uk", "chad", "mali", "oman", "togo", "benin", "guin
 const CAPS_OK = new Set(["us", "uk", "u s", "u k"]);
 
 const PUNCT = /[.,;:!?()"'`]/g;
-const clean = (s) => String(s).replace(PUNCT, " ").replace(/\s+/g, " ").trim();
+// hyphens/slashes between actors ("US-Japan", "Russia-China", "India/Pakistan")
+// hide two country tokens as one — split them to a space so both are detected.
+// Country names that are themselves hyphenated are carried as space-separated
+// aliases in the registry, so this doesn't lose them.
+const clean = (s) => String(s).replace(PUNCT, " ").replace(/[-–—\/]/g, " ").replace(/\s+/g, " ").trim();
 
 /* Build the lookup: surface form -> canonical key. Longer forms win. Forms are
    normalized like the haystack so dotted aliases ("u.s.") can actually match. */

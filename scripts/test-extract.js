@@ -123,6 +123,7 @@ keep("Israel strikes Iran with missiles", "israel->iran"); // real strike still 
 keep("Morocco, Syria move to restore full diplomatic relations", "morocco->syria");
 keep("China courts Uruguay", "china->uruguay");
 keep("Poland Withholds MiG-29 Jets from Ukraine", "poland->ukraine");
+keep("US-Japan hold joint military drills", "united states->japan"); // hyphen-compound split
 
 /* ── label sanity ── */
 label("Israel strikes Iran with missiles", "hava/füze saldırısı");
