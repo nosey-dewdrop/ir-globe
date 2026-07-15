@@ -571,7 +571,7 @@ function araHits(all) {
 }
 function countLine(all, hits) {
   const q = araQuery.trim();
-  if (q && !hits.length) return "eşleşme yok — başka kelime dene";
+  if (q && !hits.length) return "bu kelime tutmadı, başka bir şey dene";
   const n = q ? hits.length : all.length;
   const base = q ? `aramanda <b>${n}</b> makale bulundu` : `bu konuda <b>${n}</b> makale bulundu`;
   return base + (n > CARD_CAP ? ` · ilk ${CARD_CAP} gösteriliyor` : "");

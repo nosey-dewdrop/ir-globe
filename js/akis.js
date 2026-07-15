@@ -168,7 +168,7 @@
       byDay[d].push(a);
     });
     if (!days.length) {
-      feedEl.innerHTML = '<p class="dg-load">' + (cfilter ? "bu filtrede manşet yok." : "bu katmanda henüz manşet yok.") + "</p>";
+      feedEl.innerHTML = '<p class="dg-load">' + (cfilter ? "bu filtrede şimdilik sessizlik. filtreyi kaldır, dünya konuşsun." : "burası şimdilik sakin. silah ya da diplomasi katmanına bak, orası hareketli.") + "</p>";
       moreEl.hidden = true;
       return;
     }

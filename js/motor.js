@@ -26,7 +26,14 @@ const Motor = (() => {
     if (g > -2.5) return "gerginlik";
     return "çatışma";
   }
-  const toneMark = (g) => (g > 0 ? "↑" : g < 0 ? "↓" : "·");
+  /* the arrow reads "up = good"; a rising ARMS flow is not good news. So an arrow
+     is only shown for genuinely relational tone (cooperation vs conflict). Arms
+     and other heavy transfers get a neutral dot — the event word carries meaning,
+     the arrow does not pretend a weapons deal is a stock gain. */
+  const toneMark = (g, layer) => {
+    if (layer === "silah" || layer === "us") return "·";
+    return g > 0 ? "↑" : g < 0 ? "↓" : "·";
+  };
 
   /* a short date if the caller gave TRDate; else the raw ISO tail */
   function shortDate(d) {
@@ -67,7 +74,7 @@ const Motor = (() => {
 
   function evRow(e, disp) {
     const who = `${esc(disp(e.s))} → ${esc(disp(e.r))}`;
-    const label = e.event ? ` · ${esc(e.event)} ${toneMark(e.goldstein)}` : ` ${toneMark(e.goldstein)}`;
+    const label = e.event ? ` · ${esc(e.event)} ${toneMark(e.goldstein, e.layer)}` : ` ${toneMark(e.goldstein, e.layer)}`;
     return `<p class="ev"><span class="ev-h">${who}${label}</span><span class="ev-d">${esc(shortDate(e.date))}</span></p>`;
   }
 
