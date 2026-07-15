@@ -25,14 +25,15 @@
     var xs = function (i) { return P + (i * (W - 2 * P)) / (weeks.length - 1); };
     var ys = function (v) { var c = Math.max(-10, Math.min(10, v)); return H - P - ((c + 10) / 20) * (H - 2 * P); };
     var pts = weeks.map(function (w, i) { return xs(i).toFixed(1) + "," + ys(series[w].avg).toFixed(1); }).join(" ");
-    return '<section class="trend"><h2>ilişki haftadan haftaya <span class="cnt">yukarı = yakınlaşma · aşağı = gerginlik</span></h2>' +
-      '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="haftalık ilişki tonu çizgisi">' +
+    var EN = typeof I18N !== "undefined" && I18N.isEn;
+    return '<section class="trend"><h2>' + (EN ? "relationship week to week" : "ilişki haftadan haftaya") + ' <span class="cnt">' + (EN ? "up = closer · down = tension" : "yukarı = yakınlaşma · aşağı = gerginlik") + "</span></h2>" +
+      '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + (EN ? "weekly relationship tone line" : "haftalık ilişki tonu çizgisi") + '">' +
       '<line x1="' + P + '" y1="' + ys(0) + '" x2="' + (W - P) + '" y2="' + ys(0) + '" stroke="#d9d9d9" stroke-dasharray="3 4"/>' +
       '<polyline points="' + pts + '" fill="none" stroke="#0a2a5e" stroke-width="1.6"/>' +
       weeks.map(function (w, i) { return '<circle cx="' + xs(i) + '" cy="' + ys(series[w].avg) + '" r="2" fill="#0a2a5e"/>'; }).join("") +
       '<text class="tl" x="' + P + '" y="' + (H - 3) + '">' + esc(weeks[0]) + '</text>' +
       '<text class="tl" x="' + (W - P) + '" y="' + (H - 3) + '" text-anchor="end">' + esc(weeks[weeks.length - 1]) + "</text>" +
-      "</svg><p class=\"meta\">haberlerden otomatik çıkarıldı · hafta başına ortalama</p></section>";
+      '</svg><p class="meta">' + (EN ? "auto-extracted from news · weekly average" : "haberlerden otomatik çıkarıldı · hafta başına ortalama") + "</p></section>";
   }
 
   Promise.all([Store.countries(), Store.layerIndex()]).then(function (r) {

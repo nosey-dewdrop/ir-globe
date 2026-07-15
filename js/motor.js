@@ -109,15 +109,16 @@ const Motor = (() => {
     const recent = eventsFor(events, (e) => e.pair === key, 99); // all recent, window-filtered
     const evs = recent.slice(0, limit);
     if (!spike && !evs.length) return ""; // nothing recent/coded → no empty box
-    let html = `<div class="lbl">olay radarı${recent.length ? ` <span class="cnt">(${recent.length})</span>` : ""}</div><div class="radar">`;
+    const EN = typeof I18N !== "undefined" && I18N.isEn;
+    let html = `<div class="lbl">${EN ? "event radar" : "olay radarı"}${recent.length ? ` <span class="cnt">(${recent.length})</span>` : ""}</div><div class="radar">`;
     if (spike)
-      html += `<p class="radar-spike">bu hafta hareketlendi · ${spike.n} haber</p>`;
+      html += `<p class="radar-spike">${EN ? "moved this week" : "bu hafta hareketlendi"} · ${spike.n} ${EN ? "articles" : "haber"}</p>`;
     if (evs.length) {
       html += evs.map((e) => evRow(e, disp)).join("");
       if (recent.length > evs.length)
-        html += `<p class="radar-more">+ ${recent.length - evs.length} olay daha (aşağıdaki manşetlerde)</p>`;
+        html += `<p class="radar-more">+ ${recent.length - evs.length} ${EN ? "more events (in the headlines below)" : "olay daha (aşağıdaki manşetlerde)"}</p>`;
     }
-    html += `</div><p class="radar-note">haberlerden otomatik çıkarıldı</p>`;
+    html += `</div><p class="radar-note">${EN ? "auto-extracted from news" : "haberlerden otomatik çıkarıldı"}</p>`;
     return html;
   }
 
