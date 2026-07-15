@@ -33,6 +33,7 @@ html { scroll-snap-type: y proximity; }
 .jn-in, .gl #layers, .gl .stage {
   opacity: 0; transform: translateY(18px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;   /* promote to a compositor layer -> smoother page transition */
 }
 .page.in .jn-in,
 .gl.in #layers, .gl.in .stage { opacity: 1; transform: none; }

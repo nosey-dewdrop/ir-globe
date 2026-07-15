@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=85">
+<link rel="stylesheet" href="css/style.css?v=86">
 <!-- küre verisini tarayıcı boş kalınca sessizce indir — initGlobe cache'ten bulur -->
 <link rel="prefetch" href="data/countries.geojson?v=6">
 </head>
@@ -71,7 +71,7 @@
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="app.html#uye">üyelik</a> · <a href="metodoloji.html">metodoloji</a> · <a href="veri.html">veri</a> · <a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v85</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · uydurma veri yok · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v86</span></span>
   </footer>
 </section>
 
@@ -82,8 +82,8 @@
 <script src="js/store.js?v=69"></script>
 <script src="js/ilgi.js?v=71"></script>
 <script src="js/motor.js?v=68"></script>
-<script src="js/ara.js?v=85"></script>
-<script src="js/main.js?v=85"></script>
+<script src="js/ara.js?v=86"></script>
+<script src="js/main.js?v=86"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -102,13 +102,21 @@
     i = Math.max(0, Math.min(pages.length - 1, i));
     if (lock || i === idx) return;
     lock = true; idx = i;
-    var start = window.pageYOffset, end = pages[i].offsetTop, dur = 1050, t0 = null;
+    /* freeze the globe for the whole transition — no WebGL render, no card relayout
+       while the page scrolls (this was the big jank source). */
+    window.__pageScrolling = true;
+    if (window.__globe && window.__globe.pauseAnimation) window.__globe.pauseAnimation();
+    var start = window.pageYOffset, end = pages[i].offsetTop, dur = 720, t0 = null;
     function step(ts) {
       if (t0 === null) t0 = ts;
       var p = Math.min((ts - t0) / dur, 1);
       window.scrollTo(0, start + (end - start) * ease(p));
       if (p < 1) requestAnimationFrame(step);
-      else { lock = false; cool = performance.now() + 220; }
+      else {
+        lock = false; cool = performance.now() + 220;
+        window.__pageScrolling = false;
+        if (window.__globe && window.__globe.resumeAnimation) window.__globe.resumeAnimation();
+      }
     }
     requestAnimationFrame(step);
   }

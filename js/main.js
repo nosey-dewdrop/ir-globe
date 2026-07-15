@@ -184,11 +184,15 @@ fetch("data/countries.geojson?v=6")
   .catch(() => {});
 
 globe.arcsData(visibleTies());
+window.__globe = globe;   // let the page-scroll router pause/resume the render loop
 /* dönüşü kaldırdık (Damla: parmakla zaten çeviriyor). Onun yerine on-demand:
    herhangi bir kamera değişimi küreyi uyandırır, boşta uyur → sıfır boşta yük.
    Kamera mesafesi ayrıca kart ölçeğini besler: pinch-zoom'da kartlar küreyle
    birlikte yaklaşır/uzaklaşır (Damla'nın isteği). */
 globe.controls().addEventListener("change", () => {
+  // during a full-page scroll the globe must NOT render or re-layout — that was
+  // the main source of jank (WebGL + getBoundingClientRect thrash every frame).
+  if (window.__pageScrolling) return;
   wakeGlobe();
   const base = globe.getGlobeRadius ? globe.getGlobeRadius() * 3.2 : 320; // altitude 2.2 başlangıcı
   const k = Math.max(0.55, Math.min(2.0, base / globe.camera().position.length()));
