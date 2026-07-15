@@ -87,6 +87,10 @@ const RULES = [
   [/\b(veto(es|ed)?|block(s|ed)?|scrap(s|ped)?|derail(s|ed)?|scupper(s|ed)?|torpedo(es|ed)?|reject(s|ed)?)\b[^.]{0,40}\b(deals?|joint ventures?|ventures?|agreements?|pacts?|trea(ty|ties)|accords?|partnerships?|bids?|resolutions?)\b/, "121", -3.0, "veto / engelleme"],
   [/\b(deals?|joint ventures?|ventures?|agreements?|pacts?|accords?|partnerships?)\b[^.]{0,40}\b(block(ed)?|vetoed|scrapped|derailed|scuppered|torpedoed|rejected|collapsed?|(fell|falls) through)\b/, "121", -3.0, "veto / engelleme"],
 
+  // joint military drills/exercises/patrols — a cooperative security activity
+  // (recall gap: "US-Japan military drills" was uncoded).
+  [/\b(joint |combined |bilateral |naval |military |air )?(drills?|exercises?|man(o|oe)uvers?|patrols?|war ?games?)\b/, "050", 4.0, "ortak tatbikat"],
+
   // --- arms/goods trade (very common, direction-bearing) ---
   // "A buys/orders X from B" and "A sells/supplies X to B": these carry a clear
   // buyer<-seller direction that relate.js resolves via the from/to marker. Tested

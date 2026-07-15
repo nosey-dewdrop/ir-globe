@@ -310,7 +310,7 @@ function extractAll(rawText) {
   // SIGN a deal", "Turkey, Russia AGREE") is a high-confidence tie even without a
   // before/after verb split — the act is inherently bilateral and direction is
   // moot. Reward it so clean deals clear the keep bar.
-  const MUTUAL = /\b(sign(s|ed)?|ink(s|ed)?|finaliz\w+|seal(s|ed)?|agree(s|d)?|reach(es|ed)?|forge(s|d)?|strike(s)? a deal|join(tly)?|hold(s)? talks|deepen\w*|expand\w*|restor\w+|normaliz\w+|re-?establish\w*|resum\w+|rebuild\w*|reopen\w*|strengthen\w*|bolster\w*)\b/;
+  const MUTUAL = /\b(sign(s|ed)?|ink(s|ed)?|finaliz\w+|seal(s|ed)?|agree(s|d)?|reach(es|ed)?|forge(s|d)?|strike(s)? a deal|join(tly)?|hold(s)? talks|deepen\w*|expand\w*|restor\w+|normaliz\w+|re-?establish\w*|resum\w+|rebuild\w*|reopen\w*|strengthen\w*|bolster\w*|drills?|exercises?|man(o|oe)uvers?|war ?games?)\b/;
   if (actors.length === 2 && !clearDir && MUTUAL.test(hay) &&
       (ev.goldstein > 3)) confidence += 0.2;
   // "diversifying supply from Russia" / "cut reliance ON the US": if the target is
