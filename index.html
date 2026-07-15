@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=100">
+<link rel="stylesheet" href="css/style.css?v=101">
 <!-- küre verisini tarayıcı boş kalınca sessizce indir — initGlobe cache'ten bulur -->
 <link rel="prefetch" href="data/countries.geojson?v=6">
 </head>
@@ -45,6 +45,7 @@
     <p class="btext"><span class="hl">arkadaki her başlık gerçek: kim kime silah, enerji, tahıl, para satıyor. üye ol, ülke ve konu seç; bu akış senin olsun. takip ettiklerinde gelişme olunca kürende işaretlenir, kişisel akışın hep güncel kalır.</span></p>
     <p class="bfine cta-line"><span class="hl"><a class="jn-cta" href="app.html#uye">hesap aç →</a></span></p>
     <p class="bfine"><span class="hl">genel akışa bak · bu haftanın bülteni'ne <a href="akis.html">göz at</a></span></p>
+    <div class="hero-spikes" id="heroSpikes" aria-live="polite"></div>
     <div class="stats" id="stats"></div>
     <p class="ed-scroll"><span class="hl">↓</span></p>
   </div>
@@ -71,7 +72,7 @@
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="app.html#uye">üyelik</a> · <a href="metodoloji.html">nasıl çalışıyor</a> · <a href="veri.html">kaynaklar</a> ·<a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · her bağın kaynağı tıklanır · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v100</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · her bağın kaynağı tıklanır · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v101</span></span>
   </footer>
 </section>
 
@@ -81,9 +82,9 @@
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=69"></script>
 <script src="js/ilgi.js?v=71"></script>
-<script src="js/motor.js?v=100"></script>
-<script src="js/ara.js?v=100"></script>
-<script src="js/main.js?v=100"></script>
+<script src="js/motor.js?v=101"></script>
+<script src="js/ara.js?v=101"></script>
+<script src="js/main.js?v=101"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -276,6 +277,29 @@
     new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) run(); }); }, { threshold: 0.4 }).observe(el);
   } else run();
   }
+})();
+
+/* VALUE-FIRST: "bu hafta en çok hareketlenen ülke çiftleri" — the real job of the
+   product (what changed between two countries, sourced) shown on arrival, not just
+   a spinning globe. Data is data/events/graph.json spikes; each row links to the
+   pair page. */
+(function () {
+  var host = document.getElementById("heroSpikes");
+  if (!host || typeof Store === "undefined" || !Store.graph) return;
+  Promise.all([Store.graph(), Store.countries()]).then(function (r) {
+    var g = r[0] || {}, reg = r[1] || {};
+    var spikes = (g.spikes || []).slice(0, 3);
+    if (!spikes.length) return;
+    function disp(k) { return (reg[k] && (reg[k].disp || reg[k].key)) || k; }
+    var rows = spikes.map(function (s) {
+      var p = String(s.pair).split("|"); if (p.length !== 2) return "";
+      var dir = s.avg < 0 ? "sertleşti" : "yakınlaştı";
+      return '<a class="spike" href="iliski.html?a=' + encodeURIComponent(p[0]) + '&b=' + encodeURIComponent(p[1]) + '">' +
+        '<span class="spike-pair">' + disp(p[0]) + ' ↔ ' + disp(p[1]) + '</span>' +
+        '<span class="spike-tag">bu hafta ' + dir + ' · ' + s.n + ' olay</span></a>';
+    }).join("");
+    host.innerHTML = '<p class="spike-lead">bu hafta en çok hareketlenenler</p>' + rows;
+  }).catch(function () {});
 })();
 </script>
 <script>
