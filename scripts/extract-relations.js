@@ -87,7 +87,7 @@ for (const row of rows) {
   for (const ev of good) {
     (byLayer[row.layer] ||= []).push({
       s: ev.s, r: ev.r, event: ev.event, root: ev.root, goldstein: ev.goldstein,
-      confidence: ev.confidence, title: t, source: row.source, url: row.url, date: row.date,
+      confidence: ev.confidence, title: t, source: row.source, url: row.url, date: row.date, pub: row.pub || "",
     });
   }
 }

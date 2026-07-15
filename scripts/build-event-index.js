@@ -64,10 +64,14 @@ const events = [...merged.values()].map((m) => {
   for (const [d, n] of m.votes) if (n > top) { top = n; dir = d; }
   const tie = [...m.votes.values()].filter((n) => n === top).length > 1;
   const [s, r] = (tie ? `${m.best.s}>${m.best.r}` : dir).split(">");
+  // carry the best article's SOURCE so every event on the pair page is citable —
+  // "the engine says a strike happened; here's the headline it read." Without this
+  // the most decision-relevant events were un-sourceable (customer deal-breaker).
   return { s, r, pair: m.pair, layer: m.layer, root: m.root, event: m.event,
            goldstein: m.goldstein, week: m.week, date: m.date,
            articles: [...m.votes.values()].reduce((x, y) => x + y, 0),
-           sources: m.sources.size };
+           sources: m.sources.size,
+           title: m.best.title || "", url: m.best.url || "", src: m.best.source || "", pub: m.best.pub || "" };
 });
 
 /* per-pair weekly series + per-country degree stats */

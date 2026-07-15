@@ -76,7 +76,13 @@ const Motor = (() => {
     const who = `${esc(disp(e.s))} → ${esc(disp(e.r))}`;
     const evName = (typeof I18N !== "undefined" && e.event) ? I18N.ev(e.event) : e.event;
     const label = e.event ? ` · ${esc(evName)} ${toneMark(e.goldstein, e.layer)}` : ` ${toneMark(e.goldstein, e.layer)}`;
-    return `<p class="ev"><span class="ev-h">${who}${label}</span><span class="ev-d">${esc(shortDate(e.date))}</span></p>`;
+    const src = e.pub ? ` <span class="ev-src">${esc(e.pub)}</span>` : (e.src ? ` <span class="ev-src">${esc(e.src)}</span>` : "");
+    const inner = `<span class="ev-h">${who}${label}${src}</span><span class="ev-d">${esc(shortDate(e.date))}</span>`;
+    // if the event carries the article it was coded from, make the whole row a
+    // citable link to that source (the analyst's #1 need).
+    return e.url
+      ? `<a class="ev ev-link" href="${esc(e.url)}" target="_blank" rel="noopener">${inner}</a>`
+      : `<p class="ev">${inner}</p>`;
   }
 
   /* spike lookup: is this pair one of THIS week's z-score spikes? */
