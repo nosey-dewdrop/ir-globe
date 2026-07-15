@@ -119,6 +119,11 @@ keep("Turkey signs deal with Spain: what it means for NATO", "türkiye->spain");
 label("Canada Strikes Landmark Deal to Export LNG to Germany", "ticaret / tedarik");
 keep("Israel strikes Iran with missiles", "israel->iran"); // real strike still attack
 
+/* ── recall: previously-missed cooperative/relationship verbs ── */
+keep("Morocco, Syria move to restore full diplomatic relations", "morocco->syria");
+keep("China courts Uruguay", "china->uruguay");
+keep("Poland Withholds MiG-29 Jets from Ukraine", "poland->ukraine");
+
 /* ── label sanity ── */
 label("Israel strikes Iran with missiles", "hava/füze saldırısı");
 label("France topped EU arms sales to Israel while backing mini-sanctions", "silah/malzeme tedariki"); // not sanction

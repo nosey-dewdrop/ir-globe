@@ -100,6 +100,17 @@ const RULES = [
   [/\b(buy(s|ing)?|bought|purchas\w+|order(s|ed)?|import(s|ed|ing)?)\b[^.]{0,40}\bfrom\b/, "061", 5.0, "ticaret / tedarik"],
   [/\b(sell(s|ing)?|sold|export(s|ed|ing)?|suppl(y|ies|ied)|deliver(s|ed|ing)?|ship(s|ped|ping)?)\b[^.]{0,40}\bto\b/, "061", 4.0, "ticaret / tedarik"],
 
+  // restoring/normalizing relations is relationship-building (recall gap: was
+  // uncoded). Tested before generic deal so "restore diplomatic relations" wins.
+  [/\b(restor\w+|re-?establish\w*|normaliz\w+|resum\w+|mend\w*|rebuild\w*|reopen\w*)\b[^.]{0,20}\b(ties|relations|diplomatic (ties|relations)|links|cooperation)\b/, "050", 5.0, "ilişki güçlendirme"],
+  // "sends/sending/sent X to Y", "delivers/dispatches" — supply/aid transfer that
+  // was frequently uncoded. Direction handled by relate.js (to-marker).
+  [/\b(send(s|ing)?|sent|dispatch\w+|ship(s|ped|ping)?|provid\w+)\b[^.]{0,40}\b(to)\b/, "060", 3.0, "gönderim / tedarik"],
+  // "withholds / holds back aid/support/weapons" is an aid-cutoff (recall gap).
+  [/\b(withhold\w*|holds? back|hold(s|ing)? up|freez\w*)\b[^.]{0,20}\b(aid|support|weapons?|arms?|jets?|funds?|assistance|deliver\w+)\b/, "162", -3.5, "destek/yardım kesme"],
+  // "courts / woos / reaches out to" — an outreach/overture (recall gap).
+  [/\b(courts?|woo(s|ed|ing)?|reach(es|ed)? out to|extends? (a )?hand|makes? overtures?)\b/, "030", 3.2, "girişim / davet"],
+
   // --- verbal cooperation ---
   // signing a deal outranks the meeting/visit it happened at, so test it first
   [/\b(sign(s|ed)?|ink(s|ed)?)\b.*\b(deals?|agreements?|pacts?|trea(ty|ties)|accords?|mous?|memorandums?|contracts?)\b/, "057", 7.0, "anlaşma imzası"],
