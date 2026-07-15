@@ -46,6 +46,9 @@ const RULES = [
   // so "France topped arms sales to Israel while backing mini-sanctions" codes as
   // a transfer, not a sanction.
   [/\b(arms?|weapons?|defen[cs]e|military) (sales?|transfers?|exports?|deliveries|shipments?|deals?|supplies)\b[^.]{0,20}\bto\b/, "060", 3.0, "silah/malzeme tedariki"],
+  // military cooperation acts previously uncoded: training, basing, joint drills.
+  [/\b(train(s|ed|ing)?|equips?|equipp(ed|ing))\b[^.]{0,25}\b(pilots?|troops?|forces?|soldiers?|army|navy|military|officers?|police)\b/, "060", 3.5, "askeri eğitim / donatım"],
+  [/\b(build(s|ing)?|built|open(s|ed|ing)?|establish(es|ed|ing)?|set(s|ting)? up|station(s|ed|ing)?)\b[^.]{0,20}\b(naval |military |air )?(base|outpost|installation|garrison|facility)\b/, "060", -1.0, "askeri üs"],
 
   // --- coercion / sanctions ---
   // a "sanctions waiver/relief/exemption" is LIFTING sanctions, not imposing them
@@ -53,7 +56,7 @@ const RULES = [
   [/\b(sanction(s|ed|ing)?(?!\s+(waiver|relief|exempt\w+|carve[- ]?out|lift\w*))|embargo|blacklist(ed)?|asset freeze|freeze(s)? assets)\b/, "163", -5.4, "yaptırım"],
   [/\b(ban(s|ned|ning)?|restrict(s|ed|ions)?|curb(s|ed)?|tariffs?|levy|levies|duties)\b/, "162", -4.0, "kısıtlama / tarife"],
   [/\b(expel(s|led)?|expuls|deport(s|ed|ation)?)\b/, "162", -4.4, "sınır dışı / ihraç"],
-  [/\b(cut(s|ting)? (ties|relations|off)|sever(s|ed)? (ties|relations)|suspend(s|ed)? (ties|relations))\b/, "162", -4.9, "ilişki kesme"],
+  [/\b(cut(s|ting)?|sever(s|ed)?|suspend(s|ed)?|break(s|ing)?|brok(e|en) off|down ?grad(e|es|ed))\b\s+(\w+\s+)?(ties|relations|diplomatic (ties|relations)|links)\b/, "162", -4.9, "ilişki kesme"],
   [/\b(suspend(s|ed)?|freez(e|es|ing)|halt(s|ed)?)\b.*\b(deals?|agreements?|pacts?|trea(ty|ties)|accords?|cooperation|exports?|imports?|shipments?)\b/, "162", -4.5, "askıya alma"],
   [/\b(recall(s|ed)? (its )?ambassador|summon(s|ed)? (the )?ambassador)\b/, "154", -3.8, "büyükelçi geri çağırma"],
   // withdrawing/ending support is NOT support — tested before the positive support

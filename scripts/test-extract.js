@@ -101,6 +101,10 @@ drop("Germany to deploy Patriot air defense unit to Türkiye under NATO mission"
 drop("Iran conflict threatens Brazil grain exports"); // threatens-a-consequence
 keep("China sanctions US defense firms in retaliation", "china->united states"); // coercive floor
 
+/* ── coverage: previously-uncoded common IR shapes ── */
+keep("Iran cuts diplomatic ties with Morocco", "iran->morocco");
+keep("France trains Ukrainian pilots", "france->ukraine");
+
 /* ── label sanity ── */
 label("Israel strikes Iran with missiles", "hava/füze saldırısı");
 label("France topped EU arms sales to Israel while backing mini-sanctions", "silah/malzeme tedariki"); // not sanction

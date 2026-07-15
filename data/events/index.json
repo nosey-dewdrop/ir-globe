@@ -4,9 +4,9 @@
   "from": "2026-01-20",
   "to": "2026-07-14"
  },
- "raw": 360,
- "merged": 307,
- "duplicatesRemoved": 53,
+ "raw": 364,
+ "merged": 309,
+ "duplicatesRemoved": 55,
  "undated": 0,
  "weeks": [
   "2026-W04",
@@ -463,6 +463,24 @@
     }
    },
    "avg": 4.5
+  },
+  "burkina faso|france": {
+   "n": 2,
+   "last": "2026-07-14",
+   "layers": {
+    "diplomasi": 2
+   },
+   "weekly": {
+    "2026-W26": {
+     "n": 1,
+     "avg": -4.9
+    },
+    "2026-W29": {
+     "n": 1,
+     "avg": -4.9
+    }
+   },
+   "avg": -4.9
   },
   "canada|germany": {
    "n": 1,
@@ -1107,20 +1125,6 @@
     }
    },
    "avg": 2.5
-  },
-  "france|united states": {
-   "n": 1,
-   "last": "2026-04-01",
-   "layers": {
-    "silah": 1
-   },
-   "weekly": {
-    "2026-W14": {
-     "n": 1,
-     "avg": -2.2
-    }
-   },
-   "avg": -2.2
   },
   "germany|india": {
    "n": 1,
@@ -2390,6 +2394,20 @@
    },
    "avg": 2.23
   },
+  "poland|united states": {
+   "n": 1,
+   "last": "2026-07-06",
+   "layers": {
+    "us": 1
+   },
+   "weekly": {
+    "2026-W28": {
+     "n": 1,
+     "avg": -1
+    }
+   },
+   "avg": -1
+  },
   "qatar|south korea": {
    "n": 1,
    "last": "2026-06-15",
@@ -2990,6 +3008,11 @@
    "partners": 4,
    "avg": 4.97
   },
+  "burkina faso": {
+   "n": 2,
+   "partners": 1,
+   "avg": -4.9
+  },
   "canada": {
    "n": 19,
    "partners": 10,
@@ -3041,9 +3064,9 @@
    "avg": 7
   },
   "france": {
-   "n": 23,
+   "n": 24,
    "partners": 11,
-   "avg": 1.74
+   "avg": 1.35
   },
   "germany": {
    "n": 32,
@@ -3181,9 +3204,9 @@
    "avg": 5.58
   },
   "poland": {
-   "n": 6,
-   "partners": 4,
-   "avg": 4.28
+   "n": 7,
+   "partners": 5,
+   "avg": 3.53
   },
   "qatar": {
    "n": 4,
@@ -3288,7 +3311,7 @@
   "united states": {
    "n": 87,
    "partners": 42,
-   "avg": -0.43
+   "avg": -0.41
   },
   "uzbekistan": {
    "n": 2,
@@ -4346,19 +4369,6 @@
    "goldstein": 7,
    "week": "2026-W13",
    "date": "2026-03-28",
-   "articles": 1,
-   "sources": 1
-  },
-  {
-   "s": "france",
-   "r": "united states",
-   "pair": "france|united states",
-   "layer": "silah",
-   "root": "120",
-   "event": "ret / karşı çıkma",
-   "goldstein": -2.2,
-   "week": "2026-W14",
-   "date": "2026-04-01",
    "articles": 1,
    "sources": 1
   },
@@ -6066,6 +6076,19 @@
    "sources": 1
   },
   {
+   "s": "burkina faso",
+   "r": "france",
+   "pair": "burkina faso|france",
+   "layer": "diplomasi",
+   "root": "162",
+   "event": "ilişki kesme",
+   "goldstein": -4.9,
+   "week": "2026-W26",
+   "date": "2026-06-27",
+   "articles": 3,
+   "sources": 3
+  },
+  {
    "s": "spain",
    "r": "ukraine",
    "pair": "spain|ukraine",
@@ -6463,6 +6486,19 @@
    "root": "070",
    "event": "yardım",
    "goldstein": 7,
+   "week": "2026-W28",
+   "date": "2026-07-06",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "poland",
+   "r": "united states",
+   "pair": "poland|united states",
+   "layer": "us",
+   "root": "060",
+   "event": "askeri üs",
+   "goldstein": -1,
    "week": "2026-W28",
    "date": "2026-07-06",
    "articles": 1,
@@ -7191,6 +7227,19 @@
    "root": "18",
    "event": "silahlı saldırı",
    "goldstein": -9,
+   "week": "2026-W29",
+   "date": "2026-07-14",
+   "articles": 1,
+   "sources": 1
+  },
+  {
+   "s": "burkina faso",
+   "r": "france",
+   "pair": "burkina faso|france",
+   "layer": "diplomasi",
+   "root": "162",
+   "event": "ilişki kesme",
+   "goldstein": -4.9,
    "week": "2026-W29",
    "date": "2026-07-14",
    "articles": 1,
