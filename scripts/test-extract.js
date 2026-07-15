@@ -111,6 +111,10 @@ keep("NATO allies pledge support to Ukraine", "nato->ukraine");
 keep("EU imposes tariffs on China", "eu->china");
 keep("UN Security Council condemns North Korea", "un->north korea");
 
+/* ── colon/dash tail is a separate blurb, only main clause matters ── */
+drop("Bangladesh seeks IMF aid: How badly has Iran war hit its economy");
+keep("Turkey signs deal with Spain: what it means for NATO", "türkiye->spain");
+
 /* ── strike-a-deal is trade, not a military strike ── */
 label("Canada Strikes Landmark Deal to Export LNG to Germany", "ticaret / tedarik");
 keep("Israel strikes Iran with missiles", "israel->iran"); // real strike still attack

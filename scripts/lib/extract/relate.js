@@ -61,7 +61,17 @@ const wc = (s) => (s.trim() ? s.trim().split(/\s+/).length : 0);
 // manufacture fake ties.
 const TAGSOUP = /\|\s*[^|]*,[^|]*,[^|]*,/;
 
-function extractAll(text) {
+function extractAll(rawText) {
+  // colon/dash-separated headlines often bolt a separate question/blurb onto the
+  // main clause ("Bangladesh seeks IMF aid: how badly has Iran war hit economy").
+  // If the part AFTER a colon/em-dash is a question or explainer, only extract from
+  // the main clause before it, so a country mentioned only in the tail can't pair.
+  let text = rawText;
+  const colon = String(rawText || "").search(/:\s|\s[—–-]\s/);
+  if (colon > 12) {
+    const tail = rawText.slice(colon);
+    if (/\b(how|why|what|when|badly|here'?s|explained|analysis|everything you)\b/i.test(tail)) text = rawText.slice(0, colon);
+  }
   if (TAGSOUP.test(text)) return [];
   // analysis/comparison/history pieces, not events: "US Occupation Assistance:
   // Iraq, Germany, Japan Compared", "X vs Y: who wins", "a history of ...".
