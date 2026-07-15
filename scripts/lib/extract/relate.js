@@ -39,6 +39,10 @@ const MAX_TIES = 9;
 // speculative / hypothetical framing — the tie is not asserted, just floated
 // ("may put Kazakhstan at the center of a deal"). Down-weighted, not dropped.
 const SPEC = /\b(may|might|could|would|expected to|set to|plan(s|ned)? to|weigh(s|ing)?|mull(s|ing)?|consider(s|ing)?|eyes?|seeks? to|appears? to|reportedly|rumou?red)\b/;
+// STRONG hypothetical/urging framing — the event has NOT happened, someone is
+// only pushing for or speculating about it. Drop, don't just down-weight.
+// ("Pakistan urges Turkey to join pact", "may reduce aid", "could cut ties if").
+const HYPO = /\b(urg(e|es|ed|ing)|call(s|ed)? on|press(es|ed|ing)?|push(es|ed|ing)? (for|to)|propos(e|es|ed|al)|may (reduce|cut|halt|end|raise|lower)|could\b[^.]{0,40}\bif\b|would\b[^.]{0,40}\bif\b|if\b[^.]{0,30}\b(cuts?|ends?|halts?|leaves?)\b|reportedly (nears?|weighs?))\b/;
 // max words allowed between the two actors of a tie; farther apart = more likely
 // they live in unrelated clauses ("Iran's stockpile … Kazakhstan at the center").
 const MAX_GAP_WORDS = 8;
@@ -57,6 +61,17 @@ function extractAll(text) {
   // a question is not an event. Also "here's what/why/how" explainer framing.
   if (/^\s*(can|could|will|would|should|is|are|does|do|why|what if|what|how|when)\b[^?]*\?/i.test(text.trim()) ||
       /\bhere'?s (what|why|how)\b/i.test(text)) return [];
+  // strong hypothetical / someone-urging-it framing: the tie hasn't happened.
+  if (HYPO.test(text.toLowerCase())) return [];
+  // reacting-to-tariffs framing ("Spain moves to mitigate US tariffs", "seeks
+  // tariff relief from China"): the SUBJECT is the victim, not the imposer — the
+  // reading-order direction would be wrong. Drop rather than assert a false one.
+  {
+    const tl = text.toLowerCase();
+    const victim = /\b(mitigat\w+|cope with|cushion|respond to|reeling from|brace(s|d)? for|impacts? of|hit by|relief)\b/.test(tl);
+    const coercion = /\b(tariff|duties|levy|levies|sanction)/.test(tl);
+    if (victim && coercion) return []; // subject is reacting to coercion, not imposing it
+  }
   const actors = detect(text);
   const ev = code(text);
   if (!ev) return [];               // no event -> nothing to assert
@@ -95,6 +110,15 @@ function extractAll(text) {
   // be picked as a target (only matters for meeting/visit-type verbs).
   for (const g of groups) {
     g.loc = /\b(in|at|on the sidelines of|hosted by|hosts?)\s*$/.test(hay.slice(Math.max(0, g.start - 22), g.start));
+    // topic mention: "hold talks ON security, Ukraine and migration" — once a
+    // meeting verb is followed by "on/about/over", every country after that "on"
+    // is a DISCUSSION TOPIC, not a party. Find the topic-marker position and flag
+    // any group sitting past it.
+    const topicM = hay.match(/\b(talks?|discuss\w*|meet\w*|summit|dialogue|negotiat\w*|deal)\b[^.]{0,30}\b(on|about|over|regarding|concerning)\b/);
+    if (topicM) {
+      const topicAt = topicM.index + topicM[0].length;
+      if (g.start >= topicAt) g.loc = true;
+    }
   }
 
   // "talks between A and B in Washington": the between-group IS the tie —
