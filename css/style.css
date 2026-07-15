@@ -152,6 +152,9 @@ html { scroll-snap-type: y proximity; }
 .fresh-list { margin-top: 6px; } .fresh-list .dg { padding: 6px 0; border-top: 1px solid var(--rule); } .fresh-list .dg:first-child { border-top: 0; }
 .dg-wrap { display: flex; align-items: flex-start; gap: 8px; }
 .dg-wrap .dg { flex: 1; }
+.src-badge { font-size: 10px; padding: 0 5px; border-radius: 3px; margin-left: 4px; vertical-align: middle; }
+.src-ok { background: #eef1f6; color: var(--navy); }
+.src-warn { background: #fbeeee; color: #b0332a; }
 .cite-btn { flex: 0 0 auto; font: 11px var(--sans); color: var(--muted); background: transparent; border: 1px solid var(--rule); border-radius: 999px; padding: 2px 9px; cursor: pointer; margin-top: 2px; white-space: nowrap; }
 .cite-btn:hover { color: var(--navy); border-color: var(--navy); }
 .news-bucket { font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 18px 0 6px; }

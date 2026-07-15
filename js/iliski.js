@@ -137,13 +137,17 @@
       var artRow = function (a) {
         var outlet = esc(a.src) + (a.pub ? ' <span class="dg-dom">(' + esc(a.pub) + ")</span>" : "");
         var lyr = (typeof I18N !== "undefined") ? I18N.layer(a.l) : a.l;
+        // source-type badge (wire / newspaper / think-tank / advocacy) so a risk
+        // analyst can weight the source at a glance — provenance is the whole game.
+        var stype = (typeof I18N !== "undefined" && a.pub) ? I18N.srcType(a.pub) : "";
+        var badge = stype ? ' <span class="src-badge src-' + (stype === "savunuculuk" || stype === "advocacy" ? "warn" : "ok") + '">' + esc(stype) + "</span>" : "";
         // a copy-citation button: a journalist/analyst cites publisher+headline+date
         // (a URL is NOT required for a valid citation) — this finishes the job even
         // though the click routes through Google News. data-cite holds the string.
         var cite = (a.src || a.pub || "") + ', "' + a.t + '"' + (a.d ? ", " + a.d : "");
         return '<div class="dg-wrap"><a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
           '<span class="dg-t">' + esc(a.t) + '</span>' +
-          '<span class="dg-m">' + outlet + " · " + esc(lyr) + (a.d ? " · " + esc(a.d) : "") + "</span></a>" +
+          '<span class="dg-m">' + outlet + badge + " · " + esc(lyr) + (a.d ? " · " + esc(a.d) : "") + "</span></a>" +
           '<button class="cite-btn" type="button" data-cite="' + esc(cite) + '" title="' + (ENh ? "copy citation" : "alıntıyı kopyala") + '">' + (ENh ? "cite" : "alıntı") + "</button></div>";
       };
       // group headlines by recency so "this week" is trustworthy at a glance and

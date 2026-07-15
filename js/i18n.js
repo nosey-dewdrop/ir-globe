@@ -102,6 +102,25 @@ const I18N = (() => {
     tr: {}, // TR is the source language; empty means "use the original string"
   };
 
+  // source provenance: a risk analyst weights a wire agency differently from a
+  // think-tank or advocacy shop. Tag the common outlets so it's visible at a glance.
+  const SRC_TYPE = {
+    // wire / news agency
+    "reuters.com": "ajans", "aa.com.tr": "ajans", "apnews.com": "ajans", "afp.com": "ajans",
+    "bloomberg.com": "ajans", "dw.com": "ajans", "france24.com": "ajans", "aljazeera.com": "ajans",
+    // newspaper / magazine
+    "nytimes.com": "gazete", "washingtonpost.com": "gazete", "scmp.com": "gazete", "jpost.com": "gazete",
+    "kyivpost.com": "gazete", "politico.eu": "gazete", "thediplomat.com": "gazete", "pbs.org": "gazete",
+    "thedefensepost.com": "gazete", "defensenews.com": "gazete", "breakingdefense.com": "gazete",
+    "turkiyetoday.com": "gazete", "moroccoworldnews.com": "gazete",
+    // think tank / research
+    "cfr.org": "düşünce kuruluşu", "carnegieendowment.org": "düşünce kuruluşu", "csis.org": "düşünce kuruluşu",
+    "atlanticcouncil.org": "düşünce kuruluşu", "foreignaffairs.com": "düşünce kuruluşu", "fdd.org": "savunuculuk",
+    // institutional / IO
+    "reliefweb.int": "kurum/BM", "oec.world": "veri kaynağı",
+  };
+  const SRC_TYPE_EN = { "ajans": "wire", "gazete": "newspaper", "düşünce kuruluşu": "think tank", "savunuculuk": "advocacy", "kurum/BM": "institution", "veri kaynağı": "data source" };
+
   function lang() {
     try {
       const q = new URLSearchParams(location.search).get("lang");
@@ -116,6 +135,7 @@ const I18N = (() => {
     isEn: L === "en",
     ev: (trLabel) => (L === "en" && EV[trLabel]) ? EV[trLabel] : trLabel,
     layer: (trLabel) => (L === "en" && LAYER[trLabel]) ? LAYER[trLabel] : trLabel,
+    srcType: (domain) => { const t = SRC_TYPE[domain]; if (!t) return ""; return L === "en" ? (SRC_TYPE_EN[t] || t) : t; },
     t: (key, trFallback) => (L === "en" && T.en[key]) ? T.en[key] : (trFallback || key),
   };
 })();
