@@ -20,11 +20,18 @@ const { ready, fetchUsers, loadArticles, personalArticles, renderEmail, send } =
 
   let sent = 0, skipped = 0, failed = 0;
   for (const u of users) {
-    const items = personalArticles(all, u.follows).filter((a) => a.d === today).slice(0, 10);
+    // only ALERT-WORTHY developments, not every new headline: a high-magnitude
+    // event (|goldstein|>=6, e.g. a strike/sanction/major deal) OR a pair that
+    // spiked this week. Routine mentions stay for the weekly briefing — the alert
+    // is a signal, not noise. (This threshold is the product's paid value.)
+    const items = personalArticles(all, u.follows)
+      .filter((a) => a.d === today)
+      .filter((a) => (typeof a.g === "number" && Math.abs(a.g) >= 6) || a.spike)
+      .slice(0, 10);
     if (!items.length) { skipped++; continue; }
     const html = renderEmail({
-      heading: "bugün takibinde gelişme var",
-      intro: `Takip ettiklerinde bugün ${items.length} yeni başlık.`,
+      heading: "takibinde önemli bir gelişme var",
+      intro: `Takip ettiklerinde bugün eşiği geçen ${items.length} gelişme oldu.`,
       items, labels,
       unsubToken: u.unsub_token, what: "alerts",
     });
