@@ -41,7 +41,10 @@ function ensureNews(k) {
   return (newsLoading[k] = Store.news(k).then((news) => {
     NEWS[k] = news || {};
     delete newsLoading[k];
-    if (typeof renderCards === "function" && (selected || focusTie)) renderCards();
+    // only re-render if this fetched layer is STILL the active one — otherwise a
+    // slow layer A resolving after the user switched to B would render B's panel
+    // with A's just-arrived news (a cross-layer race).
+    if (typeof renderCards === "function" && k === layer && (selected || focusTie)) renderCards();
     return NEWS[k];
   }).catch(() => {
     // do NOT cache an empty result as success — a transient failure must be
