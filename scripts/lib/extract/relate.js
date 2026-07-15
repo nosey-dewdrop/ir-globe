@@ -85,6 +85,16 @@ function extractAll(text) {
   // the clearly-background framings; keep active "X invades Y" / "launches invasion".
   if (/\b(after|since|amid|following)\b[^.]{0,30}\binvasion\b/i.test(text) ||
       /\binvasion\b[^.]{0,20}\b(could|would|may|might|makes?|helped?|meant|means)\b/i.test(text)) return [];
+  // "strikes/attack" as a TEMPORAL background clause while the real event is
+  // cooperative: "US delivers aid to Nigeria AFTER Christmas strikes" would code
+  // the strikes as a US->Nigeria attack (wrong sign). When a cooperative verb leads
+  // and strikes/attack sit behind an after/amid/following marker, drop — a rosy
+  // headline must never surface as an attack arrow.
+  if (/\b(deliver\w*|provid\w*|send\w*|pledg\w*|donat\w*|\baid\b|support\w*|help\w*|fund\w*|financ\w*)\b[^.]{0,45}\b(after|amid|following|since|in response to)\b[^.]{0,30}\b(strikes?|attacks?|assault|raid|violence|clashes)\b/i.test(text)) return [];
+  // "using X as a hub/base/proxy/staging ground" is not cooperation between the
+  // subject and X — X is being instrumentalized, often covertly/against its role.
+  // "Russia ... using Algeria as covert weapons hub" is not a friendly tie.
+  if (/\busing\s+[\w\s]{0,20}?\bas\s+(a\s+)?[\w\s]{0,20}?\b(hub|base|staging|proxy|conduit|launchpad|springboard|backdoor|transit|foothold|beachhead)\b/i.test(text)) return [];
   // strong hypothetical / someone-urging-it framing: the tie hasn't happened.
   if (HYPO.test(text.toLowerCase())) return [];
   // legislative object: "US Russia Sanctions Bill", "China Tariff Act" — a bill/law

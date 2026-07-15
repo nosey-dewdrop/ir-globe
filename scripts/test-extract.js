@@ -94,6 +94,13 @@ drop("US Occupation Assistance: Iraq, Germany, and Japan Compared");
 drop("Ukrainian grain was stolen, relabeled Russian, and sold");
 drop("Trump welcomes China and India investment in Venezuela oil");
 
+/* ── background-strike vs cooperative event, instrumentalization ── */
+drop("US delivers military aid to Nigeria After Christmas strikes"); // aid, not attack
+drop("Russia Expands Wagner Playbook Using Algeria as Covert Weapons Hub"); // instrumentalized
+drop("Germany to deploy Patriot air defense unit to Türkiye under NATO mission"); // defensive
+drop("Iran conflict threatens Brazil grain exports"); // threatens-a-consequence
+keep("China sanctions US defense firms in retaliation", "china->united states"); // coercive floor
+
 /* ── label sanity ── */
 label("Israel strikes Iran with missiles", "hava/füze saldırısı");
 label("France topped EU arms sales to Israel while backing mini-sanctions", "silah/malzeme tedariki"); // not sanction
