@@ -133,6 +133,10 @@ html { scroll-snap-type: y proximity; }
 .spike:hover .spike-pair { text-decoration: underline; }
 .spike-pair { font-family: var(--serif); font-size: 15px; }
 .spike-tag { font-size: 12px; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* CSV export button on the pair page — the "take the data with you" analyst value */
+.csv-btn { font: 12px var(--sans); color: var(--navy); background: transparent; border: 1px solid var(--rule); border-radius: 999px; padding: 3px 12px; margin-left: 8px; cursor: pointer; vertical-align: middle; transition: border-color .12s, color .12s; }
+.csv-btn:hover { border-color: var(--navy); }
 /* sayaçlar hero'nun altında (sola hizalı band, her sayı beyaz zeminli) */
 .jn-in .stats { justify-content: flex-start; padding: 16px 0 2px; gap: 10px 22px; }
 .jn-in .stat { background: #fff; padding: 4px 8px; }

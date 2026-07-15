@@ -106,9 +106,26 @@
         trend +
         (radar ? '<section class="motor-sec">' + radar + "</section>" : "") +
         (tieRows ? '<h2>kayıtlı bağlar</h2><div class="cgroup"><ul class="clist">' + tieRows + "</ul></div>" : "") +
-        (newsHtml ? '<h2>manşetler <span class="cnt">(' + arts.length + ")</span></h2>" +
+        (newsHtml ? '<h2>manşetler <span class="cnt">(' + arts.length + ")</span>" +
+          (arts.length ? ' <button class="csv-btn" id="csvBtn" type="button">CSV indir</button>' : "") + "</h2>" +
           '<div class="pair-news">' + newsHtml + "</div>" : "") +
         '<p class="meta" style="margin-top:24px">olaylar ve ton haberlerden otomatik çıkarılır, hata payı vardır — <a href="metodoloji.html">metodoloji</a>.</p>';
+
+      /* CSV export: an analyst can pull the full sourced record of this pair as a
+         spreadsheet (date, layer, source, headline, url) — the "take the data with
+         you" value a paid tier is built on. Client-side, no server. */
+      var csvBtn = document.getElementById("csvBtn");
+      if (csvBtn) csvBtn.addEventListener("click", function () {
+        var q = function (v) { return '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"'; };
+        var rows = [["tarih", "katman", "kaynak", "başlık", "url"].join(",")];
+        arts.forEach(function (a) { rows.push([q(a.d), q(a.l), q(a.src), q(a.t), q(a.u)].join(",")); });
+        var blob = new Blob(["﻿" + rows.join("\r\n")], { type: "text/csv;charset=utf-8" });
+        var url = URL.createObjectURL(blob);
+        var link = document.createElement("a");
+        link.href = url; link.download = "ir-globe_" + A + "_" + B + ".csv";
+        document.body.appendChild(link); link.click();
+        document.body.removeChild(link); URL.revokeObjectURL(url);
+      });
     });
   }).catch(function () { fail("Veri şu an yüklenemedi — birazdan tekrar dene."); });
 })();
