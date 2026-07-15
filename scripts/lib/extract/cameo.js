@@ -38,7 +38,9 @@ const RULES = [
   [/\b(deploy(ed|s|ment)?|mass(es|ed)? troops|military build[- ]?up|mobiliz)/, "15", -5.5, "askeri yığınak"],
 
   // --- coercion / sanctions ---
-  [/\b(sanction(s|ed|ing)?|embargo|blacklist(ed)?|asset freeze|freeze(s)? assets)\b/, "163", -5.4, "yaptırım"],
+  // a "sanctions waiver/relief/exemption" is LIFTING sanctions, not imposing them
+  // — negative lookahead so those headlines don't code as "yaptırım".
+  [/\b(sanction(s|ed|ing)?(?!\s+(waiver|relief|exempt\w+|carve[- ]?out|lift\w*))|embargo|blacklist(ed)?|asset freeze|freeze(s)? assets)\b/, "163", -5.4, "yaptırım"],
   [/\b(ban(s|ned|ning)?|restrict(s|ed|ions)?|curb(s|ed)?|tariffs?|levy|levies|duties)\b/, "162", -4.0, "kısıtlama / tarife"],
   [/\b(expel(s|led)?|expuls|deport(s|ed|ation)?)\b/, "162", -4.4, "sınır dışı / ihraç"],
   [/\b(cut(s|ting)? (ties|relations|off)|sever(s|ed)? (ties|relations)|suspend(s|ed)? (ties|relations))\b/, "162", -4.9, "ilişki kesme"],
@@ -67,8 +69,14 @@ const RULES = [
   // "A buys/orders X from B" and "A sells/supplies X to B": these carry a clear
   // buyer<-seller direction that relate.js resolves via the from/to marker. Tested
   // high so a concrete transfer beats a generic "deal".
-  [/\b(buy(s|ing)?|bought|purchas\w+|order(s|ed)?|acquir\w+|import(s|ed|ing)?)\b[^.]{0,40}\bfrom\b/, "061", 5.0, "silah/malzeme alımı"],
-  [/\b(sell(s|ing)?|sold|export(s|ed|ing)?|suppl(y|ies|ied)|deliver(s|ed|ing)?|ship(s|ped|ping)?)\b[^.]{0,40}\bto\b/, "060", 4.0, "silah/malzeme tedariki"],
+  // weapons-specific buy/sell (needs a materiel noun) label as arms; generic
+  // buy/sell-from/to falls through to the plain trade label below so oil/gas/grain
+  // don't get mislabeled "silah/malzeme".
+  [/\b(buy(s|ing)?|bought|purchas\w+|order(s|ed)?|acquir\w+)\b[^.]{0,40}\b(arms?|weapons?|jets?|fighters?|missiles?|drones?|tanks?|artillery|warships?|submarines?|defen[cs]e systems?|air ?defen[cs]e|s-\d{3})\b[^.]{0,20}\bfrom\b/, "061", 5.0, "silah/malzeme alımı"],
+  [/\b(sell(s|ing)?|sold|suppl(y|ies|ied)|deliver(s|ed|ing)?)\b[^.]{0,40}\b(arms?|weapons?|jets?|fighters?|missiles?|drones?|tanks?|artillery|warships?|submarines?|defen[cs]e systems?)\b[^.]{0,20}\bto\b/, "060", 4.0, "silah/malzeme tedariki"],
+  // generic goods buy/sell keeps direction but a neutral trade label
+  [/\b(buy(s|ing)?|bought|purchas\w+|order(s|ed)?|import(s|ed|ing)?)\b[^.]{0,40}\bfrom\b/, "061", 5.0, "ticaret / tedarik"],
+  [/\b(sell(s|ing)?|sold|export(s|ed|ing)?|suppl(y|ies|ied)|deliver(s|ed|ing)?|ship(s|ped|ping)?)\b[^.]{0,40}\bto\b/, "061", 4.0, "ticaret / tedarik"],
 
   // --- verbal cooperation ---
   // signing a deal outranks the meeting/visit it happened at, so test it first

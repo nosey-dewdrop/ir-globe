@@ -33,7 +33,7 @@ function norm(text) {
   return " " + String(text || "").toLowerCase().replace(PUNCT, " ").replace(/\s+/g, " ") + " ";
 }
 
-const NEG = /\b(not|never|no|n't|without|deny|denies|denied|dismiss(es|ed)?|rules? out|ruled out|refus\w*|reject\w*|halt\w*|scrap\w*|cancel\w*|call(s|ed)? off|fail(s|ed)? to|unlikely to)\b/;
+const NEG = /\b(not|never|no|n't|without|deny|denies|denied|dismiss(es|ed)?|rules? out|ruled out|refus\w*|reject\w*|halt\w*|scrap\w*|cancel\w*|call(s|ed)? off|fail(s|ed)? to|unlikely to|suspend\w*|block(s|ed|ing)?|freez\w*|limit(s|ed|ing)?|curb(s|ed|ing)?|bar(s|red|ring)?|ban(s|ned|ning)?|waive|waiver|pause[sd]?|stall(s|ed)?)\b/;
 const CONJ_GAP = /^\s*(and|&)?\s*$/; // what may sit between two actors of one group (commas already normalized to spaces)
 const MAX_TIES = 9;
 // speculative / hypothetical framing — the tie is not asserted, just floated
@@ -85,6 +85,13 @@ function extractAll(text) {
     else groups.push({ list: [a], start: a.at, end });
   }
 
+  // locative venue: "meet in Turkey", "summit in Qatar", "on sidelines ... in X"
+  // — a country right after in/at is the PLACE, not a party. Mark it so it can't
+  // be picked as a target (only matters for meeting/visit-type verbs).
+  for (const g of groups) {
+    g.loc = /\b(in|at|on the sidelines of|hosted by|hosts?)\s*$/.test(hay.slice(Math.max(0, g.start - 22), g.start));
+  }
+
   // "talks between A and B in Washington": the between-group IS the tie —
   // everything else in the headline (venues, mediators) is ignored.
   const between = groups.find((g) => g.list.length >= 2 && /\bbetween\s*$/.test(hay.slice(Math.max(0, g.start - 9), g.start)));
@@ -92,7 +99,9 @@ function extractAll(text) {
   // direction: last group before the verb is the subject, first group after is
   // the target; with only one side, fall back to reading order.
   const before = groups.filter((g) => g.start < verbAt);
-  const after = groups.filter((g) => g.start >= verbAt);
+  // drop locative (venue) groups from target candidates: "S.Korea, US, Japan meet
+  // in Turkey" must not make anyone→turkey ties.
+  const after = groups.filter((g) => g.start >= verbAt && !g.loc);
   let subj, targ, clearDir = false;
   if (between) {
     subj = { list: [between.list[0]] };
