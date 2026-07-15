@@ -22,7 +22,7 @@ const RULES = [
   // relate.js can flip direction; lookahead keeps "targeted by sanctions" for
   // the sanctions rule below.
   [/\b(hit|struck|pounded|battered|targeted) by (?!(new |fresh |further |more )?(sanction|tariff|ban|restriction|curb))/, "19", -8.5, "saldırıya uğrama"],
-  [/\b(invade|invasion|full[- ]scale (war|assault))\b/, "19", -9.4, "askeri işgal"],
+  [/\b(invade(s|d)?|invading|invasion|full[- ]scale (war|assault))\b/, "19", -9.4, "askeri işgal"],
   [/\b(air ?strikes?|missile strikes?|bomb(ard|ed|ing)?|shell(ed|ing)?|drone strikes?)\b/, "19", -9.2, "hava/füze saldırısı"],
   // "fire/launch missiles|rockets|drones at X" is a strike, not cooperation — must
   // outrank the support rule so "Iranian-backed Houthis fire missiles at Riyadh"

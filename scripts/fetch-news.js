@@ -152,7 +152,15 @@ async function fetchConn(s, r, terms, n) {
     if (digest.length >= 80) break;
   }
   writeJSON("data/news/digest.json", digest);
-  writeJSON("data/news/meta.json", { updated: new Date().toISOString(), total, perLayer });
+  // the "gerçek makale" stat must be DISTINCT headlines, not the per-pair sum —
+  // the same article touches many country pairs, so `total` double-counts. Count
+  // unique urls (fallback to title) so the public number is honest.
+  const uniq = new Set();
+  for (const layer of Object.keys(out))
+    for (const edge of Object.keys(out[layer]))
+      for (const a of out[layer][edge]) uniq.add(a.url || a.u || a.title || a.t);
+  const uniqueTotal = uniq.size;
+  writeJSON("data/news/meta.json", { updated: new Date().toISOString(), total: uniqueTotal, rawTotal: total, perLayer });
 
-  console.log(`\nyazıldı: data/news/ — ${Object.keys(out).length} katman, ${total} makale`);
+  console.log(`\nyazıldı: data/news/ — ${Object.keys(out).length} katman, ${uniqueTotal} benzersiz makale (${total} ham)`);
 })();

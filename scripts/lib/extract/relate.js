@@ -32,8 +32,15 @@ const PUNCT = /[.,;:!?()"'`]/g;
 function norm(text) {
   return " " + String(text || "").toLowerCase().replace(PUNCT, " ").replace(/\s+/g, " ") + " ";
 }
+// NEG runs against a SEPARATE normalization that PRESERVES contractions —
+// norm() strips the apostrophe so "won't"->"won t" and n't could never match,
+// silently inverting every negated headline. Here curly ’ is folded to ' and
+// contractions survive.
+function negNorm(text) {
+  return " " + String(text || "").toLowerCase().replace(/[’ʼ]/g, "'").replace(/[.,;:!?()"`]/g, " ").replace(/\s+/g, " ") + " ";
+}
 
-const NEG = /\b(not|never|no|n't|without|deny|denies|denied|dismiss(es|ed)?|rules? out|ruled out|refus\w*|reject\w*|halt\w*|scrap\w*|cancel\w*|call(s|ed)? off|fail(s|ed)? to|unlikely to|suspend\w*|block(s|ed|ing)?|freez\w*|limit(s|ed|ing)?|curb(s|ed|ing)?|bar(s|red|ring)?|ban(s|ned|ning)?|waive|waiver|pause[sd]?|stall(s|ed)?)\b/;
+const NEG = /\b(not|never|no|n't|won't|isn't|aren't|wasn't|weren't|don't|doesn't|didn't|hasn't|haven't|hadn't|can't|couldn't|wouldn't|shouldn't|without|deny|denies|denied|dismiss(es|ed)?|rules? out|ruled out|refus\w*|reject\w*|halt\w*|scrap\w*|cancel\w*|call(s|ed)? off|fail(s|ed)? to|unlikely to|suspend\w*|block(s|ed|ing)?|freez\w*|limit(s|ed|ing)?|curb(s|ed|ing)?|bar(s|red|ring)?|ban(s|ned|ning)?|waive|waiver|pause[sd]?|stall(s|ed)?|should\s+(not\s+)?(stop|halt|end|cease)|stop\s+\w+ing)\b/;
 const CONJ_GAP = /^\s*(and|&)?\s*$/; // what may sit between two actors of one group (commas already normalized to spaces)
 const MAX_TIES = 9;
 // speculative / hypothetical framing — the tie is not asserted, just floated
@@ -65,8 +72,15 @@ function extractAll(text) {
   // rhetorical/hypothetical headlines assert nothing: "Can Trump cut off trade
   // with Spain?", "Will China invade Taiwan?", "Should the US arm Ukraine?" —
   // a question is not an event. Also "here's what/why/how" explainer framing.
-  if (/^\s*(can|could|will|would|should|is|are|does|do|why|what if|what|how|when)\b[^?]*\?/i.test(text.trim()) ||
-      /\bhere'?s (what|why|how)\b/i.test(text)) return [];
+  if (/^\s*(can|could|will|would|should|is|are|does|do|why|what if|what|how|when|whether|has|have|did)\b/i.test(text.trim()) && /\?/.test(text)) return [];
+  if (/\?/.test(text) && !/\b(sign|deal|pact|agree|sanction|strike|attack|export|import|aid|pledge|deploy)\b/i.test(text)) return []; // any question with no concrete event verb
+  if (/^\s*(why|how|whether)\b/i.test(text.trim()) || /\bhere'?s (what|why|how)\b/i.test(text)) return [];
+  // "invasion" as background/temporal reference ("after/since/years after the
+  // Russian invasion", "since Russia's 2022 invasion", "Russian Invasion Could
+  // Make India ...") is NOT an active invasion between the coded pair. Drop only
+  // the clearly-background framings; keep active "X invades Y" / "launches invasion".
+  if (/\b(after|since|amid|following)\b[^.]{0,30}\binvasion\b/i.test(text) ||
+      /\binvasion\b[^.]{0,20}\b(could|would|may|might|makes?|helped?|meant|means)\b/i.test(text)) return [];
   // strong hypothetical / someone-urging-it framing: the tie hasn't happened.
   if (HYPO.test(text.toLowerCase())) return [];
   // legislative object: "US Russia Sanctions Bill", "China Tariff Act" — a bill/law
@@ -105,8 +119,16 @@ function extractAll(text) {
 
   // negation: kill the event if a negation marker sits just before the verb
   // ("has not signed", "won't attack") or the headline opens with a denial.
-  const preWords = hay.slice(0, verbAt).trim().split(/\s+/).slice(-4).join(" ");
+  // Contraction-safe check uses negNorm (apostrophes preserved) around the verb.
+  const nHay = negNorm(text);
+  const nVerbAt = nHay.indexOf(negNorm(ev.matched).slice(1, -1));
+  const preWords = (nVerbAt >= 0 ? nHay.slice(0, nVerbAt) : hay.slice(0, verbAt)).trim().split(/\s+/).slice(-5).join(" ");
   if (NEG.test(preWords)) return [];
+  // strong sentence-level negatives/advocacy that flip any headline's meaning,
+  // wherever they sit: "won't/doesn't/aren't ...", "should stop selling".
+  if (/\b(won't|isn't|aren't|wasn't|weren't|don't|doesn't|didn't|hasn't|haven't|hadn't|won ?t)\b/.test(nHay) ||
+      /\bshould\s+(not\s+)?(stop|halt|end|cease|sell|arm|supply)/.test(nHay) ||
+      /\bstop\s+\w+ing\b/.test(nHay)) return [];
   if (/^\s*no[,\s]/i.test(text) || /\bno longer\b/i.test(text)) return [];
 
   // domestic agent: "Germany attacked by critics over China policy" — the real
