@@ -99,23 +99,25 @@
           .sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
         var mo = EN ? ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"] : ["oca","şub","mar","nis","may","haz","tem","ağu","eyl","eki","kas","ara"];
         var shortD = function (d) { var p = String(d).split("-"); return p.length === 3 ? (EN ? (mo[parseInt(p[1], 10) - 1] + " " + parseInt(p[2], 10)) : (parseInt(p[2], 10) + " " + (mo[parseInt(p[1], 10) - 1] || ""))) : d; };
-        var evName = function (e) { return (typeof I18N !== "undefined") ? I18N.ev(e) : e; };
-        // dedupe highlights by event-type so we get DISTINCT moments (not "sanction"
-        // x2), spread across dates; each links to the source it was coded from so
-        // the analyst can cite the exact event driving the signal.
-        var seenEv = {}, hi = [];
-        mine.filter(function (e) { return typeof e.goldstein === "number" && Math.abs(e.goldstein) >= 4; })
-          .forEach(function (e) { var k = e.event + "|" + e.date; if (!seenEv[k] && hi.length < 4) { seenEv[k] = 1; hi.push(e); } });
+        // Highlights = the REAL headlines that drive the signal, not generic
+        // event-type labels. The analyst pastes these straight into a brief. Dedupe
+        // by story (title) and by day+layer so three Jul-14 escalation lines collapse
+        // to one, giving 3 DISTINCT sourced moments.
+        var seenStory = {}, hi = [];
+        mine.filter(function (e) { return e.title && typeof e.goldstein === "number" && Math.abs(e.goldstein) >= 4; })
+          .forEach(function (e) {
+            var k = (e.title || "").slice(0, 40).toLowerCase() + "|" + e.date + "|" + e.layer;
+            if (!seenStory[k] && hi.length < 3) { seenStory[k] = 1; hi.push(e); }
+          });
         var seq = hi.map(function (e) {
-          var lbl = esc(evName(e.event)) + " (" + esc(shortD(e.date)) + ")";
-          return e.url ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + lbl + "</a>" : lbl;
-        }).join(", ");
+          var line = esc(e.title) + " (" + esc(shortD(e.date)) + (e.pub ? " · " + esc(e.pub) : e.src ? " · " + esc(e.src) : "") + ")";
+          return e.url ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + line + "</a>" : line;
+        }).join("<br>");
         summary = '<p class="pair-summary">' +
           (EN ? "In the news the engine read, between " + esc(da) + " and " + esc(db) + " <strong>" + yon + "</strong>"
               : "motorun okuduğu son haberlerde " + esc(da) + " ile " + esc(db) + " arasında <strong>" + yon + "</strong>") +
-          " (" + pairData.n + (EN ? " coded events" : " kodlanmış olay") + (layerNames ? " · " + esc(layerNames) : "") + ")." +
-          (seq ? (EN ? " Highlights: " : " Öne çıkanlar: ") + seq + "." : "") +
-          (EN ? " Every event and headline links to a real source.</p>" : " Aşağıdaki her olay ve manşet gerçek bir kaynağa tıklanır.</p>");
+          " (" + pairData.n + (EN ? " coded events" : " kodlanmış olay") + (layerNames ? " · " + esc(layerNames) : "") + ").</p>" +
+          (seq ? '<div class="pair-highlights"><span class="hi-lead">' + (EN ? "This week's key headlines" : "bu haftanın öne çıkan başlıkları") + "</span>" + seq + "</div>" : "");
       }
 
       /* manşetler: iki yönün tüm katmanlardaki haberleri, yeni üstte */

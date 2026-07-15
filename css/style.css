@@ -158,6 +158,10 @@ html { scroll-snap-type: y proximity; }
 .asof { font-size: 12px; color: var(--muted); margin: 4px 0 12px; font-variant-numeric: tabular-nums; }
 
 /* pair-page one-line answer: what is happening between these two, for a brief */
+.pair-highlights { margin: 0 0 20px; padding: 12px 16px; background: #f7f8fa; border-left: 3px solid var(--navy); border-radius: 0 6px 6px 0; }
+.pair-highlights .hi-lead { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.pair-highlights a { display: block; color: var(--ink); text-decoration: none; font-family: var(--serif); font-size: 15px; line-height: 1.4; margin: 5px 0; }
+.pair-highlights a:hover { color: var(--navy); text-decoration: underline; }
 .pair-summary { font-size: 16px; line-height: 1.55; color: var(--ink); background: #f7f8fa; border-left: 3px solid var(--navy); padding: 12px 16px; margin: 8px 0 20px; border-radius: 0 6px 6px 0; }
 /* sayaçlar hero'nun altında (sola hizalı band, her sayı beyaz zeminli) */
 .jn-in .stats { justify-content: flex-start; padding: 16px 0 2px; gap: 10px 22px; }
