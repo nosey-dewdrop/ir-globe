@@ -559,12 +559,33 @@ function currentArticles() {
    Yazarken input yeniden yaratılmaz (odak kaçmasın) — sadece sayı + liste tazelenir. */
 const CARD_CAP = 6;
 let araQuery = "";
+let araPage = 0;                                  // hangi sayfa (0-indeksli)
+function pageCount(hits) { return Math.max(1, Math.ceil(hits.length / CARD_CAP)); }
+function pageSlice(hits) {
+  const pc = pageCount(hits);
+  if (araPage >= pc) araPage = pc - 1;            // filtre daralınca taşan sayfayı geri çek
+  return hits.slice(araPage * CARD_CAP, araPage * CARD_CAP + CARD_CAP);
+}
 function cardsHTML(arts) {
   return arts.map((a, i) =>
     `<a class="card" style="--i:${i}" href="${esc(safeUrl(a.url))}" target="_blank" rel="noopener">
       <span class="card-title">${esc(a.title)}</span>
       <span class="card-meta">${esc(a.source)}${a.date ? " · " + esc(TRDate.short(a.date)) : ""}</span>
     </a>`).join("");
+}
+/* sayfalayıcı: ‹ 1 2 3 4 5 › — tüm makaleleri sırayla gezmek için (arayacak
+   kelimeyi bilmeyen kullanıcı böyle dolaşır). Tek sayfa varsa hiç basılmaz. */
+function pagerHTML(hits) {
+  const pc = pageCount(hits);
+  if (pc <= 1) return "";
+  let btns = "";
+  for (let p = 0; p < pc; p++)
+    btns += `<button class="cards-pg${p === araPage ? " on" : ""}" data-pg="${p}" aria-label="sayfa ${p + 1}"${p === araPage ? ' aria-current="page"' : ""}>${p + 1}</button>`;
+  return `<nav class="cards-pager" aria-label="makale sayfaları">
+    <button class="cards-pg nav" data-pg="${araPage - 1}"${araPage === 0 ? " disabled" : ""} aria-label="önceki">‹</button>
+    ${btns}
+    <button class="cards-pg nav" data-pg="${araPage + 1}"${araPage >= pc - 1 ? " disabled" : ""} aria-label="sonraki">›</button>
+  </nav>`;
 }
 function araHits(all) {
   return typeof Ara !== "undefined" ? Ara.search(all, araQuery) : all.slice();
@@ -574,16 +595,19 @@ function countLine(all, hits) {
   if (q && !hits.length) return "bu kelime tutmadı, başka bir şey dene";
   const n = q ? hits.length : all.length;
   const base = q ? `aramanda <b>${n}</b> makale bulundu` : `bu konuda <b>${n}</b> makale bulundu`;
-  return base + (n > CARD_CAP ? ` · ilk ${CARD_CAP} gösteriliyor` : "");
+  const pc = pageCount(hits);
+  return base + (pc > 1 ? ` · sayfa <b>${araPage + 1}</b>/${pc}` : "");
 }
 function updateCards() {
   const all = currentArticles();
   const hits = araHits(all);
   const list = cardsEl.querySelector(".cards-list");
   const cnt = cardsEl.querySelector(".cards-count");
+  const pgr = cardsEl.querySelector(".cards-pager-wrap");
   if (!list || !cnt) return;
-  list.innerHTML = cardsHTML(hits.slice(0, CARD_CAP));
+  list.innerHTML = cardsHTML(pageSlice(hits));
   cnt.innerHTML = countLine(all, hits);
+  if (pgr) pgr.innerHTML = pagerHTML(hits);
   layoutCards();
 }
 function renderCards() {
@@ -598,11 +622,19 @@ function renderCards() {
         <input class="cards-search" type="search" placeholder="haberlerde ara" aria-label="haberlerde kelimeyle ara" autocomplete="off">
         <svg class="cards-search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><line x1="15.5" y1="15.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </div>
+      <div class="cards-pager-wrap">${pagerHTML(hits)}</div>
     </div>
-    <div class="cards-list">${cardsHTML(hits.slice(0, CARD_CAP))}</div>`;
+    <div class="cards-list">${cardsHTML(pageSlice(hits))}</div>`;
   const inp = cardsEl.querySelector(".cards-search");
   inp.value = araQuery;
-  inp.addEventListener("input", () => { araQuery = inp.value; updateCards(); });
+  inp.addEventListener("input", () => { araQuery = inp.value; araPage = 0; updateCards(); });
+  const pw = cardsEl.querySelector(".cards-pager-wrap");
+  if (pw) pw.addEventListener("click", (e) => {
+    const b = e.target.closest(".cards-pg");
+    if (!b || b.disabled) return;
+    const p = parseInt(b.dataset.pg, 10);
+    if (!isNaN(p)) { araPage = p; updateCards(); }
+  });
   cardsEl.classList.add("show");
   layoutCards();
 }
@@ -713,7 +745,7 @@ function focusOnTie(t) {
   if (t === focusTie) { reset(); return; } // click the same arc again → deselect
   focusTie = t;
   selected = null;
-  araQuery = "";              // yeni konu → eski arama taşınmaz
+  araQuery = ""; araPage = 0;              // yeni konu → eski arama taşınmaz
   if (typeof Ilgi !== "undefined") Ilgi.note({ countries: [t.s, t.r], layers: [t.type], w: 1.5 });
   redraw();
   const midLat = (COORDS[t.s][0] + COORDS[t.r][0]) / 2;
@@ -724,7 +756,7 @@ function focusOnTie(t) {
 function selectCountry(c) {
   focusTie = null;
   selected = c;
-  araQuery = "";
+  araQuery = ""; araPage = 0;
   if (c && typeof Ilgi !== "undefined") Ilgi.note({ countries: [c], layers: [layer], w: 1 });
   redraw();
   if (globe && c && COORDS[c]) { globe.pointOfView({ lat: COORDS[c][0], lng: COORDS[c][1], altitude: 1.8 }, 700); wakeGlobe(1400); }
@@ -733,7 +765,7 @@ function selectCountry(c) {
 function reset() {
   focusTie = null;
   selected = null;
-  araQuery = "";
+  araQuery = ""; araPage = 0;
   redraw();
   renderAll();
 }
