@@ -385,3 +385,59 @@ ekran: iliski.html?a=iran&b=israel açılışı.
 3. çünkü hazır kütüphane taşımak istemedim; kendi motorum türkçe harf katlama (misir→mısır) + yazım hatası toleransı yapıyor — damerau-levenshtein mesafesiyle "yaptirin" yazsan da yaptırım'ı bulur, harf takasını tek hata sayar. 9 node testi 6 saatlik haber pipeline'ının önünde kapı.
 4. sonuç: sayı ürünün derinliğini söylüyor, kutu istediğini buldurtuyor; kırmızı test varsa haber tazelenmesi bile durur.
 ekran: rusya bağına tıkla, "yaptirin" yaz, doğru makalelerin süzülüşü.
+
+## r52 — hook: "yüzde 87'yle övünüyordum, gerçek notum 0.39 çıktı"
+1. sorun: motorumun doğruluğunu "%87" diye anlatıyordum. bir gece gerçek F1'i ölçtüm: 0.39. precision 0.53, recall 0.31.
+2. neden: ben sadece GÖSTERDİĞİM okların doğruluğunu sayıyordum. motor emin olmadığını reddediyordu, o yüzden gösterdikleri temizdi — ama bir başlıktaki üç ilişkiden ikisini sessizce kaçırıyordu.
+3. ne değiştirdim: kaçırılan başlıkları tek tek okuyup eksik fiilleri ekledim (ilişki onarmak, elçi göndermek, tireli ülke isimleri). kaçırılanların 7/10'u geri geldi.
+4. sonuç: gösterilen doğruluk düşmedi, ok sayısı arttı. artık iki sayı da yayında: gösterilenin doğruluğu ayrı, kapsama ayrı.
+ekran: workflow çıktısı "F1 0.39" büyük → sonra fiiller ekleniyor, kaçan oklar beliriyor.
+
+## r53 — hook: "koca bir katmanın oklarını sildim, çünkü kavramsal olarak yanlıştı"
+1. sorun: "nijerya kamerun'dan mültecilere ev sahipliği yapıyor" → motor "nijerya → kamerun girişim +3.2" çiziyordu. mülteci kabulünü karşı ülkeye eylem gibi gösteriyordum.
+2. neden: bu bug değil kategori hatası. mülteci akışı ülkenin seçtiği ikili eylem değil, uluslararası hukukun konusu (1951 sözleşmesi, non-refoulement). bir IR akademisyeni yakaladı.
+3. ne değiştirdim: göç katmanı artık YÖNLÜ OK üretmiyor, sadece kaynaklı liste. metodolojiden "yapısal veri" etiketini de çıkardım — aynı regex tahminiydi, öyle sunmak dürüstlük ihlaliydi.
+4. sonuç: bir özelliği geliştirmek yerine kaldırdım. canım yandı ama doğrusu buydu.
+ekran: göç katmanında oklar tek tek kayboluyor, yerine liste geliyor.
+
+## r54 — hook: "haritamda NATO, BM, AB hiç yoktu — dünyayı ikiye sıkıştırmışım"
+1. sorun: her okum iki ülke arasındaydı. "ABD ve müttefikleri yaptırım koydu" → NATO yok, BM yok, tek ikili oka iniyor ya da düşüyordu.
+2. neden: iki sütunlu tablo (kaynak, hedef) yapması kolay olduğu için dünyayı iki sütuna sıkıştırmışım. en büyük aktörler haritada görünmüyordu.
+3. ne değiştirdim: NATO, BM, AB, G7, ASEAN, OPEC artık first-class aktör. + metodolojiye "dünya ikili değil, biz ikili çiziyoruz" sınırını açıkça yazdım.
+4. sonuç: önceden sıfır olan yerde 22 çok-taraflı ok. NATO→ukrayna, AB→çin, BM→kuzey kore.
+ekran: küre önce ülke-ülke oklar → sonra NATO/BM düğümleri parlıyor.
+
+## r55 — hook: "pazarlamam '%82 doğru' istedi, ben '%71-85' yazdım"
+1. sorun: aynı motor, üç örneklemde üç sayı: %82.5, %71.2, %84.6. hangisini yazayım?
+2. neden: doğruluk örnekleme bağlı — küçük örneklem iyimser, büyük gerçekçi. tek güzel sayı yazmak ölçümün gürültüsünü kesinlik gibi satmaktı. eski "%87, 15'te 13" ilk ciddi soruda çökerdi.
+3. ne değiştirdim: siteye dürüst aralığı yazdım — "~%80-85, örnekleme bağlı, yükseliyor".
+4. sonuç: pankart gibi değil özür gibi duruyor ama doğru. kullanıcı abartılı kesinliğin kokusunu alır ve o an bütün ürüne güvenini keser.
+ekran: "%87" siliniyor, yerine "~%71-85" + "sample-dependent".
+
+## r56 — hook: "google linkimi tıklayınca boş sayfa açıyordu, 7 tur uğraştım"
+1. sorun: her haberin altında google news linki vardı ama tıklayınca boş sayfa. google kendi RSS linklerini şifreliyor, decode edilmesini blokluyor. kaynağım vardı, kullanıcı ulaşamıyordu.
+2. neden: istihbarat ürününde kaynağa ulaşamamak deal-breaker. analist "reuters böyle demiş" diyemiyorsa küreme güvenip brief yazamaz.
+3. ne değiştirdim: google'la savaşmayı bıraktım, etrafından dolaştım. (a) link artık `site:jpost.com "başlık"` aramasına gidiyor → tek tık gerçek makale. (b) "alıntıla" butonu → "reuters, başlık, tarih" panoya.
+4. sonuç: alıntı için URL şart değil. gazetecinin işi bitiyor.
+ekran: boş google sayfası → sonra site-search açılıyor, doğru makale.
+
+## r57 — hook: "en sevdiğim şeyi ana sayfamdan attım"
+1. sorun: açılışta ekranı dolduran dönen küre. gurur duyuyordum ama "bu benim işime ne yarıyor" cevabı hiçbir yerde yoktu.
+2. neden: küre bir gösteriydi, ürün değil. en emek verdiğim şeyi sahneye koymuştum, en değerli şeyi (bu haftanın hareketleri) kullanıcının bulmasını bekliyordum. emeğimle değerimi karıştırmışım.
+3. ne değiştirdim: hero'ya "bu hafta en çok hareketlenen çiftler" koydum — fransa↔rusya, iran↔abd — her satır tıklanır. küre ikinci sayfaya indi.
+4. sonuç: değer ilk ekranda, 10 saniyede. batık maliyet tuzağına düşmedim.
+ekran: dönen küre landing'den → yerine "bu hafta" listesi geliyor.
+
+## r58 — hook: "motorum 'anlaşma imzaladılar'ı 'saldırı' sandı"
+1. sorun: "strike a landmark deal", "strike 10 billion frigate deal" → motor 'strike' gördü, askeri saldırı g-9.2 kodladı. birden çok ticaret anlaşması haritada saldırı gibi görünüyordu.
+2. neden: 'strike' hem 'saldırmak' hem 'anlaşma imzalamak'. araya sıfat girince (strike LANDMARK deal) basit filtre kaçırıyordu.
+3. ne değiştirdim: daha geniş lookahead ile 'strike ... deal' kalıbını dışladım, gerçek saldırıları tuttum.
+4. sonuç: ticaret anlaşmaları artık ok değil savaş sanılmıyor. test-extract.js'e pinledim.
+ekran: "strikes landmark deal" başlığı, kırmızı saldırı oku → yeşil anlaşmaya dönüyor.
+
+## r59 — hook: "US-Japan yazınca motorum SIFIR ülke buluyordu"
+1. sorun: "US-Japan defense pact", "Russia-China drills", "India/Pakistan tension" → tireli/eğik çizgili ülke isimleri hiç tanınmıyordu, bağ tamamen gizleniyordu.
+2. neden: aktör tanıyıcı "US-Japan"ı tek token sanıp hiçbir ülkeye eşleyemiyordu. en görünür ilişkiler kayboluyordu.
+3. ne değiştirdim: tire/eğik çizgi bileşik aktörleri ayırdım — ama guinea-bissau gibi gerçek tireli isimler alias'la korunuyor, S-400 ürün kodu bozulmuyor.
+4. sonuç: gizlenen gerçek bağlar geri geldi. recall pass'in en tatmin edici parçası.
+ekran: "US-Japan" başlığı, 0 ok → sonra abd ve japonya ayrı beliriyor.

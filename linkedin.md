@@ -473,3 +473,171 @@ başlık doğru mu, içerik var mı, hızlı mı.
 
 İkisini de istiyorsan al: iskelet statik, et canlı. Google iskeleti okur, insan eti yer,
 kimse aç kalmaz.
+
+## essay 16 — %87 gurur duyduğum sayıydı, gerçek F1'im 0.39 çıkınca sustum
+
+1. Aylarca motorumun doğruluğunu "%87" diye anlattım. Küreye çizdiğim okların elle
+denetlenen örneklemde yüzde seksen yedisi doğruydu, bu gerçekti. Ama bir gece motoru
+kendi workflow'umla, gerçek bir F1 metriğiyle ölçtüm ve sayı yüzüme çarptı: 0.39.
+Precision 0.53, recall 0.31.
+
+2. Fark şurada gizliydi: ben sadece GÖSTERDİĞİM okların doğruluğunu sayıyordum. Motor
+zaten emin olmadığı her şeyi reddediyordu, o yüzden gösterdikleri temizdi. Ama bir
+başlıkta olması gereken üç ilişkiden ikisini sessizce kaçırıyordu. Yani ürünüm dürüst
+görünüyordu çünkü konuşmaktan korkuyordu.
+
+3. Bu, ölçtüğün sayının seni nasıl kandırabileceğinin ders kitabı örneği. Precision'ı
+yükseltmek kolay: hiçbir şey söyleme, hiç yanılmazsın. Recall seni zorlar çünkü
+kaçırdığını görmen için kaçırdığını önceden bilmen gerekir. Ben yanlış metriğe âşık
+olmuşum; övündüğüm sayı aslında korkaklığımın karnesiymiş.
+
+4. Karar: precision-first kalır ama recall'ı kovalarım. Kaçırılan başlıkları tek tek
+okudum ve motorun bilmediği fiilleri ekledim — "ilişkileri onarmak", "yardımı
+kesmek", "elçi göndermek", tireli ülke isimleri (US-Japan tek aktör bile sayılmıyordu,
+sıfır ülke bulup bağı gizliyordu). Kaçırılanların onda yedisi geri geldi, gösterilen ok
+sayısı arttı, doğruluk düşmedi.
+
+5. En sağlıklı an, en çok gurur duyduğun sayının aslında ne ölçtüğünü sorduğun andır.
+"%87 doğru" cümlem yanlış değildi ama eksikti; yanına "gördüğün okların" yazmadan
+söylemek kendini kandırmaktı. Şimdi ikisini de yayınlıyorum: gösterilenin doğruluğu
+ayrı, kapsama ayrı. Tek bir sayıyla övünen herkese şunu soruyorum artık: o sayı neyi
+saymıyor?
+
+## essay 17 — bütün bir katmanın oklarını sildim çünkü kavramsal olarak yanlıştı
+
+1. Bir IR akademisyeni ürünümü gezdi ve en değerli cümleyi kurdu: göç katmanım alanının
+kardinal günahını işliyordu. "Nijerya, Kamerun'dan gelen mültecilere ev sahipliği yapıyor"
+başlığını motor "Nijerya → Kamerun, girişim +3.2" diye kodluyordu. Yani bir ülkenin
+mülteci kabul etmesini, karşı ülkeye yönelttiği bir eylem gibi çiziyordum.
+
+2. Bu teknik bir bug değil, kategori hatasıydı. Mülteci akışı bir ülkenin "seçtiği ikili
+eylem" değil; 1951 Sözleşmesi, non-refoulement, uluslararası hukukun konusu. Bir okun
+ucuna insan koyup "bu ülke şunu yaptı" demek burada yanlış çerçeveydi. Motorum teknik
+olarak çalışıyor ama dünyayı yanlış modelliyordu.
+
+3. Daha kötüsü, metodoloji sayfamda göç'ü "resmi/yapısal veri" diye listelemiştim, oysa
+aynı regex tahminiydi. Yani hem yanlış çiziyordum hem de yanlış olduğunu doğru gibi
+sunuyordum. İkinci kısım birincisinden ağırdı; bir istihbarat ürününde dürüstlük ihlali,
+hata payından beter.
+
+4. Karar sert oldu: göç katmanı artık yönlü ok üretmiyor. Sadece kaynaklı bir liste
+kalıyor, "kim kimden geliyor" — ok yok, suç yok. Metodolojiden de "yapısal" etiketini
+çıkardım, ayrı ve dürüstçe açıkladım. Bir özelliği geliştirmek yerine kaldırmak canımı
+yaktı ama doğru olan buydu.
+
+5. Ders: her veriyi aynı şekle sokmak kolaylıktır, doğruluk değil. Motorum ok çizmeyi
+biliyor, ama her ilişki ok değil. Bir mühendis olarak öğrendiğim en zor şey, aracının
+en iyi yaptığı şeyi bazı yerlerde YAPMAMAYA karar vermek. Her şeye çekiç muamelesi
+yapan alet, çivi olmayan yeri de parçalar.
+
+## essay 18 — dünya ikili değil, ben ikili çiziyordum
+
+1. Küremdeki her ok iki ülke arasındaydı: A, B'ye. Temiz, okunur, tıklanır. Ama IR
+akademisyeni haklı bir yerden vurdu: dünyanın en önemli ilişkileri ikili değil.
+"ABD ve müttefikleri yaptırım koydu" başlığında NATO yok, BM yok, AB yok — hepsini tek
+bir ikili oka indirgiyor ya da tamamen düşürüyordum. En büyük aktörler haritamda
+görünmüyordu.
+
+2. Bu, kolay veri modelinin dünyaya dayattığı bir yalandı. İki sütunlu bir tablo (kaynak,
+hedef) yapması kolay olduğu için dünyayı iki sütuna sıkıştırmıştım. Oysa NATO'nun
+Ukrayna'ya desteği, AB'nin Çin'e tavrı, BM'nin Kuzey Kore yaptırımı — bunlar tek bir
+ülkenin eylemi değil, kolektif aktörlerin.
+
+3. İki yönlü çözdüm. Kısa vadede dürüst oldum: metodolojiye "dünya ikili değildir, biz
+ikili çiziyoruz, bu bir basitleştirmedir" sınırını açıkça yazdım. Kullanıcı neyi
+göremediğini bilsin. Uzun vadede asıl işi yaptım: NATO, BM, AB, G7, ASEAN, OPEC artık
+motorda first-class aktör. Önceden sıfır olan yerde bugün 22 çok-taraflı ok var —
+NATO→Ukrayna, AB→Çin, BM→Kuzey Kore.
+
+4. Karar şuydu: bir sınırlamayı gizlemek yerine önce ilan et, sonra kapat. Çoğu ürün
+sınırlamasını dipnotta saklar ya da hiç söylemez. Ben tam tersini yaptım çünkü bir
+istihbarat aracının sattığı tek şey güven; "şunu göremiyorsun" diyen bir araç, her
+şeyi gösterdiğini iddia eden araçtan daha güvenilir.
+
+5. Bu iş bana veri modelinin masum olmadığını öğretti. Seçtiğin tablo şekli, dünyaya
+dair bir iddia. İki sütun seçince "her ilişki ikilidir" demiş oluyorsun ve farkında bile
+değilsin. En iyi eleştiri, kodundaki bir hatayı değil, varsayımındaki bir hatayı
+gösterendir. Akademisyen bana bug değil, körlük gösterdi.
+
+## essay 19 — pazarlamam "%82 doğru" demek istedi, ben "%71-85" yazdım
+
+1. Motorumun doğruluğunu tek bir güzel sayıya indirmek çok cazipti. Bir örneklemde %82.5
+çıktı, sitenin her yerine "%82" yazmak istedim. Sonra daha büyük bir örneklem aldım:
+%71.2. Sonra en çok düzeltmeden sonraki tur: %84.6. Aynı motor, üç farklı sayı. Hangisi
+doğru?
+
+2. Cevap: hepsi ve hiçbiri. Doğruluk örnekleme bağlı; küçük örneklem iyimser, büyük
+örneklem gerçekçi. Tek bir sayı yazmak, ölçümün gürültüsünü kesinlik gibi satmak olurdu.
+Eski sitede "%87, 15'te 13 doğru" yazıyordu — savunulamaz bir küçük örneklemdi ve ilk
+ciddi soruda çökerdi.
+
+3. Bir istihbarat ürününde bu ölümcül. Analist senin sayına güvenip brief'ine koyar; sen
+tek örneklemlik bir şansı "kesin doğruluk" diye sattıysan, onu da seni de yakarsın.
+Kesinlik taklidi, dürüst bir aralıktan çok daha kırılgandır çünkü tek karşı örnek onu
+yıkar.
+
+4. Karar: siteye dürüst aralığı yazdım — "örnekleme göre ~%80-85", "sample-dependent ve
+yükseliyor" notuyla. Pazarlama açısından çirkin; "%87 doğru" pankart gibi durur, "%71-85
+arası, örnekleme bağlı" özür gibi. Ama ikincisi doğru, birincisi reklam. Ben reklamı
+değil ürünü satıyorum.
+
+5. Öğrendiğim: güven, yuvarlak tek bir sayıyla değil, o sayının etrafındaki dürüstlükle
+kazanılır. Hata payını gizleyen değil, ilan eden araç ciddiye alınır. Bir mühendis olarak
+en zor disiplin, elimdeki en satılabilir cümleyi ("%87 doğru!") daha az satılabilir ama
+daha doğru olanla değiştirmekti. Kullanıcı aptal değil; abartılı kesinliğin kokusunu
+alır ve o an bütün ürüne güvenini keser.
+
+## essay 20 — kullanıcım kaynağı tıklayamıyordu, google'a rağmen çözdüm
+
+1. Ürünüm bir analistin işini bitirmeliydi: "İran-ABD bu hafta ne oldu, kaynaklı brief'e
+yaz." Yedi tur boyunca aynı duvara çarptım. Her haberin altında Google News linki vardı
+ama tıklayınca boş sayfa açılıyordu — Google, kendi RSS linklerini şifreliyor ve
+decode edilmesini blokluyor. Yani kaynağım vardı ama kullanıcı ona ulaşamıyordu.
+
+2. Bir istihbarat ürününde kaynağa ulaşamamak deal-breaker. Analist "Reuters böyle demiş"
+diyemiyorsa, benim küreme güvenip brief yazamaz. Aracın ne kadar doğru olduğu, o
+doğruluğu KANITLAYAMADIĞIN anda değersiz. Yedi müşteri turu bu tek sorunda direndi.
+
+3. Google'la savaşmayı bıraktım, etrafından dolaştım. İki yol: yayıncı domain'i bilinen
+haberlerde link artık Google'a değil, doğrudan aramaya gidiyor — `site:jpost.com
+"başlık"` — tek tıkla gerçek makale. İkincisi, her manşetin yanına "alıntıla" butonu
+koydum: "Reuters, 'başlık', tarih" panoya kopyalanıyor. Alıntı için URL şart değil;
+gazeteci kaynağı adıyla, tarihiyle gösterir.
+
+4. Karar şuydu: çözemediğin engelin etrafından dolaş, kullanıcının asıl işini bitir.
+Google'ın URL'sini decode etmek için haftalar harcayabilirdim ve muhtemelen kaybederdim.
+Onun yerine "kullanıcı ne yapmak istiyor?" diye sordum — kaynağı bulmak ve alıntılamak.
+İkisini de URL olmadan çözdüm.
+
+5. Ders: bazen doğru mühendislik, sorunu çözmek değil, sorunun etrafından kullanıcının
+hedefine ulaşmaktır. Ben "linki nasıl açtırırım" diye takılıp kalmıştım; asıl soru
+"kaynağı nasıl gösteririm"di. Engeli aşmaya çalışırken çoğu zaman engeli GEREKSİZ
+kılan bir yol vardır. Onu bulmak, duvarı yıkmaktan zariftir.
+
+## essay 21 — dönen küre yıldız değildi, kimse bunu bana söylemedi
+
+1. Aylarca ürünümün kahramanı dönen 3D küreydi. Açılışta ekranı dolduran, tıkladıkça ok
+çizen güzel bir dünya. Gurur duyuyordum. Sonra bir müşteri gözüyle baktım: siteye
+girdiğinde ilk gördüğün şey güzel bir oyuncak, ama "bu benim işime ne yarıyor?"
+sorusunun cevabı hiçbir yerde yoktu.
+
+2. Sorun buydu: küre bir gösteriydi, ürün değil. Analist açılışta "bu hafta dünyada ne
+oldu"yu görmek ister, dönen bir top değil. Ben en emek verdiğim şeyi (küre) sahneye
+koymuştum, en değerli şeyi (bu haftanın hareketleri) ise kullanıcının tıklaya tıklaya
+bulmasını bekliyordum. Emeğimle değerimi karıştırmıştım.
+
+3. Landing'i baştan kurdum. Artık hero'da "bu hafta en çok hareketlenen çiftler"
+duruyor — Fransa↔Rusya sertleşti, İran↔ABD gerildi — her satır o iki ülkenin sayfasına
+tıklanır. Ürünün asıl işi ilk ekranda, on saniyede. Küre hâlâ orada ama artık ikinci
+sayfada, yıldız değil oyuncu.
+
+4. Karar acı vericiydi çünkü en çok sevdiğim şeyi geri plana attım. Ama kural netti:
+kullanıcı ilk ekranda değeri görmezse, ikinci ekrana geçmez. "Güzel" ile "yararlı"
+çatışınca yararlı kazanır. Küreye harcadığım ay, onu ana sayfada tutmam için bir sebep
+değil — bu "batık maliyet" tuzağının ta kendisi.
+
+5. Öğrendiğim en pahalı ders: bir ürünün kahramanı, senin en çok emek verdiğin parça
+değil, kullanıcının işini bitiren parçadır. İkisi aynı olabilir ama olmak zorunda değil.
+Ben aylarca yanlış şeyi cilalamışım; onu silmedim ama sahneden indirdim. Sahneyi
+kullanıcının işine verdim. Ürün, sen neyi seviyorsun diye değil, kullanıcı ne yapmak
+istiyor diye kurulur.
