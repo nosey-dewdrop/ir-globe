@@ -105,6 +105,11 @@ keep("China sanctions US defense firms in retaliation", "china->united states");
 keep("Iran cuts diplomatic ties with Morocco", "iran->morocco");
 keep("France trains Ukrainian pilots", "france->ukraine");
 
+/* ── IO / multilateral actors ── */
+keep("NATO allies pledge support to Ukraine", "nato->ukraine");
+keep("EU imposes tariffs on China", "eu->china");
+keep("UN Security Council condemns North Korea", "un->north korea");
+
 /* ── label sanity ── */
 label("Israel strikes Iran with missiles", "hava/füze saldırısı");
 label("France topped EU arms sales to Israel while backing mini-sanctions", "silah/malzeme tedariki"); // not sanction
