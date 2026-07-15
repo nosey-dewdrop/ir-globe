@@ -126,6 +126,9 @@ html { scroll-snap-type: y proximity; }
 
 /* value-first: this-week's most-active pairs, the real job shown on arrival */
 .hero-spikes { margin: 16px 0 6px; }
+.hero-fact { font-family: var(--serif); font-size: 17px; line-height: 1.45; color: var(--ink); margin-bottom: 14px; }
+.hero-fact strong { color: var(--navy); }
+.hero-fact-src { font-size: 12px; color: var(--faint); font-family: var(--sans); }
 .spike-lead { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
 .spike { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 7px 0; border-top: 1px solid var(--rule); text-decoration: none; color: var(--ink); transition: color .12s; }
 .spike:last-child { border-bottom: 1px solid var(--rule); }
