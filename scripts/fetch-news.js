@@ -81,6 +81,10 @@ function parseItems(xml) {
     // sports/entertainment slip in via country names ("Spain beat France in World
     // Cup") — a geopolitics product must not show them; drop at ingest.
     if (/\b(world cup|copa am|semi-?final|quarter-?final|euro 20\d\d|champions league|premier league|la liga|serie a|bundesliga|olympics?|super bowl|nba|nfl|fifa|uefa|grand prix|wimbledon|box office|film festival|album|concert|celebrity|eurovision|recipe|matchday|friendly match)\b/i.test(title)) continue;
+    // social reposts (facebook/x/youtube) are not citable primary sources for a
+    // client brief — a single facebook.com provenance poisons trust in the rest.
+    if (/facebook\.com|fb\.com|\bx\.com\b|twitter\.com|youtube\.com|youtu\.be|instagram\.com|tiktok\.com|reddit\.com|t\.me/i.test(url) ||
+        /^(facebook|twitter|x|youtube|instagram|tiktok|reddit)$/i.test(String(source || "").trim())) continue;
     items.push({ title, source, url, date, pub: pubDomain });
   }
   return items;

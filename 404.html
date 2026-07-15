@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>bulunamadı — kim kime ne satıyor?</title>
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=120">
+<style>
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  .nf { max-width: 460px; padding: 30px; text-align: center; }
+  .nf h1 { font-family: var(--serif); font-size: 26px; margin-bottom: 10px; }
+  .nf p { color: var(--muted); margin-bottom: 18px; }
+  .nf .field { display: flex; gap: 6px; }
+  .nf input { flex: 1; font: 14px var(--sans); border: 1px solid var(--rule); border-radius: 999px; padding: 9px 16px; }
+  .nf button { color: #fff; background: var(--navy); border: 0; border-radius: 999px; width: 42px; cursor: pointer; font-size: 16px; }
+  .nf a { color: var(--navy); }
+</style>
+</head>
+<body class="doc">
+<div class="nf">
+  <h1>burayı bulamadım</h1>
+  <p id="nf-msg">Aradığın sayfa yok. Bir ülke ara — ya da iki ülke (iran, abd) yaz.</p>
+  <form class="field" id="nfSearch" autocomplete="off">
+    <input type="text" id="nfQ" placeholder="iran, türkiye, ukrayna…" aria-label="ülke ara" autofocus>
+    <button type="submit" aria-label="git">→</button>
+  </form>
+  <p style="margin-top:16px"><a href="/index.html">← küreye dön</a></p>
+</div>
+<script src="/js/store.js?v=69"></script>
+<script src="/admin/config.js"></script>
+<script>
+/* a journalist who typed /ulke/ukrayna (Turkish slug) or a wrong path lands here;
+   resolve the country from the path or the search box and send them to the right
+   page instead of a dead end. */
+(function () {
+  var byLabel = {};
+  var norm = function (s) { return String(s || "").toLowerCase().replace(/ı/g, "i").replace(/ş/g, "s").replace(/ğ/g, "g").replace(/ü/g, "u").replace(/ö/g, "o").replace(/ç/g, "c").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim(); };
+  var trAlias = { ukrayna: "ukraine", turkiye: "türkiye", rusya: "russia", cin: "china", almanya: "germany", fransa: "france", ingiltere: "united kingdom", abd: "united states", amerika: "united states", isvicre: "switzerland", yunanistan: "greece", misir: "egypt", suriye: "syria", hindistan: "india", japonya: "japan", ispanya: "spain", italya: "italy", hollanda: "netherlands", polonya: "poland", isvec: "sweden", norvec: "norway", danimarka: "denmark", cekya: "czechia", guney kore: "south korea", kuzey kore: "north korea", suudi arabistan: "saudi arabia", katar: "qatar", israil: "israel", pakistan: "pakistan" };
+  function resolve(reg, raw) {
+    var n = norm(raw);
+    if (byLabel[n]) return byLabel[n];
+    if (trAlias[n] && byLabel[norm(trAlias[n])]) return byLabel[norm(trAlias[n])];
+    return null;
+  }
+  function goSearch(reg, v) {
+    // two countries -> pair page
+    var toks = norm(v).split(/[, ]+/).filter(Boolean);
+    for (var i = 1; i < toks.length; i++) {
+      var a = resolve(reg, toks.slice(0, i).join(" ")), b = resolve(reg, toks.slice(i).join(" "));
+      if (a && b) { location.replace("/iliski.html?a=" + encodeURIComponent(a.key) + "&b=" + encodeURIComponent(b.key)); return true; }
+    }
+    var one = resolve(reg, v);
+    if (one) { location.replace("/ulke/" + one.slug + "/"); return true; }
+    return false;
+  }
+  if (typeof Store === "undefined") return;
+  Store.countries().then(function (reg) {
+    Object.keys(reg).forEach(function (k) {
+      var c = reg[k]; if (!c || !c.slug) return;
+      [c.disp || c.key, c.key, c.slug].concat(c.aliases || []).forEach(function (nm) { if (nm) byLabel[norm(nm)] = { slug: c.slug, key: c.key }; });
+    });
+    // auto-redirect if the failed PATH names a country ("/ulke/ukrayna")
+    var seg = location.pathname.replace(/\/+$/, "").split("/").pop() || "";
+    if (seg && goSearch(reg, seg.replace(/\.html$/, "").replace(/-/g, " "))) return;
+    var form = document.getElementById("nfSearch");
+    form.addEventListener("submit", function (e) { e.preventDefault(); if (!goSearch(reg, document.getElementById("nfQ").value)) { document.getElementById("nf-msg").textContent = "Bu ülkeyi bulamadım, başka bir yazımla dene."; } });
+  }).catch(function () {});
+})();
+</script>
+</body>
+</html>
