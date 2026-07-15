@@ -27,7 +27,10 @@ const RULES = [
   // bare "X strikes Y" / "strikes on/against Y" — the single most common war
   // headline shape, previously UNCODED (only "launches strikes" matched). Guard
   // against the finance/labor senses ("strikes a deal", "workers strike").
-  [/\b(strikes?|struck|strik(ing|es))\b(?!\s+(a\s+)?(deal|agreement|balance|pact|accord|gold|oil|chord|back|out)\b)(?<!\bworkers?\s(strikes?|struck))/, "19", -9.2, "hava/füze saldırısı"],
+  // "strike/strikes" as a MILITARY attack — but NOT "strike [a] ... deal/agreement/
+  // balance/pact/accord" (up to ~28 chars of modifiers between: "strikes landmark
+  // deal", "strike $10 billion frigate deal"), nor "workers strike", nor idioms.
+  [/\b(strikes?|struck|strik(ing|es))\b(?![^.]{0,28}\b(deal|agreement|pact|accord|balance|gold|chord|bargain|partnership)\b)(?!\s+(back|out|down|a chord|oil|gold)\b)(?<!\bworkers?\s(strikes?|struck))/, "19", -9.2, "hava/füze saldırısı"],
   // "fire/launch missiles|rockets|drones at X" is a strike, not cooperation — must
   // outrank the support rule so "Iranian-backed Houthis fire missiles at Riyadh"
   // codes hostile, not "backed".

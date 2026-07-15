@@ -111,6 +111,10 @@ keep("NATO allies pledge support to Ukraine", "nato->ukraine");
 keep("EU imposes tariffs on China", "eu->china");
 keep("UN Security Council condemns North Korea", "un->north korea");
 
+/* ── strike-a-deal is trade, not a military strike ── */
+label("Canada Strikes Landmark Deal to Export LNG to Germany", "ticaret / tedarik");
+keep("Israel strikes Iran with missiles", "israel->iran"); // real strike still attack
+
 /* ── label sanity ── */
 label("Israel strikes Iran with missiles", "hava/füze saldırısı");
 label("France topped EU arms sales to Israel while backing mini-sanctions", "silah/malzeme tedariki"); // not sanction
