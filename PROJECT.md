@@ -112,6 +112,25 @@ display names and slugs come ONLY from the registry (fixes the old "TÜRkiye" ti
   badges from `ozet.json` (137 KB gzip for ~13% multi-source coverage — would need a small title→n
   build artifact first; deferred as a bad trade).
 
+## Last session (2026-07-15 gece, v120)
+
+Juri turlari (motor %64->%87 audited, 62 CI testi) sonra 8 turlu MUSTERI DONGUSU: her tur gercek
+musteri (analist/gazeteci/IR ogr/vatandas) gercek gorev deniyor, en yuksek etkili UX/deger duzeltmesi
+uygulaniyor. ~38 degisiklik. **Yapilanlar:** olaylar artik kaynak URL tasiyor (build-event-index title/
+url/pub); pair sayfasi gercek-baslik highlights + tarihli tirmanma ozeti + tam EN (js/i18n.js: 57 olay
++ katman + UI ceviri, ?lang=en, TR/EN toggle); ulke sayfasi "son gelismeler" (tarihli kaynakli) + SEO
+BAKE (ilk boya dolu); landing value-first ("bu hafta hareketlenenler" + carpici gercek) + iki-ulke
+arama; alinti-kopyala butonu; kaynak-turu rozetleri; tazelik gruplari; 404 TR-slug redirect; sosyal-
+repost filtresi; SIPRI birim/yil inline; CSV export (pair+ulke); yayinci-site linkleri.
+
+**Gelir yonu (Damla "para kazanan CRUD" istedi):** kisisel bulten gercek ALGORITMA (onem skoru:
+tazelik+goldstein+guven+spike), alarm esik-farkinda (|g|>=6, %18 selektif) — scripts/lib/mail.js +
+send-alerts.js. NOT: bu paywall pivotuyla celisiyor (para hedefi YOK karari, 13 Tem).
+
+**Damla karar bekleyen (rapor bolum 0/3/4/4.5):** fiyat/paket+Resend (paywall celiskisi), tam /en
+site (landing+akis hala TR), hero/his son rotuslar, mimari (regex tavani ~%87 -> hibrit? IO aktorler
+eklendi). Gotcha: Google News URL DECODE EDILEMEZ (Google blokluyor) -> site-search+cite ile bypass.
+
 ## Roadmap status (approved 8-phase plan — plan file: ~/.claude/plans/merhaba-kanka-ir-globe-humble-haven.md)
 
 1. ✅ Payload refactor (Data layout section above) — 2026-07-11
