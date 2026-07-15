@@ -44,6 +44,16 @@ const seenTitle = new Set();
 let total = 0, coded = 0, kept = 0, ties = 0;
 const byLayer = {}; // layer -> [event]
 
+// recency cutoff: this is an editorial globe of CURRENT relations, so ties are
+// built only from reasonably fresh headlines. Older items still live in the feed
+// (history), but they must not surface as present-day ties. Measured against the
+// newest article date in the corpus (deterministic, no wall clock).
+const MAX_AGE_DAYS = 400;
+let newest = 0;
+for (const r of rows) { const d = Date.parse(r.date); if (d && d > newest) newest = d; }
+const cutoff = newest - MAX_AGE_DAYS * 864e5;
+let dropStale = 0;
+
 for (const row of rows) {
   const t = row.title.trim();
   // dedup across pairs/feeds: normalize case + punctuation so the same headline
@@ -51,6 +61,9 @@ for (const row of rows) {
   const tKey = t.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
   if (seenTitle.has(tKey)) continue;
   seenTitle.add(tKey);
+  // skip stale headlines for tie generation (they'd read as current relations)
+  const ad = Date.parse(row.date);
+  if (ad && ad < cutoff) { dropStale++; continue; }
   total++;
 
   const evs = extractAll(t);

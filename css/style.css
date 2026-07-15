@@ -69,7 +69,9 @@ html { scroll-snap-type: y proximity; }
 
 /* SAYFA 2 — küre: kategoriler + globe fill the screen */
 .page.gl { justify-content: flex-start; }
-.page.gl .stage { height: auto; flex: 1; min-height: 0; }
+/* the globe fills whatever's left under the navbar — never a fixed vh that would
+   push it past the viewport and clip the top (Damla: dünyanın kesilmesi). */
+.page.gl .stage { height: auto !important; flex: 1 1 auto; min-height: 0; }
 
 /* HERO (katıl): arka planda soluk gerçek başlık duvarı, önünde net metin.
    .page global 1180px'de ortalanıyor — hero'yu TAM viewport genişliğine aç ki
@@ -168,7 +170,8 @@ h1 { font-size: 22px; font-weight: 400; letter-spacing: -0.01em; white-space: no
   display: flex;
   flex-wrap: wrap;
   gap: 4px 18px;
-  padding: 30px 30px 14px;
+  padding: 14px 30px 10px;   /* navbar hugs its text — no dead white below (Damla) */
+  flex: 0 0 auto;
 }
 .layerbtn { font-size: 16px; color: var(--muted); transition: color 0.15s; }
 .layerbtn:hover { color: var(--ink); }
