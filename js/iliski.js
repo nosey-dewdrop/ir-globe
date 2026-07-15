@@ -69,7 +69,7 @@
       });
 
       /* olay radarı + haftalık seri (motor çıktıları) */
-      var radar = typeof Motor !== "undefined" ? Motor.radarTie(events, graph, A, B, disp) : "";
+      var radar = typeof Motor !== "undefined" ? Motor.radarTie(events, graph, A, B, disp, 12) : "";
       var pairKey = [A, B].sort().join("|");
       var pairData = events && events.pairs && events.pairs[pairKey];
       var trend = pairData && pairData.weekly ? trendSvg(pairData.weekly) : "";

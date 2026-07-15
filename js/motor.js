@@ -96,21 +96,25 @@ const Motor = (() => {
     return graph.__rank[c] || 0;
   }
 
-  /* ── tie panel: "olay radarı" for the selected relation ── */
-  function radarTie(events, graph, s, r, disp) {
+  /* ── tie panel: "olay radarı" for the selected relation ──
+     limit: how many events to show (küre panelinde 3, pair sayfasında daha çok —
+     bir analist tırmanma dizisini tek bakışta okumak ister, "+N daha" gizlemek
+     onun işini görmüyordu). */
+  function radarTie(events, graph, s, r, disp, limit) {
     disp = disp || ((x) => x);
+    limit = limit || 3;
     const key = pairKey(s, r);
     const spike = spikeFor(graph, key);
     const recent = eventsFor(events, (e) => e.pair === key, 99); // all recent, window-filtered
-    const evs = recent.slice(0, 3);
+    const evs = recent.slice(0, limit);
     if (!spike && !evs.length) return ""; // nothing recent/coded → no empty box
-    let html = `<div class="lbl">olay radarı</div><div class="radar">`;
+    let html = `<div class="lbl">olay radarı${recent.length ? ` <span class="cnt">(${recent.length})</span>` : ""}</div><div class="radar">`;
     if (spike)
       html += `<p class="radar-spike">bu hafta hareketlendi · ${spike.n} haber</p>`;
     if (evs.length) {
       html += evs.map((e) => evRow(e, disp)).join("");
       if (recent.length > evs.length)
-        html += `<p class="radar-more">+ ${recent.length - evs.length} olay daha</p>`;
+        html += `<p class="radar-more">+ ${recent.length - evs.length} olay daha (aşağıdaki manşetlerde)</p>`;
     }
     html += `</div><p class="radar-note">haberlerden otomatik çıkarıldı</p>`;
     return html;
