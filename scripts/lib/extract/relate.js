@@ -154,6 +154,15 @@ function extractAll(text) {
       const t = subj; subj = targ; targ = t;
       clearDir = true;
     }
+    // benefactive flip: "As Ukraine seeks air defense, Canada announces aid" — the
+    // subject (Ukraine) merely NEEDS help, the giver (Canada, after the verb) is
+    // the real source. For aid/finance/supply events, if the pre-verb text frames
+    // the subject as the one asking, flip so the donor is the source.
+    else if (/\b(07\d|06\d|071)\b/.test(ev.root) &&
+             /\b(seek(s|ing)?|need(s|ing)?|request(s|ed|ing)?|ask(s|ing|ed)? for|awaits?|urgently|plead\w*|appeal(s|ed)? for|wants? more|calls? for)\b/.test(hay.slice(0, verbAt))) {
+      const t = subj; subj = targ; targ = t;
+      clearDir = true;
+    }
   }
 
   // honest confidence: a deterministic regex match is never "certain" (max 0.95).
@@ -167,9 +176,9 @@ function extractAll(text) {
   if (actors.length === 2) confidence += 0.1;
   else confidence -= 0.05 * (actors.length - 2); // more actors -> more pairing doubt
   if (SPEC.test(hay)) confidence -= 0.15;
-  // "diversifying supply from Russia": if the target is the one being moved away
-  // from, this isn't a partnership — sink it below the keep threshold.
-  if (away && targ.start != null && /\bfrom\b/.test(hay.slice(0, targ.start + (targ.list[0] ? targ.list[0].matched.length : 0)))) confidence -= 0.35;
+  // "diversifying supply from Russia" / "cut reliance ON the US": if the target is
+  // the one being moved away from, this isn't a partnership — sink it below keep.
+  if (away && targ.start != null && /\b(from|on|upon)\b/.test(hay.slice(0, targ.start + (targ.list[0] ? targ.list[0].matched.length : 0)))) confidence -= 0.4;
 
   // distance + clause guard: look at the text BETWEEN the subject and target.
   //   − far apart  -> likely unrelated clauses

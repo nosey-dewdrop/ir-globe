@@ -54,7 +54,13 @@ const RULES = [
   [/\b(recall(s|ed)? (its )?ambassador|summon(s|ed)? (the )?ambassador)\b/, "154", -3.8, "büyükelçi geri çağırma"],
   // withdrawing/ending support is NOT support — tested before the positive support
   // rule so "Ireland to End Housing Support for Ukrainians" codes as a pull-back.
-  [/\b(end(s|ed|ing)?|cut(s|ting)?|halt(s|ed|ing)?|withdraw(s|al|ing|n)?|scrap(s|ped)?|slash(es|ed)?|pull(s|ed)? (its )?)\b[^.]{0,18}\b(support|aid|assistance|funding|backing|deal|troops?|forces?)\b/, "162", -3.5, "destek/yardım kesme"],
+  [/\b(end(s|ed|ing)?|cut(s|ting)?|halt(s|ed|ing)?|withdraw(s|al|ing|n)?|scrap(s|ped)?|slash(es|ed)?|remov(e|ed|es|ing)?|pull(s|ed)? (its )?)\b[^.]{0,18}\b(support|aid|assistance|funding|backing|cooperation|deal|troops?|forces?)\b/, "162", -3.5, "destek/yardım kesme"],
+  // "<support/cooperation/funding> removed/cut" in the other word order too
+  [/\b(support|aid|assistance|funding|cooperation|backing)\b[^.]{0,14}\b(removed|cut|slashed|halted|withdrawn|scrapped|frozen|suspended)\b/, "162", -3.5, "destek/yardım kesme"],
+  // "measures/action/strikes AGAINST <country>" is hostile framing — a coop verb
+  // nearby ("cooperation removed from measures against Tanzania") must not read
+  // as cooperation. Coded as coercion so tone matches.
+  [/\b(measures?|action|sanctions?|steps?|move|bill|strikes?|campaign)\b[^.]{0,20}\bagainst\b/, "160", -3.0, "karşı önlem"],
 
   // --- verbal conflict ---
   [/\b(threaten(s|ed|ing)?|warn(s|ed)? of|ultimatum)\b/, "138", -6.9, "tehdit"],

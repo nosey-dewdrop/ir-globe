@@ -48,7 +48,7 @@ const byLayer = {}; // layer -> [event]
 // built only from reasonably fresh headlines. Older items still live in the feed
 // (history), but they must not surface as present-day ties. Measured against the
 // newest article date in the corpus (deterministic, no wall clock).
-const MAX_AGE_DAYS = 400;
+const MAX_AGE_DAYS = 180;   // ~6 months: keeps the globe "current" without gutting coverage
 let newest = 0;
 for (const r of rows) { const d = Date.parse(r.date); if (d && d > newest) newest = d; }
 const cutoff = newest - MAX_AGE_DAYS * 864e5;

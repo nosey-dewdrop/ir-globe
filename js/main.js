@@ -40,9 +40,15 @@ function ensureNews(k) {
   if (newsLoading[k]) return newsLoading[k];
   return (newsLoading[k] = Store.news(k).then((news) => {
     NEWS[k] = news || {};
+    delete newsLoading[k];
     if (typeof renderCards === "function" && (selected || focusTie)) renderCards();
     return NEWS[k];
-  }).catch(() => (NEWS[k] = {})));
+  }).catch(() => {
+    // do NOT cache an empty result as success — a transient failure must be
+    // retryable, else the panel stays permanently blank for this layer.
+    delete newsLoading[k];
+    return {};
+  }));
 }
 
 function countryOfFeature(f) {
