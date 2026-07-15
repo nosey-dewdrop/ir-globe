@@ -137,6 +137,8 @@ html { scroll-snap-type: y proximity; }
 /* CSV export button on the pair page — the "take the data with you" analyst value */
 .csv-btn { font: 12px var(--sans); color: var(--navy); background: transparent; border: 1px solid var(--rule); border-radius: 999px; padding: 3px 12px; margin-left: 8px; cursor: pointer; vertical-align: middle; transition: border-color .12s, color .12s; }
 .csv-btn:hover { border-color: var(--navy); }
+.dg-dom { color: var(--faint); }
+.asof { font-size: 12px; color: var(--muted); margin: 4px 0 12px; font-variant-numeric: tabular-nums; }
 
 /* pair-page one-line answer: what is happening between these two, for a brief */
 .pair-summary { font-size: 16px; line-height: 1.55; color: var(--ink); background: #f7f8fa; border-left: 3px solid var(--navy); padding: 12px 16px; margin: 8px 0 20px; border-radius: 0 6px 6px 0; }

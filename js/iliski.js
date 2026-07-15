@@ -48,8 +48,9 @@
       Promise.all(keys.map(function (k) { return Store.news(k).catch(function () { return {}; }); })),
       Store.events().catch(function () { return null; }),
       Store.graph().catch(function () { return null; }),
+      Store.newsMeta().catch(function () { return null; }),
     ]).then(function (all) {
-      var lays = all[0], bags = all[1], events = all[2], graph = all[3];
+      var lays = all[0], bags = all[1], events = all[2], graph = all[3], nmeta = all[4];
       var disp = function (k) { return COUNTRIES[k] ? COUNTRIES[k].disp : k; };
 
       /* yapısal bağlar: iki ülke arasındaki her katman kaydı */
@@ -101,15 +102,18 @@
           (edges[edge] || []).forEach(function (a) {
             if (!a || !a.title || !a.url || seen[a.title]) return;
             seen[a.title] = 1;
-            arts.push({ t: a.title, src: a.source, d: a.date || "", u: a.url, l: l.label });
+            arts.push({ t: a.title, src: a.source, d: a.date || "", u: a.url, l: l.label, pub: a.pub || "" });
           });
         });
       });
       arts.sort(function (x, y) { return y.d.localeCompare(x.d); });
       var newsHtml = arts.slice(0, 40).map(function (a) {
+        // show the real publisher name + domain so an analyst/journalist can trust
+        // and cite it, even though the click goes through Google News.
+        var outlet = esc(a.src) + (a.pub ? ' <span class="dg-dom">(' + esc(a.pub) + ")</span>" : "");
         return '<a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
           '<span class="dg-t">' + esc(a.t) + '</span>' +
-          '<span class="dg-m">' + esc(a.src) + " · " + esc(a.l) + (a.d ? " · " + esc(a.d) : "") + "</span></a>";
+          '<span class="dg-m">' + outlet + " · " + esc(a.l) + (a.d ? " · " + esc(a.d) : "") + "</span></a>";
       }).join("");
 
       if (!tieRows && !radar && !arts.length) {
@@ -120,6 +124,7 @@
       mount.innerHTML =
         '<nav class="crumb"><a href="index.html">ana sayfa</a> › <a href="ulke/index.html">ülkeler</a> › ' + esc(da) + " ↔ " + esc(db) + "</nav>" +
         "<h1>" + esc(da) + " ↔ " + esc(db) + "</h1>" +
+        (nmeta && nmeta.updated ? '<p class="asof">güncel: ' + esc(String(nmeta.updated).slice(0, 10)) + " · haberler 6 saatte bir tazelenir</p>" : "") +
         '<p class="lede">İki ülke arasındaki kayıtlı bağlar, olay geçmişi ve gerçek manşetler. Ülke sayfaları: ' +
         '<a href="ulke/' + esc(COUNTRIES[A].slug) + '/">' + esc(da) + "</a> · " +
         '<a href="ulke/' + esc(COUNTRIES[B].slug) + '/">' + esc(db) + "</a></p>" +
@@ -138,8 +143,8 @@
       var csvBtn = document.getElementById("csvBtn");
       if (csvBtn) csvBtn.addEventListener("click", function () {
         var q = function (v) { return '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"'; };
-        var rows = [["tarih", "katman", "kaynak", "başlık", "url"].join(",")];
-        arts.forEach(function (a) { rows.push([q(a.d), q(a.l), q(a.src), q(a.t), q(a.u)].join(",")); });
+        var rows = [["tarih", "katman", "yayin", "yayin_alan_adi", "baslik", "link"].join(",")];
+        arts.forEach(function (a) { rows.push([q(a.d), q(a.l), q(a.src), q(a.pub), q(a.t), q(a.u)].join(",")); });
         var blob = new Blob(["﻿" + rows.join("\r\n")], { type: "text/csv;charset=utf-8" });
         var url = URL.createObjectURL(blob);
         var link = document.createElement("a");

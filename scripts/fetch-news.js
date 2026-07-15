@@ -60,6 +60,12 @@ function parseItems(xml) {
     const l = body.match(/<link>([\s\S]*?)<\/link>/);
     const d = body.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
     const src = body.match(/<source[^>]*>([\s\S]*?)<\/source>/);
+    // RSS carries the real publisher domain in <source url="https://www.aa.com.tr">
+    // — the Google redirect link is opaque and un-citable, but this is the real
+    // outlet a journalist/analyst can trust and reference. (Customer deal-breaker.)
+    const srcUrlM = body.match(/<source\s+url="([^"]+)"/);
+    let pubDomain = "";
+    if (srcUrlM) { try { pubDomain = new URL(srcUrlM[1]).hostname.replace(/^www\./, ""); } catch (e) {} }
     if (!t || !l) continue;
     let title = strip(t[1]);
     let source = src ? strip(src[1]) : "";
@@ -72,7 +78,7 @@ function parseItems(xml) {
     if (d) { const dt = new Date(strip(d[1])); if (!isNaN(dt)) date = dt.toISOString().slice(0, 10); }
     const url = strip(l[1]);
     if (!/^https?:\/\//i.test(url)) continue; // sadece http(s) — javascript:/data: linki siteye asla girmesin
-    items.push({ title, source, url, date });
+    items.push({ title, source, url, date, pub: pubDomain });
   }
   return items;
 }
