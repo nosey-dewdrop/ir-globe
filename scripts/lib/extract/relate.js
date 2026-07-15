@@ -181,7 +181,9 @@ function extractAll(text) {
   // — subject approves of what the target does ELSEWHERE; not a bilateral act. This
   // is a structural false-positive, so DROP the tie outright rather than nudging.
   if (/\b(welcom\w+|hail(s|ed)?|praise\w+|backs?|backed|applaud\w+)\b/.test(hay.slice(0, verbAt + mNorm.length)) &&
-      targ.start != null && /^\s*('?s\s+)?\w*\s*(investment|deal|move|bid|plan|push|expansion|entry|role|presence)\b[^.]{0,20}\b(in|into|across)\b/.test(hay.slice(targ.start + (targ.list[0] ? targ.list[0].matched.length : 0)))) {
+      targ.start != null && /(investment|invest\w*|deal|move|bid|plan|push|expansion|entry|role|presence|spending)\b[^.]{0,20}\b(in|into|across)\b\s+\w/.test(hay.slice(targ.start))) {
+    // ...but a plain "welcomes Japan defense spending increase" (no in/into third
+    // place) is a real bilateral nod — only drop when a third location follows.
     return [];
   }
   confidence = Number(Math.max(0.1, Math.min(0.95, confidence)).toFixed(2));
