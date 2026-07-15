@@ -109,6 +109,15 @@ function extractAll(text) {
   { const tl = text.toLowerCase(); if (/\b(reduc\w+|cut(s|ting)?|lower(s|ed|ing)?|eas(e|es|ed|ing)|scrap\w*|lift\w*|roll(s|ed)? back|drop(s|ped)?|slash\w*|remov\w*)\b[^.]{0,20}\b(tariffs?|duties|levies)\b/.test(tl)) return []; }
   // cooperative verb but target introduced across an adversary marker: drop.
   { const ev0 = code(text); if (ev0 && /\b(05\d|06\d|07\d)\b/.test(ev0.root) && /\b(against|in conflict with|at war with|war with|fighting|vs\.?|versus|to counter|to fend off)\b/.test(text.toLowerCase())) return []; }
+  // coercive event yoked to an incidental cooperation noun in another clause:
+  // "Germany to LIMIT Ukrainian asylum AS Kyiv, Berlin SIGN pact" would code the
+  // +7 "sign pact" and bury the real restrictive event. If a coercion trigger and
+  // a cooperation noun sit on opposite sides of a clause marker, don't assert the
+  // rosy tie — the two clauses are different events. (IR-substance jury finding.)
+  { const tl = text.toLowerCase();
+    if (/\b(limit(s|ed|ing)?|restrict\w*|deport\w*|expel\w*|cap(s|ped|ping)?|curb\w*|ban(s|ned|ning)?|block\w*|bar(s|red|ring)?|suspend\w*|freeze\w*)\b/.test(tl) &&
+        /\b(sign|ink|pact|deal|agreement|accord|cooperation|partnership)\b/.test(tl) &&
+        /\b(as|while|amid|even as|despite|after|following)\b/.test(tl)) return []; }
   const actors = detect(text);
   // modifier-country actors are not parties: "US ally Japan", "Russian-backed Syria".
   { const h0 = norm(text); for (let i = actors.length - 1; i >= 0; i--) { const a = actors[i]; const tail = h0.slice(a.at + a.matched.length, a.at + a.matched.length + 14); if (/^\s+(ally|allies|partner|backed|aligned|led)\b/.test(tail)) actors.splice(i, 1); } }

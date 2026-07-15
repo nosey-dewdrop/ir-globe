@@ -17,7 +17,7 @@ canlı: https://ir-globe.noseydewdrop.com (geliştirme: nosey-dewdrop.github.io/
 
 bütün sayılar repo'nun kendi metodoloji sayfasından ve pipeline raporlarından geliyor, uydurma yok:
 
-- **çıkarım motoru doğruluğu: ~%87** (elle örneklem, 13/15). motor işlenen ingilizce başlıkların ~%30'unu güvenle kodlanmış olaya çeviriyor; kodlanamayan başlık kodlanmadan kalıyor — radar eksik olabilir ama asla uydurma olmaz.
+- **gösterilen bağların doğruluğu: ~%80-85** (elle denetlenen örneklemler; en son 52 ve 40 bağlık iki bağımsız örneklemde %71 ve %85, düzeltmeler sonrası ~%85). küreye yalnızca güven eşiğini geçen bağlar çizilir; motor işlenen ingilizce başlıkların ~%30'unu güvenle olaya çeviriyor, gerisini kodlamadan bırakır — radar eksik olabilir ama asla uydurma olmaz. **göç katmanı yönlü ok üretmez** (mülteci akışı bir ülkenin seçtiği eylem değildir); yalnızca kaynaklı liste olarak durur.
 - **ml katlama yanlış-eşleşme oranı: %0.35** (eşik 0.75'te ölçüldü). pozitif çiftler medyan 0.69 kosinüs, zor negatifler 0.29. ilk prod koşusu 140 özet satırını katladı, çok-kaynaklı hikayeleri 387'den 442'ye çıkardı.
 - **eğitim verisi kendi kendini besliyor**: motorun kodlamaları `data/ml/train.jsonl`'a birikiyor (838 thread, her 6 saatte artıyor). elle etiket yok, dış servis yok.
 - **ilk js yükü ~1.2 mb → ~30-60 kb** (lazy-loading refactorü): istemci sadece ülke kaydı + tek katmanla açılıyor.

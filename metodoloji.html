@@ -33,8 +33,9 @@
   <h2>iki tür bilgi gösteriyoruz, ikisi aynı şey değil</h2>
   <div class="cgroup">
     <ul class="clist">
-      <li><strong>Yapısal katmanlar</strong> (silah, göç, dış yardım, diplomasi, tahıl, kablo...): resmi ve açık veri setlerinden otomatik derlenir ya da kamu kayıtlarından elle küratörlüdür. Her katmanın kaynağı, yılı ve lisansı <a href="veri.html">veri sayfasında</a> tek tek yazar. Uydurma bağlantı yoktur; kaynağı olmayan bağ yayınlanmaz.</li>
+      <li><strong>Yapısal katmanlar</strong> (silah, dış yardım, diplomasi, tahıl, kablo...): resmi ve açık veri setlerinden otomatik derlenir ya da kamu kayıtlarından elle küratörlüdür. Her katmanın kaynağı, yılı ve lisansı <a href="veri.html">veri sayfasında</a> tek tek yazar. Uydurma bağlantı yoktur; kaynağı olmayan bağ yayınlanmaz.</li>
       <li><strong>Olaylar ve radar</strong> ("olay radarı", "bu hafta hareketlenenler", ton skorları): gerçek haber başlıklarından <strong>algoritmayla, otomatik</strong> çıkarılır. Bu çıkarım hata payı taşır ve arayüzde her zaman "haberlerden otomatik çıkarıldı" etiketiyle gezer. Resmi veri değildir, motor tahminidir.</li>
+      <li><strong>Göç ayrı tutulur:</strong> mülteci hareketi bir ülkenin diğerine yaptığı seçilmiş bir eylem değil, yapısal bir sonuçtur; onu yönlü bir "şu ülke şuna gönderdi" oku olarak çizmek yanlış olur. Bu yüzden göç başlıklarından ok üretmiyoruz — göç yalnızca kaynaklı bir haber listesi olarak durur.</li>
     </ul>
   </div>
 
@@ -58,6 +59,14 @@
       <li>Veri uydurmak. Kaynağı olmayan bağ, doğrulanamayan sayı, üretilmiş cümle yayınlanmaz.</li>
       <li>Modelle metin üretmek. Okuduğun her başlık gerçek bir yayın organının başlığıdır ve kaynağına tıklayarak gidebilirsin.</li>
       <li>Motor tahminini resmi veri gibi sunmak. Otomatik çıkarılan her şey etiketlidir.</li>
+    </ul>
+  </div>
+
+  <h2>modelin sınırları — dürüst olalım</h2>
+  <div class="cgroup">
+    <ul class="clist">
+      <li><strong>Oklar ahlaki bir yargı içermez.</strong> Bir silah transferi oku yalnızca "şu ülke şuna silah verdi" der; o transferin hukuka uygunluğu, insancıl hukuk (uluslararası hukuk, Silah Ticareti Antlaşması, devam eden bir UAD davası) açısından meşruiyeti hakkında hiçbir şey söylemez. Pozitif ton skoru "onay" değildir; sadece olayın işbirliği–çatışma ekseninde nereye düştüğüdür. Bağlamı kaynağa tıklayıp kendin değerlendir.</li>
+      <li><strong>Dünya ikili değildir; biz ikili çiziyoruz.</strong> Modern yaptırımlar, ittifaklar ve koalisyon eylemleri çoğu zaman çok taraflı ve kurumsaldır (BMGK, NATO, AB, G7). Bu küre ilişkiyi ülke→ülke oklarına indirger; "ABD ve müttefikleri" bir okta ABD olarak görünebilir, yalnızca bir uluslararası örgütün adına dayanan bir olay hiç görünmeyebilir. Bu, olay-verisi alanının bilinen bir sınırıdır ve burada da geçerlidir.</li>
     </ul>
   </div>
 

@@ -45,6 +45,13 @@ const seenTitle = new Set();
 let total = 0, coded = 0, kept = 0, ties = 0;
 const byLayer = {}; // layer -> [event]
 
+// migration is NOT a CAMEO-codable bilateral-verb domain: a refugee flow is a
+// structural outcome, not a directed policy act the origin state "chose". Coding
+// "Nigeria hosts refugees FROM Cameroon" as nigeria->cameroon cooperation is a
+// category error (IR/refugee-law). So the göç layer produces NO directed ties —
+// its headlines stay as a sourced list only. (Academic-jury disqualifying finding.)
+const NO_TIE_LAYERS = new Set(["goc"]);
+
 // recency cutoff: this is an editorial globe of CURRENT relations, so ties are
 // built only from reasonably fresh headlines. Older items still live in the feed
 // (history), but they must not surface as present-day ties. Measured against the
@@ -65,6 +72,8 @@ for (const row of rows) {
   // skip stale headlines for tie generation (they'd read as current relations)
   const ad = Date.parse(row.date);
   if (ad && ad < cutoff) { dropStale++; continue; }
+  // migration headlines are never turned into directed arrows
+  if (NO_TIE_LAYERS.has(row.layer)) continue;
   total++;
 
   const evs = extractAll(t);
