@@ -78,6 +78,9 @@ function parseItems(xml) {
     if (d) { const dt = new Date(strip(d[1])); if (!isNaN(dt)) date = dt.toISOString().slice(0, 10); }
     const url = strip(l[1]);
     if (!/^https?:\/\//i.test(url)) continue; // sadece http(s) — javascript:/data: linki siteye asla girmesin
+    // sports/entertainment slip in via country names ("Spain beat France in World
+    // Cup") — a geopolitics product must not show them; drop at ingest.
+    if (/\b(world cup|copa am|semi-?final|quarter-?final|euro 20\d\d|champions league|premier league|la liga|serie a|bundesliga|olympics?|super bowl|nba|nfl|fifa|uefa|grand prix|wimbledon|box office|film festival|album|concert|celebrity|eurovision|recipe|matchday|friendly match)\b/i.test(title)) continue;
     items.push({ title, source, url, date, pub: pubDomain });
   }
   return items;
