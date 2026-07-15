@@ -104,6 +104,7 @@ keep("China sanctions US defense firms in retaliation", "china->united states");
 /* ── coverage: previously-uncoded common IR shapes ── */
 keep("Iran cuts diplomatic ties with Morocco", "iran->morocco");
 keep("France trains Ukrainian pilots", "france->ukraine");
+keep("China builds naval base in Cambodia", "china->cambodia");
 
 /* ── IO / multilateral actors ── */
 keep("NATO allies pledge support to Ukraine", "nato->ukraine");

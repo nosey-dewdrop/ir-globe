@@ -197,8 +197,11 @@ function extractAll(text) {
   // locative venue: "meet in Turkey", "summit in Qatar", "on sidelines ... in X"
   // — a country right after in/at is the PLACE, not a party. Mark it so it can't
   // be picked as a target (only matters for meeting/visit-type verbs).
+  // "build/establish/deploy a base IN X" — here X is the HOST/target of the
+  // installation, not a mere venue; don't treat "in X" as locative for these.
+  const siteVerb = /\b(build\w*|built|establish\w*|open\w*|set\s+up|station\w*|deploy\w*|construct\w*)\b[^.]{0,25}\b(base|outpost|installation|garrison|facility|troops?|forces?|presence)\b/.test(hay);
   for (const g of groups) {
-    g.loc = /\b(in|at|on the sidelines of|hosted by|hosts?)\s*$/.test(hay.slice(Math.max(0, g.start - 22), g.start));
+    g.loc = !siteVerb && /\b(in|at|on the sidelines of|hosted by|hosts?)\s*$/.test(hay.slice(Math.max(0, g.start - 22), g.start));
     // topic mention: "hold talks ON security, Ukraine and migration" — once a
     // meeting verb is followed by "on/about/over", every country after that "on"
     // is a DISCUSSION TOPIC, not a party. Find the topic-marker position and flag
