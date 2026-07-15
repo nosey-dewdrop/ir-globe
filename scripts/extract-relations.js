@@ -82,7 +82,8 @@ for (const row of rows) {
   }
 }
 
-console.log(`\nheadlines (unique): ${total}`);
+console.log(`\nstale dropped (>${MAX_AGE_DAYS}d): ${dropStale}`);
+console.log(`headlines (unique): ${total}`);
 console.log(`event-coded:        ${coded}  (${((coded / total) * 100).toFixed(1)}%)`);
 console.log(`kept (conf>=${MIN_CONF}):   ${kept}  (${((kept / total) * 100).toFixed(1)}%)`);
 console.log(`ties emitted:       ${ties}  (${(ties / kept).toFixed(2)} per kept headline)`);
