@@ -15,6 +15,13 @@ reels 30-60 saniye, hook sart. sinir yok. linkedin essay'leri ayri dosyada: link
 4. sonuç: 918 → 775 bağ. 143 uydurma/ters/bayat ok elendi. güven artık asla "kesin" demiyor.
 ekran: aynı başlık, önce yanlış yeşil ok → sonra kaybolur.
 
+## r_gece3 — hook: "tek bir kesme işareti yüzünden ürünüm haberlerin TERSİNİ söylüyordu"
+1. sorun: motor "Almanya İsrail'e tank SATMAYACAK" başlığını "Almanya İsrail'e tank satıyor" diye okuyordu. "Rusya ve Çin İran'a yardım ETMİYOR" → "yardım ediyor".
+2. neden: metni temizlerken kesme işaretini (') boşluğa çeviriyordum. "won't" → "won t" oluyordu, "olumsuzluk" kuralı hiç eşleşmiyordu. Her "won't/doesn't/aren't" başlığı tam tersine dönüyordu.
+3. ne değiştirdim: olumsuzluk kontrolünü kesme işaretini KORUYAN ayrı bir temizlemeye taşıdım.
+4. çünkü bir istihbarat ürününde "X, Y'ye silah satmayacak" ile "satıyor" arasındaki fark her şeydir. Bir jüri turu bunu yakaladı, tek satırlık bir bug felaketti.
+ekran: aynı başlık, ok önce yanlış yönde parlıyor → düzelince kayboluyor.
+
 ## r_gece2 — hook: "kendi ürünüme 4 kişilik jüri kurdum, beni ben eleştirdim"
 1. sorun: kendi ürününe âşıksın, kusuru göremiyorsun.
 2. ne yaptım: mühendis + ürün yöneticisi + pazarlamacı + sıradan kullanıcı gözüyle didik didik eleştirdim. her tur yeni kusur, düzelt, tekrar eleştir.
