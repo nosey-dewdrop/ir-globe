@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=108">
+<link rel="stylesheet" href="css/style.css?v=109">
 <!-- küre verisini tarayıcı boş kalınca sessizce indir — initGlobe cache'ten bulur -->
 <link rel="prefetch" href="data/countries.geojson?v=6">
 </head>
@@ -45,6 +45,11 @@
     <p class="btext"><span class="hl">arkadaki her başlık gerçek: kim kime silah, enerji, tahıl, para satıyor. üye ol, ülke ve konu seç; bu akış senin olsun. takip ettiklerinde gelişme olunca kürende işaretlenir, kişisel akışın hep güncel kalır.</span></p>
     <p class="bfine cta-line"><span class="hl"><a class="jn-cta" href="app.html#uye">hesap aç →</a></span></p>
     <p class="bfine"><span class="hl">genel akışa bak · bu haftanın bülteni'ne <a href="akis.html">göz at</a></span></p>
+    <form class="hero-search" id="heroSearch" role="search" autocomplete="off">
+      <input type="text" id="heroQ" list="heroCountries" placeholder="bir ülke ara: iran, türkiye, ukrayna…" aria-label="ülke ara">
+      <datalist id="heroCountries"></datalist>
+      <button type="submit" aria-label="git">→</button>
+    </form>
     <div class="hero-spikes" id="heroSpikes" aria-live="polite"></div>
     <div class="stats" id="stats"></div>
     <p class="ed-scroll"><span class="hl">↓</span></p>
@@ -72,7 +77,7 @@
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="app.html#uye">üyelik</a> · <a href="metodoloji.html">nasıl çalışıyor</a> · <a href="veri.html">kaynaklar</a> ·<a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · her bağın kaynağı tıklanır · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v108</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · her bağın kaynağı tıklanır · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v109</span></span>
   </footer>
 </section>
 
@@ -82,9 +87,9 @@
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=69"></script>
 <script src="js/ilgi.js?v=71"></script>
-<script src="js/motor.js?v=108"></script>
-<script src="js/ara.js?v=108"></script>
-<script src="js/main.js?v=108"></script>
+<script src="js/motor.js?v=109"></script>
+<script src="js/ara.js?v=109"></script>
+<script src="js/main.js?v=109"></script>
 <script>
 /* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
    sayfa görünür olunca içerik belirir (.in) */
@@ -309,6 +314,37 @@
     }).join("");
     host.innerHTML = factHtml + (rows ? '<p class="spike-lead">bu hafta en çok hareketlenenler</p>' + rows : "");
   }).catch(function () {});
+})();
+
+/* homepage country search — a journalist who types "ukrayna" or a curious visitor
+   should jump straight to a country, not guess a URL and 404. Matches display name
+   + aliases (TR spellings), goes to /ulke/<slug>/. */
+(function () {
+  var form = document.getElementById("heroSearch");
+  if (!form || typeof Store === "undefined") return;
+  var input = document.getElementById("heroQ");
+  var dl = document.getElementById("heroCountries");
+  var byLabel = {}; // normalized name/alias -> {slug, disp}
+  var norm = function (s) { return String(s || "").toLowerCase().replace(/ı/g, "i").replace(/ş/g, "s").replace(/ğ/g, "g").replace(/ü/g, "u").replace(/ö/g, "o").replace(/ç/g, "c").trim(); };
+  Store.countries().then(function (reg) {
+    var opts = "";
+    Object.keys(reg).forEach(function (k) {
+      var c = reg[k]; if (!c || !c.slug) return;
+      var names = [c.disp || c.key, c.key].concat(c.aliases || []);
+      names.forEach(function (nm) { if (nm) byLabel[norm(nm)] = { slug: c.slug, disp: c.disp || c.key }; });
+      opts += '<option value="' + (c.disp || c.key) + '">';
+    });
+    // common TR spellings so "ukrayna", "turkiye" resolve
+    var trAlias = { ukrayna: "ukraine", turkiye: "türkiye", rusya: "russia", cin: "china", almanya: "germany", fransa: "france", ingiltere: "united kingdom", abd: "united states", isvicre: "switzerland", yunanistan: "greece", misir: "egypt", suriye: "syria", hindistan: "india", japonya: "japan" };
+    Object.keys(trAlias).forEach(function (tr) { var t = byLabel[norm(trAlias[tr])]; if (t) byLabel[norm(tr)] = t; });
+    if (dl) dl.innerHTML = opts;
+  }).catch(function () {});
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var hit = byLabel[norm(input.value)];
+    if (hit) location.href = "ulke/" + hit.slug + "/";
+    else { input.style.outline = "2px solid #c0392b"; setTimeout(function () { input.style.outline = ""; }, 900); }
+  });
 })();
 </script>
 <script>

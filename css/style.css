@@ -125,6 +125,11 @@ html { scroll-snap-type: y proximity; }
 .hero-mast .mast-fresh { display: inline-block; margin-top: 6px; }
 
 /* value-first: this-week's most-active pairs, the real job shown on arrival */
+.hero-search { display: flex; gap: 6px; margin: 14px 0 6px; max-width: 380px; }
+.hero-search input { flex: 1; font: 14px var(--sans); color: var(--ink); background: #fff; border: 1px solid var(--rule); border-radius: 999px; padding: 8px 16px; }
+.hero-search input:focus { outline: 0; border-color: var(--navy); }
+.hero-search button { font: 16px var(--sans); color: #fff; background: var(--navy); border: 0; border-radius: 999px; width: 40px; cursor: pointer; }
+.hero-search button:hover { background: var(--royal); }
 .hero-spikes { margin: 16px 0 6px; }
 .hero-fact { font-family: var(--serif); font-size: 17px; line-height: 1.45; color: var(--ink); margin-bottom: 14px; }
 .hero-fact strong { color: var(--navy); }
