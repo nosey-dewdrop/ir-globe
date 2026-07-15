@@ -25,7 +25,7 @@
     var xs = function (i) { return P + (i * (W - 2 * P)) / (weeks.length - 1); };
     var ys = function (v) { var c = Math.max(-10, Math.min(10, v)); return H - P - ((c + 10) / 20) * (H - 2 * P); };
     var pts = weeks.map(function (w, i) { return xs(i).toFixed(1) + "," + ys(series[w].avg).toFixed(1); }).join(" ");
-    return '<section class="trend"><h2>haftalık ton <span class="cnt">(−10 çatışma · +10 işbirliği)</span></h2>' +
+    return '<section class="trend"><h2>ilişki haftadan haftaya <span class="cnt">yukarı = yakınlaşma · aşağı = gerginlik</span></h2>' +
       '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="haftalık ilişki tonu çizgisi">' +
       '<line x1="' + P + '" y1="' + ys(0) + '" x2="' + (W - P) + '" y2="' + ys(0) + '" stroke="#d9d9d9" stroke-dasharray="3 4"/>' +
       '<polyline points="' + pts + '" fill="none" stroke="#0a2a5e" stroke-width="1.6"/>' +
@@ -73,6 +73,26 @@
       var pairData = events && events.pairs && events.pairs[pairKey];
       var trend = pairData && pairData.weekly ? trendSvg(pairData.weekly) : "";
 
+      /* MÜŞTERİ İHTİYACI: bir analist/gazeteci sayfayı açar açmaz "bu iki ülke
+         arasında ne oluyor" cevabını tek cümlede istiyor — içindekiler değil.
+         Bu özet doğrudan brief'e kopyalanabilir. Motorun kendi verisinden kurulur. */
+      var summary = "";
+      if (pairData && pairData.n) {
+        // overall tone = mean of the weekly averages (pairData has no top-level avg)
+        var weeks = pairData.weekly || {}, sum = 0, wc = 0;
+        Object.keys(weeks).forEach(function (w) { if (typeof weeks[w].avg === "number") { sum += weeks[w].avg; wc++; } });
+        var avg = wc ? sum / wc : 0;
+        var yon = avg < -1 ? "gerginlik ağır basıyor" : avg > 1 ? "işbirliği ağır basıyor" : "hem işbirliği hem gerginlik var";
+        // layers is an object {key:count}; take the busiest layer names
+        var layerNames = Object.keys(pairData.layers || {})
+          .sort(function (a, b) { return pairData.layers[b] - pairData.layers[a]; })
+          .map(function (k) { var lab = LAYERS.filter(function (l) { return l.key === k; })[0]; return lab ? lab.label : k; })
+          .slice(0, 3).join(", ");
+        summary = '<p class="pair-summary">motorun okuduğu son haberlerde bu ilişkide <strong>' + yon + '</strong>' +
+          " (" + pairData.n + " kodlanmış olay" + (layerNames ? " · " + esc(layerNames) : "") + ")." +
+          " Aşağıdaki her olay ve manşet gerçek bir kaynağa tıklanır.</p>";
+      }
+
       /* manşetler: iki yönün tüm katmanlardaki haberleri, yeni üstte */
       var arts = [], seen = {};
       LAYERS.forEach(function (l, i) {
@@ -103,6 +123,7 @@
         '<p class="lede">İki ülke arasındaki kayıtlı bağlar, olay geçmişi ve gerçek manşetler. Ülke sayfaları: ' +
         '<a href="ulke/' + esc(COUNTRIES[A].slug) + '/">' + esc(da) + "</a> · " +
         '<a href="ulke/' + esc(COUNTRIES[B].slug) + '/">' + esc(db) + "</a></p>" +
+        summary +
         trend +
         (radar ? '<section class="motor-sec">' + radar + "</section>" : "") +
         (tieRows ? '<h2>kayıtlı bağlar</h2><div class="cgroup"><ul class="clist">' + tieRows + "</ul></div>" : "") +
