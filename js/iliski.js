@@ -137,9 +137,14 @@
       var artRow = function (a) {
         var outlet = esc(a.src) + (a.pub ? ' <span class="dg-dom">(' + esc(a.pub) + ")</span>" : "");
         var lyr = (typeof I18N !== "undefined") ? I18N.layer(a.l) : a.l;
-        return '<a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
+        // a copy-citation button: a journalist/analyst cites publisher+headline+date
+        // (a URL is NOT required for a valid citation) — this finishes the job even
+        // though the click routes through Google News. data-cite holds the string.
+        var cite = (a.src || a.pub || "") + ', "' + a.t + '"' + (a.d ? ", " + a.d : "");
+        return '<div class="dg-wrap"><a class="dg" href="' + esc(a.u) + '" target="_blank" rel="noopener">' +
           '<span class="dg-t">' + esc(a.t) + '</span>' +
-          '<span class="dg-m">' + outlet + " · " + esc(lyr) + (a.d ? " · " + esc(a.d) : "") + "</span></a>";
+          '<span class="dg-m">' + outlet + " · " + esc(lyr) + (a.d ? " · " + esc(a.d) : "") + "</span></a>" +
+          '<button class="cite-btn" type="button" data-cite="' + esc(cite) + '" title="' + (ENh ? "copy citation" : "alıntıyı kopyala") + '">' + (ENh ? "cite" : "alıntı") + "</button></div>";
       };
       // group headlines by recency so "this week" is trustworthy at a glance and
       // a stale 2025 item can never be mistaken for a current transfer.
@@ -174,6 +179,19 @@
           (arts.length ? ' <button class="csv-btn" id="csvBtn" type="button">' + (EN ? "download CSV" : "CSV indir") + "</button>" : "") + "</h2>" +
           '<div class="pair-news">' + newsHtml + "</div>" : "") +
         '<p class="meta" style="margin-top:24px">' + (EN ? "events and tone are auto-extracted from news and carry a margin of error — " : "olaylar ve ton haberlerden otomatik çıkarılır, hata payı vardır — ") + '<a href="metodoloji.html">' + (EN ? "methodology" : "metodoloji") + "</a>.</p>";
+
+      /* copy-citation: click 'cite' -> publisher, "headline", date on the clipboard,
+         ready to paste into a brief/story. Solves citability even though the link
+         itself is a Google News redirect. */
+      mount.addEventListener("click", function (e) {
+        var btn = e.target.closest && e.target.closest(".cite-btn");
+        if (!btn) return;
+        e.preventDefault();
+        var txt = btn.getAttribute("data-cite") || "";
+        var done = function () { var o = btn.textContent; btn.textContent = (typeof I18N !== "undefined" && I18N.isEn) ? "copied" : "kopyalandı"; setTimeout(function () { btn.textContent = o; }, 1200); };
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done, done);
+        else { var ta = document.createElement("textarea"); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); } catch (x) {} document.body.removeChild(ta); done(); }
+      });
 
       /* CSV export: an analyst can pull the full sourced record of this pair as a
          spreadsheet (date, layer, source, headline, url) — the "take the data with
