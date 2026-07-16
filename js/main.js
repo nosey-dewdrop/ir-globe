@@ -557,7 +557,7 @@ function currentArticles() {
 /* öğretmen geri bildirimi ("ne sunduğu anlaşılmıyor"): ekranda İLK 10 makale +
    sağda kaç makale bulunduğu + yazım hatasına toleranslı kelime araması (js/ara.js).
    Yazarken input yeniden yaratılmaz (odak kaçmasın) — sadece sayı + liste tazelenir. */
-const CARD_CAP = 6;
+const CARD_CAP = 4;                               // Damla: ilk 4 sonuç, kalanı oklarla
 let araQuery = "";
 let araPage = 0;                                  // hangi sayfa (0-indeksli)
 function pageCount(hits) { return Math.max(1, Math.ceil(hits.length / CARD_CAP)); }
@@ -573,17 +573,14 @@ function cardsHTML(arts) {
       <span class="card-meta">${esc(a.source)}${a.date ? " · " + esc(TRDate.short(a.date)) : ""}</span>
     </a>`).join("");
 }
-/* sayfalayıcı: ‹ 1 2 3 4 5 › — tüm makaleleri sırayla gezmek için (arayacak
-   kelimeyi bilmeyen kullanıcı böyle dolaşır). Tek sayfa varsa hiç basılmaz. */
+/* sayfalayıcı: sadece ‹ 2/12 › — numara yığını YOK (Damla: "bir anda 40 tuş
+   görünmesin, oklarla olsun"). Tek sayfa varsa hiç basılmaz. */
 function pagerHTML(hits) {
   const pc = pageCount(hits);
   if (pc <= 1) return "";
-  let btns = "";
-  for (let p = 0; p < pc; p++)
-    btns += `<button class="cards-pg${p === araPage ? " on" : ""}" data-pg="${p}" aria-label="sayfa ${p + 1}"${p === araPage ? ' aria-current="page"' : ""}>${p + 1}</button>`;
   return `<nav class="cards-pager" aria-label="makale sayfaları">
     <button class="cards-pg nav" data-pg="${araPage - 1}"${araPage === 0 ? " disabled" : ""} aria-label="önceki">‹</button>
-    ${btns}
+    <span class="cards-pg-cur">${araPage + 1} / ${pc}</span>
     <button class="cards-pg nav" data-pg="${araPage + 1}"${araPage >= pc - 1 ? " disabled" : ""} aria-label="sonraki">›</button>
   </nav>`;
 }
@@ -638,10 +635,8 @@ function renderCards() {
   cardsEl.classList.add("show");
   layoutCards();
 }
-/* kartları kürenin İKİ kavisine sarar (Damla: "sol tarafa da kart") — sabit adet
-   YOK: sağ yay birincil, kartların ~üçte biri SOL yaya gider (hikaye paneliyle
-   küre arasına sığıyorsa). Dikey kolon dolunca dışa yeni kolon açılır, yer
-   biterse font kademeli küçülür. zoomK: pinch-zoom kart ölçeğini küreyle izler. */
+/* kartlar DÜZ SAĞ KOLON (Damla: "kavis kötü") — arama panelinin altında hizalı,
+   üstten alta doğal yükseklikleriyle istiflenir; kavis/yay/sol kolon yok. */
 let zoomK = 1;
 function layoutCards() {
   const cards = [...cardsEl.querySelectorAll(".card")];
@@ -651,66 +646,29 @@ function layoutCards() {
 
   /* mobil: kartlar CSS ile kürenin altında düz liste — konumlandırma/font override yok */
   if (window.matchMedia("(max-width: 820px)").matches) {
+    cardsEl.classList.remove("straight");
     cards.forEach((c) => { c.style.left = ""; c.style.top = ""; c.classList.remove("solyay"); });
     cardsEl.style.removeProperty("--card-fs");
     cardsEl.classList.remove("dense");
     return;
   }
 
-  const w = stage.clientWidth, h = stage.clientHeight;
-  const cx = w / 2, cy = h / 2;
-  const pad = 46;
-  const cardW = 210;
-  const FS_MAX = 14.5, FS_MIN = 11;
-  const story = document.querySelector(".col.left");
-  const storyEdge = story ? story.offsetWidth + 8 : 320;
-
-  /* RIGHT + LEFT arc, ordered (not scattered), each hugging the globe's edge.
-     Right arc starts BELOW the search panel. Cards split evenly: first half right
-     (reading order top->bottom), rest left. Damla: "sağ ve sol yay, sıralı". */
+  cardsEl.classList.add("straight");               // CSS: merkez-çapa yerine düz blok
+  const w = stage.clientWidth;
+  const pad = 40, cardW = 250, gap = 18;
   const sr = stage.getBoundingClientRect();
   const find = cardsEl.querySelector(".cards-find");
-  let rightTop = pad, panelBox = null;
-  if (find) {
-    const fr = find.getBoundingClientRect();
-    panelBox = { l: fr.left - sr.left, r: fr.right - sr.left, b: fr.bottom - sr.top };
-    rightTop = Math.max(pad, panelBox.b + 56);   // more gap below the search box (Damla)
-  }
+  let y = 46;
+  if (find) y = Math.max(46, find.getBoundingClientRect().bottom - sr.top + 28);
+  const x = w - cardW - pad;
+  cards.forEach((c) => {
+    c.classList.remove("solyay");
+    c.style.left = x.toFixed(1) + "px";
+    c.style.top = y.toFixed(1) + "px";
+    y += c.offsetHeight + gap;
+  });
 
-  const leftFits = cx - Math.min(w, h) * 0.40 * zoomK - storyEdge >= cardW - 30;
-  const rightN = leftFits ? Math.ceil(n / 2) : n;   // right takes the (larger) first half
-  const right = cards.slice(0, rightN), left = cards.slice(rightN);
-  cards.forEach((c, i) => c.classList.toggle("solyay", i >= rightN));
-
-  /* place one ordered arc down the globe's edge. side=+1 right, -1 left. Cards run
-     top->bottom evenly; x follows the sphere curve so the column is a gentle bow. */
-  function place(list, side) {
-    const m = list.length;
-    if (!m) return;
-    // cards are center-anchored (translateY -50%): first card center sits half a
-    // card below its top so its upper half doesn't cross the panel.
-    const halfCard = (FS_MAX * 2.6 + 22) / 2;
-    const topY = (side > 0 ? rightTop : pad) + halfCard;
-    const botY = h - pad;
-    // TIGHT fixed step (Damla: "daha sıkışık"), not spread across the whole height.
-    // Shrink the step only if the stack would overflow the stage.
-    let step = 96;
-    if (m > 1 && topY + (m - 1) * step > botY) step = (botY - topY) / (m - 1);
-    const R = Math.min(w, h) * (0.44 + m * 0.012) * zoomK; // curve radius, softer w/ few cards
-    list.forEach((c, i) => {
-      const y = topY + i * step;
-      const t = Math.max(-0.96, Math.min(0.96, (y - cy) / R));
-      let x = cx + side * R * Math.cos(Math.asin(t));
-      if (side < 0) x = Math.max(storyEdge, x - cardW);
-      else x = Math.min(x, w - cardW - 16);
-      c.style.left = x.toFixed(1) + "px";
-      c.style.top = y.toFixed(1) + "px";
-    });
-  }
-  place(right, 1);
-  place(left, -1);
-
-  cardsEl.style.setProperty("--card-fs", FS_MAX.toFixed(1) + "px");
+  cardsEl.style.setProperty("--card-fs", "14.5px");
   cardsEl.classList.remove("dense");
 }
 
