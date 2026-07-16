@@ -46,8 +46,8 @@ t("toneWord bounds", () => {
 
 t("radarTie renders spike + recent events, filters stale", () => {
   const html = Motor.radarTie(events, graph, "iran", "israel");
-  assert.ok(html.includes("olay radarı"));
-  assert.ok(html.includes("bu hafta hareketlendi"));
+  assert.ok(html.includes("Olay radarı"));
+  assert.ok(html.includes("Bu hafta hareketlendi"));
   assert.ok(html.includes("2026-07-10".slice(5)) || html.includes("07-10"));
   assert.ok(!html.includes("2019"), "90d window must drop stale events");
 });
@@ -59,7 +59,7 @@ t("radarTie empty -> empty string, never an empty box", () => {
 
 t("radarCountry shows rank/partners/tone; unknown -> empty", () => {
   const html = Motor.radarCountry(events, graph, "israel");
-  assert.ok(html.includes("haber ağında") && html.includes("#1"));
+  assert.ok(html.includes("Haber ağında") && html.includes("#1"));
   assert.equal(Motor.radarCountry({ events: [] }, { centrality: {} }, "atlantis"), "");
 });
 

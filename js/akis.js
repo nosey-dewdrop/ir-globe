@@ -40,7 +40,7 @@
       renderMine();
     });
   }).catch(function () {
-    feedEl.innerHTML = '<p class="dg-load">akış şu an yüklenemedi — birazdan tekrar dene.</p>';
+    feedEl.innerHTML = '<p class="dg-load">Akış şu an yüklenemedi. Birazdan tekrar dene.</p>';
   });
 
   Store.newsMeta().then(function (nm) {
@@ -62,7 +62,7 @@
 
   function renderFilters(index) {
     var el = document.getElementById("filters");
-    var chips = [{ key: "hepsi", label: "hepsi" }].concat(index.map(function (l) { return { key: l.key, label: l.label }; }));
+    var chips = [{ key: "hepsi", label: "Hepsi" }].concat(index.map(function (l) { return { key: l.key, label: l.label }; }));
     el.innerHTML = chips.map(function (c) {
       return '<button class="layerbtn' + (filter === c.key ? " on" : "") + '" data-f="' + c.key + '" aria-pressed="' + (filter === c.key) + '">' + esc(c.label) + "</button>";
     }).join("");
@@ -95,9 +95,9 @@
       .sort(function (p, q) { return q.s - p.s || String(q.a.d).localeCompare(String(p.a.d)); })
       .slice(0, 6);
     if (scored.length < 3) { mount.innerHTML = ""; return; }
-    mount.innerHTML = '<section class="mine-strip"><h2>sana göre <span class="cnt">okuduklarından</span></h2>' +
+    mount.innerHTML = '<section class="mine-strip"><h2>Sana göre <span class="cnt">okuduklarından</span></h2>' +
       '<div class="digest">' + scored.map(function (x) { return item(x.a); }).join("") + "</div>" +
-      '<p class="mine-note">yalnızca <strong>senin cihazında</strong> — neyi açtığından oluşur, bize gönderilmez. <a href="#" id="mine-forget">sıfırla</a></p></section>';
+      '<p class="mine-note">Yalnızca <strong>senin cihazında</strong>: neyi açtığından oluşur, kimseye gönderilmez. <a href="#" id="mine-forget">Sıfırla</a></p></section>';
     var f = document.getElementById("mine-forget");
     if (f) f.addEventListener("click", function (e) { e.preventDefault(); Ilgi.forget(); mount.innerHTML = ""; });
   }

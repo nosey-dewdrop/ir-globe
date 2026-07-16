@@ -35,8 +35,8 @@
   function renderAuth(mode) {
     const isLogin = mode === "login";
     box.innerHTML = `
-      <h1>${isLogin ? "giriş yap" : "üye ol"}</h1>
-      <p class="lede">${isLogin ? "hesabına dön." : "e-postanla bir dakikada — kendi akışın ve haftalık brifingin başlasın."}</p>
+      <h1>${isLogin ? "Giriş yap" : "Üye ol"}</h1>
+      <p class="lede">${isLogin ? "Hesabına dön." : "E-postanla bir dakikada: kendi akışın ve haftalık brifingin başlasın."}</p>
       <form id="af">
         <div class="field"><label for="ae">e-posta</label><input type="email" id="ae" required></div>
         <div class="field"><label for="ap">şifre</label><input type="password" id="ap" minlength="6" required></div>
@@ -73,7 +73,7 @@
       if (!isLogin) {
         const { data: { session } } = await sb.auth.getSession();
         if (!session) { err.textContent = ""; box.innerHTML =
-          `<h1>e-postanı onayla</h1><p class="lede">Sana bir onay bağlantısı gönderdik. Tıkladıktan sonra giriş yapabilirsin.</p>`; return; }
+          `<h1>E-postanı onayla</h1><p class="lede">Sana bir onay bağlantısı gönderdik. Tıkladıktan sonra giriş yapabilirsin.</p>`; return; }
       }
       boot();
     });
@@ -81,7 +81,7 @@
 
   function renderNewPassword() {
     box.innerHTML = `
-      <h1>yeni şifre</h1>
+      <h1>Yeni şifre</h1>
       <p class="lede">Yeni şifreni belirle, hesabına dön.</p>
       <form id="npf">
         <div class="field"><label for="np">yeni şifre</label><input type="password" id="np" minlength="6" required></div>
@@ -108,13 +108,13 @@
       "iran", "israel", "france", "united kingdom", "azerbaijan", "greece"]
       .filter((k) => countries[k]);
     box.innerHTML = `
-      <h1>neyi takip ediyorsun?</h1>
+      <h1>Neyi takip ediyorsun?</h1>
       <p class="lede">Seçtiklerin senin akışını kurar: sana özel manşetler, haftalık brifing, gelişme uyarıları. Sonradan değiştirebilirsin.</p>
-      <div class="lbl">ülkeler</div>
+      <div class="lbl">Ülkeler</div>
       <div class="chips" id="ob-c">${popular.map((k) =>
         `<button type="button" class="chip" data-kind="country" data-key="${esc(k)}" aria-pressed="false">${esc(k)}</button>`).join("")}</div>
       <div class="field" style="margin-top:10px"><label for="ob-search">başka ülke ara</label>
-        <input type="text" id="ob-search" placeholder="yazmaya başla…" autocomplete="off"></div>
+        <input type="text" id="ob-search" placeholder="Yazmaya başla…" autocomplete="off"></div>
       <div class="chips" id="ob-results"></div>
       <div class="lbl" style="margin-top:18px">konular</div>
       <div class="chips" id="ob-l">${layers.map((l) =>
@@ -156,7 +156,7 @@
         await Takip.setPrefs(user.id, { briefing: true, alerts: true });
         location.href = "app.html#benim";
       } catch (e) {
-        err.textContent = "kaydedilemedi — bağlantını kontrol edip tekrar dene.";
+        err.textContent = "Kaydedilemedi. Bağlantını kontrol edip tekrar dene.";
       }
     });
   }
@@ -165,7 +165,7 @@
     const s = (m || "").toLowerCase();
     if (s.includes("invalid login")) return "e-posta veya şifre hatalı.";
     if (s.includes("already registered")) return "bu e-posta zaten kayıtlı, giriş yap.";
-    if (s.includes("rate limit")) return "çok denedin — bir dakika bekleyip tekrar dene.";
+    if (s.includes("rate limit")) return "Çok denedin. Bir dakika bekleyip tekrar dene.";
     if (s.includes("password")) return "şifre en az 6 karakter olmalı.";
     if (s.includes("email")) return "geçerli bir e-posta gir.";
     return "olmadı, tekrar dene.";

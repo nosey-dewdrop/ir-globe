@@ -3,6 +3,8 @@
    layers and their news load lazily on first click (see ensureLayer). */
 
 const COORDS = {};      // key -> [lat, lng] (arc endpoints)
+const DISP = {};        // key -> görünen ad (özel adlar düzgün yazılır)
+const disp = (k) => DISP[k] || k;
 const KEYOF = {};       // any lowercase name/alias -> key (polygon lookup)
 const LAYERS = [];      // [{key, label, live}] from data/layers/index.json
 const TIES = [];        // directed ties of the layers loaded so far
@@ -79,7 +81,7 @@ function renderLayers() {
   layerNav.innerHTML = LAYERS.map((l) =>
     `<button class="layerbtn${l.key === layer ? " on" : ""}${l.live ? "" : " soon"}" data-l="${l.key}" aria-pressed="${l.key === layer}">${l.label}</button>`).join("") +
     (total > CAP_DEFAULT
-      ? `<button class="layerbtn viewcap" id="viewcap">${showAll ? `ilk ${CAP_DEFAULT}` : `tümünü göster (${Math.min(total, CAP_ALL)})`}</button>`
+      ? `<button class="layerbtn viewcap" id="viewcap">${showAll ? `İlk ${CAP_DEFAULT}` : `Tümünü göster (${Math.min(total, CAP_ALL)})`}</button>`
       : "");
   layerNav.querySelectorAll(".layerbtn[data-l]").forEach((b) =>
     b.addEventListener("click", async () => {
@@ -126,10 +128,10 @@ function visibleTies() {
 /* one tie, one honest sentence (hover tooltip) */
 function tieLine(t) {
   const bits = [];
-  if (t.exp != null) bits.push(`${t.s} ihracatının %${t.exp}'i`);
-  if (t.imp != null) bits.push(`${t.r} ithalatının %${t.imp}'i`);
-  if (!bits.length && t.note) return `${t.s} → ${t.r} · ${t.note}`;
-  return `${t.s} → ${t.r}${bits.length ? " · " + bits.join(" · ") : ""}`;
+  if (t.exp != null) bits.push(`${disp(t.s)} ihracatının %${t.exp}'i`);
+  if (t.imp != null) bits.push(`${disp(t.r)} ithalatının %${t.imp}'i`);
+  if (!bits.length && t.note) return `${disp(t.s)} → ${disp(t.r)} · ${t.note}`;
+  return `${disp(t.s)} → ${disp(t.r)}${bits.length ? " · " + bits.join(" · ") : ""}`;
 }
 
 /* ── globe: grey editorial world map, white ocean, navy on select ──
@@ -388,26 +390,26 @@ function tieStory(t) {
   // build only from the numbers we actually have — never print a fake %0
   let p;
   if (t.exp != null) {
-    p = `${t.s}, ${g} ihracatının <strong>%${cnt(t.exp)}</strong>'ini ${t.r}'ye gönderiyor`;
-    if (t.imp != null) p += `; ${t.r} açısından bu, ülkenin ${g} ithalatının <strong>%${cnt(t.imp)}</strong>'i demek`;
+    p = `${disp(t.s)}, ${g} ihracatının <strong>%${cnt(t.exp)}</strong>'ini ${disp(t.r)}'ye gönderiyor`;
+    if (t.imp != null) p += `; ${disp(t.r)} açısından bu, ülkenin ${g} ithalatının <strong>%${cnt(t.imp)}</strong>'i demek`;
   } else if (t.imp != null) {
-    p = `${t.r}, ${g} ithalatının <strong>%${cnt(t.imp)}</strong>'ini ${t.s}'den alıyor`;
+    p = `${disp(t.r)}, ${g} ithalatının <strong>%${cnt(t.imp)}</strong>'ini ${disp(t.s)}'den alıyor`;
   } else {
-    p = `${t.s} → ${t.r}`;
+    p = `${disp(t.s)} → ${disp(t.r)}`;
   }
   p += ".";
   const tail = [];
-  if (supShare[t.s]) tail.push(`${t.s} dünya ${g} ihracatının %${supShare[t.s]}'ini tek başına yapıyor`);
-  if (recShare[t.r]) tail.push(`${t.r} küresel ${g} ithalatının %${recShare[t.r]}'ini alıyor`);
+  if (supShare[t.s]) tail.push(`${disp(t.s)}, dünya ${g} ihracatının %${supShare[t.s]}'ini tek başına yapıyor`);
+  if (recShare[t.r]) tail.push(`${disp(t.r)}, küresel ${g} ithalatının %${recShare[t.r]}'ini alıyor`);
   return `<p>${p}</p>` + (tail.length ? `<p>${tail.join("; ")}.</p>` : "");
 }
 function countryStory(c) {
   if (layer !== "silah") {
-    const sells = activeTies().filter((t) => t.s === c).slice(0, 3).map((t) => `${t.r} (${esc(t.note)})`);
-    const buys = activeTies().filter((t) => t.r === c).slice(0, 3).map((t) => `${t.s} (${esc(t.note)})`);
+    const sells = activeTies().filter((t) => t.s === c).slice(0, 3).map((t) => `${disp(t.r)} (${esc(t.note)})`);
+    const buys = activeTies().filter((t) => t.r === c).slice(0, 3).map((t) => `${disp(t.s)} (${esc(t.note)})`);
     const g = GOOD[layer] || "bağ";
     const seg = [];
-    if (sells.length) seg.push(`${c}, ${g} bağıyla ${sells.join(", ")} ile bağlı`);
+    if (sells.length) seg.push(`${disp(c)}, ${g} bağıyla ${sells.join(", ")} ile bağlı`);
     if (buys.length) seg.push(`${g} tarafında ${buys.join(", ")} ile de bağı var`);
     return seg.length ? `<p>${seg.join(". ")}.</p>` : "";
   }
@@ -417,11 +419,11 @@ function countryStory(c) {
   const head = [];
   if (supShare[c]) head.push(`dünya ${g} ihracatının <strong>%${cnt(supShare[c])}</strong>'ini yapıyor`);
   if (recShare[c]) head.push(`ithalatının <strong>%${cnt(recShare[c])}</strong>'ini alıyor`);
-  let p = head.length ? `${c}, ${head.join(", ")}.` : "";
+  let p = head.length ? `${disp(c)}, ${head.join(", ")}.` : "";
   const t2 = [];
-  if (sells[0]) t2.push(`en çok ${sells[0].r}'ye ${g} satıyor (%${sells[0].exp})`);
-  if (buys[0]) t2.push(`en çok ${buys[0].s}'den alıyor (%${buys[0].imp})`);
-  if (t2.length) p += ` ${c[0].toUpperCase()}${c.slice(1)} ${t2.join(", ")}.`;
+  if (sells[0]) t2.push(`en çok ${disp(sells[0].r)}'ye ${g} satıyor (%${sells[0].exp})`);
+  if (buys[0]) t2.push(`en çok ${disp(buys[0].s)}'den alıyor (%${buys[0].imp})`);
+  if (t2.length) p += ` ${disp(c)} ${t2.join(", ")}.`;
   return `<p>${p}</p>`;
 }
 
@@ -448,16 +450,16 @@ function countryArticleList(c) {
 function srcLine() {
   const s = SRC[layer];
   return s && s.url
-    ? `<p class="src"><em>kaynak: <a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener">${esc(s.name)}${s.year ? ", " + esc(s.year) : ""} ↗</a></em></p>`
-    : `<p class="src"><em>bağlantılar açık kaynaklardan derlendi · haberler: google news</em></p>`;
+    ? `<p class="src"><em>Kaynak: <a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener">${esc(s.name)}${s.year ? ", " + esc(s.year) : ""} ↗</a></em></p>`
+    : `<p class="src"><em>Bağlantılar açık kaynaklardan derlendi · haberler: Google News</em></p>`;
 }
 const story = document.getElementById("story");
 function renderStory() {
   if (focusTie) {
     const t = focusTie;
     story.innerHTML = `
-      <div class="lbl">bu ilişki</div>
-      <h2>${t.s} → ${t.r}</h2>
+      <div class="lbl">Bu ilişki</div>
+      <h2>${disp(t.s)} → ${disp(t.r)}</h2>
       <div class="writing">${tieStory(t)}</div>
       <div class="radar-slot"></div>
       ${srcLine()}`;
@@ -466,8 +468,8 @@ function renderStory() {
   }
   if (selected) {
     story.innerHTML = `
-      <div class="lbl">ülke</div>
-      <h2>${selected}</h2>
+      <div class="lbl">Ülke</div>
+      <h2>${disp(selected)}</h2>
       <div class="writing">${countryStory(selected)}</div>
       <div class="radar-slot"></div>
       ${srcLine()}`;
@@ -475,8 +477,8 @@ function renderStory() {
     return;
   }
   story.innerHTML = `<div class="writing intro-writing">
-    <p>dünyanın bağ haritası. her ok, bir ülkeden bir ülkeye giden büyük transferi gösteriyor.</p>
-    <p>bir <strong>oka</strong> tıkla: o ilişkinin sayıları, yazısı ve haberleri açılır. bir <strong>ülkeye</strong> tıkla: kiminle bağlı olduğunu gör.</p>
+    <p>Dünyanın bağ haritası. Her ok, bir ülkeden bir ülkeye giden büyük transferi gösteriyor.</p>
+    <p>Bir <strong>oka</strong> tıkla: o ilişkinin sayıları, yazısı ve haberleri açılır. Bir <strong>ülkeye</strong> tıkla: kiminle bağlı olduğunu gör.</p>
   </div>`;
 }
 
@@ -522,19 +524,19 @@ function renderDetail() {
   if (focusTie) {
     const t = focusTie;
     detail.innerHTML = `
-      <div class="lbl">rakamlar</div>
-      ${t.exp != null ? `<p class="row"><span>${t.s} → ${t.r}</span><b>%${cnt(t.exp)}</b></p>` : ""}
-      ${t.imp != null ? `<p class="row"><span>${t.r} ithalatında ${t.s}</span><b>%${cnt(t.imp)}</b></p>` : ""}`;
+      <div class="lbl">Rakamlar</div>
+      ${t.exp != null ? `<p class="row"><span>${disp(t.s)} → ${disp(t.r)}</span><b>%${cnt(t.exp)}</b></p>` : ""}
+      ${t.imp != null ? `<p class="row"><span>${disp(t.r)} ithalatında ${disp(t.s)}</span><b>%${cnt(t.imp)}</b></p>` : ""}`;
     return;
   }
   if (selected) {
     const sells = activeTies().filter((t) => t.s === selected).sort((a, b) => (b.exp || 0) - (a.exp || 0));
     const buys = activeTies().filter((t) => t.r === selected).sort((a, b) => (b.imp || 0) - (a.imp || 0));
     detail.innerHTML =
-      (sells.length ? `<div class="lbl">kime silah satıyor</div>` + sells.map((t) =>
-        `<p class="row"><span>→ ${t.r}</span>${t.exp != null ? `<b>%${t.exp}</b>` : ""}</p>`).join("") : "") +
-      (buys.length ? `<div class="lbl">kimden silah alıyor</div>` + buys.map((t) =>
-        `<p class="row"><span>← ${t.s}</span>${t.imp != null ? `<b>%${t.imp}</b>` : ""}</p>`).join("") : "");
+      (sells.length ? `<div class="lbl">Kime silah satıyor?</div>` + sells.map((t) =>
+        `<p class="row"><span>→ ${disp(t.r)}</span>${t.exp != null ? `<b>%${t.exp}</b>` : ""}</p>`).join("") : "") +
+      (buys.length ? `<div class="lbl">Kimden silah alıyor?</div>` + buys.map((t) =>
+        `<p class="row"><span>← ${disp(t.s)}</span>${t.imp != null ? `<b>%${t.imp}</b>` : ""}</p>`).join("") : "");
     return;
   }
   detail.innerHTML = "";
@@ -578,10 +580,10 @@ function cardsHTML(arts) {
 function pagerHTML(hits) {
   const pc = pageCount(hits);
   if (pc <= 1) return "";
-  return `<nav class="cards-pager" aria-label="makale sayfaları">
-    <button class="cards-pg nav" data-pg="${araPage - 1}"${araPage === 0 ? " disabled" : ""} aria-label="önceki">‹</button>
+  return `<nav class="cards-pager" aria-label="Makale sayfaları">
+    <button class="cards-pg nav" data-pg="${araPage - 1}"${araPage === 0 ? " disabled" : ""} aria-label="Önceki">‹</button>
     <span class="cards-pg-cur">${araPage + 1} / ${pc}</span>
-    <button class="cards-pg nav" data-pg="${araPage + 1}"${araPage >= pc - 1 ? " disabled" : ""} aria-label="sonraki">›</button>
+    <button class="cards-pg nav" data-pg="${araPage + 1}"${araPage >= pc - 1 ? " disabled" : ""} aria-label="Sonraki">›</button>
   </nav>`;
 }
 function araHits(all) {
@@ -589,9 +591,9 @@ function araHits(all) {
 }
 function countLine(all, hits) {
   const q = araQuery.trim();
-  if (q && !hits.length) return "bu kelime tutmadı, başka bir şey dene";
+  if (q && !hits.length) return "Bu kelime tutmadı, başka bir şey dene.";
   const n = q ? hits.length : all.length;
-  const base = q ? `aramanda <b>${n}</b> makale bulundu` : `bu konuda <b>${n}</b> makale bulundu`;
+  const base = q ? `Aramanda <b>${n}</b> makale bulundu` : `Bu konuda <b>${n}</b> makale bulundu`;
   const pc = pageCount(hits);
   return base + (pc > 1 ? ` · sayfa <b>${araPage + 1}</b>/${pc}` : "");
 }
@@ -613,10 +615,10 @@ function renderCards() {
   const hits = araHits(all);
   cardsEl.innerHTML =
     `<div class="cards-find">
-      <div class="cards-lbl">${focusTie ? "bu ilişkinin haberleri" : "bu ülkenin haberleri"}</div>
+      <div class="cards-lbl">${focusTie ? "Bu ilişkinin haberleri" : "Bu ülkenin haberleri"}</div>
       <p class="cards-count" aria-live="polite">${countLine(all, hits)}</p>
       <div class="cards-search-wrap">
-        <input class="cards-search" type="search" placeholder="haberlerde ara" aria-label="haberlerde kelimeyle ara" autocomplete="off">
+        <input class="cards-search" type="search" placeholder="Haberlerde ara" aria-label="Haberlerde kelimeyle ara" autocomplete="off">
         <svg class="cards-search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><line x1="15.5" y1="15.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </div>
       <div class="cards-pager-wrap">${pagerHTML(hits)}</div>
@@ -635,8 +637,8 @@ function renderCards() {
   cardsEl.classList.add("show");
   layoutCards();
 }
-/* kartlar DÜZ SAĞ KOLON (Damla: "kavis kötü") — arama panelinin altında hizalı,
-   üstten alta doğal yükseklikleriyle istiflenir; kavis/yay/sol kolon yok. */
+/* kartlar kürenin SAĞ KAVİSİNE sarılı (Damla: kavis KALIR, kalabalık gitti):
+   4 kart arama panelinin altından başlar, x kürenin yayını izler, ekrandan taşmaz. */
 let zoomK = 1;
 function layoutCards() {
   const cards = [...cardsEl.querySelectorAll(".card")];
@@ -646,26 +648,31 @@ function layoutCards() {
 
   /* mobil: kartlar CSS ile kürenin altında düz liste — konumlandırma/font override yok */
   if (window.matchMedia("(max-width: 820px)").matches) {
-    cardsEl.classList.remove("straight");
     cards.forEach((c) => { c.style.left = ""; c.style.top = ""; c.classList.remove("solyay"); });
     cardsEl.style.removeProperty("--card-fs");
     cardsEl.classList.remove("dense");
     return;
   }
 
-  cardsEl.classList.add("straight");               // CSS: merkez-çapa yerine düz blok
-  const w = stage.clientWidth;
-  const pad = 40, cardW = 250, gap = 18;
+  const w = stage.clientWidth, h = stage.clientHeight;
+  const cx = w / 2, cy = h / 2;
+  const pad = 46, cardW = 250;
   const sr = stage.getBoundingClientRect();
   const find = cardsEl.querySelector(".cards-find");
-  let y = 46;
-  if (find) y = Math.max(46, find.getBoundingClientRect().bottom - sr.top + 28);
-  const x = w - cardW - pad;
-  cards.forEach((c) => {
+  let topY = pad;
+  if (find) topY = Math.max(pad, find.getBoundingClientRect().bottom - sr.top + 56);
+  topY += 24;                                       // merkez-çapalı kartın üst yarısı panele girmesin
+  const botY = h - pad;
+  let step = 104;
+  if (n > 1 && topY + (n - 1) * step > botY) step = (botY - topY) / (n - 1);
+  const R = Math.min(w, h) * (0.44 + n * 0.012) * zoomK;
+  cards.forEach((c, i) => {
     c.classList.remove("solyay");
+    const y = topY + i * step;
+    const t = Math.max(-0.96, Math.min(0.96, (y - cy) / R));
+    const x = Math.min(cx + R * Math.cos(Math.asin(t)), w - cardW - 16);
     c.style.left = x.toFixed(1) + "px";
     c.style.top = y.toFixed(1) + "px";
-    y += c.offsetHeight + gap;
   });
 
   cardsEl.style.setProperty("--card-fs", "14.5px");
@@ -813,6 +820,7 @@ async function hydrateFromSupabase() {
     const [countries, index] = await Promise.all([Store.countries(), Store.layerIndex()]);
     Object.values(countries).forEach((c) => {
       COORDS[c.key] = c.coords;
+      DISP[c.key] = c.disp || c.key;
       KEYOF[c.key] = c.key;
       (c.aliases || []).forEach((a) => { KEYOF[a] = c.key; });
     });
@@ -824,6 +832,6 @@ async function hydrateFromSupabase() {
     hydrateFromSupabase();
   } catch (e) {
     console.error("[globe] veri yüklenemedi:", e);
-    story.innerHTML = '<div class="writing"><p>veri yüklenemedi — bağlantını kontrol edip sayfayı yenile.</p></div>';
+    story.innerHTML = '<div class="writing"><p>Veri yüklenemedi. Bağlantını kontrol edip sayfayı yenile.</p></div>';
   }
 })();

@@ -7,7 +7,7 @@
     return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
 
   if (!window.SUPABASE_URL || !window.SUPABASE_ANON) {
-    app.innerHTML = '<h1>benim akışım</h1><div class="notice">Üyelik yakında açılıyor — şimdilik <a href="akis.html">genel akışa</a> bak.</div>';
+    app.innerHTML = '<h1>Benim akışım</h1><div class="notice">Üyelik yakında açılıyor; şimdilik <a href="akis.html">genel akışa</a> bak.</div>';
     return;
   }
 
@@ -17,9 +17,9 @@
     var what = q.get("what") === "alerts" ? "alerts" : "briefing";
     Takip.client().rpc("irglobe_email_unsubscribe", { token: q.get("unsub"), what: what }).then(function (r) {
       app.innerHTML = r.data
-        ? '<h1>tamam</h1><div class="notice">' + (what === "alerts" ? "Gelişme uyarıları" : "Haftalık brifing") +
+        ? '<h1>Tamam</h1><div class="notice">' + (what === "alerts" ? "Gelişme uyarıları" : "Haftalık brifing") +
           ' kapatıldı. Fikrini değiştirirsen <a href="app.html#benim">akış sayfandan</a> tekrar açabilirsin.</div>'
-        : '<h1>olmadı</h1><div class="notice">Bağlantı geçersiz ya da süresi geçmiş. <a href="app.html#benim">Akış sayfandan</a> tercihlerini yönetebilirsin.</div>';
+        : '<h1>Olmadı</h1><div class="notice">Bağlantı geçersiz ya da süresi geçmiş. <a href="app.html#benim">Akış sayfandan</a> tercihlerini yönetebilirsin.</div>';
     });
     return;
   }
@@ -51,7 +51,7 @@
         });
       });
   }).catch(function () {
-    app.innerHTML = '<h1>benim akışım</h1><div class="notice">Akış şu an yüklenemedi — birazdan tekrar dene.</div>';
+    app.innerHTML = '<h1>Benim akışım</h1><div class="notice">Akış şu an yüklenemedi. Birazdan tekrar dene.</div>';
   });
 
   function followedSets() {
@@ -92,13 +92,13 @@
   function render() {
     var arts = myArticles();
     app.innerHTML =
-      '<div class="benim-head"><h1>benim akışım</h1>' +
+      '<div class="benim-head"><h1>Benim akışım</h1>' +
       '<span class="who">' + esc(USER.email) + ' · <a href="#" id="out">çıkış</a></span></div>' +
-      '<div class="lbl">takip ettiklerin</div>' +
+      '<div class="lbl">Takip ettiklerin</div>' +
       '<div class="chips" id="mychips"></div>' +
       '<div class="lbl" style="margin-top:14px">takibe ekle</div>' +
       '<div class="chips" id="addlayers"></div>' +
-      '<div class="field" style="max-width:320px;margin-top:10px"><input type="text" id="csearch" placeholder="ülke ara ve takip et…" aria-label="ülke ara ve takip et" autocomplete="off"></div>' +
+      '<div class="field" style="max-width:320px;margin-top:10px"><input type="text" id="csearch" placeholder="Ülke ara ve takip et…" aria-label="Ülke ara ve takip et" autocomplete="off"></div>' +
       '<div class="chips" id="cresults"></div>' +
       '<div class="lbl" style="margin-top:16px">e-posta</div>' +
       '<label class="prefrow"><input type="checkbox" id="p-brief"> haftalık kişisel brifing</label>' +
@@ -143,7 +143,7 @@
     el.innerHTML = FOLLOWS.map(function (f) {
       var label = f.kind === "layer" ? labelOf(f.key) : f.key;
       return '<button class="chip on" data-id="' + esc(f.id) + '" aria-label="takibi bırak: ' + esc(label) + '">' + esc(label) + '<span class="x" aria-hidden="true">×</span></button>';
-    }).join("") || '<span class="who">henüz takip yok — aşağıdan ekle.</span>';
+    }).join("") || '<span class="who">Henüz takip yok. Aşağıdan ekle.</span>';
     el.querySelectorAll(".chip").forEach(function (c) {
       c.addEventListener("click", function () {
         Takip.remove(c.dataset.id).then(function () {
@@ -214,7 +214,7 @@
     var feed = document.getElementById("feed");
     var more = document.getElementById("more");
     if (!arts.length) {
-      feed.innerHTML = '<div class="notice">Takiplerinde henüz manşet yok — birkaç ülke ya da konu daha ekle, akış dolsun. <a href="akis.html">Genel akışa</a> da bakabilirsin.</div>';
+      feed.innerHTML = '<div class="notice">Takiplerinde henüz manşet yok. Birkaç ülke ya da konu daha ekle, akış dolsun. <a href="akis.html">Genel akışa</a> da bakabilirsin.</div>';
       more.hidden = true;
       return;
     }

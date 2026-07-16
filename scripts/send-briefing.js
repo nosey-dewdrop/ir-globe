@@ -15,13 +15,13 @@ const { ready, fetchUsers, loadArticles, personalArticles, renderEmail, send } =
     const items = personalArticles(all, u.follows, { sinceDays: 7 }).slice(0, 12);
     if (!items.length) { skipped++; continue; } // boş brifing atma — gürültü olur
     const html = renderEmail({
-      heading: "haftalık brifingin · takip ettiklerinden seçmeler",
+      heading: "Haftalık brifingin · takip ettiklerinden seçmeler",
       intro: `Bu hafta takiplerinde ${items.length} öne çıkan başlık var.`,
       items, labels,
       unsubToken: u.unsub_token, what: "briefing",
     });
     try {
-      await send(u.email, "haftalık brifingin — kim kime ne satıyor?", html);
+      await send(u.email, "Haftalık brifingin · Kim kime ne satıyor?", html);
       sent++;
     } catch (e) {
       failed++;

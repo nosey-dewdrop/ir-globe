@@ -73,7 +73,7 @@ async function build() {
     key: "yardim",
     label: "dış yardım",
     source: {
-      name: "OECD DAC2A — ODA disbursements",
+      name: "OECD DAC2A · ODA disbursements",
       url: "https://data-explorer.oecd.org/vis?df[id]=DSD_DAC2%40DF_DAC2A&df[ag]=OECD.DCD.FSD",
       year: years[years.length - 1],
       license: "CC BY 4.0",

@@ -22,20 +22,20 @@ const LAYERS = readJSON("data/layers/index.json"); // [{key,label,blurb}]
 
 /* başlıklar soru cümlesi — marka sesi ("kim kime ne satıyor?") */
 const SORU = {
-  silah: "kim kime silah satıyor?",
-  ticaret: "kim kime ne satıyor?",
-  enerji: "kim kime enerji satıyor?",
-  tahil: "kim kimi doyuruyor?",
-  ittifak: "kim kiminle ittifak kurdu?",
-  yaptirim: "kim kime yaptırım uyguluyor?",
-  goc: "kim nereye sığınıyor?",
-  borc: "kim kime borç veriyor?",
-  diplomasi: "kim kiminle yakın duruyor?",
-  teknoloji: "kim kime çip satıyor?",
-  us: "kim nerede üs kuruyor?",
-  yardim: "kim kime yardım ediyor?",
-  kablo: "kim kiminle aynı kabloya bağlı?",
-  siber: "kim kime siber saldırıyor?",
+  silah: "Kim kime silah satıyor?",
+  ticaret: "Kim kime ne satıyor?",
+  enerji: "Kim kime enerji satıyor?",
+  tahil: "Kim kimi doyuruyor?",
+  ittifak: "Kim kiminle ittifak kurdu?",
+  yaptirim: "Kim kime yaptırım uyguluyor?",
+  goc: "Kim nereye sığınıyor?",
+  borc: "Kim kime borç veriyor?",
+  diplomasi: "Kim kiminle yakın duruyor?",
+  teknoloji: "Kim kime çip satıyor?",
+  us: "Kim nerede üs kuruyor?",
+  yardim: "Kim kime yardım ediyor?",
+  kablo: "Kim kiminle aynı kabloya bağlı?",
+  siber: "Kim kime siber saldırıyor?",
 };
 const soru = (key, fallback) => SORU[key] || fallback;
 
@@ -75,7 +75,7 @@ function bakedFor(name) {
     const lnk = e.pub && e.title ? `https://www.google.com/search?q=${encodeURIComponent('site:' + e.pub + ' "' + e.title + '"')}` : (e.url || "#");
     return `<li><a href="${esc(lnk)}" rel="noopener">${esc(e.title)}</a> <span class="baked-m">${arrow} · ${esc(e.event || "")}${e.pub ? " · " + esc(e.pub) : ""} · ${esc(shortD(e.date))}</span></li>`;
   }).join("");
-  return `<section class="baked"><h2>son gelişmeler</h2><ul class="baked-list">${rows}</ul></section>`;
+  return `<section class="baked"><h2>Son gelişmeler</h2><ul class="baked-list">${rows}</ul></section>`;
 }
 
 /* pair leaves: only event pairs with >=2 recorded events get a page —
@@ -101,7 +101,7 @@ function head(title, desc, canonical, extraLd) {
     "@type": "WebPage",
     name: title,
     description: desc,
-    isPartOf: { "@type": "WebSite", name: "kim kime ne satıyor?", url: SITE + "/" },
+    isPartOf: { "@type": "WebSite", name: "Kim kime ne satıyor?", url: SITE + "/" },
     publisher: { "@type": "Organization", name: "nosey-dewdrop", url: "https://noseydewdrop.com" },
     ...extraLd,
   };
@@ -117,7 +117,7 @@ function head(title, desc, canonical, extraLd) {
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${canonical}">
-<meta property="og:site_name" content="kim kime ne satıyor?">
+<meta property="og:site_name" content="Kim kime ne satıyor?">
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="index,follow">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
@@ -130,37 +130,37 @@ function head(title, desc, canonical, extraLd) {
 }
 function nav() {
   return `<header class="topbar">
-  <a class="brand" href="ROOT/index.html">kim kime ne satıyor?</a>
+  <a class="brand" href="ROOT/index.html">Kim kime ne satıyor?</a>
   <nav class="topnav">
-    <a href="ROOT/index.html">küre</a>
-    <a href="ROOT/akis.html">akış</a>
-    <a href="ROOT/konu/index.html">konular</a>
-    <a href="ROOT/ulke/index.html">ülkeler</a>
-    <a href="ROOT/app.html#uye">üyelik</a>
+    <a href="ROOT/index.html">Küre</a>
+    <a href="ROOT/akis.html">Akış</a>
+    <a href="ROOT/konu/index.html">Konular</a>
+    <a href="ROOT/ulke/index.html">Ülkeler</a>
+    <a href="ROOT/app.html#uye">Üyelik</a>
   </nav>
 </header>`;
 }
 function foot() {
   return `<footer class="docfoot">
-  <p>veri: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" rel="noopener">SIPRI</a> (silah) · diğer katmanlar açık kaynak + google news · uydurma veri yok.</p>
-  <p>bağımsız · açık · kaynaklı · bir <span class="sig">nosey-dewdrop</span> yayını · <a href="ROOT/metodoloji.html">metodoloji</a> · <a href="ROOT/veri.html">veri</a> · <a href="ROOT/gizlilik.html">gizlilik</a> · <a href="ROOT/kosullar.html">koşullar</a></p>
+  <p>Veri: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" rel="noopener">SIPRI</a> (silah) · diğer katmanlar açık kaynak + Google News · uydurma veri yok.</p>
+  <p>Bağımsız · açık · kaynaklı · bir <span class="sig">nosey-dewdrop</span> yayını · <a href="ROOT/metodoloji.html">Metodoloji</a> · <a href="ROOT/veri.html">Veri</a> · <a href="ROOT/gizlilik.html">Gizlilik</a> · <a href="ROOT/kosullar.html">Koşullar</a></p>
 </footer>`;
 }
 /* thin shell body: crawlers get h1 + lede; js/dizin.js draws the rest live */
 function shell({ view, key, crumbMid, crumbLeaf, h1, lede, baked }) {
   return `${nav()}
 <main class="wrap" id="dizin" data-view="${view}"${key ? ` data-key="${esc(key)}"` : ""}>
-  <nav class="crumb"><a href="ROOT/index.html">ana sayfa</a> › ${crumbMid}${esc(crumbLeaf)}</nav>
+  <nav class="crumb"><a href="ROOT/index.html">Ana sayfa</a> › ${crumbMid}${esc(crumbLeaf)}</nav>
   <h1>${esc(h1)}</h1>
   <p class="lede">${esc(lede)}</p>
   ${baked || ""}
-  <p class="dg-load">güncel liste yükleniyor…</p>
-  <noscript><p class="note">Bu dizin canlı veriden çizilir — <a href="ROOT/index.html">küreden devam et →</a></p></noscript>
+  <p class="dg-load">Güncel liste yükleniyor…</p>
+  <noscript><p class="note">Bu dizin canlı veriden çizilir. <a href="ROOT/index.html">Küreden devam et →</a></p></noscript>
 </main>
 ${foot()}
 <script src="ROOT/js/i18n.js?v=119" defer></script>
-<script src="ROOT/js/motor.js?v=119" defer></script>
-<script src="ROOT/js/dizin.js?v=119" defer></script>
+<script src="ROOT/js/motor.js?v=125" defer></script>
+<script src="ROOT/js/dizin.js?v=125" defer></script>
 <script src="ROOT/admin/config.js" defer></script>
 <script src="ROOT/js/sayac.js?v=1" defer></script>
 </body></html>`;
@@ -175,7 +175,7 @@ function fix(html, depth) {
 function layerPage(layer) {
   const key = layer.key;
   const all = TIES.filter((t) => t.type === key);
-  const title = `${soru(key, layer.label + " ağı")} — kim kime ne satıyor?`;
+  const title = `${soru(key, layer.label + " ağı")} · Kim kime ne satıyor?`;
   const desc = layer.blurb;
   const ld = {
     "@type": "CollectionPage",
@@ -190,7 +190,7 @@ function layerPage(layer) {
   };
   const body = shell({
     view: "konu", key,
-    crumbMid: `<a href="ROOT/konu/index.html">konular</a> › `, crumbLeaf: layer.label,
+    crumbMid: `<a href="ROOT/konu/index.html">Konular</a> › `, crumbLeaf: layer.label,
     h1: soru(key, layer.label), lede: desc,
   });
   return fix(head(title, desc, `${SITE}/konu/${key}/`, ld) + body, 2);
@@ -208,7 +208,7 @@ function pairLinksFor(name) {
     const other = a === name ? b : a;
     return `<a href="ROOT/iliski/${esc(pairSlug(k))}/">${esc(disp(name))} ↔ ${esc(disp(other))}</a>`;
   }).join(" · ");
-  return `<p class="meta">ilişki sayfaları: ${links}</p>`;
+  return `<p class="meta">İlişki sayfaları: ${links}</p>`;
 }
 
 /* ── page: one country ── */
@@ -218,11 +218,11 @@ function countryPage(name) {
   const incoming = ties.filter((t) => t.r === name).length;
   const layerKeys = [...new Set(ties.map((t) => t.type))];
   const dn = disp(name);
-  const title = `${dn} — dış ilişki ağı`;
+  const title = `${dn} · Dış ilişki ağı`;
   const desc = `${dn} hangi ülkelerle silah, ticaret, enerji ve daha fazlasında bağlı: ${outgoing} çıkan, ${incoming} gelen bağ. Gerçek veri.`;
   const body = shell({
     view: "ulke", key: name,
-    crumbMid: `<a href="ROOT/ulke/index.html">ülkeler</a> › `, crumbLeaf: dn,
+    crumbMid: `<a href="ROOT/ulke/index.html">Ülkeler</a> › `, crumbLeaf: dn,
     h1: dn, lede: `${dn}, ${layerKeys.length} katmanda ${ties.length} ülke bağıyla haritada. Aşağıda kimden alıp kime verdiği.`,
     baked: bakedFor(name) + pairLinksFor(name),
   });
@@ -248,14 +248,14 @@ function trendSvg(weekly) {
   const xs = (i) => P + (i * (W - 2 * P)) / (weeks.length - 1);
   const ys = (v) => { const c = Math.max(-10, Math.min(10, v)); return H - P - ((c + 10) / 20) * (H - 2 * P); };
   const pts = weeks.map((w, i) => xs(i).toFixed(1) + "," + ys(weekly[w].avg).toFixed(1)).join(" ");
-  return `<section class="trend"><h2>ilişki haftadan haftaya <span class="cnt">yukarı = yakınlaşma · aşağı = gerginlik</span></h2>
-<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="haftalık ilişki tonu çizgisi">
+  return `<section class="trend"><h2>İlişki haftadan haftaya <span class="cnt">Yukarı = yakınlaşma · aşağı = gerginlik</span></h2>
+<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Haftalık ilişki tonu çizgisi">
 <line x1="${P}" y1="${ys(0).toFixed(1)}" x2="${W - P}" y2="${ys(0).toFixed(1)}" stroke="#d9d9d9" stroke-dasharray="3 4"/>
 <polyline points="${pts}" fill="none" stroke="#0a2a5e" stroke-width="1.6"/>
 ${weeks.map((w, i) => `<circle cx="${xs(i).toFixed(1)}" cy="${ys(weekly[w].avg).toFixed(1)}" r="2" fill="#0a2a5e"/>`).join("")}
 <text class="tl" x="${P}" y="${H - 3}">${esc(weeks[0])}</text>
 <text class="tl" x="${W - P}" y="${H - 3}" text-anchor="end">${esc(weeks[weeks.length - 1])}</text>
-</svg><p class="meta">haberlerden otomatik çıkarıldı · hafta başına ortalama</p></section>`;
+</svg><p class="meta">Haberlerden otomatik çıkarıldı · hafta başına ortalama</p></section>`;
 }
 
 function pairPage(key) {
@@ -274,7 +274,7 @@ function pairPage(key) {
   const struct = TIES.filter((t) => (t.s === a && t.r === b) || (t.s === b && t.r === a));
   const evLayers = Object.keys(p.layers || {});
 
-  let title = `${da} ↔ ${db} ilişkisi — kim kime ne satıyor?`;
+  let title = `${da} ↔ ${db} ilişkisi · Kim kime ne satıyor?`;
   if (title.length > 60) title = `${da} ↔ ${db} ilişkisi`;
   if (title.length > 60) title = `${da} ↔ ${db}`;
   const layerNames = evLayers.map((k) => (LAYER_BY_KEY[k] ? LAYER_BY_KEY[k].label : k)).join(", ");
@@ -290,7 +290,7 @@ function pairPage(key) {
     return `      <li>${esc(disp(t.s))} → ${esc(disp(t.r))} · ${lnk}</li>`;
   }).join("\n");
   const structHtml = struct.length
-    ? `<section class="cgroup"><h2>yapısal bağlar <span class="cnt">${struct.length}</span></h2><ul class="clist">\n${structRows}\n    </ul></section>` : "";
+    ? `<section class="cgroup"><h2>Yapısal bağlar <span class="cnt">${struct.length}</span></h2><ul class="clist">\n${structRows}\n    </ul></section>` : "";
 
   const evRows = evs.map((e) => {
     const l = LAYER_BY_KEY[e.layer];
@@ -298,7 +298,7 @@ function pairPage(key) {
     return `<li><a href="${esc(srcLink(e))}" rel="noopener">${esc(e.title)}</a> <span class="baked-m">${esc(disp(e.s))} → ${esc(disp(e.r))} · ${esc(e.event || "")} · ${konu}${e.pub ? " · " + esc(e.pub) : ""} · ${esc(shortD(e.date))}</span></li>`;
   }).join("");
   const evHtml = evs.length
-    ? `<section class="baked"><h2>olay geçmişi <span class="cnt">${evs.length}</span></h2><ul class="baked-list">${evRows}</ul></section>` : "";
+    ? `<section class="baked"><h2>Olay geçmişi <span class="cnt">${evs.length}</span></h2><ul class="baked-list">${evRows}</ul></section>` : "";
 
   const ld = {
     "@type": "WebPage",
@@ -307,7 +307,7 @@ function pairPage(key) {
   };
   const body = `${nav()}
 <main class="wrap">
-  <nav class="crumb"><a href="ROOT/index.html">ana sayfa</a> › <a href="ROOT/iliski/index.html">ilişkiler</a> › ${esc(da)} ↔ ${esc(db)}</nav>
+  <nav class="crumb"><a href="ROOT/index.html">Ana sayfa</a> › <a href="ROOT/iliski/index.html">ilişkiler</a> › ${esc(da)} ↔ ${esc(db)}</nav>
   <h1>${esc(da)} ↔ ${esc(db)}</h1>
   <p class="lede">${esc(lede)}</p>
   ${structHtml}
@@ -325,7 +325,7 @@ ${foot()}
 
 /* ── index page: iliski/ (leaf directory, fully baked) ── */
 function iliskiIndex() {
-  const title = "ilişkiler — kim kime ne satıyor?";
+  const title = "İlişkiler · Kim kime ne satıyor?";
   const desc = clip(`İki ülke arasındaki her şey tek sayfada: ${PAIR_KEYS.length} ülke çifti, olay geçmişi, haftalık ton ve kaynaklı manşetlerle.`, 155);
   const rows = PAIR_KEYS
     .slice()
@@ -336,8 +336,8 @@ function iliskiIndex() {
     }).join("\n");
   const body = `${nav()}
 <main class="wrap">
-  <nav class="crumb"><a href="ROOT/index.html">ana sayfa</a> › ilişkiler</nav>
-  <h1>ilişkiler</h1>
+  <nav class="crumb"><a href="ROOT/index.html">Ana sayfa</a> › İlişkiler</nav>
+  <h1>İlişkiler</h1>
   <p class="lede">${esc(desc)}</p>
   <div class="cgroup"><ul class="clist">
 ${rows}
@@ -353,13 +353,13 @@ ${foot()}
 
 /* ── index pages: konu/ and ulke/ ── */
 function konuIndex() {
-  const title = "konular — kim kime ne satıyor?";
+  const title = "Konular · Kim kime ne satıyor?";
   const desc = "Silahtan tahıla, enerjiden yaptırıma: dünyanın ilişki ağını katman katman gez.";
   const body = shell({ view: "konu-index", crumbMid: "", crumbLeaf: "konular", h1: "konular", lede: desc });
   return fix(head(title, desc, `${SITE}/konu/`, { "@type": "CollectionPage" }) + body, 1);
 }
 function ulkeIndex() {
-  const title = "ülkeler — kim kime ne satıyor?";
+  const title = "Ülkeler · Kim kime ne satıyor?";
   const desc = `Her ülkenin dünyayla kurduğu silah, ticaret, enerji ve diğer bağların tam listesi. (${NAMES.length} ülke)`;
   const body = shell({ view: "ulke-index", crumbMid: "", crumbLeaf: "ülkeler", h1: "ülkeler", lede: desc });
   return fix(head(title, desc, `${SITE}/ulke/`, { "@type": "CollectionPage" }) + body, 1);
@@ -379,33 +379,33 @@ const veriRows = LAYERS.map((l) => {
   const lay = readJSON(`data/layers/${l.key}.json`);
   const s = lay.source || {};
   const parts = [
-    s.url ? `<a href="${esc(s.url)}" rel="noopener">${esc(s.name || l.key)}</a>` : esc(s.name || "—"),
+    s.url ? `<a href="${esc(s.url)}" rel="noopener">${esc(s.name || l.key)}</a>` : esc(s.name || "açık kaynak"),
     s.year ? esc(String(s.year)) : "",
     s.license ? esc(s.license) : "",
     lay.updated ? `güncelleme: ${esc(String(lay.updated).slice(0, 10))}` : "",
     `${(lay.ties || []).length} bağ`,
   ].filter(Boolean).join(" · ");
-  return `      <li><strong>${esc(l.label)}</strong> — ${parts}</li>`;
+  return `      <li><strong>${esc(l.label)}</strong>: ${parts}</li>`;
 }).join("\n");
 const veriHtml = `<!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>veri ve kaynaklar — kim kime ne satıyor?</title>
+<title>Veri ve kaynaklar · Kim kime ne satıyor?</title>
 <meta name="description" content="Her katmanın veri kaynağı, yılı, lisansı ve son güncelleme tarihi. Uydurma veri yok; kaynağı olmayan bağ yayınlanmaz.">
 <link rel="canonical" href="${SITE}/veri.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="veri ve kaynaklar — kim kime ne satıyor?">
+<meta property="og:title" content="Veri ve kaynaklar · Kim kime ne satıyor?">
 <meta property="og:description" content="Her katmanın veri kaynağı, yılı, lisansı ve son güncelleme tarihi. Kaynağı olmayan bağ yayınlanmaz.">
 <meta property="og:url" content="${SITE}/veri.html">
-<meta property="og:site_name" content="kim kime ne satıyor?">
+<meta property="og:site_name" content="Kim kime ne satıyor?">
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="index,follow">
 <script type="application/ld+json">${JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Dataset",
-  name: "kim kime ne satıyor? — ülke ilişkileri veri katmanları",
+  name: "Kim kime ne satıyor? Ülke ilişkileri veri katmanları",
   description: `Ülkeler arası ${LAYERS.map((l) => l.label).join(", ")} bağları; her katman kaynaklı ve tarihli.`,
   url: `${SITE}/veri.html`,
   isAccessibleForFree: true,
@@ -418,31 +418,31 @@ const veriHtml = `<!DOCTYPE html>
 </head>
 <body>
 <header class="topbar">
-  <a class="brand" href="index.html">kim kime ne satıyor?</a>
+  <a class="brand" href="index.html">Kim kime ne satıyor?</a>
   <nav class="topnav">
-    <a href="index.html">küre</a>
-    <a href="akis.html">akış</a>
-    <a href="konu/index.html">konular</a>
-    <a href="ulke/index.html">ülkeler</a>
-    <a href="app.html#uye">üyelik</a>
+    <a href="index.html">Küre</a>
+    <a href="akis.html">Akış</a>
+    <a href="konu/index.html">Konular</a>
+    <a href="ulke/index.html">Ülkeler</a>
+    <a href="app.html#uye">Üyelik</a>
   </nav>
 </header>
 <main class="wrap">
-  <nav class="crumb"><a href="index.html">ana sayfa</a> › veri ve kaynaklar</nav>
-  <h1>veri ve kaynaklar</h1>
+  <nav class="crumb"><a href="index.html">Ana sayfa</a> › Veri ve kaynaklar</nav>
+  <h1>Veri ve kaynaklar</h1>
   <p class="lede">Her katmanın verisi nereden geliyor, hangi yıldan, hangi lisansla ve en son ne zaman güncellendi. Bu sayfa elle yazılmıyor; her veri güncellemesinde doğrudan veri dosyalarından yeniden üretiliyor, bu yüzden veriyle çelişemez.</p>
-  <h2>yapısal katmanlar</h2>
+  <h2>Yapısal katmanlar</h2>
   <div class="cgroup">
     <ul class="clist">
 ${veriRows}
     </ul>
   </div>
-  <h2>haberler ve olaylar</h2>
+  <h2>Haberler ve olaylar</h2>
   <p class="lede" style="font-size:15px">Haber başlıkları Google News ve seçili yayınların (BBC, Al Jazeera, Guardian, DW, France24, UN News ve diğerleri) açık RSS akışlarından 6 saatte bir çekilir; her başlık kaynağına link verir. Olaylar, ton skorları ve radar bu başlıklardan <strong>otomatik çıkarılır</strong> ve hata payı taşır: nasıl çalıştığı ve ölçülmüş doğruluğu <a href="metodoloji.html">metodoloji sayfasında</a> açıktır.</p>
   <p class="meta" style="margin-top:30px">Bu ürün bir <span class="sig">nosey-dewdrop</span> yayınıdır. Kaynağı olmayan bağ yayınlanmaz.</p>
 </main>
 <footer class="docfoot">
-  <p>bağımsız · açık · kaynaklı · bir <span class="sig">nosey-dewdrop</span> yayını · <a href="metodoloji.html">metodoloji</a> · <a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></p>
+  <p>Bağımsız · açık · kaynaklı · bir <span class="sig">nosey-dewdrop</span> yayını · <a href="metodoloji.html">Metodoloji</a> · <a href="gizlilik.html">Gizlilik</a> · <a href="kosullar.html">Koşullar</a></p>
 </footer>
 <script src="admin/config.js"></script>
 <script src="js/sayac.js?v=1"></script>

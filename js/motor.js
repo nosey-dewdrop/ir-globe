@@ -116,15 +116,15 @@ const Motor = (() => {
     const evs = recent.slice(0, limit);
     if (!spike && !evs.length) return ""; // nothing recent/coded → no empty box
     const EN = typeof I18N !== "undefined" && I18N.isEn;
-    let html = `<div class="lbl">${EN ? "event radar" : "olay radarı"}${recent.length ? ` <span class="cnt">(${recent.length})</span>` : ""}</div><div class="radar">`;
+    let html = `<div class="lbl">${EN ? "Event radar" : "Olay radarı"}${recent.length ? ` <span class="cnt">(${recent.length})</span>` : ""}</div><div class="radar">`;
     if (spike)
-      html += `<p class="radar-spike">${EN ? "moved this week" : "bu hafta hareketlendi"} · ${spike.n} ${EN ? "articles" : "haber"}</p>`;
+      html += `<p class="radar-spike">${EN ? "Moved this week" : "Bu hafta hareketlendi"} · ${spike.n} ${EN ? "articles" : "haber"}</p>`;
     if (evs.length) {
       html += evs.map((e) => evRow(e, disp)).join("");
       if (recent.length > evs.length)
         html += `<p class="radar-more">+ ${recent.length - evs.length} ${EN ? "more events (in the headlines below)" : "olay daha (aşağıdaki manşetlerde)"}</p>`;
     }
-    html += `</div><p class="radar-note">${EN ? "auto-extracted from news" : "haberlerden otomatik çıkarıldı"}</p>`;
+    html += `</div><p class="radar-note">${EN ? "Auto-extracted from news" : "Haberlerden otomatik çıkarıldı"}</p>`;
     return html;
   }
 
@@ -138,14 +138,14 @@ const Motor = (() => {
     const rank = rankOf(graph, c);
     const partners = cData ? cData.partners : cen ? cen.deg : 0;
     const tone = cen ? cen.tone : cData ? cData.avg : null;
-    let html = `<div class="lbl">haber ağında</div><div class="radar">`;
-    if (rank) html += row("ağ sıralaması", `#${rank}`);
-    if (partners) html += row("bağlı olduğu ülke", partners);
+    let html = `<div class="lbl">Haber ağında</div><div class="radar">`;
+    if (rank) html += row("Ağ sıralaması", `#${rank}`);
+    if (partners) html += row("Bağlı olduğu ülke", partners);
     if (tone != null && toneWord(tone))
-      html += row("genel ton", `${toneWord(tone)} ${toneMark(tone)}`);
+      html += row("Genel ton", `${toneWord(tone)} ${toneMark(tone)}`);
     if (evs.length)
       html += `<div class="radar-evs">${evs.map((e) => evRow(e, disp)).join("")}</div>`;
-    html += `</div><p class="radar-note">haberlerden otomatik çıkarıldı</p>`;
+    html += `</div><p class="radar-note">Haberlerden otomatik çıkarıldı</p>`;
     return html;
   }
   function row(k, v) {
@@ -166,7 +166,7 @@ const Motor = (() => {
       })
       .join("");
     if (!lines) return "";
-    return `<section class="akis-radar"><h2>bu hafta hareketlenenler <span class="cnt">radar</span></h2><div class="radar-lines">${lines}</div></section>`;
+    return `<section class="akis-radar"><h2>Bu hafta hareketlenenler <span class="cnt">radar</span></h2><div class="radar-lines">${lines}</div></section>`;
   }
 
   return { pairKey, toneWord, toneMark, radarTie, radarCountry, akisRadar, _esc: esc };

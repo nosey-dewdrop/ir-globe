@@ -21,7 +21,7 @@
   var B = (q.get("b") || "").toLowerCase().trim();
 
   function fail(msg) {
-    mount.innerHTML = '<h1>ilişki</h1><p class="lede">' + esc(msg) +
+    mount.innerHTML = '<h1>İlişki</h1><p class="lede">' + esc(msg) +
       ' <a href="ulke/index.html">Ülke dizininden</a> seçebilir ya da <a href="index.html">küreye</a> dönebilirsin.</p>';
   }
   if (!A || !B || A === B) { fail("İki farklı ülke gerekiyor."); return; }
@@ -35,7 +35,7 @@
     var ys = function (v) { var c = Math.max(-10, Math.min(10, v)); return H - P - ((c + 10) / 20) * (H - 2 * P); };
     var pts = weeks.map(function (w, i) { return xs(i).toFixed(1) + "," + ys(series[w].avg).toFixed(1); }).join(" ");
     var EN = typeof I18N !== "undefined" && I18N.isEn;
-    return '<section class="trend"><h2>' + (EN ? "relationship week to week" : "ilişki haftadan haftaya") + ' <span class="cnt">' + (EN ? "up = closer · down = tension" : "yukarı = yakınlaşma · aşağı = gerginlik") + "</span></h2>" +
+    return '<section class="trend"><h2>' + (EN ? "Relationship week to week" : "İlişki haftadan haftaya") + ' <span class="cnt">' + (EN ? "Up = closer · down = tension" : "Yukarı = yakınlaşma · aşağı = gerginlik") + "</span></h2>" +
       '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + (EN ? "weekly relationship tone line" : "haftalık ilişki tonu çizgisi") + '">' +
       '<line x1="' + P + '" y1="' + ys(0) + '" x2="' + (W - P) + '" y2="' + ys(0) + '" stroke="#d9d9d9" stroke-dasharray="3 4"/>' +
       '<polyline points="' + pts + '" fill="none" stroke="#0a2a5e" stroke-width="1.6"/>' +
@@ -49,7 +49,7 @@
     var COUNTRIES = r[0], LAYERS = r[1];
     if (!COUNTRIES[A] || !COUNTRIES[B]) { fail("Ülke bulunamadı."); return; }
     var da = COUNTRIES[A].disp || A, db = COUNTRIES[B].disp || B;
-    document.title = da + " ↔ " + db + " — kim kime ne satıyor?";
+    document.title = da + " ↔ " + db + " · Kim kime ne satıyor?";
     if (typeof Ilgi !== "undefined") Ilgi.note({ countries: [A, B], w: 1 });
 
     var keys = LAYERS.map(function (l) { return l.key; });
@@ -72,7 +72,7 @@
           var hit = (t.s === A && t.r === B) || (t.s === B && t.r === A);
           if (!hit) return;
           var num = t.exp != null ? ' <span class="pct">%' + esc(t.exp) + "</span>" : "";
-          var note = t.note ? ' — <span class="note">' + esc(t.note) + "</span>" : "";
+          var note = t.note ? ' · <span class="note">' + esc(t.note) + "</span>" : "";
           tieRows += '<li><a href="konu/' + esc(l.key) + '/">' + esc(l.label) + "</a>: " +
             esc(disp(t.s)) + " → " + esc(disp(t.r)) + num + note + "</li>";
         });
@@ -188,11 +188,11 @@
         summary +
         trend +
         (radar ? '<section class="motor-sec">' + radar + "</section>" : "") +
-        (tieRows ? "<h2>" + (EN ? "recorded ties" : "kayıtlı bağlar") + '</h2><div class="cgroup"><ul class="clist">' + tieRows + "</ul></div>" : "") +
-        (newsHtml ? "<h2>" + (EN ? "headlines" : "manşetler") + ' <span class="cnt">(' + arts.length + ")</span>" +
+        (tieRows ? "<h2>" + (EN ? "Recorded ties" : "Kayıtlı bağlar") + '</h2><div class="cgroup"><ul class="clist">' + tieRows + "</ul></div>" : "") +
+        (newsHtml ? "<h2>" + (EN ? "Headlines" : "Manşetler") + ' <span class="cnt">(' + arts.length + ")</span>" +
           (arts.length ? ' <button class="csv-btn" id="csvBtn" type="button">' + (EN ? "download CSV" : "CSV indir") + "</button>" : "") + "</h2>" +
           '<div class="pair-news">' + newsHtml + "</div>" : "") +
-        '<p class="meta" style="margin-top:24px">' + (EN ? "events and tone are auto-extracted from news and carry a margin of error — " : "olaylar ve ton haberlerden otomatik çıkarılır, hata payı vardır — ") + '<a href="metodoloji.html">' + (EN ? "methodology" : "metodoloji") + "</a>.</p>";
+        '<p class="meta" style="margin-top:24px">' + (EN ? "Events and tone are auto-extracted from news and carry a margin of error; " : "Olaylar ve ton haberlerden otomatik çıkarılır, hata payı vardır; ") + '<a href="metodoloji.html">' + (EN ? "methodology" : "metodoloji") + "</a>.</p>";
 
       /* copy-citation: click 'cite' -> publisher, "headline", date on the clipboard,
          ready to paste into a brief/story. Solves citability even though the link
@@ -223,5 +223,5 @@
         document.body.removeChild(link); URL.revokeObjectURL(url);
       });
     });
-  }).catch(function () { fail("Veri şu an yüklenemedi — birazdan tekrar dene."); });
+  }).catch(function () { fail("Veri şu an yüklenemedi. Birazdan tekrar dene."); });
 })();

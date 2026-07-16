@@ -57,7 +57,7 @@
     `<nav class="crumb"><a href="${ROOT}index.html">ana sayfa</a> › ${mid || ""}${esc(leaf)}</nav>`;
 
   /* dürüst hata-payı notu — konu/ülke sayfalarının altına biner (haber + motor içeriği var) */
-  const DISCLAIM = `<p class="disclaim">bağlantılar kaynaklı verilerden; olaylar ve haber-çıkarımı <strong>otomatik</strong> derlenir — hata payı taşır, resmi ya da kesin bir kaynak değildir.</p>`;
+  const DISCLAIM = `<p class="disclaim">Bağlantılar kaynaklı verilerden; olaylar ve haber çıkarımı <strong>otomatik</strong> derlenir. Hata payı taşır; resmi ya da kesin bir kaynak değildir.</p>`;
 
   /* motor: bu ülkenin haber ağındaki yeri (kodlanmış olaylar + graf). Ayrı
      dosyalar; yoksa bölüm hiç basılmaz — sayfa eskisi gibi çalışır. */
@@ -99,10 +99,10 @@
           const lnk = e.pub && e.title ? "https://www.google.com/search?q=" + encodeURIComponent('site:' + e.pub + ' "' + e.title + '"') : e.url;
           return `<a class="dg" href="${esc(lnk)}" target="_blank" rel="noopener"><span class="dg-t">${esc(e.title)}</span><span class="dg-m">${meta}</span></a>`;
         }).join("");
-        freshHtml = `<section class="motor-sec"><h2>${EN ? "recent developments" : "son gelişmeler"} <span class="cnt">(${EN ? "dated, sourced" : "tarihli, kaynaklı"})</span></h2><div class="fresh-list">${rows}</div></section>`;
+        freshHtml = `<section class="motor-sec"><h2>${EN ? "Recent developments" : "Son gelişmeler"} <span class="cnt">(${EN ? "dated, sourced" : "tarihli, kaynaklı"})</span></h2><div class="fresh-list">${rows}</div></section>`;
       }
     }
-    const radarHtml = radar ? `<section class="motor-sec"><h2>${EN ? "in the news" : "haber ağında"}</h2>${radar}</section>` : "";
+    const radarHtml = radar ? `<section class="motor-sec"><h2>${EN ? "In the news" : "Haber ağında"}</h2>${radar}</section>` : "";
     return freshHtml + radarHtml;
   }
 
@@ -131,7 +131,7 @@
           const pctVal = dir === "out" ? t.exp : t.imp;
           const num = pctVal != null
             ? ` <span class="pct" title="SIPRI silah transferleri 2021–2025">%${pctVal}<span class="pct-src"> ${dir === "out" ? "ihracat payı" : "ithalat payı"} · SIPRI ’21–’25</span></span>` : "";
-          const note = t.note ? ` — <span class="note">${esc(t.note)}</span>` : "";
+          const note = t.note ? ` · <span class="note">${esc(t.note)}</span>` : "";
           return `<li><a href="${ROOT}ulke/${base.slug(other)}/">${esc(base.disp(other))}</a>${num}${note} <a class="pairlink" href="${ROOT}iliski.html?a=${encodeURIComponent(name)}&amp;b=${encodeURIComponent(other)}" aria-label="ilişki sayfası: ${esc(base.disp(other))}">↔</a></li>`;
         }).join("");
         const more = arr.length > top.length ? `<li class="note">+ ${arr.length - top.length} bağ daha (küre üstünde)</li>` : "";
@@ -147,8 +147,8 @@
   <p class="meta"><a href="${ROOT}index.html">${esc(dn)}'i küre üstünde gör →</a></p>
   ${motorHtml}
   ${ties.length ? `<p class="meta"><button class="csv-btn" id="ulkeCsv" type="button">tüm bağları CSV indir</button> <span class="note">kaynaklı, tablo hazır</span></p>` : ""}
-  ${outgoing.length ? `<h2>${esc(dn)} → dünya <span class="cnt">(veren / satan)</span></h2>${block(outgoing, "out")}` : ""}
-  ${incoming.length ? `<h2>dünya → ${esc(dn)} <span class="cnt">(alan)</span></h2>${block(incoming, "in")}` : ""}
+  ${outgoing.length ? `<h2>${esc(dn)} → Dünya <span class="cnt">(veren / satan)</span></h2>${block(outgoing, "out")}` : ""}
+  ${incoming.length ? `<h2>Dünya → ${esc(dn)} <span class="cnt">(alan)</span></h2>${block(incoming, "in")}` : ""}
   ${DISCLAIM}`;
 
     // country-page CSV: pull all of this country's sourced ties as a spreadsheet
@@ -192,7 +192,7 @@
     }).join("\n");
 
     mount.innerHTML = `
-  ${crumb(layer.label, `<a href="${ROOT}konu/index.html">konular</a> › `)}
+  ${crumb(layer.label, `<a href="${ROOT}konu/index.html">Konular</a> › `)}
   <h1>${esc(soru(KEY, layer.label))}</h1>
   <p class="lede">${esc(layer.blurb)}</p>
   <p class="meta">${all.length} yönlü bağ${all.length > ties.length ? ` · en büyük ${ties.length} tanesi aşağıda` : ""} · <a href="${ROOT}index.html">küre üstünde gör →</a></p>
@@ -215,7 +215,7 @@
     }).join("\n");
     mount.innerHTML = `
   ${crumb("konular")}
-  <h1>konular</h1>
+  <h1>Konular</h1>
   <p class="lede">Silahtan tahıla, enerjiden yaptırıma: dünyanın ilişki ağını katman katman gez.</p>
   <section class="tlist">${rows}</section>`;
   }
@@ -229,9 +229,9 @@
       `<a class="ulink" href="${ROOT}ulke/${base.slug(n)}/">${esc(base.disp(n))} <span class="cnt">${cnt[n] || 0}</span></a>`).join("\n");
     mount.innerHTML = `
   ${crumb("ülkeler")}
-  <h1>ülkeler</h1>
+  <h1>Ülkeler</h1>
   <p class="lede">Her ülkenin dünyayla kurduğu silah, ticaret, enerji ve diğer bağların tam listesi. <span class="meta">(${names.length} ülke)</span></p>
-  <p class="ufilter-row"><input type="text" id="ufilter" placeholder="ülke ara…" aria-label="ülke ara" autocomplete="off"></p>
+  <p class="ufilter-row"><input type="text" id="ufilter" placeholder="Ülke ara…" aria-label="Ülke ara" autocomplete="off"></p>
   <section class="uwall">${links}</section>`;
     const inp = mount.querySelector("#ufilter");
     const cards = [...mount.querySelectorAll(".ulink")];
@@ -245,6 +245,6 @@
   loadBase()
     .then((base) => ({ ulke, konu, "konu-index": konuIndex, "ulke-index": ulkeIndex }[VIEW] || (() => {}))(base))
     .catch(() => {
-      mount.innerHTML = `<p class="lede">Veri yüklenemedi — <a href="${ROOT}index.html">küreden devam et →</a></p>`;
+      mount.innerHTML = `<p class="lede">Veri yüklenemedi. <a href="${ROOT}index.html">Küreden devam et →</a></p>`;
     });
 })();

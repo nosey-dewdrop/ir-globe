@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>üyelik — kim kime ne satıyor?</title>
+<title>Üyelik · Kim kime ne satıyor?</title>
 <meta name="description" content="Üye ol, kendi akışını kur: takip ettiğin ülke ve konulardan kişisel brifing. Bir nosey-dewdrop yayını.">
 <link rel="canonical" href="https://ir-globe.noseydewdrop.com/app.html">
 <meta name="robots" content="noindex,follow">
@@ -15,20 +15,20 @@
 <body>
 
 <header class="topbar">
-  <a class="brand" href="index.html">kim kime ne satıyor?</a>
+  <a class="brand" href="index.html">Kim kime ne satıyor?</a>
   <nav class="topnav">
-    <a href="index.html">küre</a>
-    <a href="akis.html">akış</a>
-    <a href="konu/index.html">konular</a>
-    <a href="ulke/index.html">ülkeler</a>
-    <a href="app.html#benim">benim akışım</a>
+    <a href="index.html">Küre</a>
+    <a href="akis.html">Akış</a>
+    <a href="konu/index.html">Konular</a>
+    <a href="ulke/index.html">Ülkeler</a>
+    <a href="app.html#benim">Benim akışım</a>
   </nav>
 </header>
 
 <div id="view"></div>
 
 <footer class="docfoot">
-  <p>bağımsız · açık · kaynaklı · bir <span class="sig">nosey-dewdrop</span> yayını · <a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></p>
+  <p>Bağımsız · Açık · Kaynaklı · Bir <span class="sig">nosey-dewdrop</span> yayını · <a href="gizlilik.html">Gizlilik</a> · <a href="kosullar.html">Koşullar</a></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -41,18 +41,18 @@
 (function () {
   const VIEWS = {
     uye: {
-      title: "üyelik — kim kime ne satıyor?",
+      title: "Üyelik · Kim kime ne satıyor?",
       html: '<main class="center"><div class="center-in">' +
-            '<h1 class="serif">kendi akışını kur</h1>' +
+            '<h1 class="serif">Kendi akışını kur</h1>' +
             '<p class="pitchlede">Ülke ve konu seç; anasayfan sana özel aksın. Takip ettiklerinde gelişme olunca kürende işaretlenir, kişisel akışın hep güncel kalır. Gerçek veri, gürültü yok.</p>' +
-            '<div class="authbox" id="auth"><p class="loading">yükleniyor…</p></div>' +
+            '<div class="authbox" id="auth"><p class="loading">Yükleniyor…</p></div>' +
             '</div></main>',
-      js: ["js/store.js?v=48", "js/takip.js?v=1", "js/auth.js?v=5"],
+      js: ["js/store.js?v=48", "js/takip.js?v=1", "js/auth.js?v=125"],
     },
     benim: {
-      title: "benim akışım — kim kime ne satıyor?",
-      html: '<main class="wrap"><div id="app"><p class="loading">yükleniyor…</p></div></main>',
-      js: ["js/store.js?v=48", "js/takip.js?v=1", "js/benim.js?v=4"],
+      title: "Benim akışım · Kim kime ne satıyor?",
+      html: '<main class="wrap"><div id="app"><p class="loading">Yükleniyor…</p></div></main>',
+      js: ["js/store.js?v=48", "js/takip.js?v=1", "js/benim.js?v=125"],
     },
   };
   const name = (location.hash || "#uye").slice(1).split("?")[0];

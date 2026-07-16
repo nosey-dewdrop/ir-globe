@@ -25,18 +25,18 @@ const TODAY = new Date().toISOString().slice(0, 10);
 
 /* layer identity — labels from js/main.js, blurbs from scripts/build-seo.js (now canonical here) */
 const LAYERS = [
-  { key: "silah", label: "silah", blurb: "Kim kime silah satıyor. Yüzdeler SIPRI'nin 2021-25 dönemine ait uluslararası silah transferi verisinden birebir alındı." },
-  { key: "ticaret", label: "ticaret", blurb: "Ülkeler arası mal ticaretinin en büyük ikili hatları — kimin ihracatı kime dayanıyor." },
-  { key: "enerji", label: "enerji", blurb: "Petrol, doğalgaz ve LNG akışları: hangi ülke enerjisini kime satıyor, kim kime bağımlı." },
-  { key: "tahil", label: "tahıl & gıda", blurb: "Buğday, mısır ve temel gıdanın ihracat hatları — dünyanın gıda güvenliği kimlere bağlı." },
-  { key: "ittifak", label: "ittifaklar", blurb: "Savunma ve güvenlik ittifakları: kim kiminle aynı masada, hangi taahhüt kimi bağlıyor." },
-  { key: "yaptirim", label: "yaptırımlar", blurb: "Kim kime yaptırım uyguluyor — ekonomik baskının yönlü haritası." },
-  { key: "goc", label: "göç & mülteci", blurb: "Büyük göç ve mülteci hareketleri: insanlar hangi ülkeden hangisine akıyor." },
-  { key: "borc", label: "borç & kredi", blurb: "Devletlerarası kredi ve borç ilişkileri — kim kimin alacaklısı, kim kime borçlu." },
-  { key: "diplomasi", label: "diplomasi", blurb: "Stratejik ortaklıklar ve diplomatik hizalanmalar: kim kime yakın duruyor." },
-  { key: "teknoloji", label: "teknoloji & çip", blurb: "Yarı iletken, çip ve kritik teknoloji tedariki — kim kimin üretim zincirinde." },
-  { key: "us", label: "askeri üsler", blurb: "Yabancı askeri üsler: hangi ülke nerede asker konuşlandırıyor." },
-  { key: "yardim", label: "dış yardım", blurb: "Kalkınma ve insani yardım akışları — kim kime yardım gönderiyor." },
+  { key: "silah", label: "Silah", blurb: "Kim kime silah satıyor. Yüzdeler SIPRI'nin 2021-25 dönemine ait uluslararası silah transferi verisinden birebir alındı." },
+  { key: "ticaret", label: "Ticaret", blurb: "Ülkeler arası mal ticaretinin en büyük ikili hatları: kimin ihracatı kime dayanıyor." },
+  { key: "enerji", label: "Enerji", blurb: "Petrol, doğalgaz ve LNG akışları: hangi ülke enerjisini kime satıyor, kim kime bağımlı." },
+  { key: "tahil", label: "Tahıl & gıda", blurb: "Buğday, mısır ve temel gıdanın ihracat hatları: dünyanın gıda güvenliği kimlere bağlı." },
+  { key: "ittifak", label: "İttifaklar", blurb: "Savunma ve güvenlik ittifakları: kim kiminle aynı masada, hangi taahhüt kimi bağlıyor." },
+  { key: "yaptirim", label: "Yaptırımlar", blurb: "Kim kime yaptırım uyguluyor? Ekonomik baskının yönlü haritası." },
+  { key: "goc", label: "Göç & mülteci", blurb: "Büyük göç ve mülteci hareketleri: insanlar hangi ülkeden hangisine akıyor." },
+  { key: "borc", label: "Borç & kredi", blurb: "Devletlerarası kredi ve borç ilişkileri: kim kimin alacaklısı, kim kime borçlu." },
+  { key: "diplomasi", label: "Diplomasi", blurb: "Stratejik ortaklıklar ve diplomatik hizalanmalar: kim kime yakın duruyor." },
+  { key: "teknoloji", label: "Teknoloji & çip", blurb: "Yarı iletken, çip ve kritik teknoloji tedariki: kim kimin üretim zincirinde." },
+  { key: "us", label: "Askeri üsler", blurb: "Yabancı askeri üsler: hangi ülke nerede asker konuşlandırıyor." },
+  { key: "yardim", label: "Dış yardım", blurb: "Kalkınma ve insani yardım akışları: kim kime yardım gönderiyor." },
 ];
 
 function write(rel, obj) {
@@ -55,7 +55,7 @@ SUPPLIERS.forEach((sup) => sup.to.forEach(([r, pct]) => { tie(sup.c, r).exp = pc
 RECIPIENTS.forEach((rec) => rec.from.forEach(([s, pct]) => { tie(s, rec.c).imp = pct; }));
 write("data/layers/silah.json", {
   key: "silah",
-  label: "silah",
+  label: "Silah",
   source: { name: "SIPRI arms transfers database", url: SOURCES.silah.url, year: "2021–25", license: "SIPRI fact sheet, March 2026" },
   updated: TODAY,
   shares: {

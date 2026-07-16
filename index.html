@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>kim kime ne satıyor? — dünyanın ilişki ağı</title>
+<title>Kim kime ne satıyor? Dünyanın ilişki ağı</title>
 <meta name="description" content="Ülkeler arası silah, tahıl, enerji, para ve teknoloji bağlarının interaktif küresi. Gerçek, kaynaklı veri; 6 saatte bir tazelenen haber.">
 <link rel="canonical" href="https://ir-globe.noseydewdrop.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="kim kime ne satıyor? — dünyanın ilişki ağı">
-<meta property="og:description" content="Ülkeler arası ilişki ağının interaktif küresi — gerçek, kaynaklı veri.">
+<meta property="og:title" content="Kim kime ne satıyor? Dünyanın ilişki ağı">
+<meta property="og:description" content="Ülkeler arası ilişki ağının interaktif küresi; gerçek, kaynaklı veri.">
 <meta property="og:url" content="https://ir-globe.noseydewdrop.com/">
-<meta property="og:site_name" content="kim kime ne satıyor?">
+<meta property="og:site_name" content="Kim kime ne satıyor?">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index,follow">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "kim kime ne satıyor?",
+  "name": "Kim kime ne satıyor?",
   "url": "https://ir-globe.noseydewdrop.com/",
-  "description": "Ülkeler arası ilişki ağının interaktif küresi — gerçek, kaynaklı veri.",
+  "description": "Ülkeler arası ilişki ağının interaktif küresi; gerçek, kaynaklı veri.",
   "publisher": { "@type": "Organization", "name": "nosey-dewdrop", "url": "https://noseydewdrop.com" }
 }
 </script>
@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=124">
+<link rel="stylesheet" href="css/style.css?v=125">
 <!-- küre verisini tarayıcı boş kalınca sessizce indir — initGlobe cache'ten bulur -->
 <link rel="prefetch" href="data/countries.geojson?v=6">
 </head>
@@ -39,20 +39,20 @@
 <section class="page jn">
   <div class="jn-in">
     <header class="mast hero-mast">
-      <h1>kim kime ne satıyor?</h1>
+      <h1>Kim kime ne satıyor?</h1>
       <span class="mast-fresh" id="fresh"></span>
     </header>
     <div class="hero-grid">
       <div class="hero-lead">
-        <p class="bhead">silah, tahıl, para, enerji. gerçek akışlar, gerçek başlıklar.</p>
-        <p class="btext">ülkeler arası bağların canlı haritası: 13 katman, kaynaklı veri, 6 saatte bir tazelenen haber. filtre yok, yorum yok — kim kime ne satıyor, veriyor, kesiyor; kaynağıyla.</p>
+        <p class="bhead">Silah, tahıl, para, enerji. Gerçek akışlar, gerçek başlıklar.</p>
+        <p class="btext">Ülkeler arası bağların canlı haritası: 13 katman, kaynaklı veri, 6 saatte bir tazelenen haber. Filtre yok, yorum yok. Kim kime ne satıyor, veriyor, kesiyor; kaynağıyla.</p>
         <form class="hero-search" id="heroSearch" role="search" autocomplete="off">
-          <input type="text" id="heroQ" list="heroCountries" placeholder="bir ülke ara — ya da iki ülke: iran, abd" aria-label="ülke ara">
+          <input type="text" id="heroQ" list="heroCountries" placeholder="Bir ülke ara ya da iki ülke yaz: İran, ABD" aria-label="Ülke ara">
           <datalist id="heroCountries"></datalist>
-          <button type="submit" aria-label="git">→</button>
+          <button type="submit" aria-label="Git">→</button>
         </form>
-        <p class="bfine cta-line"><a class="jn-cta" href="app.html#uye">hesap aç →</a></p>
-        <p class="bfine">üyelikle ülke ve konu takip edersin; akışın ve bültenin sana göre örülür. önce <a href="akis.html">genel akışa bak</a>.</p>
+        <p class="bfine cta-line"><a class="jn-cta" href="app.html#uye">Hesap aç →</a></p>
+        <p class="bfine">Üyelikle ülke ve konu takip edersin; akışın ve bültenin sana göre örülür. Önce <a href="akis.html">genel akışa bak</a>.</p>
       </div>
       <aside class="hero-side">
         <div class="hero-spikes" id="heroSpikes" aria-live="polite"></div>
@@ -65,10 +65,10 @@
 
 <!-- SAYFA 2 — KÜRE: kategoriler + dönen küre -->
 <section class="page gl">
-  <nav id="layers" aria-label="katmanlar"></nav>
+  <nav id="layers" aria-label="Katmanlar"></nav>
   <main class="stage">
     <aside class="col left"><div id="story"></div><div id="detail"></div></aside>
-    <div id="globe" role="img" aria-label="ülkeler arası ilişki ağını gösteren interaktif dünya küresi"></div>
+    <div id="globe" role="img" aria-label="Ülkeler arası ilişki ağını gösteren interaktif dünya küresi"></div>
     <p class="sr-only">İnteraktif küre: ülkeler arası silah, ticaret, enerji ve diğer bağların haritası. Üstteki katman düğmeleriyle konu değiştir; sol paneldeki hikâye ve haberler seçtiğin bağı/ülkeyi anlatır. Tam liste için <a href="konu/index.html">konular</a> ve <a href="ulke/index.html">ülkeler</a> sayfaları klavyeyle gezilebilir.</p>
     <div id="cards"></div>
   </main>
@@ -77,23 +77,23 @@
 <!-- BÖLÜM 3 — NASIL ÇALIŞIYOR: üç adım, motorun kendisi anlatılır -->
 <section class="strip" id="nasil">
   <div class="strip-in">
-    <p class="kick">nasıl çalışıyor</p>
-    <h2 class="strip-h">bir dil modeline sarılmış arayüz değil — motorun kendisi</h2>
+    <p class="kick">Nasıl çalışıyor?</p>
+    <h2 class="strip-h">Bir dil modeline sarılmış arayüz değil, motorun kendisi</h2>
     <div class="steps">
       <div class="step">
         <span class="step-no">1</span>
-        <h3>haberler toplanır</h3>
-        <p>6 saatte bir binlerce gerçek makale açık kaynaklardan çekilir. hiçbir başlık uydurma değildir; her birinin kaynağı tıklanır.</p>
+        <h3>Haberler toplanır</h3>
+        <p>6 saatte bir binlerce gerçek makale açık kaynaklardan çekilir. Hiçbir başlık uydurma değildir; her birinin kaynağı tıklanır.</p>
       </div>
       <div class="step">
         <span class="step-no">2</span>
-        <h3>motor ilişkiyi çıkarır</h3>
-        <p>deterministik çıkarım motoru her başlıktan "kim, kime, ne yaptı"yı kodlar; ML yalnızca aynı olayı anlatan başlıkları gruplar. <strong>ML asla metin üretmez.</strong></p>
+        <h3>Motor ilişkiyi çıkarır</h3>
+        <p>Deterministik çıkarım motoru her başlıktan "kim, kime, ne yaptı"yı kodlar; ML yalnızca aynı olayı anlatan başlıkları gruplar. <strong>ML asla metin üretmez.</strong></p>
       </div>
       <div class="step">
         <span class="step-no">3</span>
-        <h3>küre ve sayfalar örülür</h3>
-        <p>çıkan bağlar küreyi, ülke sayfalarını, ikili ilişki sayfalarını ve kişisel akışını besler. iki ülke arasında bu hafta ne değişti — tek bakışta.</p>
+        <h3>Küre ve sayfalar örülür</h3>
+        <p>Çıkan bağlar küreyi, ülke sayfalarını, ikili ilişki sayfalarını ve kişisel akışını besler. İki ülke arasında bu hafta ne değişti? Tek bakışta.</p>
       </div>
     </div>
   </div>
@@ -103,12 +103,12 @@
 <section class="strip alt" id="kanit">
   <div class="strip-in split">
     <div>
-      <p class="kick">söz değil, ölçüm</p>
-      <h2 class="strip-h">doğruluğunu yayınlayan bir motor</h2>
+      <p class="kick">Söz değil, ölçüm</p>
+      <h2 class="strip-h">Doğruluğunu yayınlayan bir motor</h2>
     </div>
     <div>
-      <p class="strip-p">otomatik çıkarım hata payı taşır — hata payı saklanmaz, ölçülür ve yayınlanır: motor çıktısı elle denetlenen örneklemde <strong>%87 doğru</strong>; her tazelemeyi <strong>62 otomatik test</strong> bekler; her bağın altında kaynağı durur. yöntemin tamamı açık: <a href="metodoloji.html">metodoloji &amp; doğruluk</a> · <a href="veri.html">kaynaklar</a>.</p>
-      <p class="strip-p disclaim-inline">olaylar ve radar haberlerden <strong>otomatik çıkarılır</strong> — resmi ya da kesin bir kaynak değildir.</p>
+      <p class="strip-p">Otomatik çıkarım hata payı taşır. Hata payı saklanmaz, ölçülür ve yayınlanır: motor çıktısı elle denetlenen örneklemde <strong>%87 doğru</strong>; her tazelemeyi <strong>62 otomatik test</strong> bekler; her bağın altında kaynağı durur. Yöntemin tamamı açık: <a href="metodoloji.html">Metodoloji ve doğruluk</a> · <a href="veri.html">Kaynaklar</a>.</p>
+      <p class="strip-p disclaim-inline">Olaylar ve radar haberlerden <strong>otomatik çıkarılır</strong>; resmi ya da kesin bir kaynak değildir.</p>
     </div>
   </div>
 </section>
@@ -117,16 +117,16 @@
 <section class="strip close2">
   <div class="strip-in split">
     <div>
-      <p class="bhead">gerçek, kaynaklı, 6 saatte bir taze</p>
+      <p class="bhead">Gerçek, kaynaklı, 6 saatte bir taze.</p>
       <p class="countdown" id="countdown"></p>
     </div>
     <div class="close-cta">
-      <p class="bfine"><a class="jn-cta" href="app.html#uye">hesap aç →</a></p>
+      <p class="bfine"><a class="jn-cta" href="app.html#uye">Hesap aç →</a></p>
     </div>
   </div>
   <footer>
-    <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="app.html#uye">üyelik</a> · <a href="metodoloji.html">metodoloji &amp; doğruluk</a> · <a href="veri.html">kaynaklar</a> · <a href="surum.html">sürüm notları</a> · <a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · her bağın kaynağı tıklanır · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v124</span></span>
+    <span class="foot-nav"><a href="akis.html">Akış</a> · <a href="bulten.html">Bülten</a> · <a href="konu/index.html">Konular</a> · <a href="ulke/index.html">Ülkeler</a> · <a href="app.html#uye">Üyelik</a> · <a href="metodoloji.html">Metodoloji ve doğruluk</a> · <a href="veri.html">Kaynaklar</a> · <a href="surum.html">Sürüm notları</a> · <a href="gizlilik.html">Gizlilik</a> · <a href="kosullar.html">Koşullar</a></span>
+    <span class="foot-src">Kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak ve Google News · her bağın kaynağı tıklanır · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v125</span></span>
   </footer>
 </section>
 
@@ -136,9 +136,9 @@
 <script src="admin/config.js"></script>
 <script src="js/store.js?v=69"></script>
 <script src="js/ilgi.js?v=71"></script>
-<script src="js/motor.js?v=120"></script>
+<script src="js/motor.js?v=125"></script>
 <script src="js/ara.js?v=120"></script>
-<script src="js/main.js?v=124"></script>
+<script src="js/main.js?v=125"></script>
 <script>
 /* bölümler görünür olunca içerik belirir (.in) — kaydırma NATIVE: tekerlek/momentum
    kilidi kaldırıldı (göz ve el yoran "sayfa kaçırma"nın kaynağıydı), hafif snap CSS'te */
@@ -173,7 +173,7 @@
     if (cd && nm.updated) {
       var mins = Math.max(0, Math.round((new Date() - new Date(nm.updated)) / 60000));
       var ago = mins < 60 ? mins + " dakika" : Math.round(mins / 60) + " saat";
-      cd.textContent = "haberler 6 saatte bir tazelenir · son tazeleme " + ago + " önce";
+      cd.textContent = "Haberler 6 saatte bir tazelenir. Son tazeleme " + ago + " önce.";
     }
   }).catch(function () {});
   function render(art, conn, ulke, katman) {
@@ -212,7 +212,7 @@
     if (silah && silah.shares && silah.shares.sup) {
       var top = Object.keys(silah.shares.sup).map(function (k) { return [k, silah.shares.sup[k]]; })
         .sort(function (a, b) { return b[1] - a[1]; })[0];
-      if (top) factHtml = '<p class="hero-fact"><strong>' + disp(top[0]) + '</strong> dünya silah ihracatının <strong>%' + top[1] + "</strong>'ini tek başına yapıyor. <span class=\"hero-fact-src\">(SIPRI)</span></p>";
+      if (top) factHtml = '<p class="hero-fact"><strong>' + disp(top[0]) + '</strong>, dünya silah ihracatında tek başına <strong>%' + top[1] + "</strong> paya sahip. <span class=\"hero-fact-src\">(SIPRI)</span></p>";
     }
 
     var spikes = (g.spikes || []).slice(0, 3);
@@ -221,9 +221,9 @@
       var dir = s.avg < 0 ? "sertleşti" : "yakınlaştı";
       return '<a class="spike" href="iliski.html?a=' + encodeURIComponent(p[0]) + '&b=' + encodeURIComponent(p[1]) + '">' +
         '<span class="spike-pair">' + disp(p[0]) + ' ↔ ' + disp(p[1]) + '</span>' +
-        '<span class="spike-tag">bu hafta ' + dir + ' · ' + s.n + ' olay</span></a>';
+        '<span class="spike-tag">Bu hafta ' + dir + ' · ' + s.n + ' olay</span></a>';
     }).join("");
-    host.innerHTML = factHtml + (rows ? '<p class="spike-lead">bu hafta en çok hareketlenenler</p>' + rows : "");
+    host.innerHTML = factHtml + (rows ? '<p class="spike-lead">Bu hafta en çok hareketlenenler</p>' + rows : "");
   }).catch(function () {});
 })();
 
@@ -285,7 +285,7 @@
     var f = JSON.parse(localStorage.getItem("irglobe.follows.v1") || "null");
     if (!f || !f.n) return;
     document.querySelectorAll(".jn-cta").forEach(function (a) {
-      a.textContent = "akışın →";
+      a.textContent = "Akışın →";
       a.setAttribute("href", "app.html#benim");
     });
   } catch (e) {}

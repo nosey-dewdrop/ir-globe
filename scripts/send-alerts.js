@@ -30,13 +30,13 @@ const { ready, fetchUsers, loadArticles, personalArticles, renderEmail, send } =
       .slice(0, 10);
     if (!items.length) { skipped++; continue; }
     const html = renderEmail({
-      heading: "takibinde önemli bir gelişme var",
+      heading: "Takibinde önemli bir gelişme var",
       intro: `Takip ettiklerinde bugün eşiği geçen ${items.length} gelişme oldu.`,
       items, labels,
       unsubToken: u.unsub_token, what: "alerts",
     });
     try {
-      await send(u.email, `takibinde bugün ${items.length} gelişme — kim kime ne satıyor?`, html);
+      await send(u.email, `Takibinde bugün ${items.length} gelişme · Kim kime ne satıyor?`, html);
       sent++;
     } catch (e) {
       failed++;

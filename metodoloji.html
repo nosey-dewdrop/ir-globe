@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>metodoloji — kim kime ne satıyor?</title>
-<meta name="description" content="Veriyi nasıl derliyoruz, olayları nasıl çıkarıyoruz, ne kadar yanılıyoruz: ölçülmüş hata paylarıyla, açık metodoloji.">
+<title>Metodoloji · Kim kime ne satıyor?</title>
+<meta name="description" content="Veri nasıl derlenir, olaylar nasıl çıkarılır, hata payı ne kadar? Ölçülmüş hata paylarıyla açık metodoloji.">
 <link rel="canonical" href="https://ir-globe.noseydewdrop.com/metodoloji.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="metodoloji — kim kime ne satıyor?">
-<meta property="og:description" content="Veriyi nasıl derliyoruz, olayları nasıl çıkarıyoruz, ne kadar yanılıyoruz: ölçülmüş hata paylarıyla, açık metodoloji.">
+<meta property="og:title" content="Metodoloji · Kim kime ne satıyor?">
+<meta property="og:description" content="Veri nasıl derlenir, olaylar nasıl çıkarılır, hata payı ne kadar? Ölçülmüş hata paylarıyla açık metodoloji.">
 <meta property="og:url" content="https://ir-globe.noseydewdrop.com/metodoloji.html">
-<meta property="og:site_name" content="kim kime ne satıyor?">
+<meta property="og:site_name" content="Kim kime ne satıyor?">
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,45 +21,45 @@
 <body>
 
 <header class="topbar">
-  <a class="brand" href="index.html">kim kime ne satıyor?</a>
+  <a class="brand" href="index.html">Kim kime ne satıyor?</a>
   <nav class="topnav">
-    <a href="index.html">küre</a>
-    <a href="akis.html">akış</a>
-    <a href="konu/index.html">konular</a>
-    <a href="ulke/index.html">ülkeler</a>
-    <a href="app.html#uye">üyelik</a>
+    <a href="index.html">Küre</a>
+    <a href="akis.html">Akış</a>
+    <a href="konu/index.html">Konular</a>
+    <a href="ulke/index.html">Ülkeler</a>
+    <a href="app.html#uye">Üyelik</a>
   </nav>
 </header>
 
 <main class="wrap">
-  <nav class="crumb"><a href="index.html">ana sayfa</a> › metodoloji</nav>
-  <h1>metodoloji</h1>
-  <p class="lede">Nasıl sayıyoruz, nasıl çıkarıyoruz ve ne kadar yanılıyoruz. Bu sayfa pazarlama değil, ölçüm raporudur; hata paylarımız dahil her şey burada açıktır.</p>
+  <nav class="crumb"><a href="index.html">Ana sayfa</a> › Metodoloji</nav>
+  <h1>Metodoloji</h1>
+  <p class="lede">Nasıl sayılır, nasıl çıkarılır ve ne kadar yanılır? Bu sayfa pazarlama değil, ölçüm raporudur; hata payları dahil her şey burada açıktır.</p>
 
-  <h2>iki tür bilgi gösteriyoruz, ikisi aynı şey değil</h2>
+  <h2>İki tür bilgi var ve ikisi aynı şey değil</h2>
   <div class="cgroup">
     <ul class="clist">
       <li><strong>Yapısal katmanlar</strong> (silah, dış yardım, diplomasi, tahıl, kablo...): resmi ve açık veri setlerinden otomatik derlenir ya da kamu kayıtlarından elle küratörlüdür. Her katmanın kaynağı, yılı ve lisansı <a href="veri.html">veri sayfasında</a> tek tek yazar. Uydurma bağlantı yoktur; kaynağı olmayan bağ yayınlanmaz.</li>
       <li><strong>Olaylar ve radar</strong> ("olay radarı", "bu hafta hareketlenenler", ton skorları): gerçek haber başlıklarından <strong>algoritmayla, otomatik</strong> çıkarılır. Bu çıkarım hata payı taşır ve arayüzde her zaman "haberlerden otomatik çıkarıldı" etiketiyle gezer. Resmi veri değildir, motor tahminidir.</li>
-      <li><strong>Göç ayrı tutulur:</strong> mülteci hareketi bir ülkenin diğerine yaptığı seçilmiş bir eylem değil, yapısal bir sonuçtur; onu yönlü bir "şu ülke şuna gönderdi" oku olarak çizmek yanlış olur. Bu yüzden göç başlıklarından ok üretmiyoruz — göç yalnızca kaynaklı bir haber listesi olarak durur.</li>
+      <li><strong>Göç ayrı tutulur:</strong> mülteci hareketi bir ülkenin diğerine yaptığı seçilmiş bir eylem değil, yapısal bir sonuçtur; onu yönlü bir "şu ülke şuna gönderdi" oku olarak çizmek yanlış olur. Bu yüzden göç başlıklarından ok üretilmez; göç yalnızca kaynaklı bir haber listesi olarak durur.</li>
     </ul>
   </div>
 
-  <h2>motor nasıl çalışıyor</h2>
-  <p class="lede" style="font-size:15px">Olay çıkarımını büyük dil modeli olmadan, tümüyle deterministik bir motor yapar: aynı başlık her koşuda aynı sonucu verir. Motor üç adımdan oluşur: aktör tanıma (ülke adları, başkentler, liderler, halk adları), olay kodlama (siyaset biliminin CAMEO şeması; her olay tipi −10 çatışma ile +10 işbirliği arasında bir skor taşır) ve yön çözümü (özne-nesne, pasif çatı, bağlaç grupları). Motor emin olmadığı başlığı <strong>kodlamaz</strong>; eksik bırakmayı yanlış iddiaya tercih ederiz.</p>
+  <h2>Motor nasıl çalışıyor?</h2>
+  <p class="lede" style="font-size:15px">Olay çıkarımını büyük dil modeli olmadan, tümüyle deterministik bir motor yapar: aynı başlık her koşuda aynı sonucu verir. Motor üç adımdan oluşur: aktör tanıma (ülke adları, başkentler, liderler, halk adları), olay kodlama (siyaset biliminin CAMEO şeması; her olay tipi −10 çatışma ile +10 işbirliği arasında bir skor taşır) ve yön çözümü (özne-nesne, pasif çatı, bağlaç grupları). Motor emin olmadığı başlığı <strong>kodlamaz</strong>; eksik bırakmak yanlış iddiaya tercih edilir.</p>
 
-  <h2>ne kadar yanılıyoruz (ölçülmüş, 13 temmuz 2026)</h2>
+  <h2>Ne kadar yanılıyor? (Ölçülmüş, 13 Temmuz 2026)</h2>
   <div class="cgroup">
     <ul class="clist">
-      <li><strong>Kapsam:</strong> motor, işlediği İngilizce başlıkların yaklaşık <strong>%30'unu</strong> güvenle olaya çevirebiliyor; bunların da güven eşiğini geçen kısmı, yani <strong>başlıkların ~%13'ü</strong>, küreye ok olarak çizilir. Yani "her gün okunan binlerce başlık"ın hepsi küreye düşmez — yalnızca motorun emin olduğu, kaynağı tıklanabilir bir azınlık düşer. Gerisi bilerek boş bırakılır; radar eksik olabilir ama uydurmaz.</li>
-      <li><strong>Doğruluk:</strong> küreye yalnızca yeterli güven eşiğini geçen bağlar çizilir. Gösterilen bağlardan rastgele çekilen örneklemler elle denetlendiğinde çoğunluğu doğru yön ve doğru bağlamla çıkıyor; ölçüm örnekleme göre kabaca <strong>%70–85</strong> aralığında ve motor sıkılaştıkça yükseliyor. Kalan hatalar tipik olarak yanlış yön, mekân ülkesinin taraf sanılması ya da başlığın ikincil bir kelimesine takılma. Her bulunan hata kalıbı motora yeni bir kural olarak geri döner. Kusursuz değil — ama tek bir okun bile arkasında gerçek bir başlık var; kaynağına tıklayıp kendin okuyabilirsin. İddia değil, kanıt sunar.</li>
+      <li><strong>Kapsam:</strong> motor, işlediği İngilizce başlıkların yaklaşık <strong>%30'unu</strong> güvenle olaya çevirebiliyor; bunların da güven eşiğini geçen kısmı, yani <strong>başlıkların ~%13'ü</strong>, küreye ok olarak çizilir. Yani "her gün okunan binlerce başlık"ın hepsi küreye düşmez; yalnızca motorun emin olduğu, kaynağı tıklanabilir bir azınlık düşer. Gerisi bilerek boş bırakılır; radar eksik olabilir ama uydurmaz.</li>
+      <li><strong>Doğruluk:</strong> küreye yalnızca yeterli güven eşiğini geçen bağlar çizilir. Gösterilen bağlardan rastgele çekilen örneklemler elle denetlendiğinde çoğunluğu doğru yön ve doğru bağlamla çıkıyor; ölçüm örnekleme göre kabaca <strong>%70–85</strong> aralığında ve motor sıkılaştıkça yükseliyor. Kalan hatalar tipik olarak yanlış yön, mekân ülkesinin taraf sanılması ya da başlığın ikincil bir kelimesine takılma. Her bulunan hata kalıbı motora yeni bir kural olarak geri döner. Kusursuz değildir; ama tek bir okun bile arkasında gerçek bir başlık vardır. Kaynağına tıklayıp kendin okuyabilirsin. İddia değil, kanıt sunar.</li>
       <li><strong>Hikaye birleştirme (ML):</strong> aynı hikayeyi farklı kelimelerle yazan başlıkları bir sinir ağı kodlayıcısı eşler. Eşik değeri his ile değil ölçümle seçildi; ölçülen yanlış birleştirme oranı <strong>%0.35</strong>. Model hiçbir aşamada metin üretmez: yalnızca gerçek başlıkları seçer ve gruplar. Eğitim verisini de motorun kendi kodlamaları üretir; elle etiket ve dış servis yoktur.</li>
       <li><strong>Tazelik:</strong> bağlar yalnızca güncel başlıklardan kurulur; son altı ayın dışında kalan haberler ilişki üretmez, çünkü bu bir güncel ilişki küresidir. Aynı olayı birden çok kaynak yazdıysa tekilleştirilir; kaynaklar yönde çelişirse çoğunluk esas alınır.</li>
     </ul>
   </div>
   <p class="lede" style="font-size:15px">Bu sayılar motor her önemli değişiklik geçirdiğinde yeniden ölçülür ve bu sayfada güncellenir. Sayfanın en altındaki sürüm etiketi hangi sürümü okuduğunu gösterir.</p>
 
-  <h2>neyi asla yapmayız</h2>
+  <h2>Asla yapılmayanlar</h2>
   <div class="cgroup">
     <ul class="clist">
       <li>Veri uydurmak. Kaynağı olmayan bağ, doğrulanamayan sayı, üretilmiş cümle yayınlanmaz.</li>
@@ -68,7 +68,7 @@
     </ul>
   </div>
 
-  <h2>asıl iş: neyi ÇİZMİYORUZ, işte orada</h2>
+  <h2>Asıl iş, neyin çizilmediğinde saklı</h2>
   <p class="lede" style="font-size:15px">GDELT gibi dev olay veritabanları saniyede binlerce satır üretir; ama o satırların çoğu bir insan için okunamaz, çünkü kimse hangisinin yanlış olduğunu söylemez. Bu motorun asıl değeri bağ kurmak değil, <strong>emin olmadığı bağı reddetmek</strong>. 60'tan fazla kural yalnızca "bunu çizme" der. Örnekler, hepsi gerçek başlıklardan:</p>
   <div class="cgroup">
     <ul class="clist">
@@ -77,27 +77,27 @@
       <li><strong>"Trump'ın Çin'in Venezuela yatırımını memnuniyetle karşılaması"</strong> → üçüncü ülke, ABD–Çin bağı değildir.</li>
       <li><strong>"Almanya NATO görevi altında Türkiye'ye Patriot konuşlandırıyor"</strong> → müttefiki korumak, tehdit değil.</li>
       <li><strong>"İran savaşı Brezilya ihracatını tehdit ediyor"</strong> → durum bir kurbanı vuruyor, İran Brezilya'yı hedef almıyor.</li>
-      <li>Soru başlıkları ("Trump ticareti kesebilir mi?"), analiz yazıları, mekân ülkeleri ("Türkiye'de buluştular"), etiket yığınları — hiçbiri ok üretmez.</li>
+      <li>Soru başlıkları ("Trump ticareti kesebilir mi?"), analiz yazıları, mekân ülkeleri ("Türkiye'de buluştular"), etiket yığınları: hiçbiri ok üretmez.</li>
     </ul>
   </div>
-  <p class="lede" style="font-size:15px">GDELT'i kapsamda yenmeye çalışmıyoruz ve asla iddia etmeyiz; o çok daha fazla olay yutar. Ama okunabilir, insanın kullanabileceği temiz başlık diliminde ir-globe bir oku yalnızca <strong>tam olarak hangi başlıktan geldiğini ve kimin kime ne yaptığını savunabildiğinde</strong> çizer. Kapsamı değil, güveni satarız.</p>
+  <p class="lede" style="font-size:15px">Amaç GDELT'i kapsamda yenmek değildir; o çok daha fazla olay yutar. Ama okunabilir, insanın kullanabileceği temiz başlık diliminde ir-globe bir oku yalnızca <strong>tam olarak hangi başlıktan geldiğini ve kimin kime ne yaptığını savunabildiğinde</strong> çizer. Ürünün sattığı şey kapsam değil, güvendir.</p>
 
-  <h2>modelin sınırları — dürüst olalım</h2>
+  <h2>Modelin sınırları</h2>
   <div class="cgroup">
     <ul class="clist">
       <li><strong>Oklar ahlaki bir yargı içermez.</strong> Bir silah transferi oku yalnızca "şu ülke şuna silah verdi" der; o transferin hukuka uygunluğu, insancıl hukuk (uluslararası hukuk, Silah Ticareti Antlaşması, devam eden bir UAD davası) açısından meşruiyeti hakkında hiçbir şey söylemez. Pozitif ton skoru "onay" değildir; sadece olayın işbirliği–çatışma ekseninde nereye düştüğüdür. Bağlamı kaynağa tıklayıp kendin değerlendir.</li>
-      <li><strong>Dünya ikili değildir; biz ikili çiziyoruz.</strong> Modern yaptırımlar, ittifaklar ve koalisyon eylemleri çoğu zaman çok taraflı ve kurumsaldır (BMGK, NATO, AB, G7). Bu küre ilişkiyi ülke→ülke oklarına indirger; "ABD ve müttefikleri" bir okta ABD olarak görünebilir, yalnızca bir uluslararası örgütün adına dayanan bir olay hiç görünmeyebilir. Bu, olay-verisi alanının bilinen bir sınırıdır ve burada da geçerlidir.</li>
+      <li><strong>Dünya ikili değildir; küre ikili çizer.</strong> Modern yaptırımlar, ittifaklar ve koalisyon eylemleri çoğu zaman çok taraflı ve kurumsaldır (BMGK, NATO, AB, G7). Bu küre ilişkiyi ülke→ülke oklarına indirger; "ABD ve müttefikleri" bir okta ABD olarak görünebilir, yalnızca bir uluslararası örgütün adına dayanan bir olay hiç görünmeyebilir. Bu, olay-verisi alanının bilinen bir sınırıdır ve burada da geçerlidir.</li>
     </ul>
   </div>
 
-  <h2>düzeltme politikası</h2>
+  <h2>Düzeltme politikası</h2>
   <p class="lede" style="font-size:15px">Yanlış kodlanmış bir olay, hatalı bir bağlantı ya da bayat bir kayıt görürsen <a href="mailto:hello@noseydewdrop.com">hello@noseydewdrop.com</a> adresine yaz. Doğrulanan hatanın kuralı motorda düzeltilir ve düzeltme en geç bir sonraki 6 saatlik veri koşusunda yayına girer; hatayı doğuran örüntü ayrıca test olarak eklenir ki bir daha yaşanmasın. Yayını etkilemiş önemli düzeltmeler bu sayfada duyurulur.</p>
 
-  <p class="meta" style="margin-top:30px">Bu ürün bir <span class="sig">nosey-dewdrop</span> yayınıdır. Metodoloji değişirse bu sayfadan duyururuz.</p>
+  <p class="meta" style="margin-top:30px">Bu ürün bir <span class="sig">nosey-dewdrop</span> yayınıdır. Metodoloji değişirse bu sayfada duyurulur.</p>
 </main>
 
 <footer class="docfoot">
-  <p>bağımsız · açık · kaynaklı · bir <span class="sig">nosey-dewdrop</span> yayını · <a href="veri.html">veri ve kaynaklar</a> · <a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></p>
+  <p>Bağımsız · açık · kaynaklı · bir <span class="sig">nosey-dewdrop</span> yayını · <a href="veri.html">Veri ve kaynaklar</a> · <a href="gizlilik.html">Gizlilik</a> · <a href="kosullar.html">Koşullar</a></p>
 </footer>
 
 <script src="admin/config.js"></script>
