@@ -38,34 +38,6 @@ daha sağlam bir küreyle çıktım. Kanıt repoda: her eleştiri bir commit.
 
 ---
 
-## essay — ürünüm bir gece boyunca yalan söyledi, kanıtla susturdum
-
-1. Bir gece küreme dört ayrı gözle baktım: mühendis, ürün yöneticisi, pazarlamacı ve
-sıradan bir kullanıcı gibi. Amacım övgü değildi, kusur bulmaktı. Çünkü bu bir aile demosu
-değil; yatırımcının, gazetecinin, sokaktaki yabancının göreceği gerçek bir ürün.
-
-2. Bulduğum şey içimi acıttı ama tam da beklediğim türdendi. Motorum bir başlıkta geçen her
-ülkeyi birbirine bağlıyordu. "İran destekli Husiler Riyad'a füze attı" cümlesini okuyunca,
-küreye "İran, Suudi Arabistan'a DESTEK veriyor" diye yeşil bir ok çiziyordu — çünkü
-"Iranian-backed" içindeki "backed" kelimesini "destek" fiili sanıyordu. Bir saldırı,
-haritada dostluk olarak parlıyordu. Bir kullanıcı bunu bir kez görse, ürüne olan güveni bir
-daha geri gelmez.
-
-3. Yüzeysel yamamadım. Motora cümlenin nasıl çalıştığını öğrettim: "-backed" bir sıfattır,
-fiil değil; "end support" desteğin bitmesidir, başlaması değil; "A, B'den silah alır" cümlesinde
-satıcı kaynaktır; "X'in Venezuela'ya yatırımını memnuniyetle karşıladı" üçüncü bir ülke hakkındadır,
-iki taraf arasında bir bağ değil. Sonra güven skorunu dürüst yaptım: deterministik bir
-regex asla "kesinim" diyemez, o yüzden tavanı yüzde 75'e çektim — eskiden ürettiği bağların
-yarısı "kesin" etiketliydi, hepsi yalandı.
-
-4. Altta yatan karar şu: yüksek güvenle söylenen bir yalan, hiç konuşmamaktan beterdir. Bir
-gecede motor 918 bağdan 775'e indi — 143 uydurma, ters ya da bayat ok elendi. Ürün küçüldü ama
-gerçekleşti. Bir istihbarat aracının tek sermayesi güvenilirliğidir; onu ancak kendi ürününü
-bir düşman gibi sorgulayarak kazanırsın. O gece kendi ürünümün en sert eleştirmeni oldum, ve
-sabaha daha dürüst bir küreyle çıktım.
-
----
-
 ## essay 1 — hediye diye başladı, elimde istihbarat ürünü var
 
 1. Temmuz başında arkadaşıma bir hediye yazıyordum. Uluslararası ilişkiler okuyor; ona ülkeler

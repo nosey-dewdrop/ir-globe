@@ -292,10 +292,12 @@ negatif seti kurdum: aynı çift, farklı hikaye. 3. çünkü ölçüm yanlışs
 4. eşik tablodan seçildi.
 ekran: eval tablosu.
 
-## r45 — hook: "hesap silme butonumu bilerek herkesin gözüne koydum"
-1. silme hakkı gömülüydü. 2. profil altına açık buton.
-3. çünkü güven, çıkış kapısını gösterenden yanadır. 4. onay + rpc + cascade.
-ekran: silme akışı.
+## r46 — hook: "landing'imdeki 240 parçalık manşet duvarını bugün çöpe attım"
+1. sorun: ana sayfamın arka planı 240 bloklu gerçek manşet mozaiğiydi. havalı sanıyordum; göz yoruyordu ve ürünün ne yaptığını anlatmıyordu.
+2. ne değiştirdim: duvarı ve tekerlek-kilitli sayfa geçişini tamamen sildim. yerine sakin beyaz bir sayfa: en üstte kanıtlı bir olgu + bu haftanın hareketleri, altında "nasıl çalışıyor" üç adım ve "söz değil, ölçüm" bloğu (%87 denetlenmiş doğruluk, 62 test).
+3. çünkü başka projemin landing'ine bakıp duygulandım: o sayfa bir dünya kuruyordu, bu sayfa dekor gösteriyordu. motorun kendisi — LLM'siz, kaynaklı, ölçülmüş — sayfada hiç yoktu.
+4. sonuç: dekor gitti, motor anlatılıyor; mobilde native kaydırma, daha hafif sayfa.
+ekran: eski gürültülü duvar → yeni sakin sayfa, yan yana.
 
 # CAROUSEL FIKIRLERI (1 slayt = 1 madde, ayni numarali anlatimla)
 
