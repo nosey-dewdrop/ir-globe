@@ -41,11 +41,15 @@ jobs:
           node scripts/build-ozet.js
           node scripts/ml/merge-ozet.js
           node scripts/build-graph.js
+      # regenerate the SEO shells (ulke baked headlines + iliski pair leaves +
+      # sitemap) so the static crawl surface tracks the fresh event index
+      - name: rebuild seo pages
+        run: node scripts/build-seo.js
       - name: commit if changed
         run: |
           git config user.name "nosey-dewdrop-bot"
           git config user.email "noreply@noseydewdrop.com"
-          git add data/news data/events data/ml
+          git add data/news data/events data/ml konu ulke iliski sitemap.xml robots.txt veri.html
           if ! git diff --cached --quiet; then
             git commit -m "refresh news articles"
             git pull --rebase

@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name "nosey-dewdrop-bot"
           git config user.email "noreply@noseydewdrop.com"
-          git add data konu ulke sitemap.xml robots.txt veri.html
+          git add data konu ulke iliski sitemap.xml robots.txt veri.html
           if ! git diff --cached --quiet; then
             git commit -m "weekly layer data refresh"
             git pull --rebase

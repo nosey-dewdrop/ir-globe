@@ -51,8 +51,14 @@ const NAMES = [...new Set(TIES.flatMap((t) => [t.s, t.r]))].sort();
 /* coded events (with source urls) so we can BAKE the latest dated, sourced
    headlines into each country shell — the page is useful on first paint and
    indexable, instead of a bare "canlı veri yükleniyor…" placeholder. */
-let EVENTS = [];
-try { EVENTS = (readJSON("data/events/index.json").events || []); } catch (e) {}
+let EVENTS = [], PAIRS = {}, EWINDOW = null, EGEN = null;
+try {
+  const EIDX = readJSON("data/events/index.json");
+  EVENTS = EIDX.events || [];
+  PAIRS = EIDX.pairs || {};
+  EWINDOW = EIDX.window || null;
+  EGEN = EIDX.generated || null;
+} catch (e) {}
 const trMonth = ["oca", "şub", "mar", "nis", "may", "haz", "tem", "ağu", "eyl", "eki", "kas", "ara"];
 const shortD = (d) => { const p = String(d).split("-"); return p.length === 3 ? (parseInt(p[2], 10) + " " + (trMonth[parseInt(p[1], 10) - 1] || "")) : d; };
 function bakedFor(name) {
@@ -71,6 +77,13 @@ function bakedFor(name) {
   }).join("");
   return `<section class="baked"><h2>son gelişmeler</h2><ul class="baked-list">${rows}</ul></section>`;
 }
+
+/* pair leaves: only event pairs with >=2 recorded events get a page —
+   one-event pairs stay on the live iliski.html view (no thin doorway pages). */
+const PAIR_KEYS = Object.keys(PAIRS).filter((k) => {
+  const [a, b] = k.split("|");
+  return PAIRS[k].n >= 2 && COUNTRIES[a] && COUNTRIES[b];
+}).sort();
 
 /* ── helpers ── */
 const esc = (s) =>
@@ -183,6 +196,21 @@ function layerPage(layer) {
   return fix(head(title, desc, `${SITE}/konu/${key}/`, ld) + body, 2);
 }
 
+/* baked links from a country page down to its iliski leaves (silo interlink) */
+function pairLinksFor(name) {
+  const mine = PAIR_KEYS
+    .filter((k) => { const [a, b] = k.split("|"); return a === name || b === name; })
+    .sort((x, y) => PAIRS[y].n - PAIRS[x].n)
+    .slice(0, 10);
+  if (!mine.length) return "";
+  const links = mine.map((k) => {
+    const [a, b] = k.split("|");
+    const other = a === name ? b : a;
+    return `<a href="ROOT/iliski/${esc(pairSlug(k))}/">${esc(disp(name))} ↔ ${esc(disp(other))}</a>`;
+  }).join(" · ");
+  return `<p class="meta">ilişki sayfaları: ${links}</p>`;
+}
+
 /* ── page: one country ── */
 function countryPage(name) {
   const ties = TIES.filter((t) => t.s === name || t.r === name);
@@ -196,9 +224,131 @@ function countryPage(name) {
     view: "ulke", key: name,
     crumbMid: `<a href="ROOT/ulke/index.html">ülkeler</a> › `, crumbLeaf: dn,
     h1: dn, lede: `${dn}, ${layerKeys.length} katmanda ${ties.length} ülke bağıyla haritada. Aşağıda kimden alıp kime verdiği.`,
-    baked: bakedFor(name),
+    baked: bakedFor(name) + pairLinksFor(name),
   });
   return fix(head(title, desc, `${SITE}/ulke/${slug(name)}/`, { "@type": "Place", name: dn, description: desc }) + body, 2);
+}
+
+/* ── page: one country pair (iliski leaf) ── */
+const LAYER_BY_KEY = {};
+LAYERS.forEach((l) => { LAYER_BY_KEY[l.key] = l; });
+const pairSlug = (k) => { const [a, b] = k.split("|"); return `${slug(a)}-${slug(b)}`; };
+const srcLink = (e) => (e.pub && e.title
+  ? `https://www.google.com/search?q=${encodeURIComponent('site:' + e.pub + ' "' + e.title + '"')}`
+  : (e.url || "#"));
+const clip = (s, max) => (s.length <= max ? s : s.slice(0, max - 1).replace(/\s+\S*$/, "") + "…");
+/* .trend rules mirror the live pair page (iliski.html inline styles) */
+const TREND_CSS = `<style>.trend{margin:8px 0 4px}.trend svg{display:block;width:100%;max-width:560px;height:auto}.trend .tl{font:11px var(--sans);fill:var(--faint)}</style>`;
+
+/* weekly tone SVG — same drawing the live pair page (js/iliski.js) bakes */
+function trendSvg(weekly) {
+  const weeks = Object.keys(weekly).sort();
+  if (weeks.length < 3) return "";
+  const W = 560, H = 120, P = 18;
+  const xs = (i) => P + (i * (W - 2 * P)) / (weeks.length - 1);
+  const ys = (v) => { const c = Math.max(-10, Math.min(10, v)); return H - P - ((c + 10) / 20) * (H - 2 * P); };
+  const pts = weeks.map((w, i) => xs(i).toFixed(1) + "," + ys(weekly[w].avg).toFixed(1)).join(" ");
+  return `<section class="trend"><h2>ilişki haftadan haftaya <span class="cnt">yukarı = yakınlaşma · aşağı = gerginlik</span></h2>
+<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="haftalık ilişki tonu çizgisi">
+<line x1="${P}" y1="${ys(0).toFixed(1)}" x2="${W - P}" y2="${ys(0).toFixed(1)}" stroke="#d9d9d9" stroke-dasharray="3 4"/>
+<polyline points="${pts}" fill="none" stroke="#0a2a5e" stroke-width="1.6"/>
+${weeks.map((w, i) => `<circle cx="${xs(i).toFixed(1)}" cy="${ys(weekly[w].avg).toFixed(1)}" r="2" fill="#0a2a5e"/>`).join("")}
+<text class="tl" x="${P}" y="${H - 3}">${esc(weeks[0])}</text>
+<text class="tl" x="${W - P}" y="${H - 3}" text-anchor="end">${esc(weeks[weeks.length - 1])}</text>
+</svg><p class="meta">haberlerden otomatik çıkarıldı · hafta başına ortalama</p></section>`;
+}
+
+function pairPage(key) {
+  const [a, b] = key.split("|");
+  const p = PAIRS[key];
+  const da = disp(a), db = disp(b);
+  const weeks = Object.keys(p.weekly || {}).length;
+
+  /* real events of this pair, newest first, deduped by title */
+  const mine = EVENTS.filter((e) => e.pair === key && e.title && e.date)
+    .sort((x, y) => String(y.date).localeCompare(String(x.date)));
+  const seen = {}, evs = [];
+  for (const e of mine) { const k = e.title.slice(0, 40).toLowerCase(); if (!seen[k]) { seen[k] = 1; evs.push(e); } if (evs.length >= 12) break; }
+
+  /* structural ties between the two, from the layer files */
+  const struct = TIES.filter((t) => (t.s === a && t.r === b) || (t.s === b && t.r === a));
+  const evLayers = Object.keys(p.layers || {});
+
+  let title = `${da} ↔ ${db} ilişkisi — kim kime ne satıyor?`;
+  if (title.length > 60) title = `${da} ↔ ${db} ilişkisi`;
+  if (title.length > 60) title = `${da} ↔ ${db}`;
+  const layerNames = evLayers.map((k) => (LAYER_BY_KEY[k] ? LAYER_BY_KEY[k].label : k)).join(", ");
+  const descBase = `${da} ile ${db} arasında ${p.n} kayıtlı olay (${layerNames}), son olay ${shortD(p.last)}${weeks >= 3 ? `, ${weeks} haftalık ton eğrisi` : ""}.`;
+  const descFull = `${descBase} Gerçek, kaynaklı manşetlerden.`;
+  const desc = descFull.length <= 155 ? descFull : clip(descBase, 155);
+  const lede = `${EWINDOW ? `${shortD(EWINDOW.from)} – ${shortD(EWINDOW.to)} aralığında ` : ""}${da} ile ${db} arasında ${p.n} olay kaydedildi (${layerNames}). Aşağıda yapısal bağlar, olay geçmişi ve kaynaklı manşetler.`;
+
+  const structRows = struct.map((t) => {
+    const l = LAYER_BY_KEY[t.type];
+    const lbl = l ? l.label : t.type;
+    const lnk = l ? `<a href="ROOT/konu/${esc(t.type)}/">${esc(lbl)}</a>` : esc(lbl);
+    return `      <li>${esc(disp(t.s))} → ${esc(disp(t.r))} · ${lnk}</li>`;
+  }).join("\n");
+  const structHtml = struct.length
+    ? `<section class="cgroup"><h2>yapısal bağlar <span class="cnt">${struct.length}</span></h2><ul class="clist">\n${structRows}\n    </ul></section>` : "";
+
+  const evRows = evs.map((e) => {
+    const l = LAYER_BY_KEY[e.layer];
+    const konu = l ? `<a href="ROOT/konu/${esc(e.layer)}/">${esc(l.label)}</a>` : esc(e.layer || "");
+    return `<li><a href="${esc(srcLink(e))}" rel="noopener">${esc(e.title)}</a> <span class="baked-m">${esc(disp(e.s))} → ${esc(disp(e.r))} · ${esc(e.event || "")} · ${konu}${e.pub ? " · " + esc(e.pub) : ""} · ${esc(shortD(e.date))}</span></li>`;
+  }).join("");
+  const evHtml = evs.length
+    ? `<section class="baked"><h2>olay geçmişi <span class="cnt">${evs.length}</span></h2><ul class="baked-list">${evRows}</ul></section>` : "";
+
+  const ld = {
+    "@type": "WebPage",
+    about: [{ "@type": "Place", name: da }, { "@type": "Place", name: db }],
+    ...(EGEN ? { dateModified: EGEN } : {}),
+  };
+  const body = `${nav()}
+<main class="wrap">
+  <nav class="crumb"><a href="ROOT/index.html">ana sayfa</a> › <a href="ROOT/iliski/index.html">ilişkiler</a> › ${esc(da)} ↔ ${esc(db)}</nav>
+  <h1>${esc(da)} ↔ ${esc(db)}</h1>
+  <p class="lede">${esc(lede)}</p>
+  ${structHtml}
+  ${trendSvg(p.weekly || {})}
+  ${evHtml}
+  <p class="meta">ülke sayfaları: <a href="ROOT/ulke/${esc(slug(a))}/">${esc(da)}</a> · <a href="ROOT/ulke/${esc(slug(b))}/">${esc(db)}</a> · <a href="ROOT/iliski.html?a=${encodeURIComponent(a)}&amp;b=${encodeURIComponent(b)}">canlı görünüm →</a></p>
+</main>
+${foot()}
+<script src="ROOT/admin/config.js" defer></script>
+<script src="ROOT/js/sayac.js?v=1" defer></script>
+</body></html>`;
+  const html = head(title, desc, `${SITE}/iliski/${pairSlug(key)}/`, ld).replace("</head>", TREND_CSS + "\n</head>") + body;
+  return fix(html, 2);
+}
+
+/* ── index page: iliski/ (leaf directory, fully baked) ── */
+function iliskiIndex() {
+  const title = "ilişkiler — kim kime ne satıyor?";
+  const desc = clip(`İki ülke arasındaki her şey tek sayfada: ${PAIR_KEYS.length} ülke çifti, olay geçmişi, haftalık ton ve kaynaklı manşetlerle.`, 155);
+  const rows = PAIR_KEYS
+    .slice()
+    .sort((x, y) => PAIRS[y].n - PAIRS[x].n)
+    .map((k) => {
+      const [a, b] = k.split("|");
+      return `      <li><a href="ROOT/iliski/${esc(pairSlug(k))}/">${esc(disp(a))} ↔ ${esc(disp(b))}</a> <span class="cnt">${PAIRS[k].n} olay</span></li>`;
+    }).join("\n");
+  const body = `${nav()}
+<main class="wrap">
+  <nav class="crumb"><a href="ROOT/index.html">ana sayfa</a> › ilişkiler</nav>
+  <h1>ilişkiler</h1>
+  <p class="lede">${esc(desc)}</p>
+  <div class="cgroup"><ul class="clist">
+${rows}
+  </ul></div>
+  <p class="meta">Listedeki her çiftin en az iki kayıtlı olayı var; diğer tüm çiftler <a href="ROOT/ulke/index.html">ülke sayfalarındaki</a> ↔ bağlantılarından canlı görünümde açılır.</p>
+</main>
+${foot()}
+<script src="ROOT/admin/config.js" defer></script>
+<script src="ROOT/js/sayac.js?v=1" defer></script>
+</body></html>`;
+  return fix(head(title, desc, `${SITE}/iliski/`, { "@type": "CollectionPage" }) + body, 1);
 }
 
 /* ── index pages: konu/ and ulke/ ── */
@@ -245,7 +395,22 @@ const veriHtml = `<!DOCTYPE html>
 <title>veri ve kaynaklar — kim kime ne satıyor?</title>
 <meta name="description" content="Her katmanın veri kaynağı, yılı, lisansı ve son güncelleme tarihi. Uydurma veri yok; kaynağı olmayan bağ yayınlanmaz.">
 <link rel="canonical" href="${SITE}/veri.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="veri ve kaynaklar — kim kime ne satıyor?">
+<meta property="og:description" content="Her katmanın veri kaynağı, yılı, lisansı ve son güncelleme tarihi. Kaynağı olmayan bağ yayınlanmaz.">
+<meta property="og:url" content="${SITE}/veri.html">
+<meta property="og:site_name" content="kim kime ne satıyor?">
+<meta name="twitter:card" content="summary">
 <meta name="robots" content="index,follow">
+<script type="application/ld+json">${JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  name: "kim kime ne satıyor? — ülke ilişkileri veri katmanları",
+  description: `Ülkeler arası ${LAYERS.map((l) => l.label).join(", ")} bağları; her katman kaynaklı ve tarihli.`,
+  url: `${SITE}/veri.html`,
+  isAccessibleForFree: true,
+  creator: { "@type": "Organization", name: "nosey-dewdrop", url: "https://noseydewdrop.com" },
+})}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
@@ -286,10 +451,11 @@ ${veriRows}
 `;
 writeFile("veri.html", veriHtml);
 
-const urls = [`${SITE}/`, `${SITE}/akis.html`, `${SITE}/bulten.html`, `${SITE}/metodoloji.html`, `${SITE}/veri.html`, `${SITE}/konu/`, `${SITE}/ulke/`];
+const urls = [`${SITE}/`, `${SITE}/akis.html`, `${SITE}/bulten.html`, `${SITE}/metodoloji.html`, `${SITE}/veri.html`, `${SITE}/gizlilik.html`, `${SITE}/kosullar.html`, `${SITE}/konu/`, `${SITE}/ulke/`, `${SITE}/iliski/`];
 
 writeFile("konu/index.html", konuIndex());
 writeFile("ulke/index.html", ulkeIndex());
+writeFile("iliski/index.html", iliskiIndex());
 
 for (const l of LAYERS) {
   writeFile(`konu/${l.key}/index.html`, layerPage(l));
@@ -299,6 +465,20 @@ for (const l of LAYERS) {
 for (const n of NAMES) {
   writeFile(`ulke/${slug(n)}/index.html`, countryPage(n));
   urls.push(`${SITE}/ulke/${slug(n)}/`);
+  count++;
+}
+/* iliski leaves are rebuilt from scratch each run so pairs that drop below
+   the 2-event bar (rolling news window) don't linger as stale pages */
+const iliskiDir = path.join(ROOT, "iliski");
+if (fs.existsSync(iliskiDir)) {
+  for (const d of fs.readdirSync(iliskiDir)) {
+    const p = path.join(iliskiDir, d);
+    if (fs.statSync(p).isDirectory()) fs.rmSync(p, { recursive: true });
+  }
+}
+for (const k of PAIR_KEYS) {
+  writeFile(`iliski/${pairSlug(k)}/index.html`, pairPage(k));
+  urls.push(`${SITE}/iliski/${pairSlug(k)}/`);
   count++;
 }
 
