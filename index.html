@@ -27,24 +27,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=121">
+<link rel="stylesheet" href="css/style.css?v=122">
 <!-- küre verisini tarayıcı boş kalınca sessizce indir — initGlobe cache'ten bulur -->
 <link rel="prefetch" href="data/countries.geojson?v=6">
 </head>
 <body class="pages">
 
-<!-- SAYFA 1 — HERO: arka planda gerçek başlık dokusu (tam kenara yayılır), önünde site anlatımı -->
+<!-- SAYFA 1 — HERO: sakin beyaz zemin, dekor yok — ürünün gerçek işi (kanıtlı olgu +
+     bu haftanın hareketleri + arama) daha ilk ekranda -->
 <section class="page jn">
-  <div class="jn-wall" id="jn-wall" aria-hidden="true"></div>
   <div class="jn-in">
     <header class="mast hero-mast">
-      <h1><span class="hl">kim kime ne satıyor?</span></h1>
-      <span class="mast-fresh hl" id="fresh"></span>
+      <h1>kim kime ne satıyor?</h1>
+      <span class="mast-fresh" id="fresh"></span>
     </header>
-    <p class="bhead"><span class="hl">silah, tahıl, para, enerji. gerçek akışlar, gerçek başlıklar.</span></p>
-    <p class="btext"><span class="hl">arkadaki her başlık gerçek: kim kime silah, enerji, tahıl, para satıyor. üye ol, ülke ve konu seç; bu akış senin olsun. takip ettiklerinde gelişme olunca kürende işaretlenir, kişisel akışın hep güncel kalır.</span></p>
-    <p class="bfine cta-line"><span class="hl"><a class="jn-cta" href="app.html#uye">hesap aç →</a></span></p>
-    <p class="bfine"><span class="hl">genel akışa bak · bu haftanın bülteni'ne <a href="akis.html">göz at</a></span></p>
+    <p class="bhead">silah, tahıl, para, enerji. gerçek akışlar, gerçek başlıklar.</p>
+    <p class="btext">ülkeler arası bağların canlı haritası: 13 katman, kaynaklı veri, 6 saatte bir tazelenen haber. filtre yok, yorum yok — kim kime ne satıyor, veriyor, kesiyor; kaynağıyla.</p>
     <form class="hero-search" id="heroSearch" role="search" autocomplete="off">
       <input type="text" id="heroQ" list="heroCountries" placeholder="bir ülke ara — ya da iki ülke: iran, abd" aria-label="ülke ara">
       <datalist id="heroCountries"></datalist>
@@ -52,7 +50,9 @@
     </form>
     <div class="hero-spikes" id="heroSpikes" aria-live="polite"></div>
     <div class="stats" id="stats"></div>
-    <p class="ed-scroll"><span class="hl">↓</span></p>
+    <p class="bfine cta-line"><a class="jn-cta" href="app.html#uye">hesap aç →</a></p>
+    <p class="bfine">üyelikle ülke ve konu takip edersin; akışın ve bültenin sana göre örülür. önce <a href="akis.html">genel akışa bak</a>.</p>
+    <p class="ed-scroll">↓</p>
   </div>
 </section>
 
@@ -67,17 +67,51 @@
   </main>
 </section>
 
-<!-- SAYFA 3 — KAPANIŞ: sayaç + künye (kürenin altındaki sayfa profesyonellik katar) -->
-<section class="page close">
-  <div class="close-in">
+<!-- BÖLÜM 3 — NASIL ÇALIŞIYOR: üç adım, motorun kendisi anlatılır -->
+<section class="strip" id="nasil">
+  <div class="strip-in">
+    <p class="kick">nasıl çalışıyor</p>
+    <h2 class="strip-h">bir dil modeline sarılmış arayüz değil — kendi motorumuz</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="step-no">1</span>
+        <h3>haberler toplanır</h3>
+        <p>6 saatte bir binlerce gerçek makale açık kaynaklardan çekilir. hiçbir başlık uydurma değildir; her birinin kaynağı tıklanır.</p>
+      </div>
+      <div class="step">
+        <span class="step-no">2</span>
+        <h3>motor ilişkiyi çıkarır</h3>
+        <p>kendi deterministik çıkarım motorumuz her başlıktan "kim, kime, ne yaptı"yı kodlar; ML yalnızca aynı olayı anlatan başlıkları gruplar. <strong>ML asla metin üretmez.</strong></p>
+      </div>
+      <div class="step">
+        <span class="step-no">3</span>
+        <h3>küre ve sayfalar örülür</h3>
+        <p>çıkan bağlar küreyi, ülke sayfalarını, ikili ilişki sayfalarını ve kişisel akışını besler. iki ülke arasında bu hafta ne değişti — tek bakışta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BÖLÜM 4 — KANIT: iddia değil, yayınlanmış ölçüm -->
+<section class="strip alt" id="kanit">
+  <div class="strip-in">
+    <p class="kick">söz değil, ölçüm</p>
+    <h2 class="strip-h">doğruluğunu yayınlayan bir motor</h2>
+    <p class="strip-p">otomatik çıkarım hata payı taşır — bunu saklamıyoruz, ölçüp yayınlıyoruz: motorun çıktısı elle denetlenen örneklemde <strong>%87 doğru</strong>; her tazelemeyi <strong>62 otomatik test</strong> bekler; her bağın altında kaynağı durur. yöntemin tamamı açık: <a href="metodoloji.html">nasıl çalışıyor</a> · <a href="veri.html">kaynaklar</a>.</p>
+    <p class="strip-p disclaim-inline">olaylar ve radar haberlerden <strong>otomatik çıkarılır</strong> — resmi ya da kesin bir kaynak değildir.</p>
+  </div>
+</section>
+
+<!-- KAPANIŞ: tazelik + çağrı + künye -->
+<section class="strip close2">
+  <div class="strip-in">
     <p class="bhead">gerçek, kaynaklı, 6 saatte bir taze</p>
     <p class="countdown" id="countdown"></p>
-    <p class="disclaim">bağlantılar kaynaklı verilerden; olaylar ve radar haberlerden <strong>otomatik çıkarılır</strong> — hata payı taşır, resmi ya da kesin bir kaynak değildir.</p>
     <p class="bfine" style="margin-top:20px"><a class="jn-cta" href="app.html#uye">hesap aç →</a></p>
   </div>
   <footer>
-    <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="app.html#uye">üyelik</a> · <a href="metodoloji.html">nasıl çalışıyor</a> · <a href="veri.html">kaynaklar</a> ·<a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · her bağın kaynağı tıklanır · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v121</span></span>
+    <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="app.html#uye">üyelik</a> · <a href="metodoloji.html">nasıl çalışıyor</a> · <a href="veri.html">kaynaklar</a> · <a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · her bağın kaynağı tıklanır · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v122</span></span>
   </footer>
 </section>
 
@@ -91,158 +125,20 @@
 <script src="js/ara.js?v=120"></script>
 <script src="js/main.js?v=121"></script>
 <script>
-/* tam-sayfa geçiş: tekerlek/klavye tek gestte bir sayfa ilerletir (net "pıt" his) +
-   sayfa görünür olunca içerik belirir (.in) */
+/* bölümler görünür olunca içerik belirir (.in) — kaydırma NATIVE: tekerlek/momentum
+   kilidi kaldırıldı (göz ve el yoran "sayfa kaçırma"nın kaynağıydı), hafif snap CSS'te */
 (function () {
-  var pages = [].slice.call(document.querySelectorAll(".page"));
-  var idx = 0, lock = false;
+  var secs = [].slice.call(document.querySelectorAll(".page, .strip"));
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (es) {
-      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); idx = pages.indexOf(e.target); } });
-    }, { threshold: 0.5 });
-    pages.forEach(function (p) { io.observe(p); });
-  } else { pages.forEach(function (p) { p.classList.add("in"); }); }
-  function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
-  var cool = 0;
-  function go(i) {
-    i = Math.max(0, Math.min(pages.length - 1, i));
-    if (lock || i === idx) return;
-    lock = true; idx = i;
-    /* freeze the globe for the whole transition — no WebGL render, no card relayout
-       while the page scrolls (this was the big jank source). */
-    window.__pageScrolling = true;
-    if (window.__globe && window.__globe.pauseAnimation) window.__globe.pauseAnimation();
-    var start = window.pageYOffset, end = pages[i].offsetTop, dur = 720, t0 = null;
-    function step(ts) {
-      if (t0 === null) t0 = ts;
-      var p = Math.min((ts - t0) / dur, 1);
-      window.scrollTo(0, start + (end - start) * ease(p));
-      if (p < 1) requestAnimationFrame(step);
-      else {
-        lock = false; cool = performance.now() + 220;
-        window.__pageScrolling = false;
-        if (window.__globe && window.__globe.resumeAnimation) window.__globe.resumeAnimation();
-      }
-    }
-    requestAnimationFrame(step);
-  }
-  /* trackpad momentum kuyruğu ikinci sayfayı da atlatıyordu ("akıcı değil"in
-     büyük kaynağı): sönümlenen delta zinciri gest sayılmaz — yalnızca yükselen
-     delta (yeni kasıtlı kaydırma) ya da araya boşluk girmiş event sayfa atlatır. */
-  var lastMag = 0, lastT = 0;
-  window.addEventListener("wheel", function (e) {
-    /* Mac pinch (ctrl+wheel) küre üstündeyse sayfa geçişine karışma — küre zoom'lar */
-    if (e.ctrlKey && e.target && e.target.closest && e.target.closest("#globe")) return;
-    e.preventDefault();
-    var now = performance.now(), mag = Math.abs(e.deltaY);
-    var decaying = now - lastT < 140 && mag <= lastMag * 1.4;
-    lastMag = mag; lastT = now;
-    if (lock || now < cool || mag < 12) return;
-    /* uzun momentum kuyrukları (macOS'ta 2 sn'ye varır) için geniş pencere:
-       yeni kasıtlı kaydırma delta'yı YÜKSELTECEĞİ için bundan asla etkilenmez */
-    if (decaying && now < cool + 1600) return;
-    go(idx + (e.deltaY > 0 ? 1 : -1));
-  }, { passive: false });
-  window.addEventListener("keydown", function (e) {
-    if (["ArrowDown", "PageDown", " "].indexOf(e.key) > -1) { e.preventDefault(); go(idx + 1); }
-    else if (["ArrowUp", "PageUp"].indexOf(e.key) > -1) { e.preventDefault(); go(idx - 1); }
-  });
+      es.forEach(function (e) { if (e.isIntersecting) e.target.classList.add("in"); });
+    }, { threshold: 0.25 });
+    secs.forEach(function (p) { io.observe(p); });
+  } else { secs.forEach(function (p) { p.classList.add("in"); }); }
 })();
 </script>
 <script>
-/* hero arka plan duvarı: gerçek manşetler, JS MASONRY (3 satırlı bloklar iç içe,
-   kolon değil), her biri farklı font. hover yok — salt dekor, soluk. */
-(function () {
-  var wall = document.getElementById("jn-wall");
-  if (!wall) return;
-  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
-    return { "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]; }); };
-  var PADX = 8, PADY = 8, GAP = 6, COLW = 190, VGAP = 8;
-  /* DEĞİŞKEN GENİŞLİKLİ MASONRY: bloklar 1 ya da 2 kolon geniş → sol kenarlar
-     hizalanmaz, ızgara kırılır, gerçek mozaik/iç içe görünür. */
-  var blocks = [];
-  /* yaz ve oku fazları AYRIK — eskiden her blokta genişlik yazıp yükseklik
-     okumak 240 zorunlu reflow demekti (yarım saniyelik donma); şimdi toplam 1. */
-  function layout() {
-    var W = wall.clientWidth - PADX * 2;
-    var cols = Math.max(2, Math.floor((W + GAP) / (COLW + GAP)));
-    var cw = (W - GAP * (cols - 1)) / cols;
-    var els = wall.querySelectorAll(".wl");
-    var i, k, spans = [];
-    for (i = 0; i < els.length; i++) {                     // faz 1: sadece yaz
-      var el = els[i];
-      var span = (+el.getAttribute("data-span")) || 1;
-      if (span > cols) span = 1;
-      spans.push(span);
-      el.classList.remove("big"); el.style.transform = "";
-      el.__delta = null; // genişlik değişti → hover büyüme ölçüsü geçersiz
-      el.style.width = (span * cw + (span - 1) * GAP) + "px";
-    }
-    var hs = [];
-    for (i = 0; i < els.length; i++) hs.push(els[i].offsetHeight);  // faz 2: sadece oku
-    var heights = []; for (i = 0; i < cols; i++) heights.push(0);
-    blocks = [];
-    for (i = 0; i < els.length; i++) {                     // faz 3: konumları yaz
-      var el2 = els[i], span2 = spans[i];
-      // span kadar bitişik kolon içinde en alçak yeri bul
-      var best = 0, bestTop = Infinity;
-      for (var c = 0; c + span2 <= cols; c++) {
-        var top = 0; for (k = 0; k < span2; k++) if (heights[c + k] > top) top = heights[c + k];
-        if (top < bestTop - 0.5) { bestTop = top; best = c; }
-      }
-      el2.style.left = (PADX + best * (cw + GAP)) + "px";
-      el2.style.top = (PADY + bestTop) + "px";
-      el2.__c0 = best; el2.__c1 = best + span2; el2.__top = bestTop;
-      blocks.push({ el: el2, c0: best, c1: best + span2, top: bestTop });
-      var nh = bestTop + hs[i] + VGAP;
-      for (k = 0; k < span2; k++) heights[best + k] = nh;
-    }
-  }
-  function build(items) {
-    var tiers = ["s1", "s1", "s1", "s2", "s2", "s3", "s3", "s4", "s5"];
-    /* blok sayısı ekran ALANINA göre: masaüstünde yine 240, telefonda ~60-80 —
-       görünen yoğunluk aynı, layout işi dörtte bire iner */
-    var COUNT = Math.max(60, Math.min(240, Math.round(wall.clientWidth * wall.clientHeight / 4500)));
-    var fill = []; while (fill.length < COUNT) fill = fill.concat(items);
-    wall.innerHTML = fill.slice(0, COUNT).map(function (a) {
-      var t = tiers[Math.floor(Math.random() * tiers.length)];
-      var span = Math.random() < 0.32 ? 2 : 1;   // ~%32 iki kolon geniş → ızgara kırılır
-      return '<span class="wl ' + t + '" data-span="' + span + '">' + esc(a.t) + "</span>";
-    }).join("");
-    layout();
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
-  }
-  /* web hover: blok büyür + ALTINDA ve aynı kolon aralığında olan blokları kaydırır */
-  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-    wall.addEventListener("mouseover", function (e) {
-      var el = e.target.closest && e.target.closest(".wl");
-      if (!el || el.classList.contains("big") || el.__c0 == null) return;
-      var delta = el.__delta; // büyüme farkı ilk hover'da ölçülür, sonra önbellekten
-      if (delta == null) {
-        var oldH = el.offsetHeight; el.classList.add("big");
-        delta = el.__delta = el.offsetHeight - oldH;
-      } else {
-        el.classList.add("big");
-      }
-      blocks.forEach(function (b) {
-        if (b.top > el.__top && b.c0 < el.__c1 && b.c1 > el.__c0) b.el.style.transform = "translateY(" + delta + "px)";
-      });
-    });
-    wall.addEventListener("mouseout", function (e) {
-      var el = e.target.closest && e.target.closest(".wl");
-      if (!el || (e.relatedTarget && el.contains(e.relatedTarget))) return;
-      el.classList.remove("big");
-      blocks.forEach(function (b) {
-        if (b.top > el.__top && b.c0 < el.__c1 && b.c1 > el.__c0) b.el.style.transform = "";
-      });
-    });
-  }
-  var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(layout, 150); });
-  Store.digest().then(function (items) { if (items.length) build(items); }).catch(function () {});
-})();
-</script>
-<script>
-/* en alttaki sayaç: kaç gerçek makale, kaç bağlantı, kaç ülke — data/meta.json +
+/* sayaç: kaç gerçek makale, kaç bağlantı, kaç ülke — data/meta.json +
    data/news/meta.json'dan okunur (pipeline her tazelemede yeniden yazar) */
 (function () {
   var el = document.getElementById("stats");
