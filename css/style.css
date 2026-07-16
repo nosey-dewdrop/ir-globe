@@ -73,19 +73,25 @@ html { scroll-snap-type: y proximity; }
    push it past the viewport and clip the top (Damla: dünyanın kesilmesi). */
 .page.gl .stage { height: auto !important; flex: 1 1 auto; min-height: 0; }
 
-/* HERO: sakin beyaz — dekor yok, ürünün işi konuşur (göz yoran manşet duvarı kaldırıldı).
+/* HERO: gazete ön sayfası — üstte manşet bandı (kalın + ince çizgi), altında 7/5
+   asimetrik kolon; dikey hairline ayraç. genişlik bilinçli kullanılır, kanat boş kalmaz.
    kısa ekranda içerik kırpılmasın: sabit vh değil min-height + doğal taşma */
-.page.jn { justify-content: center; align-items: center; height: auto; min-height: 100vh; overflow: visible; padding: 40px 0; }
-.jn-in { position: relative; z-index: 2; flex: 0 0 auto; width: 100%; max-width: 620px; margin: auto; padding: 0 24px;
+.page.jn { justify-content: center; align-items: stretch; height: auto; min-height: 100vh; overflow: visible; padding: 48px 0 24px; }
+.jn-in { position: relative; z-index: 2; flex: 0 0 auto; width: 100%; max-width: 1180px; margin: auto; padding: 0 32px;
   display: flex; flex-direction: column; align-items: stretch; text-align: left; }
-.jn-in .cta-line { margin-top: 14px; }
-.jn-in .bhead, .jn-in .btext { color: #16191f; line-height: 1.6; }
-.jn-in .bhead { font-size: 26px; }
-.jn-in .btext { margin-bottom: 6px; }
-/* hero başlığı (marka) — pitch'in üstünde, ondan küçük */
-.hero-mast { display: block; margin-bottom: 12px; line-height: 1.7; }
-.hero-mast h1 { font-size: 24px; white-space: normal; }
-.hero-mast .mast-fresh { display: inline-block; margin-top: 6px; }
+.jn-in .cta-line { margin-top: 18px; }
+.jn-in .bhead, .jn-in .btext { color: #16191f; }
+.jn-in .bhead { font-size: clamp(30px, 3.6vw, 44px); line-height: 1.12; margin-bottom: 14px; }
+.jn-in .btext { font-size: 15px; line-height: 1.65; max-width: 54ch; margin-bottom: 10px; }
+/* manşet bandı: marka solda, canlı tazelik damgası sağda, altında gazete çizgisi */
+.hero-mast { display: flex; justify-content: space-between; align-items: baseline; gap: 20px;
+  border-bottom: 2px solid var(--ink); padding-bottom: 10px; margin-bottom: 0; }
+.hero-mast h1 { font-size: 26px; white-space: normal; }
+.hero-mast .mast-fresh { margin-top: 0; white-space: nowrap; }
+/* asimetrik kolonlar + dikey ayraç (ince üst çizgi manşet çizgisinin gölgesi gibi) */
+.hero-grid { display: grid; grid-template-columns: 7fr 5fr; border-top: 1px solid var(--rule); margin-top: 3px; }
+.hero-lead { padding: 30px 44px 10px 0; border-right: 1px solid var(--rule); }
+.hero-side { padding: 30px 0 10px 44px; display: flex; flex-direction: column; }
 
 /* value-first: this-week's most-active pairs, the real job shown on arrival */
 .hero-search { display: flex; gap: 6px; margin: 14px 0 6px; max-width: 380px; }
@@ -135,12 +141,12 @@ html { scroll-snap-type: y proximity; }
 .pair-highlights a { display: block; color: var(--ink); text-decoration: none; font-family: var(--serif); font-size: 15px; line-height: 1.4; margin: 5px 0; }
 .pair-highlights a:hover { color: var(--navy); text-decoration: underline; }
 .pair-summary { font-size: 16px; line-height: 1.55; color: var(--ink); background: #f7f8fa; border-left: 3px solid var(--navy); padding: 12px 16px; margin: 8px 0 20px; border-radius: 0 6px 6px 0; }
-/* sayaçlar hero'nun altında (sola hizalı band, her sayı beyaz zeminli) */
-.jn-in .stats { justify-content: flex-start; padding: 16px 0 2px; gap: 10px 22px; }
-.jn-in .stat { background: #fff; padding: 4px 8px; }
-.jn-in .statn { font-size: 22px; }
+/* sayaçlar yan kolonun dibinde: 2x2 mini tablo, hairline üst çizgiyle bölgelenir */
+.jn-in .stats { justify-content: flex-start; padding: 18px 0 2px; gap: 12px 40px; margin-top: auto; border-top: 1px solid var(--rule); }
+.jn-in .stat { align-items: flex-start; padding: 0; }
+.jn-in .statn { font-size: 24px; }
 .jn-in .statl { font-size: 11px; }
-.jn-in .ed-scroll { text-align: left; margin-top: 14px; }
+.jn-in .ed-scroll { text-align: center; margin-top: 22px; }
 
 /* sayaç — ortada, kolonlara yakın (en alttan biraz yukarı) */
 .stats { display: flex; justify-content: center; flex-wrap: wrap; gap: 22px 48px; padding: 6px 40px 60px; }
@@ -150,7 +156,10 @@ html { scroll-snap-type: y proximity; }
 /* ── anlatı şeritleri: nasıl çalışıyor / kanıt / kapanış — normal akış, snap yok ── */
 .strip { padding: 76px 32px; opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .strip.in { opacity: 1; transform: none; }
-.strip .strip-in { max-width: 880px; margin: 0 auto; }
+.strip .strip-in { max-width: 1180px; margin: 0 auto; }
+/* iki bölgeli şerit: sol 5 kolon başlık, sağ 7 kolon gövde — hero grid'inin aynası */
+.strip-in.split { display: grid; grid-template-columns: 5fr 7fr; gap: 24px 56px; align-items: start; }
+.close-cta { justify-self: end; align-self: center; }
 .strip.alt { background: #fafbfc; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
 .strip-h { font-family: var(--serif); font-size: 28px; font-weight: 400; line-height: 1.15; letter-spacing: -0.01em; margin: 6px 0 20px; }
 .strip-p { font-size: 15px; line-height: 1.65; color: #37414d; max-width: 68ch; margin-bottom: 12px; }
@@ -434,7 +443,16 @@ footer {
   .strip { padding: 48px 20px; }
   .strip-h { font-size: 22px; }
   .steps { grid-template-columns: 1fr; gap: 26px; }
+  .strip-in.split { grid-template-columns: 1fr; gap: 14px; }
+  .close-cta { justify-self: start; }
   .strip.close2 footer { margin-top: 44px; }
+
+  /* hero: gazete grid'i dikey istife döner, dikey ayraç yatay çizge olur */
+  .hero-mast { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-lead { padding: 22px 0 18px; border-right: 0; border-bottom: 1px solid var(--rule); }
+  .hero-side { padding: 22px 0 0; }
+  .jn-in .bhead { font-size: 28px; }
 }
 
 @media (max-width: 560px) {

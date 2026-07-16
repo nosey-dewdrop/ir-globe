@@ -27,31 +27,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=122">
+<link rel="stylesheet" href="css/style.css?v=123">
 <!-- küre verisini tarayıcı boş kalınca sessizce indir — initGlobe cache'ten bulur -->
 <link rel="prefetch" href="data/countries.geojson?v=6">
 </head>
 <body class="pages">
 
-<!-- SAYFA 1 — HERO: sakin beyaz zemin, dekor yok — ürünün gerçek işi (kanıtlı olgu +
-     bu haftanın hareketleri + arama) daha ilk ekranda -->
+<!-- SAYFA 1 — HERO: gazete ön sayfası düzeni — üstte manşet bandı (çizgili),
+     altında asimetrik iki kolon: solda lede + arama + çağrı, sağda (ayracın ötesinde)
+     kanıtlı olgu + bu haftanın hareketleri + sayaçlar. genişlik bilinçli kullanılır. -->
 <section class="page jn">
   <div class="jn-in">
     <header class="mast hero-mast">
       <h1>kim kime ne satıyor?</h1>
       <span class="mast-fresh" id="fresh"></span>
     </header>
-    <p class="bhead">silah, tahıl, para, enerji. gerçek akışlar, gerçek başlıklar.</p>
-    <p class="btext">ülkeler arası bağların canlı haritası: 13 katman, kaynaklı veri, 6 saatte bir tazelenen haber. filtre yok, yorum yok — kim kime ne satıyor, veriyor, kesiyor; kaynağıyla.</p>
-    <form class="hero-search" id="heroSearch" role="search" autocomplete="off">
-      <input type="text" id="heroQ" list="heroCountries" placeholder="bir ülke ara — ya da iki ülke: iran, abd" aria-label="ülke ara">
-      <datalist id="heroCountries"></datalist>
-      <button type="submit" aria-label="git">→</button>
-    </form>
-    <div class="hero-spikes" id="heroSpikes" aria-live="polite"></div>
-    <div class="stats" id="stats"></div>
-    <p class="bfine cta-line"><a class="jn-cta" href="app.html#uye">hesap aç →</a></p>
-    <p class="bfine">üyelikle ülke ve konu takip edersin; akışın ve bültenin sana göre örülür. önce <a href="akis.html">genel akışa bak</a>.</p>
+    <div class="hero-grid">
+      <div class="hero-lead">
+        <p class="bhead">silah, tahıl, para, enerji. gerçek akışlar, gerçek başlıklar.</p>
+        <p class="btext">ülkeler arası bağların canlı haritası: 13 katman, kaynaklı veri, 6 saatte bir tazelenen haber. filtre yok, yorum yok — kim kime ne satıyor, veriyor, kesiyor; kaynağıyla.</p>
+        <form class="hero-search" id="heroSearch" role="search" autocomplete="off">
+          <input type="text" id="heroQ" list="heroCountries" placeholder="bir ülke ara — ya da iki ülke: iran, abd" aria-label="ülke ara">
+          <datalist id="heroCountries"></datalist>
+          <button type="submit" aria-label="git">→</button>
+        </form>
+        <p class="bfine cta-line"><a class="jn-cta" href="app.html#uye">hesap aç →</a></p>
+        <p class="bfine">üyelikle ülke ve konu takip edersin; akışın ve bültenin sana göre örülür. önce <a href="akis.html">genel akışa bak</a>.</p>
+      </div>
+      <aside class="hero-side">
+        <div class="hero-spikes" id="heroSpikes" aria-live="polite"></div>
+        <div class="stats" id="stats"></div>
+      </aside>
+    </div>
     <p class="ed-scroll">↓</p>
   </div>
 </section>
@@ -94,24 +101,32 @@
 
 <!-- BÖLÜM 4 — KANIT: iddia değil, yayınlanmış ölçüm -->
 <section class="strip alt" id="kanit">
-  <div class="strip-in">
-    <p class="kick">söz değil, ölçüm</p>
-    <h2 class="strip-h">doğruluğunu yayınlayan bir motor</h2>
-    <p class="strip-p">otomatik çıkarım hata payı taşır — bunu saklamıyoruz, ölçüp yayınlıyoruz: motorun çıktısı elle denetlenen örneklemde <strong>%87 doğru</strong>; her tazelemeyi <strong>62 otomatik test</strong> bekler; her bağın altında kaynağı durur. yöntemin tamamı açık: <a href="metodoloji.html">nasıl çalışıyor</a> · <a href="veri.html">kaynaklar</a>.</p>
-    <p class="strip-p disclaim-inline">olaylar ve radar haberlerden <strong>otomatik çıkarılır</strong> — resmi ya da kesin bir kaynak değildir.</p>
+  <div class="strip-in split">
+    <div>
+      <p class="kick">söz değil, ölçüm</p>
+      <h2 class="strip-h">doğruluğunu yayınlayan bir motor</h2>
+    </div>
+    <div>
+      <p class="strip-p">otomatik çıkarım hata payı taşır — bunu saklamıyoruz, ölçüp yayınlıyoruz: motorun çıktısı elle denetlenen örneklemde <strong>%87 doğru</strong>; her tazelemeyi <strong>62 otomatik test</strong> bekler; her bağın altında kaynağı durur. yöntemin tamamı açık: <a href="metodoloji.html">nasıl çalışıyor</a> · <a href="veri.html">kaynaklar</a>.</p>
+      <p class="strip-p disclaim-inline">olaylar ve radar haberlerden <strong>otomatik çıkarılır</strong> — resmi ya da kesin bir kaynak değildir.</p>
+    </div>
   </div>
 </section>
 
 <!-- KAPANIŞ: tazelik + çağrı + künye -->
 <section class="strip close2">
-  <div class="strip-in">
-    <p class="bhead">gerçek, kaynaklı, 6 saatte bir taze</p>
-    <p class="countdown" id="countdown"></p>
-    <p class="bfine" style="margin-top:20px"><a class="jn-cta" href="app.html#uye">hesap aç →</a></p>
+  <div class="strip-in split">
+    <div>
+      <p class="bhead">gerçek, kaynaklı, 6 saatte bir taze</p>
+      <p class="countdown" id="countdown"></p>
+    </div>
+    <div class="close-cta">
+      <p class="bfine"><a class="jn-cta" href="app.html#uye">hesap aç →</a></p>
+    </div>
   </div>
   <footer>
     <span class="foot-nav"><a href="akis.html">akış</a> · <a href="bulten.html">bülten</a> · <a href="konu/index.html">konular</a> · <a href="ulke/index.html">ülkeler</a> · <a href="app.html#uye">üyelik</a> · <a href="metodoloji.html">nasıl çalışıyor</a> · <a href="veri.html">kaynaklar</a> · <a href="gizlilik.html">gizlilik</a> · <a href="kosullar.html">koşullar</a></span>
-    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · her bağın kaynağı tıklanır · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v122</span></span>
+    <span class="foot-src">kaynak: <a href="https://www.sipri.org/publications/2026/sipri-fact-sheets/trends-international-arms-transfers-2025" target="_blank" rel="noopener">SIPRI (silah)</a> · diğer katmanlar açık kaynak + google news · her bağın kaynağı tıklanır · bağımsız · açık · bir <span class="sig">nosey-dewdrop</span> yayını · <span class="build">v123</span></span>
   </footer>
 </section>
 
