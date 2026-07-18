@@ -484,7 +484,7 @@ for (const k of PAIR_KEYS) {
 
 /* sitemap + robots */
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url><loc>${u}</loc></url>`).join("\n")}
 </urlset>`;
 writeFile("sitemap.xml", sitemap);
