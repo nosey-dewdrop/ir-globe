@@ -4,19 +4,6 @@
  "count": 20,
  "events": [
   {
-   "s": "china",
-   "r": "russia",
-   "event": "ticaret / tedarik",
-   "root": "061",
-   "goldstein": 5,
-   "confidence": 0.75,
-   "title": "China Rushes to Buy East Russian Oil as Mideast Risks Grow",
-   "source": "Bloomberg.com",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWEtpeW1pRk52WjBScVREeFRyREgzM1FPRTd1bHNNRWh0WTRGTzZYQnY0T1E1ZTdEbHQ5QlhJcnI5dUlFWWZsRlMxRExKXzhQWnFBNmcwMFRMdkJQWkZRNWJvOFdVQUVRejJRZ05hUjA0aVFtQXJ4b1RFZk5aQkM1NVZodlQzSjVzaElueHViclZBYWVSYmdyQlBLaXVoNXZWX3FlUWtETndvbTNxNmNCTmpoTQ?oc=5",
-   "date": "2026-07-24",
-   "pub": "bloomberg.com"
-  },
-  {
    "s": "india",
    "r": "russia",
    "event": "hava/füze saldırısı",
@@ -121,6 +108,19 @@
    "pub": "reutersconnect.com"
   },
   {
+   "s": "russia",
+   "r": "belarus",
+   "event": "yaptırım",
+   "root": "163",
+   "goldstein": -5.4,
+   "confidence": 0.6,
+   "title": "European Union Adopts 21st Package against Russia & Parallel Sanctions on Belarus",
+   "source": "Mayer Brown",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOaWYxM1dDS3FYcGtPVDhBb3dfbmZsX1hNWkNlNWFWT3RTd1hLZG5jLXh5dFBqZl8zQV9QOExVczZEQ0NrUGZuWjRTbHpGWWNsWjl1OXptS0ZFRkp3Qmp5eV9FQkVHdnJRU1FtVGRQVjBBZkdnRmVpMGFodG9TdWpYT19LVjVlQllfYVBWUkN1MmpOREx3R3o1QzFWOGtVeDZsUHJtWnNwYnFleU8ybTlOcTU4aTY4WXNGQzE0VFRSekI4cTdqYVBPWXdraUhFUTFWUU81NTFZb2gyU1k?oc=5",
+   "date": "2026-07-25",
+   "pub": "mayerbrown.com"
+  },
+  {
    "s": "eu",
    "r": "russia",
    "event": "yaptırım",
@@ -141,7 +141,7 @@
    "goldstein": -5.4,
    "confidence": 0.7,
    "title": "EU sanctions Mazyr refinery, seller of Belarus’ petroleum products to Russia",
-   "source": "Позірк",
+   "source": "pozirk.online",
    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBhZHJaSWg2Ty02RGVIRDBtWnZ4REdEMnl6WVVzcXE0d1hNbGpKLU5jZ3JnYXczN29sSzdueUtzcEtYTVlyTVpwa3VadnVuUQ?oc=5",
    "date": "2026-07-24",
    "pub": "pozirk.online"
@@ -240,19 +240,6 @@
   {
    "s": "united states",
    "r": "saudi arabia",
-   "event": "anlaşma / ortaklık",
-   "root": "057",
-   "goldstein": 6,
-   "confidence": 0.75,
-   "title": "US unveils civilian nuclear deal with Saudi Arabia",
-   "source": "South China Morning Post",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeUo0bzItaE5iZEdqOTV1d3Q0enBoSVU5dktENDY1UFZKazNzc2FUTHZuWWM2c2RkUXVaSUhrWWxLQmg5MW55VWlPNnMzWk9NR0dZaWZrOHN5LXg4R2draUhZbDEzdms0OVNGVkNOVm1uVW9ZcjJTU3ZHRG8zQWFkSS1CU2RBdzR6Yjk1VXB3WnUtNjAyY3Y0TG1xMjJ2T0FDMHBNd0pOY00?oc=5",
-   "date": "2026-07-22",
-   "pub": "scmp.com"
-  },
-  {
-   "s": "united states",
-   "r": "saudi arabia",
    "event": "anlaşma imzası",
    "root": "057",
    "goldstein": 7,
@@ -262,6 +249,19 @@
    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1HNENCVGJHMjRVcHU5Mk1tQ3Nob19vekVjWV9xQnd0c0IyZnJFaGJLNVZUbGNZNkpoM2ttdXBRWWhVMlRtY0lFSElKd2xVVklFQlotY0VWSjBrNVdselcyWkhNak5Bdw?oc=5",
    "date": "2026-07-23",
    "pub": "arabnews.jp"
+  },
+  {
+   "s": "canada",
+   "r": "united states",
+   "event": "ticaret / tedarik",
+   "root": "061",
+   "goldstein": 4,
+   "confidence": 0.75,
+   "title": "Newfoundland and Labrador Leads Canada in Boosting Exports to Countries Other Than U.S.",
+   "source": "EnergyNow.com",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZE9iNzhwX1hpbENuckhoMTVPSXExUngweTNQNjM4YlZTUjBJQmFUWTZKSzdPSmZtSTNmZUJtWWpveW53bkFsbHlOMVNMS01KamdIUnJUTHpOZ3VOMzQwQnZTVUxxRExDREVHSlFER203RWR5YlhUdFNNbFFlSGRoTFFudVNqLURKMUxTTjAwWURPMy1aNWFhZGd4ZkhtU0Z4eE13c0NqdW1qd2FNb0JkYmlPS2hmSkdE?oc=5",
+   "date": "2026-07-27",
+   "pub": "energynow.com"
   }
  ]
 }
