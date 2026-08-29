@@ -1,7 +1,7 @@
 {
  "layer": "diplomasi",
  "generated": "2026-08-29",
- "count": 33,
+ "count": 35,
  "events": [
   {
    "s": "france",
@@ -212,19 +212,6 @@
    "pub": "themoscowtimes.com"
   },
   {
-   "s": "japan",
-   "r": "china",
-   "event": "görüşme / müzakere",
-   "root": "036",
-   "goldstein": 4,
-   "confidence": 0.75,
-   "title": "Japan Seeks Dialogue with China Amidst Deepening Diplomatic Rift",
-   "source": "ABC NEWS NEPAL",
-   "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9HZmp1eUR5NWdIUnRDaDh3RjVHMEdXTGp3MjdOT2psYmdXQUUxajhfUi12UTFPTnFIdUR1Y2ctbmp1UDVZN2x3?oc=5",
-   "date": "2026-08-26",
-   "pub": "abcnepal.tv"
-  },
-  {
    "s": "israel",
    "r": "spain",
    "event": "suçlama",
@@ -368,6 +355,19 @@
    "pub": "aa.com.tr"
   },
   {
+   "s": "uganda",
+   "r": "türkiye",
+   "event": "ilişki kesme",
+   "root": "162",
+   "goldstein": -4.9,
+   "confidence": 0.75,
+   "title": "Uganda Threatens to Cut Ties with Türkiye Within 30 Days",
+   "source": "Horseed Media",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPanBtMWt6QjJkZ05kV0lEb0o1N0ZhX0dTQzZJLTRkTXZESU1yQlhBMU56eWZtRVlidXJoSDNldGxoUmZFNE43YzBoa1RWV2NFRXdzbjBjZ2Z3M2hVNDlhaHBURzBfdEJJWGlKZnl4UUlfSXpfUTI0Y3hjR2RqYWNfcjJkSEJXeXNueDg4UmllLURSbHc?oc=5",
+   "date": "2026-04-11",
+   "pub": "horseedmedia.net"
+  },
+  {
    "s": "türkiye",
    "r": "united kingdom",
    "event": "anlaşma / ortaklık",
@@ -407,17 +407,17 @@
    "pub": "reuters.com"
   },
   {
-   "s": "burkina faso",
+   "s": "iran",
    "r": "france",
-   "event": "ilişki kesme",
-   "root": "162",
-   "goldstein": -4.9,
+   "event": "resmi talep / çağrı",
+   "root": "130",
+   "goldstein": -3.4,
    "confidence": 0.75,
-   "title": "Burkina Faso junta cuts diplomatic ties with former colonial ruler France",
-   "source": "RFI",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMFltVFpvcEo1cVB5dW1Hd3JzQ0hXRWZSMVdoQUtsWTdXbUdRSHdjVTNqZmJIeVhfYXJKdlZGTUxXUFEyNHlIWF9pVnBkV2g5aWgtdmZtV3RLeUNmWnFhOHRsTkhSS0NoeDQ4RFl2VG9ZdlgxT01wUTJtX2JMZld4Z2RIU1AxNnh4QjVLVWlQVjdPam5razd6anlTOGVZeU5JT3pLR0ROWlhabFYwYkktcA?oc=5",
-   "date": "2026-06-27",
-   "pub": "rfi.fr"
+   "title": "Iran summons French ambassador over 'interference' in internal affairs",
+   "source": "France 24",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdWhOaV9Ba2k0ZFBEUTR2ckJNZ0RhRmlvbHppcGI4cWFBNllmVGlaSkI5T2N1YUN4Vnk2LVV3enpUZ1RkY20xUncyRHZxYUEzYlctYXZpWE0wZmtaMzB3WS1POHB2WVhwdDVwY1ZacTljSkN1YkxaRkM3dnZRNFgzRlEzeXFIUGMzQVktdU93ZjdRSS0ySFR2WQ?oc=5",
+   "date": "2026-07-27",
+   "pub": "france24.com"
   },
   {
    "s": "india",
@@ -431,6 +431,32 @@
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdUtEMU1VRE4xSzBQeHpsVFc4TElnZ3VaeFRuTHg3VlBDMXlqWXBOdklrS3ZlUGVyb3hLVGpDcU1sdkg1Nm45NVZiMGE4YVduNE9OUXJfLWJVS2hhRFlKdnVBYzVxUEtacEppV01wZUt4WHBqMDVsV3BsYmVNaE52anI3cU94QVcwUzZoSndibEZKZWdhelVrOWZOSUNnazNFdDEyUk83TjNMMFJT?oc=5",
    "date": "2026-05-18",
    "pub": "dw.com"
+  },
+  {
+   "s": "china",
+   "r": "vietnam",
+   "event": "yardım / tahliye",
+   "root": "070",
+   "goldstein": 4,
+   "confidence": 0.75,
+   "title": "EXCLUSIVE: Better China ties can help regional peace, security, Vietnam's top leader says",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPT0JwWVRBNkFjY2FYTGFHeUZGQW9PRXpzT1d6QVJkTlJldWZjbzJHTVltdG41TVNld1JhOFdNdjB2aGhzYjRkT3RHZDFMUkN1ZzhkaEpvVFRXaU9faHNmZkZQUmhRNjNGZWEyZm1kelNzaHJjTF9xRnhYcktfaFBnSllPck9GY0pvb3l4WGU1NktHRHNwNWVBdEppcXMwa0FmTl94TnFWUDM5bkJSWlVHbDhlRzV1VlJrSjBCNkktQm8?oc=5",
+   "date": "2026-05-31",
+   "pub": "reuters.com"
+  },
+  {
+   "s": "japan",
+   "r": "china",
+   "event": "görüşme / müzakere",
+   "root": "036",
+   "goldstein": 4,
+   "confidence": 0.75,
+   "title": "Japan Seeks Dialogue with China Amidst Deepening Diplomatic Rift",
+   "source": "ABC NEWS NEPAL",
+   "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9HZmp1eUR5NWdIUnRDaDh3RjVHMEdXTGp3MjdOT2psYmdXQUUxajhfUi12UTFPTnFIdUR1Y2ctbmp1UDVZN2x3?oc=5",
+   "date": "2026-08-26",
+   "pub": "abcnepal.tv"
   }
  ]
 }
