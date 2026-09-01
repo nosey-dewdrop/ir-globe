@@ -1,21 +1,8 @@
 {
  "layer": "enerji",
  "generated": "2026-09-01",
- "count": 11,
+ "count": 13,
  "events": [
-  {
-   "s": "türkiye",
-   "r": "russia",
-   "event": "üst düzey görüşme",
-   "root": "036",
-   "goldstein": 3.5,
-   "confidence": 0.75,
-   "title": "Erdoğan, Putin hail deepening ties and nuclear energy cooperation at SCO summit",
-   "source": "A News",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSU1sSFNGbnVPWkdkVG45alhUbVVhRVozM1A2VGh2M2gwMzFmb2x6V3JBTDBWZndReFAwdk85OEtITHBEOEhTa2IyTkRpTVltOUY4Y0o3UjlWOW9YLWRqelZ3NmRFWHg3TkZ4YnBEbXlFN0pWSjVWRDI5dU9uX194RDVZX0lUZHNhZFdOTm5RQkJIdGpGdmozamxYRk10TWt3Ul9IUWRYRU9QN0hpZU5KVjZDUW1pTEpiM0Q0V9IBwgFBVV95cUxOWm1mMEtFN3VMdTFYa25VZjFtME9kamZTWDVnZmxtbkRpRmpyZy1RaE1SaFZBRklXRk5yTm1lazZjUUxSZkZxRTJ6WXA0c1RjNlVCX0xsZXVfa1gwRUFoZ0V5bzdvNXBGOWFYbzNDWWd0ckw3OTJwb2p2VDZRcnVmYlpOSGVUSGV4WS00cVBKczRhQm9JUGZ1WlVGLWR2QkhIU2czcHY1TzM0THhsNFg4T3pjZVowUTQ4dG92OEVLajFXdw?oc=5",
-   "date": "2026-09-01",
-   "pub": "anews.com.tr"
-  },
   {
    "s": "russia",
    "r": "türkiye",
@@ -31,13 +18,26 @@
   },
   {
    "s": "russia",
+   "r": "ukraine",
+   "event": "hava/füze saldırısı",
+   "root": "19",
+   "goldstein": -9.2,
+   "confidence": 0.7,
+   "title": "Putin admits fuel market problems in Russia not yet fully resolved after Ukraine's strikes",
+   "source": "Anadolu Ajansı",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPS3RlUWZuMEEzdWMtZy0wUTNuU3JHRU9abzhqLVRQNUlSQjNRNTdWbVdWV2xCY1dNQmlVS09aRHU1dUtHWDkyUUNkQVYyczV4bXNYZjRvdFgtYUtYWUxYaE81aHYxai1WeGtCVEh5cy1lVjVUQm1vUHJiUy05MlBhMUZuM0R5dGFfYklGMHpGcldGSVNzOFlYOHhuZkJUMFd4Q1JWdWdsMnpnNXJiTmhtUG4zZUk3eUluMExVOUUyR3F2QnA0ZmQxN1NsSQ?oc=5",
+   "date": "2026-08-24",
+   "pub": "aa.com.tr"
+  },
+  {
+   "s": "russia",
    "r": "serbia",
    "event": "yaptırım",
    "root": "163",
    "goldstein": -5.4,
    "confidence": 0.7,
    "title": "Serbia has secured another lifting of sanctions on the oil company NIS, which is owned by Russia",
-   "source": "Українські Національні Новини (УНН)",
+   "source": "unn.ua",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVk5zR1lHc3pPdTBBYkE3eExTSVcyenNwVE9xNVpaVTZmT1NNci1hMGJfUkpic0JwS1lpdG9JQ0lVcm9ydDloRGhsdWJNc1VrZmlSRjhJX2JVeEVCT2htQUFXRjFpNmx6d1hmSEp0ZGJsN2tjeXRkcXRaLWRHN3BkYU5EaFBQR2g4eTgteUJZVllWZXptbE5TX1pISWtlNm04OVFVYUdOTFZLQVhaR0hPVUtQYjg5MlN5VUHSAbgBQVVfeXFMTmphQmdYWlVKTHpyWW9HQ3RZb3Y2Y3BITnFwYUpIaGNWQ2liTW81TEYyd1doNnhtdHc0b2dVcFdNMFhNY2pYU2ltanhGTW5FaGxYTkFsZXA4Wk9iRWhMbWlBZFlkbmhJZmdVNTNad3hxdXVoT09vMTRuNUgxQk1PV3VVY29UNnQ2N1Z5SXdzMWpTSkk2RUZwSTlHeng1Yl9VWGFkYWRrWHhzclp6MnctSTdaeVM4Qkc3Xw?oc=5",
    "date": "2026-08-28",
    "pub": "unn.ua"
@@ -50,10 +50,36 @@
    "goldstein": 3.4,
    "confidence": 0.6,
    "title": "Ukraine: Russia pounds Kyiv as Zelenskyy visits Serbia",
-   "source": "DW.com",
+   "source": "dw.com",
    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTUVaaEFwTDBsSTdjbktWYjF5NGR4UHo5NlF2cmZ5ZGRnV3djTUU3Vmh6SVpPSHRGNjJ5MC00NnY3ejQycW1tOEtFZVZnNVQ4X2p2aHRYNFNFWlFvYlJQWjBBWkFKM1Y0Q2p2T0J3UjNIb3BoUzlaR1IwcmlMbGFNbWMycnNVNTc1eDNFbXl4ONIBjwFBVV95cUxOZUw5aGYyMV83Z0hTTnpDMW00MU5hUlZvaEg5WXJVWXNvMDZwSG5vbnpneTFCa1NjNUpSQ1JQbXhic3NQNXhEdVdSc2R0WWpSQ2NoTVlGSUpFVjk5NEdPY0tlZFVfYUdVbWlGWFFmV2xrd0FNcHZ3eGZNUUVVdW9seVFjRTZXb001dlcwcHpJdw?oc=5",
    "date": "2026-08-08",
    "pub": "dw.com"
+  },
+  {
+   "s": "russia",
+   "r": "belarus",
+   "event": "hava/füze saldırısı",
+   "root": "19",
+   "goldstein": -9.2,
+   "confidence": 0.7,
+   "title": "More strikes on Russian oil refineries benefit Belarus' economy, Knyrovich says",
+   "source": "Belsat",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQnhsSXZUcjhpbVBfeThacG4tOHpHWGRBRWJWVGdCUmQtbmpxLUZRNEE2VXhOZlZiUm15WkxiUmlnektqc2RoWFNvbUdSdjdra3RwblhlT2xPUWhmZVJhV3owMFFUckdHWFlVQTNrVXhXZHlGZ0l4ZWZKZ3M5MGxzc2FYSjJsejlmaEtmZGZpYTlndmlyQ2xWVFBVYWJLaElfMFg0bm9mczFnVm8?oc=5",
+   "date": "2026-08-13",
+   "pub": "en.belsat.eu"
+  },
+  {
+   "s": "india",
+   "r": "russia",
+   "event": "ticaret / tedarik",
+   "root": "061",
+   "goldstein": 5,
+   "confidence": 0.75,
+   "title": "Russia Forced to Import Gasoline From India Amid Domestic Shortages",
+   "source": "themoscowtimes.com",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQXy1OMnpPbTJjMnhCQWFqYTJFeG0zemZxeTRRcmtzeXpXbHVkcWtVcDZFa2RNWGNtSkY2UkFwWXZSYXJMbG9CYWEzUjF2UGh1MGVpMXF2TFZiaE93N28wd25teFBHSE96SVRUSktTRDJtT191R1VSSkMyS2VKWDR6bmphRk5qRHd3enJCekRJQTRrcE94RkQzTU5oNUFndk1oWnI0V2MzZUg1VG1JdlFmbXdueWNQUmc?oc=5",
+   "date": "2026-08-12",
+   "pub": "themoscowtimes.com"
   },
   {
    "s": "united states",
@@ -121,17 +147,17 @@
    "pub": "briefs.co"
   },
   {
-   "s": "saudi arabia",
-   "r": "china",
+   "s": "canada",
+   "r": "united states",
    "event": "ticaret / tedarik",
    "root": "061",
    "goldstein": 4,
    "confidence": 0.75,
-   "title": "Saudi July crude supply to China to remain at record low",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUmJ4T0hKU2FnVDB0WDRRTVd5ZVA2S2V1ajRsZ1V1bE1FUDF3cG5DUDlQS200Q2Nvc01BOVZNY0pzam01ZHFBd3JMelotdTVDQmxmUjVtYUN3QzFFNWNXMFY0cnBPQk9rcWMyNUczWGh3bnI0UWUyZVJJa3BxZkVtQ1NyeGtyV0FXcmRnOE5QekpvRS1oRWxUcUt3YVRSRHBm?oc=5",
-   "date": "2026-06-11",
-   "pub": "reuters.com"
+   "title": "Newfoundland and Labrador Leads Canada in Boosting Exports to Countries Other Than U.S.",
+   "source": "EnergyNow.com",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZE9iNzhwX1hpbENuckhoMTVPSXExUngweTNQNjM4YlZTUjBJQmFUWTZKSzdPSmZtSTNmZUJtWWpveW53bkFsbHlOMVNMS01KamdIUnJUTHpOZ3VOMzQwQnZTVUxxRExDREVHSlFER203RWR5YlhUdFNNbFFlSGRoTFFudVNqLURKMUxTTjAwWURPMy1aNWFhZGd4ZkhtU0Z4eE13c0NqdW1qd2FNb0JkYmlPS2hmSkdE?oc=5",
+   "date": "2026-09-01",
+   "pub": "energynow.com"
   },
   {
    "s": "spain",
