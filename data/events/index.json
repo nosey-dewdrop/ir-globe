@@ -1,11 +1,11 @@
 {
  "generated": "2026-09-05",
  "window": {
-  "from": "2026-03-10",
+  "from": "2026-03-09",
   "to": "2026-09-05"
  },
- "raw": 441,
- "merged": 383,
+ "raw": 438,
+ "merged": 380,
  "duplicatesRemoved": 58,
  "undated": 0,
  "weeks": [
@@ -37,20 +37,6 @@
   "2026-W36"
  ],
  "pairs": {
-  "afghanistan|kazakhstan": {
-   "n": 1,
-   "last": "2026-08-04",
-   "layers": {
-    "tahil": 1
-   },
-   "weekly": {
-    "2026-W32": {
-     "n": 1,
-     "avg": 4
-    }
-   },
-   "avg": 4
-  },
   "afghanistan|somalia": {
    "n": 1,
    "last": "2026-06-04",
@@ -64,6 +50,20 @@
     }
    },
    "avg": 7
+  },
+  "algeria|china": {
+   "n": 1,
+   "last": "2026-06-30",
+   "layers": {
+    "silah": 1
+   },
+   "weekly": {
+    "2026-W27": {
+     "n": 1,
+     "avg": 5
+    }
+   },
+   "avg": 5
   },
   "algeria|france": {
    "n": 1,
@@ -186,28 +186,13 @@
    },
    "avg": 6.2
   },
-  "australia|united kingdom": {
-   "n": 1,
-   "last": "2026-06-11",
-   "layers": {
-    "us": 1
-   },
-   "weekly": {
-    "2026-W24": {
-     "n": 1,
-     "avg": 3.4
-    }
-   },
-   "avg": 3.4
-  },
   "australia|united states": {
-   "n": 5,
+   "n": 4,
    "last": "2026-09-03",
    "layers": {
     "ittifak": 1,
     "silah": 2,
-    "tahil": 1,
-    "us": 1
+    "tahil": 1
    },
    "weekly": {
     "2026-W22": {
@@ -218,10 +203,6 @@
      "n": 1,
      "avg": 4
     },
-    "2026-W24": {
-     "n": 1,
-     "avg": 3.4
-    },
     "2026-W27": {
      "n": 1,
      "avg": 4
@@ -231,7 +212,7 @@
      "avg": 4.5
     }
    },
-   "avg": 3.78
+   "avg": 3.88
   },
   "bangladesh|japan": {
    "n": 1,
@@ -276,27 +257,22 @@
    "avg": 6
   },
   "belarus|china": {
-   "n": 4,
+   "n": 3,
    "last": "2026-08-18",
    "layers": {
-    "borc": 3,
-    "silah": 1
+    "borc": 3
    },
    "weekly": {
     "2026-W23": {
      "n": 2,
      "avg": 5.7
     },
-    "2026-W33": {
-     "n": 1,
-     "avg": -5.5
-    },
     "2026-W34": {
      "n": 1,
      "avg": 6
     }
    },
-   "avg": 2.97
+   "avg": 5.8
   },
   "belarus|iran": {
    "n": 1,
@@ -313,9 +289,10 @@
    "avg": -9
   },
   "belarus|russia": {
-   "n": 4,
+   "n": 5,
    "last": "2026-09-04",
    "layers": {
+    "enerji": 1,
     "ittifak": 1,
     "silah": 2,
     "us": 1
@@ -334,11 +311,11 @@
      "avg": 4
     },
     "2026-W36": {
-     "n": 1,
-     "avg": 4
+     "n": 2,
+     "avg": 4.5
     }
    },
-   "avg": 3.75
+   "avg": 4
   },
   "belarus|united states": {
    "n": 2,
@@ -501,6 +478,20 @@
    },
    "avg": 5
   },
+  "canada|china": {
+   "n": 1,
+   "last": "2026-06-01",
+   "layers": {
+    "tahil": 1
+   },
+   "weekly": {
+    "2026-W23": {
+     "n": 1,
+     "avg": 4
+    }
+   },
+   "avg": 4
+  },
   "canada|iran": {
    "n": 2,
    "last": "2026-08-25",
@@ -520,18 +511,22 @@
    "avg": -5.4
   },
   "canada|japan": {
-   "n": 1,
+   "n": 2,
    "last": "2026-06-22",
    "layers": {
-    "tahil": 1
+    "tahil": 2
    },
    "weekly": {
+    "2026-W11": {
+     "n": 1,
+     "avg": 4
+    },
     "2026-W26": {
      "n": 1,
      "avg": 6
     }
    },
-   "avg": 6
+   "avg": 5
   },
   "canada|nato": {
    "n": 1,
@@ -548,12 +543,16 @@
    "avg": 3.5
   },
   "canada|russia": {
-   "n": 1,
+   "n": 2,
    "last": "2026-08-10",
    "layers": {
-    "yaptirim": 1
+    "yaptirim": 2
    },
    "weekly": {
+    "2026-W25": {
+     "n": 1,
+     "avg": -5.4
+    },
     "2026-W33": {
      "n": 1,
      "avg": -5.4
@@ -613,12 +612,11 @@
    "avg": 3.27
   },
   "canada|united states": {
-   "n": 4,
+   "n": 3,
    "last": "2026-09-03",
    "layers": {
     "diplomasi": 1,
     "ittifak": 1,
-    "tahil": 1,
     "ticaret": 1
    },
    "weekly": {
@@ -627,29 +625,15 @@
      "avg": -4.4
     },
     "2026-W35": {
-     "n": 2,
-     "avg": -5.45
+     "n": 1,
+     "avg": -6.9
     },
     "2026-W36": {
      "n": 1,
      "avg": 6
     }
    },
-   "avg": -2.33
-  },
-  "canada|venezuela": {
-   "n": 1,
-   "last": "2026-09-04",
-   "layers": {
-    "enerji": 1
-   },
-   "weekly": {
-    "2026-W36": {
-     "n": 1,
-     "avg": 3
-    }
-   },
-   "avg": 3
+   "avg": -1.77
   },
   "china|egypt": {
    "n": 3,
@@ -709,10 +693,9 @@
    "avg": 4.5
   },
   "china|iran": {
-   "n": 3,
+   "n": 2,
    "last": "2026-08-25",
    "layers": {
-    "silah": 1,
     "yaptirim": 1,
     "yardim": 1
    },
@@ -721,16 +704,12 @@
      "n": 1,
      "avg": 3
     },
-    "2026-W31": {
-     "n": 1,
-     "avg": -9
-    },
     "2026-W35": {
      "n": 1,
      "avg": -5.4
     }
    },
-   "avg": -3.8
+   "avg": -1.2
   },
   "china|japan": {
    "n": 1,
@@ -823,13 +802,31 @@
    },
    "avg": 2.4
   },
-  "china|serbia": {
-   "n": 2,
-   "last": "2026-06-01",
+  "china|qatar": {
+   "n": 1,
+   "last": "2026-07-17",
    "layers": {
-    "borc": 2
+    "enerji": 1
    },
    "weekly": {
+    "2026-W29": {
+     "n": 1,
+     "avg": -4
+    }
+   },
+   "avg": -4
+  },
+  "china|serbia": {
+   "n": 3,
+   "last": "2026-06-01",
+   "layers": {
+    "borc": 3
+   },
+   "weekly": {
+    "2026-W21": {
+     "n": 1,
+     "avg": 3.4
+    },
     "2026-W22": {
      "n": 1,
      "avg": 6.4
@@ -839,7 +836,7 @@
      "avg": 6
     }
    },
-   "avg": 6.2
+   "avg": 5.27
   },
   "china|south africa": {
    "n": 1,
@@ -899,6 +896,20 @@
     }
    },
    "avg": 0.6
+  },
+  "china|thailand": {
+   "n": 1,
+   "last": "2026-07-18",
+   "layers": {
+    "borc": 1
+   },
+   "weekly": {
+    "2026-W29": {
+     "n": 1,
+     "avg": 6
+    }
+   },
+   "avg": 6
   },
   "china|türkiye": {
    "n": 1,
@@ -1006,20 +1017,6 @@
    },
    "avg": -9
   },
-  "czechia|russia": {
-   "n": 1,
-   "last": "2026-04-21",
-   "layers": {
-    "silah": 1
-   },
-   "weekly": {
-    "2026-W17": {
-     "n": 1,
-     "avg": -3.4
-    }
-   },
-   "avg": -3.4
-  },
   "czechia|united states": {
    "n": 1,
    "last": "2026-07-08",
@@ -1035,10 +1032,10 @@
    "avg": 6.4
   },
   "denmark|ukraine": {
-   "n": 2,
-   "last": "2026-06-25",
+   "n": 3,
+   "last": "2026-06-30",
    "layers": {
-    "silah": 2
+    "silah": 3
    },
    "weekly": {
     "2026-W22": {
@@ -1048,9 +1045,13 @@
     "2026-W26": {
      "n": 1,
      "avg": 5
+    },
+    "2026-W27": {
+     "n": 1,
+     "avg": 7
     }
    },
-   "avg": 5
+   "avg": 5.67
   },
   "egypt|eu": {
    "n": 1,
@@ -1144,6 +1145,20 @@
    },
    "avg": 4
   },
+  "eu|israel": {
+   "n": 1,
+   "last": "2026-04-29",
+   "layers": {
+    "silah": 1
+   },
+   "weekly": {
+    "2026-W18": {
+     "n": 1,
+     "avg": 3
+    }
+   },
+   "avg": 3
+  },
   "eu|morocco": {
    "n": 1,
    "last": "2026-06-02",
@@ -1157,20 +1172,6 @@
     }
    },
    "avg": 3.4
-  },
-  "eu|poland": {
-   "n": 1,
-   "last": "2026-05-08",
-   "layers": {
-    "silah": 1
-   },
-   "weekly": {
-    "2026-W19": {
-     "n": 1,
-     "avg": 6.5
-    }
-   },
-   "avg": 6.5
   },
   "eu|russia": {
    "n": 3,
@@ -1256,10 +1257,10 @@
    "avg": 4.5
   },
   "france|india": {
-   "n": 3,
-   "last": "2026-08-03",
+   "n": 2,
+   "last": "2026-07-21",
    "layers": {
-    "silah": 2,
+    "silah": 1,
     "tahil": 1
    },
    "weekly": {
@@ -1270,13 +1271,9 @@
     "2026-W30": {
      "n": 1,
      "avg": 4
-    },
-    "2026-W32": {
-     "n": 1,
-     "avg": -2.2
     }
    },
-   "avg": -0.07
+   "avg": 1
   },
   "france|indonesia": {
    "n": 1,
@@ -1291,20 +1288,6 @@
     }
    },
    "avg": 4.5
-  },
-  "france|italy": {
-   "n": 1,
-   "last": "2026-06-27",
-   "layers": {
-    "silah": 1
-   },
-   "weekly": {
-    "2026-W26": {
-     "n": 1,
-     "avg": 6
-    }
-   },
-   "avg": 6
   },
   "france|morocco": {
    "n": 4,
@@ -1329,34 +1312,6 @@
     }
    },
    "avg": 4.6
-  },
-  "france|nato": {
-   "n": 1,
-   "last": "2026-07-08",
-   "layers": {
-    "diplomasi": 1
-   },
-   "weekly": {
-    "2026-W28": {
-     "n": 1,
-     "avg": 4
-    }
-   },
-   "avg": 4
-  },
-  "france|romania": {
-   "n": 1,
-   "last": "2026-07-22",
-   "layers": {
-    "silah": 1
-   },
-   "weekly": {
-    "2026-W30": {
-     "n": 1,
-     "avg": 7
-    }
-   },
-   "avg": 7
   },
   "france|russia": {
    "n": 3,
@@ -1409,20 +1364,6 @@
     }
    },
    "avg": 7
-  },
-  "france|ukraine": {
-   "n": 1,
-   "last": "2026-08-28",
-   "layers": {
-    "silah": 1
-   },
-   "weekly": {
-    "2026-W35": {
-     "n": 1,
-     "avg": 3.2
-    }
-   },
-   "avg": 3.2
   },
   "germany|india": {
    "n": 2,
@@ -1553,28 +1494,23 @@
    "avg": 7
   },
   "germany|russia": {
-   "n": 5,
-   "last": "2026-09-02",
+   "n": 3,
+   "last": "2026-09-01",
    "layers": {
     "diplomasi": 1,
-    "silah": 1,
-    "yaptirim": 3
+    "yaptirim": 2
    },
    "weekly": {
-    "2026-W17": {
-     "n": 1,
-     "avg": -3.4
-    },
     "2026-W24": {
      "n": 1,
      "avg": 4
     },
     "2026-W36": {
-     "n": 3,
-     "avg": -5.47
+     "n": 2,
+     "avg": -3.7
     }
    },
-   "avg": -3.16
+   "avg": -1.13
   },
   "germany|serbia": {
    "n": 1,
@@ -1591,35 +1527,48 @@
    "avg": 4
   },
   "germany|south africa": {
-   "n": 3,
+   "n": 2,
    "last": "2026-07-23",
    "layers": {
-    "diplomasi": 2,
-    "yardim": 1
+    "diplomasi": 2
    },
    "weekly": {
     "2026-W16": {
-     "n": 2,
-     "avg": 3.2
+     "n": 1,
+     "avg": 3.4
     },
     "2026-W30": {
      "n": 1,
      "avg": 6
     }
    },
-   "avg": 4.13
+   "avg": 4.7
+  },
+  "germany|sweden": {
+   "n": 1,
+   "last": "2026-07-09",
+   "layers": {
+    "silah": 1
+   },
+   "weekly": {
+    "2026-W28": {
+     "n": 1,
+     "avg": 4.5
+    }
+   },
+   "avg": 4.5
   },
   "germany|ukraine": {
-   "n": 6,
+   "n": 5,
    "last": "2026-09-03",
    "layers": {
-    "silah": 3,
+    "silah": 2,
     "yardim": 3
    },
    "weekly": {
     "2026-W16": {
-     "n": 2,
-     "avg": -1.1
+     "n": 1,
+     "avg": 7
     },
     "2026-W34": {
      "n": 2,
@@ -1630,7 +1579,7 @@
      "avg": 4.7
     }
    },
-   "avg": 3.12
+   "avg": 5.58
   },
   "germany|united states": {
    "n": 3,
@@ -1688,13 +1637,17 @@
    "avg": 5.67
   },
   "greece|italy": {
-   "n": 3,
+   "n": 4,
    "last": "2026-08-26",
    "layers": {
     "kablo": 1,
-    "silah": 2
+    "silah": 3
    },
    "weekly": {
+    "2026-W11": {
+     "n": 1,
+     "avg": 7
+    },
     "2026-W19": {
      "n": 1,
      "avg": 6.4
@@ -1708,7 +1661,7 @@
      "avg": 7
     }
    },
-   "avg": 5.97
+   "avg": 6.22
   },
   "greenland|united states": {
    "n": 1,
@@ -1753,22 +1706,18 @@
    "avg": 5
   },
   "india|israel": {
-   "n": 3,
-   "last": "2026-08-04",
+   "n": 2,
+   "last": "2026-07-29",
    "layers": {
-    "silah": 3
+    "silah": 2
    },
    "weekly": {
     "2026-W31": {
      "n": 2,
      "avg": 3.75
-    },
-    "2026-W32": {
-     "n": 1,
-     "avg": 4
     }
    },
-   "avg": 3.83
+   "avg": 3.75
   },
   "india|italy": {
    "n": 1,
@@ -1841,11 +1790,11 @@
    "avg": 7
   },
   "india|uae": {
-   "n": 3,
-   "last": "2026-08-11",
+   "n": 4,
+   "last": "2026-09-05",
    "layers": {
     "silah": 2,
-    "tahil": 1
+    "tahil": 2
    },
    "weekly": {
     "2026-W26": {
@@ -1855,9 +1804,13 @@
     "2026-W33": {
      "n": 1,
      "avg": 4.5
+    },
+    "2026-W36": {
+     "n": 1,
+     "avg": 3.4
     }
    },
-   "avg": 4.17
+   "avg": 3.98
   },
   "india|ukraine": {
    "n": 2,
@@ -1876,6 +1829,20 @@
     }
    },
    "avg": -1.6
+  },
+  "india|united states": {
+   "n": 1,
+   "last": "2026-06-02",
+   "layers": {
+    "yardim": 1
+   },
+   "weekly": {
+    "2026-W23": {
+     "n": 1,
+     "avg": 2
+    }
+   },
+   "avg": 2
   },
   "indonesia|italy": {
    "n": 1,
@@ -1906,23 +1873,28 @@
    "avg": 7
   },
   "indonesia|united states": {
-   "n": 2,
+   "n": 3,
    "last": "2026-09-01",
    "layers": {
     "ittifak": 1,
-    "silah": 1
+    "silah": 1,
+    "tahil": 1
    },
    "weekly": {
     "2026-W16": {
      "n": 1,
      "avg": 7
     },
+    "2026-W18": {
+     "n": 1,
+     "avg": 4
+    },
     "2026-W36": {
      "n": 1,
      "avg": 4
     }
    },
-   "avg": 5.5
+   "avg": 5
   },
   "iran|kuwait": {
    "n": 1,
@@ -1937,20 +1909,6 @@
     }
    },
    "avg": -9
-  },
-  "iran|pakistan": {
-   "n": 1,
-   "last": "2026-03-27",
-   "layers": {
-    "tahil": 1
-   },
-   "weekly": {
-    "2026-W13": {
-     "n": 1,
-     "avg": 4
-    }
-   },
-   "avg": 4
   },
   "iran|peru": {
    "n": 1,
@@ -2027,13 +1985,13 @@
    "avg": -8.5
   },
   "iran|united states": {
-   "n": 12,
+   "n": 13,
    "last": "2026-09-02",
    "layers": {
     "enerji": 1,
     "silah": 3,
     "us": 5,
-    "yaptirim": 3
+    "yaptirim": 4
    },
    "weekly": {
     "2026-W22": {
@@ -2061,8 +2019,8 @@
      "avg": -9.2
     },
     "2026-W34": {
-     "n": 1,
-     "avg": -9.2
+     "n": 2,
+     "avg": -7.3
     },
     "2026-W35": {
      "n": 1,
@@ -2073,7 +2031,7 @@
      "avg": -7.87
     }
    },
-   "avg": -8.2
+   "avg": -7.98
   },
   "iraq|spain": {
    "n": 1,
@@ -2308,37 +2266,36 @@
    "avg": -5.77
   },
   "japan|south korea": {
-   "n": 2,
+   "n": 1,
    "last": "2026-06-21",
    "layers": {
-    "diplomasi": 1,
-    "silah": 1
+    "diplomasi": 1
    },
    "weekly": {
-    "2026-W17": {
-     "n": 1,
-     "avg": -4
-    },
     "2026-W25": {
      "n": 1,
      "avg": 6
     }
    },
-   "avg": 1
+   "avg": 6
   },
   "japan|ukraine": {
-   "n": 1,
+   "n": 2,
    "last": "2026-06-18",
    "layers": {
-    "yardim": 1
+    "yardim": 2
    },
    "weekly": {
+    "2026-W22": {
+     "n": 1,
+     "avg": 3
+    },
     "2026-W25": {
      "n": 1,
      "avg": 4
     }
    },
-   "avg": 4
+   "avg": 3.5
   },
   "japan|united states": {
    "n": 3,
@@ -2363,12 +2320,16 @@
    "avg": 2.33
   },
   "japan|uzbekistan": {
-   "n": 2,
+   "n": 3,
    "last": "2026-08-13",
    "layers": {
-    "yardim": 2
+    "yardim": 3
    },
    "weekly": {
+    "2026-W24": {
+     "n": 1,
+     "avg": 7
+    },
     "2026-W31": {
      "n": 1,
      "avg": 5
@@ -2378,7 +2339,7 @@
      "avg": 5
     }
    },
-   "avg": 5
+   "avg": 5.67
   },
   "kazakhstan|russia": {
    "n": 1,
@@ -2534,18 +2495,22 @@
    "avg": 7
   },
   "mexico|united states": {
-   "n": 1,
+   "n": 2,
    "last": "2026-08-26",
    "layers": {
-    "tahil": 1
+    "tahil": 2
    },
    "weekly": {
+    "2026-W13": {
+     "n": 1,
+     "avg": 5
+    },
     "2026-W35": {
      "n": 1,
      "avg": 4
     }
    },
-   "avg": 4
+   "avg": 4.5
   },
   "morocco|united states": {
    "n": 2,
@@ -2612,33 +2577,24 @@
    },
    "avg": 4
   },
-  "nato|türkiye": {
-   "n": 1,
-   "last": "2026-07-08",
-   "layers": {
-    "diplomasi": 1
-   },
-   "weekly": {
-    "2026-W28": {
-     "n": 1,
-     "avg": 4
-    }
-   },
-   "avg": 4
-  },
   "nato|ukraine": {
-   "n": 1,
+   "n": 2,
    "last": "2026-07-07",
    "layers": {
-    "silah": 1
+    "silah": 1,
+    "yardim": 1
    },
    "weekly": {
+    "2026-W22": {
+     "n": 1,
+     "avg": -2.2
+    },
     "2026-W28": {
      "n": 1,
      "avg": 7
     }
    },
-   "avg": 7
+   "avg": 2.4
   },
   "nato|united states": {
    "n": 1,
@@ -2789,14 +2745,14 @@
     },
     "2026-W32": {
      "n": 1,
-     "avg": 7
+     "avg": 6
     },
     "2026-W33": {
      "n": 1,
      "avg": 6
     }
    },
-   "avg": 5.67
+   "avg": 5.33
   },
   "pakistan|türkiye": {
    "n": 1,
@@ -2827,18 +2783,23 @@
    "avg": 5
   },
   "philippines|united states": {
-   "n": 1,
+   "n": 2,
    "last": "2026-08-10",
    "layers": {
-    "ittifak": 1
+    "ittifak": 1,
+    "tahil": 1
    },
    "weekly": {
+    "2026-W14": {
+     "n": 1,
+     "avg": 4
+    },
     "2026-W33": {
      "n": 1,
      "avg": 6
     }
    },
-   "avg": 6
+   "avg": 5
   },
   "poland|south korea": {
    "n": 2,
@@ -2946,10 +2907,10 @@
    "avg": 6
   },
   "qatar|united states": {
-   "n": 3,
-   "last": "2026-08-22",
+   "n": 2,
+   "last": "2026-08-21",
    "layers": {
-    "silah": 2,
+    "silah": 1,
     "us": 1
    },
    "weekly": {
@@ -2958,11 +2919,11 @@
      "avg": 5
     },
     "2026-W34": {
-     "n": 2,
-     "avg": 3.5
+     "n": 1,
+     "avg": 4
     }
    },
-   "avg": 4
+   "avg": 4.5
   },
   "romania|ukraine": {
    "n": 1,
@@ -3007,19 +2968,23 @@
    "avg": -5.4
   },
   "russia|türkiye": {
-   "n": 2,
-   "last": "2026-08-15",
+   "n": 3,
+   "last": "2026-08-24",
    "layers": {
-    "enerji": 1,
+    "enerji": 2,
     "silah": 1
    },
    "weekly": {
     "2026-W33": {
      "n": 2,
      "avg": 4.1
+    },
+    "2026-W35": {
+     "n": 1,
+     "avg": 5
     }
    },
-   "avg": 4.1
+   "avg": 4.4
   },
   "russia|ukraine": {
    "n": 6,
@@ -3164,20 +3129,6 @@
    },
    "avg": 7
   },
-  "serbia|ukraine": {
-   "n": 1,
-   "last": "2026-08-08",
-   "layers": {
-    "enerji": 1
-   },
-   "weekly": {
-    "2026-W32": {
-     "n": 1,
-     "avg": 3.4
-    }
-   },
-   "avg": 3.4
-  },
   "south africa|united states": {
    "n": 1,
    "last": "2026-06-19",
@@ -3207,10 +3158,11 @@
    "avg": -2.2
   },
   "south korea|united states": {
-   "n": 2,
-   "last": "2026-08-20",
+   "n": 3,
+   "last": "2026-09-04",
    "layers": {
     "silah": 1,
+    "teknoloji": 1,
     "us": 1
    },
    "weekly": {
@@ -3221,9 +3173,13 @@
     "2026-W34": {
      "n": 1,
      "avg": 4
+    },
+    "2026-W36": {
+     "n": 1,
+     "avg": 4
     }
    },
-   "avg": 4.5
+   "avg": 4.33
   },
   "spain|türkiye": {
    "n": 3,
@@ -3277,10 +3233,10 @@
    "avg": 7
   },
   "sweden|ukraine": {
-   "n": 5,
+   "n": 4,
    "last": "2026-08-28",
    "layers": {
-    "silah": 4,
+    "silah": 3,
     "yardim": 1
    },
    "weekly": {
@@ -3293,11 +3249,11 @@
      "avg": 6
     },
     "2026-W35": {
-     "n": 2,
-     "avg": 5.75
+     "n": 1,
+     "avg": 7
     }
    },
-   "avg": 6.1
+   "avg": 6.5
   },
   "syria|türkiye": {
    "n": 2,
@@ -3346,18 +3302,22 @@
    "avg": 3
   },
   "taiwan|united states": {
-   "n": 1,
-   "last": "2026-05-08",
+   "n": 2,
+   "last": "2026-08-31",
    "layers": {
-    "teknoloji": 1
+    "teknoloji": 2
    },
    "weekly": {
     "2026-W19": {
      "n": 1,
      "avg": 6
+    },
+    "2026-W36": {
+     "n": 1,
+     "avg": 6.4
     }
    },
-   "avg": 6
+   "avg": 6.2
   },
   "thailand|united states": {
    "n": 1,
@@ -3374,18 +3334,18 @@
    "avg": 4.5
   },
   "türkiye|ukraine": {
-   "n": 2,
+   "n": 1,
    "last": "2026-07-08",
    "layers": {
-    "silah": 2
+    "silah": 1
    },
    "weekly": {
     "2026-W28": {
-     "n": 2,
-     "avg": 6.2
+     "n": 1,
+     "avg": 6
     }
    },
-   "avg": 6.2
+   "avg": 6
   },
   "türkiye|united kingdom": {
    "n": 1,
@@ -3445,27 +3405,23 @@
    "avg": 7
   },
   "ukraine|united kingdom": {
-   "n": 4,
+   "n": 3,
    "last": "2026-08-24",
    "layers": {
     "silah": 1,
-    "yardim": 3
+    "yardim": 2
    },
    "weekly": {
     "2026-W25": {
      "n": 1,
      "avg": 7
     },
-    "2026-W33": {
-     "n": 1,
-     "avg": 6
-    },
     "2026-W35": {
      "n": 2,
      "avg": 5.2
     }
    },
-   "avg": 5.85
+   "avg": 5.8
   },
   "ukraine|united states": {
    "n": 2,
@@ -3549,14 +3505,14 @@
  },
  "countries": {
   "afghanistan": {
-   "n": 2,
-   "partners": 2,
-   "avg": 5.5
+   "n": 1,
+   "partners": 1,
+   "avg": 7
   },
   "algeria": {
-   "n": 3,
-   "partners": 2,
-   "avg": 3.3
+   "n": 4,
+   "partners": 3,
+   "avg": 3.73
   },
   "argentina": {
    "n": 1,
@@ -3564,9 +3520,9 @@
    "avg": 5
   },
   "australia": {
-   "n": 14,
-   "partners": 7,
-   "avg": 4.13
+   "n": 12,
+   "partners": 6,
+   "avg": 4.25
   },
   "bangladesh": {
    "n": 3,
@@ -3576,7 +3532,7 @@
   "belarus": {
    "n": 11,
    "partners": 4,
-   "avg": 1.68
+   "avg": 2.64
   },
   "belgium": {
    "n": 7,
@@ -3604,14 +3560,14 @@
    "avg": 5
   },
   "canada": {
-   "n": 19,
+   "n": 20,
    "partners": 10,
-   "avg": 0.9
+   "avg": 1.04
   },
   "china": {
-   "n": 45,
-   "partners": 19,
-   "avg": 1.53
+   "n": 48,
+   "partners": 23,
+   "avg": 2.04
   },
   "colombia": {
    "n": 2,
@@ -3619,14 +3575,14 @@
    "avg": 5.75
   },
   "czechia": {
-   "n": 3,
-   "partners": 3,
-   "avg": -2
+   "n": 2,
+   "partners": 2,
+   "avg": -1.3
   },
   "denmark": {
-   "n": 2,
+   "n": 3,
    "partners": 1,
-   "avg": 5
+   "avg": 5.67
   },
   "egypt": {
    "n": 6,
@@ -3646,22 +3602,22 @@
   "eu": {
    "n": 13,
    "partners": 9,
-   "avg": 1.96
+   "avg": 1.69
   },
   "france": {
-   "n": 26,
-   "partners": 16,
-   "avg": 2.12
+   "n": 21,
+   "partners": 12,
+   "avg": 1.76
   },
   "germany": {
-   "n": 37,
-   "partners": 17,
-   "avg": 2.81
+   "n": 34,
+   "partners": 18,
+   "avg": 3.73
   },
   "greece": {
-   "n": 7,
+   "n": 8,
    "partners": 3,
-   "avg": 5.63
+   "avg": 5.8
   },
   "greenland": {
    "n": 1,
@@ -3680,18 +3636,18 @@
   },
   "india": {
    "n": 20,
-   "partners": 12,
-   "avg": 2.77
+   "partners": 13,
+   "avg": 2.95
   },
   "indonesia": {
-   "n": 10,
+   "n": 11,
    "partners": 8,
-   "avg": 5.15
+   "avg": 5.05
   },
   "iran": {
-   "n": 27,
-   "partners": 11,
-   "avg": -5.15
+   "n": 26,
+   "partners": 10,
+   "avg": -5.36
   },
   "iraq": {
    "n": 4,
@@ -3700,23 +3656,23 @@
   },
   "israel": {
    "n": 14,
-   "partners": 8,
-   "avg": 1.11
+   "partners": 9,
+   "avg": 1.04
   },
   "italy": {
    "n": 14,
-   "partners": 8,
-   "avg": 1.71
+   "partners": 7,
+   "avg": 1.79
   },
   "japan": {
-   "n": 22,
+   "n": 24,
    "partners": 15,
-   "avg": 2.18
+   "avg": 2.75
   },
   "kazakhstan": {
-   "n": 5,
-   "partners": 5,
-   "avg": 5.08
+   "n": 4,
+   "partners": 4,
+   "avg": 5.35
   },
   "kenya": {
    "n": 1,
@@ -3739,9 +3695,9 @@
    "avg": 7
   },
   "mexico": {
-   "n": 3,
+   "n": 4,
    "partners": 3,
-   "avg": 4.67
+   "avg": 4.75
   },
   "morocco": {
    "n": 9,
@@ -3754,9 +3710,9 @@
    "avg": 7
   },
   "nato": {
-   "n": 9,
-   "partners": 8,
-   "avg": 4.11
+   "n": 8,
+   "partners": 6,
+   "avg": 3.35
   },
   "nepal": {
    "n": 3,
@@ -3789,9 +3745,9 @@
    "avg": 5.99
   },
   "pakistan": {
-   "n": 12,
-   "partners": 5,
-   "avg": 4.17
+   "n": 11,
+   "partners": 4,
+   "avg": 4.09
   },
   "paraguay": {
    "n": 1,
@@ -3804,34 +3760,34 @@
    "avg": 1.05
   },
   "philippines": {
-   "n": 2,
+   "n": 3,
    "partners": 2,
-   "avg": 5.5
+   "avg": 5
   },
   "poland": {
-   "n": 15,
-   "partners": 8,
-   "avg": 4.09
+   "n": 14,
+   "partners": 7,
+   "avg": 3.92
   },
   "qatar": {
    "n": 6,
-   "partners": 3,
-   "avg": 4.75
+   "partners": 4,
+   "avg": 3.58
   },
   "romania": {
-   "n": 3,
-   "partners": 3,
-   "avg": 6.33
+   "n": 2,
+   "partners": 2,
+   "avg": 6
   },
   "russia": {
    "n": 44,
-   "partners": 16,
-   "avg": -2.28
+   "partners": 15,
+   "avg": -1.82
   },
   "saudi arabia": {
    "n": 14,
    "partners": 7,
-   "avg": 1.63
+   "avg": 1.56
   },
   "senegal": {
    "n": 1,
@@ -3840,7 +3796,7 @@
   },
   "serbia": {
    "n": 9,
-   "partners": 7,
+   "partners": 6,
    "avg": 3.38
   },
   "singapore": {
@@ -3854,14 +3810,14 @@
    "avg": 7
   },
   "south africa": {
-   "n": 5,
+   "n": 4,
    "partners": 3,
-   "avg": 2.42
+   "avg": 2.27
   },
   "south korea": {
    "n": 14,
    "partners": 8,
-   "avg": 2.97
+   "avg": 3.54
   },
   "spain": {
    "n": 11,
@@ -3875,7 +3831,7 @@
   },
   "sweden": {
    "n": 6,
-   "partners": 2,
+   "partners": 3,
    "avg": 6.25
   },
   "syria": {
@@ -3884,24 +3840,24 @@
    "avg": 4.25
   },
   "taiwan": {
-   "n": 7,
+   "n": 8,
    "partners": 3,
-   "avg": 1.71
+   "avg": 2.3
   },
   "thailand": {
-   "n": 1,
-   "partners": 1,
-   "avg": 4.5
+   "n": 2,
+   "partners": 2,
+   "avg": 5.25
   },
   "türkiye": {
-   "n": 20,
-   "partners": 13,
-   "avg": 4.62
+   "n": 19,
+   "partners": 12,
+   "avg": 4.58
   },
   "uae": {
-   "n": 9,
+   "n": 10,
    "partners": 6,
-   "avg": 3.67
+   "avg": 3.64
   },
   "uganda": {
    "n": 1,
@@ -3909,29 +3865,29 @@
    "avg": 7
   },
   "ukraine": {
-   "n": 65,
-   "partners": 27,
-   "avg": 3.6
+   "n": 62,
+   "partners": 25,
+   "avg": 3.67
   },
   "united kingdom": {
-   "n": 12,
-   "partners": 5,
-   "avg": 0.82
+   "n": 10,
+   "partners": 4,
+   "avg": 0.04
   },
   "united states": {
-   "n": 97,
-   "partners": 47,
-   "avg": 0.45
+   "n": 101,
+   "partners": 48,
+   "avg": 0.61
   },
   "uzbekistan": {
-   "n": 5,
+   "n": 6,
    "partners": 3,
-   "avg": 4.6
+   "avg": 5
   },
   "venezuela": {
-   "n": 6,
-   "partners": 4,
-   "avg": -2.62
+   "n": 5,
+   "partners": 3,
+   "avg": -3.74
   },
   "vietnam": {
    "n": 5,
@@ -3945,6 +3901,23 @@
   }
  },
  "events": [
+  {
+   "s": "greece",
+   "r": "italy",
+   "pair": "greece|italy",
+   "layer": "silah",
+   "root": "057",
+   "event": "anlaşma imzası",
+   "goldstein": 7,
+   "week": "2026-W11",
+   "date": "2026-03-09",
+   "articles": 1,
+   "sources": 1,
+   "title": "Greece in Talks to Sign Frigate Deal With Italy in April",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9CcVJwQnMyMlRNdlhwWF9oUHdUdmlXTjVMeGtqaHl1NjlDRnF3T1VjeGlpQkVKMEhTZm9hbGVkaXFiUlZIZE9uSFJvVy13b1N3MkZSSFZtR1g2Zk5qU2o4QS1ZQ2puOXJCdHZzSmdpeVFEM3hOcDRpVWcxUHFhb0E?oc=5",
+   "src": "GreekReporter.com",
+   "pub": "greekreporter.com"
+  },
   {
    "s": "egypt",
    "r": "germany",
@@ -3995,6 +3968,23 @@
    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWmJZcUlNQzU2TG9wcHVMcGlwQmVOVHJ1YURpUjREcWRJbVdUVk5fYlZCRWJlOGxIcnFDeXM4SWpYMFUxT0swSVd0SG1DaGo3RVk2NjJTdDBpLU5wN2sxYnM2U1ZNdjBva1pEUG5HUEUtRnhSazNNYUdFZXpjSnYwcEFEV0FtNGF3aHRSa05McnJrQQ?oc=5",
    "src": "stripes.com",
    "pub": "stripes.com"
+  },
+  {
+   "s": "canada",
+   "r": "japan",
+   "pair": "canada|japan",
+   "layer": "tahil",
+   "root": "061",
+   "event": "ticaret / tedarik",
+   "goldstein": 4,
+   "week": "2026-W11",
+   "date": "2026-03-12",
+   "articles": 1,
+   "sources": 1,
+   "title": "Canadian horses exported to Japan for slaughter falling sick, dying: animal advocates",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMi1LNVlqUW1aNnk3c0xvc3ItTjJ5cFAxVWhYMVBrTXFKM1JPa0c5TkVpNE1qN1BPa2NWek5jamhvTEhlcFFTTUtKUm1NdU9LcHA1bDRyZVJrZzVLUWZHVEx5c1pCNkp2SWVZdjFHdFV0XzZNU2VMYWJWM3dVZEh4UGNFOA?oc=5",
+   "src": "Global News",
+   "pub": "globalnews.ca"
   },
   {
    "s": "ukraine",
@@ -4078,7 +4068,7 @@
    "sources": 1,
    "title": "United States and Senegal Sign Landmark Bilateral Health Memorandum of Understanding (2026–2030)",
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdHQ1dHZEdmFCUkd3bWlpVWgxaFZzbTZTQUd3MGdIYUg0RHlpODBjOW1ha1NqOGJONDB6d25YejJmR1JyLUR2T3V6d3pwd0tCZFRQUnlNWkRndW9XN1hKS1o1NnR0MHBud0lOa0l6Nm1tSjZvOUdwdWRXNGVUVEJfenAyTG1VdmVxdDd5WHo4Qy1XTHktVjgwckM4ZTM0R2JTclFyQXJzZ0VvU1dpS2hjRGN3VEJ6TndFQURjNg?oc=5",
-   "src": "sn.usembassy.gov",
+   "src": "U.S. Embassy in Senegal (.gov)",
    "pub": "sn.usembassy.gov"
   },
   {
@@ -4112,7 +4102,7 @@
    "sources": 1,
    "title": "Spain and the United States: A Defense Partnership That Strengthens Us All",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRmNyZGh0WDFPRzhVTkM4TzE2a1FZbDBhUEZjQVdrZzAyd3dLcjl6VEtMN3VnczZkempkM3YwVDdSTnZuQ1BEVy1FeGFVSnU3R2tWNElNVzUxbFNwTjZ5LUhaWWJ1MnFjUUg5eDBhM1VleFBsSmJMUEVhMzg3UFJvSUJhTGJsT1g2Sjg3bDFuU0NpVWZqZUtvRDZHM2pCWXZwUkxoTTZSSGE4Q1lDb29vRU50LTlfdXh5WHVoaG5UYXY2Z9IB1gFBVV95cUxPZDJzdldiR1VadUxvSlg0WDBBakVJZWpNdkhLTXBCRi1uNV9naDh1cXJaRGkzQnpYUXk2b1lHRkI0V2RiZXdSa2VHdXVWQVRqWjA4dkEtS1MtVXVmX2ctZ1pmX3ByektoMjN6cGJBdGJpZnBRLUR3a0pnVGh0bG5aRWFMQ1MwVmZCemwtZjJra3hnYkU5amlMTlNjQ0IyUEFUQ2I5ZW5VdGJGcTVlOXBuRmV2bDFwWmFUSDNpRVpyejhGV0tzbWx1YW5Fano3YVhmd3JYYWdB?oc=5",
-   "src": "EL PAÍS English",
+   "src": "english.elpais.com",
    "pub": "english.elpais.com"
   },
   {
@@ -4218,21 +4208,21 @@
    "pub": "emirates247.com"
   },
   {
-   "s": "pakistan",
-   "r": "iran",
-   "pair": "iran|pakistan",
+   "s": "mexico",
+   "r": "united states",
+   "pair": "mexico|united states",
    "layer": "tahil",
    "root": "061",
    "event": "ticaret / tedarik",
-   "goldstein": 4,
+   "goldstein": 5,
    "week": "2026-W13",
-   "date": "2026-03-27",
-   "articles": 2,
-   "sources": 2,
-   "title": "Pakistan easing regulation to boost food exports to Iran",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMWhYY3FHWndzUWIxU0FvdVA4Zlcza0RrLVBXbmVLdVJKeUxZand4WnhVeGoydndfemh1dUp3b1ZXM0RpZUpva2R1TEJSNVEyb1lrdW00eFp5UzdmY1ROcWdIRDBaVG9IalZPelpNNl9rbmwxeC16NWR1bHRZOEFBRWhOaUZaWHBiV05BMFZB?oc=5",
-   "src": "Middle East Eye",
-   "pub": "middleeasteye.net"
+   "date": "2026-03-26",
+   "articles": 1,
+   "sources": 1,
+   "title": "Mexico: A top export destination for U.S. agricultural products",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYmR2V1RvX0tSSmpUc1ZTcHFjanZKYmxqWXVuMlF5RlhvQ2cwN0lFYi03ODZoakNxelpURGNSZE9wa0ZMUVhjRUZ4TlRTcUJ4WmRoQ1RZbk1raHd4RV9GZUo1Q2dpWHJDVUQyaDNnM0Q1X1FFb21CbUxlcFI1M0YwU0tzSHZzWEhXVzN2Qlo2MmRxMjdhZHMwRUdB?oc=5",
+   "src": "CHS Inc",
+   "pub": "chsinc.com"
   },
   {
    "s": "ukraine",
@@ -4265,7 +4255,7 @@
    "sources": 1,
    "title": "U.S.-Japan Alliance Under Trump 2.0: Continuity, Defense Buildup, And Lingering Trade Frictions - Analysis",
    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPc0hIVUVXajFoNVdqVTBFTUxfQ3JUeE1WeWh3d0JJQ0FQckhpZ29XMExJTlZNMnRBb1hGRVZ1WEtpZldkQ1IySm4yMGxVN1RKLUUzRFFPd2tfT0lrY3NDSU0zQVMyYWhkenYxbnF1Y0NvdkxLRnh1aDd1N1BaQl9rellOcmRQVlFBckNZWlM0UEc3ZVpRdWF4VGt6b1RIQnpLeVJ3SzRQTmhrVUk3bkNTazBPeVJnWkV6dWQyTGR2clNUQ21SaS1rVDJDQW85Qnk3OGFvTGdVTQ?oc=5",
-   "src": "eurasiareview.com",
+   "src": "Eurasia Review",
    "pub": "eurasiareview.com"
   },
   {
@@ -4299,7 +4289,7 @@
    "sources": 1,
    "title": "Ukraine’s Zelenskyy agrees to defense cooperation with UAE, Qatar",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZW5aaWFyZkpwbktOWXVqNzBOSDF0c1dNYjYtMjZNX2o2U1RjRnVWVUE5a3lmSDRkUWhRU29TZVNac1NUOGkzdEoxNEQ5VkY4Y09yWGlHQWRxTU85anBpeU5ZWnFFOUR3ZGpwcndEaFdPNS1QazNsRWx4OVM3SlJpMmNRc3NFR1dpOUozTHpvNnFSbU1fdXZWVGhUU3VCckNXVXQ3Z09OTk9uVExuVzFCUy1nLTBwTDFI?oc=5",
-   "src": "Defense News",
+   "src": "defensenews.com",
    "pub": "defensenews.com"
   },
   {
@@ -4333,7 +4323,7 @@
    "sources": 1,
    "title": "Ukraine’s Zelenskyy agrees to defense cooperation with UAE, Qatar",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZW5aaWFyZkpwbktOWXVqNzBOSDF0c1dNYjYtMjZNX2o2U1RjRnVWVUE5a3lmSDRkUWhRU29TZVNac1NUOGkzdEoxNEQ5VkY4Y09yWGlHQWRxTU85anBpeU5ZWnFFOUR3ZGpwcndEaFdPNS1QazNsRWx4OVM3SlJpMmNRc3NFR1dpOUozTHpvNnFSbU1fdXZWVGhUU3VCckNXVXQ3Z09OTk9uVExuVzFCUy1nLTBwTDFI?oc=5",
-   "src": "Defense News",
+   "src": "defensenews.com",
    "pub": "defensenews.com"
   },
   {
@@ -4369,6 +4359,23 @@
    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbENOZVNRR3Z2ZEo4WVJvWmxwRVg4SmJJemhBXzRTc1p5YzBwb1BidDJOVk5zLTFHZnVJeENSWWdTQ0hyQUdmdmJPaGJqNkJhMWtIWURWTGNfZ1VNeEtETjh0U1diSmVVWHdoWnBEUU1ldkxKdDlnOFVKMEN6NlNCcUZn0gGHAUFVX3lxTE42YXdFYVdyWnNHRmp0YWpYd1ZsOUhrVGhCRzN3Wi1hcVVvODJvMHppV1ZkdkUxQUxMbnd5bWs5eVVJOVhoN2YzLUpWR1Fkc2hOSXZVelR1YmxoY21GeHlwNVdkV3RxQXBRQU9zV1M1ektsRm03QVFQcklGa0J4QlF5eDFtWktMcw?oc=5",
    "src": "The Defense Post",
    "pub": "thedefensepost.com"
+  },
+  {
+   "s": "united states",
+   "r": "philippines",
+   "pair": "philippines|united states",
+   "layer": "tahil",
+   "root": "061",
+   "event": "ticaret / tedarik",
+   "goldstein": 4,
+   "week": "2026-W14",
+   "date": "2026-03-31",
+   "articles": 1,
+   "sources": 1,
+   "title": "US targets expanded food, beverage exports to Philippines",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPX3dqYXNGT2RjOEY2RHpneWtNLWNUU054Um5jTDRBbWpvV1k3c2FQdDJPX0FfbHZTclBVZXVKeENoQVFlYmxyM185Umpmb2xobk5SbkxrSndCQmtwb2NmTUUxeDZXcnZGWnJITE4tT2p6R21VY0hOQi0tNzBNejdyS041akktTzhBYjVEQmRB?oc=5",
+   "src": "Manila Bulletin",
+   "pub": "mb.com.ph"
   },
   {
    "s": "ethiopia",
@@ -4469,7 +4476,7 @@
    "sources": 1,
    "title": "Türkiye Seeks Joint Production of SAMP/T Air Defense Systems with Italy",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOb1VRNjZ6eFdnZG9YR3dwa2VheTBFNWVHTUJSUjVWUjExYjdmSUM1ZzVmVUd0SG1Fcy1yNFlBcmIzOUxvQ2VtOHVhUFpvX2RuSUYzeVF5Wm55TzRKaWdUTFp5SkRiLXM3bTRlX2NMSGJsbGxKS1hvbTlkYm9FbUZVY3o5QXZkUzFEV0l0WUlSbnZlZDE0aFppX0hJYjNFNG1jSThvS0Fn?oc=5",
-   "src": "Militarnyi",
+   "src": "Мілітарний",
    "pub": "militarnyi.com"
   },
   {
@@ -4545,23 +4552,6 @@
    "r": "germany",
    "pair": "germany|ukraine",
    "layer": "silah",
-   "root": "19",
-   "event": "hava/füze saldırısı",
-   "goldstein": -9.2,
-   "week": "2026-W16",
-   "date": "2026-04-14",
-   "articles": 1,
-   "sources": 1,
-   "title": "Ukraine strikes drone production, military support deal with Germany",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdjRGbTVGTWRuWE1TTmtiQ3Zsd0w3ZnF4QnpwVnRIVVo4MHNtbWR0YkZNVHh5TGVZX3JLM0cwOVlNeHEzY1M3b3Mwd0ZFUXQwWFJ6NmV1VVBGSnVYVlQtemJ4S0xpTEVwd0JTTkVBOHI3NkIySUJJT3FUWlZIM2lIMFFNc3VmbjY3anVtTVVBVHduU2VOSEHSAZsBQVVfeXFMUExKUU9URFhyeDNyNmU3anNuR3lsX0lNU01CYjdMZklmUl9lRGR5QmtYYVpIR1ZBTTI3ZWx0c2o1NXFRY2xabWRzZmMwNzVoNlpDOFU2T2ZrNU5NTTdNOFVZbW9JQTQxWkJLdUJjN1pCeExCeGtwSXU5aTAyR2VKaXNkUm51UThwYUljeDhXZXh1WG4xdE9XdHdsams?oc=5",
-   "src": "Al Jazeera",
-   "pub": "aljazeera.com"
-  },
-  {
-   "s": "ukraine",
-   "r": "germany",
-   "pair": "germany|ukraine",
-   "layer": "silah",
    "root": "057",
    "event": "anlaşma imzası",
    "goldstein": 7,
@@ -4571,7 +4561,7 @@
    "sources": 1,
    "title": "Ukraine and Germany sign defense deal, boost drone cooperation",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbExSYlZiMW1mSng3Z3pMUTdvMV9SVl8zZ0h6Z0ZsVXVGOUhVTDlsd0RGZjdhYTdrMWR5YVB3VE1Ba2VabS1oYWktYlZkZHU2Mm5OUG41bDl1cHpmQ25zdWI2ODNYc2psNUlqVW9zaUhlZXNiZENxZnJEdUY5T2Q2LXhtNXkyYWpWckNFSTExdEZOVlk?oc=5",
-   "src": "courthousenews.com",
+   "src": "Courthouse News",
    "pub": "courthousenews.com"
   },
   {
@@ -4607,23 +4597,6 @@
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTHhSM280QzVCazJqNHlhZTEtWFV0cVBld3hfWWJTR3NFSmU2NEsxOEFzNHdwbXZXSkgzMGQyWlc2ZDN3VlB4eUl0THZaZXZfSkxqcF83TXhBcGNMM3F0akRDc1BtV3NRZkhEZ2pwNVh5MFllZU16NjhwM3p1UDJWY011R3dVZGsteUkxdDBKNjFnTW5CWldGVk5IQ0Q3RkNzMFRvMWVPWG5jV1lWd3FkeEJ4Z05NV1dPSk5SeFgyTQ?oc=5",
    "src": "Le Monde.fr",
    "pub": "lemonde.fr"
-  },
-  {
-   "s": "germany",
-   "r": "south africa",
-   "pair": "germany|south africa",
-   "layer": "yardim",
-   "root": "060",
-   "event": "gönderim / tedarik",
-   "goldstein": 3,
-   "week": "2026-W16",
-   "date": "2026-04-15",
-   "articles": 1,
-   "sources": 1,
-   "title": "Germany Provides €200M Loan to Support South Africa's Grid & Renewable Capacity",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQbFlWUDVfQ211dEJuZ29KSGZHWFdyVkVtXzR6M29ULTM2U3JocjdjR3E3bGhieEdvLWgxbWd4WGM0d3JGenJqdUpoNmgxbzd5aGRLUnY4NVR3MlFXMlBRZ3N5ZUpLNFllSHozMF9TZ2pIWElkMEh1Rk1KSXExM0ZNSURzSExXME5iMmtfMkk4NG1xMGExZnFhSGhDUDlrT0FRSjRpM1BCWERJSERSUm5sZjFJM0hHc2laQktxY1hYdTNCekMwcVNLVlVFeEVEQkpuMmVfTkp3bE5nMGg3dTRfa3NvVWJDM2s2ZGJqb2R6OXhGVFRGSkE?oc=5",
-   "src": "Fuel Cells Works",
-   "pub": "fuelcellsworks.com"
   },
   {
    "s": "italy",
@@ -4707,7 +4680,7 @@
    "sources": 1,
    "title": "India, Germany agree to deepen cooperation in defence, other key areas",
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUWF3X3hPQmtNT09WWmFXN3pjT0xpVmNnU2g3QkNDSjNhZUlYNlItTWZxenI2QmpFOUFjSS1CWEJPT1IwaFF3SFhVbWpJWW9pbDI0ck1tZEJ1RjBjVmFlcGhmQmpQSXM4dHBFYW9MeS10NDcxSDhsMTlVSUdQLXpoVkRQVlFtTDZ2c2xLZHlzUHE2NlRxM2dPMjRB?oc=5",
-   "src": "asianews.network",
+   "src": "Asia News Network",
    "pub": "asianews.network"
   },
   {
@@ -4758,7 +4731,7 @@
    "sources": 1,
    "title": "Japan, Australia seal $14.4 billion frigate defense deal",
    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBaSTQ0ZlF0ME1sbTc5Vnktdm5HZURlMTBjS1dPcVNXOUhxaXRYS0w3VlI1MVJVaExvSHFXLU9XbTJqWWJ2UGpDVjJwMy1hTEV0ZlpYNg?oc=5",
-   "src": "Saudi Gazette",
+   "src": "saudigazette.com.sa",
    "pub": "saudigazette.com.sa"
   },
   {
@@ -4777,40 +4750,6 @@
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTU10SXU1ZGdMYUwzR25LdUtTbFRYUlQwcUFkM1ZROFR2WktEVE1OYkFKNlZoYVRWR3c0RmQyeUUzSGNmYlRaTE1sVzRSVm1MSUxmWEZUU0RaWXVwN2E4UlhVOE5nZVFtTTVJSnNTNkRtVFhtUzFQSjg2dWtkcVRQZWZ4UkZ0anlWZlJHbnNJOFRjcWJTWnRVT2VGTFczTDZGTVFHWkdIWjdkV3FNSTZFVEdMTkh4SmFxRDJLYkxB?oc=5",
    "src": "Euromaidan Press",
    "pub": "euromaidanpress.com"
-  },
-  {
-   "s": "czechia",
-   "r": "russia",
-   "pair": "czechia|russia",
-   "layer": "silah",
-   "root": "130",
-   "event": "resmi talep / çağrı",
-   "goldstein": -3.4,
-   "week": "2026-W17",
-   "date": "2026-04-21",
-   "articles": 1,
-   "sources": 1,
-   "title": "Germany and Czechia Summon Russian Envoys Over Alleged Threats",
-   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAzRmZPZEcwM0RRNGJCMGJjd0NxZVd2ZU1rRVRrck9Cb1lENFpHWkRhdmtWVmhiYzVOc2tUMnFERGpGaGduUWRZTUdFVQ?oc=5",
-   "src": "Kyiv Post",
-   "pub": "kyivpost.com"
-  },
-  {
-   "s": "germany",
-   "r": "russia",
-   "pair": "germany|russia",
-   "layer": "silah",
-   "root": "130",
-   "event": "resmi talep / çağrı",
-   "goldstein": -3.4,
-   "week": "2026-W17",
-   "date": "2026-04-21",
-   "articles": 1,
-   "sources": 1,
-   "title": "Germany and Czechia Summon Russian Envoys Over Alleged Threats",
-   "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAzRmZPZEcwM0RRNGJCMGJjd0NxZVd2ZU1rRVRrck9Cb1lENFpHWkRhdmtWVmhiYzVOc2tUMnFERGpGaGduUWRZTUdFVQ?oc=5",
-   "src": "Kyiv Post",
-   "pub": "kyivpost.com"
   },
   {
    "s": "belgium",
@@ -4864,23 +4803,6 @@
    "pub": "andina.pe"
   },
   {
-   "s": "japan",
-   "r": "south korea",
-   "pair": "japan|south korea",
-   "layer": "silah",
-   "root": "162",
-   "event": "kısıtlama / tarife",
-   "goldstein": -4,
-   "week": "2026-W17",
-   "date": "2026-04-24",
-   "articles": 1,
-   "sources": 1,
-   "title": "Japan Ends 60-Year Weapons Ban, Challenging South Korea's Defense Industry",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMldkLWRDOGJJWHYtYUpEeFNRUE5DN05sdEFwYnlNVG1wSGh0RVJVOVg5N3A3SjFGTlZ0ekt6YVI0LU1ldHlHUXF4RElSVFdOa0R2TUFJUzRSVGdiejJEcmlGdmN0VFVLMDBISm44MG1GRi0yTkFTMWctMWlQYmlMX2xDNU1YcEVO?oc=5",
-   "src": "조선일보",
-   "pub": "chosun.com"
-  },
-  {
    "s": "türkiye",
    "r": "united kingdom",
    "pair": "türkiye|united kingdom",
@@ -4913,6 +4835,23 @@
    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5iYUVnTWozdlRkdE00Zzg3VlJBNXlSUVdVcXJ1UWRSZzZhakZKUGgzbXRlZ0FYX1B0QkdYTlQ2cm9KbkFSNjFnbE4xOTVaQU5EbmtMSjNRUGpZZWdoMXhyWm5SWW5FRVlRVE15Vnd0bmYyVl9QcUHSAXtBVV95cUxPVmVEbEthQmd5bWtxOENwZTBsQU5sMjgwS2Q1Tks2N01oQWNOMk9sMVVQMmZxbzN5RVNPNXZwdVB0empWQ2xYRWhOZjJ5ME9fTmI2NTYzY1BCY2RSZ3hLbk9pbzBKZFpYYTFGcHNYUHZ5Ujg3SXV4Y0l3elU?oc=5",
    "src": "The Defense Post",
    "pub": "thedefensepost.com"
+  },
+  {
+   "s": "indonesia",
+   "r": "united states",
+   "pair": "indonesia|united states",
+   "layer": "tahil",
+   "root": "061",
+   "event": "ticaret / tedarik",
+   "goldstein": 4,
+   "week": "2026-W18",
+   "date": "2026-04-27",
+   "articles": 1,
+   "sources": 1,
+   "title": "Indonesia Resumes Shrimp Exports to US, Ships 3,400 Containers",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMWpVQ2FSN3NYZ1hEc3MzSkVmekM4ZXFkTTMydG5qN2ppcV9CaVFzWGRFVFNqMzFUN3lsbGJsZ0ZEV3M4SmZlZmZHTUlYcVVJWE1NcWQzeENLTE5UWHlUYkRsX3FxaWVqLWd2MWIxaV95OFNaZ2d5bERaMVdFTmZlTl9BSnVVX1FLOGpESHpsMklUcUdzYU1ubA?oc=5",
+   "src": "Jakarta Globe",
+   "pub": "jakartaglobe.id"
   },
   {
    "s": "united states",
@@ -4966,6 +4905,23 @@
    "pub": "turkiyetoday.com"
   },
   {
+   "s": "eu",
+   "r": "israel",
+   "pair": "eu|israel",
+   "layer": "silah",
+   "root": "060",
+   "event": "silah/malzeme tedariki",
+   "goldstein": 3,
+   "week": "2026-W18",
+   "date": "2026-04-29",
+   "articles": 1,
+   "sources": 1,
+   "title": "France topped EU arms sales to Israel while backing mini-sanctions",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRkdodk4tTkowZWZpZGl5RE9LWGxFaE1JYmJMajAzcW43TWlQd0l1NmpqNF9iQTU4bjhHeThleVRTR2F2aVdRaTUyN1VWM1VIY1Y1QzFzeGg4Y0FQY1NUWEl5bDBzYlRTc3J1cFZhSmgtZFdtcTh0eXhSMmlrZTBQTXZ6bWdscWJVUlFNU0ZPcWFkSl96dzkweEVzbDVwdw?oc=5",
+   "src": "EUobserver",
+   "pub": "euobserver.com"
+  },
+  {
    "s": "uae",
    "r": "iran",
    "pair": "iran|uae",
@@ -5013,7 +4969,7 @@
    "sources": 1,
    "title": "Italy Giuseppe Garibaldi Carrier Transfer Boosts Indonesia Navy",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaGphOGQzN3g0b25VZkdSX0dEOWNWZ1Z0eVIzN3F2NHVPamRacWpWbm5qb3hzUDR5NEJzRmdrNmx3d2F0Q0pqNDVsOHBQeUwzZDVXclJrWkdHVGd0LWduTktCOGlqbW5Tc2c2UmZvS2d2anZtMUw2TmlzWWlCX1FOcXdWX1lKSlM3eEFiSVVfdHRYNFVhQVoxMzlfYTlFdkxwTFI1MG5VazY?oc=5",
-   "src": "defensefeeds.com",
+   "src": "Defense Feeds",
    "pub": "defensefeeds.com"
   },
   {
@@ -5179,29 +5135,12 @@
    "goldstein": 3,
    "week": "2026-W19",
    "date": "2026-05-08",
-   "articles": 2,
-   "sources": 2,
+   "articles": 1,
+   "sources": 1,
    "title": "France sends envoy back to Algeria to ease relations",
    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeG9raUdiOXk2MENEZTcxamNvRmJOMFpnX1Q0UWdycDR0aDNRRTZ3bUFVZ3MwQTBicTJnOTc2YmJWNkp3c2JMNWZYZzdpNGZ6QUJTd3d1WlV2QUx1eFV5ZlZ6VXhLTHVXeEJPTDNFSGczbUVVN3dkRjdhZXBHR0hxb9IBhgFBVV95cUxNcy02WHYxbVBJWkM3SkVmUDJUdzVubHdSd214OFZuVjJBdFVtVjhtV1VpbGY3ZUpoNlloNzVMVzQ4MTcyeVhlNHBZNTh5YWZlUFJMNmViaERETDF6NTFfdHRRSkpWYllXS0NmSXVRbk9qenJEZ1JiV2xvdmY0SVgyWVVFRUxqdw?oc=5",
    "src": "The New Arab",
    "pub": "newarab.com"
-  },
-  {
-   "s": "poland",
-   "r": "eu",
-   "pair": "eu|poland",
-   "layer": "silah",
-   "root": "071",
-   "event": "kredi / finansman",
-   "goldstein": 6.5,
-   "week": "2026-W19",
-   "date": "2026-05-08",
-   "articles": 1,
-   "sources": 1,
-   "title": "Poland becomes first nation to sign EU SAFE loans, expects billions for defense",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNmZNRUZIeEE4SWNNY1FKY3I2MFpSVDBLbXFCQ3ltSEJNdFpkV1E0V1VKQlFENWd3RUttLWlseDVaQmtpX1VQeURRWE1uWng2d1BMQWctVi1CME1BRGJ1WEVWSkNxRWFTMHI4eFpNV2JqUGltNEJiMVQtX21ocEZHZHcyQjlmVGNjU3FWeUZNNUF1VUdEakg0LTRYb0h6T0g0aTBCaUpiTzFyOVRCVXRyMHEzdUdrZw?oc=5",
-   "src": "Breaking Defense",
-   "pub": "breakingdefense.com"
   },
   {
    "s": "mexico",
@@ -5387,7 +5326,7 @@
    "sources": 1,
    "title": "UAE signs major new defence agreement with France during Paris visit",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeVZ6NmRNRTRjbXNFdmhsbGgzUVlkSlBURWw0aWhGc192SVZsc0xZbGJNcHZJM3N2MldYUUM0a3JkbWk2ekhHVTA3TEZvSDFCeDlSWm9Eem1RdDhTSW5xSlY1aURQZzY1RXdscmVCcFFUSmd2Sm15bUJoLTZIcVRQQ0F3Sm9nbHc3ekxxNldpY1YwamRy?oc=5",
-   "src": "gulfnews.com",
+   "src": "Gulf News",
    "pub": "gulfnews.com"
   },
   {
@@ -5489,8 +5428,25 @@
    "sources": 1,
    "title": "France and Belgium Agree on Requirements for New VBAE Armored Vehicle — Successor to VBL",
    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5HZ21vRXo5eGx6bUY2dzA5amRvY1ZjdzZhLVc1YjFSZUljT3NJUWVYSE5yRHJKb1dxUzhlelNJTnFjZi04dTNiYXRWaUMybHNZUkJBTTFWMjFHOC1nWWpmWV82S3hRWEhmSmRxdVBBdTN5ejVGSnEyUTZOd0xQUQ?oc=5",
-   "src": "Militarnyi",
+   "src": "Мілітарний",
    "pub": "militarnyi.com"
+  },
+  {
+   "s": "serbia",
+   "r": "china",
+   "pair": "china|serbia",
+   "layer": "borc",
+   "root": "042",
+   "event": "resmi ziyaret",
+   "goldstein": 3.4,
+   "week": "2026-W21",
+   "date": "2026-05-24",
+   "articles": 1,
+   "sources": 1,
+   "title": "Bilateral cooperation gains new momentum as Serbian president visits China",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOY2NnaUR2dU5fUDdZZTN4UEhtMThXWWRfa0ZfV3VNTFN3VUJoNkpvSzhHMVRUZlVCaHcxa1hEaHdSZEdJbDZrZXB2OU1YM3JOdVVWbmg4T0NLdVFyZEM2em5rdGxWeUlsdEhHZlVsZTJHYUd6NUtRdVhjVTRqcnFYQmFSNV9ZRDNtb3V0VVpCNlZuemtXck5xWEJ6UllmNEdISVhKeGFJWnJOZmZLNEhJ?oc=5",
+   "src": "news.cgtn.com",
+   "pub": "news.cgtn.com"
   },
   {
    "s": "united states",
@@ -5508,6 +5464,23 @@
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNa2RFSXFKUHhtXzhCbXZuSlJCOGVTREs0a01mM2h5T2lodW4yNDZVU25YdFlaMENjZjNiZ0YzNk9teGNRQ2t3WTZBVG1TaFpnaGVPLU1jM1h3YnEtNGs0Mjg1ZGpNZ3g3VjNONlRiZFgzT2tQbnRZeV8yR3h4a0hmUGpaT3c2bEZkMXRtRUJMbDM2UkFfNE5YTVdzZDVveS1Ld1h5UWpLSjgzcUR3TUFWSl9YbUVHa0NFMUljUzFqOTdqeHJLVWRTUXFFQWg4ZEZ30gHWAUFVX3lxTE03RnpqcGtDWk9nQ2lPUU9reURKZTJIRWt3cEtMZDYtZHpsQ0xEN0ROcjdhVjhWcmE1WUp4QjBHaHdhSmFIM2JGSktpcFFCOUY4OWpKQmNPNk1HbWtDR3FIYXg3VU5Gd3dld1EwekVST3dRTUpTSFFnM2swamN3Ym1QOGVSQXYzbV9jY2J0NVVOdUN0RG9GcmZYQi10MWNyVTlnMWZYNWQyRVVZSzViaDd0OVhDLWpJcE50bTE2S2JkbjhyOFBnZ2c2eHBrdlZoUFhHb050OEE?oc=5",
    "src": "PBS",
    "pub": "pbs.org"
+  },
+  {
+   "s": "nato",
+   "r": "ukraine",
+   "pair": "nato|ukraine",
+   "layer": "yardim",
+   "root": "120",
+   "event": "ret / karşı çıkma",
+   "goldstein": -2.2,
+   "week": "2026-W22",
+   "date": "2026-05-25",
+   "articles": 1,
+   "sources": 1,
+   "title": "Five NATO countries reject Rutte's plan for 0.25% GDP military aid to Ukraine – media",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPakJ2QjBSYVluU1hzVEFKZnRGaGxrcEllNVI5Y0E5NnU1Z29tZjNrWnNQdlUzVG1rRVF2UGg1X1dtY0VzUHJKNTVCUTBGVGg3NWR2cmtoZnBtaVNTQjN2NTJudm5RQl9LQUJVUnJCcG41T0lkQUUwT3p3MXNfcmRYWEdtUjNIb2JSQ3c5NlF2Z3dJbHlmTTJwcjhsLXlMZS1jb01QaFFwRmpkUFZOTE12YXNraExHRDZhZzRhc1dDOGxRdGdIVVgtcl9HNVJtQXhK0gHWAUFVX3lxTE1Va1Zka0JCZHZBQUhHU016aGhlbVgyZGlFc3dGYzJXRGJJUWs3eElHaTROalkxVEhrSHJ2LVBSdVBzTFk4VkxGck8zWTNZVjhwbUVwdTUwUXVmbktocmlZX2wyY05LdlRaOVhFNkVjbnFNSEtGci0wb2xNYTNtMFNUTk5hcU01NHhEamxpdENMV2dIT0tFUkY1Z0tkNzVQYU1MdVFoTnV4c1NDSW9mNmZsemlpNGp3QlR6aVQxRkc5VTdJWWNmVzNKZEphUnlnMUhlX0xybUE?oc=5",
+   "src": "Ukrinform",
+   "pub": "ukrinform.net"
   },
   {
    "s": "russia",
@@ -5574,7 +5547,7 @@
    "sources": 1,
    "title": "Russia-Kazakhstan Sign $16.5 Billion Nuclear Power Deal",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY0U4Q3FBMnpwNkRXTXNJRHFseVg1X1dQeHRiNFR3dE9Xb2xaVkdzOHZKSXYxVkZObTZFZW1QR09rd0VZY0tzMkJ4dmJJbTZ3V2dVeW81MFNiYy1UZkk0T2JqZ2JRQ2p3aC1XU2lMSGx4N1owR0JyVnR2TGVrVjRQMVF1NVktZGpySFBhV3BUWlpaY2tPamVOdWpWZy1oMkFsYkJjelBDa3VDVUE?oc=5",
-   "src": "stratnewsglobal.com",
+   "src": "StratNews Global",
    "pub": "stratnewsglobal.com"
   },
   {
@@ -5610,6 +5583,23 @@
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPQXRGMEh2UUtBU2RjSnFmdHFhdVMyV0RNc281WVo2REtWd21kazc0MmJHY2hpWkV2ZW1MenpJZGM4Qml1WGpCWFc4NVVmOVkyTDg3Skd6d1RfNjJFMzBNYjJDNWRLS0o5THdxN2NsSkNOWG5TVUhQWDk3cElTc0R4U2QzdHpfQ0RDUEN4VHduQXJLcUtYS0ljWHNnZlZ6eExDbmJ6alJzQWhHeHlsWnc0VmZnTHNGanRGQkVBdGJoV19BNUdJSmhGMmw5MXVDUGQwTjBuTENVZkE?oc=5",
    "src": "North Atlantic Treaty Organization | NATO",
    "pub": "nato.int"
+  },
+  {
+   "s": "japan",
+   "r": "ukraine",
+   "pair": "japan|ukraine",
+   "layer": "yardim",
+   "root": "060",
+   "event": "gönderim / tedarik",
+   "goldstein": 3,
+   "week": "2026-W22",
+   "date": "2026-05-29",
+   "articles": 1,
+   "sources": 1,
+   "title": "Japan Sends Officers to NATO’s Ukraine Mission for the First Time as Tokyo Deepens Defense Ties",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPblZlUGVBU0xSLTNHcDdGdXFRR3M3cllvaS1ZUnFTWVo5YnJjM3N0bzJqNTI0VmRsZkR5SUpEN3ZZNkRsN0RCUmZxcGVIZWpzNzNSTUw2dGVkdWZtaGV0OXgwc2FLbDExS09zdzgzcWtSTXJYaEJaYjEzZTR1TGhYSHlDNjBnSlozUk1sUWJybWlEQmNCV2I4SmxMNGVWTk92OHR0TXhUYjEzcHNoaVlUNjE1QjdaMEZpeWJhbVBLalR0Q0JiazFMZVpjV1I?oc=5",
+   "src": "UNITED24 Media",
+   "pub": "united24media.com"
   },
   {
    "s": "united kingdom",
@@ -5680,6 +5670,23 @@
    "pub": "news.usni.org"
   },
   {
+   "s": "canada",
+   "r": "china",
+   "pair": "canada|china",
+   "layer": "tahil",
+   "root": "061",
+   "event": "ticaret / tedarik",
+   "goldstein": 4,
+   "week": "2026-W23",
+   "date": "2026-06-01",
+   "articles": 1,
+   "sources": 1,
+   "title": "Canada might double exports to China, Chinese minister says during rare visit",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWkNKZW1GWnE0SzEyajNhcXZZeXBzcldtNGN3OUo3S0pDSUliQkxrLWx4RkstZ3U1N0U1bnRFVE83c0x6dHZyME5LZ1k0ektPZmFPaFR1NlU4WnNYbFdUTHM5ZGQydVdiZUlwTk54WXI1SkZYNWZKY1VjWVBqbjJzd1FFXzI5V3djSFA0cy1QZjB5bnlreDVBMWoyd29XUmhuMGFOSzUyemU2aXM?oc=5",
+   "src": "Grainews",
+   "pub": "grainews.ca"
+  },
+  {
    "s": "serbia",
    "r": "china",
    "pair": "china|serbia",
@@ -5729,6 +5736,23 @@
    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPU2VuaXh5bTd0ZzYxWllEUWwwTzREYWlBbWV5ZkxaOXhOSExkSHJFSGZENGNRdVFjam1QWHF0NEZVSnQ0OTZaUGlDd1FXMm1GdG9yUGN1d0dwNm1nODc0NVFUWVVackpZdjFKUFZQdWY4LXpwODlaLUxsSGhreGpzV0VRZEhoeGZ5ZW54SGhTZ0hxWmxOVDJ5MXdnZjdkTzZ4RkFpTkEtd2pvTDJDYVhVVFY0VWJwM1NPT2lSNjhWaHg?oc=5",
    "src": "Morocco World News",
    "pub": "moroccoworldnews.com"
+  },
+  {
+   "s": "united states",
+   "r": "india",
+   "pair": "india|united states",
+   "layer": "yardim",
+   "root": "087",
+   "event": "geri çekilme",
+   "goldstein": 2,
+   "week": "2026-W23",
+   "date": "2026-06-02",
+   "articles": 1,
+   "sources": 1,
+   "title": "As US withdraws, India & non-profits pitch in to help DRC tackle ebola outbreak",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcU9DWjFPZTdXSGpFUlNKbHZaVWlNbHE5ZHdiMWFndHEwYWxkcmhHWTV3RER3c05fTldnWTIzZUFsWWYyQmFkTDg5TDJ6X0pNWks0MDNsWlM1YUxUaldTSi1IaktDWVRGT3VNYnRxTUVuN1l0RXhEMnhfdk5qN0dYQThrSGpwbXRMemdIZFJnN20tLXhpYTZ6eHYwbjdxaGRoa3J1Tm5QdTlrYmF6X19QZnYydVF2R0g4NnlqR1RDUdIBxAFBVV95cUxOT0E0RlBjR0hNUnJwVUhIOF9hMWEzZWlsaDZyY1YzU3BTY3FYV2hyYXpMVXFVOEZiZ3FaU0stV2JhU2F4VVZVU0Q4aFpKUm55QWVGSHh6Z1lwZjFFWFhlVVU0WFZ0azBZS0VFd3ZvbmtybXVvVHhydGxseldXQl8zSFBDOW1qZV9uaFZiTERvN2FKVTZJSlBBSWxUWXNsRS1CdWJvUWt2ZTU3X3NhNm9qaVZlaEwyT0RPWG0wSXg3NWxienhu?oc=5",
+   "src": "Firstpost",
+   "pub": "firstpost.com"
   },
   {
    "s": "france",
@@ -5795,7 +5819,7 @@
    "sources": 1,
    "title": "Dutch plant for combat-zone robots offers fresh supply pipeline for Ukraine",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUl91QVljT1RhQ1pQdGtSUl9DNkQ5QVY3ZEFWUTM2M2xYd0V5WWFoWUwyWEl3bVZweGliMk5zTjljLUZZOHZwajVlM2tTRzlIX0RQeU5YVjJWOHRNNm1wVEhHWDg3WHkxWFc2ZFkwckdGbTdSUG5VZm1YNzdXT29KV0xZV24xRWpuXzAzVlBwbXliVDdpa3N2czktdnhUTjd5eTlkcnhxQ0l6UzVOOHNjRzUycjZ4SGo4d2FJWGlKbTU5bDBzT0Q1Zw?oc=5",
-   "src": "Defense News",
+   "src": "defensenews.com",
    "pub": "defensenews.com"
   },
   {
@@ -5829,7 +5853,7 @@
    "sources": 1,
    "title": "U.S. Assistance to Malawi Reaches $6 Billion Since Independence",
    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA0UzVvcFc5V0ZUQVBvWW1fWVE0dTFseTQ2cHhtaGJVYWVIcVk0aENEWVkzcGVvMlZ6U0JXR2tON01WSzJiSVhEb1ExTFNNZDNSd3c1am5sVkhLYXdjOVhSaE9mRHhheWd1NE0zYnNZRmpsNi05Z1Bn?oc=5",
-   "src": "africabrief.substack.com",
+   "src": "AfricaBrief",
    "pub": "africabrief.substack.com"
   },
   {
@@ -5901,40 +5925,6 @@
    "pub": "breakingdefense.com"
   },
   {
-   "s": "australia",
-   "r": "united kingdom",
-   "pair": "australia|united kingdom",
-   "layer": "us",
-   "root": "051",
-   "event": "destek / övgü",
-   "goldstein": 3.4,
-   "week": "2026-W24",
-   "date": "2026-06-11",
-   "articles": 1,
-   "sources": 1,
-   "title": "U.S. Navy Stands Up 2 Australian Commands in Support of American, U.K. Subs",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUV9qTDhuY00tQ2lzLW1weEpqN1JiRGhfa1liQS14eU04OWo5R2FYZlk0RVBGY0dSZ01DcGtadTlWOG9aN1NXdWdSbEl1SDBlTG9EdGgxVG95d3ZIRWVIdkxtTmV0eW5vLTZiYy1nZTVEOS1rcjFMOXJoNnRLcWdyVEQ4OUl6bWhjanlINkVOUWNSYWdTSWQ3Q050RGEyS0ZTLURTcHdrNnA?oc=5",
-   "src": "USNI News",
-   "pub": "news.usni.org"
-  },
-  {
-   "s": "australia",
-   "r": "united states",
-   "pair": "australia|united states",
-   "layer": "us",
-   "root": "051",
-   "event": "destek / övgü",
-   "goldstein": 3.4,
-   "week": "2026-W24",
-   "date": "2026-06-11",
-   "articles": 1,
-   "sources": 1,
-   "title": "U.S. Navy Stands Up 2 Australian Commands in Support of American, U.K. Subs",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUV9qTDhuY00tQ2lzLW1weEpqN1JiRGhfa1liQS14eU04OWo5R2FYZlk0RVBGY0dSZ01DcGtadTlWOG9aN1NXdWdSbEl1SDBlTG9EdGgxVG95d3ZIRWVIdkxtTmV0eW5vLTZiYy1nZTVEOS1rcjFMOXJoNnRLcWdyVEQ4OUl6bWhjanlINkVOUWNSYWdTSWQ3Q050RGEyS0ZTLURTcHdrNnA?oc=5",
-   "src": "USNI News",
-   "pub": "news.usni.org"
-  },
-  {
    "s": "united states",
    "r": "belarus",
    "pair": "belarus|united states",
@@ -6003,6 +5993,23 @@
    "pub": "jpost.com"
   },
   {
+   "s": "uzbekistan",
+   "r": "japan",
+   "pair": "japan|uzbekistan",
+   "layer": "yardim",
+   "root": "057",
+   "event": "anlaşma imzası",
+   "goldstein": 7,
+   "week": "2026-W24",
+   "date": "2026-06-11",
+   "articles": 1,
+   "sources": 1,
+   "title": "Uzbekistan, Japan Sign JICA Energy Efficiency Deals",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMXBVQnc2ak5PUFc4blkxNF9GSXZ6N0ZWeFoxNzlzVlFfbFl5US1LaENzNzhnWjBtRFNjTzh3d2pvYlpBcVdsYjU5bmQ3RDYtODBuZHV3aGxTZ1FmTGMwVEZZZExsYWNyRHNSSTIyZHR0N1hkRnJ5c0FlVGxfWEliNUdzRQ?oc=5",
+   "src": "UzDaily.uz",
+   "pub": "uzdaily.uz"
+  },
+  {
    "s": "uae",
    "r": "syria",
    "pair": "syria|uae",
@@ -6069,6 +6076,23 @@
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVzF4WVBiZmdpcXFKcGRFS3czT1AzZmVDWng0b3B5LVRFQzBFU2wxM0ZDbGF4eGNRTndyLWcyZW8ybmdYazNVaFc3QnBCYTRNMENFSl9fTWdhNm1TZHhUd3RGNFBDWEhDaW9yNzFiZ0Z4TGF2TUhhVGFaQlIyamQzcU9tVXhTVEpY?oc=5",
    "src": "조선일보",
    "pub": "chosun.com"
+  },
+  {
+   "s": "canada",
+   "r": "russia",
+   "pair": "canada|russia",
+   "layer": "yaptirim",
+   "root": "163",
+   "event": "yaptırım",
+   "goldstein": -5.4,
+   "week": "2026-W25",
+   "date": "2026-06-16",
+   "articles": 1,
+   "sources": 1,
+   "title": "Canada imposes sanctions on Russia’s shadow fleet, energy revenues;Moscow retaliates with travel bans",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZnc5M0lmdWtkOTF3VlZnOGx1ODhLT0hjQWJudEU3Q1pTOWp1ajk4QlJJMnNHalhBQkkxZHVzaGJyX2E2Rnp1MG01Nlh5ajVKTm9QUEpHclpGdTlqYks0U1VwV2I2R2EwVVNzcm55ZWZjSXViRG1XOFNuLUFWRlpDbm9YUHVnZzlwUm5rUkRoY0xsWDNjNjNJSk5aMWRvc2h1dFJkUkVjT0NTRll5cUpKcWYtYkl2d0xHUVZHeQ?oc=5",
+   "src": "Reuters",
+   "pub": "reuters.com"
   },
   {
    "s": "eu",
@@ -6339,7 +6363,7 @@
    "sources": 1,
    "title": "U.S. Plans to End AIDS Funding for South Africa",
    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxObk1sUndMVHY0WmIySkU5T2x3SkxIbWVPcEMwN0tHT1p3QWw3Nl85V0dGemRsZkNBMXJadVFSZDh5cmVjVEt4eEdTNmViUXVXQVJEZU03bW5WckRRcEh5TVBnMm1TWkJHZDl2RHFaMVkzMUROZldWcm4zRlVBV0wtSDN3?oc=5",
-   "src": "nytimes.com",
+   "src": "The New York Times",
    "pub": "nytimes.com"
   },
   {
@@ -6422,10 +6446,10 @@
    "date": "2026-06-22",
    "articles": 3,
    "sources": 3,
-   "title": "Australia, Canada sign $1.75B agreement for Over the Horizon Radar system",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRnFKRmZhU0pNNmxrdXVSaXg0Qk5oUERnVFd0UXB6cVRsLWpfa0gyTG8yOUM1Ump2WFNPYUtuU1pCaHhjMk9hUXlsdlBhZ2RfbG1KcVJLaHdTd0w5RWNPbkFBRU9PSmRDNVl2Wm8yX3pOT05ZR1ZKbnVOOGtQVzM3Q2EyQWNNZXFZUUpQc3l5MVgtM0lUNWpFWFozMFExWll1dk9tS0VidUk1RkpG?oc=5",
-   "src": "Breaking Defense",
-   "pub": "breakingdefense.com"
+   "title": "Australia lands record defense export deal with Canada",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUVFOTDNia1JGT3ZabmpFMUlPclFuRURRVng0Q0FjVmZ4NUl5bDhOSF9yOTBlZ3d4dU05bVB3YXg3Tjd1RGt2M19EbkYtUWNBSWZkQUxXOG5BbnY0VkViMkt1amtyZUNhVTlWZklsTzFoUlhPR1ZMLTczRWFuY1pGMg?oc=5",
+   "src": "Latest news from Azerbaijan",
+   "pub": "news.az"
   },
   {
    "s": "canada",
@@ -6441,7 +6465,7 @@
    "sources": 1,
    "title": "Canada Secures Pork Trade Deal with Japan",
    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTjdLSEVrTXh2NHJPenA5Ukh6RWQ5WEprbUk1ay0wUGxIR0l6NXZ3ZHY2eXVlY09wV0R1NVV0VzFvTnpwNnRQbHY4M3B1bjdEaGUyczlId3lBVEdjMFpNb2RXRlhmdWRWUmNmcFlqcEk5V0NkTFRNTGtIYVhrVDI0SUNFeHVndFFNVURrczhyNG0?oc=5",
-   "src": "Farms.com",
+   "src": "farms.com",
    "pub": "m.farms.com"
   },
   {
@@ -6488,12 +6512,12 @@
    "goldstein": 4,
    "week": "2026-W26",
    "date": "2026-06-22",
-   "articles": 1,
-   "sources": 1,
-   "title": "India in talks to sell supersonic BrahMos missile to UAE, sources say",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNUUtNldVaHdBcFhRTUtpZUlQSkRkQXpCMUpYd3hnMlk4SVlQcnYxcUhOTHQya1JHR28ycHRLUV9IY3I2RjFYWDhKR2RBSW94Nmc3R1I0QnhVV2xuUmR1THg0UU9sSnhtMVJCY1JQOUV5aDNHbTBNN0ZFN2ZNYThmMllxazMtSWV5N0dsVnB2Mnk0X0s1eWx0aHUxeGVSWXlkU0V3cA?oc=5",
-   "src": "The Straits Times",
-   "pub": "straitstimes.com"
+   "articles": 2,
+   "sources": 2,
+   "title": "EXCLUSIVE: India in talks to sell supersonic BrahMos missile to UAE, sources say",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZnpzMm5md3pmWEpzNWs1MlM0R1Q2M25EQktFeWRBaWxwRm5vdzk2eWxGTDVZLXhoZXdwemtvZHM4aWNBMl9qZWxvVk5CbFo5cTIwTTd0M0N6a0pzLTFNdzFzalNLcmJxQ1ZKUkxjc0ZnVWtIejEwd2xnUzI0V2tQckc0bG9PYVVxUllaZlE1cldfd2kwMVVaYVpYQ2hfaV91N2swN0h4ZzdUN3M?oc=5",
+   "src": "Reuters",
+   "pub": "reuters.com"
   },
   {
    "s": "kenya",
@@ -6543,7 +6567,7 @@
    "sources": 1,
    "title": "Denmark to Supply Ukraine with 15,000 Long-Range Artillery Shells",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZlVZU0FuR0M3UFZTU3NiMGdfNGdtamFueXFja3NKdUFmQTV0cWpORVA5ZW1HRTg5WjJiOVZPYnlTZ1ZqYXJvbnZYSGNoU05vSVpZUTEzYjZId2ZSVnNwdGNwVGljN0haNUJTQXhDZHUtVnhqamVsNFlFNjZhNG1OVUZvRWFiekJKcTlRREoxUUJObmEtNU1QR3JjMHBZUQ?oc=5",
-   "src": "Militarnyi",
+   "src": "Мілітарний",
    "pub": "militarnyi.com"
   },
   {
@@ -6579,23 +6603,6 @@
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMFltVFpvcEo1cVB5dW1Hd3JzQ0hXRWZSMVdoQUtsWTdXbUdRSHdjVTNqZmJIeVhfYXJKdlZGTUxXUFEyNHlIWF9pVnBkV2g5aWgtdmZtV3RLeUNmWnFhOHRsTkhSS0NoeDQ4RFl2VG9ZdlgxT01wUTJtX2JMZld4Z2RIU1AxNnh4QjVLVWlQVjdPam5razd6anlTOGVZeU5JT3pLR0ROWlhabFYwYkktcA?oc=5",
    "src": "RFI",
    "pub": "rfi.fr"
-  },
-  {
-   "s": "france",
-   "r": "italy",
-   "pair": "france|italy",
-   "layer": "silah",
-   "root": "057",
-   "event": "anlaşma / ortaklık",
-   "goldstein": 6,
-   "week": "2026-W26",
-   "date": "2026-06-27",
-   "articles": 1,
-   "sources": 1,
-   "title": "France and Italy strengthen strategic defense partnership",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOVI1RWlkbEtTekxXTEJWQnViZVBva1lka3l1Zk80NEExQnFxRmlwUG5HWWRQMU5EMmQ5QWYwbFlGRjlCRlN2U0dIbVFLdEZMeHRHZEQwMjY5TFlKWTB2NUp6SWVNTExZUkFBTTQxTWZrbjJ1SE9POFlYTHJXMjl1dGNhQUZEd3ZBdnZndnRUVlpmbndNSXfSAZYBQVVfeXFMTjREZnlaTlhidkRCd0pROUEybVZMZXllVl9NTmhEQTY1YnJxTlRTUnRiNzRJZTd3RlFWUTZhOENXTlFMVEsxZWhzSWtLbFM3Z1pPNFcwbGp1cjJ2XzlNTks1Z2JyaEgzc1RVVWhiZ3VzVDB3SFNBY1ZqVzU0RUhweGw3ZWRvbXBTRnNhLURaT3p0bmFqZUFR?oc=5",
-   "src": "Qazinform",
-   "pub": "qazinform.com"
   },
   {
    "s": "türkiye",
@@ -6666,6 +6673,40 @@
    "pub": "bloomberg.com"
   },
   {
+   "s": "china",
+   "r": "algeria",
+   "pair": "algeria|china",
+   "layer": "silah",
+   "root": "061",
+   "event": "silah/malzeme alımı",
+   "goldstein": 5,
+   "week": "2026-W27",
+   "date": "2026-06-30",
+   "articles": 1,
+   "sources": 1,
+   "title": "Algeria discusses purchase of 40 Chengdu J-10 fighters and 4 KJ-500s from China",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQeW9YcVFIRUFMbE56SXNqNTRaRTRIRkZzdHp5ajZYYVlidFpCTVBNcjAxb29zYkdqRll5dGY4RHdNVGtwQjRlWnpTZktSQ0xrY0ZIY0xrZlYyVk9Jd3dzSEpxV1ZxZUxrRWFYcmYxRzR0MDNndFNYanlKUW10RlBCZ3ZvZG01TjR2cFlv?oc=5",
+   "src": "Meta-Defense",
+   "pub": "meta-defense.fr"
+  },
+  {
+   "s": "denmark",
+   "r": "ukraine",
+   "pair": "denmark|ukraine",
+   "layer": "silah",
+   "root": "070",
+   "event": "yardım",
+   "goldstein": 7,
+   "week": "2026-W27",
+   "date": "2026-06-30",
+   "articles": 1,
+   "sources": 1,
+   "title": "Denmark announces $670 million defense aid package for Ukraine",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVjZIeERRZm84QzlBV1pTYVg4Z1YwcmFmYlNPOWx6eU1XaG1nVHV1YTZsemIxT0UwemNodUVKN01jSzRYdGtEdlpxU3BTMDQwQmlMMHlOVnlnRHlBYzNXOG90cjJVaURxUFJWZzNSdmF4ZWpuLVc4eEhsd2pZa1Vac2IxQlJDY3d3eEY1ZnJvWlUzT05Z?oc=5",
+   "src": "The Kyiv Independent",
+   "pub": "kyivindependent.com"
+  },
+  {
    "s": "ukraine",
    "r": "sweden",
    "pair": "sweden|ukraine",
@@ -6675,8 +6716,8 @@
    "goldstein": 7,
    "week": "2026-W27",
    "date": "2026-06-30",
-   "articles": 3,
-   "sources": 3,
+   "articles": 4,
+   "sources": 4,
    "title": "Ukraine signs $2.5 billion contract with Sweden for Gripen E deliveries by 2029",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMV9ZVEtQVUhhOFRYOHd5bHV4WnppVGNEY0pxN0hfdE1CZXNiY1cyNUxCYjhXUFkyN0xZTllMUVNQRkVqWEN2bmg1cXpMRkM0enBUU255c3VleXNCOVU0RHNNT1BXVmk1cmFIdzBRNWI5WXhMY0l4LWR5bC13UU1wVlBmbkV6VHB4NXR1dTV0Umhua0EyR0lkQ1BaRVkxVmNNb0dxVlN3NnJTUW5jWU5VTlZWYWJOQQ?oc=5",
    "src": "Breaking Defense",
@@ -6951,42 +6992,8 @@
    "sources": 1,
    "title": "Czechia to Fund U.S. Weapons for Ukraine for the First Time",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRmZIU2FvZURFNDNWRXNWODhBU3ZUYXBOYVg5T2hfOG1pSWFucktlSkotNnN0bURWZko0cDNxVVJlN29Gc1hYYWlRbTFkREw0Y0lWcmxnVUdpVElGbzF3RUR1dndLNmF2eEliQTJlS21QbkpQQ1V2WTNZZ0EzcGR1SE9mekZzWFIxUm5CUlJlRUk3d2hs?oc=5",
-   "src": "Militarnyi",
+   "src": "Мілітарний",
    "pub": "militarnyi.com"
-  },
-  {
-   "s": "france",
-   "r": "nato",
-   "pair": "france|nato",
-   "layer": "diplomasi",
-   "root": "036",
-   "event": "görüşme / müzakere",
-   "goldstein": 4,
-   "week": "2026-W28",
-   "date": "2026-07-08",
-   "articles": 1,
-   "sources": 1,
-   "title": "Erdogan, Macron discuss trade, NATO, regional crises at Ankara summit",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcUt4aUFWNzJ4dURZck8xUWdHZXNDeDRpQ2h5clBZUWJFS1hOLWRsdnF3U2ZFVjV2RXBXUnl1S2hWYUliNUhZcl9JcnhuQUh5Wm01Wk5tT0FfRHNwb0VPZ0tnbWM5LXQzTFg3QVZPN21PaVpLVm9jMEt0b3BUb2Flc1A2Z0pTTGlPR25JbUY1bERWMFFvMU9BUTdkY05WMk5VMDIwZ0FQTHJ3MHc?oc=5",
-   "src": "Anadolu Ajansı",
-   "pub": "aa.com.tr"
-  },
-  {
-   "s": "türkiye",
-   "r": "nato",
-   "pair": "nato|türkiye",
-   "layer": "diplomasi",
-   "root": "036",
-   "event": "görüşme / müzakere",
-   "goldstein": 4,
-   "week": "2026-W28",
-   "date": "2026-07-08",
-   "articles": 1,
-   "sources": 1,
-   "title": "Erdogan, Macron discuss trade, NATO, regional crises at Ankara summit",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcUt4aUFWNzJ4dURZck8xUWdHZXNDeDRpQ2h5clBZUWJFS1hOLWRsdnF3U2ZFVjV2RXBXUnl1S2hWYUliNUhZcl9JcnhuQUh5Wm01Wk5tT0FfRHNwb0VPZ0tnbWM5LXQzTFg3QVZPN21PaVpLVm9jMEt0b3BUb2Flc1A2Z0pTTGlPR25JbUY1bERWMFFvMU9BUTdkY05WMk5VMDIwZ0FQTHJ3MHc?oc=5",
-   "src": "Anadolu Ajansı",
-   "pub": "aa.com.tr"
   },
   {
    "s": "ukraine",
@@ -7023,21 +7030,21 @@
    "pub": "united24media.com"
   },
   {
-   "s": "türkiye",
-   "r": "ukraine",
-   "pair": "türkiye|ukraine",
+   "s": "germany",
+   "r": "sweden",
+   "pair": "germany|sweden",
    "layer": "silah",
-   "root": "071",
-   "event": "yatırım",
-   "goldstein": 6.4,
+   "root": "057",
+   "event": "taahhüt",
+   "goldstein": 4.5,
    "week": "2026-W28",
-   "date": "2026-07-08",
+   "date": "2026-07-09",
    "articles": 1,
    "sources": 1,
-   "title": "Türkiye to continue funding weapons for Ukraine through PURL mechanism",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE01VVMxT255eXA2UTdDSlFTMUx0cnlRT2dFSG04NGlhU3J3T3pJYTZSM1J4bWQtYklXdEJjbTNVS05zZER3S2xpMkpPQmNoMW0yX1BGT2RwTVVOM3hIRjNmU2xqZXXSAXBBVV95cUxORm5MVDNQNjhzcEthNFZKTjh2ZHpYeGNXZFhnalBBMnhfYmFOXzZId1lETkV5V1pJU05uRENtQ04ybUhVd0RpQ1lWX1g4dmg0Yms5X3lwMzBiRFdKZUtQcERfXzJvdkNQcDlPUzBIV0JT?oc=5",
-   "src": "Українська правда",
-   "pub": "pravda.com.ua"
+   "title": "Germany and Sweden commit to expanded industrial defence cooperation, but no SCAF…",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVEhiNlJVcy1ESUM1Y2Uxekc5MlUzenUycXhzNWlzVWZZWm96Y245SW10Z1Z2WC0tajN6MDhDdzBJX0tjZ0ljMVlaTUliQ2FVejBNMExDR0F1NU9JelJRSGdxdGx4QUtyQmhmN1N0QVR5RkFHVTJwdHR5Z2pUUlFoRnJZUmFjYUsx?oc=5",
+   "src": "Meta-Defense",
+   "pub": "meta-defense.fr"
   },
   {
    "s": "united states",
@@ -7155,7 +7162,7 @@
    "sources": 1,
    "title": "In The Latest Russia-Belarus Non-Strategic Nuclear Exercise, Putin and Lukashenka Show Teeth",
    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE53cTlYdExUNUE0ajhXZy03THBjcnRwUldqY1kzcjJtNTZzcFA3SERVZlFNWGpxT18yMjBhcTlIMWFPampRTGFhMmdnVy1ha1BxSWpYb2lDbGJfU2N5QnozZ1NvMmZFVzRtSFloQUFIRUdqVTMxVjFkUg?oc=5",
-   "src": "fpri.org",
+   "src": "Foreign Policy Research Institute",
    "pub": "fpri.org"
   },
   {
@@ -7223,7 +7230,7 @@
    "sources": 1,
    "title": "Key Achievements Of The Japanese PM’s Visit To India – Analysis",
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUUV4d1RfWTE3WUtBVnk4Rlh3RzdlNFJpQ3h2XzlvWkdLOFFlSTBZMDdJMFc0Y1MzOVNNbXRvdTJLcDJCQ2hOWlM5NnlwNEp2ZDByTHI2WWlHcTVlSFhDNGN6NnhZMkxBcDhaWjVObndtR1VsbkE2b2NGYTUzSHplempiaXdLWUdqVk81eURfYjQ5eTUxSTRjUUtFTU5RNE5IZ3c?oc=5",
-   "src": "eurasiareview.com",
+   "src": "Eurasia Review",
    "pub": "eurasiareview.com"
   },
   {
@@ -7273,9 +7280,9 @@
    "articles": 1,
    "sources": 1,
    "title": "DITP Launches THAI SELECT Festival 2026 in New York to Strengthen U.S. Market Opportunities for Thailand's Food Industry",
-   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5HWWVLVjRSMjFYemVadVY4aXNHZWVzeTd4WTlzRXhBNnBaR19mV2dOeFAxWDRlNzhBV0hGX1J2a0otWlB2dkUtSWpaTWc5Nkl5TTBhdQ?oc=5",
-   "src": "Taiwan News",
-   "pub": "taiwannews.com.tw"
+   "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOUXhETXBvdEljNzZ6VHVJVFdkZFlmNmpmS0tnbXptT190ek4wYUxPVzhfYjE4SHgwODFpOW85SUhibmQ0T2Z3T1ZzaUhxc2pBc29Nemd4UTJpd3ZDRnU3Ni1rbngwOVpGV3BuMXFwRzAtaXczMGN2ekZzZWRud1EyUmV1eDJwcjQ4RzRhMlhHZTBpZTB0QWg5ak5pdDdwcm1vb2tUN1poYzJfRjNZSW5DN1A1QlN6SUEwMmJCb2lQU000ODllclE2V2lGQk9PdW9hVElDNlBvRUFFQ1lyTm4wbVpmYTNMSzdwZHUxaFRSMVg1dncxbmlNcnFaVm9MVlVwVXdCbVhvZzYxaVdpS3JFNHRqdUtNUQ?oc=5",
+   "src": "media-outreach.com",
+   "pub": "media-outreach.com"
   },
   {
    "s": "united states",
@@ -7291,7 +7298,7 @@
    "sources": 1,
    "title": "US approves potential arms deals for Saudi Arabia, Kuwait",
    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1TN3dMeW9fMmRUZGczUDJONWhKbDFEa0tmQzZtaGNNcW4xNTh3dVY3YXVVeWo4ODRhX0k5ZlBqamlTZW9HUlZpblNuTmtnNkNKUy13cG84RVk?oc=5",
-   "src": "TRT World",
+   "src": "trtworld.com",
    "pub": "trtworld.com"
   },
   {
@@ -7308,7 +7315,7 @@
    "sources": 1,
    "title": "US approves potential arms deals for Saudi Arabia, Kuwait",
    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1TN3dMeW9fMmRUZGczUDJONWhKbDFEa0tmQzZtaGNNcW4xNTh3dVY3YXVVeWo4ODRhX0k5ZlBqamlTZW9HUlZpblNuTmtnNkNKUy13cG84RVk?oc=5",
-   "src": "TRT World",
+   "src": "trtworld.com",
    "pub": "trtworld.com"
   },
   {
@@ -7342,7 +7349,7 @@
    "sources": 1,
    "title": "US Approves Up to $235m Food Aid Package for Ethiopia and Sudan Through Catholic Relief Services",
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOemNXNkpQRnpPWkwwMWkxcG9fNFpIR01tSUptSWNnN24yQ0RCMzJtODBZalhSY1pRMTNxOHJteWNCYlBmcms2RU9LbXI3Yng3cTR1ZE5ua2JPTjBOdEpCTHk4RUJRU0g0R3R6dVJ5ZEF0T3ZOSHpLWE1mN19oci1XcUtBdHo4M3c2Y2tpbFpWSWx5RUdsNXgyTUlMN2UzYnd0T2xha1ljUEQ0bUwzYmN1VV9VNGxEODlIcWtMYg?oc=5",
-   "src": "Birr Metrics",
+   "src": "birrmetrics.com",
    "pub": "birrmetrics.com"
   },
   {
@@ -7359,7 +7366,7 @@
    "sources": 1,
    "title": "Iran has asked the Houthi rebels in Yemen to be prepared to close the oil route in the Red Sea in case of American attacks on Iranian energy infrastructure.",
    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaGFfVjdoblk3YWxNVV9nMElkYUd0VWNsS3Z3RjVDbVRaRkI4cDVDVzdkazFWVmdkcVZMSlZrVnJUcTNFejJaVFFjZ0ZaYkF0djdSaG9SbGNvQWVkUGFVTzBRY2kyYjAzbUU2YWZ6QXdRRjJtWW04VHBsVUVDYlppRU5YMU1MMlY2Y3pXQTVsUlVNZmlnTXZWTlo5d1AtU1VUYTliczF4TlRTby1GMlYwZGJkMk9KdU1Jd0tZaFJPUko?oc=5",
-   "src": "Informat.ro",
+   "src": "informat.ro",
    "pub": "informat.ro"
   },
   {
@@ -7410,8 +7417,25 @@
    "sources": 1,
    "title": "US Approves Up to $235m Food Aid Package for Ethiopia and Sudan Through Catholic Relief Services",
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOemNXNkpQRnpPWkwwMWkxcG9fNFpIR01tSUptSWNnN24yQ0RCMzJtODBZalhSY1pRMTNxOHJteWNCYlBmcms2RU9LbXI3Yng3cTR1ZE5ua2JPTjBOdEpCTHk4RUJRU0g0R3R6dVJ5ZEF0T3ZOSHpLWE1mN19oci1XcUtBdHo4M3c2Y2tpbFpWSWx5RUdsNXgyTUlMN2UzYnd0T2xha1ljUEQ0bUwzYmN1VV9VNGxEODlIcWtMYg?oc=5",
-   "src": "Birr Metrics",
+   "src": "birrmetrics.com",
    "pub": "birrmetrics.com"
+  },
+  {
+   "s": "china",
+   "r": "qatar",
+   "pair": "china|qatar",
+   "layer": "enerji",
+   "root": "162",
+   "event": "kısıtlama / tarife",
+   "goldstein": -4,
+   "week": "2026-W29",
+   "date": "2026-07-17",
+   "articles": 1,
+   "sources": 1,
+   "title": "China Looks to Curb Dependence on Qatar for Future LNG Supply",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNU0FPd1dQV2xDTDQ2THNUSDUyVFBSSkd1ZzYwTXZKNnNpUksxOC14R3NxVFZQa2FFRTZUTkxNUGVyNVV4T1YtT1BMMHhFamRERmhnWnFYRXhpSVJwMndOWHM2Tks5NUlnOXY5NExqcmNlTl9ROU9QUVRaREY1LXE2NDdBeVppdGZwU1VaNkY0VVJXdTdINy1iQWtreUQ1OG0tSi05QlRpVTV3ZE1OVGZielB0aUktUFE?oc=5",
+   "src": "Energy Connects",
+   "pub": "energyconnects.com"
   },
   {
    "s": "pakistan",
@@ -7446,6 +7470,23 @@
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTnpXWm1tMXVBbGR1WFp6c2FiZGhYS3FEb0syeVpDNmxJbWNKWkpweGFMWTM3enVmZ2ViWi16aFM3QzZQMHZpT243XzJwMHlBT3h1eDNTS0p1WXlaTVdPY0hEZnMwb0JNMURQSTkxN3BYTVBoS0RYZXBCQmlkYlNjMVp0SDhtNlRDZnh6QzZMbDByS2d4clhnNll6d1VDdHd4dU9YdUVfcFhOOGVSTWY1YjJnY3AzRmd0TG9GWGgteG52dkh6b1E?oc=5",
    "src": "Federal Reserve (.gov)",
    "pub": "federalreserve.gov"
+  },
+  {
+   "s": "thailand",
+   "r": "china",
+   "pair": "china|thailand",
+   "layer": "borc",
+   "root": "057",
+   "event": "anlaşma / ortaklık",
+   "goldstein": 6,
+   "week": "2026-W29",
+   "date": "2026-07-18",
+   "articles": 1,
+   "sources": 1,
+   "title": "Thailand-China Investment Forum strengthens economic partnership",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQkc3VEVmcEozemF3TXlZTWZIRGJOb2RUdElORUJuT3A3YVpCN2dReWJOdUpGcXFqX3hjVXdJbUJzTVdvTFdNWmdRWWpCc0xFOUw3bHIweWJYeDJFOXdQbDg5aHFQdHBOSWFXcko4WjNWS0tIT0gzT3h0d0ZzeHM1VHhFcHlvc201NnpOWnNVLTllcFZpUjhXM19MOHhOeHJDNnJ1VWN5Sm9yd0V0bFZRYXpqQlZnQ0xZSkZQcUhB?oc=5",
+   "src": "news.cgtn.com",
+   "pub": "news.cgtn.com"
   },
   {
    "s": "uzbekistan",
@@ -7563,25 +7604,8 @@
    "sources": 1,
    "title": "Türkiye to deliver 30,000 food aid packages to Northern Syria by end of July",
    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBQcmpOZ2xZNUJUUXIyY05PYXBqYXhfcF9mUXVnb0xvUy02TXlFOHdQWXZSTzhxVlVndUNNdWxHblRvWEd2TEdveEhITmVsU2loXzZCeg?oc=5",
-   "src": "AzerNews",
+   "src": "azernews.az",
    "pub": "azernews.az"
-  },
-  {
-   "s": "romania",
-   "r": "france",
-   "pair": "france|romania",
-   "layer": "silah",
-   "root": "057",
-   "event": "anlaşma imzası",
-   "goldstein": 7,
-   "week": "2026-W30",
-   "date": "2026-07-22",
-   "articles": 1,
-   "sources": 1,
-   "title": "Romania signs €1 billion France deal for Airbus helicopters and Thales radars under SAFE funding",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNYjNPYWZ3WHk2MFY1ekwyLVU0TS1VSFVUWlNqYVpnckVuNnhER1BsN25qcXlDSEJtRGtvZ0pRSFFWT0YyNVNJdVhjUHE5OG83QUptMGVNNk9haFJ5R1JvQURQdUR2SWtCTDVGc0s0RjZvQ0ZTRFp1SE9Hd24zNlpqRXo3S0oxREJodTdlM2JWb3RwRlZFYmEyVG12UUU0bTNfUWtxRFBoUFU5dzQ2UjgwSk5mc19rNEJlZk41S0dHUjlZWU0?oc=5",
-   "src": "Defence Industry Europe",
-   "pub": "defence-industry.eu"
   },
   {
    "s": "united states",
@@ -7631,7 +7655,7 @@
    "sources": 1,
    "title": "Greece to buy $4 billion air defense system from Israel",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOS0duUk1KbG5oUHZmSEl4Y1Ytb3h2RzlIbVNGOTdVeFAtY245Q3B0a0pLQ2o3RHhSalF2RzJMR0hQUlVNaGU5ZDA1b0xCMHN0QS02bUUyYXNQTWphZ01fdWktM01aS3lSSF9LcU82enNqYnNNM0RmN3dWMXIwaE11aDYxWTBkUmRvZnJZcWJVaEVBbXlJREJlS3Y2VEtNRlRjbkRqN2gzaFV2SUNi?oc=5",
-   "src": "Defense News",
+   "src": "defensenews.com",
    "pub": "defensenews.com"
   },
   {
@@ -7805,23 +7829,6 @@
    "pub": "azertag.az"
   },
   {
-   "s": "iran",
-   "r": "china",
-   "pair": "china|iran",
-   "layer": "silah",
-   "root": "19",
-   "event": "füze/roket saldırısı",
-   "goldstein": -9,
-   "week": "2026-W31",
-   "date": "2026-07-29",
-   "articles": 1,
-   "sources": 1,
-   "title": "Iran to get shoulder-launched missile systems from China amid escalating war with US: report",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPakVTdllLMEtXRVlaRWVNTkZ5bFYtUTlNWnNuUWdEN2QxdmxkSUNVQl8ycmlwd00zY2RxbXJTb3BuN2pQem9DanNHSHI0TWZPcnBmd0tha3U1ZEJmeF80VWswNUthb010Rk9QeHl5d1NIRllna0tVWWNJNzQ2b1VuUTliZUtrY3Z3YW5EMmJfd0hBWUpkTER6d0pHaDJOREZHdC1rWElqTQ?oc=5",
-   "src": "New York Post",
-   "pub": "nypost.com"
-  },
-  {
    "s": "india",
    "r": "indonesia",
    "pair": "india|indonesia",
@@ -7835,7 +7842,7 @@
    "sources": 1,
    "title": "India, Indonesia Bolster Defense Ties, Maritime Security Cooperation",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcmdZNG9hb2pxenpYS3pLYWdDcmp0UUNMMGJGR1Q1MDF3b1RTM05lSjNkVlVOWTdGRjBpVk03SjhIQjBNNVk0Mzdqb3R4Q0dkM25xQnBCWVhsR3A5ZnRNb3c0eHFzQzRNM2RmOEVISUhvT3JMOUUzTTBnelE5MngxN2RHYlFkSHUtRXdlSE0ybktYbFloNkdKeUZlUUd5Ui1IeUVLb2pOREFiZw?oc=5",
-   "src": "eurasiareview.com",
+   "src": "Eurasia Review",
    "pub": "eurasiareview.com"
   },
   {
@@ -7873,57 +7880,6 @@
    "pub": "jpost.com"
   },
   {
-   "s": "france",
-   "r": "india",
-   "pair": "france|india",
-   "layer": "silah",
-   "root": "120",
-   "event": "ret / karşı çıkma",
-   "goldstein": -2.2,
-   "week": "2026-W32",
-   "date": "2026-08-03",
-   "articles": 1,
-   "sources": 1,
-   "title": "France Reportedly Denies India Access to Rafale Source Codes Covering Radar and Electronic-Warfare Systems",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPREJzX3U3c21ic212MWdvYTZzXzg5Z0F4amNIb2MxX3I3WVBDODlKSElOdmM5TFhhdjJkaUJBOVFzYlk1QWw2VVIxZlBmaFVJZ3dLUURfeDRaZU5CTC1TWVFUSzlBbjd3S29YVHhVdFZpUzYtOEdYdDc1OEpOSlQ5RUtfb19YcHVYMnU4V3d5ZnVhRXBoWGNCT2ln?oc=5",
-   "src": "Defence Security Asia",
-   "pub": "defencesecurityasia.com"
-  },
-  {
-   "s": "kazakhstan",
-   "r": "afghanistan",
-   "pair": "afghanistan|kazakhstan",
-   "layer": "tahil",
-   "root": "061",
-   "event": "ticaret / tedarik",
-   "goldstein": 4,
-   "week": "2026-W32",
-   "date": "2026-08-04",
-   "articles": 1,
-   "sources": 1,
-   "title": "Kazakhstan Grain Exports to Afghanistan Rise 57%",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1vdWI2bC03Y0l1ME1iY19OLU9qanpwUnhmMGZmbVExV3BjdGZSTDdWZDBEZEdxZ0xTSUpWSFZPQ1FIT0JZYk5xejlVMkxPZXdJb2VSMDBfYW9ENzA5OVhyRHoxSjhuTEQ3RURuRk5mR0VsLW9nWHpGSjFFWQ?oc=5",
-   "src": "Khaama Press",
-   "pub": "khaama.com"
-  },
-  {
-   "s": "india",
-   "r": "israel",
-   "pair": "india|israel",
-   "layer": "silah",
-   "root": "061",
-   "event": "ticaret / tedarik",
-   "goldstein": 4,
-   "week": "2026-W32",
-   "date": "2026-08-04",
-   "articles": 1,
-   "sources": 1,
-   "title": "India shipped 2,596 arms consignments to Israel, report says",
-   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE81ajRFSWM2QmRpWkp2SmRhWGg0b2VOeUxJY0p0RHRtNmNaN0cyZUZKZjBzYmhfOG5LMTZ0UlA2Y3daa1d0Y0Yya0pKeGNhMkhkUHNOaXN5bGJaazJ1a3liRnZDRQ?oc=5",
-   "src": "The Jerusalem Post",
-   "pub": "jpost.com"
-  },
-  {
    "s": "china",
    "r": "united states",
    "pair": "china|united states",
@@ -7933,12 +7889,12 @@
    "goldstein": -5.4,
    "week": "2026-W32",
    "date": "2026-08-05",
-   "articles": 1,
-   "sources": 1,
-   "title": "China hits US with sanctions, drone export curbs ahead of Xi visit",
-   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5QRFQxVnhfaTM5U3lKRXBnQkdKT2VGamxCaWR6clhjZXltdTBQYVFwN2ZHWm1QWUJtT29TckVmTFlNc05JaXFSUUExdkJyQ3d1NjhQMFRtbFRqaDdxXzdOQXJqYnhIZFlqQkhRWFFZS2x0Zw?oc=5",
-   "src": "CNN",
-   "pub": "cnn.com"
+   "articles": 2,
+   "sources": 2,
+   "title": "China issues retaliatory sanctions against 7 U.S. entities",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSTZ3ZVhuMk40UXB3b2JsUTZENUdKUUVqM0hwbk13VEktWXA3VERETGJORUk2Y0gxLVZlVWRQcWo5RUNUbWFZdmxXY2F0ZDhrUGJJMGNjNjZMZWRyeDUzS2Z3T3hGT243VEttSkxyZmlMOW41WXNzeXFlSHptbmtqcFRwc2FyZTlCd28xc2llY9IBlAFBVV95cUxNR2VWX2V2OFNWTm54b1hsel9KQ2VNV2dwczh5SEFMaTJFYlphaWJNeFoyMVdnTlI5UnZ0cURGRGpqV3BHNVRLRVBKRXpGOXlrdGIwajhkOFhIUXNlZVoybW96TUtCdWhmOE5XaVE1US1SRjBuSktFc2lUUjRRVXN4bjFIclJoN1M1WnY3MWdDTUE4OE9I?oc=5",
+   "src": "upi.com",
+   "pub": "upi.com"
   },
   {
    "s": "united kingdom",
@@ -7988,7 +7944,7 @@
    "sources": 1,
    "title": "South African minister courts China for R2.2 trillion energy investment opportunities",
    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5VSHZLRG15NnFvc2lXaDV4RmF2QXMzeDBXS1BGSVNTYVNKT0Vya2RCRGZfTHNPdlRHbGRzdF96Vk8xOEh1aURQcWNBd2RFOGlFVzcyVElaaDVkXzBBNlhmU0Y0dWs?oc=5",
-   "src": "People's Daily Online",
+   "src": "en.people.cn",
    "pub": "en.people.cn"
   },
   {
@@ -7997,20 +7953,20 @@
    "pair": "pakistan|saudi arabia",
    "layer": "silah",
    "root": "057",
-   "event": "anlaşma imzası",
-   "goldstein": 7,
+   "event": "anlaşma / ortaklık",
+   "goldstein": 6,
    "week": "2026-W32",
    "date": "2026-08-07",
-   "articles": 1,
-   "sources": 1,
+   "articles": 2,
+   "sources": 2,
    "title": "Turkiye, Saudi Arabia, Pakistan sign joint defence agreement: What’s in it?",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZzVfUmNRUTR2R1E4TlE3aEZmb0dORW50NTBoRS1vN1hpWHdMZnh4LUxZSmdiT0hkbmlSREV5ZVN5WWpvNlk1VXh0SG1qUnpsQ0Z5X3JOSUdGV090dXoxeC1CN2RNM09oV2xwemNUNXQxbk9pYktDZUVKc19UdlQxVl9zSGY3Z0U4NXBsWFFtTmJuYm16bGkwa2lNU3NQaU02cHBzUGVMZ0gtTVdOVGfSAbMBQVVfeXFMT0xNZjJuNHhNclJCZU9GLXNDLURCdFBVOFdhem1GUDdYSUdBYVZSaW9LX3ZBXzd6MFFvdmtaWkpSVnpkRk1FbUFaTUNuSzhPTjE0YXNkeTRIX2tIdm1BWUlWTkt5R1ZiaVE5ZlBJVXZ2aGhiNmloNmNZaVhSRWctYjlqc3NLR3BKajBxSGgxd0xBZHY0MHJRRXphd3luVnNtcXIydUs1VXVCSHNHdkdicDJweGM?oc=5",
    "src": "Al Jazeera",
    "pub": "aljazeera.com"
   },
   {
-   "s": "türkiye",
-   "r": "pakistan",
+   "s": "pakistan",
+   "r": "türkiye",
    "pair": "pakistan|türkiye",
    "layer": "silah",
    "root": "057",
@@ -8018,12 +7974,12 @@
    "goldstein": 6,
    "week": "2026-W32",
    "date": "2026-08-07",
-   "articles": 1,
-   "sources": 1,
-   "title": "Turkey says defence pact with Pakistan, S. Arabia 'not in contradiction' with NATO commitments",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQR3ltSUl3TWs5SGlFendVX244TmlUeHBnRmF6b1dFV3FSUGpIVGJIZ2FYZXNWNG9VaWdOX1dRMEVhWVZPYU9lanlQSVVzRDNFSm04VFBxUFd6ajEzRjN5RENTZ01CZXFBenBldUQ5NGktWWlzYXdtejJZc1dCaUFyTkVkdFItbjg2bUNRRU0zOHhUdFFzandoeXloUTN1RXJ5djhOWVI1SjdqSW5Qd0JabFhZYzFvQQ?oc=5",
-   "src": "France 24",
-   "pub": "france24.com"
+   "articles": 2,
+   "sources": 2,
+   "title": "Pakistan says new defense pact with Saudi Arabia and Turkey is 'purely defensive' and open to others",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbWs0eVpVSXBqNzJkdWxJZlN0cmlkdkpITFJCZmtTaF9sWnhpNXVQcU9zR3NPV0stMjZtYXl0aWlJUDU3T2JJTzM0OE95S1lYYUR1T1ZJZDFzamkyMzY3Z0ZLVndXT0RjeGNLbnludlpNbVJ3cW1hVEk5UE96bzk1QlcxaHo3Rk16UEMyaXRnVnNTTUJxUDdpcXhzamFKcGFGeWd6VExBbHVBYkRodkdMc1ZYRmZWR2FuS3ViZUNCcmNyOUN6ZGZXbjZ6NDNLUdIB0wFBVV95cUxQZVNGdFgtQlNmeVBuSXgxb1ZVdGZUYU55cHJFZmJRMjBhdzI1YUVMNEI4ZFVCNEJjYnI1dFNjTE5SV21tLUFtWHpwcjJnZHo5OEFldFk2YmU5SnUzclZiMXJJUENiN0lVZjhnT3Z0c0pGbW93bHAyRDZJM1p0ZGhuVm1ranlUUmxlZF9mX3g0N2E1Q1pfVkVhOU0xaXBtT1FNQzV0ZVBhemZNb3QzaEFRZUpaMk5UUDlXSi1OYWpreWJ1OC1yalNOcEl1LVVaem1URkYw?oc=5",
+   "src": "PBS",
+   "pub": "pbs.org"
   },
   {
    "s": "united states",
@@ -8039,7 +7995,7 @@
    "sources": 1,
    "title": "US Senate passes Russia sanctions bill championed by Lindsey Graham",
    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNX1ZubXQxaWZSTlBuczlkMWk1bm1oWjN4aV93dW5YS2NJdnBjR2UxckdRNEl5dl9sVGhHX0FneE52UDZrLWhpQ0NuOVZaQVg4aUxLcEFfZlVqeHNPVXBBSldFcEhYd3pYeHhCUmlwSEhva2JNZGpzRDRWcTZ0YWF5eFctR3R2OHlFTGZFZU5MT3RIQQ?oc=5",
-   "src": "theguardian.com",
+   "src": "The Guardian",
    "pub": "theguardian.com"
   },
   {
@@ -8056,25 +8012,8 @@
    "sources": 1,
    "title": "US promises $1bn in security aid to Colombia as new rightwing president pledges drugs crackdown",
    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQUFhQRTZQRThHZlhpTGJwRE5Db3pueVV5U2F1VEs2MU1VQkRKcGljT0JkMndGNk1HN1ZwU3NRaFRCSFRTTHh3LWVHNlk4LU5BRm11ZGhWMTd2Wnd1ei1LZUd2cUdTR0drRmc0NnNET1A4X1VaRTVKNU95VGxWV1QtUEs2amFMZ0NzWFZCRkRoX2tWZnZBVE9QUGR2M1hZUkxxRG01ZUd5cXdrR0FvT1lnM3ZMSEV6QWtNWFY0RjIyV1ppWGN4M011Nlp0Z2R5LWVST0FtWWh0TQ?oc=5",
-   "src": "theguardian.com",
+   "src": "The Guardian",
    "pub": "theguardian.com"
-  },
-  {
-   "s": "ukraine",
-   "r": "serbia",
-   "pair": "serbia|ukraine",
-   "layer": "enerji",
-   "root": "042",
-   "event": "resmi ziyaret",
-   "goldstein": 3.4,
-   "week": "2026-W32",
-   "date": "2026-08-08",
-   "articles": 1,
-   "sources": 1,
-   "title": "Serbia Seeks To Maintain Balancing Act As Zelenskyy Visits Belgrade",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSlQwTXhkWHNOWUNTTDdFdTRDNWRUbnAzRVBTZ29ZczJJdjRjX2dKMlhpN1k3bWpORVM2NEVsMFRkc2djaFlyZXdkaGVXT0dfczNtWWVyT2p2a2pncy1pYTg1V0VoRTNDVGg5QUdReFJtUFp3VTdQemFqREh5eF9YSGllemJ3WFlGMzllNjdITS1nZTU1MWxjZEtQdlg0QzFPa1ZMYWFDN3nSAasBQVVfeXFMUDhFVVNCNERDM2x5UUxJYU1nMVRqbjlfa3FvWDRCdm5RbG9sMzlMVEd6Znd1c1ExWEwyS0NVOHVLUTdhejBsS3BwaUt6RVBRVU5ic1lIMXlPcEV4RE9kbGdNbmZDVEg1bFY4NWMxSERoVzZTb1FSOTN4Ul81X2xabnpzWUpxTXB3QkFBZW1fZFFQNkdGSUhfZUU4cU1vZWN3cFpLUU1DUnl2Qkl3?oc=5",
-   "src": "Radio Free Europe/Radio Liberty",
-   "pub": "rferl.org"
   },
   {
    "s": "iran",
@@ -8092,23 +8031,6 @@
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMDVlUUN2QlE3OXJjZG15OVRsOUYxMkExc0thWDJvZjhpNkt1X1huZ1NhN3FrSlpyU3F5WVVyLUFRZzVodmlpd3NQSkpHcTItcU1UdW5GYWxiSnlhcVRiczltdUdSeE9zSEZNM285X21iOUVVeVFyb2hITHhnV1dPbnJEcy0yQk81aFNJUk51ZXFUd3FFVEE?oc=5",
    "src": "fortune.com",
    "pub": "fortune.com"
-  },
-  {
-   "s": "belarus",
-   "r": "china",
-   "pair": "belarus|china",
-   "layer": "silah",
-   "root": "15",
-   "event": "askeri yığınak",
-   "goldstein": -5.5,
-   "week": "2026-W33",
-   "date": "2026-08-10",
-   "articles": 1,
-   "sources": 1,
-   "title": "Belarusian Special Forces Deploy Deep Into China for Urban Warfare Drills",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSzYwNS1wU0RSNGYtVUNhQnNJMk9XZ1plZG00MU9qSTllS2t1RnRXTlJ5UlB1SWNnNlVXQXFFQ0dnaDNnV1g0V3VZUWctR0xFOG5BRjZkODR4MnBPOERveFZKUHI3VW1vNkFHZV9kSDA0ZGRqSE1HLVh3dVgwUlVqVDlwUHB4VkdPdmt3TEFPNUk1M1NXSk5GUFFqNS03S0pCR0NSc1BBcTE5cXJMZi1qVw?oc=5",
-   "src": "UNITED24 Media",
-   "pub": "united24media.com"
   },
   {
    "s": "canada",
@@ -8281,23 +8203,6 @@
    "pub": "ukrinform.net"
   },
   {
-   "s": "ukraine",
-   "r": "united kingdom",
-   "pair": "ukraine|united kingdom",
-   "layer": "yardim",
-   "root": "057",
-   "event": "anlaşma / ortaklık",
-   "goldstein": 6,
-   "week": "2026-W33",
-   "date": "2026-08-12",
-   "articles": 1,
-   "sources": 1,
-   "title": "Ukraine and the United Kingdom Continue to Strengthen Their Partnership on Infrastructure Recovery and Development",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOSzFncGJxY094aEs0aVZxU2VOTENMQVU0TnFDUkdvbjd2eHBuUGItb1k0R29EcW5MNXdiMlM0U3BteTNfeXY5TjRTNERTZmU2b0hrSC1LcEVkcU0wcjQxVHVfc19XWG5nSnVCdVVUMUEtaEwzOFRlZUcxZEF5czBuN0hXU3hZNWxLZ3RBMmFlRHUyWTM4YUM5THJuLTNBaEdxYzlnVW9pcUFhWm5yYUkxX2xiREJsd0F2c2k4VFhhR3R4VmxYYWpra292WFhxeE9KS3hxX09fSVdvTklNa242dkhJYkI?oc=5",
-   "src": "restoration.gov.ua",
-   "pub": "restoration.gov.ua"
-  },
-  {
    "s": "russia",
    "r": "japan",
    "pair": "japan|russia",
@@ -8311,7 +8216,7 @@
    "sources": 1,
    "title": "Putin Visits Islands Seized From Japan in World War II, Angering Tokyo",
    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMUJSazBHRkwzZmk0aHJzWldhTXpGNThoR0ZCVTlkOTZmNVZaekIyUlIxekxLTFV4QjFfb1NSQmtVeXN6TnRZMDJtZEhXUVJJenFrY1pnLWJ0bFd2TDhyV2R4SU9XbW1oaS1MMHFfYWdLSkZ5QkZqeWJUREVFZ1FpalZqeTh3YWdkUVo4?oc=5",
-   "src": "nytimes.com",
+   "src": "The New York Times",
    "pub": "nytimes.com"
   },
   {
@@ -8481,7 +8386,7 @@
    "sources": 1,
    "title": "Canadian Petition to Expel U.S. Ambassador Pete Hoekstra Takes Off",
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ01SNjA1Tzl0RG9OVUVydl82UzBSQ2lVYm9waDR5X2N3RkRtRDFBQUFuVWZTeWpJdW8zQXFEbnFZQVU5eXpDR0djbm5kNFlHYk5NcHZHaWc3R2paaUVZelVPVGxGQ2h4YXBfUUdTSE9JWUxTLXhrd1RhSzFTS2dBZnVweXRlSTdGZjI4UXdWZUk4Y1FPOHlJU3ZR?oc=5",
-   "src": "nytimes.com",
+   "src": "The New York Times",
    "pub": "nytimes.com"
   },
   {
@@ -8532,7 +8437,7 @@
    "sources": 1,
    "title": "Japan Will Test Hypersonic Weapons in Australia Under Expanded Defense Deal | Ukraine news",
    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBkYVplMEczZFhGV256MXhsQkdlQWljM2czbjJ3ZWNXXzM4TE9md3A4STNYNWdnNTFPSThKaGJPUk0wQ2dpV1dWYUtqMGprUFRvcU9jZjZiUnBYTlRMa25obnlOSQ?oc=5",
-   "src": "Межа. Новини України.",
+   "src": "mezha.net",
    "pub": "mezha.net"
   },
   {
@@ -8549,7 +8454,7 @@
    "sources": 1,
    "title": "All-Weather Partnership: Belarus and China Double Exports and Expand Investment",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZC1kUXF2OWlnZ3dLdll2ZFgwbm1GWFpXZmp0X3JUMW1EcndCWEVaVFUxQ0E3OHdmVVdOclpsWG1xa2IxMmJ2b3RBMERkUi1RbTJ1Ry1oSmFWWi1HSGRFeWdtX1BUcXJsQjBXdGstcXRIdVF2bTJtMjM5NG1oLXI1T2JjNHoyT2NwZW1pNUVrNkxWVjRnd0FiRGpYdVBNMWxudi02SVJXNWk1RkxQUTRjb2lFUkRFQQ?oc=5",
-   "src": "news.by",
+   "src": "News.by",
    "pub": "news.by"
   },
   {
@@ -8860,20 +8765,20 @@
   },
   {
    "s": "united states",
-   "r": "qatar",
-   "pair": "qatar|united states",
-   "layer": "silah",
-   "root": "060",
-   "event": "silah/malzeme tedariki",
-   "goldstein": 3,
+   "r": "iran",
+   "pair": "iran|united states",
+   "layer": "yaptirim",
+   "root": "163",
+   "event": "yaptırım",
+   "goldstein": -5.4,
    "week": "2026-W34",
    "date": "2026-08-22",
    "articles": 1,
    "sources": 1,
-   "title": "Trump in full panic mode? $4.5 billion arms deal rushed to Qatar as Gulf allies start walking away | Videos",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPdE4xZzB2cnBfb1NCSFJCdzlPSHE5MWlLdXNkS0lUM0gxaTZvalk2UTd4Sm54Z3dvNU1LWU1BbGZibDZNUVlMcWkzWVhfMWpKZjRNdE5SLWgxS0pGNDBGTy1RdzhUZVpSYkliWllRcmhUT3IzMWgzQy1zUV82YzVyNFRZYzFVampyTFRVSDc1S1FqMmJ4TmE4YlRhX3E3M3g4azBrbmZxeTlYaVNva2Y2UGJST1d5Qy1aWTRteENSd3VsLWQtYXA0eGcyTWlqOXlTdEZ0ZDJVNVV5YmpjNjVHMkp1TjU0S1ZIbHRn0gHwAUFVX3lxTE9MUlg2aUcxN2JvMy01Y19NNmZvNW42SXVtbGZJTjZNZW5zZS1YTWpnVUxSTENkS25TTHl1d1ZhV0NDQUVneWFKMHBkT2xuUzZ3QXNkdHp0VEF3b21zNHlaQTVJM2ZibVE3dlFDaDR0clRJT2VMZ2JSME5XT3lmaFhXNnNHcFMyMEtMREN4ZFdtTFpqRThkMWZTcHpXckY4UGVZOWVCb2huM0FoU05QeWhlWkNjUngxczc0MzBBdFFwMlc2QkxvQzRXVDBtZTJtaEwtMXVQeTBrMTAtR21qczJBWUUyYkxiSTRxZEtXT05WUQ?oc=5",
-   "src": "Hindustan Times",
-   "pub": "hindustantimes.com"
+   "title": "Ahead of tough new U.S. sanctions, Iran criticizes 'extraterritorial sovereignty'",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOak5FU3lnQ0FsZU5vbjdlazdtTUhDZUpVX3hiWm1tWng5RjUxM2RYOFhTcEdfUVE1WDl3QkFCcXVxNHczbmNocnA5UG85cTFPWnFYQ0lQRENHeEd3dUNRVUdhbk1mbFc2OExVM3VjTWNONm1yRWNQY0FtU21CcnlIS1JTUzBlRzJmLUFtVHZYTEdIa3BLWUpVc1BR0gGfAUFVX3lxTE5MUUhtTlBzNDdFX1Y4eDc4OEVkLTIxUW1ycDlBNzE2ZmkzN3dUZm80S3RlZ1FiVEZrRkFISVkxNXZBUjZxQ2lMMmdhc1VOYW5LRTY1elVSVDNGM1QtdEFCMklqSWxJUWR6YTNhLXY5X1YzMnQ3WVhCZmtRWXprN1NNdHJmcFpTOENNNGZNcTZoUEhFZzd2NXFyN2hGem5mRQ?oc=5",
+   "src": "CNBC",
+   "pub": "cnbc.com"
   },
   {
    "s": "vietnam",
@@ -8957,7 +8862,7 @@
    "sources": 1,
    "title": "Canadian Prime Minister Mark Carney Says Peace Requires Strength as Canada Backs Ukraine With Sanctions and More Than $2 Billion in Military Aid",
    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xMEtGX2hMRFlRQ3FfdkwtNXViaUd0M2ZwX0I2OU4zM1BsaTlXeTZnTzE5eU5sR0lEOW1YcU8xT0tMTlNGWGZrWkFXUkZISGk4SzFnYkxCNldRSk5TV0NkMThmUEhpaWdtNmJrSXp3?oc=5",
-   "src": "Межа. Новини України.",
+   "src": "mezha.net",
    "pub": "mezha.net"
   },
   {
@@ -9025,7 +8930,7 @@
    "sources": 1,
    "title": "US threatens severe sanctions against countries with economic ties to Iran",
    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQR0ExcUY5UDhpTVlmM1p4T09acU5SVVk1eS0xVzZZa0N5dHZFam53SHR6RHhyWmVVU0RmaHk4blZoSFJ0QXR4Q3AyWTc5ckxnTFZXaVN0U0JwOUZmSl9zdDI0YWhrNzd3NUs1U0lhakdyS21KZ0Zlbk1tYW9VSThQZ29WOHJFRmprNTVzbg?oc=5",
-   "src": "theguardian.com",
+   "src": "The Guardian",
    "pub": "theguardian.com"
   },
   {
@@ -9063,6 +8968,23 @@
    "pub": "english.nv.ua"
   },
   {
+   "s": "russia",
+   "r": "türkiye",
+   "pair": "russia|türkiye",
+   "layer": "enerji",
+   "root": "061",
+   "event": "ticaret / tedarik",
+   "goldstein": 5,
+   "week": "2026-W35",
+   "date": "2026-08-24",
+   "articles": 1,
+   "sources": 1,
+   "title": "Russia Expands Gasoline Imports, Turning to Türkiye for Fuel",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOE9HSFhjLUx3ZHFTZEJKandHNU9UZG9EZkdqQjdRZ2hmdmdEcEUwX3NaV0JZM3QwYnJ2S1U3RjFPYWN3NW1jckZnVHp6dWFIRkd2LVZTUWFVaHItYk1aeGtPQXF6RVBYZUR4Y1NpdFRDeEZ3NmFUdDVYS1hSWkI4ZXB5bVYtMk9nT2VOQTVQOHpLVGZW?oc=5",
+   "src": "Caspian Post",
+   "pub": "caspianpost.com"
+  },
+  {
    "s": "ukraine",
    "r": "united kingdom",
    "pair": "ukraine|united kingdom",
@@ -9093,7 +9015,7 @@
    "sources": 1,
    "title": "UK Prime Minister Pledges Enduring Support for Ukraine and €3.5 Billion in Annual Military Aid",
    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjRnBhUmYwSGxJcVlQQ1RtbzdyMFVjX1BMekdtaFVlczE3QVRDcEF3Nm04cmFWekhGT0E2R05iQlE3anA1ak5ZemM5MnNtX1NYd19za3Z5NHNITENxR0VSb1dLR0RjS01XR24yTFA5ZGU?oc=5",
-   "src": "Межа. Новини України.",
+   "src": "mezha.net",
    "pub": "mezha.net"
   },
   {
@@ -9112,23 +9034,6 @@
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeV9wR0s3cGZCX1hFbkdsM0NobU41OWpEZXZ6d3E4ZTZhRHEzZHhWR29zZ25PODlnY1E5MEtJa2dWZkpneVVvVEw4REtXeF9TUW00QVhVM2VGRlM2X2FpME44eHBqMHdiLWRPOGJVWWpKRktDMEgzX0NxZmtHaG84bndqOF9URkNpNHgwNm1xVDhNNjJzYXpaVVlBSmFhS1g1cHBUamUwTHdicGJfV1dabjRkVk5ZTF9haUd3djFBUlhFOE0?oc=5",
    "src": "U.S. News & World Report",
    "pub": "usnews.com"
-  },
-  {
-   "s": "canada",
-   "r": "united states",
-   "pair": "canada|united states",
-   "layer": "tahil",
-   "root": "162",
-   "event": "kısıtlama / tarife",
-   "goldstein": -4,
-   "week": "2026-W35",
-   "date": "2026-08-25",
-   "articles": 1,
-   "sources": 1,
-   "title": "Canada Retaliates With Up to 50% Tariffs on Hundreds of U.S. Products",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNakZzdURoeWVCRFVRUVotX3NidXdfX1h3YUU1WVF2RUlIRy02dzRsQ1V5ZTRTUW5tekR5Q1Y5LXVKNWRZMmVoLWxYTzNEUGRjeFlZY2s2NFR4aVVrSElJLW5Wd2QzUGRoOTd6RE5tMlZfWi1Ba2Zvbkw0ZmU3elZfLURSbl82Y29sUU9zSUluY0pVM1I4VWRN?oc=5",
-   "src": "nytimes.com",
-   "pub": "nytimes.com"
   },
   {
    "s": "iran",
@@ -9178,7 +9083,7 @@
    "sources": 1,
    "title": "Saudi Arabia, France sign declaration to strengthen defense partnership",
    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9Ca3dzaW5tNnBPUXZVU1BSbmZEWGE1RE1KNE1lNWVTWmVBYkVObkpRTl9mZlhqRFA2eDBhUi00Vk1UbnNZaWpmWDVSMURHWi1kNEIzSA?oc=5",
-   "src": "Saudi Gazette",
+   "src": "saudigazette.com.sa",
    "pub": "saudigazette.com.sa"
   },
   {
@@ -9369,23 +9274,6 @@
    "pub": "yemenonline.info"
   },
   {
-   "s": "sweden",
-   "r": "ukraine",
-   "pair": "sweden|ukraine",
-   "layer": "silah",
-   "root": "057",
-   "event": "taahhüt",
-   "goldstein": 4.5,
-   "week": "2026-W35",
-   "date": "2026-08-27",
-   "articles": 1,
-   "sources": 1,
-   "title": "Sweden Pledges $28 Million Boost for Ukraine via PURL Initiative",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSzIxMjVxLTBpN1lZZklCOVZXc2syYmE0X0ZhQ1BGcnl3ekRLS3N0WXBzLVlPOWF4RHZaWnZSelgxYi1JMkFBNWl3bkY4WDkwMzNwTC11S1U1RDZZSF94aTRmNHdwVzRzSFlXZFJQalVNS1pLbllQdWdCamZNTjdZbHMxeVdMRFZYSTRjNjc1OXAyeXlkcEtPM2Z5MXFpQ05tYl8w?oc=5",
-   "src": "UNITED24 Media",
-   "pub": "united24media.com"
-  },
-  {
    "s": "china",
    "r": "pakistan",
    "pair": "china|pakistan",
@@ -9403,23 +9291,6 @@
    "pub": "scmp.com"
   },
   {
-   "s": "france",
-   "r": "ukraine",
-   "pair": "france|ukraine",
-   "layer": "silah",
-   "root": "030",
-   "event": "girişim / davet",
-   "goldstein": 3.2,
-   "week": "2026-W35",
-   "date": "2026-08-28",
-   "articles": 1,
-   "sources": 1,
-   "title": "France seeks to cash in on weapons for Ukraine",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTnhiaWEyQzVUYnZCQU9ucFkyTHI4UWlGampGbzI1eGJlcjc5VS1hWWt0UUVfRmRqbGRMNF8zbTNQXzNrWkNILU1PcF9udl9NME9LVk00SkJKTTJzTWpKdWNUOTd4NFFIc002N1JHXzdtOVJyZ0kyMl9JbWZhWTJpNG1fenl5Q2VBMzFWeEJkYw?oc=5",
-   "src": "irishsun.com",
-   "pub": "irishsun.com"
-  },
-  {
    "s": "kuwait",
    "r": "pakistan",
    "pair": "kuwait|pakistan",
@@ -9433,7 +9304,7 @@
    "sources": 1,
    "title": "Kuwait, Pakistan sign defence and military cooperation agreement",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMGp0MV9IYzFmamRQdWY2M3N6RkludnB3dVJMeEVQV25tU3lJb2swVGFab01YZ0YyZmZCMUpoMGgtRF9QT3ZVLVFZVHBLNFRTNmw5RFIzLUs4clZ6b0Nnc1dXcVZQWmlzeW1qVjY1bERlaDEwc1VqcUhfQlNmNGRyS0gtODJsSmR3NXdMR2c1TW5GRlhSLW9wSS1nbUNuXzJ1MEQ4NzdWeTJYcG1fdUhfeFRjVE7SAcoBQVVfeXFMTVpIV1U5c3REN2JOc3A5dzE1bDZlN1pBRzcxRHVLdXJpbWdyNjFHUWlYcEc3d1BDTmpseEV5YUNRbmRGS2F5Ql9QVTdiOHVoV3dNckR2eWFqSkgyNDNKVjBnbXBRelFkYWpBVmFiOGRlMVVpbndQTGNGOWhUclY3V1luTnVFQ0wwMUVCMzhoVGR5M0lDLWZVazZtQXZoNV9VVzhVMk0wY3FOaXdNVjNNYXFxVnNiSXN1UGJfMlBTWU52R0UtY0VnZGdGZw?oc=5",
-   "src": "gulfnews.com",
+   "src": "Gulf News",
    "pub": "gulfnews.com"
   },
   {
@@ -9552,7 +9423,7 @@
    "sources": 8,
    "title": "Israel signs $3.5 billion air defense deal with Greece",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNU3N6SmR6UVZNanFXcnlOellLTXB6ekRmeHF6RHlMVExDa3VNSmo3aGxPRWhEVkVwSWdmMXpPc2cyUHhnU09wOFBIR3MzdE5POTRMZXpvNVNsVUt4c0RCWjJwUDgxc1BCaGtvLTRLLW9lZFB4anpzLWczY0M0X2F4N2dtdG02Y3B6LWJBVjI1azBoUFdOQXNWU0RjWXA2VjAyUXNQWGlCb05fUQ?oc=5",
-   "src": "Defense News",
+   "src": "defensenews.com",
    "pub": "defensenews.com"
   },
   {
@@ -9588,6 +9459,23 @@
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMFhjeUJuUzExR0RvMl9zWHFrSmcyUVMxY0NDa3Q5c3NRYXlndTMwaHUxUDVIYnNlTDVfb2ZGM3RJYXFsTHFKZnJnLWVPOTIzR2h1enFSVHAwYkdYT1VPZEdTOHVFalVXZkNyUENIOTlhejQtOUY2bHRGZ1RIZ2JkQk5QMDkzUUNCSGYxdFNNREVoYkFVcmlLeWNGbjUzeUZUckVpMEtXeHdXR1c0cTRDX0RXN2F5QQ?oc=5",
    "src": "The Institute for Energy Research",
    "pub": "instituteforenergyresearch.org"
+  },
+  {
+   "s": "united states",
+   "r": "taiwan",
+   "pair": "taiwan|united states",
+   "layer": "teknoloji",
+   "root": "071",
+   "event": "yatırım",
+   "goldstein": 6.4,
+   "week": "2026-W36",
+   "date": "2026-08-31",
+   "articles": 1,
+   "sources": 1,
+   "title": "US Envoy Says Taiwan Ties Are Stronger Than Ever as Chip Investment Expands",
+   "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1UMVdfdDJWYU85dGRmckhsVVBzWjZ1SkFhUzBBSF92bnE2aTl0UDU4cWJKemR1N0wwUzFKLVNLTzlKYktzbjBzX0lXME44X1FCOWtsWmIzaDM3enpEemVHMQ?oc=5",
+   "src": "mezha.net",
+   "pub": "mezha.net"
   },
   {
    "s": "china",
@@ -9637,7 +9525,7 @@
    "sources": 1,
    "title": "China warns of 'consequences' for Taiwan after Taipei envoys attend Pacific leaders summit",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONFd6MnR6TlY5NkdLNlVrbVVmV04xS0M4dXJVVERWUXljX1hUUkVwS3pOMXhTaEpaS2FYbkNNemlfdVhzRGZWVUtRVF9yOHFWYmdpQUJoZzVmUTRiWWlGZE5Fb1Q1NGpoaEs0S052MUtWNG4xR05mWHBUVE5EWGhTdnFoTnFRS3FKVWNHTWFYMGhQUnQ4eWhuRm1pWjM0VkhpalhIUHNVUFUyT3hDYUZIa0lR0gG3AUFVX3lxTE9XWFVQWU5ySWxORHpvOWFxSDN0aDlGa19pVDNsYWhhNC1DaElPSGdVbHRPdW9LeTFqVDJVRTVSOExmd2tBLUZxbUNaUW1hRm5fQ0VhcnhmeDQtNjlHQUthVFljN2lKdXZZSzNQX0tmakN6c1FfTEdaXzI5b1pjYmtrbVIyQmxlU2lxUWhmUG1jcjgwX2NUNXl3QUdjTGdBN3pHLUxhZE1idnpjWlhYbmprSzJQdnFzSQ?oc=5",
-   "src": "ABC News - Breaking News, Latest News and Videos",
+   "src": "abcnews.com",
    "pub": "abcnews.com"
   },
   {
@@ -9707,6 +9595,23 @@
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSmNRRk90YnlzV1BxRmxZU1RRS2NiZEV5Tm9RVHM0OHJqMHZWU2xOb0FjRENTLUl2MTZTdG5iLU4xc2gyTUdYUUI3ek5QRG1oZC1mcU13dU5ybFp3c2dXbmlQeTlsSFBUYS1xTnZtY3pqdWhVNjVnZkk0czFjWE1fd3ZwNUxITWNRSXpwMURZMUsxWlpSdElzTU1nb1V2MmpHUk1RNy0zdGg?oc=5",
    "src": "The Diplomat – Asia-Pacific Current Affairs Magazine",
    "pub": "thediplomat.com"
+  },
+  {
+   "s": "belarus",
+   "r": "russia",
+   "pair": "belarus|russia",
+   "layer": "enerji",
+   "root": "050",
+   "event": "onay / mutabakat",
+   "goldstein": 5,
+   "week": "2026-W36",
+   "date": "2026-09-02",
+   "articles": 1,
+   "sources": 1,
+   "title": "Belarus and Russia agreed on 107 out of 110 points of the rapprochement plan for the next three years. But th",
+   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5wVW1iRnNpNE1ITlFOUWgtVlNPdmJGbnI4aXktLXdVLTVlSGgtYmQ0Qldfd2dQYXpGZkEwSE51R29pRmpHbnfSAUtBVV95cUxPY0V6QjQ2NDFLa21tVzFOU3pnaGJNbElYZVUyZWg1SzIxbGFSTHBBUWhTeVpfWHk4eW9jQy1JVHc1TzhtQllBQVpzR2s?oc=5",
+   "src": "Наша Ніва",
+   "pub": "nashaniva.com"
   },
   {
    "s": "china",
@@ -9794,23 +9699,6 @@
    "pub": "calcalistech.com"
   },
   {
-   "s": "germany",
-   "r": "russia",
-   "pair": "germany|russia",
-   "layer": "yaptirim",
-   "root": "18",
-   "event": "silahlı saldırı",
-   "goldstein": -9,
-   "week": "2026-W36",
-   "date": "2026-09-02",
-   "articles": 1,
-   "sources": 1,
-   "title": "Germany says Russia behind Leipzig airport drone attack",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1lTi0zU1ROU19BOWJYQ3E2dVRIUE1LWVh4RUlTRlE1eEhGRElRVjZhQ05nUVNRRDdqU3BDNHF3WHVXampBZGZnZG04Y0ZTYkFCLVdOTGw2cnh0UQ?oc=5",
-   "src": "BBC",
-   "pub": "bbc.com"
-  },
-  {
    "s": "ukraine",
    "r": "germany",
    "pair": "germany|ukraine",
@@ -9837,8 +9725,8 @@
    "goldstein": -4.9,
    "week": "2026-W36",
    "date": "2026-09-02",
-   "articles": 2,
-   "sources": 2,
+   "articles": 1,
+   "sources": 1,
    "title": "Peru cuts diplomatic relations with Iran",
    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVlBjZ3RrTTNXRlczUkNCeGZUU3UwTE01Z1BNQzk3OWY4SU9qMVpLNVJoV21RZlVEUm51N3pUaURBVlNCeHR3dVY2ankycjRpTXB5TUxqd0xNYUt3RWdTWlBzT0dDd2J0b0h0a1FKWlRJTmEtMnR6WnpFa3hjeHlwdG1zNNIBiAFBVV95cUxOWHBzRS1nTDdSYjgta0FacGdsWVBERzNEb3ZSM09DS3ZLVm56VUQ5REF3MUxOQS1PajcwWGF5OVRrc3VodHdRR2ZTcVNkRk5OdDhiVzByczhRY1RRdG5mbHVucUNyeGd0ZlgyTUY3ZHJaMGlPZXJZUGRfZl9ORXlZVW1LNUlaTjIt?oc=5",
    "src": "Report.az",
@@ -9854,8 +9742,8 @@
    "goldstein": 4,
    "week": "2026-W36",
    "date": "2026-09-02",
-   "articles": 3,
-   "sources": 3,
+   "articles": 2,
+   "sources": 2,
    "title": "Russia said helping Iran develop supersonic cruise missiles",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNWVRZldnYUMtamxnSFVDWXNpdUpBa2pXWUNfM0hFSmxyYVJsZjdwdEt0RklEUTQwT25KcmFXTld1MTVUZEgwSzZ4TXU2ZVBiR0RRSndVcWYyaWM2WEw1NnRWR3VVNFpqWnhXWmxzdE5oQ1V0YnFDWXhyeDBSLUpBWWxTb1JGN1ZfeWxacE5vNlllclg30gGaAUFVX3lxTE50ZW10UHFsdVo1YUVHVzM2NmROQ0JuR3NwTnhSaGdOWnUzSkNCU0hGMy1wWUNQZlpfeWlWNzhiZFRUT2w0b3RhZlBzbTRBdjFpdVpEWmtudmtiVWxLMnMtc3hpWThSLV9iUFlBMF81NTV6Nl9mcTBlcWNfVUJLcXdDYWF4Zm5JcktxWWxLX2VhQXpucW5XUFc4X3c?oc=5",
    "src": "The Times of Israel",
@@ -10113,7 +10001,7 @@
    "sources": 1,
    "title": "Poland to Receive Up to €430 Million for Weapons Supplied to Ukraine",
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOU25yazREMDhsNjZpWUgwSTZ0MFIyZmEyeDlFclBSRC1VbGpmSFJoOU9MSVo1TmRwbVl3QXNJOFllcm1UN3dIb2Q3THdQZXRhNENIRllZQV9FVHFsd1EtT1ZzVDFkMkZiZ3MyQTZzb0pZZ25zb1N3Tm9kZncwZHBxTGhQOVZBemUwZTBrMF9YQmNXRDB1a183N2FfRG11TVNl?oc=5",
-   "src": "Militarnyi",
+   "src": "Мілітарний",
    "pub": "militarnyi.com"
   },
   {
@@ -10164,7 +10052,7 @@
    "sources": 1,
    "title": "Türkiye shifts oil imports to US amid Russian supply disruptions",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQM1VFVnpUV2NMSVBEaTE1R3BnTW9FYWFubnNFVWlralV5WnZhODh4bW5HUzhpdlhnS1diWHJTOGVMdEp3ZEI5aDdRUnc3MGNnLXhVYldqeGtEQkNhRFlqVGhEUnhsbnhXLWp4V1R3UU9JUHR1U3djTFhYUmhza1lDVWx4MWE1QkZpTXR0TTVRV080RU5B0gGUAUFVX3lxTFAzVUVWelRXY0xJUERpMTVHcGdNb0VhYW5uc0VVaWtqVXladmE4OHhtbkdTOGl2WGdLV2JYclM4ZUx0SndkQjloN1FSdzcwY2cteFViV2p4a0RCQ2FEWWpUaERSeGxueFctanhXVHdRT0lQdHVTd2NMWFhSaHNrWUNVbHgxYTVCRmlNdHRNNVFXTzRFTkE?oc=5",
-   "src": "Harici",
+   "src": "harici.com.tr",
    "pub": "harici.com.tr"
   },
   {
@@ -10200,23 +10088,6 @@
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPME5mMm1WZy1oMl9kZWJPdzRVbV9UU20yMWlibk41RWo4NXJkS0VaTmMza1JGdzJKVW9oeHZEbXo5QWtFa2lSVWtMNVVjTmlxeW44ZEVtRUR6UHFZR25ROHdlbEpCaXZQenZ5ZUQxUWlPNWNLUFpvY05xUzRKdnFERG1IeXhMTEJ0T3lWR2dZdHJuWV90VG1ZSnFR?oc=5",
    "src": "Военное дело",
    "pub": "voennoedelo.com"
-  },
-  {
-   "s": "venezuela",
-   "r": "canada",
-   "pair": "canada|venezuela",
-   "layer": "enerji",
-   "root": "060",
-   "event": "gönderim / tedarik",
-   "goldstein": 3,
-   "week": "2026-W36",
-   "date": "2026-09-04",
-   "articles": 1,
-   "sources": 1,
-   "title": "Trump’s Venezuelan flex move sends a message to Canada: Build now or become the 51st state later",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSkVtYWpvLUJISzQ2aTNPaXdpbWlsTUZDNFJLaHdwOEc2SFdmdVVQZWlzTWNFTkltWVFFS2g2dUVzZzNjTkhKd2RqSHlZYjNyQVRvYzVXaGU4MzV2dFBQRlF3MGphSWlGXzBUTUVVY3ZQUW10ZExTaHR2cDhsUE54N0pkVllid254aGZuRmVrdkRkV0o3ZU9WZHJYanZ1cFQ3dE0xN3ZkRXh5Q2VDWVRiZFB5VklwM01NZC1TM3JR?oc=5",
-   "src": "Resource Works",
-   "pub": "resourceworks.com"
   },
   {
    "s": "china",
@@ -10300,7 +10171,7 @@
    "sources": 1,
    "title": "Estonia minister quits after €70-million Ukraine shell deal involving Indian firm",
    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNbnhaaERGYkQ2aEpuZ2xHRmsyemlkZEN5LTRBWFk0N1NpQVNfSDJ0eldtQVBqc19tMjdTZ094MUtVVkJNSnNBRGZTUVpYd285YlVwOHNCdnBiQWQ1SHUtajhjNnh6U0tJT3VteGNETTF0Wk1hMlFrR3R0TndURWtCYkkwbTZVVV91Zl9KOE8wRDdNUzNfZkg2X2U2bTliVE5MTzR1dVVuMjJ2eHVHa1k3ekFyV3pyVTNucFl1TFh0eVg4T0ItLTRCVTJuVkloME1QZjZ6dnVsUkJWcE9sSXRpekhFZG03d2NHaFpF0gHwAUFVX3lxTE1wNmlkQUlucnM4eGNUY1lhYVRUVVFVNllMYUU0bTM4djVDdlZoWnBEbUVVOUxCamhiMzNlUGhWbjVpeUM4aDFfNW5IN0lELWlhd0JuMk1EQTBneS0wdElDN3ZyVXloYjJmM3BWNlZkMWdVZEgtRG9fNVRFcHc4OC1QZnA4NDFGSzBtaUI3X2VWRW9KMlM0TXNubVFTT0dwQXV0cXk0UDluaW9XOHZaRENFWVlOdDdHYlg0em54cGtUSTc4MGtCS3JrY00yUzhHbERLekNHNGpfdlllSkFNWENSaGEwWVcxRnlyNGVSaWhOWA?oc=5",
-   "src": "The Times of India",
+   "src": "timesofindia.indiatimes.com",
    "pub": "timesofindia.indiatimes.com"
   },
   {
@@ -10351,25 +10222,25 @@
    "sources": 1,
    "title": "In apparent reversal, Trump says he's sending 5,000 troops to Poland",
    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdl9naFI3WUpJRHgtZ2VINy13NXpTLUcwSF94cVdSM3pia0w5RTVMUWxaYkZaalRnb2h3Z3lwUV9hVkhwcDVIb0lKdzFtT0pyMHBHVEdERDNaZkQxQ2tHWGY0aXoyTnBOU3dWb3ZYRXROY0hhVzBPdVRCdW5hN0ZEQTQzYXQzVFJRNkZKNlZpdFR5MHN5NlRjcEs2UUM3enfSAaQBQVVfeXFMTUV1TFF3QWVNcmJOdjNYT1ZVTzBlRlVmcmNzNmFhR3hOM3FNUUVzdFQxQzNDZVVPZ2I1cWZpY1hfcm9IN0ZlNGlab2V5c2xUVXN4dFZTcXRRRkFzd3QwUlc5ckZKeldpUm9lV3VpdTZtdHozMW4xRTNtX3lZTUNwS09FSDNubFdENTNDWmpOSzFLb0k1N0pla1dhSkk4WUtlR2s4clU?oc=5",
-   "src": "ABC News - Breaking News, Latest News and Videos",
+   "src": "abcnews.com",
    "pub": "abcnews.com"
   },
   {
-   "s": "united states",
-   "r": "saudi arabia",
-   "pair": "saudi arabia|united states",
-   "layer": "silah",
-   "root": "050",
-   "event": "onay / mutabakat",
-   "goldstein": 5,
+   "s": "south korea",
+   "r": "united states",
+   "pair": "south korea|united states",
+   "layer": "teknoloji",
+   "root": "036",
+   "event": "görüşme / müzakere",
+   "goldstein": 4,
    "week": "2026-W36",
    "date": "2026-09-04",
-   "articles": 3,
-   "sources": 3,
-   "title": "US Approves Possible $5bn Arms Package for Saudi Arabia",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWmYyTWIxTUliMVRNeWd6N09rWC0xZ1VHUVFDNTR4bTVwSk1PbVNTZUhRN2x2TFBJRUN3ZlhRVHItWVBWUmk5TWJPZmczX2RBcXVYZnVsZnUwRWl2Ri1PdC11dS1pZmZFWE0wSl9GVU9kWF92S3pNY1N1cjFwVk5jeDdKSkR1Z2FHamJ4T0NfRjU3Zw?oc=5",
-   "src": "The Diplomatic Insight",
-   "pub": "thediplomaticinsight.com"
+   "articles": 1,
+   "sources": 1,
+   "title": "South Korea says chip investments under discussion with U.S.",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE42dm5PQmw4ZUNiTEdvemI2R3hKa1d6WHNoRHdQZmZyY3I5cC14YVgtR3BJWGthTVVaVFRZT1J6YTg4c2xTdXgwQWJtTW9ZX3lNVXRVNEhR?oc=5",
+   "src": "朝日新聞",
+   "pub": "asahi.com"
   },
   {
    "s": "united states",
@@ -10402,7 +10273,7 @@
    "sources": 1,
    "title": "Uganda, U.S. Sign $1.7 Billion Health Sector Agreement",
    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5YS28ycFRkemozSHBnaGJQeVVXVHUxY0lqVVdXd3RMc3dnTHZXRldGM1VseW5ITDdlRjlpd1JIaFgxQURwUlZBRDNhcWVBMVowMC1DWk1WeEctaEk?oc=5",
-   "src": "allAfrica.com",
+   "src": "allafrica.com",
    "pub": "allafrica.com"
   },
   {
@@ -10440,6 +10311,23 @@
    "pub": "scmp.com"
   },
   {
+   "s": "india",
+   "r": "uae",
+   "pair": "india|uae",
+   "layer": "tahil",
+   "root": "042",
+   "event": "resmi ziyaret",
+   "goldstein": 3.4,
+   "week": "2026-W36",
+   "date": "2026-09-05",
+   "articles": 1,
+   "sources": 1,
+   "title": "India-UAE Trade ties deepen ahead of PM Modi’s visit",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPejlaaHRPWG1uamhndE95djdkR3U3VkM5ZmRDeldVUmN2WGpVTk1OZXVYaV9Udl9hVV9SWjVtVG9NZHhkd2pLQ1ltM1VCM1JVbU82VFdXQlkxZ3poUFlCaHhJQmozMWp2NS13WktLTVU1TDllZlpadEo3SHdoTVBoZENPaw?oc=5",
+   "src": "News On AIR",
+   "pub": "newsonair.gov.in"
+  },
+  {
    "s": "united states",
    "r": "saudi arabia",
    "pair": "saudi arabia|united states",
@@ -10455,6 +10343,23 @@
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUHBZekRxdU5kakUzVDBCZ2ZnY2RIYWNTUmdsNXFxLUtIazN1cllvalM5WGdlZjVPR2lMT1FDdTBHU1dDdGh1VHlfeTRCa3E5akkxSDQyc2U1YTAtR0R6NDRBTGpTRzh6NWJhWFBuTTlUTnRBUUV5b2g3Z2Vqcm9tOUIycWR3LUNtNjdMTHotd3BnR1VRNHlNWnAzNE1EanhqcFRjTVhERDBwREk3aDhv0gG_AUFVX3lxTFBwNlA5Nng3dVRwdlV4QkhPVHhIb3JwX1lGYnpScnpqMGpSMzJ4N1lVdEZIZ09penFuOUs4elZrbEppc0dyZkdtZWprZkVPYUFyS19NSkV5X2hsS1otYW5OOEN4YnpCZG9ETmhQMVlkcXhoZGtKOVdvMWVuQzNPRGRBcVd0cE5BNnk3UVpwMndYNXpvVndCcm1VTXBwMDJSUjJzSlV4VEh4UW1uVjZKekhlT0pCQVc1ZzkxeWJ1VHBn?oc=5",
    "src": "Swarajya",
    "pub": "swarajyamag.com"
+  },
+  {
+   "s": "united states",
+   "r": "saudi arabia",
+   "pair": "saudi arabia|united states",
+   "layer": "silah",
+   "root": "050",
+   "event": "onay / mutabakat",
+   "goldstein": 5,
+   "week": "2026-W36",
+   "date": "2026-09-05",
+   "articles": 2,
+   "sources": 2,
+   "title": "US Approves Possible $5bn Arms Package for Saudi Arabia",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWmYyTWIxTUliMVRNeWd6N09rWC0xZ1VHUVFDNTR4bTVwSk1PbVNTZUhRN2x2TFBJRUN3ZlhRVHItWVBWUmk5TWJPZmczX2RBcXVYZnVsZnUwRWl2Ri1PdC11dS1pZmZFWE0wSl9GVU9kWF92S3pNY1N1cjFwVk5jeDdKSkR1Z2FHamJ4T0NfRjU3Zw?oc=5",
+   "src": "The Diplomatic Insight",
+   "pub": "thediplomaticinsight.com"
   }
  ]
 }
